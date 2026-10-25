@@ -1,11 +1,11 @@
 {
-  "version": "0.2.0",
-  "built_at": "2026-10-25T10:00:29.732654+00:00",
-  "records": 24548,
-  "missing_cells": 1075,
+  "version": "0.3.0",
+  "built_at": "2026-10-25T10:47:25.639287+00:00",
+  "records": 26725,
+  "missing_cells": 1076,
   "null_value_status_counts": {
     "not_available_in_source": 200,
-    "source_blank": 875
+    "source_blank": 876
   },
   "reference_years": [
     1991,
@@ -45,12 +45,13 @@
     2025,
     2026
   ],
-  "source_series": 474,
-  "source_groups": 201,
+  "source_series": 804,
+  "source_groups": 211,
   "source_families": {
     "主計總處歷史全國統計": 220,
     "主計總處縣市公共館數": 644,
-    "國家圖書館年鑑統計事實": 5842,
+    "國家圖書館年鑑統計事實": 7865,
+    "國家圖書館閱讀報告統計事實": 154,
     "國資圖公開全國圖表": 855,
     "地方政府開放歷史表": 14751,
     "國資圖2023開放資料（含縣市）": 2236
@@ -59,15 +60,15 @@
   "all_history_complete": false,
   "null_status_counts": {
     "not_available_in_source": 200,
-    "source_blank": 875
+    "source_blank": 876
   },
   "value_status_counts": {
     "not_available_in_source": 200,
-    "reported": 22617,
-    "reported_decimal": 856,
-    "source_blank": 875
+    "reported": 24568,
+    "reported_decimal": 1081,
+    "source_blank": 876
   },
   "publication_profile": "statistical_fields_only",
   "omitted_contact_original_files": 22,
-  "statistical_content_sha256": "6e1828aa253177d538c6cc29df9f36336f201bfda426b5fe3de76d5419831268"
+  "statistical_content_sha256": "3bf76146e81d60a071d65f0c13d5e8773feb1a5836b8e9bddf79b2c503c121a6"
 }

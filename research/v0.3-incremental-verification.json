@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "registered_cohorts": 7,
+  "actual_extractor_calls_on_unchanged_inputs": 0,
+  "all_reviewed_csv_bytes_and_mtime_unchanged": true,
+  "isolated_failure_and_selection_tests": "scripts/test_update_groups.py; test_cohort_registry.py"
+}

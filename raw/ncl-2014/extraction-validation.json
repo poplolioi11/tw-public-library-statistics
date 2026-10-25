@@ -1,0 +1,936 @@
+{
+  "reference_year": 2014,
+  "edition_roc": 104,
+  "publication_date": "2016-07-01",
+  "long_rows": 844,
+  "source_ids": {
+    "ncl-yearbook-104-public-library": 809,
+    "ncl-yearbook-104-statistics": 35
+  },
+  "value_status_counts": {
+    "reported": 778,
+    "reported_decimal": 66
+  },
+  "zero_cells": 38,
+  "all_selected_tables_complete": true,
+  "table_count": 13,
+  "tables": [
+    {
+      "table": 14,
+      "title": "全國公共圖書館數量統計－依圖書館級別（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        1
+      ],
+      "expected_cells": 15,
+      "extracted_cells": 15,
+      "reference_years": [
+        2014
+      ],
+      "scope": "entire numeric grid; four public-library levels and published total",
+      "status_counts": {
+        "reported": 15
+      }
+    },
+    {
+      "table": 15,
+      "title": "全國公共圖書館數量統計－依縣市別（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        2
+      ],
+      "expected_cells": 66,
+      "extracted_cells": 66,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 66
+      }
+    },
+    {
+      "table": 16,
+      "title": "全國公共圖書館圖書資料購置經費及人均購書經費分析（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        2
+      ],
+      "expected_cells": 66,
+      "extracted_cells": 66,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 44,
+        "reported_decimal": 22
+      }
+    },
+    {
+      "table": 17,
+      "title": "全國公共圖書館人力資源統計（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        3
+      ],
+      "expected_cells": 40,
+      "extracted_cells": 40,
+      "reference_years": [
+        2014
+      ],
+      "scope": "entire numeric grid; four public-library levels and published total",
+      "status_counts": {
+        "reported": 40
+      }
+    },
+    {
+      "table": 18,
+      "title": "全國公共圖書館館藏資源數量統計（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        4
+      ],
+      "expected_cells": 50,
+      "extracted_cells": 50,
+      "reference_years": [
+        2014
+      ],
+      "scope": "entire numeric grid; four public-library levels and published total",
+      "status_counts": {
+        "reported": 50
+      }
+    },
+    {
+      "table": 19,
+      "title": "全國公共圖書館館藏資源數量及人均擁有圖書量分析（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        5
+      ],
+      "expected_cells": 66,
+      "extracted_cells": 66,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 44,
+        "reported_decimal": 22
+      }
+    },
+    {
+      "table": 20,
+      "title": "全國公共圖書館圖書資料使用情形（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        5
+      ],
+      "expected_cells": 88,
+      "extracted_cells": 88,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 66,
+        "reported_decimal": 22
+      }
+    },
+    {
+      "table": 21,
+      "title": "全國公共圖書館推廣活動類型及辦理場次（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        6
+      ],
+      "expected_cells": 154,
+      "extracted_cells": 154,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 154
+      }
+    },
+    {
+      "table": 22,
+      "title": "各縣市公共圖書館各類推廣活動參與人次（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        7
+      ],
+      "expected_cells": 154,
+      "extracted_cells": 154,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 154
+      }
+    },
+    {
+      "table": 23,
+      "title": "全國公共圖書館提供新住民各類服務情形（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        8
+      ],
+      "expected_cells": 110,
+      "extracted_cells": 110,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 110
+      }
+    },
+    {
+      "table": 199,
+      "title": "我國各類型圖書館數量統計表（103年）／公共圖書館完整類別組",
+      "document_kind": "statistics",
+      "pdf_pages": [
+        2
+      ],
+      "expected_cells": 6,
+      "extracted_cells": 6,
+      "reference_years": [
+        2014
+      ],
+      "scope": "complete public-library subtype only, including private; other library types excluded",
+      "status_counts": {
+        "reported": 6
+      }
+    },
+    {
+      "table": 200,
+      "title": "我國各類型圖書館基本統計表（103年）／公立公共圖書館列",
+      "document_kind": "statistics",
+      "pdf_pages": [
+        3
+      ],
+      "expected_cells": 4,
+      "extracted_cells": 4,
+      "reference_years": [
+        2014
+      ],
+      "scope": "entire public-library row only; national central library separately classified and excluded",
+      "status_counts": {
+        "reported": 4
+      }
+    },
+    {
+      "table": 202,
+      "title": "公立公共圖書館基本統計表（99年至103年）",
+      "document_kind": "statistics",
+      "pdf_pages": [
+        5
+      ],
+      "expected_cells": 25,
+      "extracted_cells": 25,
+      "reference_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "scope": "complete five-year public-library table; retain publication version and historical definition uncertainty",
+      "status_counts": {
+        "reported": 25
+      }
+    }
+  ],
+  "image_anchor_cells_checked": 60,
+  "independent_word_token_cells_checked": 778,
+  "table16_whole_numeric_row_glyph_checks": 22,
+  "arithmetic_checks": [
+    {
+      "check": "published_four_level_total",
+      "table": "14",
+      "entity": "合計",
+      "metric_id": "table14_branch",
+      "reported": "214",
+      "sum_components": "214",
+      "matches": true,
+      "source_locator": "PDF page 1; printed page 55; table 14; data row 2; column 6; bbox 425.00,629.00,483.00,640.40"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "14",
+      "entity": "合計",
+      "metric_id": "table14_main",
+      "reported": "316",
+      "sum_components": "316",
+      "matches": true,
+      "source_locator": "PDF page 1; printed page 55; table 14; data row 1; column 6; bbox 425.00,615.10,483.00,626.50"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "14",
+      "entity": "合計",
+      "metric_id": "table14_outreach",
+      "reported": "214",
+      "sum_components": "214",
+      "matches": true,
+      "source_locator": "PDF page 1; printed page 55; table 14; data row 3; column 6; bbox 425.00,643.00,483.00,654.40"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "17",
+      "entity": "合計",
+      "metric_id": "table17_contract",
+      "reported": "298",
+      "sum_components": "298",
+      "matches": true,
+      "source_locator": "PDF page 3; printed page 57; table 17; data row 2; column 6; bbox 432.00,567.90,483.00,579.30"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "17",
+      "entity": "合計",
+      "metric_id": "table17_formal_compiled",
+      "reported": "1218",
+      "sum_components": "1218",
+      "matches": true,
+      "source_locator": "PDF page 3; printed page 57; table 17; data row 1; column 6; bbox 432.00,554.00,483.00,565.40"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "17",
+      "entity": "合計",
+      "metric_id": "table17_formal_subtotal",
+      "reported": "2974",
+      "sum_components": "2974",
+      "matches": true,
+      "source_locator": "PDF page 3; printed page 57; table 17; data row 4; column 6; bbox 432.00,596.30,483.00,607.70"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "17",
+      "entity": "合計",
+      "metric_id": "table17_informal_subtotal",
+      "reported": "11413",
+      "sum_components": "11413",
+      "matches": true,
+      "source_locator": "PDF page 3; printed page 57; table 17; data row 8; column 6; bbox 432.00,665.70,483.00,677.10"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "17",
+      "entity": "合計",
+      "metric_id": "table17_other",
+      "reported": "1162",
+      "sum_components": "1162",
+      "matches": true,
+      "source_locator": "PDF page 3; printed page 57; table 17; data row 7; column 6; bbox 432.00,651.70,483.00,663.10"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "17",
+      "entity": "合計",
+      "metric_id": "table17_student",
+      "reported": "243",
+      "sum_components": "243",
+      "matches": true,
+      "source_locator": "PDF page 3; printed page 57; table 17; data row 5; column 6; bbox 432.00,623.80,483.00,635.20"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "17",
+      "entity": "合計",
+      "metric_id": "table17_temporary",
+      "reported": "1458",
+      "sum_components": "1458",
+      "matches": true,
+      "source_locator": "PDF page 3; printed page 57; table 17; data row 3; column 6; bbox 432.00,581.90,483.00,593.30"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "17",
+      "entity": "合計",
+      "metric_id": "table17_volunteer",
+      "reported": "10008",
+      "sum_components": "10008",
+      "matches": true,
+      "source_locator": "PDF page 3; printed page 57; table 17; data row 6; column 6; bbox 432.00,637.80,483.00,649.20"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "18",
+      "entity": "合計",
+      "metric_id": "table18_all_holdings",
+      "reported": "42627572",
+      "sum_components": "42627572",
+      "matches": true,
+      "source_locator": "PDF page 4; printed page 58; table 18; data row 10; column 6; bbox 422.00,652.50,483.00,663.90"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "18",
+      "entity": "合計",
+      "metric_id": "table18_books",
+      "reported": "40371993",
+      "sum_components": "40371993",
+      "matches": true,
+      "source_locator": "PDF page 4; printed page 58; table 18; data row 1; column 6; bbox 422.00,495.40,483.00,506.80"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "18",
+      "entity": "合計",
+      "metric_id": "table18_databases",
+      "reported": "18905",
+      "sum_components": "18905",
+      "matches": true,
+      "source_locator": "PDF page 4; printed page 58; table 18; data row 7; column 6; bbox 422.00,605.10,483.00,616.50"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "18",
+      "entity": "合計",
+      "metric_id": "table18_ebooks",
+      "reported": "322634",
+      "sum_components": "322634",
+      "matches": true,
+      "source_locator": "PDF page 4; printed page 58; table 18; data row 8; column 6; bbox 422.00,620.80,483.00,632.20"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "18",
+      "entity": "合計",
+      "metric_id": "table18_electronic_subtotal",
+      "reported": "341539",
+      "sum_components": "341539",
+      "matches": true,
+      "source_locator": "PDF page 4; printed page 58; table 18; data row 9; column 6; bbox 422.00,636.80,483.00,648.20"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "18",
+      "entity": "合計",
+      "metric_id": "table18_newspapers",
+      "reported": "6013",
+      "sum_components": "6013",
+      "matches": true,
+      "source_locator": "PDF page 4; printed page 58; table 18; data row 3; column 6; bbox 422.00,526.70,483.00,538.10"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "18",
+      "entity": "合計",
+      "metric_id": "table18_nonbook",
+      "reported": "1429482",
+      "sum_components": "1429482",
+      "matches": true,
+      "source_locator": "PDF page 4; printed page 58; table 18; data row 5; column 6; bbox 422.00,558.10,483.00,569.50"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "18",
+      "entity": "合計",
+      "metric_id": "table18_other_physical",
+      "reported": "422600",
+      "sum_components": "422600",
+      "matches": true,
+      "source_locator": "PDF page 4; printed page 58; table 18; data row 4; column 6; bbox 422.00,542.40,483.00,553.80"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "18",
+      "entity": "合計",
+      "metric_id": "table18_periodicals",
+      "reported": "55945",
+      "sum_components": "55945",
+      "matches": true,
+      "source_locator": "PDF page 4; printed page 58; table 18; data row 2; column 6; bbox 422.00,511.10,483.00,522.50"
+    },
+    {
+      "check": "published_four_level_total",
+      "table": "18",
+      "entity": "合計",
+      "metric_id": "table18_physical_subtotal",
+      "reported": "40856551",
+      "sum_components": "40856551",
+      "matches": true,
+      "source_locator": "PDF page 4; printed page 58; table 18; data row 6; column 6; bbox 422.00,574.20,483.00,585.60"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "臺北市",
+      "metric_id": "table21_subtotal",
+      "reported": "14598",
+      "sum_components": "14598",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 1; column 8; bbox 432.00,373.82,483.00,385.22"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "新北市",
+      "metric_id": "table21_subtotal",
+      "reported": "9018",
+      "sum_components": "9018",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 2; column 8; bbox 432.00,386.65,483.00,398.05"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "臺中市",
+      "metric_id": "table21_subtotal",
+      "reported": "8500",
+      "sum_components": "8500",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 3; column 8; bbox 432.00,399.48,483.00,410.88"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "臺南市",
+      "metric_id": "table21_subtotal",
+      "reported": "8224",
+      "sum_components": "8224",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 4; column 8; bbox 432.00,412.31,483.00,423.71"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "高雄市",
+      "metric_id": "table21_subtotal",
+      "reported": "13040",
+      "sum_components": "13040",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 5; column 8; bbox 432.00,425.14,483.00,436.54"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "基隆市",
+      "metric_id": "table21_subtotal",
+      "reported": "2179",
+      "sum_components": "2179",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 6; column 8; bbox 432.00,437.97,483.00,449.37"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "桃園縣",
+      "metric_id": "table21_subtotal",
+      "reported": "2472",
+      "sum_components": "2472",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 7; column 8; bbox 432.00,450.80,483.00,462.20"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "新竹縣",
+      "metric_id": "table21_subtotal",
+      "reported": "2004",
+      "sum_components": "2004",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 8; column 8; bbox 432.00,463.63,483.00,475.03"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "新竹市",
+      "metric_id": "table21_subtotal",
+      "reported": "429",
+      "sum_components": "429",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 9; column 8; bbox 432.00,477.57,483.00,488.97"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "苗栗縣",
+      "metric_id": "table21_subtotal",
+      "reported": "4000",
+      "sum_components": "4000",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 10; column 8; bbox 432.00,491.51,483.00,502.91"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "南投縣",
+      "metric_id": "table21_subtotal",
+      "reported": "5341",
+      "sum_components": "5341",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 11; column 8; bbox 432.00,504.34,483.00,515.74"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "彰化縣",
+      "metric_id": "table21_subtotal",
+      "reported": "2235",
+      "sum_components": "2235",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 12; column 8; bbox 432.00,517.17,483.00,528.57"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "雲林縣",
+      "metric_id": "table21_subtotal",
+      "reported": "2448",
+      "sum_components": "2448",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 13; column 8; bbox 432.00,530.00,483.00,541.40"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "嘉義縣",
+      "metric_id": "table21_subtotal",
+      "reported": "1769",
+      "sum_components": "1769",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 14; column 8; bbox 432.00,542.83,483.00,554.23"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "嘉義市",
+      "metric_id": "table21_subtotal",
+      "reported": "517",
+      "sum_components": "517",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 15; column 8; bbox 432.00,555.71,483.00,567.11"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "屏東縣",
+      "metric_id": "table21_subtotal",
+      "reported": "4532",
+      "sum_components": "4532",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 16; column 8; bbox 432.00,568.54,483.00,579.94"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "宜蘭縣",
+      "metric_id": "table21_subtotal",
+      "reported": "2072",
+      "sum_components": "2072",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 17; column 8; bbox 432.00,581.37,483.00,592.77"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "花蓮縣",
+      "metric_id": "table21_subtotal",
+      "reported": "2566",
+      "sum_components": "2566",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 18; column 8; bbox 432.00,594.20,483.00,605.60"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "臺東縣",
+      "metric_id": "table21_subtotal",
+      "reported": "681",
+      "sum_components": "681",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 19; column 8; bbox 432.00,607.03,483.00,618.43"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "澎湖縣",
+      "metric_id": "table21_subtotal",
+      "reported": "463",
+      "sum_components": "463",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 20; column 8; bbox 432.00,619.86,483.00,631.26"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "金門縣",
+      "metric_id": "table21_subtotal",
+      "reported": "607",
+      "sum_components": "607",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 21; column 8; bbox 432.00,632.69,483.00,644.09"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "21",
+      "entity": "連江縣",
+      "metric_id": "table21_subtotal",
+      "reported": "94",
+      "sum_components": "94",
+      "matches": true,
+      "source_locator": "PDF page 6; printed page 60; table 21; data row 22; column 8; bbox 432.00,645.52,483.00,656.92"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "臺北市",
+      "metric_id": "table22_subtotal",
+      "reported": "975699",
+      "sum_components": "975699",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 1; column 8; bbox 433.00,142.38,483.00,153.78"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "新北市",
+      "metric_id": "table22_subtotal",
+      "reported": "1916951",
+      "sum_components": "1916951",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 2; column 8; bbox 433.00,158.05,483.00,169.45"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "臺中市",
+      "metric_id": "table22_subtotal",
+      "reported": "1244757",
+      "sum_components": "1244757",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 3; column 8; bbox 433.00,173.72,483.00,185.12"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "臺南市",
+      "metric_id": "table22_subtotal",
+      "reported": "1051747",
+      "sum_components": "1051747",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 4; column 8; bbox 433.00,189.39,483.00,200.79"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "高雄市",
+      "metric_id": "table22_subtotal",
+      "reported": "1962231",
+      "sum_components": "1962231",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 5; column 8; bbox 433.00,205.06,483.00,216.46"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "基隆市",
+      "metric_id": "table22_subtotal",
+      "reported": "101869",
+      "sum_components": "101869",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 6; column 8; bbox 433.00,220.73,483.00,232.13"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "桃園縣",
+      "metric_id": "table22_subtotal",
+      "reported": "850339",
+      "sum_components": "850339",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 7; column 8; bbox 433.00,236.40,483.00,247.80"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "新竹縣",
+      "metric_id": "table22_subtotal",
+      "reported": "166767",
+      "sum_components": "166767",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 8; column 8; bbox 433.00,252.07,483.00,263.47"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "新竹市",
+      "metric_id": "table22_subtotal",
+      "reported": "46661",
+      "sum_components": "46661",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 9; column 8; bbox 433.00,267.74,483.00,279.14"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "苗栗縣",
+      "metric_id": "table22_subtotal",
+      "reported": "339352",
+      "sum_components": "339352",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 10; column 8; bbox 433.00,283.41,483.00,294.81"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "南投縣",
+      "metric_id": "table22_subtotal",
+      "reported": "708455",
+      "sum_components": "708455",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 11; column 8; bbox 433.00,299.08,483.00,310.48"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "彰化縣",
+      "metric_id": "table22_subtotal",
+      "reported": "1170522",
+      "sum_components": "1170522",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 12; column 8; bbox 433.00,314.75,483.00,326.15"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "雲林縣",
+      "metric_id": "table22_subtotal",
+      "reported": "153086",
+      "sum_components": "153086",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 13; column 8; bbox 433.00,330.42,483.00,341.82"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "嘉義縣",
+      "metric_id": "table22_subtotal",
+      "reported": "59241",
+      "sum_components": "59241",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 14; column 8; bbox 433.00,346.09,483.00,357.49"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "嘉義市",
+      "metric_id": "table22_subtotal",
+      "reported": "29385",
+      "sum_components": "29385",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 15; column 8; bbox 433.00,361.76,483.00,373.16"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "屏東縣",
+      "metric_id": "table22_subtotal",
+      "reported": "2161746",
+      "sum_components": "2161746",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 16; column 8; bbox 433.00,377.43,483.00,388.83"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "宜蘭縣",
+      "metric_id": "table22_subtotal",
+      "reported": "174930",
+      "sum_components": "174930",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 17; column 8; bbox 433.00,393.10,483.00,404.50"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "花蓮縣",
+      "metric_id": "table22_subtotal",
+      "reported": "108365",
+      "sum_components": "108365",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 18; column 8; bbox 433.00,408.76,483.00,420.16"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "臺東縣",
+      "metric_id": "table22_subtotal",
+      "reported": "60842",
+      "sum_components": "60842",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 19; column 8; bbox 433.00,424.43,483.00,435.83"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "澎湖縣",
+      "metric_id": "table22_subtotal",
+      "reported": "19690",
+      "sum_components": "16090",
+      "matches": false,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 20; column 8; bbox 433.00,440.10,483.00,451.50"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "金門縣",
+      "metric_id": "table22_subtotal",
+      "reported": "181116",
+      "sum_components": "181116",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 21; column 8; bbox 433.00,455.77,483.00,467.17"
+    },
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "連江縣",
+      "metric_id": "table22_subtotal",
+      "reported": "2055",
+      "sum_components": "2055",
+      "matches": true,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 22; column 8; bbox 433.00,471.44,483.00,482.84"
+    }
+  ],
+  "arithmetic_discrepancies": [
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "澎湖縣",
+      "metric_id": "table22_subtotal",
+      "reported": "19690",
+      "sum_components": "16090",
+      "matches": false,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 20; column 8; bbox 433.00,440.10,483.00,451.50"
+    }
+  ],
+  "images_reviewed": [
+    "public-library PDF pages1–8",
+    "statistics PDF pages2,3,5"
+  ],
+  "independent_review_limit": "Producer image review of full table structure, headers and notes plus60 fixed source anchors; separate word-token or whole-row glyph checks cover all844 positions. Not an independent human full-cell double collation.",
+  "intentional_exclusions": [
+    "Public-library table24 construction/equipment subsidy plan; all subsequent local policy, construction, training and narrative examples; photographs.",
+    "Statistics chapter other library families, National Central Library separate type, school tables, publication industry and graphs duplicating selected tables."
+  ],
+  "rights": {
+    "license_status": "not_confirmed",
+    "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+    "full_originals_distribution": "not_in_public_bundle",
+    "statistical_facts_only": true
+  },
+  "source_caveats": [
+    "Table16 printed基隆人口4603498 differs from tables19/20 population373,077. No correction made.",
+    "Activities21/22 multi-line extracted text heading order is misleading; visual column order is authoritative.",
+    "Table199 includes private libraries; table14 and table202 public-only counts remain distinct.",
+    "Table200 holdings explicitly includes ebooks; historical table202 does not independently certify every older-year definition.",
+    "桃園縣 preserved as printed; no cross-year geography harmonization."
+  ]
+}

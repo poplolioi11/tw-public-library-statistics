@@ -3,6 +3,7 @@
 import argparse,datetime,hashlib,json,zipfile
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
+from cohort_registry import load as load_cohorts
 def sha(b):return hashlib.sha256(b).hexdigest()
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--force-new',action='store_true',help='archive a reviewed code/document revision even when canonical facts did not change');args=parser.parse_args()
@@ -16,16 +17,18 @@ def main():
  for directory,extensions in [('scripts',{'.py'}),('tests',{'.py'}),('docs',{'.md','.json'}),('research',{'.md','.json'}),('derived',{'.csv','.json','.jsonl'}),('data/combined',{'.csv','.json','.jsonl','.sqlite'})]:
   for p in (R/directory).rglob('*'):
    if p.is_file() and p.suffix in extensions and '__pycache__' not in p.parts:selected[str(p.relative_to(R))]=p.read_bytes()
- for name in ['observations.jsonl','indicators.json','source_manifest.json','source_history.jsonl','historical_source_history.jsonl','reviewed_policy.json','component_records.jsonl','component_quality.json','summary.json','coverage.json']:
+ for name in ['observations.jsonl','indicators.json','source_manifest.json','source_history.jsonl','historical_source_history.jsonl','reviewed_historical_cohorts.json','reviewed_policy.json','component_records.jsonl','component_quality.json','summary.json','coverage.json']:
   p=R/'data'/name
   if p.exists():selected[str(p.relative_to(R))]=p.read_bytes()
  selected['site/index.html']=(R/'site/index.html').read_bytes();selected['site/template.html']=(R/'site/template.html').read_bytes()
  # Include exact statistical JSON snapshots; website HTML/JS and full PDFs are intentionally omitted.
- for directory in ['raw/snapshots','raw/official-local','raw/ncl-historical','raw/ncl-additional','raw/ncl-earlier','raw/segis-history']:
+ directories=['raw/snapshots','raw/official-local','raw/ncl-historical','raw/ncl-additional','raw/ncl-earlier','raw/segis-history']
+ for group in load_cohorts(R) or []:directories.extend(group.get('raw_directories',[]))
+ for directory in dict.fromkeys(directories):
   for p in (R/directory).rglob('*'):
    if not p.is_file() or p.suffix not in {'.json','.jsonl','.pem','.crt'}:continue
    if directory=='raw/ncl-historical' and p.name not in {'documents.json','dgbas-documents.json','gap-tables-metadata.json'}:continue
-   if directory in {'raw/ncl-additional','raw/ncl-earlier'} and ('private' in p.name or 'page-text' in p.name):continue
+   if 'private' in p.name or 'page-text' in p.name:continue
    selected[str(p.relative_to(R))]=p.read_bytes()
  selected['raw/ncl-extension-documents.json']=(R/'raw/ncl-extension-documents.json').read_bytes()
  for path,body in sorted(selected.items()):manifest.append({'path':path,'sha256':sha(body),'bytes':len(body)})

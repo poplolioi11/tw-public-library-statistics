@@ -1,0 +1,13 @@
+{
+  "url": "https://publibstat.nlpi.edu.tw/index.php?do=statistic_2012",
+  "requested_url": "https://publibstat.nlpi.edu.tw/index.php?do=statistic_2012",
+  "final_url": "https://publibstat.nlpi.edu.tw/index.php?do=statistic_2012",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 60472,
+  "sha256": "724d9f010defd7295e627501b5e586a7bc552cd2c905e67fd4ebcfb153d31d67",
+  "retrieved_at": "2026-10-25T10:08:58.176374+00:00",
+  "license_status": "not_confirmed",
+  "snapshot_distribution": "not_in_public_bundle",
+  "local_path": "raw/ncl-2012/nlpi-statistic-2012.html"
+}

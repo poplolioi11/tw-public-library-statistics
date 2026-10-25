@@ -1,0 +1,93 @@
+{
+  "batch": "ncl_2015",
+  "source_ids": [
+    "ncl-yearbook-105-public-library",
+    "ncl-yearbook-105-statistics"
+  ],
+  "producer_command": [
+    "bundledPython",
+    "scripts/extract_ncl_2015.py",
+    "--offline"
+  ],
+  "producer_inputs": [
+    {
+      "path": "scripts/extract_ncl_2015.py",
+      "sha256": "058d64b36101d2a8015313c52bbb6a1da4a5eb56601046f338a3e9679bf7090c",
+      "bytes": 34585
+    },
+    {
+      "path": "raw/ncl-2015/yearbook-105-public-library.metadata.json",
+      "sha256": "141b042322b7a1c22675b401f279bf60b6ab1105b4347f58b98540718efedf17",
+      "bytes": 604
+    },
+    {
+      "path": "raw/ncl-2015/yearbook-105-statistics.metadata.json",
+      "sha256": "ec506f56a47e5da7b84747c75a91aea915d99643ae79bcb465cef1e520c84c0e",
+      "bytes": 596
+    },
+    {
+      "path": "raw/ncl-2015/yearbook-105-public-library.pdf",
+      "sha256": "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420",
+      "bytes": 1065480
+    },
+    {
+      "path": "raw/ncl-2015/yearbook-105-statistics.pdf",
+      "sha256": "9d0f04735a57cb1ccf018b3c9403aeacb3f15e12cfabe5d897717694be0999a1",
+      "bytes": 2447024
+    }
+  ],
+  "producer_outputs": [
+    {
+      "path": "derived/ncl_2015_long.csv",
+      "sha256": "76c7efa3bb1c24962f33ed9390fc9a74cc9bb59b9ef6c81956e7ce4ab55c21fd",
+      "bytes": 2361732
+    },
+    {
+      "path": "derived/ncl_2015_long.jsonl",
+      "sha256": "eedbda04a95a5c36b0b165535b9fd7604c9fae0f628a21aa0d6c1a0af2ced8d0",
+      "bytes": 3727369
+    },
+    {
+      "path": "raw/ncl-2015/documents.json",
+      "sha256": "a0f95406b808470f44491721599d5f0004c7eb76afb93eafb9822e472319e688",
+      "bytes": 9814
+    },
+    {
+      "path": "raw/ncl-2015/extraction-validation.json",
+      "sha256": "3e54ed6fe16f85a4452ece43192638497a74ce9a1c58c8a138a89d6ceaf57db5",
+      "bytes": 58749
+    }
+  ],
+  "context_evidence_inputs": [
+    {
+      "path": "raw/ncl-2015/yearbook-105-copyright.metadata.json",
+      "sha256": "7b7d5e72a88464b943f876743be4851393694c2b3284a96de97376580e6e4466",
+      "bytes": 594
+    },
+    {
+      "path": "raw/ncl-2015/yearbook-105-editing.metadata.json",
+      "sha256": "a98549395763da9225c321895e2f738cd44d3d20adc886e9941ea899ddd36b08",
+      "bytes": 590
+    },
+    {
+      "path": "raw/ncl-2015/yearbook-105-rights.metadata.json",
+      "sha256": "5fa4018eaa54d8e6804c5653a0a628c9ed989caa0f29e7f075d1d633113f9642",
+      "bytes": 545
+    },
+    {
+      "path": "raw/ncl-2015/yearbook-105-toc.metadata.json",
+      "sha256": "b76be72ee5dbba1b8d4f3aedd37187e2f71deee28f85170267195d01e9ea3926",
+      "bytes": 582
+    }
+  ],
+  "required_cache_conditions": "Producer signature and every input SHA unchanged, all declared outputs exist with verified SHA. Missing/corrupt originals cannot count as a valid cache. Offline only; sourcechanged SHA stops, no old-coordinate extraction.",
+  "no_op_verified": true,
+  "unchanged_outputs_keep_mtime": true,
+  "changed_source_failure_keeps_previous_outputs": true,
+  "restore_policy": "Only missing exact-SHA PDF bodies may be restored from observed official attachment URLs. A different body requires explicit new version/image review.",
+  "shared_files_mutated": false,
+  "canonical_or_adapter_mutated": false,
+  "publication_action": false,
+  "identity_migration": "Use observation_identity_suffix only when nonempty for the new source, do not regenerate old IDs under a different recipe.",
+  "unresolved_unit_contract": "Table17unitnull; original raw unit and candidate kept separately."
+}

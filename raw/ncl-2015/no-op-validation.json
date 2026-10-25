@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "offline_rebuild_changed_bytes": false,
+  "offline_rebuild_changed_mtime": false,
+  "csv_jsonl_full_field_equivalence_rows": 909,
+  "changed_source_failure_keeps_previous_outputs": true,
+  "isolated_failure_fixture": true,
+  "files": {
+    "derived/ncl_2015_long.csv": {
+      "sha256": "76c7efa3bb1c24962f33ed9390fc9a74cc9bb59b9ef6c81956e7ce4ab55c21fd"
+    },
+    "derived/ncl_2015_long.jsonl": {
+      "sha256": "eedbda04a95a5c36b0b165535b9fd7604c9fae0f628a21aa0d6c1a0af2ced8d0"
+    },
+    "raw/ncl-2015/documents.json": {
+      "sha256": "a0f95406b808470f44491721599d5f0004c7eb76afb93eafb9822e472319e688"
+    },
+    "raw/ncl-2015/extraction-validation.json": {
+      "sha256": "3e54ed6fe16f85a4452ece43192638497a74ce9a1c58c8a138a89d6ceaf57db5"
+    }
+  },
+  "final_unresolved_unit_cells_verified": 161
+}

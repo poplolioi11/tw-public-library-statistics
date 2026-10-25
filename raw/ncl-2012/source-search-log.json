@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-25T10:21:53.375002+00:00",
+  "scope": "2012 official operational core amounts; findings do not prove absence elsewhere",
+  "sources": [
+    {
+      "url": "http://publibstat.ntl.gov.tw/index.php?do=statistic_2012",
+      "status": "DNS lookup failed; error file saved",
+      "evidence_path": "raw/ncl-2012/old-statistic-2012.error.json"
+    },
+    {
+      "url": "https://publibstat.nlpi.edu.tw/index.php?do=statistic_2012",
+      "status": "200; current homepage HTML rather than historical2012 tables",
+      "evidence_path": "raw/ncl-2012/nlpi-statistic-2012.html"
+    },
+    {
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/ReportSearch",
+      "status": "public report category page; no county numeric data read",
+      "evidence_path": "raw/ncl-2012/nlpi-reports.html"
+    },
+    {
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/Collections",
+      "status": "public form shows years2011–2025 but geography choices in returnedHTML are national/levels only; no22county request or private API was made",
+      "evidence_path": "raw/ncl-2012/nlpi-collections.html"
+    },
+    {
+      "url": "https://www.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510093022664.pdf",
+      "status": "404; historical annual-report search result does not prove current downloadable file",
+      "evidence_path": "raw/ncl-2012/nlpi-annual-101.error.json"
+    },
+    {
+      "url": "https://nclfile.ncl.edu.tw/files/202404/f1e61a6f-a078-4be6-9476-e849545977e6.pdf",
+      "status": "urllibHTTP503; no complete bytes accepted"
+    },
+    {
+      "url": "https://nclfile.ncl.edu.tw/nclhistory/public/Attachment/32251658871.pdf",
+      "status": "urllibread timeout; curlmax25seconds0bytes; no incomplete PDF accepted"
+    },
+    {
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q082532021110999161/32251658871.pdf",
+      "status": "success via link observed in current officialgallery; PDF71pages retained privately; reading report transferred to novelty agent to avoid duplicate extraction",
+      "evidence_path": "raw/ncl-2012/ncl-reading-101.metadata.json"
+    },
+    {
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565357648017327/dc20b708-7092-4ae3-ac7e-ff8fe001c257.pdf",
+      "status": "success;103edition assessment chapter22pages. Tables14–28 are pass/fail assessment aggregates from2012 data, not22county raw operational amounts. Tables8/11 count2013 assessment entries/awards, not2012 operating libraries. Intentionally excluded from core amounts.",
+      "evidence_path": "raw/ncl-2012/ncl-yearbook-103-assessment-2012.metadata.json"
+    },
+    {
+      "url": "https://www.nlpi.edu.tw/Public/Publish/publib/由閱讀推廣與館藏充實計畫成果談臺灣公共圖書館成長.pdf",
+      "status": "success;2017 signed article has national annual activity totals and programme outcomes, not22county2012 core amount table; retained privately, not imported",
+      "evidence_path": "raw/ncl-2012/nlpi-publib-2016.metadata.json"
+    }
+  ],
+  "searches": [
+    "2012 公共圖書館 統計 縣市101館藏購書經費國立公共資訊圖書館pdf",
+    "101年公共圖書館縣市別館藏人力",
+    "2012年度彙整結果xls",
+    "臺灣101年閱讀習慣調查結果報告",
+    "國立臺中圖書館101年年報"
+  ]
+}

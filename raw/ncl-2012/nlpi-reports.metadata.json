@@ -1,0 +1,13 @@
+{
+  "url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/ReportSearch",
+  "requested_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/ReportSearch",
+  "final_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/ReportSearch",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 28842,
+  "sha256": "7a3b7e74217a8b0952d2b9f66b4b9186a1c8089a2b61715217a35aee2a34f6dc",
+  "retrieved_at": "2026-10-25T10:09:00.162829+00:00",
+  "license_status": "not_confirmed",
+  "snapshot_distribution": "not_in_public_bundle",
+  "local_path": "raw/ncl-2012/nlpi-reports.html"
+}

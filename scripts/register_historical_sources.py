@@ -3,9 +3,10 @@
 import csv,hashlib,json
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
+from cohort_registry import csv_names
 def main():
  sources={};versions={}
- for filename in ('ncl_gap_tables_long.csv','ncl_earlier_years_long.csv','ncl_additional_years_long.csv'):
+ for filename in csv_names(R,('ncl_gap_tables_long.csv','ncl_earlier_years_long.csv','ncl_additional_years_long.csv')):
   path=R/'derived'/filename
   if not path.exists():continue
   with path.open(encoding='utf-8-sig') as f:

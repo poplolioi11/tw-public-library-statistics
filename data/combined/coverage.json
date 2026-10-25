@@ -846,6 +846,72 @@
     "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {
+    "source_id": "ncl-yearbook-104-statistics",
+    "year": null,
+    "data_years": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014
+    ],
+    "periods": [
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "records": 35,
+    "geographies": [
+      "全國",
+      "公共圖書館（含私立）",
+      "國立圖書館",
+      "直轄市立圖書館",
+      "私立圖書館",
+      "縣市立圖書館",
+      "鄉鎮市立圖書館"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565649788470323/03d7f4df-ecfc-45bb-8ea5-19d1e9c204d1.pdf#page=5",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "ncl-reading-2012-t1",
+    "year": null,
+    "data_years": [
+      2011,
+      2012
+    ],
+    "periods": [
+      "2011",
+      "2012"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q082532021110999161/32251658871.pdf#page=14",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "ncl-reading-2012-t2",
+    "year": null,
+    "data_years": [
+      2011,
+      2012
+    ],
+    "periods": [
+      "2011",
+      "2012"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q082532021110999161/32251658871.pdf#page=14",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
     "source_id": "ncl-yearbook-101-public-library",
     "year": 2011,
     "data_years": [
@@ -907,6 +973,36 @@
       "鄉鎮市立圖書館"
     ],
     "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565454479173537/2b5f95fc-2194-476c-a9ad-0a834bf823b9.pdf#page=7",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "ncl-yearbook-105-statistics",
+    "year": null,
+    "data_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "periods": [
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015"
+    ],
+    "records": 35,
+    "geographies": [
+      "全國",
+      "公共圖書館（含私立）",
+      "國立圖書館",
+      "直轄市立圖書館",
+      "私立圖書館",
+      "縣市立圖書館",
+      "鄉鎮市立圖書館"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565655002550923/44769db2-aa6d-4127-af74-539850118a7f.pdf#page=5",
     "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {
@@ -1068,6 +1164,98 @@
     ],
     "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
     "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "ncl-reading-2012-t3",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 4,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q082532021110999161/32251658871.pdf#page=15",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "ncl-reading-2012-t4",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 108,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q082532021110999161/32251658871.pdf#page=16",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "ncl-reading-2012-t5",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 36,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q082532021110999161/32251658871.pdf#page=16",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "ncl-yearbook-102-operational-prose-2012",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 270,
+    "geographies": [
+      "全國",
+      "南投縣",
+      "嘉義市",
+      "嘉義縣",
+      "國立級圖書館",
+      "國立臺中圖書館",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新北市",
+      "新竹市",
+      "新竹縣",
+      "桃園縣",
+      "澎湖縣",
+      "直轄市級圖書館",
+      "縣市級圖書館",
+      "臺中市",
+      "臺北市",
+      "臺南市",
+      "臺東縣",
+      "臺灣省政府圖書館",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "鄉鎮市級圖書館",
+      "金門縣",
+      "雲林縣",
+      "高雄市"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565384142944973/96650c02-f72a-487c-9462-6a3c29efe29e.pdf#page=1",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {
     "source_id": "ncl-yearbook-102-statistics",
@@ -1455,6 +1643,48 @@
     "rights": "publicly_published_statistical_facts"
   },
   {
+    "source_id": "ncl-yearbook-104-public-library",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 809,
+    "geographies": [
+      "南投縣",
+      "合計",
+      "嘉義市",
+      "嘉義縣",
+      "國立級圖書館",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新北市",
+      "新竹市",
+      "新竹縣",
+      "桃園縣",
+      "澎湖縣",
+      "直轄市級圖書館",
+      "縣市級圖書館",
+      "臺中市",
+      "臺北市",
+      "臺南市",
+      "臺東縣",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "鄉鎮市區級圖書館",
+      "金門縣",
+      "雲林縣",
+      "高雄市"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565635885420279/44a84d69-6c0a-4d0f-97ab-2fb2daa4e7b8.pdf#page=2",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
     "source_id": "public-chart-2014-Bacol00282",
     "year": 2014,
     "data_years": [
@@ -1780,6 +2010,48 @@
     ],
     "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67",
     "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "ncl-yearbook-105-public-library",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 874,
+    "geographies": [
+      "南投縣",
+      "合計",
+      "嘉義市",
+      "嘉義縣",
+      "國立級圖書館",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新北市",
+      "新竹市",
+      "新竹縣",
+      "桃園縣",
+      "澎湖縣",
+      "直轄市級圖書館",
+      "縣市級圖書館",
+      "臺中市",
+      "臺北市",
+      "臺南市",
+      "臺東縣",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "鄉鎮市區級圖書館",
+      "金門縣",
+      "雲林縣",
+      "高雄市"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565640675631852/205753eb-0971-49fe-879f-3053d3308ec3.pdf#page=2",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {
     "source_id": "public-chart-2015-Bacol00282",

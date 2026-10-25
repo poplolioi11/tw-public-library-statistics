@@ -1,0 +1,1638 @@
+{
+  "method": "PDFium bounded text against producer PDF text-matrix spans; whitespace/NFKC only, no numeric guessing",
+  "checks": [
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 1; bbox 178.560,517.371,183.570,530.871",
+      "expected_raw": "1",
+      "independent_pdfium_bounded_raw": "1",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 2; bbox 237.960,517.371,242.970,530.871",
+      "expected_raw": "3",
+      "independent_pdfium_bounded_raw": "3",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 3; bbox 119.160,534.292,124.170,547.792",
+      "expected_raw": "3",
+      "independent_pdfium_bounded_raw": "3",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 4; bbox 56.700,618.772,66.750,632.272",
+      "expected_raw": "42",
+      "independent_pdfium_bounded_raw": "42",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 5; bbox 142.200,618.772,152.250,632.272",
+      "expected_raw": "11",
+      "independent_pdfium_bounded_raw": "11",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 6; bbox 227.700,618.772,232.710,632.272",
+      "expected_raw": "9",
+      "independent_pdfium_bounded_raw": "9",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 7; bbox 221.100,635.692,231.150,649.192",
+      "expected_raw": "60",
+      "independent_pdfium_bounded_raw": "60",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 8; bbox 91.140,652.552,101.130,666.052",
+      "expected_raw": "39",
+      "independent_pdfium_bounded_raw": "39",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 9; bbox 89.040,669.472,99.030,682.972",
+      "expected_raw": "58",
+      "independent_pdfium_bounded_raw": "58",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 10; bbox 148.620,669.472,158.610,682.972",
+      "expected_raw": "32",
+      "independent_pdfium_bounded_raw": "32",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel L; section 1; prose numeral 11; bbox 233.160,669.472,238.170,682.972",
+      "expected_raw": "3",
+      "independent_pdfium_bounded_raw": "3",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 12; bbox 376.620,200.451,386.670,213.951",
+      "expected_raw": "34",
+      "independent_pdfium_bounded_raw": "34",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 13; bbox 453.480,200.451,458.490,213.951",
+      "expected_raw": "7",
+      "independent_pdfium_bounded_raw": "7",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 14; bbox 316.620,217.372,326.670,230.872",
+      "expected_raw": "66",
+      "independent_pdfium_bounded_raw": "66",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 15; bbox 403.440,217.372,408.450,230.872",
+      "expected_raw": "7",
+      "independent_pdfium_bounded_raw": "7",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 16; bbox 315.660,234.232,325.650,247.732",
+      "expected_raw": "35",
+      "independent_pdfium_bounded_raw": "35",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 17; bbox 390.060,234.232,395.070,247.732",
+      "expected_raw": "7",
+      "independent_pdfium_bounded_raw": "7",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 18; bbox 449.460,234.232,459.450,247.732",
+      "expected_raw": "82",
+      "independent_pdfium_bounded_raw": "82",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 19; bbox 335.640,251.152,340.650,264.652",
+      "expected_raw": "1",
+      "independent_pdfium_bounded_raw": "1",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 20; bbox 451.680,251.152,461.730,264.652",
+      "expected_raw": "17",
+      "independent_pdfium_bounded_raw": "17",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 21; bbox 305.640,268.072,310.650,281.572",
+      "expected_raw": "6",
+      "independent_pdfium_bounded_raw": "6",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 22; bbox 362.520,268.072,372.510,281.572",
+      "expected_raw": "28",
+      "independent_pdfium_bounded_raw": "28",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 23; bbox 447.540,268.072,462.510,281.572",
+      "expected_raw": "118",
+      "independent_pdfium_bounded_raw": "118",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 24; bbox 412.740,284.932,427.710,298.432",
+      "expected_raw": "216",
+      "independent_pdfium_bounded_raw": "216",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 25; bbox 472.020,284.932,482.010,298.432",
+      "expected_raw": "32",
+      "independent_pdfium_bounded_raw": "32",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 26; bbox 336.600,301.852,351.630,315.352",
+      "expected_raw": "295",
+      "independent_pdfium_bounded_raw": "295",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 27; bbox 428.520,301.852,438.510,315.352",
+      "expected_raw": "29",
+      "independent_pdfium_bounded_raw": "29",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 28; bbox 425.040,318.772,430.050,332.272",
+      "expected_raw": "1",
+      "independent_pdfium_bounded_raw": "1",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 29; bbox 295.620,335.632,300.630,349.132",
+      "expected_raw": "1",
+      "independent_pdfium_bounded_raw": "1",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 30; bbox 411.300,335.632,426.270,349.132",
+      "expected_raw": "308",
+      "independent_pdfium_bounded_raw": "308",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 31; bbox 466.920,335.632,481.890,349.132",
+      "expected_raw": "211",
+      "independent_pdfium_bounded_raw": "211",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 32; bbox 335.640,352.552,350.610,366.052",
+      "expected_raw": "557",
+      "independent_pdfium_bounded_raw": "557",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 1; prose numeral 33; bbox 425.640,352.552,440.610,366.052",
+      "expected_raw": "171",
+      "independent_pdfium_bounded_raw": "171",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 1; bbox 465.000,403.252,481.960,416.752; PDF page 1; printed page 69; panel R; section 2; prose numeral 1; bbox 283.140,420.172,305.665,433.672",
+      "expected_raw": "1萬4,344",
+      "independent_pdfium_bounded_raw": "1萬4,344",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 2; bbox 398.820,420.172,421.281,433.672",
+      "expected_raw": "1,213",
+      "independent_pdfium_bounded_raw": "1,213",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 3; bbox 283.140,437.032,305.665,450.532",
+      "expected_raw": "1,560",
+      "independent_pdfium_bounded_raw": "1,560",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 4; bbox 378.600,437.032,393.570,450.532",
+      "expected_raw": "306",
+      "independent_pdfium_bounded_raw": "306",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 5; bbox 446.640,437.032,461.730,450.532",
+      "expected_raw": "193",
+      "independent_pdfium_bounded_raw": "193",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 6; bbox 305.640,453.952,335.670,467.452",
+      "expected_raw": "1萬70",
+      "independent_pdfium_bounded_raw": "1萬70",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 7; bbox 378.840,453.952,401.301,467.452",
+      "expected_raw": "1,002",
+      "independent_pdfium_bounded_raw": "1,002",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 8; bbox 326.280,470.872,348.805,484.372",
+      "expected_raw": "1,048",
+      "independent_pdfium_bounded_raw": "1,048",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 9; bbox 283.140,487.732,305.665,501.232",
+      "expected_raw": "8,463",
+      "independent_pdfium_bounded_raw": "8,463",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 10; bbox 428.820,487.732,451.285,501.232",
+      "expected_raw": "1,307",
+      "independent_pdfium_bounded_raw": "1,307",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 11; bbox 386.280,504.652,408.805,518.152",
+      "expected_raw": "3,438",
+      "independent_pdfium_bounded_raw": "3,438",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 12; bbox 357.540,521.572,367.590,535.072",
+      "expected_raw": "88",
+      "independent_pdfium_bounded_raw": "88",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 13; bbox 325.980,555.351,369.145,568.851",
+      "expected_raw": "1萬9,221",
+      "independent_pdfium_bounded_raw": "1萬9,221",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 14; bbox 293.160,589.131,335.665,602.631",
+      "expected_raw": "6萬2,721",
+      "independent_pdfium_bounded_raw": "6萬2,721",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 15; bbox 402.360,589.131,444.861,602.631",
+      "expected_raw": "5萬4,244",
+      "independent_pdfium_bounded_raw": "5萬4,244",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 16; bbox 310.320,606.052,352.825,619.552",
+      "expected_raw": "4萬2,507",
+      "independent_pdfium_bounded_raw": "4萬2,507",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 17; bbox 414.780,606.052,457.285,619.552",
+      "expected_raw": "3萬9,807",
+      "independent_pdfium_bounded_raw": "3萬9,807",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 18; bbox 323.160,622.972,368.181,636.472",
+      "expected_raw": "3萬9,393",
+      "independent_pdfium_bounded_raw": "3萬9,393",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 19; bbox 436.920,622.972,481.941,636.472",
+      "expected_raw": "3萬7,703",
+      "independent_pdfium_bounded_raw": "3萬7,703",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 20; bbox 348.180,639.832,393.801,653.332",
+      "expected_raw": "2萬1,833",
+      "independent_pdfium_bounded_raw": "2萬1,833",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 21; bbox 462.900,639.832,482.020,653.332; PDF page 1; printed page 69; panel R; section 2; prose numeral 21; bbox 283.140,656.752,305.665,670.252",
+      "expected_raw": "2萬1,050",
+      "independent_pdfium_bounded_raw": "2萬1,050",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 22; bbox 373.440,656.752,409.110,670.252",
+      "expected_raw": "2萬975",
+      "independent_pdfium_bounded_raw": "2萬975",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 23; bbox 476.940,656.752,481.950,670.252; PDF page 2; printed page 70; panel L; section 2; prose numeral 23; bbox 56.700,79.552,91.701,93.052",
+      "expected_raw": "1萬9,510",
+      "independent_pdfium_bounded_raw": "1萬9,510",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 24; bbox 156.720,79.552,199.225,93.052",
+      "expected_raw": "1萬9,401",
+      "independent_pdfium_bounded_raw": "1萬9,401",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 25; bbox 105.480,113.331,147.981,126.831",
+      "expected_raw": "1萬7,404",
+      "independent_pdfium_bounded_raw": "1萬7,404",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 26; bbox 213.000,113.331,255.505,126.831",
+      "expected_raw": "1萬7,341",
+      "independent_pdfium_bounded_raw": "1萬7,341",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 27; bbox 121.740,130.252,167.361,143.752",
+      "expected_raw": "1萬6,173",
+      "independent_pdfium_bounded_raw": "1萬6,173",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 28; bbox 236.460,130.252,255.580,143.752; PDF page 2; printed page 70; panel L; section 2; prose numeral 28; bbox 56.700,147.112,79.225,160.612",
+      "expected_raw": "1萬5,235",
+      "independent_pdfium_bounded_raw": "1萬5,235",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 29; bbox 143.580,147.112,186.081,160.612",
+      "expected_raw": "1萬4,460",
+      "independent_pdfium_bounded_raw": "1萬4,460",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 30; bbox 250.500,147.112,255.510,160.612; PDF page 2; printed page 70; panel L; section 2; prose numeral 30; bbox 56.700,164.032,91.701,177.532",
+      "expected_raw": "1萬3,488",
+      "independent_pdfium_bounded_raw": "1萬3,488",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 31; bbox 151.080,164.032,173.605,177.532",
+      "expected_raw": "9,884",
+      "independent_pdfium_bounded_raw": "9,884",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 32; bbox 232.980,164.032,255.505,177.532",
+      "expected_raw": "9,633",
+      "independent_pdfium_bounded_raw": "9,633",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 33; bbox 119.220,180.952,141.937,194.452",
+      "expected_raw": "8,327",
+      "independent_pdfium_bounded_raw": "8,327",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 34; bbox 207.420,180.952,230.185,194.452",
+      "expected_raw": "7,252",
+      "independent_pdfium_bounded_raw": "7,252",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 1; bbox 129.840,248.512,212.425,262.012",
+      "expected_raw": "4億8,794萬7,482",
+      "independent_pdfium_bounded_raw": "4億8,794萬7,482",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 2; bbox 108.300,265.432,184.765,278.932",
+      "expected_raw": "3億2,378萬9,753",
+      "independent_pdfium_bounded_raw": "3億2,378萬9,753",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 3; bbox 232.920,265.432,255.445,278.932; PDF page 2; printed page 70; panel L; section 3; prose numeral 3; bbox 56.700,282.352,91.701,295.852",
+      "expected_raw": "5,123萬4,206",
+      "independent_pdfium_bounded_raw": "5,123萬4,206",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 4; bbox 144.840,282.352,204.801,295.852",
+      "expected_raw": "2,916萬9,691",
+      "independent_pdfium_bounded_raw": "2,916萬9,691",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 5; bbox 80.280,299.212,142.405,312.712",
+      "expected_raw": "3,485萬3,926",
+      "independent_pdfium_bounded_raw": "3,485萬3,926",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 6; bbox 219.480,299.212,255.520,312.712; PDF page 2; printed page 70; panel L; section 3; prose numeral 6; bbox 56.700,316.132,79.225,329.632",
+      "expected_raw": "1,737萬3,180",
+      "independent_pdfium_bounded_raw": "1,737萬3,180",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 7; bbox 153.660,316.132,213.621,329.632",
+      "expected_raw": "3,152萬6,726",
+      "independent_pdfium_bounded_raw": "3,152萬6,726",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 8; bbox 198.000,333.052,255.559,346.552",
+      "expected_raw": "3,386萬3,148",
+      "independent_pdfium_bounded_raw": "3,386萬3,148",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 9; bbox 56.700,366.832,116.725,380.332",
+      "expected_raw": "3,136萬9,190",
+      "independent_pdfium_bounded_raw": "3,136萬9,190",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 10; bbox 100.140,383.752,162.085,397.252",
+      "expected_raw": "4,795萬5,214",
+      "independent_pdfium_bounded_raw": "4,795萬5,214",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 11; bbox 159.540,400.612,212.670,414.112",
+      "expected_raw": "9,149萬509",
+      "independent_pdfium_bounded_raw": "9,149萬509",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 12; bbox 225.240,417.532,255.520,431.032; PDF page 2; printed page 70; panel L; section 3; prose numeral 12; bbox 56.700,434.452,79.225,447.952",
+      "expected_raw": "126萬9,421",
+      "independent_pdfium_bounded_raw": "126萬9,421",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 13; bbox 189.840,451.312,212.377,464.812",
+      "expected_raw": "約20.93",
+      "independent_pdfium_bounded_raw": "20.93",
+      "matches": false,
+      "qualifier_verified_in_adjacent_source_context": true,
+      "context_bbox": [
+        174,
+        451.312,
+        212.377,
+        464.812
+      ],
+      "bounded_context": "費約 20.93 ",
+      "matches_with_printed_qualifier": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 14; bbox 86.400,485.151,108.937,498.651",
+      "expected_raw": "85.29",
+      "independent_pdfium_bounded_raw": "85.29",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 15; bbox 175.860,485.151,198.329,498.651",
+      "expected_raw": "39.37",
+      "independent_pdfium_bounded_raw": "39.37",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 16; bbox 67.500,502.012,91.235,515.512",
+      "expected_raw": "29.31",
+      "independent_pdfium_bounded_raw": "29.31",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 17; bbox 168.060,502.012,191.843,515.512",
+      "expected_raw": "27.41",
+      "independent_pdfium_bounded_raw": "27.41",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 18; bbox 67.500,518.932,91.235,532.432",
+      "expected_raw": "25.81",
+      "independent_pdfium_bounded_raw": "25.81",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 19; bbox 167.280,518.932,190.951,532.432",
+      "expected_raw": "25.57",
+      "independent_pdfium_bounded_raw": "25.57",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 20; bbox 66.720,535.852,90.027,549.352",
+      "expected_raw": "24.60",
+      "independent_pdfium_bounded_raw": "24.60",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 21; bbox 139.020,552.712,162.395,566.212",
+      "expected_raw": "20.17",
+      "independent_pdfium_bounded_raw": "20.17",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 22; bbox 231.960,552.712,255.335,566.212",
+      "expected_raw": "19.73",
+      "independent_pdfium_bounded_raw": "19.73",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 23; bbox 119.820,569.632,142.413,583.132",
+      "expected_raw": "19.01",
+      "independent_pdfium_bounded_raw": "19.01",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 24; bbox 207.540,569.632,230.249,583.132",
+      "expected_raw": "18.56",
+      "independent_pdfium_bounded_raw": "18.56",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 25; bbox 95.880,586.552,118.774,600.052",
+      "expected_raw": "17.78",
+      "independent_pdfium_bounded_raw": "17.78",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 26; bbox 185.280,586.552,208.174,600.052",
+      "expected_raw": "14.62",
+      "independent_pdfium_bounded_raw": "14.62",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 27; bbox 77.040,603.412,100.775,616.912",
+      "expected_raw": "14.46",
+      "independent_pdfium_bounded_raw": "14.46",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 28; bbox 171.660,603.412,195.395,616.912",
+      "expected_raw": "13.80",
+      "independent_pdfium_bounded_raw": "13.80",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 29; bbox 67.500,620.332,91.171,633.832",
+      "expected_raw": "13.75",
+      "independent_pdfium_bounded_raw": "13.75",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 30; bbox 166.980,620.332,190.715,633.832",
+      "expected_raw": "12.38",
+      "independent_pdfium_bounded_raw": "12.38",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 31; bbox 67.500,637.252,91.171,650.752",
+      "expected_raw": "12.28",
+      "independent_pdfium_bounded_raw": "12.28",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 32; bbox 166.980,637.252,190.715,650.752",
+      "expected_raw": "12.18",
+      "independent_pdfium_bounded_raw": "12.18",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 33; bbox 66.720,654.112,89.189,667.612",
+      "expected_raw": "10.66",
+      "independent_pdfium_bounded_raw": "10.66",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 34; bbox 154.920,654.112,172.398,667.612",
+      "expected_raw": "9.11",
+      "independent_pdfium_bounded_raw": "9.11",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 35; bbox 238.080,654.112,255.558,667.612",
+      "expected_raw": "6.41",
+      "independent_pdfium_bounded_raw": "6.41",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 1; bbox 315.660,113.332,375.621,126.832",
+      "expected_raw": "3,725萬4,822",
+      "independent_pdfium_bounded_raw": "3,725萬4,822",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 2; bbox 305.640,130.252,365.665,143.752",
+      "expected_raw": "3,572萬6,523",
+      "independent_pdfium_bounded_raw": "3,572萬6,523",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 3; bbox 408.780,130.252,451.285,143.752",
+      "expected_raw": "5萬7,759",
+      "independent_pdfium_bounded_raw": "5萬7,759",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 4; bbox 295.680,147.112,318.141,160.612",
+      "expected_raw": "5,506",
+      "independent_pdfium_bounded_raw": "5,506",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 5; bbox 358.800,147.112,406.285,160.612",
+      "expected_raw": "27萬8,198",
+      "independent_pdfium_bounded_raw": "27萬8,198",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 6; bbox 466.980,147.112,481.950,160.612; PDF page 2; printed page 70; panel R; section 4; prose numeral 6; bbox 283.140,164.032,318.141,177.532",
+      "expected_raw": "124萬3,017",
+      "independent_pdfium_bounded_raw": "124萬3,017",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 7; bbox 382.560,164.032,430.041,177.532",
+      "expected_raw": "28萬5,282",
+      "independent_pdfium_bounded_raw": "28萬5,282",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 8; bbox 375.960,180.952,429.145,194.452",
+      "expected_raw": "276萬1,882",
+      "independent_pdfium_bounded_raw": "276萬1,882",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 9; bbox 415.740,197.812,481.941,211.312",
+      "expected_raw": "2,105萬2,217",
+      "independent_pdfium_bounded_raw": "2,105萬2,217",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 10; bbox 451.680,214.732,481.960,228.232; PDF page 2; printed page 70; panel R; section 4; prose numeral 10; bbox 283.140,231.652,305.665,245.152",
+      "expected_raw": "365萬8,696",
+      "independent_pdfium_bounded_raw": "365萬8,696",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 11; bbox 283.140,248.512,329.010,262.012",
+      "expected_raw": "958萬504",
+      "independent_pdfium_bounded_raw": "958萬504",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 12; bbox 315.660,265.432,363.145,278.932",
+      "expected_raw": "20萬1,523",
+      "independent_pdfium_bounded_raw": "20萬1,523",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 13; bbox 385.680,282.352,403.158,295.852",
+      "expected_raw": "1.60",
+      "independent_pdfium_bounded_raw": "1.60",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 14; bbox 459.420,299.212,481.953,312.712",
+      "expected_raw": "10.89",
+      "independent_pdfium_bounded_raw": "10.89",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 15; bbox 348.180,316.132,365.725,329.632",
+      "expected_raw": "4.37",
+      "independent_pdfium_bounded_raw": "4.37",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 16; bbox 435.060,316.132,452.545,329.632",
+      "expected_raw": "2.50",
+      "independent_pdfium_bounded_raw": "2.50",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 17; bbox 322.860,333.052,340.345,346.552",
+      "expected_raw": "2.49",
+      "independent_pdfium_bounded_raw": "2.49",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 18; bbox 407.280,333.052,424.765,346.552",
+      "expected_raw": "2.26",
+      "independent_pdfium_bounded_raw": "2.26",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 19; bbox 293.160,349.912,310.705,363.412",
+      "expected_raw": "2.14",
+      "independent_pdfium_bounded_raw": "2.14",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 20; bbox 378.780,349.912,396.265,363.412",
+      "expected_raw": "2.09",
+      "independent_pdfium_bounded_raw": "2.09",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 21; bbox 464.460,349.912,481.945,363.412",
+      "expected_raw": "1.87",
+      "independent_pdfium_bounded_raw": "1.87",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 22; bbox 348.180,366.832,365.725,380.332",
+      "expected_raw": "1.86",
+      "independent_pdfium_bounded_raw": "1.86",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 23; bbox 435.060,366.832,452.545,380.332",
+      "expected_raw": "1.67",
+      "independent_pdfium_bounded_raw": "1.67",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 24; bbox 323.460,383.752,340.938,397.252",
+      "expected_raw": "1.62",
+      "independent_pdfium_bounded_raw": "1.62",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 25; bbox 400.200,400.612,418.046,414.112",
+      "expected_raw": "1.58",
+      "independent_pdfium_bounded_raw": "1.58",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 26; bbox 293.160,417.532,310.705,431.032",
+      "expected_raw": "1.53",
+      "independent_pdfium_bounded_raw": "1.53",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 27; bbox 378.780,417.532,396.265,431.032",
+      "expected_raw": "1.43",
+      "independent_pdfium_bounded_raw": "1.43",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 28; bbox 464.460,417.532,481.945,431.032",
+      "expected_raw": "1.42",
+      "independent_pdfium_bounded_raw": "1.42",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 29; bbox 348.180,434.452,365.725,447.952",
+      "expected_raw": "1.41",
+      "independent_pdfium_bounded_raw": "1.41",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 30; bbox 435.060,434.452,452.545,447.952",
+      "expected_raw": "1.39",
+      "independent_pdfium_bounded_raw": "1.39",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 31; bbox 322.860,451.312,340.345,464.812",
+      "expected_raw": "1.29",
+      "independent_pdfium_bounded_raw": "1.29",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 32; bbox 407.280,451.312,424.765,464.812",
+      "expected_raw": "1.10",
+      "independent_pdfium_bounded_raw": "1.10",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 33; bbox 293.160,468.232,310.705,481.732",
+      "expected_raw": "0.86",
+      "independent_pdfium_bounded_raw": "0.86",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 34; bbox 378.780,468.232,396.265,481.732",
+      "expected_raw": "0.82",
+      "independent_pdfium_bounded_raw": "0.82",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 35; bbox 464.460,468.232,481.945,481.732",
+      "expected_raw": "0.64",
+      "independent_pdfium_bounded_raw": "0.64",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 5; prose numeral 1; bbox 325.980,552.712,369.145,566.212",
+      "expected_raw": "8萬3,025",
+      "independent_pdfium_bounded_raw": "8萬3,025",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 5; prose numeral 2; bbox 346.260,569.632,368.785,583.132",
+      "expected_raw": "2,929",
+      "independent_pdfium_bounded_raw": "2,929",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 5; prose numeral 3; bbox 336.000,586.552,379.165,600.052",
+      "expected_raw": "4萬5,926",
+      "independent_pdfium_bounded_raw": "4萬5,926",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 5; prose numeral 4; bbox 336.300,603.412,358.825,616.912",
+      "expected_raw": "7,727",
+      "independent_pdfium_bounded_raw": "7,727",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 5; prose numeral 5; bbox 325.980,620.332,369.145,633.832",
+      "expected_raw": "2萬6,203",
+      "independent_pdfium_bounded_raw": "2萬6,203",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 5; prose numeral 6; bbox 345.660,637.252,360.630,650.752",
+      "expected_raw": "240",
+      "independent_pdfium_bounded_raw": "240",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 2; printed page 70; panel R; section 5; prose numeral 7; bbox 346.260,671.032,368.785,684.532",
+      "expected_raw": "4,849",
+      "independent_pdfium_bounded_raw": "4,849",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 5; prose numeral 8; bbox 149.220,79.552,164.190,93.052",
+      "expected_raw": "432",
+      "independent_pdfium_bounded_raw": "432",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 5; prose numeral 9; bbox 159.840,96.412,182.365,109.912",
+      "expected_raw": "2,197",
+      "independent_pdfium_bounded_raw": "2,197",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 5; prose numeral 10; bbox 169.200,113.332,184.170,126.832",
+      "expected_raw": "326",
+      "independent_pdfium_bounded_raw": "326",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 5; prose numeral 11; bbox 179.820,130.252,202.345,143.752",
+      "expected_raw": "1,880",
+      "independent_pdfium_bounded_raw": "1,880",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 5; prose numeral 12; bbox 209.220,147.112,219.210,160.612",
+      "expected_raw": "14",
+      "independent_pdfium_bounded_raw": "14",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 6; prose numeral 1; bbox 89.220,214.732,134.190,228.232",
+      "expected_raw": "998萬117",
+      "independent_pdfium_bounded_raw": "998萬117",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 6; prose numeral 2; bbox 89.220,231.652,136.705,245.152",
+      "expected_raw": "95萬8,597",
+      "independent_pdfium_bounded_raw": "95萬8,597",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 6; prose numeral 3; bbox 79.560,248.512,132.693,262.012",
+      "expected_raw": "611萬5,729",
+      "independent_pdfium_bounded_raw": "611萬5,729",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 6; prose numeral 4; bbox 69.540,265.432,122.665,278.932",
+      "expected_raw": "136萬7,030",
+      "independent_pdfium_bounded_raw": "136萬7,030",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 6; prose numeral 5; bbox 69.540,282.352,122.665,295.852",
+      "expected_raw": "155萬8,068",
+      "independent_pdfium_bounded_raw": "155萬8,068",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 6; prose numeral 6; bbox 79.200,299.212,121.701,312.712",
+      "expected_raw": "7萬2,231",
+      "independent_pdfium_bounded_raw": "7萬2,231",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 1; bbox 119.220,383.752,179.193,397.252",
+      "expected_raw": "6,290萬4,803",
+      "independent_pdfium_bounded_raw": "6,290萬4,803",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 2; bbox 200.460,400.612,255.559,414.112",
+      "expected_raw": "250萬9,679",
+      "independent_pdfium_bounded_raw": "250萬9,679",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 3; bbox 233.040,417.532,255.565,431.032; PDF page 3; printed page 71; panel L; section 7; prose numeral 3; bbox 56.700,434.452,92.365,447.952",
+      "expected_raw": "4,148萬5,895",
+      "independent_pdfium_bounded_raw": "4,148萬5,895",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 4; bbox 70.140,451.312,112.050,464.812",
+      "expected_raw": "635萬41",
+      "independent_pdfium_bounded_raw": "635萬41",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 5; bbox 100.140,468.232,162.085,481.732",
+      "expected_raw": "1,229萬8,576",
+      "independent_pdfium_bounded_raw": "1,229萬8,576",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 6; bbox 160.140,485.152,202.050,498.652",
+      "expected_raw": "26萬612",
+      "independent_pdfium_bounded_raw": "26萬612",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 7; bbox 139.200,502.012,156.685,515.512",
+      "expected_raw": "2.70",
+      "independent_pdfium_bounded_raw": "2.70",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 8; bbox 237.960,518.932,255.505,532.432",
+      "expected_raw": "4.75",
+      "independent_pdfium_bounded_raw": "4.75",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 9; bbox 121.740,535.852,139.285,549.352",
+      "expected_raw": "3.17",
+      "independent_pdfium_bounded_raw": "3.17",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 10; bbox 208.620,535.852,226.105,549.352",
+      "expected_raw": "2.99",
+      "independent_pdfium_bounded_raw": "2.99",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 11; bbox 96.420,552.712,113.905,566.212",
+      "expected_raw": "2.92",
+      "independent_pdfium_bounded_raw": "2.92",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 12; bbox 180.840,552.712,198.325,566.212",
+      "expected_raw": "2.91",
+      "independent_pdfium_bounded_raw": "2.91",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 13; bbox 66.720,586.551,84.265,600.051",
+      "expected_raw": "2.69",
+      "independent_pdfium_bounded_raw": "2.69",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 14; bbox 152.340,586.551,169.825,600.051",
+      "expected_raw": "2.63",
+      "independent_pdfium_bounded_raw": "2.63",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 15; bbox 238.020,586.551,255.505,600.051",
+      "expected_raw": "2.54",
+      "independent_pdfium_bounded_raw": "2.54",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 16; bbox 121.740,603.412,139.285,616.912",
+      "expected_raw": "2.46",
+      "independent_pdfium_bounded_raw": "2.46",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 17; bbox 208.620,603.412,226.105,616.912",
+      "expected_raw": "2.43",
+      "independent_pdfium_bounded_raw": "2.43",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 18; bbox 96.420,620.332,113.905,633.832",
+      "expected_raw": "2.38",
+      "independent_pdfium_bounded_raw": "2.38",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 19; bbox 180.840,620.332,198.325,633.832",
+      "expected_raw": "2.35",
+      "independent_pdfium_bounded_raw": "2.35",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 20; bbox 66.720,637.252,84.265,650.752",
+      "expected_raw": "2.31",
+      "independent_pdfium_bounded_raw": "2.31",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 21; bbox 152.340,637.252,169.825,650.752",
+      "expected_raw": "2.26",
+      "independent_pdfium_bounded_raw": "2.26",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 22; bbox 238.020,637.252,255.505,650.752",
+      "expected_raw": "2.24",
+      "independent_pdfium_bounded_raw": "2.24",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 23; bbox 121.740,654.112,139.285,667.612",
+      "expected_raw": "2.01",
+      "independent_pdfium_bounded_raw": "2.01",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 24; bbox 208.620,654.112,226.105,667.612",
+      "expected_raw": "1.78",
+      "independent_pdfium_bounded_raw": "1.78",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 25; bbox 96.420,671.032,113.905,684.532",
+      "expected_raw": "1.72",
+      "independent_pdfium_bounded_raw": "1.72",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 26; bbox 180.840,671.032,198.325,684.532",
+      "expected_raw": "1.53",
+      "independent_pdfium_bounded_raw": "1.53",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 27; bbox 293.160,79.552,310.705,93.052",
+      "expected_raw": "1.51",
+      "independent_pdfium_bounded_raw": "1.51",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 28; bbox 378.780,79.552,396.265,93.052",
+      "expected_raw": "1.48",
+      "independent_pdfium_bounded_raw": "1.48",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 29; bbox 464.460,79.552,481.945,93.052",
+      "expected_raw": "1.16",
+      "independent_pdfium_bounded_raw": "1.16",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 30; bbox 356.580,147.112,418.525,160.612",
+      "expected_raw": "1,788萬8,352",
+      "independent_pdfium_bounded_raw": "1,788萬8,352",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 31; bbox 435.240,164.032,481.999,177.532",
+      "expected_raw": "63萬3,232",
+      "independent_pdfium_bounded_raw": "63萬3,232",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 32; bbox 283.140,197.812,343.165,211.312",
+      "expected_raw": "1,193萬9,910",
+      "independent_pdfium_bounded_raw": "1,193萬9,910",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 33; bbox 335.640,214.732,380.610,228.232",
+      "expected_raw": "212萬283",
+      "independent_pdfium_bounded_raw": "212萬283",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 34; bbox 385.980,231.652,439.165,245.152",
+      "expected_raw": "314萬8,769",
+      "independent_pdfium_bounded_raw": "314萬8,769",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 35; bbox 461.700,248.512,481.960,262.012; PDF page 3; printed page 71; panel R; section 7; prose numeral 35; bbox 283.140,265.432,305.665,278.932",
+      "expected_raw": "4萬6,158",
+      "independent_pdfium_bounded_raw": "4萬6,158",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 1; bbox 336.000,349.912,379.165,363.412",
+      "expected_raw": "8萬4,944",
+      "independent_pdfium_bounded_raw": "8萬4,944",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 2; bbox 295.620,366.832,338.125,380.332",
+      "expected_raw": "2萬7,359",
+      "independent_pdfium_bounded_raw": "2萬7,359",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 3; bbox 420.000,366.832,462.501,380.332",
+      "expected_raw": "1萬5,227",
+      "independent_pdfium_bounded_raw": "1萬5,227",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 4; bbox 345.660,383.752,368.121,397.252",
+      "expected_raw": "1,792",
+      "independent_pdfium_bounded_raw": "1,792",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 5; bbox 439.440,383.752,481.941,397.252",
+      "expected_raw": "1萬9,267",
+      "independent_pdfium_bounded_raw": "1萬9,267",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 6; bbox 359.940,400.612,400.941,414.112",
+      "expected_raw": "1萬4,348",
+      "independent_pdfium_bounded_raw": "1萬4,348",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 7; bbox 459.480,400.612,482.005,414.112",
+      "expected_raw": "6,951",
+      "independent_pdfium_bounded_raw": "6,951",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 8; bbox 459.480,417.532,481.999,431.032",
+      "expected_raw": "1,278",
+      "independent_pdfium_bounded_raw": "1,278",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 9; bbox 395.040,434.452,410.010,447.952",
+      "expected_raw": "376",
+      "independent_pdfium_bounded_raw": "376",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 10; bbox 295.680,451.312,310.650,464.812",
+      "expected_raw": "186",
+      "independent_pdfium_bounded_raw": "186",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 11; bbox 391.260,451.312,396.270,464.812",
+      "expected_raw": "4",
+      "independent_pdfium_bounded_raw": "4",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 12; bbox 466.920,451.312,481.890,464.812",
+      "expected_raw": "248",
+      "independent_pdfium_bounded_raw": "248",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 13; bbox 365.640,468.232,380.670,481.732",
+      "expected_raw": "309",
+      "independent_pdfium_bounded_raw": "309",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 14; bbox 445.680,468.232,460.650,481.732",
+      "expected_raw": "155",
+      "independent_pdfium_bounded_raw": "155",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 15; bbox 436.920,485.152,481.999,498.652",
+      "expected_raw": "5萬2,326",
+      "independent_pdfium_bounded_raw": "5萬2,326",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 16; bbox 396.000,502.012,439.165,515.512",
+      "expected_raw": "1萬6,817",
+      "independent_pdfium_bounded_raw": "1萬6,817",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 17; bbox 325.980,518.932,348.445,532.432",
+      "expected_raw": "9,453",
+      "independent_pdfium_bounded_raw": "9,453",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 18; bbox 434.100,518.932,449.130,532.432",
+      "expected_raw": "540",
+      "independent_pdfium_bounded_raw": "540",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 19; bbox 326.880,535.852,371.901,549.352",
+      "expected_raw": "1萬1,781",
+      "independent_pdfium_bounded_raw": "1萬1,781",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 20; bbox 459.420,535.852,481.881,549.352",
+      "expected_raw": "8,836",
+      "independent_pdfium_bounded_raw": "8,836",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 21; bbox 346.260,552.712,368.785,566.212",
+      "expected_raw": "4,899",
+      "independent_pdfium_bounded_raw": "4,899",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 22; bbox 340.080,569.632,362.605,583.132",
+      "expected_raw": "9,634",
+      "independent_pdfium_bounded_raw": "9,634",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 23; bbox 283.140,586.552,305.665,600.052",
+      "expected_raw": "3,691",
+      "independent_pdfium_bounded_raw": "3,691",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 24; bbox 388.800,586.552,411.325,600.052",
+      "expected_raw": "1,135",
+      "independent_pdfium_bounded_raw": "1,135",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 25; bbox 295.980,603.412,311.010,616.912",
+      "expected_raw": "460",
+      "independent_pdfium_bounded_raw": "460",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 26; bbox 386.640,603.412,409.105,616.912",
+      "expected_raw": "2,160",
+      "independent_pdfium_bounded_raw": "2,160",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 27; bbox 295.980,620.332,318.505,633.832",
+      "expected_raw": "1,653",
+      "independent_pdfium_bounded_raw": "1,653",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 28; bbox 384.120,620.332,399.150,633.832",
+      "expected_raw": "535",
+      "independent_pdfium_bounded_raw": "535",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 29; bbox 375.960,637.252,419.133,650.752",
+      "expected_raw": "2萬1,273",
+      "independent_pdfium_bounded_raw": "2萬1,273",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 30; bbox 335.640,654.112,358.165,667.612",
+      "expected_raw": "6,208",
+      "independent_pdfium_bounded_raw": "6,208",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 31; bbox 440.100,654.112,462.561,667.612",
+      "expected_raw": "4,448",
+      "independent_pdfium_bounded_raw": "4,448",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 32; bbox 345.960,671.032,360.990,684.532",
+      "expected_raw": "788",
+      "independent_pdfium_bounded_raw": "788",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 33; bbox 436.620,671.032,459.085,684.532",
+      "expected_raw": "5,028",
+      "independent_pdfium_bounded_raw": "5,028",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 34; bbox 120.120,79.552,142.705,93.052",
+      "expected_raw": "3,439",
+      "independent_pdfium_bounded_raw": "3,439",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 35; bbox 209.520,79.552,232.045,93.052",
+      "expected_raw": "1,362",
+      "independent_pdfium_bounded_raw": "1,362",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 36; bbox 225.240,96.412,240.270,109.912",
+      "expected_raw": "433",
+      "independent_pdfium_bounded_raw": "433",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 37; bbox 158.640,113.332,173.610,126.832",
+      "expected_raw": "267",
+      "independent_pdfium_bounded_raw": "267",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 38; bbox 56.700,130.252,61.710,143.752",
+      "expected_raw": "5",
+      "independent_pdfium_bounded_raw": "5",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 39; bbox 132.120,130.252,142.110,143.752",
+      "expected_raw": "50",
+      "independent_pdfium_bounded_raw": "50",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 40; bbox 222.540,130.252,237.510,143.752",
+      "expected_raw": "111",
+      "independent_pdfium_bounded_raw": "111",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 41; bbox 130.140,180.952,192.085,194.452",
+      "expected_raw": "1,386萬6,814",
+      "independent_pdfium_bounded_raw": "1,386萬6,814",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 42; bbox 109.560,197.812,162.739,211.312",
+      "expected_raw": "503萬7,641",
+      "independent_pdfium_bounded_raw": "503萬7,641",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 43; bbox 56.700,214.732,103.830,228.232",
+      "expected_raw": "296萬268",
+      "independent_pdfium_bounded_raw": "296萬268",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 44; bbox 200.940,214.732,255.559,228.232",
+      "expected_raw": "357萬2,789",
+      "independent_pdfium_bounded_raw": "357萬2,789",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 45; bbox 137.340,231.652,184.825,245.152",
+      "expected_raw": "51萬2,845",
+      "independent_pdfium_bounded_raw": "51萬2,845",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 46; bbox 80.100,248.512,129.445,262.012",
+      "expected_raw": "94萬8,698",
+      "independent_pdfium_bounded_raw": "94萬8,698",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 47; bbox 206.220,248.512,255.505,262.012",
+      "expected_raw": "83萬4,573",
+      "independent_pdfium_bounded_raw": "83萬4,573",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 48; bbox 245.520,265.432,255.510,278.932; PDF page 4; printed page 72; panel L; section 8; prose numeral 48; bbox 56.700,282.352,91.945,295.852",
+      "expected_raw": "36萬8,050",
+      "independent_pdfium_bounded_raw": "36萬8,050",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 49; bbox 207.420,282.352,242.850,295.852",
+      "expected_raw": "9萬844",
+      "independent_pdfium_bounded_raw": "9萬844",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 50; bbox 137.340,299.212,184.825,312.712",
+      "expected_raw": "14萬6,512",
+      "independent_pdfium_bounded_raw": "14萬6,512",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 51; bbox 79.440,316.132,114.870,329.632",
+      "expected_raw": "6萬628",
+      "independent_pdfium_bounded_raw": "6萬628",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 52; bbox 200.280,316.132,222.805,329.632",
+      "expected_raw": "8,655",
+      "independent_pdfium_bounded_raw": "8,655",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 53; bbox 119.400,333.052,162.379,346.552",
+      "expected_raw": "1萬8,538",
+      "independent_pdfium_bounded_raw": "1萬8,538",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 54; bbox 237.780,333.052,255.520,346.552; PDF page 4; printed page 72; panel L; section 8; prose numeral 54; bbox 56.700,349.912,79.225,363.412",
+      "expected_raw": "4萬2,873",
+      "independent_pdfium_bounded_raw": "4萬2,873",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 55; bbox 89.520,366.832,142.705,380.332",
+      "expected_raw": "473萬7,598",
+      "independent_pdfium_bounded_raw": "473萬7,598",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 56; bbox 56.700,383.752,110.485,397.252",
+      "expected_raw": "299萬9,876",
+      "independent_pdfium_bounded_raw": "299萬9,876",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 57; bbox 206.760,383.752,255.505,397.252",
+      "expected_raw": "51萬6,522",
+      "independent_pdfium_bounded_raw": "51萬6,522",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 58; bbox 147.360,400.612,194.845,414.112",
+      "expected_raw": "15萬6,225",
+      "independent_pdfium_bounded_raw": "15萬6,225",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 59; bbox 78.360,417.532,121.530,431.032",
+      "expected_raw": "290萬742",
+      "independent_pdfium_bounded_raw": "290萬742",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 60; bbox 209.760,417.532,255.505,431.032",
+      "expected_raw": "19萬8,957",
+      "independent_pdfium_bounded_raw": "19萬8,957",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 61; bbox 127.380,434.452,174.865,447.952",
+      "expected_raw": "57萬5,276",
+      "independent_pdfium_bounded_raw": "57萬5,276",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 62; bbox 169.200,451.312,214.170,464.812",
+      "expected_raw": "528萬287",
+      "independent_pdfium_bounded_raw": "528萬287",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 63; bbox 129.540,468.232,182.665,481.732",
+      "expected_raw": "132萬4,247",
+      "independent_pdfium_bounded_raw": "132萬4,247",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 64; bbox 79.440,485.152,132.385,498.652",
+      "expected_raw": "124萬2,991",
+      "independent_pdfium_bounded_raw": "124萬2,991",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 65; bbox 227.820,485.152,255.580,498.652; PDF page 4; printed page 72; panel L; section 8; prose numeral 65; bbox 56.700,502.012,79.225,515.512",
+      "expected_raw": "186萬1,022",
+      "independent_pdfium_bounded_raw": "186萬1,022",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 66; bbox 164.760,502.012,212.785,515.512",
+      "expected_raw": "10萬3,034",
+      "independent_pdfium_bounded_raw": "10萬3,034",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 67; bbox 109.440,518.932,157.405,532.432",
+      "expected_raw": "61萬5,175",
+      "independent_pdfium_bounded_raw": "61萬5,175",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 68; bbox 232.740,518.932,255.520,532.432; PDF page 4; printed page 72; panel L; section 8; prose numeral 68; bbox 56.700,535.852,79.225,549.352",
+      "expected_raw": "13萬3,818",
+      "independent_pdfium_bounded_raw": "13萬3,818",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 69; bbox 89.220,552.712,134.190,566.212",
+      "expected_raw": "334萬983",
+      "independent_pdfium_bounded_raw": "334萬983",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 70; bbox 245.460,552.712,255.510,566.212; PDF page 4; printed page 72; panel L; section 8; prose numeral 70; bbox 56.700,569.632,92.365,583.132",
+      "expected_raw": "48萬7,834",
+      "independent_pdfium_bounded_raw": "48萬7,834",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 71; bbox 188.580,569.632,242.365,583.132",
+      "expected_raw": "105萬3,409",
+      "independent_pdfium_bounded_raw": "105萬3,409",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 72; bbox 139.560,586.552,192.693,600.052",
+      "expected_raw": "149萬4,914",
+      "independent_pdfium_bounded_raw": "149萬4,914",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 73; bbox 78.000,603.412,122.961,616.912",
+      "expected_raw": "10萬8,830",
+      "independent_pdfium_bounded_raw": "10萬8,830",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 74; bbox 210.480,603.412,255.505,616.912",
+      "expected_raw": "11萬3,390",
+      "independent_pdfium_bounded_raw": "11萬3,390",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 75; bbox 129.540,620.332,172.705,633.832",
+      "expected_raw": "8萬2,606",
+      "independent_pdfium_bounded_raw": "8萬2,606",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 76; bbox 190.800,637.252,241.405,650.752",
+      "expected_raw": "13萬9,896",
+      "independent_pdfium_bounded_raw": "13萬9,896",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 77; bbox 157.380,654.112,204.861,667.612",
+      "expected_raw": "13萬4,840",
+      "independent_pdfium_bounded_raw": "13萬4,840",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 78; bbox 99.540,671.032,114.570,684.532",
+      "expected_raw": "834",
+      "independent_pdfium_bounded_raw": "834",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 79; bbox 200.220,671.032,222.681,684.532",
+      "expected_raw": "1,584",
+      "independent_pdfium_bounded_raw": "1,584",
+      "matches": true
+    },
+    {
+      "locator": "PDF page 4; printed page 72; panel R; section 8; prose numeral 80; bbox 345.660,79.552,368.121,93.052",
+      "expected_raw": "2,638",
+      "independent_pdfium_bounded_raw": "2,638",
+      "matches": true
+    }
+  ],
+  "status": "pass",
+  "numeric_spans_exact_match": 269,
+  "adjacent_printed_approximate_qualifier_checked": 1,
+  "not_full_independent_visual_double_check": true
+}

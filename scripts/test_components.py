@@ -223,6 +223,45 @@ class ComponentTests(unittest.TestCase):
         self.assertEqual(verifier.ncl_source_value(self.additional_ncl("", "", "blank_in_source")), (None, "source_blank"))
 
 
+    def test_prose_magnitude_and_printed_approximation_remain_traceable(self):
+        source = self.additional_ncl("4億8,794萬7,482", "487947482", "reported_prose")
+        source["source_location_kind"] = "prose_numeric_span"
+        self.assertEqual(verifier.ncl_source_value(source), (487947482, "reported"))
+        with self.assertRaises(ValueError):
+            verifier.ncl_source_value({**source, "value": "487947483"})
+        approximate = self.additional_ncl("約20.93", "20.93", "reported_prose")
+        approximate.update(value_qualifier="approximate_as_printed", source_location_kind="prose_numeric_span")
+        self.assertEqual(verifier.ncl_source_value(approximate), ("20.93", "reported_decimal"))
+        with self.assertRaises(ValueError):
+            verifier.ncl_source_value({**approximate, "value_qualifier": ""})
+
+    def test_percent_points_require_a_percent_unit(self):
+        source = self.additional_ncl("0.85%", "0.85", "reported")
+        source["unit"] = "%"
+        self.assertEqual(verifier.ncl_source_value(source), ("0.85", "reported_decimal"))
+        with self.assertRaises(ValueError):
+            verifier.ncl_source_value({**source, "unit": "人"})
+
+    def test_conflicting_printed_unit_stays_unknown_with_separate_candidate(self):
+        source = self.additional_ncl("10", "10", "reported")
+        source.update(unit="人次", unit_raw="場次", unit_status="source_heading_conflict_unresolved", unit_interpretation_candidate="人次")
+        row = adapter.adapt_additional_ncl_rows([source])[0]
+        self.assertIsNone(row["unit"])
+        self.assertEqual(row["unit_raw"], "場次")
+        self.assertEqual(row["unit_status"], "source_heading_conflict_unresolved")
+        self.assertEqual(row["unit_interpretation_candidate"], "人次")
+
+    def test_duplicate_printed_county_labels_keep_two_physical_records(self):
+        first = self.additional_ncl("10", "10", "reported")
+        first.update(entity_raw="金門縣", entity_kind="county_source_label_duplicate_unresolved", observation_identity_suffix="row:21")
+        second = {**first, "value_raw": "20", "value": "20", "source_row": "22", "observation_identity_suffix": "row:22"}
+        records = adapter.adapt_additional_ncl_rows([first, second])
+        self.assertEqual([r["geography"] for r in records], ["金門縣", "金門縣"])
+        self.assertNotEqual(records[0]["observation_id"], records[1]["observation_id"])
+        self.assertEqual([r["value"] for r in records], [10, 20])
+        self.assertTrue(all(r["geographic_scope"] == "county_source_label_duplicate_unresolved" for r in records))
+
+
 class CountyRefreshTests(unittest.TestCase):
     """Self-contained table fixture; no real source file or network is required."""
     def setUp(self):

@@ -6,7 +6,7 @@
     "2011–2025已完整的是公開10類全國圖表。",
     "2023是目前唯一證實同一6425官方OGDL年度縣市包。",
     "其他縣市地方統計尚未逐機關核查。",
-    "NCL96–103卷僅已列核心表與公共館子表；非整冊所有表，102卷縣市核心表缺口仍存。"
+    "NCL96–105卷僅所列核心表、公共館子群及明列原文數字；2012縣市核心原量缺口仍存。"
   ],
   "status_semantics": {
     "completed_bounded_scope": "僅completed_scope所列範圍完整",
@@ -121,135 +121,1132 @@
           2010,
           2011,
           2012,
-          2013
+          2013,
+          2014,
+          2015
         ],
-        "long_rows": 5842,
+        "edition_roc": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105
+        ],
+        "long_rows": 7865,
         "tables": [
           {
             "source_id": "ncl-earlier-2006-t1",
             "source_table": "1",
-            "pdf_page": 4,
-            "printed_page": "30",
+            "source_table_title": "全國公立公共圖書館統計表（95年）",
+            "source_cells": 312,
+            "numeric_cells": 121,
+            "source_blank_cells": 191,
+            "other_missing_cells": 0,
             "data_years": [
               2006
             ],
-            "source_cells": 312
+            "edition_roc": [
+              96
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "30"
+            ],
+            "source_sha256": [
+              "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-earlier-2006-t2",
             "source_table": "2",
-            "pdf_page": 5,
-            "printed_page": "31",
+            "source_table_title": "國立暨直轄市立公共圖書館人員統計表（95年）",
+            "source_cells": 45,
+            "numeric_cells": 45,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
             "data_years": [
               2006
             ],
-            "source_cells": 45
+            "edition_roc": [
+              96
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "31"
+            ],
+            "source_sha256": [
+              "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-earlier-2006-t3",
             "source_table": "3",
-            "pdf_page": 5,
-            "printed_page": "31",
+            "source_table_title": "國立暨直轄市立公共圖書館購書經費、館藏數量與資源使用統計表（95年）",
+            "source_cells": 30,
+            "numeric_cells": 30,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
             "data_years": [
               2006
             ],
-            "source_cells": 30
+            "edition_roc": [
+              96
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "31"
+            ],
+            "source_sha256": [
+              "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-earlier-2006-t4",
             "source_table": "4",
-            "pdf_page": 6,
-            "printed_page": "32",
+            "source_table_title": "臺閩地區各縣市暨鄉鎮圖書館館藏數量及購書經費統計表（95年）",
+            "source_cells": 150,
+            "numeric_cells": 149,
+            "source_blank_cells": 1,
+            "other_missing_cells": 0,
             "data_years": [
               2006
             ],
-            "source_cells": 150
+            "edition_roc": [
+              96
+            ],
+            "pdf_pages": [
+              "6"
+            ],
+            "printed_pages": [
+              "32"
+            ],
+            "source_sha256": [
+              "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-earlier-2006-t5",
             "source_table": "5",
-            "pdf_page": 7,
-            "printed_page": "33",
+            "source_table_title": "臺閩地區各縣市暨鄉鎮圖書館人員及服務統計表（95年）",
+            "source_cells": 312,
+            "numeric_cells": 312,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
             "data_years": [
               2006
             ],
-            "source_cells": 312
+            "edition_roc": [
+              96
+            ],
+            "pdf_pages": [
+              "7"
+            ],
+            "printed_pages": [
+              "33"
+            ],
+            "source_sha256": [
+              "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-earlier-2007-t1",
             "source_table": "1",
-            "pdf_page": 2,
-            "printed_page": "36",
+            "source_table_title": "全國公立公共圖書館統計表（96年）",
+            "source_cells": 286,
+            "numeric_cells": 136,
+            "source_blank_cells": 150,
+            "other_missing_cells": 0,
             "data_years": [
               2007
             ],
-            "source_cells": 286
+            "edition_roc": [
+              97
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "36"
+            ],
+            "source_sha256": [
+              "f5b6540bed94f9a15ccb7f5f041c9d0cee416229e6427387e1773c99d17768a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-earlier-2007-t2",
             "source_table": "2",
-            "pdf_page": 3,
-            "printed_page": "37",
+            "source_table_title": "全國各縣市暨鄉鎮圖書館館藏數量及購書經費統計表（96年）",
+            "source_cells": 203,
+            "numeric_cells": 191,
+            "source_blank_cells": 12,
+            "other_missing_cells": 0,
             "data_years": [
               2007
             ],
-            "source_cells": 203
+            "edition_roc": [
+              97
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "37"
+            ],
+            "source_sha256": [
+              "f5b6540bed94f9a15ccb7f5f041c9d0cee416229e6427387e1773c99d17768a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-earlier-2007-t3",
             "source_table": "3",
-            "pdf_page": 4,
-            "printed_page": "38",
+            "source_table_title": "全國各縣市暨鄉鎮圖書館人員及服務統計表（96年）",
+            "source_cells": 348,
+            "numeric_cells": 348,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
             "data_years": [
               2007
             ],
-            "source_cells": 348
+            "edition_roc": [
+              97
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "38"
+            ],
+            "source_sha256": [
+              "f5b6540bed94f9a15ccb7f5f041c9d0cee416229e6427387e1773c99d17768a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-gap-2008-t3-counts",
             "source_table": "3",
-            "pdf_page": 2,
-            "printed_page": "78",
+            "source_table_title": "全國公立公共圖書館統計表（97年）",
+            "source_cells": 286,
+            "numeric_cells": 162,
+            "source_blank_cells": 124,
+            "other_missing_cells": 0,
             "data_years": [
               2008
             ],
-            "source_cells": 286
+            "edition_roc": [
+              98
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "78"
+            ],
+            "source_sha256": [
+              "780f72e99bec13702fc706f0e86b7c90cc19b370dc0048e1ef92a261766f4c28"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-gap-2008-t5-staff-services",
             "source_table": "5",
-            "pdf_page": 4,
-            "printed_page": "80",
+            "source_table_title": "全國各縣市暨鄉鎮圖書館人員及服務統計表（97年）",
+            "source_cells": 348,
+            "numeric_cells": 348,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
             "data_years": [
               2008
             ],
-            "source_cells": 348
-          },
-          {
-            "source_id": "ncl-yearbook-98-public",
-            "source_table": "4",
-            "pdf_page": 3,
-            "printed_page": "79",
-            "data_years": [
-              2008
+            "edition_roc": [
+              98
             ],
-            "source_cells": 191
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "80"
+            ],
+            "source_sha256": [
+              "780f72e99bec13702fc706f0e86b7c90cc19b370dc0048e1ef92a261766f4c28"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-gap-2009-t1-counts",
             "source_table": "1",
-            "pdf_page": 2,
-            "printed_page": "74",
+            "source_table_title": "全國公立公共圖書館統計表（98年）",
+            "source_cells": 260,
+            "numeric_cells": 159,
+            "source_blank_cells": 101,
+            "other_missing_cells": 0,
             "data_years": [
               2009
             ],
-            "source_cells": 260
+            "edition_roc": [
+              99
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "74"
+            ],
+            "source_sha256": [
+              "a0b93a4c5f78e6f57e39a5605c3ff78c6e046f513b274df6652a363b67cfb52b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-gap-2010-t1-counts",
+            "source_table": "1",
+            "source_table_title": "全國公立公共圖書館統計表（99年）",
+            "source_cells": 286,
+            "numeric_cells": 161,
+            "source_blank_cells": 125,
+            "other_missing_cells": 0,
+            "data_years": [
+              2010
+            ],
+            "edition_roc": [
+              100
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "34"
+            ],
+            "source_sha256": [
+              "e2117dfa3bd89e8b4727542c360d836046915d798c04517a6c0a2ac3e5cb4ba8"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-100-public",
+            "source_table": "3",
+            "source_table_title": "",
+            "source_cells": 191,
+            "numeric_cells": 191,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2010
+            ],
+            "edition_roc": [
+              100
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "35"
+            ],
+            "source_sha256": [
+              "e2117dfa3bd89e8b4727542c360d836046915d798c04517a6c0a2ac3e5cb4ba8"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-100-public",
+            "source_table": "4",
+            "source_table_title": "",
+            "source_cells": 348,
+            "numeric_cells": 348,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2010
+            ],
+            "edition_roc": [
+              100
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "36"
+            ],
+            "source_sha256": [
+              "e2117dfa3bd89e8b4727542c360d836046915d798c04517a6c0a2ac3e5cb4ba8"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-101-public-library",
+            "source_table": "19",
+            "source_table_title": "全國公共圖書館館所統計（100年度）",
+            "source_cells": 368,
+            "numeric_cells": 201,
+            "source_blank_cells": 167,
+            "other_missing_cells": 0,
+            "data_years": [
+              2011
+            ],
+            "edition_roc": [
+              101
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "54"
+            ],
+            "source_sha256": [
+              "635a1f5a1662cba66c2cd1edd09fcf8fa3206423f88549d993010db4b13345a4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-101-public-library",
+            "source_table": "20",
+            "source_table_title": "全國公共圖書館人力資源統計（100年度）",
+            "source_cells": 260,
+            "numeric_cells": 257,
+            "source_blank_cells": 0,
+            "other_missing_cells": 3,
+            "data_years": [
+              2011
+            ],
+            "edition_roc": [
+              101
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "55"
+            ],
+            "source_sha256": [
+              "635a1f5a1662cba66c2cd1edd09fcf8fa3206423f88549d993010db4b13345a4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-101-public-library",
+            "source_table": "21",
+            "source_table_title": "全國公共圖書館購買圖書資料經費及館藏數量統計表（100年度）",
+            "source_cells": 182,
+            "numeric_cells": 169,
+            "source_blank_cells": 4,
+            "other_missing_cells": 9,
+            "data_years": [
+              2011
+            ],
+            "edition_roc": [
+              101
+            ],
+            "pdf_pages": [
+              "6"
+            ],
+            "printed_pages": [
+              "56"
+            ],
+            "source_sha256": [
+              "635a1f5a1662cba66c2cd1edd09fcf8fa3206423f88549d993010db4b13345a4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-101-public-library",
+            "source_table": "22",
+            "source_table_title": "全國公共圖書館服務統計表（100年度）",
+            "source_cells": 104,
+            "numeric_cells": 104,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2011
+            ],
+            "edition_roc": [
+              101
+            ],
+            "pdf_pages": [
+              "7"
+            ],
+            "printed_pages": [
+              "57"
+            ],
+            "source_sha256": [
+              "635a1f5a1662cba66c2cd1edd09fcf8fa3206423f88549d993010db4b13345a4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-101-statistics",
+            "source_table": "169",
+            "source_table_title": "我國各類型圖書館數量統計表（100年）",
+            "source_cells": 7,
+            "numeric_cells": 7,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2011
+            ],
+            "edition_roc": [
+              101
+            ],
+            "pdf_pages": [
+              "6"
+            ],
+            "printed_pages": [
+              "412"
+            ],
+            "source_sha256": [
+              "87e1aafd9a922f527b3b52574259e3187904f4aa75ac22d2ee1ae7803948883e"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-101-statistics",
+            "source_table": "170",
+            "source_table_title": "我國各類型圖書館基本資料統計表（100年）",
+            "source_cells": 4,
+            "numeric_cells": 4,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2011
+            ],
+            "edition_roc": [
+              101
+            ],
+            "pdf_pages": [
+              "7"
+            ],
+            "printed_pages": [
+              "413"
+            ],
+            "source_sha256": [
+              "87e1aafd9a922f527b3b52574259e3187904f4aa75ac22d2ee1ae7803948883e"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-102-operational-prose-2012",
+            "source_table": "prose",
+            "source_table_title": "一、圖書館數量",
+            "source_cells": 33,
+            "numeric_cells": 33,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [
+              102
+            ],
+            "pdf_pages": [
+              "1"
+            ],
+            "printed_pages": [
+              "69"
+            ],
+            "source_sha256": [
+              "fa45743b313649cda46612cba04d516c23ce21b37fd4777db52a78df53c021a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-102-operational-prose-2012",
+            "source_table": "prose",
+            "source_table_title": "七、館藏使用情形",
+            "source_cells": 35,
+            "numeric_cells": 35,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [
+              102
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "71"
+            ],
+            "source_sha256": [
+              "fa45743b313649cda46612cba04d516c23ce21b37fd4777db52a78df53c021a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-102-operational-prose-2012",
+            "source_table": "prose",
+            "source_table_title": "三、圖書資料經費",
+            "source_cells": 35,
+            "numeric_cells": 35,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [
+              102
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "70"
+            ],
+            "source_sha256": [
+              "fa45743b313649cda46612cba04d516c23ce21b37fd4777db52a78df53c021a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-102-operational-prose-2012",
+            "source_table": "prose",
+            "source_table_title": "二、人力資源",
+            "source_cells": 34,
+            "numeric_cells": 34,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [
+              102
+            ],
+            "pdf_pages": [
+              "1",
+              "2"
+            ],
+            "printed_pages": [
+              "69",
+              "70"
+            ],
+            "source_sha256": [
+              "fa45743b313649cda46612cba04d516c23ce21b37fd4777db52a78df53c021a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-102-operational-prose-2012",
+            "source_table": "prose",
+            "source_table_title": "五、閱覽席位及電腦數量",
+            "source_cells": 12,
+            "numeric_cells": 12,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [
+              102
+            ],
+            "pdf_pages": [
+              "2",
+              "3"
+            ],
+            "printed_pages": [
+              "70",
+              "71"
+            ],
+            "source_sha256": [
+              "fa45743b313649cda46612cba04d516c23ce21b37fd4777db52a78df53c021a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-102-operational-prose-2012",
+            "source_table": "prose",
+            "source_table_title": "八、推廣活動辦理情形",
+            "source_cells": 80,
+            "numeric_cells": 80,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [
+              102
+            ],
+            "pdf_pages": [
+              "3",
+              "4"
+            ],
+            "printed_pages": [
+              "71",
+              "72"
+            ],
+            "source_sha256": [
+              "fa45743b313649cda46612cba04d516c23ce21b37fd4777db52a78df53c021a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-102-operational-prose-2012",
+            "source_table": "prose",
+            "source_table_title": "六、借閱證數量",
+            "source_cells": 6,
+            "numeric_cells": 6,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [
+              102
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "71"
+            ],
+            "source_sha256": [
+              "fa45743b313649cda46612cba04d516c23ce21b37fd4777db52a78df53c021a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-102-operational-prose-2012",
+            "source_table": "prose",
+            "source_table_title": "四、圖書資料數量",
+            "source_cells": 35,
+            "numeric_cells": 35,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [
+              102
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "70"
+            ],
+            "source_sha256": [
+              "fa45743b313649cda46612cba04d516c23ce21b37fd4777db52a78df53c021a5"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-102-statistics",
+            "source_table": "151",
+            "source_table_title": "我國各類型圖書館數量統計表（101年）",
+            "source_cells": 7,
+            "numeric_cells": 7,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [
+              102
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "402"
+            ],
+            "source_sha256": [
+              "3bb353b17b9fdaef13dae48c25701fc3791fb98824f49bfac1dbab30f2f9b172"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-102-statistics",
+            "source_table": "152",
+            "source_table_title": "我國各類型圖書館基本統計表（101年）",
+            "source_cells": 4,
+            "numeric_cells": 4,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [
+              102
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "403"
+            ],
+            "source_sha256": [
+              "3bb353b17b9fdaef13dae48c25701fc3791fb98824f49bfac1dbab30f2f9b172"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "31",
+            "source_table_title": "全國公共圖書館數量統計－依圖書館級別（102年）",
+            "source_cells": 15,
+            "numeric_cells": 15,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "72"
+            ],
+            "source_sha256": [
+              "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "32",
+            "source_table_title": "全國公共圖書館數量統計－依縣市別（102年）",
+            "source_cells": 66,
+            "numeric_cells": 66,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "72"
+            ],
+            "source_sha256": [
+              "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "33",
+            "source_table_title": "全國公共圖書館人力資源統計－依縣市別（102年）",
+            "source_cells": 55,
+            "numeric_cells": 55,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "72"
+            ],
+            "source_sha256": [
+              "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "34",
+            "source_table_title": "全國公共圖書館館藏資源數量統計（102年）",
+            "source_cells": 50,
+            "numeric_cells": 50,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "73"
+            ],
+            "source_sha256": [
+              "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "35",
+            "source_table_title": "各縣市公共圖書館館藏圖書冊數及人均擁有圖書冊數（102年）",
+            "source_cells": 66,
+            "numeric_cells": 66,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "73"
+            ],
+            "source_sha256": [
+              "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "36",
+            "source_table_title": "各縣市公共圖書館圖書資料購置經費及人均購書費（102年）",
+            "source_cells": 66,
+            "numeric_cells": 66,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "74"
+            ],
+            "source_sha256": [
+              "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "37",
+            "source_table_title": "各縣市公共圖書館圖書資料使用情形（102年）",
+            "source_cells": 88,
+            "numeric_cells": 88,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "75"
+            ],
+            "source_sha256": [
+              "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "38",
+            "source_table_title": "各縣市公共圖書館推廣活動類型及辦理場次（102年）",
+            "source_cells": 154,
+            "numeric_cells": 154,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "6"
+            ],
+            "printed_pages": [
+              "76"
+            ],
+            "source_sha256": [
+              "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "39",
+            "source_table_title": "各縣市公共圖書館各類推廣活動參與人次（102年）",
+            "source_cells": 154,
+            "numeric_cells": 154,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "6",
+              "7"
+            ],
+            "printed_pages": [
+              "76",
+              "77"
+            ],
+            "source_sha256": [
+              "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "40",
+            "source_table_title": "各縣市公共圖書館閱覽席位設置情形（102年）",
+            "source_cells": 22,
+            "numeric_cells": 22,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "7"
+            ],
+            "printed_pages": [
+              "77"
+            ],
+            "source_sha256": [
+              "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-statistics",
+            "source_table": "154",
+            "source_table_title": "我國各類型圖書館數量統計表（102年）",
+            "source_cells": 6,
+            "numeric_cells": 6,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "390"
+            ],
+            "source_sha256": [
+              "c75b1de3625ca9d9e496973c5eca271d98dc9eff8ed258565826b63b946001d4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-103-statistics",
+            "source_table": "155",
+            "source_table_title": "我國各類型圖書館基本統計表（102年）",
+            "source_cells": 4,
+            "numeric_cells": 4,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2013
+            ],
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "391"
+            ],
+            "source_sha256": [
+              "c75b1de3625ca9d9e496973c5eca271d98dc9eff8ed258565826b63b946001d4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-yearbook-103-statistics",
             "source_table": "157",
-            "pdf_page": 5,
-            "printed_page": "393",
+            "source_table_title": "公共圖書館基本統計表（98年至102年）",
+            "source_cells": 25,
+            "numeric_cells": 25,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
             "data_years": [
               2009,
               2010,
@@ -257,281 +1254,823 @@
               2012,
               2013
             ],
-            "source_cells": 25
+            "edition_roc": [
+              103
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "393"
+            ],
+            "source_sha256": [
+              "c75b1de3625ca9d9e496973c5eca271d98dc9eff8ed258565826b63b946001d4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-public-library",
+            "source_table": "14",
+            "source_table_title": "全國公共圖書館數量統計－依圖書館級別（103年）",
+            "source_cells": 15,
+            "numeric_cells": 15,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "1"
+            ],
+            "printed_pages": [
+              "55"
+            ],
+            "source_sha256": [
+              "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-public-library",
+            "source_table": "15",
+            "source_table_title": "全國公共圖書館數量統計－依縣市別（103年）",
+            "source_cells": 66,
+            "numeric_cells": 66,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "56"
+            ],
+            "source_sha256": [
+              "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-public-library",
+            "source_table": "16",
+            "source_table_title": "全國公共圖書館圖書資料購置經費及人均購書經費分析（103年）",
+            "source_cells": 66,
+            "numeric_cells": 66,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "56"
+            ],
+            "source_sha256": [
+              "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-public-library",
+            "source_table": "17",
+            "source_table_title": "全國公共圖書館人力資源統計（103年）",
+            "source_cells": 40,
+            "numeric_cells": 40,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "57"
+            ],
+            "source_sha256": [
+              "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-public-library",
+            "source_table": "18",
+            "source_table_title": "全國公共圖書館館藏資源數量統計（103年）",
+            "source_cells": 50,
+            "numeric_cells": 50,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "58"
+            ],
+            "source_sha256": [
+              "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-public-library",
+            "source_table": "19",
+            "source_table_title": "全國公共圖書館館藏資源數量及人均擁有圖書量分析（103年）",
+            "source_cells": 66,
+            "numeric_cells": 66,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "59"
+            ],
+            "source_sha256": [
+              "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-public-library",
+            "source_table": "20",
+            "source_table_title": "全國公共圖書館圖書資料使用情形（103年）",
+            "source_cells": 88,
+            "numeric_cells": 88,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "59"
+            ],
+            "source_sha256": [
+              "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-public-library",
+            "source_table": "21",
+            "source_table_title": "全國公共圖書館推廣活動類型及辦理場次（103年）",
+            "source_cells": 154,
+            "numeric_cells": 154,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "6"
+            ],
+            "printed_pages": [
+              "60"
+            ],
+            "source_sha256": [
+              "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-public-library",
+            "source_table": "22",
+            "source_table_title": "各縣市公共圖書館各類推廣活動參與人次（103年）",
+            "source_cells": 154,
+            "numeric_cells": 154,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "7"
+            ],
+            "printed_pages": [
+              "61"
+            ],
+            "source_sha256": [
+              "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-public-library",
+            "source_table": "23",
+            "source_table_title": "全國公共圖書館提供新住民各類服務情形（103年）",
+            "source_cells": 110,
+            "numeric_cells": 110,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "8"
+            ],
+            "printed_pages": [
+              "62"
+            ],
+            "source_sha256": [
+              "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-statistics",
+            "source_table": "199",
+            "source_table_title": "我國各類型圖書館數量統計表（103年）／公共圖書館完整類別組",
+            "source_cells": 6,
+            "numeric_cells": 6,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "302"
+            ],
+            "source_sha256": [
+              "bfb44cad472edb68b5a72fed26238f14c217414fd94dde0f6d5720ad0f85cc45"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-statistics",
+            "source_table": "200",
+            "source_table_title": "我國各類型圖書館基本統計表（103年）／公立公共圖書館列",
+            "source_cells": 4,
+            "numeric_cells": 4,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "303"
+            ],
+            "source_sha256": [
+              "bfb44cad472edb68b5a72fed26238f14c217414fd94dde0f6d5720ad0f85cc45"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-104-statistics",
+            "source_table": "202",
+            "source_table_title": "公立公共圖書館基本統計表（99年至103年）",
+            "source_cells": 25,
+            "numeric_cells": 25,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2010,
+              2011,
+              2012,
+              2013,
+              2014
+            ],
+            "edition_roc": [
+              104
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "305"
+            ],
+            "source_sha256": [
+              "bfb44cad472edb68b5a72fed26238f14c217414fd94dde0f6d5720ad0f85cc45"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-public-library",
+            "source_table": "10",
+            "source_table_title": "全國公共圖書館數量統計―依縣市別（104年）",
+            "source_cells": 92,
+            "numeric_cells": 92,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "60"
+            ],
+            "source_sha256": [
+              "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420"
+            ],
+            "uncertain_label_records": 20,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-public-library",
+            "source_table": "11",
+            "source_table_title": "全國公共圖書館圖書資料購置經費及人均購書經費分析（104年）",
+            "source_cells": 69,
+            "numeric_cells": 69,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "61"
+            ],
+            "source_sha256": [
+              "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420"
+            ],
+            "uncertain_label_records": 15,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-public-library",
+            "source_table": "12",
+            "source_table_title": "全國公共圖書館人力資源統計（104年）",
+            "source_cells": 40,
+            "numeric_cells": 40,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "61"
+            ],
+            "source_sha256": [
+              "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-public-library",
+            "source_table": "13",
+            "source_table_title": "全國公共圖書館館藏資源數量統計（104年）",
+            "source_cells": 50,
+            "numeric_cells": 50,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "62"
+            ],
+            "source_sha256": [
+              "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-public-library",
+            "source_table": "14",
+            "source_table_title": "全國公共圖書館館藏資源數量及人均擁有圖書量分析（104年）",
+            "source_cells": 69,
+            "numeric_cells": 69,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "63"
+            ],
+            "source_sha256": [
+              "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420"
+            ],
+            "uncertain_label_records": 15,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-public-library",
+            "source_table": "15",
+            "source_table_title": "全國公共圖書館圖書資料使用情形（104年）",
+            "source_cells": 92,
+            "numeric_cells": 92,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "63"
+            ],
+            "source_sha256": [
+              "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420"
+            ],
+            "uncertain_label_records": 28,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-public-library",
+            "source_table": "16",
+            "source_table_title": "全國公共圖書館推廣活動類型及辦理場次（104年）",
+            "source_cells": 161,
+            "numeric_cells": 161,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "6"
+            ],
+            "printed_pages": [
+              "64"
+            ],
+            "source_sha256": [
+              "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420"
+            ],
+            "uncertain_label_records": 35,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-public-library",
+            "source_table": "17",
+            "source_table_title": "全國公共圖書館推廣活動類型及辦理場次（104年）",
+            "source_cells": 161,
+            "numeric_cells": 161,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "7"
+            ],
+            "printed_pages": [
+              "65"
+            ],
+            "source_sha256": [
+              "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420"
+            ],
+            "uncertain_label_records": 35,
+            "unit_conflict_records": 161
+          },
+          {
+            "source_id": "ncl-yearbook-105-public-library",
+            "source_table": "18",
+            "source_table_title": "全國公共圖書館提供新住民各類服務情形（104年）",
+            "source_cells": 115,
+            "numeric_cells": 115,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "8"
+            ],
+            "printed_pages": [
+              "66"
+            ],
+            "source_sha256": [
+              "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420"
+            ],
+            "uncertain_label_records": 35,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-public-library",
+            "source_table": "9",
+            "source_table_title": "全國公共圖書館數量統計―依圖書館隸屬層級（104年）",
+            "source_cells": 25,
+            "numeric_cells": 25,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "1"
+            ],
+            "printed_pages": [
+              "59"
+            ],
+            "source_sha256": [
+              "498a6e98898f786fb9a4a1db7b6eefdf61aaf6b1bf60f0d86235ec83beebc420"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-statistics",
+            "source_table": "143",
+            "source_table_title": "我國各類型圖書館數量統計表（104年）",
+            "source_cells": 6,
+            "numeric_cells": 6,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "348"
+            ],
+            "source_sha256": [
+              "9d0f04735a57cb1ccf018b3c9403aeacb3f15e12cfabe5d897717694be0999a1"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-statistics",
+            "source_table": "144",
+            "source_table_title": "我國各類型圖書館基本統計表（104年）",
+            "source_cells": 4,
+            "numeric_cells": 4,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "349"
+            ],
+            "source_sha256": [
+              "9d0f04735a57cb1ccf018b3c9403aeacb3f15e12cfabe5d897717694be0999a1"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-105-statistics",
+            "source_table": "146",
+            "source_table_title": "公立公共圖書館基本統計表（100年至104年）",
+            "source_cells": 25,
+            "numeric_cells": 25,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2011,
+              2012,
+              2013,
+              2014,
+              2015
+            ],
+            "edition_roc": [
+              105
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "351"
+            ],
+            "source_sha256": [
+              "9d0f04735a57cb1ccf018b3c9403aeacb3f15e12cfabe5d897717694be0999a1"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-98-public",
+            "source_table": "4",
+            "source_table_title": "",
+            "source_cells": 191,
+            "numeric_cells": 191,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2008
+            ],
+            "edition_roc": [
+              98
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "79"
+            ],
+            "source_sha256": [
+              "780f72e99bec13702fc706f0e86b7c90cc19b370dc0048e1ef92a261766f4c28"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-yearbook-99-public",
             "source_table": "2",
-            "pdf_page": 3,
-            "printed_page": "75",
+            "source_table_title": "",
+            "source_cells": 191,
+            "numeric_cells": 191,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
             "data_years": [
               2009
             ],
-            "source_cells": 191
+            "edition_roc": [
+              99
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "75"
+            ],
+            "source_sha256": [
+              "a0b93a4c5f78e6f57e39a5605c3ff78c6e046f513b274df6652a363b67cfb52b"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           },
           {
             "source_id": "ncl-yearbook-99-public",
             "source_table": "3",
-            "pdf_page": 4,
-            "printed_page": "76",
+            "source_table_title": "",
+            "source_cells": 348,
+            "numeric_cells": 348,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
             "data_years": [
               2009
             ],
-            "source_cells": 348
-          },
-          {
-            "source_id": "ncl-gap-2010-t1-counts",
-            "source_table": "1",
-            "pdf_page": 2,
-            "printed_page": "34",
-            "data_years": [
-              2010
+            "edition_roc": [
+              99
             ],
-            "source_cells": 286
-          },
-          {
-            "source_id": "ncl-yearbook-100-public",
-            "source_table": "3",
-            "pdf_page": 3,
-            "printed_page": "35",
-            "data_years": [
-              2010
+            "pdf_pages": [
+              "4"
             ],
-            "source_cells": 191
-          },
-          {
-            "source_id": "ncl-yearbook-100-public",
-            "source_table": "4",
-            "pdf_page": 4,
-            "printed_page": "36",
-            "data_years": [
-              2010
+            "printed_pages": [
+              "76"
             ],
-            "source_cells": 348
-          },
-          {
-            "source_id": "ncl-yearbook-101-public-library",
-            "source_table": "19",
-            "pdf_page": 4,
-            "printed_page": "54",
-            "data_years": [
-              2011
+            "source_sha256": [
+              "a0b93a4c5f78e6f57e39a5605c3ff78c6e046f513b274df6652a363b67cfb52b"
             ],
-            "source_cells": 368
-          },
-          {
-            "source_id": "ncl-yearbook-101-public-library",
-            "source_table": "20",
-            "pdf_page": 5,
-            "printed_page": "55",
-            "data_years": [
-              2011
-            ],
-            "source_cells": 260
-          },
-          {
-            "source_id": "ncl-yearbook-101-public-library",
-            "source_table": "21",
-            "pdf_page": 6,
-            "printed_page": "56",
-            "data_years": [
-              2011
-            ],
-            "source_cells": 182
-          },
-          {
-            "source_id": "ncl-yearbook-101-public-library",
-            "source_table": "22",
-            "pdf_page": 7,
-            "printed_page": "57",
-            "data_years": [
-              2011
-            ],
-            "source_cells": 104
-          },
-          {
-            "source_id": "ncl-yearbook-101-statistics",
-            "source_table": "170",
-            "pdf_page": 7,
-            "printed_page": "413",
-            "data_years": [
-              2011
-            ],
-            "source_cells": 4
-          },
-          {
-            "source_id": "ncl-yearbook-101-statistics",
-            "source_table": "169",
-            "pdf_page": 6,
-            "printed_page": "412",
-            "data_years": [
-              2011
-            ],
-            "source_cells": 7
-          },
-          {
-            "source_id": "ncl-yearbook-102-statistics",
-            "source_table": "152",
-            "pdf_page": 3,
-            "printed_page": "403",
-            "data_years": [
-              2012
-            ],
-            "source_cells": 4
-          },
-          {
-            "source_id": "ncl-yearbook-102-statistics",
-            "source_table": "151",
-            "pdf_page": 2,
-            "printed_page": "402",
-            "data_years": [
-              2012
-            ],
-            "source_cells": 7
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "32",
-            "pdf_page": 2,
-            "printed_page": "72",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 66
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "35",
-            "pdf_page": 3,
-            "printed_page": "73",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 66
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "36",
-            "pdf_page": 4,
-            "printed_page": "74",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 66
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "37",
-            "pdf_page": 5,
-            "printed_page": "75",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 88
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "38",
-            "pdf_page": 6,
-            "printed_page": "76",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 154
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "39",
-            "pdf_page": 7,
-            "printed_page": "77",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 84
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "40",
-            "pdf_page": 7,
-            "printed_page": "77",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 22
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "31",
-            "pdf_page": 2,
-            "printed_page": "72",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 15
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "33",
-            "pdf_page": 2,
-            "printed_page": "72",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 55
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "34",
-            "pdf_page": 3,
-            "printed_page": "73",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 50
-          },
-          {
-            "source_id": "ncl-yearbook-103-public-library",
-            "source_table": "39",
-            "pdf_page": 6,
-            "printed_page": "76",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 70
-          },
-          {
-            "source_id": "ncl-yearbook-103-statistics",
-            "source_table": "155",
-            "pdf_page": 3,
-            "printed_page": "391",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 4
-          },
-          {
-            "source_id": "ncl-yearbook-103-statistics",
-            "source_table": "154",
-            "pdf_page": 2,
-            "printed_page": "390",
-            "data_years": [
-              2013
-            ],
-            "source_cells": 6
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
           }
         ],
-        "completion_statement": "僅所列核心表或公共館子表完整，不是整冊／整章所有表。"
+        "completion_statement": "只完整整理所列核心表、公共館子群與原文明列數字；不是整冊或所有縣市原量完整。"
       },
       "known_not_ingested": [
         {
           "edition_roc": 102,
           "data_year": 2012,
-          "scope": "本輪公共館章未發現相同完整縣市核心表；已收統計章全國子表，其他來源仍待查。"
+          "scope": "已完成公共館章一至八節270個明列原文數字及統計章公共館子群；各比率覆蓋見county_ratio_coverage。22縣市核心原量表仍未取得，不從比率反算。",
+          "county_ratio_coverage": {
+            "records": 270,
+            "ratio_counties": {
+              "acquisition_per_capita": 22,
+              "holdings_per_capita": 22,
+              "loans_per_capita": 22,
+              "service_population_per_staff": 21
+            },
+            "staff_missing_printed_labels": [
+              "連江縣"
+            ]
+          },
+          "checked_sources": [
+            "102卷公共圖書館章與統計章",
+            "103卷〈102年全國公共圖書館評鑑工作紀要〉",
+            "國資圖舊年度連結及現行公開表單",
+            "101年閱讀習慣報告原附件及改版官網新附件"
+          ],
+          "exclusions": [
+            "評鑑章的達標／未達標館數與受評／得獎館數不是2012營運原量；不納入核心表。"
+          ],
+          "link_resolution": "舊nclfile下載逾時後，已從現行官方gallery取得新file_pool附件；閱讀五表另作全國批次，不冒充縣市表。",
+          "evidence": [
+            "research/ncl-2012-core-search.md",
+            "raw/ncl-2012/source-search-log.json",
+            "docs/historical-batches.json"
+          ]
         }
       ],
       "unknown_scope": [
-        "95卷以前及104卷以後尚未逐表核對；其他卷統計章與地方補充表仍有缺口。",
-        "官方目錄可見不等於所有欄位或歷年可比性已確認。"
+        "106卷以後及95卷以前仍待逐表查核；已處理卷的其他未列來源也可能有缺口。",
+        "官方目錄可見不等於全部欄位、縣市標籤或歷年可比性已確認。"
       ],
       "license_scope": "署名專章全文PDF授權未確認；本機保存原檔，公開衍生表只取統計事實與來源定位，不轉發全文/影像。",
       "evidence": [
@@ -540,7 +2079,16 @@
         "raw/ncl-historical/documents.json",
         "raw/ncl-historical/gap-tables-metadata.json",
         "raw/ncl-earlier/metadata.json",
-        "raw/ncl-additional/extraction-validation.json"
+        "raw/ncl-additional/extraction-validation.json",
+        "raw/ncl-additional/documents.json",
+        "raw/ncl-2012/ncl-2012-prose.metadata.json",
+        "raw/ncl-2012/reading-extraction-metadata.json",
+        "raw/ncl-2014/documents.json",
+        "raw/ncl-2014/metadata.json",
+        "raw/ncl-2014/extraction-validation.json",
+        "raw/ncl-2015/documents.json",
+        "raw/ncl-2015/extraction-validation.json",
+        "docs/historical-batches.json"
       ]
     },
     {
@@ -772,7 +2320,363 @@
         "https://libstat.ncl.edu.tw/dynamicreport/9af813704342469f9ebbecd93a94f527"
       ],
       "completed_scope": {
-        "completion_statement": "100年鑑圖書館統計章僅為口徑參考；未把各類型全表匯入公共館統計。"
+        "completion_statement": "100年鑑圖書館統計章僅為口徑參考；未把各類型全表匯入公共館統計。",
+        "selected_public_library_subsets": {
+          "records": 127,
+          "tables": [
+            {
+              "source_id": "ncl-yearbook-101-statistics",
+              "source_table": "169",
+              "source_table_title": "我國各類型圖書館數量統計表（100年）",
+              "source_cells": 7,
+              "numeric_cells": 7,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2011
+              ],
+              "edition_roc": [
+                101
+              ],
+              "pdf_pages": [
+                "6"
+              ],
+              "printed_pages": [
+                "412"
+              ],
+              "source_sha256": [
+                "87e1aafd9a922f527b3b52574259e3187904f4aa75ac22d2ee1ae7803948883e"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-101-statistics",
+              "source_table": "170",
+              "source_table_title": "我國各類型圖書館基本資料統計表（100年）",
+              "source_cells": 4,
+              "numeric_cells": 4,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2011
+              ],
+              "edition_roc": [
+                101
+              ],
+              "pdf_pages": [
+                "7"
+              ],
+              "printed_pages": [
+                "413"
+              ],
+              "source_sha256": [
+                "87e1aafd9a922f527b3b52574259e3187904f4aa75ac22d2ee1ae7803948883e"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-102-statistics",
+              "source_table": "151",
+              "source_table_title": "我國各類型圖書館數量統計表（101年）",
+              "source_cells": 7,
+              "numeric_cells": 7,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2012
+              ],
+              "edition_roc": [
+                102
+              ],
+              "pdf_pages": [
+                "2"
+              ],
+              "printed_pages": [
+                "402"
+              ],
+              "source_sha256": [
+                "3bb353b17b9fdaef13dae48c25701fc3791fb98824f49bfac1dbab30f2f9b172"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-102-statistics",
+              "source_table": "152",
+              "source_table_title": "我國各類型圖書館基本統計表（101年）",
+              "source_cells": 4,
+              "numeric_cells": 4,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2012
+              ],
+              "edition_roc": [
+                102
+              ],
+              "pdf_pages": [
+                "3"
+              ],
+              "printed_pages": [
+                "403"
+              ],
+              "source_sha256": [
+                "3bb353b17b9fdaef13dae48c25701fc3791fb98824f49bfac1dbab30f2f9b172"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-103-statistics",
+              "source_table": "154",
+              "source_table_title": "我國各類型圖書館數量統計表（102年）",
+              "source_cells": 6,
+              "numeric_cells": 6,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2013
+              ],
+              "edition_roc": [
+                103
+              ],
+              "pdf_pages": [
+                "2"
+              ],
+              "printed_pages": [
+                "390"
+              ],
+              "source_sha256": [
+                "c75b1de3625ca9d9e496973c5eca271d98dc9eff8ed258565826b63b946001d4"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-103-statistics",
+              "source_table": "155",
+              "source_table_title": "我國各類型圖書館基本統計表（102年）",
+              "source_cells": 4,
+              "numeric_cells": 4,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2013
+              ],
+              "edition_roc": [
+                103
+              ],
+              "pdf_pages": [
+                "3"
+              ],
+              "printed_pages": [
+                "391"
+              ],
+              "source_sha256": [
+                "c75b1de3625ca9d9e496973c5eca271d98dc9eff8ed258565826b63b946001d4"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-103-statistics",
+              "source_table": "157",
+              "source_table_title": "公共圖書館基本統計表（98年至102年）",
+              "source_cells": 25,
+              "numeric_cells": 25,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013
+              ],
+              "edition_roc": [
+                103
+              ],
+              "pdf_pages": [
+                "5"
+              ],
+              "printed_pages": [
+                "393"
+              ],
+              "source_sha256": [
+                "c75b1de3625ca9d9e496973c5eca271d98dc9eff8ed258565826b63b946001d4"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-104-statistics",
+              "source_table": "199",
+              "source_table_title": "我國各類型圖書館數量統計表（103年）／公共圖書館完整類別組",
+              "source_cells": 6,
+              "numeric_cells": 6,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2014
+              ],
+              "edition_roc": [
+                104
+              ],
+              "pdf_pages": [
+                "2"
+              ],
+              "printed_pages": [
+                "302"
+              ],
+              "source_sha256": [
+                "bfb44cad472edb68b5a72fed26238f14c217414fd94dde0f6d5720ad0f85cc45"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-104-statistics",
+              "source_table": "200",
+              "source_table_title": "我國各類型圖書館基本統計表（103年）／公立公共圖書館列",
+              "source_cells": 4,
+              "numeric_cells": 4,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2014
+              ],
+              "edition_roc": [
+                104
+              ],
+              "pdf_pages": [
+                "3"
+              ],
+              "printed_pages": [
+                "303"
+              ],
+              "source_sha256": [
+                "bfb44cad472edb68b5a72fed26238f14c217414fd94dde0f6d5720ad0f85cc45"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-104-statistics",
+              "source_table": "202",
+              "source_table_title": "公立公共圖書館基本統計表（99年至103年）",
+              "source_cells": 25,
+              "numeric_cells": 25,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2010,
+                2011,
+                2012,
+                2013,
+                2014
+              ],
+              "edition_roc": [
+                104
+              ],
+              "pdf_pages": [
+                "5"
+              ],
+              "printed_pages": [
+                "305"
+              ],
+              "source_sha256": [
+                "bfb44cad472edb68b5a72fed26238f14c217414fd94dde0f6d5720ad0f85cc45"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-105-statistics",
+              "source_table": "143",
+              "source_table_title": "我國各類型圖書館數量統計表（104年）",
+              "source_cells": 6,
+              "numeric_cells": 6,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2015
+              ],
+              "edition_roc": [
+                105
+              ],
+              "pdf_pages": [
+                "2"
+              ],
+              "printed_pages": [
+                "348"
+              ],
+              "source_sha256": [
+                "9d0f04735a57cb1ccf018b3c9403aeacb3f15e12cfabe5d897717694be0999a1"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-105-statistics",
+              "source_table": "144",
+              "source_table_title": "我國各類型圖書館基本統計表（104年）",
+              "source_cells": 4,
+              "numeric_cells": 4,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2015
+              ],
+              "edition_roc": [
+                105
+              ],
+              "pdf_pages": [
+                "3"
+              ],
+              "printed_pages": [
+                "349"
+              ],
+              "source_sha256": [
+                "9d0f04735a57cb1ccf018b3c9403aeacb3f15e12cfabe5d897717694be0999a1"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-105-statistics",
+              "source_table": "146",
+              "source_table_title": "公立公共圖書館基本統計表（100年至104年）",
+              "source_cells": 25,
+              "numeric_cells": 25,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2011,
+                2012,
+                2013,
+                2014,
+                2015
+              ],
+              "edition_roc": [
+                105
+              ],
+              "pdf_pages": [
+                "5"
+              ],
+              "printed_pages": [
+                "351"
+              ],
+              "source_sha256": [
+                "9d0f04735a57cb1ccf018b3c9403aeacb3f15e12cfabe5d897717694be0999a1"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            }
+          ],
+          "statement": "僅明列公共館子群；其他館型與跨型總計不併入公共館資料。"
+        }
       },
       "known_not_ingested": [
         "100年鑑表100/101的各類型數量/基本資料表未作公共館正式長表。"
@@ -784,6 +2688,157 @@
       "license_scope": "統計事實與全文/文章授權分別處理。",
       "evidence": [
         "research/official-scope.md"
+      ]
+    },
+    {
+      "family_id": "ncl_reading_report_tables",
+      "owner": "國家圖書館",
+      "status": "completed_bounded_scope",
+      "urls": [
+        "https://www.ncl.edu.tw/galleries/0Q082532024025788575"
+      ],
+      "completed_scope": {
+        "records": 154,
+        "data_years": [
+          2011,
+          2012
+        ],
+        "tables": [
+          {
+            "source_id": "ncl-reading-2012-t1",
+            "source_table": "unlabelled-1",
+            "source_table_title": "全國借閱圖書冊數",
+            "source_cells": 3,
+            "numeric_cells": 3,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2011,
+              2012
+            ],
+            "edition_roc": [],
+            "pdf_pages": [
+              "14"
+            ],
+            "printed_pages": [
+              "8"
+            ],
+            "source_sha256": [
+              "f25798e2fe96dcde51a0ed818edb395f986c2b427f8b39349d4edbe62dabacc4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-reading-2012-t2",
+            "source_table": "unlabelled-2",
+            "source_table_title": "全國借閱圖書人次",
+            "source_cells": 3,
+            "numeric_cells": 3,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2011,
+              2012
+            ],
+            "edition_roc": [],
+            "pdf_pages": [
+              "14"
+            ],
+            "printed_pages": [
+              "8"
+            ],
+            "source_sha256": [
+              "f25798e2fe96dcde51a0ed818edb395f986c2b427f8b39349d4edbe62dabacc4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-reading-2012-t3",
+            "source_table": "unlabelled-3",
+            "source_table_title": "臺灣民眾101年利用圖書館服務統計",
+            "source_cells": 4,
+            "numeric_cells": 4,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [],
+            "pdf_pages": [
+              "15"
+            ],
+            "printed_pages": [
+              "9"
+            ],
+            "source_sha256": [
+              "f25798e2fe96dcde51a0ed818edb395f986c2b427f8b39349d4edbe62dabacc4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-reading-2012-t4",
+            "source_table": "unlabelled-4",
+            "source_table_title": "各年齡層讀者借閱圖書類別分析表",
+            "source_cells": 108,
+            "numeric_cells": 107,
+            "source_blank_cells": 1,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [],
+            "pdf_pages": [
+              "16"
+            ],
+            "printed_pages": [
+              "10"
+            ],
+            "source_sha256": [
+              "f25798e2fe96dcde51a0ed818edb395f986c2b427f8b39349d4edbe62dabacc4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-reading-2012-t5",
+            "source_table": "unlabelled-5",
+            "source_table_title": "不同性別讀者借閱圖書類別分析",
+            "source_cells": 36,
+            "numeric_cells": 36,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2012
+            ],
+            "edition_roc": [],
+            "pdf_pages": [
+              "16"
+            ],
+            "printed_pages": [
+              "10"
+            ],
+            "source_sha256": [
+              "f25798e2fe96dcde51a0ed818edb395f986c2b427f8b39349d4edbe62dabacc4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          }
+        ],
+        "completion_statement": "所列全國閱讀報告五表；兩個成長率格為2011至2012比較，不能當年度業務量。"
+      },
+      "known_not_ingested": [
+        "所列五表不提供22縣市分列，不能補縣市核心原量缺口。"
+      ],
+      "unknown_scope": [
+        "閱讀報告與年鑑母體、跨表類別合計不同；未認證相容性。"
+      ],
+      "license_scope": "只整理公開統計事實；PDF全文及重製全圖未宣稱開放。",
+      "evidence": [
+        "docs/historical-batches.json",
+        "research/ncl-reading-2012-independent-review.json"
       ]
     }
   ],
@@ -807,9 +2862,9 @@
         "先驗表頭、人員欄順序及全國組成總和，遇到官方差異保留原值另記。"
       ],
       "unknowns": [
-        "三項原刊算術差異已記錄，未改官方值。"
+        "原刊算術差異保留，未改官方原值。"
       ],
-      "completion": "四張既有缺表全量1180格：830數值、350留白；另經獨立全格回查。",
+      "completion": "已列四張缺表全量1,180格：830有值、350留白；逐表與獨立回查見historical-batches。",
       "known_not_ingested": []
     },
     {
@@ -853,7 +2908,7 @@
       "unknowns": [
         "各卷表格數、資料年、文字層與統計完整率尚未逐卷確認。"
       ],
-      "completion": "本輪96/97卷8張核心表1686格；101/103卷14張核心表與101–103統計章公共館子表1707格。其他卷維持待查。"
+      "completion": "96–105卷已列核心表／子群／原文批次見docs/historical-batches.json；其他卷及2012核心原量缺口維持待查。"
     },
     {
       "task_id": "B04",
@@ -963,7 +3018,7 @@
     }
   ],
   "official_yearbook_inventory": {
-    "checked_via": "官方目錄盤點與本輪96–103卷指定章／表原件核對；其他卷僅目錄。",
+    "checked_via": "官方目錄與canonical／reviewed registry所列原表原文批次核對；其他卷僅目錄。",
     "catalog_urls": [
       "https://www.ncl.edu.tw/librarianship-yearbook",
       "https://www.ncl.edu.tw/librarianship-yearbook?page=2",
@@ -1049,16 +3104,34 @@
         "title": "中華民國一O五年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565641689945340",
         "catalog_page": 1,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2015,
+        "ingestion_status": "specific_core_scope_completed_with_uncertain_source_labels",
+        "data_years_verified": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015
+        ],
+        "uncertain_label_records": 183,
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。"
       },
       {
         "edition_roc_raw": 104,
         "title": "中華民國一O四年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565626433613784",
         "catalog_page": 1,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2014,
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
+        "data_years_verified": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014
+        ],
+        "uncertain_label_records": 0,
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。"
       },
       {
         "edition_roc_raw": 103,
@@ -1066,8 +3139,16 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565350919926814",
         "catalog_page": 1,
         "data_year_verified": 2013,
-        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
-        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "data_years_verified": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013
+        ],
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 102,
@@ -1075,8 +3156,12 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565374511489343",
         "catalog_page": 2,
         "data_year_verified": 2012,
-        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
-        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "data_years_verified": [
+          2012
+        ],
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 101,
@@ -1084,8 +3169,12 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565430946568943",
         "catalog_page": 2,
         "data_year_verified": 2011,
-        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
-        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "data_years_verified": [
+          2011
+        ],
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 100,
@@ -1093,8 +3182,12 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565466726779537",
         "catalog_page": 2,
         "data_year_verified": 2010,
-        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
-        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "data_years_verified": [
+          2010
+        ],
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 99,
@@ -1102,8 +3195,12 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565491338132165",
         "catalog_page": 2,
         "data_year_verified": 2009,
-        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
-        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "data_years_verified": [
+          2009
+        ],
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 98,
@@ -1111,8 +3208,12 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565548575038748",
         "catalog_page": 2,
         "data_year_verified": 2008,
-        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
-        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "data_years_verified": [
+          2008
+        ],
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 97,
@@ -1120,8 +3221,12 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565555623845321",
         "catalog_page": 2,
         "data_year_verified": 2007,
-        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
-        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "data_years_verified": [
+          2007
+        ],
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 96,
@@ -1129,8 +3234,12 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565568411570887",
         "catalog_page": 2,
         "data_year_verified": 2006,
-        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
-        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "data_years_verified": [
+          2006
+        ],
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 95,

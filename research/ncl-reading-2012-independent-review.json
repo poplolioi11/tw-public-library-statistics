@@ -1,0 +1,3801 @@
+{
+  "review_id": "ncl-reading-2012-independent-20261025",
+  "source_pdf_path": "raw/ncl-2012/ncl-reading-101.pdf",
+  "source_sha256": "f25798e2fe96dcde51a0ed818edb395f986c2b427f8b39349d4edbe62dabacc4",
+  "source_pages": [
+    14,
+    15,
+    16
+  ],
+  "printed_pages": [
+    8,
+    9,
+    10
+  ],
+  "independence": "Source PDF text and PDFium images read first; no reading-derived/script/producer metadata read before this expectation freeze.",
+  "expected_frozen_at": "2026-10-25T10:24:55.508027+00:00",
+  "expected_sha256": "9920354b27d9ac0f939fe21513964c9c35acad4587c3c5b162f5e3853dc2feb6",
+  "expected_cells": [
+    {
+      "table": "全國借閱圖書冊數",
+      "source_pdf_page": 14,
+      "source_printed_page": 8,
+      "row_label": "冊數",
+      "column_label": "100",
+      "value_raw": "57,098,107",
+      "value_normalized": "57098107",
+      "is_blank": false,
+      "data_year": 2011,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "全國借閱圖書冊數",
+      "source_pdf_page": 14,
+      "source_printed_page": 8,
+      "row_label": "冊數",
+      "column_label": "101",
+      "value_raw": "61,620,597",
+      "value_normalized": "61620597",
+      "is_blank": false,
+      "data_year": 2012,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "全國借閱圖書冊數",
+      "source_pdf_page": 14,
+      "source_printed_page": 8,
+      "row_label": "成長率",
+      "column_label": "100–101合併格",
+      "value_raw": "8%",
+      "value_normalized": "8",
+      "is_blank": false,
+      "data_year": 2012,
+      "period_kind": "growth_between_years",
+      "period_start_year": 2011,
+      "period_end_year": 2012
+    },
+    {
+      "table": "全國借閱圖書人次",
+      "source_pdf_page": 14,
+      "source_printed_page": 8,
+      "row_label": "人次",
+      "column_label": "100",
+      "value_raw": "15,891,935",
+      "value_normalized": "15891935",
+      "is_blank": false,
+      "data_year": 2011,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "全國借閱圖書人次",
+      "source_pdf_page": 14,
+      "source_printed_page": 8,
+      "row_label": "人次",
+      "column_label": "101",
+      "value_raw": "16,027,718",
+      "value_normalized": "16027718",
+      "is_blank": false,
+      "data_year": 2012,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "全國借閱圖書人次",
+      "source_pdf_page": 14,
+      "source_printed_page": 8,
+      "row_label": "成長率",
+      "column_label": "100–101合併格",
+      "value_raw": "0.85%",
+      "value_normalized": "0.85",
+      "is_blank": false,
+      "data_year": 2012,
+      "period_kind": "growth_between_years",
+      "period_start_year": 2011,
+      "period_end_year": 2012
+    },
+    {
+      "table": "臺灣民眾101年利用圖書館服務統計",
+      "source_pdf_page": 15,
+      "source_printed_page": 9,
+      "row_label": "使用統計",
+      "column_label": "進館總人次",
+      "value_raw": "72,732,353",
+      "value_normalized": "72732353",
+      "is_blank": false,
+      "data_year": 2012,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "臺灣民眾101年利用圖書館服務統計",
+      "source_pdf_page": 15,
+      "source_printed_page": 9,
+      "row_label": "使用統計",
+      "column_label": "圖書館網站查詢次數",
+      "value_raw": "65,010,661",
+      "value_normalized": "65010661",
+      "is_blank": false,
+      "data_year": 2012,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "臺灣民眾101年利用圖書館服務統計",
+      "source_pdf_page": 15,
+      "source_printed_page": 9,
+      "row_label": "使用統計",
+      "column_label": "新增辦證數",
+      "value_raw": "676,313",
+      "value_normalized": "676313",
+      "is_blank": false,
+      "data_year": 2012,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "臺灣民眾101年利用圖書館服務統計",
+      "source_pdf_page": 15,
+      "source_printed_page": 9,
+      "row_label": "使用統計",
+      "column_label": "累積辦證數",
+      "value_raw": "10,796,214",
+      "value_normalized": "10796214",
+      "is_blank": false,
+      "data_year": 2012,
+      "period_kind": "cumulative_as_of_year_end"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "96,614",
+      "value_normalized": "96614",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "學童7-12歲",
+      "value_raw": "190,461",
+      "value_normalized": "190461",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "青少年13-18歲",
+      "value_raw": "38,798",
+      "value_normalized": "38798",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "青年19-30歲",
+      "value_raw": "77,901",
+      "value_normalized": "77901",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "477,278",
+      "value_normalized": "477278",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "壯年51-60歲",
+      "value_raw": "75,359",
+      "value_normalized": "75359",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "62,622",
+      "value_normalized": "62622",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "小計",
+      "value_raw": "1,019,032",
+      "value_normalized": "1019032",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "百分比",
+      "value_raw": "1.7%",
+      "value_normalized": "1.7",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "54,699",
+      "value_normalized": "54699",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "學童7-12歲",
+      "value_raw": "166,859",
+      "value_normalized": "166859",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "青少年13-18歲",
+      "value_raw": "134,684",
+      "value_normalized": "134684",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "青年19-30歲",
+      "value_raw": "338,983",
+      "value_normalized": "338983",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "918,354",
+      "value_normalized": "918354",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "壯年51-60歲",
+      "value_raw": "213,844",
+      "value_normalized": "213844",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "110,621",
+      "value_normalized": "110621",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "小計",
+      "value_raw": "1,938,043",
+      "value_normalized": "1938043",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "百分比",
+      "value_raw": "3.1%",
+      "value_normalized": "3.1",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "30,736",
+      "value_normalized": "30736",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "學童7-12歲",
+      "value_raw": "92,931",
+      "value_normalized": "92931",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "青少年13-18歲",
+      "value_raw": "59,244",
+      "value_normalized": "59244",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "青年19-30歲",
+      "value_raw": "99,941",
+      "value_normalized": "99941",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "413,969",
+      "value_normalized": "413969",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "壯年51-60歲",
+      "value_raw": "138,916",
+      "value_normalized": "138916",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "78,539",
+      "value_normalized": "78539",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "小計",
+      "value_raw": "914,277",
+      "value_normalized": "914277",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "百分比",
+      "value_raw": "1.5%",
+      "value_normalized": "1.5",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "298,351",
+      "value_normalized": "298351",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "學童7-12歲",
+      "value_raw": "939,380",
+      "value_normalized": "939380",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "青少年13-18歲",
+      "value_raw": "210,474",
+      "value_normalized": "210474",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "青年19-30歲",
+      "value_raw": "301,374",
+      "value_normalized": "301374",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "1,682,656",
+      "value_normalized": "1682656",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "壯年51-60歲",
+      "value_raw": "224,620",
+      "value_normalized": "224620",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "173,904",
+      "value_normalized": "173904",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "小計",
+      "value_raw": "3,830,760",
+      "value_normalized": "3830760",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "百分比",
+      "value_raw": "6.2%",
+      "value_normalized": "6.2",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "285,640",
+      "value_normalized": "285640",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "學童7-12歲",
+      "value_raw": "506,812",
+      "value_normalized": "506812",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "青少年13-18歲",
+      "value_raw": "325,130",
+      "value_normalized": "325130",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "青年19-30歲",
+      "value_raw": "861,935",
+      "value_normalized": "861935",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "3,403,715",
+      "value_normalized": "3403715",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "壯年51-60歲",
+      "value_raw": "796,513",
+      "value_normalized": "796513",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "429,922",
+      "value_normalized": "429922",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "小計",
+      "value_raw": "6,609,667",
+      "value_normalized": "6609667",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "百分比",
+      "value_raw": "10.7%",
+      "value_normalized": "10.7",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "280,610",
+      "value_normalized": "280610",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "學童7-12歲",
+      "value_raw": "501,937",
+      "value_normalized": "501937",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "青少年13-18歲",
+      "value_raw": "178,624",
+      "value_normalized": "178624",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "青年19-30歲",
+      "value_raw": "526,128",
+      "value_normalized": "526128",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "1,990,413",
+      "value_normalized": "1990413",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "壯年51-60歲",
+      "value_raw": "338,536",
+      "value_normalized": "338536",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "225,996",
+      "value_normalized": "225996",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "小計",
+      "value_raw": "4,042,244",
+      "value_normalized": "4042244",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "百分比",
+      "value_raw": "6.6%",
+      "value_normalized": "6.6",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "38,833",
+      "value_normalized": "38833",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "學童7-12歲",
+      "value_raw": "151,216",
+      "value_normalized": "151216",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "青少年13-18歲",
+      "value_raw": "67,235",
+      "value_normalized": "67235",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "青年19-30歲",
+      "value_raw": "101,489",
+      "value_normalized": "101489",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "412,910",
+      "value_normalized": "412910",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "壯年51-60歲",
+      "value_raw": "124,917",
+      "value_normalized": "124917",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "87,823",
+      "value_normalized": "87823",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "小計",
+      "value_raw": "984,425",
+      "value_normalized": "984425",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "百分比",
+      "value_raw": "1.6%",
+      "value_normalized": "1.6",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "93,494",
+      "value_normalized": "93494",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "學童7-12歲",
+      "value_raw": "459,352",
+      "value_normalized": "459352",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "青少年13-18歲",
+      "value_raw": "181,839",
+      "value_normalized": "181839",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "青年19-30歲",
+      "value_raw": "366,522",
+      "value_normalized": "366522",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "1,413,855",
+      "value_normalized": "1413855",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "壯年51-60歲",
+      "value_raw": "348,483",
+      "value_normalized": "348483",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "250,134",
+      "value_normalized": "250134",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "小計",
+      "value_raw": "3,113,680",
+      "value_normalized": "3113680",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "百分比",
+      "value_raw": "5.1%",
+      "value_normalized": "5.1",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "2,285,170",
+      "value_normalized": "2285170",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "學童7-12歲",
+      "value_raw": "6,541,765",
+      "value_normalized": "6541765",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "青少年13-18歲",
+      "value_raw": "2,842,872",
+      "value_normalized": "2842872",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "青年19-30歲",
+      "value_raw": "2,960,235",
+      "value_normalized": "2960235",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "13,896,415",
+      "value_normalized": "13896415",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "壯年51-60歲",
+      "value_raw": "2,465,622",
+      "value_normalized": "2465622",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "1,613,847",
+      "value_normalized": "1613847",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "小計",
+      "value_raw": "32,605,926",
+      "value_normalized": "32605926",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "百分比",
+      "value_raw": "52.9%",
+      "value_normalized": "52.9",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "247,187",
+      "value_normalized": "247187",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "學童7-12歲",
+      "value_raw": "1,518,899",
+      "value_normalized": "1518899",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "青少年13-18歲",
+      "value_raw": "602,450",
+      "value_normalized": "602450",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "青年19-30歲",
+      "value_raw": "672,444",
+      "value_normalized": "672444",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "2,605,783",
+      "value_normalized": "2605783",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "壯年51-60歲",
+      "value_raw": "528,202",
+      "value_normalized": "528202",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "387,578",
+      "value_normalized": "387578",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "小計",
+      "value_raw": "6,562,543",
+      "value_normalized": "6562543",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "百分比",
+      "value_raw": "10.6%",
+      "value_normalized": "10.6",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "3,711,334",
+      "value_normalized": "3711334",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "學童7-12歲",
+      "value_raw": "11,069,612",
+      "value_normalized": "11069612",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "青少年13-18歲",
+      "value_raw": "4,641,350",
+      "value_normalized": "4641350",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "青年19-30歲",
+      "value_raw": "6,306,952",
+      "value_normalized": "6306952",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "27,215,349",
+      "value_normalized": "27215349",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "壯年51-60歲",
+      "value_raw": "5,255,013",
+      "value_normalized": "5255013",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "3,420,987",
+      "value_normalized": "3420987",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "小計",
+      "value_raw": "61,620,597",
+      "value_normalized": "61620597",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "百分比",
+      "value_raw": "100.0%",
+      "value_normalized": "100.0",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "學齡前0-6歲",
+      "value_raw": "6.0%",
+      "value_normalized": "6.0",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "學童7-12歲",
+      "value_raw": "18.0%",
+      "value_normalized": "18.0",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "青少年13-18歲",
+      "value_raw": "7.5%",
+      "value_normalized": "7.5",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "青年19-30歲",
+      "value_raw": "10.2%",
+      "value_normalized": "10.2",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 4,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "青壯年31-50歲",
+      "value_raw": "44.2%",
+      "value_normalized": "44.2",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 5,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "壯年51-60歲",
+      "value_raw": "8.5%",
+      "value_normalized": "8.5",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 6,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "銀髮族61歲以上",
+      "value_raw": "5.6%",
+      "value_normalized": "5.6",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 7,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "小計",
+      "value_raw": "100%",
+      "value_normalized": "100",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 8,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "百分比",
+      "value_raw": null,
+      "value_normalized": null,
+      "is_blank": true,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 9,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "女性",
+      "value_raw": "681,564",
+      "value_normalized": "681564",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "男性",
+      "value_raw": "573,902",
+      "value_normalized": "573902",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "總類",
+      "column_label": "合計",
+      "value_raw": "1,255,466",
+      "value_normalized": "1255466",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 1,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "女性",
+      "value_raw": "1,216,862",
+      "value_normalized": "1216862",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "男性",
+      "value_raw": "847,033",
+      "value_normalized": "847033",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "哲學",
+      "column_label": "合計",
+      "value_raw": "2,063,895",
+      "value_normalized": "2063895",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 2,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "女性",
+      "value_raw": "586,173",
+      "value_normalized": "586173",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "男性",
+      "value_raw": "482,074",
+      "value_normalized": "482074",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "宗教",
+      "column_label": "合計",
+      "value_raw": "1,068,247",
+      "value_normalized": "1068247",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 3,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "女性",
+      "value_raw": "1,998,084",
+      "value_normalized": "1998084",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "男性",
+      "value_raw": "1,891,457",
+      "value_normalized": "1891457",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "自然科學",
+      "column_label": "合計",
+      "value_raw": "3,889,541",
+      "value_normalized": "3889541",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 4,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "女性",
+      "value_raw": "3,983,444",
+      "value_normalized": "3983444",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "男性",
+      "value_raw": "2,607,719",
+      "value_normalized": "2607719",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "應用科學",
+      "column_label": "合計",
+      "value_raw": "6,591,163",
+      "value_normalized": "6591163",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 5,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "女性",
+      "value_raw": "2,293,511",
+      "value_normalized": "2293511",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "男性",
+      "value_raw": "1,812,199",
+      "value_normalized": "1812199",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "社會科學",
+      "column_label": "合計",
+      "value_raw": "4,105,709",
+      "value_normalized": "4105709",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 6,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "女性",
+      "value_raw": "575,371",
+      "value_normalized": "575371",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "男性",
+      "value_raw": "554,710",
+      "value_normalized": "554710",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "中國史地",
+      "column_label": "合計",
+      "value_raw": "1,130,081",
+      "value_normalized": "1130081",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 7,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "女性",
+      "value_raw": "1,749,446",
+      "value_normalized": "1749446",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "男性",
+      "value_raw": "1,467,336",
+      "value_normalized": "1467336",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "世界史地",
+      "column_label": "合計",
+      "value_raw": "3,216,782",
+      "value_normalized": "3216782",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 8,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "女性",
+      "value_raw": "19,213,004",
+      "value_normalized": "19213004",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "男性",
+      "value_raw": "12,404,876",
+      "value_normalized": "12404876",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "語言文學",
+      "column_label": "合計",
+      "value_raw": "31,617,880",
+      "value_normalized": "31617880",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 9,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "女性",
+      "value_raw": "3,721,933",
+      "value_normalized": "3721933",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "男性",
+      "value_raw": "2,959,900",
+      "value_normalized": "2959900",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "藝術",
+      "column_label": "合計",
+      "value_raw": "6,681,833",
+      "value_normalized": "6681833",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 10,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "女性",
+      "value_raw": "36,019,393",
+      "value_normalized": "36019393",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "男性",
+      "value_raw": "25,601,204",
+      "value_normalized": "25601204",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "小計",
+      "column_label": "合計",
+      "value_raw": "61,620,597",
+      "value_normalized": "61620597",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 11,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "女性",
+      "value_raw": "58.5%",
+      "value_normalized": "58.5",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 1,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "男性",
+      "value_raw": "41.5%",
+      "value_normalized": "41.5",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 2,
+      "period_kind": "calendar_year"
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "source_pdf_page": 16,
+      "source_printed_page": 10,
+      "row_label": "百分比",
+      "column_label": "合計",
+      "value_raw": "100%",
+      "value_normalized": "100",
+      "is_blank": false,
+      "data_year": 2012,
+      "row_ordinal": 12,
+      "column_ordinal": 3,
+      "period_kind": "calendar_year"
+    }
+  ],
+  "comparison_status": "all154_source_cells_match; merged_growth_raw_period_corrected",
+  "compared_at": "2026-10-25T10:25:49.909201+00:00",
+  "derived_path": "derived/ncl_reading_2012_long.csv",
+  "derived_sha256": "f9f5f6eb7ec83ff439ad05db9731b0a8197300b9607fcc512a7185b261ed2aec",
+  "comparison_counts": {
+    "expected": 154,
+    "derived": 154,
+    "matched": 154,
+    "value_mismatches": 0,
+    "source_blank": 1
+  },
+  "comparison_details": [
+    {
+      "table": "全國借閱圖書冊數",
+      "row": 1,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "全國借閱圖書冊數",
+      "row": 1,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "全國借閱圖書冊數",
+      "row": 2,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "全國借閱圖書人次",
+      "row": 1,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "全國借閱圖書人次",
+      "row": 1,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "全國借閱圖書人次",
+      "row": 2,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "臺灣民眾101年利用圖書館服務統計",
+      "row": 1,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "臺灣民眾101年利用圖書館服務統計",
+      "row": 1,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "臺灣民眾101年利用圖書館服務統計",
+      "row": 1,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "臺灣民眾101年利用圖書館服務統計",
+      "row": 1,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 1,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 1,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 1,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 1,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 1,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 1,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 1,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 1,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 1,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 2,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 2,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 2,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 2,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 2,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 2,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 2,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 2,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 2,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 3,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 3,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 3,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 3,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 3,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 3,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 3,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 3,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 3,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 4,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 4,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 4,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 4,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 4,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 4,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 4,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 4,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 4,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 5,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 5,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 5,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 5,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 5,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 5,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 5,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 5,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 5,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 6,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 6,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 6,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 6,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 6,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 6,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 6,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 6,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 6,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 7,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 7,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 7,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 7,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 7,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 7,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 7,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 7,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 7,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 8,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 8,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 8,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 8,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 8,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 8,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 8,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 8,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 8,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 9,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 9,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 9,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 9,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 9,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 9,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 9,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 9,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 9,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 10,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 10,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 10,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 10,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 10,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 10,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 10,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 10,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 10,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 11,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 11,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 11,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 11,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 11,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 11,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 11,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 11,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 11,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 12,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 12,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 12,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 12,
+      "column": 5,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 12,
+      "column": 6,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 12,
+      "column": 7,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 12,
+      "column": 8,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 12,
+      "column": 9,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row": 12,
+      "column": 10,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 1,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 1,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 1,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 2,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 2,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 2,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 3,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 3,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 3,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 4,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 4,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 4,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 5,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 5,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 5,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 6,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 6,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 6,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 7,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 7,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 7,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 8,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 8,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 8,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 9,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 9,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 9,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 10,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 10,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 10,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 11,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 11,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 11,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 12,
+      "column": 2,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 12,
+      "column": 3,
+      "matches": true,
+      "differences": []
+    },
+    {
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row": 12,
+      "column": 4,
+      "matches": true,
+      "differences": []
+    }
+  ],
+  "mismatches": [],
+  "source_arithmetic": [
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "總類",
+      "column_label": "小計",
+      "reported": "1019032",
+      "sum_components": "1019033",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "哲學",
+      "column_label": "小計",
+      "reported": "1938043",
+      "sum_components": "1938044",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "宗教",
+      "column_label": "小計",
+      "reported": "914277",
+      "sum_components": "914276",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "自然科學",
+      "column_label": "小計",
+      "reported": "3830760",
+      "sum_components": "3830759",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "應用科學",
+      "column_label": "小計",
+      "reported": "6609667",
+      "sum_components": "6609667",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "社會科學",
+      "column_label": "小計",
+      "reported": "4042244",
+      "sum_components": "4042244",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "中國史地",
+      "column_label": "小計",
+      "reported": "984425",
+      "sum_components": "984423",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "世界史地",
+      "column_label": "小計",
+      "reported": "3113680",
+      "sum_components": "3113679",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "語言文學",
+      "column_label": "小計",
+      "reported": "32605926",
+      "sum_components": "32605926",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "藝術",
+      "column_label": "小計",
+      "reported": "6562543",
+      "sum_components": "6562543",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "小計",
+      "reported": "61620597",
+      "sum_components": "61620597",
+      "matches": true
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "學齡前0-6歲",
+      "reported": "3711334",
+      "sum_components": "3711334",
+      "matches": true
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "學童7-12歲",
+      "reported": "11069612",
+      "sum_components": "11069612",
+      "matches": true
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "青少年13-18歲",
+      "reported": "4641350",
+      "sum_components": "4641350",
+      "matches": true
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "青年19-30歲",
+      "reported": "6306952",
+      "sum_components": "6306952",
+      "matches": true
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "青壯年31-50歲",
+      "reported": "27215349",
+      "sum_components": "27215348",
+      "matches": false
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "壯年51-60歲",
+      "reported": "5255013",
+      "sum_components": "5255012",
+      "matches": false
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "銀髮族61歲以上",
+      "reported": "3420987",
+      "sum_components": "3420986",
+      "matches": false
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "小計",
+      "reported": "61620597",
+      "sum_components": "61620597",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "總類",
+      "column_label": "合計",
+      "reported": "1255466",
+      "sum_components": "1255466",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "哲學",
+      "column_label": "合計",
+      "reported": "2063895",
+      "sum_components": "2063895",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "宗教",
+      "column_label": "合計",
+      "reported": "1068247",
+      "sum_components": "1068247",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "自然科學",
+      "column_label": "合計",
+      "reported": "3889541",
+      "sum_components": "3889541",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "應用科學",
+      "column_label": "合計",
+      "reported": "6591163",
+      "sum_components": "6591163",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "社會科學",
+      "column_label": "合計",
+      "reported": "4105709",
+      "sum_components": "4105710",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "中國史地",
+      "column_label": "合計",
+      "reported": "1130081",
+      "sum_components": "1130081",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "世界史地",
+      "column_label": "合計",
+      "reported": "3216782",
+      "sum_components": "3216782",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "語言文學",
+      "column_label": "合計",
+      "reported": "31617880",
+      "sum_components": "31617880",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "藝術",
+      "column_label": "合計",
+      "reported": "6681833",
+      "sum_components": "6681833",
+      "matches": true
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "小計",
+      "column_label": "合計",
+      "reported": "61620597",
+      "sum_components": "61620597",
+      "matches": true
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "小計",
+      "column_label": "女性",
+      "reported": "36019393",
+      "sum_components": "36019392",
+      "matches": false
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "小計",
+      "column_label": "男性",
+      "reported": "25601204",
+      "sum_components": "25601206",
+      "matches": false
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "小計",
+      "column_label": "合計",
+      "reported": "61620597",
+      "sum_components": "61620597",
+      "matches": true
+    }
+  ],
+  "source_arithmetic_discrepancies": [
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "總類",
+      "column_label": "小計",
+      "reported": "1019032",
+      "sum_components": "1019033",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "哲學",
+      "column_label": "小計",
+      "reported": "1938043",
+      "sum_components": "1938044",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "宗教",
+      "column_label": "小計",
+      "reported": "914277",
+      "sum_components": "914276",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "自然科學",
+      "column_label": "小計",
+      "reported": "3830760",
+      "sum_components": "3830759",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "中國史地",
+      "column_label": "小計",
+      "reported": "984425",
+      "sum_components": "984423",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "世界史地",
+      "column_label": "小計",
+      "reported": "3113680",
+      "sum_components": "3113679",
+      "matches": false
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "青壯年31-50歲",
+      "reported": "27215349",
+      "sum_components": "27215348",
+      "matches": false
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "壯年51-60歲",
+      "reported": "5255013",
+      "sum_components": "5255012",
+      "matches": false
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "各年齡層讀者借閱圖書類別分析表",
+      "row_label": "小計",
+      "column_label": "銀髮族61歲以上",
+      "reported": "3420987",
+      "sum_components": "3420986",
+      "matches": false
+    },
+    {
+      "check": "printed_row_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "社會科學",
+      "column_label": "合計",
+      "reported": "4105709",
+      "sum_components": "4105710",
+      "matches": false
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "小計",
+      "column_label": "女性",
+      "reported": "36019393",
+      "sum_components": "36019392",
+      "matches": false
+    },
+    {
+      "check": "printed_column_subtotal",
+      "table": "不同性別讀者借閱圖書類別分析",
+      "row_label": "小計",
+      "column_label": "男性",
+      "reported": "25601204",
+      "sum_components": "25601206",
+      "matches": false
+    }
+  ],
+  "cross_table_class_totals": [
+    {
+      "class": "總類",
+      "age_table_subtotal": "1019032",
+      "sex_table_total": "1255466",
+      "equal": false,
+      "interpretation": "different source tables; preserved, no automatic harmonization"
+    },
+    {
+      "class": "哲學",
+      "age_table_subtotal": "1938043",
+      "sex_table_total": "2063895",
+      "equal": false,
+      "interpretation": "different source tables; preserved, no automatic harmonization"
+    },
+    {
+      "class": "宗教",
+      "age_table_subtotal": "914277",
+      "sex_table_total": "1068247",
+      "equal": false,
+      "interpretation": "different source tables; preserved, no automatic harmonization"
+    },
+    {
+      "class": "自然科學",
+      "age_table_subtotal": "3830760",
+      "sex_table_total": "3889541",
+      "equal": false,
+      "interpretation": "different source tables; preserved, no automatic harmonization"
+    },
+    {
+      "class": "應用科學",
+      "age_table_subtotal": "6609667",
+      "sex_table_total": "6591163",
+      "equal": false,
+      "interpretation": "different source tables; preserved, no automatic harmonization"
+    },
+    {
+      "class": "社會科學",
+      "age_table_subtotal": "4042244",
+      "sex_table_total": "4105709",
+      "equal": false,
+      "interpretation": "different source tables; preserved, no automatic harmonization"
+    },
+    {
+      "class": "中國史地",
+      "age_table_subtotal": "984425",
+      "sex_table_total": "1130081",
+      "equal": false,
+      "interpretation": "different source tables; preserved, no automatic harmonization"
+    },
+    {
+      "class": "世界史地",
+      "age_table_subtotal": "3113680",
+      "sex_table_total": "3216782",
+      "equal": false,
+      "interpretation": "different source tables; preserved, no automatic harmonization"
+    },
+    {
+      "class": "語言文學",
+      "age_table_subtotal": "32605926",
+      "sex_table_total": "31617880",
+      "equal": false,
+      "interpretation": "different source tables; preserved, no automatic harmonization"
+    },
+    {
+      "class": "藝術",
+      "age_table_subtotal": "6562543",
+      "sex_table_total": "6681833",
+      "equal": false,
+      "interpretation": "different source tables; preserved, no automatic harmonization"
+    }
+  ],
+  "growth_metadata": [
+    {
+      "source_id": "ncl-reading-2012-t1",
+      "value_raw": "8%",
+      "data_year": "2012",
+      "source_data_year_raw": "100年至101年（合併格）",
+      "temporal_kind": "derived_growth_rate",
+      "time_reference": "2011至2012變動率",
+      "source_column_span": "[2, 3]",
+      "source_column_path": "100年至101年／成長率（合併欄）"
+    },
+    {
+      "source_id": "ncl-reading-2012-t2",
+      "value_raw": "0.85%",
+      "data_year": "2012",
+      "source_data_year_raw": "100年至101年（合併格）",
+      "temporal_kind": "derived_growth_rate",
+      "time_reference": "2011至2012變動率",
+      "source_column_span": "[2, 3]",
+      "source_column_path": "100年至101年／成長率（合併欄）"
+    }
+  ],
+  "minor_findings": [
+    {
+      "field": "source_data_year_raw",
+      "rows": "both growth rows",
+      "actual": "101年",
+      "suggestion": "100年至101年（合併格）",
+      "reason": "data_year2012 as ending reference year and temporal_kind/time_reference are correct, but raw period should acknowledge original merged100/101 columns",
+      "status": "resolved_by_authorized_two_cell_raw_period_revision"
+    }
+  ],
+  "scope_limits": [
+    "This independently verifies154 source cells of5 selected national tables, not the entire71page handbook.",
+    "No claim public-library county core amounts are complete.",
+    "Raw PDF/rendered full pages remain private.",
+    "AI image review is not expert certification or human double proofing."
+  ],
+  "authorized_minimal_revision": {
+    "script_path": "scripts/extract_ncl_reading_2012.py",
+    "changes": [
+      {
+        "row": 3,
+        "source_id": "ncl-reading-2012-t1",
+        "field": "source_data_year_raw",
+        "before": "101年",
+        "after": "100年至101年（合併格）"
+      },
+      {
+        "row": 6,
+        "source_id": "ncl-reading-2012-t2",
+        "field": "source_data_year_raw",
+        "before": "101年",
+        "after": "100年至101年（合併格）"
+      }
+    ],
+    "all154_values_raw_values_source_positions_and_other_fields_unchanged": true
+  },
+  "source_bbox_numeric_raw_checks": {
+    "checked": 154,
+    "matched": 154,
+    "method": "independent PDF chars selected by provided bbox, normalized numeric glyphs compared to frozen image expectations; includes1true blank"
+  },
+  "expectation_label_note": "The frozen reviewer label百分比 for sex-table last row is contextual; the actual printed row-name cell is blank. Producer correctly keeps source_row_label_raw blank and contextual metric label distinct.",
+  "producer_jsonl_sha256": "36439d2cdec27dd978ebbda0fda98b92df74117b6e394fb074ae97500e5ae867",
+  "producer_script_sha256": "731aa4783189b1435b28ad3818ad3069a93bb175781c88581d1ae1a94c622a59",
+  "review_completed_at": "2026-10-25T10:28:12.785846+00:00",
+  "final_result": "pass_all154_original_cells_and_source_positions; source arithmetic inconsistencies retained; two growth raw-period labels corrected without numeric changes"
+}

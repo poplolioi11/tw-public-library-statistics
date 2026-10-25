@@ -1,0 +1,523 @@
+{
+  "checked_at": "2026-10-25",
+  "completed": true,
+  "completion_scope": "all_data_cells_of_five_national_aggregate_tables_PDF14_to16",
+  "source_family": "國家圖書館閱讀報告統計事實",
+  "source_document": {
+    "source_id": "ncl-reading-habits-2012",
+    "title": "臺灣101年閱讀習慣調查結果報告",
+    "source_page_url": "https://www.ncl.edu.tw/galleries/0Q082532024025788575",
+    "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q082532021110999161/32251658871.pdf",
+    "original_legacy_entry": "https://www.ncl.edu.tw/information_237_1485.html",
+    "original_legacy_download": "https://nclfile.ncl.edu.tw/nclhistory/public/Attachment/32251658871.pdf",
+    "source_local_path": "raw/ncl-2012/ncl-reading-101.pdf",
+    "sha256": "f25798e2fe96dcde51a0ed818edb395f986c2b427f8b39349d4edbe62dabacc4",
+    "bytes": 2902602,
+    "pages": 71,
+    "source_retrieved_at": "2026-10-25T10:13:56.904410+00:00",
+    "publication_date": "2013-02-25",
+    "publication_date_basis": "report_release_event; current gallery date2013-02-27",
+    "license_status": "not_confirmed",
+    "snapshot_distribution": "not_in_public_bundle"
+  },
+  "source_sha256": "f25798e2fe96dcde51a0ed818edb395f986c2b427f8b39349d4edbe62dabacc4",
+  "source_cells": 154,
+  "numeric_cells": 153,
+  "blank_cells": 1,
+  "years": [
+    2011,
+    2012
+  ],
+  "county_observations": 0,
+  "county_coverage": "does_not_fill_2012_22_county_core_gap",
+  "tables": [
+    {
+      "table": 1,
+      "title": "全國借閱圖書冊數",
+      "pdf_page": 14,
+      "printed_page": 8,
+      "source_cells": 3,
+      "years": [
+        2011,
+        2012
+      ],
+      "merged_growth_cell": true
+    },
+    {
+      "table": 2,
+      "title": "全國借閱圖書人次",
+      "pdf_page": 14,
+      "printed_page": 8,
+      "source_cells": 3,
+      "years": [
+        2011,
+        2012
+      ],
+      "merged_growth_cell": true
+    },
+    {
+      "table": 3,
+      "title": "臺灣民眾101年利用圖書館服務統計",
+      "pdf_page": 15,
+      "printed_page": 9,
+      "source_cells": 4,
+      "years": [
+        2012
+      ]
+    },
+    {
+      "table": 4,
+      "title": "各年齡層讀者借閱圖書類別分析表",
+      "pdf_page": 16,
+      "printed_page": 10,
+      "data_rows": 12,
+      "data_columns": 9,
+      "source_cells": 108,
+      "years": [
+        2012
+      ]
+    },
+    {
+      "table": 5,
+      "title": "不同性別讀者借閱圖書類別分析",
+      "pdf_page": 16,
+      "printed_page": 10,
+      "data_rows": 12,
+      "data_columns": 3,
+      "source_cells": 36,
+      "years": [
+        2012
+      ]
+    }
+  ],
+  "source_arithmetic_checks": [
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 1,
+      "source_column": 9,
+      "calculated": "1019033",
+      "published": "1019032",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 2,
+      "source_column": 9,
+      "calculated": "1938044",
+      "published": "1938043",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 3,
+      "source_column": 9,
+      "calculated": "914276",
+      "published": "914277",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 4,
+      "source_column": 9,
+      "calculated": "3830759",
+      "published": "3830760",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 5,
+      "source_column": 9,
+      "calculated": "6609667",
+      "published": "6609667",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 6,
+      "source_column": 9,
+      "calculated": "4042244",
+      "published": "4042244",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 7,
+      "source_column": 9,
+      "calculated": "984423",
+      "published": "984425",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 8,
+      "source_column": 9,
+      "calculated": "3113679",
+      "published": "3113680",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 9,
+      "source_column": 9,
+      "calculated": "32605926",
+      "published": "32605926",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 10,
+      "source_column": 9,
+      "calculated": "6562543",
+      "published": "6562543",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 9,
+      "calculated": "61620597",
+      "published": "61620597",
+      "passed": true
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 2,
+      "calculated": "3711334",
+      "published": "3711334",
+      "passed": true
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 3,
+      "calculated": "11069612",
+      "published": "11069612",
+      "passed": true
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 4,
+      "calculated": "4641350",
+      "published": "4641350",
+      "passed": true
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 5,
+      "calculated": "6306952",
+      "published": "6306952",
+      "passed": true
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 6,
+      "calculated": "27215348",
+      "published": "27215349",
+      "passed": false
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 7,
+      "calculated": "5255012",
+      "published": "5255013",
+      "passed": false
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 8,
+      "calculated": "3420986",
+      "published": "3420987",
+      "passed": false
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 9,
+      "calculated": "61620597",
+      "published": "61620597",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 1,
+      "source_column": 4,
+      "calculated": "1255466",
+      "published": "1255466",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 2,
+      "source_column": 4,
+      "calculated": "2063895",
+      "published": "2063895",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 3,
+      "source_column": 4,
+      "calculated": "1068247",
+      "published": "1068247",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 4,
+      "source_column": 4,
+      "calculated": "3889541",
+      "published": "3889541",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 5,
+      "source_column": 4,
+      "calculated": "6591163",
+      "published": "6591163",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 6,
+      "source_column": 4,
+      "calculated": "4105710",
+      "published": "4105709",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 7,
+      "source_column": 4,
+      "calculated": "1130081",
+      "published": "1130081",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 8,
+      "source_column": 4,
+      "calculated": "3216782",
+      "published": "3216782",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 9,
+      "source_column": 4,
+      "calculated": "31617880",
+      "published": "31617880",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 10,
+      "source_column": 4,
+      "calculated": "6681833",
+      "published": "6681833",
+      "passed": true
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 11,
+      "source_column": 4,
+      "calculated": "61620597",
+      "published": "61620597",
+      "passed": true
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 11,
+      "source_column": 2,
+      "calculated": "36019392",
+      "published": "36019393",
+      "passed": false
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 11,
+      "source_column": 3,
+      "calculated": "25601206",
+      "published": "25601204",
+      "passed": false
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 11,
+      "source_column": 4,
+      "calculated": "61620597",
+      "published": "61620597",
+      "passed": true
+    }
+  ],
+  "source_discrepancies": [
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 1,
+      "source_column": 9,
+      "calculated": "1019033",
+      "published": "1019032",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 2,
+      "source_column": 9,
+      "calculated": "1938044",
+      "published": "1938043",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 3,
+      "source_column": 9,
+      "calculated": "914276",
+      "published": "914277",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 4,
+      "source_column": 9,
+      "calculated": "3830759",
+      "published": "3830760",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 7,
+      "source_column": 9,
+      "calculated": "984423",
+      "published": "984425",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 8,
+      "source_column": 9,
+      "calculated": "3113679",
+      "published": "3113680",
+      "passed": false
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 6,
+      "calculated": "27215348",
+      "published": "27215349",
+      "passed": false
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 7,
+      "calculated": "5255012",
+      "published": "5255013",
+      "passed": false
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t4",
+      "source_row": 11,
+      "source_column": 8,
+      "calculated": "3420986",
+      "published": "3420987",
+      "passed": false
+    },
+    {
+      "check": "published_row_total_vs_components",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 6,
+      "source_column": 4,
+      "calculated": "4105710",
+      "published": "4105709",
+      "passed": false
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 11,
+      "source_column": 2,
+      "calculated": "36019392",
+      "published": "36019393",
+      "passed": false
+    },
+    {
+      "check": "published_column_total_vs_classes",
+      "source_id": "ncl-reading-2012-t5",
+      "source_row": 11,
+      "source_column": 3,
+      "calculated": "25601206",
+      "published": "25601204",
+      "passed": false
+    }
+  ],
+  "independent_review": "pending_root_review",
+  "publication_date": "2013-02-25",
+  "publication_date_basis": "release_event_PDF3",
+  "source_gallery_publication_date": "2013-02-27",
+  "source_edition_roc": null,
+  "limitations": [
+    "年齡表與性別表的同類別合計不同，未提供對齊說明；各自保留，不自行調和。",
+    "百分比、合計、小計及分項重疊，不可將全部格相加。",
+    "原報告8頁成長率跨兩年度欄合併，只計一格，不製造不存在的空白。",
+    "累積辦證精確截點未另明示，不用記者會日期代替。",
+    "本批未取得22縣市原始營運量表。"
+  ],
+  "intentional_exclusion": [
+    "書名與出版社榜單",
+    "借閱楷模及其他個人資料",
+    "得獎與評鑑",
+    "工程個案",
+    "表格之外的整篇著作文字"
+  ],
+  "license_status": "not_confirmed",
+  "snapshot_distribution": "original_PDF_private; statistical_facts_only"
+}

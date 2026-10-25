@@ -1,0 +1,535 @@
+{
+  "source_id": "ncl-yearbook-102-operational-prose-2012",
+  "source_sha256": "fa45743b313649cda46612cba04d516c23ce21b37fd4777db52a78df53c021a5",
+  "source_pdf": "raw/ncl-additional/yearbook-102-public-library.pdf",
+  "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565374511489343",
+  "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565384142944973/96650c02-f72a-487c-9462-6a3c29efe29e.pdf",
+  "source_retrieved_at": "2026-10-25T09:22:41.556437+00:00",
+  "data_year": 2012,
+  "source_edition_roc": 102,
+  "publication_date": "2014-05",
+  "rows": 270,
+  "inputs": [
+    {
+      "path": "raw/ncl-additional/yearbook-102-public-library.pdf",
+      "sha256": "fa45743b313649cda46612cba04d516c23ce21b37fd4777db52a78df53c021a5",
+      "source_id": "ncl-yearbook-102-operational-prose-2012"
+    },
+    {
+      "path": "raw/ncl-additional/yearbook-102-public-library.metadata.json",
+      "role": "official_attachment_fetch_metadata"
+    }
+  ],
+  "outputs": [
+    "derived/ncl_2012_prose_long.csv",
+    "derived/ncl_2012_prose_long.jsonl"
+  ],
+  "image_review_paths": [
+    "raw/ncl-2012/rendered/ncl-yearbook-102-public-1.png",
+    "raw/ncl-2012/rendered/ncl-yearbook-102-public-2.png",
+    "raw/ncl-2012/rendered/ncl-yearbook-102-public-3.png",
+    "raw/ncl-2012/rendered/ncl-yearbook-102-public-4.png"
+  ],
+  "scope": "All270 explicit operational numeral spans in sections1–8, PDF1–4 printed69–72. Calendar labels/introductory taxonomy counts and later named-institution narratives excluded.",
+  "value_status_counts": {
+    "reported_prose": 270
+  },
+  "sections": [
+    {
+      "section": 1,
+      "title": "一、圖書館數量",
+      "printed_numeric_spans": 33,
+      "extracted_observations": 33,
+      "complete_all_explicit_operational_numerals": true,
+      "missing_cells_created": 0
+    },
+    {
+      "section": 2,
+      "title": "二、人力資源",
+      "printed_numeric_spans": 34,
+      "extracted_observations": 34,
+      "complete_all_explicit_operational_numerals": true,
+      "missing_cells_created": 0
+    },
+    {
+      "section": 3,
+      "title": "三、圖書資料經費",
+      "printed_numeric_spans": 35,
+      "extracted_observations": 35,
+      "complete_all_explicit_operational_numerals": true,
+      "missing_cells_created": 0
+    },
+    {
+      "section": 4,
+      "title": "四、圖書資料數量",
+      "printed_numeric_spans": 35,
+      "extracted_observations": 35,
+      "complete_all_explicit_operational_numerals": true,
+      "missing_cells_created": 0
+    },
+    {
+      "section": 5,
+      "title": "五、閱覽席位及電腦數量",
+      "printed_numeric_spans": 12,
+      "extracted_observations": 12,
+      "complete_all_explicit_operational_numerals": true,
+      "missing_cells_created": 0
+    },
+    {
+      "section": 6,
+      "title": "六、借閱證數量",
+      "printed_numeric_spans": 6,
+      "extracted_observations": 6,
+      "complete_all_explicit_operational_numerals": true,
+      "missing_cells_created": 0
+    },
+    {
+      "section": 7,
+      "title": "七、館藏使用情形",
+      "printed_numeric_spans": 35,
+      "extracted_observations": 35,
+      "complete_all_explicit_operational_numerals": true,
+      "missing_cells_created": 0
+    },
+    {
+      "section": 8,
+      "title": "八、推廣活動辦理情形",
+      "printed_numeric_spans": 80,
+      "extracted_observations": 80,
+      "complete_all_explicit_operational_numerals": true,
+      "missing_cells_created": 0
+    }
+  ],
+  "county_ratio_coverage": {
+    "service_population_per_staff": {
+      "county_count": 21,
+      "missing_from_printed_prose": [
+        "連江縣"
+      ],
+      "interpretation": "not printed here; not evidence no official data exists"
+    },
+    "acquisition_per_capita": {
+      "county_count": 22,
+      "missing_from_printed_prose": [],
+      "interpretation": "not printed here; not evidence no official data exists"
+    },
+    "holdings_per_capita": {
+      "county_count": 22,
+      "missing_from_printed_prose": [],
+      "interpretation": "not printed here; not evidence no official data exists"
+    },
+    "loans_per_capita": {
+      "county_count": 22,
+      "missing_from_printed_prose": [],
+      "interpretation": "not printed here; not evidence no official data exists"
+    }
+  },
+  "checks": [
+    {
+      "check": "staff_all_five_levels",
+      "reported": "14344",
+      "sum_parts": "14344",
+      "matches": true,
+      "target_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 1; bbox 465.000,403.252,481.960,416.752; PDF page 1; printed page 69; panel R; section 2; prose numeral 1; bbox 283.140,420.172,305.665,433.672",
+      "component_locators": [
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 8; bbox 326.280,470.872,348.805,484.372",
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 9; bbox 283.140,487.732,305.665,501.232",
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 10; bbox 428.820,487.732,451.285,501.232",
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 11; bbox 386.280,504.652,408.805,518.152",
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 12; bbox 357.540,521.572,367.590,535.072"
+      ]
+    },
+    {
+      "check": "acquisition_all_five_levels",
+      "reported": "487947482",
+      "sum_parts": "205947482",
+      "matches": false,
+      "target_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 1; bbox 129.840,248.512,212.425,262.012",
+      "component_locators": [
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 8; bbox 198.000,333.052,255.559,346.552",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 9; bbox 56.700,366.832,116.725,380.332",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 10; bbox 100.140,383.752,162.085,397.252",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 11; bbox 159.540,400.612,212.670,414.112",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 12; bbox 225.240,417.532,255.520,431.032; PDF page 2; printed page 70; panel L; section 3; prose numeral 12; bbox 56.700,434.452,79.225,447.952"
+      ]
+    },
+    {
+      "check": "holdings_all_five_levels",
+      "reported": "37254822",
+      "sum_parts": "37254822",
+      "matches": true,
+      "target_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 1; bbox 315.660,113.332,375.621,126.832",
+      "component_locators": [
+        "PDF page 2; printed page 70; panel R; section 4; prose numeral 8; bbox 375.960,180.952,429.145,194.452",
+        "PDF page 2; printed page 70; panel R; section 4; prose numeral 9; bbox 415.740,197.812,481.941,211.312",
+        "PDF page 2; printed page 70; panel R; section 4; prose numeral 10; bbox 451.680,214.732,481.960,228.232; PDF page 2; printed page 70; panel R; section 4; prose numeral 10; bbox 283.140,231.652,305.665,245.152",
+        "PDF page 2; printed page 70; panel R; section 4; prose numeral 11; bbox 283.140,248.512,329.010,262.012",
+        "PDF page 2; printed page 70; panel R; section 4; prose numeral 12; bbox 315.660,265.432,363.145,278.932"
+      ]
+    },
+    {
+      "check": "seats_five_levels",
+      "reported": "83025",
+      "sum_parts": "83025",
+      "matches": true,
+      "target_locator": "PDF page 2; printed page 70; panel R; section 5; prose numeral 1; bbox 325.980,552.712,369.145,566.212",
+      "component_locators": [
+        "PDF page 2; printed page 70; panel R; section 5; prose numeral 2; bbox 346.260,569.632,368.785,583.132",
+        "PDF page 2; printed page 70; panel R; section 5; prose numeral 3; bbox 336.000,586.552,379.165,600.052",
+        "PDF page 2; printed page 70; panel R; section 5; prose numeral 4; bbox 336.300,603.412,358.825,616.912",
+        "PDF page 2; printed page 70; panel R; section 5; prose numeral 5; bbox 325.980,620.332,369.145,633.832",
+        "PDF page 2; printed page 70; panel R; section 5; prose numeral 6; bbox 345.660,637.252,360.630,650.752"
+      ]
+    },
+    {
+      "check": "computers_five_levels",
+      "reported": "4849",
+      "sum_parts": "4849",
+      "matches": true,
+      "target_locator": "PDF page 2; printed page 70; panel R; section 5; prose numeral 7; bbox 346.260,671.032,368.785,684.532",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel L; section 5; prose numeral 8; bbox 149.220,79.552,164.190,93.052",
+        "PDF page 3; printed page 71; panel L; section 5; prose numeral 9; bbox 159.840,96.412,182.365,109.912",
+        "PDF page 3; printed page 71; panel L; section 5; prose numeral 10; bbox 169.200,113.332,184.170,126.832",
+        "PDF page 3; printed page 71; panel L; section 5; prose numeral 11; bbox 179.820,130.252,202.345,143.752",
+        "PDF page 3; printed page 71; panel L; section 5; prose numeral 12; bbox 209.220,147.112,219.210,160.612"
+      ]
+    },
+    {
+      "check": "library_cards_five_levels",
+      "reported": "9980117",
+      "sum_parts": "10071655",
+      "matches": false,
+      "target_locator": "PDF page 3; printed page 71; panel L; section 6; prose numeral 1; bbox 89.220,214.732,134.190,228.232",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel L; section 6; prose numeral 2; bbox 89.220,231.652,136.705,245.152",
+        "PDF page 3; printed page 71; panel L; section 6; prose numeral 3; bbox 79.560,248.512,132.693,262.012",
+        "PDF page 3; printed page 71; panel L; section 6; prose numeral 4; bbox 69.540,265.432,122.665,278.932",
+        "PDF page 3; printed page 71; panel L; section 6; prose numeral 5; bbox 69.540,282.352,122.665,295.852",
+        "PDF page 3; printed page 71; panel L; section 6; prose numeral 6; bbox 79.200,299.212,121.701,312.712"
+      ]
+    },
+    {
+      "check": "loans_five_levels",
+      "reported": "62904803",
+      "sum_parts": "62904803",
+      "matches": true,
+      "target_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 1; bbox 119.220,383.752,179.193,397.252",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel L; section 7; prose numeral 2; bbox 200.460,400.612,255.559,414.112",
+        "PDF page 3; printed page 71; panel L; section 7; prose numeral 3; bbox 233.040,417.532,255.565,431.032; PDF page 3; printed page 71; panel L; section 7; prose numeral 3; bbox 56.700,434.452,92.365,447.952",
+        "PDF page 3; printed page 71; panel L; section 7; prose numeral 4; bbox 70.140,451.312,112.050,464.812",
+        "PDF page 3; printed page 71; panel L; section 7; prose numeral 5; bbox 100.140,468.232,162.085,481.732",
+        "PDF page 3; printed page 71; panel L; section 7; prose numeral 6; bbox 160.140,485.152,202.050,498.652"
+      ]
+    },
+    {
+      "check": "borrower_visits_five_levels",
+      "reported": "17888352",
+      "sum_parts": "17888352",
+      "matches": true,
+      "target_locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 30; bbox 356.580,147.112,418.525,160.612",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel R; section 7; prose numeral 31; bbox 435.240,164.032,481.999,177.532",
+        "PDF page 3; printed page 71; panel R; section 7; prose numeral 32; bbox 283.140,197.812,343.165,211.312",
+        "PDF page 3; printed page 71; panel R; section 7; prose numeral 33; bbox 335.640,214.732,380.610,228.232",
+        "PDF page 3; printed page 71; panel R; section 7; prose numeral 34; bbox 385.980,231.652,439.165,245.152",
+        "PDF page 3; printed page 71; panel R; section 7; prose numeral 35; bbox 461.700,248.512,481.960,262.012; PDF page 3; printed page 71; panel R; section 7; prose numeral 35; bbox 283.140,265.432,305.665,278.932"
+      ]
+    },
+    {
+      "check": "events_all_five_levels",
+      "reported": "84944",
+      "sum_parts": "84944",
+      "matches": true,
+      "target_locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 1; bbox 336.000,349.912,379.165,363.412",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 8; bbox 459.480,417.532,481.999,431.032",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 15; bbox 436.920,485.152,481.999,498.652",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 22; bbox 340.080,569.632,362.605,583.132",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 29; bbox 375.960,637.252,419.133,650.752",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 36; bbox 225.240,96.412,240.270,109.912"
+      ]
+    },
+    {
+      "check": "attendance_all_five_levels",
+      "reported": "13866814",
+      "sum_parts": "13866814",
+      "matches": true,
+      "target_locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 41; bbox 130.140,180.952,192.085,194.452",
+      "component_locators": [
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 48; bbox 245.520,265.432,255.510,278.932; PDF page 4; printed page 72; panel L; section 8; prose numeral 48; bbox 56.700,282.352,91.945,295.852",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 55; bbox 89.520,366.832,142.705,380.332",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 62; bbox 169.200,451.312,214.170,464.812",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 69; bbox 89.220,552.712,134.190,566.212",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 76; bbox 190.800,637.252,241.405,650.752"
+      ]
+    },
+    {
+      "check": "staff_categories",
+      "reported": "14344",
+      "sum_parts": "14344",
+      "matches": true,
+      "target_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 1; bbox 465.000,403.252,481.960,416.752; PDF page 1; printed page 69; panel R; section 2; prose numeral 1; bbox 283.140,420.172,305.665,433.672",
+      "component_locators": [
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 2; bbox 398.820,420.172,421.281,433.672",
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 3; bbox 283.140,437.032,305.665,450.532",
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 4; bbox 378.600,437.032,393.570,450.532",
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 5; bbox 446.640,437.032,461.730,450.532",
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 6; bbox 305.640,453.952,335.670,467.452",
+        "PDF page 1; printed page 69; panel R; section 2; prose numeral 7; bbox 378.840,453.952,401.301,467.452"
+      ]
+    },
+    {
+      "check": "acquisition_categories",
+      "reported": "487947482",
+      "sum_parts": "487947482",
+      "matches": true,
+      "target_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 1; bbox 129.840,248.512,212.425,262.012",
+      "component_locators": [
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 2; bbox 108.300,265.432,184.765,278.932",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 3; bbox 232.920,265.432,255.445,278.932; PDF page 2; printed page 70; panel L; section 3; prose numeral 3; bbox 56.700,282.352,91.701,295.852",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 4; bbox 144.840,282.352,204.801,295.852",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 5; bbox 80.280,299.212,142.405,312.712",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 6; bbox 219.480,299.212,255.520,312.712; PDF page 2; printed page 70; panel L; section 3; prose numeral 6; bbox 56.700,316.132,79.225,329.632",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 7; bbox 153.660,316.132,213.621,329.632"
+      ]
+    },
+    {
+      "check": "events_categories_全國",
+      "reported": "84944",
+      "sum_parts": "84944",
+      "matches": true,
+      "target_locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 1; bbox 336.000,349.912,379.165,363.412",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 2; bbox 295.620,366.832,338.125,380.332",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 3; bbox 420.000,366.832,462.501,380.332",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 4; bbox 345.660,383.752,368.121,397.252",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 5; bbox 439.440,383.752,481.941,397.252",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 6; bbox 359.940,400.612,400.941,414.112",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 7; bbox 459.480,400.612,482.005,414.112"
+      ]
+    },
+    {
+      "check": "events_categories_國立級圖書館",
+      "reported": "1278",
+      "sum_parts": "1278",
+      "matches": true,
+      "target_locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 8; bbox 459.480,417.532,481.999,431.032",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 9; bbox 395.040,434.452,410.010,447.952",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 10; bbox 295.680,451.312,310.650,464.812",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 11; bbox 391.260,451.312,396.270,464.812",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 12; bbox 466.920,451.312,481.890,464.812",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 13; bbox 365.640,468.232,380.670,481.732",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 14; bbox 445.680,468.232,460.650,481.732"
+      ]
+    },
+    {
+      "check": "events_categories_直轄市級圖書館",
+      "reported": "52326",
+      "sum_parts": "52326",
+      "matches": true,
+      "target_locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 15; bbox 436.920,485.152,481.999,498.652",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 16; bbox 396.000,502.012,439.165,515.512",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 17; bbox 325.980,518.932,348.445,532.432",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 18; bbox 434.100,518.932,449.130,532.432",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 19; bbox 326.880,535.852,371.901,549.352",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 20; bbox 459.420,535.852,481.881,549.352",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 21; bbox 346.260,552.712,368.785,566.212"
+      ]
+    },
+    {
+      "check": "events_categories_縣市級圖書館",
+      "reported": "9634",
+      "sum_parts": "9634",
+      "matches": true,
+      "target_locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 22; bbox 340.080,569.632,362.605,583.132",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 23; bbox 283.140,586.552,305.665,600.052",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 24; bbox 388.800,586.552,411.325,600.052",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 25; bbox 295.980,603.412,311.010,616.912",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 26; bbox 386.640,603.412,409.105,616.912",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 27; bbox 295.980,620.332,318.505,633.832",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 28; bbox 384.120,620.332,399.150,633.832"
+      ]
+    },
+    {
+      "check": "events_categories_鄉鎮市級圖書館",
+      "reported": "21273",
+      "sum_parts": "21273",
+      "matches": true,
+      "target_locator": "PDF page 3; printed page 71; panel R; section 8; prose numeral 29; bbox 375.960,637.252,419.133,650.752",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 30; bbox 335.640,654.112,358.165,667.612",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 31; bbox 440.100,654.112,462.561,667.612",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 32; bbox 345.960,671.032,360.990,684.532",
+        "PDF page 3; printed page 71; panel R; section 8; prose numeral 33; bbox 436.620,671.032,459.085,684.532",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 34; bbox 120.120,79.552,142.705,93.052",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 35; bbox 209.520,79.552,232.045,93.052"
+      ]
+    },
+    {
+      "check": "events_categories_臺灣省政府圖書館",
+      "reported": "433",
+      "sum_parts": "433",
+      "matches": true,
+      "target_locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 36; bbox 225.240,96.412,240.270,109.912",
+      "component_locators": [
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 37; bbox 158.640,113.332,173.610,126.832",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 38; bbox 56.700,130.252,61.710,143.752",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 39; bbox 132.120,130.252,142.110,143.752",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 40; bbox 222.540,130.252,237.510,143.752"
+      ]
+    },
+    {
+      "check": "attendance_categories_全國",
+      "reported": "13866814",
+      "sum_parts": "13866814",
+      "matches": true,
+      "target_locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 41; bbox 130.140,180.952,192.085,194.452",
+      "component_locators": [
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 42; bbox 109.560,197.812,162.739,211.312",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 43; bbox 56.700,214.732,103.830,228.232",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 44; bbox 200.940,214.732,255.559,228.232",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 45; bbox 137.340,231.652,184.825,245.152",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 46; bbox 80.100,248.512,129.445,262.012",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 47; bbox 206.220,248.512,255.505,262.012"
+      ]
+    },
+    {
+      "check": "attendance_categories_國立級圖書館",
+      "reported": "368050",
+      "sum_parts": "368050",
+      "matches": true,
+      "target_locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 48; bbox 245.520,265.432,255.510,278.932; PDF page 4; printed page 72; panel L; section 8; prose numeral 48; bbox 56.700,282.352,91.945,295.852",
+      "component_locators": [
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 49; bbox 207.420,282.352,242.850,295.852",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 50; bbox 137.340,299.212,184.825,312.712",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 51; bbox 79.440,316.132,114.870,329.632",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 52; bbox 200.280,316.132,222.805,329.632",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 53; bbox 119.400,333.052,162.379,346.552",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 54; bbox 237.780,333.052,255.520,346.552; PDF page 4; printed page 72; panel L; section 8; prose numeral 54; bbox 56.700,349.912,79.225,363.412"
+      ]
+    },
+    {
+      "check": "attendance_categories_直轄市級圖書館",
+      "reported": "4737598",
+      "sum_parts": "7347598",
+      "matches": false,
+      "target_locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 55; bbox 89.520,366.832,142.705,380.332",
+      "component_locators": [
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 56; bbox 56.700,383.752,110.485,397.252",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 57; bbox 206.760,383.752,255.505,397.252",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 58; bbox 147.360,400.612,194.845,414.112",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 59; bbox 78.360,417.532,121.530,431.032",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 60; bbox 209.760,417.532,255.505,431.032",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 61; bbox 127.380,434.452,174.865,447.952"
+      ]
+    },
+    {
+      "check": "attendance_categories_縣市級圖書館",
+      "reported": "5280287",
+      "sum_parts": "5280287",
+      "matches": true,
+      "target_locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 62; bbox 169.200,451.312,214.170,464.812",
+      "component_locators": [
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 63; bbox 129.540,468.232,182.665,481.732",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 64; bbox 79.440,485.152,132.385,498.652",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 65; bbox 227.820,485.152,255.580,498.652; PDF page 4; printed page 72; panel L; section 8; prose numeral 65; bbox 56.700,502.012,79.225,515.512",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 66; bbox 164.760,502.012,212.785,515.512",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 67; bbox 109.440,518.932,157.405,532.432",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 68; bbox 232.740,518.932,255.520,532.432; PDF page 4; printed page 72; panel L; section 8; prose numeral 68; bbox 56.700,535.852,79.225,549.352"
+      ]
+    },
+    {
+      "check": "attendance_categories_鄉鎮市級圖書館",
+      "reported": "3340983",
+      "sum_parts": "3340983",
+      "matches": true,
+      "target_locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 69; bbox 89.220,552.712,134.190,566.212",
+      "component_locators": [
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 70; bbox 245.460,552.712,255.510,566.212; PDF page 4; printed page 72; panel L; section 8; prose numeral 70; bbox 56.700,569.632,92.365,583.132",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 71; bbox 188.580,569.632,242.365,583.132",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 72; bbox 139.560,586.552,192.693,600.052",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 73; bbox 78.000,603.412,122.961,616.912",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 74; bbox 210.480,603.412,255.505,616.912",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 75; bbox 129.540,620.332,172.705,633.832"
+      ]
+    },
+    {
+      "check": "attendance_categories_臺灣省政府圖書館",
+      "reported": "139896",
+      "sum_parts": "139896",
+      "matches": true,
+      "target_locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 76; bbox 190.800,637.252,241.405,650.752",
+      "component_locators": [
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 77; bbox 157.380,654.112,204.861,667.612",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 78; bbox 99.540,671.032,114.570,684.532",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 79; bbox 200.220,671.032,222.681,684.532",
+        "PDF page 4; printed page 72; panel R; section 8; prose numeral 80; bbox 345.660,79.552,368.121,93.052"
+      ]
+    }
+  ],
+  "arithmetic_discrepancies": [
+    {
+      "check": "acquisition_all_five_levels",
+      "reported": "487947482",
+      "sum_parts": "205947482",
+      "matches": false,
+      "target_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 1; bbox 129.840,248.512,212.425,262.012",
+      "component_locators": [
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 8; bbox 198.000,333.052,255.559,346.552",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 9; bbox 56.700,366.832,116.725,380.332",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 10; bbox 100.140,383.752,162.085,397.252",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 11; bbox 159.540,400.612,212.670,414.112",
+        "PDF page 2; printed page 70; panel L; section 3; prose numeral 12; bbox 225.240,417.532,255.520,431.032; PDF page 2; printed page 70; panel L; section 3; prose numeral 12; bbox 56.700,434.452,79.225,447.952"
+      ]
+    },
+    {
+      "check": "library_cards_five_levels",
+      "reported": "9980117",
+      "sum_parts": "10071655",
+      "matches": false,
+      "target_locator": "PDF page 3; printed page 71; panel L; section 6; prose numeral 1; bbox 89.220,214.732,134.190,228.232",
+      "component_locators": [
+        "PDF page 3; printed page 71; panel L; section 6; prose numeral 2; bbox 89.220,231.652,136.705,245.152",
+        "PDF page 3; printed page 71; panel L; section 6; prose numeral 3; bbox 79.560,248.512,132.693,262.012",
+        "PDF page 3; printed page 71; panel L; section 6; prose numeral 4; bbox 69.540,265.432,122.665,278.932",
+        "PDF page 3; printed page 71; panel L; section 6; prose numeral 5; bbox 69.540,282.352,122.665,295.852",
+        "PDF page 3; printed page 71; panel L; section 6; prose numeral 6; bbox 79.200,299.212,121.701,312.712"
+      ]
+    },
+    {
+      "check": "attendance_categories_直轄市級圖書館",
+      "reported": "4737598",
+      "sum_parts": "7347598",
+      "matches": false,
+      "target_locator": "PDF page 4; printed page 72; panel L; section 8; prose numeral 55; bbox 89.520,366.832,142.705,380.332",
+      "component_locators": [
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 56; bbox 56.700,383.752,110.485,397.252",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 57; bbox 206.760,383.752,255.505,397.252",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 58; bbox 147.360,400.612,194.845,414.112",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 59; bbox 78.360,417.532,121.530,431.032",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 60; bbox 209.760,417.532,255.505,431.032",
+        "PDF page 4; printed page 72; panel L; section 8; prose numeral 61; bbox 127.380,434.452,174.865,447.952"
+      ]
+    }
+  ],
+  "intentional_exclusions": [
+    "Opening taxonomy count four, calendar year/date numerals and later individual-library narratives are not operational observations.",
+    "Unprinted values are never generated: no county core amount table is fabricated; no inferred 0, no blank table rows.",
+    "No assessment scores/pass-fail groups, named engineering projects, awards/personal names or book rankings."
+  ],
+  "limits": [
+    "Three ratio series cover22counties; staff-service-population ratio covers21 and does not print連江縣. County core absolute amounts remain incomplete.",
+    "原文直轄市購書費3,136萬9,190與全國總計及館級加總不一致，原值不修正。",
+    "原文直轄市說故事活動參加人次290萬742與所列館級小計不一致，原值不修正。",
+    "原文全國辦證998萬117與五館級所列分項加總1007萬1655不一致，原值不修正。",
+    "原文全年辦證數量是否年度新增或累計不明示；不能拿來計新增率。",
+    "No human double-check or expert certification is claimed."
+  ],
+  "license_status": "not_confirmed",
+  "snapshot_distribution": "not_in_public_bundle"
+}

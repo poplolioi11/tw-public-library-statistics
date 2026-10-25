@@ -1,0 +1,744 @@
+{
+  "status": "pass",
+  "independent_model": "gemini-3.8-flash-high",
+  "images_independently_read": 3,
+  "native_image_guard_verified": true,
+  "numeric_checks": 91,
+  "county_ratios": 87,
+  "national_ratios": 4,
+  "scope_cautions": [
+    "The source only names21 counties for service population per librarian.連江縣 is not printed; no fabricated row.",
+    "Raw label says每位館員, not necessarily編制內; model heading inference rejected.",
+    "National20.93 is approximate as printed. County national-library scope not explicitly stated."
+  ],
+  "checks": [
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "連江縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 14; bbox 459.420,299.212,481.953,312.712",
+      "independent_image_value": "10.89 冊",
+      "extracted_value": "10.89",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "澎湖縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 15; bbox 348.180,316.132,365.725,329.632",
+      "independent_image_value": "4.37 冊",
+      "extracted_value": "4.37",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "臺北市",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 16; bbox 435.060,316.132,452.545,329.632",
+      "independent_image_value": "2.50 冊",
+      "extracted_value": "2.50",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "臺東縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 17; bbox 322.860,333.052,340.345,346.552",
+      "independent_image_value": "2.49 冊",
+      "extracted_value": "2.49",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "南投縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 18; bbox 407.280,333.052,424.765,346.552",
+      "independent_image_value": "2.26 冊",
+      "extracted_value": "2.26",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "花蓮縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 19; bbox 293.160,349.912,310.705,363.412",
+      "independent_image_value": "2.14 冊",
+      "extracted_value": "2.14",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "金門縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 20; bbox 378.780,349.912,396.265,363.412",
+      "independent_image_value": "2.09 冊",
+      "extracted_value": "2.09",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "宜蘭縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 21; bbox 464.460,349.912,481.945,363.412",
+      "independent_image_value": "1.87 冊",
+      "extracted_value": "1.87",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "苗栗縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 22; bbox 348.180,366.832,365.725,380.332",
+      "independent_image_value": "1.86 冊",
+      "extracted_value": "1.86",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "屏東縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 23; bbox 435.060,366.832,452.545,380.332",
+      "independent_image_value": "1.67 冊",
+      "extracted_value": "1.67",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "新北市",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 24; bbox 323.460,383.752,340.938,397.252",
+      "independent_image_value": "1.62 冊",
+      "extracted_value": "1.62",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "嘉義縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 25; bbox 400.200,400.612,418.046,414.112",
+      "independent_image_value": "1.58 冊",
+      "extracted_value": "1.58",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "臺中市",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 26; bbox 293.160,417.532,310.705,431.032",
+      "independent_image_value": "1.53 冊",
+      "extracted_value": "1.53",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "高雄市",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 27; bbox 378.780,417.532,396.265,431.032",
+      "independent_image_value": "1.43 冊",
+      "extracted_value": "1.43",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "雲林縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 28; bbox 464.460,417.532,481.945,431.032",
+      "independent_image_value": "1.42 冊",
+      "extracted_value": "1.42",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "臺南市",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 29; bbox 348.180,434.452,365.725,447.952",
+      "independent_image_value": "1.41 冊",
+      "extracted_value": "1.41",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "新竹縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 30; bbox 435.060,434.452,452.545,447.952",
+      "independent_image_value": "1.39 冊",
+      "extracted_value": "1.39",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "彰化縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 31; bbox 322.860,451.312,340.345,464.812",
+      "independent_image_value": "1.29 冊",
+      "extracted_value": "1.29",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "基隆市",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 32; bbox 407.280,451.312,424.765,464.812",
+      "independent_image_value": "1.10 冊",
+      "extracted_value": "1.10",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "嘉義市",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 33; bbox 293.160,468.232,310.705,481.732",
+      "independent_image_value": "0.86 冊",
+      "extracted_value": "0.86",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "桃園縣",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 34; bbox 378.780,468.232,396.265,481.732",
+      "independent_image_value": "0.82 冊",
+      "extracted_value": "0.82",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "新竹市",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 35; bbox 464.460,468.232,481.945,481.732",
+      "independent_image_value": "0.64 冊",
+      "extracted_value": "0.64",
+      "matches": true
+    },
+    {
+      "metric_id": "prose04_holdings_per_capita",
+      "entity": "全國",
+      "source_locator": "PDF page 2; printed page 70; panel R; section 4; prose numeral 13; bbox 385.680,282.352,403.158,295.852",
+      "independent_image_value": "1.60 冊",
+      "extracted_value": "1.60",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "連江縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 14; bbox 86.400,485.151,108.937,498.651",
+      "independent_image_value": "85.29 元",
+      "extracted_value": "85.29",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "臺北市",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 15; bbox 175.860,485.151,198.329,498.651",
+      "independent_image_value": "39.37 元",
+      "extracted_value": "39.37",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "金門縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 16; bbox 67.500,502.012,91.235,515.512",
+      "independent_image_value": "29.31 元",
+      "extracted_value": "29.31",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "雲林縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 17; bbox 168.060,502.012,191.843,515.512",
+      "independent_image_value": "27.41 元",
+      "extracted_value": "27.41",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "新北市",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 18; bbox 67.500,518.932,91.235,532.432",
+      "independent_image_value": "25.81 元",
+      "extracted_value": "25.81",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "苗栗縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 19; bbox 167.280,518.932,190.951,532.432",
+      "independent_image_value": "25.57 元",
+      "extracted_value": "25.57",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "澎湖縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 20; bbox 66.720,535.852,90.027,549.352",
+      "independent_image_value": "24.60 元",
+      "extracted_value": "24.60",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "花蓮縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 21; bbox 139.020,552.712,162.395,566.212",
+      "independent_image_value": "20.17 元",
+      "extracted_value": "20.17",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "臺中市",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 22; bbox 231.960,552.712,255.335,566.212",
+      "independent_image_value": "19.73 元",
+      "extracted_value": "19.73",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "臺南市",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 23; bbox 119.820,569.632,142.413,583.132",
+      "independent_image_value": "19.01 元",
+      "extracted_value": "19.01",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "高雄市",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 24; bbox 207.540,569.632,230.249,583.132",
+      "independent_image_value": "18.56 元",
+      "extracted_value": "18.56",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "臺東縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 25; bbox 95.880,586.552,118.774,600.052",
+      "independent_image_value": "17.78 元",
+      "extracted_value": "17.78",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "桃園縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 26; bbox 185.280,586.552,208.174,600.052",
+      "independent_image_value": "14.62 元",
+      "extracted_value": "14.62",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "宜蘭縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 27; bbox 77.040,603.412,100.775,616.912",
+      "independent_image_value": "14.46 元",
+      "extracted_value": "14.46",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "南投縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 28; bbox 171.660,603.412,195.395,616.912",
+      "independent_image_value": "13.80 元",
+      "extracted_value": "13.80",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "嘉義市",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 29; bbox 67.500,620.332,91.171,633.832",
+      "independent_image_value": "13.75 元",
+      "extracted_value": "13.75",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "新竹縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 30; bbox 166.980,620.332,190.715,633.832",
+      "independent_image_value": "12.38 元",
+      "extracted_value": "12.38",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "嘉義縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 31; bbox 67.500,637.252,91.171,650.752",
+      "independent_image_value": "12.28 元",
+      "extracted_value": "12.28",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "屏東縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 32; bbox 166.980,637.252,190.715,650.752",
+      "independent_image_value": "12.18 元",
+      "extracted_value": "12.18",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "基隆市",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 33; bbox 66.720,654.112,89.189,667.612",
+      "independent_image_value": "10.66 元",
+      "extracted_value": "10.66",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "彰化縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 34; bbox 154.920,654.112,172.398,667.612",
+      "independent_image_value": "9.11 元",
+      "extracted_value": "9.11",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "新竹市",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 35; bbox 238.080,654.112,255.558,667.612",
+      "independent_image_value": "6.41 元",
+      "extracted_value": "6.41",
+      "matches": true
+    },
+    {
+      "metric_id": "prose03_acquisition_per_capita",
+      "entity": "全國",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 3; prose numeral 13; bbox 189.840,451.312,212.377,464.812",
+      "independent_image_value": "約 20.93 元",
+      "extracted_value": "20.93",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "臺北市",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 8; bbox 237.960,518.932,255.505,532.432",
+      "independent_image_value": "4.75 冊",
+      "extracted_value": "4.75",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "連江縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 9; bbox 121.740,535.852,139.285,549.352",
+      "independent_image_value": "3.17 冊",
+      "extracted_value": "3.17",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "臺中市",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 10; bbox 208.620,535.852,226.105,549.352",
+      "independent_image_value": "2.99 冊",
+      "extracted_value": "2.99",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "臺南市",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 11; bbox 96.420,552.712,113.905,566.212",
+      "independent_image_value": "2.92 冊",
+      "extracted_value": "2.92",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "高雄市",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 12; bbox 180.840,552.712,198.325,566.212",
+      "independent_image_value": "2.91 冊",
+      "extracted_value": "2.91",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "彰化縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 13; bbox 66.720,586.551,84.265,600.051",
+      "independent_image_value": "2.69 冊",
+      "extracted_value": "2.69",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "澎湖縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 14; bbox 152.340,586.551,169.825,600.051",
+      "independent_image_value": "2.63 冊",
+      "extracted_value": "2.63",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "苗栗縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 15; bbox 238.020,586.551,255.505,600.051",
+      "independent_image_value": "2.54 冊",
+      "extracted_value": "2.54",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "新北市",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 16; bbox 121.740,603.412,139.285,616.912",
+      "independent_image_value": "2.46 冊",
+      "extracted_value": "2.46",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "南投縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 17; bbox 208.620,603.412,226.105,616.912",
+      "independent_image_value": "2.43 冊",
+      "extracted_value": "2.43",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "宜蘭縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 18; bbox 96.420,620.332,113.905,633.832",
+      "independent_image_value": "2.38 冊",
+      "extracted_value": "2.38",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "新竹市",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 19; bbox 180.840,620.332,198.325,633.832",
+      "independent_image_value": "2.35 冊",
+      "extracted_value": "2.35",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "新竹縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 20; bbox 66.720,637.252,84.265,650.752",
+      "independent_image_value": "2.31 冊",
+      "extracted_value": "2.31",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "嘉義市",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 21; bbox 152.340,637.252,169.825,650.752",
+      "independent_image_value": "2.26 冊",
+      "extracted_value": "2.26",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "基隆市",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 22; bbox 238.020,637.252,255.505,650.752",
+      "independent_image_value": "2.24 冊",
+      "extracted_value": "2.24",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "金門縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 23; bbox 121.740,654.112,139.285,667.612",
+      "independent_image_value": "2.01 冊",
+      "extracted_value": "2.01",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "花蓮縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 24; bbox 208.620,654.112,226.105,667.612",
+      "independent_image_value": "1.78 冊",
+      "extracted_value": "1.78",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "桃園縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 25; bbox 96.420,671.032,113.905,684.532",
+      "independent_image_value": "1.72 冊",
+      "extracted_value": "1.72",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "屏東縣",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 26; bbox 180.840,671.032,198.325,684.532",
+      "independent_image_value": "1.53 冊",
+      "extracted_value": "1.53",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "雲林縣",
+      "source_locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 27; bbox 293.160,79.552,310.705,93.052",
+      "independent_image_value": "1.51 冊",
+      "extracted_value": "1.51",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "臺東縣",
+      "source_locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 28; bbox 378.780,79.552,396.265,93.052",
+      "independent_image_value": "1.48 冊",
+      "extracted_value": "1.48",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "嘉義縣",
+      "source_locator": "PDF page 3; printed page 71; panel R; section 7; prose numeral 29; bbox 464.460,79.552,481.945,93.052",
+      "independent_image_value": "1.16 冊",
+      "extracted_value": "1.16",
+      "matches": true
+    },
+    {
+      "metric_id": "prose07_loans_per_capita",
+      "entity": "全國",
+      "source_locator": "PDF page 3; printed page 71; panel L; section 7; prose numeral 7; bbox 139.200,502.012,156.685,515.512",
+      "independent_image_value": "2.70 冊",
+      "extracted_value": "2.70",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "臺南市",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 14; bbox 293.160,589.131,335.665,602.631",
+      "independent_image_value": "6 萬 2,721 人",
+      "extracted_value": "62721",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "嘉義市",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 15; bbox 402.360,589.131,444.861,602.631",
+      "independent_image_value": "5 萬 4,244 人",
+      "extracted_value": "54244",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "新竹市",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 16; bbox 310.320,606.052,352.825,619.552",
+      "independent_image_value": "4 萬 2,507 人",
+      "extracted_value": "42507",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "桃園縣",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 17; bbox 414.780,606.052,457.285,619.552",
+      "independent_image_value": "3 萬 9,807 人",
+      "extracted_value": "39807",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "新北市",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 18; bbox 323.160,622.972,368.181,636.472",
+      "independent_image_value": "3 萬 9,393 人",
+      "extracted_value": "39393",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "金門縣",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 19; bbox 436.920,622.972,481.941,636.472",
+      "independent_image_value": "3 萬 7,703 人",
+      "extracted_value": "37703",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "新竹縣",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 20; bbox 348.180,639.832,393.801,653.332",
+      "independent_image_value": "2 萬 1,833 人",
+      "extracted_value": "21833",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "高雄市",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 21; bbox 462.900,639.832,482.020,653.332; PDF page 1; printed page 69; panel R; section 2; prose numeral 21; bbox 283.140,656.752,305.665,670.252",
+      "independent_image_value": "2 萬 1,050 人",
+      "extracted_value": "21050",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "臺中市",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 22; bbox 373.440,656.752,409.110,670.252",
+      "independent_image_value": "2 萬 975 人",
+      "extracted_value": "20975",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "屏東縣",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 23; bbox 476.940,656.752,481.950,670.252; PDF page 2; printed page 70; panel L; section 2; prose numeral 23; bbox 56.700,79.552,91.701,93.052",
+      "independent_image_value": "1 萬 9,510 人",
+      "extracted_value": "19510",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "彰化縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 24; bbox 156.720,79.552,199.225,93.052",
+      "independent_image_value": "1 萬 9,401 人",
+      "extracted_value": "19401",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "臺東縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 25; bbox 105.480,113.331,147.981,126.831",
+      "independent_image_value": "1 萬 7,404 人",
+      "extracted_value": "17404",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "雲林縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 26; bbox 213.000,113.331,255.505,126.831",
+      "independent_image_value": "1 萬 7,341 人",
+      "extracted_value": "17341",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "嘉義縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 27; bbox 121.740,130.252,167.361,143.752",
+      "independent_image_value": "1 萬 6,173 人",
+      "extracted_value": "16173",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "花蓮縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 28; bbox 236.460,130.252,255.580,143.752; PDF page 2; printed page 70; panel L; section 2; prose numeral 28; bbox 56.700,147.112,79.225,160.612",
+      "independent_image_value": "1 萬 5,235 人",
+      "extracted_value": "15235",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "苗栗縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 29; bbox 143.580,147.112,186.081,160.612",
+      "independent_image_value": "1 萬 4,460 人",
+      "extracted_value": "14460",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "宜蘭縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 30; bbox 250.500,147.112,255.510,160.612; PDF page 2; printed page 70; panel L; section 2; prose numeral 30; bbox 56.700,164.032,91.701,177.532",
+      "independent_image_value": "1 萬 3,488 人",
+      "extracted_value": "13488",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "澎湖縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 31; bbox 151.080,164.032,173.605,177.532",
+      "independent_image_value": "9,884 人",
+      "extracted_value": "9884",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "南投縣",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 32; bbox 232.980,164.032,255.505,177.532",
+      "independent_image_value": "9,633 人",
+      "extracted_value": "9633",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "臺北市",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 33; bbox 119.220,180.952,141.937,194.452",
+      "independent_image_value": "8,327 人",
+      "extracted_value": "8327",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "基隆市",
+      "source_locator": "PDF page 2; printed page 70; panel L; section 2; prose numeral 34; bbox 207.420,180.952,230.185,194.452",
+      "independent_image_value": "7,252 人",
+      "extracted_value": "7252",
+      "matches": true
+    },
+    {
+      "metric_id": "prose02_service_population_per_staff",
+      "entity": "全國",
+      "source_locator": "PDF page 1; printed page 69; panel R; section 2; prose numeral 13; bbox 325.980,555.351,369.145,568.851",
+      "independent_image_value": "1 萬 9,221 人",
+      "extracted_value": "19221",
+      "matches": true
+    }
+  ]
+}

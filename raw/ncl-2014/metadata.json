@@ -1,0 +1,608 @@
+{
+  "batch": "NCL104 public-library core",
+  "data_year_verified": 2014,
+  "historical_republished_years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014
+  ],
+  "publication_date": "2016-07-01",
+  "publication_date_basis": "Official entry visible publication date2016-07-01; original copyright page105年7月 confirms month.",
+  "edition_is_not_data_year": true,
+  "official_entry_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565626433613784",
+  "documents": [
+    {
+      "source_id": "ncl-yearbook-104-public-library",
+      "source_edition_roc": 104,
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565626433613784",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565635885420279/44a84d69-6c0a-4d0f-97ab-2fb2daa4e7b8.pdf",
+      "source_retrieved_at": "2026-10-25T10:09:31.198244+00:00",
+      "sha256": "68e726a555056c00f9e53e326519ac6582560263cf26c3261434145e1964119b",
+      "source_local_path": "raw/ncl-2014/yearbook-104-public-library.pdf",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle",
+      "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+      "license_evidence": "官方開放宣告二（三）明列「出版品」及專人專案撰文等須經原權利人同意；未確認本章全文開放授權。只整理統計事實，不重散布完整PDF、HTML或影像。",
+      "publication_date": "2016-07-01",
+      "publication_date_basis": "official_entry_visible_publication_date; copyright page confirms105年7月",
+      "source_data_year_evidence": "公共館章首明示呈現103年發展，表14–23題名103年；統計編例明示103年統計、資料取得104年7月。",
+      "selected_table_metadata": [
+        {
+          "table": 14,
+          "title": "全國公共圖書館數量統計－依圖書館級別（103年）",
+          "document_kind": "public-library",
+          "pdf_pages": [
+            1
+          ],
+          "expected_cells": 15,
+          "extracted_cells": 15,
+          "reference_years": [
+            2014
+          ],
+          "scope": "entire numeric grid; four public-library levels and published total",
+          "status_counts": {
+            "reported": 15
+          }
+        },
+        {
+          "table": 15,
+          "title": "全國公共圖書館數量統計－依縣市別（103年）",
+          "document_kind": "public-library",
+          "pdf_pages": [
+            2
+          ],
+          "expected_cells": 66,
+          "extracted_cells": 66,
+          "reference_years": [
+            2014
+          ],
+          "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+          "status_counts": {
+            "reported": 66
+          }
+        },
+        {
+          "table": 16,
+          "title": "全國公共圖書館圖書資料購置經費及人均購書經費分析（103年）",
+          "document_kind": "public-library",
+          "pdf_pages": [
+            2
+          ],
+          "expected_cells": 66,
+          "extracted_cells": 66,
+          "reference_years": [
+            2014
+          ],
+          "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+          "status_counts": {
+            "reported": 44,
+            "reported_decimal": 22
+          }
+        },
+        {
+          "table": 17,
+          "title": "全國公共圖書館人力資源統計（103年）",
+          "document_kind": "public-library",
+          "pdf_pages": [
+            3
+          ],
+          "expected_cells": 40,
+          "extracted_cells": 40,
+          "reference_years": [
+            2014
+          ],
+          "scope": "entire numeric grid; four public-library levels and published total",
+          "status_counts": {
+            "reported": 40
+          }
+        },
+        {
+          "table": 18,
+          "title": "全國公共圖書館館藏資源數量統計（103年）",
+          "document_kind": "public-library",
+          "pdf_pages": [
+            4
+          ],
+          "expected_cells": 50,
+          "extracted_cells": 50,
+          "reference_years": [
+            2014
+          ],
+          "scope": "entire numeric grid; four public-library levels and published total",
+          "status_counts": {
+            "reported": 50
+          }
+        },
+        {
+          "table": 19,
+          "title": "全國公共圖書館館藏資源數量及人均擁有圖書量分析（103年）",
+          "document_kind": "public-library",
+          "pdf_pages": [
+            5
+          ],
+          "expected_cells": 66,
+          "extracted_cells": 66,
+          "reference_years": [
+            2014
+          ],
+          "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+          "status_counts": {
+            "reported": 44,
+            "reported_decimal": 22
+          }
+        },
+        {
+          "table": 20,
+          "title": "全國公共圖書館圖書資料使用情形（103年）",
+          "document_kind": "public-library",
+          "pdf_pages": [
+            5
+          ],
+          "expected_cells": 88,
+          "extracted_cells": 88,
+          "reference_years": [
+            2014
+          ],
+          "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+          "status_counts": {
+            "reported": 66,
+            "reported_decimal": 22
+          }
+        },
+        {
+          "table": 21,
+          "title": "全國公共圖書館推廣活動類型及辦理場次（103年）",
+          "document_kind": "public-library",
+          "pdf_pages": [
+            6
+          ],
+          "expected_cells": 154,
+          "extracted_cells": 154,
+          "reference_years": [
+            2014
+          ],
+          "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+          "status_counts": {
+            "reported": 154
+          }
+        },
+        {
+          "table": 22,
+          "title": "各縣市公共圖書館各類推廣活動參與人次（103年）",
+          "document_kind": "public-library",
+          "pdf_pages": [
+            7
+          ],
+          "expected_cells": 154,
+          "extracted_cells": 154,
+          "reference_years": [
+            2014
+          ],
+          "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+          "status_counts": {
+            "reported": 154
+          }
+        },
+        {
+          "table": 23,
+          "title": "全國公共圖書館提供新住民各類服務情形（103年）",
+          "document_kind": "public-library",
+          "pdf_pages": [
+            8
+          ],
+          "expected_cells": 110,
+          "extracted_cells": 110,
+          "reference_years": [
+            2014
+          ],
+          "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+          "status_counts": {
+            "reported": 110
+          }
+        }
+      ],
+      "source_cells": 809
+    },
+    {
+      "source_id": "ncl-yearbook-104-statistics",
+      "source_edition_roc": 104,
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565626433613784",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565649788470323/03d7f4df-ecfc-45bb-8ea5-19d1e9c204d1.pdf",
+      "source_retrieved_at": "2026-10-25T10:09:32.253401+00:00",
+      "sha256": "bfb44cad472edb68b5a72fed26238f14c217414fd94dde0f6d5720ad0f85cc45",
+      "source_local_path": "raw/ncl-2014/yearbook-104-statistics.pdf",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle",
+      "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+      "license_evidence": "官方開放宣告二（三）明列「出版品」及專人專案撰文等須經原權利人同意；未確認本章全文開放授權。只整理統計事實，不重散布完整PDF、HTML或影像。",
+      "publication_date": "2016-07-01",
+      "publication_date_basis": "official_entry_visible_publication_date; copyright page confirms105年7月",
+      "source_data_year_evidence": "公共館章首明示呈現103年發展，表14–23題名103年；統計編例明示103年統計、資料取得104年7月。",
+      "selected_table_metadata": [
+        {
+          "table": 199,
+          "title": "我國各類型圖書館數量統計表（103年）／公共圖書館完整類別組",
+          "document_kind": "statistics",
+          "pdf_pages": [
+            2
+          ],
+          "expected_cells": 6,
+          "extracted_cells": 6,
+          "reference_years": [
+            2014
+          ],
+          "scope": "complete public-library subtype only, including private; other library types excluded",
+          "status_counts": {
+            "reported": 6
+          }
+        },
+        {
+          "table": 200,
+          "title": "我國各類型圖書館基本統計表（103年）／公立公共圖書館列",
+          "document_kind": "statistics",
+          "pdf_pages": [
+            3
+          ],
+          "expected_cells": 4,
+          "extracted_cells": 4,
+          "reference_years": [
+            2014
+          ],
+          "scope": "entire public-library row only; national central library separately classified and excluded",
+          "status_counts": {
+            "reported": 4
+          }
+        },
+        {
+          "table": 202,
+          "title": "公立公共圖書館基本統計表（99年至103年）",
+          "document_kind": "statistics",
+          "pdf_pages": [
+            5
+          ],
+          "expected_cells": 25,
+          "extracted_cells": 25,
+          "reference_years": [
+            2010,
+            2011,
+            2012,
+            2013,
+            2014
+          ],
+          "scope": "complete five-year public-library table; retain publication version and historical definition uncertainty",
+          "status_counts": {
+            "reported": 25
+          }
+        }
+      ],
+      "source_cells": 35
+    }
+  ],
+  "context_documents": [
+    {
+      "source_id": "ncl-yearbook-104-editing",
+      "source_edition_roc": 104,
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565626433613784",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565622349977225/ec33a734-fc1a-4dbf-a8f6-f99b694a9930.pdf",
+      "source_retrieved_at": "2026-10-25T10:09:25.229176+00:00",
+      "sha256": "67a6178b3a5f23005f4023d0b6c3399422ba3d98912591812a3cfb8a970c4ff1",
+      "source_local_path": "raw/ncl-2014/yearbook-104-editing.pdf",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle"
+    },
+    {
+      "source_id": "ncl-yearbook-104-toc",
+      "source_edition_roc": 104,
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565626433613784",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565632984856252/343f45bc-8117-41e3-a51e-ad4f0ac77c12.pdf",
+      "source_retrieved_at": "2026-10-25T10:09:28.192881+00:00",
+      "sha256": "3a0636e9bef2727c40201f488989df3bb7abe398b59ed320fb468fc72b405a1d",
+      "source_local_path": "raw/ncl-2014/yearbook-104-toc.pdf",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle"
+    },
+    {
+      "source_id": "ncl-yearbook-104-copyright",
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565626433613784",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565640401197395/95395d53-8c17-4013-9fb7-c62f48443fa4.pdf",
+      "source_retrieved_at": "2026-10-25T10:09:45.312944+00:00",
+      "sha256": "f8a61c642da7a2a3ad0f1b338c006258cc732aee99f157a8409d164aeaaa5bae",
+      "source_local_path": "raw/ncl-2014/yearbook-104-copyright.pdf",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle"
+    },
+    {
+      "source_id": "ncl-yearbook-104-rights",
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565626433613784",
+      "source_download_url": "https://www.ncl.edu.tw/open-government-declaration",
+      "source_retrieved_at": "2026-10-25T10:09:45.893209+00:00",
+      "sha256": "ddd10c485e407df9c7b7900bbcfc596b45bf54ba70f4151baf93b8be5412b1f5",
+      "source_local_path": "raw/ncl-2014/yearbook-104-rights.private.html",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle"
+    }
+  ],
+  "license_status": "not_confirmed",
+  "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+  "rights_quote_original": "國家圖書館(簡稱本館)全球資訊網部分內容所涉及圖像、影音、專人專案撰文或其他著作，因本館網站依約僅具公開發表之地位，非為本館權利所有，如以下單元尚須經原權利所有人同意方可使用。",
+  "rights_excluded_section_original": "出版品",
+  "rights_last_updated_raw": "2026-04-23",
+  "full_originals_distribution": "not_in_public_bundle",
+  "public_projection": "Statistical cell facts and source/provenance only; no signed narrative, complete PDF, HTML, image or unrelated contact values.",
+  "all_public_library_chapter_pages_inspected_for_table_inventory": 46,
+  "all_statistics_chapter_pages_inspected_for_table_inventory": 16,
+  "complete_source_tables_or_scoped_subtables": [
+    {
+      "table": 14,
+      "title": "全國公共圖書館數量統計－依圖書館級別（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        1
+      ],
+      "expected_cells": 15,
+      "extracted_cells": 15,
+      "reference_years": [
+        2014
+      ],
+      "scope": "entire numeric grid; four public-library levels and published total",
+      "status_counts": {
+        "reported": 15
+      }
+    },
+    {
+      "table": 15,
+      "title": "全國公共圖書館數量統計－依縣市別（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        2
+      ],
+      "expected_cells": 66,
+      "extracted_cells": 66,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 66
+      }
+    },
+    {
+      "table": 16,
+      "title": "全國公共圖書館圖書資料購置經費及人均購書經費分析（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        2
+      ],
+      "expected_cells": 66,
+      "extracted_cells": 66,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 44,
+        "reported_decimal": 22
+      }
+    },
+    {
+      "table": 17,
+      "title": "全國公共圖書館人力資源統計（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        3
+      ],
+      "expected_cells": 40,
+      "extracted_cells": 40,
+      "reference_years": [
+        2014
+      ],
+      "scope": "entire numeric grid; four public-library levels and published total",
+      "status_counts": {
+        "reported": 40
+      }
+    },
+    {
+      "table": 18,
+      "title": "全國公共圖書館館藏資源數量統計（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        4
+      ],
+      "expected_cells": 50,
+      "extracted_cells": 50,
+      "reference_years": [
+        2014
+      ],
+      "scope": "entire numeric grid; four public-library levels and published total",
+      "status_counts": {
+        "reported": 50
+      }
+    },
+    {
+      "table": 19,
+      "title": "全國公共圖書館館藏資源數量及人均擁有圖書量分析（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        5
+      ],
+      "expected_cells": 66,
+      "extracted_cells": 66,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 44,
+        "reported_decimal": 22
+      }
+    },
+    {
+      "table": 20,
+      "title": "全國公共圖書館圖書資料使用情形（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        5
+      ],
+      "expected_cells": 88,
+      "extracted_cells": 88,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 66,
+        "reported_decimal": 22
+      }
+    },
+    {
+      "table": 21,
+      "title": "全國公共圖書館推廣活動類型及辦理場次（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        6
+      ],
+      "expected_cells": 154,
+      "extracted_cells": 154,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 154
+      }
+    },
+    {
+      "table": 22,
+      "title": "各縣市公共圖書館各類推廣活動參與人次（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        7
+      ],
+      "expected_cells": 154,
+      "extracted_cells": 154,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 154
+      }
+    },
+    {
+      "table": 23,
+      "title": "全國公共圖書館提供新住民各類服務情形（103年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        8
+      ],
+      "expected_cells": 110,
+      "extracted_cells": 110,
+      "reference_years": [
+        2014
+      ],
+      "scope": "all 22 original county rows; excludes two national public libraries by printed note",
+      "status_counts": {
+        "reported": 110
+      }
+    },
+    {
+      "table": 199,
+      "title": "我國各類型圖書館數量統計表（103年）／公共圖書館完整類別組",
+      "document_kind": "statistics",
+      "pdf_pages": [
+        2
+      ],
+      "expected_cells": 6,
+      "extracted_cells": 6,
+      "reference_years": [
+        2014
+      ],
+      "scope": "complete public-library subtype only, including private; other library types excluded",
+      "status_counts": {
+        "reported": 6
+      }
+    },
+    {
+      "table": 200,
+      "title": "我國各類型圖書館基本統計表（103年）／公立公共圖書館列",
+      "document_kind": "statistics",
+      "pdf_pages": [
+        3
+      ],
+      "expected_cells": 4,
+      "extracted_cells": 4,
+      "reference_years": [
+        2014
+      ],
+      "scope": "entire public-library row only; national central library separately classified and excluded",
+      "status_counts": {
+        "reported": 4
+      }
+    },
+    {
+      "table": 202,
+      "title": "公立公共圖書館基本統計表（99年至103年）",
+      "document_kind": "statistics",
+      "pdf_pages": [
+        5
+      ],
+      "expected_cells": 25,
+      "extracted_cells": 25,
+      "reference_years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "scope": "complete five-year public-library table; retain publication version and historical definition uncertainty",
+      "status_counts": {
+        "reported": 25
+      }
+    }
+  ],
+  "total_source_cells": 844,
+  "schema": "ncl_2014_long.schema.json",
+  "producer": "scripts/extract_ncl_2014.py",
+  "outputs": [
+    "derived/ncl_2014_long.csv",
+    "derived/ncl_2014_long.jsonl"
+  ],
+  "known_source_issues": [
+    "Table16 printed基隆人口4603498 differs from tables19/20 population373,077. No correction made.",
+    "Activities21/22 multi-line extracted text heading order is misleading; visual column order is authoritative.",
+    "Table199 includes private libraries; table14 and table202 public-only counts remain distinct.",
+    "Table200 holdings explicitly includes ebooks; historical table202 does not independently certify every older-year definition.",
+    "桃園縣 preserved as printed; no cross-year geography harmonization."
+  ],
+  "arithmetic_discrepancies": [
+    {
+      "check": "printed_activity_subtotal",
+      "table": "22",
+      "entity": "澎湖縣",
+      "metric_id": "table22_subtotal",
+      "reported": "19690",
+      "sum_components": "16090",
+      "matches": false,
+      "source_locator": "PDF page 7; printed page 61; table 22; data row 20; column 8; bbox 433.00,440.10,483.00,451.50"
+    }
+  ],
+  "validation_scope": "Producer image review of full table structure, headers and notes plus60 fixed source anchors; separate word-token or whole-row glyph checks cover all844 positions. Not an independent human full-cell double collation.",
+  "validation_reports": [
+    "raw/ncl-2014/extraction-validation.json",
+    "raw/ncl-2014/no-op-validation.json"
+  ],
+  "final_artifacts": {
+    "scripts/extract_ncl_2014.py": {
+      "sha256": "ef5b094f4e6fdd1d1f9374a10ea1a1090841c8c163c60167c059357c8f6626be"
+    },
+    "derived/ncl_2014_long.csv": {
+      "sha256": "225d905a0a0808610f5665fc65c1eab4983d371074294e690fff9724752343db"
+    },
+    "derived/ncl_2014_long.jsonl": {
+      "sha256": "fa2f70f3c5af8bcf854ba9c6a3e23e95b08d0bb245f23d8da5bc436798697493"
+    }
+  }
+}

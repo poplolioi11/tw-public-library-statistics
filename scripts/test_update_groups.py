@@ -142,6 +142,24 @@ class UpdateGroupsTests(unittest.TestCase):
         self.assertEqual(self.calls, [], "must detect missing reviewed input before invoking an extractor")
         self.assertEqual(self.protected_files(), before, "missing input changed an existing output or state")
 
+    def inventory_group(self, key, status="source_reviewed"):
+        group = GROUPS[key]
+        return {"id": key, "review_status": status, "script": group["script"], "args": list(group["args"]),
+                "inputs": list(group["inputs"]), "outputs": list(group["outputs"]),
+                "derived_csv": group["outputs"][0], "raw_directories": []}
+
+    def test_reviewed_inventory_selects_only_its_registered_cohort(self):
+        self.write("data/reviewed_historical_cohorts.json", json.dumps({"schema_version": "1.0.0", "cohorts": [self.inventory_group("ncl_earlier")]}))
+        self.assertEqual(self.run_groups(), [GROUPS["ncl_earlier"]["script"]])
+        self.assertEqual(self.run_groups(), [])
+        self.write("raw/ncl-earlier/table-specifications.json", "changed reviewed coordinates")
+        self.assertEqual(self.run_groups(), [GROUPS["ncl_earlier"]["script"]])
+
+    def test_catalogue_only_inventory_entry_cannot_trigger_extraction(self):
+        self.write("data/reviewed_historical_cohorts.json", json.dumps({"schema_version": "1.0.0", "cohorts": [self.inventory_group("ncl_earlier", "catalogue_only")]}))
+        self.assertEqual(self.run_groups(), [])
+        self.assertEqual(list((self.root / "data").glob("*_extraction_state.json")), [])
+
     def test_first_run_builds_exactly_three_groups(self):
         self.assertEqual(self.run_groups(), [group["script"] for group in GROUPS.values()])
         self.assertEqual(len(list((self.root / "data").glob("*_extraction_state.json"))), 3)

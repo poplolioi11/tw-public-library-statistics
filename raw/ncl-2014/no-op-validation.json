@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "offline_rebuild_changed_bytes": false,
+  "offline_rebuild_changed_mtime": false,
+  "files": {
+    "derived/ncl_2014_long.csv": {
+      "sha256": "225d905a0a0808610f5665fc65c1eab4983d371074294e690fff9724752343db"
+    },
+    "derived/ncl_2014_long.jsonl": {
+      "sha256": "fa2f70f3c5af8bcf854ba9c6a3e23e95b08d0bb245f23d8da5bc436798697493"
+    },
+    "raw/ncl-2014/documents.json": {
+      "sha256": "8002f33ebee3d0b0518162be982a05a246c305f7ac508f75601c32c6bc4fb8b6"
+    },
+    "raw/ncl-2014/extraction-validation.json": {
+      "sha256": "6b4def884fcdd7c750ba9f06c6649d3a571fce2f74ce529afd589f370c88f6ae"
+    }
+  }
+}

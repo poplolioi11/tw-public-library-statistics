@@ -3,6 +3,7 @@
 import argparse,datetime,hashlib,json,subprocess,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+from cohort_registry import load as load_cohorts
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else None
 def call(name,*args):subprocess.run([sys.executable,str(ROOT/'scripts'/name),*args],cwd=ROOT,check=True)
 def run_extension_groups():
@@ -12,6 +13,8 @@ def run_extension_groups():
   ('ncl_gap','extract_ncl_gap_tables.py',[],['raw/ncl-historical/yearbook-98-public-library.pdf','raw/ncl-historical/yearbook-99-public-library.pdf','raw/ncl-historical/yearbook-100-public-library.pdf'],['derived/ncl_gap_tables_long.csv','derived/ncl_gap_tables_long.jsonl','raw/ncl-historical/gap-tables-metadata.json']),
   ('ncl_earlier','extract_ncl_earlier_years.py',[],['raw/ncl-earlier/yearbook-96-public-library.pdf','raw/ncl-earlier/yearbook-97-public-library.pdf','raw/ncl-earlier/yearbook-96-download.json','raw/ncl-earlier/yearbook-97-download.json','raw/ncl-earlier/table-specifications.json'],['derived/ncl_earlier_years_long.csv','derived/ncl_earlier_years_long.jsonl','raw/ncl-earlier/metadata.json']),
   ('ncl_additional','extract_ncl_additional_years.py',['--offline'],[f'raw/ncl-additional/yearbook-{edition}-{kind}.{suffix}' for edition,kind in [(101,'public-library'),(103,'public-library'),(101,'statistics'),(102,'statistics'),(103,'statistics')] for suffix in ['pdf','metadata.json']],['derived/ncl_additional_years_long.csv','derived/ncl_additional_years_long.jsonl','raw/ncl-additional/extracted-operational-cells.json','raw/ncl-additional/documents.json','raw/ncl-additional/extraction-validation.json'])]
+ inventory=load_cohorts(ROOT)
+ if inventory is not None:groups=[(g['id'],g['script'],g.get('args',[]),g['inputs'],g['outputs']) for g in inventory]
  for key,script,args,patterns,outputs in groups:
   if not (ROOT/'scripts'/script).exists():raise FileNotFoundError('Reviewed extractor is missing: '+script)
   for pattern in patterns:

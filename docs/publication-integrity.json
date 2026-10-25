@@ -1,13 +1,13 @@
 {
-  "version": "0.2.0",
-  "records": 24548,
-  "missing_cells": 1075,
+  "version": "0.3.0",
+  "records": 26725,
+  "missing_cells": 1076,
   "null_status_counts": {
     "not_available_in_source": 200,
-    "source_blank": 875
+    "source_blank": 876
   },
-  "original_statistical_content_sha256": "6e1828aa253177d538c6cc29df9f36336f201bfda426b5fe3de76d5419831268",
-  "public_statistical_content_sha256": "6e1828aa253177d538c6cc29df9f36336f201bfda426b5fe3de76d5419831268",
+  "original_statistical_content_sha256": "3bf76146e81d60a071d65f0c13d5e8773feb1a5836b8e9bddf79b2c503c121a6",
+  "public_statistical_content_sha256": "3bf76146e81d60a071d65f0c13d5e8773feb1a5836b8e9bddf79b2c503c121a6",
   "statistical_and_source_fields_unchanged": true,
   "original_contact_files_omitted": 22,
   "original_contact_values_redistributed": false,

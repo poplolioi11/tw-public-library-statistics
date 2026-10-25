@@ -12,7 +12,7 @@
 
 先讀 `data/combined/summary.json`、`coverage.json`、`indicators.json` 與 `observation.schema.json`。`data/observations.*`、`data/component_records.jsonl` 和 `derived/` 是組件或中間結果，可能保留重複；不得再併入正式入口。資料筆數不是館數。
 
-目前 24,548 筆來源觀測紀錄，含 200 格明示缺值、875 格原印留白及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
+目前 26,725 筆來源觀測紀錄，含 200 格明示缺值、876 格原印留白及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
 
 ## 先選來源，再選可比較的觀測
 
@@ -26,16 +26,21 @@
 
 | `source_family` | 適用的來源選擇 |
 |---|---|
-| 國資圖公開全國圖表 | `source_id` 以 `public-chart-` 開頭；2011–2025 全國公開圖表 |
-| 國資圖2023開放資料（含縣市） | `source_id = 'ogdl-api-2023'` |
-| 國家圖書館年鑑統計事實 | 以來源清單為準；`ncl-yearbook-*`、`ncl-gap-*`、`ncl-earlier-*` 各表／出版版本分開 |
-| 主計總處歷史全國統計 | `dgbas-social-indicators-2005`、`dgbas-social-indicators-2008`、`dgbas-social-indicators-2011`；先選出版版本 |
-| 主計總處縣市公共館數 | `source_id = 'dgbas-county-library-Z091101a029'`；官方改制後縣市範圍，與國資圖館數分開 |
-| 地方政府開放歷史表 | `source_id` 以 `local-` 開頭；再選縣市、館藏地與原期間 |
+| 國資圖公開全國圖表 | 2011–2025年公開全國圖表；只有全國 |
+| 國資圖2023開放資料（含縣市） | 2023年明確OGDL年度資源；全國、縣市與替代口徑分列，不相加；`ogdl-api-2023` |
+| 國家圖書館年鑑統計事實 | 96–105卷指定核心表／公共館子群／原文數字；資料年2006–2015年，保留不同出版版本 |
+| 國家圖書館閱讀報告統計事實 | 2011–2012年5張全國閱讀報告表；包括跨年比較，不是縣市表 |
+| 主計總處歷史全國統計 | 3個來源版本；資料年1991–2011年，重疊版本分開；`dgbas-social-indicators-2005`、`dgbas-social-indicators-2008`、`dgbas-social-indicators-2011` |
+| 主計總處縣市公共館數 | 1998–2025年官方重編地域；來源含國家圖書館，缺值不補0；`dgbas-county-library-Z091101a029` |
+| 地方政府開放歷史表 | 新竹市、臺中市已確認系列；保留原年／月期間與館藏地 |
+
+2012年原文中每人購書／擁書／借閱比率分別列22／22／22縣市；館員服務人口只列21縣市，未列連江縣。22縣市核心原量表仍未取得，不能由比率反算。閱讀報告所列表只有全國彙總，不能冒充縣市表。 2015原刊部分縣市標籤未確認、兩列均印金門，保留183筆標籤不確定觀測，不補成連江或硬接現行界線。 2015表17標題「場次」與正文「人次」衝突，161格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。
+
+原表、原文數字與閱讀五表的批次範圍見[歷史批次](docs/historical-batches.md)。
 
 ### 數值與缺值
 
-- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `200` 格 `not_available_in_source` 保留明示缺值符號，`875` 格 `source_blank` 保留原刊留白；留白不推定不適用，均不補零。
+- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `200` 格 `not_available_in_source` 保留明示缺值符號，`876` 格 `source_blank` 保留原刊留白；留白不推定不適用，均不補零。
 - `raw_value` 保留原表字串與註腳標記；例如 `79a` 的數值為79，`source_cell_annotation` 保留a，須同讀 `source_footnotes_raw`／`source_footnotes_status`。`quality_flags` 可為單一代碼或原組件保留的JSON陣列字串；不把單純多層合計旗標當成數值錯誤。
 - `raw_value` 保留原表字串；`value` 的小數可能使用十進位字串。SQLite 的 `value` 欄是文字型別，分析前須明確選定解析規則，不能以不受檢查的轉型把異常字串變成零。
 - 原報 `0` 未必是已確認的真零；讀 `zero_interpretation`、註腳及資料蒐集範圍。

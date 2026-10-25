@@ -216,6 +216,9 @@
       ],
       "description": "Original or contextual basis of normalized unit. Read unit_raw and unit_status; inferred units are not printed labels."
     },
+    "source_time_reference": {
+      "description": "source_time_reference"
+    },
     "institutional_level": {
       "description": "institutional_level"
     },
@@ -234,6 +237,9 @@
     "source_cell_bbox": {
       "description": "source_cell_bbox"
     },
+    "source_cell_bboxes": {
+      "description": "source_cell_bboxes"
+    },
     "source_cell_annotation": {
       "description": "source_cell_annotation"
     },
@@ -245,6 +251,30 @@
     },
     "source_footnotes_status": {
       "description": "source_footnotes_status"
+    },
+    "value_qualifier": {
+      "description": "value_qualifier"
+    },
+    "source_location_kind": {
+      "description": "source_location_kind"
+    },
+    "observation_identity_suffix": {
+      "description": "observation_identity_suffix"
+    },
+    "source_unit_interpretation_basis": {
+      "description": "source_unit_interpretation_basis"
+    },
+    "unit_interpretation_candidate": {
+      "description": "unit_interpretation_candidate"
+    },
+    "book_class_raw": {
+      "description": "book_class_raw"
+    },
+    "age_group_raw": {
+      "description": "age_group_raw"
+    },
+    "sex_raw": {
+      "description": "sex_raw"
     },
     "source_data_year_raw": {
       "description": "source_data_year_raw"

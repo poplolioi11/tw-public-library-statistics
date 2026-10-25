@@ -1,259 +1,259 @@
 {
   "schema_version": "1.0.0",
   "canonical_path": "data/combined/observations.jsonl",
-  "records": 24548,
+  "records": 26725,
   "partitions": [
     {
       "data_year": 1991,
       "path": "data/by_year/1991.jsonl",
       "records": 4,
-      "bytes": 13118,
-      "sha256": "6cb635ceeef063b4467f1acde2cde2d520e8a7f205d58cbd00c9c2b57ac370fd"
+      "bytes": 14222,
+      "sha256": "cc47280d632249dd28b9c47df67ab985dcfe20f1a27523a2a3b7836b4dd880fc"
     },
     {
       "data_year": 1992,
       "path": "data/by_year/1992.jsonl",
       "records": 4,
-      "bytes": 13120,
-      "sha256": "cf5e9c6ed9aef84915a2a00fcd512d4ca0b9ea727785c414e762a96c81d1ce54"
+      "bytes": 14224,
+      "sha256": "480d4d02cce4d569da3f100c9d4c39ca8c2bda6ffe8788abc83b437278060d8a"
     },
     {
       "data_year": 1993,
       "path": "data/by_year/1993.jsonl",
       "records": 9,
-      "bytes": 29806,
-      "sha256": "31c2692e6c551cfe15e9e4dec691ed424da8a4fa8d969362ec1086e5cbc92224"
+      "bytes": 32290,
+      "sha256": "c6f671c27b94d32c78d129ebd7baf674bbbe13f2c19031be3fe6e425d3f9a040"
     },
     {
       "data_year": 1994,
       "path": "data/by_year/1994.jsonl",
       "records": 9,
-      "bytes": 29806,
-      "sha256": "47ba8aaa19e30a06f74cf40184df08d296b32448c2156b846cdf9bc94bb4c471"
+      "bytes": 32290,
+      "sha256": "54ec2c4ea53387f7c72756bdce0c976db08a542c956e5361642f6f57c7322aae"
     },
     {
       "data_year": 1995,
       "path": "data/by_year/1995.jsonl",
       "records": 9,
-      "bytes": 29806,
-      "sha256": "ace9f6cfe8a13e0d5406d9a009593a657fe733421d0b0606fbcee2d5107951f1"
+      "bytes": 32290,
+      "sha256": "9c729fbecfefa9efa94032dd2a51450197364543c0f41e43cd17b4f5ed275c2a"
     },
     {
       "data_year": 1996,
       "path": "data/by_year/1996.jsonl",
       "records": 14,
-      "bytes": 46397,
-      "sha256": "afd4a2920b6f9afa9fb16d095390f9e0d44687a12132222cbf98dc9ca5954223"
+      "bytes": 50261,
+      "sha256": "ad91a876bb3a7ca2f41622ae455c93470e37cd17106da9ef88233b4964c86039"
     },
     {
       "data_year": 1997,
       "path": "data/by_year/1997.jsonl",
       "records": 14,
-      "bytes": 46397,
-      "sha256": "84cbbdb8503ad91d86ff349d772c4708f7a4c7ed667bf0c0a13b2abe8654bee8"
+      "bytes": 50261,
+      "sha256": "98f77443ed7c8a0c61c774e358f8b4805b37300d4c9f7991d6855e20ac9c8513"
     },
     {
       "data_year": 1998,
       "path": "data/by_year/1998.jsonl",
       "records": 37,
-      "bytes": 158228,
-      "sha256": "3283d8fe72c860e5050368844c53f2c14f1e2025df6844d0dab6d5b80910da1f"
+      "bytes": 168440,
+      "sha256": "624726395c98a23c4178c89e3c3621152660dab3c88f1d68e4d34baddb2ec757"
     },
     {
       "data_year": 1999,
       "path": "data/by_year/1999.jsonl",
       "records": 37,
-      "bytes": 158228,
-      "sha256": "2521b7e0d67b537540af49ce4c0f0ddbf3f37d7bf095bb9db4cd197e12ff3df1"
+      "bytes": 168440,
+      "sha256": "0fb0b1f944105b0702c8e0ad20340ff9b024e2ed8a57e2b2b7fe91dc2e413a5c"
     },
     {
       "data_year": 2000,
       "path": "data/by_year/2000.jsonl",
       "records": 37,
-      "bytes": 157081,
-      "sha256": "76f5d76992d9ce67233c6a383f04a93139c55260bc43c0a92b37d19ac47af0d4"
+      "bytes": 167293,
+      "sha256": "6aa0704180d93d0d6312f00c323758359f3924b5e371f86ab091e28f75ef3e25"
     },
     {
       "data_year": 2001,
       "path": "data/by_year/2001.jsonl",
       "records": 37,
-      "bytes": 157081,
-      "sha256": "a53e70b0f47f101f3a57c30044747e55431260a490b2aa30ccc3f9c10d5aaebf"
+      "bytes": 167293,
+      "sha256": "1db97a364209d889d8abd622964a40710e0832bfe2ba3c3eeb892525202150d1"
     },
     {
       "data_year": 2002,
       "path": "data/by_year/2002.jsonl",
       "records": 37,
-      "bytes": 157081,
-      "sha256": "064bcc33163d988fecfe3598f2c917379c46a5aa7d195e5613148fb911d66399"
+      "bytes": 167293,
+      "sha256": "c1a23641891ee2031b30dbd145eb58d2e59ec498dd35b12bb86969c4c389fed0"
     },
     {
       "data_year": 2003,
       "path": "data/by_year/2003.jsonl",
       "records": 37,
-      "bytes": 157081,
-      "sha256": "168d8cce8b5fb6f600ac10b6282446245765f77dc10999feaac4f27ce80b2274"
+      "bytes": 167293,
+      "sha256": "b692e6898c2cbd5481387214080a520b2d2549a905af91dd1556112c55ceb06e"
     },
     {
       "data_year": 2004,
       "path": "data/by_year/2004.jsonl",
       "records": 37,
-      "bytes": 157081,
-      "sha256": "ea41208d97fab2bb62356d5440600e191fc5975985d670caf66c7e9ae3529388"
+      "bytes": 167293,
+      "sha256": "a83333f7242d987448b078bb3feadaa311a6978857706754e2da7f35c950b4aa"
     },
     {
       "data_year": 2005,
       "path": "data/by_year/2005.jsonl",
       "records": 37,
-      "bytes": 157169,
-      "sha256": "4be15c269d8fa1300878f446317a0563762d453c902ffa8efd78ae46834c2ebd"
+      "bytes": 167381,
+      "sha256": "14eee9dd4c30970c37ee699edbee8e412fd8d1a67203135eaa5b46e485d7339c"
     },
     {
       "data_year": 2006,
       "path": "data/by_year/2006.jsonl",
       "records": 882,
-      "bytes": 3627183,
-      "sha256": "21c89b3b42ff7b662246729be8b41a8715a43b28b10cdcaed911ab0a6975b376"
+      "bytes": 3906786,
+      "sha256": "841bae8a9c773f2bb5bb6bd893a83bfbeef2168c7942574292a02e01252e8d3d"
     },
     {
       "data_year": 2007,
       "path": "data/by_year/2007.jsonl",
       "records": 870,
-      "bytes": 3599069,
-      "sha256": "41d5131fe72502751bc3929e193bd14f8603e5a3dd5490b4815efbfbfbc48abb"
+      "bytes": 3874698,
+      "sha256": "57ce91c6c0d11ec173849179a27406e2591b31fd783c5a0f0d8d37ed0d8763c2"
     },
     {
       "data_year": 2008,
       "path": "data/by_year/2008.jsonl",
       "records": 858,
-      "bytes": 3165601,
-      "sha256": "ca21c5e9983e2264c01a1d26461eca529c4e9a99f224af1ddfd28ea4f002f6e1"
+      "bytes": 3439157,
+      "sha256": "4c1b4e6591173269584714efaa2a88f2e0add82a98e7ab0adcd9492a0819532c"
     },
     {
       "data_year": 2009,
       "path": "data/by_year/2009.jsonl",
       "records": 832,
-      "bytes": 2864085,
-      "sha256": "257dec8cdb638b5a284e22768478b53dd1036bc4f3cb69deff50b644e75e1974"
+      "bytes": 3110622,
+      "sha256": "4d5a00b0c3e184cc631f18a148d998cdbed0bbc5338975aa8c1c6d95a5fc1397"
     },
     {
       "data_year": 2010,
       "path": "data/by_year/2010.jsonl",
-      "records": 858,
-      "bytes": 2973688,
-      "sha256": "d1207745fec3d1048565ef44b4778d0390ee2f129c249fe918f7209761bbd60b"
+      "records": 863,
+      "bytes": 3251387,
+      "sha256": "779ae3ecf6fc4c753cd4c4fbacb9808807a82de26ad09cef6f10e8f6bcfd0f1f"
     },
     {
       "data_year": 2011,
       "path": "data/by_year/2011.jsonl",
-      "records": 1015,
-      "bytes": 4215220,
-      "sha256": "9f45498ff7cf39372c460691dff1267276f5b222a762c4b7cd7ee6aace5697f7"
+      "records": 1027,
+      "bytes": 4617325,
+      "sha256": "1da01143fc0cba015c4573dbfb6b68d443ffa10768381c86d04fad38072d2a19"
     },
     {
       "data_year": 2012,
       "path": "data/by_year/2012.jsonl",
-      "records": 96,
-      "bytes": 364364,
-      "sha256": "8dca2d0781e9f19a63b418e34c9bdb4e0634b68a5058c208303f594533e47094"
+      "records": 528,
+      "bytes": 2405949,
+      "sha256": "4ca967dbc1ac8d7cdd762539e6a87815a0db30ef24c3ccddb30ff5273f2bf042"
     },
     {
       "data_year": 2013,
       "path": "data/by_year/2013.jsonl",
-      "records": 831,
-      "bytes": 3198891,
-      "sha256": "ed20919eda4cf0c6f0e72be0176f9fa52c76559ee43d62c77a7465d6d678457b"
+      "records": 841,
+      "bytes": 3507596,
+      "sha256": "c1b0dd81f48409717f62c945b650ef158511e197b26f2dade767510d71e9ec01"
     },
     {
       "data_year": 2014,
       "path": "data/by_year/2014.jsonl",
-      "records": 80,
-      "bytes": 295015,
-      "sha256": "7795737d890ada4c24833fa941d980b5c0bc01b22cca5a0265c44c1585fced40"
+      "records": 909,
+      "bytes": 3870557,
+      "sha256": "f0a63b196271b891ca4121117061e403d62430a947aab3f8c479515291c3a156"
     },
     {
       "data_year": 2015,
       "path": "data/by_year/2015.jsonl",
-      "records": 182,
-      "bytes": 611651,
-      "sha256": "13958936e703437ab01f9d320ab95614fb2a410258ed1d486dbe61ce18d04d9a"
+      "records": 1071,
+      "bytes": 4548387,
+      "sha256": "f54729526cb415c8df936ff20d54d921599b2b001bc81fc3266a27ce7dc16273"
     },
     {
       "data_year": 2016,
       "path": "data/by_year/2016.jsonl",
       "records": 1108,
-      "bytes": 3425344,
-      "sha256": "4cb936b369b4e55f895bdb8f900c2832d6bf59b5d3a5205a4157e67f8e228d69"
+      "bytes": 3731152,
+      "sha256": "e1c109d48d64bfc988343853f6b27f16b61525ab9a529119dc7eb0074b73daa1"
     },
     {
       "data_year": 2017,
       "path": "data/by_year/2017.jsonl",
       "records": 1199,
-      "bytes": 3709030,
-      "sha256": "611deb64b3abeed0a13d9495244c5926b13d1c205eb099c40764fe284b6a570f"
+      "bytes": 4039954,
+      "sha256": "190dd69081f8c22b8287dcee3030273e8b9eb3884e54e86d8bda5835e5b3dffd"
     },
     {
       "data_year": 2018,
       "path": "data/by_year/2018.jsonl",
       "records": 1204,
-      "bytes": 3726194,
-      "sha256": "04d26c7a4a58ed812b4e76685138e8799209e0d2a125e919e59ec26cc257f112"
+      "bytes": 4058498,
+      "sha256": "edbf0654d8d75baadba6f01a211ba28fe883b91a2b280d7e7ca743bac6584a04"
     },
     {
       "data_year": 2019,
       "path": "data/by_year/2019.jsonl",
       "records": 1136,
-      "bytes": 3521528,
-      "sha256": "6a6de22caa5a8bdec17bd489f0a8e80388f83304ae58c3868d63f7496ad5bb2f"
+      "bytes": 3835064,
+      "sha256": "6f02875341012222cab7b122cfa98ca8be573563996b34e22b86347b22b14c5b"
     },
     {
       "data_year": 2020,
       "path": "data/by_year/2020.jsonl",
       "records": 1270,
-      "bytes": 3927036,
-      "sha256": "3ff699960ad452f75a0bd16c7d084d2fc7c554d4ec172f0a02ef82519267f1d9"
+      "bytes": 4277556,
+      "sha256": "0f908099299ec0e68579d9c460be50b5ddc3a2d989d99733b62bb3bf4f6f41fb"
     },
     {
       "data_year": 2021,
       "path": "data/by_year/2021.jsonl",
       "records": 1400,
-      "bytes": 4309023,
-      "sha256": "c26f57a924fd9fe2dab728def54278b8bba6720f1f3664d762560b65f7dd0130"
+      "bytes": 4695423,
+      "sha256": "d922a14625f22da5694ea8b6834e42d9b9cd7f00b95b965843c53d59a6420c78"
     },
     {
       "data_year": 2022,
       "path": "data/by_year/2022.jsonl",
       "records": 1664,
-      "bytes": 5123328,
-      "sha256": "b0998752caa17354ba1e0e3fdbd0164481d4d6c0daa9df05471506b14bced903"
+      "bytes": 5582592,
+      "sha256": "b06cb9f4745b3feeaca6701b121026a9332c8cfc7a8b43cb7730d4171e400b84"
     },
     {
       "data_year": 2023,
       "path": "data/by_year/2023.jsonl",
       "records": 3936,
-      "bytes": 11980894,
-      "sha256": "16e38f64b137e14a92b7132a1763ce6e777c8f5dbb41968ddfb517236757de9e"
+      "bytes": 13067230,
+      "sha256": "d7c816585b2084334e82183710aa2a347468e8a5b34fd350c0e57ef8b377ee06"
     },
     {
       "data_year": 2024,
       "path": "data/by_year/2024.jsonl",
       "records": 1808,
-      "bytes": 5555782,
-      "sha256": "6308b7346cb7347a5f41f04a39418d9a64cb0790c1ac83fb05fa0db10ceb8100"
+      "bytes": 6054790,
+      "sha256": "f919693bb6867c1ee70aca616e2bca9c08cb1dbf63b80d842732db413678cde5"
     },
     {
       "data_year": 2025,
       "path": "data/by_year/2025.jsonl",
       "records": 1808,
-      "bytes": 5557080,
-      "sha256": "f99c9471f8d69cf8f33ceaf90ee2746705202f262c85135187777fef9f5a1e22"
+      "bytes": 6056088,
+      "sha256": "609857f114b80ece7c65b0a6275f3e60415265642b9a9c1f71daaa4879193520"
     },
     {
       "data_year": 2026,
       "path": "data/by_year/2026.jsonl",
       "records": 1152,
-      "bytes": 3513065,
-      "sha256": "f072e80b0eac97c61659d6e5fdcbfd066992e7c07c3f18c4994db4b890eecb42"
+      "bytes": 3831017,
+      "sha256": "fcd06842ee2e97735af86f6e64e69c0fdafb449fa8abacac82cbc6a569343221"
     }
   ],
   "partition_union_equals_canonical": true

@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Only explicitly reviewed bounded statistical source cohorts are executable. Catalogue-only and failed sources remain in the source backlog.",
+  "cohorts": [
+    {
+      "id": "ncl_gap",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_gap_tables.py",
+      "args": [],
+      "inputs": [
+        "raw/ncl-historical/yearbook-98-public-library.pdf",
+        "raw/ncl-historical/yearbook-99-public-library.pdf",
+        "raw/ncl-historical/yearbook-100-public-library.pdf"
+      ],
+      "outputs": [
+        "derived/ncl_gap_tables_long.csv",
+        "derived/ncl_gap_tables_long.jsonl",
+        "raw/ncl-historical/gap-tables-metadata.json"
+      ],
+      "derived_csv": "derived/ncl_gap_tables_long.csv",
+      "raw_directories": [
+        "raw/ncl-historical"
+      ]
+    },
+    {
+      "id": "ncl_earlier",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_earlier_years.py",
+      "args": [],
+      "inputs": [
+        "raw/ncl-earlier/yearbook-96-public-library.pdf",
+        "raw/ncl-earlier/yearbook-97-public-library.pdf",
+        "raw/ncl-earlier/yearbook-96-download.json",
+        "raw/ncl-earlier/yearbook-97-download.json",
+        "raw/ncl-earlier/table-specifications.json"
+      ],
+      "outputs": [
+        "derived/ncl_earlier_years_long.csv",
+        "derived/ncl_earlier_years_long.jsonl",
+        "raw/ncl-earlier/metadata.json"
+      ],
+      "derived_csv": "derived/ncl_earlier_years_long.csv",
+      "raw_directories": [
+        "raw/ncl-earlier"
+      ]
+    },
+    {
+      "id": "ncl_additional",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_additional_years.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-additional/yearbook-101-public-library.pdf",
+        "raw/ncl-additional/yearbook-103-public-library.pdf",
+        "raw/ncl-additional/yearbook-101-statistics.pdf",
+        "raw/ncl-additional/yearbook-102-statistics.pdf",
+        "raw/ncl-additional/yearbook-103-statistics.pdf",
+        "raw/ncl-additional/yearbook-101-public-library.metadata.json",
+        "raw/ncl-additional/yearbook-103-public-library.metadata.json",
+        "raw/ncl-additional/yearbook-101-statistics.metadata.json",
+        "raw/ncl-additional/yearbook-102-statistics.metadata.json",
+        "raw/ncl-additional/yearbook-103-statistics.metadata.json"
+      ],
+      "outputs": [
+        "derived/ncl_additional_years_long.csv",
+        "derived/ncl_additional_years_long.jsonl",
+        "raw/ncl-additional/extracted-operational-cells.json",
+        "raw/ncl-additional/documents.json",
+        "raw/ncl-additional/extraction-validation.json"
+      ],
+      "derived_csv": "derived/ncl_additional_years_long.csv",
+      "raw_directories": [
+        "raw/ncl-additional"
+      ]
+    },
+    {
+      "id": "ncl_2012_prose",
+      "script": "extract_ncl_2012_prose.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-additional/yearbook-102-public-library.pdf",
+        "raw/ncl-additional/yearbook-102-public-library.metadata.json"
+      ],
+      "outputs": [
+        "derived/ncl_2012_prose_long.csv",
+        "derived/ncl_2012_prose_long.jsonl",
+        "raw/ncl-2012/ncl-2012-prose.metadata.json",
+        "raw/ncl-2012/prose-baseline-text.private.json"
+      ],
+      "derived_csv": "derived/ncl_2012_prose_long.csv",
+      "raw_directories": [
+        "raw/ncl-2012"
+      ],
+      "scope": "All printed operational numeric spans in sections1–8, not an invented county table.",
+      "review_status": "source_reviewed"
+    },
+    {
+      "id": "ncl_reading_2012",
+      "script": "extract_ncl_reading_2012.py",
+      "args": [],
+      "inputs": [
+        "raw/ncl-2012/ncl-reading-101.pdf",
+        "raw/ncl-2012/ncl-reading-101.metadata.json"
+      ],
+      "outputs": [
+        "derived/ncl_reading_2012_long.csv",
+        "derived/ncl_reading_2012_long.jsonl",
+        "raw/ncl-2012/reading-extraction-metadata.json"
+      ],
+      "derived_csv": "derived/ncl_reading_2012_long.csv",
+      "raw_directories": [
+        "raw/ncl-2012"
+      ],
+      "scope": "Five complete national reading report tables; no county table, personal awards or book rankings.",
+      "review_status": "source_reviewed"
+    },
+    {
+      "id": "ncl_2014",
+      "script": "extract_ncl_2014.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-2014/yearbook-104-public-library.pdf",
+        "raw/ncl-2014/yearbook-104-public-library.metadata.json",
+        "raw/ncl-2014/yearbook-104-statistics.pdf",
+        "raw/ncl-2014/yearbook-104-statistics.metadata.json"
+      ],
+      "outputs": [
+        "derived/ncl_2014_long.csv",
+        "derived/ncl_2014_long.jsonl",
+        "raw/ncl-2014/documents.json",
+        "raw/ncl-2014/metadata.json",
+        "raw/ncl-2014/extraction-validation.json"
+      ],
+      "derived_csv": "derived/ncl_2014_long.csv",
+      "raw_directories": [
+        "raw/ncl-2014"
+      ],
+      "scope": "Complete selected core operational tables and public-library statistical subsets; construction projects excluded.",
+      "review_status": "source_reviewed"
+    },
+    {
+      "id": "ncl_2015",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2015.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-2015/yearbook-105-public-library.pdf",
+        "raw/ncl-2015/yearbook-105-public-library.metadata.json",
+        "raw/ncl-2015/yearbook-105-statistics.pdf",
+        "raw/ncl-2015/yearbook-105-statistics.metadata.json"
+      ],
+      "outputs": [
+        "derived/ncl_2015_long.csv",
+        "derived/ncl_2015_long.jsonl",
+        "raw/ncl-2015/documents.json",
+        "raw/ncl-2015/extraction-validation.json"
+      ],
+      "derived_csv": "derived/ncl_2015_long.csv",
+      "raw_directories": [
+        "raw/ncl-2015"
+      ],
+      "scope": "All selected operational grids and public-library statistical subsets; duplicated or suspect printed county labels remain unresolved; table17 unit remains unknown."
+    }
+  ]
+}

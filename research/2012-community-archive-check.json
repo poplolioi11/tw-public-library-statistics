@@ -1,0 +1,122 @@
+{
+  "checked_at": "2026-10-25T10:44:37.143918+00:00",
+  "research_limit": "3minute bounded read-only check; no clone, source crawl, sample extraction, canonical changes or publication",
+  "repository": "https://github.com/g0v/twstat",
+  "tree_sha": "85d76b84e49e49d04ef530fdf8de7b44a1e8cdb9",
+  "tree_entries": 4759,
+  "tree_truncated": false,
+  "repository_archived_flag": false,
+  "repository_last_push": "2016-10-15T07:34:47Z",
+  "read_paths": [
+    "README.md",
+    "MIT-LICENSE",
+    "main.ls",
+    "csv/county/index/index.json",
+    "csv/county/index/公立公共圖書館個數.csv",
+    "old/county/index.json",
+    "raw/county/14-1.px",
+    "raw/county/14-2.px"
+  ],
+  "path_keyword_matches": [
+    "csv/county/index/公立公共圖書館個數.csv"
+  ],
+  "county_index_library_matches": [
+    "公立公共圖書館個數.csv"
+  ],
+  "px_title": "【改制後】縣市重要統計指標 依 指標, 期間 與 縣市",
+  "px_education_library_indicator_matches": [
+    " 公立公共圖書館個數"
+  ],
+  "px_periods": [
+    "1998",
+    "1999",
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014"
+  ],
+  "px_geographies": [
+    " 總計",
+    " 臺灣地區",
+    " 新北市",
+    " 臺北市",
+    " 桃園市",
+    " 臺中市",
+    " 臺南市",
+    " 高雄市",
+    " 宜蘭縣",
+    " 新竹縣",
+    " 苗栗縣",
+    " 彰化縣",
+    " 南投縣",
+    " 雲林縣",
+    " 嘉義縣",
+    " 屏東縣",
+    " 臺東縣",
+    " 花蓮縣",
+    " 澎湖縣",
+    " 基隆市",
+    " 新竹市",
+    " 嘉義市",
+    " 金門縣",
+    " 連江縣"
+  ],
+  "county_csv_years": [
+    "1998",
+    "1999",
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014"
+  ],
+  "result": "本輪完整tree檔名、縣市CSV索引及教育文化PX指標列表僅見公立公共圖書館個數。它有2012全22縣市館數，但未見2012全22縣市館藏／購書／借閱／圖書館人力完整核心資料；不是證明整庫及全部歷史分支不存在其他資料。",
+  "existing_work_value": "g0v已提供DGBAS歷史PX與縣市指標CSV整理，應引用及評估再利用；已找到的館數與本專案既有主計縣市館數系列高度重疊，本輪未作逐格同版認證，不另重造。",
+  "archive_status": "GitHub repo未設archived；資料內容是歷史快照，非現行官方供應或即時資料。README所稱county1998–2011已落後於實際CSV1998–2014。",
+  "official_source_chain": [
+    "README county source: http://ebas1.ebas.gov.tw/pxweb/Dialog/statfile9.asp",
+    "main.ls crawler root: http://statdb.dgbas.gov.tw/pxweb",
+    "main.ls index: http://statdb.dgbas.gov.tw/pxweb/dialog/CityItemlist_n.asp",
+    "rawPX title explicitly 改制後; not our own county boundary conversion"
+  ],
+  "rights": {
+    "software": "GitHub API identifies MIT; actualMIT-LICENSE grants Software rights",
+    "data": "README distinguishes data rights holders from sourcecode copyright; it does not explicitly place original government datasets underMIT. This check has not established an original source/version-specific redistribution licence; cannot apply repoMIT to all government archives.",
+    "action": "No archival data imported or republished; retain attributable prior-art record."
+  },
+  "not_checked": [
+    "All4759blobcontents were not downloaded orsearched; onlytree and observedindices/educationcategoryPX were read.",
+    "No fullhistory/branches/commitdiff search; no individual townPX all-city consolidation.",
+    "Original historicalDGBAS endpoints were recorded but not recrawled ornewPOST requests sent."
+  ],
+  "urls": {
+    "README.md": "https://github.com/g0v/twstat/blob/85d76b84e49e49d04ef530fdf8de7b44a1e8cdb9/README.md",
+    "MIT-LICENSE": "https://github.com/g0v/twstat/blob/85d76b84e49e49d04ef530fdf8de7b44a1e8cdb9/MIT-LICENSE",
+    "main.ls": "https://github.com/g0v/twstat/blob/85d76b84e49e49d04ef530fdf8de7b44a1e8cdb9/main.ls",
+    "csv/county/index/index.json": "https://github.com/g0v/twstat/blob/85d76b84e49e49d04ef530fdf8de7b44a1e8cdb9/csv/county/index/index.json",
+    "csv/county/index/公立公共圖書館個數.csv": "https://github.com/g0v/twstat/blob/85d76b84e49e49d04ef530fdf8de7b44a1e8cdb9/csv/county/index/公立公共圖書館個數.csv",
+    "old/county/index.json": "https://github.com/g0v/twstat/blob/85d76b84e49e49d04ef530fdf8de7b44a1e8cdb9/old/county/index.json",
+    "raw/county/14-2.px": "https://github.com/g0v/twstat/blob/85d76b84e49e49d04ef530fdf8de7b44a1e8cdb9/raw/county/14-2.px"
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "checked_at": "2026-10-25",
+  "scope": "independent_official_source_search_for_2012_county_core_statistics",
+  "status": "no_additional_complete_2012_county_core_packet_confirmed_in_this_round",
+  "independence": "直接查官方網頁、既存原PDF與完整DGBAS目錄，未讀其他代理的資料擷取結果；未新增統計資料或修改共用程式。",
+  "publication_date_correction": {
+    "source_edition_roc": 103,
+    "official_entry_publication_date": "2015-01-01",
+    "evidence": "既存官方entry HTML：中華民國一O三年圖書館年鑑 出版日期 2015-01-01",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565350919926814",
+    "copyright_page_date": null,
+    "note": "本代理先前將卷號換算的2014誤稱刊年，已撤回；版次不作出版日期證據，未改既有資料。"
+  },
+  "sources": [
+    {
+      "source_id": "ind-2012-assessment",
+      "owner": "國家圖書館",
+      "title": "102年全國公共圖書館評鑑工作紀要",
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565350919926814",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565357648017327/dc20b708-7092-4ae3-ac7e-ff8fe001c257.pdf",
+      "legacy_download_url": "https://nclfile.ncl.edu.tw/files/201605/dc20b708-7092-4ae3-ac7e-ff8fe001c257.pdf",
+      "local_pdf": "raw/ncl-2012/ncl-yearbook-103-assessment-2012.pdf",
+      "sha256": "bc2663bf5c776d00f9a156d1a6545aaa82ce2e14bbb95796ea61637d413a7a9e",
+      "access_status": "existing_original_pdf_read_independently",
+      "format": "PDF",
+      "publication_edition_roc": 103,
+      "assessment_year": 2013,
+      "operational_reference_year": 2012,
+      "historical_reference_years": [
+        2010,
+        2011,
+        2012
+      ],
+      "eligibility_for_2012_county_core": "excluded_not_county_operating_values",
+      "evidence": [
+        {
+          "pdf_page": 5,
+          "printed_page": 23,
+          "excerpt": "以公立公共圖書館為對象（不含國立公共圖書館）",
+          "meaning": "評鑑母體排除國立公共圖書館；506受評館，不等於所有公共館。"
+        },
+        {
+          "pdf_page": 5,
+          "printed_page": 23,
+          "excerpt": "評鑑範圍包括各級圖書館101年營運及服務之成果與績效，同時參考近三年（99-101年）的營運統計",
+          "meaning": "2013評鑑與2012資料年及2010–2012比較期間分開。"
+        },
+        {
+          "pdf_page": 10,
+          "printed_page": 28,
+          "excerpt": "主要係以國立公共資訊圖書館公共圖書館統計系統101年之統計數據為主，並彙集部分各圖書館之初評報告而成",
+          "meaning": "來源是系統及部分初評報告的混合彙整；不是原始縣市全指標下載。"
+        }
+      ],
+      "table_inventory": [
+        {
+          "tables": "6–7",
+          "pdf_pages": [
+            3,
+            4
+          ],
+          "printed_pages": [
+            21,
+            22
+          ],
+          "kind": "評鑑指標、配分及適用館級"
+        },
+        {
+          "tables": "8–10",
+          "pdf_pages": [
+            6,
+            7
+          ],
+          "printed_pages": [
+            24,
+            25
+          ],
+          "kind": "受評、參獎、得獎館數"
+        },
+        {
+          "tables": "11",
+          "pdf_pages": [
+            8
+          ],
+          "printed_pages": [
+            26
+          ],
+          "kind": "22縣市受評及得獎館數；資料是2013評鑑，不是2012營運全量"
+        },
+        {
+          "tables": "12–13",
+          "pdf_pages": [
+            9
+          ],
+          "printed_pages": [
+            27
+          ],
+          "kind": "按館級的平均分數、比率與低於平均館數"
+        },
+        {
+          "tables": "14–18",
+          "pdf_pages": [
+            10,
+            11
+          ],
+          "printed_pages": [
+            28,
+            29
+          ],
+          "kind": "五都總館指標達標／未達標館數；不是五都實際營運數值"
+        },
+        {
+          "tables": "19–20",
+          "pdf_pages": [
+            12
+          ],
+          "printed_pages": [
+            30
+          ],
+          "kind": "240直轄市分區館達標／未達標／無資料館數"
+        },
+        {
+          "tables": "21–24",
+          "pdf_pages": [
+            13,
+            14
+          ],
+          "printed_pages": [
+            31,
+            32
+          ],
+          "kind": "17縣市級館按人口級距或指標的達標／未達標館數；不含鄉鎮館"
+        },
+        {
+          "tables": "25–28",
+          "pdf_pages": [
+            15,
+            16
+          ],
+          "printed_pages": [
+            33,
+            34
+          ],
+          "kind": "240鄉鎮館按人口級距或指標的達標／未達標／無資料館數"
+        }
+      ],
+      "visual_check": "PDFium完整看PDF5、10、12、16；其餘表範圍由原PDF文字層核查。",
+      "source_caveats": [
+        "表19開放時數未達原表14館，正文PDF10及12說140館；不自行選擇何者正確。",
+        "表28人均辦證數原刊已達77、未達148、無資料150館，超過註記240館；原圖確認150，不猜成15。",
+        "表27基準要求列的內容與欄名有錯置疑慮，不當成可直接套用的指標字典。"
+      ],
+      "license_status": "not_confirmed",
+      "action": "不擷取評鑑資料，不用來補2012縣市核心；全文原件不公開。"
+    },
+    {
+      "source_id": "ind-2012-yearbook-103-comparison",
+      "owner": "國家圖書館",
+      "title": "103年卷圖書館統計：表157 公共圖書館基本統計表（98年至102年）",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565363808762360/797e6631-c29d-4749-92c5-7e2be6ea1f2f.pdf",
+      "local_pdf": "raw/ncl-additional/yearbook-103-statistics.pdf",
+      "sha256": "c75b1de3625ca9d9e496973c5eca271d98dc9eff8ed258565826b63b946001d4",
+      "pdf_page": 5,
+      "printed_page": 393,
+      "access_status": "existing_original_pdf_text_read",
+      "coverage": "2009–2013全國圖書館數量、館藏量、閱覽席位、借閱人次及冊數，沒有縣市列。",
+      "eligibility_for_2012_county_core": "excluded_national_comparison_only",
+      "license_status": "not_confirmed"
+    },
+    {
+      "source_id": "ind-2012-yearbook-102-prose",
+      "owner": "國家圖書館",
+      "title": "102年卷公共圖書館綜述",
+      "local_pdf": "raw/ncl-additional/yearbook-102-public-library.pdf",
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565374511489343",
+      "pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "printed_pages": [
+        69,
+        70,
+        71
+      ],
+      "access_status": "existing_original_pdf_text_read",
+      "coverage": "資料年101=2012；有全國與館級統計，以及縣市人均擁書、購書、借閱等敘述值。",
+      "eligibility_for_2012_county_core": "possible_bounded_prose_indicators_not_confirmed_complete_county_raw_packet",
+      "caveats": [
+        "不可由小數二位人均值反推精確館藏、經費或借閱分子。",
+        "此輪不另散收或匯入敘述數值。"
+      ],
+      "license_status": "not_confirmed"
+    },
+    {
+      "source_id": "ind-2012-nlpi-102-annual",
+      "owner": "國立公共資訊圖書館",
+      "title": "102年年報",
+      "source_page_url": "https://www.nlpi.edu.tw/LibraryPublicationListC003313.aspx?Pindex=4",
+      "source_download_url": "https://www.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510094622367.pdf",
+      "format": "PDF",
+      "access_status": "search_index_available_original_download_failed",
+      "indexed_evidence": "搜尋索引目次印刷3：公共圖書館輔導62、業務統計134、附錄142。",
+      "coverage": "未取得全PDF，尚未確認是否有完整2012縣市表；不能把本館年報標題等同全國統計包。",
+      "license_status": "not_confirmed",
+      "download_attempts": [
+        {
+          "method": "HEAD",
+          "url": "https://www.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510094622367.pdf",
+          "result": "HTTP404"
+        },
+        {
+          "method": "GET_range_prefix",
+          "url": "https://www.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510094622367.pdf",
+          "result": "HTTP404"
+        },
+        {
+          "method": "GET_range_prefix",
+          "url": "https://www.nlpi.edu.tw/FileDownload/LibraryPublication/20160510094622367.pdf",
+          "result": "HTTP404"
+        },
+        {
+          "method": "GET_range_prefix",
+          "url": "https://w3.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510094622367.pdf",
+          "result": "DNS_resolution_failed"
+        },
+        {
+          "method": "GET_range_prefix",
+          "url": "http://www.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510094622367.pdf",
+          "result": "timeout_20_seconds"
+        },
+        {
+          "method": "GET",
+          "url": "https://www.nlpi.edu.tw/LibraryPublicationListC003313.aspx?Pindex=4",
+          "result": "HTTP400"
+        }
+      ],
+      "action": "留待官方新版入口或有效下載資源；未繞過權限、未關閉TLS驗證。"
+    },
+    {
+      "source_id": "ind-2012-ncl-reading-report",
+      "owner": "國家圖書館",
+      "title": "臺灣101年閱讀習慣調查結果報告",
+      "source_page_url": "https://www.ncl.edu.tw/galleries/0Q082532024025788575",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q082532021110999161/32251658871.pdf",
+      "publication_date_on_page": "2013-02-25",
+      "format": "PDF",
+      "access_status": "current_official_original_obtained_by_parent_independently_read_locally",
+      "source_excerpt": "年度借閱總冊數達6,162萬0,597冊",
+      "coverage": "原PDF14–16／印刷8–10共5張全國表；有2011與2012比較及2012服務量、分類×年齡／性別分布，沒有22縣市分列。",
+      "caveats": [
+        "公告借閱總量61,620,597與年鑑2012的62,904,803不同，尚未釐清調查、館數或截止期間差異。"
+      ],
+      "license_status": "not_confirmed",
+      "action": "已依後續授權整批抽取五張全國統計表，154格；維持閱讀報告獨立版，不補縣市核心缺口。",
+      "legacy_source_page_url": "https://www.ncl.edu.tw/information_237_1485.html",
+      "legacy_source_download_url": "https://nclfile.ncl.edu.tw/nclhistory/public/Attachment/32251658871.pdf",
+      "local_pdf": "raw/ncl-2012/ncl-reading-101.pdf",
+      "sha256": "f25798e2fe96dcde51a0ed818edb395f986c2b427f8b39349d4edbe62dabacc4"
+    },
+    {
+      "source_id": "ind-2012-dgbas-current-dictionary",
+      "owner": "行政院主計總處",
+      "title": "縣市重要統計指標查詢系統完整現行目錄及定義表",
+      "url": "https://winsta.dgbas.gov.tw/DgbasWeb/ZWeb/StateFile_ZWeb.aspx",
+      "access_status": "HTTP200_full_html_parsed",
+      "response_text_characters": 1198123,
+      "response_text_utf8_sha256": "d33672c6db4b3872e373bedf3e341aa0bf80af7cc3905ba24abc5b6df92e136f",
+      "method": "對完整HTML逐一解析tr與a，查圖書館、借閱、館藏。",
+      "matches": [
+        {
+          "indicator_code": "Z091101a029",
+          "tree_target": "Y967",
+          "title": "公立公共圖書館個數(所)",
+          "definition": "公立公共圖書館館數（包含國家圖書館、國立公共資訊圖書館及國立臺灣圖書館）。",
+          "provider": "教育部",
+          "definition_row_ids": [
+            966,
+            967
+          ]
+        }
+      ],
+      "coverage": "本輪現行完整目錄只命中已收的館數指標，未找到借閱、館藏或人力另一系列入口。",
+      "caveats": [
+        "這不是對DGBAS全部歷史資料庫不存在相關指標的證明。",
+        "館數母體含國家圖書館，不能硬補為NLPI同一母體。"
+      ],
+      "license_status": "site_declaration_already_verified_by_parent_not_reaudited_in_this_round",
+      "action": "未重複擷取已收館數；沒有新增指標或觀測值。"
+    },
+    {
+      "source_id": "ind-2012-open-catalog-chain",
+      "owner": "國立公共資訊圖書館／政府資料開放平臺",
+      "title": "公共圖書館統計 dataset6425",
+      "url": "https://data.gov.tw/dataset/6425",
+      "access_status": "official_catalog_read",
+      "catalog_license": "政府資料開放授權條款-第1版",
+      "license_url": "http://data.gov.tw/license",
+      "resource_link_current": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+      "source_excerpt": "如需產生2011-2017年統計資料，請至公共圖書館統計系統使用",
+      "conclusion": "目錄說舊年度可在系統查；此輪未確認2012完整縣市下載包，不把目錄授權延伸到其他署名PDF或未核對資源。"
+    }
+  ],
+  "search_queries": [
+    "site.nlpi.edu.tw 102年 公共圖書館 統計 2013 101年",
+    "site.ncl.edu.tw 103 圖書館年鑑 公共圖書館 101年 統計",
+    "site.data.gov.tw 公共圖書館 統計 101 2012",
+    "site.nlpi.edu.tw 102 年報 pdf",
+    "site.nlpi.edu.tw 101年 統計 縣市",
+    "site.ncl.edu.tw 101年 公共圖書館 比較 103",
+    "公共圖書館 101年 館藏 縣市 統計 pdf",
+    "site.nlpi.edu.tw 公共圖書館統計 102",
+    "site.nlpi.edu.tw 101年年報",
+    "20160510094622367.pdf 統計",
+    "20160510094622367.pdf 101 公共",
+    "site.nlpi.edu.tw 101年公共圖書館營運統計",
+    "101年公共圖書館 統計資料",
+    "site.w3.nlpi.edu.tw 102年年報",
+    "site.nlpi.edu.tw 101年 全國公共圖書館統計",
+    "site.data.gov.tw 公共圖書館統計 101",
+    "site.winsta.dgbas.gov.tw 圖書館 借閱",
+    "site.winsta.dgbas.gov.tw 圖書館 館藏",
+    "site.winsta.dgbas.gov.tw 圖書館 專業",
+    "縣市重要統計指標 圖書館 冊",
+    "Z091101 圖書館",
+    "Z091101 借閱",
+    "縣市重要統計指標 借閱"
+  ],
+  "limits": [
+    "本輪未找到額外可確認完整的2012縣市核心原始包，不表示資料不存在。",
+    "NLPI舊PDF搜尋索引仍在，直接下載失敗；未以搜尋片段宣稱整份已閱。",
+    "未下載研究手冊59MB大PDF，索引明列的是100年全國公共館統計，不能誤認為2012。",
+    "未擷取評鑑得獎或未達基準資料，未處理工程、公司個案或圖像敘述。"
+  ]
+}

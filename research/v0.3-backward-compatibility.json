@@ -1,0 +1,9 @@
+{
+  "baseline_version": "0.2.0",
+  "current_version": "0.3.0",
+  "baseline_records": 24548,
+  "current_records": 26725,
+  "additions": 2177,
+  "existing_statistical_or_source_field_changes": 0,
+  "comparison": "Every existing baseline field except four publication projection metadata fields; new optional columns allowed."
+}

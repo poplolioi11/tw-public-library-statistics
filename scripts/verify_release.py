@@ -152,6 +152,36 @@ def reference_year(period):
     raise ValueError("Unverified period syntax: " + text)
 
 
+def reviewed_ncl_csvs(root):
+    inventory = root / "data/reviewed_historical_cohorts.json"
+    if not inventory.exists():
+        return ADDITIONAL_NCL_FILES
+    document = jsonfile(inventory)
+    if document.get("schema_version") != "1.0.0":
+        raise ValueError("Unrecognized reviewed cohort inventory")
+    result = []
+    for group in document["cohorts"]:
+        if group["review_status"] != "source_reviewed":
+            continue
+        path = Path(group["derived_csv"])
+        if path.is_absolute() or ".." in path.parts or path.parts[0] != "derived" or path.suffix != ".csv":
+            raise ValueError("Invalid reviewed input path")
+        result.append(path.name)
+    if len(result) != len(set(result)):
+        raise ValueError("Duplicate reviewed CSV")
+    return tuple(result)
+
+
+def independent_printed_magnitude(raw):
+    match = re.fullmatch(r"(?:(\d+)億)?(?:(\d+)萬)?(\d+)?", raw)
+    if not match or not any(character in raw for character in "億萬"):
+        return None
+    big, middle, small = (int(part or 0) for part in match.groups())
+    if small >= 10000 or (match[1] and middle >= 10000):
+        raise ValueError("Ambiguous printed magnitude group")
+    return big * 100000000 + middle * 10000 + small
+
+
 def ncl_source_value(source):
     """Independent adapter oracle. A missingness label cannot erase raw digits."""
     raw, normalized = source["value_raw"], source.get("value", "")
@@ -182,7 +212,13 @@ def ncl_source_value(source):
         if not reviewed or raw_numeric != reviewed["raw"] or annotation != reviewed["annotation"] or source.get("source_sha256") != reviewed["source_sha256"]:
             raise ValueError("NCL numeric annotation has no independently reviewed cell contract")
         raw_numeric = reviewed["numeric"]
+    if source.get("value_qualifier") == "approximate_as_printed" and raw_numeric.startswith("約"):
+        raw_numeric = raw_numeric[1:]
+    if raw_numeric.endswith("%") and source.get("unit") == "%":
+        raw_numeric = raw_numeric[:-1]
     parsed_raw, _ = independent_parse(raw_numeric)
+    if parsed_raw is None and source.get("source_location_kind") == "prose_numeric_span":
+        parsed_raw = independent_printed_magnitude(raw_numeric)
     if parsed_raw is None or Decimal(str(parsed_raw)) != Decimal(str(value)):
         raise ValueError("NCL normalized number differs from original numeric representation")
     return value, canonical_status
@@ -595,7 +631,7 @@ class Verification:
             self.check(digest((self.root / path).read_bytes()) == expected, "historical_adapter_raw_sha", path)
         county_extra = sum(row["source_id"] == "dgbas-county-library-Z091101a029" for row in rows)
         additional_count = 0
-        for name in ADDITIONAL_NCL_FILES:
+        for name in reviewed_ncl_csvs(self.root):
             path = self.root / "derived" / name
             if path.exists():
                 with path.open(encoding="utf-8-sig", newline="") as stream:
@@ -687,7 +723,7 @@ class Verification:
         before = len(self.failures)
         sources = []
         files = []
-        for name in ADDITIONAL_NCL_FILES:
+        for name in reviewed_ncl_csvs(self.root):
             path = self.root / "derived" / name
             if path.exists():
                 with path.open(encoding="utf-8-sig", newline="") as stream:
@@ -741,7 +777,7 @@ class Verification:
             self.check(target["period_start"] == expected_start and target["period_end"] == expected_end,
                        "new_ncl_period_not_invented", key)
             unit = source.get("unit") or None
-            if unit and ("混合" in unit or "件/種/冊" in unit or "原表未列" in unit):
+            if source.get("unit_status") == "source_heading_conflict_unresolved" or (unit and ("混合" in unit or "件/種/冊" in unit or "原表未列" in unit)):
                 unit = None
             self.check(target["unit"] == unit, "new_ncl_unit", key)
             if value is None:
@@ -751,6 +787,41 @@ class Verification:
             "derived_files": files, "records_checked": len(sources), "source_pdf_hashes_checked": len(checked_hashes),
             "value_status_counts": dict(statuses), "gap_review_level": "Complete independent page-image baseline is checked separately.",
             "other_years_review_level": "Derived-to-canonical fields and raw PDF hashes checked; separately, five original-image tables have 164 independently entered expected sample positions (159 numeric, two blank, three explicit markers), recorded in research/ncl-v02-independent-image-samples.json. This is not a full independent transcription of all additional-year PDF cells."}
+
+    def reviewed_cohort_evidence(self):
+        reports = []
+        for year in (2014, 2015):
+            csv_path = self.root / f"derived/ncl_{year}_long.csv"
+            if not csv_path.exists():
+                continue
+            report_path = self.root / f"research/ncl-{year}-independent-review.json"
+            report = jsonfile(report_path)
+            comparison = report["comparison"]
+            expected_hash = comparison.get("producer_csv_sha256") or comparison.get("csv_sha256")
+            self.check(digest(csv_path.read_bytes()) == expected_hash, "independent_review_bound_to_csv", year)
+            with csv_path.open(encoding="utf-8-sig", newline="") as stream:
+                source = list(csv.DictReader(stream))
+            indexed = {(r["source_sha256"], r["source_table"], r["source_row"], r["source_column"]): r for r in source}
+            self.check(len(indexed) == len(source) == report["expected_cells"], "independent_full_grid_count", year)
+            for cell in report["cells"]:
+                key = (cell["source_sha256"], cell["table"], str(cell["source_row"]), str(cell["source_column"]))
+                row = indexed.get(key)
+                self.check(row is not None, "independent_grid_coordinate", key)
+                if row is None:
+                    continue
+                self.check(re.sub(r"\s+", "", row["value_raw"]) == re.sub(r"\s+", "", cell["raw_value"]), "independent_grid_original_string", key)
+                self.check(Decimal(row["value"]) == Decimal(cell["normalized_value"]), "independent_grid_number", key)
+                self.check(int(row["source_pdf_page"]) == cell["pdf_page"] and str(row["source_printed_page"]) == str(cell["printed_page"]), "independent_grid_pages", key)
+            reports.append({"report": str(report_path.relative_to(self.root)), "sha256": digest(report_path.read_bytes()), "source_cells": report["expected_cells"], "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."})
+        reading = self.root / "derived/ncl_reading_2012_long.csv"
+        if reading.exists():
+            path = self.root / "research/ncl-reading-2012-independent-review.json"
+            report = jsonfile(path)
+            self.check(digest(reading.read_bytes()) == report["derived_sha256"], "independent_reading_review_bound_to_csv", 154)
+            self.check(len(report["expected_cells"]) == report["comparison_counts"]["matched"] == 154 and not report["mismatches"], "independent_reading_complete", 154)
+            self.check(all(item["matches"] for item in report["comparison_details"]), "independent_reading_no_numeric_difference", 154)
+            reports.append({"report": str(path.relative_to(self.root)), "sha256": digest(path.read_bytes()), "source_cells": 154, "method": "Fixed original table expectations, merged growth-period review and original PDF checks."})
+        self.result["additional_independent_review_evidence"] = reports
 
     def county_table(self):
         before = len(self.failures)
@@ -882,6 +953,8 @@ class Verification:
             lines += ["", "## 主計總處縣市館數整包", "",
                       f"Z091101a029 原始 HTML {county['raw_cells_checked']} 格與長表逐格核對，原年份×縣市完整。2006–2025 年 460 格有值；1998–2005 年 184 格官方原示「-」，保留為缺值。",
                       f"包含總計與22縣市，採官方改制後縣市範圍且包含國家圖書館。整併已回查 {county['canonical_records_checked']} 筆，狀態 {county['canonical_mapping_status']}；不與其他館數序列合併。授權證據為主計總處母站廣泛宣告，套用到查詢子站的範圍推論已另標。"]
+        for evidence in self.result.get("additional_independent_review_evidence", []):
+            lines += ["", "新增批次獨立原件證據：" + evidence["report"] + "；" + str(evidence["source_cells"]) + "格，報告SHA與目前CSV綁定。" + evidence["method"]]
         gap = self.result.get("ncl_gap_independent")
         if gap:
             lines += ["", "## 四張國圖缺表的完整獨立視讀基準", "",
@@ -957,8 +1030,9 @@ def main():
             verification.components()
             if (args.root / "derived/ncl_gap_tables_long.csv").exists():
                 verification.ncl_gap()
-            if any((args.root / "derived" / name).exists() for name in ADDITIONAL_NCL_FILES):
+            if any((args.root / "derived" / name).exists() for name in reviewed_ncl_csvs(args.root)):
                 verification.ncl_additional_components()
+                verification.reviewed_cohort_evidence()
             if (args.root / "derived/dgbas_county_historical_long.csv").exists():
                 verification.county_table()
             if (args.root / "data/combined/observations.jsonl").exists():
