@@ -2,7 +2,7 @@
 
 # 正式資料來源獨立回查
 
-檢查時間：2026-10-25T10:43:12.636688+00:00。結果：**pass**，共 681,173 個斷言、0 項失敗。
+檢查時間：2026-10-25T12:04:42.016397+00:00。結果：**pass**，共 1,244,134 個斷言、0 項失敗。
 
 本驗收腳本不匯入主管線或 PDF 抽取程式，也不發出網路請求。
 
@@ -50,12 +50,12 @@
 
 ## 整併元件全量回查
 
-共 23,634 筆元件。地方 35 份原始 JSON，逐格核對 25,184 筆 derived 資料的原值與完整原始欄位；其 14,751 筆保留資料逐筆核對整併映射。
+共 34,302 筆元件。地方 35 份原始 JSON，逐格核對 25,184 筆 derived 資料的原值與完整原始欄位；其 14,751 筆保留資料逐筆核對整併映射。
 排除的 10,433 筆均與保留列的原始值、期間、單位、館別及地理代碼相同；保留每個語意群組的所有異值。現批異值群組 0 組，不能據此推論其他來源也沒有差異。
 民國年與民國年月分別轉換參考年，但保留原年月、週期、館別，沒有填成年初／年底年度總值。館別有值時維持機構範圍，不改成縣市總量。萬與冊後綴有明確轉換規則，未在原欄寫元時不猜貨幣單位。
 歷史元件 1,489 筆與 derived、PDF 雜湊回查；4 個來源未提供符號保持缺值。主計總處開放授權代碼與原授權網址保留。主計總處 PDF 內容本次沒有獨立全文轉錄比對。
 
-最終整併 JSONL 26,725 筆，與核心及元件的 ID 集合完全相同；每筆所有原有欄位及值型別均保留，沒有整併後遺漏、重複或覆寫。
+最終整併 JSONL 37,393 筆，與核心及元件的 ID 集合完全相同；每筆所有原有欄位及值型別均保留，沒有整併後遺漏、重複或覆寫。
 
 ## 主計總處縣市館數整包
 
@@ -66,6 +66,26 @@ Z091101a029 原始 HTML 644 格與長表逐格核對，原年份×縣市完整�
 
 新增批次獨立原件證據：research/ncl-2015-independent-review.json；909格，報告SHA與目前CSV綁定。Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking.
 
+新增批次獨立原件證據：research/ncl-2016-independent-review.json；1040格，報告SHA與目前CSV綁定。Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking.
+
+新增批次獨立原件證據：research/ncl-2017-independent-review.json；1040格，報告SHA與目前CSV綁定。Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking.
+
+新增批次獨立原件證據：research/ncl-2018-independent-review.json；1221格，報告SHA與目前CSV綁定。Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking.
+
+新增批次獨立原件證據：research/ncl-2019-independent-review.json；1173格，報告SHA與目前CSV綁定。Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking.
+
+新增批次獨立原件證據：research/ncl-2020-independent-review.json；1250格，報告SHA與目前CSV綁定。Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking.
+
+新增批次獨立原件證據：research/ncl-2021-independent-review.json；1236格，報告SHA與目前CSV綁定。Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking.
+
+新增批次獨立原件證據：research/ncl-2022-independent-review.json；1236格，報告SHA與目前CSV綁定。Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking.
+
+新增批次獨立原件證據：research/ncl-2023-independent-review.json；1236格，報告SHA與目前CSV綁定。Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking.
+
+新增批次獨立原件證據：research/ncl-2024-independent-review.json；1236格，報告SHA與目前CSV綁定。Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking.
+
+新增批次獨立原件證據：research/ncl-v04-image-expectations.json；31格，報告SHA與目前CSV綁定。Explicit image selections, separate from the full glyph-grid comparisons. Gemini read three supplied original page images; primary agent also inspected them and the2020scoped-quantity page.
+
 新增批次獨立原件證據：research/ncl-reading-2012-independent-review.json；154格，報告SHA與目前CSV綁定。Fixed original table expectations, merged growth-period review and original PDF checks.
 
 ## 四張國圖缺表的完整獨立視讀基準
@@ -73,7 +93,7 @@ Z091101a029 原始 HTML 644 格與長表逐格核對，原年份×縣市完整�
 新增四表 1180 個位置，包含 830 個印刷數字與 350 個留白，已對照在讀取抽取結果前建立的 PDFium 視讀基準逐格核對。這350格留白不同於原刊以符號明示的缺值，也不改為零。
 原表差異保留：2008借閱人次28列加總11,946,492，印刷總計11,964,492；2009未印國立分館欄，臺中市與全國分館合計分別較可見分項多1。未補欄或改原值。
 
-新國圖元件 6750 筆逐筆比對 derived 與 canonical 的原值、缺值狀態、館級、加總角色、期間、來源版本、頁列欄及bbox。另對2006、2007、2011、2013年的5張原件表，先依PDFium影像建立164個位置的固定期望值，再比對derived及canonical；159個數值、2個原印留白及3個明示符號均無差異。
+新國圖元件 17418 筆逐筆比對 derived 與 canonical 的原值、缺值狀態、館級、加總角色、期間、來源版本、頁列欄及bbox。另對2006、2007、2011、2013年的5張原件表，先依PDFium影像建立164個位置的固定期望值，再比對derived及canonical；159個數值、2個原印留白及3個明示符號均無差異。
 此獨立影像抽查的母體、表頭、單位、註腳與期間依據詳見[ncl-v02-independent-image-samples.md](ncl-v02-independent-image-samples.md)及其[逐格JSON紀錄](ncl-v02-independent-image-samples.json)。這164個位置為明示範圍的抽查，並非所有新卷全格獨立轉錄；四張缺表的1180位置全量基準則另列於上一節。
 
 ## 解讀界線

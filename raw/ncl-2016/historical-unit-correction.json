@@ -1,0 +1,32 @@
+{
+  "2016": {
+    "table": 171,
+    "affected_cells": 5,
+    "all_values_raw_numbers_source_positions_unchanged": true,
+    "statistical_source_position_fingerprint": "87f94949d6bac3311b599d3d9d70a33a18c790a4d0c97726449f3e68583ececc",
+    "raw_metric": "館藏量",
+    "raw_unit": null,
+    "unit": null,
+    "unit_status": "source_unit_unconfirmed_or_not_printed"
+  },
+  "2017": {
+    "table": 215,
+    "affected_cells": 5,
+    "all_values_raw_numbers_source_positions_unchanged": true,
+    "statistical_source_position_fingerprint": "8ceafdd201e60af3ad2135c63a41b05605e71e91296243ab71c6cf05ec16f259",
+    "raw_metric": "館藏量",
+    "raw_unit": null,
+    "unit": null,
+    "unit_status": "source_unit_unconfirmed_or_not_printed"
+  },
+  "2018": {
+    "table": 194,
+    "affected_cells": 5,
+    "all_values_raw_numbers_source_positions_unchanged": true,
+    "statistical_source_position_fingerprint": "e700db540d80cde738933c87a5a96fc27ae4b548abcc1b11f284f7ba9124c898",
+    "raw_metric": "館藏量",
+    "raw_unit": null,
+    "unit": null,
+    "unit_status": "source_unit_unconfirmed_or_not_printed"
+  }
+}

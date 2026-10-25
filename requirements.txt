@@ -1,3 +1,4 @@
 pypdf
 pdfplumber
 certifi
+pypdfium2

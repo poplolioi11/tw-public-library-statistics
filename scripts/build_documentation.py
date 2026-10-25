@@ -6,6 +6,7 @@ registry permits execution; its CSVs describe completed source cells. Canonical
 counts separately describe the observations actually distributed for analysis.
 """
 from __future__ import annotations
+import record_io
 import csv,json,re
 from collections import Counter,defaultdict
 from pathlib import Path
@@ -96,7 +97,7 @@ def table_groups(rows):
 
 def load_context(root=R):
     summary=read_json(root/'data/combined/summary.json')
-    rows=[json.loads(line) for line in (root/'data/combined/observations.jsonl').read_text().splitlines() if line.strip()]
+    rows=list(record_io.rows(root))
     if len(rows)!=summary['records']:raise ValueError('Canonical rows and summary.records differ; generate documentation after a complete data build.')
     registry=read_json(root/'data/reviewed_historical_cohorts.json',{'cohorts':[]});cohorts=[];registered_ids=set()
     for cohort in registry.get('cohorts',[]):
@@ -128,10 +129,17 @@ def historical_warning(context):
         text=f"2012年原文中每人購書／擁書／借閱比率分別列{n['acquisition_per_capita']}／{n['holdings_per_capita']}／{n['loans_per_capita']}縣市；館員服務人口只列{n['service_population_per_staff']}縣市，未列{missing}。"
     else:text='2012年已列原文比率的縣市覆蓋以歷史批次為準。'
     text+='22縣市核心原量表仍未取得，不能由比率反算。閱讀報告所列表只有全國彙總，不能冒充縣市表。'
-    if ambiguous or any(105 in c['edition_roc'] for c in context['cohorts']):
-        text+=f' 2015原刊部分縣市標籤未確認、兩列均印金門，保留{ambiguous:,}筆標籤不確定觀測，不補成連江或硬接現行界線。'
+    ambiguous_by_year=Counter(as_int(r.get('data_year')) for r in selected if uncertain_label(r))
+    if ambiguous_by_year.get(2015) or any(105 in c['edition_roc'] for c in context['cohorts']):
+        text+=f" 2015原刊部分縣市標籤未確認、兩列均印金門，保留{ambiguous_by_year.get(2015,0):,}筆標籤不確定觀測，不補成連江或硬接現行界線。"
+    other_ambiguous={year:count for year,count in sorted(ambiguous_by_year.items(),key=lambda x:str(x[0])) if year!=2015}
+    if other_ambiguous:
+        text+=' 其他原刊地理標籤疑義按資料年分列：'+ '、'.join(f'{year}年{count}格' for year,count in other_ambiguous.items())+'；原印名稱與數字保留，這些格不計為已確認縣市覆蓋。'
     if conflicting:
         text+=f' 2015表17標題「場次」與正文「人次」衝突，{conflicting:,}格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。'
+    counting_basis=Counter(as_int(r.get('data_year')) for r in selected if r.get('unit_status')=='source_heading_counting_basis_unresolved')
+    if counting_basis:
+        text+=' 原表只稱「人數」而未確認去重人數／累計人次的格位保留unit=null：'+ '、'.join(f'{year}年{count}格' for year,count in sorted(counting_basis.items(),key=lambda x:str(x[0])))+'；unit_raw照原欄頭保留。'
     return text
 
 
@@ -158,7 +166,7 @@ def source_family_table(context,ai=False):
     return '\n'.join(lines)
 
 def bounded_description(context):
-    counts=context['nulls'];return f"目前 **{len(context['rows']):,} 筆來源觀測紀錄**，含 **{counts.get('not_available_in_source',0):,} 格明示缺值**、**{counts.get('source_blank',0):,} 格原印留白**及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。"
+    counts=context['nulls'];return f"目前 **{len(context['rows']):,} 筆來源觀測紀錄**，含 **{counts.get('not_available_in_source',0):,} 格明示缺值**、**{counts.get('source_blank',0):,} 格原印留白**、**{counts.get('source_marker',0):,} 格原印文字狀態**及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。"
 
 def replace_between(text,start,end,body):
     a=text.index(start)+len(start);b=text.index(end,a)
@@ -225,6 +233,11 @@ def update_backlog(context):
         data_years=years(subset);uncertain=sum(uncertain_label(r) for r in subset)
         item.update(data_year_verified=max(data_years) if data_years else None,data_years_verified=data_years,ingestion_status='specific_core_scope_completed_with_uncertain_source_labels' if uncertain else 'specific_operational_tables_public_subset_or_prose_completed_only',uncertain_label_records=uncertain,scope_evidence='docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。')
     inventory['checked_via']='官方目錄與canonical／reviewed registry所列原表原文批次核對；其他卷僅目錄。'
+    catalogue_check=root/'raw/ncl-2022/catalog-metadata.json'
+    if catalogue_check.exists():
+        latest=read_json(catalogue_check)
+        inventory['catalogue_front_page_check']={k:latest[k] for k in ('url','final_url','retrieved_at','sha256','entry_links')}
+        inventory['catalogue_front_page_check']['scope']='本輪首頁可見12個入口，首項114卷；未見後續卷不代表官方不存在，也不把卷號當資料年。'
     write_json(path,backlog)
     lines=['# 來源分組待辦','','以[source-backlog.json](source-backlog.json)為機器主檔；[歷史批次](historical-batches.md)依registry與實際觀測產生。完成只及列明範圍，未查不表示無資料。','',f'B01與B08維持已完成指定範圍。年鑑{span}的已列核心表、公共館子群與原文數字已整理；{unknown}仍待查。', '',historical_warning(context),'','2012本輪已查公共館章、統計章、評鑑章、國資圖舊連結及閱讀報告；評鑑達標數排除，失敗舊附件已找到官網新網址。仍未取得的22縣市核心原量表不推稱不存在。其他來源的授權與更新政策維持各族群原記錄。','']
     (root/'docs/source-backlog.md').write_text('\n'.join(lines))
@@ -238,12 +251,17 @@ def main():
     s=replace_between(s,'## 目前收錄什麼','**完整性指',body);p.write_text(s)
     p=root/'AI_USAGE.md';s=p.read_text();s=re.sub(r'^目前 [\d,]+ 筆[^\n]+',description.replace('**','')+'「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。',s,flags=re.M)
     s=replace_between(s,'### 來源族群','### 數值與缺值',source_family_table(context,ai=True)+'\n\n'+warning+'\n\n原表、原文數字與閱讀五表的批次範圍見[歷史批次](docs/historical-batches.md)。')
-    null_line=f"- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `{context['nulls'].get('not_available_in_source',0)}` 格 `not_available_in_source` 保留明示缺值符號，`{context['nulls'].get('source_blank',0)}` 格 `source_blank` 保留原刊留白；留白不推定不適用，均不補零。"
+    null_line=f"- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `{context['nulls'].get('not_available_in_source',0)}` 格 `not_available_in_source` 保留明示缺值符號，`{context['nulls'].get('source_blank',0)}` 格 `source_blank` 保留原刊留白，`{context['nulls'].get('source_marker',0)}` 格 `source_marker` 保留原印「無」「未新增」等文字狀態；這些文字不自行改成0或推定不適用，均不推算補值。"
     s=re.sub(r'^- `value IS NULL` 必須同讀[^\n]+',null_line,s,flags=re.M);p.write_text(s)
     p=root/'llms.txt';s=p.read_text();s=re.sub(r'版本 [\d.]+；',f'版本 {version}；',s);s=re.sub(r'/releases/tag/v[\d.]+',f'/releases/tag/v{version}',s);s=re.sub(r'^(?:19,975 筆是觀測／來源版本紀錄|目前 [\d,]+ 筆來源觀測紀錄)[^\n]+',description.replace('**','')+' 批次完整性見docs/historical-batches.json；不宣稱全臺歷年皆完整。',s,flags=re.M)
     s=s.replace('第六族群 source_family=主計總處縣市公共館數','source_family=主計總處縣市公共館數')
     s=generated_block(s,'generated-historical-scope','來源族群包含source_family='+READING+'；與年鑑分開。\n'+warning+'\n歷史批次入口：docs/historical-batches.json及docs/historical-batches.md。');p.write_text(s)
     p=root/'CITATION.cff';s=p.read_text();s=re.sub(r'^version: .+$','version: '+version,s,flags=re.M);p.write_text(s)
     update_backlog(context)
+    if record_io.compressed(root):
+        for name in ('README.md','AI_USAGE.md','llms.txt','COVERAGE.md'):
+            path=root/name
+            text=path.read_text().replace('data/combined/observations.jsonl.gz','data/combined/observations.jsonl')
+            path.write_text(text.replace('data/combined/observations.jsonl','data/combined/observations.jsonl.gz'))
     print('documentation',version,len(context['rows']),'reviewed cohorts',len(context['cohorts']))
 if __name__=='__main__':main()

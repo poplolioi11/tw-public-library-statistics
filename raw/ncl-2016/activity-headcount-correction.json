@@ -1,0 +1,24 @@
+{
+  "affected_cells": 23,
+  "source_table": "33",
+  "raw_heading": "活動（人數）",
+  "normalized_unit": null,
+  "unit_status": "source_heading_counting_basis_unresolved",
+  "all_numeric_raw_and_source_positions_unchanged": true,
+  "statistical_source_position_fingerprint": "5ee86770cc96cdfb740ab4927e8b961bb41f44c70373055ac01621b80308c8db",
+  "fingerprinted_fields": [
+    "data_year",
+    "entity_raw",
+    "metric_id",
+    "value_raw",
+    "value",
+    "value_status",
+    "source_sha256",
+    "source_pdf_page",
+    "source_table",
+    "source_row",
+    "source_column",
+    "source_locator"
+  ],
+  "verification": "offline rebuild, crop3301, format counts, no-op bytes/mtime and missing-source fixture passed"
+}

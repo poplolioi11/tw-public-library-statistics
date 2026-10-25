@@ -1,0 +1,254 @@
+{
+  "scope": "NCL editions106–108 data2016–2018 reviewed core tables only",
+  "records": 3301,
+  "numeric_cells": 3298,
+  "source_marker_cells": 3,
+  "source_families": [
+    "國家圖書館年鑑統計事實"
+  ],
+  "input_files": [
+    {
+      "path": "raw/ncl-2016/yearbook-106-public-library.metadata.json",
+      "sha256": "9d0e92ff209f9247dd6f1e5091e6ddb5367405b672593079460b8b07d8fa0767",
+      "bytes": 672
+    },
+    {
+      "path": "raw/ncl-2016/yearbook-106-public-library.pdf",
+      "sha256": "31b1bc30322484124d69a6487f49a92ffd0d1b40c151ff18264bbacc6e53ae65",
+      "bytes": 1314705
+    },
+    {
+      "path": "raw/ncl-2016/yearbook-106-statistics.metadata.json",
+      "sha256": "cc8049af7ca34a5b435266b6cee77f1d8ce3a6a0574b963d08b85c32e1894bf6",
+      "bytes": 663
+    },
+    {
+      "path": "raw/ncl-2016/yearbook-106-statistics.pdf",
+      "sha256": "823e310401a6c26f206a42d12b73ab82cf92450903714dd53dfea444546db7e7",
+      "bytes": 357858
+    },
+    {
+      "path": "raw/ncl-2016/yearbook-106-copyright.metadata.json",
+      "sha256": "53f18d2513f7b6345d7ae3f49fb2ad1abb0bd56ad946f19d8dec474864691a61",
+      "bytes": 667
+    },
+    {
+      "path": "raw/ncl-2016/yearbook-106-copyright.pdf",
+      "sha256": "662424d251d49eff39f94a010c27dddcb8072a168e656272b6883d533b727340",
+      "bytes": 449198
+    },
+    {
+      "path": "raw/ncl-2017/yearbook-107-public-library.metadata.json",
+      "sha256": "9785997b970f4e0382ef189d2c8810dde06913cd0e211d7adf55c10c13aeb287",
+      "bytes": 672
+    },
+    {
+      "path": "raw/ncl-2017/yearbook-107-public-library.pdf",
+      "sha256": "3b6ee5638c3e78247b8d09393be8ad62e96015a435c848e910c7f2c3b5badb3e",
+      "bytes": 4247458
+    },
+    {
+      "path": "raw/ncl-2017/yearbook-107-statistics.metadata.json",
+      "sha256": "23559a1e09b544602d13021479ccf559df86669def922327318aadaa685d35f5",
+      "bytes": 664
+    },
+    {
+      "path": "raw/ncl-2017/yearbook-107-statistics.pdf",
+      "sha256": "2dcdd3f4a1e5ac2014ff79d13dd83e5274fc1d99885650f99450303c350c4f3b",
+      "bytes": 3335906
+    },
+    {
+      "path": "raw/ncl-2017/yearbook-107-copyright.metadata.json",
+      "sha256": "f508c6e95f83f453c4497b31f1037a00978f26c5628c489e8ac7ed7eb54a3593",
+      "bytes": 668
+    },
+    {
+      "path": "raw/ncl-2017/yearbook-107-copyright.pdf",
+      "sha256": "985642959f830084fba36e7ad4f43c09631a61c6cbcac7b56701597af08a8521",
+      "bytes": 1574327
+    },
+    {
+      "path": "raw/ncl-2018/yearbook-108-public-library.metadata.json",
+      "sha256": "efd295c8b7a05c03b037c5004cd0843cc63a1e49e69d043c97f07ae38a9b639d",
+      "bytes": 672
+    },
+    {
+      "path": "raw/ncl-2018/yearbook-108-public-library.pdf",
+      "sha256": "f9e0514785c11e9780ff75cff67269f1f2d6baecfac6328cdfbb0c0154e56379",
+      "bytes": 1784063
+    },
+    {
+      "path": "raw/ncl-2018/yearbook-108-statistics.metadata.json",
+      "sha256": "5147ec24ec569144f34ffcd1007ac2ef6dd8c9e5b328454cabc74cd0c3cb9ea6",
+      "bytes": 664
+    },
+    {
+      "path": "raw/ncl-2018/yearbook-108-statistics.pdf",
+      "sha256": "2e3e7f3b8e9dd947773f97dd14b2a2feb5f4b289794cff0e4376e5e49f3bf7c2",
+      "bytes": 1085822
+    },
+    {
+      "path": "raw/ncl-2018/yearbook-108-copyright.metadata.json",
+      "sha256": "e75c9661f4d2680154e02d7700ab4b638bebbfd98c2fa78796a2bbf66f657749",
+      "bytes": 667
+    },
+    {
+      "path": "raw/ncl-2018/yearbook-108-copyright.pdf",
+      "sha256": "0d18782a6653e14f24a712e9066a7dd54480c1d35f4cba8e89b8b51368291c04",
+      "bytes": 962924
+    },
+    {
+      "path": "scripts/extract_ncl_2016.py",
+      "sha256": "2d06a19687a72f410af6847c58e9e2d2dfe0efb8d5e6972af3070eb39d1d239a",
+      "bytes": 7817
+    },
+    {
+      "path": "scripts/extract_ncl_2017.py",
+      "sha256": "f5c3e29e145cbbf737474a19499351a886dad3d81d7a76c8d957164e0d079551",
+      "bytes": 7489
+    },
+    {
+      "path": "scripts/extract_ncl_2018.py",
+      "sha256": "4df7abe41b664b3add178f0b93fe17f461bd9ff89a15990ee59b303f59d80eb1",
+      "bytes": 7957
+    },
+    {
+      "path": "scripts/ncl_2016_2018_common.py",
+      "sha256": "c77e73cfe82848b6a0e402b036fa18931c60ffde1de10e3c986f67b61f8efcb6",
+      "bytes": 30598
+    }
+  ],
+  "output_files": [
+    {
+      "path": "derived/ncl_2016_long.csv",
+      "sha256": "9324654428e74e4caf3c569da07141a054bd14ca4b52d685041efa1c7b04b05a",
+      "bytes": 2455525
+    },
+    {
+      "path": "derived/ncl_2016_long.jsonl",
+      "sha256": "f6ae22776b34d3ef67552ed9ee2f1335b1acc8c03bacb303cfd9b5d0d8f3f51a",
+      "bytes": 3810866
+    },
+    {
+      "path": "derived/ncl_2017_long.csv",
+      "sha256": "6fb7a22c228c6a50dd0745a372f04d00568122cfb9f3d70d488e3603bac44f6f",
+      "bytes": 2374463
+    },
+    {
+      "path": "derived/ncl_2017_long.jsonl",
+      "sha256": "f8f5b13d82e275623b49ed55892e6bfd94983050f7bd9b761fb6da40591d1036",
+      "bytes": 3728799
+    },
+    {
+      "path": "derived/ncl_2018_long.csv",
+      "sha256": "753346ad65bfb3382229508ece087b552b73891ea71175d1cb5a4211d9624424",
+      "bytes": 2802985
+    },
+    {
+      "path": "derived/ncl_2018_long.jsonl",
+      "sha256": "9689ced9715f3021140ee76d72af443f088481c7db419303eae1d707f20cd6c4",
+      "bytes": 4396363
+    },
+    {
+      "path": "raw/ncl-2016/extraction-metadata.json",
+      "sha256": "1b7c00cc3119fc8254750085034f05cde8166535bb1e449557befc0d43c32609",
+      "bytes": 16208
+    },
+    {
+      "path": "raw/ncl-2017/extraction-metadata.json",
+      "sha256": "6aa6b9ec187998968ae287dc07bc0c7adfa6490676187c183220dd8fb1efac2f",
+      "bytes": 16318
+    },
+    {
+      "path": "raw/ncl-2018/extraction-metadata.json",
+      "sha256": "c47eec3457f7deef005ca3e251f2f062ff653be4dc31c78bd6a4f465c0c9af5e",
+      "bytes": 16508
+    }
+  ],
+  "verification_path": "raw/ncl-2016/verification-2016-2018.json",
+  "research_note": "research/ncl-2016-2018.md",
+  "rights_scope": "original PDF/HTML/images/full text private; derived statistical facts only",
+  "freeze_state": "producer_verified_pending_root_independent_image_review",
+  "minimal_revisions": [
+    {
+      "source": "ncl-yearbook-107-public-library",
+      "table": "33",
+      "source_row": 17,
+      "affected_cells": 3,
+      "reason": "Restore exact printed additional slash in1/1-/8/31; ambiguity retained, candidate date fields only",
+      "statistical_source_positions_unchanged": true,
+      "evidence": "raw/ncl-2017/period-punctuation-correction.json"
+    },
+    {
+      "source": "ncl-yearbook-106-public-library",
+      "table": "33",
+      "column": 6,
+      "affected_cells": 23,
+      "reason": "Retain printed activity headcount人數; unique people vs attendance basis unconfirmed, normalized unit null",
+      "statistical_source_positions_unchanged": true,
+      "evidence": "raw/ncl-2016/activity-headcount-correction.json"
+    },
+    {
+      "source": "NCL106–108 public-library only",
+      "tables_by_data_year": {
+        "2016": [
+          24,
+          27,
+          28
+        ],
+        "2017": [
+          23,
+          26,
+          27
+        ],
+        "2018": [
+          14,
+          17,
+          19
+        ]
+      },
+      "affected_cells": 71,
+      "reason": "Restore printed鄉鎮市區立圖書館 in raw entity/source column/institutional level; retain all mountain-indigenous立; statistics章鄉鎮市立 unchanged",
+      "numeric_raw_and_source_positions_unchanged": true,
+      "evidence": "raw/ncl-2016/level-heading-correction.json"
+    },
+    {
+      "tables": {
+        "2016": 171,
+        "2017": 215,
+        "2018": 194
+      },
+      "affected_cells": 15,
+      "reason": "Original historical row館藏量 does not print冊、件; retain no unit and cross-year uncertainty instead of importing current-year basic heading",
+      "numeric_raw_and_source_positions_unchanged": true,
+      "evidence": "raw/ncl-2016/historical-unit-correction.json"
+    },
+    {
+      "data_year": 2016,
+      "table": 25,
+      "source_rows": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "source_column": 10,
+      "affected_cells": 4,
+      "reason": "Retain printed supplementary public-library facility names separately from numeric cell and annotation marker",
+      "numeric_raw_and_source_positions_unchanged": true,
+      "evidence": "raw/ncl-2016/facility-note-correction.json"
+    },
+    {
+      "data_years": [
+        2016,
+        2017,
+        2018
+      ],
+      "basic_raw_label_cells": 12,
+      "history_context_label_cells": 75,
+      "reason": "Use printed公立公共圖書館 row label for annual basic tables; explicitly identify history全國 as inferred aggregate context rather than printed geography",
+      "numeric_raw_and_source_positions_identity_suffix_unchanged": true,
+      "evidence": "raw/ncl-2016/basic-entity-correction.json"
+    }
+  ]
+}

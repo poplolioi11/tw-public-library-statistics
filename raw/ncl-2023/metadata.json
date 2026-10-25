@@ -1,0 +1,1297 @@
+{
+  "batch": "NCL reference year2023 complete selected public-library facts",
+  "data_year_verified": 2023,
+  "historical_republished_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "edition_roc": 113,
+  "publication_date": "2025-09-01",
+  "publication_date_basis": "Observed official entry; original copyright page month independently checked.",
+  "source_year_evidence": "公共館章首明示民國112年事業發展，選定主年表題同年；統計編例同年。",
+  "source_year_evidence_pages": [
+    "public-library PDF1",
+    "statistics PDF1 and selected original year headings"
+  ],
+  "official_entry_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566989318922413",
+  "full_public_library_chapter_pages_reviewed": 60,
+  "full_statistics_chapter_pages_reviewed": 8,
+  "total_source_cells": 1236,
+  "selected_table_count": 15,
+  "documents": [
+    {
+      "source_id": "ncl-yearbook-113-public-library",
+      "source_edition_roc": 113,
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566989318922413",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566998760739999/11dd2082-435c-46ea-a6b2-c32e969c6fd0.pdf",
+      "download_final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566998760739999/11dd2082-435c-46ea-a6b2-c32e969c6fd0.pdf",
+      "source_retrieved_at": "2026-10-25T10:59:02.682382+00:00",
+      "sha256": "377df52ac06679576c4ea1e8626ad364f737201329a1856f8025849586c082d1",
+      "source_local_path": "raw/ncl-2023/yearbook-113-public-library.pdf",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle",
+      "publication_date": "2025-09-01",
+      "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+      "license_evidence": "官方宣告出版品與專人專案撰文等須另經權利人同意；未確認全文開放授權，僅統計事實投影，完整PDF/HTML/PNG私有。",
+      "selected_tables": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        20,
+        22
+      ],
+      "source_cells": 1190
+    },
+    {
+      "source_id": "ncl-yearbook-113-statistics",
+      "source_edition_roc": 113,
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566989318922413",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083567002928800015/73321175-f181-4be6-bf05-a0f0000435e1.pdf",
+      "download_final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083567002928800015/73321175-f181-4be6-bf05-a0f0000435e1.pdf",
+      "source_retrieved_at": "2026-10-25T10:59:04.905671+00:00",
+      "sha256": "6387d7a4037d21d762b0375ae9835108de5ee0e3df235c7aeabc28d249ece327",
+      "source_local_path": "raw/ncl-2023/yearbook-113-statistics.pdf",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle",
+      "publication_date": "2025-09-01",
+      "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+      "license_evidence": "官方宣告出版品與專人專案撰文等須另經權利人同意；未確認全文開放授權，僅統計事實投影，完整PDF/HTML/PNG私有。",
+      "selected_tables": [
+        194,
+        195,
+        197
+      ],
+      "source_cells": 46
+    }
+  ],
+  "context_documents": [
+    {
+      "source_id": "ncl-yearbook-113-copyright",
+      "source_edition_roc": 113,
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566989318922413",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566984680317927/03244a6b-1447-450f-8d10-dd41e83226da.pdf",
+      "download_final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566984680317927/03244a6b-1447-450f-8d10-dd41e83226da.pdf",
+      "source_retrieved_at": "2026-10-25T10:58:56.524784+00:00",
+      "sha256": "36783e7fe1657661c815ff596a11ed4049beb762555a502360803598156c1d36",
+      "source_local_path": "raw/ncl-2023/yearbook-113-copyright.pdf",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle",
+      "publication_date": "2025-09-01"
+    },
+    {
+      "source_id": "ncl-yearbook-113-editing",
+      "source_edition_roc": 113,
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566989318922413",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566985769164972/c6cb5e1d-cd78-4a0f-9740-80b452806fa3.pdf",
+      "download_final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566985769164972/c6cb5e1d-cd78-4a0f-9740-80b452806fa3.pdf",
+      "source_retrieved_at": "2026-10-25T10:58:57.591546+00:00",
+      "sha256": "81838e9dd3953d68baef17c777a8875658b15d04e76f9d4db52b42fbf4b5a998",
+      "source_local_path": "raw/ncl-2023/yearbook-113-editing.pdf",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle",
+      "publication_date": "2025-09-01"
+    },
+    {
+      "source_id": "ncl-yearbook-113-rights",
+      "source_edition_roc": 113,
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566989318922413",
+      "source_download_url": "https://www.ncl.edu.tw/open-government-declaration",
+      "download_final_url": "https://www.ncl.edu.tw/open-government-declaration",
+      "source_retrieved_at": "2026-10-25T10:59:05.779806+00:00",
+      "sha256": "69f82c33bd095409ee24d645063ff52d9a692b49b6712310ec170159ee8505c1",
+      "source_local_path": "raw/ncl-2023/yearbook-113-rights.private.html",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle",
+      "publication_date": "2025-09-01"
+    },
+    {
+      "source_id": "ncl-yearbook-113-toc",
+      "source_edition_roc": 113,
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566989318922413",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566986303033999/238a464e-4e50-4833-a601-9b1aa2990495.pdf",
+      "download_final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566986303033999/238a464e-4e50-4833-a601-9b1aa2990495.pdf",
+      "source_retrieved_at": "2026-10-25T10:58:58.876436+00:00",
+      "sha256": "e080e5a8e417f023ad8f64d594c9b63b3f705fc12f0efbc89d534be4836c63dd",
+      "source_local_path": "raw/ncl-2023/yearbook-113-toc.pdf",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle",
+      "publication_date": "2025-09-01"
+    }
+  ],
+  "license_status": "not_confirmed",
+  "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+  "license_evidence": "The official declaration II(3) names publication and commissioned-content sections as requiring permission. No full-text open licence confirmed. Statistical facts/provenance projection only.",
+  "full_originals_distribution": "not_in_public_bundle",
+  "private_only_materials": "Full PDF/PNG/HTML, complete page text, research font mapping and unrelated narrative/personnel/contact content.",
+  "selected_tables": [
+    {
+      "table": 8,
+      "kind": "public-library",
+      "title_raw": "全國公共圖書館數量統計—依圖書館隸屬層級（112年）",
+      "metrics": [
+        {
+          "id": "main",
+          "raw": "總館（所）",
+          "unit": "所",
+          "unit_raw": "所",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "branch",
+          "raw": "分館（所）",
+          "unit": "所",
+          "unit_raw": "所",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "district",
+          "raw": "區館（所）",
+          "unit": "所",
+          "unit_raw": "所",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "reading_rooms",
+          "raw": "閱覽室（所）",
+          "unit": "所",
+          "unit_raw": "所",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "outreach",
+          "raw": "館外服務站（處）",
+          "unit": "處",
+          "unit_raw": "處",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "all_facilities",
+          "raw": "合計",
+          "unit": null,
+          "unit_raw": null,
+          "unit_basis": "原表未另印統一單位；混合小計不提供計算單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": true,
+          "note": "含總館、分館、區館、閱覽室及館外服務站，不能當單純圖書館總分館數。"
+        }
+      ],
+      "layout": "levels",
+      "national_libraries_scope": "All original library levels and total, including two national public libraries.",
+      "population_scope": "All original library levels and total, including two national public libraries.",
+      "footnotes_raw": "（1）國立圖書館係指國立公共資訊圖書館及國立臺灣圖書館。（2）閱覽室係指各館設置之獨立空間且提供閱覽使用之廳室，非專指民眾閱覽室。（3）館外服務站係指設在圖書館外定期提供使用者特定服務項目據點，不包含圖書巡迴車及圖書館外電腦連線場所。",
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 36
+    },
+    {
+      "table": 9,
+      "kind": "public-library",
+      "title_raw": "縣市公共圖書館數量統計—依直轄市、縣市（112年）",
+      "metrics": [
+        {
+          "id": "main",
+          "raw": "總館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "同章館級表相同設施列明印所／處；本縣市表欄頭未另印單位。",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "branch",
+          "raw": "分館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "同章館級表相同設施列明印所／處；本縣市表欄頭未另印單位。",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "district",
+          "raw": "區館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "同章館級表相同設施列明印所／處；本縣市表欄頭未另印單位。",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "reading_rooms",
+          "raw": "閱覽室",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "同章館級表相同設施列明印所／處；本縣市表欄頭未另印單位。",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "outreach",
+          "raw": "館外服務站",
+          "unit": "處",
+          "unit_raw": null,
+          "unit_basis": "同章館級表相同設施列明印所／處；本縣市表欄頭未另印單位。",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "all_facilities",
+          "raw": "合計",
+          "unit": null,
+          "unit_raw": null,
+          "unit_basis": "原刊不同設施數量相加，未印統一計算單位。",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": true,
+          "note": "含總館、分館、區館、閱覽室及館外服務站，不能當單純圖書館總分館數。"
+        }
+      ],
+      "layout": "county",
+      "national_libraries_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "population_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "footnotes_raw": "直轄市山地原住民區立圖書館數計入直轄市立圖書館。",
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 138,
+      "column_total": true
+    },
+    {
+      "table": 10,
+      "kind": "public-library",
+      "title_raw": "直轄市、縣市公共圖書館圖書資料購置經費及人均購書經費（112年）",
+      "metrics": [
+        {
+          "id": "population",
+          "raw": "人口數",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "acquisition_spending",
+          "raw": "圖書資料購置經費",
+          "unit": "新臺幣元",
+          "unit_raw": null,
+          "unit_basis": "同頁正文明述新臺幣及元，欄頭未另印貨幣單位。",
+          "temporal_kind": "annual_financial",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "spending_per_capita",
+          "raw": "每人平均購書經費",
+          "unit": "新臺幣元／人",
+          "unit_raw": null,
+          "unit_basis": "同頁正文明述新臺幣及元，欄頭未另印貨幣單位。",
+          "temporal_kind": "derived_ratio",
+          "aggregate": false,
+          "note": ""
+        }
+      ],
+      "layout": "county",
+      "national_libraries_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "population_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "footnotes_raw": null,
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 69,
+      "column_total": true
+    },
+    {
+      "table": 11,
+      "kind": "public-library",
+      "title_raw": "全國公共圖書館人力資源統計（112年）",
+      "metrics": [
+        {
+          "id": "formal_compiled",
+          "raw": "正式人力／編制內人員",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "contract",
+          "raw": "正式人力／約聘僱人員",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "temporary",
+          "raw": "正式人力／臨時人員",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "formal_subtotal",
+          "raw": "正式人力／小計",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": true,
+          "note": ""
+        },
+        {
+          "id": "student",
+          "raw": "非正式人力／工讀生",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "volunteer",
+          "raw": "非正式人力／志工",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "other",
+          "raw": "非正式人力／其他",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "informal_subtotal",
+          "raw": "非正式人力／小計",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": true,
+          "note": ""
+        }
+      ],
+      "layout": "levels",
+      "national_libraries_scope": "Original five library-level columns and total; no silent disjoint-scope assumption.",
+      "population_scope": "Original five library-level columns and total; no silent disjoint-scope assumption.",
+      "footnotes_raw": null,
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 48
+    },
+    {
+      "table": 12,
+      "kind": "public-library",
+      "title_raw": "直轄市、縣市公共圖書館編制館員及志工人數統計（112年）",
+      "metrics": [
+        {
+          "id": "population",
+          "raw": "服務轄區人口數（A）",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "compiled_staff",
+          "raw": "編制內人員數（B）",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "professional_staff",
+          "raw": "編制內專業人員（C）",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "volunteers",
+          "raw": "志工人數（D）",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "population_per_staff",
+          "raw": "編制內人員服務人口數（A/B）",
+          "unit": "人／館員",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "derived_ratio",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "population_per_professional",
+          "raw": "編制內專業人員服務人口數（A/C）",
+          "unit": "人／專業館員",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "derived_ratio",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "volunteers_per_10000",
+          "raw": "每萬人擁有志工數（D/A*10,000）",
+          "unit": "人／萬人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "derived_ratio",
+          "aggregate": false,
+          "note": ""
+        }
+      ],
+      "layout": "county",
+      "national_libraries_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "population_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "footnotes_raw": null,
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 161
+    },
+    {
+      "table": 13,
+      "kind": "public-library",
+      "title_raw": "全國公共圖書館館藏資源數量（112年）",
+      "metrics": [
+        {
+          "id": "books",
+          "raw": "圖書資料／圖書（冊）",
+          "unit": "冊",
+          "unit_raw": "冊",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "periodicals",
+          "raw": "圖書資料／期刊（種）",
+          "unit": "種",
+          "unit_raw": "種",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "newspapers",
+          "raw": "圖書資料／報紙（種）",
+          "unit": "種",
+          "unit_raw": "種",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "other_physical",
+          "raw": "圖書資料／其他（件）",
+          "unit": "件",
+          "unit_raw": "件",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "physical_subtotal",
+          "raw": "圖書資料／小計",
+          "unit": null,
+          "unit_raw": null,
+          "unit_basis": "原表未另印統一單位；混合小計不提供計算單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": true,
+          "note": ""
+        },
+        {
+          "id": "nonbook",
+          "raw": "非書資料（件）",
+          "unit": "件",
+          "unit_raw": "件",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "databases",
+          "raw": "電子資源／資料庫（種）",
+          "unit": "種",
+          "unit_raw": "種",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "ebooks",
+          "raw": "電子資源／電子書（種）",
+          "unit": "種",
+          "unit_raw": "種",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "electronic_subtotal",
+          "raw": "電子資源／小計",
+          "unit": null,
+          "unit_raw": null,
+          "unit_basis": "原表未另印統一單位；混合小計不提供計算單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": true,
+          "note": ""
+        },
+        {
+          "id": "all_holdings",
+          "raw": "總計",
+          "unit": null,
+          "unit_raw": null,
+          "unit_basis": "原表未另印統一單位；混合小計不提供計算單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": true,
+          "note": ""
+        }
+      ],
+      "layout": "levels",
+      "national_libraries_scope": "Published national public-library levels including physical/nonbook/electronic resources; mixed totals retain no uniform unit.",
+      "population_scope": "Published national public-library levels including physical/nonbook/electronic resources; mixed totals retain no uniform unit.",
+      "footnotes_raw": null,
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 60
+    },
+    {
+      "table": 14,
+      "kind": "public-library",
+      "title_raw": "直轄市、縣市公共圖書館館藏資源數量及人均擁有書量（112年）",
+      "metrics": [
+        {
+          "id": "population",
+          "raw": "人口數",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "holdings",
+          "raw": "館藏圖書資源數量",
+          "unit": null,
+          "unit_raw": null,
+          "unit_basis": "原表未另印統一單位；混合小計不提供計算單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": "同章館藏資源含圖書、非書及電子資源，原欄未明印統一單位，不當作全是冊。"
+        },
+        {
+          "id": "holdings_per_capita",
+          "raw": "每人平均擁有書量",
+          "unit": "冊／人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "derived_ratio",
+          "aggregate": false,
+          "note": "依同章文字人均擁有冊數推定，未修正混合館藏資源的原刊口徑。"
+        }
+      ],
+      "layout": "county",
+      "national_libraries_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "population_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "footnotes_raw": null,
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 69
+    },
+    {
+      "table": 15,
+      "kind": "public-library",
+      "title_raw": "直轄市、縣市公共圖書館圖書資料使用情形（112年）",
+      "metrics": [
+        {
+          "id": "population",
+          "raw": "人口數",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "loans",
+          "raw": "借閱冊數",
+          "unit": "冊次",
+          "unit_raw": "冊",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "borrower_visits",
+          "raw": "借閱人次",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "loans_per_capita",
+          "raw": "每人平均借閱冊數",
+          "unit": "冊次／人",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "derived_ratio",
+          "aggregate": false,
+          "note": ""
+        }
+      ],
+      "layout": "county",
+      "national_libraries_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "population_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "footnotes_raw": null,
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 92
+    },
+    {
+      "table": 16,
+      "kind": "public-library",
+      "title_raw": "直轄市、縣市公共圖書館推廣活動類型及辦理場次（112年）",
+      "metrics": [
+        {
+          "id": "reading",
+          "raw": "閱讀推廣活動",
+          "unit": "場次",
+          "unit_raw": "場次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "education_arts",
+          "raw": "社教藝文活動",
+          "unit": "場次",
+          "unit_raw": "場次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "local",
+          "raw": "地方特色活動",
+          "unit": "場次",
+          "unit_raw": "場次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "story",
+          "raw": "說故事",
+          "unit": "場次",
+          "unit_raw": "場次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "film",
+          "raw": "影片欣賞",
+          "unit": "場次",
+          "unit_raw": "場次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "other",
+          "raw": "其他",
+          "unit": "場次",
+          "unit_raw": "場次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "subtotal",
+          "raw": "小計",
+          "unit": "場次",
+          "unit_raw": "場次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": true,
+          "note": ""
+        }
+      ],
+      "layout": "county",
+      "national_libraries_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "population_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "footnotes_raw": null,
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 161,
+      "row_subtotal_metric": "subtotal",
+      "row_subtotal_components": [
+        "reading",
+        "education_arts",
+        "local",
+        "story",
+        "film",
+        "other"
+      ],
+      "column_total": true
+    },
+    {
+      "table": 17,
+      "kind": "public-library",
+      "title_raw": "直轄市、縣市公共圖書館推廣活動類型及參與人次（112年）",
+      "metrics": [
+        {
+          "id": "reading",
+          "raw": "閱讀推廣活動",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "education_arts",
+          "raw": "社教藝文活動",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "local",
+          "raw": "地方特色活動",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "story",
+          "raw": "說故事",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "film",
+          "raw": "影片欣賞",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "other",
+          "raw": "其他",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "subtotal",
+          "raw": "小計",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": true,
+          "note": ""
+        }
+      ],
+      "layout": "county",
+      "national_libraries_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "population_scope": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately.",
+      "footnotes_raw": null,
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 161,
+      "row_subtotal_metric": "subtotal",
+      "row_subtotal_components": [
+        "reading",
+        "education_arts",
+        "local",
+        "story",
+        "film",
+        "other"
+      ],
+      "column_total": true
+    },
+    {
+      "table": 20,
+      "kind": "public-library",
+      "title_raw": "全國公共圖書館年度營運經費（112年）",
+      "metrics": [
+        {
+          "id": "operating_current",
+          "raw": "經常門（元）",
+          "unit": "元",
+          "unit_raw": "元",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "annual_financial",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "operating_capital",
+          "raw": "資本門（元）",
+          "unit": "元",
+          "unit_raw": "元",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "annual_financial",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "operating_total",
+          "raw": "營運總經費（元）",
+          "unit": "元",
+          "unit_raw": "元",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "annual_financial",
+          "aggregate": true,
+          "note": ""
+        }
+      ],
+      "layout": "budget",
+      "national_libraries_scope": "Two national public library institution rows and22 county rows plus total; preserve all scopes.",
+      "population_scope": "Two national public library institution rows and22 county rows plus total; preserve all scopes.",
+      "footnotes_raw": null,
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 75,
+      "row_subtotal_metric": "operating_total",
+      "row_subtotal_components": [
+        "operating_current",
+        "operating_capital"
+      ],
+      "column_total": true
+    },
+    {
+      "table": 22,
+      "kind": "public-library",
+      "title_raw": "全國公共圖書館採訪編目服務館藏新增情形（112年）",
+      "metrics": [
+        {
+          "id": "new_print_total",
+          "raw": "紙本圖書／合計（冊）",
+          "unit": "冊",
+          "unit_raw": "冊",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": true,
+          "note": ""
+        },
+        {
+          "id": "new_print_chinese",
+          "raw": "紙本圖書／中文（冊）",
+          "unit": "冊",
+          "unit_raw": "冊",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "new_print_foreign",
+          "raw": "紙本圖書／外文（冊）",
+          "unit": "冊",
+          "unit_raw": "冊",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "periodical_titles",
+          "raw": "期刊（種）",
+          "unit": "種",
+          "unit_raw": "種",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "annual_reported_title_count_not_assumed_new_acquisition_flow",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "new_av",
+          "raw": "視聽資料（件）",
+          "unit": "件",
+          "unit_raw": "件",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        }
+      ],
+      "layout": "acquisitions",
+      "national_libraries_scope": "Two national public library institutions plus22 county rows; no total row in original.",
+      "population_scope": "Two national public library institutions plus22 county rows; no total row in original.",
+      "footnotes_raw": null,
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 120,
+      "row_subtotal_metric": "new_print_total",
+      "row_subtotal_components": [
+        "new_print_chinese",
+        "new_print_foreign"
+      ]
+    },
+    {
+      "table": 194,
+      "kind": "statistics",
+      "title_raw": "我國各類型圖書館數量統計表（112年）",
+      "metrics": [
+        {
+          "id": "library_count",
+          "raw": "館數",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        }
+      ],
+      "layout": "subtype",
+      "expected_cells": 7,
+      "national_libraries_scope": "complete_public_library_type_group_including_private_and_two_national_public_libraries_excluding_NCL_separate_type",
+      "population_scope": "原表公共圖書館完整類別組含私立；非僅公立，不與其他館數強制合併。",
+      "footnotes_raw": "資料整理自國家圖書館「全國圖書館統計系統」收錄之圖書館名錄；公立公共圖書館數量則取自國立公共資訊圖書館之「公共圖書館統計系統」。",
+      "note": "只取完整公共館類別組；其他館種、國家圖書館另一類型及跨館種合計不納。"
+    },
+    {
+      "table": 195,
+      "kind": "statistics",
+      "title_raw": "我國各類型圖書館基本統計表（112年）",
+      "metrics": [
+        {
+          "id": "holdings",
+          "raw": "館藏量（冊、件）",
+          "unit": "冊、件",
+          "unit_raw": "冊、件",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "loans",
+          "raw": "借閱冊數",
+          "unit": "冊次",
+          "unit_raw": "冊",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "borrower_visits",
+          "raw": "借閱人次",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "seats",
+          "raw": "閱覽席位",
+          "unit": "席",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        }
+      ],
+      "layout": "basic",
+      "national_libraries_scope": "Public-library row includes two national public libraries and excludes NCL separately classified.",
+      "population_scope": "Public-library row includes two national public libraries and excludes NCL separately classified.",
+      "footnotes_raw": "國家圖書館及公立公共圖書館館藏量，包含圖書資料、非書資料及電子書。公立公共圖書館統計取自公共圖書館統計系統。",
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 4,
+      "original_access_date_raw": "113年12月23日"
+    },
+    {
+      "table": 197,
+      "kind": "statistics",
+      "title_raw": "公立公共圖書館基本統計表（108年至112年）",
+      "metrics": [
+        {
+          "id": "library_count",
+          "raw": "圖書館數量",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "holdings",
+          "raw": "館藏量",
+          "unit": null,
+          "unit_raw": null,
+          "unit_basis": "本歷史表原列僅印「館藏量」，沒有單位；未把同卷當年基本表的冊、件定義套用全部歷史年。",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": "",
+          "unit_status": "source_unit_unconfirmed_or_not_printed"
+        },
+        {
+          "id": "loans",
+          "raw": "圖書借閱冊數",
+          "unit": "冊次",
+          "unit_raw": "冊",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "borrower_visits",
+          "raw": "圖書借閱人次",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "ebook_loans",
+          "raw": "電子書借閱冊數",
+          "unit": "冊次",
+          "unit_raw": "冊",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "ebook_visits",
+          "raw": "電子書借閱人次",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原欄／列名明印單位",
+          "temporal_kind": "flow_calendar_year",
+          "aggregate": false,
+          "note": ""
+        },
+        {
+          "id": "seats",
+          "raw": "閱覽席位",
+          "unit": "席",
+          "unit_raw": null,
+          "unit_basis": "由同章文義或表頭詞意推定；非原印括號單位",
+          "temporal_kind": "stock_reference_year_exact_date_not_stated",
+          "aggregate": false,
+          "note": ""
+        }
+      ],
+      "layout": "history",
+      "national_libraries_scope": "Complete five-year national public-library series; keep this publication version and every original historical value.",
+      "population_scope": "Complete five-year national public-library series; keep this publication version and every original historical value.",
+      "footnotes_raw": "資料整理自國立公共資訊圖書館公共圖書館統計系統數據；不將檢索日當資料年或期末。",
+      "note": "原刊表頭、列名、分項及總計均保留；未修數字或調和母體。",
+      "expected_cells": 35,
+      "original_access_date_raw": "113年12月23日"
+    }
+  ],
+  "value_status_counts": {
+    "reported": 1100,
+    "reported_decimal": 136
+  },
+  "zero_cells": 45,
+  "arithmetic_discrepancies": [
+    {
+      "check": "printed_row_subtotal",
+      "source_table": "20",
+      "source_row": 25,
+      "entity": "合計",
+      "metric_id": "table20_operating_total",
+      "reported": "5868569608",
+      "sum_components": "5868529608",
+      "matches": false,
+      "source_locator": "PDF page 14; printed page 78; table 20; data row 25; column 4; bbox 372.835,542.574,457.008,554.174",
+      "interpretation": "Numeric comparison only; difference is preserved and not proof that source definitions are disjoint or that official data are wrong."
+    },
+    {
+      "check": "printed_column_total",
+      "source_table": "20",
+      "source_row": 25,
+      "entity": "合計",
+      "metric_id": "table20_operating_total",
+      "reported": "5868569608",
+      "sum_components": "5868529608",
+      "matches": false,
+      "source_locator": "PDF page 14; printed page 78; table 20; data row 25; column 4; bbox 372.835,542.574,457.008,554.174",
+      "interpretation": "Numeric comparison only; difference is preserved and not proof that source definitions are disjoint or that official data are wrong."
+    }
+  ],
+  "same_year_population_variants": [],
+  "important_scope_notes": [
+    "County figures exclude the two national public libraries unless separately named. National/public/private/library-level rows retain distinct overlapping scopes.",
+    "Printed zero values, including ratios with zero denominator, remain reported zero. No inferred missing value or mathematical repair.",
+    "Acquisition/cataloging table includes all24 original institution/county rows. Periodical title quantities are not silently equated with newly acquired issues.",
+    "2024 periodicals: continuing received, deduplicated physical titles, including subscriptions and gifts; not volumes/issues.",
+    "Printed totals and components may differ. Arithmetic checks are descriptive, not proof of disjoint scopes or of official error."
+  ],
+  "remaining_limits": [
+    "No cross-year geographic/definition harmonization.",
+    "Full-table numeric provenance checks do not certify the official source is correct.",
+    "Producer image review plus literal anchors and all-cell glyph/word-token replay; not independent human double collation."
+  ],
+  "runtime_dependencies": [
+    "scripts/extract_ncl_2023.py",
+    "scripts/audit_ncl_recent_helper.py",
+    "scripts/audit_ncl_recent_specs_2023.json",
+    "raw/ncl-2023/yearbook-113-public-library.metadata.json",
+    "raw/ncl-2023/yearbook-113-public-library.pdf",
+    "raw/ncl-2023/yearbook-113-statistics.metadata.json",
+    "raw/ncl-2023/yearbook-113-statistics.pdf"
+  ],
+  "producer_outputs": [
+    "derived/ncl_2023_long.csv",
+    "derived/ncl_2023_long.jsonl",
+    "raw/ncl-2023/extraction-validation.json",
+    "raw/ncl-2023/documents.json"
+  ],
+  "incremental_contract": "raw/ncl-2023/incremental-contract.json",
+  "validation_reports": [
+    "raw/ncl-2023/extraction-validation.json",
+    "raw/ncl-2023/no-op-validation.json"
+  ],
+  "schema": "raw/ncl-2023/schema.json",
+  "scope_report": "raw/ncl-2023/README.md",
+  "cross_chapter_preserved_difference": {
+    "public_library_table13_holdings_total": 68217131,
+    "statistics_table195_and197_holdings_total": 68295835,
+    "policy": "Both original publication snapshots preserved; no overwrite or forced reconciliation."
+  },
+  "final_artifacts": {
+    "scripts/extract_ncl_2023.py": {
+      "sha256": "4aab91bdc867fd7f38513c639640a8c7ebabc1f134465cd8b0b7be9609981914",
+      "bytes": 193
+    },
+    "scripts/audit_ncl_recent_helper.py": {
+      "sha256": "ea564904ee09713cfe8247b600d1603586e83c54546f52de419addc37cffbc0b",
+      "bytes": 16914
+    },
+    "scripts/audit_ncl_recent_specs_2023.json": {
+      "sha256": "e01ba362055dfbaa25d4bbe2c5108545b703ecbeeb3468b0e1905d198eccb8fb",
+      "bytes": 666664
+    },
+    "raw/ncl-2023/yearbook-113-public-library.metadata.json": {
+      "sha256": "ee5c20da68f272a2a838a89ec08a70543fb75668c3901be1ab120a70673ba3c9",
+      "bytes": 770
+    },
+    "raw/ncl-2023/yearbook-113-public-library.pdf": {
+      "sha256": "377df52ac06679576c4ea1e8626ad364f737201329a1856f8025849586c082d1",
+      "bytes": 2006324
+    },
+    "raw/ncl-2023/yearbook-113-statistics.metadata.json": {
+      "sha256": "5bef7c01fbea4a986a82ca6ed31c5b33ea5e9c7115011a4692901529c43da006",
+      "bytes": 762
+    },
+    "raw/ncl-2023/yearbook-113-statistics.pdf": {
+      "sha256": "6387d7a4037d21d762b0375ae9835108de5ee0e3df235c7aeabc28d249ece327",
+      "bytes": 665331
+    },
+    "derived/ncl_2023_long.csv": {
+      "sha256": "441a53658638540773913f0b154b54f72761f8119aab5804540fd96aef559780",
+      "bytes": 2995148
+    },
+    "derived/ncl_2023_long.jsonl": {
+      "sha256": "e9df58883c5a73381e0671aaebe19e73fc58c4842abd8214652f3fc50f099fca",
+      "bytes": 4824190
+    },
+    "raw/ncl-2023/extraction-validation.json": {
+      "sha256": "1fe1101f87b50e7433341cfedae5ba6cd99c516fb2f57441a5c3dcdd0afcdc37",
+      "bytes": 120840
+    },
+    "raw/ncl-2023/documents.json": {
+      "sha256": "35641490d4e748e47553f6822967e2306e35b05bfb310f0bb46a29ca0613d0a0",
+      "bytes": 2360
+    }
+  },
+  "post_independent_semantics_review": "Original basic row labels and inferred historical geography marked separately; historical holdings has no printed unit; 2024 table8/9 suspect label-alignment scopes retained without moving values. Exact artifact hashes synchronized to final frozen contracts."
+}

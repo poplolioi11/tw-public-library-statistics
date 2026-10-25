@@ -1,0 +1,53 @@
+[
+  {
+    "source_id": "ncl-yearbook-114-public-library",
+    "source_edition_roc": 114,
+    "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q274523227242755591",
+    "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q274571126641962505/d7b5faa0-acbc-4334-bbb4-190b6904a3ea.pdf",
+    "download_final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q274571126641962505/d7b5faa0-acbc-4334-bbb4-190b6904a3ea.pdf",
+    "source_retrieved_at": "2026-10-25T10:59:02.400595+00:00",
+    "sha256": "1ed26e9c657cd574a26dd446d74a4600af09862ef809e65e639799ab737d3eb1",
+    "source_local_path": "raw/ncl-2024/yearbook-114-public-library.pdf",
+    "license_status": "not_confirmed",
+    "snapshot_distribution": "not_in_public_bundle",
+    "publication_date": "2026-09-30",
+    "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+    "license_evidence": "官方宣告出版品與專人專案撰文等須另經權利人同意；未確認全文開放授權，僅統計事實投影，完整PDF/HTML/PNG私有。",
+    "selected_tables": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      19,
+      21
+    ],
+    "source_cells": 1190
+  },
+  {
+    "source_id": "ncl-yearbook-114-statistics",
+    "source_edition_roc": 114,
+    "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q274523227242755591",
+    "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q274571121544902549/32428ea8-db54-45a4-af2b-986a2527ba07.pdf",
+    "download_final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q274571121544902549/32428ea8-db54-45a4-af2b-986a2527ba07.pdf",
+    "source_retrieved_at": "2026-10-25T10:59:03.289688+00:00",
+    "sha256": "125d8b3ffc03f3750f1d19993314441ac6574361856272666024143c7a3a7618",
+    "source_local_path": "raw/ncl-2024/yearbook-114-statistics.pdf",
+    "license_status": "not_confirmed",
+    "snapshot_distribution": "not_in_public_bundle",
+    "publication_date": "2026-09-30",
+    "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+    "license_evidence": "官方宣告出版品與專人專案撰文等須另經權利人同意；未確認全文開放授權，僅統計事實投影，完整PDF/HTML/PNG私有。",
+    "selected_tables": [
+      192,
+      193,
+      195
+    ],
+    "source_cells": 46
+  }
+]

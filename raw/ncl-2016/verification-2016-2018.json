@@ -1,0 +1,92 @@
+{
+  "2016": {
+    "records": 1040,
+    "table_groups": 13,
+    "all_cells_separately_cropped_roundtrip": true,
+    "csv_jsonl_consistent": true,
+    "unique_original_positions": true,
+    "all22printed_county_labels_checked_for_county_tables": true,
+    "no_op_bytes_and_mtime": true,
+    "missing_source_preserves_prior_success_fixture": true,
+    "original_zero_cells": 123,
+    "null_cells": 0,
+    "source_marker_cells": 0,
+    "files": [
+      {
+        "path": "derived/ncl_2016_long.csv",
+        "sha256": "9324654428e74e4caf3c569da07141a054bd14ca4b52d685041efa1c7b04b05a",
+        "bytes": 2455525
+      },
+      {
+        "path": "derived/ncl_2016_long.jsonl",
+        "sha256": "f6ae22776b34d3ef67552ed9ee2f1335b1acc8c03bacb303cfd9b5d0d8f3f51a",
+        "bytes": 3810866
+      },
+      {
+        "path": "raw/ncl-2016/extraction-metadata.json",
+        "sha256": "1b7c00cc3119fc8254750085034f05cde8166535bb1e449557befc0d43c32609",
+        "bytes": 16208
+      }
+    ]
+  },
+  "2017": {
+    "records": 1040,
+    "table_groups": 14,
+    "all_cells_separately_cropped_roundtrip": true,
+    "csv_jsonl_consistent": true,
+    "unique_original_positions": true,
+    "all22printed_county_labels_checked_for_county_tables": true,
+    "no_op_bytes_and_mtime": true,
+    "missing_source_preserves_prior_success_fixture": true,
+    "original_zero_cells": 64,
+    "null_cells": 0,
+    "source_marker_cells": 0,
+    "files": [
+      {
+        "path": "derived/ncl_2017_long.csv",
+        "sha256": "6fb7a22c228c6a50dd0745a372f04d00568122cfb9f3d70d488e3603bac44f6f",
+        "bytes": 2374463
+      },
+      {
+        "path": "derived/ncl_2017_long.jsonl",
+        "sha256": "f8f5b13d82e275623b49ed55892e6bfd94983050f7bd9b761fb6da40591d1036",
+        "bytes": 3728799
+      },
+      {
+        "path": "raw/ncl-2017/extraction-metadata.json",
+        "sha256": "6aa6b9ec187998968ae287dc07bc0c7adfa6490676187c183220dd8fb1efac2f",
+        "bytes": 16318
+      }
+    ]
+  },
+  "2018": {
+    "records": 1221,
+    "table_groups": 15,
+    "all_cells_separately_cropped_roundtrip": true,
+    "csv_jsonl_consistent": true,
+    "unique_original_positions": true,
+    "all22printed_county_labels_checked_for_county_tables": true,
+    "no_op_bytes_and_mtime": true,
+    "missing_source_preserves_prior_success_fixture": true,
+    "original_zero_cells": 61,
+    "null_cells": 3,
+    "source_marker_cells": 3,
+    "files": [
+      {
+        "path": "derived/ncl_2018_long.csv",
+        "sha256": "753346ad65bfb3382229508ece087b552b73891ea71175d1cb5a4211d9624424",
+        "bytes": 2802985
+      },
+      {
+        "path": "derived/ncl_2018_long.jsonl",
+        "sha256": "9689ced9715f3021140ee76d72af443f088481c7db419303eae1d707f20cd6c4",
+        "bytes": 4396363
+      },
+      {
+        "path": "raw/ncl-2018/extraction-metadata.json",
+        "sha256": "c47eec3457f7deef005ca3e251f2f062ff653be4dc31c78bd6a4f465c0c9af5e",
+        "bytes": 16508
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "helper_sha256": "f3b1a15849f7549bb94da1a4e5398c6e261fa56729d3e660f2fc2b6751f309ba",
+  "mode": "write function replaced by byte-equality assertion; no data writes",
+  "checked_outputs": [
+    "derived/ncl_2019_long.csv",
+    "derived/ncl_2019_long.jsonl",
+    "raw/ncl-2019/extraction-validation.json",
+    "raw/ncl-2019/token-checks.private.json",
+    "raw/ncl-2019/documents.json",
+    "derived/ncl_2020_long.csv",
+    "derived/ncl_2020_long.jsonl",
+    "raw/ncl-2020/extraction-validation.json",
+    "raw/ncl-2020/token-checks.private.json",
+    "raw/ncl-2020/documents.json",
+    "derived/ncl_2021_long.csv",
+    "derived/ncl_2021_long.jsonl",
+    "raw/ncl-2021/extraction-validation.json",
+    "raw/ncl-2021/token-checks.private.json",
+    "raw/ncl-2021/documents.json"
+  ],
+  "all_identical": true
+}

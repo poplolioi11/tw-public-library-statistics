@@ -1,0 +1,13 @@
+# v0.4格式與驗收
+
+正式資料為37,393筆來源觀測；每筆source_url包含官方PDF頁碼或原查詢資源，source_locator與source_sha256保留定位和原件版本。2016–2024新增指定核心表／公共館子群10,668格；2012縣市核心原量仍缺，不從比率反算。
+
+公開JSONL與元件以gzip無損壓縮，年度JSONL維持純文字；不刪資料以符合單檔大小限制。summary的canonical_jsonl_path決定正式JSONL檔，canonical_uncompressed_sha256驗解壓後逐位元組內容；PUBLICATION_MANIFEST另驗傳輸檔bytes。統計內容指紋排除四個公開投影的分發欄位，和檔案SHA不是同一層。
+
+年度檔逐年串接必須與完整JSONL逐位元組一致。CSV、JSONL與SQLite由相同正式觀測衍生；SQLite的value是文字，含十進位字串時不可無檢查轉成整數或零。原印無／未新增、明示缺值、留白與零有不同狀態。
+
+source_column保留各批已文件化的資料欄編號，數字bbox是實際PDF座標。2021採編表另有序號欄，source_original_physical_column明示原實體第3–7欄與資料欄第2–6欄的對照；不能單憑自訂欄號猜原頁位置。source_cell_note_raw另存必要館名補述，raw_value保留數字或狀態原字。
+
+五年回溯表的全國屬地理context，entity_label_status明示推定；原印館類和地理範圍不能混為同一欄。未明單位、標點不確定的候選日期、人口／地理歸屬疑義及限定子母體照實保留。詳AI_USAGE與各年獨立報告。
+
+舊版26,725筆原有欄位與識別碼逐筆不變；新選擇性欄位可為null。來源全量回查、按批次增量和端到端不變更新已通過；公開副本另做無原件的格式／檔案驗收。這些檢查不替官方填報本身背書，也不是人類雙校。

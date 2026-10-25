@@ -1,0 +1,5964 @@
+{
+  "method": "Every selected county row checked against source label glyph region. CID decoding aid from 2023 embedded font maps; source image authoritative. Recheck specifically corrected table8/2024 rows8,9,10 labels, with no source numeric value movement.",
+  "all_match": true,
+  "years": [
+    {
+      "year": 2022,
+      "county_rows_checked": 198,
+      "rows": [
+        {
+          "table": 11,
+          "source_row": 1,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 2,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 3,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 4,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 5,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 6,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 7,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 8,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 9,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 10,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 11,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 12,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 13,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 14,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 15,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 16,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 17,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 18,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 19,
+          "pdf_page": 2,
+          "printed_page": 100,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 20,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 21,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 22,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 1,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 2,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 3,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 4,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 5,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 6,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 7,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 8,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 9,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 10,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 11,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 12,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "925.53嘉義縣",
+          "original_glyphs": "925.53(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 13,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "742.59嘉義市",
+          "original_glyphs": "742.59(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 14,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "臺南市",
+          "decoded_source_label_region": "015.69臺南市",
+          "original_glyphs": "015.69(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 15,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "高雄市",
+          "decoded_source_label_region": "777.34高雄市",
+          "original_glyphs": "777.34(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 16,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "439.69屏東縣",
+          "original_glyphs": "439.69(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 17,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "527.91宜蘭縣",
+          "original_glyphs": "527.91(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 18,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "728.48花蓮縣",
+          "original_glyphs": "728.48(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 19,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "139.38臺東縣",
+          "original_glyphs": "139.38(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 20,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "311.83澎湖縣",
+          "original_glyphs": "311.83(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 21,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "金門縣",
+          "decoded_source_label_region": "611.65金門縣",
+          "original_glyphs": "611.65(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 22,
+          "pdf_page": 3,
+          "printed_page": 101,
+          "entity": "連江縣",
+          "decoded_source_label_region": "720.80連江縣",
+          "original_glyphs": "720.80(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 1,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 2,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 3,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 4,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 5,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 6,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 7,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 8,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 9,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 10,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 11,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 12,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 13,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 14,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 15,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 16,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 17,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 18,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 19,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 20,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 21,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 22,
+          "pdf_page": 5,
+          "printed_page": 103,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 1,
+          "pdf_page": 6,
+          "printed_page": 104,
+          "entity": "基隆市",
+          "decoded_source_label_region": "另有8縣市基隆市",
+          "original_glyphs": "(cid:1130)(cid:1316)8(cid:5226)(cid:1151)(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 2,
+          "pdf_page": 6,
+          "printed_page": 104,
+          "entity": "臺北市",
+          "decoded_source_label_region": "以上，依序臺北市",
+          "original_glyphs": "(cid:1086)(cid:944)(cid:514)(cid:1655)(cid:1493)(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 3,
+          "pdf_page": 6,
+          "printed_page": 104,
+          "entity": "新北市",
+          "decoded_source_label_region": "（6.01冊）、新北市",
+          "original_glyphs": "(cid:542)6.01(cid:1099)(cid:543)(cid:515)(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 4,
+          "pdf_page": 6,
+          "printed_page": 104,
+          "entity": "桃園市",
+          "decoded_source_label_region": "4.01冊）、桃園市",
+          "original_glyphs": "4.01(cid:1099)(cid:543)(cid:515)(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 5,
+          "pdf_page": 6,
+          "printed_page": 104,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 6,
+          "pdf_page": 6,
+          "printed_page": 104,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 7,
+          "pdf_page": 6,
+          "printed_page": 104,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "冊）；苗栗縣",
+          "original_glyphs": "(cid:1099)(cid:543)(cid:519)(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 8,
+          "pdf_page": 6,
+          "printed_page": 104,
+          "entity": "臺中市",
+          "decoded_source_label_region": "含）以上，臺中市",
+          "original_glyphs": "(cid:1444)(cid:543)(cid:1086)(cid:944)(cid:514)(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 9,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 10,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 11,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 12,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 13,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 14,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 15,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 16,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 17,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 18,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 19,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 20,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 21,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 22,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 1,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 2,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 3,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 4,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 5,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 6,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 7,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 8,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 9,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 10,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 11,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 12,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 13,
+          "pdf_page": 7,
+          "printed_page": 105,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 14,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 15,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 16,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 17,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 18,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 19,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 20,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 21,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 22,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 1,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 2,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 3,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 4,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 5,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 6,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 7,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 8,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 9,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 10,
+          "pdf_page": 8,
+          "printed_page": 106,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 11,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 12,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 13,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 14,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 15,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 16,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 17,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 18,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 19,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 20,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 21,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 18,
+          "source_row": 22,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 1,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 2,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 3,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 4,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 5,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 6,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 7,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 8,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 9,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 10,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 11,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 12,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 13,
+          "pdf_page": 9,
+          "printed_page": 107,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 14,
+          "pdf_page": 10,
+          "printed_page": 108,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 15,
+          "pdf_page": 10,
+          "printed_page": 108,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 16,
+          "pdf_page": 10,
+          "printed_page": 108,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 17,
+          "pdf_page": 10,
+          "printed_page": 108,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 18,
+          "pdf_page": 10,
+          "printed_page": 108,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 19,
+          "pdf_page": 10,
+          "printed_page": 108,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 20,
+          "pdf_page": 10,
+          "printed_page": 108,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 21,
+          "pdf_page": 10,
+          "printed_page": 108,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 22,
+          "pdf_page": 10,
+          "printed_page": 108,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 3,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 4,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 5,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 6,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 7,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 8,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 9,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 10,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 11,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 12,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 13,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 14,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 15,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 16,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 17,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 18,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 19,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 20,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 21,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 22,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 23,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 24,
+          "pdf_page": 14,
+          "printed_page": 112,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 3,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 4,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 5,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 6,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 7,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 8,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 9,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 10,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "臺中市",
+          "decoded_source_label_region": "0臺中市",
+          "original_glyphs": "0(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 11,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "1彰化縣",
+          "original_glyphs": "1(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 12,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "南投縣",
+          "decoded_source_label_region": "2南投縣",
+          "original_glyphs": "2(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 13,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "3雲林縣",
+          "original_glyphs": "3(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 14,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "4嘉義縣",
+          "original_glyphs": "4(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 15,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "5嘉義市",
+          "original_glyphs": "5(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 16,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "臺南市",
+          "decoded_source_label_region": "6臺南市",
+          "original_glyphs": "6(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 17,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "高雄市",
+          "decoded_source_label_region": "7高雄市",
+          "original_glyphs": "7(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 18,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "8屏東縣",
+          "original_glyphs": "8(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 19,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "9宜蘭縣",
+          "original_glyphs": "9(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 20,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "0花蓮縣",
+          "original_glyphs": "0(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 21,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "1臺東縣",
+          "original_glyphs": "1(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 22,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "2澎湖縣",
+          "original_glyphs": "2(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 23,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "金門縣",
+          "decoded_source_label_region": "3金門縣",
+          "original_glyphs": "3(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 23,
+          "source_row": 24,
+          "pdf_page": 23,
+          "printed_page": 121,
+          "entity": "連江縣",
+          "decoded_source_label_region": "4連江縣",
+          "original_glyphs": "4(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "county_rows_checked": 198,
+      "rows": [
+        {
+          "table": 9,
+          "source_row": 1,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "基隆市",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 2,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "臺北市",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 3,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "新北市",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 4,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "桃園市",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 5,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "新竹縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 6,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "新竹市",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 7,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "苗栗縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 8,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "臺中市",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 9,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "彰化縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 10,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "南投縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 11,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "雲林縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 12,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "嘉義縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 13,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "嘉義市",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 14,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "臺南市",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 15,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "高雄市",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 16,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "屏東縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 17,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "宜蘭縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 18,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "花蓮縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 19,
+          "pdf_page": 2,
+          "printed_page": 66,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "臺東縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 20,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "澎湖縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 21,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "金門縣",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 22,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "連江縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 1,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "基隆市",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 2,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "臺北市",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 3,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "新北市",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 4,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "桃園市",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 5,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "新竹縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 6,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "新竹市",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 7,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "苗栗縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 8,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "臺中市",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 9,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "彰化縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 10,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "南投縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 11,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "雲林縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 12,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "426.50嘉義縣",
+          "original_glyphs": "426.50嘉義縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 13,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "141.58嘉義市",
+          "original_glyphs": "141.58嘉義市",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 14,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "臺南市",
+          "decoded_source_label_region": "415.27臺南市",
+          "original_glyphs": "415.27臺南市",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 15,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "高雄市",
+          "decoded_source_label_region": "432.34高雄市",
+          "original_glyphs": "432.34高雄市",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 16,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "057.18屏東縣",
+          "original_glyphs": "057.18屏東縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 17,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "941.14宜蘭縣",
+          "original_glyphs": "941.14宜蘭縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 18,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "326.94花蓮縣",
+          "original_glyphs": "326.94花蓮縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 19,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "239.86臺東縣",
+          "original_glyphs": "239.86臺東縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 20,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "412.81澎湖縣",
+          "original_glyphs": "412.81澎湖縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 21,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "金門縣",
+          "decoded_source_label_region": "312.04金門縣",
+          "original_glyphs": "312.04金門縣",
+          "match": true
+        },
+        {
+          "table": 10,
+          "source_row": 22,
+          "pdf_page": 3,
+          "printed_page": 67,
+          "entity": "連江縣",
+          "decoded_source_label_region": "125.04連江縣",
+          "original_glyphs": "125.04連江縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 1,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "基隆市",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 2,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "臺北市",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 3,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "新北市",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 4,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "桃園市",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 5,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "新竹縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 6,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "新竹市",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 7,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "苗栗縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 8,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "臺中市",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 9,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "彰化縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 10,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "南投縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 11,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "雲林縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 12,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "嘉義縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 13,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "嘉義市",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 14,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "臺南市",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 15,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "高雄市",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 16,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "屏東縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 17,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "宜蘭縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 18,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "花蓮縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 19,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "臺東縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 20,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "澎湖縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 21,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "金門縣",
+          "match": true
+        },
+        {
+          "table": 12,
+          "source_row": 22,
+          "pdf_page": 5,
+          "printed_page": 69,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "連江縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 1,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "基隆市",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 2,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "臺北市",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 3,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "新北市",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 4,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "桃園市",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 5,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "新竹縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 6,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "新竹市",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 7,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "苗栗縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 8,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "臺中市",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 9,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "彰化縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 10,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "南投縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 11,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "雲林縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 12,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "62.67嘉義縣",
+          "original_glyphs": "62.67嘉義縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 13,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "33.77嘉義市",
+          "original_glyphs": "33.77嘉義市",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 14,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "臺南市",
+          "decoded_source_label_region": "82.17臺南市",
+          "original_glyphs": "82.17臺南市",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 15,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "高雄市",
+          "decoded_source_label_region": "72.49高雄市",
+          "original_glyphs": "72.49高雄市",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 16,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "51.98屏東縣",
+          "original_glyphs": "51.98屏東縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 17,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "52.00宜蘭縣",
+          "original_glyphs": "52.00宜蘭縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 18,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "62.88花蓮縣",
+          "original_glyphs": "62.88花蓮縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 19,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "72.33臺東縣",
+          "original_glyphs": "72.33臺東縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 20,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "81.92澎湖縣",
+          "original_glyphs": "81.92澎湖縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 21,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "金門縣",
+          "decoded_source_label_region": "32.94金門縣",
+          "original_glyphs": "32.94金門縣",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 22,
+          "pdf_page": 7,
+          "printed_page": 71,
+          "entity": "連江縣",
+          "decoded_source_label_region": "52.28連江縣",
+          "original_glyphs": "52.28連江縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 1,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "基隆市",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 2,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "臺北市",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 3,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "新北市",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 4,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "桃園市",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 5,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "新竹縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 6,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "新竹市",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 7,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "苗栗縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 8,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "臺中市",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 9,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "彰化縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 10,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "南投縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 11,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "雲林縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 12,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "嘉義縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 13,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "嘉義市",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 14,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "臺南市",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 15,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "高雄市",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 16,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "屏東縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 17,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "宜蘭縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 18,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "花蓮縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 19,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "臺東縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 20,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "澎湖縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 21,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "金門縣",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 22,
+          "pdf_page": 8,
+          "printed_page": 72,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "連江縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 1,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "基隆市",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 2,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "臺北市",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 3,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "新北市",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 4,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "桃園市",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 5,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "新竹縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 6,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "新竹市",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 7,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "苗栗縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 8,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "臺中市",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 9,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "彰化縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 10,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "南投縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 11,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "雲林縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 12,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "嘉義縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 13,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "嘉義市",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 14,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "臺南市",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 15,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "高雄市",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 16,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "屏東縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 17,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "宜蘭縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 18,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "花蓮縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 19,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "臺東縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 20,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "澎湖縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 21,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "金門縣",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 22,
+          "pdf_page": 9,
+          "printed_page": 73,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "連江縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 1,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "基隆市",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 2,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "臺北市",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 3,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "新北市",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 4,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "桃園市",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 5,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "新竹縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 6,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "新竹市",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 7,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "苗栗縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 8,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "臺中市",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 9,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "彰化縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 10,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "南投縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 11,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "雲林縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 12,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "嘉義縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 13,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "嘉義市",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 14,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "臺南市",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 15,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "高雄市",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 16,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "屏東縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 17,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "宜蘭縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 18,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "花蓮縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 19,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "臺東縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 20,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "澎湖縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 21,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "金門縣",
+          "match": true
+        },
+        {
+          "table": 17,
+          "source_row": 22,
+          "pdf_page": 10,
+          "printed_page": 74,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "連江縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 3,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "基隆市",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 4,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "臺北市",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 5,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "新北市",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 6,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "桃園市",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 7,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "新竹縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 8,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "新竹市",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 9,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "苗栗縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 10,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "臺中市",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 11,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "彰化縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 12,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "南投縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 13,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "雲林縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 14,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "嘉義縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 15,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "嘉義市",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 16,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "臺南市",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 17,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "高雄市",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 18,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "屏東縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 19,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "宜蘭縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 20,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "花蓮縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 21,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "臺東縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 22,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "澎湖縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 23,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "金門縣",
+          "match": true
+        },
+        {
+          "table": 20,
+          "source_row": 24,
+          "pdf_page": 14,
+          "printed_page": 78,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "連江縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 3,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "基隆市",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 4,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "臺北市",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 5,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "新北市",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 6,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "桃園市",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 7,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "新竹縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 8,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "新竹市",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 9,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "苗栗縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 10,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "臺中市",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 11,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "彰化縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 12,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "南投縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 13,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "雲林縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 14,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "嘉義縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 15,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "嘉義市",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 16,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "臺南市",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 17,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "高雄市",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 18,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "屏東縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 19,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "宜蘭縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 20,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "花蓮縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 21,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "臺東縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 22,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "澎湖縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 23,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "金門縣",
+          "match": true
+        },
+        {
+          "table": 22,
+          "source_row": 24,
+          "pdf_page": 23,
+          "printed_page": 87,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "連江縣",
+          "match": true
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "county_rows_checked": 198,
+      "rows": [
+        {
+          "table": 8,
+          "source_row": 1,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 2,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 3,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 4,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 5,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 6,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 7,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 8,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 9,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 10,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 11,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 12,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 13,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 14,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 15,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 16,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 17,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 18,
+          "pdf_page": 2,
+          "printed_page": 48,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 19,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 20,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 21,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 8,
+          "source_row": 22,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 1,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 2,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 3,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 4,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 5,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 6,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 7,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 8,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 9,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 10,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 11,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 12,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "628.43嘉義縣",
+          "original_glyphs": "628.43(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 13,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "443.56嘉義市",
+          "original_glyphs": "443.56(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 14,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "臺南市",
+          "decoded_source_label_region": "417.03臺南市",
+          "original_glyphs": "417.03(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 15,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "高雄市",
+          "decoded_source_label_region": "542.49高雄市",
+          "original_glyphs": "542.49(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 16,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "228.03屏東縣",
+          "original_glyphs": "228.03(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 17,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "150.44宜蘭縣",
+          "original_glyphs": "150.44(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 18,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "829.29花蓮縣",
+          "original_glyphs": "829.29(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 19,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "412.73臺東縣",
+          "original_glyphs": "412.73(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 20,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "640.06澎湖縣",
+          "original_glyphs": "640.06(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 21,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "金門縣",
+          "decoded_source_label_region": "514.57金門縣",
+          "original_glyphs": "514.57(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 9,
+          "source_row": 22,
+          "pdf_page": 3,
+          "printed_page": 49,
+          "entity": "連江縣",
+          "decoded_source_label_region": "124.44連江縣",
+          "original_glyphs": "124.44(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 1,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 2,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 3,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 4,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 5,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 6,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 7,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 8,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 9,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 10,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 11,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 12,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 13,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 14,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 15,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 16,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 17,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 18,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 19,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 20,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 21,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 11,
+          "source_row": 22,
+          "pdf_page": 5,
+          "printed_page": 51,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 1,
+          "pdf_page": 6,
+          "printed_page": 52,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 2,
+          "pdf_page": 6,
+          "printed_page": 52,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 3,
+          "pdf_page": 6,
+          "printed_page": 52,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 4,
+          "pdf_page": 6,
+          "printed_page": 52,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 5,
+          "pdf_page": 6,
+          "printed_page": 52,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 6,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 7,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 8,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 9,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 10,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 11,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 12,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 13,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 14,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 15,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 16,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 17,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 18,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 19,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 20,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 21,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 13,
+          "source_row": 22,
+          "pdf_page": 7,
+          "printed_page": 53,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 1,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 2,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 3,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 4,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 5,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 6,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 7,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 8,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 9,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 10,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 11,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 12,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 13,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 14,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 15,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 16,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 17,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 18,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 19,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 20,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 21,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 14,
+          "source_row": 22,
+          "pdf_page": 8,
+          "printed_page": 54,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 1,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 2,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 3,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 4,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 5,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 6,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 7,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 8,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 9,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 10,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 11,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 12,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 13,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 14,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 15,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 16,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 17,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 18,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 19,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 20,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 21,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 15,
+          "source_row": 22,
+          "pdf_page": 9,
+          "printed_page": 55,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 1,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 2,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 3,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 4,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 5,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 6,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 7,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 8,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 9,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 10,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 11,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 12,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 13,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 14,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 15,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 16,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 17,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 18,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 19,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 20,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 21,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 16,
+          "source_row": 22,
+          "pdf_page": 10,
+          "printed_page": 56,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 3,
+          "pdf_page": 13,
+          "printed_page": 59,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 4,
+          "pdf_page": 13,
+          "printed_page": 59,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 5,
+          "pdf_page": 13,
+          "printed_page": 59,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 6,
+          "pdf_page": 13,
+          "printed_page": 59,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 7,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 8,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 9,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 10,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "臺中市",
+          "decoded_source_label_region": "臺中市",
+          "original_glyphs": "(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 11,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "彰化縣",
+          "original_glyphs": "(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 12,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "南投縣",
+          "decoded_source_label_region": "南投縣",
+          "original_glyphs": "(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 13,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "雲林縣",
+          "original_glyphs": "(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 14,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "嘉義縣",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 15,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "嘉義市",
+          "original_glyphs": "(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 16,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "臺南市",
+          "decoded_source_label_region": "臺南市",
+          "original_glyphs": "(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 17,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "高雄市",
+          "decoded_source_label_region": "高雄市",
+          "original_glyphs": "(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 18,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "屏東縣",
+          "original_glyphs": "(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 19,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "宜蘭縣",
+          "original_glyphs": "(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 20,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "花蓮縣",
+          "original_glyphs": "(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 21,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "臺東縣",
+          "original_glyphs": "(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 22,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "澎湖縣",
+          "original_glyphs": "(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 23,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "金門縣",
+          "decoded_source_label_region": "金門縣",
+          "original_glyphs": "(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 19,
+          "source_row": 24,
+          "pdf_page": 14,
+          "printed_page": 60,
+          "entity": "連江縣",
+          "decoded_source_label_region": "連江縣",
+          "original_glyphs": "(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 3,
+          "pdf_page": 25,
+          "printed_page": 71,
+          "entity": "基隆市",
+          "decoded_source_label_region": "基隆市",
+          "original_glyphs": "(cid:2949)(cid:3818)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 4,
+          "pdf_page": 25,
+          "printed_page": 71,
+          "entity": "臺北市",
+          "decoded_source_label_region": "臺北市",
+          "original_glyphs": "(cid:4547)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 5,
+          "pdf_page": 25,
+          "printed_page": 71,
+          "entity": "新北市",
+          "decoded_source_label_region": "新北市",
+          "original_glyphs": "(cid:3955)(cid:1109)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 6,
+          "pdf_page": 25,
+          "printed_page": 71,
+          "entity": "桃園市",
+          "decoded_source_label_region": "桃園市",
+          "original_glyphs": "(cid:2624)(cid:3882)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 7,
+          "pdf_page": 25,
+          "printed_page": 71,
+          "entity": "新竹縣",
+          "decoded_source_label_region": "新竹縣",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 8,
+          "pdf_page": 25,
+          "printed_page": 71,
+          "entity": "新竹市",
+          "decoded_source_label_region": "新竹市",
+          "original_glyphs": "(cid:3955)(cid:1340)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 9,
+          "pdf_page": 25,
+          "printed_page": 71,
+          "entity": "苗栗縣",
+          "decoded_source_label_region": "苗栗縣",
+          "original_glyphs": "(cid:2363)(cid:2616)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 10,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "臺中市",
+          "decoded_source_label_region": "0臺中市",
+          "original_glyphs": "0(cid:4547)(cid:987)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 11,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "彰化縣",
+          "decoded_source_label_region": "1彰化縣",
+          "original_glyphs": "1(cid:4372)(cid:1021)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 12,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "南投縣",
+          "decoded_source_label_region": "2南投縣",
+          "original_glyphs": "2(cid:2066)(cid:1529)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 13,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "雲林縣",
+          "decoded_source_label_region": "3雲林縣",
+          "original_glyphs": "3(cid:3828)(cid:1875)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 14,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "嘉義縣",
+          "decoded_source_label_region": "4嘉義縣",
+          "original_glyphs": "4(cid:4317)(cid:4110)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 15,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "嘉義市",
+          "decoded_source_label_region": "5嘉義市",
+          "original_glyphs": "5(cid:4317)(cid:4110)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 16,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "臺南市",
+          "decoded_source_label_region": "6臺南市",
+          "original_glyphs": "6(cid:4547)(cid:2066)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 17,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "高雄市",
+          "decoded_source_label_region": "7高雄市",
+          "original_glyphs": "7(cid:2877)(cid:3824)(cid:1151)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 18,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "屏東縣",
+          "decoded_source_label_region": "8屏東縣",
+          "original_glyphs": "8(cid:2126)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 19,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "宜蘭縣",
+          "decoded_source_label_region": "9宜蘭縣",
+          "original_glyphs": "9(cid:1763)(cid:6092)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 20,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "花蓮縣",
+          "decoded_source_label_region": "0花蓮縣",
+          "original_glyphs": "0(cid:1990)(cid:4920)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 21,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "臺東縣",
+          "decoded_source_label_region": "1臺東縣",
+          "original_glyphs": "1(cid:4547)(cid:1869)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 22,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "澎湖縣",
+          "decoded_source_label_region": "2澎湖縣",
+          "original_glyphs": "2(cid:4825)(cid:3577)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 23,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "金門縣",
+          "decoded_source_label_region": "3金門縣",
+          "original_glyphs": "3(cid:2012)(cid:2014)(cid:5226)",
+          "match": true
+        },
+        {
+          "table": 21,
+          "source_row": 24,
+          "pdf_page": 26,
+          "printed_page": 72,
+          "entity": "連江縣",
+          "decoded_source_label_region": "4連江縣",
+          "original_glyphs": "4(cid:3327)(cid:1328)(cid:5226)",
+          "match": true
+        }
+      ]
+    }
+  ]
+}

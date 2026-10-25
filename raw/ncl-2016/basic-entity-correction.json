@@ -1,0 +1,26 @@
+{
+  "2016": {
+    "basic_table": 169,
+    "basic_raw_label_cells": 4,
+    "history_table": 171,
+    "history_context_label_cells": 25,
+    "all_values_raw_numbers_status_source_positions_identity_suffix_unchanged": true,
+    "statistical_source_position_fingerprint": "9680cfd47134f1a456121b1ca37b128b8fc58abe2ba06ae2c3ed2db087b94f11"
+  },
+  "2017": {
+    "basic_table": 213,
+    "basic_raw_label_cells": 4,
+    "history_table": 215,
+    "history_context_label_cells": 25,
+    "all_values_raw_numbers_status_source_positions_identity_suffix_unchanged": true,
+    "statistical_source_position_fingerprint": "787d42b34a85adda9640f2e8c7412c43ec58f1391880b580d11a59b03e54e5b6"
+  },
+  "2018": {
+    "basic_table": 192,
+    "basic_raw_label_cells": 4,
+    "history_table": 194,
+    "history_context_label_cells": 25,
+    "all_values_raw_numbers_status_source_positions_identity_suffix_unchanged": true,
+    "statistical_source_position_fingerprint": "4227b6269cf7effcad4b2db6a3c23a57f2cd46d45f49cad438869da6b628d650"
+  }
+}

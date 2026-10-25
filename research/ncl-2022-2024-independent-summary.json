@@ -1,0 +1,43 @@
+{
+  "records": 3708,
+  "cohorts": [
+    {
+      "data_year": 2022,
+      "expected_cells": 1236,
+      "review_status": "passed_with_source_limitations",
+      "producer_csv_sha256": "781ecc619c27b0ec405e1a58e7c1ae5f696246b3721d0e2df650aa8dc8c5ce1d",
+      "original_expectation_sha256": "20d3c0d85efa7989bc3d7fcf2265fb69f80f093b8b16cebd182bf22fb64c2d5e",
+      "report_path": "research/ncl-2022-independent-review.json",
+      "report_sha256": "0f3aa69cbbc75cf2a1450b07fc7b9a2dbb96163f09ddfaacceec33c942f4d91d",
+      "mismatches": 0,
+      "entity_differences": 0,
+      "header_checks_passed": true
+    },
+    {
+      "data_year": 2023,
+      "expected_cells": 1236,
+      "review_status": "passed_with_source_limitations",
+      "producer_csv_sha256": "441a53658638540773913f0b154b54f72761f8119aab5804540fd96aef559780",
+      "original_expectation_sha256": "9f6e79a45d316b679c31f89bb7de84ac285c6c4f4d8af15b2eaf87008cd89fe8",
+      "report_path": "research/ncl-2023-independent-review.json",
+      "report_sha256": "4c9ef0b84a0ae252d74aba692668cad18c61b818f0d57106c568deb4a3db03b6",
+      "mismatches": 0,
+      "entity_differences": 0,
+      "header_checks_passed": true
+    },
+    {
+      "data_year": 2024,
+      "expected_cells": 1236,
+      "review_status": "passed_with_source_limitations",
+      "producer_csv_sha256": "9a0a1e3c2b8d8f95eefc112482d9d6016776d4a83d3d7f26ba8cca7c193979d4",
+      "original_expectation_sha256": "cfde881735327c34fba61a1d2548967251292c7bb2ec6c87aa6b1563874751e2",
+      "report_path": "research/ncl-2024-independent-review.json",
+      "report_sha256": "de34c5e5f2d96afe8a070d394222ce28c24c1a2afacf7c0c124e10432e47b839",
+      "mismatches": 0,
+      "entity_differences": 0,
+      "header_checks_passed": true
+    }
+  ],
+  "private_evidence_directory": "research/ncl-2022-2024-independent.private/",
+  "private_evidence_must_not_be_published": true
+}

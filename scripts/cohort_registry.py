@@ -18,6 +18,9 @@ def load(root):
    for name in group.get(field,[]):
     p=PurePosixPath(name)
     if p.is_absolute() or '..' in p.parts or not p.parts or p.parts[0] not in {'raw','derived'}:raise ValueError('Cohort paths must remain in raw/ or derived/')
+  for name in group.get('dependencies',[]):
+   p=PurePosixPath(name)
+   if p.is_absolute() or '..' in p.parts or p.parts[0]!='scripts' or p.suffix not in {'.py','.json'}:raise ValueError('Dependencies must be local scripts or reviewed table specifications')
   if group['derived_csv'] not in group['outputs'] or not group['derived_csv'].endswith('.csv'):raise ValueError('Reviewed CSV must be an explicit output')
   if outputs.intersection(group['outputs']):raise ValueError('Cohorts may not overwrite each other')
   outputs.update(group['outputs']);result.append(group)

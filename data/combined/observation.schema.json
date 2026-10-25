@@ -94,7 +94,7 @@
     },
     "value_status": {
       "type": "string",
-      "description": "Source state: reported/reported_decimal, source_blank (original empty cell, reason unconfirmed), not_available_in_source (explicit source marker). Always preserve raw_value; never infer not applicable from blank."
+      "description": "Source state: reported/reported_decimal, source_blank (original empty cell, reason unconfirmed), not_available_in_source (explicit missing marker), source_marker (original literal無/未新增; meaning unresolved, never automatically zero or not applicable). Always preserve raw_value."
     },
     "zero_interpretation": {
       "description": "zero_interpretation"
@@ -253,7 +253,14 @@
       "description": "source_footnotes_status"
     },
     "value_qualifier": {
-      "description": "value_qualifier"
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "scoped_source_component limits a reported number to the original named component; never treat it as the full county total."
+    },
+    "value_parse_rule": {
+      "description": "value_parse_rule"
     },
     "source_location_kind": {
       "description": "source_location_kind"
@@ -294,6 +301,12 @@
     "source_edition_roc": {
       "description": "source_edition_roc"
     },
+    "source_data_obtained_date_raw": {
+      "description": "source_data_obtained_date_raw"
+    },
+    "entity_label_status": {
+      "description": "entity_label_status"
+    },
     "facility": {
       "description": "facility"
     },
@@ -302,9 +315,6 @@
     },
     "district_code_raw": {
       "description": "district_code_raw"
-    },
-    "value_parse_rule": {
-      "description": "value_parse_rule"
     },
     "period_effective": {
       "description": "period_effective"
@@ -320,6 +330,42 @@
     },
     "public_projection_policy": {
       "description": "public_projection_policy"
+    },
+    "copyright_publication_month": {
+      "description": "copyright_publication_month"
+    },
+    "source_cell_note_raw": {
+      "description": "source_cell_note_raw"
+    },
+    "source_cell_note_status": {
+      "description": "source_cell_note_status"
+    },
+    "source_subrow_label_raw": {
+      "description": "source_subrow_label_raw"
+    },
+    "source_period_interpretation_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Unresolved date interpretation, separated from confirmed period dates. Read the exact source_subrow_label_raw and period_basis."
+    },
+    "period_start_candidate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Unresolved date interpretation, separated from confirmed period dates. Read the exact source_subrow_label_raw and period_basis."
+    },
+    "period_end_candidate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Unresolved date interpretation, separated from confirmed period dates. Read the exact source_subrow_label_raw and period_basis."
+    },
+    "source_original_physical_column": {
+      "description": "source_original_physical_column"
     }
   }
 }

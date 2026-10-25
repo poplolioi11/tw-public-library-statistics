@@ -2,6 +2,7 @@
 """Task-owned background update; only verified source groups, no external publishing."""
 import argparse,datetime,hashlib,json,subprocess,sys
 from pathlib import Path
+import record_io
 ROOT=Path(__file__).resolve().parents[1]
 from cohort_registry import load as load_cohorts
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else None
@@ -14,7 +15,7 @@ def run_extension_groups():
   ('ncl_earlier','extract_ncl_earlier_years.py',[],['raw/ncl-earlier/yearbook-96-public-library.pdf','raw/ncl-earlier/yearbook-97-public-library.pdf','raw/ncl-earlier/yearbook-96-download.json','raw/ncl-earlier/yearbook-97-download.json','raw/ncl-earlier/table-specifications.json'],['derived/ncl_earlier_years_long.csv','derived/ncl_earlier_years_long.jsonl','raw/ncl-earlier/metadata.json']),
   ('ncl_additional','extract_ncl_additional_years.py',['--offline'],[f'raw/ncl-additional/yearbook-{edition}-{kind}.{suffix}' for edition,kind in [(101,'public-library'),(103,'public-library'),(101,'statistics'),(102,'statistics'),(103,'statistics')] for suffix in ['pdf','metadata.json']],['derived/ncl_additional_years_long.csv','derived/ncl_additional_years_long.jsonl','raw/ncl-additional/extracted-operational-cells.json','raw/ncl-additional/documents.json','raw/ncl-additional/extraction-validation.json'])]
  inventory=load_cohorts(ROOT)
- if inventory is not None:groups=[(g['id'],g['script'],g.get('args',[]),g['inputs'],g['outputs']) for g in inventory]
+ if inventory is not None:groups=[(g['id'],g['script'],g.get('args',[]),g['inputs']+g.get('dependencies',[]),g['outputs']) for g in inventory]
  for key,script,args,patterns,outputs in groups:
   if not (ROOT/'scripts'/script).exists():raise FileNotFoundError('Reviewed extractor is missing: '+script)
   for pattern in patterns:
@@ -40,7 +41,7 @@ def run_extension_groups():
   statefile.write_text(json.dumps({'inputs':signature(),'outputs':{p:digest(ROOT/p) for p in outputs}},indent=2)+'\n')
 def main():
  p=argparse.ArgumentParser();p.add_argument('--offline',action='store_true');p.add_argument('--refresh-local',action='store_true');p.add_argument('--refresh-all-core',action='store_true');a=p.parse_args()
- canonical=ROOT/'data/combined/observations.jsonl';before=digest(canonical)
+ canonical=record_io.path_for(ROOT,'data/combined/observations.jsonl');before=record_io.logical_sha(ROOT)
  if a.offline:call('library_pipeline.py','build')
  else:call('library_pipeline.py','update',*(['--refresh-all'] if a.refresh_all_core else []))
  statefile=ROOT/'data/local_update_state.json';state=json.loads(statefile.read_text()) if statefile.exists() else {};now=datetime.datetime.now(datetime.timezone.utc)
@@ -63,6 +64,6 @@ def main():
   call('fetch_ncl_historical.py','--offline');call('extract_dgbas_historical.py');source_state.write_text(json.dumps(signature,indent=2)+'\n')
  run_extension_groups();call('register_historical_sources.py')
  call('adapt_components.py');call('build_release.py');call('build_coverage.py');call('build_documentation.py');call('verify_release.py')
- after=digest(canonical);result={'completed_at':now.isoformat(),'before_sha256':before,'after_sha256':after,'data_changed':before!=after,'external_publication':False,'stale_local_sources':stale}
+ after=record_io.logical_sha(ROOT);result={'completed_at':now.isoformat(),'before_sha256':before,'after_sha256':after,'data_changed':before!=after,'external_publication':False,'stale_local_sources':stale}
  (ROOT/'data/last_update.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,ensure_ascii=False))
 if __name__=='__main__':main()

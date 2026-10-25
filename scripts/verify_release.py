@@ -7,6 +7,7 @@ cells below are fixed expectations independently read from rendered pages on
 """
 from __future__ import annotations
 
+import gzip
 import argparse
 import collections
 import csv
@@ -27,6 +28,20 @@ REVIEWED_NCL_ANNOTATIONS = {
         "raw": "79a", "numeric": "79", "annotation": "a",
         "source_sha256": "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951",
         "evidence": "Independently read PDF page2/printed72/table31 and its footnote a: municipal main libraries79a; Taichung34/Tainan42 follow local definitions.",
+    }
+}
+REVIEWED_NCL_ANNOTATIONS[("ncl-yearbook-107-statistics", "215", "1", "5")] = {
+    "raw": "536*", "numeric": "536", "annotation": "*",
+    "source_sha256": "2dcdd3f4a1e5ac2014ff79d13dd83e5274fc1d99885650f99450303c350c4f3b",
+    "evidence": "Original PDF4/printed404/table215,105year column. The footnote explicitly revises earlier1,138 to536; preserve both edition observations, original star and relevant footnote.",
+}
+REVIEWED_SCOPED_QUANTITIES = {
+    ("ncl-yearbook-110-public-library", "24", "21", "7"): {
+        "raw": "分區資源中心新增80", "numeric": "80",
+        "source_sha256": "4d95c7af8993461b0395b331e2d60a221e1eaeac80bf7def28a86ee6fb2009cf",
+        "entity_raw": "臺東縣",
+        "scope": "僅臺東縣分區資源中心新增電子書種數；非全縣完整新增總量",
+        "evidence": "Official110edition public-library PDF23/printed87/table24; the cell explicitly limits the count to the regional resource centre.",
     }
 }
 PDF_SHA = {
@@ -74,6 +89,19 @@ def digest(raw):
 
 def jsonfile(path):
     return json.loads(path.read_text(encoding="utf-8-sig"))
+
+
+def record_path(root, relative):
+    profile = root / "data/combined/publication-profile.json"
+    use_gzip = profile.exists() and jsonfile(profile).get("jsonl_compression") == "gzip"
+    if use_gzip and relative in {"data/component_records.jsonl", "data/combined/observations.jsonl"}:
+        return root / (relative + ".gz")
+    return root / relative
+
+
+def record_bytes(root, relative):
+    path = record_path(root, relative)
+    return gzip.decompress(path.read_bytes()) if path.suffix == ".gz" else path.read_bytes()
 
 
 def typed_equal(a, b):
@@ -191,6 +219,10 @@ def ncl_source_value(source):
         if not isinstance(raw, str) or raw.strip() or not empty_normalized:
             raise ValueError("NCL blank has a nonempty original/normalized value")
         return None, "source_blank"
+    if status == "source_marker" and raw in {"無", "未新增"}:
+        if not empty_normalized:
+            raise ValueError("Printed無 marker must not erase a number")
+        return None, "source_marker"
     if status in {"missing", "source_symbol", "source_marker", "not_available_in_source"}:
         if not isinstance(raw, str) or raw.strip() not in {"-", "--", "—", "–", "…", "...", "N/A", "NA", "n/a"}:
             raise ValueError("NCL missing cell has no recognized original marker")
@@ -205,6 +237,18 @@ def ncl_source_value(source):
     if value is None:
         raise ValueError("NCL reported number does not parse")
     raw_numeric = re.sub(r"[\s,，]", "", str(raw))
+    if source.get("value_parse_rule") == "literal_scoped_quantity":
+        key = tuple(str(source.get(field, "")) for field in ("source_id", "source_table", "source_row", "source_column"))
+        reviewed = REVIEWED_SCOPED_QUANTITIES.get(key)
+        if (not reviewed or raw_numeric != reviewed["raw"]
+                or source.get("source_sha256") != reviewed["source_sha256"]
+                or source.get("entity_raw") != reviewed["entity_raw"]
+                or source.get("entity_kind") != "county_scoped_component_not_full_total"
+                or source.get("value_qualifier") != "scoped_source_component"
+                or reviewed["scope"] not in source.get("population_scope", "")
+                or Decimal(str(value)) != Decimal(reviewed["numeric"])):
+            raise ValueError("Scoped NCL number lacks its independently pinned source/scope contract")
+        return value, canonical_status
     annotation = source.get("cell_annotation")
     if annotation:
         key = tuple(str(source.get(field, "")) for field in ("source_id", "source_table", "source_row", "source_column"))
@@ -217,7 +261,7 @@ def ncl_source_value(source):
     if raw_numeric.endswith("%") and source.get("unit") == "%":
         raw_numeric = raw_numeric[:-1]
     parsed_raw, _ = independent_parse(raw_numeric)
-    if parsed_raw is None and source.get("source_location_kind") == "prose_numeric_span":
+    if parsed_raw is None and source.get("source_location_kind") in {"prose_numeric_span", "table_numeric_magnitude"}:
         parsed_raw = independent_printed_magnitude(raw_numeric)
     if parsed_raw is None or Decimal(str(parsed_raw)) != Decimal(str(value)):
         raise ValueError("NCL normalized number differs from original numeric representation")
@@ -226,6 +270,13 @@ def ncl_source_value(source):
 
 def ncl_period_from_source(source):
     kind, year = source["temporal_kind"], str(source["data_year"])
+    if source.get("source_subrow_label_raw") and source.get("period_start") and source.get("period_end"):
+        start, end = (dt.date.fromisoformat(source[field]) for field in ("period_start", "period_end"))
+        if start.year != int(year) or end.year != int(year) or start > end:
+            raise ValueError("Invalid original-table subperiod")
+        if source.get("source_period_interpretation_status")=="printed_extra_slash_unresolved_candidate_dates":
+            return None, None
+        return start.isoformat(), end.isoformat()
     if kind in {"flow_calendar_year", "annual_financial"}:
         return year + "-01-01", year + "-12-31"
     if kind == "stock_year_end":
@@ -481,7 +532,7 @@ class Verification:
         """All adapter rows vs derived; all local derived cells vs original JSON."""
         before = len(self.failures)
         rows = [json.loads(line) for line in
-                (self.root / "data/component_records.jsonl").read_text().splitlines() if line]
+                record_bytes(self.root, "data/component_records.jsonl").decode().splitlines() if line]
         with (self.root / "derived/local_historical_long.csv").open(encoding="utf-8-sig", newline="") as stream:
             local = list(csv.DictReader(stream))
         metadata = {}
@@ -649,7 +700,7 @@ class Verification:
             "pdf_raw_files_hash_checked": len(source_files),
             "local_verification_level": "All original JSON cells and complete original objects vs derived; every nonduplicate adapter record vs derived and raw.",
             "historical_verification_level": "Every adapter record vs derived and PDF source hashes; NCL visual sample scope reported separately. DGBAS PDF content not independently transcribed in this adapter review.",
-            "inputs": {"components_sha256": digest((self.root / "data/component_records.jsonl").read_bytes()),
+            "inputs": {"components_sha256": digest(record_bytes(self.root, "data/component_records.jsonl")),
                        "local_derived_sha256": digest((self.root / "derived/local_historical_long.csv").read_bytes())},
         }
 
@@ -730,7 +781,7 @@ class Verification:
                     sources.extend(csv.DictReader(stream))
                 files.append(name)
         source_ids = {source["source_id"] for source in sources}
-        records = [json.loads(line) for line in (self.root / "data/component_records.jsonl").read_text().splitlines() if line]
+        records = [json.loads(line) for line in record_bytes(self.root, "data/component_records.jsonl").decode().splitlines() if line]
         targets = [row for row in records if row["source_id"] in source_ids]
         mapped = {(row["source_id"], row["source_locator"]): row for row in targets}
         expected, checked_hashes, statuses = set(), {}, collections.Counter()
@@ -760,8 +811,19 @@ class Verification:
                                   ("source_cell_annotation", "cell_annotation"),
                                   ("source_footnotes_raw", "source_footnotes_raw"),
                                   ("source_footnotes_status", "source_footnotes_status"),
-                                  ("source_original_access_date_raw", "source_original_access_date_raw")]:
+                                  ("source_original_access_date_raw", "source_original_access_date_raw"),
+                                  ("value_qualifier", "value_qualifier"),
+                                  ("value_parse_rule", "value_parse_rule"),
+                                  ("source_subrow_label_raw", "source_subrow_label_raw"),
+                                  ("source_period_interpretation_status", "source_period_interpretation_status"),
+                                  ("copyright_publication_month", "copyright_publication_month")]:
                 self.check((target.get(output) or "") == source.get(field, ""), "new_ncl_adapter_field", {"key": key, "field": output})
+            for field in ('source_original_physical_column','source_cell_note_raw','source_cell_note_status'):
+                self.check((target.get(field) or '')==source.get(field,''),'new_ncl_supplementary_cell_text',{'key':key,'field':field})
+            for output,field in [('geography_contextual_name','entity_contextual_name'),('entity_label_status','entity_label_status'),('unit_status','unit_status')]:
+                if source.get(field):self.check(target.get(output)==source[field],'new_ncl_explicit_context_or_unit_state',{'key':key,'field':field})
+            if source.get('population_scope'):
+                self.check(target.get('population_scope')==source['population_scope'],'new_ncl_population_scope_retained',key)
             self.check(target["source_version_id"] == source["source_id"] + "@sha256:" + source["source_sha256"],
                        "new_ncl_source_version", key)
             self.check(target["source_field"] == (source.get("source_column_path") or source["metric_raw"]), "new_ncl_source_field", key)
@@ -776,6 +838,8 @@ class Verification:
             expected_start, expected_end = ncl_period_from_source(source)
             self.check(target["period_start"] == expected_start and target["period_end"] == expected_end,
                        "new_ncl_period_not_invented", key)
+            if source.get("source_period_interpretation_status")=="printed_extra_slash_unresolved_candidate_dates":
+                self.check(target.get("period_start_candidate")==source['period_start'] and target.get("period_end_candidate")==source['period_end'],"new_ncl_unresolved_candidate_dates_separate",key)
             unit = source.get("unit") or None
             if source.get("unit_status") == "source_heading_conflict_unresolved" or (unit and ("混合" in unit or "件/種/冊" in unit or "原表未列" in unit)):
                 unit = None
@@ -790,7 +854,7 @@ class Verification:
 
     def reviewed_cohort_evidence(self):
         reports = []
-        for year in (2014, 2015):
+        for year in range(2014, 2025):
             csv_path = self.root / f"derived/ncl_{year}_long.csv"
             if not csv_path.exists():
                 continue
@@ -802,17 +866,52 @@ class Verification:
             with csv_path.open(encoding="utf-8-sig", newline="") as stream:
                 source = list(csv.DictReader(stream))
             indexed = {(r["source_sha256"], r["source_table"], r["source_row"], r["source_column"]): r for r in source}
-            self.check(len(indexed) == len(source) == report["expected_cells"], "independent_full_grid_count", year)
+            self.check(len(indexed) == len(source) == report["expected_cells"] == len(report['cells']), "independent_full_grid_count", year)
+            if 'mismatches' in report:self.check(not report['mismatches'],"independent_review_no_mismatches",year)
+            seen=set()
             for cell in report["cells"]:
                 key = (cell["source_sha256"], cell["table"], str(cell["source_row"]), str(cell["source_column"]))
                 row = indexed.get(key)
+                self.check(key not in seen,"independent_grid_no_duplicate_expectation",key);seen.add(key)
                 self.check(row is not None, "independent_grid_coordinate", key)
                 if row is None:
                     continue
+                for field,expected_field in [('entity_raw','expected_entity_raw'),('entity_raw','entity_raw')]:
+                    if cell.get(expected_field) is not None:
+                        self.check(row.get(field)==cell[expected_field],"independent_grid_original_entity_label",key)
+                if cell.get('expected_geography_contextual_name') is not None:
+                    self.check(row.get('entity_contextual_name')==cell['expected_geography_contextual_name'],'independent_grid_geography_context_crosswalk',key)
+                if cell.get('expected_entity_label_status') is not None:
+                    self.check(row.get('entity_label_status')==cell['expected_entity_label_status'],'independent_grid_entity_inference_state',key)
+                if cell.get('source_category_raw') is not None:
+                    self.check(cell['source_category_raw'] in row.get('source_table_title','') and row.get('entity_label_status')=='contextual_national_aggregate_inferred','independent_grid_title_category_is_not_geography_row',key)
+                if cell.get('observation_data_year') is not None:
+                    self.check(int(row['data_year'])==int(cell['observation_data_year']),"independent_grid_reference_year",key)
                 self.check(re.sub(r"\s+", "", row["value_raw"]) == re.sub(r"\s+", "", cell["raw_value"]), "independent_grid_original_string", key)
-                self.check(Decimal(row["value"]) == Decimal(cell["normalized_value"]), "independent_grid_number", key)
+                actual_value,actual_status=ncl_source_value(row)
+                expected_value=cell["normalized_value"]
+                self.check((actual_value is None and expected_value is None) or (actual_value is not None and expected_value is not None and Decimal(str(actual_value))==Decimal(str(expected_value))), "independent_grid_number", key)
+                if cell.get('value_status'):
+                    expected_status={'blank_in_source':'source_blank','blank':'source_blank','source_symbol':'not_available_in_source'}.get(cell['value_status'],cell['value_status'])
+                    self.check(actual_status==expected_status,"independent_grid_value_state",key)
                 self.check(int(row["source_pdf_page"]) == cell["pdf_page"] and str(row["source_printed_page"]) == str(cell["printed_page"]), "independent_grid_pages", key)
             reports.append({"report": str(report_path.relative_to(self.root)), "sha256": digest(report_path.read_bytes()), "source_cells": report["expected_cells"], "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."})
+        selections=self.root/'research/ncl-v04-image-expectations.json'
+        if selections.exists():
+            expected=jsonfile(selections);selected_index={}
+            for filename in reviewed_ncl_csvs(self.root):
+                with (self.root/'derived'/filename).open(encoding='utf-8-sig',newline='') as stream:
+                    for row in csv.DictReader(stream):
+                        selected_index[(row['source_sha256'],row['source_table'],row['source_row'],row['source_column'])]=row
+            self.check(expected['expected_cells']==len(expected['cells'])==31,"independent_v04_image_selection_count",31)
+            for cell in expected['cells']:
+                key=(cell['source_sha256'],cell['table'],str(cell['source_row']),str(cell['source_column']))
+                row=selected_index.get(key);self.check(row is not None,"independent_v04_image_selection_coordinate",key)
+                if row is None:continue
+                self.check(re.sub(r'\s+','',row['value_raw'])==re.sub(r'\s+','',cell['raw_value']),"independent_v04_image_selection_literal",key)
+                value,status=ncl_source_value(row);wanted=cell['normalized_value']
+                self.check((value is None and wanted is None) or (value is not None and wanted is not None and Decimal(str(value))==Decimal(str(wanted))),"independent_v04_image_selection_value",key)
+            reports.append({'report':str(selections.relative_to(self.root)),'sha256':digest(selections.read_bytes()),'source_cells':31,'method':'Explicit image selections, separate from the full glyph-grid comparisons. Gemini read three supplied original page images; primary agent also inspected them and the2020scoped-quantity page.'})
         reading = self.root / "derived/ncl_reading_2012_long.csv"
         if reading.exists():
             path = self.root / "research/ncl-reading-2012-independent-review.json"
@@ -849,7 +948,7 @@ class Verification:
         with (self.root / "derived/dgbas_county_historical_long.csv").open(encoding="utf-8-sig", newline="") as stream:
             derived = list(csv.DictReader(stream))
         seen, reported, missing = set(), 0, 0
-        canonical = [json.loads(line) for line in (self.root / "data/component_records.jsonl").read_text().splitlines() if line]
+        canonical = [json.loads(line) for line in record_bytes(self.root, "data/component_records.jsonl").decode().splitlines() if line]
         canonical = [row for row in canonical if row["source_id"] == metadata["source_id"]]
         mapped = {}
         for target in canonical:
@@ -915,13 +1014,13 @@ class Verification:
             }
         report = {"checked_at": dt.datetime.now(dt.timezone.utc).isoformat(),
                   "status": "pass" if not self.failures else "fail", "assertions": self.checks,
-                  "scope": "3091 core source cells exhaustively checked; NCL lineage/number parsing all rows, PDF page-image samples only; component coverage as individually reported.",
+                  "scope": "3091 core source cells exhaustively checked; all NCL adapter lineage/number states checked. Complete independently fixed glyph grids for explicitly reviewed cohorts and image/header/row/footnote selections are separately bounded in each evidence report. Older source review limits remain individually reported.",
                   "independent_of_pipeline_and_extractors": True, "network_used": False,
                   **self.result, "failures": self.failures,
                   "limitations": ["Chart response JSON does not itself contain a validated reference year; year follows the saved official UI request.",
                                   "A returned zero is not proof of true zero or historical collection of that indicator.",
                                   "Source values matching snapshots do not prove the official source itself has no mistakes.",
-                                  "PDF visual checks are targeted samples, not a full transcription review.",
+                                  "Original-image review scope is explicit per cohort; complete glyph-grid comparison is not full human image double collation.",
                                   "No source families or overlapping national/county/institution scopes are summed.",
                                   "DGBAS PDF cell content is checked against derived extraction only, not independently transcribed here."]}
         directory.mkdir(parents=True, exist_ok=True)
@@ -976,9 +1075,9 @@ class Verification:
     def combined(self):
         before = len(self.failures)
         expected = [json.loads(line) for name in ("data/observations.jsonl", "data/component_records.jsonl")
-                    for line in (self.root / name).read_text().splitlines() if line]
-        path = self.root / "data/combined/observations.jsonl"
-        actual = [json.loads(line) for line in path.read_text().splitlines() if line]
+                    for line in record_bytes(self.root, name).decode().splitlines() if line]
+        path = record_path(self.root, "data/combined/observations.jsonl")
+        actual = [json.loads(line) for line in record_bytes(self.root, "data/combined/observations.jsonl").decode().splitlines() if line]
         targets = {row["observation_id"]: row for row in actual}
         self.check(len(targets) == len(actual) == len(expected), "combined_counts_unique", len(actual))
         self.check(set(targets) == {row["observation_id"] for row in expected}, "combined_record_set", len(targets))
@@ -989,7 +1088,7 @@ class Verification:
                 "observation_id": source["observation_id"], "different_fields": differences})
         self.result["combined"] = {"status": "pass" if len(self.failures) == before else "fail",
                                    "records_checked": len(actual), "all_original_fields_preserved": True,
-                                   "snapshot_sha256": digest(path.read_bytes())}
+                                   "snapshot_sha256": digest(record_bytes(self.root, "data/combined/observations.jsonl"))}
 
 
 def main():
@@ -1026,7 +1125,7 @@ def main():
     try:
         verification.core()
         verification.historical()
-        if not args.core_only and (args.root / "data/component_records.jsonl").exists():
+        if not args.core_only and record_path(args.root, "data/component_records.jsonl").exists():
             verification.components()
             if (args.root / "derived/ncl_gap_tables_long.csv").exists():
                 verification.ncl_gap()
@@ -1035,7 +1134,7 @@ def main():
                 verification.reviewed_cohort_evidence()
             if (args.root / "derived/dgbas_county_historical_long.csv").exists():
                 verification.county_table()
-            if (args.root / "data/combined/observations.jsonl").exists():
+            if record_path(args.root, "data/combined/observations.jsonl").exists():
                 verification.combined()
     except Exception as error:
         verification.check(False, "verification_exception", {"type": type(error).__name__, "error": str(error)})

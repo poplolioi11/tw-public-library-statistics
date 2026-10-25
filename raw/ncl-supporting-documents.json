@@ -1,0 +1,86 @@
+[
+  {
+    "local_path": "raw/ncl-2016/yearbook-106-copyright.pdf",
+    "sha256": "662424d251d49eff39f94a010c27dddcb8072a168e656272b6883d533b727340",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566861169650942/941454a1-2d41-46cd-b3b4-dc127d4a471d.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2017/yearbook-107-copyright.pdf",
+    "sha256": "985642959f830084fba36e7ad4f43c09631a61c6cbcac7b56701597af08a8521",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566877959961536/80094bd3-24e9-4e8a-ba31-09600ab951c0.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2018/yearbook-108-copyright.pdf",
+    "sha256": "0d18782a6653e14f24a712e9066a7dd54480c1d35f4cba8e89b8b51368291c04",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566922195292082/15cfd6f1-d257-4e9c-bc35-7eb50bec85c7.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2019/yearbook-109-copyright.pdf",
+    "sha256": "55019c74f631836780119bfe9ea0fbf438fb3ce10fa1e29222f358602b78e779",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566936707655610/bb6e406a-a111-452e-8443-12dc7182401c.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2019/yearbook-109-editing.pdf",
+    "sha256": "c88778d7dc01a345d0f0dd1c9a5ce631270a4cf1988157933da6e3e677c5b392",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566937886403665/88958ad2-6e50-4a64-b1b1-06149d2575b3.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2019/yearbook-109-toc.pdf",
+    "sha256": "66349e27cb8c6f7e2253e1fbd14c883f4d081427f92f9aeea697205cb2bd5319",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566938420382692/8834e68f-42ca-4f81-a25e-03b02ce2d931.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2020/yearbook-110-copyright.pdf",
+    "sha256": "126bb352e2a4861e71404863331af02515ef2841bf08b1e463eb2fe1b0f5729e",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566951765149221/844aa976-a774-4dd6-9ec7-3590389dff0b.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2020/yearbook-110-editing.pdf",
+    "sha256": "e315e61f70aa7b059f44a109695b447d5b1129117e6989f36d71f7d562716e02",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566951943986276/ac6908a3-c0f3-47f3-8c27-ba78c8e57cb7.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2020/yearbook-110-toc.pdf",
+    "sha256": "d84818518b3d37cd53a6553f934858204e380256efa8e1524fe645558aee8ff1",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566952587865204/4668c982-e92c-45b4-a561-ac1b0b151de0.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2021/yearbook-111-copyright.pdf",
+    "sha256": "32a2ec123debfa6a5cb01c56809ee3fad8fcc237a1250df0603c29d68e3076e9",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566965732622833/64905cd2-b90c-49a1-9d9f-f9f5e7678ee4.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2021/yearbook-111-editing.pdf",
+    "sha256": "ff2fb810a33af865c2355e5b7a9ca351f365e7895d5e5f316efebb85b51676c5",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566966911470887/e4bfdbe1-8e5a-4d20-9acb-676225820d78.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  },
+  {
+    "local_path": "raw/ncl-2021/yearbook-111-toc.pdf",
+    "sha256": "a4a02a58a57e34668418c7e3c29b11e9420067900c435f20be28d24fc0423976",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566966555349805/f4acb6dc-57f6-4f2a-89bd-4eda8421d989.pdf",
+    "content_kind": "pdf",
+    "review_scope": "Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series."
+  }
+]

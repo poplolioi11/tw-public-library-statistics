@@ -1,0 +1,23 @@
+{
+  "records": 1040,
+  "changed_observations": 3,
+  "old_and_new_statistical_source_position_fingerprint": "a337f441d9d5306572a38bb93500836b52f0f3aed6636e990b1d661a8cc790b8",
+  "fingerprinted_fields": [
+    "data_year",
+    "entity_raw",
+    "metric_id",
+    "value_raw",
+    "value",
+    "value_status",
+    "source_sha256",
+    "source_pdf_page",
+    "source_table",
+    "source_row",
+    "source_column",
+    "source_locator"
+  ],
+  "all_numeric_raw_and_source_positions_unchanged": true,
+  "raw_subrow": "公務機關（1/1-/8/31）",
+  "date_fields": "candidate interpretation2017-01-01 to2017-08-31; extra slash unresolved",
+  "verification": "offline rebuild, crop3301, format counts, no-op bytes/mtime and missing-source fixture passed"
+}

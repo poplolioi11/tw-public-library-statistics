@@ -160,6 +160,18 @@ class UpdateGroupsTests(unittest.TestCase):
         self.assertEqual(self.run_groups(), [])
         self.assertEqual(list((self.root / "data").glob("*_extraction_state.json")), [])
 
+    def test_changed_shared_helper_or_table_spec_rebuilds_its_cohort_only(self):
+        group=self.inventory_group("ncl_earlier")
+        group['dependencies']=['scripts/shared.py','scripts/coordinates.json']
+        for relative in group['dependencies']:self.write(relative,'initial reviewed dependency')
+        self.write('data/reviewed_historical_cohorts.json',json.dumps({'schema_version':'1.0.0','cohorts':[group]}))
+        self.assertEqual(self.run_groups(),[group['script']])
+        self.assertEqual(self.run_groups(),[])
+        for relative in group['dependencies']:
+            self.write(relative,'changed reviewed dependency')
+            self.assertEqual(self.run_groups(),[group['script']])
+            self.assertEqual(self.run_groups(),[])
+
     def test_first_run_builds_exactly_three_groups(self):
         self.assertEqual(self.run_groups(), [group["script"] for group in GROUPS.values()])
         self.assertEqual(len(list((self.root / "data").glob("*_extraction_state.json"))), 3)

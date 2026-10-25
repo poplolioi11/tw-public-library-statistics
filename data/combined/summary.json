@@ -1,11 +1,15 @@
 {
-  "version": "0.3.0",
-  "built_at": "2026-10-25T10:47:25.639287+00:00",
-  "records": 26725,
-  "missing_cells": 1076,
+  "version": "0.4.0",
+  "canonical_jsonl_path": "data/combined/observations.jsonl.gz",
+  "jsonl_compression": "gzip",
+  "canonical_uncompressed_sha256": "5fb447ba8b655f349dcfcd982e54de6956d4f209e916c5008ae0c5fb6ea0bc20",
+  "built_at": "2026-10-25T12:06:51.840460+00:00",
+  "records": 37393,
+  "missing_cells": 1102,
   "null_value_status_counts": {
-    "not_available_in_source": 200,
-    "source_blank": 876
+    "not_available_in_source": 206,
+    "source_blank": 876,
+    "source_marker": 20
   },
   "reference_years": [
     1991,
@@ -45,12 +49,12 @@
     2025,
     2026
   ],
-  "source_series": 804,
-  "source_groups": 211,
+  "source_series": 1505,
+  "source_groups": 229,
   "source_families": {
     "主計總處歷史全國統計": 220,
     "主計總處縣市公共館數": 644,
-    "國家圖書館年鑑統計事實": 7865,
+    "國家圖書館年鑑統計事實": 18533,
     "國家圖書館閱讀報告統計事實": 154,
     "國資圖公開全國圖表": 855,
     "地方政府開放歷史表": 14751,
@@ -59,16 +63,18 @@
   "scope_statement": "已驗證可得來源的全量整理；不是宣稱臺灣所有年代、所有縣市與每一圖書館都已完整。",
   "all_history_complete": false,
   "null_status_counts": {
-    "not_available_in_source": 200,
-    "source_blank": 876
+    "not_available_in_source": 206,
+    "source_blank": 876,
+    "source_marker": 20
   },
   "value_status_counts": {
-    "not_available_in_source": 200,
-    "reported": 24568,
-    "reported_decimal": 1081,
-    "source_blank": 876
+    "not_available_in_source": 206,
+    "reported": 34123,
+    "reported_decimal": 2168,
+    "source_blank": 876,
+    "source_marker": 20
   },
   "publication_profile": "statistical_fields_only",
   "omitted_contact_original_files": 22,
-  "statistical_content_sha256": "3bf76146e81d60a071d65f0c13d5e8773feb1a5836b8e9bddf79b2c503c121a6"
+  "statistical_content_sha256": "080710c45b3e3fc747a5a7a8e120af762d1be925c87733709f133782b7dfa97e"
 }

@@ -29,5 +29,11 @@ class ReviewedInventoryTests(unittest.TestCase):
  def test_external_extractor_paths_are_rejected(self):
   self.group['script']='../outside.py';self.write([self.group])
   with self.assertRaises(ValueError):load(self.root)
+ def test_only_reviewed_local_dependency_types_are_allowed(self):
+  self.group['dependencies']=['scripts/helper.py','scripts/table-specifications.json'];self.write([self.group])
+  self.assertEqual(load(self.root)[0]['dependencies'],self.group['dependencies'])
+  for name in ['scripts/../outside.py','/private/helper.py','raw/source.pdf','scripts/commands.sh']:
+   self.group['dependencies']=[name];self.write([self.group])
+   with self.subTest(name=name),self.assertRaises(ValueError):load(self.root)
 
 if __name__=='__main__':unittest.main()

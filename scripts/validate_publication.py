@@ -7,6 +7,7 @@ No requests are sent and no data are rewritten. Run --self-test for offline fixt
 """
 from __future__ import annotations
 
+import gzip
 import argparse
 import csv
 from decimal import Decimal, InvalidOperation
@@ -28,7 +29,7 @@ MANIFEST_NAME = "PUBLICATION_MANIFEST.json"
 PUBLICATION_ONLY_FIELDS = {"snapshot_distribution", "public_evidence_path", "public_evidence_sha256", "public_projection_policy"}
 CONTACT_PARTS = ("行動電話", "市話", "電子郵件", "電子信箱", "聯絡電話", "聯絡人", "聯絡資訊", "聯絡方式", "手機號", "傳真")
 CONTACT_ENGLISH = {"email", "emailaddress", "tel", "telephone", "phone", "phonenumber", "mobile", "mobilenumber", "mobilephone", "fax", "contact", "contactname", "contactperson", "contactemail", "contactphone", "authorphone"}
-SOURCE_MARKERS = {"-", "--", "—", "–", "…", "...", "N/A", "NA", "n/a"}
+SOURCE_MARKERS = {"無", "未新增", "-", "--", "—", "–", "…", "...", "N/A", "NA", "n/a"}
 NOT_APPLICABLE_MARKERS = {"N/A", "NA", "n/a", "不適用"}
 NULL_STATUSES = {"source_blank", "source_null", "source_marker", "not_available_in_source", "not_applicable"}
 
@@ -136,6 +137,8 @@ def validate_value_semantics(record: dict, identifier: str) -> None:
     """Validate missingness against the original representation, never its label alone."""
     value, raw, status = record["value"], record["raw_value"], record.get("value_status")
     text = raw.strip() if isinstance(raw, str) else None
+    if text in {"無", "未新增"}:
+        require(value is None and status == "source_marker", f"{identifier}: literal source text must retain source_marker, not zero or a claimed missingness reason")
     if value is None:
         require(status in NULL_STATUSES, f"{identifier}: null has unsupported source status {status!r}")
         if status == "source_blank":
@@ -186,9 +189,22 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
 
     rows = {}
     columns = set()
-    path = combined / "observations.jsonl"
+    relative = summary.get("canonical_jsonl_path") or "data/combined/observations.jsonl"
+    require(relative in {"data/combined/observations.jsonl", "data/combined/observations.jsonl.gz"}, "Unrecognized canonical JSONL transport path")
+    _, path = relative_file(root, relative, "canonical JSONL")
+    opener = gzip.open if path.suffix == ".gz" else open
+    uncompressed_digest = hashlib.sha256()
     try:
-        with path.open(encoding="utf-8-sig") as stream:
+        with opener(path, "rb") as raw_stream:
+            for block in iter(lambda: raw_stream.read(1024 * 1024), b""):
+                uncompressed_digest.update(block)
+    except (OSError, EOFError) as error:
+        raise ValidationError("Cannot read complete canonical JSONL transport") from error
+    logical_sha256 = uncompressed_digest.hexdigest()
+    if summary.get("canonical_uncompressed_sha256"):
+        require(logical_sha256 == summary["canonical_uncompressed_sha256"], "Uncompressed canonical SHA mismatch")
+    try:
+        with opener(path, "rt", encoding="utf-8-sig") as stream:
             for line_number, line in enumerate(stream, 1):
                 if not line.strip():
                     continue
@@ -322,10 +338,30 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
         require(file_hash(actual) == normalized_hash(digest, f"manifest {rel}"), f"Manifest file hash mismatch: {rel}")
         manifest_files.add(rel)
     require(bool(manifest_files) or not manifest_present, "No eligible manifest files were checked")
-    for required in ("data/combined/observations.jsonl", "data/combined/observations.csv", "data/combined/library_statistics.sqlite", "data/combined/summary.json"):
+    for required in (relative, "data/combined/observations.csv", "data/combined/library_statistics.sqlite", "data/combined/summary.json"):
         require(required in manifest_files or not manifest_present, f"Manifest does not inventory canonical file: {required}")
     for evidence in evidence_files:
         require(evidence in manifest_files or not manifest_present, f"Manifest does not inventory public evidence: {evidence}")
+
+    if manifest_present and manifest.get("canonical_sha256"):
+        require(logical_sha256 == manifest["canonical_sha256"], "Manifest logical canonical SHA mismatch")
+    partition_count = 0
+    partition_index = root / "data/by_year/index.json"
+    if partition_index.exists():
+        index = read_json(partition_index)
+        require(index.get("canonical_path") == relative, "Annual index points at a different canonical transport")
+        union = hashlib.sha256(); total = 0; years = []
+        for partition in index["partitions"]:
+            rel, actual = relative_file(root, partition["path"], "annual partition")
+            require(rel in manifest_files or not manifest_present, "Annual partition not inventoried")
+            content = actual.read_bytes()
+            require(hashlib.sha256(content).hexdigest() == partition["sha256"], "Annual partition hash mismatch")
+            entries = [json.loads(line) for line in content.splitlines() if line.strip()]
+            require(len(entries) == partition["records"] and all(row["data_year"] == partition["data_year"] for row in entries), "Annual partition rows/year mismatch")
+            union.update(content); total += len(entries); years.append(partition["data_year"])
+        require(years == sorted(set(years)), "Annual partitions duplicate or out of order")
+        require(total == len(rows) == index["records"] and union.hexdigest() == logical_sha256, "Annual partition union differs from decompressed canonical")
+        partition_count = len(years)
 
     if isinstance(summary.get("source_families"), dict):
         counts = {}
@@ -333,7 +369,7 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
             family = row.get("source_family")
             counts[family] = counts.get(family, 0) + 1
         require(counts == summary["source_families"], "Source-family counts differ from summary")
-    return {"records": len(rows), "missing_cells": missing_count, "reported_zero_cells": zero_count,
+    return {"records": len(rows), "canonical_jsonl_path": relative, "canonical_uncompressed_sha256": logical_sha256, "annual_partition_union_checked": partition_count, "missing_cells": missing_count, "reported_zero_cells": zero_count,
             "null_status_counts": {status: sum(row["value"] is None and row.get("value_status") == status for row in rows.values()) for status in sorted(NULL_STATUSES)},
             "formats": "JSONL/CSV/SQLite content agrees", "original_files_hash_checked": len(original_files),
             "omitted_source_versions_not_full_source_verified": len(omitted_originals),
@@ -393,6 +429,39 @@ def self_test() -> bool:
                 connection.execute("DELETE FROM observations")
                 connection.executemany("INSERT INTO observations VALUES (" + ",".join("?" for _ in columns) + ")", [[row[name] for name in columns] for row in self.rows])
             self.write_manifest()
+
+        def compressed_fixture(self):
+            combined=self.root/"data/combined";plain=combined/"observations.jsonl";content=plain.read_bytes()
+            (combined/"observations.jsonl.gz").write_bytes(gzip.compress(content,mtime=0));plain.unlink()
+            summary=read_json(combined/"summary.json");summary.update(canonical_jsonl_path="data/combined/observations.jsonl.gz",canonical_uncompressed_sha256=hashlib.sha256(content).hexdigest());(combined/"summary.json").write_text(json.dumps(summary))
+            directory=self.root/"data/by_year";directory.mkdir()
+            (directory/"2025.jsonl").write_bytes(content)
+            (directory/"index.json").write_text(json.dumps({"canonical_path":"data/combined/observations.jsonl.gz","records":2,"partitions":[{"data_year":2025,"path":"data/by_year/2025.jsonl","records":2,"sha256":hashlib.sha256(content).hexdigest()}]}))
+            self.write_manifest()
+            return content
+
+        def test_gzip_master_and_plain_annual_union_match_original_bytes(self):
+            content=self.compressed_fixture();report=validate(self.root)
+            self.assertEqual(report["canonical_uncompressed_sha256"],hashlib.sha256(content).hexdigest())
+            self.assertEqual(report["annual_partition_union_checked"],1)
+            self.assertEqual(report["canonical_jsonl_path"],"data/combined/observations.jsonl.gz")
+
+        def test_truncated_gzip_does_not_pass_as_partial_data(self):
+            self.compressed_fixture();p=self.root/"data/combined/observations.jsonl.gz";p.write_bytes(p.read_bytes()[:-5]);self.write_manifest()
+            with self.assertRaisesRegex(ValidationError,"complete canonical"):validate(self.root)
+
+        def test_wrong_decompressed_sha_is_rejected(self):
+            self.compressed_fixture();p=self.root/"data/combined/summary.json";summary=read_json(p);summary["canonical_uncompressed_sha256"]="b"*64;p.write_text(json.dumps(summary));self.write_manifest()
+            with self.assertRaisesRegex(ValidationError,"Uncompressed canonical SHA"):validate(self.root)
+
+        def test_rehashed_annual_partition_cannot_drop_an_observation(self):
+            self.compressed_fixture();p=self.root/"data/by_year/2025.jsonl";p.write_bytes(p.read_bytes().splitlines(keepends=True)[0]);index=read_json(p.parent/"index.json");index["partitions"][0].update(records=1,sha256=hashlib.sha256(p.read_bytes()).hexdigest());(p.parent/"index.json").write_text(json.dumps(index));self.write_manifest()
+            with self.assertRaisesRegex(ValidationError,"partition union"):validate(self.root)
+
+        def test_literal_absence_text_retains_its_own_unresolved_state(self):
+            for raw in ("無","未新增"):
+                validate_value_semantics({"value":None,"raw_value":raw,"value_status":"source_marker"},"fixture")
+                with self.assertRaises(ValidationError):validate_value_semantics({"value":None,"raw_value":raw,"value_status":"not_available_in_source"},"fixture")
 
         def test_formats_zero_null_omission_and_rid(self):
             report = validate(self.root)

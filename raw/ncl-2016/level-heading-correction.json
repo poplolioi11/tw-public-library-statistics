@@ -1,0 +1,38 @@
+{
+  "2016": {
+    "changed_heading_cells": 23,
+    "tables": [
+      "24",
+      "27",
+      "28"
+    ],
+    "raw_header": "鄉鎮市區立圖書館",
+    "mountain_indigenous_header": null,
+    "numeric_raw_and_source_positions_unchanged": true,
+    "statistical_source_position_fingerprint": "4733cb671d0d181d7b2d8aa735ac77b8261a3412adbfd72259fe543f866f545d"
+  },
+  "2017": {
+    "changed_heading_cells": 24,
+    "tables": [
+      "23",
+      "26",
+      "27"
+    ],
+    "raw_header": "鄉鎮市區立圖書館",
+    "mountain_indigenous_header": "直轄市山地原住民區立圖書館",
+    "numeric_raw_and_source_positions_unchanged": true,
+    "statistical_source_position_fingerprint": "42be642dddadec7d42144970b89c639bf5198aea28242c3329625b25b627f0a1"
+  },
+  "2018": {
+    "changed_heading_cells": 24,
+    "tables": [
+      "14",
+      "17",
+      "19"
+    ],
+    "raw_header": "鄉鎮市區立圖書館",
+    "mountain_indigenous_header": "直轄市山地原住民區立圖書館",
+    "numeric_raw_and_source_positions_unchanged": true,
+    "statistical_source_position_fingerprint": "2bc724cf1bd246884b0be5e81e1fde12b255df8bbb2854c017a6eae5b3f3fac4"
+  }
+}

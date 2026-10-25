@@ -1,0 +1,32 @@
+{
+  "report_only_schema_correction_cells": 85,
+  "producer_and_original_blind_baseline_unchanged": true,
+  "all_numeric_raw_status_location_fields_unchanged": true,
+  "basic_original_label_cells_still_checked": 12,
+  "years": [
+    {
+      "year": 2019,
+      "category_geography_crosswalk_cells": 25,
+      "numeric_fields_sha256_before_after": "8c97dc2210db0c6f1a7999a7baad7389ba0f1bf0732ed3b11064c51142a95cab",
+      "producer_csv_sha256": "1a81468bd4866c5f5eb53f6d8a146c9f07f9cb859cf8f3e9b96aef739a1e0b4c",
+      "baseline_frozen_sha256": "f86d11ee8117559555479790e3eae7b1d36990d70131a38e1981fda652284226",
+      "updated_review_sha256": "f07d7698adf3f8766ff48c281cad2263e21f327a5ce7f96e32a12978ba65bf82"
+    },
+    {
+      "year": 2020,
+      "category_geography_crosswalk_cells": 25,
+      "numeric_fields_sha256_before_after": "05d8ccf5d410bb3e57f80994ce09a4ee85bde7b77aafe7f6c6730c0ad6ade931",
+      "producer_csv_sha256": "dd434d82bf62b2ae44b69594e5f1f339f371daa0563f33f8edb18f4a283ec8ae",
+      "baseline_frozen_sha256": "63cf081f8f515b618b99aacad195a81178192ca0fa9443ab6f4e20310359504b",
+      "updated_review_sha256": "3182d6c4fef6a122de09090742e3d0fae9f1d787a76b30d1d24efdeef2901e3a"
+    },
+    {
+      "year": 2021,
+      "category_geography_crosswalk_cells": 35,
+      "numeric_fields_sha256_before_after": "1bfaa0a6359f03dae4c436b943308f1231f88540ceb98e4a6c5626e0cb6e12df",
+      "producer_csv_sha256": "138097c9a37bd7deb49bbf46a96a8f67850988da3b125f2c4aba86e430976b81",
+      "baseline_frozen_sha256": "7d45c165a678cfbc78610a983d4899baa102bd14f443fdc05682dcbc4e530208",
+      "updated_review_sha256": "d583b2ce55ced02786936541571986cd1b281b94b09993711f6c0bb08178ae0b"
+    }
+  ]
+}

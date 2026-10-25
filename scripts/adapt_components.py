@@ -2,6 +2,7 @@
 """Explicit adapters: preserve original periods/scopes; never fuzzy-merge sources."""
 import csv,hashlib,json,re
 from pathlib import Path
+import record_io
 from library_pipeline import parse_number
 from cohort_registry import csv_names
 ROOT=Path(__file__).resolve().parents[1]
@@ -36,6 +37,9 @@ def adapt_additional_ncl_rows(rows):
   if source_status in ('blank','source_blank','blank_in_source'):
    if str(raw).strip() or str(row.get('value','')).strip():raise ValueError('Blank cell carries a number')
    value,status=None,'source_blank'
+  elif source_status=='source_marker' and raw in {'無','未新增'}:
+   if row.get('value') not in (None,''):raise ValueError('Printed textual marker cannot discard a normalized number')
+   value,status=None,'source_marker'
   elif source_status in ('not_available_in_source','missing','source_marker'):
    if row.get('value') not in (None,''):raise ValueError('Missing status would discard a normalized value: '+row['source_locator'])
    if str(raw).strip() not in {'-','—','–','…','...','N/A','NA'}:raise ValueError('Missing status would discard an unrecognized source value: '+row['source_locator'])
@@ -48,9 +52,15 @@ def adapt_additional_ncl_rows(rows):
   if row.get('unit_status')=='source_heading_conflict_unresolved':
    notes.append('原刊表題與正文單位衝突，正式unit留空；候選解讀另存，未當作定論。');unit=None
   unit_status=row.get('unit_status') or (('inferred_from_context' if row.get('unit_basis') and not row.get('unit_raw') else 'source_table') if unit else 'source_unit_unconfirmed_or_mixed')
+  if status=='source_marker' and raw in {'無','未新增'}:notes.append('原刊此格印「'+raw+'」，保留原印文字狀態；不自行換算0或推定缺值原因。')
   if status=='source_blank':notes.append('原刊此格留白；保留為缺值，不推定為0或不適用。')
+  if row.get('source_cell_note_raw'):notes.append('原格補述：'+row['source_cell_note_raw'])
   if row.get('aggregation_role') in ('total','subtotal','row_total','grand_total','published_total'):notes.append('原表合計／小計可能與分項重疊，不可把全部格相加。')
   period=row['temporal_kind'];pub=row.get('publication_date') or None
+  explicit_subperiod=bool(row.get('source_subrow_label_raw') and row.get('period_start') and row.get('period_end'))
+  ambiguous_subperiod=explicit_subperiod and row.get('source_period_interpretation_status')=='printed_extra_slash_unresolved_candidate_dates'
+  extras={k:row[k] for k in ('source_original_physical_column','source_cell_note_raw','source_cell_note_status','source_subrow_label_raw','source_period_interpretation_status','copyright_publication_month','publication_entry_date','source_data_obtained_date_raw','entity_label_status') if row.get(k) not in (None,'')}
+  if ambiguous_subperiod:extras.update(period_start_candidate=row['period_start'],period_end_candidate=row['period_end'])
   result.append({**base_record(),'observation_id':'obs-'+h(source+'|'+row['metric_id']+'|'+geo+'|'+str(year)+('|' + row['observation_identity_suffix'] if row.get('observation_identity_suffix') else ''))[:22],
    'data_year':year,'geography':geo,'geography_contextual_name':row.get('entity_contextual_name',geo),'geographic_scope':row['entity_kind'],
    'geography_vintage':row.get('geography_vintage'),'national_libraries_scope':row.get('national_libraries_scope'),
@@ -58,19 +68,19 @@ def adapt_additional_ncl_rows(rows):
    'series_id':series,'indicator':row['metric_raw'],'indicator_group':row.get('source_family') or '國家圖書館年鑑統計事實','source_field':row.get('source_column_path') or row['metric_raw'],
    'value':value,'raw_value':raw,'value_status':status,'zero_interpretation':'source_reported_zero_historical_context_required' if value==0 else None,
    'unit':unit,'unit_raw':row.get('unit_raw'),'unit_basis':row.get('unit_basis'),'unit_status':unit_status,'temporal_kind':period,
-   'period_start':f'{year}-01-01' if period in {'flow_calendar_year','annual_financial'} else None,'period_end':f'{year}-12-31' if period in {'flow_calendar_year','annual_financial','stock_year_end'} else None,
-   'period_basis':'source_calendar_year_flow' if period in {'flow_calendar_year','annual_financial'} else 'source_year_end_explicit_in_chapter' if period=='stock_year_end' else 'source_reference_year_exact_date_unconfirmed',
-   'period_raw':row.get('source_comparison_period_raw') or str(year),'source_time_reference':row.get('time_reference'),'definition_id':'def-'+series,'definition_status':'original_table_heading_and_footnotes_preserved',
+   'period_start':None if ambiguous_subperiod else row['period_start'] if explicit_subperiod else f'{year}-01-01' if period in {'flow_calendar_year','annual_financial'} else None,'period_end':None if ambiguous_subperiod else row['period_end'] if explicit_subperiod else f'{year}-12-31' if period in {'flow_calendar_year','annual_financial','stock_year_end'} else None,
+   'period_basis':'source_row_date_punctuation_unresolved_candidate_dates_only' if ambiguous_subperiod else 'source_row_subperiod_interpreted_dates_original_label_retained' if explicit_subperiod else 'source_calendar_year_flow' if period in {'flow_calendar_year','annual_financial'} else 'source_year_end_explicit_in_chapter' if period=='stock_year_end' else 'source_reference_year_exact_date_unconfirmed',
+   'period_raw':row.get('period_raw') if explicit_subperiod else row.get('source_comparison_period_raw') or str(year),'source_time_reference':row.get('time_reference'),'definition_id':'def-'+series,'definition_status':'original_table_heading_and_footnotes_preserved',
    'institutional_level':row.get('institutional_level'),'aggregation_role':row.get('aggregation_role'),
    'source_id':source,'source_family':row.get('source_family') or '國家圖書館年鑑統計事實','source_url':row['source_download_url']+'#page='+row['source_pdf_page'],
    'source_page_url':row['source_url'],'source_locator':row['source_locator'],'source_sha256':row['source_sha256'],
    'source_version_id':source+'@sha256:'+row['source_sha256'],'source_snapshot_path':row['source_local_path'],'retrieved_at':row['source_retrieved_at'],
    'source_pdf_page':int(row['source_pdf_page']),'source_printed_page':row['source_printed_page'],'source_table':row['source_table'],
    'source_table_title':row.get('source_table_title'),'source_row':row['source_row'],'source_column':row['source_column'],
-   'source_column_path':row.get('source_column_path'),'source_cell_bbox':row.get('source_cell_bbox'),'source_cell_bboxes':row.get('source_cell_bboxes'),'source_cell_annotation':row.get('cell_annotation'),'original_source_note':row.get('source_note') or row.get('source_notes'),'source_footnotes_raw':row.get('source_footnotes_raw'),'source_footnotes_status':row.get('source_footnotes_status'),'value_qualifier':row.get('value_qualifier'),'source_location_kind':row.get('source_location_kind'),'observation_identity_suffix':row.get('observation_identity_suffix'),'source_unit_interpretation_basis':row.get('source_unit_interpretation_basis'),'unit_interpretation_candidate':row.get('unit_interpretation_candidate'),'book_class_raw':row.get('book_class_raw'),'age_group_raw':row.get('age_group_raw'),'sex_raw':row.get('sex_raw'),'source_data_year_raw':row.get('source_data_year_raw'),'source_original_access_date_raw':row.get('source_original_access_date_raw'),'source_original_access_date':row.get('source_original_access_date'),
+   'source_column_path':row.get('source_column_path'),'source_cell_bbox':row.get('source_cell_bbox'),'source_cell_bboxes':row.get('source_cell_bboxes'),'source_cell_annotation':row.get('cell_annotation'),'original_source_note':row.get('source_note') or row.get('source_notes'),'source_footnotes_raw':row.get('source_footnotes_raw'),'source_footnotes_status':row.get('source_footnotes_status'),'value_qualifier':row.get('value_qualifier'),'value_parse_rule':row.get('value_parse_rule'),'source_location_kind':row.get('source_location_kind'),'observation_identity_suffix':row.get('observation_identity_suffix'),'source_unit_interpretation_basis':row.get('source_unit_interpretation_basis'),'unit_interpretation_candidate':row.get('unit_interpretation_candidate'),'book_class_raw':row.get('book_class_raw'),'age_group_raw':row.get('age_group_raw'),'sex_raw':row.get('sex_raw'),'source_data_year_raw':row.get('source_data_year_raw'),'source_original_access_date_raw':row.get('source_original_access_date_raw'),'source_original_access_date':row.get('source_original_access_date'),
    'license_status':'published_statistical_facts_document_license_unconfirmed','license_url':None,'snapshot_distribution':'not_in_public_bundle',
    'extraction_status':row['extraction_status'],'quality_flags':row.get('quality_flags') or None,'notes':'；'.join(notes),'publication_year':int(pub[:4]) if pub else None,
-   'publication_date':pub,'publication_date_basis':row.get('publication_date_basis'),'source_edition':row.get('source_edition'),'source_edition_roc':row.get('source_edition_roc')})
+   'publication_date':pub,'publication_date_basis':row.get('publication_date_basis'),'source_edition':row.get('source_edition'),'source_edition_roc':row.get('source_edition_roc'),**extras})
  return result
 
 def main():
@@ -133,8 +143,7 @@ def main():
   p=ROOT/row['source_snapshot_path']
   if str(p) not in checked_hashes:checked_hashes[str(p)]=hashlib.sha256(p.read_bytes()).hexdigest()
   if checked_hashes[str(p)]!=row['source_sha256']:raise ValueError('Component snapshot mismatch')
- with (ROOT/'data/component_records.jsonl').open('w') as f:
-  for r in records:f.write(json.dumps(r,ensure_ascii=False,separators=(',',':'))+'\n')
+ record_io.write(ROOT,'data/component_records.jsonl',records)
  (ROOT/'data/component_quality.json').write_text(json.dumps({'records':len(records),'local_duplicate_observations_excluded':duplicates,'issues':issues},ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({'records':len(records),'local_duplicate_observations_excluded':duplicates,'issues':len(issues)},ensure_ascii=False))
 if __name__=='__main__':main()

@@ -221,6 +221,11 @@ class ComponentTests(unittest.TestCase):
             with self.subTest(change=change), self.assertRaises(ValueError):
                 verifier.ncl_source_value({**source, **change})
         self.assertEqual(verifier.ncl_source_value(self.additional_ncl("", "", "blank_in_source")), (None, "source_blank"))
+        revised=self.additional_ncl('536*','536','reported')
+        revised.update(source_id='ncl-yearbook-107-statistics',source_table='215',source_row='1',source_column='5',
+                       source_sha256='2dcdd3f4a1e5ac2014ff79d13dd83e5274fc1d99885650f99450303c350c4f3b',cell_annotation='*')
+        self.assertEqual(verifier.ncl_source_value(revised),(536,'reported'))
+        with self.assertRaises(ValueError):verifier.ncl_source_value({**revised,'source_column':'6'})
 
 
     def test_prose_magnitude_and_printed_approximation_remain_traceable(self):
@@ -241,6 +246,42 @@ class ComponentTests(unittest.TestCase):
         self.assertEqual(verifier.ncl_source_value(source), ("0.85", "reported_decimal"))
         with self.assertRaises(ValueError):
             verifier.ncl_source_value({**source, "unit": "人"})
+
+    def test_literal_textual_source_states_are_not_zero_or_generic_missing(self):
+        for raw in ("無", "未新增"):
+            source = self.additional_ncl(raw, "", "source_marker")
+            record = adapter.adapt_additional_ncl_rows([source])[0]
+            self.assertEqual((record["value"],record["raw_value"],record["value_status"]),(None,raw,"source_marker"))
+            self.assertEqual(verifier.ncl_source_value(source),(None,"source_marker"))
+            with self.assertRaises(ValueError):adapter.adapt_additional_ncl_rows([{**source,"value":"0"}])
+            with self.assertRaises(ValueError):verifier.ncl_source_value({**source,"value":"0"})
+
+    def test_scoped_literal_cannot_become_a_full_county_total(self):
+        source = self.additional_ncl("分區資源中心新\n增80", "80", "reported")
+        source.update(source_id="ncl-yearbook-110-public-library", source_table="24", source_row="21", source_column="7",
+                      source_sha256="4d95c7af8993461b0395b331e2d60a221e1eaeac80bf7def28a86ee6fb2009cf",
+                      entity_raw="臺東縣", entity_kind="county_scoped_component_not_full_total",
+                      population_scope="僅臺東縣分區資源中心新增電子書種數；非全縣完整新增總量",
+                      value_parse_rule="literal_scoped_quantity", value_qualifier="scoped_source_component")
+        self.assertEqual(verifier.ncl_source_value(source), (80, "reported"))
+        for change in ({"source_row":"20"}, {"source_sha256":"b"*64}, {"value":"81"},
+                       {"entity_kind":"county"}, {"population_scope":"全縣"}, {"value_raw":"新增80"}):
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                verifier.ncl_source_value({**source, **change})
+
+    def test_explicit_source_subperiod_survives_adaptation(self):
+        source = self.additional_ncl("10", "10", "reported")
+        source.update(temporal_kind="annual_financial", period_start="2013-09-01", period_end="2013-12-31",
+                      period_raw="原表分期9/1–12/31", source_subrow_label_raw="行政法人（9/1–12/31）")
+        row = adapter.adapt_additional_ncl_rows([source])[0]
+        self.assertEqual(row["period_start"], "2013-09-01")
+        self.assertEqual(row["period_end"], "2013-12-31")
+        self.assertEqual(row["source_subrow_label_raw"], source["source_subrow_label_raw"])
+        source["source_period_interpretation_status"]="printed_extra_slash_unresolved_candidate_dates"
+        row=adapter.adapt_additional_ncl_rows([source])[0]
+        self.assertIsNone(row["period_start"])
+        self.assertIsNone(row["period_end"])
+        self.assertEqual((row["period_start_candidate"],row["period_end_candidate"]),("2013-09-01","2013-12-31"))
 
     def test_conflicting_printed_unit_stays_unknown_with_separate_candidate(self):
         source = self.additional_ncl("10", "10", "reported")

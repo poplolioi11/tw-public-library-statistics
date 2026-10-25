@@ -168,6 +168,285 @@
         "raw/ncl-2015"
       ],
       "scope": "All selected operational grids and public-library statistical subsets; duplicated or suspect printed county labels remain unresolved; table17 unit remains unknown."
+    },
+    {
+      "id": "ncl_2016",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2016.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-2016/yearbook-106-public-library.pdf",
+        "raw/ncl-2016/yearbook-106-public-library.metadata.json",
+        "raw/ncl-2016/yearbook-106-statistics.pdf",
+        "raw/ncl-2016/yearbook-106-statistics.metadata.json",
+        "raw/ncl-2016/yearbook-106-copyright.pdf",
+        "raw/ncl-2016/yearbook-106-copyright.metadata.json"
+      ],
+      "dependencies": [
+        "scripts/ncl_2016_2018_common.py"
+      ],
+      "outputs": [
+        "derived/ncl_2016_long.csv",
+        "derived/ncl_2016_long.jsonl",
+        "raw/ncl-2016/extraction-metadata.json"
+      ],
+      "derived_csv": "derived/ncl_2016_long.csv",
+      "raw_directories": [
+        "raw/ncl-2016"
+      ],
+      "scope": "All cells of the explicitly inventoried operational core tables, including continuations and public-library statistical subsets. National institutions, subtotals, original textual states, limited-scope quantities and edition revisions remain separate; other library types, construction projects, awards and individuals excluded."
+    },
+    {
+      "id": "ncl_2017",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2017.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-2017/yearbook-107-public-library.pdf",
+        "raw/ncl-2017/yearbook-107-public-library.metadata.json",
+        "raw/ncl-2017/yearbook-107-statistics.pdf",
+        "raw/ncl-2017/yearbook-107-statistics.metadata.json",
+        "raw/ncl-2017/yearbook-107-copyright.pdf",
+        "raw/ncl-2017/yearbook-107-copyright.metadata.json"
+      ],
+      "dependencies": [
+        "scripts/ncl_2016_2018_common.py"
+      ],
+      "outputs": [
+        "derived/ncl_2017_long.csv",
+        "derived/ncl_2017_long.jsonl",
+        "raw/ncl-2017/extraction-metadata.json"
+      ],
+      "derived_csv": "derived/ncl_2017_long.csv",
+      "raw_directories": [
+        "raw/ncl-2017"
+      ],
+      "scope": "All cells of the explicitly inventoried operational core tables, including continuations and public-library statistical subsets. National institutions, subtotals, original textual states, limited-scope quantities and edition revisions remain separate; other library types, construction projects, awards and individuals excluded."
+    },
+    {
+      "id": "ncl_2018",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2018.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-2018/yearbook-108-public-library.pdf",
+        "raw/ncl-2018/yearbook-108-public-library.metadata.json",
+        "raw/ncl-2018/yearbook-108-statistics.pdf",
+        "raw/ncl-2018/yearbook-108-statistics.metadata.json",
+        "raw/ncl-2018/yearbook-108-copyright.pdf",
+        "raw/ncl-2018/yearbook-108-copyright.metadata.json"
+      ],
+      "dependencies": [
+        "scripts/ncl_2016_2018_common.py"
+      ],
+      "outputs": [
+        "derived/ncl_2018_long.csv",
+        "derived/ncl_2018_long.jsonl",
+        "raw/ncl-2018/extraction-metadata.json"
+      ],
+      "derived_csv": "derived/ncl_2018_long.csv",
+      "raw_directories": [
+        "raw/ncl-2018"
+      ],
+      "scope": "All cells of the explicitly inventoried operational core tables, including continuations and public-library statistical subsets. National institutions, subtotals, original textual states, limited-scope quantities and edition revisions remain separate; other library types, construction projects, awards and individuals excluded."
+    },
+    {
+      "id": "ncl_2019",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2019.py",
+      "args": [],
+      "inputs": [
+        "raw/ncl-2019/yearbook-109-public-library.pdf",
+        "raw/ncl-2019/yearbook-109-public-library.metadata.json",
+        "raw/ncl-2019/yearbook-109-statistics.pdf",
+        "raw/ncl-2019/yearbook-109-statistics.metadata.json",
+        "raw/ncl-2019/yearbook-109-copyright.pdf",
+        "raw/ncl-2019/yearbook-109-copyright.metadata.json",
+        "raw/ncl-2019/yearbook-109-editing.pdf",
+        "raw/ncl-2019/yearbook-109-editing.metadata.json",
+        "raw/ncl-2019/yearbook-109-toc.pdf",
+        "raw/ncl-2019/yearbook-109-toc.metadata.json",
+        "raw/ncl-2019/catalog.metadata.json",
+        "raw/ncl-2019/table-specifications.json"
+      ],
+      "dependencies": [
+        "scripts/ncl_modern_2019_2021_common.py"
+      ],
+      "outputs": [
+        "derived/ncl_2019_long.csv",
+        "derived/ncl_2019_long.jsonl",
+        "raw/ncl-2019/extraction-validation.json",
+        "raw/ncl-2019/token-checks.private.json",
+        "raw/ncl-2019/documents.json"
+      ],
+      "derived_csv": "derived/ncl_2019_long.csv",
+      "raw_directories": [
+        "raw/ncl-2019"
+      ],
+      "scope": "All cells of the explicitly inventoried operational core tables, including continuations and public-library statistical subsets. National institutions, subtotals, original textual states, limited-scope quantities and edition revisions remain separate; other library types, construction projects, awards and individuals excluded."
+    },
+    {
+      "id": "ncl_2020",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2020.py",
+      "args": [],
+      "inputs": [
+        "raw/ncl-2020/yearbook-110-public-library.pdf",
+        "raw/ncl-2020/yearbook-110-public-library.metadata.json",
+        "raw/ncl-2020/yearbook-110-statistics.pdf",
+        "raw/ncl-2020/yearbook-110-statistics.metadata.json",
+        "raw/ncl-2020/yearbook-110-copyright.pdf",
+        "raw/ncl-2020/yearbook-110-copyright.metadata.json",
+        "raw/ncl-2020/yearbook-110-editing.pdf",
+        "raw/ncl-2020/yearbook-110-editing.metadata.json",
+        "raw/ncl-2020/yearbook-110-toc.pdf",
+        "raw/ncl-2020/yearbook-110-toc.metadata.json",
+        "raw/ncl-2020/catalog.metadata.json",
+        "raw/ncl-2020/table-specifications.json"
+      ],
+      "dependencies": [
+        "scripts/ncl_modern_2019_2021_common.py"
+      ],
+      "outputs": [
+        "derived/ncl_2020_long.csv",
+        "derived/ncl_2020_long.jsonl",
+        "raw/ncl-2020/extraction-validation.json",
+        "raw/ncl-2020/token-checks.private.json",
+        "raw/ncl-2020/documents.json"
+      ],
+      "derived_csv": "derived/ncl_2020_long.csv",
+      "raw_directories": [
+        "raw/ncl-2020"
+      ],
+      "scope": "All cells of the explicitly inventoried operational core tables, including continuations and public-library statistical subsets. National institutions, subtotals, original textual states, limited-scope quantities and edition revisions remain separate; other library types, construction projects, awards and individuals excluded."
+    },
+    {
+      "id": "ncl_2021",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2021.py",
+      "args": [],
+      "inputs": [
+        "raw/ncl-2021/yearbook-111-public-library.pdf",
+        "raw/ncl-2021/yearbook-111-public-library.metadata.json",
+        "raw/ncl-2021/yearbook-111-statistics.pdf",
+        "raw/ncl-2021/yearbook-111-statistics.metadata.json",
+        "raw/ncl-2021/yearbook-111-copyright.pdf",
+        "raw/ncl-2021/yearbook-111-copyright.metadata.json",
+        "raw/ncl-2021/yearbook-111-editing.pdf",
+        "raw/ncl-2021/yearbook-111-editing.metadata.json",
+        "raw/ncl-2021/yearbook-111-toc.pdf",
+        "raw/ncl-2021/yearbook-111-toc.metadata.json",
+        "raw/ncl-2021/catalog.metadata.json",
+        "raw/ncl-2021/table-specifications.json"
+      ],
+      "dependencies": [
+        "scripts/ncl_modern_2019_2021_common.py"
+      ],
+      "outputs": [
+        "derived/ncl_2021_long.csv",
+        "derived/ncl_2021_long.jsonl",
+        "raw/ncl-2021/extraction-validation.json",
+        "raw/ncl-2021/token-checks.private.json",
+        "raw/ncl-2021/documents.json"
+      ],
+      "derived_csv": "derived/ncl_2021_long.csv",
+      "raw_directories": [
+        "raw/ncl-2021"
+      ],
+      "scope": "All cells of the explicitly inventoried operational core tables, including continuations and public-library statistical subsets. National institutions, subtotals, original textual states, limited-scope quantities and edition revisions remain separate; other library types, construction projects, awards and individuals excluded."
+    },
+    {
+      "id": "ncl_2022",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2022.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-2022/yearbook-112-public-library.metadata.json",
+        "raw/ncl-2022/yearbook-112-public-library.pdf",
+        "raw/ncl-2022/yearbook-112-statistics.metadata.json",
+        "raw/ncl-2022/yearbook-112-statistics.pdf"
+      ],
+      "dependencies": [
+        "scripts/audit_ncl_recent_helper.py",
+        "scripts/audit_ncl_recent_specs_2022.json"
+      ],
+      "outputs": [
+        "derived/ncl_2022_long.csv",
+        "derived/ncl_2022_long.jsonl",
+        "raw/ncl-2022/extraction-validation.json",
+        "raw/ncl-2022/documents.json"
+      ],
+      "derived_csv": "derived/ncl_2022_long.csv",
+      "raw_directories": [
+        "raw/ncl-2022"
+      ],
+      "scope": "All selected operational core tables and complete public-library statistical subsets, including late-chapter acquisitions. Each printed table keeps its own labels, quantities, population basis and definition. Unresolved original labels are flagged and not counted as confirmed county coverage; no relocation of source values."
+    },
+    {
+      "id": "ncl_2023",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2023.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-2023/yearbook-113-public-library.metadata.json",
+        "raw/ncl-2023/yearbook-113-public-library.pdf",
+        "raw/ncl-2023/yearbook-113-statistics.metadata.json",
+        "raw/ncl-2023/yearbook-113-statistics.pdf"
+      ],
+      "dependencies": [
+        "scripts/audit_ncl_recent_helper.py",
+        "scripts/audit_ncl_recent_specs_2023.json"
+      ],
+      "outputs": [
+        "derived/ncl_2023_long.csv",
+        "derived/ncl_2023_long.jsonl",
+        "raw/ncl-2023/extraction-validation.json",
+        "raw/ncl-2023/documents.json"
+      ],
+      "derived_csv": "derived/ncl_2023_long.csv",
+      "raw_directories": [
+        "raw/ncl-2023"
+      ],
+      "scope": "All selected operational core tables and complete public-library statistical subsets, including late-chapter acquisitions. Each printed table keeps its own labels, quantities, population basis and definition. Unresolved original labels are flagged and not counted as confirmed county coverage; no relocation of source values."
+    },
+    {
+      "id": "ncl_2024",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2024.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-2024/yearbook-114-public-library.metadata.json",
+        "raw/ncl-2024/yearbook-114-public-library.pdf",
+        "raw/ncl-2024/yearbook-114-statistics.metadata.json",
+        "raw/ncl-2024/yearbook-114-statistics.pdf"
+      ],
+      "dependencies": [
+        "scripts/audit_ncl_recent_helper.py",
+        "scripts/audit_ncl_recent_specs_2024.json"
+      ],
+      "outputs": [
+        "derived/ncl_2024_long.csv",
+        "derived/ncl_2024_long.jsonl",
+        "raw/ncl-2024/extraction-validation.json",
+        "raw/ncl-2024/documents.json"
+      ],
+      "derived_csv": "derived/ncl_2024_long.csv",
+      "raw_directories": [
+        "raw/ncl-2024"
+      ],
+      "scope": "All selected operational core tables and complete public-library statistical subsets, including late-chapter acquisitions. Each printed table keeps its own labels, quantities, population basis and definition. Unresolved original labels are flagged and not counted as confirmed county coverage; no relocation of source values."
     }
   ]
 }

@@ -1,0 +1,49 @@
+{
+  "total_selected_cells": 3659,
+  "original_image_anchor_cells": 108,
+  "years": [
+    {
+      "data_year": 2019,
+      "expected_cells": 1173,
+      "producer_csv_sha256": "1a81468bd4866c5f5eb53f6d8a146c9f07f9cb859cf8f3e9b96aef739a1e0b4c",
+      "review_json": "research/ncl-2019-independent-review.json",
+      "review_sha256": "f07d7698adf3f8766ff48c281cad2263e21f327a5ce7f96e32a12978ba65bf82",
+      "baseline_frozen_sha256": "f86d11ee8117559555479790e3eae7b1d36990d70131a38e1981fda652284226",
+      "numeric_mismatches": 0,
+      "semantic_failures": 0,
+      "image_anchor_cells": 33
+    },
+    {
+      "data_year": 2020,
+      "expected_cells": 1250,
+      "producer_csv_sha256": "dd434d82bf62b2ae44b69594e5f1f339f371daa0563f33f8edb18f4a283ec8ae",
+      "review_json": "research/ncl-2020-independent-review.json",
+      "review_sha256": "3182d6c4fef6a122de09090742e3d0fae9f1d787a76b30d1d24efdeef2901e3a",
+      "baseline_frozen_sha256": "63cf081f8f515b618b99aacad195a81178192ca0fa9443ab6f4e20310359504b",
+      "numeric_mismatches": 0,
+      "semantic_failures": 0,
+      "image_anchor_cells": 42
+    },
+    {
+      "data_year": 2021,
+      "expected_cells": 1236,
+      "producer_csv_sha256": "138097c9a37bd7deb49bbf46a96a8f67850988da3b125f2c4aba86e430976b81",
+      "review_json": "research/ncl-2021-independent-review.json",
+      "review_sha256": "d583b2ce55ced02786936541571986cd1b281b94b09993711f6c0bb08178ae0b",
+      "baseline_frozen_sha256": "7d45c165a678cfbc78610a983d4899baa102bd14f443fdc05682dcbc4e530208",
+      "numeric_mismatches": 0,
+      "semantic_failures": 0,
+      "image_anchor_cells": 33
+    }
+  ],
+  "source_first_baseline": true,
+  "review_schema_version": 2,
+  "report_only_category_geography_schema_correction_cells": 85,
+  "report_only_schema_correction": "歷史表題館類存source_category_raw，沒有原印地理列故entity_raw=null；全國及contextual_national_aggregate_inferred另列期待並逐格檢查。初始盲讀副本與數字/CSV SHA不變；basic原行名12格仍嚴格核對。",
+  "limit": "Complete comparison of selected statistical cells, not human double collation or full-volume text verification.",
+  "private_evidence_exclusions": [
+    "research/ncl-mid-independent/images.private/",
+    "research/ncl-mid-independent/*-original-text.private.json",
+    "research/ncl-mid-independent/*-decoded-research.private.json"
+  ]
+}

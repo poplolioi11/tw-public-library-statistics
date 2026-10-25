@@ -4,19 +4,19 @@
 
 將分散在官方圖表、開放資料及歷史統計表中的公共圖書館數據，整理成可查詢、可回到來源的觀測資料，協助公眾理解圖書館服務，也讓研究者與 AI 使用者能重現整理結果。
 
-版本 **0.3.0**；資料建置日 **2026-10-25**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.3.0下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.3.0)。
+版本 **0.4.0**；資料建置日 **2026-10-25**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.4.0下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.4.0)。
 
 本專案先查重再整理。國立公共資訊圖書館已有跨年圖表、國家圖書館已有統計名詞字典，SEGIS 及地方開放資料亦有相關歷年成果。本專案的新增值是**跨來源的統一讀取方式、逐筆來源定位、期間與口徑標記，以及可追溯的內容版本**；不宣稱是第一份跨年統計或第一個名詞字典。查閱[查重報告](research/prior-art.md)及[官方範圍與定義](research/official-scope.md)。
 
 ## 目前收錄什麼
 
-目前 **26,725 筆來源觀測紀錄**，含 **200 格明示缺值**、**876 格原印留白**及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。
+目前 **37,393 筆來源觀測紀錄**，含 **206 格明示缺值**、**876 格原印留白**、**20 格原印文字狀態**及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。
 
 | 來源族群 | 已整理的範圍 | 紀錄數 |
 |---|---|---:|
 | 國資圖公開全國圖表 | 2011–2025年公開全國圖表；只有全國 | 855 |
 | 國資圖2023開放資料（含縣市） | 2023年明確OGDL年度資源；全國、縣市與替代口徑分列，不相加 | 2,236 |
-| 國家圖書館年鑑統計事實 | 96–105卷指定核心表／公共館子群／原文數字；資料年2006–2015年，保留不同出版版本 | 7,865 |
+| 國家圖書館年鑑統計事實 | 96–114卷指定核心表／公共館子群／原文數字；資料年2006–2024年，保留不同出版版本 | 18,533 |
 | 國家圖書館閱讀報告統計事實 | 2011–2012年5張全國閱讀報告表；包括跨年比較，不是縣市表 | 154 |
 | 主計總處歷史全國統計 | 3個來源版本；資料年1991–2011年，重疊版本分開 | 220 |
 | 主計總處縣市公共館數 | 1998–2025年官方重編地域；來源含國家圖書館，缺值不補0 | 644 |
@@ -24,7 +24,7 @@
 
 逐批格數、資料年、版次與指定表／原文範圍見[已覆核歷史批次](docs/historical-batches.md)及[COVERAGE.md](COVERAGE.md)。
 
-2012年原文中每人購書／擁書／借閱比率分別列22／22／22縣市；館員服務人口只列21縣市，未列連江縣。22縣市核心原量表仍未取得，不能由比率反算。閱讀報告所列表只有全國彙總，不能冒充縣市表。 2015原刊部分縣市標籤未確認、兩列均印金門，保留183筆標籤不確定觀測，不補成連江或硬接現行界線。 2015表17標題「場次」與正文「人次」衝突，161格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。
+2012年原文中每人購書／擁書／借閱比率分別列22／22／22縣市；館員服務人口只列21縣市，未列連江縣。22縣市核心原量表仍未取得，不能由比率反算。閱讀報告所列表只有全國彙總，不能冒充縣市表。 2015原刊部分縣市標籤未確認、兩列均印金門，保留183筆標籤不確定觀測，不補成連江或硬接現行界線。 其他原刊地理標籤疑義按資料年分列：2024年36格；原印名稱與數字保留，這些格不計為已確認縣市覆蓋。 2015表17標題「場次」與正文「人次」衝突，161格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。 原表只稱「人數」而未確認去重人數／累計人次的格位保留unit=null：2016年23格；unit_raw照原欄頭保留。
 
 **完整性指「所列來源的已確認表格／資源全量」，不代表全臺各縣市全部歷年都已完成。** 整體參照年範圍為 1991–2026，各年可用指標、地域及口徑不同，不能將這個範圍當成連續一致的全國縣市面板。未取得、尚未解析或權利未確認的部分列為缺口，不能解讀成官方沒有資料。
 
@@ -36,14 +36,14 @@
 
 ## 下載與讀取
 
-[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.3.0) · [按年度讀取 JSONL](data/by_year/index.json)
+[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.4.0) · [按年度讀取 JSONL](data/by_year/index.json)
 
 公開副本移除22份原始檔的無關聯絡欄，以另有雜湊的統計投影提供；原始來源網址、原件SHA及每筆統計值均保留。詳[公開副本與來源原件的區別](docs/PUBLICATION.md)。
 
 ## 從哪裡開始
 
 - [互動閱讀頁](site/index.html)：按來源、指標及年度查看紀錄與來源。
-- [JSONL](data/combined/observations.jsonl)：每行一筆完整觀測，適合 AI 與程式處理。
+- [JSONL](data/combined/observations.jsonl.gz)：每行一筆完整觀測，適合 AI 與程式處理。
 - [CSV](data/combined/observations.csv)：同一批正式觀測，適合表格工具。
 - [SQLite](data/combined/library_statistics.sqlite)：同一批正式觀測；資料表為 `observations`。
 - [觀測結構](data/combined/observation.schema.json)、[指標清單](data/combined/indicators.json)、[資料包描述](datapackage.json)。
@@ -60,7 +60,7 @@
 - 全國總計、縣市、國立館及「含／不含國立館」列可能重疊，不能整表加總。
 - 月度流量不能直接當成全年數；年底存量、年度新增量及借閱流量也不同。
 - 國圖等歷史原表的舊臺北縣、臺中縣／市名稱保留原貌；主計縣市館數另採官方重編後地域。請檢查 `geography_vintage`，不能把兩種地域口徑視為相同或再自行合併。
-- `value=null` 須搭配 `value_status`：`source_blank` 是原刊留白，`not_available_in_source` 是明示缺值；兩者都不補零。來源回傳的 `0` 保留為原報值；須讀 `zero_interpretation`，不能逕認為真實零或已完整調查。
+- `value=null` 須搭配 `value_status`：`source_blank` 是原刊留白，`not_available_in_source` 是明示缺值，`source_marker` 保留原印「無」「未新增」等文字狀態；都不推定為零或不適用。來源回傳的 `0` 保留為原報值；須讀 `zero_interpretation`，不能逕認為真實零或已完整調查。
 - 人次不是不重複人數；館藏地可能是閱覽室或微型館，不能直接換算成實體館數。比率不跨地區相加。
 
 忠實轉錄與檢查通過，不等於原始填報必然正確。地方來源已發現 28 個合計算術不一致，國圖年鑑亦有原表內部差異；原值均保留，請讀 `quality_flags`、`notes` 與[品質查核](derived/local_historical_quality.json)。
@@ -81,3 +81,6 @@
 分析既有資料不需要下載來源或安裝套件。更新環境需 Python 3.12 及 `requirements.txt` 所列套件，執行 `python scripts/run_update.py`。本機已完成一次端到端驗收與不變資料的再次執行。
 
 公開包刻意不含原PDF或完整網頁；若要從PDF重做擷取與完整來源驗收，先執行 `python scripts/restore_originals.py`，它只依明列官方URL取得並核對指定SHA，原版變更時會停止覆核，然後執行 `python scripts/run_update.py --offline`。重建程式保留原值與明示缺值，不會用推算值補齊。圖表與政策頁若已改版，需先重新覆核來源選單與新公告，才接受新版本。
+
+
+v0.4的無損壓縮、實體欄號、候選期間與館類／地理context說明見[格式與驗收](docs/FORMAT-VERSION-0.4.md)。

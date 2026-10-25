@@ -1,0 +1,95 @@
+{
+  "edition_roc": 107,
+  "entry_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566871687476012",
+  "sha256": "ea3f6f7e737b8656407dd66bd12eb7bdf1b496c94a0e6bad6c757397f3ea0a61",
+  "source_retrieved_at": "2026-10-25T10:58:25.410699+00:00",
+  "dates_raw": [
+    "出版日期2019-06-01"
+  ],
+  "pdf_links": [
+    {
+      "label": "書名頁及版權頁",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566877959961536/80094bd3-24e9-4e8a-ba31-09600ab951c0.pdf"
+    },
+    {
+      "label": "序",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566887494840553/69058509-8ab1-4f0d-ac27-6e517aa59beb.pdf"
+    },
+    {
+      "label": "編輯說明",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566888038719580/cd4deb2a-4d47-419c-8fdb-c555c25ef290.pdf"
+    },
+    {
+      "label": "目次",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566888672697508/9e120b36-bec2-45eb-8069-51d52aa6b6ce.pdf"
+    },
+    {
+      "label": "圖書館改制行政法人的契機─高雄市立圖書館的改制實務",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566888216566525/a3213f5a-e6f9-4f0a-848a-c41da55672b7.pdf"
+    },
+    {
+      "label": "臺灣學術電子書暨資料庫聯盟十年發展概況",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566889851445553/b0b9d846-8b23-43d2-a4d9-50e4e00700ce.pdf"
+    },
+    {
+      "label": "臺灣公共圖書館國際移地學習之首航：106年新加坡學習參訪團",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566889495314570/503e7c63-15d5-4fa2-b51f-add97d5c4e1a.pdf"
+    },
+    {
+      "label": "教育部區域教學資源中心計畫與大專校院圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566880039293507/a79a0ce6-b902-4de3-8ba3-bc019efd9002.pdf"
+    },
+    {
+      "label": "國家圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566880563162525/c940da4c-9710-46df-88fb-fc4cbf5efc12.pdf"
+    },
+    {
+      "label": "公共圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566881108031552/b1eb5a88-d0b5-4538-b5f4-f4982933e07c.pdf"
+    },
+    {
+      "label": "大專校院圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566891742910579/ded02b29-98cb-4a5c-ab52-9c12c3735c72.pdf"
+    },
+    {
+      "label": "中小學圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566892386889507/c525b0a0-c2fd-408f-a661-6b298bcaf7e9.pdf"
+    },
+    {
+      "label": "專門圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566892921768524/27684361-337a-4dea-9fce-44ec51ca444c.pdf"
+    },
+    {
+      "label": "圖書館資訊科技與應用",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566892565637552/4b73d63a-89e8-4ca5-bb2e-896292ba6f5e.pdf"
+    },
+    {
+      "label": "圖書資訊學教育",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566903109516579/69108a97-be04-477e-8502-418de67b7073.pdf"
+    },
+    {
+      "label": "圖書資訊學研究",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566903743485506/499c26f0-a1a2-4631-8f1e-b8224037bc5f.pdf"
+    },
+    {
+      "label": "國際交流與合作",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566914288364524/31bc7735-1454-4ef7-b39a-ed3484a1cb5a.pdf"
+    },
+    {
+      "label": "圖書館團體",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566914822233551/febb2c22-452e-47c1-8ccd-798a45c33424.pdf"
+    },
+    {
+      "label": "圖書館統計",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566915466112578/2447ec0d-7917-4e8f-bd75-a05a58b3f3ad.pdf"
+    },
+    {
+      "label": "圖書館事業大事記",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566915000081506/df19b12e-6215-40d2-a553-1a5a486ca3e5.pdf"
+    },
+    {
+      "label": "索引",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566916645960523/0698db8c-b658-42ca-b7b7-e68e8c01c317.pdf"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "previous_version": "0.3.0",
+  "previous_commit": "5c7f0e8ea65e14a8c6e9a1b4583f800fd356b3bd",
+  "current_version": "0.4.0",
+  "previous_canonical_sha256": "ac96d92479c118a050544894284a22c2121fd2c2d1f0a7e4d71a9dc30fec9c76",
+  "previous_records": 26725,
+  "current_records": 37393,
+  "added_records": 10668,
+  "old_fields_compared": 2458700,
+  "old_observation_ids_retained": true,
+  "old_fields_unchanged": true,
+  "publication_only_fields_excluded": [
+    "public_evidence_path",
+    "public_evidence_sha256",
+    "public_projection_policy",
+    "snapshot_distribution"
+  ],
+  "new_optional_columns_may_be_present": true,
+  "mismatches": []
+}

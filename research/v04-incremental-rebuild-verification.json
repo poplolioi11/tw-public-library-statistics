@@ -1,0 +1,341 @@
+{
+  "cohorts": 16,
+  "first_extractor_calls": [
+    "extract_ncl_2016.py",
+    "extract_ncl_2017.py",
+    "extract_ncl_2018.py",
+    "extract_ncl_2019.py",
+    "extract_ncl_2020.py",
+    "extract_ncl_2021.py",
+    "extract_ncl_2022.py",
+    "extract_ncl_2023.py",
+    "extract_ncl_2024.py"
+  ],
+  "second_extractor_calls": 0,
+  "registered_outputs_and_state_files": 80,
+  "second_run_preserved_all_bytes_and_mtimes": true,
+  "dependencies_in_signature": true,
+  "network_used": false,
+  "input_and_output_checksums": {
+    "derived/ncl_gap_tables_long.csv": {
+      "sha256": "c2d81d360166b037d63e5bd6fb30b07eb333fd41950d94b1d17c950c2d1bea53",
+      "mtime_ns": 1792922069456634317
+    },
+    "derived/ncl_gap_tables_long.jsonl": {
+      "sha256": "bf26b2f4f650e5ef0d1cabfce6dc2b8356ab0a36f6612748c2499ada8eed78db",
+      "mtime_ns": 1792922069466525102
+    },
+    "raw/ncl-historical/gap-tables-metadata.json": {
+      "sha256": "1d38f15dc8e8131da686fcab020798df4e313191bde9e958ae417a123afa7435",
+      "mtime_ns": 1792922069468306552
+    },
+    "derived/ncl_earlier_years_long.csv": {
+      "sha256": "37c7f1e86f07d01a9eb0c338ee656d80204dbe6cf857eb6ff71d437d5721581b",
+      "mtime_ns": 1792922069745940486
+    },
+    "derived/ncl_earlier_years_long.jsonl": {
+      "sha256": "f5a3a9f03b2d2df76ebb2f3a05306f0ad06b49a59655b1cdcb182f2cfadb8f02",
+      "mtime_ns": 1792922069761647326
+    },
+    "raw/ncl-earlier/metadata.json": {
+      "sha256": "10ebd6868f74057b9d2dc513e7feb4f6902b6685646d5cf296f1dfe1f56ba829",
+      "mtime_ns": 1792922069765979471
+    },
+    "derived/ncl_additional_years_long.csv": {
+      "sha256": "914e67d5b6e358e60e5e14eeaa211d59b567a04ca85916ea0e2c06a40f94a297",
+      "mtime_ns": 1792922071389291826
+    },
+    "derived/ncl_additional_years_long.jsonl": {
+      "sha256": "123c77b04db7cc2996bfa72898365d7a37ed23c558055521d21e465caba3e9e7",
+      "mtime_ns": 1792922071408193192
+    },
+    "raw/ncl-additional/extracted-operational-cells.json": {
+      "sha256": "1c110c545fa455bd6680a7e167b8f54274e377536c49be9e0f07a98c09d60baf",
+      "mtime_ns": 1792922071421038962
+    },
+    "raw/ncl-additional/documents.json": {
+      "sha256": "89ec7a4a4b0d6530acff45846cc5bad1614e784c66e96de781052606379f1124",
+      "mtime_ns": 1792922071421547501
+    },
+    "raw/ncl-additional/extraction-validation.json": {
+      "sha256": "050cda09298a7e44c53b0b3c423242ab7543a15f6f2b67930374f56d45e193cf",
+      "mtime_ns": 1792922071411776507
+    },
+    "derived/ncl_2012_prose_long.csv": {
+      "sha256": "599ba95f5dd84137f8e58566a728b36828dde43cbe88e1679d8d3279ad2e5dc3",
+      "mtime_ns": 1792924941316275387
+    },
+    "derived/ncl_2012_prose_long.jsonl": {
+      "sha256": "efca6f0f552925cd6ebc276a0f2e6af474db9a7f548322012967985226a3d006",
+      "mtime_ns": 1792924941322041272
+    },
+    "raw/ncl-2012/ncl-2012-prose.metadata.json": {
+      "sha256": "bef3fdacccc78360cb4b7b24eaa5a9533adbc42fcc46f7a701365cbea7d4c5cb",
+      "mtime_ns": 1792924941323853624
+    },
+    "raw/ncl-2012/prose-baseline-text.private.json": {
+      "sha256": "25c045a1b0fd3923658bf15808e30e50691278fb4abe482b7311ab824abb7efe",
+      "mtime_ns": 1792924941325344855
+    },
+    "derived/ncl_reading_2012_long.csv": {
+      "sha256": "f9f5f6eb7ec83ff439ad05db9731b0a8197300b9607fcc512a7185b261ed2aec",
+      "mtime_ns": 1792924941792789542
+    },
+    "derived/ncl_reading_2012_long.jsonl": {
+      "sha256": "36439d2cdec27dd978ebbda0fda98b92df74117b6e394fb074ae97500e5ae867",
+      "mtime_ns": 1792924941795614089
+    },
+    "raw/ncl-2012/reading-extraction-metadata.json": {
+      "sha256": "12c69e7cceac68242ff1aa566921c8dbdaa88ccb2629177d485c3f2df0eb049b",
+      "mtime_ns": 1792924941796112208
+    },
+    "derived/ncl_2014_long.csv": {
+      "sha256": "225d905a0a0808610f5665fc65c1eab4983d371074294e690fff9724752343db",
+      "mtime_ns": 1792923392688020684
+    },
+    "derived/ncl_2014_long.jsonl": {
+      "sha256": "fa2f70f3c5af8bcf854ba9c6a3e23e95b08d0bb245f23d8da5bc436798697493",
+      "mtime_ns": 1792923392722548701
+    },
+    "raw/ncl-2014/documents.json": {
+      "sha256": "8002f33ebee3d0b0518162be982a05a246c305f7ac508f75601c32c6bc4fb8b6",
+      "mtime_ns": 1792923302870050901
+    },
+    "raw/ncl-2014/metadata.json": {
+      "sha256": "776c4e9464a6bae35df03fa7970a8ac7ab2c1693d9effff5467c7aa07d1a6d64",
+      "mtime_ns": 1792923551128867231
+    },
+    "raw/ncl-2014/extraction-validation.json": {
+      "sha256": "6b4def884fcdd7c750ba9f06c6649d3a571fce2f74ce529afd589f370c88f6ae",
+      "mtime_ns": 1792923537676053104
+    },
+    "derived/ncl_2015_long.csv": {
+      "sha256": "76c7efa3bb1c24962f33ed9390fc9a74cc9bb59b9ef6c81956e7ce4ab55c21fd",
+      "mtime_ns": 1792924423296434606
+    },
+    "derived/ncl_2015_long.jsonl": {
+      "sha256": "eedbda04a95a5c36b0b165535b9fd7604c9fae0f628a21aa0d6c1a0af2ced8d0",
+      "mtime_ns": 1792924423319900142
+    },
+    "raw/ncl-2015/documents.json": {
+      "sha256": "a0f95406b808470f44491721599d5f0004c7eb76afb93eafb9822e472319e688",
+      "mtime_ns": 1792924106232084318
+    },
+    "raw/ncl-2015/extraction-validation.json": {
+      "sha256": "3e54ed6fe16f85a4452ece43192638497a74ce9a1c58c8a138a89d6ceaf57db5",
+      "mtime_ns": 1792924423326198353
+    },
+    "derived/ncl_2016_long.csv": {
+      "sha256": "9324654428e74e4caf3c569da07141a054bd14ca4b52d685041efa1c7b04b05a",
+      "mtime_ns": 1792929211902171490
+    },
+    "derived/ncl_2016_long.jsonl": {
+      "sha256": "f6ae22776b34d3ef67552ed9ee2f1335b1acc8c03bacb303cfd9b5d0d8f3f51a",
+      "mtime_ns": 1792929211903395413
+    },
+    "raw/ncl-2016/extraction-metadata.json": {
+      "sha256": "1b7c00cc3119fc8254750085034f05cde8166535bb1e449557befc0d43c32609",
+      "mtime_ns": 1792929211907474686
+    },
+    "derived/ncl_2017_long.csv": {
+      "sha256": "6fb7a22c228c6a50dd0745a372f04d00568122cfb9f3d70d488e3603bac44f6f",
+      "mtime_ns": 1792929214377392653
+    },
+    "derived/ncl_2017_long.jsonl": {
+      "sha256": "f8f5b13d82e275623b49ed55892e6bfd94983050f7bd9b761fb6da40591d1036",
+      "mtime_ns": 1792929214379572457
+    },
+    "raw/ncl-2017/extraction-metadata.json": {
+      "sha256": "6aa6b9ec187998968ae287dc07bc0c7adfa6490676187c183220dd8fb1efac2f",
+      "mtime_ns": 1792929214381350633
+    },
+    "derived/ncl_2018_long.csv": {
+      "sha256": "753346ad65bfb3382229508ece087b552b73891ea71175d1cb5a4211d9624424",
+      "mtime_ns": 1792929216891170403
+    },
+    "derived/ncl_2018_long.jsonl": {
+      "sha256": "9689ced9715f3021140ee76d72af443f088481c7db419303eae1d707f20cd6c4",
+      "mtime_ns": 1792929216892395993
+    },
+    "raw/ncl-2018/extraction-metadata.json": {
+      "sha256": "c47eec3457f7deef005ca3e251f2f062ff653be4dc31c78bd6a4f465c0c9af5e",
+      "mtime_ns": 1792929216897571355
+    },
+    "derived/ncl_2019_long.csv": {
+      "sha256": "1a81468bd4866c5f5eb53f6d8a146c9f07f9cb859cf8f3e9b96aef739a1e0b4c",
+      "mtime_ns": 1792929344078128909
+    },
+    "derived/ncl_2019_long.jsonl": {
+      "sha256": "ec95bdef83956ba775fa5db95827236036d3b4c7ea1876356f17b4bf18d9a8bb",
+      "mtime_ns": 1792929344082011555
+    },
+    "raw/ncl-2019/extraction-validation.json": {
+      "sha256": "a22cde5957a540884cc469a672caa633b969e1e5ff99801102e5747c08ffc8a3",
+      "mtime_ns": 1792929344084704486
+    },
+    "raw/ncl-2019/token-checks.private.json": {
+      "sha256": "7570b8f90b216f144947dc062d4d04e12fa248b20ff0fc75dc80ef68f852fd0a",
+      "mtime_ns": 1792926980158750687
+    },
+    "raw/ncl-2019/documents.json": {
+      "sha256": "93460bfb25849a8c42d299ce499347f00af741b4d1159888af09d094219f2024",
+      "mtime_ns": 1792926770259382462
+    },
+    "derived/ncl_2020_long.csv": {
+      "sha256": "dd434d82bf62b2ae44b69594e5f1f339f371daa0563f33f8edb18f4a283ec8ae",
+      "mtime_ns": 1792929346123400429
+    },
+    "derived/ncl_2020_long.jsonl": {
+      "sha256": "47c0adeabade002e32565bb9aac54eb75879a677ef50d1a7bb1158e5c53364b5",
+      "mtime_ns": 1792929346128495124
+    },
+    "raw/ncl-2020/extraction-validation.json": {
+      "sha256": "2ed160a0ea3890b780cbcfbc5c56b0cb8723a8f66716ac2aa89149adb688643c",
+      "mtime_ns": 1792929346131224347
+    },
+    "raw/ncl-2020/token-checks.private.json": {
+      "sha256": "b9ab02892f4388cb95d74bdd931ffabc1ec1548a1d2243832708e0bef0f74fb6",
+      "mtime_ns": 1792926950037705706
+    },
+    "raw/ncl-2020/documents.json": {
+      "sha256": "3367cf868dd315127c473c261ecc333802c5764df0a542d77e8d86c4e19ad7e7",
+      "mtime_ns": 1792926814001636584
+    },
+    "derived/ncl_2021_long.csv": {
+      "sha256": "138097c9a37bd7deb49bbf46a96a8f67850988da3b125f2c4aba86e430976b81",
+      "mtime_ns": 1792929347760762761
+    },
+    "derived/ncl_2021_long.jsonl": {
+      "sha256": "8514cc7403f09ee7dee50313b9dd51e28b9ae702fa2de0a4d36fed2e191ed4d9",
+      "mtime_ns": 1792929347764361364
+    },
+    "raw/ncl-2021/extraction-validation.json": {
+      "sha256": "63e33b8ee4cbf706f9d4958f156319184f54a9bfae758920e1287410498289ed",
+      "mtime_ns": 1792929347765983873
+    },
+    "raw/ncl-2021/token-checks.private.json": {
+      "sha256": "903aeb6c6a6fe577a69e23145845371c94d9dce3a09a9efaaecf447c8310a2d0",
+      "mtime_ns": 1792926938854110978
+    },
+    "raw/ncl-2021/documents.json": {
+      "sha256": "a9ac2e1fd8da4b691ece74e9198ed0151fe2379fb32074e4320740600006c7ae",
+      "mtime_ns": 1792926836628631277
+    },
+    "derived/ncl_2022_long.csv": {
+      "sha256": "781ecc619c27b0ec405e1a58e7c1ae5f696246b3721d0e2df650aa8dc8c5ce1d",
+      "mtime_ns": 1792929276192007093
+    },
+    "derived/ncl_2022_long.jsonl": {
+      "sha256": "621a489cec5db072c4ee14d8fa8a2609f969695e006dc76f5d24da9c9d582ffd",
+      "mtime_ns": 1792929276196990870
+    },
+    "raw/ncl-2022/extraction-validation.json": {
+      "sha256": "ec4fdeca61d4d5ca446c44ba819475441d468a14564972269b2cc55a76db6e68",
+      "mtime_ns": 1792928491404099430
+    },
+    "raw/ncl-2022/documents.json": {
+      "sha256": "988074c1d694f88309d398c7738da993cb05405cdcf0821b871eb6ceeca2073f",
+      "mtime_ns": 1792927221254056177
+    },
+    "derived/ncl_2023_long.csv": {
+      "sha256": "441a53658638540773913f0b154b54f72761f8119aab5804540fd96aef559780",
+      "mtime_ns": 1792929276955566894
+    },
+    "derived/ncl_2023_long.jsonl": {
+      "sha256": "e9df58883c5a73381e0671aaebe19e73fc58c4842abd8214652f3fc50f099fca",
+      "mtime_ns": 1792929276959547124
+    },
+    "raw/ncl-2023/extraction-validation.json": {
+      "sha256": "1fe1101f87b50e7433341cfedae5ba6cd99c516fb2f57441a5c3dcdd0afcdc37",
+      "mtime_ns": 1792928492203784926
+    },
+    "raw/ncl-2023/documents.json": {
+      "sha256": "35641490d4e748e47553f6822967e2306e35b05bfb310f0bb46a29ca0613d0a0",
+      "mtime_ns": 1792927221410286397
+    },
+    "derived/ncl_2024_long.csv": {
+      "sha256": "9a0a1e3c2b8d8f95eefc112482d9d6016776d4a83d3d7f26ba8cca7c193979d4",
+      "mtime_ns": 1792929277665670862
+    },
+    "derived/ncl_2024_long.jsonl": {
+      "sha256": "cc033d3bb6d706ab864f5f8a174f618ff5a434e2dde7f3981512712fac167f1d",
+      "mtime_ns": 1792929277670908266
+    },
+    "raw/ncl-2024/extraction-validation.json": {
+      "sha256": "fa5045ad4ae83350c0cf0a6ba98046b44c43d198b16f4e2ad5938f82488d1075",
+      "mtime_ns": 1792928739418336859
+    },
+    "raw/ncl-2024/documents.json": {
+      "sha256": "b6cbb0a4e9a3972f8cca6a644a638c2e8fd35e72aa97ddb64b4841dbb2cc0e46",
+      "mtime_ns": 1792927221313982533
+    },
+    "data/ncl_2020_extraction_state.json": {
+      "sha256": "af9acb4aa86a4888d244308434b6d31f8b061e8186bacb54000b4533d1a634fa",
+      "mtime_ns": 1792929456349963889
+    },
+    "data/ncl_2018_extraction_state.json": {
+      "sha256": "7b3f2bfd47a5edeae764f1f2c5a48c28003c60f2e847cd652fa9b4790cc950e2",
+      "mtime_ns": 1792929453109400518
+    },
+    "data/ncl_2022_extraction_state.json": {
+      "sha256": "e740566465c9584a16e5cc4d77d9c9b29c109a14d2ade959156f7911ce5f9ed1",
+      "mtime_ns": 1792929459063068186
+    },
+    "data/ncl_reading_2012_extraction_state.json": {
+      "sha256": "dc7c3e84c9f045b63c2d3ccb404ceaf900b894b5023be33e8ba7afa30e737263",
+      "mtime_ns": 1792924941816995567
+    },
+    "data/ncl_2016_extraction_state.json": {
+      "sha256": "d452369316c59003e28c08bc2986193d6ccf6a1805b66320106ea212e661f3ad",
+      "mtime_ns": 1792929451639266099
+    },
+    "data/ncl_additional_extraction_state.json": {
+      "sha256": "09411921025eff9239ae654f9665a61738317841b29032cb650778ad643aff7a",
+      "mtime_ns": 1792922071474128036
+    },
+    "data/ncl_2024_extraction_state.json": {
+      "sha256": "9959c580c37b80dfcb4f156ab0de8afab880c7cf6de25fd8085caef9ff92b2fe",
+      "mtime_ns": 1792929460536083567
+    },
+    "data/ncl_2014_extraction_state.json": {
+      "sha256": "87971ece8940cba8d0aa6f26692d884b8604863f5e9c9e5812b5b50aab1f180a",
+      "mtime_ns": 1792924944680972551
+    },
+    "data/ncl_2012_prose_extraction_state.json": {
+      "sha256": "89edce8f49f6a8f52f9f0e0e492e8a5c9c4e1466ca37458737fc5071daaa2b4a",
+      "mtime_ns": 1792924941366082004
+    },
+    "data/ncl_2021_extraction_state.json": {
+      "sha256": "c54f02e92e3824c3785226462cd41c3f7a49c7f272ef51401f615aa1d0225044",
+      "mtime_ns": 1792929458382897262
+    },
+    "data/ncl_gap_extraction_state.json": {
+      "sha256": "7a3cca3c7be07280ffe5685b07e5278147e924eb75c13fe378ca1de3900c8815",
+      "mtime_ns": 1792922069502401010
+    },
+    "data/ncl_earlier_extraction_state.json": {
+      "sha256": "7cfe5ef6559c4a402c79cc4ddfc4095d7509d3bbc7c205074cce26643eebf629",
+      "mtime_ns": 1792922069782438016
+    },
+    "data/ncl_2019_extraction_state.json": {
+      "sha256": "7228e80872fee7907f397f4b0f8b938a2c62ddcdb07cb2396d3cb4564673e5d4",
+      "mtime_ns": 1792929454652742659
+    },
+    "data/ncl_2023_extraction_state.json": {
+      "sha256": "86e4778c1bd16de2b70f013278adec20ece7531919ac4bc57fbb568b315064d4",
+      "mtime_ns": 1792929459842927954
+    },
+    "data/ncl_2017_extraction_state.json": {
+      "sha256": "313049d59f91903ad9c3e82865984f604a687919b1c48108bae3ab65668fedba",
+      "mtime_ns": 1792929452323271794
+    },
+    "data/ncl_2015_extraction_state.json": {
+      "sha256": "d90d5da0d0f8af90a9344b11e8416575f798ee6084d7e39ec3170f187e1794a2",
+      "mtime_ns": 1792924947869213081
+    },
+    "data/historical_extraction_state.json": {
+      "sha256": "c7da10d65935dc722a1bdc0e8570a3baf47ecbafe2ad6e93cc7cc46489c4c621",
+      "mtime_ns": 1792914441809674412
+    }
+  }
+}

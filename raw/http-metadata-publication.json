@@ -1,0 +1,32 @@
+{
+  "policy": "Transient HTTP cookie/authentication headers omitted; original official source-body SHA and statistical observations unchanged. Private metadata and published metadata have distinct file hashes.",
+  "files": [
+    {
+      "path": "raw/ncl-2019/catalog.metadata.json",
+      "private_metadata_sha256": "410df3bcd5a9433666f4c1c58b8a002f3656d46cf9b2f18ac042212f247cf7ad",
+      "public_metadata_sha256": "53c40e42baac2891400e6abfac97145f8cc956a05164544bf8ef224fda330c6b",
+      "omitted_http_header_names": [
+        "Set-Cookie"
+      ],
+      "source_body_sha256_unchanged": "ec4aa789c9cc79156e1c35d7595eb230c916bdfa9da749269c44cbc4309136f7"
+    },
+    {
+      "path": "raw/ncl-2020/catalog.metadata.json",
+      "private_metadata_sha256": "30a6f8a5c1a97e20ab97a8be2f2d3233bddb6e03eaff74e68b0784d659ba340a",
+      "public_metadata_sha256": "2803adbdaa400f991043a6a8a7ae9235298ce16161068709f5a53b42f2537669",
+      "omitted_http_header_names": [
+        "Set-Cookie"
+      ],
+      "source_body_sha256_unchanged": "d36dfcf27596c4de10d70a9b30db1444e85222de5c1f9719166447269ca83b2d"
+    },
+    {
+      "path": "raw/ncl-2021/catalog.metadata.json",
+      "private_metadata_sha256": "b19cddc9023f801552c04dee3f42c2099a4fcbea61b71bf01fc1c2c3f8886cc3",
+      "public_metadata_sha256": "29d229e064431d32de549102b7891e599b894fc22eaf911bff2b1880549e8ff6",
+      "omitted_http_header_names": [
+        "Set-Cookie"
+      ],
+      "source_body_sha256_unchanged": "21c16875d9c87f3253e633862983f736bca6d1b2dcfb712fd233a8475d73e764"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 import csv,hashlib,json
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
-from cohort_registry import csv_names
+from cohort_registry import csv_names,load as load_cohorts
 def main():
  sources={};versions={}
  for filename in csv_names(R,('ncl_gap_tables_long.csv','ncl_earlier_years_long.csv','ncl_additional_years_long.csv')):
@@ -20,6 +20,24 @@ def main():
   entry['source_ids'].sort()
  body=json.dumps(sorted(sources.values(),key=lambda x:x['local_path']),ensure_ascii=False,indent=2)+'\n'
  target=R/'raw/ncl-extension-documents.json'
+ if not target.exists() or target.read_text()!=body:target.write_text(body)
+ # Bibliographic and catalogue snapshots are separate from statistical sources.
+ # They are needed to reproduce date/edition verification but are never bundled in full.
+ supporting=[]
+ for group in load_cohorts(R) or []:
+  for name in group['inputs']:
+   p=R/name
+   if p.suffix not in {'.pdf','.html'} or any(path==name for path,_ in sources):continue
+   sidecar=p.with_suffix('.metadata.json')
+   if not sidecar.exists():raise FileNotFoundError('Missing supporting-source metadata: '+name)
+   meta=json.loads(sidecar.read_text());expected=meta.get('sha256')
+   if hashlib.sha256(p.read_bytes()).hexdigest()!=expected:raise ValueError('Supporting source hash differs: '+name)
+   url=meta.get('source_download_url') or meta.get('url') or meta.get('catalog_url')
+   if not url:raise ValueError('Missing exact supporting-source URL: '+name)
+   entry={'local_path':name,'sha256':expected,'download_url':url,'content_kind':p.suffix[1:],'review_scope':'Bibliographic date/edition/catalogue evidence required by the reviewed extractor; not an added statistical series.'}
+   if entry not in supporting:supporting.append(entry)
+ body=json.dumps(sorted(supporting,key=lambda x:x['local_path']),ensure_ascii=False,indent=2)+'\n'
+ target=R/'raw/ncl-supporting-documents.json'
  if not target.exists() or target.read_text()!=body:target.write_text(body)
  history=R/'data/historical_source_history.jsonl'
  events=[json.loads(x) for x in history.read_text().splitlines()] if history.exists() else []

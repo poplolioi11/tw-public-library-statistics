@@ -1,0 +1,10 @@
+{
+  "completed_at": "2026-10-25T12:04:18.033872+00:00",
+  "before_sha256": "635472fd962f11c916a32b3373455049387f8210225fd18d81633fb34eb6ce3a",
+  "after_sha256": "635472fd962f11c916a32b3373455049387f8210225fd18d81633fb34eb6ce3a",
+  "data_changed": false,
+  "external_publication": false,
+  "stale_local_sources": [],
+  "mode": "offline_end_to_end",
+  "source_verification_assertions": 1244134
+}

@@ -64,6 +64,222 @@
     ]
   },
   {
+    "local_path": "raw/ncl-2016/yearbook-106-public-library.pdf",
+    "sha256": "31b1bc30322484124d69a6487f49a92ffd0d1b40c151ff18264bbacc6e53ae65",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566865883952941/9ea8e26e-7fa7-45f2-bdb5-116305517cff.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566866897276439",
+    "source_title": "中華民國106年圖書館年鑑／公共圖書館",
+    "publication_date": "2018-06-01",
+    "source_edition_roc": "106",
+    "source_ids": [
+      "ncl-yearbook-106-public-library"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2016/yearbook-106-statistics.pdf",
+    "sha256": "823e310401a6c26f206a42d12b73ab82cf92450903714dd53dfea444546db7e7",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566870220880013/7cf4e177-ba35-4005-80d6-eac2a6c235b0.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566866897276439",
+    "source_title": "中華民國106年圖書館年鑑／圖書館統計",
+    "publication_date": "2018-06-01",
+    "source_edition_roc": "106",
+    "source_ids": [
+      "ncl-yearbook-106-statistics"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2017/yearbook-107-public-library.pdf",
+    "sha256": "3b6ee5638c3e78247b8d09393be8ad62e96015a435c848e910c7f2c3b5badb3e",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566881108031552/b1eb5a88-d0b5-4538-b5f4-f4982933e07c.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566871687476012",
+    "source_title": "中華民國107年圖書館年鑑／公共圖書館",
+    "publication_date": "2019-06-01",
+    "source_edition_roc": "107",
+    "source_ids": [
+      "ncl-yearbook-107-public-library"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2017/yearbook-107-statistics.pdf",
+    "sha256": "2dcdd3f4a1e5ac2014ff79d13dd83e5274fc1d99885650f99450303c350c4f3b",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566915466112578/2447ec0d-7917-4e8f-bd75-a05a58b3f3ad.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566871687476012",
+    "source_title": "中華民國107年圖書館年鑑／圖書館統計",
+    "publication_date": "2019-06-01",
+    "source_edition_roc": "107",
+    "source_ids": [
+      "ncl-yearbook-107-statistics"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2018/yearbook-108-public-library.pdf",
+    "sha256": "f9e0514785c11e9780ff75cff67269f1f2d6baecfac6328cdfbb0c0154e56379",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566925810494181/a6bce679-286c-4e1c-ba12-605a83573b82.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566927823718578",
+    "source_title": "中華民國108年圖書館年鑑／公共圖書館",
+    "publication_date": "2020-09-01",
+    "source_edition_roc": "108",
+    "source_ids": [
+      "ncl-yearbook-108-public-library"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2018/yearbook-108-statistics.pdf",
+    "sha256": "2e3e7f3b8e9dd947773f97dd14b2a2feb5f4b289794cff0e4376e5e49f3bf7c2",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566939078575107/20227fca-ed74-4c84-879f-1782574aef1c.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566927823718578",
+    "source_title": "中華民國108年圖書館年鑑／圖書館統計",
+    "publication_date": "2020-09-01",
+    "source_edition_roc": "108",
+    "source_ids": [
+      "ncl-yearbook-108-statistics"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2019/yearbook-109-public-library.pdf",
+    "sha256": "843d4bcbbd7ff4f646332eb833800fbac12c7e6f5d333eb3700657267d5a903a",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566940887988692/a98bc225-8586-48ed-93f9-a09afb925ea5.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566931435160107",
+    "source_title": "中華民國109年圖書館年鑑／公共圖書館",
+    "publication_date": "2021-12-01",
+    "source_edition_roc": "109",
+    "source_ids": [
+      "ncl-yearbook-109-public-library"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2019/yearbook-109-statistics.pdf",
+    "sha256": "604081327bb97f8d4ce811917312ad5e6842749c2fe3b6529bf8c4a8464afc5d",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566954135058718/92098800-f891-465e-aafd-33c45a7d56bc.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566931435160107",
+    "source_title": "中華民國109年圖書館年鑑／圖書館統計",
+    "publication_date": "2021-12-01",
+    "source_edition_roc": "109",
+    "source_ids": [
+      "ncl-yearbook-109-statistics"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2020/yearbook-110-public-library.pdf",
+    "sha256": "4d95c7af8993461b0395b331e2d60a221e1eaeac80bf7def28a86ee6fb2009cf",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566954845461293/94e39cac-191c-4202-ba9f-9724ef68ed6b.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566955493654718",
+    "source_title": "中華民國110年圖書館年鑑／公共圖書館",
+    "publication_date": "2022-12-01",
+    "source_edition_roc": "110",
+    "source_ids": [
+      "ncl-yearbook-110-public-library"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2020/yearbook-110-statistics.pdf",
+    "sha256": "5d6ca64e8a9cd1c05fc5b2ed97c48ad8f54dcaea3072062c3f85bfd35227ceb9",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566968103532229/f5ea4a52-d924-47bb-9f62-8a6dc9d688f7.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566955493654718",
+    "source_title": "中華民國110年圖書館年鑑／圖書館統計",
+    "publication_date": "2022-12-01",
+    "source_edition_roc": "110",
+    "source_ids": [
+      "ncl-yearbook-110-statistics"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2021/yearbook-111-public-library.pdf",
+    "sha256": "838912481fc982e958e9487c0ac0c3211cfb2e77eb7ea7aeda357bdf4bd36454",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566968812945804/579a8905-5c4c-467b-8e88-2821ddf7e60e.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566960460238329",
+    "source_title": "中華民國111年圖書館年鑑／公共圖書館",
+    "publication_date": "2023-09-01",
+    "source_edition_roc": "111",
+    "source_ids": [
+      "ncl-yearbook-111-public-library"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2021/yearbook-111-statistics.pdf",
+    "sha256": "52972fc3abd675dc808b8e70a8f8132611cd5d7087adfa5b3e7b6d3ec24ff882",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566972170116821/897aa07f-e657-4894-bf6b-31d3f964abc5.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566960460238329",
+    "source_title": "中華民國111年圖書館年鑑／圖書館統計",
+    "publication_date": "2023-09-01",
+    "source_edition_roc": "111",
+    "source_ids": [
+      "ncl-yearbook-111-statistics"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2022/yearbook-112-public-library.pdf",
+    "sha256": "6c016fd7f589e3205e434cfc74694cc25c7cd351c42175e34670af1ae0e50b02",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566973514308433/11f9d92d-836f-4434-999d-55ee743e5471.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566974538712820",
+    "source_title": "中華民國112年圖書館年鑑／公共圖書館",
+    "publication_date": "2024-09-01",
+    "source_edition_roc": "112",
+    "source_ids": [
+      "ncl-yearbook-112-public-library"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2022/yearbook-112-statistics.pdf",
+    "sha256": "cc2f1ab9add0adb8988ca1534de10345d3d3917dfa1ff857d8a40113277ef208",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566987772578469/b6baf91c-dd64-4347-84b1-4be966c1f204.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566974538712820",
+    "source_title": "中華民國112年圖書館年鑑／圖書館統計",
+    "publication_date": "2024-09-01",
+    "source_edition_roc": "112",
+    "source_ids": [
+      "ncl-yearbook-112-statistics"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2023/yearbook-113-public-library.pdf",
+    "sha256": "377df52ac06679576c4ea1e8626ad364f737201329a1856f8025849586c082d1",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566998760739999/11dd2082-435c-46ea-a6b2-c32e969c6fd0.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566989318922413",
+    "source_title": "中華民國113年圖書館年鑑／公共圖書館",
+    "publication_date": "2025-09-01",
+    "source_edition_roc": "113",
+    "source_ids": [
+      "ncl-yearbook-113-public-library"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2023/yearbook-113-statistics.pdf",
+    "sha256": "6387d7a4037d21d762b0375ae9835108de5ee0e3df235c7aeabc28d249ece327",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083567002928800015/73321175-f181-4be6-bf05-a0f0000435e1.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566989318922413",
+    "source_title": "中華民國113年圖書館年鑑／圖書館統計",
+    "publication_date": "2025-09-01",
+    "source_edition_roc": "113",
+    "source_ids": [
+      "ncl-yearbook-113-statistics"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2024/yearbook-114-public-library.pdf",
+    "sha256": "1ed26e9c657cd574a26dd446d74a4600af09862ef809e65e639799ab737d3eb1",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q274571126641962505/d7b5faa0-acbc-4334-bbb4-190b6904a3ea.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q274523227242755591",
+    "source_title": "中華民國114年圖書館年鑑／公共圖書館",
+    "publication_date": "2026-09-30",
+    "source_edition_roc": "114",
+    "source_ids": [
+      "ncl-yearbook-114-public-library"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2024/yearbook-114-statistics.pdf",
+    "sha256": "125d8b3ffc03f3750f1d19993314441ac6574361856272666024143c7a3a7618",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q274571121544902549/32428ea8-db54-45a4-af2b-986a2527ba07.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q274523227242755591",
+    "source_title": "中華民國114年圖書館年鑑／圖書館統計",
+    "publication_date": "2026-09-30",
+    "source_edition_roc": "114",
+    "source_ids": [
+      "ncl-yearbook-114-statistics"
+    ]
+  },
+  {
     "local_path": "raw/ncl-additional/yearbook-101-public-library.pdf",
     "sha256": "635a1f5a1662cba66c2cd1edd09fcf8fa3206423f88549d993010db4b13345a4",
     "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565449932255456/a48aad49-7cb4-4637-9581-87df9c488d96.pdf",

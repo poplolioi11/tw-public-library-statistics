@@ -1,0 +1,39 @@
+{
+  "reason": "Exact source headers/basic row names and inferred national context separated; no unit imputation.2021acquisition original physical column crosswalk explicit.",
+  "years": [
+    {
+      "year": 2019,
+      "records": 1173,
+      "values_and_positions_unchanged": true,
+      "numeric_raw_coordinate_fingerprint": "7a987439ddf1cf591f7d648eb8c0d1fff2f55f890c8d02c17c0fb7cac6912a7b",
+      "csv_sha256": "1a81468bd4866c5f5eb53f6d8a146c9f07f9cb859cf8f3e9b96aef739a1e0b4c",
+      "historical_unit_corrections": 5,
+      "raw_classification_name_corrections": 1,
+      "basic_printed_row_name_corrections": 4,
+      "staff_literal_heading_corrections": 46
+    },
+    {
+      "year": 2020,
+      "records": 1250,
+      "values_and_positions_unchanged": true,
+      "numeric_raw_coordinate_fingerprint": "07f8c0d0db3932c95115886d7e683b6c44dc05b78d35ae6cc257d7c652129fa2",
+      "csv_sha256": "dd434d82bf62b2ae44b69594e5f1f339f371daa0563f33f8edb18f4a283ec8ae",
+      "historical_unit_corrections": 5,
+      "raw_classification_name_corrections": 1,
+      "basic_printed_row_name_corrections": 4,
+      "staff_literal_heading_corrections": 46
+    },
+    {
+      "year": 2021,
+      "records": 1236,
+      "values_and_positions_unchanged": true,
+      "numeric_raw_coordinate_fingerprint": "e98ff126783fee158edd5396f7ca04ca00cdffe084600a7e9a49cfca09f05f69",
+      "csv_sha256": "138097c9a37bd7deb49bbf46a96a8f67850988da3b125f2c4aba86e430976b81",
+      "historical_unit_corrections": 5,
+      "raw_classification_name_corrections": 1,
+      "basic_printed_row_name_corrections": 4,
+      "staff_literal_heading_corrections": 46
+    }
+  ],
+  "helper_sha256": "f3b1a15849f7549bb94da1a4e5398c6e261fa56729d3e660f2fc2b6751f309ba"
+}

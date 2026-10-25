@@ -1,0 +1,103 @@
+{
+  "data_year_requested": 2020,
+  "source_edition_roc": 110,
+  "catalog_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566955493654718",
+  "publication_date_on_entry": "2022-12-01",
+  "retrieved_at": "2026-10-25T10:58:25.399844+00:00",
+  "sha256": "d36dfcf27596c4de10d70a9b30db1444e85222de5c1f9719166447269ca83b2d",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Server": "nginx",
+    "Date": "Sun, 25 Oct 2026 10:58:25 GMT",
+    "Cache-Control": "no-cache, no-store",
+    "Pragma": "no-cache",
+    "Strict-Transport-Security": "max-age=2592000",
+    "Cross-Origin-Embedder-Policy": "require-corp",
+    "Content-Security-Policy": "base-uri 'self' https://*.ncl.edu.tw;default-src 'self' https://*.ncl.edu.tw;script-src 'self' 'nonce-nvFOlPi/KO2WrioCdqTTkQ+0enfrWpxNsx9+up7XnXU=' https://*.google.com https://*.googleapis.com;script-src-elem 'self' 'nonce-nvFOlPi/KO2WrioCdqTTkQ+0enfrWpxNsx9+up7XnXU=' https://*.google.com https://*.googleapis.com;style-src 'self' 'unsafe-inline'  https://*.ncl.edu.tw https://fonts.googleapis.com https://www.gstatic.com http://*.google.com  https://*.google.com;font-src 'self' https://*.ncl.edu.tw https://fonts.gstatic.com;img-src 'self' https://*.ncl.edu.tw data: https://*.google-analytics.com  https://*.google.com https://*.analytics.google.com https://*.gstatic.com http://*.google.com  https://*.google.com https://*.googleapis.com https://*.googletagmanager.com https://*.g.doubleclick.net;media-src 'self' https://*.ncl.edu.tw;frame-src 'self' https://*.ncl.edu.tw https://*.youtube.com https://syndicatedsearch.goog https://*.google.com https://www.facebook.com;frame-ancestors 'self';object-src 'none';connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://*.google.com  https://*.googleapis.com https://syndicatedsearch.goog https://ep1.adtrafficquality.google",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Cross-Origin-Opener-Policy": "same-origin",
+    "Cross-Origin-Resource-Policy": "same-origin"
+  },
+  "pdf_links": [
+    {
+      "title": "書名頁及版權頁",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566951765149221/844aa976-a774-4dd6-9ec7-3590389dff0b.pdf"
+    },
+    {
+      "title": "序",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566951309018259/b77b7c29-2bd3-4828-ae09-c386d99201ce.pdf"
+    },
+    {
+      "title": "編輯說明",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566951943986276/ac6908a3-c0f3-47f3-8c27-ba78c8e57cb7.pdf"
+    },
+    {
+      "title": "目次",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566952587865204/4668c982-e92c-45b4-a561-ac1b0b151de0.pdf"
+    },
+    {
+      "title": "國立臺灣圖書館強化身心障礙者數位化圖書資源利用成效",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566952122734221/b4a86837-04a9-4ba0-8b5c-ce0b10c13924.pdf"
+    },
+    {
+      "title": "優久聯盟優三共建共享雲端圖書館自動化系統發展歷程與現況",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566953666613258/7e86bf96-790d-4012-b2a8-395792f1c846.pdf"
+    },
+    {
+      "title": "國家圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566953200582276/99d9a552-af61-4bc8-b23d-2636ec9683ea.pdf"
+    },
+    {
+      "title": "公共圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566954845461293/94e39cac-191c-4202-ba9f-9724ef68ed6b.pdf"
+    },
+    {
+      "title": "大專校院圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566954489330220/5697a877-bb52-4448-a10e-287ed9a99456.pdf"
+    },
+    {
+      "title": "中小學圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566955023219248/c46d6dad-d1f6-4d24-b465-9a262b8909e9.pdf"
+    },
+    {
+      "title": "專門圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566955667188275/02bf0b22-b3ca-4a7d-b14b-f931863279b8.pdf"
+    },
+    {
+      "title": "圖書館資訊科技與應用",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566956202067293/013782e6-7028-4c1c-8ba6-590914b8a03b.pdf"
+    },
+    {
+      "title": "圖書資訊學教育",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566966746936220/703b0bf0-5ed4-46ed-9c66-5f69028c52ec.pdf"
+    },
+    {
+      "title": "圖書資訊學研究",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566966380815247/c12b5c08-0892-470b-b85d-2d54fcf05329.pdf"
+    },
+    {
+      "title": "國際交流與合作",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566967924784275/d33e6f1f-b0fd-48a1-b664-138acdc26e5e.pdf"
+    },
+    {
+      "title": "圖書館團體",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566967569663292/2816ed28-682e-429c-ba1a-da117ee258c9.pdf"
+    },
+    {
+      "title": "圖書館統計",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566968103532229/f5ea4a52-d924-47bb-9f62-8a6dc9d688f7.pdf"
+    },
+    {
+      "title": "圖書館事業大事記",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566968747411247/b078b54e-8e77-44f1-b12b-850f54cebf3a.pdf"
+    },
+    {
+      "title": "索引",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566969381380274/cbdfc701-3a4b-42b6-b8ac-83d09509265e.pdf"
+    }
+  ]
+}

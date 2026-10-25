@@ -6,13 +6,13 @@
 
 只讀取以下任一格式，它們是同一批正式觀測：
 
-- `data/combined/observations.jsonl`
+- `data/combined/observations.jsonl.gz`
 - `data/combined/observations.csv`
 - `data/combined/library_statistics.sqlite` 的 `observations` 表
 
 先讀 `data/combined/summary.json`、`coverage.json`、`indicators.json` 與 `observation.schema.json`。`data/observations.*`、`data/component_records.jsonl` 和 `derived/` 是組件或中間結果，可能保留重複；不得再併入正式入口。資料筆數不是館數。
 
-目前 26,725 筆來源觀測紀錄，含 200 格明示缺值、876 格原印留白及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
+目前 37,393 筆來源觀測紀錄，含 206 格明示缺值、876 格原印留白、20 格原印文字狀態及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
 
 ## 先選來源，再選可比較的觀測
 
@@ -28,24 +28,33 @@
 |---|---|
 | 國資圖公開全國圖表 | 2011–2025年公開全國圖表；只有全國 |
 | 國資圖2023開放資料（含縣市） | 2023年明確OGDL年度資源；全國、縣市與替代口徑分列，不相加；`ogdl-api-2023` |
-| 國家圖書館年鑑統計事實 | 96–105卷指定核心表／公共館子群／原文數字；資料年2006–2015年，保留不同出版版本 |
+| 國家圖書館年鑑統計事實 | 96–114卷指定核心表／公共館子群／原文數字；資料年2006–2024年，保留不同出版版本 |
 | 國家圖書館閱讀報告統計事實 | 2011–2012年5張全國閱讀報告表；包括跨年比較，不是縣市表 |
 | 主計總處歷史全國統計 | 3個來源版本；資料年1991–2011年，重疊版本分開；`dgbas-social-indicators-2005`、`dgbas-social-indicators-2008`、`dgbas-social-indicators-2011` |
 | 主計總處縣市公共館數 | 1998–2025年官方重編地域；來源含國家圖書館，缺值不補0；`dgbas-county-library-Z091101a029` |
 | 地方政府開放歷史表 | 新竹市、臺中市已確認系列；保留原年／月期間與館藏地 |
 
-2012年原文中每人購書／擁書／借閱比率分別列22／22／22縣市；館員服務人口只列21縣市，未列連江縣。22縣市核心原量表仍未取得，不能由比率反算。閱讀報告所列表只有全國彙總，不能冒充縣市表。 2015原刊部分縣市標籤未確認、兩列均印金門，保留183筆標籤不確定觀測，不補成連江或硬接現行界線。 2015表17標題「場次」與正文「人次」衝突，161格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。
+2012年原文中每人購書／擁書／借閱比率分別列22／22／22縣市；館員服務人口只列21縣市，未列連江縣。22縣市核心原量表仍未取得，不能由比率反算。閱讀報告所列表只有全國彙總，不能冒充縣市表。 2015原刊部分縣市標籤未確認、兩列均印金門，保留183筆標籤不確定觀測，不補成連江或硬接現行界線。 其他原刊地理標籤疑義按資料年分列：2024年36格；原印名稱與數字保留，這些格不計為已確認縣市覆蓋。 2015表17標題「場次」與正文「人次」衝突，161格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。 原表只稱「人數」而未確認去重人數／累計人次的格位保留unit=null：2016年23格；unit_raw照原欄頭保留。
 
 原表、原文數字與閱讀五表的批次範圍見[歷史批次](docs/historical-batches.md)。
 
 ### 數值與缺值
 
-- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `200` 格 `not_available_in_source` 保留明示缺值符號，`876` 格 `source_blank` 保留原刊留白；留白不推定不適用，均不補零。
+- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `206` 格 `not_available_in_source` 保留明示缺值符號，`876` 格 `source_blank` 保留原刊留白，`20` 格 `source_marker` 保留原印「無」「未新增」等文字狀態；這些文字不自行改成0或推定不適用，均不推算補值。
 - `raw_value` 保留原表字串與註腳標記；例如 `79a` 的數值為79，`source_cell_annotation` 保留a，須同讀 `source_footnotes_raw`／`source_footnotes_status`。`quality_flags` 可為單一代碼或原組件保留的JSON陣列字串；不把單純多層合計旗標當成數值錯誤。
 - `raw_value` 保留原表字串；`value` 的小數可能使用十進位字串。SQLite 的 `value` 欄是文字型別，分析前須明確選定解析規則，不能以不受檢查的轉型把異常字串變成零。
 - 原報 `0` 未必是已確認的真零；讀 `zero_interpretation`、註腳及資料蒐集範圍。
 - `quality_flags = 'source_arithmetic_inconsistency'` 表示原表合計算術不一致，原值未更改。另讀 `notes` 與品質紀錄，並非所有不確定性都有單一旗標。
 - 比較前統一且說明單位；「千冊」「冊」「種」「件」「人次」不是可互換單位。未知單位保留未知，不能自行當作冊數。
+
+## 新增年度的特殊狀態
+
+- 原印「無」「未新增」保留 `value=null`、`value_status=source_marker` 與完整原字，不自行推成零、無人力或不適用。純數字的原報零另列。
+- `value_parse_rule=literal_scoped_quantity` 搭配 `value_qualifier=scoped_source_component` 只表示原格明示的子範圍。2020臺東電子書80種僅是分區資源中心新增，不能當全縣完整總量。
+- 2017高雄經費有分期子列。原註 `1/1-/8/31` 的標點未解，正式期間留空，`period_start_candidate`／`period_end_candidate` 只存候選，必須讀 `source_period_interpretation_status` 和 `source_subrow_label_raw`。另一子列原印9/1–12/31另存，不合併全年。
+- 2016「活動（人數）」未明示去重或累計；五年館藏表未印單位，不能沿用單年基本表冊、件。`unit=null` 仍有原數值，不能自行補單位。
+- `geographic_scope=county_source_label_uncertain` 保留原刊名稱及數字，含2015、2024部分表的未解地理歸屬／人口基數疑義，不當成已確認的縣市數值。`quality_flags` 和 `notes` 會交代疑義範圍，不能憑常識換位。
+- `source_cell_note_raw` 保留數字格內必要的公立館名補述；`raw_value` 專存該格數字或標記，不能宣稱它包含整頁或全部原格文字。
 
 ## 避免重複或錯誤加總
 
@@ -129,3 +138,6 @@ ORDER BY data_year, geography;
 ## 公開副本
 
 可以先讀 `data/by_year/index.json`，按年度取得相同的正式觀測。含無關聯絡欄的原件不再散布，改附數值欄位投影；`source_sha256` 驗原件，`public_evidence_sha256` 驗投影。投影不改統計原值、期間、單位、地理口徑或原件定位。完整來源驗收須先依 README 復原原件；公開副本的離線檢查並不等於重查全部原件。
+
+
+完整JSONL與中間元件以gzip無損壓縮，年度JSONL仍是純文字。Python可用 `gzip.open("data/combined/observations.jsonl.gz","rt",encoding="utf-8")` 逐行讀取。解壓後逐位元組SHA另記；gzip檔案SHA與統計內容指紋是不同層，不能互換。

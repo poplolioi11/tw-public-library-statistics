@@ -1,0 +1,4976 @@
+{
+  "status": "frozen",
+  "total_cells": 3659,
+  "total_tables": 44,
+  "no_op_rebuild": {
+    "outputs_checked": 15,
+    "identical_hashes": true,
+    "unchanged_mtime": true,
+    "final_revision_readonly_replay": true,
+    "mode": "write function replaced by byte-equality assertion; no data writes",
+    "evidence": "research/ncl-2019-2021-final-readonly-rebuild.json",
+    "earlier_original_noop": "Original pre-semantic-revision15-output SHA+mtime check retained in initial_freeze_output_sha256"
+  },
+  "output_files": {
+    "derived/ncl_2019_long.csv": {
+      "sha256": "1a81468bd4866c5f5eb53f6d8a146c9f07f9cb859cf8f3e9b96aef739a1e0b4c",
+      "mtime_ns": 1792929344078128909
+    },
+    "derived/ncl_2019_long.jsonl": {
+      "sha256": "ec95bdef83956ba775fa5db95827236036d3b4c7ea1876356f17b4bf18d9a8bb",
+      "mtime_ns": 1792929344082011555
+    },
+    "raw/ncl-2019/extraction-validation.json": {
+      "sha256": "a22cde5957a540884cc469a672caa633b969e1e5ff99801102e5747c08ffc8a3",
+      "mtime_ns": 1792929344084704486
+    },
+    "raw/ncl-2019/documents.json": {
+      "sha256": "93460bfb25849a8c42d299ce499347f00af741b4d1159888af09d094219f2024",
+      "mtime_ns": 1792926770259382462
+    },
+    "raw/ncl-2019/token-checks.private.json": {
+      "sha256": "7570b8f90b216f144947dc062d4d04e12fa248b20ff0fc75dc80ef68f852fd0a",
+      "mtime_ns": 1792926980158750687
+    },
+    "derived/ncl_2020_long.csv": {
+      "sha256": "dd434d82bf62b2ae44b69594e5f1f339f371daa0563f33f8edb18f4a283ec8ae",
+      "mtime_ns": 1792929346123400429
+    },
+    "derived/ncl_2020_long.jsonl": {
+      "sha256": "47c0adeabade002e32565bb9aac54eb75879a677ef50d1a7bb1158e5c53364b5",
+      "mtime_ns": 1792929346128495124
+    },
+    "raw/ncl-2020/extraction-validation.json": {
+      "sha256": "2ed160a0ea3890b780cbcfbc5c56b0cb8723a8f66716ac2aa89149adb688643c",
+      "mtime_ns": 1792929346131224347
+    },
+    "raw/ncl-2020/documents.json": {
+      "sha256": "3367cf868dd315127c473c261ecc333802c5764df0a542d77e8d86c4e19ad7e7",
+      "mtime_ns": 1792926814001636584
+    },
+    "raw/ncl-2020/token-checks.private.json": {
+      "sha256": "b9ab02892f4388cb95d74bdd931ffabc1ec1548a1d2243832708e0bef0f74fb6",
+      "mtime_ns": 1792926950037705706
+    },
+    "derived/ncl_2021_long.csv": {
+      "sha256": "138097c9a37bd7deb49bbf46a96a8f67850988da3b125f2c4aba86e430976b81",
+      "mtime_ns": 1792929347760762761
+    },
+    "derived/ncl_2021_long.jsonl": {
+      "sha256": "8514cc7403f09ee7dee50313b9dd51e28b9ae702fa2de0a4d36fed2e191ed4d9",
+      "mtime_ns": 1792929347764361364
+    },
+    "raw/ncl-2021/extraction-validation.json": {
+      "sha256": "63e33b8ee4cbf706f9d4958f156319184f54a9bfae758920e1287410498289ed",
+      "mtime_ns": 1792929347765983873
+    },
+    "raw/ncl-2021/documents.json": {
+      "sha256": "a9ac2e1fd8da4b691ece74e9198ed0151fe2379fb32074e4320740600006c7ae",
+      "mtime_ns": 1792926836628631277
+    },
+    "raw/ncl-2021/token-checks.private.json": {
+      "sha256": "903aeb6c6a6fe577a69e23145845371c94d9dce3a09a9efaaecf447c8310a2d0",
+      "mtime_ns": 1792926938854110978
+    }
+  },
+  "extractor_files": {
+    "scripts/ncl_modern_2019_2021_common.py": "f3b1a15849f7549bb94da1a4e5398c6e261fa56729d3e660f2fc2b6751f309ba",
+    "scripts/extract_ncl_2019.py": "f80aa618763700fe019b0fa54ca47301dd4c344fda5d7ce685ecba128398a6d7",
+    "scripts/extract_ncl_2020.py": "d788e337334e1494c6f5ef016a3c3ec1c0f70664c4cc40b265ec3b267835939b",
+    "scripts/extract_ncl_2021.py": "5f6a8112fdf524351cf9bd10141b25daea4f4ca15ea8f95a5b17e922cd66b303"
+  },
+  "year_reports": [
+    {
+      "input_evidence_sha256": {
+        "raw/ncl-2019/yearbook-109-copyright.metadata.json": "ff16ea0f86f043968f9b202aec6e37286fb7f24370209d443426306c87c6440e",
+        "raw/ncl-2019/yearbook-109-copyright.pdf": "55019c74f631836780119bfe9ea0fbf438fb3ce10fa1e29222f358602b78e779",
+        "raw/ncl-2019/yearbook-109-editing.metadata.json": "68eb1376cf3b66ac294a4b49638edd93e26aff0c7bceaca674fac2242552a33f",
+        "raw/ncl-2019/yearbook-109-editing.pdf": "c88778d7dc01a345d0f0dd1c9a5ce631270a4cf1988157933da6e3e677c5b392",
+        "raw/ncl-2019/yearbook-109-public-library.metadata.json": "a896ee3a4c1e8b720a73caf10b1e433fb2b584a619360091d526746ea29f643a",
+        "raw/ncl-2019/yearbook-109-public-library.pdf": "843d4bcbbd7ff4f646332eb833800fbac12c7e6f5d333eb3700657267d5a903a",
+        "raw/ncl-2019/yearbook-109-statistics.metadata.json": "b24e5c14c07f85e0d14e91f626cb3edd2ea1300c0774f0456184a92e10a7b284",
+        "raw/ncl-2019/yearbook-109-statistics.pdf": "604081327bb97f8d4ce811917312ad5e6842749c2fe3b6529bf8c4a8464afc5d",
+        "raw/ncl-2019/yearbook-109-toc.metadata.json": "9de31f3eb5b9c1166e4ecc99559c658ce9027d29c879e8cf2af7a977fd777f5f",
+        "raw/ncl-2019/yearbook-109-toc.pdf": "66349e27cb8c6f7e2253e1fbd14c883f4d081427f92f9aeea697205cb2bd5319",
+        "raw/ncl-2019/catalog.html": "ec4aa789c9cc79156e1c35d7595eb230c916bdfa9da749269c44cbc4309136f7",
+        "raw/ncl-2019/catalog.metadata.json": "410df3bcd5a9433666f4c1c58b8a002f3656d46cf9b2f18ac042212f247cf7ad",
+        "raw/ncl-2019/table-specifications.json": "b6d6aea1320588b57a6d1fa15446572c9578ceffe4de3dabedaf97b498d92941"
+      },
+      "data_year": 2019,
+      "source_edition_roc": 109,
+      "long_rows": 1173,
+      "table_count": 14,
+      "all_selected_tables_complete": true,
+      "tables": [
+        {
+          "source_table": 15,
+          "type": "level_count",
+          "pages": [
+            1,
+            2
+          ],
+          "expected_cells": 36,
+          "extracted_cells": 36,
+          "status_counts": {
+            "reported": 36
+          },
+          "complete": true
+        },
+        {
+          "source_table": 16,
+          "type": "county_count",
+          "pages": [
+            2,
+            3
+          ],
+          "expected_cells": 138,
+          "extracted_cells": 138,
+          "status_counts": {
+            "reported": 138
+          },
+          "complete": true
+        },
+        {
+          "source_table": 17,
+          "type": "spending",
+          "pages": [
+            3,
+            3
+          ],
+          "expected_cells": 69,
+          "extracted_cells": 69,
+          "status_counts": {
+            "reported": 46,
+            "reported_decimal": 23
+          },
+          "complete": true
+        },
+        {
+          "source_table": 18,
+          "type": "staff",
+          "pages": [
+            4,
+            5
+          ],
+          "expected_cells": 161,
+          "extracted_cells": 161,
+          "status_counts": {
+            "reported": 92,
+            "reported_decimal": 64,
+            "source_marker": 5
+          },
+          "complete": true
+        },
+        {
+          "source_table": 19,
+          "type": "holdings_level",
+          "pages": [
+            5
+          ],
+          "expected_cells": 60,
+          "extracted_cells": 60,
+          "status_counts": {
+            "reported": 60
+          },
+          "complete": true
+        },
+        {
+          "source_table": 20,
+          "type": "holdings_county",
+          "pages": [
+            6
+          ],
+          "expected_cells": 69,
+          "extracted_cells": 69,
+          "status_counts": {
+            "reported": 46,
+            "reported_decimal": 23
+          },
+          "complete": true
+        },
+        {
+          "source_table": 21,
+          "type": "usage",
+          "pages": [
+            7
+          ],
+          "expected_cells": 92,
+          "extracted_cells": 92,
+          "status_counts": {
+            "reported": 69,
+            "reported_decimal": 23
+          },
+          "complete": true
+        },
+        {
+          "source_table": 22,
+          "type": "events",
+          "pages": [
+            7,
+            8
+          ],
+          "expected_cells": 161,
+          "extracted_cells": 161,
+          "status_counts": {
+            "reported": 161
+          },
+          "complete": true
+        },
+        {
+          "source_table": 23,
+          "type": "attendance",
+          "pages": [
+            8,
+            9
+          ],
+          "expected_cells": 161,
+          "extracted_cells": 161,
+          "status_counts": {
+            "reported": 161
+          },
+          "complete": true
+        },
+        {
+          "source_table": 24,
+          "type": "immigrants",
+          "pages": [
+            10
+          ],
+          "expected_cells": 115,
+          "extracted_cells": 115,
+          "status_counts": {
+            "reported": 115
+          },
+          "complete": true
+        },
+        {
+          "source_table": 26,
+          "type": "budget",
+          "pages": [
+            16
+          ],
+          "expected_cells": 75,
+          "extracted_cells": 75,
+          "status_counts": {
+            "reported": 75
+          },
+          "complete": true
+        },
+        {
+          "source_table": 205,
+          "type": "stats_types",
+          "pages": [
+            2
+          ],
+          "expected_cells": 7,
+          "extracted_cells": 7,
+          "status_counts": {
+            "reported": 7
+          },
+          "complete": true
+        },
+        {
+          "source_table": 206,
+          "type": "stats_basic",
+          "pages": [
+            3
+          ],
+          "expected_cells": 4,
+          "extracted_cells": 4,
+          "status_counts": {
+            "reported": 4
+          },
+          "complete": true
+        },
+        {
+          "source_table": 208,
+          "type": "stats_historical",
+          "pages": [
+            4
+          ],
+          "expected_cells": 25,
+          "extracted_cells": 25,
+          "status_counts": {
+            "reported": 25
+          },
+          "complete": true
+        }
+      ],
+      "second_engine_cell_checks": 1173,
+      "second_engine_numeric_mismatches": 0,
+      "value_status_counts": {
+        "reported": 1035,
+        "reported_decimal": 133,
+        "source_marker": 5
+      },
+      "quality_flag_counts": {
+        "published_total_overlaps_components": 201,
+        "includes_reading_rooms_and_outreach_not_library_main_branch_count": 29,
+        "historical_holdings_unit_not_printed_no_cross_table_imputation": 5
+      },
+      "arithmetic_checks": [
+        {
+          "table": 15,
+          "source_row": 1,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "218",
+          "published": "218",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 2,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "267",
+          "published": "267",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 3,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "58",
+          "published": "58",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 4,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "428",
+          "published": "428",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 5,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "208",
+          "published": "208",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 6,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1179",
+          "published": "1179",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 1,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "34",
+          "published": "34",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 2,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "79",
+          "published": "79",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 3,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "112",
+          "published": "112",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 4,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "104",
+          "published": "104",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 5,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "34",
+          "published": "34",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 6,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "16",
+          "published": "16",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 7,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "61",
+          "published": "61",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 8,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "107",
+          "published": "107",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 9,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "52",
+          "published": "52",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 10,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "52",
+          "published": "52",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 11,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "44",
+          "published": "44",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 12,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "36",
+          "published": "36",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 13,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "8",
+          "published": "8",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 14,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "74",
+          "published": "74",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 15,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "85",
+          "published": "85",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 16,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "84",
+          "published": "84",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 17,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "47",
+          "published": "47",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 18,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "50",
+          "published": "50",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 19,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "58",
+          "published": "58",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 20,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "10",
+          "published": "10",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 21,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "15",
+          "published": "15",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 22,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "8",
+          "published": "8",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 23,
+          "entity": "小計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1170",
+          "published": "1170",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 1,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "52155617",
+          "published": "52155617",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 2,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "53348",
+          "published": "53348",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 3,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "6102",
+          "published": "6102",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 4,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "398899",
+          "published": "398899",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 5,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "52613966",
+          "published": "52613966",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 6,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1964828",
+          "published": "1964828",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 7,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2534",
+          "published": "2534",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 8,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1839582",
+          "published": "1839582",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 9,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1842116",
+          "published": "1842116",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 10,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "56420910",
+          "published": "56420910",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 1,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1474",
+          "published": "1474",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 2,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "21932",
+          "published": "21932",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 3,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "14194",
+          "published": "14194",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 4,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3294",
+          "published": "3294",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 5,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2323",
+          "published": "2323",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 6,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "679",
+          "published": "679",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 7,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "4250",
+          "published": "4250",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 8,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "14895",
+          "published": "14895",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 9,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "4049",
+          "published": "4049",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 10,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3487",
+          "published": "3487",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 11,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3304",
+          "published": "3304",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 12,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1543",
+          "published": "1543",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 13,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "293",
+          "published": "293",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 14,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "11515",
+          "published": "11515",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 15,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "22542",
+          "published": "22542",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 16,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3391",
+          "published": "3391",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 17,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2047",
+          "published": "2047",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 18,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1450",
+          "published": "1450",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 19,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2110",
+          "published": "2110",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 20,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "565",
+          "published": "565",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 21,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1343",
+          "published": "1343",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 22,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "41",
+          "published": "41",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 23,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "120721",
+          "published": "120721",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 1,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "118726",
+          "published": "118726",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 2,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2243629",
+          "published": "2243629",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 3,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "6816830",
+          "published": "6816830",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 4,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2325740",
+          "published": "2325740",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 5,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "137512",
+          "published": "137512",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 6,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "61242",
+          "published": "61242",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 7,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "636484",
+          "published": "636484",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 8,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2376865",
+          "published": "2376865",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 9,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2650719",
+          "published": "2650719",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 10,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "319507",
+          "published": "319507",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 11,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "210004",
+          "published": "210004",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 12,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "67020",
+          "published": "67020",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 13,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "17087",
+          "published": "17087",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 14,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5403198",
+          "published": "5403198",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 15,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "4251429",
+          "published": "4251429",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 16,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "282988",
+          "published": "282988",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 17,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "181403",
+          "published": "181403",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 18,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "127662",
+          "published": "127662",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 19,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "646187",
+          "published": "646187",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 20,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "20715",
+          "published": "20715",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 21,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "43898",
+          "published": "43898",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 22,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1102",
+          "published": "1102",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 23,
+          "source_row": 23,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "28939947",
+          "published": "28939947",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 1,
+          "entity": "國資圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "166030000",
+          "published": "166030000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 2,
+          "entity": "國臺圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "332081013",
+          "published": "332081013",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 3,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "25000000",
+          "published": "25000000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 4,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "720403222",
+          "published": "720403222",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 5,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "630330425",
+          "published": "630330425",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 6,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1109849000",
+          "published": "1109849000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 7,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "46401589",
+          "published": "46401589",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 8,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "34743961",
+          "published": "34743961",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 9,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "26988465",
+          "published": "26988465",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 10,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "429410000",
+          "published": "429410000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 11,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "139038670",
+          "published": "139038670",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 12,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "90803137",
+          "published": "90803137",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 13,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "19158281",
+          "published": "19158281",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 14,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "12180000",
+          "published": "12180000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 15,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5939600",
+          "published": "5939600",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 16,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "134000000",
+          "published": "134000000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 17,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "540840878",
+          "published": "540840878",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 18,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "80838292",
+          "published": "80838292",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 19,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "88725536",
+          "published": "88725536",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 20,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "83437000",
+          "published": "83437000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 21,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "68775226",
+          "published": "68775226",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 22,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "40419358",
+          "published": "40419358",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 23,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "33737000",
+          "published": "33737000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 24,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5976105",
+          "published": "5976105",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 26,
+          "source_row": 25,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "4865106758",
+          "published": "4865106758",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        }
+      ],
+      "arithmetic_discrepancies": [],
+      "copyright_publication_month": "2021-12",
+      "publication_entry_date": "2021-12-01",
+      "publication_date_difference": false,
+      "csv_sha256": "1a81468bd4866c5f5eb53f6d8a146c9f07f9cb859cf8f3e9b96aef739a1e0b4c",
+      "jsonl_sha256": "ec95bdef83956ba775fa5db95827236036d3b4c7ea1876356f17b4bf18d9a8bb",
+      "verification_limits": "Producer reviewed PDFium images of all selected headers, row labels, units and terminal rows; all selected value positions crosschecked with PDFium numeric tokens against pdfplumber coordinate glyphs. This is not an independent human full-cell double collation. Chinese111edition has no ToUnicode; literal labels/無 mapped from source images, not guessed from CID strings.",
+      "intentional_exclusions": [
+        "Engineering/construction/equipment project case tables, local stories, awards, TopN reading performance, named people, book rankings and photographs.",
+        "Statistics chapter non-public-library families and duplicate charts."
+      ],
+      "rights": {
+        "license_status": "not_confirmed",
+        "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+        "full_originals_distribution": "not_in_public_bundle",
+        "statistical_facts_only": true
+      },
+      "dependencies": [
+        "scripts/ncl_modern_2019_2021_common.py",
+        "scripts/extract_ncl_2019.py",
+        "raw/ncl-2019/table-specifications.json",
+        "raw/ncl-2019/yearbook-109-public-library.pdf",
+        "raw/ncl-2019/yearbook-109-public-library.metadata.json",
+        "raw/ncl-2019/yearbook-109-statistics.pdf",
+        "raw/ncl-2019/yearbook-109-statistics.metadata.json",
+        "raw/ncl-2019/yearbook-109-copyright.metadata.json",
+        "raw/ncl-2019/yearbook-109-copyright.pdf",
+        "raw/ncl-2019/yearbook-109-editing.metadata.json",
+        "raw/ncl-2019/yearbook-109-editing.pdf",
+        "raw/ncl-2019/yearbook-109-toc.metadata.json",
+        "raw/ncl-2019/yearbook-109-toc.pdf",
+        "raw/ncl-2019/catalog.html",
+        "raw/ncl-2019/catalog.metadata.json"
+      ]
+    },
+    {
+      "input_evidence_sha256": {
+        "raw/ncl-2020/yearbook-110-copyright.metadata.json": "e3da673c57e143c30ba0f3224b56df922fc72a71de66093eb58d3b7e8694991d",
+        "raw/ncl-2020/yearbook-110-copyright.pdf": "126bb352e2a4861e71404863331af02515ef2841bf08b1e463eb2fe1b0f5729e",
+        "raw/ncl-2020/yearbook-110-editing.metadata.json": "54b5609b914a059aba9f4204a253a000d97bbbe39128d647a49ae0daac47ec77",
+        "raw/ncl-2020/yearbook-110-editing.pdf": "e315e61f70aa7b059f44a109695b447d5b1129117e6989f36d71f7d562716e02",
+        "raw/ncl-2020/yearbook-110-public-library.metadata.json": "47aa2c9b9e83d4472ec501aa5430ac0657ea013ab61a815b9fa7ad8ca352552d",
+        "raw/ncl-2020/yearbook-110-public-library.pdf": "4d95c7af8993461b0395b331e2d60a221e1eaeac80bf7def28a86ee6fb2009cf",
+        "raw/ncl-2020/yearbook-110-statistics.metadata.json": "3f47fa89fa8800614fd0e2fcac8fa9e7595de541280e397de32f81a92f64d2bd",
+        "raw/ncl-2020/yearbook-110-statistics.pdf": "5d6ca64e8a9cd1c05fc5b2ed97c48ad8f54dcaea3072062c3f85bfd35227ceb9",
+        "raw/ncl-2020/yearbook-110-toc.metadata.json": "d4006693f08776d653526a58c1f26f4d27fb7c6c8f65ff3026875a0e6e74a69f",
+        "raw/ncl-2020/yearbook-110-toc.pdf": "d84818518b3d37cd53a6553f934858204e380256efa8e1524fe645558aee8ff1",
+        "raw/ncl-2020/catalog.html": "d36dfcf27596c4de10d70a9b30db1444e85222de5c1f9719166447269ca83b2d",
+        "raw/ncl-2020/catalog.metadata.json": "30a6f8a5c1a97e20ab97a8be2f2d3233bddb6e03eaff74e68b0784d659ba340a",
+        "raw/ncl-2020/table-specifications.json": "f727758447bf7f958b4e70e8f82eea07e0d58375fdf82625314b5f77c2ebbab9"
+      },
+      "data_year": 2020,
+      "source_edition_roc": 110,
+      "long_rows": 1250,
+      "table_count": 15,
+      "all_selected_tables_complete": true,
+      "tables": [
+        {
+          "source_table": 10,
+          "type": "level_count",
+          "pages": [
+            1,
+            2
+          ],
+          "expected_cells": 36,
+          "extracted_cells": 36,
+          "status_counts": {
+            "reported": 36
+          },
+          "complete": true
+        },
+        {
+          "source_table": 11,
+          "type": "county_count",
+          "pages": [
+            2,
+            3
+          ],
+          "expected_cells": 138,
+          "extracted_cells": 138,
+          "status_counts": {
+            "reported": 138
+          },
+          "complete": true
+        },
+        {
+          "source_table": 12,
+          "type": "spending",
+          "pages": [
+            3,
+            3
+          ],
+          "expected_cells": 69,
+          "extracted_cells": 69,
+          "status_counts": {
+            "reported": 46,
+            "reported_decimal": 23
+          },
+          "complete": true
+        },
+        {
+          "source_table": 13,
+          "type": "staff_level",
+          "pages": [
+            4
+          ],
+          "expected_cells": 48,
+          "extracted_cells": 48,
+          "status_counts": {
+            "reported": 48
+          },
+          "complete": true
+        },
+        {
+          "source_table": 14,
+          "type": "staff",
+          "pages": [
+            5
+          ],
+          "expected_cells": 161,
+          "extracted_cells": 161,
+          "status_counts": {
+            "reported": 92,
+            "reported_decimal": 66,
+            "source_marker": 3
+          },
+          "complete": true
+        },
+        {
+          "source_table": 15,
+          "type": "holdings_level",
+          "pages": [
+            6
+          ],
+          "expected_cells": 60,
+          "extracted_cells": 60,
+          "status_counts": {
+            "reported": 60
+          },
+          "complete": true
+        },
+        {
+          "source_table": 16,
+          "type": "holdings_county",
+          "pages": [
+            6,
+            7
+          ],
+          "expected_cells": 69,
+          "extracted_cells": 69,
+          "status_counts": {
+            "reported": 46,
+            "reported_decimal": 23
+          },
+          "complete": true
+        },
+        {
+          "source_table": 17,
+          "type": "usage",
+          "pages": [
+            7,
+            8
+          ],
+          "expected_cells": 92,
+          "extracted_cells": 92,
+          "status_counts": {
+            "reported": 69,
+            "reported_decimal": 23
+          },
+          "complete": true
+        },
+        {
+          "source_table": 18,
+          "type": "events",
+          "pages": [
+            8,
+            9
+          ],
+          "expected_cells": 161,
+          "extracted_cells": 161,
+          "status_counts": {
+            "reported": 161
+          },
+          "complete": true
+        },
+        {
+          "source_table": 19,
+          "type": "attendance",
+          "pages": [
+            9,
+            10
+          ],
+          "expected_cells": 161,
+          "extracted_cells": 161,
+          "status_counts": {
+            "reported": 161
+          },
+          "complete": true
+        },
+        {
+          "source_table": 22,
+          "type": "budget",
+          "pages": [
+            14
+          ],
+          "expected_cells": 75,
+          "extracted_cells": 75,
+          "status_counts": {
+            "reported": 75
+          },
+          "complete": true
+        },
+        {
+          "source_table": 24,
+          "type": "acquisition",
+          "pages": [
+            22,
+            23
+          ],
+          "expected_cells": 144,
+          "extracted_cells": 144,
+          "status_counts": {
+            "reported": 137,
+            "source_marker": 7
+          },
+          "complete": true
+        },
+        {
+          "source_table": 186,
+          "type": "stats_types",
+          "pages": [
+            2
+          ],
+          "expected_cells": 7,
+          "extracted_cells": 7,
+          "status_counts": {
+            "reported": 7
+          },
+          "complete": true
+        },
+        {
+          "source_table": 187,
+          "type": "stats_basic",
+          "pages": [
+            3
+          ],
+          "expected_cells": 4,
+          "extracted_cells": 4,
+          "status_counts": {
+            "reported": 4
+          },
+          "complete": true
+        },
+        {
+          "source_table": 189,
+          "type": "stats_historical",
+          "pages": [
+            4
+          ],
+          "expected_cells": 25,
+          "extracted_cells": 25,
+          "status_counts": {
+            "reported": 25
+          },
+          "complete": true
+        }
+      ],
+      "second_engine_cell_checks": 1250,
+      "second_engine_numeric_mismatches": 0,
+      "value_status_counts": {
+        "reported": 1105,
+        "reported_decimal": 135,
+        "source_marker": 10
+      },
+      "quality_flag_counts": {
+        "published_total_overlaps_components": 238,
+        "includes_reading_rooms_and_outreach_not_library_main_branch_count": 29,
+        "source_published_components_total_discrepancy_preserved": 24,
+        "source_numeric_magnitude_multiline": 1,
+        "zero_width_PDF_control_glyph_omitted_from_visible_raw_preserved_in_original_fields": 2,
+        "scoped_source_component_not_county_total": 1,
+        "historical_holdings_unit_not_printed_no_cross_table_imputation": 5
+      },
+      "arithmetic_checks": [
+        {
+          "table": 10,
+          "source_row": 1,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "218",
+          "published": "218",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 2,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "269",
+          "published": "269",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 3,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "58",
+          "published": "58",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 4,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "495",
+          "published": "495",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 5,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "230",
+          "published": "230",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 6,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1270",
+          "published": "1270",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 1,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "34",
+          "published": "34",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 2,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "79",
+          "published": "79",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 3,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "106",
+          "published": "106",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 4,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "109",
+          "published": "109",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 5,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "34",
+          "published": "34",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 6,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "17",
+          "published": "17",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 7,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "62",
+          "published": "62",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 8,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "109",
+          "published": "109",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 9,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "52",
+          "published": "52",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 10,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "64",
+          "published": "64",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 11,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "40",
+          "published": "40",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 12,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "74",
+          "published": "74",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 13,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "6",
+          "published": "6",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 14,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "74",
+          "published": "74",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 15,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "85",
+          "published": "85",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 16,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "101",
+          "published": "101",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 17,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "48",
+          "published": "48",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 18,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "50",
+          "published": "50",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 19,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "66",
+          "published": "66",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 20,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "15",
+          "published": "15",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 21,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "26",
+          "published": "26",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 22,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "8",
+          "published": "8",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 11,
+          "source_row": 23,
+          "entity": "小計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1259",
+          "published": "1259",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 13,
+          "source_row": 1,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1222",
+          "published": "1222",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 13,
+          "source_row": 2,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "303",
+          "published": "303",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 13,
+          "source_row": 3,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1735",
+          "published": "1665",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 13,
+          "source_row": 4,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3260",
+          "published": "3190",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 13,
+          "source_row": 5,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "147",
+          "published": "147",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 13,
+          "source_row": 6,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "11198",
+          "published": "11198",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 13,
+          "source_row": 7,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "888",
+          "published": "888",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 13,
+          "source_row": 8,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "12233",
+          "published": "12233",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 1,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "52788235",
+          "published": "53571611",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 2,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "51394",
+          "published": "51394",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 3,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5831",
+          "published": "5849",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 4,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "398004",
+          "published": "398004",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 5,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "54026858",
+          "published": "54026858",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 6,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2097905",
+          "published": "2097905",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 7,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1977",
+          "published": "1977",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 8,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1867308",
+          "published": "1867308",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 9,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1869285",
+          "published": "1869285",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 10,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "57994048",
+          "published": "57994048",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 1,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "752",
+          "published": "752",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 2,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "15189",
+          "published": "15189",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 3,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "11450",
+          "published": "11450",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 4,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5523",
+          "published": "5523",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 5,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1834",
+          "published": "1834",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 6,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "674",
+          "published": "674",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 7,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "6935",
+          "published": "6935",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 8,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "9934",
+          "published": "9934",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 9,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3602",
+          "published": "3602",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 10,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2725",
+          "published": "2725",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 11,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2888",
+          "published": "2888",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 12,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1476",
+          "published": "1476",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 13,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "196",
+          "published": "196",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 14,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "8781",
+          "published": "8781",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 15,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "19006",
+          "published": "19006",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 16,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2972",
+          "published": "2972",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 17,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1272",
+          "published": "1272",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 18,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2896",
+          "published": "2896",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 19,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2167",
+          "published": "2167",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 20,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "476",
+          "published": "476",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 21,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1340",
+          "published": "1340",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 22,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "69",
+          "published": "69",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 18,
+          "source_row": 23,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "102157",
+          "published": "102157",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 1,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "86047",
+          "published": "86047",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 2,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2075233",
+          "published": "2075233",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 3,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3991138",
+          "published": "3991138",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 4,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2476768",
+          "published": "2476768",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 5,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "890178",
+          "published": "890178",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 6,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "48065",
+          "published": "48065",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 7,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "581986",
+          "published": "581986",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 8,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2426556",
+          "published": "2426556",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 9,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2463383",
+          "published": "2463383",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 10,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "230853",
+          "published": "230853",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 11,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "176002",
+          "published": "176002",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 12,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "65797",
+          "published": "65797",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 13,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "14156",
+          "published": "14156",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 14,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5012438",
+          "published": "5012438",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 15,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3816369",
+          "published": "3816369",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 16,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "316393",
+          "published": "316393",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 17,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "159132",
+          "published": "159132",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 18,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "312998",
+          "published": "312998",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 19,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "672193",
+          "published": "672193",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 20,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "27978",
+          "published": "27978",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 21,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "44945",
+          "published": "44945",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 22,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1247",
+          "published": "1247",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 23,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "25889855",
+          "published": "25889855",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 1,
+          "entity": "國資圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "164434000",
+          "published": "164434000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 2,
+          "entity": "國臺圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "339803860",
+          "published": "339803860",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 3,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "25000000",
+          "published": "25000000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 4,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "848440451",
+          "published": "848440451",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 5,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "614570656",
+          "published": "614570656",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 6,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "623209000",
+          "published": "623209000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 7,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "89831671",
+          "published": "89831671",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 8,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "234159000",
+          "published": "234159000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 9,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "73154485",
+          "published": "73154485",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 10,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "512402000",
+          "published": "512402000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 11,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "146689926",
+          "published": "146689926",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 12,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "15341000",
+          "published": "15341000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 13,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "25841411",
+          "published": "25841411",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 14,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "10160000",
+          "published": "10160000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 15,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "7576934",
+          "published": "7576934",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 16,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "157000000",
+          "published": "157000000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 17,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "537155021",
+          "published": "537155021",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 18,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "260724194",
+          "published": "260724194",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 19,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "57481107",
+          "published": "57481107",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 20,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "302686000",
+          "published": "302686000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 21,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "196528912",
+          "published": "196528912",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 22,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "45718939",
+          "published": "45718939",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 23,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "34837000",
+          "published": "34837000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 24,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5976105",
+          "published": "5976105",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 22,
+          "source_row": 25,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5328721672",
+          "published": "5328721672",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 1,
+          "entity": "國資圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "22302",
+          "published": "22302",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 2,
+          "entity": "國臺圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "43236",
+          "published": "43236",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 3,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "15547",
+          "published": "15547",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 4,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "232530",
+          "published": "232530",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 5,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "220169",
+          "published": "220169",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 6,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "402874",
+          "published": "402874",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 7,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "29584",
+          "published": "29584",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 8,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "54632",
+          "published": "54632",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 9,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "32931",
+          "published": "32931",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 10,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "176851",
+          "published": "176851",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 11,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "51585",
+          "published": "51585",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 12,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "30991",
+          "published": "30991",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 13,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "39529",
+          "published": "39529",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 14,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "67926",
+          "published": "67926",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 15,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "14790",
+          "published": "14790",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 16,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "171628",
+          "published": "171628",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 17,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "130869",
+          "published": "130869",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 18,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "71130",
+          "published": "71130",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 19,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5190",
+          "published": "5190",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 20,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "8067",
+          "published": "8067",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 21,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "21747",
+          "published": "21747",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 22,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "13178",
+          "published": "13178",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 24,
+          "source_row": 23,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "12860",
+          "published": "12860",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        }
+      ],
+      "arithmetic_discrepancies": [
+        {
+          "table": 13,
+          "source_row": 3,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1735",
+          "published": "1665",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 13,
+          "source_row": 4,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3260",
+          "published": "3190",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 1,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "52788235",
+          "published": "53571611",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 3,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5831",
+          "published": "5849",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        }
+      ],
+      "copyright_publication_month": "2022-12",
+      "publication_entry_date": "2022-12-01",
+      "publication_date_difference": false,
+      "csv_sha256": "dd434d82bf62b2ae44b69594e5f1f339f371daa0563f33f8edb18f4a283ec8ae",
+      "jsonl_sha256": "47c0adeabade002e32565bb9aac54eb75879a677ef50d1a7bb1158e5c53364b5",
+      "verification_limits": "Producer reviewed PDFium images of all selected headers, row labels, units and terminal rows; all selected value positions crosschecked with PDFium numeric tokens against pdfplumber coordinate glyphs. This is not an independent human full-cell double collation. Chinese111edition has no ToUnicode; literal labels/無 mapped from source images, not guessed from CID strings.",
+      "intentional_exclusions": [
+        "Engineering/construction/equipment project case tables, local stories, awards, TopN reading performance, named people, book rankings and photographs.",
+        "Statistics chapter non-public-library families and duplicate charts."
+      ],
+      "rights": {
+        "license_status": "not_confirmed",
+        "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+        "full_originals_distribution": "not_in_public_bundle",
+        "statistical_facts_only": true
+      },
+      "dependencies": [
+        "scripts/ncl_modern_2019_2021_common.py",
+        "scripts/extract_ncl_2020.py",
+        "raw/ncl-2020/table-specifications.json",
+        "raw/ncl-2020/yearbook-110-public-library.pdf",
+        "raw/ncl-2020/yearbook-110-public-library.metadata.json",
+        "raw/ncl-2020/yearbook-110-statistics.pdf",
+        "raw/ncl-2020/yearbook-110-statistics.metadata.json",
+        "raw/ncl-2020/yearbook-110-copyright.metadata.json",
+        "raw/ncl-2020/yearbook-110-copyright.pdf",
+        "raw/ncl-2020/yearbook-110-editing.metadata.json",
+        "raw/ncl-2020/yearbook-110-editing.pdf",
+        "raw/ncl-2020/yearbook-110-toc.metadata.json",
+        "raw/ncl-2020/yearbook-110-toc.pdf",
+        "raw/ncl-2020/catalog.html",
+        "raw/ncl-2020/catalog.metadata.json"
+      ]
+    },
+    {
+      "input_evidence_sha256": {
+        "raw/ncl-2021/yearbook-111-copyright.metadata.json": "10d0ef3670a3ea4197b10800439916c7c46d435e1258d28977657b2ae83f2c4c",
+        "raw/ncl-2021/yearbook-111-copyright.pdf": "32a2ec123debfa6a5cb01c56809ee3fad8fcc237a1250df0603c29d68e3076e9",
+        "raw/ncl-2021/yearbook-111-editing.metadata.json": "a689c9a6f02607975447195897137125e5de911f164ba561cfa24efa482ef9f5",
+        "raw/ncl-2021/yearbook-111-editing.pdf": "ff2fb810a33af865c2355e5b7a9ca351f365e7895d5e5f316efebb85b51676c5",
+        "raw/ncl-2021/yearbook-111-public-library.metadata.json": "826a512bddf086d0c36c20dac41b0d834fd49c8ec0640e10b6a0bddf915153b4",
+        "raw/ncl-2021/yearbook-111-public-library.pdf": "838912481fc982e958e9487c0ac0c3211cfb2e77eb7ea7aeda357bdf4bd36454",
+        "raw/ncl-2021/yearbook-111-statistics.metadata.json": "bbf4d8ef50cf318f5842da26cc5bd49e66bdb9cf9e78d3129b627a3feab9cb6b",
+        "raw/ncl-2021/yearbook-111-statistics.pdf": "52972fc3abd675dc808b8e70a8f8132611cd5d7087adfa5b3e7b6d3ec24ff882",
+        "raw/ncl-2021/yearbook-111-toc.metadata.json": "ac8787888d461d0f6379c630060513f6f318747601b817db8b6b368e3cbe2d78",
+        "raw/ncl-2021/yearbook-111-toc.pdf": "a4a02a58a57e34668418c7e3c29b11e9420067900c435f20be28d24fc0423976",
+        "raw/ncl-2021/catalog.html": "21c16875d9c87f3253e633862983f736bca6d1b2dcfb712fd233a8475d73e764",
+        "raw/ncl-2021/catalog.metadata.json": "b19cddc9023f801552c04dee3f42c2099a4fcbea61b71bf01fc1c2c3f8886cc3",
+        "raw/ncl-2021/table-specifications.json": "00204493b259caf071177a3b41c69b95c2fbddb0379d48d8bcfb267463b68487"
+      },
+      "data_year": 2021,
+      "source_edition_roc": 111,
+      "long_rows": 1236,
+      "table_count": 15,
+      "all_selected_tables_complete": true,
+      "tables": [
+        {
+          "source_table": 7,
+          "type": "level_count",
+          "pages": [
+            1,
+            2
+          ],
+          "expected_cells": 36,
+          "extracted_cells": 36,
+          "status_counts": {
+            "reported": 36
+          },
+          "complete": true
+        },
+        {
+          "source_table": 8,
+          "type": "county_count",
+          "pages": [
+            2,
+            3
+          ],
+          "expected_cells": 138,
+          "extracted_cells": 138,
+          "status_counts": {
+            "reported": 138
+          },
+          "complete": true
+        },
+        {
+          "source_table": 9,
+          "type": "spending",
+          "pages": [
+            3,
+            3
+          ],
+          "expected_cells": 69,
+          "extracted_cells": 69,
+          "status_counts": {
+            "reported": 46,
+            "reported_decimal": 23
+          },
+          "complete": true
+        },
+        {
+          "source_table": 10,
+          "type": "staff_level",
+          "pages": [
+            4
+          ],
+          "expected_cells": 48,
+          "extracted_cells": 48,
+          "status_counts": {
+            "reported": 45,
+            "not_available_in_source": 3
+          },
+          "complete": true
+        },
+        {
+          "source_table": 11,
+          "type": "staff",
+          "pages": [
+            5
+          ],
+          "expected_cells": 161,
+          "extracted_cells": 161,
+          "status_counts": {
+            "reported": 92,
+            "reported_decimal": 67,
+            "source_marker": 2
+          },
+          "complete": true
+        },
+        {
+          "source_table": 12,
+          "type": "holdings_level",
+          "pages": [
+            6
+          ],
+          "expected_cells": 60,
+          "extracted_cells": 60,
+          "status_counts": {
+            "reported": 57,
+            "not_available_in_source": 3
+          },
+          "complete": true
+        },
+        {
+          "source_table": 13,
+          "type": "holdings_county",
+          "pages": [
+            6,
+            7
+          ],
+          "expected_cells": 69,
+          "extracted_cells": 69,
+          "status_counts": {
+            "reported": 46,
+            "reported_decimal": 23
+          },
+          "complete": true
+        },
+        {
+          "source_table": 14,
+          "type": "usage",
+          "pages": [
+            7,
+            8
+          ],
+          "expected_cells": 92,
+          "extracted_cells": 92,
+          "status_counts": {
+            "reported": 69,
+            "reported_decimal": 23
+          },
+          "complete": true
+        },
+        {
+          "source_table": 15,
+          "type": "events",
+          "pages": [
+            8,
+            9
+          ],
+          "expected_cells": 161,
+          "extracted_cells": 161,
+          "status_counts": {
+            "reported": 161
+          },
+          "complete": true
+        },
+        {
+          "source_table": 16,
+          "type": "attendance",
+          "pages": [
+            9,
+            10
+          ],
+          "expected_cells": 161,
+          "extracted_cells": 161,
+          "status_counts": {
+            "reported": 161
+          },
+          "complete": true
+        },
+        {
+          "source_table": 19,
+          "type": "budget",
+          "pages": [
+            14,
+            15
+          ],
+          "expected_cells": 75,
+          "extracted_cells": 75,
+          "status_counts": {
+            "reported": 75
+          },
+          "complete": true
+        },
+        {
+          "source_table": 21,
+          "type": "acquisition",
+          "pages": [
+            23
+          ],
+          "expected_cells": 120,
+          "extracted_cells": 120,
+          "status_counts": {
+            "reported": 120
+          },
+          "complete": true
+        },
+        {
+          "source_table": 203,
+          "type": "stats_types",
+          "pages": [
+            2
+          ],
+          "expected_cells": 7,
+          "extracted_cells": 7,
+          "status_counts": {
+            "reported": 7
+          },
+          "complete": true
+        },
+        {
+          "source_table": 204,
+          "type": "stats_basic",
+          "pages": [
+            3
+          ],
+          "expected_cells": 4,
+          "extracted_cells": 4,
+          "status_counts": {
+            "reported": 4
+          },
+          "complete": true
+        },
+        {
+          "source_table": 206,
+          "type": "stats_historical",
+          "pages": [
+            4
+          ],
+          "expected_cells": 35,
+          "extracted_cells": 35,
+          "status_counts": {
+            "reported": 35
+          },
+          "complete": true
+        }
+      ],
+      "second_engine_cell_checks": 1236,
+      "second_engine_numeric_mismatches": 0,
+      "value_status_counts": {
+        "reported": 1092,
+        "reported_decimal": 136,
+        "not_available_in_source": 6,
+        "source_marker": 2
+      },
+      "quality_flag_counts": {
+        "published_total_overlaps_components": 248,
+        "includes_reading_rooms_and_outreach_not_library_main_branch_count": 29,
+        "source_population_matches_prior_year_differs_same_year_spending_table": 23,
+        "source_positive_staff_count_but_service_population_marked_無": 2,
+        "Chinese_marker_transcribed_from_PDFium_image_due_missing_ToUnicode": 2,
+        "source_published_components_total_discrepancy_preserved": 35,
+        "historical_holdings_unit_not_printed_no_cross_table_imputation": 5
+      },
+      "arithmetic_checks": [
+        {
+          "table": 7,
+          "source_row": 1,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "198",
+          "published": "198",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 7,
+          "source_row": 2,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "289",
+          "published": "289",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 7,
+          "source_row": 3,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "59",
+          "published": "59",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 7,
+          "source_row": 4,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "513",
+          "published": "513",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 7,
+          "source_row": 5,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "297",
+          "published": "297",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 7,
+          "source_row": 6,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1356",
+          "published": "1356",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 1,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "35",
+          "published": "35",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 2,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "101",
+          "published": "101",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 3,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "105",
+          "published": "105",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 4,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "123",
+          "published": "123",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 5,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "34",
+          "published": "34",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 6,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "34",
+          "published": "34",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 7,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "63",
+          "published": "63",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 8,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "110",
+          "published": "110",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 9,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "75",
+          "published": "75",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 10,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "61",
+          "published": "61",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 11,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "43",
+          "published": "43",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 12,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "60",
+          "published": "60",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 13,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "6",
+          "published": "6",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 14,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "78",
+          "published": "78",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 15,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "111",
+          "published": "111",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 16,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "94",
+          "published": "94",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 17,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "48",
+          "published": "48",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 18,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "49",
+          "published": "49",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 19,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "66",
+          "published": "66",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 20,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "15",
+          "published": "15",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 21,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "27",
+          "published": "27",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 22,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "8",
+          "published": "8",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 8,
+          "source_row": 23,
+          "entity": "小計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1346",
+          "published": "1346",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 1,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1237",
+          "published": "1237",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 2,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "315",
+          "published": "315",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 3,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2000",
+          "published": "2000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 4,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3552",
+          "published": "3552",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 7,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1366",
+          "published": "1366",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 10,
+          "source_row": 8,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "13335",
+          "published": "13335",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 12,
+          "source_row": 1,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "55829327",
+          "published": "55829327",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 12,
+          "source_row": 2,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "59191",
+          "published": "59191",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 12,
+          "source_row": 3,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5566",
+          "published": "5566",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 12,
+          "source_row": 4,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "420065",
+          "published": "420065",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 12,
+          "source_row": 5,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "56314149",
+          "published": "56314149",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 12,
+          "source_row": 6,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2038439",
+          "published": "2038439",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 12,
+          "source_row": 10,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "60999455",
+          "published": "60999455",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 1,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "642",
+          "published": "642",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 2,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "14380",
+          "published": "14380",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 3,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "14087",
+          "published": "14087",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 4,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "4648",
+          "published": "4648",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 5,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1303",
+          "published": "1303",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 6,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "875",
+          "published": "875",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 7,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "7197",
+          "published": "7197",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 8,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "11714",
+          "published": "11714",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 9,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3358",
+          "published": "3358",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 10,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1592",
+          "published": "1592",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 11,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2272",
+          "published": "2272",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 12,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1450",
+          "published": "1450",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 13,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "264",
+          "published": "264",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 14,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "6714",
+          "published": "6714",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 15,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "15144",
+          "published": "15144",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 16,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2257",
+          "published": "2257",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 17,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1166",
+          "published": "1166",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 18,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2169",
+          "published": "2169",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 19,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1010",
+          "published": "1010",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 20,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "520",
+          "published": "520",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 21,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1672",
+          "published": "1672",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 22,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "88",
+          "published": "88",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 15,
+          "source_row": 23,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "94522",
+          "published": "94522",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 1,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "50475",
+          "published": "50475",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 2,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1423951",
+          "published": "1423951",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 3,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "7158776",
+          "published": "7158776",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 4,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1826758",
+          "published": "1826758",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 5,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "446121",
+          "published": "446121",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 6,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1126723",
+          "published": "1126723",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 7,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "540847",
+          "published": "540847",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 8,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2672857",
+          "published": "2672857",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 9,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1392626",
+          "published": "1392626",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 10,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "137006",
+          "published": "137006",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 11,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "147716",
+          "published": "147716",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 12,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "59466",
+          "published": "59466",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 13,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "16550",
+          "published": "16550",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 14,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5841585",
+          "published": "5841585",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 15,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5886093",
+          "published": "5886093",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 16,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "383453",
+          "published": "383453",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 17,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "134972",
+          "published": "134972",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 18,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "194720",
+          "published": "194720",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 19,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "360732",
+          "published": "360732",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 20,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "30813",
+          "published": "30813",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 21,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "358360",
+          "published": "358360",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 22,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "1144",
+          "published": "1144",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 16,
+          "source_row": 23,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "30191744",
+          "published": "30191744",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 1,
+          "entity": "國資圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "158241000",
+          "published": "158241000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 2,
+          "entity": "國臺圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "434750486",
+          "published": "434750486",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 3,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "25000000",
+          "published": "25000000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 4,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "977709391",
+          "published": "977709391",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 5,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "667325305",
+          "published": "667325305",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 6,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "794762000",
+          "published": "794762000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 7,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "383877000",
+          "published": "383877000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 8,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "339605000",
+          "published": "339605000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 9,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "99764112",
+          "published": "99764112",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 10,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "453223000",
+          "published": "453223000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 11,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "144868666",
+          "published": "144868666",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 12,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "42684184",
+          "published": "42684184",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 13,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "40971208",
+          "published": "40971208",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 14,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "15810000",
+          "published": "15810000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 15,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "16861662",
+          "published": "16861662",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 16,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "149000000",
+          "published": "149000000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 17,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "500697139",
+          "published": "500697139",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 18,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "311201919",
+          "published": "311201919",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 19,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "48985917",
+          "published": "48985917",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 20,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "134875000",
+          "published": "134875000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 21,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "59390370",
+          "published": "59390370",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 22,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "34986689",
+          "published": "34986689",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 23,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "24706000",
+          "published": "24706000",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 24,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "3847304",
+          "published": "3847304",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 19,
+          "source_row": 25,
+          "entity": "合計",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "5863143352",
+          "published": "5863143352",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 1,
+          "entity": "國資圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "17078",
+          "published": "17078",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 2,
+          "entity": "國臺圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "32996",
+          "published": "32096",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 3,
+          "entity": "基隆市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "34470",
+          "published": "34470",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 4,
+          "entity": "臺北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "222278",
+          "published": "222278",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 5,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "102678",
+          "published": "202678",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 6,
+          "entity": "桃園市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "382399",
+          "published": "382399",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 7,
+          "entity": "新竹縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "36536",
+          "published": "36536",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 8,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "33229",
+          "published": "35438",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 9,
+          "entity": "苗栗縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "36822",
+          "published": "36822",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 10,
+          "entity": "臺中市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "186111",
+          "published": "186111",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 11,
+          "entity": "彰化縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "56665",
+          "published": "56665",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 12,
+          "entity": "南投縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "29990",
+          "published": "29990",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 13,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "11247",
+          "published": "52411",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 14,
+          "entity": "嘉義縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "53384",
+          "published": "53384",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 15,
+          "entity": "嘉義市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "15326",
+          "published": "15326",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 16,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "144071",
+          "published": "153071",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 17,
+          "entity": "高雄市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "123973",
+          "published": "123973",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 18,
+          "entity": "屏東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "69650",
+          "published": "69650",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 19,
+          "entity": "宜蘭縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "27964",
+          "published": "27964",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 20,
+          "entity": "花蓮縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "38255",
+          "published": "38255",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 21,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "24143",
+          "published": "24914",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 22,
+          "entity": "澎湖縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "12060",
+          "published": "12060",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 23,
+          "entity": "金門縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "21996",
+          "published": "21996",
+          "matches": true,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 24,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2097",
+          "published": "2351",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        }
+      ],
+      "arithmetic_discrepancies": [
+        {
+          "table": 21,
+          "source_row": 2,
+          "entity": "國臺圖",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "32996",
+          "published": "32096",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 5,
+          "entity": "新北市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "102678",
+          "published": "202678",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 8,
+          "entity": "新竹市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "33229",
+          "published": "35438",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 13,
+          "entity": "雲林縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "11247",
+          "published": "52411",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 16,
+          "entity": "臺南市",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "144071",
+          "published": "153071",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 21,
+          "entity": "臺東縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "24143",
+          "published": "24914",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        },
+        {
+          "table": 21,
+          "source_row": 24,
+          "entity": "連江縣",
+          "rule": "printed_components_vs_printed_total",
+          "computed": "2097",
+          "published": "2351",
+          "matches": false,
+          "interpretation": "source diagnostic only; mixed-unit holdings not standardized"
+        }
+      ],
+      "copyright_publication_month": "2023-08",
+      "publication_entry_date": "2023-09-01",
+      "publication_date_difference": true,
+      "csv_sha256": "138097c9a37bd7deb49bbf46a96a8f67850988da3b125f2c4aba86e430976b81",
+      "jsonl_sha256": "8514cc7403f09ee7dee50313b9dd51e28b9ae702fa2de0a4d36fed2e191ed4d9",
+      "verification_limits": "Producer reviewed PDFium images of all selected headers, row labels, units and terminal rows; all selected value positions crosschecked with PDFium numeric tokens against pdfplumber coordinate glyphs. This is not an independent human full-cell double collation. Chinese111edition has no ToUnicode; literal labels/無 mapped from source images, not guessed from CID strings.",
+      "intentional_exclusions": [
+        "Engineering/construction/equipment project case tables, local stories, awards, TopN reading performance, named people, book rankings and photographs.",
+        "Statistics chapter non-public-library families and duplicate charts."
+      ],
+      "rights": {
+        "license_status": "not_confirmed",
+        "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+        "full_originals_distribution": "not_in_public_bundle",
+        "statistical_facts_only": true
+      },
+      "dependencies": [
+        "scripts/ncl_modern_2019_2021_common.py",
+        "scripts/extract_ncl_2021.py",
+        "raw/ncl-2021/table-specifications.json",
+        "raw/ncl-2021/yearbook-111-public-library.pdf",
+        "raw/ncl-2021/yearbook-111-public-library.metadata.json",
+        "raw/ncl-2021/yearbook-111-statistics.pdf",
+        "raw/ncl-2021/yearbook-111-statistics.metadata.json",
+        "raw/ncl-2021/yearbook-111-copyright.metadata.json",
+        "raw/ncl-2021/yearbook-111-copyright.pdf",
+        "raw/ncl-2021/yearbook-111-editing.metadata.json",
+        "raw/ncl-2021/yearbook-111-editing.pdf",
+        "raw/ncl-2021/yearbook-111-toc.metadata.json",
+        "raw/ncl-2021/yearbook-111-toc.pdf",
+        "raw/ncl-2021/catalog.html",
+        "raw/ncl-2021/catalog.metadata.json"
+      ]
+    }
+  ],
+  "not_claimed": [
+    "全臺歷年完整",
+    "獨立人工逐格雙校",
+    "全文PDF開放授權"
+  ],
+  "post_freeze_provenance_preflight_change": {
+    "previous_helper_sha256": "5ec5c4c7d082ae9631dc1e537df5db90eff4ed36e7b1ffd8752ef0efc95c22e2",
+    "current_helper_sha256": "8b4dce1f43f5be041a504044efe8de02bcb3bb85acea948d52722ce194185a0c",
+    "numeric_outputs_changed": false,
+    "reason": "Catalog HTML is a private optional evidence snapshot. Validate SHA if present; when absent validate stable catalogue metadata edition/publication date/observed PDF URLs, with required copyright/editing/TOC PDFs.",
+    "public_projection_rebuild_evidence": "research/ncl-v04-catalog-projection-rebuild.json",
+    "reported_by": "parent_agent_and_local_helper_hash_verified"
+  },
+  "initial_freeze_output_sha256": {
+    "derived/ncl_2019_long.csv": "dad9e15679ab71070eb4bd86dbbdf43aa84d6ffcecc856dea5234da511507235",
+    "derived/ncl_2019_long.jsonl": "4d54f7707bffe8a1c5c354e1121b54bf412c227562f683138468aceef92231a0",
+    "raw/ncl-2019/extraction-validation.json": "68e46144d2d12ff421408db603c9ebf8b73fe15f16a96f48d91bd28ae50bd4dc",
+    "raw/ncl-2019/documents.json": "93460bfb25849a8c42d299ce499347f00af741b4d1159888af09d094219f2024",
+    "raw/ncl-2019/token-checks.private.json": "7570b8f90b216f144947dc062d4d04e12fa248b20ff0fc75dc80ef68f852fd0a",
+    "derived/ncl_2020_long.csv": "19627274a4c15c7a776e6db7bc9258d848c0a153c1d1ebd7e375c66c0b0bf701",
+    "derived/ncl_2020_long.jsonl": "c4b0b06e594c1ed0b55fe8a2e23cf463cde43ecd3fd45dafb7875a771891da37",
+    "raw/ncl-2020/extraction-validation.json": "838172fbbb7229e166c50bb5394abb2ecd3d24d6caad46640b0d372d59bc7c8e",
+    "raw/ncl-2020/documents.json": "3367cf868dd315127c473c261ecc333802c5764df0a542d77e8d86c4e19ad7e7",
+    "raw/ncl-2020/token-checks.private.json": "b9ab02892f4388cb95d74bdd931ffabc1ec1548a1d2243832708e0bef0f74fb6",
+    "derived/ncl_2021_long.csv": "e68d38b0a98c57d3ecd598803043427aa6a843bbd7591aecb625fb8a3192e0a6",
+    "derived/ncl_2021_long.jsonl": "b5a43162a25f00998b6f6a042c5ebc0f0e93388be85a2fefea430cd328fec7e6",
+    "raw/ncl-2021/extraction-validation.json": "789f9f9ab5470c65f4c9e2797b8e6d5db8ae2f4842a3bbc2fd5d005eba4fc395",
+    "raw/ncl-2021/documents.json": "a9ac2e1fd8da4b691ece74e9198ed0151fe2379fb32074e4320740600006c7ae",
+    "raw/ncl-2021/token-checks.private.json": "903aeb6c6a6fe577a69e23145845371c94d9dce3a09a9efaaecf447c8310a2d0"
+  },
+  "post_freeze_semantics_correction": {
+    "evidence": "research/ncl-2019-2021-final-semantics-correction.json",
+    "numeric_values_raw_status_positions_unchanged": true,
+    "historical_holdings_unit_corrections": 15,
+    "raw_classification_name_corrections": 3,
+    "final_helper_sha256": "f3b1a15849f7549bb94da1a4e5398c6e261fa56729d3e660f2fc2b6751f309ba",
+    "final_evidence": "research/ncl-2019-2021-final-semantics-correction.json",
+    "basic_literal_row_name": "公立公共圖書館",
+    "geographic_context": "全國 separate; historical context explicitly inferred"
+  },
+  "freeze_revision_history": [
+    {
+      "helper_sha256": "1ba86824c9d0d1cc7a7dd07770075472db058a4e4f8da576943f87f5487ae88e",
+      "output_sha256": {
+        "derived/ncl_2019_long.csv": "597a540bdbd70f4287a9e8a510bf555a90dfc9c1ef4aebf999e43250395677a9",
+        "derived/ncl_2019_long.jsonl": "768dc23730c2ed3727ff45c85830f42908b945aad6405edea3eab9ee201d7570",
+        "raw/ncl-2019/extraction-validation.json": "f1c84592bb9f658b1938f6c32b443d7ab560dfc8e5e9d82bcd3b3d801591b903",
+        "raw/ncl-2019/documents.json": "93460bfb25849a8c42d299ce499347f00af741b4d1159888af09d094219f2024",
+        "raw/ncl-2019/token-checks.private.json": "7570b8f90b216f144947dc062d4d04e12fa248b20ff0fc75dc80ef68f852fd0a",
+        "derived/ncl_2020_long.csv": "2c51a56afeaf434a313a19397200af7a8634281ac9979504dab1cc1c2f361c2e",
+        "derived/ncl_2020_long.jsonl": "bbd30baf6814c5b4b77d3b5abdcdbc2d1e13f36e9020917a517c7f01031bc4d0",
+        "raw/ncl-2020/extraction-validation.json": "691dc3f5499bdefd94b30f4fc23d4f7731db14940d0425d72624e644bf3beb43",
+        "raw/ncl-2020/documents.json": "3367cf868dd315127c473c261ecc333802c5764df0a542d77e8d86c4e19ad7e7",
+        "raw/ncl-2020/token-checks.private.json": "b9ab02892f4388cb95d74bdd931ffabc1ec1548a1d2243832708e0bef0f74fb6",
+        "derived/ncl_2021_long.csv": "6d8d61f89527b7ec38370ba3282b247432a6264cf6901b80ce9c5dc61d398886",
+        "derived/ncl_2021_long.jsonl": "47f0cf84d68b519a397403e258e959f4ab3825c7699490ec655d976268900300",
+        "raw/ncl-2021/extraction-validation.json": "d2831621924d942bc454fbd3bfee3df4019e4cfde9e7778c0331e0a25273653d",
+        "raw/ncl-2021/documents.json": "a9ac2e1fd8da4b691ece74e9198ed0151fe2379fb32074e4320740600006c7ae",
+        "raw/ncl-2021/token-checks.private.json": "903aeb6c6a6fe577a69e23145845371c94d9dce3a09a9efaaecf447c8310a2d0"
+      },
+      "reason": "Superseded by final source-label/context fidelity revision; all numeric/raw/status/positions unchanged"
+    }
+  ]
+}

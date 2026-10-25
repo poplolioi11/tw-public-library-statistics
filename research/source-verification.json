@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-25T10:43:12.636688+00:00",
+  "checked_at": "2026-10-25T12:04:42.016397+00:00",
   "status": "pass",
-  "assertions": 681173,
-  "scope": "3091 core source cells exhaustively checked; NCL lineage/number parsing all rows, PDF page-image samples only; component coverage as individually reported.",
+  "assertions": 1244134,
+  "scope": "3091 core source cells exhaustively checked; all NCL adapter lineage/number states checked. Complete independently fixed glyph grids for explicitly reviewed cohorts and image/header/row/footnote selections are separately bounded in each evidence report. Older source review limits remain individually reported.",
   "independent_of_pipeline_and_extractors": true,
   "network_used": false,
   "core": {
@@ -459,7 +459,7 @@
   },
   "components": {
     "status": "pass",
-    "canonical_records_checked": 23634,
+    "canonical_records_checked": 34302,
     "local_raw_documents_checked": 35,
     "local_raw_cells_and_derived_rows_checked": 25184,
     "blank_non_observation_raw_rows_excluded": 5,
@@ -467,13 +467,13 @@
     "exact_duplicate_rows_excluded": 10433,
     "conflicting_value_groups": 0,
     "historical_adapter_records_checked": 1489,
-    "additional_ncl_expected_records": 6750,
+    "additional_ncl_expected_records": 17418,
     "explicit_missing_source_markers_retained": 4,
     "pdf_raw_files_hash_checked": 6,
     "local_verification_level": "All original JSON cells and complete original objects vs derived; every nonduplicate adapter record vs derived and raw.",
     "historical_verification_level": "Every adapter record vs derived and PDF source hashes; NCL visual sample scope reported separately. DGBAS PDF content not independently transcribed in this adapter review.",
     "inputs": {
-      "components_sha256": "4bab035521290ca26384ba37737a755ba23253c56e250d32fe117f1bdb70e62d",
+      "components_sha256": "9ece90d370b35c1ce2f90fab54655d33a1437ffa33d512bc4f0c2cb32d9bf093",
       "local_derived_sha256": "d7ae5850837da2c085668ee8f7f5ad260fc76bb06fc1d929d70447932bd063da"
     }
   },
@@ -525,15 +525,25 @@
       "ncl_2012_prose_long.csv",
       "ncl_reading_2012_long.csv",
       "ncl_2014_long.csv",
-      "ncl_2015_long.csv"
+      "ncl_2015_long.csv",
+      "ncl_2016_long.csv",
+      "ncl_2017_long.csv",
+      "ncl_2018_long.csv",
+      "ncl_2019_long.csv",
+      "ncl_2020_long.csv",
+      "ncl_2021_long.csv",
+      "ncl_2022_long.csv",
+      "ncl_2023_long.csv",
+      "ncl_2024_long.csv"
     ],
-    "records_checked": 6750,
-    "source_pdf_hashes_checked": 16,
+    "records_checked": 17418,
+    "source_pdf_hashes_checked": 34,
     "value_status_counts": {
       "source_blank": 876,
-      "reported": 5093,
-      "reported_decimal": 769,
-      "not_available_in_source": 12
+      "reported": 14648,
+      "reported_decimal": 1856,
+      "not_available_in_source": 18,
+      "source_marker": 20
     },
     "gap_review_level": "Complete independent page-image baseline is checked separately.",
     "other_years_review_level": "Derived-to-canonical fields and raw PDF hashes checked; separately, five original-image tables have 164 independently entered expected sample positions (159 numeric, two blank, three explicit markers), recorded in research/ncl-v02-independent-image-samples.json. This is not a full independent transcription of all additional-year PDF cells."
@@ -550,6 +560,66 @@
       "sha256": "57cca0a6414cf80834155f85ab974f40f2cc3fbb24085258e99b674e19c235a5",
       "source_cells": 909,
       "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
+    {
+      "report": "research/ncl-2016-independent-review.json",
+      "sha256": "59dd89ebe245c47f6901be76fa740ca3f4b081d9491c157e0b2cbbc314cba417",
+      "source_cells": 1040,
+      "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
+    {
+      "report": "research/ncl-2017-independent-review.json",
+      "sha256": "20f90772056303ad042de53a4b2f76b44e4053a1116bd8b63f5adf13d727b0f2",
+      "source_cells": 1040,
+      "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
+    {
+      "report": "research/ncl-2018-independent-review.json",
+      "sha256": "da81708cd87ea39d268b54656e6d6724eccaff990206dcfc495a60d4e2b5b3a1",
+      "source_cells": 1221,
+      "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
+    {
+      "report": "research/ncl-2019-independent-review.json",
+      "sha256": "f07d7698adf3f8766ff48c281cad2263e21f327a5ce7f96e32a12978ba65bf82",
+      "source_cells": 1173,
+      "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
+    {
+      "report": "research/ncl-2020-independent-review.json",
+      "sha256": "3182d6c4fef6a122de09090742e3d0fae9f1d787a76b30d1d24efdeef2901e3a",
+      "source_cells": 1250,
+      "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
+    {
+      "report": "research/ncl-2021-independent-review.json",
+      "sha256": "d583b2ce55ced02786936541571986cd1b281b94b09993711f6c0bb08178ae0b",
+      "source_cells": 1236,
+      "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
+    {
+      "report": "research/ncl-2022-independent-review.json",
+      "sha256": "0f3aa69cbbc75cf2a1450b07fc7b9a2dbb96163f09ddfaacceec33c942f4d91d",
+      "source_cells": 1236,
+      "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
+    {
+      "report": "research/ncl-2023-independent-review.json",
+      "sha256": "4c9ef0b84a0ae252d74aba692668cad18c61b818f0d57106c568deb4a3db03b6",
+      "source_cells": 1236,
+      "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
+    {
+      "report": "research/ncl-2024-independent-review.json",
+      "sha256": "de34c5e5f2d96afe8a070d394222ce28c24c1a2afacf7c0c124e10432e47b839",
+      "source_cells": 1236,
+      "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
+    {
+      "report": "research/ncl-v04-image-expectations.json",
+      "sha256": "8287c7cd7ac73fc1f383d7af4ca233e44dbd2f29fc678ecc2fb520b0383d3b55",
+      "source_cells": 31,
+      "method": "Explicit image selections, separate from the full glyph-grid comparisons. Gemini read three supplied original page images; primary agent also inspected them and the2020scoped-quantity page."
     },
     {
       "report": "research/ncl-reading-2012-independent-review.json",
@@ -581,9 +651,9 @@
   },
   "combined": {
     "status": "pass",
-    "records_checked": 26725,
+    "records_checked": 37393,
     "all_original_fields_preserved": true,
-    "snapshot_sha256": "72561836a25ce3b0ed5053d1b65faabe7f99e0aaaf3a1bb6c06eb9ae9d14f1f3"
+    "snapshot_sha256": "635472fd962f11c916a32b3373455049387f8210225fd18d81633fb34eb6ce3a"
   },
   "ncl_v02_targeted_image_review": {
     "report_path": "research/ncl-v02-independent-image-samples.json",
@@ -606,7 +676,7 @@
     "Chart response JSON does not itself contain a validated reference year; year follows the saved official UI request.",
     "A returned zero is not proof of true zero or historical collection of that indicator.",
     "Source values matching snapshots do not prove the official source itself has no mistakes.",
-    "PDF visual checks are targeted samples, not a full transcription review.",
+    "Original-image review scope is explicit per cohort; complete glyph-grid comparison is not full human image double collation.",
     "No source families or overlapping national/county/institution scopes are summed.",
     "DGBAS PDF cell content is checked against derived extraction only, not independently transcribed here."
   ]

@@ -1,0 +1,21 @@
+{
+  "network_calls": 0,
+  "catalog_html_present": false,
+  "checks": [
+    {
+      "year": 2019,
+      "csv_identical_without_full_html": true,
+      "csv_sha256": "1a81468bd4866c5f5eb53f6d8a146c9f07f9cb859cf8f3e9b96aef739a1e0b4c"
+    },
+    {
+      "year": 2020,
+      "csv_identical_without_full_html": true,
+      "csv_sha256": "dd434d82bf62b2ae44b69594e5f1f339f371daa0563f33f8edb18f4a283ec8ae"
+    },
+    {
+      "year": 2021,
+      "csv_identical_without_full_html": true,
+      "csv_sha256": "138097c9a37bd7deb49bbf46a96a8f67850988da3b125f2c4aba86e430976b81"
+    }
+  ]
+}

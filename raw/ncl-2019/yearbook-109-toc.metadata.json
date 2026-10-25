@@ -1,0 +1,30 @@
+{
+  "source_id": "ncl-yearbook-109-toc",
+  "source_edition_roc": 109,
+  "title": "目次",
+  "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566931435160107",
+  "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566938420382692/8834e68f-42ca-4f81-a25e-03b02ce2d931.pdf",
+  "final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566938420382692/8834e68f-42ca-4f81-a25e-03b02ce2d931.pdf",
+  "source_local_path": "raw/ncl-2019/yearbook-109-toc.pdf",
+  "sha256": "66349e27cb8c6f7e2253e1fbd14c883f4d081427f92f9aeea697205cb2bd5319",
+  "bytes": 327836,
+  "source_retrieved_at": "2026-10-25T10:58:51.648783+00:00",
+  "headers": {
+    "Content-Type": "application/pdf",
+    "Content-Length": "327836",
+    "Connection": "close",
+    "Server": "nginx",
+    "Date": "Sun, 25 Oct 2026 10:58:51 GMT",
+    "Accept-Ranges": "bytes",
+    "ETag": "\"1dcd4e5aa0a499c\"",
+    "Last-Modified": "Sat, 25 Apr 2026 18:59:38 GMT",
+    "Strict-Transport-Security": "max-age=2592000",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Cross-Origin-Opener-Policy": "same-origin",
+    "Cross-Origin-Resource-Policy": "same-origin"
+  },
+  "license_status": "not_confirmed",
+  "snapshot_distribution": "not_in_public_bundle"
+}

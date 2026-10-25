@@ -1,0 +1,33 @@
+{
+  "affected_cells": 4,
+  "source_table": "25",
+  "source_column": 10,
+  "raw_notes": [
+    {
+      "source_row": 3,
+      "entity_raw": "桃園市",
+      "value_raw": "1",
+      "source_cell_note_raw": "（復興區立圖書館）"
+    },
+    {
+      "source_row": 4,
+      "entity_raw": "臺中市",
+      "value_raw": "1",
+      "source_cell_note_raw": "（和平區立圖書館）"
+    },
+    {
+      "source_row": 6,
+      "entity_raw": "高雄市",
+      "value_raw": "3",
+      "source_cell_note_raw": "（高雄市桃源區圖書館、高雄市那瑪夏圖書館、高雄市茂林區圖書館）"
+    },
+    {
+      "source_row": 8,
+      "entity_raw": "新竹縣",
+      "value_raw": "2",
+      "source_cell_note_raw": "（1、尖石鄉立圖書館2、五峰鄉立圖書館）"
+    }
+  ],
+  "all_values_raw_numbers_source_positions_unchanged": true,
+  "statistical_source_position_fingerprint": "87f94949d6bac3311b599d3d9d70a33a18c790a4d0c97726449f3e68583ececc"
+}

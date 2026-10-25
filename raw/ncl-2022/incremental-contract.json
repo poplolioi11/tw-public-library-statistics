@@ -1,0 +1,64 @@
+{
+  "producer_inputs": [
+    {
+      "path": "scripts/extract_ncl_2022.py",
+      "sha256": "abb9c38bc77e308a1091660d02cc88ca2a0bf189aa40948ec2afadde3fbce788",
+      "bytes": 193
+    },
+    {
+      "path": "scripts/audit_ncl_recent_helper.py",
+      "sha256": "ea564904ee09713cfe8247b600d1603586e83c54546f52de419addc37cffbc0b",
+      "bytes": 16914
+    },
+    {
+      "path": "scripts/audit_ncl_recent_specs_2022.json",
+      "sha256": "7fe82f556ad00cd242a724178c145e7f6c1f0b20d145522abb2e4c3c737f6b00",
+      "bytes": 687831
+    },
+    {
+      "path": "raw/ncl-2022/yearbook-112-public-library.metadata.json",
+      "sha256": "ab9cb3493a6021ab9aaece258e25327658c6b8efb1bde6795359a85a061dbb21",
+      "bytes": 770
+    },
+    {
+      "path": "raw/ncl-2022/yearbook-112-public-library.pdf",
+      "sha256": "6c016fd7f589e3205e434cfc74694cc25c7cd351c42175e34670af1ae0e50b02",
+      "bytes": 1010638
+    },
+    {
+      "path": "raw/ncl-2022/yearbook-112-statistics.metadata.json",
+      "sha256": "0c84df6c59d4413c1b313a5ba385e29003d556f72ba9a28c3467cacb4efbff9d",
+      "bytes": 762
+    },
+    {
+      "path": "raw/ncl-2022/yearbook-112-statistics.pdf",
+      "sha256": "cc2f1ab9add0adb8988ca1534de10345d3d3917dfa1ff857d8a40113277ef208",
+      "bytes": 263801
+    }
+  ],
+  "producer_outputs": [
+    {
+      "path": "derived/ncl_2022_long.csv",
+      "sha256": "781ecc619c27b0ec405e1a58e7c1ae5f696246b3721d0e2df650aa8dc8c5ce1d",
+      "bytes": 3018907
+    },
+    {
+      "path": "derived/ncl_2022_long.jsonl",
+      "sha256": "621a489cec5db072c4ee14d8fa8a2609f969695e006dc76f5d24da9c9d582ffd",
+      "bytes": 4847961
+    },
+    {
+      "path": "raw/ncl-2022/extraction-validation.json",
+      "sha256": "ec4fdeca61d4d5ca446c44ba819475441d468a14564972269b2cc55a76db6e68",
+      "bytes": 124331
+    },
+    {
+      "path": "raw/ncl-2022/documents.json",
+      "sha256": "988074c1d694f88309d398c7738da993cb05405cdcf0821b871eb6ceeca2073f",
+      "bytes": 2362
+    }
+  ],
+  "cache_contract": "Every input SHA and producer signature unchanged; every output present and SHA-valid. Missing or changed original is not a valid cache. Changed original SHA requires new review; never apply old coordinates.",
+  "unchanged_outputs_keep_mtime": true,
+  "full_originals_distribution": "not_in_public_bundle"
+}

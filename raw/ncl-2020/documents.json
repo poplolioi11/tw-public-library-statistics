@@ -1,0 +1,285 @@
+[
+  {
+    "source_id": "ncl-yearbook-110-public-library",
+    "source_edition_roc": 110,
+    "title": "公共圖書館",
+    "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566955493654718",
+    "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566954845461293/94e39cac-191c-4202-ba9f-9724ef68ed6b.pdf",
+    "final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566954845461293/94e39cac-191c-4202-ba9f-9724ef68ed6b.pdf",
+    "source_local_path": "raw/ncl-2020/yearbook-110-public-library.pdf",
+    "sha256": "4d95c7af8993461b0395b331e2d60a221e1eaeac80bf7def28a86ee6fb2009cf",
+    "bytes": 1338019,
+    "source_retrieved_at": "2026-10-25T10:58:55.177404+00:00",
+    "headers": {
+      "Content-Type": "application/pdf",
+      "Content-Length": "1338019",
+      "Connection": "close",
+      "Server": "nginx",
+      "Date": "Sun, 25 Oct 2026 10:58:52 GMT",
+      "Accept-Ranges": "bytes",
+      "ETag": "\"1dcd4e56b6de423\"",
+      "Last-Modified": "Sat, 25 Apr 2026 18:57:53 GMT",
+      "Strict-Transport-Security": "max-age=2592000",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Cross-Origin-Resource-Policy": "same-origin"
+    },
+    "license_status": "not_confirmed",
+    "snapshot_distribution": "not_in_public_bundle",
+    "selected_table_metadata": [
+      {
+        "source_table": 10,
+        "type": "level_count",
+        "pages": [
+          1,
+          2
+        ],
+        "expected_cells": 36,
+        "extracted_cells": 36,
+        "status_counts": {
+          "reported": 36
+        },
+        "complete": true
+      },
+      {
+        "source_table": 11,
+        "type": "county_count",
+        "pages": [
+          2,
+          3
+        ],
+        "expected_cells": 138,
+        "extracted_cells": 138,
+        "status_counts": {
+          "reported": 138
+        },
+        "complete": true
+      },
+      {
+        "source_table": 12,
+        "type": "spending",
+        "pages": [
+          3,
+          3
+        ],
+        "expected_cells": 69,
+        "extracted_cells": 69,
+        "status_counts": {
+          "reported": 46,
+          "reported_decimal": 23
+        },
+        "complete": true
+      },
+      {
+        "source_table": 13,
+        "type": "staff_level",
+        "pages": [
+          4
+        ],
+        "expected_cells": 48,
+        "extracted_cells": 48,
+        "status_counts": {
+          "reported": 48
+        },
+        "complete": true
+      },
+      {
+        "source_table": 14,
+        "type": "staff",
+        "pages": [
+          5
+        ],
+        "expected_cells": 161,
+        "extracted_cells": 161,
+        "status_counts": {
+          "reported": 92,
+          "reported_decimal": 66,
+          "source_marker": 3
+        },
+        "complete": true
+      },
+      {
+        "source_table": 15,
+        "type": "holdings_level",
+        "pages": [
+          6
+        ],
+        "expected_cells": 60,
+        "extracted_cells": 60,
+        "status_counts": {
+          "reported": 60
+        },
+        "complete": true
+      },
+      {
+        "source_table": 16,
+        "type": "holdings_county",
+        "pages": [
+          6,
+          7
+        ],
+        "expected_cells": 69,
+        "extracted_cells": 69,
+        "status_counts": {
+          "reported": 46,
+          "reported_decimal": 23
+        },
+        "complete": true
+      },
+      {
+        "source_table": 17,
+        "type": "usage",
+        "pages": [
+          7,
+          8
+        ],
+        "expected_cells": 92,
+        "extracted_cells": 92,
+        "status_counts": {
+          "reported": 69,
+          "reported_decimal": 23
+        },
+        "complete": true
+      },
+      {
+        "source_table": 18,
+        "type": "events",
+        "pages": [
+          8,
+          9
+        ],
+        "expected_cells": 161,
+        "extracted_cells": 161,
+        "status_counts": {
+          "reported": 161
+        },
+        "complete": true
+      },
+      {
+        "source_table": 19,
+        "type": "attendance",
+        "pages": [
+          9,
+          10
+        ],
+        "expected_cells": 161,
+        "extracted_cells": 161,
+        "status_counts": {
+          "reported": 161
+        },
+        "complete": true
+      },
+      {
+        "source_table": 22,
+        "type": "budget",
+        "pages": [
+          14
+        ],
+        "expected_cells": 75,
+        "extracted_cells": 75,
+        "status_counts": {
+          "reported": 75
+        },
+        "complete": true
+      },
+      {
+        "source_table": 24,
+        "type": "acquisition",
+        "pages": [
+          22,
+          23
+        ],
+        "expected_cells": 144,
+        "extracted_cells": 144,
+        "status_counts": {
+          "reported": 137,
+          "source_marker": 7
+        },
+        "complete": true
+      }
+    ],
+    "source_cells": 1214,
+    "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+    "license_evidence": "官方開放宣告二（三）明列出版品及專人專案撰文等須經原權利人同意；未確認本章全文開放授權。僅整理統計事實，不重散布完整PDF／影像。",
+    "publication_entry_date": "2022-12-01",
+    "copyright_publication_month": "2022-12"
+  },
+  {
+    "source_id": "ncl-yearbook-110-statistics",
+    "source_edition_roc": 110,
+    "title": "圖書館統計",
+    "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566955493654718",
+    "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566968103532229/f5ea4a52-d924-47bb-9f62-8a6dc9d688f7.pdf",
+    "final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566968103532229/f5ea4a52-d924-47bb-9f62-8a6dc9d688f7.pdf",
+    "source_local_path": "raw/ncl-2020/yearbook-110-statistics.pdf",
+    "sha256": "5d6ca64e8a9cd1c05fc5b2ed97c48ad8f54dcaea3072062c3f85bfd35227ceb9",
+    "bytes": 523989,
+    "source_retrieved_at": "2026-10-25T10:58:54.644671+00:00",
+    "headers": {
+      "Content-Type": "application/pdf",
+      "Content-Length": "523989",
+      "Connection": "close",
+      "Server": "nginx",
+      "Date": "Sun, 25 Oct 2026 10:58:53 GMT",
+      "Accept-Ranges": "bytes",
+      "ETag": "\"1dcd4e57a67bfd5\"",
+      "Last-Modified": "Sat, 25 Apr 2026 18:58:18 GMT",
+      "Strict-Transport-Security": "max-age=2592000",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Cross-Origin-Resource-Policy": "same-origin"
+    },
+    "license_status": "not_confirmed",
+    "snapshot_distribution": "not_in_public_bundle",
+    "selected_table_metadata": [
+      {
+        "source_table": 186,
+        "type": "stats_types",
+        "pages": [
+          2
+        ],
+        "expected_cells": 7,
+        "extracted_cells": 7,
+        "status_counts": {
+          "reported": 7
+        },
+        "complete": true
+      },
+      {
+        "source_table": 187,
+        "type": "stats_basic",
+        "pages": [
+          3
+        ],
+        "expected_cells": 4,
+        "extracted_cells": 4,
+        "status_counts": {
+          "reported": 4
+        },
+        "complete": true
+      },
+      {
+        "source_table": 189,
+        "type": "stats_historical",
+        "pages": [
+          4
+        ],
+        "expected_cells": 25,
+        "extracted_cells": 25,
+        "status_counts": {
+          "reported": 25
+        },
+        "complete": true
+      }
+    ],
+    "source_cells": 36,
+    "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+    "license_evidence": "官方開放宣告二（三）明列出版品及專人專案撰文等須經原權利人同意；未確認本章全文開放授權。僅整理統計事實，不重散布完整PDF／影像。",
+    "publication_entry_date": "2022-12-01",
+    "copyright_publication_month": "2022-12"
+  }
+]

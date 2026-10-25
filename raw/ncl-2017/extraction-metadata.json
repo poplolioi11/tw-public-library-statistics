@@ -1,0 +1,573 @@
+{
+  "schema_version": "ncl_core_coordinate_cells_v1",
+  "data_year": 2017,
+  "source_edition_roc": 107,
+  "publication_date": "2019-06-01",
+  "records": 1040,
+  "numeric_cells": 1040,
+  "status_counts": {
+    "reported": 971,
+    "reported_decimal": 69
+  },
+  "documents": {
+    "public-library": {
+      "source_id": "ncl-yearbook-107-public-library",
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566871687476012",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566881108031552/b1eb5a88-d0b5-4538-b5f4-f4982933e07c.pdf",
+      "source_local_path": "raw/ncl-2017/yearbook-107-public-library.pdf",
+      "sha256": "3b6ee5638c3e78247b8d09393be8ad62e96015a435c848e910c7f2c3b5badb3e",
+      "bytes": 4247458,
+      "source_retrieved_at": "2026-10-25T10:58:32.556619+00:00",
+      "source_edition_roc": 107,
+      "source_attachment_label": "公共圖書館",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle"
+    },
+    "statistics": {
+      "source_id": "ncl-yearbook-107-statistics",
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566871687476012",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566915466112578/2447ec0d-7917-4e8f-bd75-a05a58b3f3ad.pdf",
+      "source_local_path": "raw/ncl-2017/yearbook-107-statistics.pdf",
+      "sha256": "2dcdd3f4a1e5ac2014ff79d13dd83e5274fc1d99885650f99450303c350c4f3b",
+      "bytes": 3335906,
+      "source_retrieved_at": "2026-10-25T10:58:37.520828+00:00",
+      "source_edition_roc": 107,
+      "source_attachment_label": "圖書館統計",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle"
+    },
+    "copyright": {
+      "source_id": "ncl-yearbook-107-copyright",
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566871687476012",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566877959961536/80094bd3-24e9-4e8a-ba31-09600ab951c0.pdf",
+      "source_local_path": "raw/ncl-2017/yearbook-107-copyright.pdf",
+      "sha256": "985642959f830084fba36e7ad4f43c09631a61c6cbcac7b56701597af08a8521",
+      "bytes": 1574327,
+      "source_retrieved_at": "2026-10-25T10:58:26.681209+00:00",
+      "source_edition_roc": 107,
+      "source_attachment_label": "書名頁及版權頁",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle"
+    }
+  },
+  "tables": [
+    {
+      "table": 23,
+      "title": "全國公共圖書館數量統計―依圖書館隸屬層級（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        2
+      ],
+      "expected_cells": 36,
+      "extracted_cells": 36,
+      "reference_years": [
+        2017
+      ],
+      "scope": "entire6metric ×6level grid; total includes reading rooms and outreach",
+      "county_labels": [],
+      "status_counts": {
+        "reported": 36
+      }
+    },
+    {
+      "table": 24,
+      "title": "全國公共圖書館數量統計―依縣市（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        3
+      ],
+      "expected_cells": 115,
+      "extracted_cells": 115,
+      "reference_years": [
+        2017
+      ],
+      "scope": "all22county rows and printed total; main/branch/district/reading room/outreach",
+      "county_labels": [
+        "南投縣",
+        "嘉義市",
+        "嘉義縣",
+        "基隆市",
+        "宜蘭縣",
+        "屏東縣",
+        "彰化縣",
+        "新北市",
+        "新竹市",
+        "新竹縣",
+        "桃園市",
+        "澎湖縣",
+        "臺中市",
+        "臺北市",
+        "臺南市",
+        "臺東縣",
+        "花蓮縣",
+        "苗栗縣",
+        "連江縣",
+        "金門縣",
+        "雲林縣",
+        "高雄市"
+      ],
+      "status_counts": {
+        "reported": 115
+      }
+    },
+    {
+      "table": 25,
+      "title": "全國公共圖書館圖書資料購置經費及人均購書經費（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        4
+      ],
+      "expected_cells": 69,
+      "extracted_cells": 69,
+      "reference_years": [
+        2017
+      ],
+      "scope": "all22county rows and total; split continuation panels",
+      "county_labels": [
+        "南投縣",
+        "嘉義市",
+        "嘉義縣",
+        "基隆市",
+        "宜蘭縣",
+        "屏東縣",
+        "彰化縣",
+        "新北市",
+        "新竹市",
+        "新竹縣",
+        "桃園市",
+        "澎湖縣",
+        "臺中市",
+        "臺北市",
+        "臺南市",
+        "臺東縣",
+        "花蓮縣",
+        "苗栗縣",
+        "連江縣",
+        "金門縣",
+        "雲林縣",
+        "高雄市"
+      ],
+      "status_counts": {
+        "reported": 46,
+        "reported_decimal": 23
+      }
+    },
+    {
+      "table": 26,
+      "title": "全國公共圖書館人力資源（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        4
+      ],
+      "expected_cells": 48,
+      "extracted_cells": 48,
+      "reference_years": [
+        2017
+      ],
+      "scope": "entire8metric ×6level grid",
+      "county_labels": [],
+      "status_counts": {
+        "reported": 48
+      }
+    },
+    {
+      "table": 27,
+      "title": "全國公共圖書館館藏資源數量（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        5
+      ],
+      "expected_cells": 60,
+      "extracted_cells": 60,
+      "reference_years": [
+        2017
+      ],
+      "scope": "entire10metric ×6level grid; mixed-unit sums retained",
+      "county_labels": [],
+      "status_counts": {
+        "reported": 60
+      }
+    },
+    {
+      "table": 28,
+      "title": "全國公共圖書館館藏資源數量及人均擁有書量（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        6
+      ],
+      "expected_cells": 69,
+      "extracted_cells": 69,
+      "reference_years": [
+        2017
+      ],
+      "scope": "all22county rows and total; split continuation panels",
+      "county_labels": [
+        "南投縣",
+        "嘉義市",
+        "嘉義縣",
+        "基隆市",
+        "宜蘭縣",
+        "屏東縣",
+        "彰化縣",
+        "新北市",
+        "新竹市",
+        "新竹縣",
+        "桃園市",
+        "澎湖縣",
+        "臺中市",
+        "臺北市",
+        "臺南市",
+        "臺東縣",
+        "花蓮縣",
+        "苗栗縣",
+        "連江縣",
+        "金門縣",
+        "雲林縣",
+        "高雄市"
+      ],
+      "status_counts": {
+        "reported": 46,
+        "reported_decimal": 23
+      }
+    },
+    {
+      "table": 29,
+      "title": "全國公共圖書館圖書資料使用情形（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        7
+      ],
+      "expected_cells": 92,
+      "extracted_cells": 92,
+      "reference_years": [
+        2017
+      ],
+      "scope": "all22county rows and total; four usage metrics",
+      "county_labels": [
+        "南投縣",
+        "嘉義市",
+        "嘉義縣",
+        "基隆市",
+        "宜蘭縣",
+        "屏東縣",
+        "彰化縣",
+        "新北市",
+        "新竹市",
+        "新竹縣",
+        "桃園市",
+        "澎湖縣",
+        "臺中市",
+        "臺北市",
+        "臺南市",
+        "臺東縣",
+        "花蓮縣",
+        "苗栗縣",
+        "連江縣",
+        "金門縣",
+        "雲林縣",
+        "高雄市"
+      ],
+      "status_counts": {
+        "reported": 69,
+        "reported_decimal": 23
+      }
+    },
+    {
+      "table": 30,
+      "title": "全國公共圖書館推廣活動類型及辦理場次（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        8
+      ],
+      "expected_cells": 161,
+      "extracted_cells": 161,
+      "reference_years": [
+        2017
+      ],
+      "scope": "all22county rows and total; seven categories including subtotal",
+      "county_labels": [
+        "南投縣",
+        "嘉義市",
+        "嘉義縣",
+        "基隆市",
+        "宜蘭縣",
+        "屏東縣",
+        "彰化縣",
+        "新北市",
+        "新竹市",
+        "新竹縣",
+        "桃園市",
+        "澎湖縣",
+        "臺中市",
+        "臺北市",
+        "臺南市",
+        "臺東縣",
+        "花蓮縣",
+        "苗栗縣",
+        "連江縣",
+        "金門縣",
+        "雲林縣",
+        "高雄市"
+      ],
+      "status_counts": {
+        "reported": 161
+      }
+    },
+    {
+      "table": 31,
+      "title": "全國公共圖書館推廣活動類型及參與人次（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        9
+      ],
+      "expected_cells": 161,
+      "extracted_cells": 161,
+      "reference_years": [
+        2017
+      ],
+      "scope": "all22county rows and total; seven categories including subtotal",
+      "county_labels": [
+        "南投縣",
+        "嘉義市",
+        "嘉義縣",
+        "基隆市",
+        "宜蘭縣",
+        "屏東縣",
+        "彰化縣",
+        "新北市",
+        "新竹市",
+        "新竹縣",
+        "桃園市",
+        "澎湖縣",
+        "臺中市",
+        "臺北市",
+        "臺南市",
+        "臺東縣",
+        "花蓮縣",
+        "苗栗縣",
+        "連江縣",
+        "金門縣",
+        "雲林縣",
+        "高雄市"
+      ],
+      "status_counts": {
+        "reported": 161
+      }
+    },
+    {
+      "table": 32,
+      "title": "全國公共圖書館提供新住民各類服務情形（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        10
+      ],
+      "expected_cells": 115,
+      "extracted_cells": 115,
+      "reference_years": [
+        2017
+      ],
+      "scope": "all22county rows and total; five immigrant service metrics",
+      "county_labels": [
+        "南投縣",
+        "嘉義市",
+        "嘉義縣",
+        "基隆市",
+        "宜蘭縣",
+        "屏東縣",
+        "彰化縣",
+        "新北市",
+        "新竹市",
+        "新竹縣",
+        "桃園市",
+        "澎湖縣",
+        "臺中市",
+        "臺北市",
+        "臺南市",
+        "臺東縣",
+        "花蓮縣",
+        "苗栗縣",
+        "連江縣",
+        "金門縣",
+        "雲林縣",
+        "高雄市"
+      ],
+      "status_counts": {
+        "reported": 115
+      }
+    },
+    {
+      "table": 33,
+      "title": "全國公共圖書館年度營運經費（106年）",
+      "document_kind": "public-library",
+      "pdf_pages": [
+        16
+      ],
+      "expected_cells": 78,
+      "extracted_cells": 78,
+      "reference_years": [
+        2017
+      ],
+      "scope": "complete operating-expense table: two national libraries,22counties (Kaohsiung two printed period rows), national total",
+      "county_labels": [
+        "南投縣",
+        "嘉義市",
+        "嘉義縣",
+        "基隆市",
+        "宜蘭縣",
+        "屏東縣",
+        "彰化縣",
+        "新北市",
+        "新竹市",
+        "新竹縣",
+        "桃園市",
+        "澎湖縣",
+        "臺中市",
+        "臺北市",
+        "臺南市",
+        "臺東縣",
+        "花蓮縣",
+        "苗栗縣",
+        "連江縣",
+        "金門縣",
+        "雲林縣",
+        "高雄市"
+      ],
+      "status_counts": {
+        "reported": 78
+      }
+    },
+    {
+      "table": 212,
+      "title": "我國各類型圖書館數量統計表（106年）／完整公共館子群",
+      "document_kind": "statistics",
+      "pdf_pages": [
+        2
+      ],
+      "expected_cells": 7,
+      "extracted_cells": 7,
+      "reference_years": [
+        2017
+      ],
+      "scope": "complete public-library group including private; other library types intentionally excluded",
+      "county_labels": [],
+      "status_counts": {
+        "reported": 7
+      }
+    },
+    {
+      "table": 213,
+      "title": "我國各類型圖書館基本統計表（106年）／公立公共圖書館列",
+      "document_kind": "statistics",
+      "pdf_pages": [
+        3
+      ],
+      "expected_cells": 4,
+      "extracted_cells": 4,
+      "reference_years": [
+        2017
+      ],
+      "scope": "entire public-library row only; excludes separate National Central Library and other library types",
+      "county_labels": [],
+      "status_counts": {
+        "reported": 4
+      }
+    },
+    {
+      "table": 215,
+      "title": "公立公共圖書館基本統計表（102年至106年）",
+      "document_kind": "statistics",
+      "pdf_pages": [
+        4
+      ],
+      "expected_cells": 25,
+      "extracted_cells": 25,
+      "reference_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "scope": "complete five-year national public-library table; preserve edition-specific revisions and definition uncertainty",
+      "county_labels": [],
+      "status_counts": {
+        "reported": 25
+      }
+    }
+  ],
+  "intentional_exclusions": [
+    {
+      "document_kind": "statistics",
+      "tables": [
+        214,
+        216,
+        217,
+        218,
+        219
+      ],
+      "reason": "intentional_exclusion: National Central Library and educational-library statistics outside public-library core"
+    },
+    {
+      "reason": "Named construction/equipment projects, awards, individual cases, prose, photos and personal details excluded; ordinary aggregate annual operating expenses included."
+    }
+  ],
+  "rights": {
+    "license_status": "not_confirmed",
+    "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+    "license_evidence": "官方開放宣告二（三）明列「出版品」及專人專案撰文等須經原權利人同意；未確認本章全文開放授權。僅重整公開統計事實，完整PDF、影像、HTML與周邊署名正文不列公開分發。",
+    "public_distribution": "Derived statistical facts only; complete PDF, images, full text and surrounding signed prose remain private."
+  },
+  "quality_issues": [
+    {
+      "source_id": "ncl-yearbook-107-public-library",
+      "source_table": "33",
+      "source_row": 19,
+      "source_column": 4,
+      "entity_raw": "屏東縣",
+      "metric_raw": "營運總經費",
+      "source_locator": "PDF page 16; printed page 104; table 33; data row 19; column 4; bbox 263.701,493.870,337.000,505.270",
+      "flag": "source_row_total_differs_from_components",
+      "component_sum": "39374738",
+      "printed_total": "28098091",
+      "difference_printed_minus_components": "-11276647"
+    },
+    {
+      "source_id": "ncl-yearbook-107-public-library",
+      "source_table": "33",
+      "source_row": 26,
+      "source_column": 4,
+      "entity_raw": "合計",
+      "metric_raw": "營運總經費",
+      "source_locator": "PDF page 16; printed page 104; table 33; data row 26; column 4; bbox 263.701,632.768,337.000,644.168",
+      "flag": "source_row_total_differs_from_components",
+      "component_sum": "9527727175",
+      "printed_total": "9516450528",
+      "difference_printed_minus_components": "-11276647"
+    }
+  ],
+  "scope_limitations": [
+    "完整性僅及下列指定營運核心表與統計章公共館子群，不是整冊所有表。",
+    "全國歷年表為同卷重刊版本，不能冒稱22縣市歷年核心原量全齊。",
+    "原印留白或無字未推定不適用；缺值未補0；原報0原樣保存。",
+    "縣市表與全國分層表母體、數值版本或電子書範圍可能不同，須依source_id、source_table與口徑挑選，不能直接相加。"
+  ],
+  "dependencies": [
+    "Python3.12 standard library",
+    "pdfplumber",
+    "scripts/ncl_2016_2018_common.py",
+    "scripts/extract_ncl_2017.py"
+  ],
+  "image_review": "All included table pages rendered with pypdfium2 and visually reviewed for headers, county labels, units and footnotes. Private images under corresponding raw directory.",
+  "outputs": [
+    {
+      "path": "derived/ncl_2017_long.csv",
+      "sha256": "6fb7a22c228c6a50dd0745a372f04d00568122cfb9f3d70d488e3603bac44f6f",
+      "bytes": 2374463
+    },
+    {
+      "path": "derived/ncl_2017_long.jsonl",
+      "sha256": "f8f5b13d82e275623b49ed55892e6bfd94983050f7bd9b761fb6da40591d1036",
+      "bytes": 3728799
+    }
+  ]
+}

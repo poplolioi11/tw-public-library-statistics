@@ -1,0 +1,30 @@
+{
+  "scope": "歷史表15格原印館藏量，不套基本表單位；不改原值/數值/null/status/locator。",
+  "years": [
+    {
+      "year": 2022,
+      "numeric_original_cells_fingerprint": "6d8a0788be216a0c384b7f1564e1e5c04794821471907b61a7764dbc7b8f7c7a",
+      "numeric_cells_unchanged": true,
+      "producer_csv_sha256": "781ecc619c27b0ec405e1a58e7c1ae5f696246b3721d0e2df650aa8dc8c5ce1d",
+      "basic_original_row_label_fix": "Four basic-statistics cells now raw 公立公共圖書館, contextual 全國, national_total unchanged",
+      "historical_context_status_fix": "35 historical cells contextual_national_aggregate_inferred; original name/value/position unchanged"
+    },
+    {
+      "year": 2023,
+      "numeric_original_cells_fingerprint": "c21ef8594716358e93c977508be1e041cccb6e274b7d701263bb4d714ea4fe93",
+      "numeric_cells_unchanged": true,
+      "producer_csv_sha256": "441a53658638540773913f0b154b54f72761f8119aab5804540fd96aef559780",
+      "basic_original_row_label_fix": "Four basic-statistics cells now raw 公立公共圖書館, contextual 全國, national_total unchanged",
+      "historical_context_status_fix": "35 historical cells contextual_national_aggregate_inferred; original name/value/position unchanged"
+    },
+    {
+      "year": 2024,
+      "numeric_original_cells_fingerprint": "833a88f5e801b5ea9ed6e98a1e4ce1786a343e9780a276c28206f7d221261387",
+      "numeric_cells_unchanged": true,
+      "producer_csv_sha256": "9a0a1e3c2b8d8f95eefc112482d9d6016776d4a83d3d7f26ba8cca7c193979d4",
+      "additional_risk_only_fix": "table9 rows17/19 geography uncertainty across all three row metrics; original label/value preserved",
+      "basic_original_row_label_fix": "Four basic-statistics cells now raw 公立公共圖書館, contextual 全國, national_total unchanged",
+      "historical_context_status_fix": "35 historical cells contextual_national_aggregate_inferred; original name/value/position unchanged"
+    }
+  ]
+}

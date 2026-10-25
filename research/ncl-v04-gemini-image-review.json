@@ -1,0 +1,185 @@
+{
+  "job_id": "20261025T111250Z-0a27fed51a09",
+  "provider": "gemini",
+  "mode": "analyze",
+  "state": "ready_for_review",
+  "actual_model": "gemini-3.8-flash-high",
+  "tool_actions": [
+    "view_file",
+    "view_file",
+    "view_file"
+  ],
+  "audit": {
+    "verified": true,
+    "required_tool_calls": 3,
+    "matched_allow_records": 3,
+    "images_verified": 3
+  },
+  "source_image_transcription": [
+    {
+      "file_name": "2016-public-p05.png",
+      "table_title": "表 28\n全國公共圖書館館藏資源數量（105 年）",
+      "column_headers": [
+        "類型",
+        "隸屬層級（包含：國立圖書館、直轄市立圖書館、縣市立圖書館、鄉鎮市區立圖書館）",
+        "合計"
+      ],
+      "original_unit": "表頭及表題未標註統一單位；各列單位分別標示於項目名稱括號內（如（冊）、（種）、（件））；小計與總計列原印未標註單位",
+      "rows": [
+        {
+          "row_type": "非書資料上方小計列",
+          "category_label": "圖書資料",
+          "row_label": "小計",
+          "values": {
+            "國立圖書館": "2,776,676",
+            "直轄市立圖書館": "28,832,301",
+            "縣市立圖書館": "4,066,708",
+            "鄉鎮市區立圖書館": "12,753,186",
+            "合計": "48,428,871"
+          },
+          "original_unit": "原印未標註單位"
+        },
+        {
+          "row_type": "非書資料列",
+          "category_label": "非書資料",
+          "row_label": "非書資料（件）",
+          "values": {
+            "國立圖書館": "246,806",
+            "直轄市立圖書館": "955,706",
+            "縣市立圖書館": "193,161",
+            "鄉鎮市區立圖書館": "197,497",
+            "合計": "1,633,170"
+          },
+          "original_unit": "件"
+        },
+        {
+          "row_type": "非書資料下方小計列",
+          "category_label": "電子資源",
+          "row_label": "小計",
+          "values": {
+            "國立圖書館": "149,155",
+            "直轄市立圖書館": "364,627",
+            "縣市立圖書館": "178,984",
+            "鄉鎮市區立圖書館": "790,024",
+            "合計": "1,482,790"
+          },
+          "original_unit": "原印未標註單位"
+        }
+      ],
+      "uncertainties": "原表小計列無單位標註，非書資料上下小計列分別隸屬圖書資料與電子資源，未統一稱冊。"
+    },
+    {
+      "file_name": "2017-public-p16.png",
+      "table_title": "表 33\n全國公共圖書館年度營運經費（106年）",
+      "column_headers": [
+        "縣市",
+        "經常門",
+        "資本門",
+        "營運總經費",
+        "備註"
+      ],
+      "original_unit": "原表頭、表題及表格內外皆未標明金額/貨幣單位（如元、千元等）",
+      "rows": [
+        {
+          "row_label": "高雄市（公務機關）",
+          "縣市": "高雄市",
+          "經常門": "391,256,004",
+          "資本門": "104,856,902",
+          "營運總經費": "496,112,906",
+          "備註": "公務機關（1/1-/8/31）"
+        },
+        {
+          "row_label": "高雄市（行政法人）",
+          "縣市": "",
+          "經常門": "227,059,000",
+          "資本門": "5,381,159,000",
+          "營運總經費": "5,608,218,000",
+          "備註": "行政法人（9/1-12/31）"
+        },
+        {
+          "row_label": "屏東縣",
+          "縣市": "屏東縣",
+          "經常門": "28,098,091",
+          "資本門": "11,276,647",
+          "營運總經費": "28,098,091",
+          "備註": ""
+        },
+        {
+          "row_label": "合計（全國總計列）",
+          "縣市": "合計",
+          "經常門": "3,084,009,350",
+          "資本門": "6,443,717,825",
+          "營運總經費": "9,516,450,528",
+          "備註": ""
+        }
+      ],
+      "uncertainties": "1. 高雄市公務機關列備註原印字形似「公務機關（1/1-/8/31）」，斜線與橫線並列，可能為印刷排版符號殘留或誤植，依原樣呈現。\n2. 高雄市行政法人列之縣市欄原空格留白，未印「高雄市」，兩列分立未合併。\n3. 屏東縣營運總經費原印為 28,098,091，與經常門數值相同，未加計資本門，依原樣抄錄不校正。"
+    },
+    {
+      "file_name": "2018-public-p05.png",
+      "table_title": "表 18\n縣市公共圖書館編制館員及志工人數統計（107年）",
+      "column_headers": [
+        "縣　市",
+        "服務轄區人口數 (A)",
+        "編制內館員數 (B)",
+        "編制內專業人員 (C)",
+        "志工人數 (D)",
+        "編制內人員服務人口數 (A/B)",
+        "編制內專業人員服務人口數 (A/C)",
+        "每萬人擁有志工數 (D/A*10,000)"
+      ],
+      "footnote": "註：本表不含國立圖書館統計數據。",
+      "cells_with_wu": [
+        {
+          "county": "金門縣",
+          "column_name": "編制內專業人員服務人口數 (A/C)",
+          "value": "無",
+          "full_row_values": {
+            "縣　市": "金門縣",
+            "服務轄區人口數 (A)": "139,273",
+            "編制內館員數 (B)": "4",
+            "編制內專業人員 (C)": "0",
+            "志工人數 (D)": "0",
+            "編制內人員服務人口數 (A/B)": "34,818.25",
+            "編制內專業人員服務人口數 (A/C)": "無",
+            "每萬人擁有志工數 (D/A*10,000)": "0.00"
+          }
+        },
+        {
+          "county": "連江縣",
+          "column_name": "編制內人員服務人口數 (A/B)",
+          "value": "無",
+          "full_row_values": {
+            "縣　市": "連江縣",
+            "服務轄區人口數 (A)": "13,056",
+            "編制內館員數 (B)": "0",
+            "編制內專業人員 (C)": "0",
+            "志工人數 (D)": "0",
+            "編制內人員服務人口數 (A/B)": "無",
+            "編制內專業人員服務人口數 (A/C)": "無",
+            "每萬人擁有志工數 (D/A*10,000)": "0.00"
+          }
+        },
+        {
+          "county": "連江縣",
+          "column_name": "編制內專業人員服務人口數 (A/C)",
+          "value": "無",
+          "full_row_values": {
+            "縣　市": "連江縣",
+            "服務轄區人口數 (A)": "13,056",
+            "編制內館員數 (B)": "0",
+            "編制內專業人員 (C)": "0",
+            "志工人數 (D)": "0",
+            "編制內人員服務人口數 (A/B)": "無",
+            "編制內專業人員服務人口數 (A/C)": "無",
+            "每萬人擁有志工數 (D/A*10,000)": "0.00"
+          }
+        }
+      ],
+      "explanation_of_wu": "原文及註腳完全未解釋「無」的意義，原件無任何定義或說明，不得推論為0、不適用或無人力。",
+      "uncertainties": "原件表身及註腳皆未對文字「無」提供任何符號說明或計算定義。"
+    }
+  ],
+  "limits": "Three page-image selections only, reviewed again by the primary agent. Not a human double collation or a full nine-edition visual transcription. Original images are private and excluded from publication.",
+  "primary_review": "Primary agent inspected all three original page images and the2020scoped-quantity page. Confirmed original totals, three無 cells, distinct Kaohsiung rows, no printed budget currency unit, and the extra slash in the original subrow note."
+}

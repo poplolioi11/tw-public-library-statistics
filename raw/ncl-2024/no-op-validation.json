@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "offline_replay_changed_bytes": false,
+  "offline_replay_changed_mtime": false,
+  "csv_jsonl_all_field_equivalence_rows": 1236,
+  "changed_sha_keeps_previous_outputs": true,
+  "missing_original_keeps_previous_outputs": true,
+  "fixtures_isolated_in_tmpdir": true,
+  "zero_blank_explicit_dash_and_unresolved_word_marker_not_conflated": true,
+  "unreviewed_text_rejected": true,
+  "final_outputs": {
+    "derived/ncl_2024_long.csv": {
+      "sha256": "9a0a1e3c2b8d8f95eefc112482d9d6016776d4a83d3d7f26ba8cca7c193979d4"
+    },
+    "derived/ncl_2024_long.jsonl": {
+      "sha256": "cc033d3bb6d706ab864f5f8a174f618ff5a434e2dde7f3981512712fac167f1d"
+    },
+    "raw/ncl-2024/extraction-validation.json": {
+      "sha256": "fa5045ad4ae83350c0cf0a6ba98046b44c43d198b16f4e2ad5938f82488d1075"
+    },
+    "raw/ncl-2024/documents.json": {
+      "sha256": "b6cbb0a4e9a3972f8cca6a644a638c2e8fd35e72aa97ddb64b4841dbb2cc0e46"
+    },
+    "raw/ncl-2024/incremental-contract.json": {
+      "sha256": "f266ff6a5b6b656582e16ad995a83340b3ca0bbf68c238665f467bbce8735142"
+    }
+  }
+}

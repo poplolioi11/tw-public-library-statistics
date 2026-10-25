@@ -1,0 +1,30 @@
+{
+  "source_id": "ncl-yearbook-111-copyright",
+  "source_edition_roc": 111,
+  "title": "書名頁及版權頁",
+  "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566960460238329",
+  "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566965732622833/64905cd2-b90c-49a1-9d9f-f9f5e7678ee4.pdf",
+  "final_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566965732622833/64905cd2-b90c-49a1-9d9f-f9f5e7678ee4.pdf",
+  "source_local_path": "raw/ncl-2021/yearbook-111-copyright.pdf",
+  "sha256": "32a2ec123debfa6a5cb01c56809ee3fad8fcc237a1250df0603c29d68e3076e9",
+  "bytes": 193945,
+  "source_retrieved_at": "2026-10-25T10:58:53.696642+00:00",
+  "headers": {
+    "Content-Type": "application/pdf",
+    "Content-Length": "193945",
+    "Connection": "close",
+    "Server": "nginx",
+    "Date": "Sun, 25 Oct 2026 10:58:53 GMT",
+    "Accept-Ranges": "bytes",
+    "ETag": "\"1dcd4e461083099\"",
+    "Last-Modified": "Sat, 25 Apr 2026 18:50:26 GMT",
+    "Strict-Transport-Security": "max-age=2592000",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Cross-Origin-Opener-Policy": "same-origin",
+    "Cross-Origin-Resource-Policy": "same-origin"
+  },
+  "license_status": "not_confirmed",
+  "snapshot_distribution": "not_in_public_bundle"
+}

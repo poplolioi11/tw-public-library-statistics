@@ -20,6 +20,9 @@ raw/ncl-additional/rendered/
 tmp/
 
 /data/*_extraction_state.json
+raw/ncl-20*/*.pdf
+raw/ncl-20*/*.html
+raw/ncl-20*/*.private.*
 
 # Local run state and omitted originals must not enter public commits.
 /data/last_update.json
@@ -29,6 +32,8 @@ tmp/
 /data/county_update_state.json
 /data/historical_extraction_state.json
 /automation*.json
+/data/combined/observations.jsonl
+/data/component_records.jsonl
 /raw/official-local/catalog-117921/resource-3274c2c0b9c148ba-0fa5e467bf126f590133b26eb985567067f6f92ab65ab4c0df846e8098eb3c36.json
 /raw/official-local/catalog-117921/resource-426b754c3d9690c0-489a727f73b516dd6c6ff8c23facd5c832c481031f5554e07791cb477dda7a6f.json
 /raw/official-local/catalog-117921/resource-6ed469d8440b4502-3a83ddeafa3a8ba17a53e97d20f93983435e9cb11d1cc47b1ec096c9eb5b5a0c.json

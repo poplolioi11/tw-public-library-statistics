@@ -2,6 +2,7 @@
 """Create immutable, auditable local release. No uploading or publishing."""
 import argparse,datetime,hashlib,json,zipfile
 from pathlib import Path
+import record_io
 R=Path(__file__).resolve().parents[1]
 from cohort_registry import load as load_cohorts
 def sha(b):return hashlib.sha256(b).hexdigest()
@@ -14,10 +15,10 @@ def main():
   p=R/name
   if not p.exists():raise FileNotFoundError(p)
   selected[name]=p.read_bytes()
- for directory,extensions in [('scripts',{'.py'}),('tests',{'.py'}),('docs',{'.md','.json'}),('research',{'.md','.json'}),('derived',{'.csv','.json','.jsonl'}),('data/combined',{'.csv','.json','.jsonl','.sqlite'})]:
+ for directory,extensions in [('scripts',{'.py','.json'}),('tests',{'.py'}),('docs',{'.md','.json'}),('research',{'.md','.json'}),('derived',{'.csv','.json','.jsonl'}),('data/combined',{'.csv','.json','.jsonl','.sqlite','.gz'})]:
   for p in (R/directory).rglob('*'):
-   if p.is_file() and p.suffix in extensions and '__pycache__' not in p.parts:selected[str(p.relative_to(R))]=p.read_bytes()
- for name in ['observations.jsonl','indicators.json','source_manifest.json','source_history.jsonl','historical_source_history.jsonl','reviewed_historical_cohorts.json','reviewed_policy.json','component_records.jsonl','component_quality.json','summary.json','coverage.json']:
+   if p.is_file() and p.suffix in extensions and '__pycache__' not in p.parts and not any('private' in part.lower() for part in p.relative_to(R).parts):selected[str(p.relative_to(R))]=p.read_bytes()
+ for name in ['observations.jsonl','indicators.json','source_manifest.json','source_history.jsonl','historical_source_history.jsonl','reviewed_historical_cohorts.json','reviewed_policy.json','component_records.jsonl','component_records.jsonl.gz','component_quality.json','summary.json','coverage.json']:
   p=R/'data'/name
   if p.exists():selected[str(p.relative_to(R))]=p.read_bytes()
  selected['site/index.html']=(R/'site/index.html').read_bytes();selected['site/template.html']=(R/'site/template.html').read_bytes()
@@ -31,8 +32,9 @@ def main():
    if 'private' in p.name or 'page-text' in p.name:continue
    selected[str(p.relative_to(R))]=p.read_bytes()
  selected['raw/ncl-extension-documents.json']=(R/'raw/ncl-extension-documents.json').read_bytes()
+ if (R/'raw/ncl-supporting-documents.json').exists():selected['raw/ncl-supporting-documents.json']=(R/'raw/ncl-supporting-documents.json').read_bytes()
  for path,body in sorted(selected.items()):manifest.append({'path':path,'sha256':sha(body),'bytes':len(body)})
- meta={'version':version,'created_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'canonical_sha256':sha(selected['data/combined/observations.jsonl']),'files':manifest,'omitted':['NCL/DGBAS full PDFs','website raw HTML/JavaScript','working normalized cache','local automation settings'],'external_publication':False}
+ meta={'version':version,'created_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'canonical_sha256':record_io.logical_sha(R),'files':manifest,'omitted':['NCL/DGBAS full PDFs','website raw HTML/JavaScript','working normalized cache','local automation settings'],'external_publication':False}
  checksums=json.dumps(meta,ensure_ascii=False,indent=2).encode();selected['RELEASE_MANIFEST.json']=checksums
  history_path=R/'data/release_history.jsonl';history=[json.loads(x) for x in history_path.read_text().splitlines()] if history_path.exists() else []
  for previous in history:
