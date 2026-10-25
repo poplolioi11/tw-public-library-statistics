@@ -28,6 +28,47 @@ def parse_local_value(raw,unit):
  if m and (not m.group(2) or int(m.group(2))<10000):return int(m.group(1))*10000+int(m.group(2) or '0'),'reported',unit,'explicit_萬_magnitude_no_currency_inference'
  return value,status,unit,'unparsed_preserved'
 
+def adapt_additional_ncl_rows(rows):
+ result=[]
+ for row in rows:
+  year=int(row['data_year']);source=row['source_id'];series=source+'-'+row['metric_id'];geo=row['entity_raw'];raw=row['value_raw'];source_status=row.get('value_status','reported')
+  if source_status in ('blank','source_blank','blank_in_source'):
+   if str(raw).strip() or str(row.get('value','')).strip():raise ValueError('Blank cell carries a number')
+   value,status=None,'source_blank'
+  elif source_status in ('not_available_in_source','missing','source_marker'):
+   if row.get('value') not in (None,''):raise ValueError('Missing status would discard a normalized value: '+row['source_locator'])
+   if str(raw).strip() not in {'-','—','–','…','...','N/A','NA'}:raise ValueError('Missing status would discard an unrecognized source value: '+row['source_locator'])
+   value,status=None,'not_available_in_source'
+  else:
+   value,status=parse_number(row['value'])
+   if value is None:raise ValueError('Unreviewed NCL numeric cell: '+row['source_locator'])
+  unit=row.get('unit') or None;notes=[x for x in [row.get('scope_note'),row.get('source_note'),row.get('notes'),row.get('time_reference')] if x]
+  if unit and ('混合' in unit or '件/種/冊' in unit or '原表未列' in unit):notes.append('原表單位狀態：'+unit+'；未有統一可計算單位，不視為純圖書冊數。');unit=None
+  if status=='source_blank':notes.append('原刊此格留白；保留為缺值，不推定為0或不適用。')
+  if row.get('aggregation_role') in ('total','subtotal','row_total','grand_total','published_total'):notes.append('原表合計／小計可能與分項重疊，不可把全部格相加。')
+  period=row['temporal_kind'];pub=row.get('publication_date') or None
+  result.append({**base_record(),'observation_id':'obs-'+h(source+'|'+row['metric_id']+'|'+geo+'|'+str(year))[:22],
+   'data_year':year,'geography':geo,'geography_contextual_name':row.get('entity_contextual_name',geo),'geographic_scope':row['entity_kind'],
+   'geography_vintage':row.get('geography_vintage'),'national_libraries_scope':row.get('national_libraries_scope'),
+   'population_scope':row.get('population_scope') or row.get('scope_note') or '依原表列示的公共圖書館母體，未自行合併館類',
+   'series_id':series,'indicator':row['metric_raw'],'indicator_group':'國家圖書館年鑑統計事實','source_field':row.get('source_column_path') or row['metric_raw'],
+   'value':value,'raw_value':raw,'value_status':status,'zero_interpretation':'source_reported_zero_historical_context_required' if value==0 else None,
+   'unit':unit,'unit_raw':row.get('unit_raw'),'unit_basis':row.get('unit_basis'),'unit_status':('inferred_from_context' if row.get('unit_basis') and not row.get('unit_raw') else 'source_table') if unit else 'source_unit_unconfirmed_or_mixed','temporal_kind':period,
+   'period_start':f'{year}-01-01' if period in {'flow_calendar_year','annual_financial'} else None,'period_end':f'{year}-12-31' if period in {'flow_calendar_year','annual_financial','stock_year_end'} else None,
+   'period_basis':'source_calendar_year_flow' if period in {'flow_calendar_year','annual_financial'} else 'source_year_end_explicit_in_chapter' if period=='stock_year_end' else 'source_reference_year_exact_date_unconfirmed',
+   'period_raw':str(year),'definition_id':'def-'+series,'definition_status':'original_table_heading_and_footnotes_preserved',
+   'institutional_level':row.get('institutional_level'),'aggregation_role':row.get('aggregation_role'),
+   'source_id':source,'source_family':'國家圖書館年鑑統計事實','source_url':row['source_download_url']+'#page='+row['source_pdf_page'],
+   'source_page_url':row['source_url'],'source_locator':row['source_locator'],'source_sha256':row['source_sha256'],
+   'source_version_id':source+'@sha256:'+row['source_sha256'],'source_snapshot_path':row['source_local_path'],'retrieved_at':row['source_retrieved_at'],
+   'source_pdf_page':int(row['source_pdf_page']),'source_printed_page':row['source_printed_page'],'source_table':row['source_table'],
+   'source_table_title':row.get('source_table_title'),'source_row':row['source_row'],'source_column':row['source_column'],
+   'source_column_path':row.get('source_column_path'),'source_cell_bbox':row.get('source_cell_bbox'),'source_cell_annotation':row.get('cell_annotation'),'original_source_note':row.get('source_note'),'source_footnotes_raw':row.get('source_footnotes_raw'),'source_footnotes_status':row.get('source_footnotes_status'),'source_data_year_raw':row.get('source_data_year_raw'),'source_original_access_date_raw':row.get('source_original_access_date_raw'),'source_original_access_date':row.get('source_original_access_date'),
+   'license_status':'published_statistical_facts_document_license_unconfirmed','license_url':None,'snapshot_distribution':'not_in_public_bundle',
+   'extraction_status':row['extraction_status'],'quality_flags':row.get('quality_flags') or None,'notes':'；'.join(notes),'publication_year':int(pub[:4]) if pub else None,
+   'publication_date':pub,'publication_date_basis':row.get('publication_date_basis'),'source_edition':row.get('source_edition'),'source_edition_roc':row.get('source_edition_roc')})
+ return result
+
 def main():
  records=[];issues=[]
  qp=ROOT/'derived/local_historical_quality.json';quality=json.loads(qp.read_text()) if qp.exists() else {}
@@ -42,8 +83,10 @@ def main():
    if source.startswith('ncl') and yr==2010 and geo=='總計' and row['metric_id']=='acquisition_spending_per_capita':notes.append('來源內部差異：此表原印27.72，正文及總經費／人口計算約22.72；忠實保留原表，不自行改值。');issues.append({'source_id':source,'year':yr,'geography':geo,'indicator':row['metric_raw'],'issue':'official_internal_inconsistency','reported_value':v,'explanation':notes[-1]})
    pub=row.get('publication_date') or None
    if row.get('value_status')=='not_available_in_source':v=None;status='not_available_in_source'
-   record={**base_record(),'observation_id':'obs-'+h(source+'|'+row['metric_id']+'|'+geo+'|'+str(yr))[:22],'data_year':yr,'geography':geo,'geography_contextual_name':row.get('entity_contextual_name',geo),'geographic_scope':row['entity_kind'],'geography_vintage':row.get('geography_vintage'),'national_libraries_scope':row.get('national_libraries_scope'),'population_scope':'公立公共圖書館，依各出版表母體與註腳','series_id':sid,'indicator':row['metric_raw'],'indicator_group':family,'source_field':row['metric_raw'],'value':v,'raw_value':row['value_raw'],'value_status':status,'zero_interpretation':'source_reported_zero_historical_context_required' if v==0 else None,'unit':unit,'unit_status':'source_table' if unit else 'mixed_not_uniform','temporal_kind':row['temporal_kind'],'period_start':f'{yr}-01-01' if row['temporal_kind']=='flow_calendar_year' else None,'period_end':f'{yr}-12-31','period_basis':'published_table_reference_year','definition_id':'def-'+sid,'definition_status':'original_table_heading_and_footnotes_preserved','source_id':source,'source_family':family,'source_url':row['source_download_url']+'#page='+row['source_pdf_page'],'source_page_url':row['source_url'],'source_locator':row['source_locator']+'; column '+row['source_column'],'source_sha256':row['source_sha256'],'source_snapshot_path':row['source_local_path'],'retrieved_at':row['source_retrieved_at'],'license_status':'OGDL-1.0_site_declaration' if source.startswith('dgbas') and row.get('license_status')=='verified_open' and row.get('license_code')=='OGDL-1.0_site_declaration' else 'published_statistical_facts_document_license_unconfirmed','license_url':'https://www.stat.gov.tw/cp.aspx?n=3164' if source.startswith('dgbas') else None,'snapshot_distribution':'not_in_public_bundle','extraction_status':row['extraction_status'],'notes':'；'.join(notes),'publication_year':int(pub[:4]) if pub else None,'source_pdf_page':int(row['source_pdf_page']),'source_printed_page':row['source_printed_page'],'source_table':row['source_table'],'source_row':row['source_row'],'source_column':row['source_column'],'source_edition':row.get('source_edition')}
+   record={**base_record(),'observation_id':'obs-'+h(source+'|'+row['metric_id']+'|'+geo+'|'+str(yr))[:22],'data_year':yr,'geography':geo,'geography_contextual_name':row.get('entity_contextual_name',geo),'geographic_scope':row['entity_kind'],'geography_vintage':row.get('geography_vintage'),'national_libraries_scope':row.get('national_libraries_scope'),'population_scope':'公立公共圖書館，依各出版表母體與註腳','series_id':sid,'indicator':row['metric_raw'],'indicator_group':family,'source_field':row['metric_raw'],'value':v,'raw_value':row['value_raw'],'value_status':status,'zero_interpretation':'source_reported_zero_historical_context_required' if v==0 else None,'unit':unit,'unit_status':'source_table' if unit else 'mixed_not_uniform','temporal_kind':row['temporal_kind'],'period_start':f'{yr}-01-01' if row['temporal_kind']=='flow_calendar_year' else None,'period_end':f'{yr}-12-31','period_basis':'published_table_reference_year','definition_id':'def-'+sid,'definition_status':'original_table_heading_and_footnotes_preserved','source_id':source,'source_family':family,'source_url':row['source_download_url']+'#page='+row['source_pdf_page'],'source_page_url':row['source_url'],'source_locator':row['source_locator']+'; column '+row['source_column'],'source_sha256':row['source_sha256'],'source_snapshot_path':row['source_local_path'],'retrieved_at':row['source_retrieved_at'],'license_status':'OGDL-1.0_site_declaration' if source.startswith('dgbas') and row.get('license_status')=='verified_open' and row.get('license_code')=='OGDL-1.0_site_declaration' else 'published_statistical_facts_document_license_unconfirmed','license_url':'https://www.stat.gov.tw/cp.aspx?n=3164' if source.startswith('dgbas') else None,'snapshot_distribution':'not_in_public_bundle','extraction_status':row['extraction_status'],'quality_flags':row.get('quality_flags') or None,'notes':'；'.join(notes),'publication_year':int(pub[:4]) if pub else None,'source_pdf_page':int(row['source_pdf_page']),'source_printed_page':row['source_printed_page'],'source_table':row['source_table'],'source_row':row['source_row'],'source_column':row['source_column'],'source_edition':row.get('source_edition')}
    records.append(record)
+ for additional in ['ncl_gap_tables_long.csv','ncl_additional_years_long.csv','ncl_earlier_years_long.csv']:
+  records.extend(adapt_additional_ncl_rows(read(ROOT/'derived'/additional)))
  # Local public resources, exact duplicates preserved in component ledger but removed from canonical observations.
  raw_map={}
  for p in (ROOT/'raw/official-local').glob('catalog-*/resource-*.metadata.json'):
@@ -69,6 +112,16 @@ def main():
   yr=int(row['data_year']);source=row['source_id'];sid=source+'-'+row['metric_id'];v,status=parse_number(row['value'])
   if row['value_status']=='not_available_in_source':v=None;status='not_available_in_source'
   records.append({**base_record(),'observation_id':'obs-'+h(source+'|'+str(yr)+'|'+row['area_code_raw'])[:22],'data_year':yr,'geography':row['entity_raw'],'area_code_raw':row['area_code_raw'],'source_table_row':row['source_table_row'],'source_table_column':row['source_table_column'],'geographic_scope':'national_total' if row['entity_kind']=='national_total' else 'county_official_reorganized','geography_vintage':row['geography_vintage'],'national_libraries_scope':row['national_libraries_scope'],'population_scope':row['population_scope'],'series_id':sid,'indicator':row['metric_raw'],'indicator_group':'主計總處縣市公共館數','source_field':row['metric_raw'],'value':v,'raw_value':row['value_raw'],'value_status':status,'zero_interpretation':'source_reported_zero_context_unconfirmed' if v==0 else None,'unit':row['unit'],'unit_status':'source_label','temporal_kind':row['temporal_kind'],'period_raw':row['period_raw'],'period_start':None,'period_end':None,'periodicity_raw':'年','period_basis':'official_annual_selector_stock_date_unconfirmed','definition_id':'def-'+sid,'definition_status':'official_indicator_definition_current_historical_applicability_not_independently_certified','source_id':source,'source_family':'主計總處縣市公共館數','public_evidence_path':'raw/segis-history/dgbas_county_original_cells.json','source_url':row['source_download_url'],'source_page_url':row['source_url'],'source_method':row['source_method'],'source_request':row['source_request'],'source_locator':row['source_locator'],'source_sha256':row['source_sha256'],'source_snapshot_path':row['source_local_path'],'retrieved_at':row['source_retrieved_at'],'license_status':row['license_status'],'license_url':row['license_url'],'license_scope_inference':row['license_scope_inference']=='True','snapshot_distribution':'not_in_public_bundle','extraction_status':row['extraction_status'],'comparability':row['comparability'],'notes':row['population_scope']+'；'+row['geography_vintage']+'；'+row['license_scope_note']+'；1998–2005來源明示缺值，有數值範圍為2006–2025，不能與國資圖不同母體的館數直接互補。'})
+ gap_metadata=ROOT/'raw/ncl-historical/gap-tables-metadata.json'
+ if gap_metadata.exists():
+  for table in json.loads(gap_metadata.read_text()).get('tables',[]):
+   for check in table.get('validation_checks',[]):
+    if check.get('passed') is not False:continue
+    geo=check.get('entity','總計');metric=check['metric']
+    matches=[r for r in records if r['source_id']==table['table_id'] and r['geography']==geo and r['series_id'].endswith('_'+metric)]
+    if len(matches)!=1:raise ValueError('Source issue does not identify one original cell')
+    r=matches[0];r['quality_flags']='source_arithmetic_inconsistency';r['notes']+='；原刊合計與可見分項計算不同，原值保留；詳原表metadata。'
+    issues.append({'issue':'source_arithmetic_inconsistency','observation_id':r['observation_id'],'source_id':r['source_id'],'source_locator':r['source_locator'],'reported_value':r['value'],'calculated_from_visible_components':check['calculated'],'inference_not_applied_to_source_value':True})
  ids=[r['observation_id'] for r in records]
  if len(ids)!=len(set(ids)):raise ValueError('Component semantic key collision: review before exporting')
  checked_hashes={}

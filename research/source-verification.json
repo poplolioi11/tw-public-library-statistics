@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-10-25T08:04:40.037191+00:00",
+  "checked_at": "2026-10-25T10:00:02.346348+00:00",
   "status": "pass",
-  "assertions": 481918,
+  "assertions": 615374,
   "scope": "3091 core source cells exhaustively checked; NCL lineage/number parsing all rows, PDF page-image samples only; component coverage as individually reported.",
   "independent_of_pipeline_and_extractors": true,
   "network_used": false,
@@ -459,7 +459,7 @@
   },
   "components": {
     "status": "pass",
-    "canonical_records_checked": 16884,
+    "canonical_records_checked": 21457,
     "local_raw_documents_checked": 35,
     "local_raw_cells_and_derived_rows_checked": 25184,
     "blank_non_observation_raw_rows_excluded": 5,
@@ -467,14 +467,72 @@
     "exact_duplicate_rows_excluded": 10433,
     "conflicting_value_groups": 0,
     "historical_adapter_records_checked": 1489,
+    "additional_ncl_expected_records": 4573,
     "explicit_missing_source_markers_retained": 4,
     "pdf_raw_files_hash_checked": 6,
     "local_verification_level": "All original JSON cells and complete original objects vs derived; every nonduplicate adapter record vs derived and raw.",
     "historical_verification_level": "Every adapter record vs derived and PDF source hashes; NCL visual sample scope reported separately. DGBAS PDF content not independently transcribed in this adapter review.",
     "inputs": {
-      "components_sha256": "468046b979650f79bebfe5a30c602eaa28c98ea2a36d3b339626cda096f582ef",
+      "components_sha256": "d4a5dd4f912d3494ac0f85ca46576224af683fb2128c6828d55adda7d041c6ee",
       "local_derived_sha256": "d7ae5850837da2c085668ee8f7f5ad260fc76bb06fc1d929d70447932bd063da"
     }
+  },
+  "ncl_gap_independent": {
+    "status": "pass",
+    "tables_fully_compared": 4,
+    "grid_positions_checked": 1180,
+    "printed_numeric_cells": 830,
+    "printed_blank_cells": 350,
+    "baseline_sha256": "26403370efa5c0bf15de8b273059a8e345e39d5d659e80ef47c3faa478e994cd",
+    "baseline_recorded_before_extractor_outputs_read": true,
+    "review_level": "All1180 printed number/blank positions vs independently entered PDFium page-image baseline; not human double-collation.",
+    "expected_source_arithmetic_discrepancies": [
+      {
+        "table_id": "ncl-gap-2008-staff_services",
+        "check": "column_sum",
+        "column_id": "physical_borrower_visits",
+        "visible_non_total_rows_sum": 11946492,
+        "printed_national_total": 11964492,
+        "difference_printed_minus_sum": 18000
+      },
+      {
+        "table_id": "ncl-gap-2009-library_counts",
+        "check": "row_components",
+        "entity": "臺中市",
+        "visible_main_sum": 13,
+        "printed_main_total": 13,
+        "visible_branch_sum": 3,
+        "printed_branch_total": 4
+      },
+      {
+        "table_id": "ncl-gap-2009-library_counts",
+        "check": "row_components",
+        "entity": "總計",
+        "visible_main_sum": 364,
+        "printed_main_total": 364,
+        "visible_branch_sum": 176,
+        "printed_branch_total": 177
+      }
+    ],
+    "canonical_mapping": "separately_checked_by_ncl_additional_components"
+  },
+  "new_ncl_components": {
+    "status": "pass",
+    "derived_files": [
+      "ncl_gap_tables_long.csv",
+      "ncl_additional_years_long.csv",
+      "ncl_earlier_years_long.csv"
+    ],
+    "records_checked": 4573,
+    "source_pdf_hashes_checked": 10,
+    "value_status_counts": {
+      "source_blank": 875,
+      "reported": 3142,
+      "reported_decimal": 544,
+      "not_available_in_source": 12
+    },
+    "gap_review_level": "Complete independent page-image baseline is checked separately.",
+    "other_years_review_level": "Derived-to-canonical fields and raw PDF hashes checked; separately, five original-image tables have 164 independently entered expected sample positions (159 numeric, two blank, three explicit markers), recorded in research/ncl-v02-independent-image-samples.json. This is not a full independent transcription of all additional-year PDF cells."
   },
   "dgbas_county_table": {
     "status": "pass",
@@ -499,9 +557,25 @@
   },
   "combined": {
     "status": "pass",
-    "records_checked": 19975,
+    "records_checked": 24548,
     "all_original_fields_preserved": true,
-    "snapshot_sha256": "f6e90a7bdf1db60d3f5c245e802ea3d25f1abdc14a8846199c0db7353e858f91"
+    "snapshot_sha256": "e3d6697ae3d54c3b5f6a297d33e8c60ecf6ce7a4670a0e17068f140eb3abf5a2"
+  },
+  "ncl_v02_targeted_image_review": {
+    "report_path": "research/ncl-v02-independent-image-samples.json",
+    "readable_report_path": "research/ncl-v02-independent-image-samples.md",
+    "report_sha256": "44d87f0a24b1f7dad227d8a464daf3d1955f061bf4db9fb2b03d832071fe8167",
+    "status": "pass",
+    "method": "Independently render original PDFs with PDFium, read selected values/headers/footnotes, enter literal expected cells, then compare to derived and canonical. No extractor imported.",
+    "summary": {
+      "tables": 5,
+      "sample_positions": 164,
+      "numeric_samples": 159,
+      "printed_blank_samples": 2,
+      "explicit_marker_samples": 3,
+      "failures": 0
+    },
+    "scope_limit": "Targeted independent original-image review of new volumes, not all additional/earlier-volume cells. Three small tables have complete cell reading only within their stated table scopes; all other values remain mapping/hash verified rather than independently transcribed here."
   },
   "failures": [],
   "limitations": [

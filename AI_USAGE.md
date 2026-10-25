@@ -12,14 +12,14 @@
 
 先讀 `data/combined/summary.json`、`coverage.json`、`indicators.json` 與 `observation.schema.json`。`data/observations.*`、`data/component_records.jsonl` 和 `derived/` 是組件或中間結果，可能保留重複；不得再併入正式入口。資料筆數不是館數。
 
-目前 19,975 筆包含不同來源版本和 188 個來源明示缺值格。「所列來源全量」不等於所有縣市、所有年度或每間館的資料完整。找不到某年某欄時，回報目前收錄缺口，不宣稱官方未公布或真實數值為零。
+目前 24,548 筆來源觀測紀錄，含 200 格明示缺值、875 格原印留白及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
 
 ## 先選來源，再選可比較的觀測
 
 1. 固定 `source_family` 或 `source_id`，使用 `series_id` 識別指標系列；不要只用相似中文指標名合併。
 2. 檢查 `data_year`、`period_start`／`period_end`、`period_raw`／`period_effective`、`periodicity_raw`、`temporal_kind` 與 `period_basis`。資料年、出版年、填報年及取得時間不可互換。
 3. 檢查 `geography`、`geographic_scope`、`geography_vintage`、`population_scope`、`national_libraries_scope`、`facility` 與單位。舊行政區保留原名；館藏地類別不是實體館識別碼。
-4. 檢查 `source_edition`、`definition_id`／`definition_status`、`comparability`、`notes` 及 `quality_flags`。尚未確認歷年相容性，不得自行認證。
+4. 檢查 `source_edition`／`source_edition_roc`、`aggregation_role`、`institutional_level`、`unit_raw`／`unit_basis`／`unit_status`、`definition_id`／`definition_status`、`comparability`、`notes` 及 `quality_flags`。尚未確認歷年相容性，不得自行認證。
 5. 每個結論附 `source_url`、`source_locator`、`source_sha256` 與所用版本。保留 `observation_id`，讓別人找到完全相同的輸入。
 
 ### 來源族群
@@ -28,14 +28,15 @@
 |---|---|
 | 國資圖公開全國圖表 | `source_id` 以 `public-chart-` 開頭；2011–2025 全國公開圖表 |
 | 國資圖2023開放資料（含縣市） | `source_id = 'ogdl-api-2023'` |
-| 國家圖書館年鑑統計事實 | `ncl-yearbook-98-public`、`ncl-yearbook-99-public`、`ncl-yearbook-100-public` |
+| 國家圖書館年鑑統計事實 | 以來源清單為準；`ncl-yearbook-*`、`ncl-gap-*`、`ncl-earlier-*` 各表／出版版本分開 |
 | 主計總處歷史全國統計 | `dgbas-social-indicators-2005`、`dgbas-social-indicators-2008`、`dgbas-social-indicators-2011`；先選出版版本 |
 | 主計總處縣市公共館數 | `source_id = 'dgbas-county-library-Z091101a029'`；官方改制後縣市範圍，與國資圖館數分開 |
 | 地方政府開放歷史表 | `source_id` 以 `local-` 開頭；再選縣市、館藏地與原期間 |
 
 ### 數值與缺值
 
-- `value_status = 'not_available_in_source'`／`value IS NULL`：原刊缺值，不補零。目前 188 格：主計 2005 版 4 格，以及主計縣市館數 1998–2005 年的 184 格 `-`。後者不是 0，也不能由其他母體館數自動補入。
+- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `200` 格 `not_available_in_source` 保留明示缺值符號，`875` 格 `source_blank` 保留原刊留白；留白不推定不適用，均不補零。
+- `raw_value` 保留原表字串與註腳標記；例如 `79a` 的數值為79，`source_cell_annotation` 保留a，須同讀 `source_footnotes_raw`／`source_footnotes_status`。`quality_flags` 可為單一代碼或原組件保留的JSON陣列字串；不把單純多層合計旗標當成數值錯誤。
 - `raw_value` 保留原表字串；`value` 的小數可能使用十進位字串。SQLite 的 `value` 欄是文字型別，分析前須明確選定解析規則，不能以不受檢查的轉型把異常字串變成零。
 - 原報 `0` 未必是已確認的真零；讀 `zero_interpretation`、註腳及資料蒐集範圍。
 - `quality_flags = 'source_arithmetic_inconsistency'` 表示原表合計算術不一致，原值未更改。另讀 `notes` 與品質紀錄，並非所有不確定性都有單一旗標。

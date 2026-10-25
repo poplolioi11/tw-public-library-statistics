@@ -5,8 +5,8 @@
   "scope_claims": [
     "2011–2025已完整的是公開10類全國圖表。",
     "2023是目前唯一證實同一6425官方OGDL年度縣市包。",
-    "NCL3年只完整指定表，而非整冊。",
-    "其他縣市地方統計尚未逐機關核查。"
+    "其他縣市地方統計尚未逐機關核查。",
+    "NCL96–103卷僅已列核心表與公共館子表；非整冊所有表，102卷縣市核心表缺口仍存。"
   ],
   "status_semantics": {
     "completed_bounded_scope": "僅completed_scope所列範圍完整",
@@ -17,7 +17,6 @@
     "reference_only_mixed_scope": "僅供分類參考，未將混合母體匯入"
   },
   "constraints": [
-    "本清單未新下載大型PDF、未啟動新全量抓取、未排程。",
     "每批先完成來源分類、授權、完整表、原值與來源定位再擴張。",
     "未查、逾時、404或憑證錯誤不得改寫成無資料。",
     "不把學校、大專、私立或國家圖書館與公立公共館任意混合。",
@@ -115,103 +114,433 @@
       ],
       "completed_scope": {
         "data_years": [
+          2006,
+          2007,
           2008,
           2009,
-          2010
+          2010,
+          2011,
+          2012,
+          2013
         ],
-        "long_rows": 1269,
+        "long_rows": 5842,
         "tables": [
           {
-            "data_year": 2008,
-            "edition_roc": 98,
-            "complete_tables": [
-              "表4：館藏數量及購書經費"
+            "source_id": "ncl-earlier-2006-t1",
+            "source_table": "1",
+            "pdf_page": 4,
+            "printed_page": "30",
+            "data_years": [
+              2006
             ],
-            "pdf_pages": [
-              3
-            ],
-            "printed_pages": [
-              79
-            ],
-            "nonblank_cells": 191
+            "source_cells": 312
           },
           {
-            "data_year": 2009,
-            "edition_roc": 99,
-            "complete_tables": [
-              "表2：館藏數量及購書經費",
-              "表3：人員及服務"
+            "source_id": "ncl-earlier-2006-t2",
+            "source_table": "2",
+            "pdf_page": 5,
+            "printed_page": "31",
+            "data_years": [
+              2006
             ],
-            "pdf_pages": [
-              3,
-              4
-            ],
-            "printed_pages": [
-              75,
-              76
-            ],
-            "nonblank_cells": 539
+            "source_cells": 45
           },
           {
-            "data_year": 2010,
-            "edition_roc": 100,
-            "complete_tables": [
-              "表3：館藏數量及購書經費",
-              "表4：人員及服務"
+            "source_id": "ncl-earlier-2006-t3",
+            "source_table": "3",
+            "pdf_page": 5,
+            "printed_page": "31",
+            "data_years": [
+              2006
             ],
-            "pdf_pages": [
-              3,
-              4
+            "source_cells": 30
+          },
+          {
+            "source_id": "ncl-earlier-2006-t4",
+            "source_table": "4",
+            "pdf_page": 6,
+            "printed_page": "32",
+            "data_years": [
+              2006
             ],
-            "printed_pages": [
-              35,
-              36
+            "source_cells": 150
+          },
+          {
+            "source_id": "ncl-earlier-2006-t5",
+            "source_table": "5",
+            "pdf_page": 7,
+            "printed_page": "33",
+            "data_years": [
+              2006
             ],
-            "nonblank_cells": 539
+            "source_cells": 312
+          },
+          {
+            "source_id": "ncl-earlier-2007-t1",
+            "source_table": "1",
+            "pdf_page": 2,
+            "printed_page": "36",
+            "data_years": [
+              2007
+            ],
+            "source_cells": 286
+          },
+          {
+            "source_id": "ncl-earlier-2007-t2",
+            "source_table": "2",
+            "pdf_page": 3,
+            "printed_page": "37",
+            "data_years": [
+              2007
+            ],
+            "source_cells": 203
+          },
+          {
+            "source_id": "ncl-earlier-2007-t3",
+            "source_table": "3",
+            "pdf_page": 4,
+            "printed_page": "38",
+            "data_years": [
+              2007
+            ],
+            "source_cells": 348
+          },
+          {
+            "source_id": "ncl-gap-2008-t3-counts",
+            "source_table": "3",
+            "pdf_page": 2,
+            "printed_page": "78",
+            "data_years": [
+              2008
+            ],
+            "source_cells": 286
+          },
+          {
+            "source_id": "ncl-gap-2008-t5-staff-services",
+            "source_table": "5",
+            "pdf_page": 4,
+            "printed_page": "80",
+            "data_years": [
+              2008
+            ],
+            "source_cells": 348
+          },
+          {
+            "source_id": "ncl-yearbook-98-public",
+            "source_table": "4",
+            "pdf_page": 3,
+            "printed_page": "79",
+            "data_years": [
+              2008
+            ],
+            "source_cells": 191
+          },
+          {
+            "source_id": "ncl-gap-2009-t1-counts",
+            "source_table": "1",
+            "pdf_page": 2,
+            "printed_page": "74",
+            "data_years": [
+              2009
+            ],
+            "source_cells": 260
+          },
+          {
+            "source_id": "ncl-yearbook-103-statistics",
+            "source_table": "157",
+            "pdf_page": 5,
+            "printed_page": "393",
+            "data_years": [
+              2009,
+              2010,
+              2011,
+              2012,
+              2013
+            ],
+            "source_cells": 25
+          },
+          {
+            "source_id": "ncl-yearbook-99-public",
+            "source_table": "2",
+            "pdf_page": 3,
+            "printed_page": "75",
+            "data_years": [
+              2009
+            ],
+            "source_cells": 191
+          },
+          {
+            "source_id": "ncl-yearbook-99-public",
+            "source_table": "3",
+            "pdf_page": 4,
+            "printed_page": "76",
+            "data_years": [
+              2009
+            ],
+            "source_cells": 348
+          },
+          {
+            "source_id": "ncl-gap-2010-t1-counts",
+            "source_table": "1",
+            "pdf_page": 2,
+            "printed_page": "34",
+            "data_years": [
+              2010
+            ],
+            "source_cells": 286
+          },
+          {
+            "source_id": "ncl-yearbook-100-public",
+            "source_table": "3",
+            "pdf_page": 3,
+            "printed_page": "35",
+            "data_years": [
+              2010
+            ],
+            "source_cells": 191
+          },
+          {
+            "source_id": "ncl-yearbook-100-public",
+            "source_table": "4",
+            "pdf_page": 4,
+            "printed_page": "36",
+            "data_years": [
+              2010
+            ],
+            "source_cells": 348
+          },
+          {
+            "source_id": "ncl-yearbook-101-public-library",
+            "source_table": "19",
+            "pdf_page": 4,
+            "printed_page": "54",
+            "data_years": [
+              2011
+            ],
+            "source_cells": 368
+          },
+          {
+            "source_id": "ncl-yearbook-101-public-library",
+            "source_table": "20",
+            "pdf_page": 5,
+            "printed_page": "55",
+            "data_years": [
+              2011
+            ],
+            "source_cells": 260
+          },
+          {
+            "source_id": "ncl-yearbook-101-public-library",
+            "source_table": "21",
+            "pdf_page": 6,
+            "printed_page": "56",
+            "data_years": [
+              2011
+            ],
+            "source_cells": 182
+          },
+          {
+            "source_id": "ncl-yearbook-101-public-library",
+            "source_table": "22",
+            "pdf_page": 7,
+            "printed_page": "57",
+            "data_years": [
+              2011
+            ],
+            "source_cells": 104
+          },
+          {
+            "source_id": "ncl-yearbook-101-statistics",
+            "source_table": "170",
+            "pdf_page": 7,
+            "printed_page": "413",
+            "data_years": [
+              2011
+            ],
+            "source_cells": 4
+          },
+          {
+            "source_id": "ncl-yearbook-101-statistics",
+            "source_table": "169",
+            "pdf_page": 6,
+            "printed_page": "412",
+            "data_years": [
+              2011
+            ],
+            "source_cells": 7
+          },
+          {
+            "source_id": "ncl-yearbook-102-statistics",
+            "source_table": "152",
+            "pdf_page": 3,
+            "printed_page": "403",
+            "data_years": [
+              2012
+            ],
+            "source_cells": 4
+          },
+          {
+            "source_id": "ncl-yearbook-102-statistics",
+            "source_table": "151",
+            "pdf_page": 2,
+            "printed_page": "402",
+            "data_years": [
+              2012
+            ],
+            "source_cells": 7
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "32",
+            "pdf_page": 2,
+            "printed_page": "72",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 66
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "35",
+            "pdf_page": 3,
+            "printed_page": "73",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 66
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "36",
+            "pdf_page": 4,
+            "printed_page": "74",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 66
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "37",
+            "pdf_page": 5,
+            "printed_page": "75",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 88
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "38",
+            "pdf_page": 6,
+            "printed_page": "76",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 154
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "39",
+            "pdf_page": 7,
+            "printed_page": "77",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 84
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "40",
+            "pdf_page": 7,
+            "printed_page": "77",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 22
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "31",
+            "pdf_page": 2,
+            "printed_page": "72",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 15
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "33",
+            "pdf_page": 2,
+            "printed_page": "72",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 55
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "34",
+            "pdf_page": 3,
+            "printed_page": "73",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 50
+          },
+          {
+            "source_id": "ncl-yearbook-103-public-library",
+            "source_table": "39",
+            "pdf_page": 6,
+            "printed_page": "76",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 70
+          },
+          {
+            "source_id": "ncl-yearbook-103-statistics",
+            "source_table": "155",
+            "pdf_page": 3,
+            "printed_page": "391",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 4
+          },
+          {
+            "source_id": "ncl-yearbook-103-statistics",
+            "source_table": "154",
+            "pdf_page": 2,
+            "printed_page": "390",
+            "data_years": [
+              2013
+            ],
+            "source_cells": 6
           }
         ],
-        "completion_statement": "NCL這3個資料年只完整指定表，而非整冊、整章或所有統計表。"
+        "completion_statement": "僅所列核心表或公共館子表完整，不是整冊／整章所有表。"
       },
       "known_not_ingested": [
         {
-          "data_year": 2008,
-          "edition_roc": 98,
-          "table": "館數交叉表",
-          "location": "PDF第2頁／印刷78頁；正式表號待影像再核",
-          "reason": "已下載原檔，尚未完整表格擷取。"
-        },
-        {
-          "data_year": 2008,
-          "edition_roc": 98,
-          "table": "人員及服務表",
-          "location": "PDF第4頁／印刷80頁；正式表號待影像再核",
-          "reason": "文字層數字黏連，尚未完成可靠逐格解析。"
-        },
-        {
-          "data_year": 2009,
-          "edition_roc": 99,
-          "table": "表1：公立公共圖書館館數",
-          "location": "PDF第2頁／印刷74頁",
-          "reason": "已下載原檔，尚未入庫。"
-        },
-        {
-          "data_year": 2010,
-          "edition_roc": 100,
-          "table": "表1：公立公共圖書館館數",
-          "location": "PDF第2頁／印刷34頁",
-          "reason": "已下載原檔，尚未入庫。"
+          "edition_roc": 102,
+          "data_year": 2012,
+          "scope": "本輪公共館章未發現相同完整縣市核心表；已收統計章全國子表，其他來源仍待查。"
         }
       ],
       "unknown_scope": [
-        "97年及以前、101年及以後各卷的資料年、完整公共館表、欄位與修訂情形，除既有明列研究外尚未逐卷盤點。",
-        "新版列表29筆只證明入口可見，不能證明每卷有相同欄位、可讀文字層或完整縣市資料。",
-        "年鑑標年、出版年與表內資料年不能互換；早期跨年卷須按表逐一確認。"
+        "95卷以前及104卷以後尚未逐表核對；其他卷統計章與地方補充表仍有缺口。",
+        "官方目錄可見不等於所有欄位或歷年可比性已確認。"
       ],
       "license_scope": "署名專章全文PDF授權未確認；本機保存原檔，公開衍生表只取統計事實與來源定位，不轉發全文/影像。",
       "evidence": [
         "research/ncl-historical-verification.md",
         "research/official-scope.md",
-        "raw/ncl-historical/documents.json"
+        "raw/ncl-historical/documents.json",
+        "raw/ncl-historical/gap-tables-metadata.json",
+        "raw/ncl-earlier/metadata.json",
+        "raw/ncl-additional/extraction-validation.json"
       ]
     },
     {
@@ -462,7 +791,7 @@
     {
       "task_id": "B01",
       "priority": 1,
-      "status": "todo_source_confirmed",
+      "status": "completed_bounded_scope",
       "family_id": "ncl_yearbook_public_library_chapters",
       "title": "先完成已下載3卷的未入庫表",
       "batch_size": "一張表完成、核對並記錄後再處理下一張",
@@ -478,8 +807,10 @@
         "先驗表頭、人員欄順序及全國組成總和，遇到官方差異保留原值另記。"
       ],
       "unknowns": [
-        "2008人力表的數字黏連是否可可靠按座標解析，未確認。"
-      ]
+        "三項原刊算術差異已記錄，未改官方值。"
+      ],
+      "completion": "四張既有缺表全量1180格：830數值、350留白；另經獨立全格回查。",
+      "known_not_ingested": []
     },
     {
       "task_id": "B02",
@@ -504,7 +835,7 @@
     {
       "task_id": "B03",
       "priority": 3,
-      "status": "todo_official_entry_confirmed",
+      "status": "partially_completed_known_tables",
       "family_id": "ncl_yearbook_public_library_chapters",
       "title": "由97年卷往前逐卷完成公共館年度表",
       "batch_size": "每批一卷，先做章節及表清單，再完成該卷核心表",
@@ -521,7 +852,8 @@
       ],
       "unknowns": [
         "各卷表格數、資料年、文字層與統計完整率尚未逐卷確認。"
-      ]
+      ],
+      "completion": "本輪96/97卷8張核心表1686格；101/103卷14張核心表與101–103統計章公共館子表1707格。其他卷維持待查。"
     },
     {
       "task_id": "B04",
@@ -625,13 +957,13 @@
         "保留各年行政區與原單位，完整取可下載表。"
       ],
       "unknowns": [
-        "此輪僅見定義，尚無可入庫實際表。"
+        "歷年定義是否完全相容仍待逐年認證；實際表已取得。"
       ],
       "completion": "2026-10-25已取得644來源格，460有值、184來源缺值；後續僅按來源更新。"
     }
   ],
   "official_yearbook_inventory": {
-    "checked_via": "背景HTTP讀取新版官方3頁列表；僅目錄盤點，未下載新PDF",
+    "checked_via": "官方目錄盤點與本輪96–103卷指定章／表原件核對；其他卷僅目錄。",
     "catalog_urls": [
       "https://www.ncl.edu.tw/librarianship-yearbook",
       "https://www.ncl.edu.tw/librarianship-yearbook?page=2",
@@ -733,24 +1065,27 @@
         "title": "中華民國一O三年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565350919926814",
         "catalog_page": 1,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2013,
+        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
+        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
       },
       {
         "edition_roc_raw": 102,
         "title": "中華民國一O二年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565374511489343",
         "catalog_page": 2,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2012,
+        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
+        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
       },
       {
         "edition_roc_raw": 101,
         "title": "中華民國一O一年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565430946568943",
         "catalog_page": 2,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2011,
+        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
+        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
       },
       {
         "edition_roc_raw": 100,
@@ -758,7 +1093,8 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565466726779537",
         "catalog_page": 2,
         "data_year_verified": 2010,
-        "ingestion_status": "specific_tables_completed_only"
+        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
+        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
       },
       {
         "edition_roc_raw": 99,
@@ -766,7 +1102,8 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565491338132165",
         "catalog_page": 2,
         "data_year_verified": 2009,
-        "ingestion_status": "specific_tables_completed_only"
+        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
+        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
       },
       {
         "edition_roc_raw": 98,
@@ -774,23 +1111,26 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565548575038748",
         "catalog_page": 2,
         "data_year_verified": 2008,
-        "ingestion_status": "specific_tables_completed_only"
+        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
+        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
       },
       {
         "edition_roc_raw": 97,
         "title": "中華民國九十七年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565555623845321",
         "catalog_page": 2,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2007,
+        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
+        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
       },
       {
         "edition_roc_raw": 96,
         "title": "中華民國九十六年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565568411570887",
         "catalog_page": 2,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2006,
+        "ingestion_status": "specific_operational_tables_or_public_subset_completed_only",
+        "scope_evidence": "逐表清單見raw/ncl-historical/gap-tables-metadata.json、raw/ncl-earlier/metadata.json、raw/ncl-additional/extraction-validation.json；102卷不宣稱縣市核心表齊全。"
       },
       {
         "edition_roc_raw": 95,

@@ -1,0 +1,3094 @@
+{
+  "generated_at": "2026-10-25T09:49:14.232622+00:00",
+  "script": "scripts/fetch_local_history.py",
+  "seed_catalog_ids": [
+    "127807",
+    "117921",
+    "84379",
+    "84915",
+    "164580",
+    "164579",
+    "164577",
+    "164576",
+    "164575",
+    "164568",
+    "168119",
+    "173850",
+    "177249"
+  ],
+  "all_discovered_catalog_ids": [
+    "117921",
+    "127807",
+    "130199",
+    "164568",
+    "164575",
+    "164576",
+    "164577",
+    "164579",
+    "164580",
+    "168119",
+    "173850",
+    "177249",
+    "84379",
+    "84915"
+  ],
+  "tls_supplementation_evidence": "raw/official-local/tls/verification.json",
+  "discovery_policy": "Only exact public catalogue URLs found through search or linked related datasets. No inferred year-resource URLs.",
+  "data_scope": "All JSON resources exposed by each successful allowlisted catalogue (CSV only if no JSON); no API pagination or private endpoints.",
+  "catalogues": [
+    {
+      "dataset_id": "117921",
+      "source_url": "https://data.gov.tw/dataset/117921",
+      "source_title": "11014-02-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "97446cf4441f6508e8a1e859520b3dbe0f4981a083f7f0fdd3c9c4a082c5148f",
+      "catalog_path": "raw/official-local/catalog-117921/catalog-97446cf4441f6508e8a1e859520b3dbe0f4981a083f7f0fdd3c9c4a082c5148f.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:47.884851+00:00",
+        "final_url": "https://data.gov.tw/dataset/117921",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "11014-02-01-2 臺中市立公共圖書館概況",
+        "description": "臺中市立公共圖書館概況，包含圖書館數、工作人員數、閱覽席位數、購買圖書資料費、全年圖書資訊借閱人次、全年圖書資訊借閱人次、全年圖書資訊借閱冊數、全年圖書及非書資料收藏數量。—年報",
+        "url": "https://data.gov.tw/dataset/117921",
+        "identifier": "117921",
+        "keywords": [
+          "公務統計報表"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "臺中市政府文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <p"
+        },
+        {
+          "resource_index": 2,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <path fill=\"currentColor\" d=\"M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l"
+        },
+        {
+          "resource_index": 3,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <!--v-if"
+        },
+        {
+          "resource_index": 4,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:47.884851+00:00"
+    },
+    {
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "catalog_path": "raw/official-local/catalog-127807/catalog-40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:47.851173+00:00",
+        "final_url": "https://data.gov.tw/dataset/127807",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "11014-03-01-2 臺中市立公共圖書館概況",
+        "description": "11014-03-01-2 臺中市立公共圖書館概況公務統計.....................",
+        "url": "https://data.gov.tw/dataset/127807",
+        "identifier": "127807",
+        "keywords": [
+          "公務統計報表"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "臺中市政府文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 2,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 3,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 4,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 5,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 6,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 7,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 8,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 9,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 10,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 11,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 12,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 13,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 14,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+        },
+        {
+          "resource_index": 15,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <p"
+        },
+        {
+          "resource_index": 16,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <path fill=\"currentColor\" d=\"M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l"
+        },
+        {
+          "resource_index": 17,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <!--v-if"
+        },
+        {
+          "resource_index": 18,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:47.851173+00:00"
+    },
+    {
+      "dataset_id": "130199",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_title": "新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "0ad8642bec9a1adbda8d36b4ae45555ff14bad723577a4d65b9a60f7dc782226",
+      "catalog_path": "raw/official-local/catalog-130199/catalog-0ad8642bec9a1adbda8d36b4ae45555ff14bad723577a4d65b9a60f7dc782226.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:32:05.177781+00:00",
+        "final_url": "https://data.gov.tw/dataset/130199",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "新竹市公共圖書館圖書借閱量統計表",
+        "description": "新竹市公共圖書館圖書借閱量統計...................................",
+        "url": "https://data.gov.tw/dataset/130199",
+        "identifier": "130199",
+        "keywords": [
+          "AI-Ready Data 詮釋資料框架指標"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "新竹市文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XLSX",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.xlsx"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.csv"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.xml"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+          "format": "json",
+          "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolute"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:32:05.177781+00:00"
+    },
+    {
+      "dataset_id": "164568",
+      "source_url": "https://data.gov.tw/dataset/164568",
+      "source_title": "112年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "4bf86a5a1bb733357c17edcd6cff138178ef0c8b81f255db61a9f9a15e4a3002",
+      "catalog_path": "raw/official-local/catalog-164568/catalog-4bf86a5a1bb733357c17edcd6cff138178ef0c8b81f255db61a9f9a15e4a3002.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:50.666482+00:00",
+        "final_url": "https://data.gov.tw/dataset/164568",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "112年新竹市公共圖書館圖書借閱量統計表",
+        "description": "新竹市公共圖書館圖書借閱量統計表112年..............................",
+        "url": "https://data.gov.tw/dataset/164568",
+        "identifier": "164568",
+        "keywords": [
+          "AI-Ready Data 詮釋資料框架指標"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "新竹市文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XLSX",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1445/2d3c4f51-7698-4360-a39b-57b0c6759642.xlsx"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1445/2d3c4f51-7698-4360-a39b-57b0c6759642.csv"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1445/2d3c4f51-7698-4360-a39b-57b0c6759642.xml"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1445/2d3c4f51-7698-4360-a39b-57b0c6759642.json"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1445/2d3c4f51-7698-4360-a39b-57b0c6759642.json",
+          "format": "json",
+          "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1445/2d3c4f51-7698-4360-a39b-57b0c6759642.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:50.666482+00:00"
+    },
+    {
+      "dataset_id": "164575",
+      "source_url": "https://data.gov.tw/dataset/164575",
+      "source_title": "110年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "14799fdee11a098970187012041bf8397f9cdaa0609de54257652d89ef5b79b3",
+      "catalog_path": "raw/official-local/catalog-164575/catalog-14799fdee11a098970187012041bf8397f9cdaa0609de54257652d89ef5b79b3.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:50.492744+00:00",
+        "final_url": "https://data.gov.tw/dataset/164575",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "110年新竹市公共圖書館圖書借閱量統計表",
+        "description": "新竹市公共圖書館圖書借閱量統計表110年..............................",
+        "url": "https://data.gov.tw/dataset/164575",
+        "identifier": "164575",
+        "keywords": [
+          "AI-Ready Data 詮釋資料框架指標"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "新竹市文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XLSX",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1443/e25acbc1-bb25-482a-902c-1f79496a3714.xlsx"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1443/e25acbc1-bb25-482a-902c-1f79496a3714.csv"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1443/e25acbc1-bb25-482a-902c-1f79496a3714.xml"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1443/e25acbc1-bb25-482a-902c-1f79496a3714.json"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1443/e25acbc1-bb25-482a-902c-1f79496a3714.json",
+          "format": "json",
+          "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1443/e25acbc1-bb25-482a-902c-1f79496a3714.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:50.492744+00:00"
+    },
+    {
+      "dataset_id": "164576",
+      "source_url": "https://data.gov.tw/dataset/164576",
+      "source_title": "109年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "d9873a6f2b5157c22a0584ecc1921b178d292522602cf24a7b11b56cd4c779fa",
+      "catalog_path": "raw/official-local/catalog-164576/catalog-d9873a6f2b5157c22a0584ecc1921b178d292522602cf24a7b11b56cd4c779fa.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:49.665890+00:00",
+        "final_url": "https://data.gov.tw/dataset/164576",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "109年新竹市公共圖書館圖書借閱量統計表",
+        "description": "新竹市公共圖書館圖書借閱量統計表109年..............................",
+        "url": "https://data.gov.tw/dataset/164576",
+        "identifier": "164576",
+        "keywords": [
+          "AI-Ready Data 詮釋資料框架指標"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "新竹市文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XLSX",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1442/d640a642-27b5-42ed-92ec-7d22e5702a2e.xlsx"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1442/d640a642-27b5-42ed-92ec-7d22e5702a2e.csv"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1442/d640a642-27b5-42ed-92ec-7d22e5702a2e.xml"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1442/d640a642-27b5-42ed-92ec-7d22e5702a2e.json"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1442/d640a642-27b5-42ed-92ec-7d22e5702a2e.json",
+          "format": "json",
+          "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1442/d640a642-27b5-42ed-92ec-7d22e5702a2e.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:49.665890+00:00"
+    },
+    {
+      "dataset_id": "164577",
+      "source_url": "https://data.gov.tw/dataset/164577",
+      "source_title": "108年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "c909657b57ec3961ad1773625c747f589c4284b10608f2aa87f66bd94edbe9be",
+      "catalog_path": "raw/official-local/catalog-164577/catalog-c909657b57ec3961ad1773625c747f589c4284b10608f2aa87f66bd94edbe9be.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:49.055698+00:00",
+        "final_url": "https://data.gov.tw/dataset/164577",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "108年新竹市公共圖書館圖書借閱量統計表",
+        "description": "新竹市公共圖書館圖書借閱量統計表108年..............................",
+        "url": "https://data.gov.tw/dataset/164577",
+        "identifier": "164577",
+        "keywords": [
+          "AI-Ready Data 詮釋資料框架指標"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "新竹市文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XLSX",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1437/8ea43d71-911a-4567-b234-4b29d86c3173.xlsx"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1437/8ea43d71-911a-4567-b234-4b29d86c3173.csv"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1437/8ea43d71-911a-4567-b234-4b29d86c3173.xml"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1437/8ea43d71-911a-4567-b234-4b29d86c3173.json"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1437/8ea43d71-911a-4567-b234-4b29d86c3173.json",
+          "format": "json",
+          "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1437/8ea43d71-911a-4567-b234-4b29d86c3173.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:49.055698+00:00"
+    },
+    {
+      "dataset_id": "164579",
+      "source_url": "https://data.gov.tw/dataset/164579",
+      "source_title": "107年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "52d6714d507ca583eafaaeb9198ab5147f9b785cd5a8edaa0ad4a6e2bdd48300",
+      "catalog_path": "raw/official-local/catalog-164579/catalog-52d6714d507ca583eafaaeb9198ab5147f9b785cd5a8edaa0ad4a6e2bdd48300.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:49.588418+00:00",
+        "final_url": "https://data.gov.tw/dataset/164579",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "107年新竹市公共圖書館圖書借閱量統計表",
+        "description": "新竹市公共圖書館圖書借閱量統計表107年..............................",
+        "url": "https://data.gov.tw/dataset/164579",
+        "identifier": "164579",
+        "keywords": [
+          "AI-Ready Data 詮釋資料框架指標"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "新竹市文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XLSX",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1436/dbaa743e-efcd-4bfb-aff3-580bc3251f1a.xlsx"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1436/dbaa743e-efcd-4bfb-aff3-580bc3251f1a.csv"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1436/dbaa743e-efcd-4bfb-aff3-580bc3251f1a.xml"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1436/dbaa743e-efcd-4bfb-aff3-580bc3251f1a.json"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1436/dbaa743e-efcd-4bfb-aff3-580bc3251f1a.json",
+          "format": "json",
+          "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1436/dbaa743e-efcd-4bfb-aff3-580bc3251f1a.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:49.588418+00:00"
+    },
+    {
+      "dataset_id": "164580",
+      "source_url": "https://data.gov.tw/dataset/164580",
+      "source_title": "105年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "98c449a1a328be863bea284d80c005783bf433f39cc95df90d71dc4d2c6398b4",
+      "catalog_path": "raw/official-local/catalog-164580/catalog-98c449a1a328be863bea284d80c005783bf433f39cc95df90d71dc4d2c6398b4.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:47.783695+00:00",
+        "final_url": "https://data.gov.tw/dataset/164580",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "105年新竹市公共圖書館圖書借閱量統計表",
+        "description": "新竹市公共圖書館圖書借閱量統計表105年..............................",
+        "url": "https://data.gov.tw/dataset/164580",
+        "identifier": "164580",
+        "keywords": [
+          "AI-Ready Data 詮釋資料框架指標"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "新竹市文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XLSX",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.xlsx"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.csv"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.xml"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.json"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.json",
+          "format": "json",
+          "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:47.783695+00:00"
+    },
+    {
+      "dataset_id": "168119",
+      "source_url": "https://data.gov.tw/dataset/168119",
+      "source_title": "113年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "141c013ad99133e662d1a339438f93b759d9667d223fe9c30adfdbfc67ed4d2a",
+      "catalog_path": "raw/official-local/catalog-168119/catalog-141c013ad99133e662d1a339438f93b759d9667d223fe9c30adfdbfc67ed4d2a.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:51.359124+00:00",
+        "final_url": "https://data.gov.tw/dataset/168119",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "113年新竹市公共圖書館圖書借閱量統計表",
+        "description": "新竹市公共圖書館圖書借閱量統計表113年..............................",
+        "url": "https://data.gov.tw/dataset/168119",
+        "identifier": "168119",
+        "keywords": [
+          "AI-Ready Data 詮釋資料框架指標"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "新竹市文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XLSX",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.xlsx"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.csv"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.xml"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.json"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.json",
+          "format": "json",
+          "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:51.359124+00:00"
+    },
+    {
+      "dataset_id": "173850",
+      "source_url": "https://data.gov.tw/dataset/173850",
+      "source_title": "114年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "f1bf89628a114bff65360e55cf5e60ef5705360619fe70ebf3620a3672ee5fd6",
+      "catalog_path": "raw/official-local/catalog-173850/catalog-f1bf89628a114bff65360e55cf5e60ef5705360619fe70ebf3620a3672ee5fd6.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:52.107514+00:00",
+        "final_url": "https://data.gov.tw/dataset/173850",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "114年新竹市公共圖書館圖書借閱量統計表",
+        "description": "新竹市公共圖書館圖書借閱量統計表115年..............................",
+        "url": "https://data.gov.tw/dataset/173850",
+        "identifier": "173850",
+        "keywords": [],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "新竹市文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XLSX",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.xlsx"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.csv"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.xml"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json",
+          "format": "json",
+          "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:52.107514+00:00"
+    },
+    {
+      "dataset_id": "177249",
+      "source_url": "https://data.gov.tw/dataset/177249",
+      "source_title": "115年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "dc0848d6952319a8cf329ddf5926e41947ad9d07b03dc02032cdd20ad07686c8",
+      "catalog_path": "raw/official-local/catalog-177249/catalog-dc0848d6952319a8cf329ddf5926e41947ad9d07b03dc02032cdd20ad07686c8.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:52.237107+00:00",
+        "final_url": "https://data.gov.tw/dataset/177249",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "115年新竹市公共圖書館圖書借閱量統計表",
+        "description": "新竹市公共圖書館圖書借閱量統計表115年..............................",
+        "url": "https://data.gov.tw/dataset/177249",
+        "identifier": "177249",
+        "keywords": [],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "新竹市文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XLSX",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1967/7f5793ae-e55f-4aa5-be01-3a76e53e6616.xlsx"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1967/7f5793ae-e55f-4aa5-be01-3a76e53e6616.csv"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1967/7f5793ae-e55f-4aa5-be01-3a76e53e6616.xml"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1967/7f5793ae-e55f-4aa5-be01-3a76e53e6616.json"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1967/7f5793ae-e55f-4aa5-be01-3a76e53e6616.json",
+          "format": "json",
+          "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1967/7f5793ae-e55f-4aa5-be01-3a76e53e6616.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:52.237107+00:00"
+    },
+    {
+      "dataset_id": "84379",
+      "source_url": "https://data.gov.tw/dataset/84379",
+      "source_title": "臺中市立圖書館各分館借閱統計",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "3fb0b3ccc142e3462ae0ac8ea25eed91d9d05e241437b0f736c8bac8c8de172d",
+      "catalog_path": "raw/official-local/catalog-84379/catalog-3fb0b3ccc142e3462ae0ac8ea25eed91d9d05e241437b0f736c8bac8c8de172d.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:47.392134+00:00",
+        "final_url": "https://data.gov.tw/dataset/84379",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "臺中市立圖書館各分館借閱統計",
+        "description": "臺中市立圖書館各分館圖書資料借閱人次、借閱冊數。..........................",
+        "url": "https://data.gov.tw/dataset/84379",
+        "identifier": "84379",
+        "keywords": [
+          "AI-Ready Data 詮釋資料框架指標",
+          "圖書館",
+          "借閱"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "臺中市政府文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=28a09071-8f81-4e42-a3aa-341bb06e5efd"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=25e67a56-4a0a-49b0-b2e0-4f6fda7be8a3"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c7f4998d-e1f3-4873-b09b-9bb12ce56424"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=a6e3ed19-aaaa-4412-9a15-2dc09ac44c5f"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"XML\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c7f4998d-e1f3-4873-b09b-9bb12ce56424\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"XML\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=a6e3ed19-aaaa-4412-9a15-2dc09ac44c5f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <pat"
+        },
+        {
+          "resource_index": 2,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:47.392134+00:00"
+    },
+    {
+      "dataset_id": "84915",
+      "source_url": "https://data.gov.tw/dataset/84915",
+      "source_title": "臺中市圖書預算及採購冊數",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_name": "政府資料開放授權條款-第1版",
+      "license_url": "https://data.gov.tw/license",
+      "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+      "catalog_sha256": "9d337ac10f7813a84d5cf4998dc520a2fbba46b5695a2abbfea64b8724526db9",
+      "catalog_path": "raw/official-local/catalog-84915/catalog-9d337ac10f7813a84d5cf4998dc520a2fbba46b5695a2abbfea64b8724526db9.html",
+      "catalog_http": {
+        "retrieved_at": "2026-10-25T07:26:47.083973+00:00",
+        "final_url": "https://data.gov.tw/dataset/84915",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "text/html;charset=utf-8"
+        }
+      },
+      "catalog_metadata": {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "name": "臺中市圖書預算及採購冊數",
+        "description": "臺中市立圖書館年度購書經費及採購冊數檔案..............................",
+        "url": "https://data.gov.tw/dataset/84915",
+        "identifier": "84915",
+        "keywords": [
+          "圖書館",
+          "購書經費",
+          "採購冊數"
+        ],
+        "license": "https://data.gov.tw/license",
+        "creator": {
+          "@type": "Organization",
+          "name": "臺中市政府文化局"
+        },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "CSV",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7ab15ced-e1d8-4f0e-9124-875e6367af1a"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "XML",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b1dc9af0-1ddd-49a8-943c-511e7b480e62"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "JSON",
+            "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=255d0bdc-3164-4545-a6d0-c77286590db9"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "resource_index": 1,
+          "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=255d0bdc-3164-4545-a6d0-c77286590db9",
+          "format": "json",
+          "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=255d0bdc-3164-4545-a6d0-c77286590db9\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position"
+        }
+      ],
+      "last_checked_at": "2026-10-25T07:26:47.083973+00:00"
+    }
+  ],
+  "catalog_errors": [],
+  "documents": [
+    {
+      "resource_index": 1,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <p",
+      "dataset_id": "117921",
+      "source_url": "https://data.gov.tw/dataset/117921",
+      "source_title": "11014-02-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "97446cf4441f6508e8a1e859520b3dbe0f4981a083f7f0fdd3c9c4a082c5148f",
+      "status": "downloaded",
+      "source_sha256": "3a83ddeafa3a8ba17a53e97d20f93983435e9cb11d1cc47b1ec096c9eb5b5a0c",
+      "source_retrieved_at": "2026-10-25T07:26:54.056689+00:00",
+      "raw_path": "raw/official-local/catalog-117921/resource-6ed469d8440b4502-3a83ddeafa3a8ba17a53e97d20f93983435e9cb11d1cc47b1ec096c9eb5b5a0c.json",
+      "row_count": 17,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:54.056689+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "6937",
+          "Content-Disposition": "attachment; filename=\"2018_01_11014-02-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2018_01_11014-02-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:54.056689+00:00",
+      "resource_title": "2018_01_11014-02-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 2,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <path fill=\"currentColor\" d=\"M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l",
+      "dataset_id": "117921",
+      "source_url": "https://data.gov.tw/dataset/117921",
+      "source_title": "11014-02-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "97446cf4441f6508e8a1e859520b3dbe0f4981a083f7f0fdd3c9c4a082c5148f",
+      "status": "downloaded",
+      "source_sha256": "489a727f73b516dd6c6ff8c23facd5c832c481031f5554e07791cb477dda7a6f",
+      "source_retrieved_at": "2026-10-25T07:26:54.173419+00:00",
+      "raw_path": "raw/official-local/catalog-117921/resource-426b754c3d9690c0-489a727f73b516dd6c6ff8c23facd5c832c481031f5554e07791cb477dda7a6f.json",
+      "row_count": 17,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:54.173419+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "6936",
+          "Content-Disposition": "attachment; filename=\"2017_01_11014-02-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2017_01_11014-02-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:54.173419+00:00",
+      "resource_title": "2017_01_11014-02-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 3,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <!--v-if",
+      "dataset_id": "117921",
+      "source_url": "https://data.gov.tw/dataset/117921",
+      "source_title": "11014-02-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "97446cf4441f6508e8a1e859520b3dbe0f4981a083f7f0fdd3c9c4a082c5148f",
+      "status": "downloaded",
+      "source_sha256": "0fa5e467bf126f590133b26eb985567067f6f92ab65ab4c0df846e8098eb3c36",
+      "source_retrieved_at": "2026-10-25T07:26:54.321255+00:00",
+      "raw_path": "raw/official-local/catalog-117921/resource-3274c2c0b9c148ba-0fa5e467bf126f590133b26eb985567067f6f92ab65ab4c0df846e8098eb3c36.json",
+      "row_count": 18,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:54.321255+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "7348",
+          "Content-Disposition": "attachment; filename=\"2016_01_11014-02-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2016_01_11014-02-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:54.321255+00:00",
+      "resource_title": "2016_01_11014-02-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 4,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position",
+      "dataset_id": "117921",
+      "source_url": "https://data.gov.tw/dataset/117921",
+      "source_title": "11014-02-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "97446cf4441f6508e8a1e859520b3dbe0f4981a083f7f0fdd3c9c4a082c5148f",
+      "status": "downloaded",
+      "source_sha256": "9daa15f199b31873370d716f15ce614bccf0b6edf25232e1c33f7289728fd54d",
+      "source_retrieved_at": "2026-10-25T07:26:54.321160+00:00",
+      "raw_path": "raw/official-local/catalog-117921/resource-a8e89f9d11144206-9daa15f199b31873370d716f15ce614bccf0b6edf25232e1c33f7289728fd54d.json",
+      "row_count": 18,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:54.321160+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "7344",
+          "Content-Disposition": "attachment; filename=\"2015_01_11014-02-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2015_01_11014-02-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:54.321160+00:00",
+      "resource_title": "2015_01_11014-02-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "9b495145c9a2150cd576e02c4f58c17048d2dcc20dca03979bf8e52784097e58",
+      "source_retrieved_at": "2026-10-25T07:26:52.920033+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-41b3e61e7133c342-9b495145c9a2150cd576e02c4f58c17048d2dcc20dca03979bf8e52784097e58.json",
+      "row_count": 6,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:52.920033+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "2410",
+          "Content-Disposition": "attachment; filename=\"2020_11_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2020_11_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:52.920033+00:00",
+      "resource_title": "2020_11_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 2,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "6178d7e74b40684685dccac6d68d358ebf268b5575ff84d20b122eb7ff6df300",
+      "source_retrieved_at": "2026-10-25T07:26:53.145131+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-1fb36262b9771cb6-6178d7e74b40684685dccac6d68d358ebf268b5575ff84d20b122eb7ff6df300.json",
+      "row_count": 6,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.145131+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "2410",
+          "Content-Disposition": "attachment; filename=\"2020_10_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2020_10_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.145131+00:00",
+      "resource_title": "2020_10_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 3,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "07285b2481077cace2b15c6d5b29c5a17b1983b0bcb429c0e7eea2e2fe72bc47",
+      "source_retrieved_at": "2026-10-25T07:26:53.195539+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-7f36f8b0a9ceccef-07285b2481077cace2b15c6d5b29c5a17b1983b0bcb429c0e7eea2e2fe72bc47.json",
+      "row_count": 6,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.195539+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "2410",
+          "Content-Disposition": "attachment; filename=\"2020_09_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2020_09_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.195539+00:00",
+      "resource_title": "2020_09_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 4,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "454fa706ca3c678e2bc93e3c2945f0c600dcac7e7461a7931e9890fa13fdf669",
+      "source_retrieved_at": "2026-10-25T07:26:53.231090+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-8047ba866e1dd989-454fa706ca3c678e2bc93e3c2945f0c600dcac7e7461a7931e9890fa13fdf669.json",
+      "row_count": 6,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.231090+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "2410",
+          "Content-Disposition": "attachment; filename=\"2020_08_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2020_08_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.231090+00:00",
+      "resource_title": "2020_08_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 5,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "a3fb1a67b410824925a8cc5500ba4503a6b4be049b850e482d51453b3ae6a096",
+      "source_retrieved_at": "2026-10-25T07:26:53.387250+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-bb780d03520ab20c-a3fb1a67b410824925a8cc5500ba4503a6b4be049b850e482d51453b3ae6a096.json",
+      "row_count": 6,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.387250+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "2410",
+          "Content-Disposition": "attachment; filename=\"2020_07_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2020_07_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.387250+00:00",
+      "resource_title": "2020_07_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 6,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "2b75bca03bcf1dd4efbd914358fb6192440cf5fca883aacf0af37f925df8c2ee",
+      "source_retrieved_at": "2026-10-25T07:26:53.494165+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-1f3a894649282048-2b75bca03bcf1dd4efbd914358fb6192440cf5fca883aacf0af37f925df8c2ee.json",
+      "row_count": 6,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.494165+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "2409",
+          "Content-Disposition": "attachment; filename=\"2020_06_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2020_06_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.494165+00:00",
+      "resource_title": "2020_06_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 7,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "a359b72743095753289ffb7faa46586966ab61b60d684f8d0c25d394173eb465",
+      "source_retrieved_at": "2026-10-25T07:26:53.483082+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-61f2cc2ec91eb229-a359b72743095753289ffb7faa46586966ab61b60d684f8d0c25d394173eb465.json",
+      "row_count": 6,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.483082+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "2410",
+          "Content-Disposition": "attachment; filename=\"2019_09_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_09_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.483082+00:00",
+      "resource_title": "2019_09_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 8,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "9f6f42d63bf865f758e69cbeb611080b52a21917631d50828d7f46afdb2132d5",
+      "source_retrieved_at": "2026-10-25T07:26:53.504296+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-4fb63ea138b0e859-9f6f42d63bf865f758e69cbeb611080b52a21917631d50828d7f46afdb2132d5.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.504296+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1997",
+          "Content-Disposition": "attachment; filename=\"2019_08_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_08_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.504296+00:00",
+      "resource_title": "2019_08_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 9,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "328e924edbb1f54fbde41c31f1bf20bf3cd61f91f0a348e1f9097f392510b29b",
+      "source_retrieved_at": "2026-10-25T07:26:53.501214+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-f98bff20e7012703-328e924edbb1f54fbde41c31f1bf20bf3cd61f91f0a348e1f9097f392510b29b.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.501214+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1997",
+          "Content-Disposition": "attachment; filename=\"2019_07_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_07_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.501214+00:00",
+      "resource_title": "2019_07_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 10,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "dc5747f8267f1bb93144f5345cb27034a93194a9a45d29670974d1062db4d055",
+      "source_retrieved_at": "2026-10-25T07:26:53.649777+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-bc9df41e5780d960-dc5747f8267f1bb93144f5345cb27034a93194a9a45d29670974d1062db4d055.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.649777+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1997",
+          "Content-Disposition": "attachment; filename=\"2019_06_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_06_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.649777+00:00",
+      "resource_title": "2019_06_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 11,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "dc5747f8267f1bb93144f5345cb27034a93194a9a45d29670974d1062db4d055",
+      "source_retrieved_at": "2026-10-25T07:26:53.706810+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-130320388dae6a33-dc5747f8267f1bb93144f5345cb27034a93194a9a45d29670974d1062db4d055.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.706810+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1997",
+          "Content-Disposition": "attachment; filename=\"2019_06_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_06_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.706810+00:00",
+      "resource_title": "2019_06_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 12,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "73e5dbbd6d093f0e5419bb2e1466b726c42dd7f121ce9618e4f2c707480da5ae",
+      "source_retrieved_at": "2026-10-25T07:26:53.785626+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-f63c1354bd02dbd9-73e5dbbd6d093f0e5419bb2e1466b726c42dd7f121ce9618e4f2c707480da5ae.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.785626+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1997",
+          "Content-Disposition": "attachment; filename=\"2019_05_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_05_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.785626+00:00",
+      "resource_title": "2019_05_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 13,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "9e0419cfae9d2a1065b3c688a5114492510fece9c335a44f68f2dd221156b657",
+      "source_retrieved_at": "2026-10-25T07:26:53.785746+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-bde8d0fb2145d99a-9e0419cfae9d2a1065b3c688a5114492510fece9c335a44f68f2dd221156b657.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.785746+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1996",
+          "Content-Disposition": "attachment; filename=\"2019_04_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_04_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.785746+00:00",
+      "resource_title": "2019_04_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 14,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "7b21c8c52a2be0b8a1c3a5e9c93af75b18db6f7425208fc8a8502276030dfbe7",
+      "source_retrieved_at": "2026-10-25T07:26:53.767858+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-42c14b4b722d5c94-7b21c8c52a2be0b8a1c3a5e9c93af75b18db6f7425208fc8a8502276030dfbe7.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.767858+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1501",
+          "Content-Disposition": "attachment; filename=\"2019_03_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_03_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.767858+00:00",
+      "resource_title": "2019_03_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 15,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <p",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "64661cf5bfb210e90458d8bce5cfd0328d944bc54a27d212d9cd2b4f42c73230",
+      "source_retrieved_at": "2026-10-25T07:26:53.935953+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-102d1c92744c15df-64661cf5bfb210e90458d8bce5cfd0328d944bc54a27d212d9cd2b4f42c73230.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.935953+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1997",
+          "Content-Disposition": "attachment; filename=\"2019_03_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_03_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.935953+00:00",
+      "resource_title": "2019_03_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 16,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <path fill=\"currentColor\" d=\"M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "a43d033fd82d629e1109c5656778f77b12288345422b6c8d364be0ade68039f4",
+      "source_retrieved_at": "2026-10-25T07:26:54.017981+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-7fd2190800a62021-a43d033fd82d629e1109c5656778f77b12288345422b6c8d364be0ade68039f4.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:54.017981+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1996",
+          "Content-Disposition": "attachment; filename=\"2019_02_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_02_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:54.017981+00:00",
+      "resource_title": "2019_02_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 17,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <!--v-if",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "2f018541714a1b40c0d0ac4abda75b9b6f64c54731abb526583e5b4ab4aea96f",
+      "source_retrieved_at": "2026-10-25T07:26:54.035329+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-0bfe207ae35174c4-2f018541714a1b40c0d0ac4abda75b9b6f64c54731abb526583e5b4ab4aea96f.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:54.035329+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1997",
+          "Content-Disposition": "attachment; filename=\"2019_01_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2019_01_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:54.035329+00:00",
+      "resource_title": "2019_01_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 18,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position",
+      "dataset_id": "127807",
+      "source_url": "https://data.gov.tw/dataset/127807",
+      "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+      "status": "downloaded",
+      "source_sha256": "5dcc0df01d5c2fd4e57531712109f1f9057151b450ce3e8a53787fd0b70c64d1",
+      "source_retrieved_at": "2026-10-25T07:26:54.049227+00:00",
+      "raw_path": "raw/official-local/catalog-127807/resource-60f200f4935c41e2-5dcc0df01d5c2fd4e57531712109f1f9057151b450ce3e8a53787fd0b70c64d1.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:54.049227+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "1996",
+          "Content-Disposition": "attachment; filename=\"2018_12_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2018_12_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+        }
+      },
+      "fields": [
+        "地區",
+        "市話",
+        "數值",
+        "機關代碼",
+        "欄位名稱",
+        "縣市別代碼",
+        "行動電話",
+        "行政區域代碼",
+        "資料時間日期",
+        "資料週期",
+        "郵遞區號",
+        "電子郵件",
+        "項目"
+      ],
+      "last_checked_at": "2026-10-25T07:26:54.049227+00:00",
+      "resource_title": "2018_12_11014-03-01-2_臺中市立公共圖書館概況.JSON"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolute",
+      "dataset_id": "130199",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_title": "新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "0ad8642bec9a1adbda8d36b4ae45555ff14bad723577a4d65b9a60f7dc782226",
+      "status": "downloaded",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_retrieved_at": "2026-10-25T07:32:06.020341+00:00",
+      "raw_path": "raw/official-local/catalog-130199/resource-72fc0692aa286cb0-15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59.json",
+      "row_count": 1152,
+      "http": {
+        "retrieved_at": "2026-10-25T07:32:06.020341+00:00",
+        "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+        "http_status": 200,
+        "headers": {
+          "Cache-Control": "private,max-age=31536000",
+          "Content-Length": "530615",
+          "Content-Type": "application/json",
+          "Content-Disposition": "inline; filename=584cc9c3-20f7-44e9-a700-8d6919fb0885.json"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "借閱及續借人次",
+        "借閱及續借冊數",
+        "取消預約人次",
+        "取消預約冊數",
+        "統計年月",
+        "續借人次",
+        "續借冊數",
+        "還書人次",
+        "還書冊數",
+        "預約人次",
+        "預約冊數",
+        "館藏地"
+      ],
+      "last_checked_at": "2026-10-25T07:32:06.020341+00:00",
+      "resource_title": "新竹市公共圖書館圖書借閱量統計"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1445/2d3c4f51-7698-4360-a39b-57b0c6759642.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1445/2d3c4f51-7698-4360-a39b-57b0c6759642.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut",
+      "dataset_id": "164568",
+      "source_url": "https://data.gov.tw/dataset/164568",
+      "source_title": "112年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "4bf86a5a1bb733357c17edcd6cff138178ef0c8b81f255db61a9f9a15e4a3002",
+      "status": "downloaded",
+      "source_sha256": "4251b0288f9d75e4f008fa6a3a7fd7444f733bf8e0b46249c1efef7cd3523d9c",
+      "source_retrieved_at": "2026-10-25T07:32:05.804646+00:00",
+      "raw_path": "raw/official-local/catalog-164568/resource-7ddda3392979944d-4251b0288f9d75e4f008fa6a3a7fd7444f733bf8e0b46249c1efef7cd3523d9c.json",
+      "row_count": 135,
+      "http": {
+        "retrieved_at": "2026-10-25T07:32:05.804646+00:00",
+        "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1445/2d3c4f51-7698-4360-a39b-57b0c6759642.json",
+        "http_status": 200,
+        "headers": {
+          "Cache-Control": "private,max-age=31536000",
+          "Content-Length": "61349",
+          "Content-Type": "application/json",
+          "Content-Disposition": "inline; filename=2d3c4f51-7698-4360-a39b-57b0c6759642.json"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "借閱及續借人次",
+        "借閱及續借冊數",
+        "取消預約人次",
+        "取消預約冊數",
+        "統計年月",
+        "續借人次",
+        "續借冊數",
+        "還書人次",
+        "還書冊數",
+        "預約人次",
+        "預約冊數",
+        "館藏地"
+      ],
+      "last_checked_at": "2026-10-25T07:32:05.804646+00:00",
+      "resource_title": "新竹市公共圖書館圖書借閱量統計表112年"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1443/e25acbc1-bb25-482a-902c-1f79496a3714.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1443/e25acbc1-bb25-482a-902c-1f79496a3714.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut",
+      "dataset_id": "164575",
+      "source_url": "https://data.gov.tw/dataset/164575",
+      "source_title": "110年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "14799fdee11a098970187012041bf8397f9cdaa0609de54257652d89ef5b79b3",
+      "status": "downloaded",
+      "source_sha256": "c05e087ddc476b7bd54e174744b34d418f4439903d628525a6a76193f1195cd2",
+      "source_retrieved_at": "2026-10-25T07:32:05.511191+00:00",
+      "raw_path": "raw/official-local/catalog-164575/resource-c69e95009b34d6c9-c05e087ddc476b7bd54e174744b34d418f4439903d628525a6a76193f1195cd2.json",
+      "row_count": 110,
+      "http": {
+        "retrieved_at": "2026-10-25T07:32:05.511191+00:00",
+        "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1443/e25acbc1-bb25-482a-902c-1f79496a3714.json",
+        "http_status": 200,
+        "headers": {
+          "Cache-Control": "private,max-age=31536000",
+          "Content-Length": "50513",
+          "Content-Type": "application/json",
+          "Content-Disposition": "inline; filename=e25acbc1-bb25-482a-902c-1f79496a3714.json"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "借閱及續借人次",
+        "借閱及續借冊數",
+        "取消預約人次",
+        "取消預約冊數",
+        "統計年月",
+        "續借人次",
+        "續借冊數",
+        "還書人次",
+        "還書冊數",
+        "預約人次",
+        "預約冊數",
+        "館藏地"
+      ],
+      "last_checked_at": "2026-10-25T07:32:05.511191+00:00",
+      "resource_title": "新竹市公共圖書館圖書借閱量統計表110年"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1442/d640a642-27b5-42ed-92ec-7d22e5702a2e.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1442/d640a642-27b5-42ed-92ec-7d22e5702a2e.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut",
+      "dataset_id": "164576",
+      "source_url": "https://data.gov.tw/dataset/164576",
+      "source_title": "109年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "d9873a6f2b5157c22a0584ecc1921b178d292522602cf24a7b11b56cd4c779fa",
+      "status": "downloaded",
+      "source_sha256": "ef07ba0b3be66954ada423f820e79e7bc279e334b5c014dd4a4143a3931489b3",
+      "source_retrieved_at": "2026-10-25T07:32:05.542648+00:00",
+      "raw_path": "raw/official-local/catalog-164576/resource-20f6f27356d0e050-ef07ba0b3be66954ada423f820e79e7bc279e334b5c014dd4a4143a3931489b3.json",
+      "row_count": 96,
+      "http": {
+        "retrieved_at": "2026-10-25T07:32:05.542648+00:00",
+        "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1442/d640a642-27b5-42ed-92ec-7d22e5702a2e.json",
+        "http_status": 200,
+        "headers": {
+          "Cache-Control": "private,max-age=31536000",
+          "Content-Length": "44862",
+          "Content-Type": "application/json",
+          "Content-Disposition": "inline; filename=d640a642-27b5-42ed-92ec-7d22e5702a2e.json"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "借閱及續借人次",
+        "借閱及續借冊數",
+        "取消預約人次",
+        "取消預約冊數",
+        "統計年月",
+        "續借人次",
+        "續借冊數",
+        "還書人次",
+        "還書冊數",
+        "預約人次",
+        "預約冊數",
+        "館藏地"
+      ],
+      "last_checked_at": "2026-10-25T07:32:05.542648+00:00",
+      "resource_title": "新竹市公共圖書館圖書借閱量統計表109年"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1437/8ea43d71-911a-4567-b234-4b29d86c3173.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1437/8ea43d71-911a-4567-b234-4b29d86c3173.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut",
+      "dataset_id": "164577",
+      "source_url": "https://data.gov.tw/dataset/164577",
+      "source_title": "108年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "c909657b57ec3961ad1773625c747f589c4284b10608f2aa87f66bd94edbe9be",
+      "status": "downloaded",
+      "source_sha256": "9e2af7e8e0c6375e877b74973434500e57a78a933a8a7144ceb068cbe5ac837c",
+      "source_retrieved_at": "2026-10-25T07:32:05.473614+00:00",
+      "raw_path": "raw/official-local/catalog-164577/resource-e3305c31c6e517d2-9e2af7e8e0c6375e877b74973434500e57a78a933a8a7144ceb068cbe5ac837c.json",
+      "row_count": 84,
+      "http": {
+        "retrieved_at": "2026-10-25T07:32:05.473614+00:00",
+        "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1437/8ea43d71-911a-4567-b234-4b29d86c3173.json",
+        "http_status": 200,
+        "headers": {
+          "Cache-Control": "private,max-age=31536000",
+          "Content-Length": "39440",
+          "Content-Type": "application/json",
+          "Content-Disposition": "inline; filename=8ea43d71-911a-4567-b234-4b29d86c3173.json"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "借閱及續借人次",
+        "借閱及續借冊數",
+        "取消預約人次",
+        "取消預約冊數",
+        "統計年月",
+        "續借人次",
+        "續借冊數",
+        "還書人次",
+        "還書冊數",
+        "預約人次",
+        "預約冊數",
+        "館藏地"
+      ],
+      "last_checked_at": "2026-10-25T07:32:05.473614+00:00",
+      "resource_title": "新竹市公共圖書館圖書借閱量統計表108年"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1436/dbaa743e-efcd-4bfb-aff3-580bc3251f1a.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1436/dbaa743e-efcd-4bfb-aff3-580bc3251f1a.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut",
+      "dataset_id": "164579",
+      "source_url": "https://data.gov.tw/dataset/164579",
+      "source_title": "107年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "52d6714d507ca583eafaaeb9198ab5147f9b785cd5a8edaa0ad4a6e2bdd48300",
+      "status": "downloaded",
+      "source_sha256": "222eacccc4b39fc401dfd66fabd608c3c2d4af50d8918409c8f86347d810f831",
+      "source_retrieved_at": "2026-10-25T07:32:05.484159+00:00",
+      "raw_path": "raw/official-local/catalog-164579/resource-268d710f695f2b3a-222eacccc4b39fc401dfd66fabd608c3c2d4af50d8918409c8f86347d810f831.json",
+      "row_count": 84,
+      "http": {
+        "retrieved_at": "2026-10-25T07:32:05.484159+00:00",
+        "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1436/dbaa743e-efcd-4bfb-aff3-580bc3251f1a.json",
+        "http_status": 200,
+        "headers": {
+          "Cache-Control": "private,max-age=31536000",
+          "Content-Length": "39411",
+          "Content-Type": "application/json",
+          "Content-Disposition": "inline; filename=dbaa743e-efcd-4bfb-aff3-580bc3251f1a.json"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "借閱及續借人次",
+        "借閱及續借冊數",
+        "取消預約人次",
+        "取消預約冊數",
+        "統計年月",
+        "續借人次",
+        "續借冊數",
+        "還書人次",
+        "還書冊數",
+        "預約人次",
+        "預約冊數",
+        "館藏地"
+      ],
+      "last_checked_at": "2026-10-25T07:32:05.484159+00:00",
+      "resource_title": "新竹市公共圖書館圖書借閱量統計表107年"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut",
+      "dataset_id": "164580",
+      "source_url": "https://data.gov.tw/dataset/164580",
+      "source_title": "105年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "98c449a1a328be863bea284d80c005783bf433f39cc95df90d71dc4d2c6398b4",
+      "status": "downloaded",
+      "source_sha256": "c8194c1f27bbd91aedca0620f1aeed8f6965e50d5d81b983c907b842876fb2d5",
+      "source_retrieved_at": "2026-10-25T07:32:05.467428+00:00",
+      "raw_path": "raw/official-local/catalog-164580/resource-1c542cb3d4659012-c8194c1f27bbd91aedca0620f1aeed8f6965e50d5d81b983c907b842876fb2d5.json",
+      "row_count": 84,
+      "http": {
+        "retrieved_at": "2026-10-25T07:32:05.467428+00:00",
+        "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.json",
+        "http_status": 200,
+        "headers": {
+          "Cache-Control": "private,max-age=31536000",
+          "Content-Length": "39344",
+          "Content-Type": "application/json",
+          "Content-Disposition": "inline; filename=ce40cc48-2333-422d-9296-268c9d2c838a.json"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "借閱及續借人次",
+        "借閱及續借冊數",
+        "取消預約人次",
+        "取消預約冊數",
+        "統計年月",
+        "續借人次",
+        "續借冊數",
+        "還書人次",
+        "還書冊數",
+        "預約人次",
+        "預約冊數",
+        "館藏地"
+      ],
+      "last_checked_at": "2026-10-25T07:32:05.467428+00:00",
+      "resource_title": "新竹市公共圖書館圖書借閱量統計表105年"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut",
+      "dataset_id": "168119",
+      "source_url": "https://data.gov.tw/dataset/168119",
+      "source_title": "113年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "141c013ad99133e662d1a339438f93b759d9667d223fe9c30adfdbfc67ed4d2a",
+      "status": "downloaded",
+      "source_sha256": "1d0ddcc22073e6a50c0aadaab16a5a073efae533e72bc9ebde3cc3ebb7239eaf",
+      "source_retrieved_at": "2026-10-25T07:32:05.804781+00:00",
+      "raw_path": "raw/official-local/catalog-168119/resource-b7de9e3cd1610aad-1d0ddcc22073e6a50c0aadaab16a5a073efae533e72bc9ebde3cc3ebb7239eaf.json",
+      "row_count": 144,
+      "http": {
+        "retrieved_at": "2026-10-25T07:32:05.804781+00:00",
+        "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.json",
+        "http_status": 200,
+        "headers": {
+          "Cache-Control": "private,max-age=31536000",
+          "Content-Length": "65898",
+          "Content-Type": "application/json",
+          "Content-Disposition": "inline; filename=55ab8f91-134a-4541-b4f0-e115753b02ba.json"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "借閱及續借人次",
+        "借閱及續借冊數",
+        "取消預約人次",
+        "取消預約冊數",
+        "統計年月",
+        "續借人次",
+        "續借冊數",
+        "還書人次",
+        "還書冊數",
+        "預約人次",
+        "預約冊數",
+        "館藏地"
+      ],
+      "last_checked_at": "2026-10-25T07:32:05.804781+00:00",
+      "resource_title": "新竹市公共圖書館圖書借閱量統計表113年"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut",
+      "dataset_id": "173850",
+      "source_url": "https://data.gov.tw/dataset/173850",
+      "source_title": "114年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "f1bf89628a114bff65360e55cf5e60ef5705360619fe70ebf3620a3672ee5fd6",
+      "status": "downloaded",
+      "source_sha256": "bf237a51b88951057d3cd3b03ad8c26149a467e99206166797312449d56f410e",
+      "source_retrieved_at": "2026-10-25T07:32:05.738674+00:00",
+      "raw_path": "raw/official-local/catalog-173850/resource-3a42e4707efe4d33-bf237a51b88951057d3cd3b03ad8c26149a467e99206166797312449d56f410e.json",
+      "row_count": 84,
+      "http": {
+        "retrieved_at": "2026-10-25T07:32:05.738674+00:00",
+        "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json",
+        "http_status": 200,
+        "headers": {
+          "Cache-Control": "private,max-age=31536000",
+          "Content-Length": "38388",
+          "Content-Type": "application/json",
+          "Content-Disposition": "inline; filename=5b1b954a-4893-46af-b8fa-4fac2b807d8f.json"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "借閱及續借人次",
+        "借閱及續借冊數",
+        "取消預約人次",
+        "取消預約冊數",
+        "統計年月",
+        "續借人次",
+        "續借冊數",
+        "還書人次",
+        "還書冊數",
+        "預約人次",
+        "預約冊數",
+        "館藏地"
+      ],
+      "last_checked_at": "2026-10-25T07:32:05.738674+00:00",
+      "resource_title": "新竹市公共圖書館圖書借閱量統計表115年7月"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1967/7f5793ae-e55f-4aa5-be01-3a76e53e6616.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1967/7f5793ae-e55f-4aa5-be01-3a76e53e6616.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut",
+      "dataset_id": "177249",
+      "source_url": "https://data.gov.tw/dataset/177249",
+      "source_title": "115年新竹市公共圖書館圖書借閱量統計表",
+      "source_agency": "新竹市文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "dc0848d6952319a8cf329ddf5926e41947ad9d07b03dc02032cdd20ad07686c8",
+      "status": "downloaded",
+      "source_sha256": "694b4c08836019101ce72afc5400527036b0cfaf18666bd912a035e792ec2287",
+      "source_retrieved_at": "2026-10-25T07:32:05.804705+00:00",
+      "raw_path": "raw/official-local/catalog-177249/resource-cb74c0b328be06d4-694b4c08836019101ce72afc5400527036b0cfaf18666bd912a035e792ec2287.json",
+      "row_count": 96,
+      "http": {
+        "retrieved_at": "2026-10-25T07:32:05.804705+00:00",
+        "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1967/7f5793ae-e55f-4aa5-be01-3a76e53e6616.json",
+        "http_status": 200,
+        "headers": {
+          "Cache-Control": "private,max-age=31536000",
+          "Content-Length": "43875",
+          "Content-Type": "application/json",
+          "Content-Disposition": "inline; filename=7f5793ae-e55f-4aa5-be01-3a76e53e6616.json"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "借閱及續借人次",
+        "借閱及續借冊數",
+        "取消預約人次",
+        "取消預約冊數",
+        "統計年月",
+        "續借人次",
+        "續借冊數",
+        "還書人次",
+        "還書冊數",
+        "預約人次",
+        "預約冊數",
+        "館藏地"
+      ],
+      "last_checked_at": "2026-10-25T07:32:05.804705+00:00",
+      "resource_title": "新竹市公共圖書館圖書借閱量統計表115年"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"XML\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c7f4998d-e1f3-4873-b09b-9bb12ce56424\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"XML\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=a6e3ed19-aaaa-4412-9a15-2dc09ac44c5f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <pat",
+      "dataset_id": "84379",
+      "source_url": "https://data.gov.tw/dataset/84379",
+      "source_title": "臺中市立圖書館各分館借閱統計",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "3fb0b3ccc142e3462ae0ac8ea25eed91d9d05e241437b0f736c8bac8c8de172d",
+      "status": "downloaded",
+      "source_sha256": "efcea15e1cbde6f588cf2ce6538fdd64dcc4fabadb2141897b0e7513bc0716b7",
+      "source_retrieved_at": "2026-10-25T07:26:52.968878+00:00",
+      "raw_path": "raw/official-local/catalog-84379/resource-d709bc2cf44f8583-efcea15e1cbde6f588cf2ce6538fdd64dcc4fabadb2141897b0e7513bc0716b7.json",
+      "row_count": 46,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:52.968878+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "7703",
+          "Content-Disposition": "attachment; filename=\"106%E5%B9%B4%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%90%84%E5%88%86%E9%A4%A8%E5%80%9F%E9%96%B1%E7%B5%B1%E8%A8%88%28UTF8%29.JSON\";filename*=UTF-8''106%E5%B9%B4%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%90%84%E5%88%86%E9%A4%A8%E5%80%9F%E9%96%B1%E7%B5%B1%E8%A8%88%28UTF8%29.JSON"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "機關代碼",
+        "縣市別代碼",
+        "郵遞區號",
+        "館別"
+      ],
+      "last_checked_at": "2026-10-25T07:26:52.968878+00:00",
+      "resource_title": "106年臺中市立圖書館各分館借閱統計(UTF8).JSON"
+    },
+    {
+      "resource_index": 2,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position",
+      "dataset_id": "84379",
+      "source_url": "https://data.gov.tw/dataset/84379",
+      "source_title": "臺中市立圖書館各分館借閱統計",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "3fb0b3ccc142e3462ae0ac8ea25eed91d9d05e241437b0f736c8bac8c8de172d",
+      "status": "downloaded",
+      "source_sha256": "d14bc6cfd4a5b35e90d2d79f58582fae45afc5161e13b29f2c062960bc5116e6",
+      "source_retrieved_at": "2026-10-25T07:26:53.185152+00:00",
+      "raw_path": "raw/official-local/catalog-84379/resource-c90bb60daa0cd742-d14bc6cfd4a5b35e90d2d79f58582fae45afc5161e13b29f2c062960bc5116e6.json",
+      "row_count": 46,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.185152+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "7714",
+          "Content-Disposition": "attachment; filename=\"107%E5%B9%B4%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%90%84%E5%88%86%E9%A4%A8%E5%80%9F%E9%96%B1%E7%B5%B1%E8%A8%88%28UTF8%29.JSON\";filename*=UTF-8''107%E5%B9%B4%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%90%84%E5%88%86%E9%A4%A8%E5%80%9F%E9%96%B1%E7%B5%B1%E8%A8%88%28UTF8%29.JSON"
+        }
+      },
+      "fields": [
+        "借閱人次",
+        "借閱冊數",
+        "機關代碼",
+        "縣市別代碼",
+        "郵遞區號",
+        "館別"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.185152+00:00",
+      "resource_title": "107年臺中市立圖書館各分館借閱統計(UTF8).JSON"
+    },
+    {
+      "resource_index": 1,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=255d0bdc-3164-4545-a6d0-c77286590db9",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=255d0bdc-3164-4545-a6d0-c77286590db9\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position",
+      "dataset_id": "84915",
+      "source_url": "https://data.gov.tw/dataset/84915",
+      "source_title": "臺中市圖書預算及採購冊數",
+      "source_agency": "臺中市政府文化局",
+      "license_status": "verified_open",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_sha256": "9d337ac10f7813a84d5cf4998dc520a2fbba46b5695a2abbfea64b8724526db9",
+      "status": "downloaded",
+      "source_sha256": "0d43463101cccc834b8800b2ad75fbd129b6cdae5b269c4c6f196aa1a35f286a",
+      "source_retrieved_at": "2026-10-25T07:26:53.187863+00:00",
+      "raw_path": "raw/official-local/catalog-84915/resource-309c115c007b3086-0d43463101cccc834b8800b2ad75fbd129b6cdae5b269c4c6f196aa1a35f286a.json",
+      "row_count": 5,
+      "http": {
+        "retrieved_at": "2026-10-25T07:26:53.187863+00:00",
+        "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=255d0bdc-3164-4545-a6d0-c77286590db9",
+        "http_status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream",
+          "Content-Length": "827",
+          "Content-Disposition": "attachment; filename=\"%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%B9%B4%E5%BA%A6%E8%B3%BC%E6%9B%B8%E7%B6%93%E8%B2%BB%E5%8F%8A%E5%86%8A%E6%95%B8%282020%29.csv.JSON\";filename*=UTF-8''%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%B9%B4%E5%BA%A6%E8%B3%BC%E6%9B%B8%E7%B6%93%E8%B2%BB%E5%8F%8A%E5%86%8A%E6%95%B8%282020%29.csv.JSON"
+        }
+      },
+      "fields": [
+        "年度",
+        "採購冊數",
+        "機關代碼",
+        "縣市別代碼",
+        "購書經費",
+        "郵遞區號"
+      ],
+      "last_checked_at": "2026-10-25T07:26:53.187863+00:00",
+      "resource_title": "臺中市立圖書館年度購書經費及冊數(2020).csv.JSON"
+    }
+  ],
+  "summary": {
+    "catalogue_count": 14,
+    "downloaded_documents": 35,
+    "failed_documents": 0,
+    "raw_rows": 2333,
+    "long_rows": 25184,
+    "blank_non_observation_raw_rows": 5,
+    "exact_observation_duplicate_rows": 10433,
+    "conflicting_value_groups": 0,
+    "counties": [
+      "新竹市",
+      "臺中市"
+    ],
+    "periods_raw": [
+      "",
+      "10412",
+      "105",
+      "10501",
+      "10502",
+      "10503",
+      "10504",
+      "10505",
+      "10506",
+      "10507",
+      "10508",
+      "10509",
+      "10510",
+      "10511",
+      "10512",
+      "106",
+      "10601",
+      "10602",
+      "10603",
+      "10604",
+      "10605",
+      "10606",
+      "10607",
+      "10608",
+      "10609",
+      "10610",
+      "10611",
+      "10612",
+      "107",
+      "10701",
+      "10702",
+      "10703",
+      "10704",
+      "10705",
+      "10706",
+      "10707",
+      "10708",
+      "10709",
+      "10710",
+      "10711",
+      "10712",
+      "108",
+      "10801",
+      "10802",
+      "10803",
+      "10804",
+      "10805",
+      "10806",
+      "10807",
+      "10808",
+      "10809",
+      "10810",
+      "10811",
+      "10812",
+      "109",
+      "10901",
+      "10902",
+      "10903",
+      "10904",
+      "10905",
+      "10906",
+      "10907",
+      "10908",
+      "10909",
+      "10910",
+      "10911",
+      "10912",
+      "11001",
+      "11002",
+      "11003",
+      "11004",
+      "11005",
+      "11006",
+      "11007",
+      "11008",
+      "11009",
+      "11010",
+      "11011",
+      "11012",
+      "11101",
+      "11102",
+      "11103",
+      "11104",
+      "11105",
+      "11106",
+      "11107",
+      "11108",
+      "11109",
+      "11110",
+      "11111",
+      "11112",
+      "11201",
+      "11202",
+      "11203",
+      "11204",
+      "11205",
+      "11206",
+      "11207",
+      "11208",
+      "11209",
+      "11210",
+      "11211",
+      "11212",
+      "11301",
+      "11302",
+      "11303",
+      "11304",
+      "11305",
+      "11306",
+      "11307",
+      "11308",
+      "11309",
+      "11310",
+      "11311",
+      "11312",
+      "11401",
+      "11402",
+      "11403",
+      "11404",
+      "11405",
+      "11406",
+      "11407",
+      "11408",
+      "11409",
+      "11410",
+      "11411",
+      "11412",
+      "11501",
+      "11502",
+      "11503",
+      "11504",
+      "11505",
+      "11506",
+      "11507",
+      "11508",
+      "2015-01-01T00:00:00",
+      "2016-01-01T00:00:00",
+      "2017-01-01T00:00:00",
+      "2018-01-01T00:00:00",
+      "2018-12-01T00:00:00",
+      "2019-01-01T00:00:00",
+      "2019-02-01T00:00:00",
+      "2019-03-01T00:00:00",
+      "2019-04-01T00:00:00",
+      "2019-05-01T00:00:00",
+      "2019-06-01T00:00:00",
+      "2019-07-01T00:00:00",
+      "2019-08-01T00:00:00",
+      "2019-09-01T00:00:00",
+      "2020-06-01T00:00:00",
+      "2020-07-01T00:00:00",
+      "2020-08-01T00:00:00",
+      "2020-09-01T00:00:00",
+      "2020-10-01T00:00:00",
+      "2020-11-01T00:00:00"
+    ],
+    "periods_effective": [
+      "10412",
+      "105",
+      "10501",
+      "10502",
+      "10503",
+      "10504",
+      "10505",
+      "10506",
+      "10507",
+      "10508",
+      "10509",
+      "10510",
+      "10511",
+      "10512",
+      "106",
+      "10601",
+      "10602",
+      "10603",
+      "10604",
+      "10605",
+      "10606",
+      "10607",
+      "10608",
+      "10609",
+      "10610",
+      "10611",
+      "10612",
+      "107",
+      "10701",
+      "10702",
+      "10703",
+      "10704",
+      "10705",
+      "10706",
+      "10707",
+      "10708",
+      "10709",
+      "10710",
+      "10711",
+      "10712",
+      "108",
+      "10801",
+      "10802",
+      "10803",
+      "10804",
+      "10805",
+      "10806",
+      "10807",
+      "10808",
+      "10809",
+      "10810",
+      "10811",
+      "10812",
+      "109",
+      "10901",
+      "10902",
+      "10903",
+      "10904",
+      "10905",
+      "10906",
+      "10907",
+      "10908",
+      "10909",
+      "10910",
+      "10911",
+      "10912",
+      "11001",
+      "11002",
+      "11003",
+      "11004",
+      "11005",
+      "11006",
+      "11007",
+      "11008",
+      "11009",
+      "11010",
+      "11011",
+      "11012",
+      "11101",
+      "11102",
+      "11103",
+      "11104",
+      "11105",
+      "11106",
+      "11107",
+      "11108",
+      "11109",
+      "11110",
+      "11111",
+      "11112",
+      "11201",
+      "11202",
+      "11203",
+      "11204",
+      "11205",
+      "11206",
+      "11207",
+      "11208",
+      "11209",
+      "11210",
+      "11211",
+      "11212",
+      "11301",
+      "11302",
+      "11303",
+      "11304",
+      "11305",
+      "11306",
+      "11307",
+      "11308",
+      "11309",
+      "11310",
+      "11311",
+      "11312",
+      "11401",
+      "11402",
+      "11403",
+      "11404",
+      "11405",
+      "11406",
+      "11407",
+      "11408",
+      "11409",
+      "11410",
+      "11411",
+      "11412",
+      "11501",
+      "11502",
+      "11503",
+      "11504",
+      "11505",
+      "11506",
+      "11507",
+      "11508",
+      "2015-01-01T00:00:00",
+      "2016-01-01T00:00:00",
+      "2017-01-01T00:00:00",
+      "2018-01-01T00:00:00",
+      "2018-12-01T00:00:00",
+      "2019-01-01T00:00:00",
+      "2019-02-01T00:00:00",
+      "2019-03-01T00:00:00",
+      "2019-04-01T00:00:00",
+      "2019-05-01T00:00:00",
+      "2019-06-01T00:00:00",
+      "2019-07-01T00:00:00",
+      "2019-08-01T00:00:00",
+      "2019-09-01T00:00:00",
+      "2020-06-01T00:00:00",
+      "2020-07-01T00:00:00",
+      "2020-08-01T00:00:00",
+      "2020-09-01T00:00:00",
+      "2020-10-01T00:00:00",
+      "2020-11-01T00:00:00"
+    ]
+  },
+  "caveats": [
+    "This is the complete exposed resource package for selected local catalogues, not complete all-Taiwan history.",
+    "Missing months or years remain missing. Catalogue titles do not override row-level observation periods.",
+    "Monthly and annual observations retain separate published periodicities. Do not sum annual and monthly counts.",
+    "No hard merge with NLPI observations; scope may differ, especially national libraries.",
+    "All original fields retained verbatim in each row JSON. No canonical unit conversion or imputation.",
+    "Rows with all observation fields blank remain in raw documents and are excluded from the observation long table.",
+    "period_catalog_hint is read from the exact exposed resource title and never silently replaces period_raw.",
+    "Duplicate rows remain with duplicate_of; use the flag to avoid silent double counting.",
+    "HTTP TLS certificate checks remain enabled. Any failed downloads remain explicit gaps."
+  ]
+}

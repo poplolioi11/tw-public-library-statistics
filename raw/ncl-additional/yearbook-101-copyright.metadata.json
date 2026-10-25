@@ -1,0 +1,14 @@
+{
+  "source_id": "ncl-yearbook-101-copyright",
+  "edition_roc": 101,
+  "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565430946568943",
+  "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565436852832484/f9150c5b-68f0-4494-b845-546b21c573c9.pdf",
+  "title": "版權頁",
+  "local_path": "research-datasets/tw-public-library-statistics/raw/ncl-additional/yearbook-101-copyright.pdf",
+  "sha256": "2d36b513ebf0ff198b96535261daafb6cb2057d6ee0e42688f3a5e1a10c575a0",
+  "bytes": 298545,
+  "pdf_pages": 1,
+  "source_retrieved_at": "2026-10-25T09:22:15.822147+00:00",
+  "license_status": "not_confirmed",
+  "snapshot_distribution": "not_in_public_bundle"
+}

@@ -1,0 +1,162 @@
+{
+  "checked_at": "2026-10-25",
+  "scope": "local_grid_integrity_and_adapter_compatibility_not_independent_image_review",
+  "source_cells": 1686,
+  "source_tables": 8,
+  "statuses": {
+    "blank": 354,
+    "numeric": 1332
+  },
+  "unique_physical_cells": 1686,
+  "csv_jsonl_raw_values_and_locators_equal": true,
+  "source_sha256_verified": {
+    "raw/ncl-earlier/yearbook-96-public-library.pdf": "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2",
+    "raw/ncl-earlier/yearbook-97-public-library.pdf": "f5b6540bed94f9a15ccb7f5f041c9d0cee416229e6427387e1773c99d17768a5"
+  },
+  "adapter_function": "adapt_components.adapt_additional_ncl_rows",
+  "adapter_rows": 1686,
+  "adapter_statuses": {
+    "source_blank": 354,
+    "reported": 1180,
+    "reported_decimal": 152
+  },
+  "adapter_observation_ids_unique": true,
+  "arithmetic_checks": 324,
+  "arithmetic_pass": 322,
+  "preserved_source_discrepancies": [
+    {
+      "source_id": "ncl-earlier-2006-t2",
+      "check": "published_row_total_vs_explicit_components",
+      "entity": "國立臺中圖書館",
+      "metric": "all_staff",
+      "calculated": "240",
+      "published": "223",
+      "passed": false,
+      "source_row": 2,
+      "source_column": 10,
+      "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+    },
+    {
+      "source_id": "ncl-earlier-2006-t2",
+      "check": "published_row_total_vs_explicit_components",
+      "entity": "高雄市立圖書館",
+      "metric": "all_staff",
+      "calculated": "299",
+      "published": "264",
+      "passed": false,
+      "source_row": 4,
+      "source_column": 10,
+      "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+    }
+  ],
+  "independent_review": "pending_root_review",
+  "table_details": [
+    {
+      "source_id": "ncl-earlier-2007-t1",
+      "cells": 286,
+      "statuses": {
+        "blank": 150,
+        "numeric": 136
+      },
+      "checks": 63,
+      "passed": 63,
+      "discrepancies": []
+    },
+    {
+      "source_id": "ncl-earlier-2007-t2",
+      "cells": 203,
+      "statuses": {
+        "numeric": 191,
+        "blank": 12
+      },
+      "checks": 82,
+      "passed": 82,
+      "discrepancies": []
+    },
+    {
+      "source_id": "ncl-earlier-2007-t3",
+      "cells": 348,
+      "statuses": {
+        "numeric": 348
+      },
+      "checks": 41,
+      "passed": 41,
+      "discrepancies": []
+    },
+    {
+      "source_id": "ncl-earlier-2006-t1",
+      "cells": 312,
+      "statuses": {
+        "blank": 191,
+        "numeric": 121
+      },
+      "checks": 47,
+      "passed": 47,
+      "discrepancies": []
+    },
+    {
+      "source_id": "ncl-earlier-2006-t2",
+      "cells": 45,
+      "statuses": {
+        "numeric": 45
+      },
+      "checks": 5,
+      "passed": 3,
+      "discrepancies": [
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "國立臺中圖書館",
+          "metric": "all_staff",
+          "calculated": "240",
+          "published": "223",
+          "passed": false,
+          "source_row": 2,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市立圖書館",
+          "metric": "all_staff",
+          "calculated": "299",
+          "published": "264",
+          "passed": false,
+          "source_row": 4,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        }
+      ]
+    },
+    {
+      "source_id": "ncl-earlier-2006-t3",
+      "cells": 30,
+      "statuses": {
+        "numeric": 30
+      },
+      "checks": 0,
+      "passed": 0,
+      "discrepancies": []
+    },
+    {
+      "source_id": "ncl-earlier-2006-t4",
+      "cells": 150,
+      "statuses": {
+        "numeric": 149,
+        "blank": 1
+      },
+      "checks": 49,
+      "passed": 49,
+      "discrepancies": []
+    },
+    {
+      "source_id": "ncl-earlier-2006-t5",
+      "cells": 312,
+      "statuses": {
+        "numeric": 312
+      },
+      "checks": 37,
+      "passed": 37,
+      "discrepancies": []
+    }
+  ]
+}

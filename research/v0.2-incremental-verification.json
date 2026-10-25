@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "canonical_data_changed": false,
+  "reviewed_historical_cohorts_reextracted": 0,
+  "checks": [
+    {
+      "path": "derived/ncl_gap_tables_long.csv",
+      "bytes_unchanged": true,
+      "not_reextracted": true
+    },
+    {
+      "path": "derived/ncl_earlier_years_long.csv",
+      "bytes_unchanged": true,
+      "not_reextracted": true
+    },
+    {
+      "path": "derived/ncl_additional_years_long.csv",
+      "bytes_unchanged": true,
+      "not_reextracted": true
+    },
+    {
+      "path": "data/combined/observations.jsonl",
+      "bytes_unchanged": true,
+      "not_reextracted": null
+    },
+    {
+      "path": "README.md",
+      "bytes_unchanged": true,
+      "not_reextracted": null
+    },
+    {
+      "path": "AI_USAGE.md",
+      "bytes_unchanged": true,
+      "not_reextracted": null
+    },
+    {
+      "path": "llms.txt",
+      "bytes_unchanged": true,
+      "not_reextracted": null
+    },
+    {
+      "path": "docs/source-backlog.json",
+      "bytes_unchanged": true,
+      "not_reextracted": null
+    }
+  ],
+  "failure_recovery_tests": "12 stdlib isolated cases; required input/output missing and extractor failure preserve previous bytes/state"
+}

@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-25",
+  "status": "pass",
+  "records_checked": 24548,
+  "registry_sources_checked": 201,
+  "exact_fields_checked": [
+    "source_family",
+    "source_sha256",
+    "source_snapshot_path",
+    "source_method",
+    "source_request",
+    "license_status",
+    "license_url",
+    "snapshot_distribution"
+  ],
+  "page_url_rule": "Compare common official document/page URL; source_url PDF #page fragments remain per-cell and registry URL represents first source cell.",
+  "canonical_sha256": "e3d6697ae3d54c3b5f6a297d33e8c60ecf6ce7a4670a0e17068f140eb3abf5a2",
+  "null_status_counts": {
+    "not_available_in_source": 200,
+    "source_blank": 875
+  },
+  "families": {
+    "主計總處歷史全國統計": 220,
+    "主計總處縣市公共館數": 644,
+    "國家圖書館年鑑統計事實": 5842,
+    "國資圖公開全國圖表": 855,
+    "地方政府開放歷史表": 14751,
+    "國資圖2023開放資料（含縣市）": 2236
+  },
+  "failures": []
+}

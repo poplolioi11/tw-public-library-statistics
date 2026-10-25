@@ -1,8 +1,13 @@
 {
-  "records": 19975,
-  "missing_cells": 188,
-  "original_statistical_content_sha256": "365e58f4e14fcffd8093b95ce033dd6eea359911a512b03ca07653ca2b65635a",
-  "public_statistical_content_sha256": "365e58f4e14fcffd8093b95ce033dd6eea359911a512b03ca07653ca2b65635a",
+  "version": "0.2.0",
+  "records": 24548,
+  "missing_cells": 1075,
+  "null_status_counts": {
+    "not_available_in_source": 200,
+    "source_blank": 875
+  },
+  "original_statistical_content_sha256": "6e1828aa253177d538c6cc29df9f36336f201bfda426b5fe3de76d5419831268",
+  "public_statistical_content_sha256": "6e1828aa253177d538c6cc29df9f36336f201bfda426b5fe3de76d5419831268",
   "statistical_and_source_fields_unchanged": true,
   "original_contact_files_omitted": 22,
   "original_contact_values_redistributed": false,

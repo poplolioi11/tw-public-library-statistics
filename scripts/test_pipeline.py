@@ -250,6 +250,45 @@ class PipelineTests(unittest.TestCase):
         pipeline.dump(self.root / "data/source_manifest.json", {"sources": expired})
         self.assertEqual(set(pipeline.due_sources(specs)), set(expired))
 
+    def test_missing_original_is_due_even_before_its_normal_check_interval(self):
+        specs = [chart_spec(year=2011), api_spec(),
+                 {"source_id": "catalog-6425", "kind": "metadata", "year": None}]
+        sources = {spec["source_id"]: {"last_checked_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+                   "snapshot_path": "raw/omitted-" + spec["source_id"] + ".json"} for spec in specs}
+        pipeline.dump(self.root / "data/source_manifest.json", {"sources": sources})
+        self.assertEqual(set(pipeline.due_sources(specs)), set(sources))
+        for source in sources.values():
+            path = self.root / source["snapshot_path"]
+            path.parent.mkdir(exist_ok=True)
+            path.write_bytes(b"restored fixture")
+        self.assertEqual(pipeline.due_sources(specs), [])
+
+    def test_missing_or_corrupt_body_sends_no_conditionals_and_cannot_accept_304(self):
+        spec = chart_spec()
+        raw = encoded([{"ItemName": "全國", "ItemAmount1": 1, "legendName1": "圖書"}])
+        old = {**spec, "sha256": pipeline.sha(raw), "snapshot_path": "raw/omitted.json",
+               "retrieved_at": "2026-10-25T00:00:00+00:00", "etag": '"fixture-etag"',
+               "last_modified": "Sun, 25 Oct 2026 00:00:00 GMT"}
+        for state in ("missing", "corrupt"):
+            if state == "corrupt":
+                path = self.root / old["snapshot_path"]
+                path.parent.mkdir(exist_ok=True)
+                path.write_bytes(b"not the verified body")
+            seen = []
+            def respond(request, **kwargs):
+                seen.append({key.lower(): value for key, value in request.header_items()})
+                return FixtureResponse(raw, spec["url"])
+            with self.subTest(state=state), patch.object(pipeline.urllib.request, "urlopen", side_effect=respond):
+                latest, _ = pipeline.fetch_one(spec, old)
+                self.assertTrue((self.root / latest["snapshot_path"]).exists())
+                self.assertNotIn("if-none-match", seen[0])
+                self.assertNotIn("if-modified-since", seen[0])
+            with self.subTest(state=state, response=304), \
+                    patch.object(pipeline.urllib.request, "urlopen",
+                                 side_effect=HTTPError(spec["url"], 304, "Not Modified", {}, None)), \
+                    self.assertRaisesRegex(ValueError, "without a verified local body"):
+                pipeline.fetch_one(spec, old)
+
     def test_fresh_acquisition_and_a_b_a_history_preserve_every_revision(self):
         spec = chart_spec()
         bodies = [encoded([{"ItemName": "全國", "ItemAmount1": n, "legendName1": "圖書"}])

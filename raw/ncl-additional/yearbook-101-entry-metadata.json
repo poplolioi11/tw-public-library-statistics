@@ -1,0 +1,98 @@
+{
+  "edition_roc": 101,
+  "entry_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565430946568943",
+  "final_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565430946568943",
+  "entry_sha256": "bb86f1849252c36a10595034748d5f00c4575b628155532d6c33082b23a9bde0",
+  "entry_local_path": "research-datasets/tw-public-library-statistics/raw/ncl-additional/yearbook-101-entry-bb86f1849252c36a10595034748d5f00c4575b628155532d6c33082b23a9bde0.html",
+  "retrieved_at": "2026-10-25T09:21:40.507363+00:00",
+  "pdf_links": [
+    {
+      "label": "書名頁",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565436218953467/1df169c8-ccce-4f08-b7a7-74efb77d28fd.pdf"
+    },
+    {
+      "label": "版權頁",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565436852832484/f9150c5b-68f0-4494-b845-546b21c573c9.pdf"
+    },
+    {
+      "label": "編輯說明",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565436496701412/283c1b1a-7fe8-4cbf-a873-bc28aa647fb8.pdf"
+    },
+    {
+      "label": "目次",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565437031670439/c1fe70c7-4d45-43f3-a41e-86ab5098add2.pdf"
+    },
+    {
+      "label": "全國圖書館發展政策及推動策略之研訂",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565437575559466/e308b837-3b5f-40a1-9849-e5c7a673c479.pdf"
+    },
+    {
+      "label": "《中華民國圖書館事業百年回顧與展望》編輯記要",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565438119528484/511861ff-6aa3-4ae1-8b3b-21f6fa074c68.pdf"
+    },
+    {
+      "label": "兩岸圖書資訊教育交流發展與現況",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565438753407401/1617461a-cf7f-46d6-aad8-bc0041823601.pdf"
+    },
+    {
+      "label": "國家圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565449398376439/96cde9ae-2ad4-4fe6-8279-7f479540d63f.pdf"
+    },
+    {
+      "label": "公共圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565449932255456/a48aad49-7cb4-4637-9581-87df9c488d96.pdf"
+    },
+    {
+      "label": "大專校院圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565440576124583/0b5063d9-5ab8-4086-8002-33a9eafc0cfd.pdf"
+    },
+    {
+      "label": "中小學圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565440110003501/ee20ffcc-51a4-41ad-89d9-a85483378098.pdf"
+    },
+    {
+      "label": "專門圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565440755972538/323eeace-e96e-47a4-8d0d-d66d67c4625d.pdf"
+    },
+    {
+      "label": "圖書館資訊科技與應用",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565441299850555/cfb6f23d-1a53-43b9-8803-1ddbe778a8dd.pdf"
+    },
+    {
+      "label": "圖書資訊學教育",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565451833729583/4d06c53f-5012-4b8f-afda-00bfc20d12ac.pdf"
+    },
+    {
+      "label": "圖書資訊學研究",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565452478608500/9da4bae3-9c06-42eb-bded-99ec5a62f817.pdf"
+    },
+    {
+      "label": "國際交流與合作",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565452012577538/0077e11c-6c91-4246-8c7d-de5a66930f85.pdf"
+    },
+    {
+      "label": "圖書館團體",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565453656456555/cbfbd4c9-e9a3-4c0b-ab0b-1d2e0fd0d4ba.pdf"
+    },
+    {
+      "label": "圖書資訊規範與標準",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565453290325582/7ff5d594-4627-4dfb-8c0d-5d151b0ba196.pdf"
+    },
+    {
+      "label": "圖書館法規",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565454835204500/a107b291-8a6f-4fca-a28e-021b9726b2a5.pdf"
+    },
+    {
+      "label": "圖書館統計",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565454479173537/2b5f95fc-2194-476c-a9ad-0a834bf823b9.pdf"
+    },
+    {
+      "label": "圖書館事業大事記",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565465913052554/cbd3e5bc-3320-4240-b796-607acc36b79a.pdf"
+    },
+    {
+      "label": "索引",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565465557921582/002cc288-8df7-47f2-a54a-42268b65960e.pdf"
+    }
+  ]
+}

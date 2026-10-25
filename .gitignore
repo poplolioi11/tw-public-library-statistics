@@ -11,6 +11,16 @@ raw/snapshots/**/*.js
 raw/official-local/**/*.html
 dist/
 
+raw/ncl-earlier/*.pdf
+raw/ncl-earlier/*.html
+raw/ncl-additional/*.pdf
+raw/ncl-additional/*.html
+raw/ncl-additional/*private.json
+raw/ncl-additional/rendered/
+tmp/
+
+/data/*_extraction_state.json
+
 # Local run state and omitted originals must not enter public commits.
 /data/last_update.json
 /data/last_release.json

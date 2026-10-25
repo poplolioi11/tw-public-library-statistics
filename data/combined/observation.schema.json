@@ -93,7 +93,8 @@
       "description": "raw_value"
     },
     "value_status": {
-      "description": "value_status"
+      "type": "string",
+      "description": "Source state: reported/reported_decimal, source_blank (original empty cell, reason unconfirmed), not_available_in_source (explicit source marker). Always preserve raw_value; never infer not applicable from blank."
     },
     "zero_interpretation": {
       "description": "zero_interpretation"
@@ -160,6 +161,9 @@
     "extraction_status": {
       "description": "extraction_status"
     },
+    "quality_flags": {
+      "description": "quality_flags"
+    },
     "notes": {
       "description": "notes"
     },
@@ -202,6 +206,64 @@
     "license_scope_inference": {
       "description": "license_scope_inference"
     },
+    "unit_raw": {
+      "description": "unit_raw"
+    },
+    "unit_basis": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Original or contextual basis of normalized unit. Read unit_raw and unit_status; inferred units are not printed labels."
+    },
+    "institutional_level": {
+      "description": "institutional_level"
+    },
+    "aggregation_role": {
+      "description": "aggregation_role"
+    },
+    "source_version_id": {
+      "description": "source_version_id"
+    },
+    "source_table_title": {
+      "description": "source_table_title"
+    },
+    "source_column_path": {
+      "description": "source_column_path"
+    },
+    "source_cell_bbox": {
+      "description": "source_cell_bbox"
+    },
+    "source_cell_annotation": {
+      "description": "source_cell_annotation"
+    },
+    "original_source_note": {
+      "description": "original_source_note"
+    },
+    "source_footnotes_raw": {
+      "description": "source_footnotes_raw"
+    },
+    "source_footnotes_status": {
+      "description": "source_footnotes_status"
+    },
+    "source_data_year_raw": {
+      "description": "source_data_year_raw"
+    },
+    "source_original_access_date_raw": {
+      "description": "source_original_access_date_raw"
+    },
+    "source_original_access_date": {
+      "description": "source_original_access_date"
+    },
+    "publication_date": {
+      "description": "publication_date"
+    },
+    "publication_date_basis": {
+      "description": "publication_date_basis"
+    },
+    "source_edition_roc": {
+      "description": "source_edition_roc"
+    },
     "facility": {
       "description": "facility"
     },
@@ -222,9 +284,6 @@
     },
     "source_record_id": {
       "description": "source_record_id"
-    },
-    "quality_flags": {
-      "description": "quality_flags"
     },
     "public_evidence_sha256": {
       "description": "public_evidence_sha256"

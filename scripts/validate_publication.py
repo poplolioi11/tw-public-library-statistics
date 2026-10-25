@@ -28,6 +28,9 @@ MANIFEST_NAME = "PUBLICATION_MANIFEST.json"
 PUBLICATION_ONLY_FIELDS = {"snapshot_distribution", "public_evidence_path", "public_evidence_sha256", "public_projection_policy"}
 CONTACT_PARTS = ("行動電話", "市話", "電子郵件", "電子信箱", "聯絡電話", "聯絡人", "聯絡資訊", "聯絡方式", "手機號", "傳真")
 CONTACT_ENGLISH = {"email", "emailaddress", "tel", "telephone", "phone", "phonenumber", "mobile", "mobilenumber", "mobilephone", "fax", "contact", "contactname", "contactperson", "contactemail", "contactphone", "authorphone"}
+SOURCE_MARKERS = {"-", "--", "—", "–", "…", "...", "N/A", "NA", "n/a"}
+NOT_APPLICABLE_MARKERS = {"N/A", "NA", "n/a", "不適用"}
+NULL_STATUSES = {"source_blank", "source_null", "source_marker", "not_available_in_source", "not_applicable"}
 
 
 class ValidationError(Exception):
@@ -129,6 +132,26 @@ def is_reported_zero(value) -> bool:
         return False
 
 
+def validate_value_semantics(record: dict, identifier: str) -> None:
+    """Validate missingness against the original representation, never its label alone."""
+    value, raw, status = record["value"], record["raw_value"], record.get("value_status")
+    text = raw.strip() if isinstance(raw, str) else None
+    if value is None:
+        require(status in NULL_STATUSES, f"{identifier}: null has unsupported source status {status!r}")
+        if status == "source_blank":
+            require(isinstance(raw, str) and text == "", f"{identifier}: source_blank requires an empty original string")
+        elif status == "source_null":
+            require(raw is None, f"{identifier}: source_null requires original JSON null")
+        elif status == "not_applicable":
+            require(text in NOT_APPLICABLE_MARKERS, f"{identifier}: not_applicable requires an explicit original applicability marker")
+        else:
+            require(text in SOURCE_MARKERS, f"{identifier}: missing/marker status requires a recognized original symbol, not an unparsed number or text")
+    else:
+        require(status not in NULL_STATUSES, f"{identifier}: a null source status cannot carry a reported value")
+        require(raw is not None and text != "" and text not in SOURCE_MARKERS | NOT_APPLICABLE_MARKERS,
+                f"{identifier}: reported value contradicts an originally empty/null/marked cell")
+
+
 def manifest_entries(manifest: dict) -> list[tuple[str, str]]:
     files = manifest.get("files", manifest.get("file_hashes"))
     require(isinstance(files, (dict, list)), "Manifest needs files mapping or [{path, sha256}] list")
@@ -189,8 +212,7 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
     zero_count = sum(is_reported_zero(row["value"]) for row in rows.values())
     require(missing_count == expected_missing, "JSONL null count differs from summary.missing_cells")
     for identifier, record in rows.items():
-        if record["value"] is None:
-            require(record.get("value_status") == "not_available_in_source", f"{identifier}: null is not explicitly marked as a missing source cell")
+        validate_value_semantics(record, identifier)
 
     with (combined / "observations.csv").open(encoding="utf-8-sig", newline="") as stream:
         reader = csv.DictReader(stream)
@@ -312,6 +334,7 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
             counts[family] = counts.get(family, 0) + 1
         require(counts == summary["source_families"], "Source-family counts differ from summary")
     return {"records": len(rows), "missing_cells": missing_count, "reported_zero_cells": zero_count,
+            "null_status_counts": {status: sum(row["value"] is None and row.get("value_status") == status for row in rows.values()) for status in sorted(NULL_STATUSES)},
             "formats": "JSONL/CSV/SQLite content agrees", "original_files_hash_checked": len(original_files),
             "omitted_source_versions_not_full_source_verified": len(omitted_originals),
             "public_evidence_files_hash_checked": len(evidence_files), "projection_files_contact_keys_checked": projection_count,
@@ -415,6 +438,30 @@ def self_test() -> bool:
             manifest_path.write_text(json.dumps(manifest))
             with self.assertRaisesRegex(ValidationError, "Manifest file hash mismatch"):
                 validate(self.root)
+
+        def test_null_statuses_require_matching_original_representations(self):
+            cases = [("source_blank", ""), ("source_blank", "  "), ("source_null", None),
+                     ("source_marker", "—"), ("not_available_in_source", "…"),
+                     ("not_applicable", "N/A"), ("not_applicable", "不適用")]
+            for status, raw in cases:
+                with self.subTest(status=status, raw=raw):
+                    validate_value_semantics({"value": None, "raw_value": raw, "value_status": status}, "fixture")
+
+        def test_numbers_or_unparsed_text_cannot_be_relabelled_as_missing(self):
+            for status in NULL_STATUSES:
+                for raw in ("0", "123", "1,234", "12.3", "約百人", 0, 123):
+                    with self.subTest(status=status, raw=raw), self.assertRaises(ValidationError):
+                        validate_value_semantics({"value": None, "raw_value": raw, "value_status": status}, "fixture")
+            for status, raw in [("source_blank", None), ("source_null", ""),
+                                ("not_available_in_source", ""), ("not_applicable", "-")]:
+                with self.subTest(status=status, raw=raw), self.assertRaises(ValidationError):
+                    validate_value_semantics({"value": None, "raw_value": raw, "value_status": status}, "fixture")
+
+        def test_nonnull_value_cannot_have_a_null_status_or_raw_marker(self):
+            for value, raw, status in [(0, "-", "reported"), (0, "", "reported"),
+                                       (0, None, "reported"), (1, "1", "source_blank")]:
+                with self.subTest(value=value, raw=raw, status=status), self.assertRaises(ValidationError):
+                    validate_value_semantics({"value": value, "raw_value": raw, "value_status": status}, "fixture")
 
     result = unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(Fixtures))
     return result.wasSuccessful()

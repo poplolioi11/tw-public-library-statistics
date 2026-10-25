@@ -1,0 +1,1267 @@
+[
+  {
+    "id": "ncl-earlier-2007-t1",
+    "source_edition_roc": 97,
+    "data_year": 2007,
+    "table": "1",
+    "pdf_page": 2,
+    "printed_page": 36,
+    "title": "全國公立公共圖書館統計表（96年）",
+    "kind": "count_cross_tab",
+    "rows": [
+      "臺北市",
+      "高雄市",
+      "基隆市",
+      "臺北縣",
+      "桃園縣",
+      "新竹縣",
+      "新竹市",
+      "苗栗縣",
+      "臺中縣",
+      "臺中市",
+      "南投縣",
+      "彰化縣",
+      "雲林縣",
+      "嘉義縣",
+      "嘉義市",
+      "臺南縣",
+      "臺南市",
+      "高雄縣",
+      "屏東縣",
+      "臺東縣",
+      "花蓮縣",
+      "宜蘭縣",
+      "澎湖縣",
+      "金門縣",
+      "連江縣",
+      "總計"
+    ],
+    "xs": [
+      92.625,
+      126.125,
+      157.625,
+      189.875,
+      222.375,
+      251.625,
+      280.875,
+      316.375,
+      351.625,
+      420.375,
+      452.875,
+      481.25
+    ],
+    "ys": [
+      157,
+      524.5
+    ],
+    "columns": [
+      {
+        "key": "national_main",
+        "raw_label": "國立圖書館／總館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "national_branch",
+        "raw_label": "國立圖書館／分館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "municipal_main",
+        "raw_label": "直轄市圖書館／總館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "municipal_branch",
+        "raw_label": "直轄市圖書館／分館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "county_main",
+        "raw_label": "縣市文化局圖書館／總館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "county_branch",
+        "raw_label": "縣市文化局圖書館／分館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "township_main",
+        "raw_label": "鄉鎮市區圖書館／總館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "township_branch",
+        "raw_label": "鄉鎮市區圖書館／分館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "other_provincial",
+        "raw_label": "其他／省政府圖書館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "total_main",
+        "raw_label": "合計／總館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "published_total",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "total_branch",
+        "raw_label": "合計／分館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+        "aggregation_role": "published_total",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      }
+    ],
+    "national_libraries_scope": "national_and_provincial_libraries_included_by_location",
+    "column_total_last_row": true,
+    "row_relations": [
+      [
+        "total_main",
+        [
+          "national_main",
+          "municipal_main",
+          "county_main",
+          "township_main",
+          "other_provincial"
+        ]
+      ],
+      [
+        "total_branch",
+        [
+          "national_branch",
+          "municipal_branch",
+          "county_branch",
+          "township_branch"
+        ]
+      ]
+    ],
+    "footnotes_raw": [
+      "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：97年5月30日。"
+    ],
+    "footnote_transcription": "original_Chinese_wording_with_layout_whitespace_normalized; checked_in_PDFium",
+    "scope_caveats": [
+      "館數表與館藏/人力表的國立館歸戶方法不同，原表順序亦不同。"
+    ]
+  },
+  {
+    "id": "ncl-earlier-2007-t2",
+    "source_edition_roc": 97,
+    "data_year": 2007,
+    "table": "2",
+    "pdf_page": 3,
+    "printed_page": 37,
+    "title": "全國各縣市暨鄉鎮圖書館館藏數量及購書經費統計表（96年）",
+    "kind": "holdings_finance",
+    "rows": [
+      "臺北市",
+      "高雄市",
+      "臺北縣",
+      "宜蘭縣",
+      "桃園縣",
+      "新竹縣",
+      "苗栗縣",
+      "臺中縣",
+      "彰化縣",
+      "南投縣",
+      "雲林縣",
+      "嘉義縣",
+      "臺南縣",
+      "高雄縣",
+      "屏東縣",
+      "臺東縣",
+      "花蓮縣",
+      "澎湖縣",
+      "基隆市",
+      "新竹市",
+      "臺中市",
+      "嘉義市",
+      "臺南市",
+      "金門縣",
+      "連江縣",
+      "國立中央圖書館臺灣分館",
+      "國立臺中圖書館",
+      "臺灣省政府圖書館",
+      "總計"
+    ],
+    "xs": [
+      134.875,
+      187.375,
+      239.375,
+      297.125,
+      348.875,
+      395.875,
+      441.625,
+      481.75
+    ],
+    "ys": [
+      153.5,
+      620
+    ],
+    "columns": [
+      {
+        "key": "population",
+        "raw_label": "人口數（A）",
+        "unit": "人",
+        "unit_raw": null,
+        "unit_basis": "原表人口數；人口時點未另揭示",
+        "aggregation_role": "separate_measure",
+        "temporal_kind": "reference_population_date_not_explicit"
+      },
+      {
+        "key": "holdings_mixed",
+        "raw_label": "館藏總數（冊）（B）",
+        "unit": "冊（件、種混合）",
+        "unit_raw": "冊",
+        "unit_basis": "表頭冊；同章正文含非書及電子資源",
+        "aggregation_role": "separate_measure",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "acquisition_spending",
+        "raw_label": "購書經費（元）（C）",
+        "unit": "新臺幣元",
+        "unit_raw": "元",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_measure",
+        "temporal_kind": "annual_financial"
+      },
+      {
+        "key": "physical_loans",
+        "raw_label": "圖書借閱（冊數）（D）",
+        "unit": "冊次",
+        "unit_raw": "冊數",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      },
+      {
+        "key": "holdings_per_capita",
+        "raw_label": "每人擁有館藏冊數（B/A）",
+        "unit": "冊（件、種混合）／人",
+        "unit_raw": null,
+        "unit_basis": "依原表公式B/A",
+        "aggregation_role": "derived_ratio",
+        "temporal_kind": "derived_ratio"
+      },
+      {
+        "key": "spending_per_capita",
+        "raw_label": "平均每人購書經費（C/A）",
+        "unit": "新臺幣元／人",
+        "unit_raw": null,
+        "unit_basis": "依原表公式C/A",
+        "aggregation_role": "derived_ratio",
+        "temporal_kind": "derived_ratio"
+      },
+      {
+        "key": "loans_per_capita",
+        "raw_label": "平均每人外借冊數（D/A）",
+        "unit": "冊次／人",
+        "unit_raw": null,
+        "unit_basis": "依原表公式D/A",
+        "aggregation_role": "derived_ratio",
+        "temporal_kind": "derived_ratio"
+      }
+    ],
+    "national_libraries_scope": "explicit_footnote_excludes_three_national_provincial_institutions_from_counties",
+    "column_total_last_row": true,
+    "row_relations": [],
+    "footnotes_raw": [
+      "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：97年5月30日。",
+      "「內政統計資訊服務網」http://www.moi.gov.tw/stat/，上網日期：97年5月30日。",
+      "註：國立中央圖書館臺灣分館、國立臺中圖書館、臺灣省政府圖書館係屬國立及省級，館藏等資料未列入臺北縣、臺中市或南投縣統計。"
+    ],
+    "footnote_transcription": "original_Chinese_wording_with_layout_whitespace_normalized; checked_in_PDFium",
+    "scope_caveats": [
+      "館數表與館藏/人力表的國立館歸戶方法不同，原表順序亦不同。"
+    ]
+  },
+  {
+    "id": "ncl-earlier-2007-t3",
+    "source_edition_roc": 97,
+    "data_year": 2007,
+    "table": "3",
+    "pdf_page": 4,
+    "printed_page": 38,
+    "title": "全國各縣市暨鄉鎮圖書館人員及服務統計表（96年）",
+    "kind": "staff_services",
+    "rows": [
+      "臺北市",
+      "高雄市",
+      "臺北縣",
+      "宜蘭縣",
+      "桃園縣",
+      "新竹縣",
+      "苗栗縣",
+      "臺中縣",
+      "彰化縣",
+      "南投縣",
+      "雲林縣",
+      "嘉義縣",
+      "臺南縣",
+      "高雄縣",
+      "屏東縣",
+      "臺東縣",
+      "花蓮縣",
+      "澎湖縣",
+      "基隆市",
+      "新竹市",
+      "臺中市",
+      "嘉義市",
+      "臺南市",
+      "金門縣",
+      "連江縣",
+      "國立中央圖書館臺灣分館",
+      "國立臺中圖書館",
+      "臺灣省政府圖書館",
+      "總計"
+    ],
+    "xs": [
+      118.375,
+      143.625,
+      167.625,
+      190.875,
+      214.625,
+      242.125,
+      268.875,
+      295.625,
+      323.125,
+      351.125,
+      395.875,
+      440.125,
+      481.25
+    ],
+    "ys": [
+      155.5,
+      647.5
+    ],
+    "columns": [
+      {
+        "key": "professional_staff",
+        "raw_label": "人員／專業人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "administrative_staff",
+        "raw_label": "人員／行政人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "technical_staff",
+        "raw_label": "人員／技術人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "temporary_staff",
+        "raw_label": "人員／臨時人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "contract_staff",
+        "raw_label": "人員／約聘僱人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "student_staff",
+        "raw_label": "人員／工讀生",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "volunteers",
+        "raw_label": "人員／志工",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "other_staff",
+        "raw_label": "人員／其他",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "all_staff",
+        "raw_label": "人員／合計",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "published_total",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "physical_borrower_visits",
+        "raw_label": "圖書借閱（人次）",
+        "unit": "人次",
+        "unit_raw": "人次",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      },
+      {
+        "key": "promotion_events",
+        "raw_label": "推廣活動（場次）",
+        "unit": "場次",
+        "unit_raw": "場次",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      },
+      {
+        "key": "promotion_attendance",
+        "raw_label": "推廣活動（人次）",
+        "unit": "人次",
+        "unit_raw": "人次",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      }
+    ],
+    "national_libraries_scope": "three_national_provincial_institutions_separately_listed",
+    "column_total_last_row": true,
+    "row_relations": [
+      [
+        "all_staff",
+        [
+          "professional_staff",
+          "administrative_staff",
+          "technical_staff",
+          "temporary_staff",
+          "contract_staff",
+          "student_staff",
+          "volunteers",
+          "other_staff"
+        ]
+      ]
+    ],
+    "footnotes_raw": [
+      "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：97年5月30日。"
+    ],
+    "footnote_transcription": "original_Chinese_wording_with_layout_whitespace_normalized; checked_in_PDFium",
+    "scope_caveats": [
+      "館數表與館藏/人力表的國立館歸戶方法不同，原表順序亦不同。"
+    ]
+  },
+  {
+    "id": "ncl-earlier-2006-t1",
+    "source_edition_roc": 96,
+    "data_year": 2006,
+    "table": "1",
+    "pdf_page": 4,
+    "printed_page": 30,
+    "title": "全國公立公共圖書館統計表（95年）",
+    "kind": "opened_unopened_count_cross_tab",
+    "rows": [
+      "臺北市",
+      "高雄市",
+      "基隆市",
+      "臺北縣",
+      "桃園縣",
+      "新竹縣",
+      "新竹市",
+      "苗栗縣",
+      "臺中縣",
+      "臺中市",
+      "南投縣",
+      "彰化縣",
+      "雲林縣",
+      "嘉義縣",
+      "嘉義市",
+      "臺南縣",
+      "臺南市",
+      "高雄縣",
+      "屏東縣",
+      "臺東縣",
+      "花蓮縣",
+      "宜蘭縣",
+      "澎湖縣",
+      "金門縣",
+      "連江縣",
+      "總計"
+    ],
+    "xs": [
+      92.625,
+      125.125,
+      157.625,
+      190.125,
+      222.375,
+      254.875,
+      281.125,
+      313.625,
+      351.875,
+      381.125,
+      420.625,
+      452.875,
+      481.25
+    ],
+    "ys": [
+      307.5,
+      675
+    ],
+    "columns": [
+      {
+        "key": "opened_national_main",
+        "raw_label": "已開放／國立／總館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "opened_national_branch_reading",
+        "raw_label": "已開放／國立／分館閱覽室",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "opened_municipal_main",
+        "raw_label": "已開放／直轄市／總館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "opened_municipal_branch_reading",
+        "raw_label": "已開放／直轄市／分館閱覽室",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "opened_county_library",
+        "raw_label": "已開放／縣市文化（局、中心）／圖書館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "opened_county_branch",
+        "raw_label": "已開放／縣市文化（局、中心）／分館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "opened_township_main",
+        "raw_label": "已開放／鄉鎮市區圖書館／總館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "opened_township_branches_reading",
+        "raw_label": "已開放／鄉鎮市區圖書館／分館第二館閱覽室",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "opened_total",
+        "raw_label": "已開放／合計",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "published_total",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "unopened_city_branches",
+        "raw_label": "未開放／省院轄市區分館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "unopened_township_library",
+        "raw_label": "未開放／鄉鎮市圖書館",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      },
+      {
+        "key": "unopened_total",
+        "raw_label": "未開放／合計",
+        "unit": "所",
+        "unit_raw": null,
+        "unit_basis": "館數，原表未另印單位",
+        "aggregation_role": "published_total",
+        "temporal_kind": "stock_reference_date_not_explicit_in_table"
+      }
+    ],
+    "national_libraries_scope": "national_libraries_included_by_location; opened_and_unopened_separate",
+    "column_total_last_row": true,
+    "row_relations": [
+      [
+        "opened_total",
+        [
+          "opened_national_main",
+          "opened_national_branch_reading",
+          "opened_municipal_main",
+          "opened_municipal_branch_reading",
+          "opened_county_library",
+          "opened_county_branch",
+          "opened_township_main",
+          "opened_township_branches_reading"
+        ]
+      ],
+      [
+        "unopened_total",
+        [
+          "unopened_city_branches",
+          "unopened_township_library"
+        ]
+      ]
+    ],
+    "footnotes_raw": [
+      "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：96年5月31日。"
+    ],
+    "footnote_transcription": "original_Chinese_wording_with_layout_whitespace_normalized; checked_in_PDFium",
+    "scope_caveats": [
+      "分館閱覽室及第二館等欄與下一卷單純分館標題不同，不直接當同口徑。",
+      "未開放分類包含尚未建館等不同情況，不可把全部數值解釋成既有館停用。"
+    ]
+  },
+  {
+    "id": "ncl-earlier-2006-t2",
+    "source_edition_roc": 96,
+    "data_year": 2006,
+    "table": "2",
+    "pdf_page": 5,
+    "printed_page": 31,
+    "title": "國立暨直轄市立公共圖書館人員統計表（95年）",
+    "kind": "national_municipal_staff",
+    "rows": [
+      "國立中央圖書館臺灣分館",
+      "國立臺中圖書館",
+      "臺北市立圖書館",
+      "高雄市立圖書館",
+      "高雄市政府文化局中正文化中心"
+    ],
+    "xs": [
+      145.875,
+      187.375,
+      226.875,
+      265.375,
+      305.625,
+      356.125,
+      391.625,
+      423.875,
+      454.375,
+      481.75
+    ],
+    "ys": [
+      220,
+      348
+    ],
+    "columns": [
+      {
+        "key": "professional_staff",
+        "raw_label": "人員／專業人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "administrative_staff",
+        "raw_label": "人員／行政人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "technical_staff",
+        "raw_label": "人員／技術人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "temporary_staff",
+        "raw_label": "人員／臨時人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "contract_staff",
+        "raw_label": "人員／約聘僱人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "student_staff",
+        "raw_label": "人員／工讀生",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "volunteers",
+        "raw_label": "人員／志工",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "other_staff",
+        "raw_label": "人員／其他",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "all_staff",
+        "raw_label": "人員／合計",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "published_total",
+        "temporal_kind": "stock_year_end"
+      }
+    ],
+    "national_libraries_scope": "five_national_municipal_institutions_separately_listed; no_national_total",
+    "column_total_last_row": false,
+    "row_relations": [
+      [
+        "all_staff",
+        [
+          "professional_staff",
+          "administrative_staff",
+          "technical_staff",
+          "temporary_staff",
+          "contract_staff",
+          "student_staff",
+          "volunteers",
+          "other_staff"
+        ]
+      ]
+    ],
+    "footnotes_raw": [
+      "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：96年5月31日。"
+    ],
+    "footnote_transcription": "original_Chinese_wording_with_layout_whitespace_normalized; checked_in_PDFium",
+    "scope_caveats": [
+      "本卷國立/直轄市與其他縣市分表，單一表不代表完整全國全部層級。"
+    ]
+  },
+  {
+    "id": "ncl-earlier-2006-t3",
+    "source_edition_roc": 96,
+    "data_year": 2006,
+    "table": "3",
+    "pdf_page": 5,
+    "printed_page": 31,
+    "title": "國立暨直轄市立公共圖書館購書經費、館藏數量與資源使用統計表（95年）",
+    "kind": "national_municipal_resources",
+    "rows": [
+      "國立中央圖書館臺灣分館",
+      "國立臺中圖書館",
+      "臺北市立圖書館",
+      "高雄市立圖書館",
+      "高雄市政府文化局中正文化中心"
+    ],
+    "xs": [
+      145.875,
+      202.375,
+      258.375,
+      314.375,
+      370.125,
+      426.125,
+      481.75
+    ],
+    "ys": [
+      452.2,
+      579.4
+    ],
+    "columns": [
+      {
+        "key": "acquisition_spending",
+        "raw_label": "購書經費（元）",
+        "unit": "新臺幣元",
+        "unit_raw": "元",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_measure",
+        "temporal_kind": "annual_financial"
+      },
+      {
+        "key": "holdings_mixed",
+        "raw_label": "館藏冊數（冊）",
+        "unit": "冊（件、種混合）",
+        "unit_raw": "冊",
+        "unit_basis": "表頭冊；同章正文含非書及電子資源",
+        "aggregation_role": "separate_measure",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "physical_borrower_visits",
+        "raw_label": "圖書借閱（人次）",
+        "unit": "人次",
+        "unit_raw": "人次",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      },
+      {
+        "key": "physical_loans",
+        "raw_label": "圖書借閱（冊、件）",
+        "unit": "冊次／件次",
+        "unit_raw": "冊、件",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      },
+      {
+        "key": "promotion_events",
+        "raw_label": "推廣活動（場次）",
+        "unit": "場次",
+        "unit_raw": "場次",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      },
+      {
+        "key": "promotion_attendance",
+        "raw_label": "推廣活動（人次）",
+        "unit": "人次",
+        "unit_raw": "人次",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      }
+    ],
+    "national_libraries_scope": "five_national_municipal_institutions_separately_listed; municipal_rows_overlap_county_table4",
+    "column_total_last_row": false,
+    "row_relations": [],
+    "footnotes_raw": [
+      "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：96年5月31日。"
+    ],
+    "footnote_transcription": "original_Chinese_wording_with_layout_whitespace_normalized; checked_in_PDFium",
+    "scope_caveats": [
+      "本卷國立/直轄市與其他縣市分表，單一表不代表完整全國全部層級。",
+      "表3的臺北/高雄機構資源與表4對應市別有重疊，不可直接相加。"
+    ]
+  },
+  {
+    "id": "ncl-earlier-2006-t4",
+    "source_edition_roc": 96,
+    "data_year": 2006,
+    "table": "4",
+    "pdf_page": 6,
+    "printed_page": 32,
+    "title": "臺閩地區各縣市暨鄉鎮圖書館館藏數量及購書經費統計表（95年）",
+    "kind": "county_holdings_finance",
+    "rows": [
+      "臺北市",
+      "高雄市",
+      "臺北縣",
+      "宜蘭縣",
+      "桃園縣",
+      "新竹縣",
+      "苗栗縣",
+      "臺中縣",
+      "彰化縣",
+      "南投縣",
+      "雲林縣",
+      "嘉義縣",
+      "臺南縣",
+      "高雄縣",
+      "屏東縣",
+      "臺東縣",
+      "花蓮縣",
+      "澎湖縣",
+      "基隆市",
+      "新竹市",
+      "臺中市",
+      "嘉義市",
+      "臺南市",
+      "金門縣",
+      "連江縣"
+    ],
+    "xs": [
+      90.375,
+      155.375,
+      220.625,
+      285.875,
+      351.125,
+      416.125,
+      481.25
+    ],
+    "ys": [
+      142,
+      619.5
+    ],
+    "columns": [
+      {
+        "key": "population",
+        "raw_label": "人口數（A）",
+        "unit": "人",
+        "unit_raw": null,
+        "unit_basis": "原表人口數；人口時點未另揭示",
+        "aggregation_role": "separate_measure",
+        "temporal_kind": "reference_population_date_not_explicit"
+      },
+      {
+        "key": "holdings_mixed",
+        "raw_label": "館藏總數（冊）（B）",
+        "unit": "冊（件、種混合）",
+        "unit_raw": "冊",
+        "unit_basis": "表頭冊；同章正文含非書及電子資源",
+        "aggregation_role": "separate_measure",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "acquisition_spending",
+        "raw_label": "購書經費（元）（C）",
+        "unit": "新臺幣元",
+        "unit_raw": "元",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_measure",
+        "temporal_kind": "annual_financial"
+      },
+      {
+        "key": "holdings_per_capita",
+        "raw_label": "每人擁有館藏冊數（冊）",
+        "unit": "冊（件、種混合）／人",
+        "unit_raw": "冊",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "derived_ratio",
+        "temporal_kind": "derived_ratio"
+      },
+      {
+        "key": "spending_per_capita",
+        "raw_label": "平均每人購書經費（元）",
+        "unit": "新臺幣元／人",
+        "unit_raw": "元",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "derived_ratio",
+        "temporal_kind": "derived_ratio"
+      },
+      {
+        "key": "loans_per_capita",
+        "raw_label": "平均每人外借館藏冊數（冊）",
+        "unit": "冊次／人",
+        "unit_raw": "冊",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "derived_ratio",
+        "temporal_kind": "derived_ratio"
+      }
+    ],
+    "national_libraries_scope": "national_institution_inclusion_not_explicit_in_this_table; municipal_rows_overlap_table3",
+    "column_total_last_row": false,
+    "row_relations": [],
+    "footnotes_raw": [
+      "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：96年5月31日。",
+      "「內政統計資訊服務網」http://www.moi.gov.tw/stat/index.asp，上網日期：96年5月31日。"
+    ],
+    "footnote_transcription": "original_Chinese_wording_with_layout_whitespace_normalized; checked_in_PDFium",
+    "scope_caveats": [
+      "表3的臺北/高雄機構資源與表4對應市別有重疊，不可直接相加。"
+    ]
+  },
+  {
+    "id": "ncl-earlier-2006-t5",
+    "source_edition_roc": 96,
+    "data_year": 2006,
+    "table": "5",
+    "pdf_page": 7,
+    "printed_page": 33,
+    "title": "臺閩地區各縣市暨鄉鎮圖書館人員及服務統計表（95年）",
+    "kind": "county_staff_services",
+    "rows": [
+      "臺北縣",
+      "宜蘭縣",
+      "桃園縣",
+      "新竹縣",
+      "苗栗縣",
+      "臺中縣",
+      "彰化縣",
+      "南投縣",
+      "雲林縣",
+      "嘉義縣",
+      "臺南縣",
+      "高雄縣",
+      "屏東縣",
+      "臺東縣",
+      "花蓮縣",
+      "澎湖縣",
+      "基隆市",
+      "新竹市",
+      "臺中市",
+      "嘉義市",
+      "臺南市",
+      "金門縣",
+      "連江縣",
+      "合計"
+    ],
+    "xs": [
+      87.875,
+      112.125,
+      136.125,
+      159.375,
+      183.125,
+      210.625,
+      237.375,
+      264.375,
+      291.625,
+      320.625,
+      359.375,
+      405.875,
+      440.625,
+      481.75
+    ],
+    "ys": [
+      155.5,
+      613.7
+    ],
+    "columns": [
+      {
+        "key": "professional_staff",
+        "raw_label": "人員／專業人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "administrative_staff",
+        "raw_label": "人員／行政人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "technical_staff",
+        "raw_label": "人員／技術人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "temporary_staff",
+        "raw_label": "人員／臨時人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "contract_staff",
+        "raw_label": "人員／約聘僱人員",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "student_staff",
+        "raw_label": "人員／工讀生",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "volunteers",
+        "raw_label": "人員／志工",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "other_staff",
+        "raw_label": "人員／其他",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "component",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "all_staff",
+        "raw_label": "人員／合計",
+        "unit": "人",
+        "unit_raw": "人",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "published_total",
+        "temporal_kind": "stock_year_end"
+      },
+      {
+        "key": "physical_borrower_visits",
+        "raw_label": "圖書借閱（人次）",
+        "unit": "人次",
+        "unit_raw": "人次",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      },
+      {
+        "key": "physical_loans",
+        "raw_label": "圖書借閱（冊數）",
+        "unit": "冊次",
+        "unit_raw": "冊數",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      },
+      {
+        "key": "promotion_events",
+        "raw_label": "推廣活動（場次）",
+        "unit": "場次",
+        "unit_raw": "場次",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      },
+      {
+        "key": "promotion_attendance",
+        "raw_label": "推廣活動（人次）",
+        "unit": "人次",
+        "unit_raw": "人次",
+        "unit_basis": "原表表頭",
+        "aggregation_role": "separate_flow",
+        "temporal_kind": "flow_calendar_year"
+      }
+    ],
+    "national_libraries_scope": "23_counties_excluding_Taipei_and_Kaohsiung_municipalities; total_is_subgroup_not_national",
+    "column_total_last_row": true,
+    "row_relations": [
+      [
+        "all_staff",
+        [
+          "professional_staff",
+          "administrative_staff",
+          "technical_staff",
+          "temporary_staff",
+          "contract_staff",
+          "student_staff",
+          "volunteers",
+          "other_staff"
+        ]
+      ]
+    ],
+    "footnotes_raw": [
+      "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：96年5月31日。"
+    ],
+    "footnote_transcription": "original_Chinese_wording_with_layout_whitespace_normalized; checked_in_PDFium",
+    "scope_caveats": [
+      "本卷國立/直轄市與其他縣市分表，單一表不代表完整全國全部層級。"
+    ]
+  }
+]

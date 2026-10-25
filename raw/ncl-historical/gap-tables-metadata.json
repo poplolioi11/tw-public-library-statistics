@@ -1,0 +1,2556 @@
+{
+  "schema_version": "1.0.0",
+  "checked_at": "2026-10-25",
+  "tables_completed": 4,
+  "data_cells": 1180,
+  "tables": [
+    {
+      "table_id": "ncl-gap-2008-t3-counts",
+      "completed": true,
+      "completion_scope": "all_visible_data_cells_in_this_table_only",
+      "data_year": 2008,
+      "edition_roc": 98,
+      "title": "全國公立公共圖書館統計表（97年）",
+      "source_agency": "國家圖書館",
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565548575038748",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565548284341223/5c7f15c3-14f8-4b82-9c20-e88fc60ec73a.pdf",
+      "source_local_path": "raw/ncl-historical/yearbook-98-public-library.pdf",
+      "source_sha256": "780f72e99bec13702fc706f0e86b7c90cc19b370dc0048e1ef92a261766f4c28",
+      "source_retrieved_at": "2026-10-25T07:23:21.800053+00:00",
+      "pdf_page": 2,
+      "printed_page": 78,
+      "source_table": "3",
+      "data_rows": 26,
+      "numeric_columns": 11,
+      "data_cells": 286,
+      "value_status_counts": {
+        "blank": 124,
+        "reported": 162
+      },
+      "source_row_names": [
+        "臺北市",
+        "高雄市",
+        "臺中市",
+        "臺中縣",
+        "臺北縣",
+        "臺東縣",
+        "臺南市",
+        "臺南縣",
+        "宜蘭縣",
+        "花蓮縣",
+        "金門縣",
+        "南投縣",
+        "屏東縣",
+        "苗栗縣",
+        "桃園縣",
+        "高雄縣",
+        "基隆市",
+        "連江縣",
+        "雲林縣",
+        "新竹市",
+        "新竹縣",
+        "嘉義市",
+        "嘉義縣",
+        "彰化縣",
+        "澎湖縣",
+        "總計"
+      ],
+      "column_paths": [
+        "國立圖書館／總館",
+        "國立圖書館／分館",
+        "直轄市圖書館／總館",
+        "直轄市圖書館／分館",
+        "縣市文化局圖書館／總館",
+        "縣市文化局圖書館／分館",
+        "鄉鎮市區圖書館／總館",
+        "鄉鎮市區圖書館／分館",
+        "其他／省政府圖書館",
+        "合計／總館",
+        "合計／分館"
+      ],
+      "column_boundaries": [
+        93.18,
+        126.83,
+        158.19,
+        190.54,
+        222.91,
+        252.16,
+        281.62,
+        316.98,
+        352.34,
+        421.07,
+        453.43,
+        481.93
+      ],
+      "source_note": "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：98.7.15。",
+      "omitted_columns_in_source": [],
+      "validation_checks": [
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "national_main",
+          "calculated": 2,
+          "published": 2,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "national_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "municipal_main",
+          "calculated": 2,
+          "published": 2,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "municipal_branch",
+          "calculated": 55,
+          "published": 55,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "county_main",
+          "calculated": 24,
+          "published": 24,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "county_branch",
+          "calculated": 13,
+          "published": 13,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "township_main",
+          "calculated": 335,
+          "published": 335,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "township_branch",
+          "calculated": 110,
+          "published": 110,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "other_provincial",
+          "calculated": 1,
+          "published": 1,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "total_main",
+          "calculated": 364,
+          "published": 364,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "total_branch",
+          "calculated": 179,
+          "published": 179,
+          "passed": true
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "source_row": 1,
+          "metric": "total_main",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "source_row": 1,
+          "metric": "total_branch",
+          "calculated": 41,
+          "published": 41,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "source_row": 2,
+          "metric": "total_main",
+          "calculated": 2,
+          "published": 2,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "source_row": 2,
+          "metric": "total_branch",
+          "calculated": 14,
+          "published": 14,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "source_row": 3,
+          "metric": "total_main",
+          "calculated": 13,
+          "published": 13,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "source_row": 3,
+          "metric": "total_branch",
+          "calculated": 4,
+          "published": 4,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "source_row": 4,
+          "metric": "total_main",
+          "calculated": 22,
+          "published": 22,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "source_row": 4,
+          "metric": "total_branch",
+          "calculated": 8,
+          "published": 8,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "source_row": 5,
+          "metric": "total_main",
+          "calculated": 32,
+          "published": 32,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "source_row": 5,
+          "metric": "total_branch",
+          "calculated": 50,
+          "published": 50,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "source_row": 6,
+          "metric": "total_main",
+          "calculated": 16,
+          "published": 16,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "source_row": 6,
+          "metric": "total_branch",
+          "calculated": 2,
+          "published": 2,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "source_row": 7,
+          "metric": "total_main",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "source_row": 7,
+          "metric": "total_branch",
+          "calculated": 6,
+          "published": 6,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "source_row": 8,
+          "metric": "total_main",
+          "calculated": 32,
+          "published": 32,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "source_row": 8,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "source_row": 9,
+          "metric": "total_main",
+          "calculated": 13,
+          "published": 13,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "source_row": 9,
+          "metric": "total_branch",
+          "calculated": 5,
+          "published": 5,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "source_row": 10,
+          "metric": "total_main",
+          "calculated": 14,
+          "published": 14,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "source_row": 10,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "source_row": 11,
+          "metric": "total_main",
+          "calculated": 5,
+          "published": 5,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "source_row": 11,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "source_row": 12,
+          "metric": "total_main",
+          "calculated": 15,
+          "published": 15,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "source_row": 12,
+          "metric": "total_branch",
+          "calculated": 7,
+          "published": 7,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "source_row": 13,
+          "metric": "total_main",
+          "calculated": 34,
+          "published": 34,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "source_row": 13,
+          "metric": "total_branch",
+          "calculated": 3,
+          "published": 3,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "source_row": 14,
+          "metric": "total_main",
+          "calculated": 19,
+          "published": 19,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "source_row": 14,
+          "metric": "total_branch",
+          "calculated": 3,
+          "published": 3,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "source_row": 15,
+          "metric": "total_main",
+          "calculated": 14,
+          "published": 14,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "source_row": 15,
+          "metric": "total_branch",
+          "calculated": 16,
+          "published": 16,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "source_row": 16,
+          "metric": "total_main",
+          "calculated": 28,
+          "published": 28,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "source_row": 16,
+          "metric": "total_branch",
+          "calculated": 10,
+          "published": 10,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "source_row": 17,
+          "metric": "total_main",
+          "calculated": 8,
+          "published": 8,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "source_row": 17,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "source_row": 18,
+          "metric": "total_main",
+          "calculated": 4,
+          "published": 4,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "source_row": 18,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "source_row": 19,
+          "metric": "total_main",
+          "calculated": 21,
+          "published": 21,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "source_row": 19,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "source_row": 20,
+          "metric": "total_main",
+          "calculated": 3,
+          "published": 3,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "source_row": 20,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "source_row": 21,
+          "metric": "total_main",
+          "calculated": 14,
+          "published": 14,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "source_row": 21,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "source_row": 22,
+          "metric": "total_main",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "source_row": 22,
+          "metric": "total_branch",
+          "calculated": 2,
+          "published": 2,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "source_row": 23,
+          "metric": "total_main",
+          "calculated": 19,
+          "published": 19,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "source_row": 23,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "source_row": 24,
+          "metric": "total_main",
+          "calculated": 27,
+          "published": 27,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "source_row": 24,
+          "metric": "total_branch",
+          "calculated": 3,
+          "published": 3,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "source_row": 25,
+          "metric": "total_main",
+          "calculated": 6,
+          "published": 6,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "source_row": 25,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "source_row": 26,
+          "metric": "total_main",
+          "calculated": 364,
+          "published": 364,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "source_row": 26,
+          "metric": "total_branch",
+          "calculated": 179,
+          "published": 179,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        }
+      ],
+      "source_discrepancies": [],
+      "license_status": "not_confirmed",
+      "redistribution_scope": "derived_statistical_facts_with_attribution_only; original_PDF_and_images_private",
+      "visual_review": "full_page_PDFium_render_headers_all_row_labels_and_source_note_checked_by_assistant",
+      "independent_review": "pending_root_review"
+    },
+    {
+      "table_id": "ncl-gap-2008-t5-staff-services",
+      "completed": true,
+      "completion_scope": "all_visible_data_cells_in_this_table_only",
+      "data_year": 2008,
+      "edition_roc": 98,
+      "title": "全國各縣市暨鄉鎮圖書館人員及服務統計表（97年）",
+      "source_agency": "國家圖書館",
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565548575038748",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565548284341223/5c7f15c3-14f8-4b82-9c20-e88fc60ec73a.pdf",
+      "source_local_path": "raw/ncl-historical/yearbook-98-public-library.pdf",
+      "source_sha256": "780f72e99bec13702fc706f0e86b7c90cc19b370dc0048e1ef92a261766f4c28",
+      "source_retrieved_at": "2026-10-25T07:23:21.800053+00:00",
+      "pdf_page": 4,
+      "printed_page": 80,
+      "source_table": "5",
+      "data_rows": 29,
+      "numeric_columns": 12,
+      "data_cells": 348,
+      "value_status_counts": {
+        "reported": 348
+      },
+      "source_row_names": [
+        "臺北市",
+        "高雄市",
+        "臺中市",
+        "臺中縣",
+        "臺北縣",
+        "臺東縣",
+        "臺南市",
+        "臺南縣",
+        "宜蘭縣",
+        "花蓮縣",
+        "金門縣",
+        "南投縣",
+        "屏東縣",
+        "苗栗縣",
+        "桃園縣",
+        "高雄縣",
+        "基隆市",
+        "連江縣",
+        "雲林縣",
+        "新竹市",
+        "新竹縣",
+        "嘉義市",
+        "嘉義縣",
+        "彰化縣",
+        "澎湖縣",
+        "國立中央圖書館臺灣分館",
+        "國立臺中圖書館",
+        "臺灣省政府圖書館",
+        "總計"
+      ],
+      "column_paths": [
+        "人員／專業人員",
+        "人員／行政人員",
+        "人員／技術人員",
+        "人員／臨時人員",
+        "人員／約聘僱人員",
+        "人員／志工",
+        "人員／工讀生",
+        "人員／其他",
+        "人員／合計",
+        "圖書借閱／人次",
+        "推廣活動／場次",
+        "推廣活動／人次"
+      ],
+      "column_boundaries": [
+        118.92,
+        144.27,
+        168.24,
+        191.46,
+        215.27,
+        242.77,
+        269.45,
+        296.35,
+        323.73,
+        351.64,
+        396.39,
+        440.76,
+        481.89
+      ],
+      "source_note": "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：98年7月15日。",
+      "omitted_columns_in_source": [],
+      "validation_checks": [
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "professional_staff",
+          "calculated": 469,
+          "published": 469,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "administrative_staff",
+          "calculated": 665,
+          "published": 665,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "technical_staff",
+          "calculated": 63,
+          "published": 63,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "temporary_staff",
+          "calculated": 1479,
+          "published": 1479,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "contract_staff",
+          "calculated": 339,
+          "published": 339,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "volunteers",
+          "calculated": 8645,
+          "published": 8645,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "student_staff",
+          "calculated": 211,
+          "published": 211,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "other_staff",
+          "calculated": 438,
+          "published": 438,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "all_staff",
+          "calculated": 12309,
+          "published": 12309,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "physical_borrower_visits",
+          "calculated": 11946492,
+          "published": 11964492,
+          "passed": false
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "promotion_events",
+          "calculated": 66145,
+          "published": 66145,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "promotion_attendance",
+          "calculated": 7407494,
+          "published": 7407494,
+          "passed": true
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "source_row": 1,
+          "metric": "all_staff",
+          "calculated": 1606,
+          "published": 1606,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "source_row": 2,
+          "metric": "all_staff",
+          "calculated": 452,
+          "published": 452,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "source_row": 3,
+          "metric": "all_staff",
+          "calculated": 535,
+          "published": 535,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "source_row": 4,
+          "metric": "all_staff",
+          "calculated": 1284,
+          "published": 1284,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "source_row": 5,
+          "metric": "all_staff",
+          "calculated": 1578,
+          "published": 1578,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "source_row": 6,
+          "metric": "all_staff",
+          "calculated": 113,
+          "published": 113,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "source_row": 7,
+          "metric": "all_staff",
+          "calculated": 173,
+          "published": 173,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "source_row": 8,
+          "metric": "all_staff",
+          "calculated": 1239,
+          "published": 1239,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "source_row": 9,
+          "metric": "all_staff",
+          "calculated": 163,
+          "published": 163,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "source_row": 10,
+          "metric": "all_staff",
+          "calculated": 284,
+          "published": 284,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "source_row": 11,
+          "metric": "all_staff",
+          "calculated": 47,
+          "published": 47,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "source_row": 12,
+          "metric": "all_staff",
+          "calculated": 307,
+          "published": 307,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "source_row": 13,
+          "metric": "all_staff",
+          "calculated": 361,
+          "published": 361,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "source_row": 14,
+          "metric": "all_staff",
+          "calculated": 414,
+          "published": 414,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "source_row": 15,
+          "metric": "all_staff",
+          "calculated": 549,
+          "published": 549,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "source_row": 16,
+          "metric": "all_staff",
+          "calculated": 376,
+          "published": 376,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "source_row": 17,
+          "metric": "all_staff",
+          "calculated": 178,
+          "published": 178,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "source_row": 18,
+          "metric": "all_staff",
+          "calculated": 9,
+          "published": 9,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "source_row": 19,
+          "metric": "all_staff",
+          "calculated": 279,
+          "published": 279,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "source_row": 20,
+          "metric": "all_staff",
+          "calculated": 241,
+          "published": 241,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "source_row": 21,
+          "metric": "all_staff",
+          "calculated": 90,
+          "published": 90,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "source_row": 22,
+          "metric": "all_staff",
+          "calculated": 47,
+          "published": 47,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "source_row": 23,
+          "metric": "all_staff",
+          "calculated": 206,
+          "published": 206,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "source_row": 24,
+          "metric": "all_staff",
+          "calculated": 898,
+          "published": 898,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "source_row": 25,
+          "metric": "all_staff",
+          "calculated": 74,
+          "published": 74,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "國立中央圖書館臺灣分館",
+          "source_row": 26,
+          "metric": "all_staff",
+          "calculated": 446,
+          "published": 446,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "國立臺中圖書館",
+          "source_row": 27,
+          "metric": "all_staff",
+          "calculated": 278,
+          "published": 278,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺灣省政府圖書館",
+          "source_row": 28,
+          "metric": "all_staff",
+          "calculated": 82,
+          "published": 82,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "source_row": 29,
+          "metric": "all_staff",
+          "calculated": 12309,
+          "published": 12309,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        }
+      ],
+      "source_discrepancies": [
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "physical_borrower_visits",
+          "calculated": 11946492,
+          "published": 11964492,
+          "passed": false
+        }
+      ],
+      "license_status": "not_confirmed",
+      "redistribution_scope": "derived_statistical_facts_with_attribution_only; original_PDF_and_images_private",
+      "visual_review": "full_page_PDFium_render_headers_all_row_labels_and_source_note_checked_by_assistant",
+      "independent_review": "pending_root_review"
+    },
+    {
+      "table_id": "ncl-gap-2009-t1-counts",
+      "completed": true,
+      "completion_scope": "all_visible_data_cells_in_this_table_only",
+      "data_year": 2009,
+      "edition_roc": 99,
+      "title": "全國公立公共圖書館統計表（98年）",
+      "source_agency": "國家圖書館",
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565491338132165",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565512225393695/6d53fb99-39c2-4f24-8e27-8bee15671115.pdf",
+      "source_local_path": "raw/ncl-historical/yearbook-99-public-library.pdf",
+      "source_sha256": "a0b93a4c5f78e6f57e39a5605c3ff78c6e046f513b274df6652a363b67cfb52b",
+      "source_retrieved_at": "2026-10-25T07:21:09.029542+00:00",
+      "pdf_page": 2,
+      "printed_page": 74,
+      "source_table": "1",
+      "data_rows": 26,
+      "numeric_columns": 10,
+      "data_cells": 260,
+      "value_status_counts": {
+        "blank": 101,
+        "reported": 159
+      },
+      "source_row_names": [
+        "臺北市",
+        "高雄市",
+        "臺中市",
+        "臺中縣",
+        "臺北縣",
+        "臺東縣",
+        "臺南市",
+        "臺南縣",
+        "宜蘭縣",
+        "花蓮縣",
+        "金門縣",
+        "南投縣",
+        "屏東縣",
+        "苗栗縣",
+        "桃園縣",
+        "高雄縣",
+        "基隆市",
+        "連江縣",
+        "雲林縣",
+        "新竹市",
+        "新竹縣",
+        "嘉義市",
+        "嘉義縣",
+        "彰化縣",
+        "澎湖縣",
+        "總計"
+      ],
+      "column_paths": [
+        "國立圖書館／總館",
+        "直轄市圖書館／總館",
+        "直轄市圖書館／分館",
+        "縣市文化局圖書館／總館",
+        "縣市文化局圖書館／分館",
+        "鄉鎮市區圖書館／總館",
+        "鄉鎮市區圖書館／分館",
+        "其他／省政府圖書館",
+        "合計／總館",
+        "合計／分館"
+      ],
+      "column_boundaries": [
+        100.63,
+        153.07,
+        184.98,
+        217.56,
+        258.94,
+        299.06,
+        335.91,
+        370.35,
+        434.41,
+        461.41,
+        490.394
+      ],
+      "source_note": "資料來源：國家圖書館。「國家圖書館2009至2012中程發展策略計畫」。臺北市：該館，民98.4。",
+      "omitted_columns_in_source": [
+        "國立圖書館／分館：原表未刊此欄，不能補建為0或從合計倒推官方值"
+      ],
+      "validation_checks": [
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "national_main",
+          "calculated": 2,
+          "published": 2,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "municipal_main",
+          "calculated": 3,
+          "published": 3,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "municipal_branch",
+          "calculated": 56,
+          "published": 56,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "county_main",
+          "calculated": 23,
+          "published": 23,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "county_branch",
+          "calculated": 15,
+          "published": 15,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "township_main",
+          "calculated": 335,
+          "published": 335,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "township_branch",
+          "calculated": 105,
+          "published": 105,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "other_provincial",
+          "calculated": 1,
+          "published": 1,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "total_main",
+          "calculated": 364,
+          "published": 364,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "total_branch",
+          "calculated": 177,
+          "published": 177,
+          "passed": true
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "source_row": 1,
+          "metric": "total_main",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "source_row": 1,
+          "metric": "total_branch",
+          "calculated": 41,
+          "published": 41,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "source_row": 2,
+          "metric": "total_main",
+          "calculated": 2,
+          "published": 2,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "source_row": 2,
+          "metric": "total_branch",
+          "calculated": 15,
+          "published": 15,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "source_row": 3,
+          "metric": "total_main",
+          "calculated": 13,
+          "published": 13,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "source_row": 3,
+          "metric": "total_branch",
+          "calculated": 3,
+          "published": 4,
+          "passed": false,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "source_row": 4,
+          "metric": "total_main",
+          "calculated": 22,
+          "published": 22,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "source_row": 4,
+          "metric": "total_branch",
+          "calculated": 8,
+          "published": 8,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "source_row": 5,
+          "metric": "total_main",
+          "calculated": 32,
+          "published": 32,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "source_row": 5,
+          "metric": "total_branch",
+          "calculated": 51,
+          "published": 51,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "source_row": 6,
+          "metric": "total_main",
+          "calculated": 16,
+          "published": 16,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "source_row": 6,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "source_row": 7,
+          "metric": "total_main",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "source_row": 7,
+          "metric": "total_branch",
+          "calculated": 6,
+          "published": 6,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "source_row": 8,
+          "metric": "total_main",
+          "calculated": 32,
+          "published": 32,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "source_row": 8,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "source_row": 9,
+          "metric": "total_main",
+          "calculated": 13,
+          "published": 13,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "source_row": 9,
+          "metric": "total_branch",
+          "calculated": 5,
+          "published": 5,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "source_row": 10,
+          "metric": "total_main",
+          "calculated": 14,
+          "published": 14,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "source_row": 10,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "source_row": 11,
+          "metric": "total_main",
+          "calculated": 5,
+          "published": 5,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "source_row": 11,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "source_row": 12,
+          "metric": "total_main",
+          "calculated": 15,
+          "published": 15,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "source_row": 12,
+          "metric": "total_branch",
+          "calculated": 2,
+          "published": 2,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "source_row": 13,
+          "metric": "total_main",
+          "calculated": 34,
+          "published": 34,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "source_row": 13,
+          "metric": "total_branch",
+          "calculated": 5,
+          "published": 5,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "source_row": 14,
+          "metric": "total_main",
+          "calculated": 19,
+          "published": 19,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "source_row": 14,
+          "metric": "total_branch",
+          "calculated": 3,
+          "published": 3,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "source_row": 15,
+          "metric": "total_main",
+          "calculated": 14,
+          "published": 14,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "source_row": 15,
+          "metric": "total_branch",
+          "calculated": 16,
+          "published": 16,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "source_row": 16,
+          "metric": "total_main",
+          "calculated": 28,
+          "published": 28,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "source_row": 16,
+          "metric": "total_branch",
+          "calculated": 10,
+          "published": 10,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "source_row": 17,
+          "metric": "total_main",
+          "calculated": 8,
+          "published": 8,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "source_row": 17,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "source_row": 18,
+          "metric": "total_main",
+          "calculated": 4,
+          "published": 4,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "source_row": 18,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "source_row": 19,
+          "metric": "total_main",
+          "calculated": 21,
+          "published": 21,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "source_row": 19,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "source_row": 20,
+          "metric": "total_main",
+          "calculated": 3,
+          "published": 3,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "source_row": 20,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "source_row": 21,
+          "metric": "total_main",
+          "calculated": 14,
+          "published": 14,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "source_row": 21,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "source_row": 22,
+          "metric": "total_main",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "source_row": 22,
+          "metric": "total_branch",
+          "calculated": 2,
+          "published": 2,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "source_row": 23,
+          "metric": "total_main",
+          "calculated": 19,
+          "published": 19,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "source_row": 23,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "source_row": 24,
+          "metric": "total_main",
+          "calculated": 27,
+          "published": 27,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "source_row": 24,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "source_row": 25,
+          "metric": "total_main",
+          "calculated": 6,
+          "published": 6,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "source_row": 25,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "source_row": 26,
+          "metric": "total_main",
+          "calculated": 364,
+          "published": 364,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "source_row": 26,
+          "metric": "total_branch",
+          "calculated": 176,
+          "published": 177,
+          "passed": false,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        }
+      ],
+      "source_discrepancies": [
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "source_row": 3,
+          "metric": "total_branch",
+          "calculated": 3,
+          "published": 4,
+          "passed": false,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "source_row": 26,
+          "metric": "total_branch",
+          "calculated": 176,
+          "published": 177,
+          "passed": false,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        }
+      ],
+      "license_status": "not_confirmed",
+      "redistribution_scope": "derived_statistical_facts_with_attribution_only; original_PDF_and_images_private",
+      "visual_review": "full_page_PDFium_render_headers_all_row_labels_and_source_note_checked_by_assistant",
+      "independent_review": "pending_root_review"
+    },
+    {
+      "table_id": "ncl-gap-2010-t1-counts",
+      "completed": true,
+      "completion_scope": "all_visible_data_cells_in_this_table_only",
+      "data_year": 2010,
+      "edition_roc": 100,
+      "title": "全國公立公共圖書館統計表（99年）",
+      "source_agency": "國家圖書館",
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565466726779537",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565464178586012/3c355713-0489-4bdd-8c00-8431e1e9f5da.pdf",
+      "source_local_path": "raw/ncl-historical/yearbook-100-public-library.pdf",
+      "source_sha256": "e2117dfa3bd89e8b4727542c360d836046915d798c04517a6c0a2ac3e5cb4ba8",
+      "source_retrieved_at": "2026-10-25T07:20:56.005202+00:00",
+      "pdf_page": 2,
+      "printed_page": 34,
+      "source_table": "1",
+      "data_rows": 26,
+      "numeric_columns": 11,
+      "data_cells": 286,
+      "value_status_counts": {
+        "blank": 125,
+        "reported": 161
+      },
+      "source_row_names": [
+        "臺北市",
+        "高雄市",
+        "臺中市",
+        "臺中縣",
+        "臺北縣",
+        "臺東縣",
+        "臺南市",
+        "臺南縣",
+        "宜蘭縣",
+        "花蓮縣",
+        "金門縣",
+        "南投縣",
+        "屏東縣",
+        "苗栗縣",
+        "桃園縣",
+        "高雄縣",
+        "基隆市",
+        "連江縣",
+        "雲林縣",
+        "新竹市",
+        "新竹縣",
+        "嘉義市",
+        "嘉義縣",
+        "彰化縣",
+        "澎湖縣",
+        "總計"
+      ],
+      "column_paths": [
+        "國立圖書館／總館",
+        "國立圖書館／分館",
+        "直轄市圖書館／總館",
+        "直轄市圖書館／分館",
+        "縣市文化局圖書館／總館",
+        "縣市文化局圖書館／分館",
+        "鄉鎮市區圖書館／總館",
+        "鄉鎮市區圖書館／分館",
+        "其他／省政府圖書館",
+        "合計／總館",
+        "合計／分館"
+      ],
+      "column_boundaries": [
+        92.18,
+        119.11,
+        144.62,
+        176.54,
+        209.11,
+        250.5,
+        290.61,
+        327.46,
+        361.9,
+        425.96,
+        452.96,
+        481.878
+      ],
+      "source_note": "資料來源：公共圖書館統計系統。上網日期：100年5月15日，http://publibstat.lib.nctu.edu.tw/stat/showStat.aspx/。",
+      "omitted_columns_in_source": [],
+      "validation_checks": [
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "national_main",
+          "calculated": 2,
+          "published": 2,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "national_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "municipal_main",
+          "calculated": 3,
+          "published": 3,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "municipal_branch",
+          "calculated": 61,
+          "published": 61,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "county_main",
+          "calculated": 23,
+          "published": 23,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "county_branch",
+          "calculated": 15,
+          "published": 15,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "township_main",
+          "calculated": 335,
+          "published": 335,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "township_branch",
+          "calculated": 108,
+          "published": 108,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "other_provincial",
+          "calculated": 1,
+          "published": 1,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "total_main",
+          "calculated": 364,
+          "published": 364,
+          "passed": true
+        },
+        {
+          "check": "observed_entities_sum_to_national",
+          "metric": "total_branch",
+          "calculated": 185,
+          "published": 185,
+          "passed": true
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "source_row": 1,
+          "metric": "total_main",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "source_row": 1,
+          "metric": "total_branch",
+          "calculated": 42,
+          "published": 42,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "source_row": 2,
+          "metric": "total_main",
+          "calculated": 2,
+          "published": 2,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "source_row": 2,
+          "metric": "total_branch",
+          "calculated": 19,
+          "published": 19,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "source_row": 3,
+          "metric": "total_main",
+          "calculated": 13,
+          "published": 13,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "source_row": 3,
+          "metric": "total_branch",
+          "calculated": 4,
+          "published": 4,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "source_row": 4,
+          "metric": "total_main",
+          "calculated": 22,
+          "published": 22,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "source_row": 4,
+          "metric": "total_branch",
+          "calculated": 8,
+          "published": 8,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "source_row": 5,
+          "metric": "total_main",
+          "calculated": 32,
+          "published": 32,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "source_row": 5,
+          "metric": "total_branch",
+          "calculated": 54,
+          "published": 54,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "source_row": 6,
+          "metric": "total_main",
+          "calculated": 16,
+          "published": 16,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "source_row": 6,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "source_row": 7,
+          "metric": "total_main",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "source_row": 7,
+          "metric": "total_branch",
+          "calculated": 6,
+          "published": 6,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "source_row": 8,
+          "metric": "total_main",
+          "calculated": 32,
+          "published": 32,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "source_row": 8,
+          "metric": "total_branch",
+          "calculated": 2,
+          "published": 2,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "source_row": 9,
+          "metric": "total_main",
+          "calculated": 13,
+          "published": 13,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "source_row": 9,
+          "metric": "total_branch",
+          "calculated": 5,
+          "published": 5,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "source_row": 10,
+          "metric": "total_main",
+          "calculated": 14,
+          "published": 14,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "source_row": 10,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "source_row": 11,
+          "metric": "total_main",
+          "calculated": 5,
+          "published": 5,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "source_row": 11,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "source_row": 12,
+          "metric": "total_main",
+          "calculated": 15,
+          "published": 15,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "source_row": 12,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "source_row": 13,
+          "metric": "total_main",
+          "calculated": 34,
+          "published": 34,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "source_row": 13,
+          "metric": "total_branch",
+          "calculated": 4,
+          "published": 4,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "source_row": 14,
+          "metric": "total_main",
+          "calculated": 19,
+          "published": 19,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "source_row": 14,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "source_row": 15,
+          "metric": "total_main",
+          "calculated": 14,
+          "published": 14,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "source_row": 15,
+          "metric": "total_branch",
+          "calculated": 16,
+          "published": 16,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "source_row": 16,
+          "metric": "total_main",
+          "calculated": 28,
+          "published": 28,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "source_row": 16,
+          "metric": "total_branch",
+          "calculated": 11,
+          "published": 11,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "source_row": 17,
+          "metric": "total_main",
+          "calculated": 8,
+          "published": 8,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "source_row": 17,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "source_row": 18,
+          "metric": "total_main",
+          "calculated": 4,
+          "published": 4,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "source_row": 18,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "source_row": 19,
+          "metric": "total_main",
+          "calculated": 21,
+          "published": 21,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "source_row": 19,
+          "metric": "total_branch",
+          "calculated": 3,
+          "published": 3,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "source_row": 20,
+          "metric": "total_main",
+          "calculated": 3,
+          "published": 3,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "source_row": 20,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "source_row": 21,
+          "metric": "total_main",
+          "calculated": 14,
+          "published": 14,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "source_row": 21,
+          "metric": "total_branch",
+          "calculated": 0,
+          "published": 0,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "source_row": 22,
+          "metric": "total_main",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "source_row": 22,
+          "metric": "total_branch",
+          "calculated": 2,
+          "published": 2,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "source_row": 23,
+          "metric": "total_main",
+          "calculated": 19,
+          "published": 19,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "source_row": 23,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "source_row": 24,
+          "metric": "total_main",
+          "calculated": 27,
+          "published": 27,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "source_row": 24,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "source_row": 25,
+          "metric": "total_main",
+          "calculated": 6,
+          "published": 6,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "source_row": 25,
+          "metric": "total_branch",
+          "calculated": 1,
+          "published": 1,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "source_row": 26,
+          "metric": "total_main",
+          "calculated": 364,
+          "published": 364,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "source_row": 26,
+          "metric": "total_branch",
+          "calculated": 185,
+          "published": 185,
+          "passed": true,
+          "blank_handling": "only_reported_numeric_cells_summed; blanks_remain_null"
+        }
+      ],
+      "source_discrepancies": [],
+      "license_status": "not_confirmed",
+      "redistribution_scope": "derived_statistical_facts_with_attribution_only; original_PDF_and_images_private",
+      "visual_review": "full_page_PDFium_render_headers_all_row_labels_and_source_note_checked_by_assistant",
+      "independent_review": "pending_root_review"
+    }
+  ],
+  "not_modified": [
+    "derived/ncl_historical_long.csv",
+    "derived/ncl_historical_rows.jsonl",
+    "scripts/fetch_ncl_historical.py"
+  ]
+}

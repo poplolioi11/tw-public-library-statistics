@@ -2,7 +2,7 @@
 
 > 整理官方已公開、可驗證來源的公共圖書館統計事實與明確開放資料，支援公眾理解和研究重現。現有官方跨年圖表與名詞字典已存在；本專案不宣稱首創。
 
-版本 0.1.0；建置日 2026-10-25。公開版本；完整度以 COVERAGE.md 為準。
+版本 0.2.0；建置日 2026-10-25。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.2.0。
 
 ## 正式入口
 
@@ -30,9 +30,9 @@
 
 只用 data/combined/ 的三種觀測檔分析；data/observations.*、component_records 與 derived/ 是組件或中間結果，可能含來源重複，不得再併入。
 
-19,975 筆是觀測／來源版本紀錄，含188個來源明示缺值格，不是19,975間館。六族群：國資圖公開全國圖表2011–2025 855筆；明確OGDL的2023資源2,236筆（86數值欄×26地理／口徑列）；NCL2008–2010所列統計表1,269筆；DGBAS1991–2011參照年、3出版版本220筆；DGBAS縣市公共館數1998–2025共644格；地方新竹與臺中14,751筆。所列來源全量，不代表所有縣市、所有年度、每間館已完整；缺口不是無資料。
+目前 24,548 筆來源觀測紀錄，含 200 格明示缺值、875 格原印留白及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。 國圖已列統計表5,842格；詳COVERAGE及逐表metadata，不宣稱全臺歷年皆完整。
 
-第六族群 source_family=主計總處縣市公共館數，source_id=dgbas-county-library-Z091101a029。644=28年×（22縣市+總計）；1998–2005全部為來源明示缺值「-」184格，2006–2025有數值460格。全包188缺值=原主計歷史表4格+新增184格。不是644個非缺值觀測，不能補零。
+第六族群 source_family=主計總處縣市公共館數，source_id=dgbas-county-library-Z091101a029。644=28年×（22縣市+總計）；1998–2005全部為來源明示缺值「-」184格，2006–2025有數值460格。該族群184明示缺值須與其他來源的缺值／留白分開。不是644個非缺值觀測，不能補零。
 
 該系列採官方「改制後縣市別」，2006–2010也已按官方重編，不是自行合併舊縣市。現行定義含國家圖書館、NLPI、NTL，與國資圖公共館數母體不同，不可直接互補或串成同口徑序列。年度參照不表示年底時點已確認，讀 geographic_scope、geography_vintage、population_scope、national_libraries_scope、temporal_kind。
 
@@ -40,7 +40,7 @@
 
 不可整表加總；全國／縣市／國立館／含或不含國立館列會重疊，歷史出版版本也可能重疊。月值不能冒充年度值；存量不跨月份加總，比率不跨地區加總。人次不是獨立人數，館藏地類別不是實體館數。
 
-value=null／not_available_in_source 是缺值，不補零。來源回傳0不保證真零，須讀 zero_interpretation。小數 value 可能是字串，SQLite value 為TEXT；未確認解析規則前不強制轉型或加總。原表不一致保留原值，讀 quality_flags 與 notes。
+value=null 要看value_status；source_blank是原印留白，not_available_in_source是明示缺值，均不補零。來源回傳0不保證真零，須讀 zero_interpretation。小數 value 可能是字串，SQLite value 為TEXT；未確認解析規則前不強制轉型或加總。原表不一致保留原值，讀 quality_flags 與 notes。
 
 每個引用保留 observation_id、source_id、source_url、source_locator、source_sha256、資料期間與版本。source_snapshot_path 可能是未隨公開包提供的研究證據路徑，請讀 snapshot_distribution；NCL PDF及網頁原始HTML／JS不再散布。
 

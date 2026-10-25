@@ -12,6 +12,7 @@ from unittest.mock import patch
 
 import adapt_components as adapter
 import fetch_segis_history as county_fetch
+import verify_release as verifier
 
 
 class ComponentTests(unittest.TestCase):
@@ -132,6 +133,94 @@ class ComponentTests(unittest.TestCase):
         self.assertEqual(result["raw_value"], "…")
         self.assertEqual(result["value_status"], "not_available_in_source")
         self.assertIsNone(result["zero_interpretation"])
+
+    def additional_ncl(self, raw="", value="", status="blank", temporal="stock_reference_date_not_explicit_in_table"):
+        return {"data_year": "2008", "source_id": "ncl-gap-fixture", "metric_id": "national_main",
+                "entity_raw": "臺北市", "entity_kind": "county", "metric_raw": "國立圖書館／總館",
+                "source_column_path": "國立圖書館／總館", "value_raw": raw, "value": value,
+                "value_status": status, "unit": "所", "unit_raw": "", "unit_basis": "原表未印單位，依上下文推定館數",
+                "temporal_kind": temporal, "source_download_url": "https://example.gov.tw/a.pdf",
+                "source_pdf_page": "2", "source_printed_page": "78", "source_table": "3",
+                "source_row": "1", "source_column": "2", "source_url": "https://example.gov.tw/a",
+                "source_locator": "PDF page 2; table 3; data row 1; physical column 2",
+                "source_sha256": self.sha, "source_local_path": "raw/fixture.json", "source_retrieved_at": "2026-10-25",
+                "extraction_status": "fixture", "institutional_level": "國立", "aggregation_role": "component",
+                "source_cell_bbox": "[1,2,3,4]", "national_libraries_scope": "included_in_geographic_cross_tab"}
+
+    def test_additional_ncl_blank_zero_and_uncertain_stock_date_stay_distinct(self):
+        blank = self.additional_ncl()
+        zero = self.additional_ncl("0", "0", "reported")
+        rows = adapter.adapt_additional_ncl_rows([blank, zero])
+        self.assertEqual((rows[0]["value"], rows[0]["value_status"], rows[0]["raw_value"]), (None, "source_blank", ""))
+        self.assertIsNone(rows[0]["zero_interpretation"])
+        self.assertEqual((rows[1]["value"], rows[1]["value_status"]), (0, "reported"))
+        self.assertTrue(rows[1]["zero_interpretation"])
+        self.assertTrue(all(row["period_start"] is None and row["period_end"] is None for row in rows))
+
+    def test_additional_ncl_preserves_bbox_levels_roles_and_source_version(self):
+        source = self.additional_ncl("123", "123", "reported", "flow_calendar_year")
+        source["aggregation_role"] = "published_total"
+        row = adapter.adapt_additional_ncl_rows([source])[0]
+        self.assertEqual(row["source_cell_bbox"], source["source_cell_bbox"])
+        self.assertEqual(row["institutional_level"], "國立")
+        self.assertEqual(row["aggregation_role"], "published_total")
+        self.assertEqual(row["source_version_id"], source["source_id"] + "@sha256:" + self.sha)
+        self.assertEqual((row["period_start"], row["period_end"]), ("2008-01-01", "2008-12-31"))
+        self.assertEqual(row.get("unit_basis"), source["unit_basis"])
+
+    def test_additional_ncl_marker_cannot_erase_numeric_raw_or_normalized_value(self):
+        for source in [self.additional_ncl("123", "", "missing"),
+                       self.additional_ncl("-", "123", "source_marker"),
+                       self.additional_ncl("", "0", "blank")]:
+            with self.subTest(source=source["value_status"]), self.assertRaises(ValueError):
+                adapter.adapt_additional_ncl_rows([source])
+        row = adapter.adapt_additional_ncl_rows([self.additional_ncl("…", "", "missing")])[0]
+        self.assertEqual((row["value"], row["value_status"], row["raw_value"]), (None, "not_available_in_source", "…"))
+
+    def test_independent_ncl_oracle_rejects_inconsistent_blank_and_numeric_states(self):
+        for source in [self.additional_ncl("123", "", "missing"),
+                       self.additional_ncl("-", "1", "missing"),
+                       self.additional_ncl("", 0, "blank"),
+                       self.additional_ncl("12", "13", "reported")]:
+            with self.subTest(source=source["value_status"]), self.assertRaises(ValueError):
+                verifier.ncl_source_value(source)
+        self.assertEqual(verifier.ncl_source_value(self.additional_ncl("1,234", "1234", "reported")), (1234, "reported"))
+
+    def test_additional_ncl_period_contract_uses_only_explicit_year_end_stock_basis(self):
+        for kind, reference, expected in [
+                ("flow_calendar_year", "全年借閱量", ("2008-01-01", "2008-12-31")),
+                ("annual_financial", "原表全年購書經費", ("2008-01-01", "2008-12-31")),
+                ("stock_year_end", "同章明示截至2008年12月底", (None, "2008-12-31")),
+                ("stock_reference_date_not_explicit_in_table", "原表年度，具體日期未知", (None, None))]:
+            source = self.additional_ncl("1", "1", "reported", kind)
+            source["time_reference"] = reference
+            with self.subTest(kind=kind):
+                self.assertEqual(verifier.ncl_period_from_source(source), expected)
+                record = adapter.adapt_additional_ncl_rows([source])[0]
+                self.assertEqual((record["period_start"], record["period_end"]), expected)
+        source = self.additional_ncl("1", "1", "reported", "stock_year_end")
+        with self.assertRaisesRegex(ValueError, "no explicit chapter/table timing basis"):
+            verifier.ncl_period_from_source(source)
+
+    def test_additional_ncl_unprinted_unit_description_is_not_a_calculation_unit(self):
+        source = self.additional_ncl("123", "123", "reported")
+        source["unit"] = "原表未列總量單位"
+        source["unit_raw"] = "原表未列總量單位"
+        record = adapter.adapt_additional_ncl_rows([source])[0]
+        self.assertIsNone(record["unit"])
+        self.assertEqual(record["unit_raw"], source["unit_raw"])
+        self.assertIn(source["unit"], record["notes"])
+
+    def test_independent_annotated_number_contract_is_bound_to_the_reviewed_cell(self):
+        source = self.additional_ncl("79a", "79", "reported")
+        source.update(source_id="ncl-yearbook-103-public-library", source_table="31", source_row="1", source_column="3",
+                      source_sha256="32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951", cell_annotation="a")
+        self.assertEqual(verifier.ncl_source_value(source), (79, "reported"))
+        self.assertEqual(adapter.adapt_additional_ncl_rows([source])[0]["source_cell_annotation"], "a")
+        for change in [{"value_raw": "79b"}, {"source_row": "2"}, {"cell_annotation": ""}, {"source_sha256": "b" * 64}]:
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                verifier.ncl_source_value({**source, **change})
+        self.assertEqual(verifier.ncl_source_value(self.additional_ncl("", "", "blank_in_source")), (None, "source_blank"))
 
 
 class CountyRefreshTests(unittest.TestCase):

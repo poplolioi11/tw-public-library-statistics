@@ -21,6 +21,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TOPICS = [f"Bacol{n:05d}" for n in range(282, 292)]
+ADDITIONAL_NCL_FILES = ("ncl_gap_tables_long.csv", "ncl_additional_years_long.csv", "ncl_earlier_years_long.csv")
+REVIEWED_NCL_ANNOTATIONS = {
+    ("ncl-yearbook-103-public-library", "31", "1", "3"): {
+        "raw": "79a", "numeric": "79", "annotation": "a",
+        "source_sha256": "32172e27133b43e11839136cf0a2280050140b8f4633348e3d8c0bf06ddd5951",
+        "evidence": "Independently read PDF page2/printed72/table31 and its footnote a: municipal main libraries79a; Taichung34/Tainan42 follow local definitions.",
+    }
+}
 PDF_SHA = {
     2008: "780f72e99bec13702fc706f0e86b7c90cc19b370dc0048e1ef92a261766f4c28",
     2009: "a0b93a4c5f78e6f57e39a5605c3ff78c6e046f513b274df6652a363b67cfb52b",
@@ -142,6 +150,54 @@ def reference_year(period):
     if re.match(r"(?:19|20)[0-9]{2}-", text):
         return dt.datetime.fromisoformat(text).year
     raise ValueError("Unverified period syntax: " + text)
+
+
+def ncl_source_value(source):
+    """Independent adapter oracle. A missingness label cannot erase raw digits."""
+    raw, normalized = source["value_raw"], source.get("value", "")
+    status = source.get("value_status", "reported")
+    empty_normalized = normalized is None or (isinstance(normalized, str) and normalized.strip() == "")
+    if status in {"blank", "source_blank", "blank_in_source"}:
+        if not isinstance(raw, str) or raw.strip() or not empty_normalized:
+            raise ValueError("NCL blank has a nonempty original/normalized value")
+        return None, "source_blank"
+    if status in {"missing", "source_symbol", "source_marker", "not_available_in_source"}:
+        if not isinstance(raw, str) or raw.strip() not in {"-", "--", "—", "–", "…", "...", "N/A", "NA", "n/a"}:
+            raise ValueError("NCL missing cell has no recognized original marker")
+        if not empty_normalized:
+            raise ValueError("NCL marked cell also has a normalized numeric value")
+        return None, "not_available_in_source"
+    if status == "not_applicable":
+        if raw not in {"N/A", "NA", "n/a", "不適用"} or not empty_normalized:
+            raise ValueError("NCL not-applicable cell has no explicit applicability marker")
+        return None, "not_applicable"
+    value, canonical_status = independent_parse(normalized)
+    if value is None:
+        raise ValueError("NCL reported number does not parse")
+    raw_numeric = re.sub(r"[\s,，]", "", str(raw))
+    annotation = source.get("cell_annotation")
+    if annotation:
+        key = tuple(str(source.get(field, "")) for field in ("source_id", "source_table", "source_row", "source_column"))
+        reviewed = REVIEWED_NCL_ANNOTATIONS.get(key)
+        if not reviewed or raw_numeric != reviewed["raw"] or annotation != reviewed["annotation"] or source.get("source_sha256") != reviewed["source_sha256"]:
+            raise ValueError("NCL numeric annotation has no independently reviewed cell contract")
+        raw_numeric = reviewed["numeric"]
+    parsed_raw, _ = independent_parse(raw_numeric)
+    if parsed_raw is None or Decimal(str(parsed_raw)) != Decimal(str(value)):
+        raise ValueError("NCL normalized number differs from original numeric representation")
+    return value, canonical_status
+
+
+def ncl_period_from_source(source):
+    kind, year = source["temporal_kind"], str(source["data_year"])
+    if kind in {"flow_calendar_year", "annual_financial"}:
+        return year + "-01-01", year + "-12-31"
+    if kind == "stock_year_end":
+        basis = " ".join(str(source.get(field) or "") for field in ("time_reference", "source_note", "source_footnotes_raw", "scope_note"))
+        if not any(marker in basis for marker in ("年底", "年末", "12月底", "12月31日", "December31")):
+            raise ValueError("NCL year-end stock has no explicit chapter/table timing basis")
+        return None, year + "-12-31"
+    return None, None
 
 
 class Verification:
@@ -497,8 +553,13 @@ class Verification:
                    "missing": len(raw_expected - set(seen_cells)), "extra": len(set(seen_cells) - raw_expected)})
         self.check(conflicts == retained_conflicts, "local_conflicting_values_preserved", "all value sets per semantic key")
         self.check(len(canonical_local) == len(local) - dropped, "local_adapter_count", len(canonical_local))
+        legacy_keys = set()
+        for filename in ("ncl_historical_long.csv", "dgbas_historical_long.csv"):
+            with (self.root / "derived" / filename).open(encoding="utf-8-sig", newline="") as stream:
+                legacy_keys.update((row["source_id"], int(row["data_year"]), row["entity_raw"], row["metric_raw"])
+                                   for row in csv.DictReader(stream))
         historical_targets = {(row["source_id"], row["data_year"], row["geography"], row["source_field"]): row
-                              for row in rows if row["source_id"].startswith(("ncl-yearbook-", "dgbas-social-indicators-"))}
+                              for row in rows if (row["source_id"], row["data_year"], row["geography"], row["source_field"]) in legacy_keys}
         expected_historical, source_files = set(), {}
         missing_statuses = 0
         for filename in ("ncl_historical_long.csv", "dgbas_historical_long.csv"):
@@ -533,7 +594,13 @@ class Verification:
         for path, expected in source_files.items():
             self.check(digest((self.root / path).read_bytes()) == expected, "historical_adapter_raw_sha", path)
         county_extra = sum(row["source_id"] == "dgbas-county-library-Z091101a029" for row in rows)
-        self.check(len(rows) == len(canonical_local) + len(expected_historical) + county_extra, "component_total", len(rows))
+        additional_count = 0
+        for name in ADDITIONAL_NCL_FILES:
+            path = self.root / "derived" / name
+            if path.exists():
+                with path.open(encoding="utf-8-sig", newline="") as stream:
+                    additional_count += sum(1 for _ in csv.DictReader(stream))
+        self.check(len(rows) == len(canonical_local) + len(expected_historical) + county_extra + additional_count, "component_total", len(rows))
         self.result["components"] = {
             "status": "pass" if len(self.failures) == before else "fail", "canonical_records_checked": len(rows),
             "local_raw_documents_checked": len(raw_documents), "local_raw_cells_and_derived_rows_checked": len(local),
@@ -541,6 +608,7 @@ class Verification:
             "local_canonical_records_checked": len(canonical_local), "exact_duplicate_rows_excluded": dropped,
             "conflicting_value_groups": sum(len(values) > 1 for values in conflicts.values()),
             "historical_adapter_records_checked": len(expected_historical),
+            "additional_ncl_expected_records": additional_count,
             "explicit_missing_source_markers_retained": missing_statuses,
             "pdf_raw_files_hash_checked": len(source_files),
             "local_verification_level": "All original JSON cells and complete original objects vs derived; every nonduplicate adapter record vs derived and raw.",
@@ -548,6 +616,141 @@ class Verification:
             "inputs": {"components_sha256": digest((self.root / "data/component_records.jsonl").read_bytes()),
                        "local_derived_sha256": digest((self.root / "derived/local_historical_long.csv").read_bytes())},
         }
+
+    def ncl_gap(self, source_only=False):
+        """All four tables vs a baseline fixed before new extraction was read."""
+        before = len(self.failures)
+        baseline_path = self.root / "research/ncl-gap-independent-expectations.json"
+        baseline = jsonfile(baseline_path)
+        with (self.root / "derived/ncl_gap_tables_long.csv").open(encoding="utf-8-sig", newline="") as stream:
+            rows = list(csv.DictReader(stream))
+        expected = {}
+        fixed_source_discrepancies = []
+        for table in baseline["tables"]:
+            path = self.root / "raw/ncl-historical" / table["source_filename"]
+            self.check(digest(path.read_bytes()) == table["source_sha256"], "ncl_gap_pdf_sha", table["table_id"])
+            for cell in table["cells"]:
+                key = (table["source_filename"], table["pdf_page_1based"], cell["data_row"], cell["physical_column_1based"])
+                expected[key] = (table, cell)
+            fixed_source_discrepancies.extend({"table_id": table["table_id"], "check": "column_sum", **item}
+                                              for item in table["printed_total_checks"] if item["difference_printed_minus_sum"])
+            fixed_source_discrepancies.extend({"table_id": table["table_id"], "check": "row_components", **item}
+                                              for item in table["row_total_discrepancies"])
+        seen = set()
+        numeric = blanks = 0
+        aliases = {"town_main": "township_main", "town_branch": "township_branch", "provincial_other": "other_provincial"}
+        for source in rows:
+            key = (Path(source["source_local_path"]).name, int(source["source_pdf_page"]),
+                   int(source["source_row"]), int(source["source_column"]))
+            self.check(key not in seen and key in expected, "ncl_gap_grid_key", key)
+            seen.add(key)
+            if key not in expected:
+                continue
+            table, cell = expected[key]
+            value, status = ncl_source_value(source)
+            self.check(typed_equal(value, cell["expected_numeric_value"]), "ncl_gap_independent_cell", key)
+            self.check(source["entity_raw"] == cell["entity_raw"] and int(source["data_year"]) == table["data_year"],
+                       "ncl_gap_row_and_year", key)
+            self.check((status == "source_blank") == (cell["expected_cell_state"] == "printed_blank"), "ncl_gap_blank_state", key)
+            self.check(source["source_sha256"] == table["source_sha256"]
+                       and int(source["source_printed_page"]) == table["printed_page"]
+                       and source["source_table"] == table["table_number"]
+                       and source["source_locator"] == cell["locator"], "ncl_gap_physical_lineage", key)
+            column = next(c for c in table["columns"] if c["column_id"] == cell["column_id"])
+            if table["kind"] == "library_counts":
+                metric = "ncl_gap_count_table_" + aliases.get(cell["column_id"], cell["column_id"])
+                label = column["heading_group"] + "／" + column["heading_leaf"]
+            else:
+                metric = "ncl_gap_2008_t5_" + cell["column_id"]
+                label = ("人員／" + column["heading_leaf"] if column["heading_group"] == "人員"
+                         else column["heading_leaf"] + "／" + column["unit"])
+            self.check(source["metric_id"] == metric and source["metric_raw"] == label
+                       and source["source_column_path"] == label, "ncl_gap_header_mapping", key)
+            self.check(source["unit"] == column["unit"], "ncl_gap_unit", key)
+            if table["kind"] == "library_counts":
+                self.check(source.get("unit_raw", "") == "" and "未另印" in source.get("unit_basis", ""),
+                           "ncl_gap_inferred_count_unit", key)
+            numeric += value is not None
+            blanks += status == "source_blank"
+        self.check(seen == set(expected) and len(rows) == 1180 and numeric == 830 and blanks == 350,
+                   "ncl_gap_complete_blind_grid", {"rows": len(rows), "numeric": numeric, "blanks": blanks})
+        self.result["ncl_gap_independent"] = {"status": "pass" if len(self.failures) == before else "fail",
+            "tables_fully_compared": 4, "grid_positions_checked": len(rows), "printed_numeric_cells": numeric,
+            "printed_blank_cells": blanks, "baseline_sha256": digest(baseline_path.read_bytes()),
+            "baseline_recorded_before_extractor_outputs_read": baseline["new_extractor_or_derived_outputs_read"] is False,
+            "review_level": "All1180 printed number/blank positions vs independently entered PDFium page-image baseline; not human double-collation.",
+            "expected_source_arithmetic_discrepancies": fixed_source_discrepancies,
+            "canonical_mapping": "separately_checked_by_ncl_additional_components" if not source_only else "not_checked_in_source_only_mode"}
+
+    def ncl_additional_components(self):
+        """Map new NCL extraction records without importing an extraction program."""
+        before = len(self.failures)
+        sources = []
+        files = []
+        for name in ADDITIONAL_NCL_FILES:
+            path = self.root / "derived" / name
+            if path.exists():
+                with path.open(encoding="utf-8-sig", newline="") as stream:
+                    sources.extend(csv.DictReader(stream))
+                files.append(name)
+        source_ids = {source["source_id"] for source in sources}
+        records = [json.loads(line) for line in (self.root / "data/component_records.jsonl").read_text().splitlines() if line]
+        targets = [row for row in records if row["source_id"] in source_ids]
+        mapped = {(row["source_id"], row["source_locator"]): row for row in targets}
+        expected, checked_hashes, statuses = set(), {}, collections.Counter()
+        for source in sources:
+            key = (source["source_id"], source["source_locator"])
+            self.check(key not in expected, "new_ncl_derived_unique", key)
+            expected.add(key)
+            path = source["source_local_path"]
+            if path not in checked_hashes:
+                checked_hashes[path] = digest((self.root / path).read_bytes())
+            self.check(checked_hashes[path] == source["source_sha256"], "new_ncl_source_pdf_sha", key)
+            target = mapped.get(key)
+            self.check(target is not None, "new_ncl_adapter_missing", key)
+            if not target:
+                continue
+            value, status = ncl_source_value(source)
+            statuses[status] += 1
+            self.check(typed_equal(target["value"], value) and target["value_status"] == status
+                       and target["raw_value"] == source["value_raw"], "new_ncl_adapter_value", key)
+            for output, field in [("data_year", "data_year"), ("source_pdf_page", "source_pdf_page")]:
+                self.check(target[output] == int(source[field]), "new_ncl_adapter_integer", {"key": key, "field": output})
+            for output, field in [("geography", "entity_raw"), ("geographic_scope", "entity_kind"),
+                                  ("source_sha256", "source_sha256"), ("source_snapshot_path", "source_local_path"),
+                                  ("institutional_level", "institutional_level"), ("aggregation_role", "aggregation_role"),
+                                  ("national_libraries_scope", "national_libraries_scope"),
+                                  ("unit_raw", "unit_raw"), ("unit_basis", "unit_basis"),
+                                  ("source_cell_annotation", "cell_annotation"),
+                                  ("source_footnotes_raw", "source_footnotes_raw"),
+                                  ("source_footnotes_status", "source_footnotes_status"),
+                                  ("source_original_access_date_raw", "source_original_access_date_raw")]:
+                self.check((target.get(output) or "") == source.get(field, ""), "new_ncl_adapter_field", {"key": key, "field": output})
+            self.check(target["source_version_id"] == source["source_id"] + "@sha256:" + source["source_sha256"],
+                       "new_ncl_source_version", key)
+            self.check(target["source_field"] == (source.get("source_column_path") or source["metric_raw"]), "new_ncl_source_field", key)
+            self.check(target["source_url"] == source["source_download_url"] + "#page=" + source["source_pdf_page"]
+                       and target["source_page_url"] == source["source_url"], "new_ncl_source_url", key)
+            bbox = source.get("source_cell_bbox", "")
+            self.check(target.get("source_cell_bbox") == bbox, "new_ncl_source_bbox_preserved", key)
+            if bbox:
+                coordinates = json.loads(bbox)
+                self.check(isinstance(coordinates, list) and len(coordinates) == 4
+                           and coordinates[0] < coordinates[2] and coordinates[1] < coordinates[3], "new_ncl_bbox_geometry", key)
+            expected_start, expected_end = ncl_period_from_source(source)
+            self.check(target["period_start"] == expected_start and target["period_end"] == expected_end,
+                       "new_ncl_period_not_invented", key)
+            unit = source.get("unit") or None
+            if unit and ("混合" in unit or "件/種/冊" in unit or "原表未列" in unit):
+                unit = None
+            self.check(target["unit"] == unit, "new_ncl_unit", key)
+            if value is None:
+                self.check(target.get("zero_interpretation") is None, "new_ncl_null_not_zero", key)
+        self.check(set(mapped) == expected and len(mapped) == len(targets) == len(sources), "new_ncl_adapter_complete", len(sources))
+        self.result["new_ncl_components"] = {"status": "pass" if len(self.failures) == before else "fail",
+            "derived_files": files, "records_checked": len(sources), "source_pdf_hashes_checked": len(checked_hashes),
+            "value_status_counts": dict(statuses), "gap_review_level": "Complete independent page-image baseline is checked separately.",
+            "other_years_review_level": "Derived-to-canonical fields and raw PDF hashes checked; separately, five original-image tables have 164 independently entered expected sample positions (159 numeric, two blank, three explicit markers), recorded in research/ncl-v02-independent-image-samples.json. This is not a full independent transcription of all additional-year PDF cells."}
 
     def county_table(self):
         before = len(self.failures)
@@ -629,6 +832,16 @@ class Verification:
         }
 
     def report(self, directory):
+        image_review_path = self.root / "research/ncl-v02-independent-image-samples.json"
+        if image_review_path.exists():
+            image_review = jsonfile(image_review_path)
+            self.result["ncl_v02_targeted_image_review"] = {
+                "report_path": "research/ncl-v02-independent-image-samples.json",
+                "readable_report_path": "research/ncl-v02-independent-image-samples.md",
+                "report_sha256": digest(image_review_path.read_bytes()),
+                "status": image_review["status"], "method": image_review["method"],
+                "summary": image_review["summary"], "scope_limit": image_review["scope_limit"],
+            }
         report = {"checked_at": dt.datetime.now(dt.timezone.utc).isoformat(),
                   "status": "pass" if not self.failures else "fail", "assertions": self.checks,
                   "scope": "3091 core source cells exhaustively checked; NCL lineage/number parsing all rows, PDF page-image samples only; component coverage as individually reported.",
@@ -669,6 +882,15 @@ class Verification:
             lines += ["", "## 主計總處縣市館數整包", "",
                       f"Z091101a029 原始 HTML {county['raw_cells_checked']} 格與長表逐格核對，原年份×縣市完整。2006–2025 年 460 格有值；1998–2005 年 184 格官方原示「-」，保留為缺值。",
                       f"包含總計與22縣市，採官方改制後縣市範圍且包含國家圖書館。整併已回查 {county['canonical_records_checked']} 筆，狀態 {county['canonical_mapping_status']}；不與其他館數序列合併。授權證據為主計總處母站廣泛宣告，套用到查詢子站的範圍推論已另標。"]
+        gap = self.result.get("ncl_gap_independent")
+        if gap:
+            lines += ["", "## 四張國圖缺表的完整獨立視讀基準", "",
+                      f"新增四表 {gap['grid_positions_checked']} 個位置，包含 {gap['printed_numeric_cells']} 個印刷數字與 {gap['printed_blank_cells']} 個留白，已對照在讀取抽取結果前建立的 PDFium 視讀基準逐格核對。這350格留白不同於原刊以符號明示的缺值，也不改為零。",
+                      "原表差異保留：2008借閱人次28列加總11,946,492，印刷總計11,964,492；2009未印國立分館欄，臺中市與全國分館合計分別較可見分項多1。未補欄或改原值。"]
+        new_ncl = self.result.get("new_ncl_components")
+        if new_ncl:
+            lines += ["", f"新國圖元件 {new_ncl['records_checked']} 筆逐筆比對 derived 與 canonical 的原值、缺值狀態、館級、加總角色、期間、來源版本、頁列欄及bbox。另對2006、2007、2011、2013年的5張原件表，先依PDFium影像建立164個位置的固定期望值，再比對derived及canonical；159個數值、2個原印留白及3個明示符號均無差異。",
+                      "此獨立影像抽查的母體、表頭、單位、註腳與期間依據詳見[ncl-v02-independent-image-samples.md](ncl-v02-independent-image-samples.md)及其[逐格JSON紀錄](ncl-v02-independent-image-samples.json)。這164個位置為明示範圍的抽查，並非所有新卷全格獨立轉錄；四張缺表的1180位置全量基準則另列於上一節。"]
         lines += ["", "## 解讀界線", "",
                   "公開圖表的回應內沒有年分欄；年分是原始公開年度請求的年分，不能誤稱與 API 一樣有回應內年度驗證。來源回傳 0 仍可能涉及未蒐集或系統補零。",
                   "不同來源家族與全國／縣市／國立館重疊口徑沒有相加；匹配官方原檔不代表官方原資料沒有錯。歷史 PDF 授權未確認的狀態保持不變。",
@@ -702,13 +924,41 @@ def main():
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--reports", type=Path, default=None)
     parser.add_argument("--core-only", action="store_true", help="skip component adapter records")
+    parser.add_argument("--gap-only", action="store_true", help="compare four new NCL tables against the blinded baseline before canonical integration")
     args = parser.parse_args()
     verification = Verification(args.root)
+    if args.gap_only:
+        try:
+            verification.ncl_gap(source_only=True)
+        except Exception as error:
+            verification.check(False, "gap_verification_exception", {"type": type(error).__name__, "error": str(error)})
+        output = args.reports or args.root / "research"
+        output.mkdir(parents=True, exist_ok=True)
+        report = {"checked_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+                  "status": "pass" if not verification.failures else "fail", "assertions": verification.checks,
+                  **verification.result, "failures": verification.failures,
+                  "scope": "Complete1180-position blinded PDF-image baseline vs four new extraction tables; canonical integration not checked in this run."}
+        (output / "ncl-gap-extraction-verification.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
+        gap = verification.result.get("ncl_gap_independent", {})
+        text = "# 國圖四張缺表獨立抽取驗收\n\n" + f"結果：{report['status']}；{verification.checks}個斷言，{len(verification.failures)}項失敗。\n\n"
+        text += "已對照先行盲核基準，逐格檢查完整1180個表格位置（830印刷數字、350留白）的值、行名、欄位、缺值狀態與來源頁列欄。" + ("結果全部一致。" if not verification.failures else "結果存在下列失敗，不能視為全部一致。")
+        text += "這不是抽樣驗收，也不是人類雙校；精確千分位字形不在本基準的逐字保證範圍。此階段尚未驗新canonical整合。\n\n"
+        text += "原表三項算術差異照原值保留：2008借閱人次總計與組成列差18,000；2009臺中市分館與全國分館可見分項各比原印合計少1，不能補造原未印的國立分館欄。\n\n"
+        text += "基準與每項差異詳見JSON。\n"
+        if verification.failures:
+            text += "\n```json\n" + json.dumps(verification.failures, ensure_ascii=False, indent=2) + "\n```\n"
+        (output / "ncl-gap-extraction-verification.md").write_text(text)
+        print(json.dumps({"status": report["status"], "assertions": verification.checks, "failures": len(verification.failures)}))
+        raise SystemExit(0 if not verification.failures else 1)
     try:
         verification.core()
         verification.historical()
         if not args.core_only and (args.root / "data/component_records.jsonl").exists():
             verification.components()
+            if (args.root / "derived/ncl_gap_tables_long.csv").exists():
+                verification.ncl_gap()
+            if any((args.root / "derived" / name).exists() for name in ADDITIONAL_NCL_FILES):
+                verification.ncl_additional_components()
             if (args.root / "derived/dgbas_county_historical_long.csv").exists():
                 verification.county_table()
             if (args.root / "data/combined/observations.jsonl").exists():

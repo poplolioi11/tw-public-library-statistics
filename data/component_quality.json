@@ -1,5 +1,5 @@
 {
-  "records": 16884,
+  "records": 21457,
   "local_duplicate_observations_excluded": 10433,
   "issues": [
     {
@@ -10,6 +10,33 @@
       "issue": "official_internal_inconsistency",
       "reported_value": "27.72",
       "explanation": "來源內部差異：此表原印27.72，正文及總經費／人口計算約22.72；忠實保留原表，不自行改值。"
+    },
+    {
+      "issue": "source_arithmetic_inconsistency",
+      "observation_id": "obs-9f3205307242c8048bc8c8",
+      "source_id": "ncl-gap-2008-t5-staff-services",
+      "source_locator": "PDF page 4; printed page 80; table 5; data row 29; physical column 11",
+      "reported_value": 11964492,
+      "calculated_from_visible_components": 11946492,
+      "inference_not_applied_to_source_value": true
+    },
+    {
+      "issue": "source_arithmetic_inconsistency",
+      "observation_id": "obs-4257cb1f894797e6395e4c",
+      "source_id": "ncl-gap-2009-t1-counts",
+      "source_locator": "PDF page 2; printed page 74; table 1; data row 3; physical column 11",
+      "reported_value": 4,
+      "calculated_from_visible_components": 3,
+      "inference_not_applied_to_source_value": true
+    },
+    {
+      "issue": "source_arithmetic_inconsistency",
+      "observation_id": "obs-8be3b96971e682dc637a83",
+      "source_id": "ncl-gap-2009-t1-counts",
+      "source_locator": "PDF page 2; printed page 74; table 1; data row 26; physical column 11",
+      "reported_value": 177,
+      "calculated_from_visible_components": 176,
+      "inference_not_applied_to_source_value": true
     }
   ]
 }

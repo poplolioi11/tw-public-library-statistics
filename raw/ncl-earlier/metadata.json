@@ -1,0 +1,4660 @@
+{
+  "schema_version": "1.0.0",
+  "checked_at": "2026-10-25",
+  "completed_editions_roc": [
+    97,
+    96
+  ],
+  "source_cells": 1686,
+  "sources": [
+    {
+      "edition_roc": 97,
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565552617956807/03cac020-2d0e-4f88-bfc2-1d600c574d3a.pdf",
+      "source_retrieved_at": "2026-10-25T09:29:54.634302+00:00",
+      "local_path": "research-datasets/tw-public-library-statistics/raw/ncl-earlier/yearbook-97-public-library.pdf",
+      "sha256": "f5b6540bed94f9a15ccb7f5f041c9d0cee416229e6427387e1773c99d17768a5",
+      "bytes": 238107,
+      "headers": {
+        "Content-Type": "application/pdf",
+        "Content-Length": "238107",
+        "ETag": "\"1dcd4e4d70c8e1b\"",
+        "Last-Modified": "Sat, 25 Apr 2026 18:53:44 GMT"
+      },
+      "license_status": "not_confirmed",
+      "redistribution": "original_PDF_private; statistical_facts_with_attribution_only",
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565555623845321",
+      "source_title": "中華民國九十七年圖書館年鑑：公共圖書館",
+      "publication_date": "2008-12-01",
+      "source_publication_edition_roc": 97,
+      "original_reported_access_date_raw": "97年5月30日",
+      "original_reported_access_date": "2008-05-30"
+    },
+    {
+      "edition_roc": 96,
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565565962713346/3ff18dcc-b6dd-4199-b12a-62dab434bc97.pdf",
+      "source_retrieved_at": "2026-10-25T09:29:55.253766+00:00",
+      "local_path": "research-datasets/tw-public-library-statistics/raw/ncl-earlier/yearbook-96-public-library.pdf",
+      "sha256": "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2",
+      "bytes": 180976,
+      "headers": {
+        "Content-Type": "application/pdf",
+        "Content-Length": "180976",
+        "ETag": "\"1dcd4e44affc670\"",
+        "Last-Modified": "Sat, 25 Apr 2026 18:49:49 GMT"
+      },
+      "license_status": "not_confirmed",
+      "redistribution": "original_PDF_private; statistical_facts_with_attribution_only",
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565568411570887",
+      "source_title": "中華民國九十六年圖書館年鑑：公共圖書館",
+      "publication_date": "2007-12-01",
+      "source_publication_edition_roc": 96,
+      "original_reported_access_date_raw": "96年5月31日",
+      "original_reported_access_date": "2007-05-31"
+    }
+  ],
+  "tables": [
+    {
+      "source_id": "ncl-earlier-2007-t1",
+      "completed": true,
+      "completion_scope": "all_printed_data_cells_of_specified_core_table",
+      "source_edition_roc": 97,
+      "data_year": 2007,
+      "pdf_page": 2,
+      "printed_page": 36,
+      "table": "1",
+      "title": "全國公立公共圖書館統計表（96年）",
+      "data_rows": 26,
+      "numeric_columns": 11,
+      "source_cells": 286,
+      "value_status_counts": {
+        "blank": 150,
+        "numeric": 136
+      },
+      "row_labels": [
+        "臺北市",
+        "高雄市",
+        "基隆市",
+        "臺北縣",
+        "桃園縣",
+        "新竹縣",
+        "新竹市",
+        "苗栗縣",
+        "臺中縣",
+        "臺中市",
+        "南投縣",
+        "彰化縣",
+        "雲林縣",
+        "嘉義縣",
+        "嘉義市",
+        "臺南縣",
+        "臺南市",
+        "高雄縣",
+        "屏東縣",
+        "臺東縣",
+        "花蓮縣",
+        "宜蘭縣",
+        "澎湖縣",
+        "金門縣",
+        "連江縣",
+        "總計"
+      ],
+      "column_specifications": [
+        {
+          "key": "national_main",
+          "raw_label": "國立圖書館／總館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "national_branch",
+          "raw_label": "國立圖書館／分館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "municipal_main",
+          "raw_label": "直轄市圖書館／總館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "municipal_branch",
+          "raw_label": "直轄市圖書館／分館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "county_main",
+          "raw_label": "縣市文化局圖書館／總館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "county_branch",
+          "raw_label": "縣市文化局圖書館／分館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "township_main",
+          "raw_label": "鄉鎮市區圖書館／總館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "township_branch",
+          "raw_label": "鄉鎮市區圖書館／分館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "other_provincial",
+          "raw_label": "其他／省政府圖書館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "total_main",
+          "raw_label": "合計／總館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "published_total",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "total_branch",
+          "raw_label": "合計／分館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "原表館數；同章以所稱，表頭未另印單位",
+          "aggregation_role": "published_total",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        }
+      ],
+      "column_boundaries": [
+        92.625,
+        126.125,
+        157.625,
+        189.875,
+        222.375,
+        251.625,
+        280.875,
+        316.375,
+        351.625,
+        420.375,
+        452.875,
+        481.25
+      ],
+      "scope_note": "national_and_provincial_libraries_included_by_location",
+      "scope_caveats": [
+        "館數表與館藏/人力表的國立館歸戶方法不同，原表順序亦不同。"
+      ],
+      "source_footnotes_raw": [
+        "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：97年5月30日。"
+      ],
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565555623845321",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565552617956807/03cac020-2d0e-4f88-bfc2-1d600c574d3a.pdf",
+      "source_sha256": "f5b6540bed94f9a15ccb7f5f041c9d0cee416229e6427387e1773c99d17768a5",
+      "checks": [
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "national_main",
+          "calculated": "2",
+          "published": "2",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 2
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "national_branch",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 3
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "municipal_main",
+          "calculated": "2",
+          "published": "2",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 4
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "municipal_branch",
+          "calculated": "58",
+          "published": "58",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 5
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "county_main",
+          "calculated": "24",
+          "published": "24",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 6
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "county_branch",
+          "calculated": "14",
+          "published": "14",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 7
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "township_main",
+          "calculated": "335",
+          "published": "335",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 8
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "township_branch",
+          "calculated": "110",
+          "published": "110",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 9
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "other_provincial",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 10
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "total_main",
+          "calculated": "364",
+          "published": "364",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 11
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "total_branch",
+          "calculated": "183",
+          "published": "183",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 12
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "metric": "total_main",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "metric": "total_branch",
+          "calculated": "40",
+          "published": "40",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "metric": "total_main",
+          "calculated": "2",
+          "published": "2",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "metric": "total_branch",
+          "calculated": "18",
+          "published": "18",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "metric": "total_main",
+          "calculated": "8",
+          "published": "8",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "metric": "total_branch",
+          "calculated": "0",
+          "published": "0",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "metric": "total_main",
+          "calculated": "32",
+          "published": "32",
+          "passed": true,
+          "source_row": 4,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "metric": "total_branch",
+          "calculated": "48",
+          "published": "48",
+          "passed": true,
+          "source_row": 4,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "metric": "total_main",
+          "calculated": "14",
+          "published": "14",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "metric": "total_branch",
+          "calculated": "15",
+          "published": "15",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "metric": "total_main",
+          "calculated": "14",
+          "published": "14",
+          "passed": true,
+          "source_row": 6,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "metric": "total_branch",
+          "calculated": "0",
+          "published": "0",
+          "passed": true,
+          "source_row": 6,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "metric": "total_main",
+          "calculated": "3",
+          "published": "3",
+          "passed": true,
+          "source_row": 7,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "metric": "total_branch",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 7,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "metric": "total_main",
+          "calculated": "19",
+          "published": "19",
+          "passed": true,
+          "source_row": 8,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "metric": "total_branch",
+          "calculated": "4",
+          "published": "4",
+          "passed": true,
+          "source_row": 8,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "metric": "total_main",
+          "calculated": "22",
+          "published": "22",
+          "passed": true,
+          "source_row": 9,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "metric": "total_branch",
+          "calculated": "6",
+          "published": "6",
+          "passed": true,
+          "source_row": 9,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "metric": "total_main",
+          "calculated": "13",
+          "published": "13",
+          "passed": true,
+          "source_row": 10,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "metric": "total_branch",
+          "calculated": "6",
+          "published": "6",
+          "passed": true,
+          "source_row": 10,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "metric": "total_main",
+          "calculated": "15",
+          "published": "15",
+          "passed": true,
+          "source_row": 11,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "metric": "total_branch",
+          "calculated": "8",
+          "published": "8",
+          "passed": true,
+          "source_row": 11,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "metric": "total_main",
+          "calculated": "27",
+          "published": "27",
+          "passed": true,
+          "source_row": 12,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "metric": "total_branch",
+          "calculated": "3",
+          "published": "3",
+          "passed": true,
+          "source_row": 12,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "metric": "total_main",
+          "calculated": "21",
+          "published": "21",
+          "passed": true,
+          "source_row": 13,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "metric": "total_branch",
+          "calculated": "2",
+          "published": "2",
+          "passed": true,
+          "source_row": 13,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "metric": "total_main",
+          "calculated": "19",
+          "published": "19",
+          "passed": true,
+          "source_row": 14,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "metric": "total_branch",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 14,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "metric": "total_main",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 15,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "metric": "total_branch",
+          "calculated": "2",
+          "published": "2",
+          "passed": true,
+          "source_row": 15,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "metric": "total_main",
+          "calculated": "32",
+          "published": "32",
+          "passed": true,
+          "source_row": 16,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "metric": "total_branch",
+          "calculated": "0",
+          "published": "0",
+          "passed": true,
+          "source_row": 16,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "metric": "total_main",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "metric": "total_branch",
+          "calculated": "6",
+          "published": "6",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "metric": "total_main",
+          "calculated": "28",
+          "published": "28",
+          "passed": true,
+          "source_row": 18,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "metric": "total_branch",
+          "calculated": "10",
+          "published": "10",
+          "passed": true,
+          "source_row": 18,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "metric": "total_main",
+          "calculated": "34",
+          "published": "34",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "metric": "total_branch",
+          "calculated": "4",
+          "published": "4",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "metric": "total_main",
+          "calculated": "16",
+          "published": "16",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "metric": "total_branch",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "metric": "total_main",
+          "calculated": "14",
+          "published": "14",
+          "passed": true,
+          "source_row": 21,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "metric": "total_branch",
+          "calculated": "0",
+          "published": "0",
+          "passed": true,
+          "source_row": 21,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "metric": "total_main",
+          "calculated": "13",
+          "published": "13",
+          "passed": true,
+          "source_row": 22,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "metric": "total_branch",
+          "calculated": "5",
+          "published": "5",
+          "passed": true,
+          "source_row": 22,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "metric": "total_main",
+          "calculated": "6",
+          "published": "6",
+          "passed": true,
+          "source_row": 23,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "metric": "total_branch",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 23,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "metric": "total_main",
+          "calculated": "5",
+          "published": "5",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "metric": "total_branch",
+          "calculated": "0",
+          "published": "0",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "metric": "total_main",
+          "calculated": "4",
+          "published": "4",
+          "passed": true,
+          "source_row": 25,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "metric": "total_branch",
+          "calculated": "2",
+          "published": "2",
+          "passed": true,
+          "source_row": 25,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "metric": "total_main",
+          "calculated": "364",
+          "published": "364",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 11,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "metric": "total_branch",
+          "calculated": "183",
+          "published": "183",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 12,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        }
+      ],
+      "source_discrepancies": [],
+      "independent_review": "pending_root_review"
+    },
+    {
+      "source_id": "ncl-earlier-2007-t2",
+      "completed": true,
+      "completion_scope": "all_printed_data_cells_of_specified_core_table",
+      "source_edition_roc": 97,
+      "data_year": 2007,
+      "pdf_page": 3,
+      "printed_page": 37,
+      "table": "2",
+      "title": "全國各縣市暨鄉鎮圖書館館藏數量及購書經費統計表（96年）",
+      "data_rows": 29,
+      "numeric_columns": 7,
+      "source_cells": 203,
+      "value_status_counts": {
+        "numeric": 191,
+        "blank": 12
+      },
+      "row_labels": [
+        "臺北市",
+        "高雄市",
+        "臺北縣",
+        "宜蘭縣",
+        "桃園縣",
+        "新竹縣",
+        "苗栗縣",
+        "臺中縣",
+        "彰化縣",
+        "南投縣",
+        "雲林縣",
+        "嘉義縣",
+        "臺南縣",
+        "高雄縣",
+        "屏東縣",
+        "臺東縣",
+        "花蓮縣",
+        "澎湖縣",
+        "基隆市",
+        "新竹市",
+        "臺中市",
+        "嘉義市",
+        "臺南市",
+        "金門縣",
+        "連江縣",
+        "國立中央圖書館臺灣分館",
+        "國立臺中圖書館",
+        "臺灣省政府圖書館",
+        "總計"
+      ],
+      "column_specifications": [
+        {
+          "key": "population",
+          "raw_label": "人口數（A）",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "原表人口數；人口時點未另揭示",
+          "aggregation_role": "separate_measure",
+          "temporal_kind": "reference_population_date_not_explicit"
+        },
+        {
+          "key": "holdings_mixed",
+          "raw_label": "館藏總數（冊）（B）",
+          "unit": "冊（件、種混合）",
+          "unit_raw": "冊",
+          "unit_basis": "表頭冊；同章正文含非書及電子資源",
+          "aggregation_role": "separate_measure",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "acquisition_spending",
+          "raw_label": "購書經費（元）（C）",
+          "unit": "新臺幣元",
+          "unit_raw": "元",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_measure",
+          "temporal_kind": "annual_financial"
+        },
+        {
+          "key": "physical_loans",
+          "raw_label": "圖書借閱（冊數）（D）",
+          "unit": "冊次",
+          "unit_raw": "冊數",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        },
+        {
+          "key": "holdings_per_capita",
+          "raw_label": "每人擁有館藏冊數（B/A）",
+          "unit": "冊（件、種混合）／人",
+          "unit_raw": null,
+          "unit_basis": "依原表公式B/A",
+          "aggregation_role": "derived_ratio",
+          "temporal_kind": "derived_ratio"
+        },
+        {
+          "key": "spending_per_capita",
+          "raw_label": "平均每人購書經費（C/A）",
+          "unit": "新臺幣元／人",
+          "unit_raw": null,
+          "unit_basis": "依原表公式C/A",
+          "aggregation_role": "derived_ratio",
+          "temporal_kind": "derived_ratio"
+        },
+        {
+          "key": "loans_per_capita",
+          "raw_label": "平均每人外借冊數（D/A）",
+          "unit": "冊次／人",
+          "unit_raw": null,
+          "unit_basis": "依原表公式D/A",
+          "aggregation_role": "derived_ratio",
+          "temporal_kind": "derived_ratio"
+        }
+      ],
+      "column_boundaries": [
+        134.875,
+        187.375,
+        239.375,
+        297.125,
+        348.875,
+        395.875,
+        441.625,
+        481.75
+      ],
+      "scope_note": "explicit_footnote_excludes_three_national_provincial_institutions_from_counties",
+      "scope_caveats": [
+        "館數表與館藏/人力表的國立館歸戶方法不同，原表順序亦不同。"
+      ],
+      "source_footnotes_raw": [
+        "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：97年5月30日。",
+        "「內政統計資訊服務網」http://www.moi.gov.tw/stat/，上網日期：97年5月30日。",
+        "註：國立中央圖書館臺灣分館、國立臺中圖書館、臺灣省政府圖書館係屬國立及省級，館藏等資料未列入臺北縣、臺中市或南投縣統計。"
+      ],
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565555623845321",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565552617956807/03cac020-2d0e-4f88-bfc2-1d600c574d3a.pdf",
+      "source_sha256": "f5b6540bed94f9a15ccb7f5f041c9d0cee416229e6427387e1773c99d17768a5",
+      "checks": [
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "population",
+          "calculated": "22958360",
+          "published": "22958360",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 2
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "holdings_mixed",
+          "calculated": "28446709",
+          "published": "28446709",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 3
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "acquisition_spending",
+          "calculated": "307872518",
+          "published": "307872518",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 4
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "physical_loans",
+          "calculated": "41697412",
+          "published": "41697412",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺北市",
+          "metric": "holdings_per_capita",
+          "calculated": "2.04",
+          "published": "2.04",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺北市",
+          "metric": "spending_per_capita",
+          "calculated": "30.19",
+          "published": "30.19",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺北市",
+          "metric": "loans_per_capita",
+          "calculated": "2.96",
+          "published": "2.96",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "高雄市",
+          "metric": "holdings_per_capita",
+          "calculated": "1.10",
+          "published": "1.10",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "高雄市",
+          "metric": "spending_per_capita",
+          "calculated": "8.54",
+          "published": "8.54",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "高雄市",
+          "metric": "loans_per_capita",
+          "calculated": "2.29",
+          "published": "2.29",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺北縣",
+          "metric": "holdings_per_capita",
+          "calculated": "0.75",
+          "published": "0.75",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺北縣",
+          "metric": "spending_per_capita",
+          "calculated": "12.56",
+          "published": "12.56",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺北縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.58",
+          "published": "1.58",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "宜蘭縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.66",
+          "published": "1.66",
+          "passed": true,
+          "source_row": 4,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "宜蘭縣",
+          "metric": "spending_per_capita",
+          "calculated": "8.30",
+          "published": "8.30",
+          "passed": true,
+          "source_row": 4,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "宜蘭縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.70",
+          "published": "1.70",
+          "passed": true,
+          "source_row": 4,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "桃園縣",
+          "metric": "holdings_per_capita",
+          "calculated": "0.68",
+          "published": "0.68",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "桃園縣",
+          "metric": "spending_per_capita",
+          "calculated": "13.42",
+          "published": "13.42",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "桃園縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.45",
+          "published": "1.45",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "新竹縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.20",
+          "published": "1.20",
+          "passed": true,
+          "source_row": 6,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "新竹縣",
+          "metric": "spending_per_capita",
+          "calculated": "7.19",
+          "published": "7.19",
+          "passed": true,
+          "source_row": 6,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "新竹縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.59",
+          "published": "1.59",
+          "passed": true,
+          "source_row": 6,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "苗栗縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.36",
+          "published": "1.36",
+          "passed": true,
+          "source_row": 7,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "苗栗縣",
+          "metric": "spending_per_capita",
+          "calculated": "8.18",
+          "published": "8.18",
+          "passed": true,
+          "source_row": 7,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "苗栗縣",
+          "metric": "loans_per_capita",
+          "calculated": "0.90",
+          "published": "0.90",
+          "passed": true,
+          "source_row": 7,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺中縣",
+          "metric": "holdings_per_capita",
+          "calculated": "0.96",
+          "published": "0.96",
+          "passed": true,
+          "source_row": 8,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺中縣",
+          "metric": "spending_per_capita",
+          "calculated": "11.01",
+          "published": "11.01",
+          "passed": true,
+          "source_row": 8,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺中縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.39",
+          "published": "1.39",
+          "passed": true,
+          "source_row": 8,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "彰化縣",
+          "metric": "holdings_per_capita",
+          "calculated": "0.86",
+          "published": "0.86",
+          "passed": true,
+          "source_row": 9,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "彰化縣",
+          "metric": "spending_per_capita",
+          "calculated": "6.65",
+          "published": "6.65",
+          "passed": true,
+          "source_row": 9,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "彰化縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.62",
+          "published": "1.62",
+          "passed": true,
+          "source_row": 9,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "南投縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.50",
+          "published": "1.50",
+          "passed": true,
+          "source_row": 10,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "南投縣",
+          "metric": "spending_per_capita",
+          "calculated": "9.73",
+          "published": "9.73",
+          "passed": true,
+          "source_row": 10,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "南投縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.65",
+          "published": "1.65",
+          "passed": true,
+          "source_row": 10,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "雲林縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.18",
+          "published": "1.18",
+          "passed": true,
+          "source_row": 11,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "雲林縣",
+          "metric": "spending_per_capita",
+          "calculated": "7.82",
+          "published": "7.82",
+          "passed": true,
+          "source_row": 11,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "雲林縣",
+          "metric": "loans_per_capita",
+          "calculated": "0.97",
+          "published": "0.97",
+          "passed": true,
+          "source_row": 11,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "嘉義縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.27",
+          "published": "1.27",
+          "passed": true,
+          "source_row": 12,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "嘉義縣",
+          "metric": "spending_per_capita",
+          "calculated": "9.56",
+          "published": "9.56",
+          "passed": true,
+          "source_row": 12,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "嘉義縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.27",
+          "published": "1.27",
+          "passed": true,
+          "source_row": 12,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺南縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.26",
+          "published": "1.26",
+          "passed": true,
+          "source_row": 13,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺南縣",
+          "metric": "spending_per_capita",
+          "calculated": "7.81",
+          "published": "7.81",
+          "passed": true,
+          "source_row": 13,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺南縣",
+          "metric": "loans_per_capita",
+          "calculated": "2.25",
+          "published": "2.25",
+          "passed": true,
+          "source_row": 13,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "高雄縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.05",
+          "published": "1.05",
+          "passed": true,
+          "source_row": 14,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "高雄縣",
+          "metric": "spending_per_capita",
+          "calculated": "8.44",
+          "published": "8.44",
+          "passed": true,
+          "source_row": 14,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "高雄縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.30",
+          "published": "1.30",
+          "passed": true,
+          "source_row": 14,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "屏東縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.32",
+          "published": "1.32",
+          "passed": true,
+          "source_row": 15,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "屏東縣",
+          "metric": "spending_per_capita",
+          "calculated": "6.67",
+          "published": "6.67",
+          "passed": true,
+          "source_row": 15,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "屏東縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.04",
+          "published": "1.04",
+          "passed": true,
+          "source_row": 15,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺東縣",
+          "metric": "holdings_per_capita",
+          "calculated": "2.26",
+          "published": "2.26",
+          "passed": true,
+          "source_row": 16,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺東縣",
+          "metric": "spending_per_capita",
+          "calculated": "11.48",
+          "published": "11.48",
+          "passed": true,
+          "source_row": 16,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺東縣",
+          "metric": "loans_per_capita",
+          "calculated": "0.74",
+          "published": "0.74",
+          "passed": true,
+          "source_row": 16,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "花蓮縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.75",
+          "published": "1.75",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "花蓮縣",
+          "metric": "spending_per_capita",
+          "calculated": "13.04",
+          "published": "13.04",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "花蓮縣",
+          "metric": "loans_per_capita",
+          "calculated": "0.82",
+          "published": "0.82",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "澎湖縣",
+          "metric": "holdings_per_capita",
+          "calculated": "3.33",
+          "published": "3.33",
+          "passed": true,
+          "source_row": 18,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "澎湖縣",
+          "metric": "spending_per_capita",
+          "calculated": "61.73",
+          "published": "61.73",
+          "passed": true,
+          "source_row": 18,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "澎湖縣",
+          "metric": "loans_per_capita",
+          "calculated": "1.68",
+          "published": "1.68",
+          "passed": true,
+          "source_row": 18,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "基隆市",
+          "metric": "holdings_per_capita",
+          "calculated": "0.70",
+          "published": "0.70",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "基隆市",
+          "metric": "spending_per_capita",
+          "calculated": "6.72",
+          "published": "6.72",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "基隆市",
+          "metric": "loans_per_capita",
+          "calculated": "1.43",
+          "published": "1.43",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "新竹市",
+          "metric": "holdings_per_capita",
+          "calculated": "0.70",
+          "published": "0.70",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "新竹市",
+          "metric": "spending_per_capita",
+          "calculated": "6.79",
+          "published": "6.79",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "新竹市",
+          "metric": "loans_per_capita",
+          "calculated": "1.92",
+          "published": "1.92",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺中市",
+          "metric": "holdings_per_capita",
+          "calculated": "0.60",
+          "published": "0.60",
+          "passed": true,
+          "source_row": 21,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺中市",
+          "metric": "spending_per_capita",
+          "calculated": "6.08",
+          "published": "6.08",
+          "passed": true,
+          "source_row": 21,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺中市",
+          "metric": "loans_per_capita",
+          "calculated": "1.38",
+          "published": "1.38",
+          "passed": true,
+          "source_row": 21,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "嘉義市",
+          "metric": "holdings_per_capita",
+          "calculated": "0.71",
+          "published": "0.71",
+          "passed": true,
+          "source_row": 22,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "嘉義市",
+          "metric": "spending_per_capita",
+          "calculated": "9.01",
+          "published": "9.01",
+          "passed": true,
+          "source_row": 22,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "嘉義市",
+          "metric": "loans_per_capita",
+          "calculated": "1.29",
+          "published": "1.29",
+          "passed": true,
+          "source_row": 22,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺南市",
+          "metric": "holdings_per_capita",
+          "calculated": "0.94",
+          "published": "0.94",
+          "passed": true,
+          "source_row": 23,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺南市",
+          "metric": "spending_per_capita",
+          "calculated": "5.67",
+          "published": "5.67",
+          "passed": true,
+          "source_row": 23,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺南市",
+          "metric": "loans_per_capita",
+          "calculated": "2.31",
+          "published": "2.31",
+          "passed": true,
+          "source_row": 23,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "金門縣",
+          "metric": "holdings_per_capita",
+          "calculated": "2.21",
+          "published": "2.21",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "金門縣",
+          "metric": "spending_per_capita",
+          "calculated": "21.96",
+          "published": "21.96",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "金門縣",
+          "metric": "loans_per_capita",
+          "calculated": "0.95",
+          "published": "0.95",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "連江縣",
+          "metric": "holdings_per_capita",
+          "calculated": "9.80",
+          "published": "9.80",
+          "passed": true,
+          "source_row": 25,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "連江縣",
+          "metric": "spending_per_capita",
+          "calculated": "161.68",
+          "published": "161.68",
+          "passed": true,
+          "source_row": 25,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "連江縣",
+          "metric": "loans_per_capita",
+          "calculated": "4.16",
+          "published": "4.16",
+          "passed": true,
+          "source_row": 25,
+          "source_column": 8
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "總計",
+          "metric": "holdings_per_capita",
+          "calculated": "1.24",
+          "published": "1.24",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "總計",
+          "metric": "spending_per_capita",
+          "calculated": "13.41",
+          "published": "13.41",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 7
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "總計",
+          "metric": "loans_per_capita",
+          "calculated": "1.82",
+          "published": "1.82",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 8
+        }
+      ],
+      "source_discrepancies": [],
+      "independent_review": "pending_root_review"
+    },
+    {
+      "source_id": "ncl-earlier-2007-t3",
+      "completed": true,
+      "completion_scope": "all_printed_data_cells_of_specified_core_table",
+      "source_edition_roc": 97,
+      "data_year": 2007,
+      "pdf_page": 4,
+      "printed_page": 38,
+      "table": "3",
+      "title": "全國各縣市暨鄉鎮圖書館人員及服務統計表（96年）",
+      "data_rows": 29,
+      "numeric_columns": 12,
+      "source_cells": 348,
+      "value_status_counts": {
+        "numeric": 348
+      },
+      "row_labels": [
+        "臺北市",
+        "高雄市",
+        "臺北縣",
+        "宜蘭縣",
+        "桃園縣",
+        "新竹縣",
+        "苗栗縣",
+        "臺中縣",
+        "彰化縣",
+        "南投縣",
+        "雲林縣",
+        "嘉義縣",
+        "臺南縣",
+        "高雄縣",
+        "屏東縣",
+        "臺東縣",
+        "花蓮縣",
+        "澎湖縣",
+        "基隆市",
+        "新竹市",
+        "臺中市",
+        "嘉義市",
+        "臺南市",
+        "金門縣",
+        "連江縣",
+        "國立中央圖書館臺灣分館",
+        "國立臺中圖書館",
+        "臺灣省政府圖書館",
+        "總計"
+      ],
+      "column_specifications": [
+        {
+          "key": "professional_staff",
+          "raw_label": "人員／專業人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "administrative_staff",
+          "raw_label": "人員／行政人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "technical_staff",
+          "raw_label": "人員／技術人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "temporary_staff",
+          "raw_label": "人員／臨時人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "contract_staff",
+          "raw_label": "人員／約聘僱人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "student_staff",
+          "raw_label": "人員／工讀生",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "volunteers",
+          "raw_label": "人員／志工",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "other_staff",
+          "raw_label": "人員／其他",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "all_staff",
+          "raw_label": "人員／合計",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "published_total",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "physical_borrower_visits",
+          "raw_label": "圖書借閱（人次）",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        },
+        {
+          "key": "promotion_events",
+          "raw_label": "推廣活動（場次）",
+          "unit": "場次",
+          "unit_raw": "場次",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        },
+        {
+          "key": "promotion_attendance",
+          "raw_label": "推廣活動（人次）",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        }
+      ],
+      "column_boundaries": [
+        118.375,
+        143.625,
+        167.625,
+        190.875,
+        214.625,
+        242.125,
+        268.875,
+        295.625,
+        323.125,
+        351.125,
+        395.875,
+        440.125,
+        481.25
+      ],
+      "scope_note": "three_national_provincial_institutions_separately_listed",
+      "scope_caveats": [
+        "館數表與館藏/人力表的國立館歸戶方法不同，原表順序亦不同。"
+      ],
+      "source_footnotes_raw": [
+        "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：97年5月30日。"
+      ],
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565555623845321",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565552617956807/03cac020-2d0e-4f88-bfc2-1d600c574d3a.pdf",
+      "source_sha256": "f5b6540bed94f9a15ccb7f5f041c9d0cee416229e6427387e1773c99d17768a5",
+      "checks": [
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "professional_staff",
+          "calculated": "532",
+          "published": "532",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 2
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "administrative_staff",
+          "calculated": "675",
+          "published": "675",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 3
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "technical_staff",
+          "calculated": "76",
+          "published": "76",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 4
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "temporary_staff",
+          "calculated": "1261",
+          "published": "1261",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 5
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "contract_staff",
+          "calculated": "387",
+          "published": "387",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 6
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "student_staff",
+          "calculated": "189",
+          "published": "189",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 7
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "volunteers",
+          "calculated": "8073",
+          "published": "8073",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 8
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "other_staff",
+          "calculated": "331",
+          "published": "331",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 9
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "all_staff",
+          "calculated": "11524",
+          "published": "11524",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 10
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "physical_borrower_visits",
+          "calculated": "11941723",
+          "published": "11941723",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 11
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "promotion_events",
+          "calculated": "65107",
+          "published": "65107",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 12
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "promotion_attendance",
+          "calculated": "5183712",
+          "published": "5183712",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 13
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "metric": "all_staff",
+          "calculated": "1888",
+          "published": "1888",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "metric": "all_staff",
+          "calculated": "409",
+          "published": "409",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "metric": "all_staff",
+          "calculated": "1478",
+          "published": "1478",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "metric": "all_staff",
+          "calculated": "136",
+          "published": "136",
+          "passed": true,
+          "source_row": 4,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "metric": "all_staff",
+          "calculated": "436",
+          "published": "436",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "metric": "all_staff",
+          "calculated": "116",
+          "published": "116",
+          "passed": true,
+          "source_row": 6,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "metric": "all_staff",
+          "calculated": "376",
+          "published": "376",
+          "passed": true,
+          "source_row": 7,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "metric": "all_staff",
+          "calculated": "1180",
+          "published": "1180",
+          "passed": true,
+          "source_row": 8,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "metric": "all_staff",
+          "calculated": "797",
+          "published": "797",
+          "passed": true,
+          "source_row": 9,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "metric": "all_staff",
+          "calculated": "464",
+          "published": "464",
+          "passed": true,
+          "source_row": 10,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "metric": "all_staff",
+          "calculated": "265",
+          "published": "265",
+          "passed": true,
+          "source_row": 11,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "metric": "all_staff",
+          "calculated": "174",
+          "published": "174",
+          "passed": true,
+          "source_row": 12,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "metric": "all_staff",
+          "calculated": "583",
+          "published": "583",
+          "passed": true,
+          "source_row": 13,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "metric": "all_staff",
+          "calculated": "300",
+          "published": "300",
+          "passed": true,
+          "source_row": 14,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "metric": "all_staff",
+          "calculated": "387",
+          "published": "387",
+          "passed": true,
+          "source_row": 15,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "metric": "all_staff",
+          "calculated": "89",
+          "published": "89",
+          "passed": true,
+          "source_row": 16,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "metric": "all_staff",
+          "calculated": "306",
+          "published": "306",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "metric": "all_staff",
+          "calculated": "29",
+          "published": "29",
+          "passed": true,
+          "source_row": 18,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "metric": "all_staff",
+          "calculated": "177",
+          "published": "177",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "metric": "all_staff",
+          "calculated": "241",
+          "published": "241",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "metric": "all_staff",
+          "calculated": "490",
+          "published": "490",
+          "passed": true,
+          "source_row": 21,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "metric": "all_staff",
+          "calculated": "48",
+          "published": "48",
+          "passed": true,
+          "source_row": 22,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "metric": "all_staff",
+          "calculated": "175",
+          "published": "175",
+          "passed": true,
+          "source_row": 23,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "metric": "all_staff",
+          "calculated": "49",
+          "published": "49",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "metric": "all_staff",
+          "calculated": "7",
+          "published": "7",
+          "passed": true,
+          "source_row": 25,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "國立中央圖書館臺灣分館",
+          "metric": "all_staff",
+          "calculated": "542",
+          "published": "542",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "國立臺中圖書館",
+          "metric": "all_staff",
+          "calculated": "311",
+          "published": "311",
+          "passed": true,
+          "source_row": 27,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺灣省政府圖書館",
+          "metric": "all_staff",
+          "calculated": "71",
+          "published": "71",
+          "passed": true,
+          "source_row": 28,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "metric": "all_staff",
+          "calculated": "11524",
+          "published": "11524",
+          "passed": true,
+          "source_row": 29,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        }
+      ],
+      "source_discrepancies": [],
+      "independent_review": "pending_root_review"
+    },
+    {
+      "source_id": "ncl-earlier-2006-t1",
+      "completed": true,
+      "completion_scope": "all_printed_data_cells_of_specified_core_table",
+      "source_edition_roc": 96,
+      "data_year": 2006,
+      "pdf_page": 4,
+      "printed_page": 30,
+      "table": "1",
+      "title": "全國公立公共圖書館統計表（95年）",
+      "data_rows": 26,
+      "numeric_columns": 12,
+      "source_cells": 312,
+      "value_status_counts": {
+        "blank": 191,
+        "numeric": 121
+      },
+      "row_labels": [
+        "臺北市",
+        "高雄市",
+        "基隆市",
+        "臺北縣",
+        "桃園縣",
+        "新竹縣",
+        "新竹市",
+        "苗栗縣",
+        "臺中縣",
+        "臺中市",
+        "南投縣",
+        "彰化縣",
+        "雲林縣",
+        "嘉義縣",
+        "嘉義市",
+        "臺南縣",
+        "臺南市",
+        "高雄縣",
+        "屏東縣",
+        "臺東縣",
+        "花蓮縣",
+        "宜蘭縣",
+        "澎湖縣",
+        "金門縣",
+        "連江縣",
+        "總計"
+      ],
+      "column_specifications": [
+        {
+          "key": "opened_national_main",
+          "raw_label": "已開放／國立／總館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "opened_national_branch_reading",
+          "raw_label": "已開放／國立／分館閱覽室",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "opened_municipal_main",
+          "raw_label": "已開放／直轄市／總館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "opened_municipal_branch_reading",
+          "raw_label": "已開放／直轄市／分館閱覽室",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "opened_county_library",
+          "raw_label": "已開放／縣市文化（局、中心）／圖書館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "opened_county_branch",
+          "raw_label": "已開放／縣市文化（局、中心）／分館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "opened_township_main",
+          "raw_label": "已開放／鄉鎮市區圖書館／總館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "opened_township_branches_reading",
+          "raw_label": "已開放／鄉鎮市區圖書館／分館第二館閱覽室",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "opened_total",
+          "raw_label": "已開放／合計",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "published_total",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "unopened_city_branches",
+          "raw_label": "未開放／省院轄市區分館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "unopened_township_library",
+          "raw_label": "未開放／鄉鎮市圖書館",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        },
+        {
+          "key": "unopened_total",
+          "raw_label": "未開放／合計",
+          "unit": "所",
+          "unit_raw": null,
+          "unit_basis": "館數，原表未另印單位",
+          "aggregation_role": "published_total",
+          "temporal_kind": "stock_reference_date_not_explicit_in_table"
+        }
+      ],
+      "column_boundaries": [
+        92.625,
+        125.125,
+        157.625,
+        190.125,
+        222.375,
+        254.875,
+        281.125,
+        313.625,
+        351.875,
+        381.125,
+        420.625,
+        452.875,
+        481.25
+      ],
+      "scope_note": "national_libraries_included_by_location; opened_and_unopened_separate",
+      "scope_caveats": [
+        "分館閱覽室及第二館等欄與下一卷單純分館標題不同，不直接當同口徑。",
+        "未開放分類包含尚未建館等不同情況，不可把全部數值解釋成既有館停用。"
+      ],
+      "source_footnotes_raw": [
+        "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：96年5月31日。"
+      ],
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565568411570887",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565565962713346/3ff18dcc-b6dd-4199-b12a-62dab434bc97.pdf",
+      "source_sha256": "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2",
+      "checks": [
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "opened_national_main",
+          "calculated": "2",
+          "published": "2",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 2
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "opened_national_branch_reading",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 3
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "opened_municipal_main",
+          "calculated": "3",
+          "published": "3",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 4
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "opened_municipal_branch_reading",
+          "calculated": "68",
+          "published": "68",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 5
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "opened_county_library",
+          "calculated": "25",
+          "published": "25",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 6
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "opened_county_branch",
+          "calculated": "9",
+          "published": "9",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 7
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "opened_township_main",
+          "calculated": "339",
+          "published": "339",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 8
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "opened_township_branches_reading",
+          "calculated": "115",
+          "published": "115",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 9
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "opened_total",
+          "calculated": "562",
+          "published": "562",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 10
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "unopened_city_branches",
+          "calculated": "5",
+          "published": "5",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 11
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "unopened_township_library",
+          "calculated": "5",
+          "published": "5",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 12
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "unopened_total",
+          "calculated": "10",
+          "published": "10",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 13
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "metric": "opened_total",
+          "calculated": "53",
+          "published": "53",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市",
+          "metric": "unopened_total",
+          "calculated": "2",
+          "published": "2",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 13,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "metric": "opened_total",
+          "calculated": "19",
+          "published": "19",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市",
+          "metric": "unopened_total",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 13,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "metric": "opened_total",
+          "calculated": "7",
+          "published": "7",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "metric": "unopened_total",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 13,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "metric": "opened_total",
+          "calculated": "102",
+          "published": "102",
+          "passed": true,
+          "source_row": 4,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "metric": "opened_total",
+          "calculated": "31",
+          "published": "31",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "metric": "opened_total",
+          "calculated": "14",
+          "published": "14",
+          "passed": true,
+          "source_row": 6,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "metric": "opened_total",
+          "calculated": "4",
+          "published": "4",
+          "passed": true,
+          "source_row": 7,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "metric": "opened_total",
+          "calculated": "20",
+          "published": "20",
+          "passed": true,
+          "source_row": 8,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "metric": "opened_total",
+          "calculated": "27",
+          "published": "27",
+          "passed": true,
+          "source_row": 9,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "metric": "opened_total",
+          "calculated": "17",
+          "published": "17",
+          "passed": true,
+          "source_row": 10,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "metric": "opened_total",
+          "calculated": "14",
+          "published": "14",
+          "passed": true,
+          "source_row": 11,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "metric": "opened_total",
+          "calculated": "28",
+          "published": "28",
+          "passed": true,
+          "source_row": 12,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "metric": "opened_total",
+          "calculated": "21",
+          "published": "21",
+          "passed": true,
+          "source_row": 13,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "metric": "opened_total",
+          "calculated": "19",
+          "published": "19",
+          "passed": true,
+          "source_row": 14,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "metric": "opened_total",
+          "calculated": "3",
+          "published": "3",
+          "passed": true,
+          "source_row": 15,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "metric": "opened_total",
+          "calculated": "32",
+          "published": "32",
+          "passed": true,
+          "source_row": 16,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "metric": "opened_total",
+          "calculated": "8",
+          "published": "8",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "metric": "unopened_total",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 13,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "metric": "opened_total",
+          "calculated": "38",
+          "published": "38",
+          "passed": true,
+          "source_row": 18,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "metric": "opened_total",
+          "calculated": "38",
+          "published": "38",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "metric": "unopened_total",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 13,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "metric": "opened_total",
+          "calculated": "16",
+          "published": "16",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "metric": "unopened_total",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 13,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "metric": "opened_total",
+          "calculated": "16",
+          "published": "16",
+          "passed": true,
+          "source_row": 21,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "metric": "opened_total",
+          "calculated": "17",
+          "published": "17",
+          "passed": true,
+          "source_row": 22,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "metric": "opened_total",
+          "calculated": "7",
+          "published": "7",
+          "passed": true,
+          "source_row": 23,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "metric": "opened_total",
+          "calculated": "5",
+          "published": "5",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "metric": "unopened_total",
+          "calculated": "2",
+          "published": "2",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 13,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "metric": "opened_total",
+          "calculated": "6",
+          "published": "6",
+          "passed": true,
+          "source_row": 25,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "metric": "unopened_total",
+          "calculated": "1",
+          "published": "1",
+          "passed": true,
+          "source_row": 25,
+          "source_column": 13,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "metric": "opened_total",
+          "calculated": "562",
+          "published": "562",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "總計",
+          "metric": "unopened_total",
+          "calculated": "10",
+          "published": "10",
+          "passed": true,
+          "source_row": 26,
+          "source_column": 13,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        }
+      ],
+      "source_discrepancies": [],
+      "independent_review": "pending_root_review"
+    },
+    {
+      "source_id": "ncl-earlier-2006-t2",
+      "completed": true,
+      "completion_scope": "all_printed_data_cells_of_specified_core_table",
+      "source_edition_roc": 96,
+      "data_year": 2006,
+      "pdf_page": 5,
+      "printed_page": 31,
+      "table": "2",
+      "title": "國立暨直轄市立公共圖書館人員統計表（95年）",
+      "data_rows": 5,
+      "numeric_columns": 9,
+      "source_cells": 45,
+      "value_status_counts": {
+        "numeric": 45
+      },
+      "row_labels": [
+        "國立中央圖書館臺灣分館",
+        "國立臺中圖書館",
+        "臺北市立圖書館",
+        "高雄市立圖書館",
+        "高雄市政府文化局中正文化中心"
+      ],
+      "column_specifications": [
+        {
+          "key": "professional_staff",
+          "raw_label": "人員／專業人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "administrative_staff",
+          "raw_label": "人員／行政人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "technical_staff",
+          "raw_label": "人員／技術人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "temporary_staff",
+          "raw_label": "人員／臨時人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "contract_staff",
+          "raw_label": "人員／約聘僱人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "student_staff",
+          "raw_label": "人員／工讀生",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "volunteers",
+          "raw_label": "人員／志工",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "other_staff",
+          "raw_label": "人員／其他",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "all_staff",
+          "raw_label": "人員／合計",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "published_total",
+          "temporal_kind": "stock_year_end"
+        }
+      ],
+      "column_boundaries": [
+        145.875,
+        187.375,
+        226.875,
+        265.375,
+        305.625,
+        356.125,
+        391.625,
+        423.875,
+        454.375,
+        481.75
+      ],
+      "scope_note": "five_national_municipal_institutions_separately_listed; no_national_total",
+      "scope_caveats": [
+        "本卷國立/直轄市與其他縣市分表，單一表不代表完整全國全部層級。"
+      ],
+      "source_footnotes_raw": [
+        "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：96年5月31日。"
+      ],
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565568411570887",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565565962713346/3ff18dcc-b6dd-4199-b12a-62dab434bc97.pdf",
+      "source_sha256": "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2",
+      "checks": [
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "國立中央圖書館臺灣分館",
+          "metric": "all_staff",
+          "calculated": "497",
+          "published": "497",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "國立臺中圖書館",
+          "metric": "all_staff",
+          "calculated": "240",
+          "published": "223",
+          "passed": false,
+          "source_row": 2,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北市立圖書館",
+          "metric": "all_staff",
+          "calculated": "1563",
+          "published": "1563",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市立圖書館",
+          "metric": "all_staff",
+          "calculated": "299",
+          "published": "264",
+          "passed": false,
+          "source_row": 4,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市政府文化局中正文化中心",
+          "metric": "all_staff",
+          "calculated": "19",
+          "published": "19",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        }
+      ],
+      "source_discrepancies": [
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "國立臺中圖書館",
+          "metric": "all_staff",
+          "calculated": "240",
+          "published": "223",
+          "passed": false,
+          "source_row": 2,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄市立圖書館",
+          "metric": "all_staff",
+          "calculated": "299",
+          "published": "264",
+          "passed": false,
+          "source_row": 4,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        }
+      ],
+      "independent_review": "pending_root_review"
+    },
+    {
+      "source_id": "ncl-earlier-2006-t3",
+      "completed": true,
+      "completion_scope": "all_printed_data_cells_of_specified_core_table",
+      "source_edition_roc": 96,
+      "data_year": 2006,
+      "pdf_page": 5,
+      "printed_page": 31,
+      "table": "3",
+      "title": "國立暨直轄市立公共圖書館購書經費、館藏數量與資源使用統計表（95年）",
+      "data_rows": 5,
+      "numeric_columns": 6,
+      "source_cells": 30,
+      "value_status_counts": {
+        "numeric": 30
+      },
+      "row_labels": [
+        "國立中央圖書館臺灣分館",
+        "國立臺中圖書館",
+        "臺北市立圖書館",
+        "高雄市立圖書館",
+        "高雄市政府文化局中正文化中心"
+      ],
+      "column_specifications": [
+        {
+          "key": "acquisition_spending",
+          "raw_label": "購書經費（元）",
+          "unit": "新臺幣元",
+          "unit_raw": "元",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_measure",
+          "temporal_kind": "annual_financial"
+        },
+        {
+          "key": "holdings_mixed",
+          "raw_label": "館藏冊數（冊）",
+          "unit": "冊（件、種混合）",
+          "unit_raw": "冊",
+          "unit_basis": "表頭冊；同章正文含非書及電子資源",
+          "aggregation_role": "separate_measure",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "physical_borrower_visits",
+          "raw_label": "圖書借閱（人次）",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        },
+        {
+          "key": "physical_loans",
+          "raw_label": "圖書借閱（冊、件）",
+          "unit": "冊次／件次",
+          "unit_raw": "冊、件",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        },
+        {
+          "key": "promotion_events",
+          "raw_label": "推廣活動（場次）",
+          "unit": "場次",
+          "unit_raw": "場次",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        },
+        {
+          "key": "promotion_attendance",
+          "raw_label": "推廣活動（人次）",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        }
+      ],
+      "column_boundaries": [
+        145.875,
+        202.375,
+        258.375,
+        314.375,
+        370.125,
+        426.125,
+        481.75
+      ],
+      "scope_note": "five_national_municipal_institutions_separately_listed; municipal_rows_overlap_county_table4",
+      "scope_caveats": [
+        "本卷國立/直轄市與其他縣市分表，單一表不代表完整全國全部層級。",
+        "表3的臺北/高雄機構資源與表4對應市別有重疊，不可直接相加。"
+      ],
+      "source_footnotes_raw": [
+        "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：96年5月31日。"
+      ],
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565568411570887",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565565962713346/3ff18dcc-b6dd-4199-b12a-62dab434bc97.pdf",
+      "source_sha256": "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2",
+      "checks": [],
+      "source_discrepancies": [],
+      "independent_review": "pending_root_review"
+    },
+    {
+      "source_id": "ncl-earlier-2006-t4",
+      "completed": true,
+      "completion_scope": "all_printed_data_cells_of_specified_core_table",
+      "source_edition_roc": 96,
+      "data_year": 2006,
+      "pdf_page": 6,
+      "printed_page": 32,
+      "table": "4",
+      "title": "臺閩地區各縣市暨鄉鎮圖書館館藏數量及購書經費統計表（95年）",
+      "data_rows": 25,
+      "numeric_columns": 6,
+      "source_cells": 150,
+      "value_status_counts": {
+        "numeric": 149,
+        "blank": 1
+      },
+      "row_labels": [
+        "臺北市",
+        "高雄市",
+        "臺北縣",
+        "宜蘭縣",
+        "桃園縣",
+        "新竹縣",
+        "苗栗縣",
+        "臺中縣",
+        "彰化縣",
+        "南投縣",
+        "雲林縣",
+        "嘉義縣",
+        "臺南縣",
+        "高雄縣",
+        "屏東縣",
+        "臺東縣",
+        "花蓮縣",
+        "澎湖縣",
+        "基隆市",
+        "新竹市",
+        "臺中市",
+        "嘉義市",
+        "臺南市",
+        "金門縣",
+        "連江縣"
+      ],
+      "column_specifications": [
+        {
+          "key": "population",
+          "raw_label": "人口數（A）",
+          "unit": "人",
+          "unit_raw": null,
+          "unit_basis": "原表人口數；人口時點未另揭示",
+          "aggregation_role": "separate_measure",
+          "temporal_kind": "reference_population_date_not_explicit"
+        },
+        {
+          "key": "holdings_mixed",
+          "raw_label": "館藏總數（冊）（B）",
+          "unit": "冊（件、種混合）",
+          "unit_raw": "冊",
+          "unit_basis": "表頭冊；同章正文含非書及電子資源",
+          "aggregation_role": "separate_measure",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "acquisition_spending",
+          "raw_label": "購書經費（元）（C）",
+          "unit": "新臺幣元",
+          "unit_raw": "元",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_measure",
+          "temporal_kind": "annual_financial"
+        },
+        {
+          "key": "holdings_per_capita",
+          "raw_label": "每人擁有館藏冊數（冊）",
+          "unit": "冊（件、種混合）／人",
+          "unit_raw": "冊",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "derived_ratio",
+          "temporal_kind": "derived_ratio"
+        },
+        {
+          "key": "spending_per_capita",
+          "raw_label": "平均每人購書經費（元）",
+          "unit": "新臺幣元／人",
+          "unit_raw": "元",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "derived_ratio",
+          "temporal_kind": "derived_ratio"
+        },
+        {
+          "key": "loans_per_capita",
+          "raw_label": "平均每人外借館藏冊數（冊）",
+          "unit": "冊次／人",
+          "unit_raw": "冊",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "derived_ratio",
+          "temporal_kind": "derived_ratio"
+        }
+      ],
+      "column_boundaries": [
+        90.375,
+        155.375,
+        220.625,
+        285.875,
+        351.125,
+        416.125,
+        481.25
+      ],
+      "scope_note": "national_institution_inclusion_not_explicit_in_this_table; municipal_rows_overlap_table3",
+      "scope_caveats": [
+        "表3的臺北/高雄機構資源與表4對應市別有重疊，不可直接相加。"
+      ],
+      "source_footnotes_raw": [
+        "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：96年5月31日。",
+        "「內政統計資訊服務網」http://www.moi.gov.tw/stat/index.asp，上網日期：96年5月31日。"
+      ],
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565568411570887",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565565962713346/3ff18dcc-b6dd-4199-b12a-62dab434bc97.pdf",
+      "source_sha256": "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2",
+      "checks": [
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺北市",
+          "metric": "holdings_per_capita",
+          "calculated": "1.85",
+          "published": "1.85",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺北市",
+          "metric": "spending_per_capita",
+          "calculated": "29.86",
+          "published": "29.86",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "高雄市",
+          "metric": "holdings_per_capita",
+          "calculated": "1.03",
+          "published": "1.03",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "高雄市",
+          "metric": "spending_per_capita",
+          "calculated": "20.69",
+          "published": "20.69",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺北縣",
+          "metric": "holdings_per_capita",
+          "calculated": "0.77",
+          "published": "0.77",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺北縣",
+          "metric": "spending_per_capita",
+          "calculated": "12.42",
+          "published": "12.42",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "宜蘭縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.55",
+          "published": "1.55",
+          "passed": true,
+          "source_row": 4,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "宜蘭縣",
+          "metric": "spending_per_capita",
+          "calculated": "7.42",
+          "published": "7.42",
+          "passed": true,
+          "source_row": 4,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "桃園縣",
+          "metric": "holdings_per_capita",
+          "calculated": "0.59",
+          "published": "0.59",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "桃園縣",
+          "metric": "spending_per_capita",
+          "calculated": "12.88",
+          "published": "12.88",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "新竹縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.18",
+          "published": "1.18",
+          "passed": true,
+          "source_row": 6,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "新竹縣",
+          "metric": "spending_per_capita",
+          "calculated": "6.82",
+          "published": "6.82",
+          "passed": true,
+          "source_row": 6,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "苗栗縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.37",
+          "published": "1.37",
+          "passed": true,
+          "source_row": 7,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "苗栗縣",
+          "metric": "spending_per_capita",
+          "calculated": "6.61",
+          "published": "6.61",
+          "passed": true,
+          "source_row": 7,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺中縣",
+          "metric": "holdings_per_capita",
+          "calculated": "0.86",
+          "published": "0.86",
+          "passed": true,
+          "source_row": 8,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺中縣",
+          "metric": "spending_per_capita",
+          "calculated": "9.64",
+          "published": "9.64",
+          "passed": true,
+          "source_row": 8,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "彰化縣",
+          "metric": "holdings_per_capita",
+          "calculated": "0.81",
+          "published": "0.81",
+          "passed": true,
+          "source_row": 9,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "彰化縣",
+          "metric": "spending_per_capita",
+          "calculated": "5.12",
+          "published": "5.12",
+          "passed": true,
+          "source_row": 9,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "南投縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.40",
+          "published": "1.40",
+          "passed": true,
+          "source_row": 10,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "南投縣",
+          "metric": "spending_per_capita",
+          "calculated": "9.40",
+          "published": "9.40",
+          "passed": true,
+          "source_row": 10,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "雲林縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.08",
+          "published": "1.08",
+          "passed": true,
+          "source_row": 11,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "雲林縣",
+          "metric": "spending_per_capita",
+          "calculated": "4.81",
+          "published": "4.81",
+          "passed": true,
+          "source_row": 11,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "嘉義縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.23",
+          "published": "1.23",
+          "passed": true,
+          "source_row": 12,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "嘉義縣",
+          "metric": "spending_per_capita",
+          "calculated": "7.48",
+          "published": "7.48",
+          "passed": true,
+          "source_row": 12,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺南縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.19",
+          "published": "1.19",
+          "passed": true,
+          "source_row": 13,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺南縣",
+          "metric": "spending_per_capita",
+          "calculated": "6.96",
+          "published": "6.96",
+          "passed": true,
+          "source_row": 13,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "高雄縣",
+          "metric": "holdings_per_capita",
+          "calculated": "0.92",
+          "published": "0.92",
+          "passed": true,
+          "source_row": 14,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "高雄縣",
+          "metric": "spending_per_capita",
+          "calculated": "11.83",
+          "published": "11.83",
+          "passed": true,
+          "source_row": 14,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "屏東縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.39",
+          "published": "1.39",
+          "passed": true,
+          "source_row": 15,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "屏東縣",
+          "metric": "spending_per_capita",
+          "calculated": "8.81",
+          "published": "8.81",
+          "passed": true,
+          "source_row": 15,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺東縣",
+          "metric": "holdings_per_capita",
+          "calculated": "2.16",
+          "published": "2.16",
+          "passed": true,
+          "source_row": 16,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺東縣",
+          "metric": "spending_per_capita",
+          "calculated": "10.42",
+          "published": "10.42",
+          "passed": true,
+          "source_row": 16,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "花蓮縣",
+          "metric": "holdings_per_capita",
+          "calculated": "1.67",
+          "published": "1.67",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "花蓮縣",
+          "metric": "spending_per_capita",
+          "calculated": "9.00",
+          "published": "9.00",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "澎湖縣",
+          "metric": "holdings_per_capita",
+          "calculated": "2.96",
+          "published": "2.96",
+          "passed": true,
+          "source_row": 18,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "澎湖縣",
+          "metric": "spending_per_capita",
+          "calculated": "17.18",
+          "published": "17.18",
+          "passed": true,
+          "source_row": 18,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "基隆市",
+          "metric": "holdings_per_capita",
+          "calculated": "0.74",
+          "published": "0.74",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "基隆市",
+          "metric": "spending_per_capita",
+          "calculated": "6.50",
+          "published": "6.50",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "新竹市",
+          "metric": "holdings_per_capita",
+          "calculated": "0.67",
+          "published": "0.67",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "新竹市",
+          "metric": "spending_per_capita",
+          "calculated": "7.33",
+          "published": "7.33",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺中市",
+          "metric": "holdings_per_capita",
+          "calculated": "0.62",
+          "published": "0.62",
+          "passed": true,
+          "source_row": 21,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺中市",
+          "metric": "spending_per_capita",
+          "calculated": "6.31",
+          "published": "6.31",
+          "passed": true,
+          "source_row": 21,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "嘉義市",
+          "metric": "spending_per_capita",
+          "calculated": "7.66",
+          "published": "7.66",
+          "passed": true,
+          "source_row": 22,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺南市",
+          "metric": "holdings_per_capita",
+          "calculated": "1.35",
+          "published": "1.35",
+          "passed": true,
+          "source_row": 23,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "臺南市",
+          "metric": "spending_per_capita",
+          "calculated": "6.45",
+          "published": "6.45",
+          "passed": true,
+          "source_row": 23,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "金門縣",
+          "metric": "holdings_per_capita",
+          "calculated": "2.27",
+          "published": "2.27",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "金門縣",
+          "metric": "spending_per_capita",
+          "calculated": "26.50",
+          "published": "26.50",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 6
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "連江縣",
+          "metric": "holdings_per_capita",
+          "calculated": "8.79",
+          "published": "8.79",
+          "passed": true,
+          "source_row": 25,
+          "source_column": 5
+        },
+        {
+          "check": "printed_ratio_vs_recalculation",
+          "entity": "連江縣",
+          "metric": "spending_per_capita",
+          "calculated": "315.89",
+          "published": "315.89",
+          "passed": true,
+          "source_row": 25,
+          "source_column": 6
+        }
+      ],
+      "source_discrepancies": [],
+      "independent_review": "pending_root_review"
+    },
+    {
+      "source_id": "ncl-earlier-2006-t5",
+      "completed": true,
+      "completion_scope": "all_printed_data_cells_of_specified_core_table",
+      "source_edition_roc": 96,
+      "data_year": 2006,
+      "pdf_page": 7,
+      "printed_page": 33,
+      "table": "5",
+      "title": "臺閩地區各縣市暨鄉鎮圖書館人員及服務統計表（95年）",
+      "data_rows": 24,
+      "numeric_columns": 13,
+      "source_cells": 312,
+      "value_status_counts": {
+        "numeric": 312
+      },
+      "row_labels": [
+        "臺北縣",
+        "宜蘭縣",
+        "桃園縣",
+        "新竹縣",
+        "苗栗縣",
+        "臺中縣",
+        "彰化縣",
+        "南投縣",
+        "雲林縣",
+        "嘉義縣",
+        "臺南縣",
+        "高雄縣",
+        "屏東縣",
+        "臺東縣",
+        "花蓮縣",
+        "澎湖縣",
+        "基隆市",
+        "新竹市",
+        "臺中市",
+        "嘉義市",
+        "臺南市",
+        "金門縣",
+        "連江縣",
+        "合計"
+      ],
+      "column_specifications": [
+        {
+          "key": "professional_staff",
+          "raw_label": "人員／專業人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "administrative_staff",
+          "raw_label": "人員／行政人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "technical_staff",
+          "raw_label": "人員／技術人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "temporary_staff",
+          "raw_label": "人員／臨時人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "contract_staff",
+          "raw_label": "人員／約聘僱人員",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "student_staff",
+          "raw_label": "人員／工讀生",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "volunteers",
+          "raw_label": "人員／志工",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "other_staff",
+          "raw_label": "人員／其他",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "component",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "all_staff",
+          "raw_label": "人員／合計",
+          "unit": "人",
+          "unit_raw": "人",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "published_total",
+          "temporal_kind": "stock_year_end"
+        },
+        {
+          "key": "physical_borrower_visits",
+          "raw_label": "圖書借閱（人次）",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        },
+        {
+          "key": "physical_loans",
+          "raw_label": "圖書借閱（冊數）",
+          "unit": "冊次",
+          "unit_raw": "冊數",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        },
+        {
+          "key": "promotion_events",
+          "raw_label": "推廣活動（場次）",
+          "unit": "場次",
+          "unit_raw": "場次",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        },
+        {
+          "key": "promotion_attendance",
+          "raw_label": "推廣活動（人次）",
+          "unit": "人次",
+          "unit_raw": "人次",
+          "unit_basis": "原表表頭",
+          "aggregation_role": "separate_flow",
+          "temporal_kind": "flow_calendar_year"
+        }
+      ],
+      "column_boundaries": [
+        87.875,
+        112.125,
+        136.125,
+        159.375,
+        183.125,
+        210.625,
+        237.375,
+        264.375,
+        291.625,
+        320.625,
+        359.375,
+        405.875,
+        440.625,
+        481.75
+      ],
+      "scope_note": "23_counties_excluding_Taipei_and_Kaohsiung_municipalities; total_is_subgroup_not_national",
+      "scope_caveats": [
+        "本卷國立/直轄市與其他縣市分表，單一表不代表完整全國全部層級。"
+      ],
+      "source_footnotes_raw": [
+        "資料來源：「公共圖書館統計系統」http://publibstat.lib.nctu.edu.tw/，上網日期：96年5月31日。"
+      ],
+      "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565568411570887",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565565962713346/3ff18dcc-b6dd-4199-b12a-62dab434bc97.pdf",
+      "source_sha256": "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2",
+      "checks": [
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "professional_staff",
+          "calculated": "110",
+          "published": "110",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 2
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "administrative_staff",
+          "calculated": "511",
+          "published": "511",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 3
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "technical_staff",
+          "calculated": "45",
+          "published": "45",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 4
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "temporary_staff",
+          "calculated": "1200",
+          "published": "1200",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 5
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "contract_staff",
+          "calculated": "249",
+          "published": "249",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 6
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "student_staff",
+          "calculated": "140",
+          "published": "140",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 7
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "volunteers",
+          "calculated": "5172",
+          "published": "5172",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 8
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "other_staff",
+          "calculated": "254",
+          "published": "254",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 9
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "all_staff",
+          "calculated": "7681",
+          "published": "7681",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 10
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "physical_borrower_visits",
+          "calculated": "7446297",
+          "published": "7446297",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 11
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "physical_loans",
+          "calculated": "26690208",
+          "published": "26690208",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 12
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "promotion_events",
+          "calculated": "60830",
+          "published": "60830",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 13
+        },
+        {
+          "check": "published_column_total_vs_explicit_entities",
+          "metric": "promotion_attendance",
+          "calculated": "3248826",
+          "published": "3248826",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 14
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺北縣",
+          "metric": "all_staff",
+          "calculated": "1490",
+          "published": "1490",
+          "passed": true,
+          "source_row": 1,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "宜蘭縣",
+          "metric": "all_staff",
+          "calculated": "110",
+          "published": "110",
+          "passed": true,
+          "source_row": 2,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "桃園縣",
+          "metric": "all_staff",
+          "calculated": "410",
+          "published": "410",
+          "passed": true,
+          "source_row": 3,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹縣",
+          "metric": "all_staff",
+          "calculated": "82",
+          "published": "82",
+          "passed": true,
+          "source_row": 4,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "苗栗縣",
+          "metric": "all_staff",
+          "calculated": "282",
+          "published": "282",
+          "passed": true,
+          "source_row": 5,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中縣",
+          "metric": "all_staff",
+          "calculated": "1178",
+          "published": "1178",
+          "passed": true,
+          "source_row": 6,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "彰化縣",
+          "metric": "all_staff",
+          "calculated": "649",
+          "published": "649",
+          "passed": true,
+          "source_row": 7,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "南投縣",
+          "metric": "all_staff",
+          "calculated": "384",
+          "published": "384",
+          "passed": true,
+          "source_row": 8,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "雲林縣",
+          "metric": "all_staff",
+          "calculated": "268",
+          "published": "268",
+          "passed": true,
+          "source_row": 9,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義縣",
+          "metric": "all_staff",
+          "calculated": "156",
+          "published": "156",
+          "passed": true,
+          "source_row": 10,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南縣",
+          "metric": "all_staff",
+          "calculated": "529",
+          "published": "529",
+          "passed": true,
+          "source_row": 11,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "高雄縣",
+          "metric": "all_staff",
+          "calculated": "248",
+          "published": "248",
+          "passed": true,
+          "source_row": 12,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "屏東縣",
+          "metric": "all_staff",
+          "calculated": "349",
+          "published": "349",
+          "passed": true,
+          "source_row": 13,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺東縣",
+          "metric": "all_staff",
+          "calculated": "109",
+          "published": "109",
+          "passed": true,
+          "source_row": 14,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "花蓮縣",
+          "metric": "all_staff",
+          "calculated": "241",
+          "published": "241",
+          "passed": true,
+          "source_row": 15,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "澎湖縣",
+          "metric": "all_staff",
+          "calculated": "42",
+          "published": "42",
+          "passed": true,
+          "source_row": 16,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "基隆市",
+          "metric": "all_staff",
+          "calculated": "118",
+          "published": "118",
+          "passed": true,
+          "source_row": 17,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "新竹市",
+          "metric": "all_staff",
+          "calculated": "252",
+          "published": "252",
+          "passed": true,
+          "source_row": 18,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺中市",
+          "metric": "all_staff",
+          "calculated": "450",
+          "published": "450",
+          "passed": true,
+          "source_row": 19,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "嘉義市",
+          "metric": "all_staff",
+          "calculated": "46",
+          "published": "46",
+          "passed": true,
+          "source_row": 20,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "臺南市",
+          "metric": "all_staff",
+          "calculated": "228",
+          "published": "228",
+          "passed": true,
+          "source_row": 21,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "金門縣",
+          "metric": "all_staff",
+          "calculated": "53",
+          "published": "53",
+          "passed": true,
+          "source_row": 22,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "連江縣",
+          "metric": "all_staff",
+          "calculated": "7",
+          "published": "7",
+          "passed": true,
+          "source_row": 23,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        },
+        {
+          "check": "published_row_total_vs_explicit_components",
+          "entity": "合計",
+          "metric": "all_staff",
+          "calculated": "7681",
+          "published": "7681",
+          "passed": true,
+          "source_row": 24,
+          "source_column": 10,
+          "blank_handling": "sum_only_reported_numbers; original_blanks_remain_null"
+        }
+      ],
+      "source_discrepancies": [],
+      "independent_review": "pending_root_review"
+    }
+  ],
+  "intentional_exclusion": [
+    "整冊及整章敘述文字、照片與圖像不公開。",
+    "特定閱讀空間改造、工程建設計畫成果表及個案不納入本批。",
+    "96卷表6臺中市便民措施清單、表7彰化增加開館服務時間個別措施表不屬本批全臺年度核心統計；未宣稱全章所有表均入庫。"
+  ],
+  "redistribution_scope": "statistical_values_necessary_notes_and_source_locators_only; complete_authored_PDF_private"
+}

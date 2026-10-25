@@ -1,0 +1,14 @@
+{
+  "source_id": "ncl-yearbook-103-statistics",
+  "edition_roc": 103,
+  "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565350919926814",
+  "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565363808762360/797e6631-c29d-4749-92c5-7e2be6ea1f2f.pdf",
+  "title": "圖書館統計",
+  "local_path": "research-datasets/tw-public-library-statistics/raw/ncl-additional/yearbook-103-statistics.pdf",
+  "sha256": "c75b1de3625ca9d9e496973c5eca271d98dc9eff8ed258565826b63b946001d4",
+  "bytes": 2642353,
+  "pdf_pages": 16,
+  "source_retrieved_at": "2026-10-25T09:22:25.652613+00:00",
+  "license_status": "not_confirmed",
+  "snapshot_distribution": "not_in_public_bundle"
+}

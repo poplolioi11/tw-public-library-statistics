@@ -77,8 +77,10 @@ def fetch_one(spec,old):
    payload=urllib.parse.urlencode(body).encode();headers['Content-Type']='application/x-www-form-urlencoded'
   else: payload=json.dumps(body,separators=(',',':')).encode();headers['Content-Type']='application/json; charset=utf-8'
  else: payload=None
- if old.get('etag'):headers['If-None-Match']=old['etag']
- if old.get('last_modified'):headers['If-Modified-Since']=old['last_modified']
+ previous_path=ROOT/old['snapshot_path'] if old.get('snapshot_path') else None
+ cached_body_valid=bool(previous_path and previous_path.is_file() and sha(previous_path.read_bytes())==old.get('sha256'))
+ if cached_body_valid and old.get('etag'):headers['If-None-Match']=old['etag']
+ if cached_body_valid and old.get('last_modified'):headers['If-Modified-Since']=old['last_modified']
  checked=now()
  try:
   with urllib.request.urlopen(urllib.request.Request(spec['url'],data=payload,headers=headers,method=spec['method']),timeout=50) as resp:
@@ -93,6 +95,7 @@ def fetch_one(spec,old):
   return entry,'unchanged' if old.get('sha256')==h else ('revised' if old else 'new')
  except urllib.error.HTTPError as e:
   if e.code==304 and old:
+   if not cached_body_valid:raise ValueError('Server returned304 without a verified local body') from e
    return {**old,'last_checked_at':checked},'not_modified'
   raise
 
@@ -246,7 +249,7 @@ def due_sources(all_specs,force=False):
  manifest=load(ROOT/'data/source_manifest.json',{'sources':{}})['sources'];latest=max((x['year'] or 0 for x in all_specs),default=0);result=[]
  for spec in all_specs:
   old=manifest.get(spec['source_id'])
-  if force or not old:result.append(spec['source_id']);continue
+  if force or not old or (old.get('snapshot_path') and not (ROOT/old['snapshot_path']).is_file()):result.append(spec['source_id']);continue
   interval=7 if spec['kind'] not in ('public_national_chart','licensed_api') else (90 if spec['kind']=='licensed_api' else (14 if spec['year']>=latest-1 else 365))
   age=(dt.datetime.now(dt.timezone.utc)-dt.datetime.fromisoformat(old['last_checked_at'])).total_seconds()/86400
   if age>=interval:result.append(spec['source_id'])

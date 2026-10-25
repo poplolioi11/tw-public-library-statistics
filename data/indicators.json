@@ -1,67 +1,15 @@
 [
   {
-    "series_id": "api-17e7267c25747e",
-    "definition_id": "def-api-17e7267c25747e",
-    "raw_name": "供讀者使用的電腦數(台)",
-    "ordinal_1based": 27,
+    "series_id": "api-372904edbd08e2",
+    "definition_id": "def-api-372904edbd08e2",
+    "raw_name": "館外服務站 所(個)",
+    "ordinal_1based": 8,
     "observed_years": [
       2023
     ],
     "historical_definition_verified": false,
     "definition_status": "label_only",
-    "unit": "台",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
-    "group": "area_equipment_personnel",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [],
-    "title": "供讀者使用的電腦數(台)",
-    "source_label": "供讀者使用的電腦數(台)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-89e7fc388a0a3a",
-    "definition_id": "def-api-89e7fc388a0a3a",
-    "raw_name": "報紙(決算)",
-    "ordinal_1based": 22,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_final_expenditure",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "報紙(決算)",
-    "source_label": "報紙(決算)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-32388d41025ef6",
-    "definition_id": "def-api-32388d41025ef6",
-    "raw_name": "分館(所)",
-    "ordinal_1based": 3,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "所",
+    "unit": "個",
     "temporal_kind": "stock_year_end_provisional",
     "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
     "group": "facilities_population",
@@ -70,220 +18,8 @@
       "api_2023"
     ],
     "notes": [],
-    "title": "分館(所)",
-    "source_label": "分館(所)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-541deacfc8ed4b",
-    "definition_id": "def-api-541deacfc8ed4b",
-    "raw_name": "圖書巡迴車",
-    "ordinal_1based": 9,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "車輛",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
-    "group": "facilities_population",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [],
-    "title": "圖書巡迴車",
-    "source_label": "圖書巡迴車",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-ec44efb1fc27c5",
-    "definition_id": "def-api-ec44efb1fc27c5",
-    "raw_name": "其他(決算)",
-    "ordinal_1based": 43,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": null,
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [
-      "原欄名含決算但位在館藏分組，疑似欄標問題；保留原名，不自動修正。"
-    ],
-    "title": "其他(決算)",
-    "source_label": "其他(決算)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-3f787408e2eec5",
-    "definition_id": "def-api-3f787408e2eec5",
-    "raw_name": "其他圖書資料(決算)",
-    "ordinal_1based": 25,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_final_expenditure",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "其他圖書資料(決算)",
-    "source_label": "其他圖書資料(決算)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-a9f0ea502e6487",
-    "definition_id": "def-api-a9f0ea502e6487",
-    "raw_name": "影片欣賞(場次)",
-    "ordinal_1based": 74,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "影片欣賞(場次)",
-    "source_label": "影片欣賞(場次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-3b893e9e1e9488",
-    "definition_id": "def-api-3b893e9e1e9488",
-    "raw_name": "其他類型資料庫(種)",
-    "ordinal_1based": 55,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "種",
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [],
-    "title": "其他類型資料庫(種)",
-    "source_label": "其他類型資料庫(種)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-5174e07bb4e496",
-    "definition_id": "def-api-5174e07bb4e496",
-    "raw_name": "圖書館數 總館(所)",
-    "ordinal_1based": 2,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "所",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
-    "group": "facilities_population",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [],
-    "title": "圖書館數 總館(所)",
-    "source_label": "圖書館數 總館(所)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-52b19f35d09466",
-    "definition_id": "def-api-52b19f35d09466",
-    "raw_name": "編制內專業人員",
-    "ordinal_1based": 30,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "人",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
-    "group": "area_equipment_personnel",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [],
-    "title": "編制內專業人員",
-    "source_label": "編制內專業人員",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-3e55672b1ee06f",
-    "definition_id": "def-api-3e55672b1ee06f",
-    "raw_name": "工讀生",
-    "ordinal_1based": 35,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "人",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
-    "group": "area_equipment_personnel",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [],
-    "title": "工讀生",
-    "source_label": "工讀生",
+    "title": "館外服務站 所(個)",
+    "source_label": "館外服務站 所(個)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
@@ -318,10 +54,68 @@
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-5253da30805875",
-    "definition_id": "def-api-5253da30805875",
-    "raw_name": "圖書",
-    "ordinal_1based": 11,
+    "series_id": "api-bb643a4b6990d9",
+    "definition_id": "def-api-bb643a4b6990d9",
+    "raw_name": "一般閱讀推廣活動(場次)",
+    "ordinal_1based": 65,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "一般閱讀推廣活動(場次)",
+    "source_label": "一般閱讀推廣活動(場次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-0442c5ce651b7b",
+    "definition_id": "def-api-0442c5ce651b7b",
+    "raw_name": "幼兒閱讀推廣活動(人次)",
+    "ordinal_1based": 78,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "幼兒閱讀推廣活動(人次)",
+    "source_label": "幼兒閱讀推廣活動(人次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-3683191a25dafa",
+    "definition_id": "def-api-3683191a25dafa",
+    "raw_name": "電子書",
+    "ordinal_1based": 12,
     "observed_years": [
       2023
     ],
@@ -338,186 +132,17 @@
     "notes": [
       "預算與決算不能互相替代；子項不先假設跨年完全同義。"
     ],
-    "title": "圖書",
-    "source_label": "圖書",
+    "title": "電子書",
+    "source_label": "電子書",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-b2361607c7dd62",
-    "definition_id": "def-api-b2361607c7dd62",
-    "raw_name": "四、東南亞圖書及非書資料收藏數量(包含於總館藏量下)",
-    "ordinal_1based": 57,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": null,
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [
-      "原名明示包含於總館藏，不能再加回總量。",
-      "原欄未提供單一可確認單位；括號中的敘述不是單位。"
-    ],
-    "title": "四、東南亞圖書及非書資料收藏數量(包含於總館藏量下)",
-    "source_label": "四、東南亞圖書及非書資料收藏數量(包含於總館藏量下)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-336d17f021396c",
-    "definition_id": "def-api-336d17f021396c",
-    "raw_name": "說故事(場次)",
-    "ordinal_1based": 73,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "說故事(場次)",
-    "source_label": "說故事(場次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-611692ffeb319b",
-    "definition_id": "def-api-611692ffeb319b",
-    "raw_name": "其他(件)",
-    "ordinal_1based": 51,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "件",
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [],
-    "title": "其他(件)",
-    "source_label": "其他(件)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-89612f677a4521",
-    "definition_id": "def-api-89612f677a4521",
-    "raw_name": "其他(場次)",
-    "ordinal_1based": 75,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "其他(場次)",
-    "source_label": "其他(場次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-d8322705b7d242",
-    "definition_id": "def-api-d8322705b7d242",
-    "raw_name": "靜畫資料(幅)",
-    "ordinal_1based": 50,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "幅",
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [],
-    "title": "靜畫資料(幅)",
-    "source_label": "靜畫資料(幅)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-280ed8a41f0f15",
-    "definition_id": "def-api-280ed8a41f0f15",
-    "raw_name": "全年購買圖書資料費-決算(元)",
-    "ordinal_1based": 18,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_final_expenditure",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "全年購買圖書資料費-決算(元)",
-    "source_label": "全年購買圖書資料費-決算(元)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-b2d3fa72d30731",
-    "definition_id": "def-api-b2d3fa72d30731",
-    "raw_name": "供讀者使用的平板電腦數(台)",
-    "ordinal_1based": 28,
+    "series_id": "api-17e7267c25747e",
+    "definition_id": "def-api-17e7267c25747e",
+    "raw_name": "供讀者使用的電腦數(台)",
+    "ordinal_1based": 27,
     "observed_years": [
       2023
     ],
@@ -532,98 +157,42 @@
       "api_2023"
     ],
     "notes": [],
-    "title": "供讀者使用的平板電腦數(台)",
-    "source_label": "供讀者使用的平板電腦數(台)",
+    "title": "供讀者使用的電腦數(台)",
+    "source_label": "供讀者使用的電腦數(台)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-372904edbd08e2",
-    "definition_id": "def-api-372904edbd08e2",
-    "raw_name": "館外服務站 所(個)",
-    "ordinal_1based": 8,
+    "series_id": "api-f7729b608a3f81",
+    "definition_id": "def-api-f7729b608a3f81",
+    "raw_name": "約聘僱人員",
+    "ordinal_1based": 34,
     "observed_years": [
       2023
     ],
     "historical_definition_verified": false,
     "definition_status": "label_only",
-    "unit": "個",
+    "unit": "人",
     "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
-    "group": "facilities_population",
+    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+    "group": "area_equipment_personnel",
     "sources": [
       "catalog",
       "api_2023"
     ],
     "notes": [],
-    "title": "館外服務站 所(個)",
-    "source_label": "館外服務站 所(個)",
+    "title": "約聘僱人員",
+    "source_label": "約聘僱人員",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-bbcd9cd8ea6f7c",
-    "definition_id": "def-api-bbcd9cd8ea6f7c",
-    "raw_name": "三、電子資源",
-    "ordinal_1based": 52,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": null,
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [
-      "原欄未提供單一可確認單位；括號中的敘述不是單位。"
-    ],
-    "title": "三、電子資源",
-    "source_label": "三、電子資源",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-b5e307e286ee4d",
-    "definition_id": "def-api-b5e307e286ee4d",
-    "raw_name": "期刊",
-    "ordinal_1based": 13,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_budget",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "期刊",
-    "source_label": "期刊",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-ee219e82d4a491",
-    "definition_id": "def-api-ee219e82d4a491",
-    "raw_name": "電子書(種)",
-    "ordinal_1based": 56,
+    "series_id": "api-4b92ea76246384",
+    "definition_id": "def-api-4b92ea76246384",
+    "raw_name": "光碟資料庫(種)",
+    "ordinal_1based": 54,
     "observed_years": [
       2023
     ],
@@ -640,400 +209,8 @@
       "collections"
     ],
     "notes": [],
-    "title": "電子書(種)",
-    "source_label": "電子書(種)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-c2acebc4446a22",
-    "definition_id": "def-api-c2acebc4446a22",
-    "raw_name": "一般閱讀推廣活動(人次)",
-    "ordinal_1based": 77,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "一般閱讀推廣活動(人次)",
-    "source_label": "一般閱讀推廣活動(人次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-c16a12cf9a593b",
-    "definition_id": "def-api-c16a12cf9a593b",
-    "raw_name": "年度電子書刊借閱人次",
-    "ordinal_1based": 61,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "circulation",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "circulation"
-    ],
-    "notes": [
-      "API及報表用電子書刊，現行文字定義用電子書；電子期刊納入時點及跨年同義性未確認。"
-    ],
-    "title": "年度電子書刊借閱人次",
-    "source_label": "年度電子書刊借閱人次",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-836fac4bd2cd58",
-    "definition_id": "def-api-836fac4bd2cd58",
-    "raw_name": "期刊(種數)",
-    "ordinal_1based": 41,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "種",
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [],
-    "title": "期刊(種數)",
-    "source_label": "期刊(種數)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-1dd1dcc4c4491c",
-    "definition_id": "def-api-1dd1dcc4c4491c",
-    "raw_name": "全年購買圖書資料費-預算(元)",
-    "ordinal_1based": 10,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_budget",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "全年購買圖書資料費-預算(元)",
-    "source_label": "全年購買圖書資料費-預算(元)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-b88ba5aac20364",
-    "definition_id": "def-api-b88ba5aac20364",
-    "raw_name": "新住民閱讀推廣活動(場次)",
-    "ordinal_1based": 70,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "新住民閱讀推廣活動(場次)",
-    "source_label": "新住民閱讀推廣活動(場次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-33b22871a97dc1",
-    "definition_id": "def-api-33b22871a97dc1",
-    "raw_name": "錄音資料(片、捲)",
-    "ordinal_1based": 48,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "片、捲",
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [],
-    "title": "錄音資料(片、捲)",
-    "source_label": "錄音資料(片、捲)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-751468cd8fc1fd",
-    "definition_id": "def-api-751468cd8fc1fd",
-    "raw_name": "報紙(種數)",
-    "ordinal_1based": 42,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "種",
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [],
-    "title": "報紙(種數)",
-    "source_label": "報紙(種數)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-67e6dcfd0a51af",
-    "definition_id": "def-api-67e6dcfd0a51af",
-    "raw_name": "報紙",
-    "ordinal_1based": 14,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_budget",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "報紙",
-    "source_label": "報紙",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-3cd20d34195287",
-    "definition_id": "def-api-3cd20d34195287",
-    "raw_name": "地方特色活動(人次)",
-    "ordinal_1based": 84,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "地方特色活動(人次)",
-    "source_label": "地方特色活動(人次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-7fc2c701311796",
-    "definition_id": "def-api-7fc2c701311796",
-    "raw_name": "二、非書資料",
-    "ordinal_1based": 44,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": null,
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [
-      "原欄未提供單一可確認單位；括號中的敘述不是單位。"
-    ],
-    "title": "二、非書資料",
-    "source_label": "二、非書資料",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-4461b6d51ac6ad",
-    "definition_id": "def-api-4461b6d51ac6ad",
-    "raw_name": "社教藝文活動(人次)",
-    "ordinal_1based": 83,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "社教藝文活動(人次)",
-    "source_label": "社教藝文活動(人次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-b3c2b08cfb7ba5",
-    "definition_id": "def-api-b3c2b08cfb7ba5",
-    "raw_name": "影片欣賞(人次)",
-    "ordinal_1based": 86,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "影片欣賞(人次)",
-    "source_label": "影片欣賞(人次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-24b008d9f32c9c",
-    "definition_id": "def-api-24b008d9f32c9c",
-    "raw_name": "全年圖書資訊借閱冊數",
-    "ordinal_1based": 60,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "冊次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "circulation",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [],
-    "definition": "借出圖書及非書的全年冊次，同次多冊按冊數，電子資源排除。",
-    "title": "全年圖書資訊借閱冊數",
-    "source_label": "全年圖書資訊借閱冊數",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-137f26ad1b48d7",
-    "definition_id": "def-api-137f26ad1b48d7",
-    "raw_name": "圖書(決算)",
-    "ordinal_1based": 19,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_final_expenditure",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "圖書(決算)",
-    "source_label": "圖書(決算)",
+    "title": "光碟資料庫(種)",
+    "source_label": "光碟資料庫(種)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
@@ -1066,64 +243,35 @@
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-d4c4fe740cb959",
-    "definition_id": "def-api-d4c4fe740cb959",
-    "raw_name": "閱覽席位數(席)",
-    "ordinal_1based": 58,
+    "series_id": "api-1961b5e2e8ee05",
+    "definition_id": "def-api-1961b5e2e8ee05",
+    "raw_name": "區館(所)",
+    "ordinal_1based": 4,
     "observed_years": [
       2023
     ],
     "historical_definition_verified": false,
     "definition_status": "label_only",
-    "unit": "席",
+    "unit": "所",
     "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則）",
-    "group": "seating",
+    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+    "group": "facilities_population",
     "sources": [
       "catalog",
       "api_2023"
     ],
     "notes": [],
-    "title": "閱覽席位數(席)",
-    "source_label": "閱覽席位數(席)",
+    "title": "區館(所)",
+    "source_label": "區館(所)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-e3599e771677f8",
-    "definition_id": "def-api-e3599e771677f8",
-    "raw_name": "全年推廣活動(人次)",
-    "ordinal_1based": 76,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "全年推廣活動(人次)",
-    "source_label": "全年推廣活動(人次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-ba3b5dabd04495",
-    "definition_id": "def-api-ba3b5dabd04495",
-    "raw_name": "電子資料",
-    "ordinal_1based": 16,
+    "series_id": "api-89e7fc388a0a3a",
+    "definition_id": "def-api-89e7fc388a0a3a",
+    "raw_name": "報紙(決算)",
+    "ordinal_1based": 22,
     "observed_years": [
       2023
     ],
@@ -1132,7 +280,7 @@
     "unit": "新臺幣元",
     "temporal_kind": "annual_financial",
     "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_budget",
+    "group": "acquisition_final_expenditure",
     "sources": [
       "catalog",
       "api_2023"
@@ -1140,122 +288,35 @@
     "notes": [
       "預算與決算不能互相替代；子項不先假設跨年完全同義。"
     ],
-    "title": "電子資料",
-    "source_label": "電子資料",
+    "title": "報紙(決算)",
+    "source_label": "報紙(決算)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-d24129274c3b7e",
-    "definition_id": "def-api-d24129274c3b7e",
-    "raw_name": "新住民閱讀推廣活動(人次)",
-    "ordinal_1based": 82,
+    "series_id": "api-24b008d9f32c9c",
+    "definition_id": "def-api-24b008d9f32c9c",
+    "raw_name": "全年圖書資訊借閱冊數",
+    "ordinal_1based": 60,
     "observed_years": [
       2023
     ],
     "historical_definition_verified": false,
     "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
+    "unit": "冊次",
     "temporal_kind": "flow_calendar_year",
     "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
+    "group": "circulation",
     "sources": [
       "catalog",
       "api_2023",
       "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "新住民閱讀推廣活動(人次)",
-    "source_label": "新住民閱讀推廣活動(人次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-5bcce53b598657",
-    "definition_id": "def-api-5bcce53b598657",
-    "raw_name": "社教藝文活動(場次)",
-    "ordinal_1based": 71,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "社教藝文活動(場次)",
-    "source_label": "社教藝文活動(場次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-b1a71f1b99a4b4",
-    "definition_id": "def-api-b1a71f1b99a4b4",
-    "raw_name": "樂齡閱讀推廣活動(人次)",
-    "ordinal_1based": 81,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "樂齡閱讀推廣活動(人次)",
-    "source_label": "樂齡閱讀推廣活動(人次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-281c2d1e910cec",
-    "definition_id": "def-api-281c2d1e910cec",
-    "raw_name": "微縮單片(片)",
-    "ordinal_1based": 46,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "片",
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
     ],
     "notes": [],
-    "title": "微縮單片(片)",
-    "source_label": "微縮單片(片)",
+    "definition": "借出圖書及非書的全年冊次，同次多冊按冊數，電子資源排除。",
+    "title": "全年圖書資訊借閱冊數",
+    "source_label": "全年圖書資訊借閱冊數",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
@@ -1290,203 +351,10 @@
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-bb643a4b6990d9",
-    "definition_id": "def-api-bb643a4b6990d9",
-    "raw_name": "一般閱讀推廣活動(場次)",
-    "ordinal_1based": 65,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "一般閱讀推廣活動(場次)",
-    "source_label": "一般閱讀推廣活動(場次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-e034f137becdbf",
-    "definition_id": "def-api-e034f137becdbf",
-    "raw_name": "圖書(冊數)",
-    "ordinal_1based": 40,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "冊",
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [],
-    "title": "圖書(冊數)",
-    "source_label": "圖書(冊數)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-e9600817d0da81",
-    "definition_id": "def-api-e9600817d0da81",
-    "raw_name": "年度電子書刊借閱冊數",
-    "ordinal_1based": 62,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "冊次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "circulation",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "circulation"
-    ],
-    "notes": [
-      "API及報表用電子書刊，現行文字定義用電子書；電子期刊納入時點及跨年同義性未確認。"
-    ],
-    "title": "年度電子書刊借閱冊數",
-    "source_label": "年度電子書刊借閱冊數",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-dee1d5d44a4b99",
-    "definition_id": "def-api-dee1d5d44a4b99",
-    "raw_name": "地圖(張)",
-    "ordinal_1based": 45,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "張",
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [],
-    "title": "地圖(張)",
-    "source_label": "地圖(張)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-0dd50cffcebcd8",
-    "definition_id": "def-api-0dd50cffcebcd8",
-    "raw_name": "編制內總館員數(人)",
-    "ordinal_1based": 29,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "人",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
-    "group": "area_equipment_personnel",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [],
-    "title": "編制內總館員數(人)",
-    "source_label": "編制內總館員數(人)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-5504bda2bdecad",
-    "definition_id": "def-api-5504bda2bdecad",
-    "raw_name": "志工人數",
-    "ordinal_1based": 36,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "人",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
-    "group": "area_equipment_personnel",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "年底在冊／全年參與／人員去重口徑未取得專項說明。"
-    ],
-    "title": "志工人數",
-    "source_label": "志工人數",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-777345ababac1f",
-    "definition_id": "def-api-777345ababac1f",
-    "raw_name": "青少年閱讀推廣活動(場次)",
-    "ordinal_1based": 68,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "青少年閱讀推廣活動(場次)",
-    "source_label": "青少年閱讀推廣活動(場次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-b7c8bbcaf2f11c",
-    "definition_id": "def-api-b7c8bbcaf2f11c",
-    "raw_name": "一、圖書資料",
-    "ordinal_1based": 39,
+    "series_id": "api-bbcd9cd8ea6f7c",
+    "definition_id": "def-api-bbcd9cd8ea6f7c",
+    "raw_name": "三、電子資源",
+    "ordinal_1based": 52,
     "observed_years": [
       2023
     ],
@@ -1505,71 +373,71 @@
     "notes": [
       "原欄未提供單一可確認單位；括號中的敘述不是單位。"
     ],
-    "title": "一、圖書資料",
-    "source_label": "一、圖書資料",
+    "title": "三、電子資源",
+    "source_label": "三、電子資源",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-5c7f2df30eda43",
-    "definition_id": "def-api-5c7f2df30eda43",
-    "raw_name": "幼兒閱讀推廣活動(場次)",
-    "ordinal_1based": 66,
+    "series_id": "api-d8322705b7d242",
+    "definition_id": "def-api-d8322705b7d242",
+    "raw_name": "靜畫資料(幅)",
+    "ordinal_1based": 50,
     "observed_years": [
       2023
     ],
     "historical_definition_verified": false,
     "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
+    "unit": "幅",
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
     "sources": [
       "catalog",
       "api_2023",
-      "definitions_current"
+      "definitions_current",
+      "collections"
     ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "幼兒閱讀推廣活動(場次)",
-    "source_label": "幼兒閱讀推廣活動(場次)",
+    "notes": [],
+    "title": "靜畫資料(幅)",
+    "source_label": "靜畫資料(幅)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-860b1d761cf4b7",
-    "definition_id": "def-api-860b1d761cf4b7",
-    "raw_name": "專屬社群網站(個)",
-    "ordinal_1based": 7,
+    "series_id": "api-836fac4bd2cd58",
+    "definition_id": "def-api-836fac4bd2cd58",
+    "raw_name": "期刊(種數)",
+    "ordinal_1based": 41,
     "observed_years": [
       2023
     ],
     "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "個",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
-    "group": "facilities_population",
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "種",
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
     "sources": [
       "catalog",
-      "api_2023"
+      "api_2023",
+      "definitions_current",
+      "collections"
     ],
     "notes": [],
-    "title": "專屬社群網站(個)",
-    "source_label": "專屬社群網站(個)",
+    "title": "期刊(種數)",
+    "source_label": "期刊(種數)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-f7729b608a3f81",
-    "definition_id": "def-api-f7729b608a3f81",
-    "raw_name": "約聘僱人員",
-    "ordinal_1based": 34,
+    "series_id": "api-bf9c0a90909da1",
+    "definition_id": "def-api-bf9c0a90909da1",
+    "raw_name": "臨時人員",
+    "ordinal_1based": 33,
     "observed_years": [
       2023
     ],
@@ -1581,175 +449,14 @@
     "group": "area_equipment_personnel",
     "sources": [
       "catalog",
-      "api_2023"
-    ],
-    "notes": [],
-    "title": "約聘僱人員",
-    "source_label": "約聘僱人員",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-2e44306b34f12f",
-    "definition_id": "def-api-2e44306b34f12f",
-    "raw_name": "錄影資料(片、捲)",
-    "ordinal_1based": 49,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "片、捲",
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
       "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [],
-    "title": "錄影資料(片、捲)",
-    "source_label": "錄影資料(片、捲)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-4e8bfd8d8c532d",
-    "definition_id": "def-api-4e8bfd8d8c532d",
-    "raw_name": "期刊(決算)",
-    "ordinal_1based": 21,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_final_expenditure",
-    "sources": [
-      "catalog",
-      "api_2023"
+      "manpower_current"
     ],
     "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      "現行UI人力欄標不同，開始變更年度及是否實質變更未確認。"
     ],
-    "title": "期刊(決算)",
-    "source_label": "期刊(決算)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-5610b6336281d5",
-    "definition_id": "def-api-5610b6336281d5",
-    "raw_name": "視聽資料(決算)",
-    "ordinal_1based": 23,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_final_expenditure",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "視聽資料(決算)",
-    "source_label": "視聽資料(決算)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-9ddf6b26572f77",
-    "definition_id": "def-api-9ddf6b26572f77",
-    "raw_name": "電子書(決算)",
-    "ordinal_1based": 20,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_final_expenditure",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "電子書(決算)",
-    "source_label": "電子書(決算)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-1bd04d9076c7d8",
-    "definition_id": "def-api-1bd04d9076c7d8",
-    "raw_name": "線上資料庫(自購或自行建置)",
-    "ordinal_1based": 53,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": null,
-    "temporal_kind": "stock_year_end",
-    "time_reference": "資料年12月底",
-    "group": "collection_holdings",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current",
-      "collections"
-    ],
-    "notes": [
-      "原欄未提供單一可確認單位；括號中的敘述不是單位。"
-    ],
-    "title": "線上資料庫(自購或自行建置)",
-    "source_label": "線上資料庫(自購或自行建置)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-aa21912b70484f",
-    "definition_id": "def-api-aa21912b70484f",
-    "raw_name": "電子資料(決算)",
-    "ordinal_1based": 24,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_final_expenditure",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "電子資料(決算)",
-    "source_label": "電子資料(決算)",
+    "title": "臨時人員",
+    "source_label": "臨時人員",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
@@ -1814,6 +521,422 @@
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
+    "series_id": "api-abff35341805e2",
+    "definition_id": "def-api-abff35341805e2",
+    "raw_name": "東南亞新移民人口數",
+    "ordinal_1based": 6,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "人",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+    "group": "facilities_population",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "服務人口來源、人口基準時點、跨轄區或國立館分母計算未確認。"
+    ],
+    "title": "東南亞新移民人口數",
+    "source_label": "東南亞新移民人口數",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-5610b6336281d5",
+    "definition_id": "def-api-5610b6336281d5",
+    "raw_name": "視聽資料(決算)",
+    "ordinal_1based": 23,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_final_expenditure",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "視聽資料(決算)",
+    "source_label": "視聽資料(決算)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-7fc2c701311796",
+    "definition_id": "def-api-7fc2c701311796",
+    "raw_name": "二、非書資料",
+    "ordinal_1based": 44,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": null,
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [
+      "原欄未提供單一可確認單位；括號中的敘述不是單位。"
+    ],
+    "title": "二、非書資料",
+    "source_label": "二、非書資料",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-1253c235ab505b",
+    "definition_id": "def-api-1253c235ab505b",
+    "raw_name": "其他",
+    "ordinal_1based": 37,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "人",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+    "group": "area_equipment_personnel",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [],
+    "title": "其他",
+    "source_label": "其他",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-9ddf6b26572f77",
+    "definition_id": "def-api-9ddf6b26572f77",
+    "raw_name": "電子書(決算)",
+    "ordinal_1based": 20,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_final_expenditure",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "電子書(決算)",
+    "source_label": "電子書(決算)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-698a8c3039e019",
+    "definition_id": "def-api-698a8c3039e019",
+    "raw_name": "編制內技術人員",
+    "ordinal_1based": 32,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "人",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+    "group": "area_equipment_personnel",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "manpower_current"
+    ],
+    "notes": [
+      "現行UI人力欄標不同，開始變更年度及是否實質變更未確認。"
+    ],
+    "title": "編制內技術人員",
+    "source_label": "編制內技術人員",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-a9f0ea502e6487",
+    "definition_id": "def-api-a9f0ea502e6487",
+    "raw_name": "影片欣賞(場次)",
+    "ordinal_1based": 74,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "影片欣賞(場次)",
+    "source_label": "影片欣賞(場次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-aa21912b70484f",
+    "definition_id": "def-api-aa21912b70484f",
+    "raw_name": "電子資料(決算)",
+    "ordinal_1based": 24,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_final_expenditure",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "電子資料(決算)",
+    "source_label": "電子資料(決算)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-d24129274c3b7e",
+    "definition_id": "def-api-d24129274c3b7e",
+    "raw_name": "新住民閱讀推廣活動(人次)",
+    "ordinal_1based": 82,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "新住民閱讀推廣活動(人次)",
+    "source_label": "新住民閱讀推廣活動(人次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-280ed8a41f0f15",
+    "definition_id": "def-api-280ed8a41f0f15",
+    "raw_name": "全年購買圖書資料費-決算(元)",
+    "ordinal_1based": 18,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_final_expenditure",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "全年購買圖書資料費-決算(元)",
+    "source_label": "全年購買圖書資料費-決算(元)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-541deacfc8ed4b",
+    "definition_id": "def-api-541deacfc8ed4b",
+    "raw_name": "圖書巡迴車",
+    "ordinal_1based": 9,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "車輛",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+    "group": "facilities_population",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [],
+    "title": "圖書巡迴車",
+    "source_label": "圖書巡迴車",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-5ec84bfa8fc04c",
+    "definition_id": "def-api-5ec84bfa8fc04c",
+    "raw_name": "全年圖書資訊借閱人次",
+    "ordinal_1based": 59,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "circulation",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "不是獨立借閱人數，也不是年度到館人次。"
+    ],
+    "definition": "借圖書及非書的全年借閱次數；同一次借多冊按1人次，電子資源排除。",
+    "title": "全年圖書資訊借閱人次",
+    "source_label": "全年圖書資訊借閱人次",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-1bd04d9076c7d8",
+    "definition_id": "def-api-1bd04d9076c7d8",
+    "raw_name": "線上資料庫(自購或自行建置)",
+    "ordinal_1based": 53,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": null,
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [
+      "原欄未提供單一可確認單位；括號中的敘述不是單位。"
+    ],
+    "title": "線上資料庫(自購或自行建置)",
+    "source_label": "線上資料庫(自購或自行建置)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-5c7f2df30eda43",
+    "definition_id": "def-api-5c7f2df30eda43",
+    "raw_name": "幼兒閱讀推廣活動(場次)",
+    "ordinal_1based": 66,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "幼兒閱讀推廣活動(場次)",
+    "source_label": "幼兒閱讀推廣活動(場次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-c2acebc4446a22",
+    "definition_id": "def-api-c2acebc4446a22",
+    "raw_name": "一般閱讀推廣活動(人次)",
+    "ordinal_1based": 77,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "一般閱讀推廣活動(人次)",
+    "source_label": "一般閱讀推廣活動(人次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
     "series_id": "api-dfa81162420e83",
     "definition_id": "def-api-dfa81162420e83",
     "raw_name": "說故事(人次)",
@@ -1843,10 +966,66 @@
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-1253c235ab505b",
-    "definition_id": "def-api-1253c235ab505b",
-    "raw_name": "其他",
-    "ordinal_1based": 37,
+    "series_id": "api-137f26ad1b48d7",
+    "definition_id": "def-api-137f26ad1b48d7",
+    "raw_name": "圖書(決算)",
+    "ordinal_1based": 19,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_final_expenditure",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "圖書(決算)",
+    "source_label": "圖書(決算)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-b7c8bbcaf2f11c",
+    "definition_id": "def-api-b7c8bbcaf2f11c",
+    "raw_name": "一、圖書資料",
+    "ordinal_1based": 39,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": null,
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [
+      "原欄未提供單一可確認單位；括號中的敘述不是單位。"
+    ],
+    "title": "一、圖書資料",
+    "source_label": "一、圖書資料",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-5560042e572589",
+    "definition_id": "def-api-5560042e572589",
+    "raw_name": "編制內行政人員",
+    "ordinal_1based": 31,
     "observed_years": [
       2023
     ],
@@ -1861,8 +1040,476 @@
       "api_2023"
     ],
     "notes": [],
-    "title": "其他",
-    "source_label": "其他",
+    "title": "編制內行政人員",
+    "source_label": "編制內行政人員",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-5174e07bb4e496",
+    "definition_id": "def-api-5174e07bb4e496",
+    "raw_name": "圖書館數 總館(所)",
+    "ordinal_1based": 2,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "所",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+    "group": "facilities_population",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [],
+    "title": "圖書館數 總館(所)",
+    "source_label": "圖書館數 總館(所)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-32388d41025ef6",
+    "definition_id": "def-api-32388d41025ef6",
+    "raw_name": "分館(所)",
+    "ordinal_1based": 3,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "所",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+    "group": "facilities_population",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [],
+    "title": "分館(所)",
+    "source_label": "分館(所)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-67e6dcfd0a51af",
+    "definition_id": "def-api-67e6dcfd0a51af",
+    "raw_name": "報紙",
+    "ordinal_1based": 14,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_budget",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "報紙",
+    "source_label": "報紙",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-e9600817d0da81",
+    "definition_id": "def-api-e9600817d0da81",
+    "raw_name": "年度電子書刊借閱冊數",
+    "ordinal_1based": 62,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "冊次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "circulation",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "circulation"
+    ],
+    "notes": [
+      "API及報表用電子書刊，現行文字定義用電子書；電子期刊納入時點及跨年同義性未確認。"
+    ],
+    "title": "年度電子書刊借閱冊數",
+    "source_label": "年度電子書刊借閱冊數",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-860b1d761cf4b7",
+    "definition_id": "def-api-860b1d761cf4b7",
+    "raw_name": "專屬社群網站(個)",
+    "ordinal_1based": 7,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "個",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+    "group": "facilities_population",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [],
+    "title": "專屬社群網站(個)",
+    "source_label": "專屬社群網站(個)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-751468cd8fc1fd",
+    "definition_id": "def-api-751468cd8fc1fd",
+    "raw_name": "報紙(種數)",
+    "ordinal_1based": 42,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "種",
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [],
+    "title": "報紙(種數)",
+    "source_label": "報紙(種數)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-ec44efb1fc27c5",
+    "definition_id": "def-api-ec44efb1fc27c5",
+    "raw_name": "其他(決算)",
+    "ordinal_1based": 43,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": null,
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [
+      "原欄名含決算但位在館藏分組，疑似欄標問題；保留原名，不自動修正。"
+    ],
+    "title": "其他(決算)",
+    "source_label": "其他(決算)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-c16a12cf9a593b",
+    "definition_id": "def-api-c16a12cf9a593b",
+    "raw_name": "年度電子書刊借閱人次",
+    "ordinal_1based": 61,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "circulation",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "circulation"
+    ],
+    "notes": [
+      "API及報表用電子書刊，現行文字定義用電子書；電子期刊納入時點及跨年同義性未確認。"
+    ],
+    "title": "年度電子書刊借閱人次",
+    "source_label": "年度電子書刊借閱人次",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-611692ffeb319b",
+    "definition_id": "def-api-611692ffeb319b",
+    "raw_name": "其他(件)",
+    "ordinal_1based": 51,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "件",
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [],
+    "title": "其他(件)",
+    "source_label": "其他(件)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-52b19f35d09466",
+    "definition_id": "def-api-52b19f35d09466",
+    "raw_name": "編制內專業人員",
+    "ordinal_1based": 30,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "人",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+    "group": "area_equipment_personnel",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [],
+    "title": "編制內專業人員",
+    "source_label": "編制內專業人員",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-777345ababac1f",
+    "definition_id": "def-api-777345ababac1f",
+    "raw_name": "青少年閱讀推廣活動(場次)",
+    "ordinal_1based": 68,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "青少年閱讀推廣活動(場次)",
+    "source_label": "青少年閱讀推廣活動(場次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-b88ba5aac20364",
+    "definition_id": "def-api-b88ba5aac20364",
+    "raw_name": "新住民閱讀推廣活動(場次)",
+    "ordinal_1based": 70,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "新住民閱讀推廣活動(場次)",
+    "source_label": "新住民閱讀推廣活動(場次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-de15403671620e",
+    "definition_id": "def-api-de15403671620e",
+    "raw_name": "兒童閱讀推廣活動(人次)",
+    "ordinal_1based": 79,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "兒童閱讀推廣活動(人次)",
+    "source_label": "兒童閱讀推廣活動(人次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-5504bda2bdecad",
+    "definition_id": "def-api-5504bda2bdecad",
+    "raw_name": "志工人數",
+    "ordinal_1based": 36,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "人",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+    "group": "area_equipment_personnel",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "年底在冊／全年參與／人員去重口徑未取得專項說明。"
+    ],
+    "title": "志工人數",
+    "source_label": "志工人數",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-e034f137becdbf",
+    "definition_id": "def-api-e034f137becdbf",
+    "raw_name": "圖書(冊數)",
+    "ordinal_1based": 40,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "冊",
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [],
+    "title": "圖書(冊數)",
+    "source_label": "圖書(冊數)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-b2361607c7dd62",
+    "definition_id": "def-api-b2361607c7dd62",
+    "raw_name": "四、東南亞圖書及非書資料收藏數量(包含於總館藏量下)",
+    "ordinal_1based": 57,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": null,
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [
+      "原名明示包含於總館藏，不能再加回總量。",
+      "原欄未提供單一可確認單位；括號中的敘述不是單位。"
+    ],
+    "title": "四、東南亞圖書及非書資料收藏數量(包含於總館藏量下)",
+    "source_label": "四、東南亞圖書及非書資料收藏數量(包含於總館藏量下)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-5bcce53b598657",
+    "definition_id": "def-api-5bcce53b598657",
+    "raw_name": "社教藝文活動(場次)",
+    "ordinal_1based": 71,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "社教藝文活動(場次)",
+    "source_label": "社教藝文活動(場次)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
@@ -1895,10 +1542,10 @@
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-3b4d369876f819",
-    "definition_id": "def-api-3b4d369876f819",
-    "raw_name": "樂齡閱讀推廣活動(場次)",
-    "ordinal_1based": 69,
+    "series_id": "api-336d17f021396c",
+    "definition_id": "def-api-336d17f021396c",
+    "raw_name": "說故事(場次)",
+    "ordinal_1based": 73,
     "observed_years": [
       2023
     ],
@@ -1917,17 +1564,239 @@
       "細類別與同場協辦是否跨館重計尚未確認。"
     ],
     "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "樂齡閱讀推廣活動(場次)",
-    "source_label": "樂齡閱讀推廣活動(場次)",
+    "title": "說故事(場次)",
+    "source_label": "說故事(場次)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-bf9c0a90909da1",
-    "definition_id": "def-api-bf9c0a90909da1",
-    "raw_name": "臨時人員",
-    "ordinal_1based": 33,
+    "series_id": "api-3cd20d34195287",
+    "definition_id": "def-api-3cd20d34195287",
+    "raw_name": "地方特色活動(人次)",
+    "ordinal_1based": 84,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "地方特色活動(人次)",
+    "source_label": "地方特色活動(人次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-4e8bfd8d8c532d",
+    "definition_id": "def-api-4e8bfd8d8c532d",
+    "raw_name": "期刊(決算)",
+    "ordinal_1based": 21,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_final_expenditure",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "期刊(決算)",
+    "source_label": "期刊(決算)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-b3c2b08cfb7ba5",
+    "definition_id": "def-api-b3c2b08cfb7ba5",
+    "raw_name": "影片欣賞(人次)",
+    "ordinal_1based": 86,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "影片欣賞(人次)",
+    "source_label": "影片欣賞(人次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-a0da508b8090d4",
+    "definition_id": "def-api-a0da508b8090d4",
+    "raw_name": "兒童閱讀推廣活動(場次)",
+    "ordinal_1based": 67,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "兒童閱讀推廣活動(場次)",
+    "source_label": "兒童閱讀推廣活動(場次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-91d2e4f9a0026c",
+    "definition_id": "def-api-91d2e4f9a0026c",
+    "raw_name": "館舍總面積(平方公尺)",
+    "ordinal_1based": 26,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "平方公尺",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+    "group": "area_equipment_personnel",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [],
+    "title": "館舍總面積(平方公尺)",
+    "source_label": "館舍總面積(平方公尺)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-33b22871a97dc1",
+    "definition_id": "def-api-33b22871a97dc1",
+    "raw_name": "錄音資料(片、捲)",
+    "ordinal_1based": 48,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "片、捲",
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [],
+    "title": "錄音資料(片、捲)",
+    "source_label": "錄音資料(片、捲)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-3b893e9e1e9488",
+    "definition_id": "def-api-3b893e9e1e9488",
+    "raw_name": "其他類型資料庫(種)",
+    "ordinal_1based": 55,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "種",
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [],
+    "title": "其他類型資料庫(種)",
+    "source_label": "其他類型資料庫(種)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-89612f677a4521",
+    "definition_id": "def-api-89612f677a4521",
+    "raw_name": "其他(場次)",
+    "ordinal_1based": 75,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "其他(場次)",
+    "source_label": "其他(場次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-0dd50cffcebcd8",
+    "definition_id": "def-api-0dd50cffcebcd8",
+    "raw_name": "編制內總館員數(人)",
+    "ordinal_1based": 29,
     "observed_years": [
       2023
     ],
@@ -1939,14 +1808,11 @@
     "group": "area_equipment_personnel",
     "sources": [
       "catalog",
-      "api_2023",
-      "manpower_current"
+      "api_2023"
     ],
-    "notes": [
-      "現行UI人力欄標不同，開始變更年度及是否實質變更未確認。"
-    ],
-    "title": "臨時人員",
-    "source_label": "臨時人員",
+    "notes": [],
+    "title": "編制內總館員數(人)",
+    "source_label": "編制內總館員數(人)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
@@ -2008,35 +1874,35 @@
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-91d2e4f9a0026c",
-    "definition_id": "def-api-91d2e4f9a0026c",
-    "raw_name": "館舍總面積(平方公尺)",
-    "ordinal_1based": 26,
+    "series_id": "api-d4c4fe740cb959",
+    "definition_id": "def-api-d4c4fe740cb959",
+    "raw_name": "閱覽席位數(席)",
+    "ordinal_1based": 58,
     "observed_years": [
       2023
     ],
     "historical_definition_verified": false,
     "definition_status": "label_only",
-    "unit": "平方公尺",
+    "unit": "席",
     "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
-    "group": "area_equipment_personnel",
+    "time_reference": "資料年12月底（依現行靜態一般規則）",
+    "group": "seating",
     "sources": [
       "catalog",
       "api_2023"
     ],
     "notes": [],
-    "title": "館舍總面積(平方公尺)",
-    "source_label": "館舍總面積(平方公尺)",
+    "title": "閱覽席位數(席)",
+    "source_label": "閱覽席位數(席)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-a0da508b8090d4",
-    "definition_id": "def-api-a0da508b8090d4",
-    "raw_name": "兒童閱讀推廣活動(場次)",
-    "ordinal_1based": 67,
+    "series_id": "api-3b4d369876f819",
+    "definition_id": "def-api-3b4d369876f819",
+    "raw_name": "樂齡閱讀推廣活動(場次)",
+    "ordinal_1based": 69,
     "observed_years": [
       2023
     ],
@@ -2055,8 +1921,251 @@
       "細類別與同場協辦是否跨館重計尚未確認。"
     ],
     "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "兒童閱讀推廣活動(場次)",
-    "source_label": "兒童閱讀推廣活動(場次)",
+    "title": "樂齡閱讀推廣活動(場次)",
+    "source_label": "樂齡閱讀推廣活動(場次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-5253da30805875",
+    "definition_id": "def-api-5253da30805875",
+    "raw_name": "圖書",
+    "ordinal_1based": 11,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_budget",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "圖書",
+    "source_label": "圖書",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-2e44306b34f12f",
+    "definition_id": "def-api-2e44306b34f12f",
+    "raw_name": "錄影資料(片、捲)",
+    "ordinal_1based": 49,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "片、捲",
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [],
+    "title": "錄影資料(片、捲)",
+    "source_label": "錄影資料(片、捲)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-3f787408e2eec5",
+    "definition_id": "def-api-3f787408e2eec5",
+    "raw_name": "其他圖書資料(決算)",
+    "ordinal_1based": 25,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_final_expenditure",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "其他圖書資料(決算)",
+    "source_label": "其他圖書資料(決算)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-b2d3fa72d30731",
+    "definition_id": "def-api-b2d3fa72d30731",
+    "raw_name": "供讀者使用的平板電腦數(台)",
+    "ordinal_1based": 28,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "台",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+    "group": "area_equipment_personnel",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [],
+    "title": "供讀者使用的平板電腦數(台)",
+    "source_label": "供讀者使用的平板電腦數(台)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-281c2d1e910cec",
+    "definition_id": "def-api-281c2d1e910cec",
+    "raw_name": "微縮單片(片)",
+    "ordinal_1based": 46,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "片",
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [],
+    "title": "微縮單片(片)",
+    "source_label": "微縮單片(片)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-f37c98a9fe215c",
+    "definition_id": "def-api-f37c98a9fe215c",
+    "raw_name": "其他圖書資料",
+    "ordinal_1based": 17,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_budget",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "其他圖書資料",
+    "source_label": "其他圖書資料",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-b5e307e286ee4d",
+    "definition_id": "def-api-b5e307e286ee4d",
+    "raw_name": "期刊",
+    "ordinal_1based": 13,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_budget",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "期刊",
+    "source_label": "期刊",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-ee219e82d4a491",
+    "definition_id": "def-api-ee219e82d4a491",
+    "raw_name": "電子書(種)",
+    "ordinal_1based": 56,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "種",
+    "temporal_kind": "stock_year_end",
+    "time_reference": "資料年12月底",
+    "group": "collection_holdings",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current",
+      "collections"
+    ],
+    "notes": [],
+    "title": "電子書(種)",
+    "source_label": "電子書(種)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-4461b6d51ac6ad",
+    "definition_id": "def-api-4461b6d51ac6ad",
+    "raw_name": "社教藝文活動(人次)",
+    "ordinal_1based": 83,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "社教藝文活動(人次)",
+    "source_label": "社教藝文活動(人次)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
@@ -2091,96 +2200,10 @@
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-0442c5ce651b7b",
-    "definition_id": "def-api-0442c5ce651b7b",
-    "raw_name": "幼兒閱讀推廣活動(人次)",
-    "ordinal_1based": 78,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "幼兒閱讀推廣活動(人次)",
-    "source_label": "幼兒閱讀推廣活動(人次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-de15403671620e",
-    "definition_id": "def-api-de15403671620e",
-    "raw_name": "兒童閱讀推廣活動(人次)",
-    "ordinal_1based": 79,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "promotion",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "細類別與同場協辦是否跨館重計尚未確認。"
-    ],
-    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
-    "title": "兒童閱讀推廣活動(人次)",
-    "source_label": "兒童閱讀推廣活動(人次)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-698a8c3039e019",
-    "definition_id": "def-api-698a8c3039e019",
-    "raw_name": "編制內技術人員",
-    "ordinal_1based": 32,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "人",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
-    "group": "area_equipment_personnel",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "manpower_current"
-    ],
-    "notes": [
-      "現行UI人力欄標不同，開始變更年度及是否實質變更未確認。"
-    ],
-    "title": "編制內技術人員",
-    "source_label": "編制內技術人員",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-f37c98a9fe215c",
-    "definition_id": "def-api-f37c98a9fe215c",
-    "raw_name": "其他圖書資料",
-    "ordinal_1based": 17,
+    "series_id": "api-ba3b5dabd04495",
+    "definition_id": "def-api-ba3b5dabd04495",
+    "raw_name": "電子資料",
+    "ordinal_1based": 16,
     "observed_years": [
       2023
     ],
@@ -2197,156 +2220,23 @@
     "notes": [
       "預算與決算不能互相替代；子項不先假設跨年完全同義。"
     ],
-    "title": "其他圖書資料",
-    "source_label": "其他圖書資料",
+    "title": "電子資料",
+    "source_label": "電子資料",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "api-1961b5e2e8ee05",
-    "definition_id": "def-api-1961b5e2e8ee05",
-    "raw_name": "區館(所)",
-    "ordinal_1based": 4,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "所",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
-    "group": "facilities_population",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [],
-    "title": "區館(所)",
-    "source_label": "區館(所)",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-3683191a25dafa",
-    "definition_id": "def-api-3683191a25dafa",
-    "raw_name": "電子書",
-    "ordinal_1based": 12,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "新臺幣元",
-    "temporal_kind": "annual_financial",
-    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
-    "group": "acquisition_budget",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
-    ],
-    "title": "電子書",
-    "source_label": "電子書",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-abff35341805e2",
-    "definition_id": "def-api-abff35341805e2",
-    "raw_name": "東南亞新移民人口數",
-    "ordinal_1based": 6,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "人",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
-    "group": "facilities_population",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [
-      "服務人口來源、人口基準時點、跨轄區或國立館分母計算未確認。"
-    ],
-    "title": "東南亞新移民人口數",
-    "source_label": "東南亞新移民人口數",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-5ec84bfa8fc04c",
-    "definition_id": "def-api-5ec84bfa8fc04c",
-    "raw_name": "全年圖書資訊借閱人次",
-    "ordinal_1based": 59,
+    "series_id": "api-dee1d5d44a4b99",
+    "definition_id": "def-api-dee1d5d44a4b99",
+    "raw_name": "地圖(張)",
+    "ordinal_1based": 45,
     "observed_years": [
       2023
     ],
     "historical_definition_verified": false,
     "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "time_reference": "資料年1月1日至12月31日",
-    "group": "circulation",
-    "sources": [
-      "catalog",
-      "api_2023",
-      "definitions_current"
-    ],
-    "notes": [
-      "不是獨立借閱人數，也不是年度到館人次。"
-    ],
-    "definition": "借圖書及非書的全年借閱次數；同一次借多冊按1人次，電子資源排除。",
-    "title": "全年圖書資訊借閱人次",
-    "source_label": "全年圖書資訊借閱人次",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-5560042e572589",
-    "definition_id": "def-api-5560042e572589",
-    "raw_name": "編制內行政人員",
-    "ordinal_1based": 31,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "label_only",
-    "unit": "人",
-    "temporal_kind": "stock_year_end_provisional",
-    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
-    "group": "area_equipment_personnel",
-    "sources": [
-      "catalog",
-      "api_2023"
-    ],
-    "notes": [],
-    "title": "編制內行政人員",
-    "source_label": "編制內行政人員",
-    "source_family": "licensed_api",
-    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
-  },
-  {
-    "series_id": "api-4b92ea76246384",
-    "definition_id": "def-api-4b92ea76246384",
-    "raw_name": "光碟資料庫(種)",
-    "ordinal_1based": 54,
-    "observed_years": [
-      2023
-    ],
-    "historical_definition_verified": false,
-    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
-    "unit": "種",
+    "unit": "張",
     "temporal_kind": "stock_year_end",
     "time_reference": "資料年12月底",
     "group": "collection_holdings",
@@ -2357,45 +2247,121 @@
       "collections"
     ],
     "notes": [],
-    "title": "光碟資料庫(種)",
-    "source_label": "光碟資料庫(種)",
+    "title": "地圖(張)",
+    "source_label": "地圖(張)",
     "source_family": "licensed_api",
     "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
     "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
-    "series_id": "chart-Bacol00282-6373d9b51d",
-    "definition_id": "def-chart-Bacol00282-6373d9b51d",
-    "title": "全年圖書資訊借閱人次｜電子書",
-    "group": "全年圖書資訊借閱人次",
-    "source_label": "電子書",
+    "series_id": "api-3e55672b1ee06f",
+    "definition_id": "def-api-3e55672b1ee06f",
+    "raw_name": "工讀生",
+    "ordinal_1based": 35,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "人",
+    "temporal_kind": "stock_year_end_provisional",
+    "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+    "group": "area_equipment_personnel",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [],
+    "title": "工讀生",
+    "source_label": "工讀生",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-b1a71f1b99a4b4",
+    "definition_id": "def-api-b1a71f1b99a4b4",
+    "raw_name": "樂齡閱讀推廣活動(人次)",
+    "ordinal_1based": 81,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
     "unit": "人次",
     "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "圖書列含圖書與非書、排除電子資源；電子書／電子書刊歷年定義適用性待核。人次不是去重人數。",
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
     ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "樂齡閱讀推廣活動(人次)",
+    "source_label": "樂齡閱讀推廣活動(人次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-e3599e771677f8",
+    "definition_id": "def-api-e3599e771677f8",
+    "raw_name": "全年推廣活動(人次)",
+    "ordinal_1based": 76,
     "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "time_reference": "資料年1月1日至12月31日",
+    "group": "promotion",
+    "sources": [
+      "catalog",
+      "api_2023",
+      "definitions_current"
+    ],
+    "notes": [
+      "細類別與同場協辦是否跨館重計尚未確認。"
+    ],
+    "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。",
+    "title": "全年推廣活動(人次)",
+    "source_label": "全年推廣活動(人次)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
+  },
+  {
+    "series_id": "api-1dd1dcc4c4491c",
+    "definition_id": "def-api-1dd1dcc4c4491c",
+    "raw_name": "全年購買圖書資料費-預算(元)",
+    "ordinal_1based": 10,
+    "observed_years": [
+      2023
+    ],
+    "historical_definition_verified": false,
+    "definition_status": "label_only",
+    "unit": "新臺幣元",
+    "temporal_kind": "annual_financial",
+    "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+    "group": "acquisition_budget",
+    "sources": [
+      "catalog",
+      "api_2023"
+    ],
+    "notes": [
+      "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+    ],
+    "title": "全年購買圖書資料費-預算(元)",
+    "source_label": "全年購買圖書資料費-預算(元)",
+    "source_family": "licensed_api",
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem"
   },
   {
     "series_id": "chart-Bacol00282-9462f12b92",
@@ -2432,12 +2398,12 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00283-6373d9b51d",
-    "definition_id": "def-chart-Bacol00283-6373d9b51d",
-    "title": "全年圖書資訊借閱冊數｜電子書",
-    "group": "全年圖書資訊借閱冊數",
+    "series_id": "chart-Bacol00282-6373d9b51d",
+    "definition_id": "def-chart-Bacol00282-6373d9b51d",
+    "title": "全年圖書資訊借閱人次｜電子書",
+    "group": "全年圖書資訊借閱人次",
     "source_label": "電子書",
-    "unit": "冊次",
+    "unit": "人次",
     "temporal_kind": "flow_calendar_year",
     "definition_status": "current_reference_historical_applicability_unverified",
     "notes": [
@@ -2500,213 +2466,16 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00284-4cf1c463db",
-    "definition_id": "def-chart-Bacol00284-4cf1c463db",
-    "title": "全國推廣活動場次｜社教藝文活動(場次)",
-    "group": "全國推廣活動場次",
-    "source_label": "社教藝文活動(場次)",
-    "unit": "場次",
+    "series_id": "chart-Bacol00283-6373d9b51d",
+    "definition_id": "def-chart-Bacol00283-6373d9b51d",
+    "title": "全年圖書資訊借閱冊數｜電子書",
+    "group": "全年圖書資訊借閱冊數",
+    "source_label": "電子書",
+    "unit": "冊次",
     "temporal_kind": "flow_calendar_year",
     "definition_status": "current_reference_historical_applicability_unverified",
     "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00284-af3df619db",
-    "definition_id": "def-chart-Bacol00284-af3df619db",
-    "title": "全國推廣活動場次｜樂齡閱讀推廣活動(場次)",
-    "group": "全國推廣活動場次",
-    "source_label": "樂齡閱讀推廣活動(場次)",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00284-d2d566288a",
-    "definition_id": "def-chart-Bacol00284-d2d566288a",
-    "title": "全國推廣活動場次｜影片欣賞(場次)",
-    "group": "全國推廣活動場次",
-    "source_label": "影片欣賞(場次)",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00284-c5c3d7c8c2",
-    "definition_id": "def-chart-Bacol00284-c5c3d7c8c2",
-    "title": "全國推廣活動場次｜說故事(場次)",
-    "group": "全國推廣活動場次",
-    "source_label": "說故事(場次)",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00284-9d15228ca1",
-    "definition_id": "def-chart-Bacol00284-9d15228ca1",
-    "title": "全國推廣活動場次｜兒童閱讀推廣活動(場次)",
-    "group": "全國推廣活動場次",
-    "source_label": "兒童閱讀推廣活動(場次)",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00284-37a952f01f",
-    "definition_id": "def-chart-Bacol00284-37a952f01f",
-    "title": "全國推廣活動場次｜地方特色活動(場次)",
-    "group": "全國推廣活動場次",
-    "source_label": "地方特色活動(場次)",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00284-2eca9f7b82",
-    "definition_id": "def-chart-Bacol00284-2eca9f7b82",
-    "title": "全國推廣活動場次｜青少年閱讀推廣活動(場次)",
-    "group": "全國推廣活動場次",
-    "source_label": "青少年閱讀推廣活動(場次)",
-    "unit": "場次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
+      "圖書列含圖書與非書、排除電子資源；電子書／電子書刊歷年定義適用性待核。人次不是去重人數。",
       "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
     ],
     "source_family": "public_national_chart",
@@ -2764,11 +2533,44 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00284-a6ef229400",
-    "definition_id": "def-chart-Bacol00284-a6ef229400",
-    "title": "全國推廣活動場次｜新住民閱讀推廣活動(場次)",
+    "series_id": "chart-Bacol00284-4cf1c463db",
+    "definition_id": "def-chart-Bacol00284-4cf1c463db",
+    "title": "全國推廣活動場次｜社教藝文活動(場次)",
     "group": "全國推廣活動場次",
-    "source_label": "新住民閱讀推廣活動(場次)",
+    "source_label": "社教藝文活動(場次)",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00284-37a952f01f",
+    "definition_id": "def-chart-Bacol00284-37a952f01f",
+    "title": "全國推廣活動場次｜地方特色活動(場次)",
+    "group": "全國推廣活動場次",
+    "source_label": "地方特色活動(場次)",
     "unit": "場次",
     "temporal_kind": "flow_calendar_year",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -2863,12 +2665,177 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00285-528b0c2833",
-    "definition_id": "def-chart-Bacol00285-528b0c2833",
-    "title": "全國推廣活動人次｜青少年閱讀推廣活動(人次)",
-    "group": "全國推廣活動人次",
-    "source_label": "青少年閱讀推廣活動(人次)",
-    "unit": "人次",
+    "series_id": "chart-Bacol00284-9d15228ca1",
+    "definition_id": "def-chart-Bacol00284-9d15228ca1",
+    "title": "全國推廣活動場次｜兒童閱讀推廣活動(場次)",
+    "group": "全國推廣活動場次",
+    "source_label": "兒童閱讀推廣活動(場次)",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00284-a6ef229400",
+    "definition_id": "def-chart-Bacol00284-a6ef229400",
+    "title": "全國推廣活動場次｜新住民閱讀推廣活動(場次)",
+    "group": "全國推廣活動場次",
+    "source_label": "新住民閱讀推廣活動(場次)",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00284-d2d566288a",
+    "definition_id": "def-chart-Bacol00284-d2d566288a",
+    "title": "全國推廣活動場次｜影片欣賞(場次)",
+    "group": "全國推廣活動場次",
+    "source_label": "影片欣賞(場次)",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00284-af3df619db",
+    "definition_id": "def-chart-Bacol00284-af3df619db",
+    "title": "全國推廣活動場次｜樂齡閱讀推廣活動(場次)",
+    "group": "全國推廣活動場次",
+    "source_label": "樂齡閱讀推廣活動(場次)",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00284-c5c3d7c8c2",
+    "definition_id": "def-chart-Bacol00284-c5c3d7c8c2",
+    "title": "全國推廣活動場次｜說故事(場次)",
+    "group": "全國推廣活動場次",
+    "source_label": "說故事(場次)",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00284-2eca9f7b82",
+    "definition_id": "def-chart-Bacol00284-2eca9f7b82",
+    "title": "全國推廣活動場次｜青少年閱讀推廣活動(場次)",
+    "group": "全國推廣活動場次",
+    "source_label": "青少年閱讀推廣活動(場次)",
+    "unit": "場次",
     "temporal_kind": "flow_calendar_year",
     "definition_status": "current_reference_historical_applicability_unverified",
     "notes": [
@@ -2929,143 +2896,11 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00285-ea90c2079c",
-    "definition_id": "def-chart-Bacol00285-ea90c2079c",
-    "title": "全國推廣活動人次｜社教藝文活動(人次)",
+    "series_id": "chart-Bacol00285-528b0c2833",
+    "definition_id": "def-chart-Bacol00285-528b0c2833",
+    "title": "全國推廣活動人次｜青少年閱讀推廣活動(人次)",
     "group": "全國推廣活動人次",
-    "source_label": "社教藝文活動(人次)",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00285-0bf6215f67",
-    "definition_id": "def-chart-Bacol00285-0bf6215f67",
-    "title": "全國推廣活動人次｜其他(人次)",
-    "group": "全國推廣活動人次",
-    "source_label": "其他(人次)",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00285-8b49d24f1d",
-    "definition_id": "def-chart-Bacol00285-8b49d24f1d",
-    "title": "全國推廣活動人次｜兒童閱讀推廣活動(人次)",
-    "group": "全國推廣活動人次",
-    "source_label": "兒童閱讀推廣活動(人次)",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00285-4e9313d89b",
-    "definition_id": "def-chart-Bacol00285-4e9313d89b",
-    "title": "全國推廣活動人次｜幼兒閱讀推廣活動(人次)",
-    "group": "全國推廣活動人次",
-    "source_label": "幼兒閱讀推廣活動(人次)",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00285-84a54322d6",
-    "definition_id": "def-chart-Bacol00285-84a54322d6",
-    "title": "全國推廣活動人次｜一般閱讀推廣活動(人次)",
-    "group": "全國推廣活動人次",
-    "source_label": "一般閱讀推廣活動(人次)",
+    "source_label": "青少年閱讀推廣活動(人次)",
     "unit": "人次",
     "temporal_kind": "flow_calendar_year",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -3127,44 +2962,11 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00285-521bc3f34c",
-    "definition_id": "def-chart-Bacol00285-521bc3f34c",
-    "title": "全國推廣活動人次｜說故事(人次)",
+    "series_id": "chart-Bacol00285-0bf6215f67",
+    "definition_id": "def-chart-Bacol00285-0bf6215f67",
+    "title": "全國推廣活動人次｜其他(人次)",
     "group": "全國推廣活動人次",
-    "source_label": "說故事(人次)",
-    "unit": "人次",
-    "temporal_kind": "flow_calendar_year",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00285-e0e4d1d172",
-    "definition_id": "def-chart-Bacol00285-e0e4d1d172",
-    "title": "全國推廣活動人次｜影片欣賞(人次)",
-    "group": "全國推廣活動人次",
-    "source_label": "影片欣賞(人次)",
+    "source_label": "其他(人次)",
     "unit": "人次",
     "temporal_kind": "flow_calendar_year",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -3226,11 +3028,209 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00286-a25cda8f0a",
-    "definition_id": "def-chart-Bacol00286-a25cda8f0a",
-    "title": "館舍面積級距分布（館舍間數）｜501-1000平方公尺",
+    "series_id": "chart-Bacol00285-84a54322d6",
+    "definition_id": "def-chart-Bacol00285-84a54322d6",
+    "title": "全國推廣活動人次｜一般閱讀推廣活動(人次)",
+    "group": "全國推廣活動人次",
+    "source_label": "一般閱讀推廣活動(人次)",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00285-4e9313d89b",
+    "definition_id": "def-chart-Bacol00285-4e9313d89b",
+    "title": "全國推廣活動人次｜幼兒閱讀推廣活動(人次)",
+    "group": "全國推廣活動人次",
+    "source_label": "幼兒閱讀推廣活動(人次)",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00285-e0e4d1d172",
+    "definition_id": "def-chart-Bacol00285-e0e4d1d172",
+    "title": "全國推廣活動人次｜影片欣賞(人次)",
+    "group": "全國推廣活動人次",
+    "source_label": "影片欣賞(人次)",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00285-ea90c2079c",
+    "definition_id": "def-chart-Bacol00285-ea90c2079c",
+    "title": "全國推廣活動人次｜社教藝文活動(人次)",
+    "group": "全國推廣活動人次",
+    "source_label": "社教藝文活動(人次)",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00285-521bc3f34c",
+    "definition_id": "def-chart-Bacol00285-521bc3f34c",
+    "title": "全國推廣活動人次｜說故事(人次)",
+    "group": "全國推廣活動人次",
+    "source_label": "說故事(人次)",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00285-8b49d24f1d",
+    "definition_id": "def-chart-Bacol00285-8b49d24f1d",
+    "title": "全國推廣活動人次｜兒童閱讀推廣活動(人次)",
+    "group": "全國推廣活動人次",
+    "source_label": "兒童閱讀推廣活動(人次)",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00286-325725bddd",
+    "definition_id": "def-chart-Bacol00286-325725bddd",
+    "title": "館舍面積級距分布（館舍間數）｜10000平方公尺以上",
     "group": "館舍面積級距分布（館舍間數）",
-    "source_label": "501-1000平方公尺",
+    "source_label": "10000平方公尺以上",
     "unit": "間",
     "temporal_kind": "stock_year_end",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -3328,11 +3328,11 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00286-325725bddd",
-    "definition_id": "def-chart-Bacol00286-325725bddd",
-    "title": "館舍面積級距分布（館舍間數）｜10000平方公尺以上",
+    "series_id": "chart-Bacol00286-a25cda8f0a",
+    "definition_id": "def-chart-Bacol00286-a25cda8f0a",
+    "title": "館舍面積級距分布（館舍間數）｜501-1000平方公尺",
     "group": "館舍面積級距分布（館舍間數）",
-    "source_label": "10000平方公尺以上",
+    "source_label": "501-1000平方公尺",
     "unit": "間",
     "temporal_kind": "stock_year_end",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -3372,6 +3372,40 @@
     "definition_status": "current_reference_historical_applicability_unverified",
     "notes": [
       "ItemName為原始面積級距，數值是館舍間數，不是平方公尺。級距端點依來源原字串，未自行修正重疊邊界。",
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00287-e0bf76e139",
+    "definition_id": "def-chart-Bacol00287-e0bf76e139",
+    "title": "圖書館人員編制｜技術人員",
+    "group": "圖書館人員編制",
+    "source_label": "技術人員",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行一般靜態規則為年底；各年人員類別與約用／派遣歸類未逐年核實。",
       "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
     ],
     "source_family": "public_national_chart",
@@ -3464,16 +3498,16 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00287-e0bf76e139",
-    "definition_id": "def-chart-Bacol00287-e0bf76e139",
-    "title": "圖書館人員編制｜技術人員",
-    "group": "圖書館人員編制",
-    "source_label": "技術人員",
-    "unit": "人",
+    "series_id": "chart-Bacol00288-c1c80d316a",
+    "definition_id": "def-chart-Bacol00288-c1c80d316a",
+    "title": "圖書及非書資料收藏｜電子資源",
+    "group": "圖書及非書資料收藏",
+    "source_label": "電子資源",
+    "unit": null,
     "temporal_kind": "stock_year_end",
     "definition_status": "current_reference_historical_applicability_unverified",
     "notes": [
-      "現行一般靜態規則為年底；各年人員類別與約用／派遣歸類未逐年核實。",
+      "異質單位彙總：冊、種、片、件等；不能統一稱為冊，也不能將三類相加後當成圖書冊數。",
       "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
     ],
     "source_family": "public_national_chart",
@@ -3566,45 +3600,11 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00288-c1c80d316a",
-    "definition_id": "def-chart-Bacol00288-c1c80d316a",
-    "title": "圖書及非書資料收藏｜電子資源",
-    "group": "圖書及非書資料收藏",
-    "source_label": "電子資源",
-    "unit": null,
-    "temporal_kind": "stock_year_end",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "異質單位彙總：冊、種、片、件等；不能統一稱為冊，也不能將三類相加後當成圖書冊數。",
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00289-4b5782d5b2",
-    "definition_id": "def-chart-Bacol00289-4b5782d5b2",
-    "title": "全年購買圖書資料費-預算｜電子資料",
+    "series_id": "chart-Bacol00289-ab46d6c823",
+    "definition_id": "def-chart-Bacol00289-ab46d6c823",
+    "title": "全年購買圖書資料費-預算｜視聽資料",
     "group": "全年購買圖書資料費-預算",
-    "source_label": "電子資料",
+    "source_label": "視聽資料",
     "unit": "元",
     "temporal_kind": "annual_financial",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -3666,44 +3666,11 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00289-9462f12b92",
-    "definition_id": "def-chart-Bacol00289-9462f12b92",
-    "title": "全年購買圖書資料費-預算｜圖書",
+    "series_id": "chart-Bacol00289-58c8bc1583",
+    "definition_id": "def-chart-Bacol00289-58c8bc1583",
+    "title": "全年購買圖書資料費-預算｜其他圖書資料",
     "group": "全年購買圖書資料費-預算",
-    "source_label": "圖書",
-    "unit": "元",
-    "temporal_kind": "annual_financial",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00289-ab46d6c823",
-    "definition_id": "def-chart-Bacol00289-ab46d6c823",
-    "title": "全年購買圖書資料費-預算｜視聽資料",
-    "group": "全年購買圖書資料費-預算",
-    "source_label": "視聽資料",
+    "source_label": "其他圖書資料",
     "unit": "元",
     "temporal_kind": "annual_financial",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -3765,11 +3732,11 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00289-58c8bc1583",
-    "definition_id": "def-chart-Bacol00289-58c8bc1583",
-    "title": "全年購買圖書資料費-預算｜其他圖書資料",
+    "series_id": "chart-Bacol00289-6373d9b51d",
+    "definition_id": "def-chart-Bacol00289-6373d9b51d",
+    "title": "全年購買圖書資料費-預算｜電子書",
     "group": "全年購買圖書資料費-預算",
-    "source_label": "其他圖書資料",
+    "source_label": "電子書",
     "unit": "元",
     "temporal_kind": "annual_financial",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -3798,11 +3765,143 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00289-6373d9b51d",
-    "definition_id": "def-chart-Bacol00289-6373d9b51d",
-    "title": "全年購買圖書資料費-預算｜電子書",
+    "series_id": "chart-Bacol00289-9462f12b92",
+    "definition_id": "def-chart-Bacol00289-9462f12b92",
+    "title": "全年購買圖書資料費-預算｜圖書",
     "group": "全年購買圖書資料費-預算",
+    "source_label": "圖書",
+    "unit": "元",
+    "temporal_kind": "annual_financial",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00289-4b5782d5b2",
+    "definition_id": "def-chart-Bacol00289-4b5782d5b2",
+    "title": "全年購買圖書資料費-預算｜電子資料",
+    "group": "全年購買圖書資料費-預算",
+    "source_label": "電子資料",
+    "unit": "元",
+    "temporal_kind": "annual_financial",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00290-6373d9b51d",
+    "definition_id": "def-chart-Bacol00290-6373d9b51d",
+    "title": "全年購買圖書資料費-決算｜電子書",
+    "group": "全年購買圖書資料費-決算",
     "source_label": "電子書",
+    "unit": "元",
+    "temporal_kind": "annual_financial",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00290-ab46d6c823",
+    "definition_id": "def-chart-Bacol00290-ab46d6c823",
+    "title": "全年購買圖書資料費-決算｜視聽資料",
+    "group": "全年購買圖書資料費-決算",
+    "source_label": "視聽資料",
+    "unit": "元",
+    "temporal_kind": "annual_financial",
+    "definition_status": "current_reference_historical_applicability_unverified",
+    "notes": [
+      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
+    ],
+    "source_family": "public_national_chart",
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+    "observed_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "series_id": "chart-Bacol00290-58c8bc1583",
+    "definition_id": "def-chart-Bacol00290-58c8bc1583",
+    "title": "全年購買圖書資料費-決算｜其他圖書資料",
+    "group": "全年購買圖書資料費-決算",
+    "source_label": "其他圖書資料",
     "unit": "元",
     "temporal_kind": "annual_financial",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -3930,110 +4029,11 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00290-58c8bc1583",
-    "definition_id": "def-chart-Bacol00290-58c8bc1583",
-    "title": "全年購買圖書資料費-決算｜其他圖書資料",
-    "group": "全年購買圖書資料費-決算",
-    "source_label": "其他圖書資料",
-    "unit": "元",
-    "temporal_kind": "annual_financial",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
     "series_id": "chart-Bacol00290-4b5782d5b2",
     "definition_id": "def-chart-Bacol00290-4b5782d5b2",
     "title": "全年購買圖書資料費-決算｜電子資料",
     "group": "全年購買圖書資料費-決算",
     "source_label": "電子資料",
-    "unit": "元",
-    "temporal_kind": "annual_financial",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00290-ab46d6c823",
-    "definition_id": "def-chart-Bacol00290-ab46d6c823",
-    "title": "全年購買圖書資料費-決算｜視聽資料",
-    "group": "全年購買圖書資料費-決算",
-    "source_label": "視聽資料",
-    "unit": "元",
-    "temporal_kind": "annual_financial",
-    "definition_status": "current_reference_historical_applicability_unverified",
-    "notes": [
-      "現行定義僅作參照，未證實自2011年全程相同；原圖表年度值按其原樣保留。"
-    ],
-    "source_family": "public_national_chart",
-    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
-    "definition_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
-    "observed_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ]
-  },
-  {
-    "series_id": "chart-Bacol00290-6373d9b51d",
-    "definition_id": "def-chart-Bacol00290-6373d9b51d",
-    "title": "全年購買圖書資料費-決算｜電子書",
-    "group": "全年購買圖書資料費-決算",
-    "source_label": "電子書",
     "unit": "元",
     "temporal_kind": "annual_financial",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -4095,12 +4095,12 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00291-9515c78cfc",
-    "definition_id": "def-chart-Bacol00291-9515c78cfc",
-    "title": "圖書館數(閱覽室,巡迴車等)｜巡迴車",
+    "series_id": "chart-Bacol00291-51a252428d",
+    "definition_id": "def-chart-Bacol00291-51a252428d",
+    "title": "圖書館數(閱覽室,巡迴車等)｜分館",
     "group": "圖書館數(閱覽室,巡迴車等)",
-    "source_label": "巡迴車",
-    "unit": "台",
+    "source_label": "分館",
+    "unit": "所",
     "temporal_kind": "stock_year_end",
     "definition_status": "current_reference_historical_applicability_unverified",
     "notes": [
@@ -4128,12 +4128,12 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00291-64c697dccc",
-    "definition_id": "def-chart-Bacol00291-64c697dccc",
-    "title": "圖書館數(閱覽室,巡迴車等)｜社群網站",
+    "series_id": "chart-Bacol00291-9515c78cfc",
+    "definition_id": "def-chart-Bacol00291-9515c78cfc",
+    "title": "圖書館數(閱覽室,巡迴車等)｜巡迴車",
     "group": "圖書館數(閱覽室,巡迴車等)",
-    "source_label": "社群網站",
-    "unit": "個",
+    "source_label": "巡迴車",
+    "unit": "台",
     "temporal_kind": "stock_year_end",
     "definition_status": "current_reference_historical_applicability_unverified",
     "notes": [
@@ -4194,11 +4194,11 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00291-6fcf7f39f8",
-    "definition_id": "def-chart-Bacol00291-6fcf7f39f8",
-    "title": "圖書館數(閱覽室,巡迴車等)｜館外服務站",
+    "series_id": "chart-Bacol00291-64c697dccc",
+    "definition_id": "def-chart-Bacol00291-64c697dccc",
+    "title": "圖書館數(閱覽室,巡迴車等)｜社群網站",
     "group": "圖書館數(閱覽室,巡迴車等)",
-    "source_label": "館外服務站",
+    "source_label": "社群網站",
     "unit": "個",
     "temporal_kind": "stock_year_end",
     "definition_status": "current_reference_historical_applicability_unverified",
@@ -4227,12 +4227,12 @@
     ]
   },
   {
-    "series_id": "chart-Bacol00291-51a252428d",
-    "definition_id": "def-chart-Bacol00291-51a252428d",
-    "title": "圖書館數(閱覽室,巡迴車等)｜分館",
+    "series_id": "chart-Bacol00291-6fcf7f39f8",
+    "definition_id": "def-chart-Bacol00291-6fcf7f39f8",
+    "title": "圖書館數(閱覽室,巡迴車等)｜館外服務站",
     "group": "圖書館數(閱覽室,巡迴車等)",
-    "source_label": "分館",
-    "unit": "所",
+    "source_label": "館外服務站",
+    "unit": "個",
     "temporal_kind": "stock_year_end",
     "definition_status": "current_reference_historical_applicability_unverified",
     "notes": [

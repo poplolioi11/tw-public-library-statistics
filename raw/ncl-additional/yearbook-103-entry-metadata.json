@@ -1,0 +1,90 @@
+{
+  "edition_roc": 103,
+  "entry_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565350919926814",
+  "final_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565350919926814",
+  "entry_sha256": "de4aa269f3528a7686d79bdbd6842022413e735c64ed9029644808375a2e0352",
+  "entry_local_path": "research-datasets/tw-public-library-statistics/raw/ncl-additional/yearbook-103-entry-de4aa269f3528a7686d79bdbd6842022413e735c64ed9029644808375a2e0352.html",
+  "retrieved_at": "2026-10-25T09:21:40.476680+00:00",
+  "pdf_links": [
+    {
+      "label": "序",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565355281411328/14a8351c-f7ef-44e0-9e0d-b02f6ba92b4f.pdf"
+    },
+    {
+      "label": "編輯說明",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565355826390345/b749a170-ebb8-4751-ad87-f4cec613bd42.pdf"
+    },
+    {
+      "label": "目次",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565356460269372/6b23ee8f-1d09-488a-a74c-b0171e6b9d82.pdf"
+    },
+    {
+      "label": "RDA之緣起與發展",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565356004148390/0fe24651-b906-46d0-898e-2f22b53435e3.pdf"
+    },
+    {
+      "label": "102年全國公共圖書館評鑑工作紀要",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565357648017327/dc20b708-7092-4ae3-ac7e-ff8fe001c257.pdf"
+    },
+    {
+      "label": "國家圖書館推展國際漢學合作與交流",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565357183986345/38bd3e30-d8e2-47d3-ab51-cb29aa6424ba.pdf"
+    },
+    {
+      "label": "國家圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565358727864372/00e04c74-dcb9-4592-974d-7e6772b988c8.pdf"
+    },
+    {
+      "label": "公共圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565358361733399/94c2fa45-6569-4f9e-a8dc-80d10f8ff54d.pdf"
+    },
+    {
+      "label": "大專校院圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565369906612327/044110f7-318c-4f49-831d-aaf382d3a16f.pdf"
+    },
+    {
+      "label": "中小學圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565369540581344/0d68f0d0-7ba3-4cb7-b59d-0edddaa51897.pdf"
+    },
+    {
+      "label": "專門圖書館",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565369184460371/2411416c-02ec-4769-963a-357561bf5fd8.pdf"
+    },
+    {
+      "label": "圖書館資訊科技與應用",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565360728339399/13b77007-9d95-4894-9567-93ec9bd65cf1.pdf"
+    },
+    {
+      "label": "圖書資訊學教育",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565360263218316/9f42c226-6712-4878-bd38-95ebf5fc1b3b.pdf"
+    },
+    {
+      "label": "圖書資訊學研究",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565361807187344/f587715c-6ca9-4664-8afb-aa3f7f2fb659.pdf"
+    },
+    {
+      "label": "國際交流與合作",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565361441066361/e8639c19-c9d3-4256-99f9-a0141b97018a.pdf"
+    },
+    {
+      "label": "圖書館團體",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565362085935398/3ea9b115-7217-4158-bbe0-186e8f55441f.pdf"
+    },
+    {
+      "label": "圖書館資訊規範與標準",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565362620814316/29c32f2e-efa8-4679-b670-a08eec3ca614.pdf"
+    },
+    {
+      "label": "圖書館法規",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565363264883343/4b11425f-8306-416a-9b9e-fbd33aee5414.pdf"
+    },
+    {
+      "label": "圖書館統計",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565363808762360/797e6631-c29d-4749-92c5-7e2be6ea1f2f.pdf"
+    },
+    {
+      "label": "圖書館事業大事記",
+      "url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565373433631398/6dd66d73-2a52-42dd-a79b-f4f21fb70758.pdf"
+    }
+  ]
+}

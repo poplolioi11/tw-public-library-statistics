@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-10-25T09:38:38.455279+00:00",
+  "status": "pass",
+  "assertions": 9097,
+  "ncl_gap_independent": {
+    "status": "pass",
+    "tables_fully_compared": 4,
+    "grid_positions_checked": 1180,
+    "printed_numeric_cells": 830,
+    "printed_blank_cells": 350,
+    "baseline_sha256": "26403370efa5c0bf15de8b273059a8e345e39d5d659e80ef47c3faa478e994cd",
+    "baseline_recorded_before_extractor_outputs_read": true,
+    "review_level": "All1180 printed number/blank positions vs independently entered PDFium page-image baseline; not human double-collation.",
+    "expected_source_arithmetic_discrepancies": [
+      {
+        "table_id": "ncl-gap-2008-staff_services",
+        "check": "column_sum",
+        "column_id": "physical_borrower_visits",
+        "visible_non_total_rows_sum": 11946492,
+        "printed_national_total": 11964492,
+        "difference_printed_minus_sum": 18000
+      },
+      {
+        "table_id": "ncl-gap-2009-library_counts",
+        "check": "row_components",
+        "entity": "臺中市",
+        "visible_main_sum": 13,
+        "printed_main_total": 13,
+        "visible_branch_sum": 3,
+        "printed_branch_total": 4
+      },
+      {
+        "table_id": "ncl-gap-2009-library_counts",
+        "check": "row_components",
+        "entity": "總計",
+        "visible_main_sum": 364,
+        "printed_main_total": 364,
+        "visible_branch_sum": 176,
+        "printed_branch_total": 177
+      }
+    ],
+    "canonical_mapping": "not_checked_in_source_only_mode"
+  },
+  "failures": [],
+  "scope": "Complete1180-position blinded PDF-image baseline vs four new extraction tables; canonical integration not checked in this run."
+}

@@ -1,7 +1,7 @@
 {
   "name": "tw-public-library-statistics",
   "title": "臺灣公共圖書館跨年度統計",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "已驗證可得來源的全量整理；不是宣稱臺灣所有年代、所有縣市與每一圖書館都已完整。",
   "licenses": [
     {
@@ -15,7 +15,7 @@
       "path": "data/combined/observations.csv",
       "format": "csv",
       "encoding": "utf-8-sig",
-      "hash": "sha256:f4b65b6363629121edbd4840ecf0e2681a7e84a86e79a342a76ce069c00079f8"
+      "hash": "sha256:950dd1d7541d6bec7a2e5c3cd1da80a1515d5e4db9bb7b0adfad0423ee645044"
     },
     {
       "name": "observations-jsonl",

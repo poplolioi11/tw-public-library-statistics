@@ -1,0 +1,16 @@
+{
+  "edition_roc": 96,
+  "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565565962713346/3ff18dcc-b6dd-4199-b12a-62dab434bc97.pdf",
+  "source_retrieved_at": "2026-10-25T09:29:55.253766+00:00",
+  "local_path": "research-datasets/tw-public-library-statistics/raw/ncl-earlier/yearbook-96-public-library.pdf",
+  "sha256": "7043c1946c401e823628fd04f8ef05bb18066796c45e145947ca474b2f83b2c2",
+  "bytes": 180976,
+  "headers": {
+    "Content-Type": "application/pdf",
+    "Content-Length": "180976",
+    "ETag": "\"1dcd4e44affc670\"",
+    "Last-Modified": "Sat, 25 Apr 2026 18:49:49 GMT"
+  },
+  "license_status": "not_confirmed",
+  "redistribution": "original_PDF_private; statistical_facts_with_attribution_only"
+}
