@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0.0",
+  "omitted_originals": [
+    {
+      "source_snapshot_path": "raw/official-local/catalog-117921/resource-3274c2c0b9c148ba-0fa5e467bf126f590133b26eb985567067f6f92ab65ab4c0df846e8098eb3c36.json",
+      "source_sha256": "0fa5e467bf126f590133b26eb985567067f6f92ab65ab4c0df846e8098eb3c36",
+      "public_evidence_path": "raw/public-projections/0fa5e467bf126f590133b26eb985567067f6f92ab65ab4c0df846e8098eb3c36.json",
+      "public_evidence_sha256": "f26d633237e89a1824cf606556380ce5e18eaf383242ca591674ce6d128d91fd",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-117921/resource-426b754c3d9690c0-489a727f73b516dd6c6ff8c23facd5c832c481031f5554e07791cb477dda7a6f.json",
+      "source_sha256": "489a727f73b516dd6c6ff8c23facd5c832c481031f5554e07791cb477dda7a6f",
+      "public_evidence_path": "raw/public-projections/489a727f73b516dd6c6ff8c23facd5c832c481031f5554e07791cb477dda7a6f.json",
+      "public_evidence_sha256": "9fd3cda2f53d3dc5917a0a8bb2e56f1be1b1e7407d16cc88de5f66eecac6d96a",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-117921/resource-6ed469d8440b4502-3a83ddeafa3a8ba17a53e97d20f93983435e9cb11d1cc47b1ec096c9eb5b5a0c.json",
+      "source_sha256": "3a83ddeafa3a8ba17a53e97d20f93983435e9cb11d1cc47b1ec096c9eb5b5a0c",
+      "public_evidence_path": "raw/public-projections/3a83ddeafa3a8ba17a53e97d20f93983435e9cb11d1cc47b1ec096c9eb5b5a0c.json",
+      "public_evidence_sha256": "b47ca26d144ff6b8add4fdad3be66f6f7c364f806f316d8122e5a0c8fe57769a",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-117921/resource-a8e89f9d11144206-9daa15f199b31873370d716f15ce614bccf0b6edf25232e1c33f7289728fd54d.json",
+      "source_sha256": "9daa15f199b31873370d716f15ce614bccf0b6edf25232e1c33f7289728fd54d",
+      "public_evidence_path": "raw/public-projections/9daa15f199b31873370d716f15ce614bccf0b6edf25232e1c33f7289728fd54d.json",
+      "public_evidence_sha256": "0240185522af77a1a9aee380ac183c2b6a7c9ed3b3028c158270099c0324e0c9",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-0bfe207ae35174c4-2f018541714a1b40c0d0ac4abda75b9b6f64c54731abb526583e5b4ab4aea96f.json",
+      "source_sha256": "2f018541714a1b40c0d0ac4abda75b9b6f64c54731abb526583e5b4ab4aea96f",
+      "public_evidence_path": "raw/public-projections/2f018541714a1b40c0d0ac4abda75b9b6f64c54731abb526583e5b4ab4aea96f.json",
+      "public_evidence_sha256": "b0c60190868d001d12be52622b16b19a0672de76f778fbe336a64a201151273d",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-102d1c92744c15df-64661cf5bfb210e90458d8bce5cfd0328d944bc54a27d212d9cd2b4f42c73230.json",
+      "source_sha256": "64661cf5bfb210e90458d8bce5cfd0328d944bc54a27d212d9cd2b4f42c73230",
+      "public_evidence_path": "raw/public-projections/64661cf5bfb210e90458d8bce5cfd0328d944bc54a27d212d9cd2b4f42c73230.json",
+      "public_evidence_sha256": "8fa4cb15e5418c32fd25d63a1f7799af3846349796fbb8be483217d107b3343f",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-130320388dae6a33-dc5747f8267f1bb93144f5345cb27034a93194a9a45d29670974d1062db4d055.json",
+      "source_sha256": "dc5747f8267f1bb93144f5345cb27034a93194a9a45d29670974d1062db4d055",
+      "public_evidence_path": "raw/public-projections/dc5747f8267f1bb93144f5345cb27034a93194a9a45d29670974d1062db4d055.json",
+      "public_evidence_sha256": "7b2cffec7b6c65268c9e50d8cd1f823101a2a1e296cdf754525c564b0c466ffa",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-1f3a894649282048-2b75bca03bcf1dd4efbd914358fb6192440cf5fca883aacf0af37f925df8c2ee.json",
+      "source_sha256": "2b75bca03bcf1dd4efbd914358fb6192440cf5fca883aacf0af37f925df8c2ee",
+      "public_evidence_path": "raw/public-projections/2b75bca03bcf1dd4efbd914358fb6192440cf5fca883aacf0af37f925df8c2ee.json",
+      "public_evidence_sha256": "e9b41592660949fa63bebce3ee4282a2fe75bff1eb7a0c386ef994462856607b",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-1fb36262b9771cb6-6178d7e74b40684685dccac6d68d358ebf268b5575ff84d20b122eb7ff6df300.json",
+      "source_sha256": "6178d7e74b40684685dccac6d68d358ebf268b5575ff84d20b122eb7ff6df300",
+      "public_evidence_path": "raw/public-projections/6178d7e74b40684685dccac6d68d358ebf268b5575ff84d20b122eb7ff6df300.json",
+      "public_evidence_sha256": "a9ceecaa951e5ffc7920b4df5e7c5185419ad2bf6e1e21bc5fea34c908cabd56",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-41b3e61e7133c342-9b495145c9a2150cd576e02c4f58c17048d2dcc20dca03979bf8e52784097e58.json",
+      "source_sha256": "9b495145c9a2150cd576e02c4f58c17048d2dcc20dca03979bf8e52784097e58",
+      "public_evidence_path": "raw/public-projections/9b495145c9a2150cd576e02c4f58c17048d2dcc20dca03979bf8e52784097e58.json",
+      "public_evidence_sha256": "b91add249ae41b2f43ad0d6b002877f7dc725aac938cd8c46f839a59fe683d18",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-42c14b4b722d5c94-7b21c8c52a2be0b8a1c3a5e9c93af75b18db6f7425208fc8a8502276030dfbe7.json",
+      "source_sha256": "7b21c8c52a2be0b8a1c3a5e9c93af75b18db6f7425208fc8a8502276030dfbe7",
+      "public_evidence_path": "raw/public-projections/7b21c8c52a2be0b8a1c3a5e9c93af75b18db6f7425208fc8a8502276030dfbe7.json",
+      "public_evidence_sha256": "4d58d3ed7ed7796aee226a63cf6825eab3b9ea20c973fc4dac2e3b03a6eae63c",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-4fb63ea138b0e859-9f6f42d63bf865f758e69cbeb611080b52a21917631d50828d7f46afdb2132d5.json",
+      "source_sha256": "9f6f42d63bf865f758e69cbeb611080b52a21917631d50828d7f46afdb2132d5",
+      "public_evidence_path": "raw/public-projections/9f6f42d63bf865f758e69cbeb611080b52a21917631d50828d7f46afdb2132d5.json",
+      "public_evidence_sha256": "316819a3215bcaea1db2b9902a1fc2085247ec6fc95f625dc23dfeca3b9a32da",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-60f200f4935c41e2-5dcc0df01d5c2fd4e57531712109f1f9057151b450ce3e8a53787fd0b70c64d1.json",
+      "source_sha256": "5dcc0df01d5c2fd4e57531712109f1f9057151b450ce3e8a53787fd0b70c64d1",
+      "public_evidence_path": "raw/public-projections/5dcc0df01d5c2fd4e57531712109f1f9057151b450ce3e8a53787fd0b70c64d1.json",
+      "public_evidence_sha256": "e64e612190677b10aa7a8d4eef76b449056c1874244ae68bb04af93a062c643e",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-61f2cc2ec91eb229-a359b72743095753289ffb7faa46586966ab61b60d684f8d0c25d394173eb465.json",
+      "source_sha256": "a359b72743095753289ffb7faa46586966ab61b60d684f8d0c25d394173eb465",
+      "public_evidence_path": "raw/public-projections/a359b72743095753289ffb7faa46586966ab61b60d684f8d0c25d394173eb465.json",
+      "public_evidence_sha256": "bf3fd02c0e7abf997a33af977cfd4b9abd53d8b4e774d413b685a94582930b66",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-7f36f8b0a9ceccef-07285b2481077cace2b15c6d5b29c5a17b1983b0bcb429c0e7eea2e2fe72bc47.json",
+      "source_sha256": "07285b2481077cace2b15c6d5b29c5a17b1983b0bcb429c0e7eea2e2fe72bc47",
+      "public_evidence_path": "raw/public-projections/07285b2481077cace2b15c6d5b29c5a17b1983b0bcb429c0e7eea2e2fe72bc47.json",
+      "public_evidence_sha256": "1a45549e963247938ce95cef7705f009a14f197c5450b775372586fecb7844a3",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-7fd2190800a62021-a43d033fd82d629e1109c5656778f77b12288345422b6c8d364be0ade68039f4.json",
+      "source_sha256": "a43d033fd82d629e1109c5656778f77b12288345422b6c8d364be0ade68039f4",
+      "public_evidence_path": "raw/public-projections/a43d033fd82d629e1109c5656778f77b12288345422b6c8d364be0ade68039f4.json",
+      "public_evidence_sha256": "8998e62a3ddd604418978d2c889f56fbb07c71ad4e31d63e2b7f01deb21e93e9",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-8047ba866e1dd989-454fa706ca3c678e2bc93e3c2945f0c600dcac7e7461a7931e9890fa13fdf669.json",
+      "source_sha256": "454fa706ca3c678e2bc93e3c2945f0c600dcac7e7461a7931e9890fa13fdf669",
+      "public_evidence_path": "raw/public-projections/454fa706ca3c678e2bc93e3c2945f0c600dcac7e7461a7931e9890fa13fdf669.json",
+      "public_evidence_sha256": "047f6109c31212cd5fba2c4440c20bfde5d1c1b7934b9dd486a26a03c503804e",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-bb780d03520ab20c-a3fb1a67b410824925a8cc5500ba4503a6b4be049b850e482d51453b3ae6a096.json",
+      "source_sha256": "a3fb1a67b410824925a8cc5500ba4503a6b4be049b850e482d51453b3ae6a096",
+      "public_evidence_path": "raw/public-projections/a3fb1a67b410824925a8cc5500ba4503a6b4be049b850e482d51453b3ae6a096.json",
+      "public_evidence_sha256": "cc123bf8ae53716c01ac4de73e1cdf0ccd91f3f054ae912a3b5b20a887b8d354",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-bc9df41e5780d960-dc5747f8267f1bb93144f5345cb27034a93194a9a45d29670974d1062db4d055.json",
+      "source_sha256": "dc5747f8267f1bb93144f5345cb27034a93194a9a45d29670974d1062db4d055",
+      "public_evidence_path": "raw/public-projections/dc5747f8267f1bb93144f5345cb27034a93194a9a45d29670974d1062db4d055.json",
+      "public_evidence_sha256": "7b2cffec7b6c65268c9e50d8cd1f823101a2a1e296cdf754525c564b0c466ffa",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-bde8d0fb2145d99a-9e0419cfae9d2a1065b3c688a5114492510fece9c335a44f68f2dd221156b657.json",
+      "source_sha256": "9e0419cfae9d2a1065b3c688a5114492510fece9c335a44f68f2dd221156b657",
+      "public_evidence_path": "raw/public-projections/9e0419cfae9d2a1065b3c688a5114492510fece9c335a44f68f2dd221156b657.json",
+      "public_evidence_sha256": "3efb4e205012cb32c8b67a7b32849374952c8089f40cda049913281ec5ae5ecc",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-f63c1354bd02dbd9-73e5dbbd6d093f0e5419bb2e1466b726c42dd7f121ce9618e4f2c707480da5ae.json",
+      "source_sha256": "73e5dbbd6d093f0e5419bb2e1466b726c42dd7f121ce9618e4f2c707480da5ae",
+      "public_evidence_path": "raw/public-projections/73e5dbbd6d093f0e5419bb2e1466b726c42dd7f121ce9618e4f2c707480da5ae.json",
+      "public_evidence_sha256": "d824d19d7d25373852707187f9781dabb312b03cae66035a4efec9bb07cf0ecc",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775"
+    },
+    {
+      "source_snapshot_path": "raw/official-local/catalog-127807/resource-f98bff20e7012703-328e924edbb1f54fbde41c31f1bf20bf3cd61f91f0a348e1f9097f392510b29b.json",
+      "source_sha256": "328e924edbb1f54fbde41c31f1bf20bf3cd61f91f0a348e1f9097f392510b29b",
+      "public_evidence_path": "raw/public-projections/328e924edbb1f54fbde41c31f1bf20bf3cd61f91f0a348e1f9097f392510b29b.json",
+      "public_evidence_sha256": "29b4dd91231f184da6a752052eb7b50780ad2acd8a9f2bc0de9fa139e1ff4c17",
+      "omitted_fields": [
+        "市話",
+        "行動電話",
+        "電子郵件"
+      ],
+      "policy": "unrelated_contact_fields_omitted; statistical fields and row order preserved; original source hash is not the projection hash",
+      "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c"
+    }
+  ]
+}

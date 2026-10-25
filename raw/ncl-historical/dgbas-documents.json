@@ -1,0 +1,106 @@
+[
+  {
+    "source_id": "dgbas-social-indicators-2011",
+    "title": "社會指標統計年報2011：文化與休閒",
+    "source_agency": "行政院主計總處",
+    "url": "https://ws.dgbas.gov.tw/public/attachment/211231530971.pdf",
+    "download_url": "https://ws.dgbas.gov.tw/public/attachment/211231530971.pdf",
+    "local_path": "raw/ncl-historical/dgbas-social-indicators-2011-cultural.pdf",
+    "sha256": "d0f441977df56046b935d8897f1310e0f54280b5bd6d159f93ebc0b4d772d8f3",
+    "bytes": 321483,
+    "source_retrieved_at": "2026-10-25T07:28:26.818392+00:00",
+    "extracted_pdf_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "printed_pages": "122–125",
+    "data_year_min": 1996,
+    "data_year_max": 2011,
+    "complete_public_library_metrics": [
+      17,
+      18,
+      32,
+      33,
+      34
+    ],
+    "long_rows": 80,
+    "license_status": "verified_open",
+    "license_code": "OGDL-1.0_site_declaration",
+    "license_url": "https://www.stat.gov.tw/cp.aspx?n=3164",
+    "license_evidence": "主計總處政府網站資料開放宣告：網站上刊載之所有資料與素材，採政府資料開放授權條款-第1版發布；另有特別聲明之第三方著作除外。",
+    "license_evidence_file": "raw/ncl-historical/dgbas-open-data-declaration.html",
+    "license_scope": "本次擷取的官方公立公共圖書館統計表；未將報告其他第三方文章或圖像納入。",
+    "excluded_content": "僅擷取公立公共圖書館；其他文化休閒與學校資料未匯入。"
+  },
+  {
+    "source_id": "dgbas-social-indicators-2008",
+    "title": "社會指標統計年報2008：文化與休閒",
+    "source_agency": "行政院主計處",
+    "url": "https://ws.dgbas.gov.tw/001/Upload/466/ebook/ebook_88839/pdf/full.pdf",
+    "download_url": "https://ws.dgbas.gov.tw/001/Upload/466/ebook/ebook_88839/pdf/full.pdf",
+    "local_path": "raw/ncl-historical/dgbas-social-indicators-2008.pdf",
+    "sha256": "d014c23f546822ee38473f03386b16f7bb089633fa5503234b98ff7d65f97ba6",
+    "bytes": 2800848,
+    "source_retrieved_at": "2026-10-25T07:32:12.263921+00:00",
+    "extracted_pdf_pages": [
+      132,
+      133,
+      134,
+      135
+    ],
+    "printed_pages": "124–127",
+    "data_year_min": 1993,
+    "data_year_max": 2008,
+    "complete_public_library_metrics": [
+      17,
+      18,
+      32,
+      33,
+      34
+    ],
+    "long_rows": 80,
+    "license_status": "verified_open",
+    "license_code": "OGDL-1.0_site_declaration",
+    "license_url": "https://www.stat.gov.tw/cp.aspx?n=3164",
+    "license_evidence": "主計總處政府網站資料開放宣告：網站上刊載之所有資料與素材，採政府資料開放授權條款-第1版發布；另有特別聲明之第三方著作除外。",
+    "license_evidence_file": "raw/ncl-historical/dgbas-open-data-declaration.html",
+    "license_scope": "本次擷取的官方公立公共圖書館統計表；未將報告其他第三方文章或圖像納入。",
+    "excluded_content": "僅擷取公立公共圖書館；其他文化休閒與學校資料未匯入。"
+  },
+  {
+    "source_id": "dgbas-social-indicators-2005",
+    "title": "社會指標統計年報2005：文化與休閒",
+    "source_agency": "行政院主計處",
+    "url": "https://ws.dgbas.gov.tw/public/data/331311404571.pdf",
+    "download_url": "https://ws.dgbas.gov.tw/public/data/331311404571.pdf",
+    "local_path": "raw/ncl-historical/dgbas-social-indicators-2005.pdf",
+    "sha256": "066ffff121ccc2d86280002cf4aa4432d8ef0ada0f4ab6dfe4d6615d0efa8f69",
+    "bytes": 1451845,
+    "source_retrieved_at": "2026-10-25T07:32:56.875403+00:00",
+    "extracted_pdf_pages": [
+      106,
+      107,
+      108,
+      109
+    ],
+    "printed_pages": "122–125",
+    "data_year_min": 1991,
+    "data_year_max": 2005,
+    "complete_public_library_metrics": [
+      16,
+      30,
+      31,
+      32
+    ],
+    "long_rows": 60,
+    "license_status": "verified_open",
+    "license_code": "OGDL-1.0_site_declaration",
+    "license_url": "https://www.stat.gov.tw/cp.aspx?n=3164",
+    "license_evidence": "主計總處政府網站資料開放宣告：網站上刊載之所有資料與素材，採政府資料開放授權條款-第1版發布；另有特別聲明之第三方著作除外。",
+    "license_evidence_file": "raw/ncl-historical/dgbas-open-data-declaration.html",
+    "license_scope": "本次擷取的官方公立公共圖書館統計表；未將報告其他第三方文章或圖像納入。",
+    "excluded_content": "僅擷取公立公共圖書館；其他文化休閒與學校資料未匯入。"
+  }
+]

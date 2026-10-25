@@ -1,0 +1,33 @@
+{
+  "built_at": "2026-10-25T08:03:02+00:00",
+  "records": 3091,
+  "source_series": 143,
+  "chart_years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "licensed_county_years": [
+    2023
+  ],
+  "national_chart_observations": 855,
+  "explicitly_licensed_api_observations": 2236,
+  "source_snapshots": 159,
+  "quality_issues": 0,
+  "reparsed_sources": 0,
+  "reused_normalized_sources": 151,
+  "not_all_taiwan_history_complete": true,
+  "coverage_boundary": "2011–2025 normal public national charts, explicitly OGDL-linked 2023 national/county API; earlier separately published tables inventoried independently"
+}

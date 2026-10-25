@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tw-public-library-statistics:observation:1.0.0",
+  "title": "Taiwan public library source observation",
+  "type": "object",
+  "required": [
+    "observation_id",
+    "data_year",
+    "geography",
+    "geographic_scope",
+    "series_id",
+    "indicator",
+    "value",
+    "raw_value",
+    "value_status",
+    "source_id",
+    "source_url",
+    "source_locator",
+    "source_sha256",
+    "license_status"
+  ],
+  "properties": {
+    "collection_year": {
+      "description": "collection_year"
+    },
+    "publication_year": {
+      "description": "publication_year"
+    },
+    "definition_source_id": {
+      "description": "definition_source_id"
+    },
+    "definition_sha256": {
+      "description": "definition_sha256"
+    },
+    "definition_retrieved_at": {
+      "description": "definition_retrieved_at"
+    },
+    "source_method": {
+      "description": "source_method"
+    },
+    "source_request": {
+      "description": "source_request"
+    },
+    "comparability": {
+      "description": "comparability"
+    },
+    "observation_id": {
+      "description": "observation_id"
+    },
+    "data_year": {
+      "type": "integer"
+    },
+    "geography": {
+      "description": "geography"
+    },
+    "geography_contextual_name": {
+      "description": "geography_contextual_name"
+    },
+    "geographic_scope": {
+      "description": "geographic_scope"
+    },
+    "geography_vintage": {
+      "description": "geography_vintage"
+    },
+    "national_libraries_scope": {
+      "description": "national_libraries_scope"
+    },
+    "population_scope": {
+      "description": "population_scope"
+    },
+    "series_id": {
+      "description": "series_id"
+    },
+    "indicator": {
+      "description": "indicator"
+    },
+    "indicator_group": {
+      "description": "indicator_group"
+    },
+    "source_field": {
+      "description": "source_field"
+    },
+    "value": {
+      "type": [
+        "integer",
+        "number",
+        "string",
+        "null"
+      ],
+      "description": "Decimal values may be canonical decimal strings. Zero is as reported, not certified true zero."
+    },
+    "raw_value": {
+      "description": "raw_value"
+    },
+    "value_status": {
+      "description": "value_status"
+    },
+    "zero_interpretation": {
+      "description": "zero_interpretation"
+    },
+    "unit": {
+      "description": "unit"
+    },
+    "unit_status": {
+      "description": "unit_status"
+    },
+    "temporal_kind": {
+      "description": "temporal_kind"
+    },
+    "period_start": {
+      "description": "period_start"
+    },
+    "period_end": {
+      "description": "period_end"
+    },
+    "period_basis": {
+      "description": "period_basis"
+    },
+    "definition_id": {
+      "description": "definition_id"
+    },
+    "definition_status": {
+      "description": "definition_status"
+    },
+    "source_id": {
+      "description": "source_id"
+    },
+    "source_family": {
+      "description": "source_family"
+    },
+    "source_url": {
+      "description": "source_url"
+    },
+    "source_page_url": {
+      "description": "source_page_url"
+    },
+    "source_locator": {
+      "type": "string",
+      "description": "JSON Pointer for API data; original page/table/row/column for published tables."
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_snapshot_path": {
+      "description": "source_snapshot_path"
+    },
+    "retrieved_at": {
+      "description": "retrieved_at"
+    },
+    "license_status": {
+      "description": "license_status"
+    },
+    "license_url": {
+      "description": "license_url"
+    },
+    "snapshot_distribution": {
+      "description": "snapshot_distribution"
+    },
+    "extraction_status": {
+      "description": "extraction_status"
+    },
+    "notes": {
+      "description": "notes"
+    },
+    "source_pdf_page": {
+      "description": "source_pdf_page"
+    },
+    "source_printed_page": {
+      "description": "source_printed_page"
+    },
+    "source_table": {
+      "description": "source_table"
+    },
+    "source_row": {
+      "description": "source_row"
+    },
+    "source_column": {
+      "description": "source_column"
+    },
+    "source_edition": {
+      "description": "source_edition"
+    },
+    "area_code_raw": {
+      "description": "area_code_raw"
+    },
+    "source_table_row": {
+      "description": "source_table_row"
+    },
+    "source_table_column": {
+      "description": "source_table_column"
+    },
+    "period_raw": {
+      "description": "period_raw"
+    },
+    "periodicity_raw": {
+      "description": "periodicity_raw"
+    },
+    "public_evidence_path": {
+      "description": "public_evidence_path"
+    },
+    "license_scope_inference": {
+      "description": "license_scope_inference"
+    },
+    "facility": {
+      "description": "facility"
+    },
+    "geography_code_raw": {
+      "description": "geography_code_raw"
+    },
+    "district_code_raw": {
+      "description": "district_code_raw"
+    },
+    "value_parse_rule": {
+      "description": "value_parse_rule"
+    },
+    "period_effective": {
+      "description": "period_effective"
+    },
+    "component_source_id": {
+      "description": "component_source_id"
+    },
+    "source_record_id": {
+      "description": "source_record_id"
+    },
+    "quality_flags": {
+      "description": "quality_flags"
+    },
+    "public_evidence_sha256": {
+      "description": "public_evidence_sha256"
+    },
+    "public_projection_policy": {
+      "description": "public_projection_policy"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "records": 16884,
+  "local_duplicate_observations_excluded": 10433,
+  "issues": [
+    {
+      "source_id": "ncl-yearbook-100-public",
+      "year": 2010,
+      "geography": "總計",
+      "indicator": "平均每人購買經費（C/A）",
+      "issue": "official_internal_inconsistency",
+      "reported_value": "27.72",
+      "explanation": "來源內部差異：此表原印27.72，正文及總經費／人口計算約22.72；忠實保留原表，不自行改值。"
+    }
+  ]
+}

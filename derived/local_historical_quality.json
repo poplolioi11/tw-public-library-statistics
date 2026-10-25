@@ -1,0 +1,686 @@
+{
+  "checked_at": "2026-10-25T07:41:10.664454+00:00",
+  "verified_raw_documents": 35,
+  "verified_long_rows": 25184,
+  "unique_long_rows": 14751,
+  "exact_duplicate_long_rows": 10433,
+  "source_conflict_groups": 0,
+  "hsinchu_unique_long_rows": 14400,
+  "hsinchu_period_count": 129,
+  "hsinchu_distinct_location_categories": 12,
+  "hsinchu_period_coverage": [
+    {
+      "roc_year": 104,
+      "ce_year": 2015,
+      "months": [
+        "10412"
+      ],
+      "observed_month_count": 1,
+      "location_categories_per_month_min": 7,
+      "location_categories_per_month_max": 7,
+      "unique_long_rows": 84
+    },
+    {
+      "roc_year": 105,
+      "ce_year": 2016,
+      "months": [
+        "10501",
+        "10502",
+        "10503",
+        "10504",
+        "10505",
+        "10506",
+        "10507",
+        "10508",
+        "10509",
+        "10510",
+        "10511",
+        "10512"
+      ],
+      "observed_month_count": 12,
+      "location_categories_per_month_min": 7,
+      "location_categories_per_month_max": 7,
+      "unique_long_rows": 1008
+    },
+    {
+      "roc_year": 106,
+      "ce_year": 2017,
+      "months": [
+        "10601",
+        "10602",
+        "10603",
+        "10604",
+        "10605",
+        "10606",
+        "10607",
+        "10608",
+        "10609",
+        "10610",
+        "10611",
+        "10612"
+      ],
+      "observed_month_count": 12,
+      "location_categories_per_month_min": 7,
+      "location_categories_per_month_max": 7,
+      "unique_long_rows": 1008
+    },
+    {
+      "roc_year": 107,
+      "ce_year": 2018,
+      "months": [
+        "10701",
+        "10702",
+        "10703",
+        "10704",
+        "10705",
+        "10706",
+        "10707",
+        "10708",
+        "10709",
+        "10710",
+        "10711",
+        "10712"
+      ],
+      "observed_month_count": 12,
+      "location_categories_per_month_min": 7,
+      "location_categories_per_month_max": 7,
+      "unique_long_rows": 1008
+    },
+    {
+      "roc_year": 108,
+      "ce_year": 2019,
+      "months": [
+        "10801",
+        "10802",
+        "10803",
+        "10804",
+        "10805",
+        "10806",
+        "10807",
+        "10808",
+        "10809",
+        "10810",
+        "10811",
+        "10812"
+      ],
+      "observed_month_count": 12,
+      "location_categories_per_month_min": 7,
+      "location_categories_per_month_max": 7,
+      "unique_long_rows": 1008
+    },
+    {
+      "roc_year": 109,
+      "ce_year": 2020,
+      "months": [
+        "10901",
+        "10902",
+        "10903",
+        "10904",
+        "10905",
+        "10906",
+        "10907",
+        "10908",
+        "10909",
+        "10910",
+        "10911",
+        "10912"
+      ],
+      "observed_month_count": 12,
+      "location_categories_per_month_min": 8,
+      "location_categories_per_month_max": 8,
+      "unique_long_rows": 1152
+    },
+    {
+      "roc_year": 110,
+      "ce_year": 2021,
+      "months": [
+        "11001",
+        "11002",
+        "11003",
+        "11004",
+        "11005",
+        "11006",
+        "11007",
+        "11008",
+        "11009",
+        "11010",
+        "11011",
+        "11012"
+      ],
+      "observed_month_count": 12,
+      "location_categories_per_month_min": 8,
+      "location_categories_per_month_max": 11,
+      "unique_long_rows": 1320
+    },
+    {
+      "roc_year": 111,
+      "ce_year": 2022,
+      "months": [
+        "11101",
+        "11102",
+        "11103",
+        "11104",
+        "11105",
+        "11106",
+        "11107",
+        "11108",
+        "11109",
+        "11110",
+        "11111",
+        "11112"
+      ],
+      "observed_month_count": 12,
+      "location_categories_per_month_min": 11,
+      "location_categories_per_month_max": 11,
+      "unique_long_rows": 1584
+    },
+    {
+      "roc_year": 112,
+      "ce_year": 2023,
+      "months": [
+        "11201",
+        "11202",
+        "11203",
+        "11204",
+        "11205",
+        "11206",
+        "11207",
+        "11208",
+        "11209",
+        "11210",
+        "11211",
+        "11212"
+      ],
+      "observed_month_count": 12,
+      "location_categories_per_month_min": 11,
+      "location_categories_per_month_max": 12,
+      "unique_long_rows": 1620
+    },
+    {
+      "roc_year": 113,
+      "ce_year": 2024,
+      "months": [
+        "11301",
+        "11302",
+        "11303",
+        "11304",
+        "11305",
+        "11306",
+        "11307",
+        "11308",
+        "11309",
+        "11310",
+        "11311",
+        "11312"
+      ],
+      "observed_month_count": 12,
+      "location_categories_per_month_min": 12,
+      "location_categories_per_month_max": 12,
+      "unique_long_rows": 1728
+    },
+    {
+      "roc_year": 114,
+      "ce_year": 2025,
+      "months": [
+        "11401",
+        "11402",
+        "11403",
+        "11404",
+        "11405",
+        "11406",
+        "11407",
+        "11408",
+        "11409",
+        "11410",
+        "11411",
+        "11412"
+      ],
+      "observed_month_count": 12,
+      "location_categories_per_month_min": 12,
+      "location_categories_per_month_max": 12,
+      "unique_long_rows": 1728
+    },
+    {
+      "roc_year": 115,
+      "ce_year": 2026,
+      "months": [
+        "11501",
+        "11502",
+        "11503",
+        "11504",
+        "11505",
+        "11506",
+        "11507",
+        "11508"
+      ],
+      "observed_month_count": 8,
+      "location_categories_per_month_min": 12,
+      "location_categories_per_month_max": 12,
+      "unique_long_rows": 1152
+    }
+  ],
+  "hsinchu_arithmetic_checks": 2400,
+  "hsinchu_arithmetic_errors": [
+    {
+      "period": "10906",
+      "location": "新竹市圖書館兒童閱覽室",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        8778,
+        8285,
+        494
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[388]"
+    },
+    {
+      "period": "10908",
+      "location": "新竹市圖書館香山分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        20154,
+        16584,
+        3571
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[400]"
+    },
+    {
+      "period": "10908",
+      "location": "新竹市圖書館金山分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        15635,
+        12525,
+        3111
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[401]"
+    },
+    {
+      "period": "10908",
+      "location": "新竹市圖書館金山分館",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        47452,
+        39714,
+        7737
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[401]"
+    },
+    {
+      "period": "10908",
+      "location": "新竹市圖書館南寮分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        8485,
+        6915,
+        1571
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[403]"
+    },
+    {
+      "period": "10908",
+      "location": "新竹市圖書館視聽室",
+      "total_field": "借閱及續借人次",
+      "values": [
+        70,
+        51,
+        20
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[405]"
+    },
+    {
+      "period": "10910",
+      "location": "新竹市圖書館一般閱覽室",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        8745,
+        6884,
+        1862
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[415]"
+    },
+    {
+      "period": "10910",
+      "location": "新竹市圖書館金山分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        8982,
+        7274,
+        1709
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[417]"
+    },
+    {
+      "period": "10910",
+      "location": "新竹市圖書館金山分館",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        27255,
+        23195,
+        4061
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[417]"
+    },
+    {
+      "period": "10910",
+      "location": "新竹市圖書館鹽水分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        6447,
+        5300,
+        1148
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[418]"
+    },
+    {
+      "period": "10910",
+      "location": "新竹市圖書館南寮分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        4281,
+        3593,
+        689
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[419]"
+    },
+    {
+      "period": "10910",
+      "location": "新竹市圖書館兒童閱覽室",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        6516,
+        5567,
+        950
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[420]"
+    },
+    {
+      "period": "11210",
+      "location": "新竹市圖書館動物園分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        5140,
+        4412,
+        692
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[787]"
+    },
+    {
+      "period": "11211",
+      "location": "新竹市圖書館龍山分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        6645,
+        5704,
+        950
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[800]"
+    },
+    {
+      "period": "11301",
+      "location": "新竹市圖書館關東分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        4449,
+        3575,
+        774
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[827]"
+    },
+    {
+      "period": "11304",
+      "location": "新竹市圖書館南寮分館",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        5800,
+        5028,
+        718
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[856]"
+    },
+    {
+      "period": "11306",
+      "location": "新竹市圖書館鹽水分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        4259,
+        3663,
+        594
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[879]"
+    },
+    {
+      "period": "11307",
+      "location": "新竹市微型圖書館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        441,
+        368,
+        0
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[897]"
+    },
+    {
+      "period": "11307",
+      "location": "新竹市微型圖書館",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        909,
+        918,
+        0
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[897]"
+    },
+    {
+      "period": "11312",
+      "location": "新竹市圖書館龍山分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        6561,
+        5541,
+        974
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[956]"
+    },
+    {
+      "period": "11312",
+      "location": "新竹市圖書館龍山分館",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        19205,
+        17041,
+        2191
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[956]"
+    },
+    {
+      "period": "11402",
+      "location": "新竹市微型圖書館",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        777,
+        776,
+        0
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[981]"
+    },
+    {
+      "period": "11411",
+      "location": "新竹市圖書館關東分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        4042,
+        3451,
+        592
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[1091]"
+    },
+    {
+      "period": "11502",
+      "location": "新竹市圖書館龍山分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        4451,
+        3886,
+        665
+      ],
+      "source_id": "local-130199-01",
+      "source_url": "https://data.gov.tw/dataset/130199",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+      "source_sha256": "15ac75a0b28a41d25b3ee4214d9f769628b36806e3f767805969de05ce199b59",
+      "source_locator": "JSON array[1124]"
+    },
+    {
+      "period": "11505",
+      "location": "新竹市圖書館金山分館",
+      "total_field": "借閱及續借人次",
+      "values": [
+        2373,
+        2001,
+        380
+      ],
+      "source_id": "local-173850-01",
+      "source_url": "https://data.gov.tw/dataset/173850",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json",
+      "source_sha256": "bf237a51b88951057d3cd3b03ad8c26149a467e99206166797312449d56f410e",
+      "source_locator": "JSON array[50]"
+    },
+    {
+      "period": "11505",
+      "location": "新竹市圖書館金山分館",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        5938,
+        5233,
+        714
+      ],
+      "source_id": "local-173850-01",
+      "source_url": "https://data.gov.tw/dataset/173850",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json",
+      "source_sha256": "bf237a51b88951057d3cd3b03ad8c26149a467e99206166797312449d56f410e",
+      "source_locator": "JSON array[50]"
+    },
+    {
+      "period": "11507",
+      "location": "新竹市圖書館一般閱覽室",
+      "total_field": "借閱及續借人次",
+      "values": [
+        19,
+        14,
+        117
+      ],
+      "source_id": "local-173850-01",
+      "source_url": "https://data.gov.tw/dataset/173850",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json",
+      "source_sha256": "bf237a51b88951057d3cd3b03ad8c26149a467e99206166797312449d56f410e",
+      "source_locator": "JSON array[72]"
+    },
+    {
+      "period": "11507",
+      "location": "新竹市圖書館一般閱覽室",
+      "total_field": "借閱及續借冊數",
+      "values": [
+        34,
+        24,
+        4114
+      ],
+      "source_id": "local-173850-01",
+      "source_url": "https://data.gov.tw/dataset/173850",
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json",
+      "source_sha256": "bf237a51b88951057d3cd3b03ad8c26149a467e99206166797312449d56f410e",
+      "source_locator": "JSON array[72]"
+    }
+  ],
+  "scope_warning": "location categories include reading rooms and micro library; not a count of physical libraries. Every observed month is present for 105–114; this does not prove all expected facilities reported each month."
+}

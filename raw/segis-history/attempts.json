@@ -1,0 +1,24 @@
+[
+  {
+    "name": "catalog",
+    "url": "https://segis.moi.gov.tw/STATCloud/Catalog",
+    "final_url": "https://segis.moi.gov.tw/STATCloud/Catalog",
+    "sha256": "8430f26e6f487201355520e1ea01f0e17484e9b6c6a0dbdd5352210b3d55283b",
+    "bytes": 5517158,
+    "headers": {
+      "content-type": "text/html; charset=utf-8"
+    },
+    "path": "raw/segis-history/catalog.html"
+  },
+  {
+    "name": "dgbas-table",
+    "url": "https://winstacity.dgbas.gov.tw/DgbasWeb/ZWeb/StateFile_ZWeb.aspx?Type=table",
+    "final_url": "https://winstacity.dgbas.gov.tw/DgbasWeb/ZWeb/StateFile_ZWeb.aspx?Type=table",
+    "sha256": "25510dcd943fcb9f6cb1737e5b1fe4deb148a8c478004235762fdfbb08e86999",
+    "bytes": 1845894,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "path": "raw/segis-history/dgbas-table.html"
+  }
+]

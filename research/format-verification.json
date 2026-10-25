@@ -1,0 +1,7 @@
+{
+  "jsonl": 19975,
+  "csv": 19975,
+  "sqlite": 19975,
+  "value_missing": 188,
+  "status": "all_rows_cross_format_match"
+}

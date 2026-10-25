@@ -1,0 +1,46 @@
+{
+  "resource_index": 1,
+  "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.json",
+  "format": "json",
+  "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut",
+  "dataset_id": "168119",
+  "source_url": "https://data.gov.tw/dataset/168119",
+  "source_title": "113年新竹市公共圖書館圖書借閱量統計表",
+  "source_agency": "新竹市文化局",
+  "license_status": "verified_open",
+  "license_url": "https://data.gov.tw/license",
+  "catalog_sha256": "141c013ad99133e662d1a339438f93b759d9667d223fe9c30adfdbfc67ed4d2a",
+  "status": "downloaded",
+  "source_sha256": "1d0ddcc22073e6a50c0aadaab16a5a073efae533e72bc9ebde3cc3ebb7239eaf",
+  "source_retrieved_at": "2026-10-25T07:32:05.804781+00:00",
+  "raw_path": "raw/official-local/catalog-168119/resource-b7de9e3cd1610aad-1d0ddcc22073e6a50c0aadaab16a5a073efae533e72bc9ebde3cc3ebb7239eaf.json",
+  "row_count": 144,
+  "http": {
+    "retrieved_at": "2026-10-25T07:32:05.804781+00:00",
+    "final_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1675/55ab8f91-134a-4541-b4f0-e115753b02ba.json",
+    "http_status": 200,
+    "headers": {
+      "Cache-Control": "private,max-age=31536000",
+      "Content-Length": "65898",
+      "Content-Type": "application/json",
+      "Content-Disposition": "inline; filename=55ab8f91-134a-4541-b4f0-e115753b02ba.json"
+    }
+  },
+  "fields": [
+    "借閱人次",
+    "借閱冊數",
+    "借閱及續借人次",
+    "借閱及續借冊數",
+    "取消預約人次",
+    "取消預約冊數",
+    "統計年月",
+    "續借人次",
+    "續借冊數",
+    "還書人次",
+    "還書冊數",
+    "預約人次",
+    "預約冊數",
+    "館藏地"
+  ],
+  "last_checked_at": "2026-10-25T07:32:05.804781+00:00"
+}

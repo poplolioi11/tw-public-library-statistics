@@ -1,0 +1,33 @@
+{
+  "name": "tw-public-library-statistics",
+  "title": "臺灣公共圖書館跨年度統計",
+  "version": "0.1.0",
+  "description": "已驗證可得來源的全量整理；不是宣稱臺灣所有年代、所有縣市與每一圖書館都已完整。",
+  "licenses": [
+    {
+      "name": "source-specific",
+      "title": "按每筆來源標記；明確6425/2023為OGDL-1.0，其餘公開統計事實或各來源授權，詳LICENSE.md"
+    }
+  ],
+  "resources": [
+    {
+      "name": "observations",
+      "path": "data/combined/observations.csv",
+      "format": "csv",
+      "encoding": "utf-8-sig",
+      "hash": "sha256:f4b65b6363629121edbd4840ecf0e2681a7e84a86e79a342a76ce069c00079f8"
+    },
+    {
+      "name": "observations-jsonl",
+      "path": "data/combined/observations.jsonl",
+      "format": "jsonl"
+    },
+    {
+      "name": "query-database",
+      "path": "data/combined/library_statistics.sqlite",
+      "format": "sqlite"
+    }
+  ],
+  "homepage": "https://github.com/poplolioi11/tw-public-library-statistics",
+  "publication_profile": "statistical_fields_only"
+}

@@ -1,0 +1,453 @@
+{
+  "checked_at": "2026-10-25",
+  "scope": "公開官方頁面、公開頁面所引用JavaScript及受指派的2023/2024/2025小量API探查；不登入、不申請、不對外聯絡、不探測未公開年分或Backend資料下載",
+  "dataset": {
+    "url": "https://data.gov.tw/dataset/6425",
+    "provider": "國立公共資訊圖書館",
+    "title": "公共圖書館統計",
+    "metadata_updated_at": "2025-09-01 16:56",
+    "license_name_raw": "政府資料開放授權條款-第1版",
+    "license_url": "https://data.gov.tw/license",
+    "download_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "collection_period_note": "當年度1–3月各館填報上一年度1–12月資料；統計年度不等於發布年。"
+  },
+  "year_enumeration": {
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+    "corroborating_source_url": "https://publibstat.nlpi.edu.tw/Frontend/Point/Index",
+    "selector_id": "ddl_Year / DDLYear",
+    "observed_values": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "default_selected": 2025,
+    "data_available_for_all_values_verified": false,
+    "before_2011": "目前官方前端未列舉；未呼叫2010或更早年度API，不能推論歷史資料不存在。"
+  },
+  "endpoints": [
+    {
+      "id": "nlpi-consolidation",
+      "url_template": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year={year}",
+      "method": "GET",
+      "discovery": "data.gov.tw/dataset/6425實際JSON下載連結",
+      "access_observed": "anonymous_http_200",
+      "authentication_in_observed_request": false,
+      "response_content_type": "application/json; charset=utf-8",
+      "response_top_level": "array",
+      "response_row_count_observed": 26,
+      "response_fields_observed_2023": [
+        "縣市別",
+        "圖書館數 總館(所)",
+        "分館(所)",
+        "區館(所)",
+        "服務轄區人口數",
+        "東南亞新移民人口數",
+        "專屬社群網站(個)",
+        "館外服務站 所(個)",
+        "圖書巡迴車",
+        "全年購買圖書資料費-預算(元)",
+        "圖書",
+        "電子書",
+        "期刊",
+        "報紙",
+        "視聽資料",
+        "電子資料",
+        "其他圖書資料",
+        "全年購買圖書資料費-決算(元)",
+        "圖書(決算)",
+        "電子書(決算)",
+        "期刊(決算)",
+        "報紙(決算)",
+        "視聽資料(決算)",
+        "電子資料(決算)",
+        "其他圖書資料(決算)",
+        "館舍總面積(平方公尺)",
+        "供讀者使用的電腦數(台)",
+        "供讀者使用的平板電腦數(台)",
+        "編制內總館員數(人)",
+        "編制內專業人員",
+        "編制內行政人員",
+        "編制內技術人員",
+        "臨時人員",
+        "約聘僱人員",
+        "工讀生",
+        "志工人數",
+        "其他",
+        "圖書及非書資料收藏數量",
+        "一、圖書資料",
+        "圖書(冊數)",
+        "期刊(種數)",
+        "報紙(種數)",
+        "其他(決算)",
+        "二、非書資料",
+        "地圖(張)",
+        "微縮單片(片)",
+        "微縮捲片(捲)",
+        "錄音資料(片、捲)",
+        "錄影資料(片、捲)",
+        "靜畫資料(幅)",
+        "其他(件)",
+        "三、電子資源",
+        "線上資料庫(自購或自行建置)",
+        "光碟資料庫(種)",
+        "其他類型資料庫(種)",
+        "電子書(種)",
+        "四、東南亞圖書及非書資料收藏數量(包含於總館藏量下)",
+        "閱覽席位數(席)",
+        "全年圖書資訊借閱人次",
+        "全年圖書資訊借閱冊數",
+        "年度電子書刊借閱人次",
+        "年度電子書刊借閱冊數",
+        "全年電子資源使用次數",
+        "全年推廣活動(場次)",
+        "一般閱讀推廣活動(場次)",
+        "幼兒閱讀推廣活動(場次)",
+        "兒童閱讀推廣活動(場次)",
+        "青少年閱讀推廣活動(場次)",
+        "樂齡閱讀推廣活動(場次)",
+        "新住民閱讀推廣活動(場次)",
+        "社教藝文活動(場次)",
+        "地方特色活動(場次)",
+        "說故事(場次)",
+        "影片欣賞(場次)",
+        "其他(場次)",
+        "全年推廣活動(人次)",
+        "一般閱讀推廣活動(人次)",
+        "幼兒閱讀推廣活動(人次)",
+        "兒童閱讀推廣活動(人次)",
+        "青少年閱讀推廣活動(人次)",
+        "樂齡閱讀推廣活動(人次)",
+        "新住民閱讀推廣活動(人次)",
+        "社教藝文活動(人次)",
+        "地方特色活動(人次)",
+        "說故事(人次)",
+        "影片欣賞(人次)",
+        "其他(人次)"
+      ],
+      "value_types_observed": "縣市別及各指標均為JSON字串；數值含千分位逗點，其他頁面可能有百分比。",
+      "geographic_level": "全國及縣市彙總；不是各館列。",
+      "row_scope_labels_observed": [
+        "全國",
+        "基隆市",
+        "臺北市",
+        "新北市",
+        "新北市(不含國立館)",
+        "桃園市",
+        "新竹縣",
+        "新竹市",
+        "苗栗縣",
+        "南投縣",
+        "南投縣(不含國立館)",
+        "臺中市",
+        "臺中市(不含國立館)",
+        "彰化縣",
+        "雲林縣",
+        "嘉義縣",
+        "嘉義市",
+        "臺南市",
+        "高雄市",
+        "屏東縣",
+        "臺東縣",
+        "花蓮縣",
+        "宜蘭縣",
+        "澎湖縣",
+        "金門縣",
+        "連江縣"
+      ],
+      "alternative_scopes": [
+        "新北市(不含國立館)",
+        "南投縣(不含國立館)",
+        "臺中市(不含國立館)"
+      ],
+      "license_assessment": "已確認data.gov6425精確列示的Year=2023資源為OGDL v1；不因新公告一概禁用。改參數取得其他年度的可再公開授權尚未逐年證實。",
+      "probes": [
+        {
+          "requested_year": 2023,
+          "url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+          "status": 200,
+          "rows": 26,
+          "columns": 87,
+          "all_row_year_labels_match": true,
+          "local_raw_source": "raw/probe-2023.json（主代理保存）",
+          "local_raw_sha256": "80de5cfa319e135e4ab54cb2e6776e67afb9c24415b1ded0d68af7b2581d7e70"
+        },
+        {
+          "requested_year": 2024,
+          "url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2024",
+          "status": 200,
+          "response_bytes": 74951,
+          "rows": 26,
+          "columns": 87,
+          "all_row_year_labels_match": true,
+          "national_nonzero_metric_count": 86,
+          "example_national": {
+            "圖書館數 總館(所)": "176",
+            "分館(所)": "322",
+            "區館(所)": "55",
+            "服務轄區人口數": "23,400,220"
+          },
+          "full_payload_retained_by_this_worker": false
+        },
+        {
+          "requested_year": 2025,
+          "url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2025",
+          "status": 200,
+          "response_bytes": 74968,
+          "rows": 26,
+          "columns": 87,
+          "all_row_year_labels_match": true,
+          "national_nonzero_metric_count": 86,
+          "example_national": {
+            "圖書館數 總館(所)": "162",
+            "分館(所)": "338",
+            "區館(所)": "55",
+            "服務轄區人口數": "23,299,132"
+          },
+          "full_payload_retained_by_this_worker": false
+        }
+      ],
+      "validation_requirements": [
+        "不得只以HTTP200或固定26列認定該年有資料。",
+        "驗證JSON頂層、欄位、每列年度標籤、全國/縣市/替代口徑及非零指標。",
+        "舊年或不支援年可能有空或全零模板：本輪未測，需標unverified，禁止填入實測年份。",
+        "全國列不可再與縣市相加；3組不含國立館是替代口徑不可與原縣市重複相加。"
+      ]
+    },
+    {
+      "id": "nlpi-front-map",
+      "url": "https://publibstat.nlpi.edu.tw/frontend/Point/mapclick",
+      "method": "POST",
+      "content_type": "application/x-www-form-urlencoded",
+      "parameters": {
+        "CityID": "公開DDLCity選單值；-1=全國",
+        "Year": "公開DDLYear選單值"
+      },
+      "discovery_url": "https://publibstat.nlpi.edu.tw/Frontend/Point/Index",
+      "endpoint_called": false,
+      "response_structure_from_public_code": "{isSuccess:boolean,data:[[指標名,值],...]}",
+      "scope": "公開地圖之重要指標；未下載任何單館資料。"
+    },
+    {
+      "id": "nlpi-front-dynamic",
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+      "method": "POST",
+      "content_type": "application/json; charset=utf-8",
+      "parameters": {
+        "Years": "選單年值",
+        "Topic": "Bacol00282..Bacol00291（頁內10指標）",
+        "SelectLevel": "公開層級選項陣列",
+        "SelectCity": "公開縣市選項陣列"
+      },
+      "discovery_url": "https://publibstat.nlpi.edu.tw/Areas/Frontend/Scripts/ImportantInformation.js",
+      "endpoint_called": false,
+      "scope": "公開動態圖表；頁面仍有縣市/層級選擇，與2026新公告範圍需並列記錄。"
+    },
+    {
+      "id": "nlpi-front-combination",
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DataCombinationSearch",
+      "method": "GET / 表單POST",
+      "endpoint_called": "只GET讀頁，不送查詢表單",
+      "year_selectors": [
+        "DDLYearBeg",
+        "DDLYearEnd"
+      ],
+      "year_values": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "source_code_note": "前端引用/Areas/Backend/Scripts/ReportSearch.js。該JS的RSExportDownload指向/Backend/ReportChart/RSExportDownload；未呼叫此Backend下載端點，未將公開JS視為後台授權。"
+    },
+    {
+      "id": "nlpi-main-open-data-index",
+      "url": "https://www.nlpi.edu.tw/OpenData/gov?PageIndex=7",
+      "method": "GET",
+      "endpoint_called": true,
+      "entry": "國立公共資訊圖書館公共圖書館統計",
+      "entry_date_raw": "2018/01/16",
+      "advertised_formats": [
+        "TXT",
+        "XML",
+        "JSON",
+        "URL"
+      ],
+      "advertised_links": {
+        "TXT": "https://www.nlpi.edu.tw/OpenData/gov/e211a9f7-99f9-479d-9c77-8c43db809f78/text",
+        "XML": "https://www.nlpi.edu.tw/OpenData/gov/e211a9f7-99f9-479d-9c77-8c43db809f78/xml",
+        "JSON": "https://www.nlpi.edu.tw/OpenData/gov/e211a9f7-99f9-479d-9c77-8c43db809f78/json",
+        "URL": "https://www.nlpi.edu.tw/OpenData/gov/e211a9f7-99f9-479d-9c77-8c43db809f78/url"
+      },
+      "tested_results": {
+        "JSON": "HTTP404",
+        "URL": "HTTP404"
+      },
+      "csv_note": "該特定統計項目未列CSV；頁中其他資料集有CSV，不能誤認為本統計亦有CSV。"
+    }
+  ],
+  "policy_evidence": [
+    {
+      "id": "dataset-license",
+      "url": "https://data.gov.tw/dataset/6425",
+      "quote": "授權方式：政府資料開放授權條款-第1版；計費方式：免費。",
+      "scope": "該資料集所指官方JSON資源。"
+    },
+    {
+      "id": "ogdl-v1",
+      "url": "https://data.gov.tw/license",
+      "quote": "授權使用者不限目的、時間及地域、非專屬、不可撤回、免授權金進行利用",
+      "additional_clause": "使用者依本條款規定利用開放資料，無須另行取得各資料提供機關之書面或其他方式授權。",
+      "attribution_required": true,
+      "cessation_clause_note": "第5條允許停止全部或一部提供；不等同既有授權自動可撤回。"
+    },
+    {
+      "id": "scope-change-20260917",
+      "title": "公共圖書館統計系統數據申請公告",
+      "listing_url": "https://publibstat.nlpi.edu.tw/Frontend/News/Message",
+      "detail_url": "https://publibstat.nlpi.edu.tw/Frontend/News/MessageDataView",
+      "detail_method": "POST",
+      "detail_form": {
+        "key": "News000050"
+      },
+      "published_date": "2026-09-17",
+      "edited_at_raw": "2026-09-17 02:41",
+      "read_anonymously": true,
+      "text_raw": "依115年8月25日「公共圖書館統計系統數據公開研商會議」決議，自115年起，本系統僅公開部分指標之全國年度總數據。其他系統數據如有需求，請依下列方式申請：公務機關及學術研究單位：請函送國立公共資訊圖書館，載明所需數據項目及使用用途，經審核同意後提供。媒體、私人企業、民調公司及其他商業團體：請逕向各縣市政府或所屬公共圖書館洽詢及申請。申請取得之數據限於核准用途使用，不得擅自公開或轉供第三方；學術研究成果如涉及相關數據，應採去識別化方式呈現。",
+      "get_query_warning": "GET ?key=News000050會轉GenericError.html後回HTTP200首頁，不是公告內容；不可用200當成功。"
+    },
+    {
+      "id": "terms-page",
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Sitmap/PrivacyPolicy",
+      "observation": "目前匿名HTML的正文看起來殘缺：開頭停在「以下簡稱」，僅剩隱私政策修訂概述；未取得完整使用條款，不以它新增推論授權。"
+    }
+  ],
+  "library_level_status": {
+    "public_library_level_stats_endpoint_verified": false,
+    "reason": "API6425只有全國/縣市彙整列；新公告指其他系統數據須申請。未登入、未送資料申請、未嘗試Backend匯出或私有館員帳號。"
+  },
+  "older_than_2011": {
+    "official_selector_min": 2011,
+    "live_api_probe_performed": false,
+    "primary_lead": "https://nclfile.ncl.edu.tw/files/201511/912dcfdb-b3a7-4398-90ae-63eb9be375ef.pdf",
+    "lead_type": "民國100年圖書館年鑑PDF，搜尋索引顯示含2010公共圖書館相關表；本輪未下載或比對定義，非可直接拼接之API資料。",
+    "csv_found": false
+  },
+  "limits": [
+    "未重抓主代理全部年份。",
+    "2024/2025各一次小量探查，未存完整payload，摘要足以確認當年非零且列標匹配；如正式建庫需主代理留原始JSON。",
+    "未確認2011–2022每一年是否實際非空；yearselector不是資料完整性證明。",
+    "本報告區分技術可取得、資料集授權、2026公告與個案申請限制；不自行判定彼此法律效力。"
+  ],
+  "explicit_2023_license_evidence": {
+    "assessment": "verified_open_for_explicit_distribution_2023",
+    "page_url": "https://data.gov.tw/dataset/6425",
+    "local_page_snapshot": "raw/dataset-page.html",
+    "local_page_sha256": "1227efda3ebf3fa620a4d509a80b87e0e0c1b06053148cb8116c580eb3df52f0",
+    "jsonld_dataset": {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "公共圖書館統計",
+      "description": "本資料集主要彙整全國公共圖書館基本資料與統計資訊，由各館定期上網填報資料，以呈現國內公共圖書館的營運狀況，並可作為未來制定圖書館各項政策的參考。資料收集期間為當年度1-3月開放各館填報上一年度1-12月資料(即：2018年收集2017年之全年資料)，如需產生2011-2017年統計資料，請至公共圖書館統計系統使用(https://publibstat.nlpi.edu.tw)。",
+      "url": "https://data.gov.tw/dataset/6425",
+      "identifier": "6425",
+      "keywords": [
+        "公共圖書館",
+        "統計",
+        "營運狀況"
+      ],
+      "license": "https://data.gov.tw/license",
+      "creator": {
+        "@type": "Organization",
+        "name": "國立公共資訊圖書館"
+      },
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "JSON",
+          "contentUrl": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023"
+        }
+      ]
+    },
+    "rendered_page_license_raw": "授權方式：政府資料開放授權條款-第1版",
+    "rendered_resource_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "provider_raw": "國立公共資訊圖書館",
+    "metadata_changed": {
+      "date": "2025-09-01 16:56:02.000000",
+      "timezone_type": 3,
+      "timezone": "Asia/Taipei"
+    },
+    "resource_last_update_time": {
+      "date": "2025-09-01 16:56:02.000000",
+      "timezone_type": 3,
+      "timezone": "Asia/Taipei"
+    },
+    "resource_vid": 15254706,
+    "modify_history": [],
+    "year_scope_matrix": [
+      {
+        "year": 2023,
+        "license_status": "verified_open",
+        "reason": "官方Dataset JSON-LD及可見下載連結精確指向Year=2023，Dataset license明列OGDL v1。",
+        "can_prepare_complete_version_now": true
+      },
+      {
+        "years": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2024,
+          2025
+        ],
+        "license_status": "not_confirmed_for_altered_year_parameter",
+        "reason": "目前未取得逐年具體官方開放資源版本的獨立授權鏈；年選單及可回傳資料不等於該年曾依OGDL釋出。2024/2025已實測可取得，其他年份探查由主代理負責。",
+        "can_prepare_complete_version_now": "研究整理可分區，不能與已證2023 OGDL版混作同等授權。"
+      }
+    ],
+    "metadata_inconsistency": {
+      "coverage_temporal_start": {
+        "date": "2017-01-01 00:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "Asia/Taipei"
+      },
+      "coverage_temporal_end": {
+        "date": "2020-12-31 00:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "Asia/Taipei"
+      },
+      "note": "隱含詮釋資料寫2017–2020，與明列Year=2023 resource不一致；這不是這四年具體資源已確認開放的證據，不可拿此日期範圍回填年份授權。"
+    },
+    "scope_note": "2026新公告不應被解讀為撤銷此已明示之2023開放版。OGDL第2條不可撤回；授權使用者依條款利用無須另取書面授權。"
+  }
+}

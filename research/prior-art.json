@@ -1,0 +1,345 @@
+{
+  "title": "臺灣公共圖書館跨年統計：查重與可區隔新增值",
+  "generated_at": "2026-10-25T15:20:33.532953+08:00",
+  "checked_date": "2026-10-25",
+  "scope": "唯讀研究官方入口、公開資料服務、GitHub；未開始全量資料下載、申請、公開、排程或負面排行。",
+  "methods": [
+    "背景 HTTP／公開網頁搜尋",
+    "GitHub 專用工具讀取 repository metadata、完整遞迴 Git 樹、README、發行 JSON",
+    "逐來源區分資料年度、網頁更新時間、觀察到的功能與尚未驗證事項"
+  ],
+  "search_queries": [
+    "\"公共圖書館統計\" \"資料\" \"GitHub\"",
+    "\"ConsolidationData\" \"github\"",
+    "\"publibstat\" \"github\"",
+    "\"公共圖書館\" \"統計\" \"長表\"",
+    "site:publibstat.nlpi.edu.tw \"下載\"",
+    "site:segis.moi.gov.tw \"圖書館\"",
+    "site:ncl.edu.tw \"公共圖書館\" \"統計\" \"2025\"",
+    "\"公共圖書館統計\" \"資料字典\"",
+    "\"公共圖書館統計\" \"資料下載\"",
+    "\"公共圖書館\" \"縣市\" \"統計\" \"CSV\"",
+    "\"圖書館\" \"統計\" \"SEGIS\"",
+    "\"公共圖書館統計\" \"github.com\" -site:macaudata.mo",
+    "\"圖書館\" \"opendata\" \"統計\" site:github.com",
+    "\"Public library\" \"Taiwan\" \"dataset\" -site:scribd.com",
+    "\"公共圖書館\" \"統計\" site:stats.tw",
+    "\"公共圖書館\" \"統計\" site:segis.moi.gov.tw/STATCloud",
+    "\"圖書館\" site:huggingface.co/datasets/openfun/tw-segis",
+    "\"公共圖書館統計\" \"下載\" \"歷年\" -site:macaudata.mo -site:scribd.com"
+  ],
+  "github_queries": [
+    {
+      "query": "library",
+      "repository": "ahkimn/subwaybuilder-tw-maps",
+      "topn": 10,
+      "result": "未回傳項目；後續另查完整 Git 樹，不將搜尋結果當不存在證據。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nlpi-open-data-6425",
+      "title": "公共圖書館統計（政府資料開放平臺）",
+      "url": "https://data.gov.tw/dataset/6425",
+      "publisher": "國立公共資訊圖書館",
+      "access_status": "read_catalog",
+      "data_years": [
+        "2023（目前目錄列出的 JSON 資源參數）"
+      ],
+      "metadata_updated_at": "2025-09-01 16:56",
+      "formats": [
+        "JSON"
+      ],
+      "resource_urls": [
+        "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023"
+      ],
+      "license_status": "verified_open_catalog_resource",
+      "license_evidence_url": "https://data.gov.tw/dataset/6425",
+      "license_evidence": "目錄明列政府資料開放授權條款-第1版、免費。僅可據此判定該目錄所列資源版本，不概括其他年份或申請資料。",
+      "observed_coverage": "縣市、館數／分館／區域館、服務人口、購書預決算、人員分類、設備、各類館藏、借閱、到館與活動等大量原始欄位。欄位清單由目錄確認；此查重任務未全量下載 API。",
+      "overlap": "官方已提供機器可讀統計，重做一份 JSON 不是充分新增值。",
+      "gap_or_uncertainty": "未在此目錄觀察到涵蓋所有年份的不可變原檔快照、各年欄位映射及來源雜湊；API 實際目前回應、全量年份及公開權利範圍交由匯入任務逐項驗證。"
+    },
+    {
+      "id": "nlpi-current-system",
+      "title": "公共圖書館統計系統與重要統計數據圖表",
+      "url": "https://publibstat.nlpi.edu.tw/",
+      "publisher": "國立公共資訊圖書館",
+      "access_status": "read",
+      "additional_urls": [
+        "https://publibstat.nlpi.edu.tw/Frontend/About/AboutpLibSTAT",
+        "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation",
+        "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/TrendChart"
+      ],
+      "data_years": [
+        "2011–2025（重要統計圖表年份選單）",
+        "2025（首頁最新資料標示）"
+      ],
+      "formats": [
+        "HTML",
+        "互動圖表／圖表下載"
+      ],
+      "license_status": "not_confirmed_for_all_current_system_data",
+      "observed_coverage": "重要統計圖表可按年度、縣市、圖書館層級篩選；跨年度動態圖表為既有功能。涵蓋館數、面積、人員、館藏、購書預決算、借閱、活動等。",
+      "definition_evidence": [
+        "統計對象為公共圖書館，不含學校圖書館。",
+        "新北市、臺中市與南投縣資料含國立館；不能直接等同地方政府所屬館。"
+      ],
+      "overlap": "既有跨年圖表與多指標功能成熟，不應宣稱跨年展示是首創。",
+      "gap_or_uncertainty": "目前網站全部圖表資料的再散布權未一概確認；TrendChart 頁本次有搜尋摘要及先前查閱證據，後續直接重開曾逾時。不能把可查詢推論為可全部再公開。"
+    },
+    {
+      "id": "nlpi-disclosure-20260917",
+      "title": "公共圖書館統計系統數據申請公告",
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/News/ShareNewsView?NewsID=News000050",
+      "publisher": "國立公共資訊圖書館",
+      "access_status": "read",
+      "publication_date": "2026-09-17",
+      "last_edited_raw": "2026-09-17 02:41",
+      "formats": [
+        "HTML"
+      ],
+      "license_status": "restricted_for_requested_data",
+      "observed_coverage": "公告依 115 年 8 月 25 日會議決議，自 115 年起僅公開部分指標之全國年度總數據；其他數據需向指定機關申請。申請資料限核准用途，禁止擅自公開或轉供第三方。",
+      "source_excerpt": "申請取得之數據限於核准用途使用，不得擅自公開或轉供第三方",
+      "verification": {
+        "retrieved_at": "2026-10-25T07:17:08.944278+00:00",
+        "post_url": "https://publibstat.nlpi.edu.tw/Frontend/News/IndexDataView",
+        "method": "POST",
+        "form": {
+          "key": "News000050"
+        },
+        "response_sha256": "d91e665d7e4c4d753ecf0979f75d2579eb77f5b96cacd5d1d0bc225048a414c6",
+        "direct_share_get_status": 200,
+        "direct_share_get_sha256": "595f550a1bad72e31e0e32e7736d4b6ad586845cc470ca2d34bacda50dfd2e61"
+      },
+      "overlap": "這是本案可交付範圍的現行限制，不能把舊目錄授權泛用到新申請資料。",
+      "gap_or_uncertainty": "公告並未逐項說明舊有已開放版本與現存公開 API 的範圍；不能據此逕稱既有合法開放授權遭撤銷。"
+    },
+    {
+      "id": "ncl-libstat",
+      "title": "全國圖書館統計系統",
+      "url": "https://libstat.ncl.edu.tw/",
+      "publisher": "國家圖書館",
+      "access_status": "read",
+      "data_years": [
+        "114 年全國圖書館統計調查（首頁公告）"
+      ],
+      "metadata_dates": [
+        "首頁更新 115-10-01",
+        "調查公告 115-04-07；期限延至 115-07-10"
+      ],
+      "formats": [
+        "HTML",
+        "互動統計"
+      ],
+      "license_status": "not_confirmed",
+      "additional_urls": [
+        "https://libstat.ncl.edu.tw/dynamicreport/9af813704342469f9ebbecd93a94f527"
+      ],
+      "observed_coverage": "圖書館名錄、地圖、館種與統計功能。查閱動態統計所見分類包括大專、高中職、國中、國小、專門圖書館；不能據此證明其與 NLPI 公共圖書館範圍完全一致。",
+      "overlap": "既有全國圖書館目錄及統計入口，無需另造一般名錄。",
+      "gap_or_uncertainty": "逐年下載範圍、公共館別完整長表及再利用授權未在本輪確認。"
+    },
+    {
+      "id": "ncl-cns-dictionary",
+      "title": "CNS 統計名詞",
+      "url": "https://libstat.ncl.edu.tw/cnsDefinition/667f1994f5774fb386e6eb3014389a17",
+      "publisher": "國家圖書館",
+      "access_status": "read",
+      "data_years": [],
+      "formats": [
+        "HTML（具章節編號的名詞與定義）"
+      ],
+      "license_status": "not_confirmed",
+      "license_evidence": "網站頁尾政府開放宣告連結指向 https://www.ncl.edu.tw/content_340.html，本次回應找不到指定站臺；且 CNS 標準內容是否包含第三方權利仍未確認。",
+      "observed_coverage": "已有館藏實體單位／種／冊、使用人次、借閱、電子服務、開放時數、人員全時等量、預算等大量定義與附錄。",
+      "overlap": "不能宣稱臺灣缺少圖書館統計名詞字典。",
+      "gap_or_uncertainty": "既有名詞字典不等於每年度每個原欄位的適用口徑映射；本輪未確認來源欄位到該標準章節的完整跨年對照。不得未查權利就整篇重製。"
+    },
+    {
+      "id": "segis-catalog",
+      "title": "SEGIS 統計資訊整合服務平臺目錄",
+      "url": "https://segis.moi.gov.tw/STATCloud/Catalog",
+      "publisher": "內政部統計處",
+      "access_status": "search_result_only",
+      "formats": [
+        "目錄／統計資料產品；原始下載格式未確認"
+      ],
+      "license_status": "not_confirmed",
+      "products": [
+        {
+          "title": "行政區公立公共圖書館統計",
+          "data_years": "民國 95–114 年",
+          "geography": "全國／縣市",
+          "fields": [
+            "公立公共圖書館個數"
+          ]
+        },
+        {
+          "title": "臺北市行政區市立圖書館",
+          "data_years": "目錄列民國 93–110、112–114 年；111 年未在所見列表出現",
+          "geography": "鄉鎮市區",
+          "fields": [
+            "館數",
+            "館藏",
+            "中文／外文／視聽比例",
+            "使用人次",
+            "借閱冊數",
+            "借閱人次"
+          ]
+        }
+      ],
+      "observed_coverage": "公開搜尋索引中可見上述產品及年份。直接網頁讀取因回應超過 4 MiB 未完成，未下載底層產品。",
+      "overlap": "全國／縣市公共圖書館數的歷年序列已有官方產品，不能把單一館數長表當新發明。",
+      "gap_or_uncertainty": "全指標跨年、口徑映射、來源版本及底層授權需逐產品確認；本輪不能判定該平臺沒有相關完整下載。"
+    },
+    {
+      "id": "openfun-segis",
+      "title": "openfun/tw-segis",
+      "url": "https://huggingface.co/datasets/openfun/tw-segis",
+      "publisher": "openfun（非本案原始官方來源）",
+      "access_status": "read_dataset_page",
+      "revision": "02988b47e456c5aec985839cb00b835c9162f921",
+      "formats": [
+        "Hugging Face 資料集檔案／目錄欄位"
+      ],
+      "license_status": "not_confirmed",
+      "observed_coverage": "已有 SEGIS 資料鏡像與產品目錄資訊。所見欄位含 MID、名稱、筆數、起訖時間、邊界、地理類型與欄位資訊；未批量下載。",
+      "overlap": "既有 SEGIS 開放資料整理工作，應先檢查可否沿用，避免再做一般平臺鏡像。",
+      "gap_or_uncertainty": "未確認其是否含本案公共圖書館產品及完整內容；README 無充分說明。資料預覽有混合欄位型態導致生成錯誤，這不代表可下載資料無法使用。授權未確認。"
+    },
+    {
+      "id": "taichung-circulation-open-data",
+      "title": "臺中市立圖書館各分館借閱統計",
+      "url": "https://data.gov.tw/dataset/84379",
+      "publisher": "臺中市政府／臺中市立圖書館",
+      "access_status": "read_catalog",
+      "additional_urls": [
+        "https://odportal.tw/dataset/DfwlX-xa"
+      ],
+      "data_years": [
+        "106",
+        "107"
+      ],
+      "metadata_updated_at": "2026-03-19（鏡像頁標示；不是資料年度）",
+      "formats": [
+        "CSV",
+        "JSON",
+        "XML"
+      ],
+      "license_status": "verified_open_catalog_resource",
+      "license_evidence_url": "https://data.gov.tw/dataset/84379",
+      "license_evidence": "政府資料開放授權條款-第1版。",
+      "observed_coverage": "六項資源為 106／107 年、三種格式；欄位含機關代碼、縣市代碼、郵遞區號、分館、借閱人數、借閱冊數。",
+      "overlap": "既有分館級機器可讀統計，不能稱全臺只有縣市總數。",
+      "gap_or_uncertainty": "這份目錄只證明臺中指定年度資源；不能代表全臺全年度已整合。鏡像頁的 AI 應用建議不是已實作的跨年資料管線。"
+    },
+    {
+      "id": "ncl-reading-report-2024",
+      "title": "113 年臺灣閱讀風貌及全民閱讀力年度報告",
+      "url": "https://reading.ncl.edu.tw/web/front/page.do?pageId=65",
+      "publisher": "國家圖書館",
+      "access_status": "read",
+      "additional_urls": [
+        "https://www.ncl.edu.tw/galleries/0Q082557771837465314"
+      ],
+      "data_years": [
+        "113／2024"
+      ],
+      "publication_date": "2025-03-27",
+      "formats": [
+        "HTML／報告發表頁"
+      ],
+      "license_status": "not_confirmed_for_report_redistribution",
+      "observed_coverage": "既有年度閱讀統計分析，含實體／電子借閱與到館等指標；本輪未全量擷取報告。",
+      "overlap": "全國年度分析成果已存在。",
+      "gap_or_uncertainty": "這不等於附有原始資料不可變版本及全部轉換步驟的開放長表。此案不產生負面排行。"
+    },
+    {
+      "id": "ahkimn-subwaybuilder",
+      "title": "ahkimn/subwaybuilder-tw-maps",
+      "url": "https://github.com/ahkimn/subwaybuilder-tw-maps",
+      "publisher": "ahkimn",
+      "access_status": "read_repository_tree_readme_manifest_metadata",
+      "checked_commit": "7c58f6c5fe72d61f64d1e8d1759797556251f8f4",
+      "metadata": {
+        "default_branch": "main",
+        "archived": false,
+        "pushed_at": "2026-08-18T22:59:12Z",
+        "latest_commit_date": "2026-08-18T22:59:09Z"
+      },
+      "formats": [
+        "Markdown",
+        "JSON 發行描述",
+        "ZIP 地圖發行檔（本輪未下載）"
+      ],
+      "license_status": "repo_metadata_GPL-3.0_upstream_rights_separate",
+      "license_evidence_url": "https://api.github.com/repos/ahkimn/subwaybuilder-tw-maps",
+      "source_years": "README 未見圖書館原始統計年度明示。",
+      "inspected_urls": [
+        "https://github.com/ahkimn/subwaybuilder-tw-maps/blob/7c58f6c5fe72d61f64d1e8d1759797556251f8f4/README.md",
+        "https://api.github.com/repos/ahkimn/subwaybuilder-tw-maps/git/trees/main?recursive=1",
+        "https://github.com/ahkimn/subwaybuilder-tw-maps/blob/7c58f6c5fe72d61f64d1e8d1759797556251f8f4/releases/TPE.json"
+      ],
+      "observed_coverage": "臺灣城市的 Subway Builder 交通模擬地圖。README 說明自 0.2.0 加入圖書館旅次需求：把系統級流通量分配至分館並校正各館到訪統計基準，用作需求建模。不是直接宣稱分館原始統計觀測值。",
+      "source_attribution": "README 將圖書館統計歸於 NCL，連向 publibstat.ncl.edu.tw；該連結本輪未成功開啟。現行 NCL 統計入口為 libstat.ncl.edu.tw，NLPI 公共館系統另為 publibstat.nlpi.edu.tw。不能僅據連結問題判斷原作者資料不實。",
+      "tree_evidence": {
+        "truncated": false,
+        "observed_paths": [
+          ".github/workflows/deploy-releases.yml",
+          ".gitignore",
+          "CLAUDE.md",
+          "LICENSE",
+          "README.md",
+          "README_STYLE.md",
+          "img/taipei_bathymetry.png",
+          "releases/CYI.json",
+          "releases/HSZ.json",
+          "releases/KHH.json",
+          "releases/NTW.json",
+          "releases/RMQ.json",
+          "releases/TNN.json",
+          "releases/TPE.json",
+          "releases/TTT.json",
+          "releases/YIL.json",
+          "releases/index.html"
+        ],
+        "readme_blob_sha": "7bb6ce82ea066bf7ef1af7363369ee90a57491b7",
+        "TPE_manifest_blob_sha": "2e48991b2217d90b2823d7e62b491d8e84336505"
+      },
+      "map_version_evidence": {
+        "version": "0.4.1",
+        "date": "2026-08-19",
+        "download_url": "https://github.com/ahkimn/subwaybuilder-tw-maps/releases/download/0.3.1/TPE.zip",
+        "download_sha256": "e9b0eb48ee8dc43f8b072ca3863ec7a43f1c2b7a020118535048719b7a34dd1e"
+      },
+      "overlap": "真實案例顯示圖書館流通資料能供開放交通模擬使用，且其地圖發行已有版本及雜湊。",
+      "gap_or_uncertainty": "所查完整 Git 樹未公開獨立圖書館觀測資料表、欄位字典或轉換程式。這只限該提交的公開樹；未檢查 ZIP 全部內容，不推論其私人工作流程不存在。地圖發行雜湊也不是逐年圖書館原資料版本雜湊。"
+    }
+  ],
+  "conclusions": {
+    "mature_identical_replacement_found": false,
+    "absence_claim_permitted": false,
+    "existing_overlap": [
+      "NLPI 機器可讀 JSON 與跨年圖表",
+      "NCL CNS 統計名詞字典",
+      "SEGIS 縣市館數歷年產品",
+      "地方分館借閱統計及公開資料鏡像",
+      "ahkimn 的圖書館需求交通模擬應用與版本地圖"
+    ],
+    "differentiable_value": [
+      "逐來源、逐授權版本保留原始下載 URL、擷取時間、雜湊、原始列鍵與足以重現的版本。",
+      "在長表保留原始欄名、數值、單位、統計期間、計數方式及地域／館種範圍，不混用到館人次與借閱人次。",
+      "把現有名詞標準的章節引用與每年度欄位映射連起來，明示變動及無法對照，不未經授權全文搬運 CNS。",
+      "完整性檢查、異動比對、可重複更新流程與權利白名單，交付 AI 可直接讀的觀測值及來源證據；不把模型分配值冒充實測。"
+    ],
+    "go_no_go": "可繼續整理已確認可再公開的既有資源版本。新資料以現行公開範圍為上限；申請取得或權利未明資料僅本機研究，不納入公開包。若核心指標所需年份僅能申請且不得再公開，縮小公開交付範圍並誠實列缺口。"
+  },
+  "limitations": [
+    "本輪為有限時間、有限查詢的查重，不證明全球不存在完整同類資料集。",
+    "部分目錄僅完成搜尋索引／頁面驗證，未取得底層全量資料與條款。",
+    "未發出任何資料申請、未聯絡他人；未授權事項不自動推論可公開。",
+    "未把一般名錄、書目、學校圖書館或交通模擬輸出混充公共圖書館原始統計。"
+  ]
+}

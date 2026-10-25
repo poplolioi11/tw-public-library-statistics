@@ -1,0 +1,1361 @@
+[
+  {
+    "source_id": "ogdl-api-2023",
+    "year": 2023,
+    "scope": "licensed_api",
+    "topic": null,
+    "rows_in_source": 26,
+    "observations": 2236,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00282",
+    "year": 2011,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00283",
+    "year": 2011,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00284",
+    "year": 2011,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00285",
+    "year": 2011,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00286",
+    "year": 2011,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00287",
+    "year": 2011,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00288",
+    "year": 2011,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00289",
+    "year": 2011,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00290",
+    "year": 2011,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00291",
+    "year": 2011,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00282",
+    "year": 2012,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00283",
+    "year": 2012,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00284",
+    "year": 2012,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00285",
+    "year": 2012,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00286",
+    "year": 2012,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00287",
+    "year": 2012,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00288",
+    "year": 2012,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00289",
+    "year": 2012,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00290",
+    "year": 2012,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00291",
+    "year": 2012,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00282",
+    "year": 2013,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00283",
+    "year": 2013,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00284",
+    "year": 2013,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00285",
+    "year": 2013,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00286",
+    "year": 2013,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00287",
+    "year": 2013,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00288",
+    "year": 2013,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00289",
+    "year": 2013,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00290",
+    "year": 2013,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00291",
+    "year": 2013,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00282",
+    "year": 2014,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00283",
+    "year": 2014,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00284",
+    "year": 2014,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00285",
+    "year": 2014,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00286",
+    "year": 2014,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00287",
+    "year": 2014,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00288",
+    "year": 2014,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00289",
+    "year": 2014,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00290",
+    "year": 2014,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00291",
+    "year": 2014,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00282",
+    "year": 2015,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00283",
+    "year": 2015,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00284",
+    "year": 2015,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00285",
+    "year": 2015,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00286",
+    "year": 2015,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00287",
+    "year": 2015,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00288",
+    "year": 2015,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00289",
+    "year": 2015,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00290",
+    "year": 2015,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00291",
+    "year": 2015,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00282",
+    "year": 2016,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00283",
+    "year": 2016,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00284",
+    "year": 2016,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00285",
+    "year": 2016,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00286",
+    "year": 2016,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00287",
+    "year": 2016,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00288",
+    "year": 2016,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00289",
+    "year": 2016,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00290",
+    "year": 2016,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00291",
+    "year": 2016,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00282",
+    "year": 2017,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00283",
+    "year": 2017,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00284",
+    "year": 2017,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00285",
+    "year": 2017,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00286",
+    "year": 2017,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00287",
+    "year": 2017,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00288",
+    "year": 2017,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00289",
+    "year": 2017,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00290",
+    "year": 2017,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00291",
+    "year": 2017,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00282",
+    "year": 2018,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00283",
+    "year": 2018,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00284",
+    "year": 2018,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00285",
+    "year": 2018,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00286",
+    "year": 2018,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00287",
+    "year": 2018,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00288",
+    "year": 2018,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00289",
+    "year": 2018,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00290",
+    "year": 2018,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00291",
+    "year": 2018,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00282",
+    "year": 2019,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00283",
+    "year": 2019,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00284",
+    "year": 2019,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00285",
+    "year": 2019,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00286",
+    "year": 2019,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00287",
+    "year": 2019,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00288",
+    "year": 2019,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00289",
+    "year": 2019,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00290",
+    "year": 2019,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00291",
+    "year": 2019,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00282",
+    "year": 2020,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00283",
+    "year": 2020,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00284",
+    "year": 2020,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00285",
+    "year": 2020,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00286",
+    "year": 2020,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00287",
+    "year": 2020,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00288",
+    "year": 2020,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00289",
+    "year": 2020,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00290",
+    "year": 2020,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00291",
+    "year": 2020,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00282",
+    "year": 2021,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00283",
+    "year": 2021,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00284",
+    "year": 2021,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00285",
+    "year": 2021,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00286",
+    "year": 2021,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00287",
+    "year": 2021,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00288",
+    "year": 2021,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00289",
+    "year": 2021,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00290",
+    "year": 2021,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00291",
+    "year": 2021,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00282",
+    "year": 2022,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00283",
+    "year": 2022,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00284",
+    "year": 2022,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00285",
+    "year": 2022,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00286",
+    "year": 2022,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00287",
+    "year": 2022,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00288",
+    "year": 2022,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00289",
+    "year": 2022,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00290",
+    "year": 2022,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00291",
+    "year": 2022,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00282",
+    "year": 2023,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00283",
+    "year": 2023,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00284",
+    "year": 2023,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00285",
+    "year": 2023,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00286",
+    "year": 2023,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00287",
+    "year": 2023,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00288",
+    "year": 2023,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00289",
+    "year": 2023,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00290",
+    "year": 2023,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00291",
+    "year": 2023,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00282",
+    "year": 2024,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00283",
+    "year": 2024,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00284",
+    "year": 2024,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00285",
+    "year": 2024,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00286",
+    "year": 2024,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00287",
+    "year": 2024,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00288",
+    "year": 2024,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00289",
+    "year": 2024,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00290",
+    "year": 2024,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00291",
+    "year": 2024,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00282",
+    "year": 2025,
+    "scope": "public_national_chart",
+    "topic": "Bacol00282",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00283",
+    "year": 2025,
+    "scope": "public_national_chart",
+    "topic": "Bacol00283",
+    "rows_in_source": 1,
+    "observations": 2,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00284",
+    "year": 2025,
+    "scope": "public_national_chart",
+    "topic": "Bacol00284",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00285",
+    "year": 2025,
+    "scope": "public_national_chart",
+    "topic": "Bacol00285",
+    "rows_in_source": 11,
+    "observations": 11,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00286",
+    "year": 2025,
+    "scope": "public_national_chart",
+    "topic": "Bacol00286",
+    "rows_in_source": 5,
+    "observations": 5,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00287",
+    "year": 2025,
+    "scope": "public_national_chart",
+    "topic": "Bacol00287",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00288",
+    "year": 2025,
+    "scope": "public_national_chart",
+    "topic": "Bacol00288",
+    "rows_in_source": 1,
+    "observations": 3,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00289",
+    "year": 2025,
+    "scope": "public_national_chart",
+    "topic": "Bacol00289",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00290",
+    "year": 2025,
+    "scope": "public_national_chart",
+    "topic": "Bacol00290",
+    "rows_in_source": 7,
+    "observations": 7,
+    "status": "acquired_and_normalized"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00291",
+    "year": 2025,
+    "scope": "public_national_chart",
+    "topic": "Bacol00291",
+    "rows_in_source": 6,
+    "observations": 6,
+    "status": "acquired_and_normalized"
+  }
+]

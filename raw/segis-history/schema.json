@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DGBAS Z091101a029 complete public county table",
+  "description": "CSV原值全留。空value配not_available_in_source及原始-；不可解為零。",
+  "type": "object",
+  "required": [
+    "data_year",
+    "entity_raw",
+    "entity_kind",
+    "area_code_raw",
+    "geography_vintage",
+    "metric_id",
+    "metric_raw",
+    "value_raw",
+    "value",
+    "value_status",
+    "unit",
+    "temporal_kind",
+    "period_raw",
+    "period_start",
+    "period_end",
+    "population_scope",
+    "national_libraries_scope",
+    "source_id",
+    "source_agency",
+    "source_url",
+    "source_download_url",
+    "source_method",
+    "source_request",
+    "source_sha256",
+    "source_local_path",
+    "source_retrieved_at",
+    "source_locator",
+    "source_table_row",
+    "source_table_column",
+    "license_status",
+    "license_url",
+    "license_scope_note",
+    "license_scope_inference",
+    "extraction_status",
+    "comparability"
+  ],
+  "properties": {
+    "data_year": {
+      "type": "integer"
+    },
+    "entity_raw": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "entity_kind": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "area_code_raw": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "geography_vintage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metric_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metric_raw": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "value_raw": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "value": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "value_status": {
+      "enum": [
+        "reported",
+        "not_available_in_source"
+      ]
+    },
+    "unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "temporal_kind": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "period_raw": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "period_start": {
+      "type": "null"
+    },
+    "period_end": {
+      "type": "null"
+    },
+    "population_scope": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "national_libraries_scope": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_agency": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_download_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_request": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_local_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_retrieved_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_locator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_table_row": {
+      "type": "integer"
+    },
+    "source_table_column": {
+      "type": "integer"
+    },
+    "license_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license_scope_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license_scope_inference": {
+      "type": "boolean"
+    },
+    "extraction_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "comparability": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "source_format": "official HTML table, locally serialized CSV"
+}

@@ -1,0 +1,191 @@
+{
+  "source_id": "dgbas-county-library-Z091101a029",
+  "complete_selected_grid": true,
+  "selected_years": [
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "geographies": {
+    "05": "總計",
+    "0502": "新北市",
+    "0503": "臺北市",
+    "0504": "桃園市",
+    "0505": "臺中市",
+    "0506": "臺南市",
+    "0507": "高雄市",
+    "0508": "宜蘭縣",
+    "0509": "新竹縣",
+    "0510": "苗栗縣",
+    "0511": "彰化縣",
+    "0512": "南投縣",
+    "0513": "雲林縣",
+    "0514": "嘉義縣",
+    "0515": "屏東縣",
+    "0516": "臺東縣",
+    "0517": "花蓮縣",
+    "0518": "澎湖縣",
+    "0519": "基隆市",
+    "0520": "新竹市",
+    "0521": "嘉義市",
+    "0522": "金門縣",
+    "0523": "連江縣"
+  },
+  "records": 644,
+  "reported_cells": 460,
+  "missing_marker_cells": 184,
+  "year_status_counts": {
+    "1998": {
+      "not_available_in_source": 23
+    },
+    "1999": {
+      "not_available_in_source": 23
+    },
+    "2000": {
+      "not_available_in_source": 23
+    },
+    "2001": {
+      "not_available_in_source": 23
+    },
+    "2002": {
+      "not_available_in_source": 23
+    },
+    "2003": {
+      "not_available_in_source": 23
+    },
+    "2004": {
+      "not_available_in_source": 23
+    },
+    "2005": {
+      "not_available_in_source": 23
+    },
+    "2006": {
+      "reported": 23
+    },
+    "2007": {
+      "reported": 23
+    },
+    "2008": {
+      "reported": 23
+    },
+    "2009": {
+      "reported": 23
+    },
+    "2010": {
+      "reported": 23
+    },
+    "2011": {
+      "reported": 23
+    },
+    "2012": {
+      "reported": 23
+    },
+    "2013": {
+      "reported": 23
+    },
+    "2014": {
+      "reported": 23
+    },
+    "2015": {
+      "reported": 23
+    },
+    "2016": {
+      "reported": 23
+    },
+    "2017": {
+      "reported": 23
+    },
+    "2018": {
+      "reported": 23
+    },
+    "2019": {
+      "reported": 23
+    },
+    "2020": {
+      "reported": 23
+    },
+    "2021": {
+      "reported": 23
+    },
+    "2022": {
+      "reported": 23
+    },
+    "2023": {
+      "reported": 23
+    },
+    "2024": {
+      "reported": 23
+    },
+    "2025": {
+      "reported": 23
+    }
+  },
+  "source_sha256": "76a80eb8b8c69eeb8f9ec0260169c50e3a99c1a5ce746199a7a56b6b8fa7a13b",
+  "source_raw_path": "raw/segis-history/dgbas-showquery-76a80eb8b8c69eeb8f9ec0260169c50e3a99c1a5ce746199a7a56b6b8fa7a13b.html",
+  "source_format": "official HTML dataTable",
+  "export_provenance": "Site CSV export is generated client-side. Original HTML retained; original_table.csv and cells.json are complete local serializations of its cells, not independent official downloads.",
+  "source_url": "https://winstacity.dgbas.gov.tw/DgbasWeb/ZWeb/StateFile_ZWeb.aspx?Type=table",
+  "source_query_url": "https://winstacity.dgbas.gov.tw/DgbasWeb/ZWeb/ShowQuery.aspx?Z=",
+  "source_method": "POST",
+  "source_request": {
+    "ctl00$ContentPlaceHolder1$axCycle_Server": "Y年",
+    "axCycle": "Y年",
+    "axX": "[Measures]",
+    "axY": "[Date];[Place]",
+    "axDate": "1998/01/01','1999/01/01','2000/01/01','2001/01/01','2002/01/01','2003/01/01','2004/01/01','2005/01/01','2006/01/01','2007/01/01','2008/01/01','2009/01/01','2010/01/01','2011/01/01','2012/01/01','2013/01/01','2014/01/01','2015/01/01','2016/01/01','2017/01/01','2018/01/01','2019/01/01','2020/01/01','2021/01/01','2022/01/01','2023/01/01','2024/01/01','2025/01/01",
+    "axArea": "05;0502;0503;0504;0505;0506;0507;0508;0509;0510;0511;0512;0513;0514;0515;0516;0517;0518;0519;0520;0521;0522;0523",
+    "axCode": "05;0502;0503;0504;0505;0506;0507;0508;0509;0510;0511;0512;0513;0514;0515;0516;0517;0518;0519;0520;0521;0522;0523",
+    "axEffect": "967",
+    "axFunction": "",
+    "axMode": "",
+    "axSubjectNo": "公立公共圖書館個數(所)",
+    "ShowQueryReturnUrl": "",
+    "ctl00$ContentPlaceHolder1$btnGoon": "繼續"
+  },
+  "definition": "公立公共圖書館館數（包含國家圖書館、國立公共資訊圖書館及國立臺灣圖書館）。",
+  "license_status": "OGDL-1.0_site_declaration",
+  "license_url": "https://www.stat.gov.tw/cp.aspx?n=3164",
+  "license_evidence_file": "raw/segis-history/licence-4dfea56d64611532b84a21ccca33c4ff119469e53a6d4392090e0d03b3b7aecc.html",
+  "license_evidence": "行政院主計總處網站上刊載之所有資料與素材，其得受著作權保護之範圍，採政府資料開放授權條款-第1版發布",
+  "license_scope_inference": true,
+  "caveats": [
+    "1998–2005 cells are explicitly '-' and remain missing, never zero.",
+    "2006–2025 is the complete reported 20-year × 22 counties plus national total grid.",
+    "Official post-reform geography is retained even for pre-2010 reference years.",
+    "Definition includes National Central Library; do not merge or add to NLPI public-library count series.",
+    "The broad DGBAS parent-site licence is evidence; no separate query-subdomain licence was located."
+  ],
+  "semantic_sha256": "091a38e7ed6b03045703383351808d88d85c40d169f0a29d69a541cb91937ca8",
+  "derived_sha256": "b0f1f1487eaf3bd000674f01551b4226fee0af70140a520ce3a2ae488fb1eb38",
+  "last_checked_at": "2026-10-25T07:51:24.827653+00:00",
+  "last_check_status": "success",
+  "last_response_sha256": "76a80eb8b8c69eeb8f9ec0260169c50e3a99c1a5ce746199a7a56b6b8fa7a13b",
+  "last_response_path": "raw/segis-history/dgbas-showquery-76a80eb8b8c69eeb8f9ec0260169c50e3a99c1a5ce746199a7a56b6b8fa7a13b.html",
+  "semantic_version": 2,
+  "source_definition_text": "註解： ------------------------------ 指標項：公立公共圖書館個數(所) 單位：所 定義：公立公共圖書館館數（包含國家圖書館、國立公共資訊圖書館及國立臺灣圖書館）。 資料來源：教育部"
+}

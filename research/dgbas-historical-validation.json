@@ -1,0 +1,14 @@
+{
+  "source_cells": 220,
+  "missing_cells": 4,
+  "distinct_year_metric_pairs": 103,
+  "numeric_distinct_year_metric_pairs": 103,
+  "editions": [
+    "2005",
+    "2008",
+    "2011"
+  ],
+  "all_source_licenses": [
+    "OGDL-1.0_site_declaration"
+  ]
+}

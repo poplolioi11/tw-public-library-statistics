@@ -1,0 +1,2000 @@
+{
+  "schema_version": "0.1.0",
+  "checked_at": "2026-10-25",
+  "status": "first_version_current_definition_only",
+  "scope": "國內公立公共圖書館，不含學校圖書館；歷年口徑尚未全部核對",
+  "not_a_complete_historical_dictionary": true,
+  "observed_api_year": 2023,
+  "field_count": 87,
+  "sources": {
+    "catalog": {
+      "url": "https://data.gov.tw/dataset/6425",
+      "locator": "資料集說明、主要欄位說明、授權方式",
+      "excerpt": "2018年收集2017年之全年資料",
+      "checked_at": "2026-10-25"
+    },
+    "definitions_current": {
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+      "locator": "統計項目定義／公共圖書館統計填報說明",
+      "excerpt": "靜態資料：以當年12月底之事實為準",
+      "checked_at": "2026-10-25",
+      "effective_from": null,
+      "version": null
+    },
+    "trend_scope": {
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/TrendChart",
+      "locator": "圖書統計分析趨勢／年度選項之後",
+      "excerpt": "新北市、臺中市與南投縣含國立館資料。",
+      "checked_at": "2026-10-25"
+    },
+    "scope_current": {
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/About/AboutpLibSTAT",
+      "locator": "系統簡介",
+      "excerpt": "匯集國內公立公共圖書館年度統計營運資料(不含學校圖書館)",
+      "checked_at": "2026-10-25"
+    },
+    "collections": {
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/Collections",
+      "locator": "年度別、館藏量類別",
+      "excerpt": "2011 … 2025；電子資料-電子書刊",
+      "checked_at": "2026-10-25"
+    },
+    "circulation": {
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/Circulation",
+      "locator": "流通統計／流通冊數、流通人次、流通次數",
+      "excerpt": "流通人次-年度到館人次",
+      "checked_at": "2026-10-25"
+    },
+    "manpower_current": {
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/ManpowerStructure",
+      "locator": "人力類型",
+      "excerpt": "委外人員（承攬派駐人力）",
+      "checked_at": "2026-10-25"
+    },
+    "combination_current": {
+      "url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DataCombinationSearch",
+      "locator": "縣市別／層級別、欄位選單",
+      "excerpt": "國立級圖書館；直轄市級圖書館；縣市級圖書館",
+      "checked_at": "2026-10-25"
+    },
+    "api_2023": {
+      "url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+      "locator": "政府資料開放平臺6425的JSON下載資源；本機raw/probe-2023.json",
+      "excerpt": null,
+      "checked_at": "2026-10-25",
+      "url_status": "verified_official_catalog_download_link"
+    },
+    "dgbas_2008_definitions": {
+      "url": "https://ws.dgbas.gov.tw/001/Upload/466/ebook/ebook_88839/pdf/full.pdf",
+      "locator": "PDF第137頁，印刷頁129，名詞解釋／公立公共圖書館",
+      "excerpt": "圖書館利用率＝圖書借閱人次/年中人口*100",
+      "checked_at": "2026-10-25"
+    }
+  },
+  "year_dimensions": {
+    "data_year": "統計所描述的全年／年底所屬西元年",
+    "collection_year": "通常資料年次年1–3月填報；實際逐批修訂日期可不同",
+    "publication_year": "統計表或年鑑正式公開／出版年，不可用來覆蓋資料年",
+    "retrieved_at": "下載時間，與資料年分離",
+    "official_evidence_source": "catalog"
+  },
+  "geographic_scope": {
+    "observed_rows_2023": 26,
+    "national_total_rows": 1,
+    "county_rows": 22,
+    "alternative_county_excluding_national_rows": [
+      "新北市(不含國立館)",
+      "南投縣(不含國立館)",
+      "臺中市(不含國立館)"
+    ],
+    "ordinary_county_rows_include_national_libraries": [
+      "新北市",
+      "南投縣",
+      "臺中市"
+    ],
+    "summing_rule": "同一縣市含與不含國立館是重疊替代口徑，不能相加；全國亦不能與縣市相加。",
+    "sources": [
+      "trend_scope",
+      "api_2023"
+    ],
+    "historical_row_set_verified": false
+  },
+  "temporal_rules": [
+    {
+      "kind": "stock_year_end",
+      "meaning": "靜態，以資料年12月底事實為準",
+      "source": "definitions_current"
+    },
+    {
+      "kind": "flow_calendar_year",
+      "meaning": "動態，以資料年1月至12月底累計事實為準",
+      "source": "definitions_current"
+    },
+    {
+      "kind": "annual_financial",
+      "meaning": "年度預算／決算分開；修正時點未確認",
+      "source": "catalog"
+    }
+  ],
+  "historical_schema_alerts": [
+    {
+      "issue": "人力欄名差異",
+      "current_labels": [
+        "約用(臨時)人員",
+        "委外人員（承攬派駐人力）",
+        "行政輔助人員（工友技工及駕駛）"
+      ],
+      "api_2023_labels": [
+        "臨時人員",
+        "編制內技術人員"
+      ],
+      "change_year": null,
+      "semantic_equivalence": "not_confirmed",
+      "sources": [
+        "manpower_current",
+        "combination_current",
+        "api_2023"
+      ]
+    },
+    {
+      "issue": "電子書／電子書刊命名差異",
+      "change_year": null,
+      "semantic_equivalence": "not_confirmed",
+      "sources": [
+        "definitions_current",
+        "collections",
+        "circulation",
+        "api_2023"
+      ]
+    },
+    {
+      "issue": "館藏其他(決算)原欄標",
+      "handling": "preserve_raw_name_and_position_do_not_autocorrect",
+      "sources": [
+        "api_2023"
+      ]
+    },
+    {
+      "issue": "2010以前縣市館藏等統計排除國立／省設館、另列三館；現行三縣市包含國立館",
+      "source": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565464178586012/3c355713-0489-4bdd-8c00-8431e1e9f5da.pdf",
+      "locator": "印刷35頁／PDF3頁表3註腳",
+      "change_year": null,
+      "handling": "keep_separate_scope_and_original_geographies"
+    },
+    {
+      "issue": "主計表1998、1999臺灣省不含分館；早年借閱人數定義為閱覽人數",
+      "source": "https://ws.dgbas.gov.tw/public/attachment/211231530971.pdf",
+      "locator": "印刷122與124頁註腳",
+      "handling": "preserve_caveats_and_edition; never_splice_unqualified_series"
+    }
+  ],
+  "fields": [
+    {
+      "raw_name": "縣市別",
+      "ordinal_1based": 1,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": null,
+      "temporal_kind": "dimension",
+      "time_reference": null,
+      "group": "dimensions",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [],
+      "definition": "原字串含資料年與地理／替代口徑，須拆開保存，不可只保留縣市。"
+    },
+    {
+      "raw_name": "圖書館數 總館(所)",
+      "ordinal_1based": 2,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "所／個，依原名",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+      "group": "facilities_population",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "分館(所)",
+      "ordinal_1based": 3,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "所／個，依原名",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+      "group": "facilities_population",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "區館(所)",
+      "ordinal_1based": 4,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "所／個，依原名",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+      "group": "facilities_population",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "服務轄區人口數",
+      "ordinal_1based": 5,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+      "group": "facilities_population",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "服務人口來源、人口基準時點、跨轄區或國立館分母計算未確認。"
+      ]
+    },
+    {
+      "raw_name": "東南亞新移民人口數",
+      "ordinal_1based": 6,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+      "group": "facilities_population",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "服務人口來源、人口基準時點、跨轄區或國立館分母計算未確認。"
+      ]
+    },
+    {
+      "raw_name": "專屬社群網站(個)",
+      "ordinal_1based": 7,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "所／個，依原名",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+      "group": "facilities_population",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "館外服務站 所(個)",
+      "ordinal_1based": 8,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "所／個，依原名",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+      "group": "facilities_population",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "圖書巡迴車",
+      "ordinal_1based": 9,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "車輛",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；細項歷年未確認）",
+      "group": "facilities_population",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "全年購買圖書資料費-預算(元)",
+      "ordinal_1based": 10,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_budget",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "圖書",
+      "ordinal_1based": 11,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_budget",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "電子書",
+      "ordinal_1based": 12,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_budget",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "期刊",
+      "ordinal_1based": 13,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_budget",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "報紙",
+      "ordinal_1based": 14,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_budget",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "視聽資料",
+      "ordinal_1based": 15,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_budget",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "電子資料",
+      "ordinal_1based": 16,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_budget",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "其他圖書資料",
+      "ordinal_1based": 17,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_budget",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "全年購買圖書資料費-決算(元)",
+      "ordinal_1based": 18,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_final_expenditure",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "圖書(決算)",
+      "ordinal_1based": 19,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_final_expenditure",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "電子書(決算)",
+      "ordinal_1based": 20,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_final_expenditure",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "期刊(決算)",
+      "ordinal_1based": 21,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_final_expenditure",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "報紙(決算)",
+      "ordinal_1based": 22,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_final_expenditure",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "視聽資料(決算)",
+      "ordinal_1based": 23,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_final_expenditure",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "電子資料(決算)",
+      "ordinal_1based": 24,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_final_expenditure",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "其他圖書資料(決算)",
+      "ordinal_1based": 25,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "新臺幣元",
+      "temporal_kind": "annual_financial",
+      "time_reference": "資料年年度預算／決算，精確修正時點未確認",
+      "group": "acquisition_final_expenditure",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "預算與決算不能互相替代；子項不先假設跨年完全同義。"
+      ]
+    },
+    {
+      "raw_name": "館舍總面積(平方公尺)",
+      "ordinal_1based": 26,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "平方公尺",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "供讀者使用的電腦數(台)",
+      "ordinal_1based": 27,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "台",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "供讀者使用的平板電腦數(台)",
+      "ordinal_1based": 28,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "台",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "編制內總館員數(人)",
+      "ordinal_1based": 29,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "編制內專業人員",
+      "ordinal_1based": 30,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "編制內行政人員",
+      "ordinal_1based": 31,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "編制內技術人員",
+      "ordinal_1based": 32,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "manpower_current"
+      ],
+      "notes": [
+        "現行UI人力欄標不同，開始變更年度及是否實質變更未確認。"
+      ]
+    },
+    {
+      "raw_name": "臨時人員",
+      "ordinal_1based": 33,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "manpower_current"
+      ],
+      "notes": [
+        "現行UI人力欄標不同，開始變更年度及是否實質變更未確認。"
+      ]
+    },
+    {
+      "raw_name": "約聘僱人員",
+      "ordinal_1based": 34,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "工讀生",
+      "ordinal_1based": 35,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "志工人數",
+      "ordinal_1based": 36,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": [
+        "年底在冊／全年參與／人員去重口徑未取得專項說明。"
+      ]
+    },
+    {
+      "raw_name": "其他",
+      "ordinal_1based": 37,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "人",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則；個別人力細節未確認）",
+      "group": "area_equipment_personnel",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "圖書及非書資料收藏數量",
+      "ordinal_1based": 38,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "混合單位或原欄未明列；不得統一推定為冊",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": [],
+      "definition": "年底實有收藏量，現行定義納入圖書、非書及電子資源。"
+    },
+    {
+      "raw_name": "一、圖書資料",
+      "ordinal_1based": 39,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "混合單位或原欄未明列；不得統一推定為冊",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "圖書(冊數)",
+      "ordinal_1based": 40,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "冊數",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "期刊(種數)",
+      "ordinal_1based": 41,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "種數",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "報紙(種數)",
+      "ordinal_1based": 42,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "種數",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "其他(決算)",
+      "ordinal_1based": 43,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": null,
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": [
+        "原欄名含決算但位在館藏分組，疑似欄標問題；保留原名，不自動修正。"
+      ]
+    },
+    {
+      "raw_name": "二、非書資料",
+      "ordinal_1based": 44,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "混合單位或原欄未明列；不得統一推定為冊",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "地圖(張)",
+      "ordinal_1based": 45,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "張",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "微縮單片(片)",
+      "ordinal_1based": 46,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "片",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "微縮捲片(捲)",
+      "ordinal_1based": 47,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "捲",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "錄音資料(片、捲)",
+      "ordinal_1based": 48,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "片、捲",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "錄影資料(片、捲)",
+      "ordinal_1based": 49,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "片、捲",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "靜畫資料(幅)",
+      "ordinal_1based": 50,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "幅",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "其他(件)",
+      "ordinal_1based": 51,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "件",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "三、電子資源",
+      "ordinal_1based": 52,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "混合單位或原欄未明列；不得統一推定為冊",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "線上資料庫(自購或自行建置)",
+      "ordinal_1based": 53,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "自購或自行建置",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "光碟資料庫(種)",
+      "ordinal_1based": 54,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "種",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "其他類型資料庫(種)",
+      "ordinal_1based": 55,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "種",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "電子書(種)",
+      "ordinal_1based": 56,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "種",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "四、東南亞圖書及非書資料收藏數量(包含於總館藏量下)",
+      "ordinal_1based": 57,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "包含於總館藏量下",
+      "temporal_kind": "stock_year_end",
+      "time_reference": "資料年12月底",
+      "group": "collection_holdings",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "collections"
+      ],
+      "notes": [
+        "原名明示包含於總館藏，不能再加回總量。"
+      ]
+    },
+    {
+      "raw_name": "閱覽席位數(席)",
+      "ordinal_1based": 58,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "label_only",
+      "unit": "席",
+      "temporal_kind": "stock_year_end_provisional",
+      "time_reference": "資料年12月底（依現行靜態一般規則）",
+      "group": "seating",
+      "sources": [
+        "catalog",
+        "api_2023"
+      ],
+      "notes": []
+    },
+    {
+      "raw_name": "全年圖書資訊借閱人次",
+      "ordinal_1based": 59,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "circulation",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "不是獨立借閱人數，也不是年度到館人次。"
+      ],
+      "definition": "借圖書及非書的全年借閱次數；同一次借多冊按1人次，電子資源排除。"
+    },
+    {
+      "raw_name": "全年圖書資訊借閱冊數",
+      "ordinal_1based": 60,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "冊次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "circulation",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [],
+      "definition": "借出圖書及非書的全年冊次，同次多冊按冊數，電子資源排除。"
+    },
+    {
+      "raw_name": "年度電子書刊借閱人次",
+      "ordinal_1based": 61,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "circulation",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "circulation"
+      ],
+      "notes": [
+        "API及報表用電子書刊，現行文字定義用電子書；電子期刊納入時點及跨年同義性未確認。"
+      ]
+    },
+    {
+      "raw_name": "年度電子書刊借閱冊數",
+      "ordinal_1based": 62,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "冊次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "circulation",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "circulation"
+      ],
+      "notes": [
+        "API及報表用電子書刊，現行文字定義用電子書；電子期刊納入時點及跨年同義性未確認。"
+      ]
+    },
+    {
+      "raw_name": "全年電子資源使用次數",
+      "ordinal_1based": 63,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "circulation",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current",
+        "circulation"
+      ],
+      "notes": [
+        "資料庫／網站／檢索的歸類及去重方式需逐年填報說明，不能與電子書借閱量混合。"
+      ]
+    },
+    {
+      "raw_name": "全年推廣活動(場次)",
+      "ordinal_1based": 64,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "一般閱讀推廣活動(場次)",
+      "ordinal_1based": 65,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "幼兒閱讀推廣活動(場次)",
+      "ordinal_1based": 66,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "兒童閱讀推廣活動(場次)",
+      "ordinal_1based": 67,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "青少年閱讀推廣活動(場次)",
+      "ordinal_1based": 68,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "樂齡閱讀推廣活動(場次)",
+      "ordinal_1based": 69,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "新住民閱讀推廣活動(場次)",
+      "ordinal_1based": 70,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "社教藝文活動(場次)",
+      "ordinal_1based": 71,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "地方特色活動(場次)",
+      "ordinal_1based": 72,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "說故事(場次)",
+      "ordinal_1based": 73,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "影片欣賞(場次)",
+      "ordinal_1based": 74,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "其他(場次)",
+      "ordinal_1based": 75,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "場次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "全年推廣活動(人次)",
+      "ordinal_1based": 76,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "一般閱讀推廣活動(人次)",
+      "ordinal_1based": 77,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "幼兒閱讀推廣活動(人次)",
+      "ordinal_1based": 78,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "兒童閱讀推廣活動(人次)",
+      "ordinal_1based": 79,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "青少年閱讀推廣活動(人次)",
+      "ordinal_1based": 80,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "樂齡閱讀推廣活動(人次)",
+      "ordinal_1based": 81,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "新住民閱讀推廣活動(人次)",
+      "ordinal_1based": 82,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "社教藝文活動(人次)",
+      "ordinal_1based": 83,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "地方特色活動(人次)",
+      "ordinal_1based": 84,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "說故事(人次)",
+      "ordinal_1based": 85,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "影片欣賞(人次)",
+      "ordinal_1based": 86,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    },
+    {
+      "raw_name": "其他(人次)",
+      "ordinal_1based": 87,
+      "observed_years": [
+        2023
+      ],
+      "historical_definition_verified": false,
+      "definition_status": "current_definition_with_historical_applicability_unconfirmed",
+      "unit": "人次",
+      "temporal_kind": "flow_calendar_year",
+      "time_reference": "資料年1月1日至12月31日",
+      "group": "promotion",
+      "sources": [
+        "catalog",
+        "api_2023",
+        "definitions_current"
+      ],
+      "notes": [
+        "細類別與同場協辦是否跨館重計尚未確認。"
+      ],
+      "definition": "全年館方主辦及協辦之推廣活動；場次與參加人次分開。"
+    }
+  ],
+  "unverified": [
+    "2011–2025逐年欄位、定義版次及完整率",
+    "志工人數累計及去重口徑",
+    "服務人口基準時點",
+    "電子資源共用／租賃／計次是否重複計數",
+    "歷年行政區與國立館歸戶差異"
+  ],
+  "historical_series_files": [
+    {
+      "file": "derived/ncl_historical_long.csv",
+      "long_rows": 1269,
+      "data_years": [
+        2008,
+        2009,
+        2010
+      ],
+      "coverage": "2008表4；2009表2/3；2010表3/4",
+      "geography": "25原縣市+3國立省設館+全國；不得當作現行22縣市同口徑"
+    },
+    {
+      "file": "derived/dgbas_historical_long.csv",
+      "source_cells": 220,
+      "year_min": 1991,
+      "year_max": 2011,
+      "editions": [
+        2005,
+        2008,
+        2011
+      ],
+      "coverage": "全國4或5指標，跨版重疊保留",
+      "missing_source_cells": 4
+    }
+  ],
+  "historical_derived_definition_notes": [
+    {
+      "indicator": "DGBAS每10萬人圖書館數",
+      "definition": "年底公立公共圖書館數／年底人口×100000",
+      "source": "dgbas_2008_definitions"
+    },
+    {
+      "indicator": "DGBAS圖書館利用率",
+      "definition": "全年圖書借閱人次／年中人口×100；不是獨立人口使用比例",
+      "source": "dgbas_2008_definitions"
+    },
+    {
+      "indicator": "NCL 2010全國平均每人購書費",
+      "published_value": "27.72",
+      "same_chapter_narrative_value": "22.72",
+      "recalculated_value": "22.72",
+      "handling": "保留表格原值，另註官方內部差異",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565464178586012/3c355713-0489-4bdd-8c00-8431e1e9f5da.pdf",
+      "locators": [
+        "印刷35頁表3",
+        "印刷38頁正文"
+      ]
+    }
+  ]
+}

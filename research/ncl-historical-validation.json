@@ -1,0 +1,306 @@
+{
+  "checked_at": "2026-10-25",
+  "ncl_long_rows": 1269,
+  "component_sum_checks": 36,
+  "all_component_sums_passed": true,
+  "checks": [
+    {
+      "data_year": 2008,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "acquisition_spending",
+      "component_sum": "428632718",
+      "published_total": "428632718",
+      "passed": true
+    },
+    {
+      "data_year": 2008,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "holdings_mixed",
+      "component_sum": "29683136",
+      "published_total": "29683136",
+      "passed": true
+    },
+    {
+      "data_year": 2008,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "physical_loans",
+      "component_sum": "46555047",
+      "published_total": "46555047",
+      "passed": true
+    },
+    {
+      "data_year": 2008,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "population",
+      "component_sum": "23037031",
+      "published_total": "23037031",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "acquisition_spending",
+      "component_sum": "467751545",
+      "published_total": "467751545",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "administrative_staff",
+      "component_sum": "695",
+      "published_total": "695",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "all_staff",
+      "component_sum": "12958",
+      "published_total": "12958",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "contract_staff",
+      "component_sum": "325",
+      "published_total": "325",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "holdings_mixed",
+      "component_sum": "31247493",
+      "published_total": "31247493",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "other_staff",
+      "component_sum": "552",
+      "published_total": "552",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "physical_borrower_visits",
+      "component_sum": "14872279",
+      "published_total": "14872279",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "physical_loans",
+      "component_sum": "52114380",
+      "published_total": "52114380",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "population",
+      "component_sum": "23135715",
+      "published_total": "23135715",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "professional_staff",
+      "component_sum": "494",
+      "published_total": "494",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "promotion_attendance",
+      "component_sum": "9750134",
+      "published_total": "9750134",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "promotion_events",
+      "component_sum": "76259",
+      "published_total": "76259",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "student_staff",
+      "component_sum": "197",
+      "published_total": "197",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "technical_staff",
+      "component_sum": "60",
+      "published_total": "60",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "temporary_staff",
+      "component_sum": "1639",
+      "published_total": "1639",
+      "passed": true
+    },
+    {
+      "data_year": 2009,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "volunteers",
+      "component_sum": "8996",
+      "published_total": "8996",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "acquisition_spending",
+      "component_sum": "526266779",
+      "published_total": "526266779",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "administrative_staff",
+      "component_sum": "616",
+      "published_total": "616",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "all_staff",
+      "component_sum": "12998",
+      "published_total": "12998",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "contract_staff",
+      "component_sum": "279",
+      "published_total": "279",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "holdings_mixed",
+      "component_sum": "32842875",
+      "published_total": "32842875",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "other_staff",
+      "component_sum": "661",
+      "published_total": "661",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "physical_borrower_visits",
+      "component_sum": "15000966",
+      "published_total": "15000966",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "physical_loans",
+      "component_sum": "53980017",
+      "published_total": "53980017",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "population",
+      "component_sum": "23162123",
+      "published_total": "23162123",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "professional_staff",
+      "component_sum": "566",
+      "published_total": "566",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "promotion_attendance",
+      "component_sum": "8321475",
+      "published_total": "8321475",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "promotion_events",
+      "component_sum": "73212",
+      "published_total": "73212",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "student_staff",
+      "component_sum": "324",
+      "published_total": "324",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "technical_staff",
+      "component_sum": "35",
+      "published_total": "35",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "temporary_staff",
+      "component_sum": "1576",
+      "published_total": "1576",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "component_sum_equals_national_total",
+      "metric_id": "volunteers",
+      "component_sum": "8941",
+      "published_total": "8941",
+      "passed": true
+    },
+    {
+      "data_year": 2010,
+      "check": "ratio_recalculation_difference",
+      "entity_raw": "總計",
+      "metric_id": "acquisition_spending_per_capita",
+      "published": "27.72",
+      "recalculated": "22.72",
+      "passed": false,
+      "handling": "preserve_official_value"
+    }
+  ]
+}

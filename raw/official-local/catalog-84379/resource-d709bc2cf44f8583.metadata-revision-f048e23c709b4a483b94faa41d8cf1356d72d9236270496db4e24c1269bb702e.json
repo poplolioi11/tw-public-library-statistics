@@ -1,0 +1,37 @@
+{
+  "resource_index": 1,
+  "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550",
+  "format": "json",
+  "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"XML\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c7f4998d-e1f3-4873-b09b-9bb12ce56424\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"XML\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=a6e3ed19-aaaa-4412-9a15-2dc09ac44c5f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <pat",
+  "dataset_id": "84379",
+  "source_url": "https://data.gov.tw/dataset/84379",
+  "source_title": "臺中市立圖書館各分館借閱統計",
+  "source_agency": "臺中市政府文化局",
+  "license_status": "verified_open",
+  "license_url": "https://data.gov.tw/license",
+  "catalog_sha256": "3fb0b3ccc142e3462ae0ac8ea25eed91d9d05e241437b0f736c8bac8c8de172d",
+  "status": "downloaded",
+  "source_sha256": "efcea15e1cbde6f588cf2ce6538fdd64dcc4fabadb2141897b0e7513bc0716b7",
+  "source_retrieved_at": "2026-10-25T07:26:52.968878+00:00",
+  "raw_path": "raw/official-local/catalog-84379/resource-d709bc2cf44f8583-efcea15e1cbde6f588cf2ce6538fdd64dcc4fabadb2141897b0e7513bc0716b7.json",
+  "row_count": 46,
+  "http": {
+    "retrieved_at": "2026-10-25T07:26:52.968878+00:00",
+    "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550",
+    "http_status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "7703",
+      "Content-Disposition": "attachment; filename=\"106%E5%B9%B4%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%90%84%E5%88%86%E9%A4%A8%E5%80%9F%E9%96%B1%E7%B5%B1%E8%A8%88%28UTF8%29.JSON\";filename*=UTF-8''106%E5%B9%B4%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%90%84%E5%88%86%E9%A4%A8%E5%80%9F%E9%96%B1%E7%B5%B1%E8%A8%88%28UTF8%29.JSON"
+    }
+  },
+  "fields": [
+    "借閱人次",
+    "借閱冊數",
+    "機關代碼",
+    "縣市別代碼",
+    "郵遞區號",
+    "館別"
+  ],
+  "last_checked_at": "2026-10-25T07:26:52.968878+00:00"
+}

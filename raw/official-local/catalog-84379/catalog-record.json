@@ -1,0 +1,85 @@
+{
+  "dataset_id": "84379",
+  "source_url": "https://data.gov.tw/dataset/84379",
+  "source_title": "臺中市立圖書館各分館借閱統計",
+  "source_agency": "臺中市政府文化局",
+  "license_status": "verified_open",
+  "license_name": "政府資料開放授權條款-第1版",
+  "license_url": "https://data.gov.tw/license",
+  "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+  "catalog_sha256": "3fb0b3ccc142e3462ae0ac8ea25eed91d9d05e241437b0f736c8bac8c8de172d",
+  "catalog_path": "raw/official-local/catalog-84379/catalog-3fb0b3ccc142e3462ae0ac8ea25eed91d9d05e241437b0f736c8bac8c8de172d.html",
+  "catalog_http": {
+    "retrieved_at": "2026-10-25T07:26:47.392134+00:00",
+    "final_url": "https://data.gov.tw/dataset/84379",
+    "http_status": 200,
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8"
+    }
+  },
+  "catalog_metadata": {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "臺中市立圖書館各分館借閱統計",
+    "description": "臺中市立圖書館各分館圖書資料借閱人次、借閱冊數。..........................",
+    "url": "https://data.gov.tw/dataset/84379",
+    "identifier": "84379",
+    "keywords": [
+      "AI-Ready Data 詮釋資料框架指標",
+      "圖書館",
+      "借閱"
+    ],
+    "license": "https://data.gov.tw/license",
+    "creator": {
+      "@type": "Organization",
+      "name": "臺中市政府文化局"
+    },
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "CSV",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=28a09071-8f81-4e42-a3aa-341bb06e5efd"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "CSV",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=25e67a56-4a0a-49b0-b2e0-4f6fda7be8a3"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "XML",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c7f4998d-e1f3-4873-b09b-9bb12ce56424"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "XML",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=a6e3ed19-aaaa-4412-9a15-2dc09ac44c5f"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "resource_index": 1,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"XML\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c7f4998d-e1f3-4873-b09b-9bb12ce56424\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"XML\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=a6e3ed19-aaaa-4412-9a15-2dc09ac44c5f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <pat"
+    },
+    {
+      "resource_index": 2,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position"
+    }
+  ],
+  "last_checked_at": "2026-10-25T07:26:47.392134+00:00"
+}

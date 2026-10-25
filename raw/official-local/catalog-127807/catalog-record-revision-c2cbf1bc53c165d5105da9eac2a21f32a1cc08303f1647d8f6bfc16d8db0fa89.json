@@ -1,0 +1,238 @@
+{
+  "dataset_id": "127807",
+  "source_url": "https://data.gov.tw/dataset/127807",
+  "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+  "source_agency": "臺中市政府文化局",
+  "license_status": "verified_open",
+  "license_name": "政府資料開放授權條款-第1版",
+  "license_url": "https://data.gov.tw/license",
+  "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+  "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+  "catalog_path": "raw/official-local/catalog-127807/catalog-40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050.html",
+  "catalog_http": {
+    "retrieved_at": "2026-10-25T07:26:47.851173+00:00",
+    "final_url": "https://data.gov.tw/dataset/127807",
+    "http_status": 200,
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8"
+    }
+  },
+  "catalog_metadata": {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "11014-03-01-2 臺中市立公共圖書館概況",
+    "description": "11014-03-01-2 臺中市立公共圖書館概況公務統計.....................",
+    "url": "https://data.gov.tw/dataset/127807",
+    "identifier": "127807",
+    "keywords": [
+      "公務統計報表"
+    ],
+    "license": "https://data.gov.tw/license",
+    "creator": {
+      "@type": "Organization",
+      "name": "臺中市政府文化局"
+    },
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "resource_index": 1,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 2,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 3,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 4,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 5,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 6,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 7,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 8,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 9,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 10,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 11,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=6221f289-4a54-48de-b8c2-549aee8a0934\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 12,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 13,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 14,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=3fd9dd80-4776-4210-8638-01125f98a768\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr"
+    },
+    {
+      "resource_index": 15,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <p"
+    },
+    {
+      "resource_index": 16,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <path fill=\"currentColor\" d=\"M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l"
+    },
+    {
+      "resource_index": 17,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <!--v-if"
+    },
+    {
+      "resource_index": 18,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position"
+    }
+  ]
+}

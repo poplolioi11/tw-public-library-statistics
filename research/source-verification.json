@@ -1,0 +1,515 @@
+{
+  "checked_at": "2026-10-25T08:04:40.037191+00:00",
+  "status": "pass",
+  "assertions": 481918,
+  "scope": "3091 core source cells exhaustively checked; NCL lineage/number parsing all rows, PDF page-image samples only; component coverage as individually reported.",
+  "independent_of_pipeline_and_extractors": true,
+  "network_used": false,
+  "core": {
+    "status": "pass",
+    "records_checked": 3091,
+    "sources_checked": 151,
+    "chart_grid": {
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "topics": [
+        "Bacol00282",
+        "Bacol00283",
+        "Bacol00284",
+        "Bacol00285",
+        "Bacol00286",
+        "Bacol00287",
+        "Bacol00288",
+        "Bacol00289",
+        "Bacol00290",
+        "Bacol00291"
+      ],
+      "expected_sources": 150,
+      "present_sources": 150
+    },
+    "api_2023": {
+      "raw_rows": 26,
+      "value_fields_per_row": 86,
+      "expected_values": 2236
+    },
+    "family_counts": {
+      "licensed_api": 2236,
+      "public_national_chart": 855
+    },
+    "value_status_counts": {
+      "reported": 3091
+    },
+    "excluded_no_legend_cells": 30,
+    "excluded_third_placeholder_cells": 30,
+    "all_raw_and_parsed_values_checked": true,
+    "cross_family_rule": "Separate series; no cross-family totals or sums are calculated.",
+    "inputs": {
+      "observations_sha256": "f1ff9996a7f6651eb6dd0bd15f26d48f6eb8041cf67fc39db0170790c7095492",
+      "manifest_sha256": "dcdf8cf91800a21e6932699642b1d66c58339557aa1e595e095cec157542d79f"
+    }
+  },
+  "historical_ncl": {
+    "status": "pass",
+    "lineage_and_numeric_parse_rows_checked": 1269,
+    "pdf_documents_hash_checked": 3,
+    "visual_review_date": "2026-10-25",
+    "visual_review_method": "Independent page-image reading using PDFium; fixed expectations in verify_release.py, no extraction program imported.",
+    "visual_pages_checked": [
+      "2008 PDF page 3 (printed 79)",
+      "2009 PDF pages 3–4 (printed 75–76)",
+      "2010 PDF pages 3–4 (printed 35–36)"
+    ],
+    "visual_sample_cells": 28,
+    "samples": [
+      {
+        "data_year": 2009,
+        "entity_raw": "臺北市",
+        "metric_id": "volunteers",
+        "expected_value_from_page_image": "1394",
+        "pdf_page": 4,
+        "table": 3,
+        "data_row": 1,
+        "observed_values": [
+          "1394"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2009,
+        "entity_raw": "臺北市",
+        "metric_id": "student_staff",
+        "expected_value_from_page_image": "33",
+        "pdf_page": 4,
+        "table": 3,
+        "data_row": 1,
+        "observed_values": [
+          "33"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2009,
+        "entity_raw": "國立中央圖書館",
+        "metric_id": "volunteers",
+        "expected_value_from_page_image": "409",
+        "pdf_page": 4,
+        "table": 3,
+        "data_row": 26,
+        "observed_values": [
+          "409"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2009,
+        "entity_raw": "國立中央圖書館",
+        "metric_id": "student_staff",
+        "expected_value_from_page_image": "0",
+        "pdf_page": 4,
+        "table": 3,
+        "data_row": 26,
+        "observed_values": [
+          "0"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2009,
+        "entity_raw": "國立中央圖書館",
+        "metric_id": "all_staff",
+        "expected_value_from_page_image": "495",
+        "pdf_page": 4,
+        "table": 3,
+        "data_row": 26,
+        "observed_values": [
+          "495"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2009,
+        "entity_raw": "總計",
+        "metric_id": "volunteers",
+        "expected_value_from_page_image": "8996",
+        "pdf_page": 4,
+        "table": 3,
+        "data_row": 29,
+        "observed_values": [
+          "8996"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2009,
+        "entity_raw": "總計",
+        "metric_id": "student_staff",
+        "expected_value_from_page_image": "197",
+        "pdf_page": 4,
+        "table": 3,
+        "data_row": 29,
+        "observed_values": [
+          "197"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2009,
+        "entity_raw": "總計",
+        "metric_id": "all_staff",
+        "expected_value_from_page_image": "12958",
+        "pdf_page": 4,
+        "table": 3,
+        "data_row": 29,
+        "observed_values": [
+          "12958"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "臺北市",
+        "metric_id": "student_staff",
+        "expected_value_from_page_image": "36",
+        "pdf_page": 4,
+        "table": 4,
+        "data_row": 1,
+        "observed_values": [
+          "36"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "臺北市",
+        "metric_id": "volunteers",
+        "expected_value_from_page_image": "1412",
+        "pdf_page": 4,
+        "table": 4,
+        "data_row": 1,
+        "observed_values": [
+          "1412"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "國立中央圖書館臺灣分館",
+        "metric_id": "student_staff",
+        "expected_value_from_page_image": "0",
+        "pdf_page": 4,
+        "table": 4,
+        "data_row": 26,
+        "observed_values": [
+          "0"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "國立中央圖書館臺灣分館",
+        "metric_id": "volunteers",
+        "expected_value_from_page_image": "367",
+        "pdf_page": 4,
+        "table": 4,
+        "data_row": 26,
+        "observed_values": [
+          "367"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "國立中央圖書館臺灣分館",
+        "metric_id": "all_staff",
+        "expected_value_from_page_image": "444",
+        "pdf_page": 4,
+        "table": 4,
+        "data_row": 26,
+        "observed_values": [
+          "444"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "總計",
+        "metric_id": "student_staff",
+        "expected_value_from_page_image": "324",
+        "pdf_page": 4,
+        "table": 4,
+        "data_row": 29,
+        "observed_values": [
+          "324"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "總計",
+        "metric_id": "volunteers",
+        "expected_value_from_page_image": "8941",
+        "pdf_page": 4,
+        "table": 4,
+        "data_row": 29,
+        "observed_values": [
+          "8941"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "總計",
+        "metric_id": "all_staff",
+        "expected_value_from_page_image": "12998",
+        "pdf_page": 4,
+        "table": 4,
+        "data_row": 29,
+        "observed_values": [
+          "12998"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2009,
+        "entity_raw": "國立中央圖書館",
+        "metric_id": "holdings_mixed",
+        "expected_value_from_page_image": "1528469",
+        "pdf_page": 3,
+        "table": 2,
+        "data_row": 26,
+        "observed_values": [
+          "1528469"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2009,
+        "entity_raw": "國立中央圖書館",
+        "metric_id": "acquisition_spending",
+        "expected_value_from_page_image": "39870245",
+        "pdf_page": 3,
+        "table": 2,
+        "data_row": 26,
+        "observed_values": [
+          "39870245"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2009,
+        "entity_raw": "國立中央圖書館",
+        "metric_id": "physical_loans",
+        "expected_value_from_page_image": "1235390",
+        "pdf_page": 3,
+        "table": 2,
+        "data_row": 26,
+        "observed_values": [
+          "1235390"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2008,
+        "entity_raw": "國立中央圖書館臺灣分館",
+        "metric_id": "holdings_mixed",
+        "expected_value_from_page_image": "1471274",
+        "pdf_page": 3,
+        "table": 4,
+        "data_row": 26,
+        "observed_values": [
+          "1471274"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2008,
+        "entity_raw": "國立中央圖書館臺灣分館",
+        "metric_id": "acquisition_spending",
+        "expected_value_from_page_image": "16231567",
+        "pdf_page": 3,
+        "table": 4,
+        "data_row": 26,
+        "observed_values": [
+          "16231567"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2008,
+        "entity_raw": "國立中央圖書館臺灣分館",
+        "metric_id": "physical_loans",
+        "expected_value_from_page_image": "946172",
+        "pdf_page": 3,
+        "table": 4,
+        "data_row": 26,
+        "observed_values": [
+          "946172"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2008,
+        "entity_raw": "臺北市",
+        "metric_id": "population",
+        "expected_value_from_page_image": "2622923",
+        "pdf_page": 3,
+        "table": 4,
+        "data_row": 1,
+        "observed_values": [
+          "2622923"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2008,
+        "entity_raw": "臺北市",
+        "metric_id": "holdings_mixed",
+        "expected_value_from_page_image": "5437454",
+        "pdf_page": 3,
+        "table": 4,
+        "data_row": 1,
+        "observed_values": [
+          "5437454"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2008,
+        "entity_raw": "臺北市",
+        "metric_id": "physical_loans",
+        "expected_value_from_page_image": "9218877",
+        "pdf_page": 3,
+        "table": 4,
+        "data_row": 1,
+        "observed_values": [
+          "9218877"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "國立中央圖書館臺灣分館",
+        "metric_id": "holdings_mixed",
+        "expected_value_from_page_image": "1577652",
+        "pdf_page": 3,
+        "table": 3,
+        "data_row": 26,
+        "observed_values": [
+          "1577652"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "國立中央圖書館臺灣分館",
+        "metric_id": "acquisition_spending",
+        "expected_value_from_page_image": "23734466",
+        "pdf_page": 3,
+        "table": 3,
+        "data_row": 26,
+        "observed_values": [
+          "23734466"
+        ],
+        "status": "pass"
+      },
+      {
+        "data_year": 2010,
+        "entity_raw": "國立中央圖書館臺灣分館",
+        "metric_id": "physical_loans",
+        "expected_value_from_page_image": "1208376",
+        "pdf_page": 3,
+        "table": 3,
+        "data_row": 26,
+        "observed_values": [
+          "1208376"
+        ],
+        "status": "pass"
+      }
+    ],
+    "national_institution_blank_cells_checked": 36,
+    "staff_header_order": {
+      "2009": "志工 precedes 工讀生",
+      "2010": "工讀生 precedes 志工"
+    },
+    "national_library_scope_note": "Footnotes exclude the three separately listed national/provincial libraries from relevant county figures; national total overlaps all constituent rows.",
+    "not_full_pdf_transcription_review": true,
+    "inputs": {
+      "csv_sha256": "26cb4476c77d4c43f10ab2302c66c95de855405e3ef3514671eae2f61402181b",
+      "pdf_sha256": {
+        "2008": "780f72e99bec13702fc706f0e86b7c90cc19b370dc0048e1ef92a261766f4c28",
+        "2009": "a0b93a4c5f78e6f57e39a5605c3ff78c6e046f513b274df6652a363b67cfb52b",
+        "2010": "e2117dfa3bd89e8b4727542c360d836046915d798c04517a6c0a2ac3e5cb4ba8"
+      }
+    }
+  },
+  "components": {
+    "status": "pass",
+    "canonical_records_checked": 16884,
+    "local_raw_documents_checked": 35,
+    "local_raw_cells_and_derived_rows_checked": 25184,
+    "blank_non_observation_raw_rows_excluded": 5,
+    "local_canonical_records_checked": 14751,
+    "exact_duplicate_rows_excluded": 10433,
+    "conflicting_value_groups": 0,
+    "historical_adapter_records_checked": 1489,
+    "explicit_missing_source_markers_retained": 4,
+    "pdf_raw_files_hash_checked": 6,
+    "local_verification_level": "All original JSON cells and complete original objects vs derived; every nonduplicate adapter record vs derived and raw.",
+    "historical_verification_level": "Every adapter record vs derived and PDF source hashes; NCL visual sample scope reported separately. DGBAS PDF content not independently transcribed in this adapter review.",
+    "inputs": {
+      "components_sha256": "468046b979650f79bebfe5a30c602eaa28c98ea2a36d3b339626cda096f582ef",
+      "local_derived_sha256": "d7ae5850837da2c085668ee8f7f5ad260fc76bb06fc1d929d70447932bd063da"
+    }
+  },
+  "dgbas_county_table": {
+    "status": "pass",
+    "raw_cells_checked": 644,
+    "derived_cells_checked": 644,
+    "canonical_records_checked": 644,
+    "canonical_mapping_status": "verified",
+    "reported_cells": 460,
+    "explicit_missing_cells": 184,
+    "selected_reference_years": [
+      1998,
+      2025
+    ],
+    "reported_reference_years": [
+      2006,
+      2025
+    ],
+    "geographies_including_total": 23,
+    "source_sha256": "76a80eb8b8c69eeb8f9ec0260169c50e3a99c1a5ce746199a7a56b6b8fa7a13b",
+    "scope": "Official post-reform 22 counties plus national total; includes National Central Library, NLPI and NTL. Not merged with other count series.",
+    "licence_scope_inference": true
+  },
+  "combined": {
+    "status": "pass",
+    "records_checked": 19975,
+    "all_original_fields_preserved": true,
+    "snapshot_sha256": "f6e90a7bdf1db60d3f5c245e802ea3d25f1abdc14a8846199c0db7353e858f91"
+  },
+  "failures": [],
+  "limitations": [
+    "Chart response JSON does not itself contain a validated reference year; year follows the saved official UI request.",
+    "A returned zero is not proof of true zero or historical collection of that indicator.",
+    "Source values matching snapshots do not prove the official source itself has no mistakes.",
+    "PDF visual checks are targeted samples, not a full transcription review.",
+    "No source families or overlapping national/county/institution scopes are summed.",
+    "DGBAS PDF cell content is checked against derived extraction only, not independently transcribed here."
+  ]
+}

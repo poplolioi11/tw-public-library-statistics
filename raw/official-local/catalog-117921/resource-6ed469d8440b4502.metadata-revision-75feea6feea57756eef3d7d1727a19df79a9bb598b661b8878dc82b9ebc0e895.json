@@ -1,0 +1,44 @@
+{
+  "resource_index": 1,
+  "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c",
+  "format": "json",
+  "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <p",
+  "dataset_id": "117921",
+  "source_url": "https://data.gov.tw/dataset/117921",
+  "source_title": "11014-02-01-2 臺中市立公共圖書館概況",
+  "source_agency": "臺中市政府文化局",
+  "license_status": "verified_open",
+  "license_url": "https://data.gov.tw/license",
+  "catalog_sha256": "97446cf4441f6508e8a1e859520b3dbe0f4981a083f7f0fdd3c9c4a082c5148f",
+  "status": "downloaded",
+  "source_sha256": "3a83ddeafa3a8ba17a53e97d20f93983435e9cb11d1cc47b1ec096c9eb5b5a0c",
+  "source_retrieved_at": "2026-10-25T07:26:54.056689+00:00",
+  "raw_path": "raw/official-local/catalog-117921/resource-6ed469d8440b4502-3a83ddeafa3a8ba17a53e97d20f93983435e9cb11d1cc47b1ec096c9eb5b5a0c.json",
+  "row_count": 17,
+  "http": {
+    "retrieved_at": "2026-10-25T07:26:54.056689+00:00",
+    "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c",
+    "http_status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "6937",
+      "Content-Disposition": "attachment; filename=\"2018_01_11014-02-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2018_01_11014-02-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+    }
+  },
+  "fields": [
+    "地區",
+    "市話",
+    "數值",
+    "機關代碼",
+    "欄位名稱",
+    "縣市別代碼",
+    "行動電話",
+    "行政區域代碼",
+    "資料時間日期",
+    "資料週期",
+    "郵遞區號",
+    "電子郵件",
+    "項目"
+  ],
+  "last_checked_at": "2026-10-25T07:26:54.056689+00:00"
+}

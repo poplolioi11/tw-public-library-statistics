@@ -1,0 +1,51 @@
+# 臺灣公共圖書館跨年度統計
+
+> 整理官方已公開、可驗證來源的公共圖書館統計事實與明確開放資料，支援公眾理解和研究重現。現有官方跨年圖表與名詞字典已存在；本專案不宣稱首創。
+
+版本 0.1.0；建置日 2026-10-25。公開版本；完整度以 COVERAGE.md 為準。
+
+## 正式入口
+
+- [README](README.md)：目的、涵蓋範圍與限制。
+- [AI_USAGE](AI_USAGE.md)：來源篩選、口徑、缺值、版本與唯讀 SQL。
+- [LICENSE](LICENSE.md)：逐來源權利與本專案 MIT。
+- [摘要](data/combined/summary.json)：目前紀錄數及來源族群。
+- [覆蓋](data/combined/coverage.json)：已收錄來源，不證明所有歷史完整。
+- [結構](data/combined/observation.schema.json)：觀測欄位。
+- [指標](data/combined/indicators.json)：來源指標及口徑狀態。
+- [JSONL](data/combined/observations.jsonl)：每行一筆正式觀測。
+- [CSV](data/combined/observations.csv)：同一批正式觀測。
+- [SQLite](data/combined/library_statistics.sqlite)：同一批正式觀測，observations 表，請唯讀連線。
+- [閱讀頁](site/index.html)：查閱觀測及來源。
+- [補充文件](docs/)：更多說明。
+- [查重](research/prior-art.md)：既有官方及開源成果、已查範圍與缺口。
+- [來源口徑](research/official-scope.md)：母體、國立館、期間與歷年定義限制。
+- [地方完整系列](research/local-history.md)：新竹、臺中整包範圍及查核。
+- [主計縣市官方查詢](https://winstacity.dgbas.gov.tw/DgbasWeb/ZWeb/StateFile_ZWeb.aspx?Type=table)：原始公開查詢入口。
+- [主計縣市原格子事實](raw/segis-history/dgbas_county_original_cells.json)：原值與明示缺值。
+- [主計縣市重現](scripts/fetch_segis_history.py)：正常公開表單POST。
+- [更新入口](scripts/run_update.py)：來源分組、內容雜湊快取與更新工作。
+
+## 讀取規則
+
+只用 data/combined/ 的三種觀測檔分析；data/observations.*、component_records 與 derived/ 是組件或中間結果，可能含來源重複，不得再併入。
+
+19,975 筆是觀測／來源版本紀錄，含188個來源明示缺值格，不是19,975間館。六族群：國資圖公開全國圖表2011–2025 855筆；明確OGDL的2023資源2,236筆（86數值欄×26地理／口徑列）；NCL2008–2010所列統計表1,269筆；DGBAS1991–2011參照年、3出版版本220筆；DGBAS縣市公共館數1998–2025共644格；地方新竹與臺中14,751筆。所列來源全量，不代表所有縣市、所有年度、每間館已完整；缺口不是無資料。
+
+第六族群 source_family=主計總處縣市公共館數，source_id=dgbas-county-library-Z091101a029。644=28年×（22縣市+總計）；1998–2005全部為來源明示缺值「-」184格，2006–2025有數值460格。全包188缺值=原主計歷史表4格+新增184格。不是644個非缺值觀測，不能補零。
+
+該系列採官方「改制後縣市別」，2006–2010也已按官方重編，不是自行合併舊縣市。現行定義含國家圖書館、NLPI、NTL，與國資圖公共館數母體不同，不可直接互補或串成同口徑序列。年度參照不表示年底時點已確認，讀 geographic_scope、geography_vintage、population_scope、national_libraries_scope、temporal_kind。
+
+先固定 source_family 或 source_id，再檢查 series_id、geographic_scope、population_scope、national_libraries_scope、geography_vintage、temporal_kind、period_basis、unit、source_edition、definition_status、comparability、notes、quality_flags。保留資料年與月別，不用取得時間代替觀測時間。
+
+不可整表加總；全國／縣市／國立館／含或不含國立館列會重疊，歷史出版版本也可能重疊。月值不能冒充年度值；存量不跨月份加總，比率不跨地區加總。人次不是獨立人數，館藏地類別不是實體館數。
+
+value=null／not_available_in_source 是缺值，不補零。來源回傳0不保證真零，須讀 zero_interpretation。小數 value 可能是字串，SQLite value 為TEXT；未確認解析規則前不強制轉型或加總。原表不一致保留原值，讀 quality_flags 與 notes。
+
+每個引用保留 observation_id、source_id、source_url、source_locator、source_sha256、資料期間與版本。source_snapshot_path 可能是未隨公開包提供的研究證據路徑，請讀 snapshot_distribution；NCL PDF及網頁原始HTML／JS不再散布。
+
+2023與地方資料按明確OGDL；DGBAS歷史表按官網OGDL宣告；DGBAS縣市查詢子站援引母站廣泛宣告並標license_scope_inference=true，子站未另列條款，不冒充獨立授權；NCL與公開圖表僅整理統計事實，不宣稱署名專章全文或網站程式開放。主計縣市原HTML不入公開包，提供原格子事實JSON與正常POST重現腳本。維護端定期檢查；公開包不含私人排程設定，不會因下載而啟用。更新與restore_originals步驟讀README。
+
+## 小量讀取與公開投影
+
+先讀 data/by_year/index.json，再選所需年度JSONL；各年度檔的聯集與canonical相同。docs/PUBLICATION.md說明聯絡欄刪除投影：source_sha256始終是政府原件，public_evidence_sha256另驗公開投影，不可混為同一檔案。公開前完整來源驗收與公開副本離線驗證是不同範圍。

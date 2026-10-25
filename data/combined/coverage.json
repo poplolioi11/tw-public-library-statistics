@@ -1,0 +1,3364 @@
+[
+  {
+    "source_id": "dgbas-social-indicators-2005",
+    "year": null,
+    "data_years": [
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005
+    ],
+    "periods": [
+      "1991",
+      "1992",
+      "1993",
+      "1994",
+      "1995",
+      "1996",
+      "1997",
+      "1998",
+      "1999",
+      "2000",
+      "2001",
+      "2002",
+      "2003",
+      "2004",
+      "2005"
+    ],
+    "records": 60,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://ws.dgbas.gov.tw/public/data/331311404571.pdf#page=108",
+    "rights": "OGDL-1.0_site_declaration"
+  },
+  {
+    "source_id": "dgbas-social-indicators-2008",
+    "year": null,
+    "data_years": [
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008
+    ],
+    "periods": [
+      "1993",
+      "1994",
+      "1995",
+      "1996",
+      "1997",
+      "1998",
+      "1999",
+      "2000",
+      "2001",
+      "2002",
+      "2003",
+      "2004",
+      "2005",
+      "2006",
+      "2007",
+      "2008"
+    ],
+    "records": 80,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://ws.dgbas.gov.tw/001/Upload/466/ebook/ebook_88839/pdf/full.pdf#page=134",
+    "rights": "OGDL-1.0_site_declaration"
+  },
+  {
+    "source_id": "dgbas-social-indicators-2011",
+    "year": null,
+    "data_years": [
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011
+    ],
+    "periods": [
+      "1996",
+      "1997",
+      "1998",
+      "1999",
+      "2000",
+      "2001",
+      "2002",
+      "2003",
+      "2004",
+      "2005",
+      "2006",
+      "2007",
+      "2008",
+      "2009",
+      "2010",
+      "2011"
+    ],
+    "records": 80,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://ws.dgbas.gov.tw/public/attachment/211231530971.pdf#page=3",
+    "rights": "OGDL-1.0_site_declaration"
+  },
+  {
+    "source_id": "dgbas-county-library-Z091101a029",
+    "year": null,
+    "data_years": [
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "periods": [
+      "1998",
+      "1999",
+      "2000",
+      "2001",
+      "2002",
+      "2003",
+      "2004",
+      "2005",
+      "2006",
+      "2007",
+      "2008",
+      "2009",
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "records": 644,
+    "geographies": [
+      "南投縣",
+      "嘉義市",
+      "嘉義縣",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新北市",
+      "新竹市",
+      "新竹縣",
+      "桃園市",
+      "澎湖縣",
+      "總計",
+      "臺中市",
+      "臺北市",
+      "臺南市",
+      "臺東縣",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "金門縣",
+      "雲林縣",
+      "高雄市"
+    ],
+    "source_url": "https://winstacity.dgbas.gov.tw/DgbasWeb/ZWeb/ShowQuery.aspx?Z=",
+    "rights": "OGDL-1.0_site_declaration"
+  },
+  {
+    "source_id": "ncl-yearbook-98-public",
+    "year": 2008,
+    "data_years": [
+      2008
+    ],
+    "periods": [
+      "2008"
+    ],
+    "records": 191,
+    "geographies": [
+      "南投縣",
+      "嘉義市",
+      "嘉義縣",
+      "國立中央圖書館臺灣分館",
+      "國立臺中圖書館",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新竹市",
+      "新竹縣",
+      "桃園縣",
+      "澎湖縣",
+      "總計",
+      "臺中市",
+      "臺中縣",
+      "臺北市",
+      "臺北縣",
+      "臺南市",
+      "臺南縣",
+      "臺東縣",
+      "臺灣省政府圖書館",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "金門縣",
+      "雲林縣",
+      "高雄市",
+      "高雄縣"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565548284341223/5c7f15c3-14f8-4b82-9c20-e88fc60ec73a.pdf#page=3",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "ncl-yearbook-99-public",
+    "year": 2009,
+    "data_years": [
+      2009
+    ],
+    "periods": [
+      "2009"
+    ],
+    "records": 539,
+    "geographies": [
+      "南投縣",
+      "嘉義市",
+      "嘉義縣",
+      "國立中央圖書館",
+      "國立臺中圖書館",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新竹市",
+      "新竹縣",
+      "桃園縣",
+      "澎湖縣",
+      "總計",
+      "臺中市",
+      "臺中縣",
+      "臺北市",
+      "臺北縣",
+      "臺南市",
+      "臺南縣",
+      "臺東縣",
+      "臺灣省政府圖書館",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "金門縣",
+      "雲林縣",
+      "高雄市",
+      "高雄縣"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565512225393695/6d53fb99-39c2-4f24-8e27-8bee15671115.pdf#page=3",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "ncl-yearbook-100-public",
+    "year": 2010,
+    "data_years": [
+      2010
+    ],
+    "periods": [
+      "2010"
+    ],
+    "records": 539,
+    "geographies": [
+      "南投縣",
+      "嘉義市",
+      "嘉義縣",
+      "國立中央圖書館臺灣分館",
+      "國立臺中圖書館",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新竹市",
+      "新竹縣",
+      "桃園縣",
+      "澎湖縣",
+      "總計",
+      "臺中市",
+      "臺中縣",
+      "臺北市",
+      "臺北縣",
+      "臺南市",
+      "臺南縣",
+      "臺東縣",
+      "臺灣省政府圖書館",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "金門縣",
+      "雲林縣",
+      "高雄市",
+      "高雄縣"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565464178586012/3c355713-0489-4bdd-8c00-8431e1e9f5da.pdf#page=3",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00282",
+    "year": 2011,
+    "data_years": [
+      2011
+    ],
+    "periods": [
+      "2011"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00283",
+    "year": 2011,
+    "data_years": [
+      2011
+    ],
+    "periods": [
+      "2011"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00284",
+    "year": 2011,
+    "data_years": [
+      2011
+    ],
+    "periods": [
+      "2011"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00285",
+    "year": 2011,
+    "data_years": [
+      2011
+    ],
+    "periods": [
+      "2011"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00286",
+    "year": 2011,
+    "data_years": [
+      2011
+    ],
+    "periods": [
+      "2011"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00287",
+    "year": 2011,
+    "data_years": [
+      2011
+    ],
+    "periods": [
+      "2011"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00288",
+    "year": 2011,
+    "data_years": [
+      2011
+    ],
+    "periods": [
+      "2011"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00289",
+    "year": 2011,
+    "data_years": [
+      2011
+    ],
+    "periods": [
+      "2011"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00290",
+    "year": 2011,
+    "data_years": [
+      2011
+    ],
+    "periods": [
+      "2011"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2011-Bacol00291",
+    "year": 2011,
+    "data_years": [
+      2011
+    ],
+    "periods": [
+      "2011"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00282",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00283",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00284",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00285",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00286",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00287",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00288",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00289",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00290",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2012-Bacol00291",
+    "year": 2012,
+    "data_years": [
+      2012
+    ],
+    "periods": [
+      "2012"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00282",
+    "year": 2013,
+    "data_years": [
+      2013
+    ],
+    "periods": [
+      "2013"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00283",
+    "year": 2013,
+    "data_years": [
+      2013
+    ],
+    "periods": [
+      "2013"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00284",
+    "year": 2013,
+    "data_years": [
+      2013
+    ],
+    "periods": [
+      "2013"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00285",
+    "year": 2013,
+    "data_years": [
+      2013
+    ],
+    "periods": [
+      "2013"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00286",
+    "year": 2013,
+    "data_years": [
+      2013
+    ],
+    "periods": [
+      "2013"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00287",
+    "year": 2013,
+    "data_years": [
+      2013
+    ],
+    "periods": [
+      "2013"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00288",
+    "year": 2013,
+    "data_years": [
+      2013
+    ],
+    "periods": [
+      "2013"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00289",
+    "year": 2013,
+    "data_years": [
+      2013
+    ],
+    "periods": [
+      "2013"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00290",
+    "year": 2013,
+    "data_years": [
+      2013
+    ],
+    "periods": [
+      "2013"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2013-Bacol00291",
+    "year": 2013,
+    "data_years": [
+      2013
+    ],
+    "periods": [
+      "2013"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00282",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00283",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00284",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00285",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00286",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00287",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00288",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00289",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00290",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2014-Bacol00291",
+    "year": 2014,
+    "data_years": [
+      2014
+    ],
+    "periods": [
+      "2014"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "local-72fc0692aa286cb0",
+    "year": null,
+    "data_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "periods": [
+      "10412",
+      "10501",
+      "10502",
+      "10503",
+      "10504",
+      "10505",
+      "10506",
+      "10507",
+      "10508",
+      "10509",
+      "10510",
+      "10511",
+      "10512",
+      "10601",
+      "10602",
+      "10603",
+      "10604",
+      "10605",
+      "10606",
+      "10607",
+      "10608",
+      "10609",
+      "10610",
+      "10611",
+      "10612",
+      "10701",
+      "10702",
+      "10703",
+      "10704",
+      "10705",
+      "10706",
+      "10707",
+      "10708",
+      "10709",
+      "10710",
+      "10711",
+      "10712",
+      "10801",
+      "10802",
+      "10803",
+      "10804",
+      "10805",
+      "10806",
+      "10807",
+      "10808",
+      "10809",
+      "10810",
+      "10811",
+      "10812",
+      "10901",
+      "10902",
+      "10903",
+      "10904",
+      "10905",
+      "10906",
+      "10907",
+      "10908",
+      "10909",
+      "10910",
+      "10911",
+      "10912",
+      "11001",
+      "11002",
+      "11003",
+      "11004",
+      "11005",
+      "11006",
+      "11007",
+      "11008",
+      "11009",
+      "11010",
+      "11011",
+      "11012",
+      "11101",
+      "11102",
+      "11103",
+      "11104",
+      "11105",
+      "11106",
+      "11107",
+      "11108",
+      "11109",
+      "11110",
+      "11111",
+      "11112",
+      "11201",
+      "11202",
+      "11203",
+      "11204",
+      "11205",
+      "11206",
+      "11207",
+      "11208",
+      "11209",
+      "11210",
+      "11211",
+      "11212",
+      "11301",
+      "11302",
+      "11303",
+      "11304",
+      "11305",
+      "11306",
+      "11307",
+      "11308",
+      "11309",
+      "11310",
+      "11311",
+      "11312",
+      "11401",
+      "11402",
+      "11403",
+      "11404",
+      "11405",
+      "11406",
+      "11407",
+      "11408",
+      "11409",
+      "11410",
+      "11411",
+      "11412",
+      "11501",
+      "11502",
+      "11503",
+      "11504"
+    ],
+    "records": 13824,
+    "geographies": [
+      "新竹市"
+    ],
+    "source_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/514/584cc9c3-20f7-44e9-a700-8d6919fb0885.json",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-a8e89f9d11144206",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015-01-01T00:00:00"
+    ],
+    "records": 18,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00282",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00283",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00284",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00285",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00286",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00287",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00288",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00289",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00290",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2015-Bacol00291",
+    "year": 2015,
+    "data_years": [
+      2015
+    ],
+    "periods": [
+      "2015"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "local-309c115c007b3086",
+    "year": null,
+    "data_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "periods": [
+      "105",
+      "106",
+      "107",
+      "108",
+      "109"
+    ],
+    "records": 10,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=255d0bdc-3164-4545-a6d0-c77286590db9",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-3274c2c0b9c148ba",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016-01-01T00:00:00"
+    ],
+    "records": 18,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00282",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00283",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00284",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00285",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00286",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00287",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00288",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00289",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00290",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2016-Bacol00291",
+    "year": 2016,
+    "data_years": [
+      2016
+    ],
+    "periods": [
+      "2016"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "local-426b754c3d9690c0",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017-01-01T00:00:00"
+    ],
+    "records": 17,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-d709bc2cf44f8583",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "106"
+    ],
+    "records": 92,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=5bff769c-324e-489e-aefe-40a446d2d550",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00282",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00283",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00284",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00285",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00286",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00287",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00288",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00289",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00290",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2017-Bacol00291",
+    "year": 2017,
+    "data_years": [
+      2017
+    ],
+    "periods": [
+      "2017"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "local-60f200f4935c41e2",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018-12-01T00:00:00"
+    ],
+    "records": 5,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e787b567-0e44-408c-aac0-107e6bd7660c",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-6ed469d8440b4502",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018-01-01T00:00:00"
+    ],
+    "records": 17,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-c90bb60daa0cd742",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "107"
+    ],
+    "records": 92,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=88df75bd-fb1d-4c24-a34d-711e1f239886",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00282",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00283",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00284",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00285",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00286",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00287",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00288",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00289",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00290",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2018-Bacol00291",
+    "year": 2018,
+    "data_years": [
+      2018
+    ],
+    "periods": [
+      "2018"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "local-0bfe207ae35174c4",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019-01-01T00:00:00"
+    ],
+    "records": 5,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=77b9c3a7-9f32-48da-b3d2-d2706280dceb",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-102d1c92744c15df",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019-03-01T00:00:00"
+    ],
+    "records": 5,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=05e701f7-31f9-439e-95f0-c283a7834913",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-4fb63ea138b0e859",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019-08-01T00:00:00"
+    ],
+    "records": 5,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=fb298892-e096-4350-90ba-2ce06184a989",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-61f2cc2ec91eb229",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019-09-01T00:00:00"
+    ],
+    "records": 6,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=303db55c-c468-4d7b-97e7-cdf19da7e236",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-7fd2190800a62021",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019-02-01T00:00:00"
+    ],
+    "records": 5,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=bbb339e1-0272-4ae6-9cf3-c309ae704a70",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-bc9df41e5780d960",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019-06-01T00:00:00"
+    ],
+    "records": 5,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=c68271d6-fa97-4430-8328-c014ea46ea6f",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-bde8d0fb2145d99a",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019-04-01T00:00:00"
+    ],
+    "records": 5,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7d47e482-23ea-499c-a9c8-0ceb90e82c22",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-f63c1354bd02dbd9",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019-05-01T00:00:00"
+    ],
+    "records": 5,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b558311a-64e7-49aa-b534-78587e117775",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-f98bff20e7012703",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019-07-01T00:00:00"
+    ],
+    "records": 5,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=617408bf-c971-4ed4-a12a-9513a677b40c",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00282",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00283",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00284",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00285",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00286",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00287",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00288",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00289",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00290",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2019-Bacol00291",
+    "year": 2019,
+    "data_years": [
+      2019
+    ],
+    "periods": [
+      "2019"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "local-1f3a894649282048",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020-06-01T00:00:00"
+    ],
+    "records": 6,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8016e0b6-d5c6-4eb1-ad02-6e5be2bf9726",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-1fb36262b9771cb6",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020-10-01T00:00:00"
+    ],
+    "records": 6,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-41b3e61e7133c342",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020-11-01T00:00:00"
+    ],
+    "records": 6,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-7f36f8b0a9ceccef",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020-09-01T00:00:00"
+    ],
+    "records": 6,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-8047ba866e1dd989",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020-08-01T00:00:00"
+    ],
+    "records": 6,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-bb780d03520ab20c",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020-07-01T00:00:00"
+    ],
+    "records": 6,
+    "geographies": [
+      "臺中市"
+    ],
+    "source_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=384b50fa-02f8-4458-984f-f8c9750f429d",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00282",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00283",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00284",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00285",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00286",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00287",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00288",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00289",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00290",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2020-Bacol00291",
+    "year": 2020,
+    "data_years": [
+      2020
+    ],
+    "periods": [
+      "2020"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00282",
+    "year": 2021,
+    "data_years": [
+      2021
+    ],
+    "periods": [
+      "2021"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00283",
+    "year": 2021,
+    "data_years": [
+      2021
+    ],
+    "periods": [
+      "2021"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00284",
+    "year": 2021,
+    "data_years": [
+      2021
+    ],
+    "periods": [
+      "2021"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00285",
+    "year": 2021,
+    "data_years": [
+      2021
+    ],
+    "periods": [
+      "2021"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00286",
+    "year": 2021,
+    "data_years": [
+      2021
+    ],
+    "periods": [
+      "2021"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00287",
+    "year": 2021,
+    "data_years": [
+      2021
+    ],
+    "periods": [
+      "2021"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00288",
+    "year": 2021,
+    "data_years": [
+      2021
+    ],
+    "periods": [
+      "2021"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00289",
+    "year": 2021,
+    "data_years": [
+      2021
+    ],
+    "periods": [
+      "2021"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00290",
+    "year": 2021,
+    "data_years": [
+      2021
+    ],
+    "periods": [
+      "2021"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2021-Bacol00291",
+    "year": 2021,
+    "data_years": [
+      2021
+    ],
+    "periods": [
+      "2021"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00282",
+    "year": 2022,
+    "data_years": [
+      2022
+    ],
+    "periods": [
+      "2022"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00283",
+    "year": 2022,
+    "data_years": [
+      2022
+    ],
+    "periods": [
+      "2022"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00284",
+    "year": 2022,
+    "data_years": [
+      2022
+    ],
+    "periods": [
+      "2022"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00285",
+    "year": 2022,
+    "data_years": [
+      2022
+    ],
+    "periods": [
+      "2022"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00286",
+    "year": 2022,
+    "data_years": [
+      2022
+    ],
+    "periods": [
+      "2022"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00287",
+    "year": 2022,
+    "data_years": [
+      2022
+    ],
+    "periods": [
+      "2022"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00288",
+    "year": 2022,
+    "data_years": [
+      2022
+    ],
+    "periods": [
+      "2022"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00289",
+    "year": 2022,
+    "data_years": [
+      2022
+    ],
+    "periods": [
+      "2022"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00290",
+    "year": 2022,
+    "data_years": [
+      2022
+    ],
+    "periods": [
+      "2022"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2022-Bacol00291",
+    "year": 2022,
+    "data_years": [
+      2022
+    ],
+    "periods": [
+      "2022"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "ogdl-api-2023",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 2236,
+    "geographies": [
+      "全國",
+      "南投縣",
+      "南投縣(不含國立館)",
+      "嘉義市",
+      "嘉義縣",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新北市",
+      "新北市(不含國立館)",
+      "新竹市",
+      "新竹縣",
+      "桃園市",
+      "澎湖縣",
+      "臺中市",
+      "臺中市(不含國立館)",
+      "臺北市",
+      "臺南市",
+      "臺東縣",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "金門縣",
+      "雲林縣",
+      "高雄市"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/api/API/ConsolidationData?Year=2023",
+    "rights": "OGDL-1.0_explicit_link_2023"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00282",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00283",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00284",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00285",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00286",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00287",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00288",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00289",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00290",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2023-Bacol00291",
+    "year": 2023,
+    "data_years": [
+      2023
+    ],
+    "periods": [
+      "2023"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00282",
+    "year": 2024,
+    "data_years": [
+      2024
+    ],
+    "periods": [
+      "2024"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00283",
+    "year": 2024,
+    "data_years": [
+      2024
+    ],
+    "periods": [
+      "2024"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00284",
+    "year": 2024,
+    "data_years": [
+      2024
+    ],
+    "periods": [
+      "2024"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00285",
+    "year": 2024,
+    "data_years": [
+      2024
+    ],
+    "periods": [
+      "2024"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00286",
+    "year": 2024,
+    "data_years": [
+      2024
+    ],
+    "periods": [
+      "2024"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00287",
+    "year": 2024,
+    "data_years": [
+      2024
+    ],
+    "periods": [
+      "2024"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00288",
+    "year": 2024,
+    "data_years": [
+      2024
+    ],
+    "periods": [
+      "2024"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00289",
+    "year": 2024,
+    "data_years": [
+      2024
+    ],
+    "periods": [
+      "2024"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00290",
+    "year": 2024,
+    "data_years": [
+      2024
+    ],
+    "periods": [
+      "2024"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2024-Bacol00291",
+    "year": 2024,
+    "data_years": [
+      2024
+    ],
+    "periods": [
+      "2024"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00282",
+    "year": 2025,
+    "data_years": [
+      2025
+    ],
+    "periods": [
+      "2025"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00283",
+    "year": 2025,
+    "data_years": [
+      2025
+    ],
+    "periods": [
+      "2025"
+    ],
+    "records": 2,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00284",
+    "year": 2025,
+    "data_years": [
+      2025
+    ],
+    "periods": [
+      "2025"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00285",
+    "year": 2025,
+    "data_years": [
+      2025
+    ],
+    "periods": [
+      "2025"
+    ],
+    "records": 11,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00286",
+    "year": 2025,
+    "data_years": [
+      2025
+    ],
+    "periods": [
+      "2025"
+    ],
+    "records": 5,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00287",
+    "year": 2025,
+    "data_years": [
+      2025
+    ],
+    "periods": [
+      "2025"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00288",
+    "year": 2025,
+    "data_years": [
+      2025
+    ],
+    "periods": [
+      "2025"
+    ],
+    "records": 3,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00289",
+    "year": 2025,
+    "data_years": [
+      2025
+    ],
+    "periods": [
+      "2025"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00290",
+    "year": 2025,
+    "data_years": [
+      2025
+    ],
+    "periods": [
+      "2025"
+    ],
+    "records": 7,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "public-chart-2025-Bacol00291",
+    "year": 2025,
+    "data_years": [
+      2025
+    ],
+    "periods": [
+      "2025"
+    ],
+    "records": 6,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
+    "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "local-3a42e4707efe4d33",
+    "year": 2026,
+    "data_years": [
+      2026
+    ],
+    "periods": [
+      "11505",
+      "11506",
+      "11507"
+    ],
+    "records": 432,
+    "geographies": [
+      "新竹市"
+    ],
+    "source_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1854/5b1b954a-4893-46af-b8fa-4fac2b807d8f.json",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  },
+  {
+    "source_id": "local-cb74c0b328be06d4",
+    "year": 2026,
+    "data_years": [
+      2026
+    ],
+    "periods": [
+      "11508"
+    ],
+    "records": 144,
+    "geographies": [
+      "新竹市"
+    ],
+    "source_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1967/7f5793ae-e55f-4aa5-be01-3a76e53e6616.json",
+    "rights": "OGDL-1.0_explicit_local_catalog"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "resource_index": 1,
+  "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=255d0bdc-3164-4545-a6d0-c77286590db9",
+  "format": "json",
+  "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=255d0bdc-3164-4545-a6d0-c77286590db9\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position",
+  "dataset_id": "84915",
+  "source_url": "https://data.gov.tw/dataset/84915",
+  "source_title": "臺中市圖書預算及採購冊數",
+  "source_agency": "臺中市政府文化局",
+  "license_status": "verified_open",
+  "license_url": "https://data.gov.tw/license",
+  "catalog_sha256": "9d337ac10f7813a84d5cf4998dc520a2fbba46b5695a2abbfea64b8724526db9",
+  "status": "downloaded",
+  "source_sha256": "0d43463101cccc834b8800b2ad75fbd129b6cdae5b269c4c6f196aa1a35f286a",
+  "source_retrieved_at": "2026-10-25T07:26:53.187863+00:00",
+  "raw_path": "raw/official-local/catalog-84915/resource-309c115c007b3086-0d43463101cccc834b8800b2ad75fbd129b6cdae5b269c4c6f196aa1a35f286a.json",
+  "row_count": 5,
+  "http": {
+    "retrieved_at": "2026-10-25T07:26:53.187863+00:00",
+    "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=255d0bdc-3164-4545-a6d0-c77286590db9",
+    "http_status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "827",
+      "Content-Disposition": "attachment; filename=\"%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%B9%B4%E5%BA%A6%E8%B3%BC%E6%9B%B8%E7%B6%93%E8%B2%BB%E5%8F%8A%E5%86%8A%E6%95%B8%282020%29.csv.JSON\";filename*=UTF-8''%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%9C%96%E6%9B%B8%E9%A4%A8%E5%B9%B4%E5%BA%A6%E8%B3%BC%E6%9B%B8%E7%B6%93%E8%B2%BB%E5%8F%8A%E5%86%8A%E6%95%B8%282020%29.csv.JSON"
+    }
+  },
+  "fields": [
+    "年度",
+    "採購冊數",
+    "機關代碼",
+    "縣市別代碼",
+    "購書經費",
+    "郵遞區號"
+  ],
+  "last_checked_at": "2026-10-25T07:26:53.187863+00:00"
+}

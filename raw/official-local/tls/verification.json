@@ -1,0 +1,11 @@
+{
+  "retrieved_at": "2026-10-25T07:31:34.432490+00:00",
+  "host": "odws.hccg.gov.tw",
+  "aia_url_observed_in_leaf": "http://sslserver.twca.com.tw/cacert/Cyber_SSL_2023.crt",
+  "aia_intermediate_sha256": "01af2324d098098f5e0cdf6faabada430b21cce777f47eacb26248b2fda3e531",
+  "trusted_root_bundle": "pip vendored certifi cacert.pem",
+  "trusted_root_bundle_sha256": "bbc7e9c01d7551bb8a159b5dedd989b8ee3ce105aff522b68eb1b01bf854cab0",
+  "leaf_chain_verification_command": "openssl verify -CAfile certifi/cacert.pem -untrusted hccg-intermediate.pem hccg-leaf.pem",
+  "leaf_chain_verification_result": "hccg-leaf.pem: OK",
+  "tls_policy": "Peer and hostname verification remain required; missing intermediate is validated against certifi roots before supplementation."
+}

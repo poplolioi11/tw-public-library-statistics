@@ -1,0 +1,66 @@
+{
+  "dataset_id": "164580",
+  "source_url": "https://data.gov.tw/dataset/164580",
+  "source_title": "105年新竹市公共圖書館圖書借閱量統計表",
+  "source_agency": "新竹市文化局",
+  "license_status": "verified_open",
+  "license_name": "政府資料開放授權條款-第1版",
+  "license_url": "https://data.gov.tw/license",
+  "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+  "catalog_sha256": "98c449a1a328be863bea284d80c005783bf433f39cc95df90d71dc4d2c6398b4",
+  "catalog_path": "raw/official-local/catalog-164580/catalog-98c449a1a328be863bea284d80c005783bf433f39cc95df90d71dc4d2c6398b4.html",
+  "catalog_http": {
+    "retrieved_at": "2026-10-25T07:26:47.783695+00:00",
+    "final_url": "https://data.gov.tw/dataset/164580",
+    "http_status": 200,
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8"
+    }
+  },
+  "catalog_metadata": {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "105年新竹市公共圖書館圖書借閱量統計表",
+    "description": "新竹市公共圖書館圖書借閱量統計表105年..............................",
+    "url": "https://data.gov.tw/dataset/164580",
+    "identifier": "164580",
+    "keywords": [
+      "AI-Ready Data 詮釋資料框架指標"
+    ],
+    "license": "https://data.gov.tw/license",
+    "creator": {
+      "@type": "Organization",
+      "name": "新竹市文化局"
+    },
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "XLSX",
+        "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.xlsx"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "CSV",
+        "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.csv"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "XML",
+        "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.xml"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.json"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "resource_index": 1,
+      "source_download_url": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.json",
+      "format": "json",
+      "nearby_catalog_text": "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/1417/ce40cc48-2333-422d-9296-268c9d2c838a.json\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position:absolut"
+    }
+  ]
+}

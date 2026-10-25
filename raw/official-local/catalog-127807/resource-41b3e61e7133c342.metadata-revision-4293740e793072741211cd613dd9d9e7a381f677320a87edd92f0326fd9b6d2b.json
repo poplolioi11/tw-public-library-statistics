@@ -1,0 +1,43 @@
+{
+  "resource_index": 1,
+  "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c",
+  "format": "json",
+  "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=e050f35e-b02f-4022-a4a2-5a8ff82e90e0\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=8a5fb81e-2605-4ef5-a045-6b278b94c710\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=92a80fc3-fd2b-4a3f-8397-b82e6c4d6a6d\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUr",
+  "dataset_id": "127807",
+  "source_url": "https://data.gov.tw/dataset/127807",
+  "source_title": "11014-03-01-2 臺中市立公共圖書館概況",
+  "source_agency": "臺中市政府文化局",
+  "license_status": "verified_open",
+  "license_url": "https://data.gov.tw/license",
+  "catalog_sha256": "40689d8aa4b95719bcce0490c5576e7d785db7b6c6400ffa19f49e9680a2b050",
+  "status": "downloaded",
+  "source_sha256": "9b495145c9a2150cd576e02c4f58c17048d2dcc20dca03979bf8e52784097e58",
+  "source_retrieved_at": "2026-10-25T07:26:52.920033+00:00",
+  "raw_path": "raw/official-local/catalog-127807/resource-41b3e61e7133c342-9b495145c9a2150cd576e02c4f58c17048d2dcc20dca03979bf8e52784097e58.json",
+  "row_count": 6,
+  "http": {
+    "retrieved_at": "2026-10-25T07:26:52.920033+00:00",
+    "final_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=f5fd01ff-535e-4813-831b-94e87ac2753c",
+    "http_status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "2410",
+      "Content-Disposition": "attachment; filename=\"2020_11_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json\";filename*=UTF-8''2020_11_11014-03-01-2_%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81.json"
+    }
+  },
+  "fields": [
+    "地區",
+    "市話",
+    "數值",
+    "機關代碼",
+    "欄位名稱",
+    "縣市別代碼",
+    "行動電話",
+    "行政區域代碼",
+    "資料時間日期",
+    "資料週期",
+    "郵遞區號",
+    "電子郵件",
+    "項目"
+  ]
+}

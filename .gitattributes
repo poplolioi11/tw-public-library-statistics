@@ -1,0 +1,4 @@
+# Preserve byte-exact dataset and provenance hashes across checkouts.
+* -text
+*.py diff=python
+*.sqlite binary

@@ -1,0 +1,85 @@
+{
+  "dataset_id": "117921",
+  "source_url": "https://data.gov.tw/dataset/117921",
+  "source_title": "11014-02-01-2 臺中市立公共圖書館概況",
+  "source_agency": "臺中市政府文化局",
+  "license_status": "verified_open",
+  "license_name": "政府資料開放授權條款-第1版",
+  "license_url": "https://data.gov.tw/license",
+  "license_evidence": "Catalogue JSON-LD license plus visible government open-data licence statement.",
+  "catalog_sha256": "97446cf4441f6508e8a1e859520b3dbe0f4981a083f7f0fdd3c9c4a082c5148f",
+  "catalog_path": "raw/official-local/catalog-117921/catalog-97446cf4441f6508e8a1e859520b3dbe0f4981a083f7f0fdd3c9c4a082c5148f.html",
+  "catalog_http": {
+    "retrieved_at": "2026-10-25T07:26:47.884851+00:00",
+    "final_url": "https://data.gov.tw/dataset/117921",
+    "http_status": 200,
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8"
+    }
+  },
+  "catalog_metadata": {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "11014-02-01-2 臺中市立公共圖書館概況",
+    "description": "臺中市立公共圖書館概況，包含圖書館數、工作人員數、閱覽席位數、購買圖書資料費、全年圖書資訊借閱人次、全年圖書資訊借閱人次、全年圖書資訊借閱冊數、全年圖書及非書資料收藏數量。—年報",
+    "url": "https://data.gov.tw/dataset/117921",
+    "identifier": "117921",
+    "keywords": [
+      "公務統計報表"
+    ],
+    "license": "https://data.gov.tw/license",
+    "creator": {
+      "@type": "Organization",
+      "name": "臺中市政府文化局"
+    },
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "JSON",
+        "contentUrl": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "resource_index": 1,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=15bd1b70-87d1-4424-a03e-20d09bfd8c5c\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <p"
+    },
+    {
+      "resource_index": 2,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=b9672db0-d2c2-41ad-8ca9-daa2b57b4b78\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <path fill=\"currentColor\" d=\"M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l"
+    },
+    {
+      "resource_index": 3,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7e77152b-eb97-4ad2-84c6-19b9e851e565\"},{\"@type\":\"DataDownload\",\"encodingFormat\":\"JSON\",\"contentUrl\":\"https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <!--v-if"
+    },
+    {
+      "resource_index": 4,
+      "source_download_url": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67",
+      "format": "json",
+      "nearby_catalog_text": "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=7b3d524a-9db7-48f1-9945-2c5f37590e67\"}]}] 小幫手查詢服務(Beta版) 介接TAIDE服務 <div style=\"z-index:2001;position"
+    }
+  ],
+  "last_checked_at": "2026-10-25T07:26:47.884851+00:00"
+}
