@@ -1,0 +1,7 @@
+# 固定公開版本的附件建置
+
+publish-assets.yml只接受手動dispatch，指定已存在的tag及完整commit。它在GitHub標準runner核對PUBLICATION_MANIFEST白名單、所有檔案SHA與tag目標，從已公開資料產生ZIP及三格式附件；沒有下載政府原件、重算統計或發行Release。原量化處理仍在取得／整理端完成。
+
+只允許本儲存庫現有未公開draft。相同SHA附件略過；不同內容的既有附件停止，不覆寫已發布版本。draft的SHA256SUMS在首次發行前可依新建置的ZIP容器雜湊更新；已發布Release連checksum也不改。ZIP採固定1980容器時間，內部檔案內容仍依manifest逐件驗證。容器SHA與原件／統計指紋分開。
+
+維護者仍須確認CI、附件digest、完整匿名ZIP內容及各公開入口，才手動完成首次發行。工作流程不會自動建立新tag、發布Release、修改第三方網站或購買服務。

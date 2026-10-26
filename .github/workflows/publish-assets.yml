@@ -1,0 +1,37 @@
+name: Complete public draft assets
+on:
+  workflow_dispatch:
+    inputs:
+      target_tag:
+        description: Existing immutable dataset tag
+        required: true
+        type: string
+      target_commit:
+        description: Full 40-character commit targeted by the tag
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  public-assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TARGET_TAG: ${{ inputs.target_tag }}
+      TARGET_COMMIT: ${{ inputs.target_commit }}
+      WORKFLOW_COMMIT: ${{ github.sha }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ inputs.target_commit }}
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Load reviewed packaging helper from this workflow commit
+        run: |
+          gh api -H 'Accept: application/vnd.github.raw+json' "repos/$GITHUB_REPOSITORY/contents/scripts/build_public_assets.py?ref=$WORKFLOW_COMMIT" > "$RUNNER_TEMP/build_public_assets.py"
+      - name: Complete only matching assets in the existing unpublished draft
+        run: |
+          python "$RUNNER_TEMP/build_public_assets.py" --root . --output "$RUNNER_TEMP/public-assets" --tag "$TARGET_TAG" --commit "$TARGET_COMMIT" --repository "$GITHUB_REPOSITORY" --publish-draft
