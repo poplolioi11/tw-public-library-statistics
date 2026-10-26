@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "version": "0.8.0",
-  "created_at": "2026-10-26T16:08:49.876302+00:00",
+  "created_at": "2026-10-26T16:11:33.126299+00:00",
   "repository": "https://github.com/poplolioi11/tw-public-library-statistics",
   "external_publication": true,
   "publication_profile": "statistical_fields_only",
@@ -612,7 +612,7 @@
     },
     {
       "path": "data/combined/summary.json",
-      "sha256": "a3c8cd43702af6188fa056ce1a33cc795b92b22d1ed2a1633489822a82cf8799",
+      "sha256": "67397768ec702598716f83ce9283384c9b2f6fbd4b910c5c8cfe6b5c05996f1a",
       "bytes": 1879
     },
     {
@@ -7182,8 +7182,8 @@
     },
     {
       "path": "research/phase3-engine-review.json",
-      "sha256": "6347691b4bb4f7222335488b0f7082b030ff4aa20a49ebac926f214d70d67dab",
-      "bytes": 2727909
+      "sha256": "529c34891cd14d41834c9cc0869f72a9959287ef532054d76e94cd22c3dea4cd",
+      "bytes": 2727903
     },
     {
       "path": "research/phase3-engine-review.md",
@@ -7762,7 +7762,7 @@
     },
     {
       "path": "site/index.html",
-      "sha256": "3dd5398330a30361e45612cedfefe4fe8ddd5e331c7ebd2f470d24acb2d95fb1",
+      "sha256": "0fc051f4534ed53fbbe69cc6002d94a43a07b86ca8f9dab87ad78d709731a554",
       "bytes": 8148513
     },
     {

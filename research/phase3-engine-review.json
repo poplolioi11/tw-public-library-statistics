@@ -1,6 +1,6 @@
 {
   "schema_version": "phase3-engine-independent-review-1.0",
-  "checked_at": "2026-10-26T16:07:41.240634+00:00",
+  "checked_at": "2026-10-26T16:07:41.646448+00:00",
   "review_stage": "final_after_parent_freeze",
   "dataset_version": "0.8.0",
   "fixed_source_review_baseline": "0.7.0",
@@ -44,9 +44,9 @@
   "input_sha256_before": {
     "research/phase3-source-cases.json": "0e263e018589b033fbcc0eea3b4802e59a3c319ea529fe7d7497d3cf27703af6",
     "VERSION": "a66780da23103beaf12432b418508966b31a2a3a787f9468a5b6cdaa8667c1ef",
-    "data/combined/observations.jsonl.gz": "ca48228cda57d1b8324227e24ab717111b7b5e32d019e3247dd8c5dedb04b0e3",
+    "data/combined/observations.jsonl": "7993d6fbd088cc36fdc7e9de975c52b8a5542af4cc0d21f30cccd4f1532fdc78",
     "derived/phase1_local_sources_long.jsonl": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
-    "derived/ncl_2005_programmes_long.jsonl": "ba461cf505a7df5d32d0e04222d0ce447ac42a2480b1ece8df6655ed593c4543",
+    "derived/ncl_2005_programmes_long.jsonl": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
     "derived/phase2/annotations.jsonl.gz": "15b64513c42a882f71810d266511399db113df342928f9b16c277fe428428336",
     "derived/phase2/evidence_cards.jsonl": "8d22623b3825033c12d12f7919ec9002403aa8a22d5b9390bf8c5a95f524b000",
     "scripts/phase2_engine.py": "2ff54862237b16d5483e9c65608d49fd1fa48a0cef58de286f1103678c6a925d",
@@ -59,9 +59,9 @@
   "input_sha256_after": {
     "research/phase3-source-cases.json": "0e263e018589b033fbcc0eea3b4802e59a3c319ea529fe7d7497d3cf27703af6",
     "VERSION": "a66780da23103beaf12432b418508966b31a2a3a787f9468a5b6cdaa8667c1ef",
-    "data/combined/observations.jsonl.gz": "ca48228cda57d1b8324227e24ab717111b7b5e32d019e3247dd8c5dedb04b0e3",
+    "data/combined/observations.jsonl": "7993d6fbd088cc36fdc7e9de975c52b8a5542af4cc0d21f30cccd4f1532fdc78",
     "derived/phase1_local_sources_long.jsonl": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
-    "derived/ncl_2005_programmes_long.jsonl": "ba461cf505a7df5d32d0e04222d0ce447ac42a2480b1ece8df6655ed593c4543",
+    "derived/ncl_2005_programmes_long.jsonl": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
     "derived/phase2/annotations.jsonl.gz": "15b64513c42a882f71810d266511399db113df342928f9b16c277fe428428336",
     "derived/phase2/evidence_cards.jsonl": "8d22623b3825033c12d12f7919ec9002403aa8a22d5b9390bf8c5a95f524b000",
     "scripts/phase2_engine.py": "2ff54862237b16d5483e9c65608d49fd1fa48a0cef58de286f1103678c6a925d",
