@@ -1,0 +1,1812 @@
+{
+  "numeric_fingerprint": "185a679ff1daf7ce9560d90a63800418d9b6451315c81a68ccee56d68e6b3b5b",
+  "programme_labels": [
+    {
+      "programme_id": "ncl95-table6-reading-001",
+      "facility_name_raw": "力行分館",
+      "source_cell_bbox": [
+        103.369,
+        148.398,
+        291.968,
+        162.898
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-002",
+      "facility_name_raw": "文山分館",
+      "source_cell_bbox": [
+        103.369,
+        165.051,
+        291.968,
+        179.551
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-003",
+      "facility_name_raw": "天母分館",
+      "source_cell_bbox": [
+        103.369,
+        181.705,
+        291.968,
+        196.205
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-004",
+      "facility_name_raw": "西湖分館",
+      "source_cell_bbox": [
+        103.369,
+        198.358,
+        291.968,
+        212.858
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-005",
+      "facility_name_raw": "中崙分館",
+      "source_cell_bbox": [
+        103.369,
+        215.012,
+        291.968,
+        229.512
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-01",
+      "facility_name_raw": "文山分館",
+      "source_cell_bbox": [
+        291.968,
+        145.647,
+        482.48,
+        228.953
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-006",
+      "facility_name_raw": "金寧鄉立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        231.665,
+        291.968,
+        246.165
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-02",
+      "facility_name_raw": "文化局圖書館",
+      "source_cell_bbox": [
+        291.968,
+        228.953,
+        482.48,
+        245.526
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-007",
+      "facility_name_raw": "三灣鄉立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        248.319,
+        291.968,
+        262.819
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-008",
+      "facility_name_raw": "南庄鄉立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        264.972,
+        291.968,
+        279.472
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-009",
+      "facility_name_raw": "苗栗市立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        281.626,
+        291.968,
+        296.126
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-010",
+      "facility_name_raw": "後龍鎮立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        298.279,
+        291.968,
+        312.779
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-011",
+      "facility_name_raw": "苑裡鎮立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        314.933,
+        291.968,
+        329.433
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-03",
+      "facility_name_raw": "公館鄉立圖書館",
+      "source_cell_bbox": [
+        291.968,
+        245.526,
+        482.48,
+        328.947
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-012",
+      "facility_name_raw": "中壢市立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        331.587,
+        291.968,
+        346.087
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-013",
+      "facility_name_raw": "龜山鄉立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        348.24,
+        291.968,
+        362.74
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-014",
+      "facility_name_raw": "平鎮市立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        364.894,
+        291.968,
+        379.394
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-015",
+      "facility_name_raw": "復興鄉立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        381.547,
+        291.968,
+        396.047
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-04",
+      "facility_name_raw": "桃園市立圖書館",
+      "source_cell_bbox": [
+        291.968,
+        328.947,
+        482.48,
+        395.407
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-016",
+      "facility_name_raw": "湖口鄉立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        398.201,
+        291.968,
+        412.701
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-017",
+      "facility_name_raw": "新豐鄉立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        414.854,
+        291.968,
+        429.354
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-018",
+      "facility_name_raw": "關西鎮立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        431.508,
+        291.968,
+        446.008
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-05",
+      "facility_name_raw": "竹北市立圖書館",
+      "source_cell_bbox": [
+        291.968,
+        395.407,
+        482.48,
+        445.526
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-019",
+      "facility_name_raw": "香山分館",
+      "source_cell_bbox": [
+        103.369,
+        448.161,
+        291.968,
+        462.661
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-06",
+      "facility_name_raw": null,
+      "source_cell_bbox": [
+        291.968,
+        445.526,
+        482.48,
+        462.247
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-020",
+      "facility_name_raw": "深坑鄉立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        464.815,
+        291.968,
+        479.315
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-021",
+      "facility_name_raw": "新店市立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        481.468,
+        291.968,
+        495.968
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-022",
+      "facility_name_raw": "平溪鄉立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        498.122,
+        291.968,
+        512.622
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-07",
+      "facility_name_raw": "泰山鄉立圖書館",
+      "source_cell_bbox": [
+        291.968,
+        462.247,
+        482.48,
+        511.734
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-023",
+      "facility_name_raw": "神岡鄉立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        514.775,
+        291.968,
+        529.275
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-024",
+      "facility_name_raw": "大甲鎮立圖書館",
+      "source_cell_bbox": [
+        103.369,
+        531.429,
+        291.968,
+        545.929
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-025",
+      "facility_name_raw": "沙鹿鎮立深波圖書館",
+      "source_cell_bbox": [
+        103.369,
+        548.082,
+        291.968,
+        562.582
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-026",
+      "facility_name_raw": "霧峰鄉立以文圖書館",
+      "source_cell_bbox": [
+        103.369,
+        564.736,
+        291.968,
+        579.236
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-08",
+      "facility_name_raw": "大安鄉立圖書館",
+      "source_cell_bbox": [
+        291.968,
+        511.734,
+        482.48,
+        578.667
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-027",
+      "facility_name_raw": "中區圖書館",
+      "source_cell_bbox": [
+        103.369,
+        581.389,
+        291.968,
+        595.889
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-028",
+      "facility_name_raw": "西區圖書館",
+      "source_cell_bbox": [
+        103.369,
+        598.043,
+        291.968,
+        612.543
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-029",
+      "facility_name_raw": "南區圖書館",
+      "source_cell_bbox": [
+        103.369,
+        614.697,
+        291.968,
+        629.197
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-030",
+      "facility_name_raw": "北區圖書館",
+      "source_cell_bbox": [
+        103.369,
+        631.35,
+        291.968,
+        645.85
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-031",
+      "facility_name_raw": "南屯區圖書館",
+      "source_cell_bbox": [
+        103.369,
+        648.004,
+        291.968,
+        662.504
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-09",
+      "facility_name_raw": "西屯區圖書館",
+      "source_cell_bbox": [
+        291.968,
+        578.667,
+        482.48,
+        661.526
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-032",
+      "facility_name_raw": "集集鎮立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        148.398,
+        292.546,
+        162.898
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-033",
+      "facility_name_raw": "南投市立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        165.051,
+        292.546,
+        179.551
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-034",
+      "facility_name_raw": "名間鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        181.705,
+        292.546,
+        196.205
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-035",
+      "facility_name_raw": "魚池鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        198.358,
+        292.546,
+        212.858
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-036",
+      "facility_name_raw": "鹿谷鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        215.012,
+        292.546,
+        229.512
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-037",
+      "facility_name_raw": "竹山鎮立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        231.665,
+        292.546,
+        246.165
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-10",
+      "facility_name_raw": "埔里鎮立圖書館",
+      "source_cell_bbox": [
+        292.546,
+        145.647,
+        482.48,
+        245.526
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-038",
+      "facility_name_raw": "溪州鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        248.319,
+        292.546,
+        262.819
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-039",
+      "facility_name_raw": "埔鹽鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        264.972,
+        292.546,
+        279.472
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-040",
+      "facility_name_raw": "伸港鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        281.626,
+        292.546,
+        296.126
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-041",
+      "facility_name_raw": "二水鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        298.279,
+        292.546,
+        312.779
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-11",
+      "facility_name_raw": "埔鹽鄉立圖書館",
+      "source_cell_bbox": [
+        292.546,
+        245.526,
+        482.48,
+        312.047
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-042",
+      "facility_name_raw": "北港鎮立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        314.933,
+        292.546,
+        329.433
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-043",
+      "facility_name_raw": "虎尾鎮立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        331.587,
+        292.546,
+        346.087
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-044",
+      "facility_name_raw": "大埤鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        348.24,
+        292.546,
+        362.74
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-045",
+      "facility_name_raw": "古坑鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        364.894,
+        292.546,
+        379.394
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-12",
+      "facility_name_raw": "西螺鎮立圖書館",
+      "source_cell_bbox": [
+        292.546,
+        312.047,
+        482.48,
+        378.407
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-046",
+      "facility_name_raw": "朴子市立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        381.547,
+        292.546,
+        396.047
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-047",
+      "facility_name_raw": "大林鎮立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        398.201,
+        292.546,
+        412.701
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-048",
+      "facility_name_raw": "民雄鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        414.854,
+        292.546,
+        429.354
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-13",
+      "facility_name_raw": "竹崎鄉立圖書館",
+      "source_cell_bbox": [
+        292.546,
+        378.407,
+        482.48,
+        428.597
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-049",
+      "facility_name_raw": "世賢分館",
+      "source_cell_bbox": [
+        103.958,
+        431.508,
+        292.546,
+        446.008
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-14",
+      "facility_name_raw": null,
+      "source_cell_bbox": [
+        292.546,
+        428.597,
+        482.48,
+        445.526
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-050",
+      "facility_name_raw": "東區分館",
+      "source_cell_bbox": [
+        103.958,
+        448.161,
+        292.546,
+        462.661
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-051",
+      "facility_name_raw": "中區分館",
+      "source_cell_bbox": [
+        103.958,
+        464.815,
+        292.546,
+        479.315
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-052",
+      "facility_name_raw": "安南區分館",
+      "source_cell_bbox": [
+        103.958,
+        481.468,
+        292.546,
+        495.968
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-15",
+      "facility_name_raw": "東區分館",
+      "source_cell_bbox": [
+        292.546,
+        445.526,
+        482.48,
+        495.034
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-053",
+      "facility_name_raw": "仁德鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        498.122,
+        292.546,
+        512.622
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-054",
+      "facility_name_raw": "學甲鎮立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        514.775,
+        292.546,
+        529.275
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-055",
+      "facility_name_raw": "山上鄉立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        531.429,
+        292.546,
+        545.929
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-056",
+      "facility_name_raw": "麻豆鎮立圖書館",
+      "source_cell_bbox": [
+        103.958,
+        548.082,
+        292.546,
+        562.582
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-16",
+      "facility_name_raw": "歸仁鄉立圖書館",
+      "source_cell_bbox": [
+        292.546,
+        495.034,
+        482.48,
+        561.667
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-057",
+      "facility_name_raw": "鹽埕分館",
+      "source_cell_bbox": [
+        103.958,
+        564.736,
+        292.546,
+        579.236
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-058",
+      "facility_name_raw": "新興分館",
+      "source_cell_bbox": [
+        103.958,
+        581.389,
+        292.546,
+        595.889
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-059",
+      "facility_name_raw": "寶珠分館",
+      "source_cell_bbox": [
+        103.958,
+        598.043,
+        292.546,
+        612.543
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-060",
+      "facility_name_raw": "三民分館",
+      "source_cell_bbox": [
+        103.958,
+        614.697,
+        292.546,
+        629.197
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-061",
+      "facility_name_raw": "楠梓分館",
+      "source_cell_bbox": [
+        103.958,
+        631.35,
+        292.546,
+        645.85
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-17",
+      "facility_name_raw": "鼓山分館",
+      "source_cell_bbox": [
+        292.546,
+        561.667,
+        482.48,
+        644.598
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-062",
+      "facility_name_raw": "湖西鄉立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        148.398,
+        291.965,
+        162.898
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-063",
+      "facility_name_raw": "白沙鄉立",
+      "source_cell_bbox": [
+        103.366,
+        165.051,
+        291.965,
+        179.551
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-064",
+      "facility_name_raw": "七美鄉立",
+      "source_cell_bbox": [
+        103.366,
+        181.705,
+        291.965,
+        196.205
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-065",
+      "facility_name_raw": "望安鄉立",
+      "source_cell_bbox": [
+        103.366,
+        198.358,
+        291.965,
+        212.858
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-18",
+      "facility_name_raw": "湖西鄉立圖書館",
+      "source_cell_bbox": [
+        291.965,
+        145.747,
+        482.48,
+        212.253
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-066",
+      "facility_name_raw": "橋頭鄉立",
+      "source_cell_bbox": [
+        103.366,
+        215.012,
+        291.965,
+        229.512
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-067",
+      "facility_name_raw": "岡山鎮立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        231.665,
+        291.965,
+        246.165
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-068",
+      "facility_name_raw": "路竹鄉立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        248.319,
+        291.965,
+        262.819
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-069",
+      "facility_name_raw": "杉林鄉立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        264.972,
+        291.965,
+        279.472
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-070",
+      "facility_name_raw": "大樹鄉立第二圖書館",
+      "source_cell_bbox": [
+        103.366,
+        281.626,
+        291.965,
+        296.126
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-19",
+      "facility_name_raw": "橋頭鄉立圖書館",
+      "source_cell_bbox": [
+        291.965,
+        212.253,
+        482.48,
+        295.747
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-071",
+      "facility_name_raw": "萬丹鄉立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        298.279,
+        291.965,
+        312.779
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-072",
+      "facility_name_raw": "林邊鄉立",
+      "source_cell_bbox": [
+        103.366,
+        314.933,
+        291.965,
+        329.433
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-073",
+      "facility_name_raw": "萬巒鄉立",
+      "source_cell_bbox": [
+        103.366,
+        331.587,
+        291.965,
+        346.087
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-074",
+      "facility_name_raw": "南州鄉立",
+      "source_cell_bbox": [
+        103.366,
+        348.24,
+        291.965,
+        362.74
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-075",
+      "facility_name_raw": "竹田鄉立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        364.894,
+        291.965,
+        379.394
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-20",
+      "facility_name_raw": "長治鄉立圖書館",
+      "source_cell_bbox": [
+        291.965,
+        295.747,
+        482.48,
+        378.507
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-076",
+      "facility_name_raw": "吉安鄉立",
+      "source_cell_bbox": [
+        103.366,
+        381.547,
+        291.965,
+        396.047
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-077",
+      "facility_name_raw": "光復鄉立",
+      "source_cell_bbox": [
+        103.366,
+        398.201,
+        291.965,
+        412.701
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-078",
+      "facility_name_raw": "玉里鎮立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        414.854,
+        291.965,
+        429.354
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-21",
+      "facility_name_raw": "花蓮市立圖書館",
+      "source_cell_bbox": [
+        291.965,
+        378.507,
+        482.48,
+        428.526
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-079",
+      "facility_name_raw": "卑南鄉立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        431.508,
+        291.965,
+        446.008
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-080",
+      "facility_name_raw": "關山鎮立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        448.161,
+        291.965,
+        462.661
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-081",
+      "facility_name_raw": "池上鄉立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        464.815,
+        291.965,
+        479.315
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-082",
+      "facility_name_raw": "太武鄉立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        481.468,
+        291.965,
+        495.968
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-083",
+      "facility_name_raw": "成功鎮立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        498.122,
+        291.965,
+        512.622
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-22",
+      "facility_name_raw": "鹿野鄉立圖書館",
+      "source_cell_bbox": [
+        291.965,
+        428.526,
+        482.48,
+        511.734
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-084",
+      "facility_name_raw": "羅東鎮立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        514.775,
+        291.965,
+        529.275
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-085",
+      "facility_name_raw": "礁溪鄉立",
+      "source_cell_bbox": [
+        103.366,
+        531.429,
+        291.965,
+        545.929
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-086",
+      "facility_name_raw": "壯圍鄉立",
+      "source_cell_bbox": [
+        103.366,
+        548.082,
+        291.965,
+        562.582
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-087",
+      "facility_name_raw": "冬山鄉立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        564.736,
+        291.965,
+        579.236
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-088",
+      "facility_name_raw": "南澳鄉立圖書館",
+      "source_cell_bbox": [
+        103.366,
+        581.389,
+        291.965,
+        595.889
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-23",
+      "facility_name_raw": "宜蘭市立圖書館",
+      "source_cell_bbox": [
+        291.965,
+        511.734,
+        482.48,
+        594.967
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-total-reading",
+      "facility_name_raw": null,
+      "source_cell_bbox": [
+        103.366,
+        594.967,
+        291.965,
+        611.626
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-total-demonstration",
+      "facility_name_raw": null,
+      "source_cell_bbox": [
+        291.965,
+        594.967,
+        482.48,
+        611.626
+      ]
+    },
+    {
+      "programme_id": "ncl95-table7-activity-01",
+      "facility_name_raw": null,
+      "source_cell_bbox": [
+        86.69,
+        324.898,
+        482.48,
+        339.398
+      ]
+    },
+    {
+      "programme_id": "ncl95-table7-activity-02",
+      "facility_name_raw": null,
+      "source_cell_bbox": [
+        86.69,
+        341.552,
+        482.48,
+        356.052
+      ]
+    },
+    {
+      "programme_id": "ncl95-table7-activity-03",
+      "facility_name_raw": null,
+      "source_cell_bbox": [
+        86.69,
+        358.205,
+        482.48,
+        372.705
+      ]
+    },
+    {
+      "programme_id": "ncl95-table7-activity-04",
+      "facility_name_raw": null,
+      "source_cell_bbox": [
+        86.69,
+        374.859,
+        482.48,
+        389.359
+      ]
+    },
+    {
+      "programme_id": "ncl95-table7-activity-05",
+      "facility_name_raw": null,
+      "source_cell_bbox": [
+        86.69,
+        391.512,
+        482.48,
+        406.012
+      ]
+    },
+    {
+      "programme_id": "ncl95-table7-activity-06",
+      "facility_name_raw": null,
+      "source_cell_bbox": [
+        86.69,
+        408.166,
+        482.48,
+        422.666
+      ]
+    }
+  ],
+  "quantity_labels": [
+    {
+      "observation_id": "ncl95-table6-reading-001:participants",
+      "entity_raw": "力行分館",
+      "source_row_label_raw": "力行分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-002:participants",
+      "entity_raw": "文山分館",
+      "source_row_label_raw": "文山分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-003:participants",
+      "entity_raw": "天母分館",
+      "source_row_label_raw": "天母分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-004:participants",
+      "entity_raw": "西湖分館",
+      "source_row_label_raw": "西湖分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-005:participants",
+      "entity_raw": "中崙分館",
+      "source_row_label_raw": "中崙分館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-01:participants",
+      "entity_raw": "文山分館",
+      "source_row_label_raw": "文山分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-006:participants",
+      "entity_raw": "金寧鄉立圖書館",
+      "source_row_label_raw": "金寧鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-02:participants",
+      "entity_raw": "文化局圖書館",
+      "source_row_label_raw": "文化局圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-007:participants",
+      "entity_raw": "三灣鄉立圖書館",
+      "source_row_label_raw": "三灣鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-008:participants",
+      "entity_raw": "南庄鄉立圖書館",
+      "source_row_label_raw": "南庄鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-009:participants",
+      "entity_raw": "苗栗市立圖書館",
+      "source_row_label_raw": "苗栗市立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-010:participants",
+      "entity_raw": "後龍鎮立圖書館",
+      "source_row_label_raw": "後龍鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-011:participants",
+      "entity_raw": "苑裡鎮立圖書館",
+      "source_row_label_raw": "苑裡鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-03:participants",
+      "entity_raw": "公館鄉立圖書館",
+      "source_row_label_raw": "公館鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-012:participants",
+      "entity_raw": "中壢市立圖書館",
+      "source_row_label_raw": "中壢市立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-013:participants",
+      "entity_raw": "龜山鄉立圖書館",
+      "source_row_label_raw": "龜山鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-014:participants",
+      "entity_raw": "平鎮市立圖書館",
+      "source_row_label_raw": "平鎮市立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-015:participants",
+      "entity_raw": "復興鄉立圖書館",
+      "source_row_label_raw": "復興鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-04:participants",
+      "entity_raw": "桃園市立圖書館",
+      "source_row_label_raw": "桃園市立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-016:participants",
+      "entity_raw": "湖口鄉立圖書館",
+      "source_row_label_raw": "湖口鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-017:participants",
+      "entity_raw": "新豐鄉立圖書館",
+      "source_row_label_raw": "新豐鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-018:participants",
+      "entity_raw": "關西鎮立圖書館",
+      "source_row_label_raw": "關西鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-05:participants",
+      "entity_raw": "竹北市立圖書館",
+      "source_row_label_raw": "竹北市立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-019:participants",
+      "entity_raw": "香山分館",
+      "source_row_label_raw": "香山分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-020:participants",
+      "entity_raw": "深坑鄉立圖書館",
+      "source_row_label_raw": "深坑鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-021:participants",
+      "entity_raw": "新店市立圖書館",
+      "source_row_label_raw": "新店市立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-022:participants",
+      "entity_raw": "平溪鄉立圖書館",
+      "source_row_label_raw": "平溪鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-07:participants",
+      "entity_raw": "泰山鄉立圖書館",
+      "source_row_label_raw": "泰山鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-023:participants",
+      "entity_raw": "神岡鄉立圖書館",
+      "source_row_label_raw": "神岡鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-024:participants",
+      "entity_raw": "大甲鎮立圖書館",
+      "source_row_label_raw": "大甲鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-025:participants",
+      "entity_raw": "沙鹿鎮立深波圖書館",
+      "source_row_label_raw": "沙鹿鎮立深波圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-026:participants",
+      "entity_raw": "霧峰鄉立以文圖書館",
+      "source_row_label_raw": "霧峰鄉立以文圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-08:participants",
+      "entity_raw": "大安鄉立圖書館",
+      "source_row_label_raw": "大安鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-027:participants",
+      "entity_raw": "中區圖書館",
+      "source_row_label_raw": "中區圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-028:participants",
+      "entity_raw": "西區圖書館",
+      "source_row_label_raw": "西區圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-029:participants",
+      "entity_raw": "南區圖書館",
+      "source_row_label_raw": "南區圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-030:participants",
+      "entity_raw": "北區圖書館",
+      "source_row_label_raw": "北區圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-031:participants",
+      "entity_raw": "南屯區圖書館",
+      "source_row_label_raw": "南屯區圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-09:participants",
+      "entity_raw": "西屯區圖書館",
+      "source_row_label_raw": "西屯區圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-032:participants",
+      "entity_raw": "集集鎮立圖書館",
+      "source_row_label_raw": "集集鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-033:participants",
+      "entity_raw": "南投市立圖書館",
+      "source_row_label_raw": "南投市立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-034:participants",
+      "entity_raw": "名間鄉立圖書館",
+      "source_row_label_raw": "名間鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-035:participants",
+      "entity_raw": "魚池鄉立圖書館",
+      "source_row_label_raw": "魚池鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-036:participants",
+      "entity_raw": "鹿谷鄉立圖書館",
+      "source_row_label_raw": "鹿谷鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-037:participants",
+      "entity_raw": "竹山鎮立圖書館",
+      "source_row_label_raw": "竹山鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-10:participants",
+      "entity_raw": "埔里鎮立圖書館",
+      "source_row_label_raw": "埔里鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-038:participants",
+      "entity_raw": "溪州鄉立圖書館",
+      "source_row_label_raw": "溪州鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-039:participants",
+      "entity_raw": "埔鹽鄉立圖書館",
+      "source_row_label_raw": "埔鹽鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-040:participants",
+      "entity_raw": "伸港鄉立圖書館",
+      "source_row_label_raw": "伸港鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-041:participants",
+      "entity_raw": "二水鄉立圖書館",
+      "source_row_label_raw": "二水鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-11:participants",
+      "entity_raw": "埔鹽鄉立圖書館",
+      "source_row_label_raw": "埔鹽鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-042:participants",
+      "entity_raw": "北港鎮立圖書館",
+      "source_row_label_raw": "北港鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-043:participants",
+      "entity_raw": "虎尾鎮立圖書館",
+      "source_row_label_raw": "虎尾鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-044:participants",
+      "entity_raw": "大埤鄉立圖書館",
+      "source_row_label_raw": "大埤鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-045:participants",
+      "entity_raw": "古坑鄉立圖書館",
+      "source_row_label_raw": "古坑鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-12:participants",
+      "entity_raw": "西螺鎮立圖書館",
+      "source_row_label_raw": "西螺鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-046:participants",
+      "entity_raw": "朴子市立圖書館",
+      "source_row_label_raw": "朴子市立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-047:participants",
+      "entity_raw": "大林鎮立圖書館",
+      "source_row_label_raw": "大林鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-048:participants",
+      "entity_raw": "民雄鄉立圖書館",
+      "source_row_label_raw": "民雄鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-13:participants",
+      "entity_raw": "竹崎鄉立圖書館",
+      "source_row_label_raw": "竹崎鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-049:participants",
+      "entity_raw": "世賢分館",
+      "source_row_label_raw": "世賢分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-050:participants",
+      "entity_raw": "東區分館",
+      "source_row_label_raw": "東區分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-051:participants",
+      "entity_raw": "中區分館",
+      "source_row_label_raw": "中區分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-052:participants",
+      "entity_raw": "安南區分館",
+      "source_row_label_raw": "安南區分館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-15:participants",
+      "entity_raw": "東區分館",
+      "source_row_label_raw": "東區分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-053:participants",
+      "entity_raw": "仁德鄉立圖書館",
+      "source_row_label_raw": "仁德鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-054:participants",
+      "entity_raw": "學甲鎮立圖書館",
+      "source_row_label_raw": "學甲鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-055:participants",
+      "entity_raw": "山上鄉立圖書館",
+      "source_row_label_raw": "山上鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-056:participants",
+      "entity_raw": "麻豆鎮立圖書館",
+      "source_row_label_raw": "麻豆鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-16:participants",
+      "entity_raw": "歸仁鄉立圖書館",
+      "source_row_label_raw": "歸仁鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-057:participants",
+      "entity_raw": "鹽埕分館",
+      "source_row_label_raw": "鹽埕分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-058:participants",
+      "entity_raw": "新興分館",
+      "source_row_label_raw": "新興分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-059:participants",
+      "entity_raw": "寶珠分館",
+      "source_row_label_raw": "寶珠分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-060:participants",
+      "entity_raw": "三民分館",
+      "source_row_label_raw": "三民分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-061:participants",
+      "entity_raw": "楠梓分館",
+      "source_row_label_raw": "楠梓分館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-17:participants",
+      "entity_raw": "鼓山分館",
+      "source_row_label_raw": "鼓山分館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-062:participants",
+      "entity_raw": "湖西鄉立圖書館",
+      "source_row_label_raw": "湖西鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-063:participants",
+      "entity_raw": "白沙鄉立",
+      "source_row_label_raw": "白沙鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-064:participants",
+      "entity_raw": "七美鄉立",
+      "source_row_label_raw": "七美鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-065:participants",
+      "entity_raw": "望安鄉立",
+      "source_row_label_raw": "望安鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-18:participants",
+      "entity_raw": "湖西鄉立圖書館",
+      "source_row_label_raw": "湖西鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-066:participants",
+      "entity_raw": "橋頭鄉立",
+      "source_row_label_raw": "橋頭鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-067:participants",
+      "entity_raw": "岡山鎮立圖書館",
+      "source_row_label_raw": "岡山鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-068:participants",
+      "entity_raw": "路竹鄉立圖書館",
+      "source_row_label_raw": "路竹鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-069:participants",
+      "entity_raw": "杉林鄉立圖書館",
+      "source_row_label_raw": "杉林鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-070:participants",
+      "entity_raw": "大樹鄉立第二圖書館",
+      "source_row_label_raw": "大樹鄉立第二圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-19:participants",
+      "entity_raw": "橋頭鄉立圖書館",
+      "source_row_label_raw": "橋頭鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-071:participants",
+      "entity_raw": "萬丹鄉立圖書館",
+      "source_row_label_raw": "萬丹鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-072:participants",
+      "entity_raw": "林邊鄉立",
+      "source_row_label_raw": "林邊鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-073:participants",
+      "entity_raw": "萬巒鄉立",
+      "source_row_label_raw": "萬巒鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-074:participants",
+      "entity_raw": "南州鄉立",
+      "source_row_label_raw": "南州鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-075:participants",
+      "entity_raw": "竹田鄉立圖書館",
+      "source_row_label_raw": "竹田鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-20:participants",
+      "entity_raw": "長治鄉立圖書館",
+      "source_row_label_raw": "長治鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-076:participants",
+      "entity_raw": "吉安鄉立",
+      "source_row_label_raw": "吉安鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-077:participants",
+      "entity_raw": "光復鄉立",
+      "source_row_label_raw": "光復鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-078:participants",
+      "entity_raw": "玉里鎮立圖書館",
+      "source_row_label_raw": "玉里鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-21:participants",
+      "entity_raw": "花蓮市立圖書館",
+      "source_row_label_raw": "花蓮市立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-079:participants",
+      "entity_raw": "卑南鄉立圖書館",
+      "source_row_label_raw": "卑南鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-080:participants",
+      "entity_raw": "關山鎮立圖書館",
+      "source_row_label_raw": "關山鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-081:participants",
+      "entity_raw": "池上鄉立圖書館",
+      "source_row_label_raw": "池上鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-082:participants",
+      "entity_raw": "太武鄉立圖書館",
+      "source_row_label_raw": "太武鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-083:participants",
+      "entity_raw": "成功鎮立圖書館",
+      "source_row_label_raw": "成功鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-22:participants",
+      "entity_raw": "鹿野鄉立圖書館",
+      "source_row_label_raw": "鹿野鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-084:participants",
+      "entity_raw": "羅東鎮立圖書館",
+      "source_row_label_raw": "羅東鎮立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-085:participants",
+      "entity_raw": "礁溪鄉立",
+      "source_row_label_raw": "礁溪鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-086:participants",
+      "entity_raw": "壯圍鄉立",
+      "source_row_label_raw": "壯圍鄉立"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-087:participants",
+      "entity_raw": "冬山鄉立圖書館",
+      "source_row_label_raw": "冬山鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-088:participants",
+      "entity_raw": "南澳鄉立圖書館",
+      "source_row_label_raw": "南澳鄉立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-23:participants",
+      "entity_raw": "宜蘭市立圖書館",
+      "source_row_label_raw": "宜蘭市立圖書館"
+    },
+    {
+      "observation_id": "ncl95-table6-total-reading:facilities",
+      "entity_raw": "總計",
+      "source_row_label_raw": "總計"
+    },
+    {
+      "observation_id": "ncl95-table6-total-reading:participants",
+      "entity_raw": "總計",
+      "source_row_label_raw": "總計"
+    },
+    {
+      "observation_id": "ncl95-table6-total-demonstration:facilities",
+      "entity_raw": "總計",
+      "source_row_label_raw": "總計"
+    },
+    {
+      "observation_id": "ncl95-table6-total-demonstration:participants",
+      "entity_raw": "總計",
+      "source_row_label_raw": "總計"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-01:events",
+      "entity_raw": "與作家有約講座、簽書會、導讀會、座談會",
+      "source_row_label_raw": "與作家有約講座、簽書會、導讀會、座談會"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-01:participants",
+      "entity_raw": "與作家有約講座、簽書會、導讀會、座談會",
+      "source_row_label_raw": "與作家有約講座、簽書會、導讀會、座談會"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-02:events",
+      "entity_raw": "與作家有約體驗之旅",
+      "source_row_label_raw": "與作家有約體驗之旅"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-02:participants",
+      "entity_raw": "與作家有約體驗之旅",
+      "source_row_label_raw": "與作家有約體驗之旅"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-03:events",
+      "entity_raw": "主題書展、票選好書、新書發表會",
+      "source_row_label_raw": "主題書展、票選好書、新書發表會"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-03:participants",
+      "entity_raw": "主題書展、票選好書、新書發表會",
+      "source_row_label_raw": "主題書展、票選好書、新書發表會"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-04:events",
+      "entity_raw": "讀劇說唱、舞畫說書、朗誦、主題影片欣賞",
+      "source_row_label_raw": "讀劇說唱、舞畫說書、朗誦、主題影片欣賞"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-04:participants",
+      "entity_raw": "讀劇說唱、舞畫說書、朗誦、主題影片欣賞",
+      "source_row_label_raw": "讀劇說唱、舞畫說書、朗誦、主題影片欣賞"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-05:participants",
+      "entity_raw": "網路閱讀 & 部落格",
+      "source_row_label_raw": "網路閱讀 & 部落格"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-06:participants",
+      "entity_raw": "徵文比賽",
+      "source_row_label_raw": "徵文比賽"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0.0",
+  "scope_id": "public-library-source-inventory-2005-2025-v1",
+  "scope_version": "1.0.0",
+  "dataset_version": "0.6.0",
+  "canonical_records": 37887,
+  "canonical_statistical_content_sha256": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
+  "authority_slots_expected": 88,
+  "authority_slots_with_recorded_attempt": 88,
+  "authority_check_status_counts": {
+    "checked_entry_only": 32,
+    "checked_no_relevant_dataset_in_checked_page": 7,
+    "checked_relevant_source_found": 44,
+    "request_failed": 5
+  },
+  "counties_expected": 22,
+  "central_entry_status_counts": {
+    "checked_relevant_source_found": 8
+  },
+  "source_candidates_listed": 440,
+  "reviewed_batch_inventory_entries": 17,
+  "raw_source_profiles": 23466,
+  "discovery_matrix_cells": 4830,
+  "matched_value_navigation_cells": 2882,
+  "unclassified_observations": 13126,
+  "historical_or_other_raw_region_profiles": 4191,
+  "all_original_observation_ids_accounted_for": true,
+  "all_history_complete": false,
+  "cross_year_comparability_certified": false,
+  "source_survey_scope": "Four specified role checks per current county; evidence bounds and failed checks are visible. Not exhaustive crawling of every agency archive.",
+  "core_coverage_scope": "Exact label/topic discovery slots only, not detailed indicator completeness. Use raw profiles and original statuses.",
+  "known_2012_gap": "County core original-quantity tables not obtained in checked sources; original prose ratios remain separate; no imputation.",
+  "inputs": [
+    {
+      "path": "raw/phase1-inventory/county-north.json",
+      "sha256": "f34d9aea361f60e8e23280da7f5fc019ac96325824b3667b04232295d8711a2e"
+    },
+    {
+      "path": "raw/phase1-inventory/county-south.json",
+      "sha256": "a3c885d17b0fbdee34e846e2b77378be7900ddb7ca6443fb20b5aadfd47056f8"
+    },
+    {
+      "path": "derived/phase1_local_sources_long.jsonl",
+      "sha256": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80"
+    },
+    {
+      "path": "raw/phase1_local_sources/sources.json",
+      "sha256": "bd9a5dde2c0d4327aa547f6b85588a2d10926b3f3f54206b6393b21c42a5d254"
+    },
+    {
+      "path": "raw/phase1_local_sources/summary.json",
+      "sha256": "85b1bd3c0337a85cf937de1953ef51cc1eb4c3d07371d3179368517bcff39657"
+    },
+    {
+      "path": "research/phase1-local-independent-review.json",
+      "sha256": "0d73dc396946d36b6bdf59d9536984d916b393ccbd54efa7d6c9dc08c0e8beae"
+    },
+    {
+      "path": "scripts/phase1_scope.json",
+      "sha256": "8f61fc11bcd6da6e75206073944030e932f835c5e0db9254e410a42d9f029192"
+    },
+    {
+      "path": "scripts/build_phase1_inventory.py",
+      "sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89"
+    },
+    {
+      "path": "canonical_statistical_content",
+      "sha256": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e"
+    },
+    {
+      "path": "raw/phase1-inventory/central.json",
+      "sha256": "39fc33e4d6a1798709f931e009c475dc2b42b372acc722741a5a6e6142d25dfe"
+    }
+  ],
+  "supplemental_source_batches": [
+    {
+      "source_id": "south-lienchiang-opendata-173786",
+      "county": "連江縣",
+      "title": "113年連江縣公共圖書館概況",
+      "catalog_url": "https://data.gov.tw/dataset/173786",
+      "download_url": "https://www.matsu.gov.tw/chhtml/adddownloadcount/371030000A/101571?mcfilename=Mcfile2&type=D",
+      "final_url": "https://www.matsu.gov.tw/upload/f-20250613115632.ods",
+      "source_sha256": "de3b86da388ef7337e4996c06cde88fb1dd52ed0b95bfdd8186e545d1f94000b",
+      "statistical_cells": 35,
+      "verified_sheet_years": [],
+      "period_status_counts": {
+        "catalog_title_year_only_attachment_undated": 35
+      },
+      "value_status_counts": {
+        "reported_typed_numeric": 35
+      },
+      "scope": "Complete relevant source-cell batch only; do not append to canonical observations or interpret county navigation as complete county coverage."
+    },
+    {
+      "source_id": "south-hualien-library-lending-409-reader",
+      "county": "花蓮縣",
+      "title": "花蓮縣圖書資訊借閱概況－依讀者身分別及館藏地（室）",
+      "catalog_url": "https://www.hccc.gov.tw/zh-tw/Download/Statistics/409",
+      "download_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16274",
+      "final_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16274",
+      "source_sha256": "205a79d6aadce9f4580664d6b67078e5446b6e7fedab366b971b312f31fed1d2",
+      "statistical_cells": 6336,
+      "verified_sheet_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "period_status_counts": {
+        "matching_sheet_name_and_header_month": 6160,
+        "source_sheet_name_header_period_conflict_unresolved": 176
+      },
+      "value_status_counts": {
+        "reported_typed_numeric": 4384,
+        "source_display_typed_value_conflict_unresolved": 1952
+      },
+      "scope": "Complete relevant source-cell batch only; do not append to canonical observations or interpret county navigation as complete county coverage."
+    },
+    {
+      "source_id": "south-hualien-library-lending-409-room",
+      "county": "花蓮縣",
+      "title": "花蓮縣圖書資訊借閱概況－依讀者身分別及館藏地（室）",
+      "catalog_url": "https://www.hccc.gov.tw/zh-tw/Download/Statistics/409",
+      "download_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16275",
+      "final_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16275",
+      "source_sha256": "69881ded57b1ede472a6f41cfb48f256d3963b0dba7d1b493d5e29a646b5c998",
+      "statistical_cells": 12080,
+      "verified_sheet_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "period_status_counts": {
+        "matching_sheet_name_and_header_month": 12080
+      },
+      "value_status_counts": {
+        "reported_typed_numeric": 8934,
+        "source_display_typed_value_conflict_unresolved": 3146
+      },
+      "scope": "Complete relevant source-cell batch only; do not append to canonical observations or interpret county navigation as complete county coverage."
+    },
+    {
+      "source_id": "south-lienchiang-culture-library-overview-114",
+      "county": "連江縣",
+      "title": "連江縣公共圖書館概況114年",
+      "catalog_url": "https://matsucc.gov.tw/%E8%AA%8D%E8%AD%98%E6%96%87%E5%8C%96%E8%99%95/%E9%A0%90%E5%91%8A%E7%B5%B1%E8%A8%88%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E5%8D%80/",
+      "download_url": "https://matsucc.gov.tw/wp-content/uploads/2026/07/11014-03-01-2處-連江縣公共圖書館概況114年.xlsx",
+      "final_url": "https://matsucc.gov.tw/wp-content/uploads/2026/07/11014-03-01-2%E8%99%95-%E9%80%A3%E6%B1%9F%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81114%E5%B9%B4.xlsx",
+      "source_sha256": "cb7f4f0a2d8817e5c0ab6168d874ffa7c7e21104b871bbd8706ffc6e2f6512d4",
+      "statistical_cells": 35,
+      "verified_sheet_years": [
+        2025
+      ],
+      "period_status_counts": {
+        "explicit_sheet_year": 35
+      },
+      "value_status_counts": {
+        "reported_typed_numeric": 34,
+        "source_marker": 1
+      },
+      "scope": "Complete relevant source-cell batch only; do not append to canonical observations or interpret county navigation as complete county coverage."
+    }
+  ],
+  "additional_source_cell_period_policy": "Only explicit sheet years or matching sheet/header month years enter the navigation index. Unresolved and catalogue-only periods remain in original source-cell files, not verified year slots."
+}

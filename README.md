@@ -4,7 +4,7 @@
 
 將分散在官方圖表、開放資料及歷史統計表中的公共圖書館數據，整理成可查詢、可回到來源的觀測資料，協助公眾理解圖書館服務，也讓研究者與 AI 使用者能重現整理結果。
 
-版本 **0.5.1**；資料建置日 **2026-10-26**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.5.1下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.5.1)。
+版本 **0.6.0**；資料建置日 **2026-10-26**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.6.0下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.6.0)。
 
 本專案先查重再整理。國立公共資訊圖書館已有跨年圖表、國家圖書館已有統計名詞字典，SEGIS 及地方開放資料亦有相關歷年成果。本專案的新增值是**跨來源的統一讀取方式、逐筆來源定位、期間與口徑標記，以及可追溯的內容版本**；不宣稱是第一份跨年統計或第一個名詞字典。查閱[查重報告](research/prior-art.md)及[官方範圍與定義](research/official-scope.md)。
 
@@ -36,7 +36,7 @@
 
 ## 下載與讀取
 
-[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.5.1) · [按年度讀取 JSONL](data/by_year/index.json)
+[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.6.0) · [按年度讀取 JSONL](data/by_year/index.json)
 
 公開副本移除22份原始檔的無關聯絡欄，以另有雜湊的統計投影提供；原始來源網址、原件SHA及每筆統計值均保留。詳[公開副本與來源原件的區別](docs/PUBLICATION.md)。
 
@@ -81,3 +81,18 @@
 分析既有資料不需要下載來源或安裝套件。更新環境需 Python 3.12 及 `requirements.txt` 所列套件，執行 `python scripts/run_update.py`。本機已完成一次端到端驗收與不變資料的再次執行。
 
 公開包刻意不含原PDF或完整網頁；若要從PDF重做擷取與完整來源驗收，先執行 `python scripts/restore_originals.py`，它只依明列官方URL取得並核對指定SHA，原版變更時會停止覆核，然後執行 `python scripts/run_update.py --offline`。重建程式保留原值與明示缺值，不會用推算值補齊。圖表與政策頁若已改版，需先重新覆核來源選單與新公告，才接受新版本。
+
+<!-- BEGIN phase1 -->
+## 第一階段：全臺來源與缺口清冊
+
+第一階段完成的是2005–2025年的來源導航、原口徑清冊及已取得來源批次；不宣稱全臺歷年值皆已齊全。
+
+- 現行22縣市×4個機關角色，共88項有實際查核紀錄；不是每個機關檔案庫都已窮盡。440個候選項分開標示入口、下載失敗、尚待解析及已完成的附件。
+- 4,830格「年×導航地區×主題」呈現來源出現情形；23,466組原口徑精確保留既有37,887筆觀測，不合併不同原地區、母體、單位、期間或版本。
+- 新增2005計畫表6／7整批119列／123個數量格，以及花蓮、連江4附件的18,486個統計格。另有33,705個安全範圍原格含表頭及結構空白；這些是不同視圖，不可相加，也未混入既有正式觀測。
+- 花蓮兩份ODS各保留72個月工作表（2020年9月至2026年8月）及空白模板；176格年月矛盾留未知。連江113年目錄附件未印年份，與工作表明印114年的來源分開。
+
+[來源與缺口互動頁](site/phase1.html) · [範圍與驗收](docs/PHASE1.md) · [新增來源資料](docs/phase1-supplements.md) · [小型工作表分檔](docs/phase1-source-cell-partitions.json) · [機器字典](docs/phase1-data-dictionary.json)
+
+2012縣市核心原量仍未取得，不由比率反算。跨年相容性認證及自動選口徑屬後續階段；本階段保留差異而不自動決定可比。
+<!-- END phase1 -->

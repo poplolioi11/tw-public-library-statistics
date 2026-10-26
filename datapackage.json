@@ -1,7 +1,7 @@
 {
   "name": "tw-public-library-statistics",
   "title": "臺灣公共圖書館跨年度統計",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "已驗證可得來源的全量整理；不是宣稱臺灣所有年代、所有縣市與每一圖書館都已完整。",
   "licenses": [
     {
@@ -27,6 +27,130 @@
       "name": "query-database",
       "path": "data/combined/library_statistics.sqlite",
       "format": "sqlite"
+    },
+    {
+      "name": "phase1_authority_checks-csv",
+      "path": "derived/phase1_authority_checks.csv",
+      "format": "csv",
+      "hash": "sha256:4bf06a1be4e2df9c04ffc290058da81d20e5a4a6c2d0bccffa57568b47ff9925",
+      "layer": "source_inventory"
+    },
+    {
+      "name": "phase1_authority_checks-jsonl",
+      "path": "derived/phase1_authority_checks.jsonl",
+      "format": "jsonl",
+      "hash": "sha256:08b137619a945e96fbf9cef1d44aab426ab068d0f59bd00e5443bdad12a462b2",
+      "layer": "source_inventory"
+    },
+    {
+      "name": "phase1_source_candidates-csv",
+      "path": "derived/phase1_source_candidates.csv",
+      "format": "csv",
+      "hash": "sha256:9b12a7ca4ccbcd950065ea5029175d606cdcf74bd0f9ef439e4dcdbba8d8c373",
+      "layer": "source_inventory"
+    },
+    {
+      "name": "phase1_source_candidates-jsonl",
+      "path": "derived/phase1_source_candidates.jsonl",
+      "format": "jsonl",
+      "hash": "sha256:a8bb932faeac7ba47fef2d691df355da712eb71578620798ae483996856cb49c",
+      "layer": "source_inventory"
+    },
+    {
+      "name": "phase1_raw_source_profiles-csv",
+      "path": "derived/phase1_raw_source_profiles.csv",
+      "format": "csv",
+      "hash": "sha256:6b6dc16c736e09de80b365e5911b1e4b38899e8151b37a36d48a3a19defa4d92",
+      "layer": "source_inventory"
+    },
+    {
+      "name": "phase1_raw_source_profiles-jsonl",
+      "path": "derived/phase1_raw_source_profiles.jsonl",
+      "format": "jsonl",
+      "hash": "sha256:c40ad23c1ddb84732218ed66e451c00ddb536968d184dc9b8595f69b4e51c945",
+      "layer": "source_inventory"
+    },
+    {
+      "name": "phase1_discovery_matrix-csv",
+      "path": "derived/phase1_discovery_matrix.csv",
+      "format": "csv",
+      "hash": "sha256:ea104015491f5886834a45eb98b50f21a8748e65b50c304341c5ad0dc6c42501",
+      "layer": "source_inventory"
+    },
+    {
+      "name": "phase1_discovery_matrix-jsonl",
+      "path": "derived/phase1_discovery_matrix.jsonl",
+      "format": "jsonl",
+      "hash": "sha256:ddee1056aafd0ea64d8bd74c4f7355b7d925957e5c1f00a056ce1379873196f3",
+      "layer": "source_inventory"
+    },
+    {
+      "name": "ncl_2005_programmes-csv",
+      "path": "derived/ncl_2005_programmes.csv",
+      "format": "csv",
+      "hash": "sha256:13c83fd5f753de66e652fba715129468be971e1df81b235084e7ae524ee19190",
+      "layer": "source_cells_separate_from_canonical"
+    },
+    {
+      "name": "ncl_2005_programmes-jsonl",
+      "path": "derived/ncl_2005_programmes.jsonl",
+      "format": "jsonl",
+      "hash": "sha256:e17b1301ed60001f22025d2129ee5cf46cb6882f20fa1d2491caf2b4db276ecc",
+      "layer": "source_cells_separate_from_canonical"
+    },
+    {
+      "name": "ncl_2005_programmes_long-csv",
+      "path": "derived/ncl_2005_programmes_long.csv",
+      "format": "csv",
+      "hash": "sha256:bafbf1cf277cd775df6f81635fc020b860aac5dfda8986a799e6adadeb80c73a",
+      "layer": "source_cells_separate_from_canonical"
+    },
+    {
+      "name": "ncl_2005_programmes_long-jsonl",
+      "path": "derived/ncl_2005_programmes_long.jsonl",
+      "format": "jsonl",
+      "hash": "sha256:ba461cf505a7df5d32d0e04222d0ce447ac42a2480b1ece8df6655ed593c4543",
+      "layer": "source_cells_separate_from_canonical"
+    },
+    {
+      "name": "phase1_local_sources_cells-csv",
+      "path": "derived/phase1_local_sources_cells.csv",
+      "format": "csv",
+      "hash": "sha256:5a8e944da84092c48a550cf2d5068c52939b7f167b0615ff92e1ba135c1427c2",
+      "layer": "source_cells_separate_from_canonical"
+    },
+    {
+      "name": "phase1_local_sources_cells-jsonl",
+      "path": "derived/phase1_local_sources_cells.jsonl",
+      "format": "jsonl",
+      "hash": "sha256:e7eace84cf6338294f659f48a246ecea41213ad1fe4027f225273db598d8c7a5",
+      "layer": "source_cells_separate_from_canonical"
+    },
+    {
+      "name": "phase1_local_sources_long-csv",
+      "path": "derived/phase1_local_sources_long.csv",
+      "format": "csv",
+      "hash": "sha256:2e855af5b5c545f24e05b14f13d7acc16939b691024ace0baa6e8f064e3ea55f",
+      "layer": "source_cells_separate_from_canonical"
+    },
+    {
+      "name": "phase1_local_sources_long-jsonl",
+      "path": "derived/phase1_local_sources_long.jsonl",
+      "format": "jsonl",
+      "hash": "sha256:804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+      "layer": "source_cells_separate_from_canonical"
+    },
+    {
+      "name": "phase1_inventory",
+      "path": "derived/phase1_inventory.sqlite",
+      "format": "sqlite",
+      "layer": "separate_from_canonical"
+    },
+    {
+      "name": "phase1_supplements",
+      "path": "derived/phase1_supplements.sqlite",
+      "format": "sqlite",
+      "layer": "separate_from_canonical"
     }
   ],
   "homepage": "https://github.com/poplolioi11/tw-public-library-statistics",

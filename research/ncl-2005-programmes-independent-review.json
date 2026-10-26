@@ -1,0 +1,815 @@
+{
+  "numeric_cells_compared": 123,
+  "numeric_or_period_mismatches": [],
+  "unmatched_labels": [
+    {
+      "expected": {
+        "page": "p14",
+        "side": "right",
+        "county_raw": "新竹市",
+        "library_raw": "不參加",
+        "participants_raw": "",
+        "row_note_raw": "明示不參加（右欄示範觀摩館無分隔線，跨格註記「不參加」，無參加人數）"
+      }
+    }
+  ],
+  "table7_label_differences": [
+    {
+      "programme_id": "ncl95-table7-activity-04",
+      "expected_label": "讀劇說唱、舞書說書、朗誦、主題影片欣賞",
+      "actual_label": "讀劇說唱、舞畫說書、朗誦、主題影片欣賞"
+    }
+  ],
+  "matches": [
+    {
+      "observation_id": "ncl95-table6-reading-001:participants",
+      "same": true,
+      "expected_raw": "101",
+      "actual_raw": "101"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-002:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-003:participants",
+      "same": true,
+      "expected_raw": "479",
+      "actual_raw": "479"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-004:participants",
+      "same": true,
+      "expected_raw": "300",
+      "actual_raw": "300"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-005:participants",
+      "same": true,
+      "expected_raw": "260",
+      "actual_raw": "260"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-01:participants",
+      "same": true,
+      "expected_raw": "66",
+      "actual_raw": "66"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-006:participants",
+      "same": true,
+      "expected_raw": "150",
+      "actual_raw": "150"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-02:participants",
+      "same": true,
+      "expected_raw": "40",
+      "actual_raw": "40"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-007:participants",
+      "same": true,
+      "expected_raw": "15",
+      "actual_raw": "15"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-008:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-009:participants",
+      "same": true,
+      "expected_raw": "400",
+      "actual_raw": "400"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-010:participants",
+      "same": true,
+      "expected_raw": "210",
+      "actual_raw": "210"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-011:participants",
+      "same": true,
+      "expected_raw": "100",
+      "actual_raw": "100"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-03:participants",
+      "same": true,
+      "expected_raw": "75",
+      "actual_raw": "75"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-012:participants",
+      "same": true,
+      "expected_raw": "80",
+      "actual_raw": "80"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-013:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-014:participants",
+      "same": true,
+      "expected_raw": "70",
+      "actual_raw": "70"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-015:participants",
+      "same": true,
+      "expected_raw": "300",
+      "actual_raw": "300"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-04:participants",
+      "same": true,
+      "expected_raw": "200",
+      "actual_raw": "200"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-016:participants",
+      "same": true,
+      "expected_raw": "200",
+      "actual_raw": "200"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-017:participants",
+      "same": true,
+      "expected_raw": "90",
+      "actual_raw": "90"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-018:participants",
+      "same": true,
+      "expected_raw": "300",
+      "actual_raw": "300"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-05:participants",
+      "same": true,
+      "expected_raw": "190",
+      "actual_raw": "190"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-019:participants",
+      "same": true,
+      "expected_raw": "106",
+      "actual_raw": "106"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-020:participants",
+      "same": true,
+      "expected_raw": "200",
+      "actual_raw": "200"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-021:participants",
+      "same": true,
+      "expected_raw": "20",
+      "actual_raw": "20"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-022:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-07:participants",
+      "same": true,
+      "expected_raw": "150",
+      "actual_raw": "150"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-023:participants",
+      "same": true,
+      "expected_raw": "50",
+      "actual_raw": "50"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-024:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-025:participants",
+      "same": true,
+      "expected_raw": "100",
+      "actual_raw": "100"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-026:participants",
+      "same": true,
+      "expected_raw": "120",
+      "actual_raw": "120"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-08:participants",
+      "same": true,
+      "expected_raw": "600",
+      "actual_raw": "600"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-027:participants",
+      "same": true,
+      "expected_raw": "150",
+      "actual_raw": "150"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-028:participants",
+      "same": true,
+      "expected_raw": "150",
+      "actual_raw": "150"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-029:participants",
+      "same": true,
+      "expected_raw": "150",
+      "actual_raw": "150"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-030:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-031:participants",
+      "same": true,
+      "expected_raw": "100",
+      "actual_raw": "100"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-09:participants",
+      "same": true,
+      "expected_raw": "300",
+      "actual_raw": "300"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-032:participants",
+      "same": true,
+      "expected_raw": "36",
+      "actual_raw": "36"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-033:participants",
+      "same": true,
+      "expected_raw": "400",
+      "actual_raw": "400"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-034:participants",
+      "same": true,
+      "expected_raw": "54",
+      "actual_raw": "54"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-035:participants",
+      "same": true,
+      "expected_raw": "165",
+      "actual_raw": "165"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-036:participants",
+      "same": true,
+      "expected_raw": "30",
+      "actual_raw": "30"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-037:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-10:participants",
+      "same": true,
+      "expected_raw": "1,200",
+      "actual_raw": "1,200"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-038:participants",
+      "same": true,
+      "expected_raw": "120",
+      "actual_raw": "120"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-039:participants",
+      "same": true,
+      "expected_raw": "50",
+      "actual_raw": "50"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-040:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-041:participants",
+      "same": true,
+      "expected_raw": "80",
+      "actual_raw": "80"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-11:participants",
+      "same": true,
+      "expected_raw": "80",
+      "actual_raw": "80"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-042:participants",
+      "same": true,
+      "expected_raw": "160",
+      "actual_raw": "160"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-043:participants",
+      "same": true,
+      "expected_raw": "100",
+      "actual_raw": "100"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-044:participants",
+      "same": true,
+      "expected_raw": "245",
+      "actual_raw": "245"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-045:participants",
+      "same": true,
+      "expected_raw": "100",
+      "actual_raw": "100"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-12:participants",
+      "same": true,
+      "expected_raw": "250",
+      "actual_raw": "250"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-046:participants",
+      "same": true,
+      "expected_raw": "58",
+      "actual_raw": "58"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-047:participants",
+      "same": true,
+      "expected_raw": "40",
+      "actual_raw": "40"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-048:participants",
+      "same": true,
+      "expected_raw": "47",
+      "actual_raw": "47"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-13:participants",
+      "same": true,
+      "expected_raw": "520",
+      "actual_raw": "520"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-049:participants",
+      "same": true,
+      "expected_raw": "100",
+      "actual_raw": "100"
+    },
+    {
+      "programme_id": "ncl95-table6-demonstration-14",
+      "kind": "non_numeric_state",
+      "actual_state": "",
+      "expected": {
+        "page": "p15",
+        "side": "right",
+        "county_raw": "嘉義市",
+        "library_raw": "",
+        "participants_raw": "",
+        "row_note_raw": "留白（右欄完全空白無填寫內容）"
+      }
+    },
+    {
+      "observation_id": "ncl95-table6-reading-050:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-051:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-052:participants",
+      "same": true,
+      "expected_raw": "60",
+      "actual_raw": "60"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-15:participants",
+      "same": true,
+      "expected_raw": "80",
+      "actual_raw": "80"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-053:participants",
+      "same": true,
+      "expected_raw": "75",
+      "actual_raw": "75"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-054:participants",
+      "same": true,
+      "expected_raw": "160",
+      "actual_raw": "160"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-055:participants",
+      "same": true,
+      "expected_raw": "129",
+      "actual_raw": "129"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-056:participants",
+      "same": true,
+      "expected_raw": "260",
+      "actual_raw": "260"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-16:participants",
+      "same": true,
+      "expected_raw": "934",
+      "actual_raw": "934"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-057:participants",
+      "same": true,
+      "expected_raw": "420",
+      "actual_raw": "420"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-058:participants",
+      "same": true,
+      "expected_raw": "1,570",
+      "actual_raw": "1,570"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-059:participants",
+      "same": true,
+      "expected_raw": "1,020",
+      "actual_raw": "1,020"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-060:participants",
+      "same": true,
+      "expected_raw": "952",
+      "actual_raw": "952"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-061:participants",
+      "same": true,
+      "expected_raw": "21",
+      "actual_raw": "21"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-17:participants",
+      "same": true,
+      "expected_raw": "100",
+      "actual_raw": "100"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-062:participants",
+      "same": true,
+      "expected_raw": "240",
+      "actual_raw": "240"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-063:participants",
+      "same": true,
+      "expected_raw": "170",
+      "actual_raw": "170"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-064:participants",
+      "same": true,
+      "expected_raw": "85",
+      "actual_raw": "85"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-065:participants",
+      "same": true,
+      "expected_raw": "81",
+      "actual_raw": "81"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-18:participants",
+      "same": true,
+      "expected_raw": "50",
+      "actual_raw": "50"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-066:participants",
+      "same": true,
+      "expected_raw": "190",
+      "actual_raw": "190"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-067:participants",
+      "same": true,
+      "expected_raw": "120",
+      "actual_raw": "120"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-068:participants",
+      "same": true,
+      "expected_raw": "1,395",
+      "actual_raw": "1,395"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-069:participants",
+      "same": true,
+      "expected_raw": "120",
+      "actual_raw": "120"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-070:participants",
+      "same": true,
+      "expected_raw": "50",
+      "actual_raw": "50"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-19:participants",
+      "same": true,
+      "expected_raw": "160",
+      "actual_raw": "160"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-071:participants",
+      "same": true,
+      "expected_raw": "626",
+      "actual_raw": "626"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-072:participants",
+      "same": true,
+      "expected_raw": "132",
+      "actual_raw": "132"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-073:participants",
+      "same": true,
+      "expected_raw": "77",
+      "actual_raw": "77"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-074:participants",
+      "same": true,
+      "expected_raw": "500",
+      "actual_raw": "500"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-075:participants",
+      "same": true,
+      "expected_raw": "35",
+      "actual_raw": "35"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-20:participants",
+      "same": true,
+      "expected_raw": "100",
+      "actual_raw": "100"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-076:participants",
+      "same": true,
+      "expected_raw": "52",
+      "actual_raw": "52"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-077:participants",
+      "same": true,
+      "expected_raw": "360",
+      "actual_raw": "360"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-078:participants",
+      "same": true,
+      "expected_raw": "30",
+      "actual_raw": "30"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-21:participants",
+      "same": true,
+      "expected_raw": "200",
+      "actual_raw": "200"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-079:participants",
+      "same": true,
+      "expected_raw": "73",
+      "actual_raw": "73"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-080:participants",
+      "same": true,
+      "expected_raw": "42",
+      "actual_raw": "42"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-081:participants",
+      "same": true,
+      "expected_raw": "63",
+      "actual_raw": "63"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-082:participants",
+      "same": true,
+      "expected_raw": "45",
+      "actual_raw": "45"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-083:participants",
+      "same": true,
+      "expected_raw": "80",
+      "actual_raw": "80"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-22:participants",
+      "same": true,
+      "expected_raw": "36",
+      "actual_raw": "36"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-084:participants",
+      "same": true,
+      "expected_raw": "290",
+      "actual_raw": "290"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-085:participants",
+      "same": true,
+      "expected_raw": "150",
+      "actual_raw": "150"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-086:participants",
+      "same": true,
+      "expected_raw": "120",
+      "actual_raw": "120"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-087:participants",
+      "same": true,
+      "expected_raw": "41",
+      "actual_raw": "41"
+    },
+    {
+      "observation_id": "ncl95-table6-reading-088:participants",
+      "same": true,
+      "expected_raw": "34",
+      "actual_raw": "34"
+    },
+    {
+      "observation_id": "ncl95-table6-demonstration-23:participants",
+      "same": true,
+      "expected_raw": "100",
+      "actual_raw": "100"
+    },
+    {
+      "observation_id": "ncl95-table6-total-reading:facilities",
+      "same": true,
+      "expected_raw": "88",
+      "actual_raw": "88"
+    },
+    {
+      "observation_id": "ncl95-table6-total-reading:participants",
+      "same": true,
+      "expected_raw": "16,374",
+      "actual_raw": "16,374"
+    },
+    {
+      "observation_id": "ncl95-table6-total-demonstration:facilities",
+      "same": true,
+      "expected_raw": "21",
+      "actual_raw": "21"
+    },
+    {
+      "observation_id": "ncl95-table6-total-demonstration:participants",
+      "same": true,
+      "expected_raw": "5,431",
+      "actual_raw": "5,431"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-01:events",
+      "same": true,
+      "expected_raw": "38 次",
+      "actual_raw": "38"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-01:participants",
+      "same": true,
+      "expected_raw": "3,803 人",
+      "actual_raw": "3,803"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-02:events",
+      "same": true,
+      "expected_raw": "8 次",
+      "actual_raw": "8"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-02:participants",
+      "same": true,
+      "expected_raw": "640 人",
+      "actual_raw": "640"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-03:events",
+      "same": true,
+      "expected_raw": "4 次",
+      "actual_raw": "4"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-03:participants",
+      "same": true,
+      "expected_raw": "40,000 人",
+      "actual_raw": "40,000"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-04:events",
+      "same": true,
+      "expected_raw": "36 次",
+      "actual_raw": "36"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-04:participants",
+      "same": true,
+      "expected_raw": "3,600 人",
+      "actual_raw": "3,600"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-05:participants",
+      "same": true,
+      "expected_raw": "280,523 人",
+      "actual_raw": "280,523"
+    },
+    {
+      "programme_id": "ncl95-table7-activity-05",
+      "kind": "period",
+      "same": true,
+      "expected_raw": "94 年12 月至95 年5 月",
+      "actual_raw": "94年12月至95年5月"
+    },
+    {
+      "observation_id": "ncl95-table7-activity-06:participants",
+      "same": true,
+      "expected_raw": "989 人",
+      "actual_raw": "989"
+    },
+    {
+      "programme_id": "ncl95-table7-activity-06",
+      "kind": "period",
+      "same": true,
+      "expected_raw": "95 年4 月至5 月",
+      "actual_raw": "95年4月至5月"
+    }
+  ],
+  "adjudication": {
+    "new_hsinchu_nonparticipant": "Original state not a facility name; producer correctly retains empty facility_name and nonparticipant literal; not an unmatched statistical value.",
+    "table7_row4": "Controller original-image review confirms 舞畫說書; Gemini 舞書說書 is an image transcription error, rejected.",
+    "eleven_truncated_library_labels": "Controller original-page p16 image review confirmed full 圖書館 suffix; producer corrected its extraction, numeric/period/ID fingerprint unchanged.",
+    "scope": "123 numeric cells plus two printed date intervals and two non-numeric merged slots checked; not human double proofreading or official correctness certification."
+  },
+  "status": "pass_after_source_image_adjudication",
+  "models": [
+    {
+      "provider": "gemini",
+      "actual_model": "gemini-3.8-flash-high",
+      "job_id": "20261026T085135Z-935092f18fe5",
+      "native_images_verified": 3
+    },
+    {
+      "provider": "gemini",
+      "actual_model": "gemini-3.8-flash-high",
+      "job_id": "20261026T085135Z-0c5f70c1f72e",
+      "native_images_verified": 1
+    }
+  ],
+  "producer_files": {
+    "ncl_2005_programmes.csv": "13c83fd5f753de66e652fba715129468be971e1df81b235084e7ae524ee19190",
+    "ncl_2005_programmes_long.csv": "ff8217c9eadcc5e4124456c1ae8ead648aa566f657f4231d829653397797a210"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "policy": "Remove private workspace storage routing only; official source URLs/SHA, cells, statuses and locators are unchanged. Private extraction contracts can be reconstructed with local source-root configuration.",
+  "files": [
+    {
+      "path": "raw/phase1_local_sources/sources.json",
+      "private_metadata_sha256": "bd9a5dde2c0d4327aa547f6b85588a2d10926b3f3f54206b6393b21c42a5d254",
+      "public_metadata_sha256": "0a4bc328c3530bd4182f0e0fd2ab3354b722a46c82a0a8ccb1dcf4c8ad0dfb9b",
+      "omitted_fields": [
+        "private source storage routing"
+      ],
+      "official_source_sha256_unchanged": true
+    },
+    {
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-reader/metadata.json",
+      "private_metadata_sha256": "e7c37346ef3cf1a5c494e5d4d1ca5ee6a26f77bd7d0189a420b613195682bf13",
+      "public_metadata_sha256": "d13a3c8422536f65ee48ead5909e7bae92d60f200ebc555f90905ddbd33344ae",
+      "omitted_fields": [
+        "private source storage routing"
+      ],
+      "official_source_sha256_unchanged": true
+    },
+    {
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-room/metadata.json",
+      "private_metadata_sha256": "733aafa87e9fc325f228302cddc754854e3fe07a6cc6256c65d291925370c7a7",
+      "public_metadata_sha256": "694aaa19f302d6f05aac3f32f6bde184411a8a091eadebb4d564f01efcf91c36",
+      "omitted_fields": [
+        "private source storage routing"
+      ],
+      "official_source_sha256_unchanged": true
+    },
+    {
+      "path": "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/metadata.json",
+      "private_metadata_sha256": "eacecec9d862000f3dfa6b5c8ca442fe9d41f672216f8ff62faf939a706b735c",
+      "public_metadata_sha256": "d38cabca25ea754a755c286223fc2562c7199a6a0c91ac2294e840b4876cf0d9",
+      "omitted_fields": [
+        "private source storage routing"
+      ],
+      "official_source_sha256_unchanged": true
+    },
+    {
+      "path": "raw/phase1_local_sources/south-lienchiang-opendata-173786/metadata.json",
+      "private_metadata_sha256": "619e309bda6441893ebb01f5af93e3c79c089f1321b72ccedce6fc47f4ae457a",
+      "public_metadata_sha256": "025f4f2d1935982330c78b5c986b6addcaa983e64639c9cc1c504667390dbf95",
+      "omitted_fields": [
+        "private source storage routing"
+      ],
+      "official_source_sha256_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "reason": "Producer full-page source image reading omitted printed 圖書館 suffixes. Rechecked all three complete table6 facility-name columns at scale3; restored11 original labels from source, not from external geographic assumptions.",
+  "changed_programme_labels": [
+    {
+      "programme_id": "ncl95-table6-reading-063",
+      "before": "白沙鄉立",
+      "after": "白沙鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 63,
+      "source_facility_bbox": [
+        103.366,
+        165.05110000000002,
+        223.118,
+        179.55110000000002
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-064",
+      "before": "七美鄉立",
+      "after": "七美鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 64,
+      "source_facility_bbox": [
+        103.366,
+        181.70460000000003,
+        223.118,
+        196.20460000000003
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-065",
+      "before": "望安鄉立",
+      "after": "望安鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 65,
+      "source_facility_bbox": [
+        103.366,
+        198.3582,
+        223.118,
+        212.8582
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-066",
+      "before": "橋頭鄉立",
+      "after": "橋頭鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 66,
+      "source_facility_bbox": [
+        103.366,
+        215.01170000000002,
+        223.118,
+        229.51170000000002
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-072",
+      "before": "林邊鄉立",
+      "after": "林邊鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 72,
+      "source_facility_bbox": [
+        103.366,
+        314.9329,
+        223.118,
+        329.4329
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-073",
+      "before": "萬巒鄉立",
+      "after": "萬巒鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 73,
+      "source_facility_bbox": [
+        103.366,
+        331.5865,
+        223.118,
+        346.0865
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-074",
+      "before": "南州鄉立",
+      "after": "南州鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 74,
+      "source_facility_bbox": [
+        103.366,
+        348.24,
+        223.118,
+        362.74
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-076",
+      "before": "吉安鄉立",
+      "after": "吉安鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 76,
+      "source_facility_bbox": [
+        103.366,
+        381.5471,
+        223.118,
+        396.0471
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-077",
+      "before": "光復鄉立",
+      "after": "光復鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 77,
+      "source_facility_bbox": [
+        103.366,
+        398.2006,
+        223.118,
+        412.7006
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-085",
+      "before": "礁溪鄉立",
+      "after": "礁溪鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 85,
+      "source_facility_bbox": [
+        103.366,
+        531.4289,
+        223.118,
+        545.9289
+      ]
+    },
+    {
+      "programme_id": "ncl95-table6-reading-086",
+      "before": "壯圍鄉立",
+      "after": "壯圍鄉立圖書館",
+      "source_pdf_page": 16,
+      "source_row": 86,
+      "source_facility_bbox": [
+        103.366,
+        548.0824,
+        223.118,
+        562.5824
+      ]
+    }
+  ],
+  "numeric_position_period_fingerprint_before": "185a679ff1daf7ce9560d90a63800418d9b6451315c81a68ccee56d68e6b3b5b",
+  "numeric_position_period_fingerprint_after": "185a679ff1daf7ce9560d90a63800418d9b6451315c81a68ccee56d68e6b3b5b",
+  "numeric_values_raw_status_positions_ids_and_periods_unchanged": true,
+  "all_three_pages_full_facility_labels_rechecked": true,
+  "independent_queried_reading_not_adopted": "表7原印舞畫說書保留；不採舞書說書誤讀。",
+  "private_evidence_description": "Original source pages and full-column crops retained by maintainer; paths are not public extraction dependencies."
+}

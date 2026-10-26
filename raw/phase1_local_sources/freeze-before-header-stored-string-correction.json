@@ -1,0 +1,76 @@
+{
+  "source_files": [
+    {
+      "source_id": "south-lienchiang-opendata-173786",
+      "source_filename": "lienchiang-113-overview.ods",
+      "sha256": "de3b86da388ef7337e4996c06cde88fb1dd52ed0b95bfdd8186e545d1f94000b",
+      "bytes": 3867
+    },
+    {
+      "source_id": "south-hualien-library-lending-409-reader",
+      "source_filename": "hualien-lending-reader-identity.ods",
+      "sha256": "205a79d6aadce9f4580664d6b67078e5446b6e7fedab366b971b312f31fed1d2",
+      "bytes": 73071
+    },
+    {
+      "source_id": "south-hualien-library-lending-409-room",
+      "source_filename": "hualien-lending-collection-room.ods",
+      "sha256": "69881ded57b1ede472a6f41cfb48f256d3963b0dba7d1b493d5e29a646b5c998",
+      "bytes": 182713
+    },
+    {
+      "source_id": "south-lienchiang-culture-library-overview-114",
+      "source_filename": "lienchiang-114-overview.xlsx",
+      "sha256": "cb7f4f0a2d8817e5c0ab6168d874ffa7c7e21104b871bbd8706ffc6e2f6512d4",
+      "bytes": 31775
+    }
+  ],
+  "script": {
+    "path": "scripts/extract_phase1_local_sources.py",
+    "sha256": "726ee3390afe527d7b15fc1290127545be7fd2a7ccbf5711c97d351e1204eaac"
+  },
+  "outputs": [
+    {
+      "path": "derived/phase1_local_sources_cells.csv",
+      "sha256": "d55b0b3109b8373a5e6de9d630b2b4fe8ff371e97da7be199eded01ea7016f13",
+      "bytes": 25149836
+    },
+    {
+      "path": "derived/phase1_local_sources_cells.jsonl",
+      "sha256": "0124a2224e01977dd60823ff5a0836b316f88a5b8241adf95c97ec95ef115144",
+      "bytes": 49812098
+    },
+    {
+      "path": "derived/phase1_local_sources_long.csv",
+      "sha256": "2e855af5b5c545f24e05b14f13d7acc16939b691024ace0baa6e8f064e3ea55f",
+      "bytes": 26812202
+    },
+    {
+      "path": "derived/phase1_local_sources_long.jsonl",
+      "sha256": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+      "bytes": 48266280
+    },
+    {
+      "path": "raw/phase1_local_sources/south-lienchiang-opendata-173786/metadata.json",
+      "sha256": "619e309bda6441893ebb01f5af93e3c79c089f1321b72ccedce6fc47f4ae457a",
+      "bytes": 2681
+    },
+    {
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-reader/metadata.json",
+      "sha256": "e7c37346ef3cf1a5c494e5d4d1ca5ee6a26f77bd7d0189a420b613195682bf13",
+      "bytes": 131773
+    },
+    {
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-room/metadata.json",
+      "sha256": "733aafa87e9fc325f228302cddc754854e3fe07a6cc6256c65d291925370c7a7",
+      "bytes": 151894
+    },
+    {
+      "path": "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/metadata.json",
+      "sha256": "eacecec9d862000f3dfa6b5c8ca442fe9d41f672216f8ff62faf939a706b735c",
+      "bytes": 4074
+    }
+  ],
+  "verification_sha256": "ceb98f5ed501730255f921515fbf563f4b4ec183465e6dfbdb1fd6fd948de6fa",
+  "portability": "private source-root is an optional execution parameter, not a data dependency"
+}

@@ -24,6 +24,9 @@ raw/ncl-20*/*.pdf
 raw/ncl-20*/*.html
 raw/ncl-20*/*.private.*
 
+/raw/phase1_local_sources/originals/
+/data/phase1_*state*.json
+
 # Local run state and omitted originals must not enter public commits.
 /data/last_update.json
 /data/last_release.json

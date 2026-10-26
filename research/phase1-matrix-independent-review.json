@@ -1,0 +1,2610 @@
+{
+  "review_id": "phase1-matrix-independent-south-20261026",
+  "checked_at": "2026-10-26T10:14:41.156182+00:00",
+  "status": "pass_final_independent_matrix_scope",
+  "review_scope": "v0.6.0 canonical分組、缺口矩陣、補充來源期別與候選入庫邊界；不認證全臺歷年完整或跨年可比。",
+  "checks": {
+    "canonical_records": 37887,
+    "canonical_unique_ids": 37887,
+    "source_profiles": 23466,
+    "all_ids_preserved_exactly_once": true,
+    "independent_group_partition_matches": true,
+    "authority_slots": 88,
+    "unique_authority_pairs": 88,
+    "authority_status_counts": {
+      "checked_relevant_source_found": 44,
+      "checked_no_relevant_dataset_in_checked_page": 7,
+      "checked_entry_only": 32,
+      "request_failed": 5
+    },
+    "discovery_grid_cells": 4830,
+    "historical_or_other_label_ids": 4191,
+    "historical_or_other_label_ids_recoded_into_grid": 0,
+    "explicit_unresolved_geography_ids": 219,
+    "unresolved_geography_by_year": {
+      "2015": 183,
+      "2024": 36
+    },
+    "geography_flags_from_non_geographic_problems": 0,
+    "matrix_confirmed_label_count_mismatches": 0,
+    "matrix_exact_geography_mismatches": 0,
+    "explicit_derived_ratio_ids": 2046,
+    "derived_ratio_ids_in_quantity_grid": 0,
+    "2012_nonempty_county_topic_cells": {
+      "library_count": 22
+    },
+    "2012_non_count_quantity_topics_filled": 0,
+    "explicit_monthly_records": 87,
+    "monthly_resolution": {
+      "monthly_source_not_annual_total": 87
+    },
+    "financial_subperiod_resolution": {
+      "time_basis_unconfirmed": 3,
+      "partial_or_programme_period": 3
+    },
+    "loan_flows_tagged_holdings_now": 0,
+    "general_budget_tagged_book_purchase_now": 0,
+    "primary_url_timestamp_mismatches_now": 0,
+    "stale_inputs_pending_rebuild": [],
+    "derived_profile_metadata_differences_pending_rebuild": 0,
+    "candidate_count": 440,
+    "candidate_ingestion_status_counts": {
+      "not_ingested_unless_separate_verified_batch_evidence": 413,
+      "not_ingested": 24,
+      "source_cell_batch_verified_not_harmonised": 3
+    }
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "severity": "medium",
+      "status": "fixed_and_verified_final",
+      "issue": "借閱流量被標館藏",
+      "before_records": 306,
+      "before_source_indicator_groups": 24,
+      "after_records": 0,
+      "location": "scripts/build_phase1_inventory.py:topics_for",
+      "final_builder_sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89"
+    },
+    {
+      "id": "F02",
+      "severity": "medium",
+      "status": "fixed_and_verified_final",
+      "issue": "明確服務人口比率被標人口背景",
+      "before_records": 348,
+      "after_derived_ratio_roles": {
+        "ratio_or_per_capita_not_original_quantity": 2046
+      },
+      "location": "scripts/build_phase1_inventory.py:quantity_role",
+      "final_builder_sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89"
+    },
+    {
+      "id": "F03",
+      "severity": "medium",
+      "status": "fixed_and_verified_final",
+      "issue": "分期財務被叫全年",
+      "before_records": 6,
+      "after_period_classification": {
+        "time_basis_unconfirmed": 3,
+        "partial_or_programme_period": 3
+      },
+      "examples": [
+        {
+          "observation_id": "obs-a963e28f67e7a6e8fd45ef",
+          "period_raw": "106年／公務機關（1/1-/8/31）",
+          "period_basis": "source_row_date_punctuation_unresolved_candidate_dates_only",
+          "source_period_interpretation_status": "printed_extra_slash_unresolved_candidate_dates"
+        },
+        {
+          "observation_id": "obs-f10155074afe2448dee392",
+          "period_raw": "106年／行政法人（9/1-12/31）",
+          "period_basis": "source_row_subperiod_interpreted_dates_original_label_retained",
+          "source_period_interpretation_status": null
+        },
+        {
+          "observation_id": "obs-4bc1110c8c36844428ee7e",
+          "period_raw": "106年／公務機關（1/1-/8/31）",
+          "period_basis": "source_row_date_punctuation_unresolved_candidate_dates_only",
+          "source_period_interpretation_status": "printed_extra_slash_unresolved_candidate_dates"
+        },
+        {
+          "observation_id": "obs-d48cea0caabcc2513adad2",
+          "period_raw": "106年／行政法人（9/1-12/31）",
+          "period_basis": "source_row_subperiod_interpreted_dates_original_label_retained",
+          "source_period_interpretation_status": null
+        },
+        {
+          "observation_id": "obs-45c50a713b9b2c24a8b705",
+          "period_raw": "106年／公務機關（1/1-/8/31）",
+          "period_basis": "source_row_date_punctuation_unresolved_candidate_dates_only",
+          "source_period_interpretation_status": "printed_extra_slash_unresolved_candidate_dates"
+        },
+        {
+          "observation_id": "obs-193c3b337fcffa07175aee",
+          "period_raw": "106年／行政法人（9/1-12/31）",
+          "period_basis": "source_row_subperiod_interpreted_dates_original_label_retained",
+          "source_period_interpretation_status": null
+        }
+      ],
+      "location": "scripts/build_phase1_inventory.py:temporal_resolution",
+      "final_builder_sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89"
+    },
+    {
+      "id": "F04",
+      "severity": "medium",
+      "status": "fixed_and_verified_final",
+      "issue": "營運總經費／資本門／經常門被當購書費",
+      "before_records": 201,
+      "after_records": 0,
+      "location": "scripts/build_phase1_inventory.py:topics_for",
+      "final_builder_sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89"
+    },
+    {
+      "id": "F05",
+      "severity": "medium",
+      "status": "fixed_and_verified_final",
+      "issue": "舊 validator 未核 inputs SHA，規則變更未重建也可通過",
+      "previous_evidence": {
+        "recorded_builder_sha256": "0249943cefe32dbb281b9b4687c7e076032d39659e27c15edc121aef5dc6180b",
+        "then_current_builder_sha256": "45491225ed1c30ff0015b14f72237f5af84347bf43e58b378a77f3474f413f48",
+        "old_validator_pass_assertions": 1004362
+      },
+      "fix": "目前 validator 已逐項核 report.inputs SHA，canonical 統計內容另核；公開 metadata projection 例外另有映射。",
+      "location": "scripts/validate_phase1_inventory.py:main",
+      "final_builder_sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89"
+    },
+    {
+      "id": "F06",
+      "severity": "low",
+      "status": "fixed_and_verified_final",
+      "issue": "primary URL 與另一 check 的時間錯配",
+      "after_mismatches": 0,
+      "location": "scripts/build_phase1_inventory.py:authority_and_candidate_rows",
+      "final_builder_sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89"
+    },
+    {
+      "id": "F07",
+      "severity": "medium",
+      "status": "fixed_and_verified_final",
+      "issue": "任何 unresolved quality flag 都被當成地名不確定，混淆單位／母體／期間問題",
+      "affected_records": 91,
+      "affected_grid_cells": 40,
+      "flag_counts": {
+        "[\"source_heading_body_counting_unit_conflict_unresolved\"]": 51,
+        "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\",\"source_same_edition_private_public_library_table_disagreement_unresolved\"]": 4,
+        "[\"source_heading_counting_basis_unresolved\"]": 22,
+        "[\"published_total_overlaps_components\",\"source_heading_counting_basis_unresolved\"]": 1,
+        "[\"source_period_punctuation_ambiguity_unresolved\"]": 2,
+        "[\"published_total_overlaps_components\",\"source_period_punctuation_ambiguity_unresolved\"]": 1,
+        "[\"published_total_overlaps_components\",\"source_component_sum_difference_preserved\",\"source_same_year_population_disagreement_unresolved\"]": 1,
+        "[\"published_total_overlaps_components\",\"source_same_year_population_disagreement_unresolved\"]": 3,
+        "[\"source_same_year_population_disagreement_unresolved\"]": 6
+      },
+      "examples": [
+        {
+          "observation_id": "obs-2c2b2f74928998ee9193b8",
+          "data_year": 2005,
+          "geography": "南投縣",
+          "indicator": "館藏總數（冊）",
+          "entity_label_status": "printed_source_label_retained",
+          "geographic_scope": "county",
+          "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]"
+        },
+        {
+          "observation_id": "obs-0fbde5f2a0aa67e874188a",
+          "data_year": 2005,
+          "geography": "南投縣",
+          "indicator": "每人擁有館藏冊數（冊）",
+          "entity_label_status": "printed_source_label_retained",
+          "geographic_scope": "county",
+          "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]"
+        },
+        {
+          "observation_id": "obs-10a2211f3dbba32d7032f0",
+          "data_year": 2005,
+          "geography": "嘉義市",
+          "indicator": "館藏總數（冊）",
+          "entity_label_status": "printed_source_label_retained",
+          "geographic_scope": "county",
+          "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]"
+        },
+        {
+          "observation_id": "obs-f1d2c107f7032e5356955b",
+          "data_year": 2005,
+          "geography": "嘉義市",
+          "indicator": "每人擁有館藏冊數（冊）",
+          "entity_label_status": "printed_source_label_retained",
+          "geographic_scope": "county",
+          "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]"
+        },
+        {
+          "observation_id": "obs-05b66953ae45dcd49e441f",
+          "data_year": 2005,
+          "geography": "嘉義縣",
+          "indicator": "館藏總數（冊）",
+          "entity_label_status": "printed_source_label_retained",
+          "geographic_scope": "county",
+          "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]"
+        }
+      ],
+      "fix_required": "只認 geography／entity-label 相關不確定狀態；其餘不確定維度分開，明確 2015／2024 地名未解 219 筆仍排除。",
+      "location": "scripts/build_phase1_inventory.py:geography_uncertain",
+      "final_builder_sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89",
+      "after_records": 0,
+      "after_grid_mismatches": 0,
+      "explicit_unresolved_geography_ids_retained": 219,
+      "previous_affected_records": 91,
+      "previous_affected_grid_cells": 40
+    }
+  ],
+  "confirmed_count_mismatches_examples": [],
+  "frontend_static_checks": {
+    "not_complete_comparable_notice": true,
+    "ratio_not_quantity": true,
+    "monthly_not_annual": true,
+    "historical_geography_not_merged": true,
+    "failed_request_not_no_data": true,
+    "remote_script_src_present": false,
+    "visual_or_interaction_test_performed": false,
+    "unverified_candidates_not_claimed_ingested": true
+  },
+  "frontend_limitations": [
+    "未開畫面或做互動驗收，不把靜態檢查稱為已實際開啟。",
+    "熱圖詳情目前只顯示 source_id；可加 source/profile 直達連結，原來源網址已在原口徑下載檔。"
+  ],
+  "known_test_evidence": {
+    "synthetic_tests": 16,
+    "unit_result": "pass",
+    "strict_validator": {
+      "status": "pass",
+      "assertions": 1004384,
+      "authority_slots": 88,
+      "source_profiles": 23466,
+      "discovery_cells": 4830,
+      "canonical_ids": 37887,
+      "formats": "CSV/JSONL/SQLite agree"
+    }
+  },
+  "reviewed_builder_sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89",
+  "input_sha256": {
+    "scripts/build_phase1_inventory.py": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89",
+    "scripts/validate_phase1_inventory.py": "fa6e6b76d947e3118e569aaa74e032604fad6a554c0b4b4c31b3bfd691ebcb65",
+    "scripts/test_phase1_inventory.py": "f3df3e49aa95cf1cd79da8a95d04f462eca216110b919139924dd8af3466e4a2",
+    "scripts/phase1_scope.json": "8f61fc11bcd6da6e75206073944030e932f835c5e0db9254e410a42d9f029192",
+    "scripts/build_phase1_reader.py": "bc77b9624235cd2495eaf5484172a74351e4dbd1bdc7645cdb7d6db9ea823e82",
+    "site/phase1-template.html": "86d5df7658949dd2f15b8e9296789be07cd5bc7979d32980622a06f4a8a85478",
+    "docs/phase1-summary.json": "f1cb8e41021689e2aeb2ff387362323bf3d3eb05a3a698fd282d5741a8a8c1c4",
+    "docs/phase1-source-inventory.json": "6a8e38f3bf7493f4ace13efb55005e6ecdd0f672a22395f70fa2832ad2159615",
+    "raw/phase1_local_sources/sources.json": "bd9a5dde2c0d4327aa547f6b85588a2d10926b3f3f54206b6393b21c42a5d254",
+    "derived/phase1_raw_source_profiles.jsonl": "c40ad23c1ddb84732218ed66e451c00ddb536968d184dc9b8595f69b4e51c945",
+    "derived/phase1_discovery_matrix.jsonl": "ddee1056aafd0ea64d8bd74c4f7355b7d925957e5c1f00a056ce1379873196f3",
+    "derived/phase1_source_candidates.jsonl": "a8bb932faeac7ba47fef2d691df355da712eb71578620798ae483996856cb49c"
+  },
+  "canonical_jsonl_sha256": "7993d6fbd088cc36fdc7e9de975c52b8a5542af4cc0d21f30cccd4f1532fdc78",
+  "reproduce_commands": [
+    "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s scripts -p test_phase1_inventory.py -v",
+    "PYTHONDONTWRITEBYTECODE=1 python -B scripts/validate_phase1_inventory.py"
+  ],
+  "independent_method": [
+    "本機Python按21個原來源／口徑欄自行重建ID partition，逐格重算已確認地名且有值筆數。",
+    "對4份既有原檔重新讀回SHA，直接解析ZIP/XML統計sheet的A6或A4期別；完整保留1109等原字，不截尾更正。",
+    "用明列7個原始metric標籤的獨立對照重算補充層，期間先分流；沒有呼叫builder的supplement_availability取得預期結果。",
+    "另核既有獨立原件審查PASS、0差異、4份現行輸出SHA與候選附件一一配對。",
+    "依root授權重建matrix及reader；未修改root程式、原觀測或其他來源文件。"
+  ],
+  "remaining_actions": [],
+  "previous_review_sha256": "9d919e14a5d2c56cb1d62baec132be81efec77682dbbe6f66da3f2b215960dc4",
+  "dataset_version": "0.6.0",
+  "result": "PASS",
+  "supplement_availability_independent_review": {
+    "result": "PASS",
+    "source_originals_SHA_and_ZIP_XML_headers_independently_read": true,
+    "existing_full_numeric_source_review_reused": true,
+    "existing_reviewer_result_field": "result",
+    "existing_reviewer_result": "PASS",
+    "existing_review_report_sha256": "0d73dc396946d36b6bdf59d9536984d916b393ccbd54efa7d6c9dc08c0e8beae",
+    "all_four_current_output_SHA_match_reviewer": true,
+    "output_sha256": {
+      "derived/phase1_local_sources_cells.csv": "5a8e944da84092c48a550cf2d5068c52939b7f167b0615ff92e1ba135c1427c2",
+      "derived/phase1_local_sources_cells.jsonl": "e7eace84cf6338294f659f48a246ecea41213ad1fe4027f225273db598d8c7a5",
+      "derived/phase1_local_sources_long.jsonl": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+      "derived/phase1_local_sources_long.csv": "2e855af5b5c545f24e05b14f13d7acc16939b691024ace0baa6e8f064e3ea55f"
+    },
+    "source_count": 4,
+    "statistical_cells": 18486,
+    "source_cell_counts": {
+      "south-lienchiang-opendata-173786": 35,
+      "south-hualien-library-lending-409-reader": 6336,
+      "south-hualien-library-lending-409-room": 12080,
+      "south-lienchiang-culture-library-overview-114": 35
+    },
+    "period_status_counts": {
+      "catalog_title_year_only_attachment_undated": 35,
+      "matching_sheet_name_and_header_month": 18240,
+      "source_sheet_name_header_period_conflict_unresolved": 176,
+      "explicit_sheet_year": 35
+    },
+    "source_statistical_sheets_with_period_locator_check": 146,
+    "source_period_conflicts": [
+      {
+        "source_id": "south-hualien-library-lending-409-reader",
+        "sheet": "113年6月",
+        "locator": "content.xml; A6",
+        "header_text_raw": "中華民國113年7月",
+        "sheet_name_year_month": [
+          2024,
+          6
+        ],
+        "header_roc_year_raw": "113",
+        "header_year_month_candidate_only": [
+          2024,
+          7
+        ],
+        "conflict": true
+      },
+      {
+        "source_id": "south-hualien-library-lending-409-reader",
+        "sheet": "109年10月",
+        "locator": "content.xml; A6",
+        "header_text_raw": "中華民國1109年10月",
+        "sheet_name_year_month": [
+          2020,
+          10
+        ],
+        "header_roc_year_raw": "1109",
+        "header_year_month_candidate_only": [
+          3020,
+          10
+        ],
+        "conflict": true
+      }
+    ],
+    "source_locator_failures": 0,
+    "source_period_status_failures": 0,
+    "catalog_only_cells_excluded_from_verified_grid": 35,
+    "period_conflict_cells_excluded_from_verified_grid": 176,
+    "independent_exact_metric_topics": {
+      "館藏數量(冊)": [
+        "holdings"
+      ],
+      "新書入庫數量(冊)": [],
+      "借閱人次(人)": [
+        "loan_visits"
+      ],
+      "讀者新增數(人)": [],
+      "借閱冊數(冊)": [
+        "loan_volumes"
+      ],
+      "借閱人數": [
+        "loan_visits"
+      ],
+      "借閱冊數": [
+        "loan_volumes"
+      ]
+    },
+    "supplement_grid_mismatches": 0,
+    "core_topic_source_cells_entering_2005_2025_grid": 16149,
+    "grid_source_cells": 16149,
+    "grid_nonmissing_source_cells": 11643,
+    "verified_candidate_records": 3,
+    "verified_attachment_ids": [
+      "south-hualien-library-lending-409-reader",
+      "south-hualien-library-lending-409-room",
+      "south-lienchiang-culture-library-overview-114",
+      "south-lienchiang-opendata-173786"
+    ],
+    "remaining_candidates_not_marked_verified": 437,
+    "canonical_and_supplement_ID_overlap": 0,
+    "canonical_union_permitted": false,
+    "source_proofs": [
+      {
+        "source_id": "south-lienchiang-opendata-173786",
+        "source_url": "https://data.gov.tw/dataset/173786",
+        "download_url": "https://www.matsu.gov.tw/chhtml/adddownloadcount/371030000A/101571?mcfilename=Mcfile2&type=D",
+        "original_sha256": "de3b86da388ef7337e4996c06cde88fb1dd52ed0b95bfdd8186e545d1f94000b",
+        "original_local_SHA_readback": true,
+        "date_header_checks": [],
+        "explicit_year_labels_in_content": []
+      },
+      {
+        "source_id": "south-hualien-library-lending-409-reader",
+        "source_url": "https://www.hccc.gov.tw/zh-tw/Download/Statistics/409",
+        "download_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16274",
+        "original_sha256": "205a79d6aadce9f4580664d6b67078e5446b6e7fedab366b971b312f31fed1d2",
+        "original_local_SHA_readback": true,
+        "date_header_checks": [
+          {
+            "sheet": "115年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年8月",
+            "sheet_name_year_month": [
+              2026,
+              8
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年7月",
+            "sheet_name_year_month": [
+              2026,
+              7
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年6月",
+            "sheet_name_year_month": [
+              2026,
+              6
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年5月",
+            "sheet_name_year_month": [
+              2026,
+              5
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年4月",
+            "sheet_name_year_month": [
+              2026,
+              4
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年3月",
+            "sheet_name_year_month": [
+              2026,
+              3
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年2月",
+            "sheet_name_year_month": [
+              2026,
+              2
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年1月",
+            "sheet_name_year_month": [
+              2026,
+              1
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年12月",
+            "sheet_name_year_month": [
+              2025,
+              12
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年11月",
+            "sheet_name_year_month": [
+              2025,
+              11
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年10月",
+            "sheet_name_year_month": [
+              2025,
+              10
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年9月",
+            "sheet_name_year_month": [
+              2025,
+              9
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              9
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年8月",
+            "sheet_name_year_month": [
+              2025,
+              8
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年7月",
+            "sheet_name_year_month": [
+              2025,
+              7
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年6月",
+            "sheet_name_year_month": [
+              2025,
+              6
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年5月",
+            "sheet_name_year_month": [
+              2025,
+              5
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年4月",
+            "sheet_name_year_month": [
+              2025,
+              4
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年3月",
+            "sheet_name_year_month": [
+              2025,
+              3
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年2月",
+            "sheet_name_year_month": [
+              2025,
+              2
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年1月",
+            "sheet_name_year_month": [
+              2025,
+              1
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年12月",
+            "sheet_name_year_month": [
+              2024,
+              12
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年11月",
+            "sheet_name_year_month": [
+              2024,
+              11
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年10月",
+            "sheet_name_year_month": [
+              2024,
+              10
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年9月",
+            "sheet_name_year_month": [
+              2024,
+              9
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              9
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年8月",
+            "sheet_name_year_month": [
+              2024,
+              8
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年7月",
+            "sheet_name_year_month": [
+              2024,
+              7
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年7月",
+            "sheet_name_year_month": [
+              2024,
+              6
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              7
+            ],
+            "conflict": true
+          },
+          {
+            "sheet": "113年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年5月",
+            "sheet_name_year_month": [
+              2024,
+              5
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年4月",
+            "sheet_name_year_month": [
+              2024,
+              4
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年3月",
+            "sheet_name_year_month": [
+              2024,
+              3
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年2月",
+            "sheet_name_year_month": [
+              2024,
+              2
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年1月",
+            "sheet_name_year_month": [
+              2024,
+              1
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年12月",
+            "sheet_name_year_month": [
+              2023,
+              12
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年11月 ",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年11月",
+            "sheet_name_year_month": [
+              2023,
+              11
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年10月",
+            "sheet_name_year_month": [
+              2023,
+              10
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年9月",
+            "sheet_name_year_month": [
+              2023,
+              9
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              9
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年8月",
+            "sheet_name_year_month": [
+              2023,
+              8
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年7月",
+            "sheet_name_year_month": [
+              2023,
+              7
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年6月",
+            "sheet_name_year_month": [
+              2023,
+              6
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年5月",
+            "sheet_name_year_month": [
+              2023,
+              5
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年4月",
+            "sheet_name_year_month": [
+              2023,
+              4
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年3月",
+            "sheet_name_year_month": [
+              2023,
+              3
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年2月",
+            "sheet_name_year_month": [
+              2023,
+              2
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年1月",
+            "sheet_name_year_month": [
+              2023,
+              1
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年12月",
+            "sheet_name_year_month": [
+              2022,
+              12
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年11月",
+            "sheet_name_year_month": [
+              2022,
+              11
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年10月",
+            "sheet_name_year_month": [
+              2022,
+              10
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年9月",
+            "sheet_name_year_month": [
+              2022,
+              9
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              9
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年8月",
+            "sheet_name_year_month": [
+              2022,
+              8
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年7月",
+            "sheet_name_year_month": [
+              2022,
+              7
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年6月",
+            "sheet_name_year_month": [
+              2022,
+              6
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年5月",
+            "sheet_name_year_month": [
+              2022,
+              5
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年4月",
+            "sheet_name_year_month": [
+              2022,
+              4
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年3月",
+            "sheet_name_year_month": [
+              2022,
+              3
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年2月",
+            "sheet_name_year_month": [
+              2022,
+              2
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年1月",
+            "sheet_name_year_month": [
+              2022,
+              1
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年12月",
+            "sheet_name_year_month": [
+              2021,
+              12
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年11月",
+            "sheet_name_year_month": [
+              2021,
+              11
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年10月",
+            "sheet_name_year_month": [
+              2021,
+              10
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年9月",
+            "sheet_name_year_month": [
+              2021,
+              9
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              9
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年8月",
+            "sheet_name_year_month": [
+              2021,
+              8
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年7月",
+            "sheet_name_year_month": [
+              2021,
+              7
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年6月",
+            "sheet_name_year_month": [
+              2021,
+              6
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年5月",
+            "sheet_name_year_month": [
+              2021,
+              5
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年4月",
+            "sheet_name_year_month": [
+              2021,
+              4
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年3月",
+            "sheet_name_year_month": [
+              2021,
+              3
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年2月",
+            "sheet_name_year_month": [
+              2021,
+              2
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年1月",
+            "sheet_name_year_month": [
+              2021,
+              1
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "109年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國109年12月",
+            "sheet_name_year_month": [
+              2020,
+              12
+            ],
+            "header_roc_year_raw": "109",
+            "header_year_month_candidate_only": [
+              2020,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "109年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國109年11月",
+            "sheet_name_year_month": [
+              2020,
+              11
+            ],
+            "header_roc_year_raw": "109",
+            "header_year_month_candidate_only": [
+              2020,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "109年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國1109年10月",
+            "sheet_name_year_month": [
+              2020,
+              10
+            ],
+            "header_roc_year_raw": "1109",
+            "header_year_month_candidate_only": [
+              3020,
+              10
+            ],
+            "conflict": true
+          },
+          {
+            "sheet": "109年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國109年9月",
+            "sheet_name_year_month": [
+              2020,
+              9
+            ],
+            "header_roc_year_raw": "109",
+            "header_year_month_candidate_only": [
+              2020,
+              9
+            ],
+            "conflict": false
+          }
+        ]
+      },
+      {
+        "source_id": "south-hualien-library-lending-409-room",
+        "source_url": "https://www.hccc.gov.tw/zh-tw/Download/Statistics/409",
+        "download_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16275",
+        "original_sha256": "69881ded57b1ede472a6f41cfb48f256d3963b0dba7d1b493d5e29a646b5c998",
+        "original_local_SHA_readback": true,
+        "date_header_checks": [
+          {
+            "sheet": "115年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年8月",
+            "sheet_name_year_month": [
+              2026,
+              8
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年7月",
+            "sheet_name_year_month": [
+              2026,
+              7
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年6月",
+            "sheet_name_year_month": [
+              2026,
+              6
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年5月",
+            "sheet_name_year_month": [
+              2026,
+              5
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年4月",
+            "sheet_name_year_month": [
+              2026,
+              4
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年3月",
+            "sheet_name_year_month": [
+              2026,
+              3
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年2月",
+            "sheet_name_year_month": [
+              2026,
+              2
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "115年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國115年1月",
+            "sheet_name_year_month": [
+              2026,
+              1
+            ],
+            "header_roc_year_raw": "115",
+            "header_year_month_candidate_only": [
+              2026,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年12月",
+            "sheet_name_year_month": [
+              2025,
+              12
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年11月",
+            "sheet_name_year_month": [
+              2025,
+              11
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年10月",
+            "sheet_name_year_month": [
+              2025,
+              10
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年9月",
+            "sheet_name_year_month": [
+              2025,
+              9
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              9
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年8月",
+            "sheet_name_year_month": [
+              2025,
+              8
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年7月",
+            "sheet_name_year_month": [
+              2025,
+              7
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年6月",
+            "sheet_name_year_month": [
+              2025,
+              6
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年5月",
+            "sheet_name_year_month": [
+              2025,
+              5
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年4月",
+            "sheet_name_year_month": [
+              2025,
+              4
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年3月",
+            "sheet_name_year_month": [
+              2025,
+              3
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年2月",
+            "sheet_name_year_month": [
+              2025,
+              2
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "114年1月 ",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國114年1月",
+            "sheet_name_year_month": [
+              2025,
+              1
+            ],
+            "header_roc_year_raw": "114",
+            "header_year_month_candidate_only": [
+              2025,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年12月",
+            "sheet_name_year_month": [
+              2024,
+              12
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年11月",
+            "sheet_name_year_month": [
+              2024,
+              11
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年10月",
+            "sheet_name_year_month": [
+              2024,
+              10
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年9月",
+            "sheet_name_year_month": [
+              2024,
+              9
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              9
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年8月",
+            "sheet_name_year_month": [
+              2024,
+              8
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年7月",
+            "sheet_name_year_month": [
+              2024,
+              7
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年6月",
+            "sheet_name_year_month": [
+              2024,
+              6
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年5月",
+            "sheet_name_year_month": [
+              2024,
+              5
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年4月",
+            "sheet_name_year_month": [
+              2024,
+              4
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年3月",
+            "sheet_name_year_month": [
+              2024,
+              3
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年2月",
+            "sheet_name_year_month": [
+              2024,
+              2
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "113年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國113年1月",
+            "sheet_name_year_month": [
+              2024,
+              1
+            ],
+            "header_roc_year_raw": "113",
+            "header_year_month_candidate_only": [
+              2024,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年12月",
+            "sheet_name_year_month": [
+              2023,
+              12
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年11月",
+            "sheet_name_year_month": [
+              2023,
+              11
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年10月",
+            "sheet_name_year_month": [
+              2023,
+              10
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年9月",
+            "sheet_name_year_month": [
+              2023,
+              9
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              9
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年8月",
+            "sheet_name_year_month": [
+              2023,
+              8
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年7月",
+            "sheet_name_year_month": [
+              2023,
+              7
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年6月",
+            "sheet_name_year_month": [
+              2023,
+              6
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年5月",
+            "sheet_name_year_month": [
+              2023,
+              5
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年4月",
+            "sheet_name_year_month": [
+              2023,
+              4
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年3月",
+            "sheet_name_year_month": [
+              2023,
+              3
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年2月",
+            "sheet_name_year_month": [
+              2023,
+              2
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "112年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國112年1月",
+            "sheet_name_year_month": [
+              2023,
+              1
+            ],
+            "header_roc_year_raw": "112",
+            "header_year_month_candidate_only": [
+              2023,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年12月",
+            "sheet_name_year_month": [
+              2022,
+              12
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年11月",
+            "sheet_name_year_month": [
+              2022,
+              11
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年10月",
+            "sheet_name_year_month": [
+              2022,
+              10
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年9月",
+            "sheet_name_year_month": [
+              2022,
+              9
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              9
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年8月",
+            "sheet_name_year_month": [
+              2022,
+              8
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年7月",
+            "sheet_name_year_month": [
+              2022,
+              7
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年6月",
+            "sheet_name_year_month": [
+              2022,
+              6
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年5月",
+            "sheet_name_year_month": [
+              2022,
+              5
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年4月",
+            "sheet_name_year_month": [
+              2022,
+              4
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年3月",
+            "sheet_name_year_month": [
+              2022,
+              3
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年2月",
+            "sheet_name_year_month": [
+              2022,
+              2
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "111年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國111年1月",
+            "sheet_name_year_month": [
+              2022,
+              1
+            ],
+            "header_roc_year_raw": "111",
+            "header_year_month_candidate_only": [
+              2022,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年12月",
+            "sheet_name_year_month": [
+              2021,
+              12
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年11月",
+            "sheet_name_year_month": [
+              2021,
+              11
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年10月",
+            "sheet_name_year_month": [
+              2021,
+              10
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年9月",
+            "sheet_name_year_month": [
+              2021,
+              9
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              9
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年8月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年8月",
+            "sheet_name_year_month": [
+              2021,
+              8
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              8
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年7月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年7月",
+            "sheet_name_year_month": [
+              2021,
+              7
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              7
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年6月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年6月",
+            "sheet_name_year_month": [
+              2021,
+              6
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              6
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年5月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年5月",
+            "sheet_name_year_month": [
+              2021,
+              5
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              5
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年4月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年4月",
+            "sheet_name_year_month": [
+              2021,
+              4
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              4
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年3月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年3月",
+            "sheet_name_year_month": [
+              2021,
+              3
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              3
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年2月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年2月",
+            "sheet_name_year_month": [
+              2021,
+              2
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              2
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "110年1月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國110年1月",
+            "sheet_name_year_month": [
+              2021,
+              1
+            ],
+            "header_roc_year_raw": "110",
+            "header_year_month_candidate_only": [
+              2021,
+              1
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "109年12月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國109年12月",
+            "sheet_name_year_month": [
+              2020,
+              12
+            ],
+            "header_roc_year_raw": "109",
+            "header_year_month_candidate_only": [
+              2020,
+              12
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "109年11月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國109年11月",
+            "sheet_name_year_month": [
+              2020,
+              11
+            ],
+            "header_roc_year_raw": "109",
+            "header_year_month_candidate_only": [
+              2020,
+              11
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "109年10月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國109年10月",
+            "sheet_name_year_month": [
+              2020,
+              10
+            ],
+            "header_roc_year_raw": "109",
+            "header_year_month_candidate_only": [
+              2020,
+              10
+            ],
+            "conflict": false
+          },
+          {
+            "sheet": "109年9月",
+            "locator": "content.xml; A6",
+            "header_text_raw": "中華民國109年9月",
+            "sheet_name_year_month": [
+              2020,
+              9
+            ],
+            "header_roc_year_raw": "109",
+            "header_year_month_candidate_only": [
+              2020,
+              9
+            ],
+            "conflict": false
+          }
+        ]
+      },
+      {
+        "source_id": "south-lienchiang-culture-library-overview-114",
+        "source_url": "https://matsucc.gov.tw/%E8%AA%8D%E8%AD%98%E6%96%87%E5%8C%96%E8%99%95/%E9%A0%90%E5%91%8A%E7%B5%B1%E8%A8%88%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E5%8D%80/",
+        "download_url": "https://matsucc.gov.tw/wp-content/uploads/2026/07/11014-03-01-2處-連江縣公共圖書館概況114年.xlsx",
+        "original_sha256": "cb7f4f0a2d8817e5c0ab6168d874ffa7c7e21104b871bbd8706ffc6e2f6512d4",
+        "original_local_SHA_readback": true,
+        "date_header_checks": [
+          {
+            "sheet": "11014-03-01-2",
+            "locator": "xl/worksheets/sheet2.xml; A4",
+            "header_text_raw": "中華民國 114 年度",
+            "verified_year": 2025
+          }
+        ]
+      }
+    ]
+  },
+  "review_scope_limits": [
+    "全部37,887canonical觀測的ID／口徑分組與矩陣計數已核，但本輪不重新逐格核完其所有原出版來源值。",
+    "四個補充附件的完整數值比對沿用既有獨立ZIP/XML審查；本輪另查原檔SHA、146sheet期別定位、來源連結、矩陣與候選狀態。",
+    "沒有原生試算表顯示／公式重算、UI互動或法律權利認證。",
+    "root後續增加source_links與官方附件直達連結，最後reader重建與strictvalidator由root執行；本輪matrix builder固定於所列SHA。"
+  ]
+}

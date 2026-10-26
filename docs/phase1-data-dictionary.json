@@ -1,0 +1,2319 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.6.0",
+  "type_policy": "Observed JSON types below describe this version, not certified statistical meaning. SQLite stores structured values as JSON text; CSV null is empty.",
+  "layers": [
+    {
+      "jsonl": "derived/phase1_authority_checks.jsonl",
+      "records": 88,
+      "fields": {
+        "agency": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "agency_name": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "check_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "checked_at": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "checked_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "checks": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "county": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "coverage_scope": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "evidence_inventory": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "evidence_inventory_sha256": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "inventory_record_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "pending": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "role": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "shared_with_roles": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "official_home_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "scope_note": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        }
+      },
+      "semantic_rules": "AI_USAGE.md and docs/phase1-supplements.md; preserve source identity, scope, periods and unresolved statuses."
+    },
+    {
+      "jsonl": "derived/phase1_source_candidates.jsonl",
+      "records": 440,
+      "fields": {
+        "acquisition_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "agency": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "annualization_allowed": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": false
+        },
+        "candidate_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "catalog_body_retained": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": false
+        },
+        "catalog_body_sha256": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "catalog_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "checked_at": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "complete_resource_list": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": true
+        },
+        "county": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "data_years_verified": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "evidence_inventory": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "existing_release_catalog": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": false
+        },
+        "format": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "ingestion_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "kind": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "license_evidence": {
+          "observed_json_types": [
+            "array",
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "license_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "license_url": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "locator": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "not_claimed_complete_2005_2025": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": false
+        },
+        "notes": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "period_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "resource_labels_raw": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "resource_list_scope": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "source_detail_url": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "source_download_url": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "title": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "year_hints_from_catalog_or_filename": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "year_verification_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "out_of_2005_2025_or_partial_2026": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "inspection_limits": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "pdf_pages": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": false
+        },
+        "period_verified": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "source_body_retained": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": false
+        },
+        "source_body_sha256": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "verified_source_evidence": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "catalog_checked_at": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "catalog_year_hints": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "license_evidence_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "next_action": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "resource_enumeration_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "resources": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "rights_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "scope_topics": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "verified_data_years": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "catalog_observed_links": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "publication_year_hint": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": false
+        },
+        "source_kind": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "catalog_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "exclusion_reason": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "selection_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "completion_boundary": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "measurement_notes": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "download_inspection": {
+          "observed_json_types": [
+            "object"
+          ],
+          "present_in_all_records": false
+        },
+        "also_discovered_in_catalogs": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "failed_download_attempt": {
+          "observed_json_types": [
+            "object"
+          ],
+          "present_in_all_records": false
+        },
+        "scope_note": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "same_year_resource_policy": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "standard_license_reference_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "canonical_union_permitted": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": false
+        },
+        "catalog_all_attachments": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "catalog_attachment_count": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": false
+        },
+        "catalog_group_count": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": false
+        },
+        "catalog_pagination": {
+          "observed_json_types": [
+            "object"
+          ],
+          "present_in_all_records": false
+        },
+        "discovery_ingestion_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        },
+        "source_cell_batch_records": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": false
+        },
+        "verified_sheet_years": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "verified_source_cell_batches": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        },
+        "next_page_urls": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": false
+        }
+      },
+      "semantic_rules": "AI_USAGE.md and docs/phase1-supplements.md; preserve source identity, scope, periods and unresolved statuses."
+    },
+    {
+      "jsonl": "derived/phase1_raw_source_profiles.jsonl",
+      "records": 23466,
+      "fields": {
+        "aggregation_role": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "compatibility_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "data_year": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "facility_labels": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "geographic_scope": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "geography": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "geography_vintage": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "indicator": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "indicator_group": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "institutional_level": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "national_libraries_scope": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "nonmissing_value_records": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "null_status_counts": {
+          "observed_json_types": [
+            "object"
+          ],
+          "present_in_all_records": true
+        },
+        "observation_count": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "observation_ids": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "period_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "periods_present": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "population_scope": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "profile_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "quantity_role": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "reported_zero_records": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "series_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_edition": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_edition_roc": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_family": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_field": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_sha256s": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "source_urls": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "temporal_kind": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "temporal_resolution": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "topic_assignment_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "topic_ids": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "unconfirmed_geography_records": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "unconfirmed_unit_records": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "unit": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unit_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unit_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        }
+      },
+      "semantic_rules": "AI_USAGE.md and docs/phase1-supplements.md; preserve source identity, scope, periods and unresolved statuses."
+    },
+    {
+      "jsonl": "derived/phase1_discovery_matrix.jsonl",
+      "records": 4830,
+      "fields": {
+        "availability_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "checked_authority_slots": {
+          "observed_json_types": [
+            "integer",
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "confirmed_label_value_records": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "data_year": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "geography_rule": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "interpretation": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "matched_source_observations": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "navigation_region_current_name": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "null_status_counts": {
+          "observed_json_types": [
+            "object"
+          ],
+          "present_in_all_records": true
+        },
+        "profile_ids": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "source_ids": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "supplementary_nonmissing_cells": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "supplementary_period_basis": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "supplementary_scope_note": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "supplementary_source_cells": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "supplementary_source_ids": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "temporal_resolution_counts": {
+          "observed_json_types": [
+            "object"
+          ],
+          "present_in_all_records": true
+        },
+        "topic_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "topic_label": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unconfirmed_geography_records": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        }
+      },
+      "semantic_rules": "AI_USAGE.md and docs/phase1-supplements.md; preserve source identity, scope, periods and unresolved statuses."
+    },
+    {
+      "jsonl": "derived/ncl_2005_programmes.jsonl",
+      "records": 119,
+      "fields": {
+        "source_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_parent_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_download_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_sha256": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_local_path": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_agency": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_retrieved_at": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_title": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_edition_roc": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "source_version_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "publication_date": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "publication_date_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_table": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_table_title": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_pdf_page": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "source_printed_page": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_row": {
+          "observed_json_types": [
+            "integer",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_column": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_locator": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_cell_bbox": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "source_location_kind": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_row_indexing": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "license_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "license_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "snapshot_distribution": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_report_reference_year": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "data_year": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "geography_vintage": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_footnotes_raw": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "source_footnotes_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "extraction_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "programme_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "record_kind": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "programme_type_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "county_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "facility_name_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "facility_name_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "activity_label_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_field_bboxes": {
+          "observed_json_types": [
+            "object"
+          ],
+          "present_in_all_records": false
+        },
+        "population_scope": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "participation_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "non_numeric_state_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_value_annotation_raw": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": false
+        },
+        "quality_flags": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "notes": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_table_period_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_start": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "period_end": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "period_start_month_candidate": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_end_month_candidate": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_interpretation_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_source_pdf_page": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "period_source_printed_page": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_source_bbox": {
+          "observed_json_types": [
+            "array",
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "temporal_kind": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "time_reference": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "quantities": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "source_row_label_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        }
+      },
+      "semantic_rules": "AI_USAGE.md and docs/phase1-supplements.md; preserve source identity, scope, periods and unresolved statuses."
+    },
+    {
+      "jsonl": "derived/ncl_2005_programmes_long.jsonl",
+      "records": 123,
+      "fields": {
+        "source_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_parent_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_download_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_sha256": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_local_path": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_agency": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_retrieved_at": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_title": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_edition_roc": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "source_version_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "publication_date": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "publication_date_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_table": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_table_title": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_pdf_page": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "source_printed_page": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_row": {
+          "observed_json_types": [
+            "integer",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_column": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "source_locator": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_cell_bbox": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "source_location_kind": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_row_indexing": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "license_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "license_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "snapshot_distribution": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_report_reference_year": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "data_year": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "geography_vintage": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_footnotes_raw": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "source_footnotes_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "extraction_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_start": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "period_end": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "period_start_month_candidate": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_end_month_candidate": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_interpretation_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_source_pdf_page": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "period_source_printed_page": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_source_bbox": {
+          "observed_json_types": [
+            "array",
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "temporal_kind": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "time_reference": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "observation_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "programme_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "entity_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_row_label_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "county_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "programme_type_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "metric_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "metric_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_column_path": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "value_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "value": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "value_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unit_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unit": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unit_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unit_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "population_scope": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "aggregation_role": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "observation_identity_suffix": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "quality_flags": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "notes": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_value_annotation_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        }
+      },
+      "semantic_rules": "AI_USAGE.md and docs/phase1-supplements.md; preserve source identity, scope, periods and unresolved statuses."
+    },
+    {
+      "jsonl": "derived/phase1_local_sources_cells.jsonl",
+      "records": 33705,
+      "fields": {
+        "source_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_download_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_sha256": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_version_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_agency": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_title": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_retrieved_at": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_sheet": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_sheet_xml_part": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_row": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "source_column": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "source_cell": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_locator": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_cell_role": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "value_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_display_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_stored_value_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_native_value_type": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_formula_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_formula_attributes": {
+          "observed_json_types": [
+            "null",
+            "object"
+          ],
+          "present_in_all_records": true
+        },
+        "source_style_name": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_number_format_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_display_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_merge_origin": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_merge_range": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_covered_cell": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": true
+        },
+        "source_xml_cell_present": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": true
+        },
+        "value": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "value_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_typed_numeric_value": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "license_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "license_url": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "snapshot_distribution": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        }
+      },
+      "semantic_rules": "AI_USAGE.md and docs/phase1-supplements.md; preserve source identity, scope, periods and unresolved statuses."
+    },
+    {
+      "jsonl": "derived/phase1_local_sources_long.jsonl",
+      "records": 18486,
+      "fields": {
+        "source_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_download_url": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_sha256": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_version_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_agency": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_title": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_retrieved_at": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_sheet": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_sheet_xml_part": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_row": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "source_column": {
+          "observed_json_types": [
+            "integer"
+          ],
+          "present_in_all_records": true
+        },
+        "source_cell": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_locator": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_cell_role": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "value_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_display_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_stored_value_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_native_value_type": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_formula_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_formula_attributes": {
+          "observed_json_types": [
+            "null",
+            "object"
+          ],
+          "present_in_all_records": true
+        },
+        "source_style_name": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_number_format_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_display_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_merge_origin": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "source_merge_range": {
+          "observed_json_types": [
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "source_covered_cell": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": true
+        },
+        "source_xml_cell_present": {
+          "observed_json_types": [
+            "boolean"
+          ],
+          "present_in_all_records": true
+        },
+        "value": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "value_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_typed_numeric_value": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "license_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "license_url": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "snapshot_distribution": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "observation_id": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "county": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "entity_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "metric_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_row_label_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_column_path": {
+          "observed_json_types": [
+            "array",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_header_hierarchy_raw": {
+          "observed_json_types": [
+            "array",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unit_raw": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unit": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unit_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "unit_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_notes": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "aggregation_role": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "temporal_kind": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "quality_flags": {
+          "observed_json_types": [
+            "array"
+          ],
+          "present_in_all_records": true
+        },
+        "period_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_sheet_period_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "source_catalog_period_raw": {
+          "observed_json_types": [
+            "null",
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_year_candidate": {
+          "observed_json_types": [
+            "integer",
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "period_month_candidate": {
+          "observed_json_types": [
+            "integer",
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "period_year": {
+          "observed_json_types": [
+            "integer",
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "period_month": {
+          "observed_json_types": [
+            "integer",
+            "null"
+          ],
+          "present_in_all_records": true
+        },
+        "period_status": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_basis": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": true
+        },
+        "period_candidates": {
+          "observed_json_types": [
+            "object"
+          ],
+          "present_in_all_records": true
+        },
+        "time_definition_reference": {
+          "observed_json_types": [
+            "string"
+          ],
+          "present_in_all_records": false
+        }
+      },
+      "semantic_rules": "AI_USAGE.md and docs/phase1-supplements.md; preserve source identity, scope, periods and unresolved statuses."
+    }
+  ]
+}

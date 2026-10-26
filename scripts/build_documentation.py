@@ -274,5 +274,7 @@ def main():
             path=root/name
             text=path.read_text().replace('data/combined/observations.jsonl.gz','data/combined/observations.jsonl')
             path.write_text(text.replace('data/combined/observations.jsonl','data/combined/observations.jsonl.gz'))
+    from build_phase1_documentation import main as phase1_docs
+    phase1_docs()
     print('documentation',version,len(context['rows']),'reviewed cohorts',len(context['cohorts']))
 if __name__=='__main__':main()

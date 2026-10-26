@@ -1,0 +1,54 @@
+{
+  "producer_inputs": [
+    {
+      "path": "scripts/extract_ncl_2005_programmes.py",
+      "sha256": "9dcd51d25c6c16d5a997982c500211ba93bbb070143caf351d1bc4b90f3ff9f6",
+      "bytes": 39829
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-public-library.pdf",
+      "sha256": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
+      "bytes": 1286080
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-public-library.metadata.json",
+      "sha256": "b6d97222174bdbff8f97239e3839be702c5e0fa16bbb3625ba9bb7aa07c57334",
+      "bytes": 933
+    }
+  ],
+  "producer_outputs": [
+    {
+      "path": "derived/ncl_2005_programmes.csv",
+      "sha256": "13c83fd5f753de66e652fba715129468be971e1df81b235084e7ae524ee19190",
+      "bytes": 283568
+    },
+    {
+      "path": "derived/ncl_2005_programmes.jsonl",
+      "sha256": "e17b1301ed60001f22025d2129ee5cf46cb6882f20fa1d2491caf2b4db276ecc",
+      "bytes": 431778
+    },
+    {
+      "path": "derived/ncl_2005_programmes_long.csv",
+      "sha256": "ff8217c9eadcc5e4124456c1ae8ead648aa566f657f4231d829653397797a210",
+      "bytes": 316468
+    },
+    {
+      "path": "derived/ncl_2005_programmes_long.jsonl",
+      "sha256": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
+      "bytes": 474877
+    },
+    {
+      "path": "raw/ncl-2005-programmes/metadata.json",
+      "sha256": "971e3cb9724cebc87f03e1148cf76b4a24be427af9752d4814713f91841956d0",
+      "bytes": 5874
+    },
+    {
+      "path": "raw/ncl-2005-programmes/cell-audit.json",
+      "sha256": "d8f01e0d75966f4fbd934808083e9411329ef895a91928e76a87d10bc7010821",
+      "bytes": 47950
+    }
+  ],
+  "cache_contract": "source SHA and all input/output hashes must match; unchanged outputs keep bytes/mtime; missing/changed source stops before output mutation",
+  "unchanged_outputs_keep_mtime": true,
+  "full_originals_distribution": "not_in_public_bundle"
+}

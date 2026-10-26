@@ -1,0 +1,257 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_at": "2026-10-26T10:23:20.518076+00:00",
+  "status": "PASS",
+  "scope": "Independent phase1 source layers only; no canonical observation or original value changes.",
+  "files": [
+    {
+      "path": "scripts/phase1_source_registry.py",
+      "sha256": "3a145da125152d4254472e041cedbfd8630f44e1a25b273a0d6e16df9b4d8366"
+    },
+    {
+      "path": "scripts/phase1_source_manager.py",
+      "sha256": "a556ab09ce4bebe9dd206c0d4392994207e28b4f41a823808321db32875a7dcd"
+    },
+    {
+      "path": "scripts/test_phase1_source_manager.py",
+      "sha256": "21c6bce060e299c1fc1d3889b20fa7c6045b794b0f9cfcc84690da4c55aec8b6"
+    },
+    {
+      "path": "scripts/run_update.py",
+      "sha256": "9ec715931e6592c60672e65f710a838a19d2510267461695b7daeb72b63a5e25"
+    },
+    {
+      "path": "scripts/restore_originals.py",
+      "sha256": "4725f43e745a0ed0bb0c98eff61a7b49efb6b22e7909a0f1a1ed62c6182b2960"
+    },
+    {
+      "path": "data/reviewed_phase1_batches.json",
+      "sha256": "72631eb07c31b6e8f23f4d0e54a6f884289d3c04db8c8244223ecb8efd578490"
+    },
+    {
+      "path": "raw/phase1_local_sources/freeze.json",
+      "sha256": "7f683778ea702aea7d8534b161c8f148f929d1ebeef0f70cf8fc524e89482abe"
+    },
+    {
+      "path": "raw/phase1_local_sources/freeze-before-header-stored-string-correction.json",
+      "sha256": "8411e73401d743d59fcb1262942bc432f41e49888ec38f4e49029e315479f86f"
+    }
+  ],
+  "tests": {
+    "new_offline_fixture_tests": 13,
+    "existing_update_group_regression_tests": 15,
+    "all_pass": true,
+    "coverage": [
+      "reviewed bootstrap",
+      "script/source/output hash gates",
+      "source-root environment",
+      "missing and changed originals fail closed",
+      "partial output rollback bytes and mtime",
+      "concurrent input change rollback",
+      "initial14d no request",
+      "remote SHA candidate only",
+      "HTTP failure keeps success metadata",
+      "offline never fetch",
+      "sidecar detects canonical-unchanged addition",
+      "orchestration order and second-run skips builders",
+      "exact restore and existing-file preservation"
+    ]
+  },
+  "real_cache_acceptance": {
+    "runs": 2,
+    "registered_output_files": 22,
+    "state_files": 2,
+    "all_bytes_and_mtimes_unchanged": true,
+    "first_result": {
+      "enabled": true,
+      "canonical_union_permitted": false,
+      "batches": [
+        {
+          "id": "phase1_ncl95_programmes",
+          "status": "cached_verified_outputs",
+          "bootstrap_state": false
+        },
+        {
+          "id": "phase1_local_workbooks",
+          "status": "cached_verified_outputs",
+          "bootstrap_state": false
+        }
+      ]
+    },
+    "second_result": {
+      "enabled": true,
+      "canonical_union_permitted": false,
+      "batches": [
+        {
+          "id": "phase1_ncl95_programmes",
+          "status": "cached_verified_outputs",
+          "bootstrap_state": false
+        },
+        {
+          "id": "phase1_local_workbooks",
+          "status": "cached_verified_outputs",
+          "bootstrap_state": false
+        }
+      ]
+    }
+  },
+  "real_monitor_acceptance": {
+    "enabled": true,
+    "interval_days": 14,
+    "known_URLs_only": true,
+    "sources": [
+      {
+        "source_id": "south-lienchiang-opendata-173786",
+        "status": "not_due",
+        "next_due_at": "2026-11-09T08:50:52.719162+00:00",
+        "review_required": false
+      },
+      {
+        "source_id": "south-hualien-library-lending-409-reader",
+        "status": "not_due",
+        "next_due_at": "2026-11-09T08:50:25.683866+00:00",
+        "review_required": false
+      },
+      {
+        "source_id": "south-hualien-library-lending-409-room",
+        "status": "not_due",
+        "next_due_at": "2026-11-09T08:50:25.754829+00:00",
+        "review_required": false
+      },
+      {
+        "source_id": "south-lienchiang-culture-library-overview-114",
+        "status": "not_due",
+        "next_due_at": "2026-11-09T08:50:25.721880+00:00",
+        "review_required": false
+      }
+    ],
+    "requests_made": 0,
+    "review_required": false,
+    "approved_originals_modified": false
+  },
+  "freeze": {
+    "current_valid": true,
+    "prior_preserved": true,
+    "correction_fields": 8,
+    "statistical_long_SHA_unchanged": true
+  },
+  "layer_signature": {
+    "helper": "phase1_source_registry.content_digest(root)",
+    "phase1_content_sha256": "38c40bb263bba0553cf7ce5b35459ee23c21af464947c8ff67a867b9115ac70e",
+    "combined_helper": "run_update.content_signature(root)"
+  },
+  "policy": {
+    "normal_online_known_URL_monitor_days": 14,
+    "candidate_acceptance": "review_required only; approved originals not overwritten",
+    "private_candidate_body_default": false,
+    "source_retrieved_at": "retained for approved SHA",
+    "offline_network_requests": 0,
+    "source_entry_recrawl": false,
+    "original_fulltext_distribution": "not_in_public_bundle",
+    "public_private_field_validator": "private updater uses --allow-private-fields; public default remains strict"
+  },
+  "limits": [
+    "Full run_update main was not run against shared source/build outputs during the root publication work; isolated orchestration fixtures verify ordering and no-op.",
+    "No due live HTTP request was necessary; changed-source and HTTP-failure branches were verified with offline fixtures.",
+    "Online monitoring detects byte changes and requires review; it does not certify agency reporting correctness or accept a new data version.",
+    "This manager does not publish, create releases, upload to Drive or search all88 source roles."
+  ],
+  "snapshot_files": {
+    "derived/ncl_2005_programmes.csv": {
+      "sha256": "13c83fd5f753de66e652fba715129468be971e1df81b235084e7ae524ee19190",
+      "mtime_ns": 1793005440741401494
+    },
+    "derived/ncl_2005_programmes.jsonl": {
+      "sha256": "e17b1301ed60001f22025d2129ee5cf46cb6882f20fa1d2491caf2b4db276ecc",
+      "mtime_ns": 1793005440741773497
+    },
+    "derived/ncl_2005_programmes_long.csv": {
+      "sha256": "ff8217c9eadcc5e4124456c1ae8ead648aa566f657f4231d829653397797a210",
+      "mtime_ns": 1793005440743472635
+    },
+    "derived/ncl_2005_programmes_long.jsonl": {
+      "sha256": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
+      "mtime_ns": 1793005440743895388
+    },
+    "derived/phase1_local_sources_cells.csv": {
+      "sha256": "5a8e944da84092c48a550cf2d5068c52939b7f167b0615ff92e1ba135c1427c2",
+      "mtime_ns": 1793007596707435622
+    },
+    "derived/phase1_local_sources_cells.jsonl": {
+      "sha256": "e7eace84cf6338294f659f48a246ecea41213ad1fe4027f225273db598d8c7a5",
+      "mtime_ns": 1793007596720652649
+    },
+    "derived/phase1_local_sources_long.csv": {
+      "sha256": "2e855af5b5c545f24e05b14f13d7acc16939b691024ace0baa6e8f064e3ea55f",
+      "mtime_ns": 1793005313715404468
+    },
+    "derived/phase1_local_sources_long.jsonl": {
+      "sha256": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+      "mtime_ns": 1793005313721238721
+    },
+    "raw/ncl-2005-programmes/cell-audit.json": {
+      "sha256": "d8f01e0d75966f4fbd934808083e9411329ef895a91928e76a87d10bc7010821",
+      "mtime_ns": 1793004236985528997
+    },
+    "raw/ncl-2005-programmes/incremental-contract.json": {
+      "sha256": "a6c0aa8e69553c19e00fc9a54931be022f22d5b0183395284bfdfcf6d5677c88",
+      "mtime_ns": 1793005976717200882
+    },
+    "raw/ncl-2005-programmes/metadata.json": {
+      "sha256": "971e3cb9724cebc87f03e1148cf76b4a24be427af9752d4814713f91841956d0",
+      "mtime_ns": 1793005976714578654
+    },
+    "raw/ncl-2005-programmes/verification.json": {
+      "sha256": "97e2b19ad6aef4f5e5fca780da104bbbc64100161684cf5c6c3b8eafa4931e16",
+      "mtime_ns": 1793004239135911756
+    },
+    "raw/phase1_local_sources/south-hualien-library-lending-409-reader/contract.json": {
+      "sha256": "52e55833da8e9d8b7413a3ba288f9884c6f91c6c565d697b40ba51dcd597b616",
+      "mtime_ns": 1793007596764323465
+    },
+    "raw/phase1_local_sources/south-hualien-library-lending-409-reader/metadata.json": {
+      "sha256": "e7c37346ef3cf1a5c494e5d4d1ca5ee6a26f77bd7d0189a420b613195682bf13",
+      "mtime_ns": 1793005313722487439
+    },
+    "raw/phase1_local_sources/south-hualien-library-lending-409-room/contract.json": {
+      "sha256": "f113d1dcca6e578fd75b525469c835963cfd0952b6f897c97767296a98284fea",
+      "mtime_ns": 1793007596766051691
+    },
+    "raw/phase1_local_sources/south-hualien-library-lending-409-room/metadata.json": {
+      "sha256": "733aafa87e9fc325f228302cddc754854e3fe07a6cc6256c65d291925370c7a7",
+      "mtime_ns": 1793005313724487954
+    },
+    "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/contract.json": {
+      "sha256": "510db26b61935ff6344b7bc515a493c59c71357d5fe602058cb8b6c7f954d1cf",
+      "mtime_ns": 1793007596766735348
+    },
+    "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/metadata.json": {
+      "sha256": "eacecec9d862000f3dfa6b5c8ca442fe9d41f672216f8ff62faf939a706b735c",
+      "mtime_ns": 1793005313724754748
+    },
+    "raw/phase1_local_sources/south-lienchiang-opendata-173786/contract.json": {
+      "sha256": "da448ef92434d002302c281b84c538e99231480eef7e8609f920b518c3470304",
+      "mtime_ns": 1793007596759476323
+    },
+    "raw/phase1_local_sources/south-lienchiang-opendata-173786/metadata.json": {
+      "sha256": "619e309bda6441893ebb01f5af93e3c79c089f1321b72ccedce6fc47f4ae457a",
+      "mtime_ns": 1793005313721817100
+    },
+    "raw/phase1_local_sources/summary.json": {
+      "sha256": "85b1bd3c0337a85cf937de1953ef51cc1eb4c3d07371d3179368517bcff39657",
+      "mtime_ns": 1793007596753399532
+    },
+    "raw/phase1_local_sources/verification.json": {
+      "sha256": "ceb98f5ed501730255f921515fbf563f4b4ec183465e6dfbdb1fd6fd948de6fa",
+      "mtime_ns": 1793005324502924618
+    },
+    "data/phase1_ncl95_programmes_extraction_state.json": {
+      "sha256": "f51cfa1a6c2fc7621d2b6cd58d7ef6afa0619380555f7cfdee2304d821d14ad7",
+      "mtime_ns": 1793009889660649129
+    },
+    "data/phase1_local_workbooks_extraction_state.json": {
+      "sha256": "85d63129915a2a4dc96f24191d92d2e59c7cde9e6670ac6ecb124ca3cbf5d321",
+      "mtime_ns": 1793009889738580964
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "source": {
+    "source_id": "south-lienchiang-culture-library-overview-114",
+    "source_key": "south-lienchiang-culture-library-overview-114",
+    "source_url": "https://matsucc.gov.tw/%E8%AA%8D%E8%AD%98%E6%96%87%E5%8C%96%E8%99%95/%E9%A0%90%E5%91%8A%E7%B5%B1%E8%A8%88%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E5%8D%80/",
+    "source_title": "連江縣公共圖書館概況114年",
+    "source_agency": "連江縣政府文化處",
+    "county": "連江縣",
+    "source_download_url": "https://matsucc.gov.tw/wp-content/uploads/2026/07/11014-03-01-2處-連江縣公共圖書館概況114年.xlsx",
+    "source_final_url": "https://matsucc.gov.tw/wp-content/uploads/2026/07/11014-03-01-2%E8%99%95-%E9%80%A3%E6%B1%9F%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81114%E5%B9%B4.xlsx",
+    "source_filename": "lienchiang-114-overview.xlsx",
+    "source_sha256": "cb7f4f0a2d8817e5c0ab6168d874ffa7c7e21104b871bbd8706ffc6e2f6512d4",
+    "source_retrieved_at": "2026-10-26T08:50:25.721880+00:00",
+    "source_bytes": 31775,
+    "format": "XLSX",
+    "license_status": "published_statistics_document_license_unconfirmed",
+    "license_url": null,
+    "license_evidence_basis": "source discovery inventory; explicit catalog license only where listed; no blanket inferred attachment license",
+    "catalog_body_sha256": "607b92d88397693df1684e4ae67bc569f6171b2927143a675b9f0017cc862888",
+    "source_catalog_period_hint": 114
+  },
+  "sheets": [
+    {
+      "name": "背景說明-圖書館概況",
+      "sheet_id": "4",
+      "xml_part": "xl/worksheets/sheet1.xml",
+      "used_rows": 44,
+      "used_columns": 1,
+      "declared_dimension": "A1:A44",
+      "status": "definition_reference_only_not_numeric_data",
+      "excluded_contact_ranges": [
+        "A7:A9"
+      ],
+      "necessary_definition_cells": [
+        "A17",
+        "A24",
+        "A26"
+      ],
+      "reason": "保留必要統計時點／借閱定義；聯絡與私人欄不公開，其他填報程序不增加觀測。"
+    },
+    {
+      "name": "11014-03-01-2",
+      "sheet_id": "7",
+      "xml_part": "xl/worksheets/sheet2.xml",
+      "used_rows": 25,
+      "used_columns": 13,
+      "declared_dimension": "A1:V28",
+      "status": "complete_related_statistical_sheet",
+      "statistical_grid": "C8:I12",
+      "expected_data_cells": 35,
+      "non_statistical_footer_excluded": "signature/personnel blocks and administrative filler outside data/header regions",
+      "necessary_note_cells": [
+        "A25"
+      ]
+    },
+    {
+      "name": "古蹟概況",
+      "sheet_id": "8",
+      "xml_part": "xl/worksheets/sheet3.xml",
+      "used_rows": 21,
+      "used_columns": 22,
+      "declared_dimension": "A1:V23",
+      "status": "intentional_exclusion_unrelated_sheet",
+      "evidence": {
+        "title_cell": "A3",
+        "title_raw": "連江縣 直轄市、縣（市）古蹟概況"
+      },
+      "reason": "古蹟統計非公共圖書館資料，未增加觀測。"
+    }
+  ],
+  "records": {
+    "source_cell_facts": 159,
+    "statistical_data_cells": 35,
+    "value_status_counts": {
+      "reported_typed_numeric": 34,
+      "source_marker": 1
+    },
+    "resolved_numeric_cells": 34,
+    "typed_numeric_cells": 34
+  },
+  "period_conflicts": [],
+  "completeness": "Every related sheet and the entire declared statistical grids included; templates are source-cell facts only, not observations.",
+  "rights": "The113 data.gov.tw resource has explicit catalog OGDL as recorded; other public statistical attachments remain license-unconfirmed. No claim that download grants full-workbook redistribution.",
+  "public_exclusions": "Raw documents, unrelated古蹟sheet, contacts/private footer/signature fields and original internal workbook paths are not distributed.",
+  "checks": {
+    "expected_grid_cells_equal": true,
+    "unique_source_cells": true,
+    "source_raw_typed_formula_style_roundtrip": true
+  }
+}

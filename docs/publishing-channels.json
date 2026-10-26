@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "version": "0.6.0",
+  "channels": [
+    {
+      "kind": "public_repository",
+      "url": "https://github.com/poplolioi11/tw-public-library-statistics",
+      "version_authority": "main/VERSION",
+      "update_policy": "normal push of validated manifest files only"
+    },
+    {
+      "kind": "public_release_latest",
+      "url": "https://github.com/poplolioi11/tw-public-library-statistics/releases/latest",
+      "expected_tag": "v0.6.0",
+      "update_policy": "new immutable tag and assets; prior releases remain versioned"
+    },
+    {
+      "kind": "portable_reader",
+      "path": "site/phase1.html",
+      "update_policy": "same version as the package; no external hosting assumed"
+    }
+  ],
+  "verification": "Read back main VERSION, latest release tag, attachment digests, full anonymous ZIP and reader embedded dataset_version after publication. Project-specific localhost/Drive destinations stay in the private publication receipt."
+}

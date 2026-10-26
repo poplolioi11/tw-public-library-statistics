@@ -5776,35 +5776,6 @@
             "raw/ncl-2012/source-search-log.json",
             "docs/historical-batches.json"
           ]
-        },
-        {
-          "cohort": "ncl_2005",
-          "scope": "Known original tables outside the explicitly completed core cohort; not unavailable.",
-          "tables": [
-            {
-              "document_kind": "public-library",
-              "table": "6 (including continued panels)",
-              "pdf_pages": [
-                14,
-                15,
-                16
-              ],
-              "title": "公共圖書館辦理「推廣閱讀活動」及「示範觀摩館」一覽表",
-              "reason": "intentional_exclusion: named program-specific library activities and professional observation visits; not whole-year core operating totals. Earlier preliminary construction-table classification was corrected after full original-page review.",
-              "status": "known_source_outside_this_annual_core_cohort"
-            },
-            {
-              "document_kind": "public-library",
-              "table": "7",
-              "pdf_pages": [
-                34
-              ],
-              "title": "全國閱讀運動活動內容、場次及參加人數一覽表",
-              "reason": "intentional_exclusion: selected reading-campaign activities, including printed periods spanning 94年12月至95年5月; not a complete calendar-2005 public-library operating table.",
-              "status": "known_source_outside_this_annual_core_cohort"
-            }
-          ],
-          "evidence": "raw/ncl-2005/extraction-metadata.json"
         }
       ],
       "unknown_scope": [
@@ -5844,6 +5815,38 @@
         "raw/ncl-2024/extraction-validation.json",
         "raw/ncl-2024/documents.json",
         "raw/ncl-2005/extraction-metadata.json"
+      ],
+      "completed_other_layer": [
+        {
+          "cohort": "ncl_2005",
+          "scope": "表6／7已完整另存programme層；不屬canonical年度核心表。",
+          "tables": [
+            {
+              "document_kind": "public-library",
+              "table": "6 (including continued panels)",
+              "pdf_pages": [
+                14,
+                15,
+                16
+              ],
+              "title": "公共圖書館辦理「推廣閱讀活動」及「示範觀摩館」一覽表",
+              "reason": "intentional_exclusion: named program-specific library activities and professional observation visits; not whole-year core operating totals. Earlier preliminary construction-table classification was corrected after full original-page review.",
+              "status": "known_source_outside_this_annual_core_cohort"
+            },
+            {
+              "document_kind": "public-library",
+              "table": "7",
+              "pdf_pages": [
+                34
+              ],
+              "title": "全國閱讀運動活動內容、場次及參加人數一覽表",
+              "reason": "intentional_exclusion: selected reading-campaign activities, including printed periods spanning 94年12月至95年5月; not a complete calendar-2005 public-library operating table.",
+              "status": "known_source_outside_this_annual_core_cohort"
+            }
+          ],
+          "evidence": "docs/phase1-supplements.json",
+          "status": "completed_in_separate_programme_layer"
+        }
       ]
     },
     {
@@ -7502,7 +7505,7 @@
     {
       "task_id": "B06",
       "priority": 5,
-      "status": "unknown_not_checked_by_agency",
+      "status": "source_role_inventory_completed_candidate_ingestion_pending",
       "family_id": "local_explicit_ogdl_catalogs",
       "title": "其他縣市逐機關盤點與完整單包取得",
       "batch_size": "每批一縣市、一機關或一來源系列，先完成再擴張",
@@ -7517,7 +7520,12 @@
         "列出政策/聯絡/熱門書清單等錯範圍排除原因，不為湊數納入。"
       ],
       "unknowns": [
-        "完整官方地方統計來源地圖尚未建立；不能標成各縣市無資料。"
+        "不是機關全部歷年檔案庫窮盡；候選附件仍需逐批查核。"
+      ],
+      "completion": "22縣市各4個角色共88次有界入口查核完成；440候選列明，只有明確完成附件計入source-cell層。",
+      "evidence": [
+        "docs/PHASE1.md",
+        "docs/phase1-source-inventory.json"
       ]
     },
     {
@@ -8010,5 +8018,14 @@
       ],
       "scope": "本輪首頁可見12個入口，首項114卷；未見後續卷不代表官方不存在，也不把卷號當資料年。"
     }
+  },
+  "phase1_inventory": {
+    "version": "0.6.0",
+    "scope": "22 current counties x4 roles; bounded source-entry survey, not exhaustive all-history ingestion",
+    "authority_slots": 88,
+    "candidates": 440,
+    "summary": "docs/phase1-summary.json",
+    "supplements": "docs/phase1-supplements.json",
+    "cross_year_comparability_certified": false
   }
 }

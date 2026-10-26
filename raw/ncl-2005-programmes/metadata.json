@@ -1,0 +1,152 @@
+{
+  "schema_version": "ncl_programmes_source_rows_and_quantities_v1",
+  "source_report_reference_year": 2005,
+  "data_year_policy": "data_year stays null; source-report reference year and row-specific programme periods are independent",
+  "source_edition_roc": 95,
+  "publication_date": "2006-11-01",
+  "source_id": "ncl-yearbook-95-public-library-programmes",
+  "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565572390216434",
+  "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf",
+  "source_sha256": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
+  "source_local_path": "raw/ncl-2005/yearbook-95-public-library.pdf",
+  "records": {
+    "programme_rows": 119,
+    "numeric_quantity_cells": 123,
+    "table6": {
+      "reading_facility_rows": 88,
+      "demonstration_county_slots": 23,
+      "demonstration_numeric_facility_rows": 21,
+      "nonparticipating_marker_slots": 1,
+      "blank_slots_reason_unknown": 1,
+      "printed_summary_rows": 2,
+      "numeric_cells": 113
+    },
+    "table7": {
+      "activity_rows": 6,
+      "numeric_cells": 10,
+      "explicit_period_cells": 2,
+      "period_unknown_rows": 4
+    }
+  },
+  "tables": [
+    {
+      "table": 6,
+      "title": "公共圖書館辦理「推廣閱讀活動」及「示範觀摩館」一覽表",
+      "pdf_pages": [
+        14,
+        15,
+        16
+      ],
+      "printed_pages": [
+        "32",
+        "33",
+        "34"
+      ],
+      "column_headers_raw": [
+        "縣市別",
+        "推廣閱讀活動／圖書館名稱",
+        "推廣閱讀活動／參加人數（人）",
+        "示範觀摩館／圖書館名稱",
+        "示範觀摩館／參加人數（人）"
+      ],
+      "completeness": "entire continued table including right merged cells, explicit不參加, blank嘉義市slot and four printed totals"
+    },
+    {
+      "table": 7,
+      "title": "全國閱讀運動活動內容、場次及參加人數一覽表",
+      "pdf_pages": [
+        34
+      ],
+      "printed_pages": [
+        "52"
+      ],
+      "column_headers_raw": [
+        "項次",
+        "活動內容",
+        "辦理場次／辦理時間",
+        "參加人數"
+      ],
+      "completeness": "all six rows, four printed event counts, six participant counts and two exact month-range cells"
+    }
+  ],
+  "scope_limits": [
+    "programme-specific data, not annual public-library operating totals or complete nationwide facility registry",
+    "right-hand merged county slots are recorded once, never repeated for left-hand facilities",
+    "blank and 不參加 are nonnumeric listing states, not invented numeric zeros",
+    "source county and complete facility labels retained verbatim; 太武鄉立圖書館 under臺東縣 is not silently reassigned",
+    "source參加人數（人） does not establish unique people across events/programmes",
+    "date candidates preserve month precision; no exact days filled; first four table7 rows have null periods"
+  ],
+  "source_context_issues": [
+    {
+      "issue": "preceding_text_vs_table_facility_count_disagreement",
+      "source_context_pdf_page": 13,
+      "source_context_printed_page": "31",
+      "source_context_short_fact": "推廣閱讀活動正文稱91館，表6總計88館；全部原表值保留，不用正文改表。"
+    },
+    {
+      "issue": "programme_window_and_duration_wording_not_harmonized",
+      "source_context_pdf_page": 13,
+      "source_context_short_fact": "同段明印8月至11月展開辦理，也稱執行期程5個月；未自行改月份或期程。"
+    }
+  ],
+  "component_checks": [
+    {
+      "programme": "推廣閱讀活動",
+      "listed_numeric_facility_rows": 88,
+      "printed_facilities": "88",
+      "component_participants_sum": "16454",
+      "printed_participants": "16374",
+      "flag": "source_printed_total_differs_from_listed_components",
+      "difference_printed_minus_components": "-80"
+    },
+    {
+      "programme": "示範觀摩館",
+      "listed_numeric_facility_rows": 21,
+      "printed_facilities": "21",
+      "component_participants_sum": "5431",
+      "printed_participants": "5431"
+    }
+  ],
+  "rights": {
+    "license_status": "not_confirmed",
+    "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+    "basis": "Publication and authored-text rights not confirmed open; extracted factual labels/quantities/necessary period notes only. Full PDF, HTML, OCR/full text and images stay private.",
+    "full_originals_distribution": "not_in_public_bundle"
+  },
+  "dependencies": [
+    "Python3.12 standard library",
+    "pdfplumber",
+    "scripts/extract_ncl_2005_programmes.py"
+  ],
+  "evidence": {
+    "private_source_images": "Maintainer-side original page images/crops; not in the public distribution or required to run the extractor.",
+    "existing_images": [
+      "raw/ncl-2005/public-library-p14-hires.private.png",
+      "raw/ncl-2005/public-library-p34-hires.private.png"
+    ],
+    "image_review_method": "PDFium full pages plus source-only crops; glyph/label review by producer, not human double proofreading"
+  },
+  "output_statistics": [
+    {
+      "path": "derived/ncl_2005_programmes.csv",
+      "sha256": "13c83fd5f753de66e652fba715129468be971e1df81b235084e7ae524ee19190",
+      "bytes": 283568
+    },
+    {
+      "path": "derived/ncl_2005_programmes.jsonl",
+      "sha256": "e17b1301ed60001f22025d2129ee5cf46cb6882f20fa1d2491caf2b4db276ecc",
+      "bytes": 431778
+    },
+    {
+      "path": "derived/ncl_2005_programmes_long.csv",
+      "sha256": "ff8217c9eadcc5e4124456c1ae8ead648aa566f657f4231d829653397797a210",
+      "bytes": 316468
+    },
+    {
+      "path": "derived/ncl_2005_programmes_long.jsonl",
+      "sha256": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
+      "bytes": 474877
+    }
+  ]
+}

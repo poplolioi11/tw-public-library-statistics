@@ -31,3 +31,9 @@ jobs:
         run: python scripts/validate_publication.py --self-test
       - name: Validate canonical formats and packaged evidence
         run: python scripts/validate_publication.py
+      - name: Test supplemental validator fixtures
+        run: python scripts/validate_phase1_supplements.py --self-test
+      - name: Validate source/availability index
+        run: python scripts/validate_phase1_inventory.py
+      - name: Validate supplemental source-cell formats and partitions
+        run: python scripts/validate_phase1_supplements.py

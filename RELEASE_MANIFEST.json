@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "version": "0.5.1",
-  "created_at": "2026-10-26T07:39:38.803725+00:00",
+  "version": "0.6.0",
+  "created_at": "2026-10-26T10:28:48.928167+00:00",
   "repository": "https://github.com/poplolioi11/tw-public-library-statistics",
   "external_publication": true,
   "publication_profile": "statistical_fields_only",
@@ -307,13 +307,13 @@
     },
     {
       "path": ".github/workflows/check.yml",
-      "sha256": "f3beaf8d7a18b5f0764a165b853587d2ea466ebdec978a2baf068fb8dfa2cccf",
-      "bytes": 1166
+      "sha256": "e486c887409294c431ceb905517665084c723b8ffc425815e0b5ef1264aebca6",
+      "bytes": 1524
     },
     {
       "path": ".gitignore",
-      "sha256": "fb3c0431c3ccdd684c8a2c89ce92634db6abcf548770674e4a307365887e0f65",
-      "bytes": 3666
+      "sha256": "a6f302a90894e3f0e91d78492cfba0ef45a75639537232257a604c410f5eec6d",
+      "bytes": 3730
     },
     {
       "path": ".python-version",
@@ -322,17 +322,17 @@
     },
     {
       "path": "AI_USAGE.md",
-      "sha256": "bb2950afba8aa265805a093768a453bc1d1706a3dfd0338c4e6b70423fabd509",
-      "bytes": 13378
+      "sha256": "30d0479c00dad038641b8dda2f1c982bda48cc176af97f1ea582b129793bd1b8",
+      "bytes": 15373
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "023b9a04bbe66dda566cf56d35babf04e3c87679ecc172b94bd17e0a535a7f4b",
-      "bytes": 6540
+      "sha256": "fa5f8da8d980aad017af83c3f55356bc83b0804035d3dc0c73786920ee297564",
+      "bytes": 8347
     },
     {
       "path": "CITATION.cff",
-      "sha256": "36827152a15b1348bf096bca4733c96aed5ba8fa3de63ccbedacbbf447a22924",
+      "sha256": "073ce4b2a5727b04bab274b1c37f664e8c1c4e71e77b5acbe8a77946021b03e9",
       "bytes": 565
     },
     {
@@ -342,8 +342,8 @@
     },
     {
       "path": "COVERAGE.md",
-      "sha256": "354ecb6980bd4550220d0e6f69c5661450a3e159799b139245f6bc71db1af496",
-      "bytes": 5471
+      "sha256": "e68ad0dc5ec991c8a21f1d3ad4128ccaeb5c8e308b2d6f028b3a6641550b90ee",
+      "bytes": 6998
     },
     {
       "path": "LICENSE",
@@ -352,8 +352,8 @@
     },
     {
       "path": "LICENSE.md",
-      "sha256": "895b34cafaa2be06507c7f074dcf38fa0dd04cb76ced599f8f03c4f7c7f3feb9",
-      "bytes": 5651
+      "sha256": "843fbe172c053d9b5fb6d48ae01b566cff439efcfa63c073fa0a717d980e51bc",
+      "bytes": 6817
     },
     {
       "path": "LICENSE_CODE",
@@ -362,12 +362,12 @@
     },
     {
       "path": "README.md",
-      "sha256": "4f674bb54f89a0c57878f17cbd0993f5ad1180a972cfbbacf7dea086a2a89bc4",
-      "bytes": 10528
+      "sha256": "dd0c9da06dceb7d6adf73bca30d805f92216e6d98b77bcda05447f7747bd3cf5",
+      "bytes": 12010
     },
     {
       "path": "VERSION",
-      "sha256": "aba951626c8690ce493cbc8f018205bb468003f61fbf00fd3d3c71cebabc0177",
+      "sha256": "97a5d6e540a6120d09c39ddb667e0e8e2bac7fcc2ffef813b82e08fd60365bce",
       "bytes": 6
     },
     {
@@ -607,7 +607,7 @@
     },
     {
       "path": "data/combined/summary.json",
-      "sha256": "8feddd7a2fcba2d13a72bfabddcda681f3e26f3a8432ceea27596f0c705765cb",
+      "sha256": "333a3620713ca4d18d99fc1b33922a44b54a44b32d937aba9a70fd3e8246c1c3",
       "bytes": 1879
     },
     {
@@ -646,6 +646,11 @@
       "bytes": 19319
     },
     {
+      "path": "data/reviewed_phase1_batches.json",
+      "sha256": "bb376affe0aa2084b2cfdd02a6d2ea200919fae7b93342ef7af8e859d6695d94",
+      "bytes": 16264
+    },
+    {
       "path": "data/reviewed_policy.json",
       "sha256": "fd636e26722fb8a9e11a14d7fde63370099a8036b8310dd6bc590c0e99aa90da",
       "bytes": 312
@@ -662,13 +667,13 @@
     },
     {
       "path": "data/summary.json",
-      "sha256": "b9d1fd44024db500851743ec4460aade4eb4e402eea683b708ac52516ac4fd12",
+      "sha256": "270861ec0e0a8c4c2061d41e19c885bec1d734c1e3614124d9ada5d4c0e1874b",
       "bytes": 725
     },
     {
       "path": "datapackage.json",
-      "sha256": "d25bef1bad48658b6f93f261285535e62376c14c62f7e245fd5e204cd6bd47d2",
-      "bytes": 1116
+      "sha256": "ddbe8db2c736bd5e22e23eccd8152f29407bce674ca01b0a6c41a48c6c477ec9",
+      "bytes": 5790
     },
     {
       "path": "derived/dgbas_county_historical_long.csv",
@@ -692,7 +697,7 @@
     },
     {
       "path": "derived/local_historical_metadata.json",
-      "sha256": "0215fc335e14d68ddfcf5215380873fdb6d2d6252193a22fd90a53fa13533bcb",
+      "sha256": "eb13bc6af4a18859c0205034474bca108a6bfd4cd8db1f951c9f9ed28d73a4de",
       "bytes": 167126
     },
     {
@@ -709,6 +714,26 @@
       "path": "derived/ncl_2005_long.jsonl",
       "sha256": "8e689277d5ba004cbdc1e35629136f946bbc0451d1b3a4d0992f123d9379d14c",
       "bytes": 2008246
+    },
+    {
+      "path": "derived/ncl_2005_programmes.csv",
+      "sha256": "13c83fd5f753de66e652fba715129468be971e1df81b235084e7ae524ee19190",
+      "bytes": 283568
+    },
+    {
+      "path": "derived/ncl_2005_programmes.jsonl",
+      "sha256": "e17b1301ed60001f22025d2129ee5cf46cb6882f20fa1d2491caf2b4db276ecc",
+      "bytes": 431778
+    },
+    {
+      "path": "derived/ncl_2005_programmes_long.csv",
+      "sha256": "bafbf1cf277cd775df6f81635fc020b860aac5dfda8986a799e6adadeb80c73a",
+      "bytes": 282903
+    },
+    {
+      "path": "derived/ncl_2005_programmes_long.jsonl",
+      "sha256": "ba461cf505a7df5d32d0e04222d0ce447ac42a2480b1ece8df6655ed593c4543",
+      "bytes": 442531
     },
     {
       "path": "derived/ncl_2012_prose_long.csv",
@@ -881,19 +906,824 @@
       "bytes": 495645
     },
     {
+      "path": "derived/phase1_authority_checks.csv",
+      "sha256": "4bf06a1be4e2df9c04ffc290058da81d20e5a4a6c2d0bccffa57568b47ff9925",
+      "bytes": 598823
+    },
+    {
+      "path": "derived/phase1_authority_checks.jsonl",
+      "sha256": "08b137619a945e96fbf9cef1d44aab426ab068d0f59bd00e5443bdad12a462b2",
+      "bytes": 588453
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/0156b0afb748b4b2.jsonl",
+      "sha256": "a50f2737f8afc69c8593c43bc339319746b8f1fa8a74953a798a83b8dd1a4ad9",
+      "bytes": 228867
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/03f9bf77c755cf98.jsonl",
+      "sha256": "31b6901ae2223ea2ccf92603e889fdeeb949e2c9f47d30c02d777375f6dbe3d1",
+      "bytes": 238372
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/06984d0589be29bd.jsonl",
+      "sha256": "ca6c40563a0a1303c535110204a4b6740c1db4b51aac556e353a3a9ad61602a0",
+      "bytes": 229026
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/06fc4ac8656bf13f.jsonl",
+      "sha256": "ce4e8189919797907107d6c256b071fa33fb146b0494886335aeba536c0c15d6",
+      "bytes": 228466
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/098092f00c1ab0df.jsonl",
+      "sha256": "21922d9dac494861f7d4fbc5d77e5037fa8fa3798b380785b544f5ce37f2519d",
+      "bytes": 228688
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/0a00ac1ac1ddfbe3.jsonl",
+      "sha256": "d9ce11b3a04c5c17343e393425fef0fbdf1d79a8816cd291bd72289550b1c9a4",
+      "bytes": 236629
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/0f137e3286863f64.jsonl",
+      "sha256": "84a79afa93802856aafc026a14e4a1735e06d9757fcf0ffe880f3c6704cf7cd1",
+      "bytes": 236387
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/0f5acaff7480c130.jsonl",
+      "sha256": "32266a01f98cf1177a3fea8254bdb7ea62db9fdf7a4ec07917181f14ebbc5efe",
+      "bytes": 235719
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/1677396a3de6bac2.jsonl",
+      "sha256": "52cc6666ebbc4bf662510f32233562e0fc9fd6c090e6a456ac6452b4d9124113",
+      "bytes": 235948
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/17e7754d5254f8fb.jsonl",
+      "sha256": "5967f05c8fed3cf75657eebc73ece7bf320c1b7850acdd63d17cef09538c0582",
+      "bytes": 227274
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/1ca8d1eb001cf7c8.jsonl",
+      "sha256": "00849c32f28e9bfdc7d116fa8f7c841cb2753639838071cc2f9378856052e942",
+      "bytes": 229680
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/2099305e71584f8f.jsonl",
+      "sha256": "dde21b2e75657595907ed3e48871756e48de71e67ed6e9a5a57f067ddc6afbc2",
+      "bytes": 234223
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/2913adea2a41033c.jsonl",
+      "sha256": "5318bfa9f46b7b25d1e657875428e21f3e142e0a2fca84ef09b25ccab0049e73",
+      "bytes": 236755
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/29e398da8ffd46f2.jsonl",
+      "sha256": "5db31acc91a379bf7abea67f3ed364220172d50b8851d95d6022dc54e54e996f",
+      "bytes": 232715
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/2adfb44d034e6957.jsonl",
+      "sha256": "aae7c46b4c116fcf34d56887fa78263991526729720e9a38918987b30ae517c1",
+      "bytes": 228998
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/2da4f013ec98a111.jsonl",
+      "sha256": "7822f1d42e37829a072696a0c53aa7f182c2530594864591a3d55c7bf658a38d",
+      "bytes": 229260
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/304f42819ff998b6.jsonl",
+      "sha256": "c94b0fdf6cf55a25189531963dc8906a2dc8cddcac5b150f98360137a727a9c7",
+      "bytes": 229070
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/31faf33d60bedb50.jsonl",
+      "sha256": "225851f646f7de3e1168b691edb0f09680e646cf3ddfbecc6360295bda133215",
+      "bytes": 232409
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/3612dce5a5edddda.jsonl",
+      "sha256": "4a7e55077b0981805fb4337fcfedb7622d36a8b24b604ed8763c02c5f2ef00e8",
+      "bytes": 234708
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/3997f5407856e4e1.jsonl",
+      "sha256": "0dbb078b509ca6ed87a2bb988e770fa22d8c732d947be70ce7ff3b6b166717f2",
+      "bytes": 236359
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/48b19bf9b00b3d8b.jsonl",
+      "sha256": "2b2b3fa3ba8548ac136e204f4678290e64e172b33ca6a71c71597d60f346ed7a",
+      "bytes": 228557
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/49d70a476d0b3c90.jsonl",
+      "sha256": "37dab4cacd0f4c9597909a3623d98ee8a35be0c41bd881b4122efe58b3b1328c",
+      "bytes": 236176
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/49fa4e58dc00c4db.jsonl",
+      "sha256": "2f320eed64f021db6de4228c061f370093a747d6d4bd78f0ebac70b00a45d6c9",
+      "bytes": 230610
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/4a960328c3be5e8a.jsonl",
+      "sha256": "6dbd6666e1440b50d959a63780cb126944fe9f58fc0b015051d43247bb63e679",
+      "bytes": 236793
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/4d257c3f880b0b7d.jsonl",
+      "sha256": "75db9b786ec7fdfabe0284bcaa4ef36ea1aa35e7389ca017f35860b089ada27e",
+      "bytes": 236970
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/58d9c87f16b4ec39.jsonl",
+      "sha256": "bcef82efa36e460e1976a444659d909571681f94121cdc61d21538fa52bc8273",
+      "bytes": 230232
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/5ee8105d812b79ad.jsonl",
+      "sha256": "69002fe2e822d90807631fb859e7d07c12022b9594bf10bd39773f8b46b5acb7",
+      "bytes": 243437
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/645b9ee1b864886e.jsonl",
+      "sha256": "be5badd65eea17893a608b2644f56f26e37f52b4fd6da6a539db4a3b77039a82",
+      "bytes": 228702
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/66457d1b1426ddbe.jsonl",
+      "sha256": "f09e2208f4bc310d8bf9ebe927193948516c72c0a352dcbdfd6d5f302bbe40cb",
+      "bytes": 236973
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/6668ae52f489995a.jsonl",
+      "sha256": "57efe2311656b33b52eed9c7a59328edd841c5018b55d36470a9bb98e6160853",
+      "bytes": 228416
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/6dc8a84bb3c88d14.jsonl",
+      "sha256": "a93bacf0f148a7183a13e8c8aebc01dc0203886584691d4ee215ec81f9178f78",
+      "bytes": 234114
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/6ef3807a3f61625e.jsonl",
+      "sha256": "ee4ebdbc8ee097b4fc557aad245a803d290064c5e62ef4f17be36f534fc074de",
+      "bytes": 229597
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/7207a63802148a83.jsonl",
+      "sha256": "e63a76cedf5fe5e32f7ed3f51fa9f67f4da8ae18daaaf886d29fdccc7f4876dd",
+      "bytes": 236045
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/7a323205d558b6bc.jsonl",
+      "sha256": "28a8706632c18134f51b3aed6df205e3d0ff7b0c10d55d7a4909a3999b8de458",
+      "bytes": 229171
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/823bcd3e15d4931b.jsonl",
+      "sha256": "80dc9c31a40e8969ccddb6996ae772e94a523f7e9096b14b44713945b1911f7d",
+      "bytes": 230413
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/8303afb7534ece33.jsonl",
+      "sha256": "e0fa63801c30a83b8b5f116e63d0ecdde8e7aab105cff93258d6aed2fa0eaf55",
+      "bytes": 232451
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/840599458c06e855.jsonl",
+      "sha256": "f9b2ca74187d533382cc82cae416615868bfe8df06f7fe8f5bfac0cb8ec2f932",
+      "bytes": 236654
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/860a3b5981d0e389.jsonl",
+      "sha256": "d05bc20b675310f266495314b06178281497cddf9195a6bf6fdf747069b6dc5b",
+      "bytes": 234869
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/87c4c126d36c18b8.jsonl",
+      "sha256": "e72d11607bbe9f4dc2dca4c7bbf28303a15209a5ecb2ae775c55413347d244b9",
+      "bytes": 228357
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/88db63a894461bba.jsonl",
+      "sha256": "219224a9ffdb5815ada39908f2ea72e0d38c23214651c1cc66fd065c2f339a5c",
+      "bytes": 236629
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/8cbaad060846ce44.jsonl",
+      "sha256": "0697ee3ff49e5e3e472084c5e730420d8516295055c724f538cfee1750254616",
+      "bytes": 228878
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/8f9ceeb0949f08a7.jsonl",
+      "sha256": "a334391ffbf3fda3e3b90f4618ee276220529a8d06a6afd5db20cda532557c2b",
+      "bytes": 229195
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/93de07088a2d3745.jsonl",
+      "sha256": "03f0c851a2c56229b38e629b232fc850ff7f90388fcc894b0826b1f450dab3d4",
+      "bytes": 236335
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/947e1d52606c001d.jsonl",
+      "sha256": "640b2f71b28724711faf8cda698ac9d05e7c1a814bab020592cb66fcf1eef24f",
+      "bytes": 235644
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/9ece40678a6d0d74.jsonl",
+      "sha256": "4dbed567e877e60597463083d7e9a2514507eeb648aad4656c1d1b8718cb9035",
+      "bytes": 232421
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/a86cf9056a2fbaff.jsonl",
+      "sha256": "e072ef2176cdb320f995d1d01fb7fe66ee9a4ff09033d9516c7299eb954eab4e",
+      "bytes": 236018
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/aa12cc053ffdf62c.jsonl",
+      "sha256": "d4717539b378f168cc634e41319b46641ae5cd2c96bb96dcc45f43cc31c53b77",
+      "bytes": 236506
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/ad7092773e8cee44.jsonl",
+      "sha256": "528736605925ee5a4f46aa470d232d4e8f926961a96d956a310f7a54badcaea5",
+      "bytes": 229951
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/aee81fe2910351e2.jsonl",
+      "sha256": "575220bfa3e607c50c8d2a089ecb7746b0ae65f8332be81e482545b82770285c",
+      "bytes": 236342
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/b0f41aedbbd189a0.jsonl",
+      "sha256": "8720d16a25bade88e51e5a6db4d1cd7bab320a70dd32bc81a09eb49732e1d0d2",
+      "bytes": 228815
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/b7544267354fb239.jsonl",
+      "sha256": "640280529516a2b857983e6b7b8ca16eaf1c31b5400ba9a405c87a1f287b2bbf",
+      "bytes": 235988
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/b86bf5509ce233c4.jsonl",
+      "sha256": "c505baa72fc9beee3fce716452c76f4ace54c7177176b57f2bc8d3fc9663698c",
+      "bytes": 228672
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/ba52da8ff219c66a.jsonl",
+      "sha256": "ce6a06ecacaf878eff1873d3755d05603621c361c10163ef5a26adaa26485ea3",
+      "bytes": 236315
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/bc7e9017e48ebb1f.jsonl",
+      "sha256": "7bbb5f7e5723e9f57ad0463017424c41cd39ba45a1765835665fac4831a99ebf",
+      "bytes": 229782
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/c129b527670af4ae.jsonl",
+      "sha256": "04a3c9fd4a1c9a2bfef5a293b81a6893e6e7d229279fd2696d9716714c906e78",
+      "bytes": 229896
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/c310418e69961343.jsonl",
+      "sha256": "429d94f2442e6ffc215f9c8017452c66f51b967c1e0eead3440bdb727d89b3ef",
+      "bytes": 237307
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/cd77594effba43eb.jsonl",
+      "sha256": "8a62ac4b9ebef44e07ba9939ff43107ef1d4b9cd5007688497da7ad13b4abf80",
+      "bytes": 237256
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/d2e380e695b27be7.jsonl",
+      "sha256": "85ea2166ad34881d0d704332304c06f6c87c28c1819f4271650e7248ca403b1e",
+      "bytes": 228277
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/d43c0316ee240633.jsonl",
+      "sha256": "2455f55aca96e3472d22cf3340b8e21839c566ea77c3549e1c8df1e93ba3a93c",
+      "bytes": 232599
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/d592e9dfb10fe35f.jsonl",
+      "sha256": "0015e8ba569e6c2cea25c685e4a1f354deb64c74925c1ffc29b0a424ef46bfbe",
+      "bytes": 228792
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/d89f38a41454f43f.jsonl",
+      "sha256": "564b65f74239d5506c24b1907cdab70c6b011f33c93beac4461ac0a7ad04f0a1",
+      "bytes": 235716
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/daa721b060bfa00e.jsonl",
+      "sha256": "eadbd605dacd70fc7d51861d39163072ac4a601f4ed046e9a19d776e8795f268",
+      "bytes": 236420
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/dfe16fab9546a43b.jsonl",
+      "sha256": "bf16f550cbcec46acb6992d8113e373779c1645d844ca8ab6ae6678f0f6f28c2",
+      "bytes": 232286
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/e002c3c1d2b805fa.jsonl",
+      "sha256": "08f1fc3987931f5baec5a13ab0b42563ff4291a3f6cf8bdc6a974865496504e9",
+      "bytes": 236944
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/e68b2e9dbc4c6435.jsonl",
+      "sha256": "e184c7fff42fb26d6fd584a2cf618a46f459273b4cc4446db24cb19b77c9c76d",
+      "bytes": 229014
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/e9526abed199b054.jsonl",
+      "sha256": "d66091e043ca87ca2ef5928a3bac2dc61e827f124f4ebad02659d25c1158a69b",
+      "bytes": 229604
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/ef67a5e482ef4281.jsonl",
+      "sha256": "c696b5f0e30bad45146f1c73928867d42e8b672fe91f077e55d42cdbb75d172d",
+      "bytes": 229220
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/f2e7a83ca39bc152.jsonl",
+      "sha256": "543f770de4540c930fd56f80cd3635e65a2784b25af02726f48d6dfaa197cf9a",
+      "bytes": 236448
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/f457445222b0ee3b.jsonl",
+      "sha256": "fbcd2328ae61bde63f9b87e114a0ba40b72ee1d8657584019feb17bf46c1ef3b",
+      "bytes": 232619
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/f6ce30fc2b758570.jsonl",
+      "sha256": "904e0776bda41d161e86768cc1e65808731ff7236ed279dde619c1536a7b402e",
+      "bytes": 229894
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/f9dedad81e6f7e2c.jsonl",
+      "sha256": "a885c30355f98aad73ae771d979d2dc0f468923bdefebe8c849051cfff1b6cd2",
+      "bytes": 236324
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-reader/fb52474537755773.jsonl",
+      "sha256": "b101a5cce25116d516e09476bb54b20e48fe0731f2b7cd6b17185ea99a427869",
+      "bytes": 235807
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/0156b0afb748b4b2.jsonl",
+      "sha256": "7249985adcce4ee3e0bf674a9bb8ca276c6bb987369b68e1065bb8502e75d907",
+      "bytes": 434956
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/03f9bf77c755cf98.jsonl",
+      "sha256": "eb85d0b0d292e5d61adc72a2edb44355d8d61580a795e7869f7df4123e4da7a4",
+      "bytes": 415430
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/06984d0589be29bd.jsonl",
+      "sha256": "f6be331172688338ab37d6f8bc115422eeff1801e7c9b246010b5cb934c730ee",
+      "bytes": 435956
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/06fc4ac8656bf13f.jsonl",
+      "sha256": "5af6ebddd846bca40f64628c9deead30c686a6f50cd7bcda5dbb3346ec46a9e2",
+      "bytes": 434001
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/098092f00c1ab0df.jsonl",
+      "sha256": "d963e688c90f0adcdf0731f05206a69be26af1d83fbf070b8b98ece5f0ccf446",
+      "bytes": 434288
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/0a00ac1ac1ddfbe3.jsonl",
+      "sha256": "016175202b84f5ae9ed32059cafe491b857f25b552a9ed1e8e056a24268b5cd5",
+      "bytes": 416693
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/0f137e3286863f64.jsonl",
+      "sha256": "c471cb4455b14d225067ae9cb50aab39a027f785275137ef243337e10754eff1",
+      "bytes": 414929
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/0f5acaff7480c130.jsonl",
+      "sha256": "8a9d5e726a41d339a00a7336d8d8c640ac0c11ba1fdd9018312f7953f1081114",
+      "bytes": 433749
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/1677396a3de6bac2.jsonl",
+      "sha256": "f91db7e2a66007091b71fd92ddf0bfb304fd855dbefe75164ae7c8da34593f6e",
+      "bytes": 468970
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/17e7754d5254f8fb.jsonl",
+      "sha256": "85fbee7936ad680810ab27aecedf7d66095936ff6612675519d40f4b1b90f00f",
+      "bytes": 434833
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/1ca8d1eb001cf7c8.jsonl",
+      "sha256": "0c9e17424ca4f0c28b225558fb5154cefc54b8804b3a2955ce34f24296dee7b3",
+      "bytes": 434286
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/2099305e71584f8f.jsonl",
+      "sha256": "5030512394a60f24f3d75beecb5afe3939c06e1a7116567cac4826d59a170e41",
+      "bytes": 435183
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/2913adea2a41033c.jsonl",
+      "sha256": "a38f4af58b06e17bfa21db787b0d22ece57c646e37332ed6b791d0ead743d1f3",
+      "bytes": 457847
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/29e398da8ffd46f2.jsonl",
+      "sha256": "fd2275cd57a91bd292490d55829f60558659bba766e8fa1a6d080119ea694188",
+      "bytes": 456516
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/2adfb44d034e6957.jsonl",
+      "sha256": "0d700d0858d5ab757e0ddccfa35193ff739041e22d0a2e0307c72480ab223e64",
+      "bytes": 434430
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/2da4f013ec98a111.jsonl",
+      "sha256": "d41d04d744c6a99c1c12ea176095934f890af915e20abdbea6a7ee6263b6c9de",
+      "bytes": 434735
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/304f42819ff998b6.jsonl",
+      "sha256": "427d7bae1e9a6b354a67055142f48a9ed6a75887c3520794b3fa5990bcac4c02",
+      "bytes": 436099
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/31faf33d60bedb50.jsonl",
+      "sha256": "54b47782a7579d8aa311b48e7c70459ba8668c22f4e7607f53613aa3d7181b81",
+      "bytes": 456214
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/3612dce5a5edddda.jsonl",
+      "sha256": "cae6e21e6397a669b8ae828052323f80b41125bf230cc4cb7a90af604eaa14f1",
+      "bytes": 434733
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/3997f5407856e4e1.jsonl",
+      "sha256": "0ed9b6ca473b0b4bb3989f817e0bfe412bd9fec6dd181d9546e445aa2ed60695",
+      "bytes": 434744
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/48b19bf9b00b3d8b.jsonl",
+      "sha256": "299ab9299318f45aa7ad9b16fc8b7764e174af15ba6e5d8bcf1f7a695034349e",
+      "bytes": 434965
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/49d70a476d0b3c90.jsonl",
+      "sha256": "c90f3b0ba2ee7573dc7f3b89f7ab87716f8113cf741d8c79a9fbf023003e5bc5",
+      "bytes": 434580
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/49fa4e58dc00c4db.jsonl",
+      "sha256": "3093e10d1baa3a5c14122ec5e48c877113c5953980828186f1c45ec8652381ab",
+      "bytes": 435474
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/4a960328c3be5e8a.jsonl",
+      "sha256": "115238eba46b45490e66d2b5c82718b28bd4f75746b302a1b55023284a276a16",
+      "bytes": 435100
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/4d257c3f880b0b7d.jsonl",
+      "sha256": "4933ae9d7b4b88da4a830105d1abfaf33a06556cbeb3b92b085cdc214d002787",
+      "bytes": 436469
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/5ee8105d812b79ad.jsonl",
+      "sha256": "e3262e77bdd1760adb35d22b6598c93a521c507c1fb9846a15be397dafd241dd",
+      "bytes": 416400
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/645b9ee1b864886e.jsonl",
+      "sha256": "f8f02e6da6fa132c3c77d241ae4889e60fbf4a415654039ddcdafa2f6b1cca68",
+      "bytes": 434346
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/66457d1b1426ddbe.jsonl",
+      "sha256": "cb148410267750a8a73b49ba5fb117fa0bbde4e45fb26fb2ef77e7828130ecc6",
+      "bytes": 414845
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/6668ae52f489995a.jsonl",
+      "sha256": "cb1324730e73b0d0a076172d27a79972bc5dfaa438ac450a3ec5598ad8296bfd",
+      "bytes": 434247
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/686d6b84733cd82c.jsonl",
+      "sha256": "531dc688c30919f6d4a9811221158d3c8bff3081799281fb2962805914d872c2",
+      "bytes": 435065
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/6dc8a84bb3c88d14.jsonl",
+      "sha256": "8e2c5b2e1e9dfeb1464e085bd031d4fa22afbfc1be5e4327002f3e824f41c6c4",
+      "bytes": 435687
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/6ef3807a3f61625e.jsonl",
+      "sha256": "ee06962781a70b7c616ade18b48912a62af86c6d282c1c95e313c9034705f866",
+      "bytes": 434930
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/7207a63802148a83.jsonl",
+      "sha256": "65eeee9dcfaa5419790d93c2e8bb5a416feefecc0b771a8a637ef15f7e27d241",
+      "bytes": 413387
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/7a323205d558b6bc.jsonl",
+      "sha256": "41a3703c3ce4bd0483d404d7c86ee34c53573a320635c562d7ddc37d1c341873",
+      "bytes": 434835
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/823bcd3e15d4931b.jsonl",
+      "sha256": "addb0e56f72aa551a1ccace7607fa84123b57fc58b29ef6e6eda4920e4c9fc15",
+      "bytes": 434890
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/8303afb7534ece33.jsonl",
+      "sha256": "2bb400aa313f2dec61bb7c2d27305db9541852d8bf324dd20690f7ecfdf67749",
+      "bytes": 455575
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/840599458c06e855.jsonl",
+      "sha256": "8b4391f7d0fa1e7fd3bf07cc28ac73ba44ef4f06bc6340069fc14f43f1a9469e",
+      "bytes": 436292
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/860a3b5981d0e389.jsonl",
+      "sha256": "4b640f5ca456a71e658ab109bc45af752623c43e432a6736ae6563bf7c691be9",
+      "bytes": 435046
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/87c4c126d36c18b8.jsonl",
+      "sha256": "1485eb9edec7a6a13f41b6206e2b6813e00aea565cf095ec611d7bab784f18b2",
+      "bytes": 434361
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/88db63a894461bba.jsonl",
+      "sha256": "c63c6cc7d979ccbddd69d454753db528c582dc42db4b7c734be6f595a13d42ac",
+      "bytes": 416371
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/8cbaad060846ce44.jsonl",
+      "sha256": "56cd75ae98010ee8c9229efec059c23edd1f9a23de513648bb3cfed045a7970e",
+      "bytes": 433865
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/91d45246fa2aa545.jsonl",
+      "sha256": "20f509a2998670691ed3509cb76cd3e1cc0796c8f42d3276e79bcc235e3a2094",
+      "bytes": 435817
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/93de07088a2d3745.jsonl",
+      "sha256": "da22476adf61a1b7a972049171e06dd81f1e8db8f8cc36f87c1a6e2796694faa",
+      "bytes": 434762
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/947e1d52606c001d.jsonl",
+      "sha256": "2033245839ab8e1b06550294559890236c4e7017a034e4f935560adb280a3bc0",
+      "bytes": 435792
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/9ece40678a6d0d74.jsonl",
+      "sha256": "3eaa6ebff13564d96b88fe870f6b6742aeb188f5e977624f02692659dcd3d315",
+      "bytes": 456901
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/a86cf9056a2fbaff.jsonl",
+      "sha256": "eab1c660d336a61da650926737aa5399cd9a9e72622b053521ed59231e02bfa7",
+      "bytes": 434655
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/aa12cc053ffdf62c.jsonl",
+      "sha256": "0e986038ce07fec63c20fef0f39ada82f1324a2c6044e9a4699ef06d46de437c",
+      "bytes": 414152
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/ad7092773e8cee44.jsonl",
+      "sha256": "bb189a71dc6c4f5ad8d0bc4afa7a8d5220647a54ee4effc734e61815a4c98374",
+      "bytes": 435588
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/aee81fe2910351e2.jsonl",
+      "sha256": "62654064166891078f724b275504707da9ffb04c733e44692cb462a742a48c2e",
+      "bytes": 434746
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/b0f41aedbbd189a0.jsonl",
+      "sha256": "63fed11bb530fa665f343e5be9117641b415924863cad49c8477d4fe1a31b9ce",
+      "bytes": 434186
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/b7544267354fb239.jsonl",
+      "sha256": "70a5ebb7e8286eaed40e539a301a5e7f24f8d9b7fc0ab114e7542164e99dd8c1",
+      "bytes": 434115
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/b86bf5509ce233c4.jsonl",
+      "sha256": "f2fd96c83e2d8c21327912be0d5fda6a7ea749428476ecc6fdc1f2346022dc76",
+      "bytes": 434873
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/ba52da8ff219c66a.jsonl",
+      "sha256": "455b326468e1e94ea16ea69b61e42d2f20b9cd0e123816bdf6fe7fd675e21b4e",
+      "bytes": 435107
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/bc7e9017e48ebb1f.jsonl",
+      "sha256": "7968ff9c0511703b334c564e349824c30825c95ccd637d7c1244c2826eabdb54",
+      "bytes": 436291
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/c129b527670af4ae.jsonl",
+      "sha256": "57f902d25fdc9b672bbf5309746113ee689101f390b2c3f42ecf8011149e3925",
+      "bytes": 434675
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/c310418e69961343.jsonl",
+      "sha256": "955c73c98d6ad330a21164c27730bf61112da3d93d12b494781c828ceb96a6b6",
+      "bytes": 435821
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/cd77594effba43eb.jsonl",
+      "sha256": "a3cff0457391a459303de10de0ba703f889d2f4313b6e7c90faf265aedc47cea",
+      "bytes": 434948
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/d2e380e695b27be7.jsonl",
+      "sha256": "1b0a813b16d0fd687df7b3918b85abb455c58a37b5baadac5943155f61602d24",
+      "bytes": 435423
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/d43c0316ee240633.jsonl",
+      "sha256": "244ed095f70879dbd6a1d97a9aa93d964853bd11e60ac2afb11247c7e512525c",
+      "bytes": 456730
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/d592e9dfb10fe35f.jsonl",
+      "sha256": "2fe459cc1de3fbbf971d25cefcd22a9d9395af887e776705bcc6d4615d47e904",
+      "bytes": 434498
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/d89f38a41454f43f.jsonl",
+      "sha256": "8bb2685a7b5da2a8eb5c5f49ea7159e3cf7ac4fda2ea2f63c112db5022f5da51",
+      "bytes": 414026
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/daa721b060bfa00e.jsonl",
+      "sha256": "c32e84924029c765b743e5c44fa47cfa12e5e4f02f1393ed207823d849027706",
+      "bytes": 437140
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/dfe16fab9546a43b.jsonl",
+      "sha256": "4d9af077a7368d830e88956197e3bba74076e6b6db35bbbea7235e42000c9b6e",
+      "bytes": 455917
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/e002c3c1d2b805fa.jsonl",
+      "sha256": "e082511e984ca8d879efcb903bf22f2b6d1fe2f3a266d732daae9ae438a776d2",
+      "bytes": 434983
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/e68b2e9dbc4c6435.jsonl",
+      "sha256": "4f06cfabf87b62fd1222d982914fbb6ca89d256b42e19a3574b475cc0fa7c2a0",
+      "bytes": 434938
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/e9526abed199b054.jsonl",
+      "sha256": "518d6b9dee2ab6c8000e38c188e3323a4c9cf2d61117daa826af0eda6d06755b",
+      "bytes": 435091
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/ef67a5e482ef4281.jsonl",
+      "sha256": "974db852872666de3cb3bda8cc696e124d67b504afea6a394f33ef8567d9fc46",
+      "bytes": 435644
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/f2e7a83ca39bc152.jsonl",
+      "sha256": "b8f3f18356a26b033d9d46a03ede408e854be8dd1ff6bf4152cdcab59b3481a6",
+      "bytes": 436517
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/f457445222b0ee3b.jsonl",
+      "sha256": "f317431997e7db0648b563454b921cd0e3211e185503144ef1b68078397cb329",
+      "bytes": 456275
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/f6ce30fc2b758570.jsonl",
+      "sha256": "26f82b3618178766ed45e942a8c4cf8c842b82d8ca4fb88395cef36c48c44bd7",
+      "bytes": 436219
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/f9dedad81e6f7e2c.jsonl",
+      "sha256": "e7acfb43a799bc1afe5fcff8079165447e616a0318da61e302f45147a7de0ee0",
+      "bytes": 414108
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-hualien-library-lending-409-room/fb52474537755773.jsonl",
+      "sha256": "2d3a4d6bd0b3676cbcefacfe1399d35028d4b13d94030db84023528435d6256c",
+      "bytes": 413392
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-lienchiang-culture-library-overview-114/98f5208450f1ca97.jsonl",
+      "sha256": "5edff09e8c24702b8984e0212afe3967efdb20bc7e45fc7aa9b887063763aa1a",
+      "bytes": 101579
+    },
+    {
+      "path": "derived/phase1_by_sheet/south-lienchiang-opendata-173786/2565a81a2177399d.jsonl",
+      "sha256": "0167ad92626e1b456e4c111795ab2c879102dbdf019153824c88c724628ea02b",
+      "bytes": 86045
+    },
+    {
+      "path": "derived/phase1_discovery_matrix.csv",
+      "sha256": "ea104015491f5886834a45eb98b50f21a8748e65b50c304341c5ad0dc6c42501",
+      "bytes": 3928662
+    },
+    {
+      "path": "derived/phase1_discovery_matrix.jsonl",
+      "sha256": "ddee1056aafd0ea64d8bd74c4f7355b7d925957e5c1f00a056ce1379873196f3",
+      "bytes": 6193410
+    },
+    {
+      "path": "derived/phase1_inventory.sqlite",
+      "sha256": "8db0766f93e12fdd129c07a45ba1cb25997d011adb5250760787f969893971a9",
+      "bytes": 32956416
+    },
+    {
+      "path": "derived/phase1_local_sources_cells.csv",
+      "sha256": "5a8e944da84092c48a550cf2d5068c52939b7f167b0615ff92e1ba135c1427c2",
+      "bytes": 25149872
+    },
+    {
+      "path": "derived/phase1_local_sources_cells.jsonl",
+      "sha256": "e7eace84cf6338294f659f48a246ecea41213ad1fe4027f225273db598d8c7a5",
+      "bytes": 49812118
+    },
+    {
+      "path": "derived/phase1_local_sources_long.csv",
+      "sha256": "2e855af5b5c545f24e05b14f13d7acc16939b691024ace0baa6e8f064e3ea55f",
+      "bytes": 26812202
+    },
+    {
+      "path": "derived/phase1_local_sources_long.jsonl",
+      "sha256": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+      "bytes": 48266280
+    },
+    {
+      "path": "derived/phase1_raw_source_profiles.csv",
+      "sha256": "6b6dc16c736e09de80b365e5911b1e4b38899e8151b37a36d48a3a19defa4d92",
+      "bytes": 24063270
+    },
+    {
+      "path": "derived/phase1_raw_source_profiles.jsonl",
+      "sha256": "c40ad23c1ddb84732218ed66e451c00ddb536968d184dc9b8595f69b4e51c945",
+      "bytes": 40879983
+    },
+    {
+      "path": "derived/phase1_source_candidates.csv",
+      "sha256": "9b12a7ca4ccbcd950065ea5029175d606cdcf74bd0f9ef439e4dcdbba8d8c373",
+      "bytes": 616991
+    },
+    {
+      "path": "derived/phase1_source_candidates.jsonl",
+      "sha256": "a8bb932faeac7ba47fef2d691df355da712eb71578620798ae483996856cb49c",
+      "bytes": 848283
+    },
+    {
+      "path": "derived/phase1_supplements.sqlite",
+      "sha256": "ab36a0b95cdb49a231adfaaaa4839fabb2d0b8fff364c95605eba06428dae2d1",
+      "bytes": 66650112
+    },
+    {
       "path": "docs/FORMAT-VERSION-0.4.md",
       "sha256": "9fc96480b4d38476c776721eb49d99d864d1b367fde93c756fd309e525d2a691",
       "bytes": 1821
     },
     {
+      "path": "docs/PHASE1.md",
+      "sha256": "f38bb9ecbb23852aa001868853478b96c12dee413ba61140b0d89e93b7b033dd",
+      "bytes": 11041
+    },
+    {
       "path": "docs/PUBLICATION.md",
-      "sha256": "466022538ae82e725727228f60772f14a82ed2a52d912a74f4024bd4e524273e",
-      "bytes": 2148
+      "sha256": "2e3a1477df5c7ec72f195977ef932dc7704bb0611a5409562c09f062b0104105",
+      "bytes": 2389
     },
     {
       "path": "docs/derived-field-projections.json",
-      "sha256": "1e740f9169580d51656b04852035753c0d54c9310ebea00c283968e042807ce0",
-      "bytes": 13478
+      "sha256": "5b27b3d057c3f981b577f030f2eaff83135bb0d570eb448ee344c0891dbc218a",
+      "bytes": 14246
     },
     {
       "path": "docs/environment.json",
@@ -902,33 +1732,83 @@
     },
     {
       "path": "docs/historical-batches.json",
-      "sha256": "b9c4fb23fa11d0811112a56e3d3981c37105f6f1485a5c7d72ef0db6fa97d05b",
+      "sha256": "78f8f16cd0358c283ed16fe082c4c68292487b6816e0dc09badceb4fbf8133d2",
       "bytes": 196647
     },
     {
       "path": "docs/historical-batches.md",
-      "sha256": "581ff3112a5ea02e531947dd45ebf1ceb2fb1c5fa0f7677dc81ac6c96e6f0f57",
+      "sha256": "aceae8ad67caf8237e5867d85b1840e63efcf9011ac5523874938d48c8db0db9",
       "bytes": 22624
     },
     {
+      "path": "docs/metadata-field-projections.json",
+      "sha256": "c4d09d243a81bec8bdeacc9203e8986ba67dd70f8f35a22a4b1c88765a85a1e3",
+      "bytes": 2363
+    },
+    {
+      "path": "docs/phase1-data-dictionary.json",
+      "sha256": "7a4dd860804392cb3ca29647dc238a2473c898ed176570882496c3763cb7e21c",
+      "bytes": 58904
+    },
+    {
+      "path": "docs/phase1-next-batches.json",
+      "sha256": "ff7f52d852c7f35958a9b2ed9a4353b0e0ee5f5e16cf90a305cb5c544fdf3fbc",
+      "bytes": 373016
+    },
+    {
+      "path": "docs/phase1-registry-projections.json",
+      "sha256": "53f7f271b3b2e29c12ae77bc4c98ffb8af14bc8ce50d081ad9765df512aee399",
+      "bytes": 3176
+    },
+    {
+      "path": "docs/phase1-source-cell-partitions.json",
+      "sha256": "a3182b30590990d3b9bf337fdc4aad2ec37b6318b6c1f1881f4952ff4bb0e041",
+      "bytes": 60525
+    },
+    {
+      "path": "docs/phase1-source-inventory.json",
+      "sha256": "6a8e38f3bf7493f4ace13efb55005e6ecdd0f672a22395f70fa2832ad2159615",
+      "bytes": 1822470
+    },
+    {
+      "path": "docs/phase1-summary.json",
+      "sha256": "f1cb8e41021689e2aeb2ff387362323bf3d3eb05a3a698fd282d5741a8a8c1c4",
+      "bytes": 7660
+    },
+    {
+      "path": "docs/phase1-supplements.json",
+      "sha256": "a7e456d013db8127fe5b3d87e585402339cbbec4908cbf9d09818e0d3be92977",
+      "bytes": 2520
+    },
+    {
+      "path": "docs/phase1-supplements.md",
+      "sha256": "f7d3d1b93c85498f489ac827a7232473809532fea1e5e93924ca0c579df2ce48",
+      "bytes": 2609
+    },
+    {
       "path": "docs/publication-integrity.json",
-      "sha256": "8752c327f11a5b296e0c4d9edae75d2ef26d36ccc0235324684c08d45c798444",
+      "sha256": "e87a65a6dc7b43078dc8dcd97182f9f50fd012ceebc8f13caad08763915abf6d",
       "bytes": 610
     },
     {
+      "path": "docs/publishing-channels.json",
+      "sha256": "20f1ef31926fa31239d176e7dad6935c3a2740e7243ab3e86ef2a7101e47ca53",
+      "bytes": 982
+    },
+    {
       "path": "docs/source-backlog.json",
-      "sha256": "94ae66dc5269b32d2a20817de114355edf75943f9a83ee5c44127bf9e008ba7d",
-      "bytes": 262340
+      "sha256": "a30ea22017ef3242bc54ed45a869bcc8cbcfeb90932d6b9d427e9127d124a441",
+      "bytes": 263042
     },
     {
       "path": "docs/source-backlog.md",
-      "sha256": "20a96ba4a86185d6a28fbf288de001826a729d8ff3a42e4f7da23f050568159c",
-      "bytes": 1640
+      "sha256": "774a4d90237c533bd7956dca91c790f1bc1c146a2d0aead92ab2e01fea2a33f4",
+      "bytes": 1976
     },
     {
       "path": "llms.txt",
-      "sha256": "0555643cb7ec5996d68e2f68dd542faf8a611594a8c7b23adaffc566b79cede1",
-      "bytes": 6588
+      "sha256": "cdf8cbc774bce1980257ea386bacb58ecd433ea91af58c3aa5eda351d1caf9cb",
+      "bytes": 6968
     },
     {
       "path": "raw/http-metadata-publication.json",
@@ -984,6 +1864,41 @@
       "path": "raw/ncl-2005/yearbook-95-statistics.metadata.json",
       "sha256": "469e0f1aa3739815c7b8e2fb12a2221fb55e59f8a459e8ab59c5814fe6b42cff",
       "bytes": 924
+    },
+    {
+      "path": "raw/ncl-2005-programmes/cell-audit.json",
+      "sha256": "d8f01e0d75966f4fbd934808083e9411329ef895a91928e76a87d10bc7010821",
+      "bytes": 47950
+    },
+    {
+      "path": "raw/ncl-2005-programmes/freeze.json",
+      "sha256": "ef23b67dcc4736cf7a57f36ecb7761cdf119c036d77815ba0f984b9d2dafc17d",
+      "bytes": 7156
+    },
+    {
+      "path": "raw/ncl-2005-programmes/incremental-contract.json",
+      "sha256": "a6c0aa8e69553c19e00fc9a54931be022f22d5b0183395284bfdfcf6d5677c88",
+      "bytes": 1892
+    },
+    {
+      "path": "raw/ncl-2005-programmes/label-correction-before.json",
+      "sha256": "6cf4c5c9aa333cf0ce59ca227fc68e8637728b8158acfcef1f3b8710951714b8",
+      "bytes": 47301
+    },
+    {
+      "path": "raw/ncl-2005-programmes/label-correction.json",
+      "sha256": "c86cd5bcfa5f83538c75a2ff9b6c3d02902b9caf08c342406764c83fd9f54bec",
+      "bytes": 4224
+    },
+    {
+      "path": "raw/ncl-2005-programmes/metadata.json",
+      "sha256": "971e3cb9724cebc87f03e1148cf76b4a24be427af9752d4814713f91841956d0",
+      "bytes": 5874
+    },
+    {
+      "path": "raw/ncl-2005-programmes/verification.json",
+      "sha256": "97e2b19ad6aef4f5e5fca780da104bbbc64100161684cf5c6c3b8eafa4931e16",
+      "bytes": 899
     },
     {
       "path": "raw/ncl-2012/ncl-2012-prose.metadata.json",
@@ -2826,6 +3741,11 @@
       "bytes": 167126
     },
     {
+      "path": "raw/official-local/manifests/current-manifest-revision-28adc55dc388c194133a2981aad6daa57a2312e152a85e6ec058a551f12ac6f7.json",
+      "sha256": "28adc55dc388c194133a2981aad6daa57a2312e152a85e6ec058a551f12ac6f7",
+      "bytes": 167126
+    },
+    {
       "path": "raw/official-local/manifests/current-manifest-revision-3de5692237f8f2f21cfe348fdb93637a6cb06c31e1d2517af4ab6ace9f9b5ee8.json",
       "sha256": "3de5692237f8f2f21cfe348fdb93637a6cb06c31e1d2517af4ab6ace9f9b5ee8",
       "bytes": 167126
@@ -2841,6 +3761,11 @@
       "bytes": 167126
     },
     {
+      "path": "raw/official-local/manifests/current-manifest-revision-8fa371e6e0c73c6385ecb5b38fb27c68ecf07987b4403d5882c6bcc105b193f9.json",
+      "sha256": "8fa371e6e0c73c6385ecb5b38fb27c68ecf07987b4403d5882c6bcc105b193f9",
+      "bytes": 167126
+    },
+    {
       "path": "raw/official-local/manifests/current-manifest-revision-a8c1d7b9e343f7838ba5fa955a68be24e1c7ad41a8058d551c89938f63933013.json",
       "sha256": "a8c1d7b9e343f7838ba5fa955a68be24e1c7ad41a8058d551c89938f63933013",
       "bytes": 167126
@@ -2848,6 +3773,11 @@
     {
       "path": "raw/official-local/manifests/current-manifest-revision-e1502a7d9c3cc60089a1fc66818e94c042b250d1100fa7c7a073ac0c8a7cdea1.json",
       "sha256": "e1502a7d9c3cc60089a1fc66818e94c042b250d1100fa7c7a073ac0c8a7cdea1",
+      "bytes": 167126
+    },
+    {
+      "path": "raw/official-local/manifests/current-manifest-revision-eb13bc6af4a18859c0205034474bca108a6bfd4cd8db1f951c9f9ed28d73a4de.json",
+      "sha256": "eb13bc6af4a18859c0205034474bca108a6bfd4cd8db1f951c9f9ed28d73a4de",
       "bytes": 167126
     },
     {
@@ -2877,12 +3807,12 @@
     },
     {
       "path": "raw/official-local/manifests/current-manifest-revisions.jsonl",
-      "sha256": "81c1962a8b14776e67afbb4d9b85e6c93f3ac3eebe0b67a9dd6fef1e52c73b2f",
-      "bytes": 3972
+      "sha256": "573438c00d6f2693dd1e0a09d28da4aa5afe26a782dc5b7d1a3f10df7b2017ef",
+      "bytes": 4965
     },
     {
       "path": "raw/official-local/manifests/current-manifest.json",
-      "sha256": "0215fc335e14d68ddfcf5215380873fdb6d2d6252193a22fd90a53fa13533bcb",
+      "sha256": "eb13bc6af4a18859c0205034474bca108a6bfd4cd8db1f951c9f9ed28d73a4de",
       "bytes": 167126
     },
     {
@@ -2904,6 +3834,101 @@
       "path": "raw/omitted-originals.json",
       "sha256": "cd3f7055d97a8b10d4b4c92e21d807542a741496be70d140dad538e3e25f3149",
       "bytes": 19245
+    },
+    {
+      "path": "raw/phase1-inventory/central.json",
+      "sha256": "39fc33e4d6a1798709f931e009c475dc2b42b372acc722741a5a6e6142d25dfe",
+      "bytes": 32490
+    },
+    {
+      "path": "raw/phase1-inventory/county-north.json",
+      "sha256": "f34d9aea361f60e8e23280da7f5fc019ac96325824b3667b04232295d8711a2e",
+      "bytes": 1521769
+    },
+    {
+      "path": "raw/phase1-inventory/county-south.json",
+      "sha256": "a3c885d17b0fbdee34e846e2b77378be7900ddb7ca6443fb20b5aadfd47056f8",
+      "bytes": 292719
+    },
+    {
+      "path": "raw/phase1-inventory/independent-http-checks.json",
+      "sha256": "973cc6f27bd87abdf7ad21ce5b64007ba58d7a647830d0b0bad5e675ce4a8164",
+      "bytes": 651453
+    },
+    {
+      "path": "raw/phase1-inventory/south-priority-candidates.json",
+      "sha256": "fe3a0a15505d23e12df414286df0165960dc8ca186a1b373d040d7dda3f7e368",
+      "bytes": 3711
+    },
+    {
+      "path": "raw/phase1_local_sources/freeze-before-header-stored-string-correction.json",
+      "sha256": "8411e73401d743d59fcb1262942bc432f41e49888ec38f4e49029e315479f86f",
+      "bytes": 2917
+    },
+    {
+      "path": "raw/phase1_local_sources/freeze.json",
+      "sha256": "7f683778ea702aea7d8534b161c8f148f929d1ebeef0f70cf8fc524e89482abe",
+      "bytes": 3570
+    },
+    {
+      "path": "raw/phase1_local_sources/header-stored-string-correction.json",
+      "sha256": "7e7a558352f0b8d64b221a54e7dddb4311f60ba6f1ebfe291533d36df2776a57",
+      "bytes": 2096
+    },
+    {
+      "path": "raw/phase1_local_sources/sources.json",
+      "sha256": "0a4bc328c3530bd4182f0e0fd2ab3354b722a46c82a0a8ccb1dcf4c8ad0dfb9b",
+      "bytes": 5208
+    },
+    {
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-reader/contract.json",
+      "sha256": "52e55833da8e9d8b7413a3ba288f9884c6f91c6c565d697b40ba51dcd597b616",
+      "bytes": 1707
+    },
+    {
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-reader/metadata.json",
+      "sha256": "d13a3c8422536f65ee48ead5909e7bae92d60f200ebc555f90905ddbd33344ae",
+      "bytes": 131602
+    },
+    {
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-room/contract.json",
+      "sha256": "f113d1dcca6e578fd75b525469c835963cfd0952b6f897c97767296a98284fea",
+      "bytes": 1704
+    },
+    {
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-room/metadata.json",
+      "sha256": "694aaa19f302d6f05aac3f32f6bde184411a8a091eadebb4d564f01efcf91c36",
+      "bytes": 151723
+    },
+    {
+      "path": "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/contract.json",
+      "sha256": "510db26b61935ff6344b7bc515a493c59c71357d5fe602058cb8b6c7f954d1cf",
+      "bytes": 1708
+    },
+    {
+      "path": "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/metadata.json",
+      "sha256": "d38cabca25ea754a755c286223fc2562c7199a6a0c91ac2294e840b4876cf0d9",
+      "bytes": 3910
+    },
+    {
+      "path": "raw/phase1_local_sources/south-lienchiang-opendata-173786/contract.json",
+      "sha256": "da448ef92434d002302c281b84c538e99231480eef7e8609f920b518c3470304",
+      "bytes": 1680
+    },
+    {
+      "path": "raw/phase1_local_sources/south-lienchiang-opendata-173786/metadata.json",
+      "sha256": "025f4f2d1935982330c78b5c986b6addcaa983e64639c9cc1c504667390dbf95",
+      "bytes": 2518
+    },
+    {
+      "path": "raw/phase1_local_sources/summary.json",
+      "sha256": "85b1bd3c0337a85cf937de1953ef51cc1eb4c3d07371d3179368517bcff39657",
+      "bytes": 4072
+    },
+    {
+      "path": "raw/phase1_local_sources/verification.json",
+      "sha256": "ceb98f5ed501730255f921515fbf563f4b4ec183465e6dfbdb1fd6fd948de6fa",
+      "bytes": 704
     },
     {
       "path": "raw/public-projections/07285b2481077cace2b15c6d5b29c5a17b1983b0bcb429c0e7eea2e2fe72bc47.json",
@@ -3042,8 +4067,8 @@
     },
     {
       "path": "raw/segis-history/source-checks.jsonl",
-      "sha256": "69c335344dd891d9b438c8a12d047eff0eacf71f609e72a77ed3a9c385d46ef4",
-      "bytes": 2640
+      "sha256": "cd692f66ce487b6fc83e97044d7aed0fa870d428dcfb1307c788647fea51e62b",
+      "bytes": 3432
     },
     {
       "path": "raw/snapshots/ogdl-api-2023/80de5cfa319e135e4ab54cb2e6776e67afb9c24415b1ded0d68af7b2581d7e70.json",
@@ -3832,8 +4857,8 @@
     },
     {
       "path": "research/AI_DISCLOSURE.md",
-      "sha256": "158ebae613146c00e0967a4d918ebc421d99bcf524bee1a2d88d22ec269feeb6",
-      "bytes": 5551
+      "sha256": "057c025571f2e27912aed54a18245d4e8f82829355f08c97fe069a8c3a65deba",
+      "bytes": 6773
     },
     {
       "path": "research/acquisition.md",
@@ -3904,6 +4929,21 @@
       "path": "research/ncl-2005-producer.md",
       "sha256": "766b8fdf167404c216310adbe5ace57f9552fe9fc3bad3cd30ff6a345cacceb5",
       "bytes": 8266
+    },
+    {
+      "path": "research/ncl-2005-programmes-independent-review.json",
+      "sha256": "53a641438278c790e2f1651d12df673690f378df90a1cef1e6a72f53a59e48f9",
+      "bytes": 21726
+    },
+    {
+      "path": "research/ncl-2005-programmes-producer.json",
+      "sha256": "ee3e4b04b6a065642181efafc4dff47942830687f892831eb86849398358b21d",
+      "bytes": 14090
+    },
+    {
+      "path": "research/ncl-2005-programmes-producer.md",
+      "sha256": "2292e48de461d8d4748a8ba5cb3874b0ea34767cfaec3a802b7ba8a83ca1fe76",
+      "bytes": 6430
     },
     {
       "path": "research/ncl-2012-core-search.md",
@@ -4186,6 +5226,76 @@
       "bytes": 13228
     },
     {
+      "path": "research/phase1-local-independent-review.json",
+      "sha256": "0d73dc396946d36b6bdf59d9536984d916b393ccbd54efa7d6c9dc08c0e8beae",
+      "bytes": 17430215
+    },
+    {
+      "path": "research/phase1-local-independent-review.md",
+      "sha256": "216ec88f34a644ce942a16e093f977fc5399f0e7c3e6a3f24f2306debaeee0f6",
+      "bytes": 5437
+    },
+    {
+      "path": "research/phase1-matrix-independent-review.json",
+      "sha256": "ad2a70836b5b7582b47ffb477c96354b7019c8fddb4c29c7826564bbe0a08e13",
+      "bytes": 81501
+    },
+    {
+      "path": "research/phase1-matrix-independent-review.md",
+      "sha256": "4398186c2dcf2a1bc1e8565d754991eb155a1d76f9d9526fd9790f35f22a633c",
+      "bytes": 4446
+    },
+    {
+      "path": "research/phase1-north.md",
+      "sha256": "a6f43466d1c0ad244d7faad8accf5e29bc32c6d0ea6dfa16ee780eea308dfae7",
+      "bytes": 16108
+    },
+    {
+      "path": "research/phase1-source-entry-independent-review.json",
+      "sha256": "973cc6f27bd87abdf7ad21ce5b64007ba58d7a647830d0b0bad5e675ce4a8164",
+      "bytes": 651453
+    },
+    {
+      "path": "research/phase1-source-entry-independent-review.md",
+      "sha256": "a71c8771981a26d35c75fbe3f3f9868c130120c4871894f85af662af55d5ed71",
+      "bytes": 4406
+    },
+    {
+      "path": "research/phase1-south.md",
+      "sha256": "c4f5e025c0c60254621265c9b65a7663b196ce0a571b01a24f7c0649f8a5a7f7",
+      "bytes": 23378
+    },
+    {
+      "path": "research/phase1-supplements-format-verification.json",
+      "sha256": "cf6d2120e3cdcbf6574f3daf4266e3f1ebed9256c5d8ca5f9b4e147011da6864",
+      "bytes": 26901
+    },
+    {
+      "path": "research/phase1-supplements-noop-verification.json",
+      "sha256": "05c011b8e3d1e077dbb788276b611e76785d514a3cbdba055b6818f4d6f72290",
+      "bytes": 26580
+    },
+    {
+      "path": "research/phase1-update-integration.json",
+      "sha256": "cfa49c496e860ab66e15436c12c090cf5e9fd96fd68f5ae6ba964e8c9915e8f8",
+      "bytes": 10217
+    },
+    {
+      "path": "research/phase1-update-integration.md",
+      "sha256": "0b835a97ee5ab231e2a4e1330c99be7ba9eb516f8248ad7fe1ef36bda655b3d3",
+      "bytes": 2398
+    },
+    {
+      "path": "research/phase1_local_sources-producer.json",
+      "sha256": "ca67a8944d49cfc11afc01dcae98c70437e10e80fa725c8eb4bbc94e83e39583",
+      "bytes": 11601
+    },
+    {
+      "path": "research/phase1_local_sources-producer.md",
+      "sha256": "a117f9d43516bc4e0b6cad977a1990d1558d8a4ac69aae10affb9418deb9da4a",
+      "bytes": 7426
+    },
+    {
       "path": "research/pipeline-review.md",
       "sha256": "185736c019949d737ac3ebd0f7354dba8745a822e87e56ff59cb5101fc73ded7",
       "bytes": 5245
@@ -4207,12 +5317,12 @@
     },
     {
       "path": "research/source-verification.json",
-      "sha256": "bc0927afed1c48bf00ba8364d20dfeb116ac8b5580a2686a5b9dbe909f970d57",
+      "sha256": "7af91bd6d783ce56106f24aee090ce210bde7299d1bdf1803290cd7f36170016",
       "bytes": 23302
     },
     {
       "path": "research/source-verification.md",
-      "sha256": "ce5b33a1ef5c804d264aa0367df03001737356cb5e0e4d5c5512f719470f5776",
+      "sha256": "f58fbd9134ee8dc01250b9a2ec53075c8df4b93f490509ca67f212a5079aea52",
       "bytes": 9706
     },
     {
@@ -4297,13 +5407,38 @@
     },
     {
       "path": "scripts/build_documentation.py",
-      "sha256": "0741bb27f107bc7bca557e81a7f6ffc037cdc5500b489fa2b71fee325eb6b1ad",
-      "bytes": 28713
+      "sha256": "7374ed370a23408edca6d0bcb31875ebcb6eba92c9ccee44146e064988b1b35f",
+      "bytes": 28794
+    },
+    {
+      "path": "scripts/build_phase1_documentation.py",
+      "sha256": "56d1e1c602802459daac9e416022745d3863d0454a408dc25e2866f67a47fd4e",
+      "bytes": 10713
+    },
+    {
+      "path": "scripts/build_phase1_inventory.py",
+      "sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89",
+      "bytes": 26637
+    },
+    {
+      "path": "scripts/build_phase1_reader.py",
+      "sha256": "bc77b9624235cd2495eaf5484172a74351e4dbd1bdc7645cdb7d6db9ea823e82",
+      "bytes": 1706
+    },
+    {
+      "path": "scripts/build_phase1_supplements.py",
+      "sha256": "9159c637d0e7078c243660ff9a188ee30f39081576e0196bcccbbd52cd45ac06",
+      "bytes": 6880
     },
     {
       "path": "scripts/build_release.py",
       "sha256": "2e22df6e004d3c4bda33dfe28dab36ff48fd67354cc98c860d183e5565754b49",
       "bytes": 10168
+    },
+    {
+      "path": "scripts/check_phase1_sources.py",
+      "sha256": "3f33e47c656c9a27585baade7d3074d372d53a8d49514bb989564962ba4baa5a",
+      "bytes": 6555
     },
     {
       "path": "scripts/cohort_registry.py",
@@ -4319,6 +5454,11 @@
       "path": "scripts/extract_ncl_2005.py",
       "sha256": "d875f50d203dad399cbc99dc089eb4244e923c496f725a83c4a3a546980edaf2",
       "bytes": 40367
+    },
+    {
+      "path": "scripts/extract_ncl_2005_programmes.py",
+      "sha256": "9dcd51d25c6c16d5a997982c500211ba93bbb070143caf351d1bc4b90f3ff9f6",
+      "bytes": 39829
     },
     {
       "path": "scripts/extract_ncl_2012_prose.py",
@@ -4401,6 +5541,11 @@
       "bytes": 15686
     },
     {
+      "path": "scripts/extract_phase1_local_sources.py",
+      "sha256": "86e824d59055323526e3dc58ae7f0452cb9d9e0eda98c201a8698655339e54a3",
+      "bytes": 31681
+    },
+    {
       "path": "scripts/fetch_local_history.py",
       "sha256": "95dbbb1af8faa07186716fce6d4f1988d505ab221673efee8a000efddcd8efa0",
       "bytes": 19255
@@ -4432,8 +5577,28 @@
     },
     {
       "path": "scripts/package_release.py",
-      "sha256": "ba201dcc87800e8d5f5fbb5cc203a51e99d1087e8db14184a3d857a69704aa44",
-      "bytes": 5209
+      "sha256": "a74e444d47cc6cedd7054549ed9e7fd6699ca3816e5f00f247ba7245457f3725",
+      "bytes": 6338
+    },
+    {
+      "path": "scripts/phase1_central_sources.json",
+      "sha256": "a90bfc3bae39f8f84ced5f5980f1a94461576cae06510391078f7c9a330b0f85",
+      "bytes": 1940
+    },
+    {
+      "path": "scripts/phase1_scope.json",
+      "sha256": "8f61fc11bcd6da6e75206073944030e932f835c5e0db9254e410a42d9f029192",
+      "bytes": 3926
+    },
+    {
+      "path": "scripts/phase1_source_manager.py",
+      "sha256": "a556ab09ce4bebe9dd206c0d4392994207e28b4f41a823808321db32875a7dcd",
+      "bytes": 9492
+    },
+    {
+      "path": "scripts/phase1_source_registry.py",
+      "sha256": "3a145da125152d4254472e041cedbfd8630f44e1a25b273a0d6e16df9b4d8366",
+      "bytes": 2290
     },
     {
       "path": "scripts/record_io.py",
@@ -4447,13 +5612,13 @@
     },
     {
       "path": "scripts/restore_originals.py",
-      "sha256": "72b59feefcd7a62a3e9db9c5e79260d1f93484682add1096173169d0fead28f5",
-      "bytes": 2896
+      "sha256": "d2cc6eac097ff0892eeb80653f45a7ce31a1de1cdedff7624326afc5cfeaf488",
+      "bytes": 5856
     },
     {
       "path": "scripts/run_update.py",
-      "sha256": "09f6066308bf08bf68f40772f87c9e21165d4bcd1f3941a6618efde02b587c51",
-      "bytes": 7228
+      "sha256": "9ec715931e6592c60672e65f710a838a19d2510267461695b7daeb72b63a5e25",
+      "bytes": 12696
     },
     {
       "path": "scripts/test_cohort_registry.py",
@@ -4464,6 +5629,16 @@
       "path": "scripts/test_components.py",
       "sha256": "caf304abc6f2122b38a32906975e00a0ae7cd024cc229cab862c22d8ce277b53",
       "bytes": 27700
+    },
+    {
+      "path": "scripts/test_phase1_inventory.py",
+      "sha256": "f3df3e49aa95cf1cd79da8a95d04f462eca216110b919139924dd8af3466e4a2",
+      "bytes": 5467
+    },
+    {
+      "path": "scripts/test_phase1_source_manager.py",
+      "sha256": "21c6bce060e299c1fc1d3889b20fa7c6045b794b0f9cfcc84690da4c55aec8b6",
+      "bytes": 10935
     },
     {
       "path": "scripts/test_pipeline.py",
@@ -4479,6 +5654,16 @@
       "path": "scripts/test_update_groups.py",
       "sha256": "e4ebac4a0f6384323c9eecbc4749517bf4cfd03507e612ebc56f64b747545264",
       "bytes": 12919
+    },
+    {
+      "path": "scripts/validate_phase1_inventory.py",
+      "sha256": "f0d4f3177b7bdfe9ac15590ff0964c9dab180cfbe8a967b37f4019ee6f6faf70",
+      "bytes": 7743
+    },
+    {
+      "path": "scripts/validate_phase1_supplements.py",
+      "sha256": "9ea3d85c5881e36892dc2aea8735140aa58a8c941916b742597ca9a055173316",
+      "bytes": 19558
     },
     {
       "path": "scripts/validate_publication.py",
@@ -4497,18 +5682,69 @@
     },
     {
       "path": "site/index.html",
-      "sha256": "daf0d1fb464758323625eddd55ee7f01260cdb263d47bdfc16edb6e8c249248c",
-      "bytes": 8147145
+      "sha256": "b5857c03ae3b784086c11488647a1ee64e30cbb240394bf73aa684eb879023f8",
+      "bytes": 8147198
+    },
+    {
+      "path": "site/phase1-template.html",
+      "sha256": "86d5df7658949dd2f15b8e9296789be07cd5bc7979d32980622a06f4a8a85478",
+      "bytes": 10456
+    },
+    {
+      "path": "site/phase1.html",
+      "sha256": "a17f08b0de7c8b98d1694d8651f32d895b8f29678ffb6b2c22ba5c381457e85a",
+      "bytes": 4218940
     },
     {
       "path": "site/template.html",
-      "sha256": "3c04ca45789c1a7917692e7b0bf77b6495d709e76cf50a552e7f45e00a9250be",
-      "bytes": 13348
+      "sha256": "7bf9d0f098c50d6efaa28db7b10f3f8a430eb75a2a42e00df452b437b1d015a6",
+      "bytes": 13401
     },
     {
       "path": "tests/test_local_history_refresh.py",
       "sha256": "02be0f3fbd5ececa6b33294fd2e1c6313c24b37ed8ae2b7f56f65315d590d6c3",
       "bytes": 5444
     }
-  ]
+  ],
+  "phase1": {
+    "scope_id": "public-library-source-inventory-2005-2025-v1",
+    "authority_slots_expected": 88,
+    "authority_slots_with_recorded_attempt": 88,
+    "source_candidates_listed": 440,
+    "raw_source_profiles": 23466,
+    "discovery_matrix_cells": 4830,
+    "all_history_complete": false,
+    "cross_year_comparability_certified": false,
+    "separate_source_layers": [
+      {
+        "table": "programme_rows",
+        "records": 119,
+        "csv": "derived/ncl_2005_programmes.csv",
+        "jsonl": "derived/ncl_2005_programmes.jsonl",
+        "public_jsonl_sha256": "e17b1301ed60001f22025d2129ee5cf46cb6882f20fa1d2491caf2b4db276ecc"
+      },
+      {
+        "table": "programme_quantities",
+        "records": 123,
+        "csv": "derived/ncl_2005_programmes_long.csv",
+        "jsonl": "derived/ncl_2005_programmes_long.jsonl",
+        "public_jsonl_sha256": "ba461cf505a7df5d32d0e04222d0ce447ac42a2480b1ece8df6655ed593c4543"
+      },
+      {
+        "table": "local_original_cells",
+        "records": 33705,
+        "csv": "derived/phase1_local_sources_cells.csv",
+        "jsonl": "derived/phase1_local_sources_cells.jsonl",
+        "public_jsonl_sha256": "e7eace84cf6338294f659f48a246ecea41213ad1fe4027f225273db598d8c7a5"
+      },
+      {
+        "table": "local_statistical_cells",
+        "records": 18486,
+        "csv": "derived/phase1_local_sources_long.csv",
+        "jsonl": "derived/phase1_local_sources_long.jsonl",
+        "public_jsonl_sha256": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80"
+      }
+    ],
+    "canonical_union_permitted": false
+  }
 }

@@ -29,6 +29,24 @@
       "statistical_fields_and_row_order_retained": true
     },
     {
+      "path": "derived/ncl_2005_programmes_long.csv",
+      "private_derived_sha256": "ff8217c9eadcc5e4124456c1ae8ead648aa566f657f4231d829653397797a210",
+      "public_derived_sha256": "bafbf1cf277cd775df6f81635fc020b860aac5dfda8986a799e6adadeb80c73a",
+      "omitted_fields": [
+        "original_fields"
+      ],
+      "statistical_fields_and_row_order_retained": true
+    },
+    {
+      "path": "derived/ncl_2005_programmes_long.jsonl",
+      "private_derived_sha256": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
+      "public_derived_sha256": "ba461cf505a7df5d32d0e04222d0ce447ac42a2480b1ece8df6655ed593c4543",
+      "omitted_fields": [
+        "original_fields"
+      ],
+      "statistical_fields_and_row_order_retained": true
+    },
+    {
       "path": "derived/ncl_2012_prose_long.csv",
       "private_derived_sha256": "599ba95f5dd84137f8e58566a728b36828dde43cbe88e1679d8d3279ad2e5dc3",
       "public_derived_sha256": "2f644c0469c49cff292f7b0f5ce1ef085486c287f4587e0cf117b93db08f208c",

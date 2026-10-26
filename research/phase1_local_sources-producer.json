@@ -1,0 +1,229 @@
+{
+  "status": "producer_complete_awaiting_root_independent_source_check",
+  "source_manifest": {
+    "source_discovery": "raw/phase1-inventory/south-priority-candidates.json",
+    "sources": [
+      {
+        "source_id": "south-lienchiang-opendata-173786",
+        "source_key": "south-lienchiang-opendata-173786",
+        "source_url": "https://data.gov.tw/dataset/173786",
+        "source_title": "113年連江縣公共圖書館概況",
+        "source_agency": "連江縣政府",
+        "county": "連江縣",
+        "source_download_url": "https://www.matsu.gov.tw/chhtml/adddownloadcount/371030000A/101571?mcfilename=Mcfile2&type=D",
+        "source_final_url": "https://www.matsu.gov.tw/upload/f-20250613115632.ods",
+        "source_filename": "lienchiang-113-overview.ods",
+        "source_workspace_relative_path": "01_圖書館與古籍/臺灣公共圖書館跨年度統計/原始資料/phase1-local-20261026/lienchiang-113-overview.ods",
+        "source_sha256": "de3b86da388ef7337e4996c06cde88fb1dd52ed0b95bfdd8186e545d1f94000b",
+        "source_retrieved_at": "2026-10-26T08:50:52.719162+00:00",
+        "source_bytes": 3867,
+        "format": "ODS",
+        "license_status": "OGDL-1.0_explicit_catalog",
+        "license_url": "https://data.gov.tw/license",
+        "license_evidence_basis": "source discovery inventory; explicit catalog license only where listed; no blanket inferred attachment license",
+        "catalog_body_sha256": "a8c1733899ebbe81a550130d69b57b43e934af2010b7ed130d9284533e9d9c33",
+        "source_catalog_period_hint": 113
+      },
+      {
+        "source_id": "south-hualien-library-lending-409-reader",
+        "source_key": "south-hualien-library-lending-409",
+        "source_url": "https://www.hccc.gov.tw/zh-tw/Download/Statistics/409",
+        "source_title": "花蓮縣圖書資訊借閱概況－依讀者身分別及館藏地（室）",
+        "source_agency": "花蓮縣文化局",
+        "county": "花蓮縣",
+        "source_download_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16274",
+        "source_final_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16274",
+        "source_filename": "hualien-lending-reader-identity.ods",
+        "source_workspace_relative_path": "01_圖書館與古籍/臺灣公共圖書館跨年度統計/原始資料/phase1-local-20261026/hualien-lending-reader-identity.ods",
+        "source_sha256": "205a79d6aadce9f4580664d6b67078e5446b6e7fedab366b971b312f31fed1d2",
+        "source_retrieved_at": "2026-10-26T08:50:25.683866+00:00",
+        "source_bytes": 73071,
+        "format": "ODS",
+        "license_status": "published_statistics_document_license_unconfirmed",
+        "license_url": null,
+        "license_evidence_basis": "source discovery inventory; explicit catalog license only where listed; no blanket inferred attachment license",
+        "catalog_body_sha256": "98930595c2ef4e05ad53c96ad4b085422934ca257e20f1ed94466e087b7a1381",
+        "source_catalog_period_hint": "109年9月至115年8月"
+      },
+      {
+        "source_id": "south-hualien-library-lending-409-room",
+        "source_key": "south-hualien-library-lending-409",
+        "source_url": "https://www.hccc.gov.tw/zh-tw/Download/Statistics/409",
+        "source_title": "花蓮縣圖書資訊借閱概況－依讀者身分別及館藏地（室）",
+        "source_agency": "花蓮縣文化局",
+        "county": "花蓮縣",
+        "source_download_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16275",
+        "source_final_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16275",
+        "source_filename": "hualien-lending-collection-room.ods",
+        "source_workspace_relative_path": "01_圖書館與古籍/臺灣公共圖書館跨年度統計/原始資料/phase1-local-20261026/hualien-lending-collection-room.ods",
+        "source_sha256": "69881ded57b1ede472a6f41cfb48f256d3963b0dba7d1b493d5e29a646b5c998",
+        "source_retrieved_at": "2026-10-26T08:50:25.754829+00:00",
+        "source_bytes": 182713,
+        "format": "ODS",
+        "license_status": "published_statistics_document_license_unconfirmed",
+        "license_url": null,
+        "license_evidence_basis": "source discovery inventory; explicit catalog license only where listed; no blanket inferred attachment license",
+        "catalog_body_sha256": "98930595c2ef4e05ad53c96ad4b085422934ca257e20f1ed94466e087b7a1381",
+        "source_catalog_period_hint": "109年9月至115年8月"
+      },
+      {
+        "source_id": "south-lienchiang-culture-library-overview-114",
+        "source_key": "south-lienchiang-culture-library-overview-114",
+        "source_url": "https://matsucc.gov.tw/%E8%AA%8D%E8%AD%98%E6%96%87%E5%8C%96%E8%99%95/%E9%A0%90%E5%91%8A%E7%B5%B1%E8%A8%88%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E5%8D%80/",
+        "source_title": "連江縣公共圖書館概況114年",
+        "source_agency": "連江縣政府文化處",
+        "county": "連江縣",
+        "source_download_url": "https://matsucc.gov.tw/wp-content/uploads/2026/07/11014-03-01-2處-連江縣公共圖書館概況114年.xlsx",
+        "source_final_url": "https://matsucc.gov.tw/wp-content/uploads/2026/07/11014-03-01-2%E8%99%95-%E9%80%A3%E6%B1%9F%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%A6%82%E6%B3%81114%E5%B9%B4.xlsx",
+        "source_filename": "lienchiang-114-overview.xlsx",
+        "source_workspace_relative_path": "01_圖書館與古籍/臺灣公共圖書館跨年度統計/原始資料/phase1-local-20261026/lienchiang-114-overview.xlsx",
+        "source_sha256": "cb7f4f0a2d8817e5c0ab6168d874ffa7c7e21104b871bbd8706ffc6e2f6512d4",
+        "source_retrieved_at": "2026-10-26T08:50:25.721880+00:00",
+        "source_bytes": 31775,
+        "format": "XLSX",
+        "license_status": "published_statistics_document_license_unconfirmed",
+        "license_url": null,
+        "license_evidence_basis": "source discovery inventory; explicit catalog license only where listed; no blanket inferred attachment license",
+        "catalog_body_sha256": "607b92d88397693df1684e4ae67bc569f6171b2927143a675b9f0017cc862888",
+        "source_catalog_period_hint": 114
+      }
+    ]
+  },
+  "summary": {
+    "source_files": 4,
+    "sheet_counts": {
+      "south-lienchiang-opendata-173786": 1,
+      "south-hualien-library-lending-409-reader": 73,
+      "south-hualien-library-lending-409-room": 73,
+      "south-lienchiang-culture-library-overview-114": 3
+    },
+    "records": {
+      "source_cell_facts": 33705,
+      "statistical_data_cells": 18486,
+      "value_status_counts": {
+        "reported_typed_numeric": 13387,
+        "source_display_typed_value_conflict_unresolved": 5098,
+        "source_marker": 1
+      }
+    },
+    "source_records": {
+      "south-lienchiang-opendata-173786": {
+        "source_cell_facts": 48,
+        "statistical_data_cells": 35,
+        "value_status_counts": {
+          "reported_typed_numeric": 35
+        },
+        "resolved_numeric_cells": 35,
+        "typed_numeric_cells": 35
+      },
+      "south-hualien-library-lending-409-reader": {
+        "source_cell_facts": 13797,
+        "statistical_data_cells": 6336,
+        "value_status_counts": {
+          "reported_typed_numeric": 4384,
+          "source_display_typed_value_conflict_unresolved": 1952
+        },
+        "resolved_numeric_cells": 4384,
+        "typed_numeric_cells": 6336
+      },
+      "south-hualien-library-lending-409-room": {
+        "source_cell_facts": 19701,
+        "statistical_data_cells": 12080,
+        "value_status_counts": {
+          "reported_typed_numeric": 8934,
+          "source_display_typed_value_conflict_unresolved": 3146
+        },
+        "resolved_numeric_cells": 8934,
+        "typed_numeric_cells": 12080
+      },
+      "south-lienchiang-culture-library-overview-114": {
+        "source_cell_facts": 159,
+        "statistical_data_cells": 35,
+        "value_status_counts": {
+          "reported_typed_numeric": 34,
+          "source_marker": 1
+        },
+        "resolved_numeric_cells": 34,
+        "typed_numeric_cells": 34
+      }
+    },
+    "period_policy": "Monthly sheet/header conflicts keep both candidates; official period unknown. Annual two sources remain separate versions and populations.",
+    "normalization_policy": "Display marker plus typed numeric is unresolved: value null, original typed value separate; neither reported missing nor certified measured zero.",
+    "cache_policy": "All sources validated before writes; changed SHA requires review; unchanged output bytes retain mtime.",
+    "source_sheets_not_canonical": "This independent phase1 source-cell layer does not modify the annual canonical observations.",
+    "dependencies": [
+      "Python3.12 standard library ZIP/XML/Decimal",
+      "scripts/extract_phase1_local_sources.py"
+    ],
+    "outputs": [
+      {
+        "path": "derived/phase1_local_sources_cells.csv",
+        "sha256": "d55b0b3109b8373a5e6de9d630b2b4fe8ff371e97da7be199eded01ea7016f13",
+        "bytes": 25149836
+      },
+      {
+        "path": "derived/phase1_local_sources_cells.jsonl",
+        "sha256": "0124a2224e01977dd60823ff5a0836b316f88a5b8241adf95c97ec95ef115144",
+        "bytes": 49812098
+      },
+      {
+        "path": "derived/phase1_local_sources_long.csv",
+        "sha256": "2e855af5b5c545f24e05b14f13d7acc16939b691024ace0baa6e8f064e3ea55f",
+        "bytes": 26812202
+      },
+      {
+        "path": "derived/phase1_local_sources_long.jsonl",
+        "sha256": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+        "bytes": 48266280
+      },
+      {
+        "path": "raw/phase1_local_sources/south-lienchiang-opendata-173786/metadata.json",
+        "sha256": "619e309bda6441893ebb01f5af93e3c79c089f1321b72ccedce6fc47f4ae457a",
+        "bytes": 2681
+      },
+      {
+        "path": "raw/phase1_local_sources/south-hualien-library-lending-409-reader/metadata.json",
+        "sha256": "e7c37346ef3cf1a5c494e5d4d1ca5ee6a26f77bd7d0189a420b613195682bf13",
+        "bytes": 131773
+      },
+      {
+        "path": "raw/phase1_local_sources/south-hualien-library-lending-409-room/metadata.json",
+        "sha256": "733aafa87e9fc325f228302cddc754854e3fe07a6cc6256c65d291925370c7a7",
+        "bytes": 151894
+      },
+      {
+        "path": "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/metadata.json",
+        "sha256": "eacecec9d862000f3dfa6b5c8ca442fe9d41f672216f8ff62faf939a706b735c",
+        "bytes": 4074
+      }
+    ]
+  },
+  "verification": {
+    "source_files": 4,
+    "statistical_data_cells": 18486,
+    "checks": {
+      "all_related_sheets_and_cells": true,
+      "raw_typed_formula_style_roundtrip": true,
+      "csv_jsonl_every_field_equal": true,
+      "unique_cell_identifiers": true,
+      "no_op_bytes_mtime_two_runs": true,
+      "failure_preserves_previous_outputs": [
+        {
+          "fault": "missing",
+          "error": "FileNotFoundError",
+          "previous_outputs_preserved": true
+        },
+        {
+          "fault": "changed",
+          "error": "ValueError",
+          "previous_outputs_preserved": true
+        }
+      ]
+    },
+    "limitations": "Source-cell verification is not official-report correctness, recalculation or human double proofreading."
+  },
+  "canonical_modified": false,
+  "original_workbooks_public_distribution": "not_in_public_bundle",
+  "cloud_readback_status": "pending_root_connector_readback",
+  "portability": "Defaults to relative raw/phase1_local_sources/originals; private maintenance may pass --source-root or TW_LIBRARY_PHASE1_SOURCE_ROOT; deployment path not used by published data or contracts."
+}

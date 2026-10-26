@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "checked_at": "2026-10-26T08:45:24.577795+00:00",
+  "sources": [
+    {
+      "source_key": "south-lienchiang-opendata-173786",
+      "county": "連江縣",
+      "agency": "連江縣政府",
+      "title": "113年連江縣公共圖書館概況",
+      "catalog_url": "https://data.gov.tw/dataset/173786",
+      "catalog_body_sha256": "a8c1733899ebbe81a550130d69b57b43e934af2010b7ed130d9284533e9d9c33",
+      "catalog_locator": "script[type=application/ld+json] Dataset.distribution",
+      "resources": [
+        {
+          "resource_index": 0,
+          "url": "https://www.matsu.gov.tw/chhtml/adddownloadcount/371030000A/101571?mcfilename=Mcfile2&type=D",
+          "format": "ODS",
+          "acquisition_status": "not_downloaded"
+        }
+      ],
+      "full_resource_list_verified": true,
+      "license_status": "OGDL-1.0_explicit_catalog",
+      "license_url": "https://data.gov.tw/license",
+      "catalog_year_hint": 113,
+      "verified_data_years": [],
+      "ingestion_status": "not_ingested"
+    },
+    {
+      "source_key": "south-hualien-library-lending-409",
+      "county": "花蓮縣",
+      "agency": "花蓮縣文化局",
+      "title": "花蓮縣圖書資訊借閱概況－依讀者身分別及館藏地（室）",
+      "catalog_url": "https://www.hccc.gov.tw/zh-tw/Download/Statistics/409",
+      "catalog_body_sha256": "98930595c2ef4e05ad53c96ad4b085422934ca257e20f1ed94466e087b7a1381",
+      "catalog_locator": "統計報表前兩組圖書資訊借閱概況（共有6組結果）",
+      "resources": [
+        {
+          "resource_index": 10,
+          "title": "花蓮縣圖書資訊借閱概況－依讀者身分別.ods",
+          "url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16274",
+          "format": "ODS",
+          "acquisition_status": "not_downloaded"
+        },
+        {
+          "resource_index": 11,
+          "title": "花蓮縣圖書資訊借閱概況－依館藏地（室）.ods",
+          "url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16275",
+          "format": "ODS",
+          "acquisition_status": "not_downloaded"
+        }
+      ],
+      "full_resource_list_verified": true,
+      "catalog_scope_note": "本批僅兩組圖書資訊借閱統計；同頁另四組藝文/文化經費/古蹟並非公共館全體營運，未混入本批。",
+      "license_status": "published_statistics_document_license_unconfirmed",
+      "license_url": null,
+      "catalog_period_hint": "109年9月至115年8月",
+      "verified_data_years": [],
+      "ingestion_status": "not_ingested"
+    },
+    {
+      "source_key": "south-lienchiang-culture-library-overview-114",
+      "county": "連江縣",
+      "agency": "連江縣政府文化處",
+      "title": "連江縣公共圖書館概況114年",
+      "catalog_url": "https://matsucc.gov.tw/%E8%AA%8D%E8%AD%98%E6%96%87%E5%8C%96%E8%99%95/%E9%A0%90%E5%91%8A%E7%B5%B1%E8%A8%88%E6%AA%94%E6%A1%88%E4%B8%8A%E5%82%B3%E5%8D%80/",
+      "catalog_body_sha256": "607b92d88397693df1684e4ae67bc569f6171b2927143a675b9f0017cc862888",
+      "catalog_locator": "預告統計檔案上傳區：連江縣公共圖書館概況一列",
+      "resources": [
+        {
+          "resource_index": 0,
+          "url": "https://matsucc.gov.tw/wp-content/uploads/2026/07/11014-03-01-2處-連江縣公共圖書館概況114年.xlsx",
+          "format": "XLSX",
+          "acquisition_status": "not_downloaded"
+        }
+      ],
+      "full_resource_list_verified": true,
+      "license_status": "published_statistics_document_license_unconfirmed",
+      "license_url": null,
+      "catalog_year_hint": 114,
+      "verified_data_years": [],
+      "ingestion_status": "not_ingested"
+    }
+  ]
+}

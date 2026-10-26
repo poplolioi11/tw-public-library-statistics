@@ -1,0 +1,13 @@
+{
+ "schema_version":"1.0.0",
+ "sources":[
+  {"id":"central-ncl-yearbook-catalogue-1","agency_name":"國家圖書館","role":"yearbook_catalogue","url":"https://www.ncl.edu.tw/librarianship-yearbook","check_interval_days":7,"terms":["圖書館年鑑"]},
+  {"id":"central-ncl-yearbook-catalogue-2","agency_name":"國家圖書館","role":"yearbook_catalogue","url":"https://www.ncl.edu.tw/librarianship-yearbook?page=2","check_interval_days":7,"terms":["圖書館年鑑"]},
+  {"id":"central-ncl-yearbook-catalogue-3","agency_name":"國家圖書館","role":"yearbook_catalogue","url":"https://www.ncl.edu.tw/librarianship-yearbook?page=3","check_interval_days":7,"terms":["圖書館年鑑"]},
+  {"id":"central-nlpi-public-statistics","agency_name":"國立公共資訊圖書館","role":"public_statistics_system","url":"https://publibstat.nlpi.edu.tw/","check_interval_days":7,"terms":["公立公共圖書館","2025","資料"]},
+  {"id":"central-nlpi-public-policy","agency_name":"國立公共資訊圖書館","role":"data_publication_policy","url":"https://publibstat.nlpi.edu.tw/Frontend/News/ShareNewsView?NewsID=News000050","check_interval_days":7,"terms":["數據","申請","公開"]},
+  {"id":"central-open-data-6425","agency_name":"國立公共資訊圖書館／政府資料開放平臺","role":"open_data_catalogue","url":"https://data.gov.tw/dataset/6425","check_interval_days":14,"terms":["公共圖書館統計","政府資料開放授權條款"]},
+  {"id":"central-dgbas-county-entry","agency_name":"行政院主計總處","role":"county_statistics_entry","url":"https://winstacity.dgbas.gov.tw/DgbasWeb/ZWeb/StateFile_ZWeb.aspx?Type=table","check_interval_days":90,"terms":["圖書館","縣市"]},
+  {"id":"central-segis-catalogue","agency_name":"內政部社會經濟資料服務平臺","role":"public_catalogue","url":"https://segis.moi.gov.tw/STATCloud/Catalog","check_interval_days":90,"terms":["圖書館","資料目錄"]}
+ ]
+}

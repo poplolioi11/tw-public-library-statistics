@@ -139,7 +139,21 @@ ORDER BY data_year, geography;
 
 95卷公共館表1–2將國立與直轄市機構另列；表3–4是23個原縣市及其原合計，不能直接當現行22縣市，也不能與前兩表整列相加而不核母體。私立公共館表5與統計章108的調查量／填答館數按來源分開；各指標填答數可能不同，不能當設施總數。`source_parenthetical_raw`保留原括號，`source_response_notation_kind`、`source_subrow_label_status`與`source_original_table_row`分辨原字和整理用子列。`ownership_scope`與`population_scope`不可省略。
 
-`未統計`是原印文字狀態，value=null、source_marker；不解讀成真零。原印冊而正文混合冊／件／種，以及借閱人次欄印人的矛盾，以unit_status與source_unit_context_locator保留；正式unit未知時不擅加單位。表6特定計畫與表7跨年活動是已知來源待辦，不是找不到。
+`未統計`是原印文字狀態，value=null、source_marker；不解讀成真零。原印冊而正文混合冊／件／種，以及借閱人次欄印人的矛盾，以unit_status與source_unit_context_locator保留；正式unit未知時不擅加單位。表6特定計畫與表7跨年活動已完整另存programme來源層，未當成年度核心量。
+
+<!-- BEGIN phase1 -->
+## 第一階段的新資料層
+
+先讀`docs/phase1-summary.json`、`docs/phase1-source-inventory.json`及`docs/phase1-data-dictionary.json`。`derived/phase1_authority_checks`是88項來源查核；`phase1_source_candidates`是候選項，不能當觀測。`phase1_discovery_matrix`是來源出現索引，原量和比率分開，月值不當全年，現行地名不改寫舊縣市。`phase1_raw_source_profiles`精確分組既有正式觀測及其ID，不認證跨年可比。
+
+`docs/phase1-supplements.json`列新來源層CSV、JSONL和SQLite四表。programme_rows與programme_quantities是同一來源的列／數量視圖；data_year為null，不拿計畫參照年當全年統計。local_original_cells與local_statistical_cells同樣不可相加；按來源／原工作表的小分檔在`docs/phase1-source-cell-partitions.json`，分檔聯集等於後一表。
+
+來源格使用`value_raw`、`source_display_raw`、`source_stored_value_raw`、`source_typed_numeric_value`。5,098格顯示「-」而typed為0，value=null和source_display_typed_value_conflict_unresolved表示兩種來源表示未解，不能擅改0或一般缺值。原公式只保留原字及快取，不宣稱重新計算。176格sheet/header年月矛盾保持period_year/month=null；catalog_title_year_only_attachment_undated也不是原表已確證年份。未解單位、總計重疊、原分類及來源註解均須同讀。
+
+重建新來源層前，以`python scripts/restore_originals.py --phase1-only`只還原四個已覆核工作簿；`--include-phase1`則連同舊來源還原。可用`--source-root`指定本機研究原件位置。腳本依已記錄SHA驗證，既有不同版本不覆寫，新版須先覆核。
+
+候選不等於完成，查頁沒看到不等於官方無資料。每個結果附來源URL、原件SHA、原表／工作表／儲存格定位及資料版本。新來源格尚未接入canonical observations，不能自行union。
+<!-- END phase1 -->
 
 
 ## 公開副本

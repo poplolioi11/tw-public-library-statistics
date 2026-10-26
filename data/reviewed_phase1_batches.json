@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0.0",
+  "canonical_union_permitted": false,
+  "scope": "Only reviewed programme and four-workbook batches; not canonical historical cohorts or an88-role recrawl.",
+  "batches": [
+    {
+      "id": "phase1_ncl95_programmes",
+      "layer": "programme_source_rows_and_quantities",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2005_programmes.py",
+      "args": [
+        "--offline",
+        "--self-test"
+      ],
+      "accepts_source_root": false,
+      "inputs": [
+        "raw/ncl-2005/yearbook-95-public-library.pdf",
+        "raw/ncl-2005/yearbook-95-public-library.metadata.json"
+      ],
+      "outputs": [
+        "derived/ncl_2005_programmes.csv",
+        "derived/ncl_2005_programmes.jsonl",
+        "derived/ncl_2005_programmes_long.csv",
+        "derived/ncl_2005_programmes_long.jsonl",
+        "raw/ncl-2005-programmes/metadata.json",
+        "raw/ncl-2005-programmes/cell-audit.json",
+        "raw/ncl-2005-programmes/verification.json",
+        "raw/ncl-2005-programmes/incremental-contract.json"
+      ],
+      "originals": [
+        {
+          "path": "raw/ncl-2005/yearbook-95-public-library.pdf",
+          "sha256": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
+          "source_id": "ncl-yearbook-95-public-library-programmes",
+          "original_distribution": "not_in_public_bundle"
+        }
+      ],
+      "review_evidence": [
+        "research/ncl-2005-programmes-independent-review.json",
+        "raw/ncl-2005-programmes/label-correction.json"
+      ],
+      "reviewed_inputs": {
+        "scripts/extract_ncl_2005_programmes.py": "9dcd51d25c6c16d5a997982c500211ba93bbb070143caf351d1bc4b90f3ff9f6",
+        "raw/ncl-2005/yearbook-95-public-library.pdf": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
+        "raw/ncl-2005/yearbook-95-public-library.metadata.json": "b6d97222174bdbff8f97239e3839be702c5e0fa16bbb3625ba9bb7aa07c57334"
+      },
+      "reviewed_outputs": {
+        "derived/ncl_2005_programmes.csv": "13c83fd5f753de66e652fba715129468be971e1df81b235084e7ae524ee19190",
+        "derived/ncl_2005_programmes.jsonl": "e17b1301ed60001f22025d2129ee5cf46cb6882f20fa1d2491caf2b4db276ecc",
+        "derived/ncl_2005_programmes_long.csv": "bafbf1cf277cd775df6f81635fc020b860aac5dfda8986a799e6adadeb80c73a",
+        "derived/ncl_2005_programmes_long.jsonl": "ba461cf505a7df5d32d0e04222d0ce447ac42a2480b1ece8df6655ed593c4543",
+        "raw/ncl-2005-programmes/metadata.json": "971e3cb9724cebc87f03e1148cf76b4a24be427af9752d4814713f91841956d0",
+        "raw/ncl-2005-programmes/cell-audit.json": "d8f01e0d75966f4fbd934808083e9411329ef895a91928e76a87d10bc7010821",
+        "raw/ncl-2005-programmes/verification.json": "97e2b19ad6aef4f5e5fca780da104bbbc64100161684cf5c6c3b8eafa4931e16",
+        "raw/ncl-2005-programmes/incremental-contract.json": "a6c0aa8e69553c19e00fc9a54931be022f22d5b0183395284bfdfcf6d5677c88"
+      },
+      "private_source_reviewed_outputs": {
+        "derived/ncl_2005_programmes.csv": "13c83fd5f753de66e652fba715129468be971e1df81b235084e7ae524ee19190",
+        "derived/ncl_2005_programmes.jsonl": "e17b1301ed60001f22025d2129ee5cf46cb6882f20fa1d2491caf2b4db276ecc",
+        "derived/ncl_2005_programmes_long.csv": "ff8217c9eadcc5e4124456c1ae8ead648aa566f657f4231d829653397797a210",
+        "derived/ncl_2005_programmes_long.jsonl": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
+        "raw/ncl-2005-programmes/metadata.json": "971e3cb9724cebc87f03e1148cf76b4a24be427af9752d4814713f91841956d0",
+        "raw/ncl-2005-programmes/cell-audit.json": "d8f01e0d75966f4fbd934808083e9411329ef895a91928e76a87d10bc7010821",
+        "raw/ncl-2005-programmes/verification.json": "97e2b19ad6aef4f5e5fca780da104bbbc64100161684cf5c6c3b8eafa4931e16",
+        "raw/ncl-2005-programmes/incremental-contract.json": "a6c0aa8e69553c19e00fc9a54931be022f22d5b0183395284bfdfcf6d5677c88"
+      },
+      "reviewed_hash_profile": "public_statistical_projection; original source hashes unchanged"
+    },
+    {
+      "id": "phase1_local_workbooks",
+      "layer": "local_original_and_statistical_source_cells",
+      "review_status": "source_reviewed",
+      "script": "extract_phase1_local_sources.py",
+      "args": [
+        "--offline",
+        "--self-test"
+      ],
+      "accepts_source_root": true,
+      "inputs": [
+        "raw/phase1_local_sources/sources.json",
+        "raw/phase1_local_sources/originals/lienchiang-113-overview.ods",
+        "raw/phase1_local_sources/originals/hualien-lending-reader-identity.ods",
+        "raw/phase1_local_sources/originals/hualien-lending-collection-room.ods",
+        "raw/phase1_local_sources/originals/lienchiang-114-overview.xlsx"
+      ],
+      "outputs": [
+        "derived/phase1_local_sources_cells.csv",
+        "derived/phase1_local_sources_cells.jsonl",
+        "derived/phase1_local_sources_long.csv",
+        "derived/phase1_local_sources_long.jsonl",
+        "raw/phase1_local_sources/south-lienchiang-opendata-173786/metadata.json",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-reader/metadata.json",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-room/metadata.json",
+        "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/metadata.json",
+        "raw/phase1_local_sources/summary.json",
+        "raw/phase1_local_sources/verification.json",
+        "raw/phase1_local_sources/south-lienchiang-opendata-173786/contract.json",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-reader/contract.json",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-room/contract.json",
+        "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/contract.json"
+      ],
+      "originals": [
+        {
+          "path": "raw/phase1_local_sources/originals/lienchiang-113-overview.ods",
+          "source_filename": "lienchiang-113-overview.ods",
+          "sha256": "de3b86da388ef7337e4996c06cde88fb1dd52ed0b95bfdd8186e545d1f94000b",
+          "source_id": "south-lienchiang-opendata-173786",
+          "source_download_url": "https://www.matsu.gov.tw/chhtml/adddownloadcount/371030000A/101571?mcfilename=Mcfile2&type=D",
+          "format": "ODS",
+          "license_status": "OGDL-1.0_explicit_catalog",
+          "original_distribution": "not_in_public_bundle"
+        },
+        {
+          "path": "raw/phase1_local_sources/originals/hualien-lending-reader-identity.ods",
+          "source_filename": "hualien-lending-reader-identity.ods",
+          "sha256": "205a79d6aadce9f4580664d6b67078e5446b6e7fedab366b971b312f31fed1d2",
+          "source_id": "south-hualien-library-lending-409-reader",
+          "source_download_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16274",
+          "format": "ODS",
+          "license_status": "published_statistics_document_license_unconfirmed",
+          "original_distribution": "not_in_public_bundle"
+        },
+        {
+          "path": "raw/phase1_local_sources/originals/hualien-lending-collection-room.ods",
+          "source_filename": "hualien-lending-collection-room.ods",
+          "sha256": "69881ded57b1ede472a6f41cfb48f256d3963b0dba7d1b493d5e29a646b5c998",
+          "source_id": "south-hualien-library-lending-409-room",
+          "source_download_url": "https://www.hccc.gov.tw/Utility/DisplayFile?id=16275",
+          "format": "ODS",
+          "license_status": "published_statistics_document_license_unconfirmed",
+          "original_distribution": "not_in_public_bundle"
+        },
+        {
+          "path": "raw/phase1_local_sources/originals/lienchiang-114-overview.xlsx",
+          "source_filename": "lienchiang-114-overview.xlsx",
+          "sha256": "cb7f4f0a2d8817e5c0ab6168d874ffa7c7e21104b871bbd8706ffc6e2f6512d4",
+          "source_id": "south-lienchiang-culture-library-overview-114",
+          "source_download_url": "https://matsucc.gov.tw/wp-content/uploads/2026/07/11014-03-01-2處-連江縣公共圖書館概況114年.xlsx",
+          "format": "XLSX",
+          "license_status": "published_statistics_document_license_unconfirmed",
+          "original_distribution": "not_in_public_bundle"
+        }
+      ],
+      "review_evidence": [
+        "research/phase1-local-independent-review.json",
+        "raw/phase1_local_sources/header-stored-string-correction.json"
+      ],
+      "reviewed_inputs": {
+        "scripts/extract_phase1_local_sources.py": "86e824d59055323526e3dc58ae7f0452cb9d9e0eda98c201a8698655339e54a3",
+        "raw/phase1_local_sources/sources.json": "0a4bc328c3530bd4182f0e0fd2ab3354b722a46c82a0a8ccb1dcf4c8ad0dfb9b",
+        "raw/phase1_local_sources/originals/lienchiang-113-overview.ods": "de3b86da388ef7337e4996c06cde88fb1dd52ed0b95bfdd8186e545d1f94000b",
+        "raw/phase1_local_sources/originals/hualien-lending-reader-identity.ods": "205a79d6aadce9f4580664d6b67078e5446b6e7fedab366b971b312f31fed1d2",
+        "raw/phase1_local_sources/originals/hualien-lending-collection-room.ods": "69881ded57b1ede472a6f41cfb48f256d3963b0dba7d1b493d5e29a646b5c998",
+        "raw/phase1_local_sources/originals/lienchiang-114-overview.xlsx": "cb7f4f0a2d8817e5c0ab6168d874ffa7c7e21104b871bbd8706ffc6e2f6512d4"
+      },
+      "reviewed_outputs": {
+        "derived/phase1_local_sources_cells.csv": "5a8e944da84092c48a550cf2d5068c52939b7f167b0615ff92e1ba135c1427c2",
+        "derived/phase1_local_sources_cells.jsonl": "e7eace84cf6338294f659f48a246ecea41213ad1fe4027f225273db598d8c7a5",
+        "derived/phase1_local_sources_long.csv": "2e855af5b5c545f24e05b14f13d7acc16939b691024ace0baa6e8f064e3ea55f",
+        "derived/phase1_local_sources_long.jsonl": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+        "raw/phase1_local_sources/south-lienchiang-opendata-173786/metadata.json": "025f4f2d1935982330c78b5c986b6addcaa983e64639c9cc1c504667390dbf95",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-reader/metadata.json": "d13a3c8422536f65ee48ead5909e7bae92d60f200ebc555f90905ddbd33344ae",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-room/metadata.json": "694aaa19f302d6f05aac3f32f6bde184411a8a091eadebb4d564f01efcf91c36",
+        "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/metadata.json": "d38cabca25ea754a755c286223fc2562c7199a6a0c91ac2294e840b4876cf0d9",
+        "raw/phase1_local_sources/summary.json": "85b1bd3c0337a85cf937de1953ef51cc1eb4c3d07371d3179368517bcff39657",
+        "raw/phase1_local_sources/verification.json": "ceb98f5ed501730255f921515fbf563f4b4ec183465e6dfbdb1fd6fd948de6fa",
+        "raw/phase1_local_sources/south-lienchiang-opendata-173786/contract.json": "da448ef92434d002302c281b84c538e99231480eef7e8609f920b518c3470304",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-reader/contract.json": "52e55833da8e9d8b7413a3ba288f9884c6f91c6c565d697b40ba51dcd597b616",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-room/contract.json": "f113d1dcca6e578fd75b525469c835963cfd0952b6f897c97767296a98284fea",
+        "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/contract.json": "510db26b61935ff6344b7bc515a493c59c71357d5fe602058cb8b6c7f954d1cf"
+      },
+      "private_source_reviewed_inputs": {
+        "scripts/extract_phase1_local_sources.py": "86e824d59055323526e3dc58ae7f0452cb9d9e0eda98c201a8698655339e54a3",
+        "raw/phase1_local_sources/sources.json": "bd9a5dde2c0d4327aa547f6b85588a2d10926b3f3f54206b6393b21c42a5d254",
+        "raw/phase1_local_sources/originals/lienchiang-113-overview.ods": "de3b86da388ef7337e4996c06cde88fb1dd52ed0b95bfdd8186e545d1f94000b",
+        "raw/phase1_local_sources/originals/hualien-lending-reader-identity.ods": "205a79d6aadce9f4580664d6b67078e5446b6e7fedab366b971b312f31fed1d2",
+        "raw/phase1_local_sources/originals/hualien-lending-collection-room.ods": "69881ded57b1ede472a6f41cfb48f256d3963b0dba7d1b493d5e29a646b5c998",
+        "raw/phase1_local_sources/originals/lienchiang-114-overview.xlsx": "cb7f4f0a2d8817e5c0ab6168d874ffa7c7e21104b871bbd8706ffc6e2f6512d4"
+      },
+      "private_source_reviewed_outputs": {
+        "derived/phase1_local_sources_cells.csv": "5a8e944da84092c48a550cf2d5068c52939b7f167b0615ff92e1ba135c1427c2",
+        "derived/phase1_local_sources_cells.jsonl": "e7eace84cf6338294f659f48a246ecea41213ad1fe4027f225273db598d8c7a5",
+        "derived/phase1_local_sources_long.csv": "2e855af5b5c545f24e05b14f13d7acc16939b691024ace0baa6e8f064e3ea55f",
+        "derived/phase1_local_sources_long.jsonl": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+        "raw/phase1_local_sources/south-lienchiang-opendata-173786/metadata.json": "619e309bda6441893ebb01f5af93e3c79c089f1321b72ccedce6fc47f4ae457a",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-reader/metadata.json": "e7c37346ef3cf1a5c494e5d4d1ca5ee6a26f77bd7d0189a420b613195682bf13",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-room/metadata.json": "733aafa87e9fc325f228302cddc754854e3fe07a6cc6256c65d291925370c7a7",
+        "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/metadata.json": "eacecec9d862000f3dfa6b5c8ca442fe9d41f672216f8ff62faf939a706b735c",
+        "raw/phase1_local_sources/summary.json": "85b1bd3c0337a85cf937de1953ef51cc1eb4c3d07371d3179368517bcff39657",
+        "raw/phase1_local_sources/verification.json": "ceb98f5ed501730255f921515fbf563f4b4ec183465e6dfbdb1fd6fd948de6fa",
+        "raw/phase1_local_sources/south-lienchiang-opendata-173786/contract.json": "da448ef92434d002302c281b84c538e99231480eef7e8609f920b518c3470304",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-reader/contract.json": "52e55833da8e9d8b7413a3ba288f9884c6f91c6c565d697b40ba51dcd597b616",
+        "raw/phase1_local_sources/south-hualien-library-lending-409-room/contract.json": "f113d1dcca6e578fd75b525469c835963cfd0952b6f897c97767296a98284fea",
+        "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/contract.json": "510db26b61935ff6344b7bc515a493c59c71357d5fe602058cb8b6c7f954d1cf"
+      },
+      "reviewed_hash_profile": "public_statistical_projection; original source hashes unchanged"
+    }
+  ],
+  "monitor_policy": {
+    "source_manifest": "raw/phase1_local_sources/sources.json",
+    "interval_days": 14,
+    "initial_last_check_basis": "Each approved source_retrieved_at; first normal run today does not refetch.",
+    "normal_online_only": true,
+    "known_download_URLs_only": true,
+    "timeout_seconds": 25,
+    "changed_source_policy": "Keep approved originals unchanged; default retain only SHA, exact URL and review_required privately. Candidate bytes are optional only under explicitly configured TW_LIBRARY_PHASE1_MONITOR_CACHE; never auto-publish.",
+    "failure_policy": "Keep previous approved originals and successful check metadata; no last-success advance on failure.",
+    "same_SHA_policy": "Retain original source_retrieved_at; write last_checked metadata privately only.",
+    "full_originals_distribution": "not_in_public_bundle"
+  },
+  "content_inputs": [
+    "derived/ncl_2005_programmes.csv",
+    "derived/ncl_2005_programmes.jsonl",
+    "derived/ncl_2005_programmes_long.csv",
+    "derived/ncl_2005_programmes_long.jsonl",
+    "derived/phase1_local_sources_cells.csv",
+    "derived/phase1_local_sources_cells.jsonl",
+    "derived/phase1_local_sources_long.csv",
+    "derived/phase1_local_sources_long.jsonl",
+    "raw/ncl-2005-programmes/metadata.json",
+    "raw/ncl-2005-programmes/label-correction.json",
+    "raw/phase1_local_sources/sources.json",
+    "raw/phase1_local_sources/summary.json",
+    "raw/phase1_local_sources/*/metadata.json",
+    "raw/phase1_local_sources/header-stored-string-correction.json",
+    "raw/phase1-inventory/county-*.json",
+    "raw/phase1-inventory/central.json",
+    "raw/phase1-inventory/independent-http-checks.json",
+    "research/ncl-2005-programmes-independent-review.json",
+    "research/phase1-local-independent-review.json",
+    "research/phase1-source-entry-independent-review.json",
+    "scripts/phase1_scope.json",
+    "scripts/phase1_central_sources.json"
+  ],
+  "hash_projection_registry": "docs/phase1-registry-projections.json"
+}

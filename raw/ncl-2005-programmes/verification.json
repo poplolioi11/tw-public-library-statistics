@@ -1,0 +1,29 @@
+{
+  "programme_rows": 119,
+  "numeric_cells": 123,
+  "complete_table6_numeric_cells": 113,
+  "complete_table7_numeric_cells": 10,
+  "nonparticipating_marker_slots": 1,
+  "blank_slots": 1,
+  "checks": {
+    "full_selected_tables": true,
+    "unique_programme_and_quantity_ids": true,
+    "all_original_numeric_words_and_characters_roundtrip": true,
+    "all_selected_numeric_tokens_consumed_once": true,
+    "csv_jsonl_every_field_equal": true,
+    "no_op_bytes_and_mtime_two_runs": true,
+    "failure_preserves_previous_outputs": [
+      {
+        "fault": "missing",
+        "error": "FileNotFoundError",
+        "previous_outputs_untouched": true
+      },
+      {
+        "fault": "changed",
+        "error": "ValueError",
+        "previous_outputs_untouched": true
+      }
+    ]
+  },
+  "limits": "producer source verification is not official reporting correctness or human double proofreading"
+}

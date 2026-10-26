@@ -1,0 +1,664 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "Reviewed central public entries; statistical payloads and rights require separate review.",
+  "sources": [
+    {
+      "id": "central-ncl-yearbook-catalogue-1",
+      "agency_name": "國家圖書館",
+      "role": "yearbook_catalogue",
+      "checked_url": "https://www.ncl.edu.tw/librarianship-yearbook",
+      "final_url": "https://www.ncl.edu.tw/librarianship-yearbook",
+      "page_title": "中華民國圖書館年鑑 | 國家圖書館",
+      "checked_at": "2026-10-26T08:37:35.318341+00:00",
+      "method": "public_http_get",
+      "http_status": 200,
+      "body_sha256": "feead6ddd449409573d212652cd4d2ed3a2a8604322d1d72f69f5fe3bfc86d02",
+      "evidence": [
+        {
+          "term": "圖書館年鑑",
+          "excerpt": "中華民國圖書館年鑑 | 國家圖書館 跳到主要內容區塊 中華民國圖書館年鑑 首頁 出版文創 國圖出版品 中華民國圖書館年鑑 跳過此工具列 回上一頁 友善列印 RSS 訂閱 字級： 小字級 中字級 大字級 分享：",
+          "locator": "visible HTML text containing 圖書館年鑑"
+        }
+      ],
+      "relevant_links": [
+        {
+          "label": "中華民國圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook",
+          "locator": "HTML anchor visible text: 中華民國圖書館年鑑"
+        },
+        {
+          "label": "中華民國一一四年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q274523227242755591",
+          "locator": "HTML anchor visible text: 中華民國一一四年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一一三年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566989318922413",
+          "locator": "HTML anchor visible text: 中華民國一一三年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一一二年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566974538712820",
+          "locator": "HTML anchor visible text: 中華民國一一二年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一一一年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566960460238329",
+          "locator": "HTML anchor visible text: 中華民國一一一年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一一O年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566955493654718",
+          "locator": "HTML anchor visible text: 中華民國一一O年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一○九年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566931435160107",
+          "locator": "HTML anchor visible text: 中華民國一○九年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一O八年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566927823718578",
+          "locator": "HTML anchor visible text: 中華民國一O八年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一O七年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566871687476012",
+          "locator": "HTML anchor visible text: 中華民國一O七年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一O六年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566866897276439",
+          "locator": "HTML anchor visible text: 中華民國一O六年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一O五年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565641689945340",
+          "locator": "HTML anchor visible text: 中華民國一O五年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一O四年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565626433613784",
+          "locator": "HTML anchor visible text: 中華民國一O四年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一O三年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565350919926814",
+          "locator": "HTML anchor visible text: 中華民國一O三年圖書館年鑑"
+        },
+        {
+          "label": "臺灣人文及社會科學引文索引資料庫",
+          "url": "https://tci.ncl.edu.tw/",
+          "locator": "HTML anchor visible text: 臺灣人文及社會科學引文索引資料庫"
+        },
+        {
+          "label": "圖書館法",
+          "url": "https://www.ncl.edu.tw/library-laws",
+          "locator": "HTML anchor visible text: 圖書館法"
+        },
+        {
+          "label": "國家圖書館組織法規",
+          "url": "https://www.ncl.edu.tw/organizational-act",
+          "locator": "HTML anchor visible text: 國家圖書館組織法規"
+        },
+        {
+          "label": "個人資料保護法",
+          "url": "https://www.ncl.edu.tw/personal-information-protection",
+          "locator": "HTML anchor visible text: 個人資料保護法"
+        },
+        {
+          "label": "業務統計",
+          "url": "https://www.ncl.edu.tw/statistics",
+          "locator": "HTML anchor visible text: 業務統計"
+        },
+        {
+          "label": "開放資料專區",
+          "url": "https://www.ncl.edu.tw/open-data",
+          "locator": "HTML anchor visible text: 開放資料專區"
+        },
+        {
+          "label": "國家圖書館館刊",
+          "url": "https://www.ncl.edu.tw/ncl-journal",
+          "locator": "HTML anchor visible text: 國家圖書館館刊"
+        },
+        {
+          "label": "國家圖書館館訊",
+          "url": "https://www.ncl.edu.tw/ncl-newsletter",
+          "locator": "HTML anchor visible text: 國家圖書館館訊"
+        },
+        {
+          "label": "國家圖書館英文通訊",
+          "url": "https://www.ncl.edu.tw/ncl-eng-newsletter",
+          "locator": "HTML anchor visible text: 國家圖書館英文通訊"
+        },
+        {
+          "label": "國家圖書館年報",
+          "url": "https://www.ncl.edu.tw/ncl-annual-report",
+          "locator": "HTML anchor visible text: 國家圖書館年報"
+        },
+        {
+          "label": "國家圖書館電子報",
+          "url": "https://www.ncl.edu.tw/newsletter",
+          "locator": "HTML anchor visible text: 國家圖書館電子報"
+        },
+        {
+          "label": "圖書館界",
+          "url": "https://www.ncl.edu.tw/library-community",
+          "locator": "HTML anchor visible text: 圖書館界"
+        }
+      ],
+      "check_status": "checked_relevant_source_found",
+      "check_scope": "Only this exact public entry response and its listed links; linked tables are not thereby ingested or fully checked.",
+      "rights_status": "source_entry_metadata_only_not_redistribution_approval"
+    },
+    {
+      "id": "central-ncl-yearbook-catalogue-2",
+      "agency_name": "國家圖書館",
+      "role": "yearbook_catalogue",
+      "checked_url": "https://www.ncl.edu.tw/librarianship-yearbook?page=2",
+      "final_url": "https://www.ncl.edu.tw/librarianship-yearbook?page=2",
+      "page_title": "中華民國圖書館年鑑 | 國家圖書館",
+      "checked_at": "2026-10-26T08:37:36.182768+00:00",
+      "method": "public_http_get",
+      "http_status": 200,
+      "body_sha256": "93ae3a009e75c36e65c2470d2a469835597ce0df68e03abcd8ed358842f8882c",
+      "evidence": [
+        {
+          "term": "圖書館年鑑",
+          "excerpt": "中華民國圖書館年鑑 | 國家圖書館 跳到主要內容區塊 中華民國圖書館年鑑 首頁 出版文創 國圖出版品 中華民國圖書館年鑑 跳過此工具列 回上一頁 友善列印 RSS 訂閱 字級： 小字級 中字級 大字級 分享：",
+          "locator": "visible HTML text containing 圖書館年鑑"
+        }
+      ],
+      "relevant_links": [
+        {
+          "label": "中華民國圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook",
+          "locator": "HTML anchor visible text: 中華民國圖書館年鑑"
+        },
+        {
+          "label": "中華民國一O二年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565374511489343",
+          "locator": "HTML anchor visible text: 中華民國一O二年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一O一年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565430946568943",
+          "locator": "HTML anchor visible text: 中華民國一O一年圖書館年鑑"
+        },
+        {
+          "label": "中華民國一百年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565466726779537",
+          "locator": "HTML anchor visible text: 中華民國一百年圖書館年鑑"
+        },
+        {
+          "label": "中華民國九十九年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565491338132165",
+          "locator": "HTML anchor visible text: 中華民國九十九年圖書館年鑑"
+        },
+        {
+          "label": "中華民國九十八年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565548575038748",
+          "locator": "HTML anchor visible text: 中華民國九十八年圖書館年鑑"
+        },
+        {
+          "label": "中華民國九十七年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565555623845321",
+          "locator": "HTML anchor visible text: 中華民國九十七年圖書館年鑑"
+        },
+        {
+          "label": "中華民國九十六年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565568411570887",
+          "locator": "HTML anchor visible text: 中華民國九十六年圖書館年鑑"
+        },
+        {
+          "label": "中華民國九十五年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565572390216434",
+          "locator": "HTML anchor visible text: 中華民國九十五年圖書館年鑑"
+        },
+        {
+          "label": "中華民國九十四年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+          "locator": "HTML anchor visible text: 中華民國九十四年圖書館年鑑"
+        },
+        {
+          "label": "中華民國九十三年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565582148900528",
+          "locator": "HTML anchor visible text: 中華民國九十三年圖書館年鑑"
+        },
+        {
+          "label": "中華民國九十二年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565619396807101",
+          "locator": "HTML anchor visible text: 中華民國九十二年圖書館年鑑"
+        },
+        {
+          "label": "中華民國九十一年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566087370545104",
+          "locator": "HTML anchor visible text: 中華民國九十一年圖書館年鑑"
+        },
+        {
+          "label": "臺灣人文及社會科學引文索引資料庫",
+          "url": "https://tci.ncl.edu.tw/",
+          "locator": "HTML anchor visible text: 臺灣人文及社會科學引文索引資料庫"
+        },
+        {
+          "label": "圖書館法",
+          "url": "https://www.ncl.edu.tw/library-laws",
+          "locator": "HTML anchor visible text: 圖書館法"
+        },
+        {
+          "label": "國家圖書館組織法規",
+          "url": "https://www.ncl.edu.tw/organizational-act",
+          "locator": "HTML anchor visible text: 國家圖書館組織法規"
+        },
+        {
+          "label": "個人資料保護法",
+          "url": "https://www.ncl.edu.tw/personal-information-protection",
+          "locator": "HTML anchor visible text: 個人資料保護法"
+        },
+        {
+          "label": "業務統計",
+          "url": "https://www.ncl.edu.tw/statistics",
+          "locator": "HTML anchor visible text: 業務統計"
+        },
+        {
+          "label": "開放資料專區",
+          "url": "https://www.ncl.edu.tw/open-data",
+          "locator": "HTML anchor visible text: 開放資料專區"
+        },
+        {
+          "label": "國家圖書館館刊",
+          "url": "https://www.ncl.edu.tw/ncl-journal",
+          "locator": "HTML anchor visible text: 國家圖書館館刊"
+        },
+        {
+          "label": "國家圖書館館訊",
+          "url": "https://www.ncl.edu.tw/ncl-newsletter",
+          "locator": "HTML anchor visible text: 國家圖書館館訊"
+        },
+        {
+          "label": "國家圖書館英文通訊",
+          "url": "https://www.ncl.edu.tw/ncl-eng-newsletter",
+          "locator": "HTML anchor visible text: 國家圖書館英文通訊"
+        },
+        {
+          "label": "國家圖書館年報",
+          "url": "https://www.ncl.edu.tw/ncl-annual-report",
+          "locator": "HTML anchor visible text: 國家圖書館年報"
+        },
+        {
+          "label": "國家圖書館電子報",
+          "url": "https://www.ncl.edu.tw/newsletter",
+          "locator": "HTML anchor visible text: 國家圖書館電子報"
+        },
+        {
+          "label": "圖書館界",
+          "url": "https://www.ncl.edu.tw/library-community",
+          "locator": "HTML anchor visible text: 圖書館界"
+        }
+      ],
+      "check_status": "checked_relevant_source_found",
+      "check_scope": "Only this exact public entry response and its listed links; linked tables are not thereby ingested or fully checked.",
+      "rights_status": "source_entry_metadata_only_not_redistribution_approval"
+    },
+    {
+      "id": "central-ncl-yearbook-catalogue-3",
+      "agency_name": "國家圖書館",
+      "role": "yearbook_catalogue",
+      "checked_url": "https://www.ncl.edu.tw/librarianship-yearbook?page=3",
+      "final_url": "https://www.ncl.edu.tw/librarianship-yearbook?page=3",
+      "page_title": "中華民國圖書館年鑑 | 國家圖書館",
+      "checked_at": "2026-10-26T08:37:36.661400+00:00",
+      "method": "public_http_get",
+      "http_status": 200,
+      "body_sha256": "5cdb5f7c904b040806615abe8dd05e870f685fd3670445a7d1efe3d79d2814bd",
+      "evidence": [
+        {
+          "term": "圖書館年鑑",
+          "excerpt": "中華民國圖書館年鑑 | 國家圖書館 跳到主要內容區塊 中華民國圖書館年鑑 首頁 出版文創 國圖出版品 中華民國圖書館年鑑 跳過此工具列 回上一頁 友善列印 RSS 訂閱 字級： 小字級 中字級 大字級 分享：",
+          "locator": "visible HTML text containing 圖書館年鑑"
+        }
+      ],
+      "relevant_links": [
+        {
+          "label": "中華民國圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook",
+          "locator": "HTML anchor visible text: 中華民國圖書館年鑑"
+        },
+        {
+          "label": "中華民國九十年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565818875133522",
+          "locator": "HTML anchor visible text: 中華民國九十年圖書館年鑑"
+        },
+        {
+          "label": "中華民國八十九年圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565657469156923",
+          "locator": "HTML anchor visible text: 中華民國八十九年圖書館年鑑"
+        },
+        {
+          "label": "第三次中華民國圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566284973572760",
+          "locator": "HTML anchor visible text: 第三次中華民國圖書館年鑑"
+        },
+        {
+          "label": "第二次中華民國圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566602665258360",
+          "locator": "HTML anchor visible text: 第二次中華民國圖書館年鑑"
+        },
+        {
+          "label": "中華民國圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566755809015809",
+          "locator": "HTML anchor visible text: 中華民國圖書館年鑑"
+        },
+        {
+          "label": "臺灣人文及社會科學引文索引資料庫",
+          "url": "https://tci.ncl.edu.tw/",
+          "locator": "HTML anchor visible text: 臺灣人文及社會科學引文索引資料庫"
+        },
+        {
+          "label": "圖書館法",
+          "url": "https://www.ncl.edu.tw/library-laws",
+          "locator": "HTML anchor visible text: 圖書館法"
+        },
+        {
+          "label": "國家圖書館組織法規",
+          "url": "https://www.ncl.edu.tw/organizational-act",
+          "locator": "HTML anchor visible text: 國家圖書館組織法規"
+        },
+        {
+          "label": "個人資料保護法",
+          "url": "https://www.ncl.edu.tw/personal-information-protection",
+          "locator": "HTML anchor visible text: 個人資料保護法"
+        },
+        {
+          "label": "業務統計",
+          "url": "https://www.ncl.edu.tw/statistics",
+          "locator": "HTML anchor visible text: 業務統計"
+        },
+        {
+          "label": "開放資料專區",
+          "url": "https://www.ncl.edu.tw/open-data",
+          "locator": "HTML anchor visible text: 開放資料專區"
+        },
+        {
+          "label": "國家圖書館館刊",
+          "url": "https://www.ncl.edu.tw/ncl-journal",
+          "locator": "HTML anchor visible text: 國家圖書館館刊"
+        },
+        {
+          "label": "國家圖書館館訊",
+          "url": "https://www.ncl.edu.tw/ncl-newsletter",
+          "locator": "HTML anchor visible text: 國家圖書館館訊"
+        },
+        {
+          "label": "國家圖書館英文通訊",
+          "url": "https://www.ncl.edu.tw/ncl-eng-newsletter",
+          "locator": "HTML anchor visible text: 國家圖書館英文通訊"
+        },
+        {
+          "label": "國家圖書館年報",
+          "url": "https://www.ncl.edu.tw/ncl-annual-report",
+          "locator": "HTML anchor visible text: 國家圖書館年報"
+        },
+        {
+          "label": "國家圖書館電子報",
+          "url": "https://www.ncl.edu.tw/newsletter",
+          "locator": "HTML anchor visible text: 國家圖書館電子報"
+        },
+        {
+          "label": "圖書館界",
+          "url": "https://www.ncl.edu.tw/library-community",
+          "locator": "HTML anchor visible text: 圖書館界"
+        }
+      ],
+      "check_status": "checked_relevant_source_found",
+      "check_scope": "Only this exact public entry response and its listed links; linked tables are not thereby ingested or fully checked.",
+      "rights_status": "source_entry_metadata_only_not_redistribution_approval"
+    },
+    {
+      "id": "central-nlpi-public-statistics",
+      "agency_name": "國立公共資訊圖書館",
+      "role": "public_statistics_system",
+      "checked_url": "https://publibstat.nlpi.edu.tw/",
+      "final_url": "https://publibstat.nlpi.edu.tw/",
+      "page_title": "公共圖書館統計系統",
+      "checked_at": "2026-10-26T08:37:38.145216+00:00",
+      "method": "public_http_get",
+      "http_status": 200,
+      "body_sha256": "724d9f010defd7295e627501b5e586a7bc552cd2c905e67fd4ebcfb153d31d67",
+      "evidence": [
+        {
+          "term": "公立公共圖書館",
+          "excerpt": "書館填報帳號登入 關於統計系統 匯集國內公立公共圖書館年度統計營運資料(不含學校圖書館)，數據資料更新至上一年度12月底（最新資料為2025年） 統計相關網站 全國圖書館調查統計系統 中華民國圖書館年鑑 建築物安全檢查資訊查詢 社會經濟資料",
+          "locator": "visible HTML text containing 公立公共圖書館"
+        },
+        {
+          "term": "2025",
+          "excerpt": "據資料更新至上一年度12月底（最新資料為2025年） 統計相關網站 全國圖書館調查統計系統 中華民國圖書館年鑑 建築物安全檢查資訊查詢 社會經濟資料服務平台 教育部統計網 文化部統計網 最新消息 2026-09-17 系統公告 公共圖書館統",
+          "locator": "visible HTML text containing 2025"
+        },
+        {
+          "term": "資料",
+          "excerpt": "系統 匯集國內公立公共圖書館年度統計營運資料(不含學校圖書館)，數據資料更新至上一年度12月底（最新資料為2025年） 統計相關網站 全國圖書館調查統計系統 中華民國圖書館年鑑 建築物安全檢查資訊查詢 社會經濟資料服務平台 教育部統計網 文",
+          "locator": "visible HTML text containing 資料"
+        }
+      ],
+      "relevant_links": [
+        {
+          "label": "國立公共資訊圖書館首頁",
+          "url": "http://www.nlpi.edu.tw/",
+          "locator": "HTML anchor visible text: 國立公共資訊圖書館首頁"
+        },
+        {
+          "label": "公共圖書館資訊服務網",
+          "url": "https://plisnet.nlpi.edu.tw",
+          "locator": "HTML anchor visible text: 公共圖書館資訊服務網"
+        },
+        {
+          "label": "關於統計系統",
+          "url": "https://publibstat.nlpi.edu.tw/",
+          "locator": "HTML anchor visible text: 關於統計系統"
+        },
+        {
+          "label": "圖書館填報帳號登入",
+          "url": "https://publibstat.nlpi.edu.tw/Frontend/Home/FrontLogin",
+          "locator": "HTML anchor visible text: 圖書館填報帳號登入"
+        },
+        {
+          "label": "全國圖書館調查統計系統",
+          "url": "https://libstat.ncl.edu.tw/",
+          "locator": "HTML anchor visible text: 全國圖書館調查統計系統"
+        },
+        {
+          "label": "中華民國圖書館年鑑",
+          "url": "https://www.ncl.edu.tw/periodicallist_304.html",
+          "locator": "HTML anchor visible text: 中華民國圖書館年鑑"
+        },
+        {
+          "label": "社會經濟資料服務平台",
+          "url": "https://segis.moi.gov.tw/STATCloud/Index",
+          "locator": "HTML anchor visible text: 社會經濟資料服務平台"
+        },
+        {
+          "label": "教育部統計網",
+          "url": "https://depart.moe.edu.tw/ED4500/Default.aspx",
+          "locator": "HTML anchor visible text: 教育部統計網"
+        },
+        {
+          "label": "文化部統計網",
+          "url": "https://stat.moc.gov.tw/",
+          "locator": "HTML anchor visible text: 文化部統計網"
+        }
+      ],
+      "check_status": "checked_relevant_source_found",
+      "check_scope": "Only this exact public entry response and its listed links; linked tables are not thereby ingested or fully checked.",
+      "rights_status": "source_entry_metadata_only_not_redistribution_approval"
+    },
+    {
+      "id": "central-nlpi-public-policy",
+      "agency_name": "國立公共資訊圖書館",
+      "role": "data_publication_policy",
+      "checked_url": "https://publibstat.nlpi.edu.tw/Frontend/News/ShareNewsView?NewsID=News000050",
+      "final_url": "https://publibstat.nlpi.edu.tw/Frontend/News/ShareNewsView?NewsID=News000050",
+      "page_title": "公共圖書館統計系統",
+      "checked_at": "2026-10-26T08:37:38.540093+00:00",
+      "method": "public_http_get",
+      "http_status": 200,
+      "body_sha256": "595f550a1bad72e31e0e32e7736d4b6ad586845cc470ca2d34bacda50dfd2e61",
+      "evidence": [
+        {
+          "term": "數據",
+          "excerpt": "09-17 系統公告 公共圖書館統計系統數據申請公告 依115年8月25日「公共圖書館統計系統數據公開研商會議」決議，自115年起，本系統僅公開部分指標之全國年度總數據。其他系統數據如有需求，請依下列方式申請： 公務機關及學術研究單位：請函",
+          "locator": "visible HTML text containing 數據"
+        },
+        {
+          "term": "申請",
+          "excerpt": "-17 系統公告 公共圖書館統計系統數據申請公告 依115年8月25日「公共圖書館統計系統數據公開研商會議」決議，自115年起，本系統僅公開部分指標之全國年度總數據。其他系統數據如有需求，請依下列方式申請： 公務機關及學術研究單位：請函送國",
+          "locator": "visible HTML text containing 申請"
+        },
+        {
+          "term": "公開",
+          "excerpt": "15年8月25日「公共圖書館統計系統數據公開研商會議」決議，自115年起，本系統僅公開部分指標之全國年度總數據。其他系統數據如有需求，請依下列方式申請： 公務機關及學術研究單位：請函送國立公共資訊圖書館，載明所需數據項目及使用用途，經審核同",
+          "locator": "visible HTML text containing 公開"
+        }
+      ],
+      "relevant_links": [
+        {
+          "label": "國立公共資訊圖書館首頁",
+          "url": "http://www.nlpi.edu.tw/",
+          "locator": "HTML anchor visible text: 國立公共資訊圖書館首頁"
+        },
+        {
+          "label": "公共圖書館資訊服務網",
+          "url": "https://plisnet.nlpi.edu.tw",
+          "locator": "HTML anchor visible text: 公共圖書館資訊服務網"
+        },
+        {
+          "label": "關於統計系統",
+          "url": "https://publibstat.nlpi.edu.tw/Frontend/News/ShareNewsView?NewsID=News000050",
+          "locator": "HTML anchor visible text: 關於統計系統"
+        }
+      ],
+      "check_status": "checked_relevant_source_found",
+      "check_scope": "Only this exact public entry response and its listed links; linked tables are not thereby ingested or fully checked.",
+      "rights_status": "source_entry_metadata_only_not_redistribution_approval"
+    },
+    {
+      "id": "central-open-data-6425",
+      "agency_name": "國立公共資訊圖書館／政府資料開放平臺",
+      "role": "open_data_catalogue",
+      "checked_url": "https://data.gov.tw/dataset/6425",
+      "final_url": "https://data.gov.tw/dataset/6425",
+      "page_title": "公共圖書館統計 ｜ 政府資料開放平臺",
+      "checked_at": "2026-10-26T08:37:38.863745+00:00",
+      "method": "public_http_get",
+      "http_status": 200,
+      "body_sha256": "9c52710d4037ec53df34c037dff6019b04aa3ff143be50e70ad10c328f2226db",
+      "evidence": [
+        {
+          "term": "公共圖書館統計",
+          "excerpt": "公共圖書館統計 ｜ 政府資料開放平臺 English （ Open AI ） No data 全部資料集瀏覽 預計下架資料集 歷史資料專區 資料集清單下載區 應用展示專區 教育資源專區 活化應用專區 ",
+          "locator": "visible HTML text containing 公共圖書館統計"
+        }
+      ],
+      "relevant_links": [
+        {
+          "label": "國立公共資訊圖書館",
+          "url": "https://data.gov.tw/datasets/search?qs=724",
+          "locator": "HTML anchor visible text: 國立公共資訊圖書館"
+        },
+        {
+          "label": "「公共圖書館研究」電子期刊各期全文網址連結清單",
+          "url": "https://data.gov.tw/dataset/31663",
+          "locator": "HTML anchor visible text: 「公共圖書館研究」電子期刊各期全文網址連結清單"
+        },
+        {
+          "label": "公共圖書館基本資料",
+          "url": "https://data.gov.tw/dataset/99567",
+          "locator": "HTML anchor visible text: 公共圖書館基本資料"
+        },
+        {
+          "label": "國立公共資訊圖書館藏統計資料清單",
+          "url": "https://data.gov.tw/dataset/170986",
+          "locator": "HTML anchor visible text: 國立公共資訊圖書館藏統計資料清單"
+        },
+        {
+          "label": "國立公共資訊圖書館流通服務統計",
+          "url": "https://data.gov.tw/dataset/26373",
+          "locator": "HTML anchor visible text: 國立公共資訊圖書館流通服務統計"
+        },
+        {
+          "label": "國立公共資訊圖書館桌遊借閱清單",
+          "url": "https://data.gov.tw/dataset/99670",
+          "locator": "HTML anchor visible text: 國立公共資訊圖書館桌遊借閱清單"
+        }
+      ],
+      "check_status": "checked_relevant_source_found",
+      "check_scope": "Only this exact public entry response and its listed links; linked tables are not thereby ingested or fully checked.",
+      "rights_status": "source_entry_metadata_only_not_redistribution_approval"
+    },
+    {
+      "id": "central-dgbas-county-entry",
+      "agency_name": "行政院主計總處",
+      "role": "county_statistics_entry",
+      "checked_url": "https://winstacity.dgbas.gov.tw/DgbasWeb/ZWeb/StateFile_ZWeb.aspx?Type=table",
+      "final_url": "https://winstacity.dgbas.gov.tw/DgbasWeb/ZWeb/StateFile_ZWeb.aspx?Type=table",
+      "page_title": "行政院主計總處縣市重要統計指標查詢系統",
+      "checked_at": "2026-10-26T08:37:45.029028+00:00",
+      "method": "public_http_get",
+      "http_status": 200,
+      "body_sha256": "023967a004d571ff17210daf4fc17021e1c8792e88b4b21b02180b43155be127",
+      "evidence": [
+        {
+          "term": "圖書館",
+          "excerpt": "中(％) ％ 教育部 教育文化 公立公共圖書館個數(所) 所 教育部 教育文化 古蹟總數(處) 處 文化部 農業概況 農戶數(戶) 戶 農業部 農業概況 稻作收穫面積(公頃) 公頃 農業部 農業概況 稻米產量(公噸) 公噸 農業部 農業概況",
+          "locator": "visible HTML text containing 圖書館"
+        },
+        {
+          "term": "縣市",
+          "excerpt": "行政院主計總處縣市重要統計指標查詢系統 跳到主要內容 Loading... 中華民國統計資訊網 National Statistics ::: 縣市重要統計指標查詢系統 ::: 改制後縣市別 樹狀選單 全表選單 改",
+          "locator": "visible HTML text containing 縣市"
+        }
+      ],
+      "relevant_links": [
+        {
+          "label": "中華民國統計資訊網 National Statistics",
+          "url": "https://www.stat.gov.tw/",
+          "locator": "HTML anchor visible text: 中華民國統計資訊網 National Statistics"
+        }
+      ],
+      "check_status": "checked_relevant_source_found",
+      "check_scope": "Only this exact public entry response and its listed links; linked tables are not thereby ingested or fully checked.",
+      "rights_status": "source_entry_metadata_only_not_redistribution_approval"
+    },
+    {
+      "id": "central-segis-catalogue",
+      "agency_name": "內政部社會經濟資料服務平臺",
+      "role": "public_catalogue",
+      "checked_url": "https://segis.moi.gov.tw/STATCloud/Catalog",
+      "final_url": "https://segis.moi.gov.tw/STATCloud/Catalog",
+      "page_title": "社會經濟資料服務平台 V1.0",
+      "checked_at": "2026-10-26T08:37:48.363167+00:00",
+      "method": "public_http_get",
+      "http_status": 200,
+      "body_sha256": "033115ad5d401842b77272f8d280cb6a1d946c41117522c4ca8cec0e74af39cd",
+      "evidence": [
+        {
+          "term": "圖書館",
+          "excerpt": "宜蘭縣 教育文化 教育 宜蘭縣行政區公共圖書館統計 105,106,108,109,111年 宜蘭縣 鄉鎮市區 家數 教育文化 教育 宜蘭縣公共圖書館分布圖 105,106,108年 宜蘭縣 教育文化 教育 宜蘭縣行政區公立幼兒園統計 10",
+          "locator": "visible HTML text containing 圖書館"
+        }
+      ],
+      "relevant_links": [
+        {
+          "label": "行政區人口統計",
+          "url": "https://segis.moi.gov.tw/STATCloud/Catalog",
+          "locator": "HTML anchor visible text: 行政區人口統計"
+        }
+      ],
+      "check_status": "checked_relevant_source_found",
+      "check_scope": "Only this exact public entry response and its listed links; linked tables are not thereby ingested or fully checked.",
+      "rights_status": "source_entry_metadata_only_not_redistribution_approval"
+    }
+  ],
+  "source_changes_requiring_review": []
+}

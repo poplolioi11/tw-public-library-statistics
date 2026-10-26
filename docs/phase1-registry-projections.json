@@ -1,0 +1,61 @@
+{
+  "policy": "Rebind operational cache hashes to the published metadata/derived projections. Private source review remains distinct; original document SHA and every statistical field are unchanged.",
+  "files": [
+    {
+      "batch": "phase1_ncl95_programmes",
+      "section": "reviewed_outputs",
+      "path": "derived/ncl_2005_programmes_long.csv",
+      "private_reviewed_sha256": "ff8217c9eadcc5e4124456c1ae8ead648aa566f657f4231d829653397797a210",
+      "public_projection_sha256": "bafbf1cf277cd775df6f81635fc020b860aac5dfda8986a799e6adadeb80c73a",
+      "source_statistical_fields_unchanged": true
+    },
+    {
+      "batch": "phase1_ncl95_programmes",
+      "section": "reviewed_outputs",
+      "path": "derived/ncl_2005_programmes_long.jsonl",
+      "private_reviewed_sha256": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
+      "public_projection_sha256": "ba461cf505a7df5d32d0e04222d0ce447ac42a2480b1ece8df6655ed593c4543",
+      "source_statistical_fields_unchanged": true
+    },
+    {
+      "batch": "phase1_local_workbooks",
+      "section": "reviewed_inputs",
+      "path": "raw/phase1_local_sources/sources.json",
+      "private_reviewed_sha256": "bd9a5dde2c0d4327aa547f6b85588a2d10926b3f3f54206b6393b21c42a5d254",
+      "public_projection_sha256": "0a4bc328c3530bd4182f0e0fd2ab3354b722a46c82a0a8ccb1dcf4c8ad0dfb9b",
+      "source_statistical_fields_unchanged": true
+    },
+    {
+      "batch": "phase1_local_workbooks",
+      "section": "reviewed_outputs",
+      "path": "raw/phase1_local_sources/south-lienchiang-opendata-173786/metadata.json",
+      "private_reviewed_sha256": "619e309bda6441893ebb01f5af93e3c79c089f1321b72ccedce6fc47f4ae457a",
+      "public_projection_sha256": "025f4f2d1935982330c78b5c986b6addcaa983e64639c9cc1c504667390dbf95",
+      "source_statistical_fields_unchanged": true
+    },
+    {
+      "batch": "phase1_local_workbooks",
+      "section": "reviewed_outputs",
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-reader/metadata.json",
+      "private_reviewed_sha256": "e7c37346ef3cf1a5c494e5d4d1ca5ee6a26f77bd7d0189a420b613195682bf13",
+      "public_projection_sha256": "d13a3c8422536f65ee48ead5909e7bae92d60f200ebc555f90905ddbd33344ae",
+      "source_statistical_fields_unchanged": true
+    },
+    {
+      "batch": "phase1_local_workbooks",
+      "section": "reviewed_outputs",
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-room/metadata.json",
+      "private_reviewed_sha256": "733aafa87e9fc325f228302cddc754854e3fe07a6cc6256c65d291925370c7a7",
+      "public_projection_sha256": "694aaa19f302d6f05aac3f32f6bde184411a8a091eadebb4d564f01efcf91c36",
+      "source_statistical_fields_unchanged": true
+    },
+    {
+      "batch": "phase1_local_workbooks",
+      "section": "reviewed_outputs",
+      "path": "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/metadata.json",
+      "private_reviewed_sha256": "eacecec9d862000f3dfa6b5c8ca442fe9d41f672216f8ff62faf939a706b735c",
+      "public_projection_sha256": "d38cabca25ea754a755c286223fc2562c7199a6a0c91ac2294e840b4876cf0d9",
+      "source_statistical_fields_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "scope_id": "public-library-source-inventory-2005-2025-v1",
+  "version": "1.0.0",
+  "years": {"first": 2005, "last": 2025},
+  "scope_statement": "全臺公共圖書館官方來源與可得統計盤點；不是全臺所有指標已齊或已證實跨年可比。",
+  "current_county_navigation": ["臺北市", "新北市", "基隆市", "桃園市", "新竹縣", "新竹市", "苗栗縣", "臺中市", "彰化縣", "南投縣", "雲林縣", "嘉義市", "嘉義縣", "臺南市", "高雄市", "屏東縣", "宜蘭縣", "花蓮縣", "臺東縣", "澎湖縣", "金門縣", "連江縣"],
+  "authority_roles": ["library_authority", "culture_authority", "statistics_authority", "open_data_catalog"],
+  "role_labels": {"library_authority": "公共圖書館主管或服務機關", "culture_authority": "文化主管機關", "statistics_authority": "主計或統計主管機關", "open_data_catalog": "官方開放資料目錄"},
+  "topics": [
+    {"id":"library_count","label":"館數與服務據點","note":"總館、分館、區館、閱覽室、服務站、巡迴車各保留原類別，不自行加成館數。"},
+    {"id":"holdings","label":"圖書及非書館藏","note":"冊、種、件、千冊及混合館藏不互換；原始細項分開。"},
+    {"id":"electronic_resources","label":"電子資源","note":"電子書、資料庫、使用次數、借閱量不互相替代。"},
+    {"id":"loan_volumes","label":"借閱冊數與冊次","note":"原館藏類型、借閱及續借範圍、冊與冊次另列。"},
+    {"id":"loan_visits","label":"借閱人數與人次","note":"累計人次與去重人數未確認時不換算。"},
+    {"id":"visits","label":"進館人數與人次","note":"實體或線上、累計或去重依原來源。"},
+    {"id":"staff","label":"人力","note":"編制、約聘僱、臨時、工讀與志工各保留，頭數與全時當量不混用。"},
+    {"id":"purchase_expenditure","label":"圖書資料購置經費","note":"預算、決算、補助與未明示數分開；不自行調整物價。"},
+    {"id":"floor_area","label":"館舍面積","note":"原面積定義、級距與單位分開；級距館數不是面積量。"},
+    {"id":"activities","label":"推廣活動","note":"場次、人次及專案活動分開；跨年專案不當全年營運量。"}
+  ],
+  "coverage_dimensions": ["data_year", "geography_raw", "indicator_raw", "unit_raw", "population_scope", "national_libraries_scope", "geography_vintage", "temporal_kind", "period_basis", "source_id", "source_edition"],
+  "coverage_denominators": {
+    "authority_checks": "現行22縣市各4角色的指定查核槽位；共用入口明示，接觸入口不等於窮盡全機關。",
+    "source_batches": "已列明且版本固定的來源表格／資源；未取得、未解析與權利待確認仍為待辦。",
+    "source_cells": "已核對原表格子總數；原刊缺值仍是原格狀態，不算有值。",
+    "core_discovery_matrix": "21個資料年×全國及現行22縣市導航×10主題的查核索引；主題存在不是該主題所有細項完整，更不是可比率。",
+    "raw_indicator_matrix": "依原地區、原指標、原單位、母體、期間、來源與版次各自保存；不以中文同名合併。"
+  },
+  "separation_rules": [
+    "來源盤點狀態與原格value_status分開。",
+    "尚未取得與本輪已查未找到不表示官方無資料。",
+    "現行縣市導航不轉換歷史行政區，不加總舊縣市。",
+    "未確認地理標籤的資料不計入已確認縣市數值。",
+    "資料年、出版年、填報年及取得時間分開。",
+    "2012縣市核心原量仍列已查未取得，不由比率或後年推算。",
+    "2026未結束年度／月份和1991–2004既有資料另列，不冒稱2005–2025核心完整。",
+    "公開統計、權利待確認和限用申請資料分開；不取得申請限用資料。"
+  ]
+}

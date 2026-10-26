@@ -1,0 +1,54 @@
+{
+  "source": {
+    "source_id": "south-lienchiang-opendata-173786",
+    "source_key": "south-lienchiang-opendata-173786",
+    "source_url": "https://data.gov.tw/dataset/173786",
+    "source_title": "113年連江縣公共圖書館概況",
+    "source_agency": "連江縣政府",
+    "county": "連江縣",
+    "source_download_url": "https://www.matsu.gov.tw/chhtml/adddownloadcount/371030000A/101571?mcfilename=Mcfile2&type=D",
+    "source_final_url": "https://www.matsu.gov.tw/upload/f-20250613115632.ods",
+    "source_filename": "lienchiang-113-overview.ods",
+    "source_sha256": "de3b86da388ef7337e4996c06cde88fb1dd52ed0b95bfdd8186e545d1f94000b",
+    "source_retrieved_at": "2026-10-26T08:50:52.719162+00:00",
+    "source_bytes": 3867,
+    "format": "ODS",
+    "license_status": "OGDL-1.0_explicit_catalog",
+    "license_url": "https://data.gov.tw/license",
+    "license_evidence_basis": "source discovery inventory; explicit catalog license only where listed; no blanket inferred attachment license",
+    "catalog_body_sha256": "a8c1733899ebbe81a550130d69b57b43e934af2010b7ed130d9284533e9d9c33",
+    "source_catalog_period_hint": 113
+  },
+  "sheets": [
+    {
+      "name": "工作表1",
+      "xml_part": "content.xml",
+      "used_rows": 6,
+      "used_columns": 8,
+      "declared_rows": 6,
+      "declared_columns": 256,
+      "omitted_trailing_format_only_region": "Repeated blank formatting rows/columns outside the actual nonempty used bounds are not observations.",
+      "status": "complete_related_statistical_sheet",
+      "statistical_grid": "B2:H6",
+      "expected_data_cells": 35
+    }
+  ],
+  "records": {
+    "source_cell_facts": 48,
+    "statistical_data_cells": 35,
+    "value_status_counts": {
+      "reported_typed_numeric": 35
+    },
+    "resolved_numeric_cells": 35,
+    "typed_numeric_cells": 35
+  },
+  "period_conflicts": [],
+  "completeness": "Every related sheet and the entire declared statistical grids included; templates are source-cell facts only, not observations.",
+  "rights": "The113 data.gov.tw resource has explicit catalog OGDL as recorded; other public statistical attachments remain license-unconfirmed. No claim that download grants full-workbook redistribution.",
+  "public_exclusions": "Raw documents, unrelated古蹟sheet, contacts/private footer/signature fields and original internal workbook paths are not distributed.",
+  "checks": {
+    "expected_grid_cells_equal": true,
+    "unique_source_cells": true,
+    "source_raw_typed_formula_style_roundtrip": true
+  }
+}

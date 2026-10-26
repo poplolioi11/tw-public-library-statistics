@@ -1,0 +1,24 @@
+{
+  "source_files": 4,
+  "statistical_data_cells": 18486,
+  "checks": {
+    "all_related_sheets_and_cells": true,
+    "raw_typed_formula_style_roundtrip": true,
+    "csv_jsonl_every_field_equal": true,
+    "unique_cell_identifiers": true,
+    "no_op_bytes_mtime_two_runs": true,
+    "failure_preserves_previous_outputs": [
+      {
+        "fault": "missing",
+        "error": "FileNotFoundError",
+        "previous_outputs_preserved": true
+      },
+      {
+        "fault": "changed",
+        "error": "ValueError",
+        "previous_outputs_preserved": true
+      }
+    ]
+  },
+  "limitations": "Source-cell verification is not official-report correctness, recalculation or human double proofreading."
+}

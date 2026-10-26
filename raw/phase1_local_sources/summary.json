@@ -1,0 +1,109 @@
+{
+  "source_files": 4,
+  "sheet_counts": {
+    "south-lienchiang-opendata-173786": 1,
+    "south-hualien-library-lending-409-reader": 73,
+    "south-hualien-library-lending-409-room": 73,
+    "south-lienchiang-culture-library-overview-114": 3
+  },
+  "records": {
+    "source_cell_facts": 33705,
+    "statistical_data_cells": 18486,
+    "value_status_counts": {
+      "reported_typed_numeric": 13387,
+      "source_display_typed_value_conflict_unresolved": 5098,
+      "source_marker": 1
+    }
+  },
+  "source_records": {
+    "south-lienchiang-opendata-173786": {
+      "source_cell_facts": 48,
+      "statistical_data_cells": 35,
+      "value_status_counts": {
+        "reported_typed_numeric": 35
+      },
+      "resolved_numeric_cells": 35,
+      "typed_numeric_cells": 35
+    },
+    "south-hualien-library-lending-409-reader": {
+      "source_cell_facts": 13797,
+      "statistical_data_cells": 6336,
+      "value_status_counts": {
+        "reported_typed_numeric": 4384,
+        "source_display_typed_value_conflict_unresolved": 1952
+      },
+      "resolved_numeric_cells": 4384,
+      "typed_numeric_cells": 6336
+    },
+    "south-hualien-library-lending-409-room": {
+      "source_cell_facts": 19701,
+      "statistical_data_cells": 12080,
+      "value_status_counts": {
+        "reported_typed_numeric": 8934,
+        "source_display_typed_value_conflict_unresolved": 3146
+      },
+      "resolved_numeric_cells": 8934,
+      "typed_numeric_cells": 12080
+    },
+    "south-lienchiang-culture-library-overview-114": {
+      "source_cell_facts": 159,
+      "statistical_data_cells": 35,
+      "value_status_counts": {
+        "reported_typed_numeric": 34,
+        "source_marker": 1
+      },
+      "resolved_numeric_cells": 34,
+      "typed_numeric_cells": 34
+    }
+  },
+  "period_policy": "Monthly sheet/header conflicts keep both candidates; official period unknown. Annual two sources remain separate versions and populations.",
+  "normalization_policy": "Display marker plus typed numeric is unresolved: value null, original typed value separate; neither reported missing nor certified measured zero.",
+  "cache_policy": "All sources validated before writes; changed SHA requires review; unchanged output bytes retain mtime.",
+  "source_sheets_not_canonical": "This independent phase1 source-cell layer does not modify the annual canonical observations.",
+  "dependencies": [
+    "Python3.12 standard library ZIP/XML/Decimal",
+    "scripts/extract_phase1_local_sources.py"
+  ],
+  "outputs": [
+    {
+      "path": "derived/phase1_local_sources_cells.csv",
+      "sha256": "5a8e944da84092c48a550cf2d5068c52939b7f167b0615ff92e1ba135c1427c2",
+      "bytes": 25149872
+    },
+    {
+      "path": "derived/phase1_local_sources_cells.jsonl",
+      "sha256": "e7eace84cf6338294f659f48a246ecea41213ad1fe4027f225273db598d8c7a5",
+      "bytes": 49812118
+    },
+    {
+      "path": "derived/phase1_local_sources_long.csv",
+      "sha256": "2e855af5b5c545f24e05b14f13d7acc16939b691024ace0baa6e8f064e3ea55f",
+      "bytes": 26812202
+    },
+    {
+      "path": "derived/phase1_local_sources_long.jsonl",
+      "sha256": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+      "bytes": 48266280
+    },
+    {
+      "path": "raw/phase1_local_sources/south-lienchiang-opendata-173786/metadata.json",
+      "sha256": "619e309bda6441893ebb01f5af93e3c79c089f1321b72ccedce6fc47f4ae457a",
+      "bytes": 2681
+    },
+    {
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-reader/metadata.json",
+      "sha256": "e7c37346ef3cf1a5c494e5d4d1ca5ee6a26f77bd7d0189a420b613195682bf13",
+      "bytes": 131773
+    },
+    {
+      "path": "raw/phase1_local_sources/south-hualien-library-lending-409-room/metadata.json",
+      "sha256": "733aafa87e9fc325f228302cddc754854e3fe07a6cc6256c65d291925370c7a7",
+      "bytes": 151894
+    },
+    {
+      "path": "raw/phase1_local_sources/south-lienchiang-culture-library-overview-114/metadata.json",
+      "sha256": "eacecec9d862000f3dfa6b5c8ca442fe9d41f672216f8ff62faf939a706b735c",
+      "bytes": 4074
+    }
+  ]
+}

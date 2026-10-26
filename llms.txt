@@ -2,7 +2,7 @@
 
 > 整理官方已公開、可驗證來源的公共圖書館統計事實與明確開放資料，支援公眾理解和研究重現。現有官方跨年圖表與名詞字典已存在；本專案不宣稱首創。
 
-版本 0.5.1；建置日 2026-10-26。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.5.1。
+版本 0.6.0；建置日 2026-10-26。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.6.0。
 
 ## 正式入口
 
@@ -51,6 +51,10 @@ value=null 要看value_status；source_blank是原印留白，not_available_in_s
 2012年原文中每人購書／擁書／借閱比率分別列22／22／22縣市；館員服務人口只列21縣市，未列連江縣。22縣市核心原量表仍未取得，不能由比率反算。閱讀報告所列表只有全國彙總，不能冒充縣市表。 2015原刊部分縣市標籤未確認、兩列均印金門，保留183筆標籤不確定觀測，不補成連江或硬接現行界線。 其他原刊地理標籤疑義按資料年分列：2024年36格；原印名稱與數字保留，這些格不計為已確認縣市覆蓋。 2015表17標題「場次」與正文「人次」衝突，161格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。 其他原欄頭與正文計量口徑衝突：2005年51格；unit留空，原單位與出處另存，不視為純圖書冊數。 原表人數／人次的計數口徑未釐清之格位保留unit=null：2005年3格、2016年23格；unit_raw照原欄頭保留。
 歷史批次入口：docs/historical-batches.json及docs/historical-batches.md。
 <!-- END generated-historical-scope -->
+
+<!-- BEGIN phase1 -->
+第一階段版本 0.6.0：先讀docs/phase1-summary.json與docs/phase1-data-dictionary.json。來源角色、候選與年主題索引不是營運觀測；來源格新層和canonical保持分開。按工作表小量讀取：docs/phase1-source-cell-partitions.json。未知不補值，2012原量缺口保留，跨年可比尚未認證。
+<!-- END phase1 -->
 
 ## 小量讀取與公開投影
 

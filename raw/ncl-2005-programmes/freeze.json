@@ -1,0 +1,229 @@
+{
+  "producer_inputs": [
+    {
+      "path": "scripts/extract_ncl_2005_programmes.py",
+      "sha256": "9dcd51d25c6c16d5a997982c500211ba93bbb070143caf351d1bc4b90f3ff9f6",
+      "bytes": 39829
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-public-library.pdf",
+      "sha256": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
+      "bytes": 1286080
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-public-library.metadata.json",
+      "sha256": "b6d97222174bdbff8f97239e3839be702c5e0fa16bbb3625ba9bb7aa07c57334",
+      "bytes": 933
+    }
+  ],
+  "producer_outputs": [
+    {
+      "path": "derived/ncl_2005_programmes.csv",
+      "sha256": "13c83fd5f753de66e652fba715129468be971e1df81b235084e7ae524ee19190",
+      "bytes": 283568
+    },
+    {
+      "path": "derived/ncl_2005_programmes.jsonl",
+      "sha256": "e17b1301ed60001f22025d2129ee5cf46cb6882f20fa1d2491caf2b4db276ecc",
+      "bytes": 431778
+    },
+    {
+      "path": "derived/ncl_2005_programmes_long.csv",
+      "sha256": "ff8217c9eadcc5e4124456c1ae8ead648aa566f657f4231d829653397797a210",
+      "bytes": 316468
+    },
+    {
+      "path": "derived/ncl_2005_programmes_long.jsonl",
+      "sha256": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
+      "bytes": 474877
+    },
+    {
+      "path": "raw/ncl-2005-programmes/metadata.json",
+      "sha256": "971e3cb9724cebc87f03e1148cf76b4a24be427af9752d4814713f91841956d0",
+      "bytes": 5874
+    },
+    {
+      "path": "raw/ncl-2005-programmes/cell-audit.json",
+      "sha256": "d8f01e0d75966f4fbd934808083e9411329ef895a91928e76a87d10bc7010821",
+      "bytes": 47950
+    }
+  ],
+  "cache_contract": "source SHA and all input/output hashes must match; unchanged outputs keep bytes/mtime; missing/changed source stops before output mutation",
+  "unchanged_outputs_keep_mtime": true,
+  "full_originals_distribution": "not_in_public_bundle",
+  "records": {
+    "programme_rows": 119,
+    "numeric_quantity_cells": 123,
+    "table6": {
+      "reading_facility_rows": 88,
+      "demonstration_county_slots": 23,
+      "demonstration_numeric_facility_rows": 21,
+      "nonparticipating_marker_slots": 1,
+      "blank_slots_reason_unknown": 1,
+      "printed_summary_rows": 2,
+      "numeric_cells": 113
+    },
+    "table7": {
+      "activity_rows": 6,
+      "numeric_cells": 10,
+      "explicit_period_cells": 2,
+      "period_unknown_rows": 4
+    }
+  },
+  "verification_sha256": "97e2b19ad6aef4f5e5fca780da104bbbc64100161684cf5c6c3b8eafa4931e16",
+  "minimal_revision": {
+    "reason": "Producer full-page source image reading omitted printed 圖書館 suffixes. Rechecked all three complete table6 facility-name columns at scale3; restored11 original labels from source, not from external geographic assumptions.",
+    "changed_programme_labels": [
+      {
+        "programme_id": "ncl95-table6-reading-063",
+        "before": "白沙鄉立",
+        "after": "白沙鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 63,
+        "source_facility_bbox": [
+          103.366,
+          165.05110000000002,
+          223.118,
+          179.55110000000002
+        ]
+      },
+      {
+        "programme_id": "ncl95-table6-reading-064",
+        "before": "七美鄉立",
+        "after": "七美鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 64,
+        "source_facility_bbox": [
+          103.366,
+          181.70460000000003,
+          223.118,
+          196.20460000000003
+        ]
+      },
+      {
+        "programme_id": "ncl95-table6-reading-065",
+        "before": "望安鄉立",
+        "after": "望安鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 65,
+        "source_facility_bbox": [
+          103.366,
+          198.3582,
+          223.118,
+          212.8582
+        ]
+      },
+      {
+        "programme_id": "ncl95-table6-reading-066",
+        "before": "橋頭鄉立",
+        "after": "橋頭鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 66,
+        "source_facility_bbox": [
+          103.366,
+          215.01170000000002,
+          223.118,
+          229.51170000000002
+        ]
+      },
+      {
+        "programme_id": "ncl95-table6-reading-072",
+        "before": "林邊鄉立",
+        "after": "林邊鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 72,
+        "source_facility_bbox": [
+          103.366,
+          314.9329,
+          223.118,
+          329.4329
+        ]
+      },
+      {
+        "programme_id": "ncl95-table6-reading-073",
+        "before": "萬巒鄉立",
+        "after": "萬巒鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 73,
+        "source_facility_bbox": [
+          103.366,
+          331.5865,
+          223.118,
+          346.0865
+        ]
+      },
+      {
+        "programme_id": "ncl95-table6-reading-074",
+        "before": "南州鄉立",
+        "after": "南州鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 74,
+        "source_facility_bbox": [
+          103.366,
+          348.24,
+          223.118,
+          362.74
+        ]
+      },
+      {
+        "programme_id": "ncl95-table6-reading-076",
+        "before": "吉安鄉立",
+        "after": "吉安鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 76,
+        "source_facility_bbox": [
+          103.366,
+          381.5471,
+          223.118,
+          396.0471
+        ]
+      },
+      {
+        "programme_id": "ncl95-table6-reading-077",
+        "before": "光復鄉立",
+        "after": "光復鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 77,
+        "source_facility_bbox": [
+          103.366,
+          398.2006,
+          223.118,
+          412.7006
+        ]
+      },
+      {
+        "programme_id": "ncl95-table6-reading-085",
+        "before": "礁溪鄉立",
+        "after": "礁溪鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 85,
+        "source_facility_bbox": [
+          103.366,
+          531.4289,
+          223.118,
+          545.9289
+        ]
+      },
+      {
+        "programme_id": "ncl95-table6-reading-086",
+        "before": "壯圍鄉立",
+        "after": "壯圍鄉立圖書館",
+        "source_pdf_page": 16,
+        "source_row": 86,
+        "source_facility_bbox": [
+          103.366,
+          548.0824,
+          223.118,
+          562.5824
+        ]
+      }
+    ],
+    "numeric_position_period_fingerprint_before": "185a679ff1daf7ce9560d90a63800418d9b6451315c81a68ccee56d68e6b3b5b",
+    "numeric_position_period_fingerprint_after": "185a679ff1daf7ce9560d90a63800418d9b6451315c81a68ccee56d68e6b3b5b",
+    "numeric_values_raw_status_positions_ids_and_periods_unchanged": true,
+    "all_three_pages_full_facility_labels_rechecked": true,
+    "independent_queried_reading_not_adopted": "表7原印舞畫說書保留；不採舞書說書誤讀。",
+    "private_evidence_description": "Original source pages and full-column crops retained by maintainer; paths are not public extraction dependencies."
+  },
+  "portability_fix": "Removed deployment-specific private image directory; statistical outputs unchanged."
+}

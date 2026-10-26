@@ -1,0 +1,2049 @@
+[
+  {
+    "observation_id": "ncl95-table6-reading-001:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 1,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      150.398,
+      291.968,
+      160.898
+    ],
+    "raw_value": "101",
+    "normalized_value": "101",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-002:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 2,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      167.051,
+      291.968,
+      177.551
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-003:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 3,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      183.705,
+      291.968,
+      194.205
+    ],
+    "raw_value": "479",
+    "normalized_value": "479",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-004:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 4,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      200.358,
+      291.968,
+      210.858
+    ],
+    "raw_value": "300",
+    "normalized_value": "300",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-005:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 5,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      217.012,
+      291.968,
+      227.512
+    ],
+    "raw_value": "260",
+    "normalized_value": "260",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-01:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": "1–5",
+    "source_column": 5,
+    "bbox": [
+      412.405,
+      183.705,
+      482.48,
+      194.205
+    ],
+    "raw_value": "66",
+    "normalized_value": "66",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-006:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 6,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      233.665,
+      291.968,
+      244.165
+    ],
+    "raw_value": "150",
+    "normalized_value": "150",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-02:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": "6",
+    "source_column": 5,
+    "bbox": [
+      412.405,
+      233.665,
+      482.48,
+      244.165
+    ],
+    "raw_value": "40",
+    "normalized_value": "40",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-007:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 7,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      250.319,
+      291.968,
+      260.819
+    ],
+    "raw_value": "15",
+    "normalized_value": "15",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-008:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 8,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      266.972,
+      291.968,
+      277.472
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-009:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 9,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      283.626,
+      291.968,
+      294.126
+    ],
+    "raw_value": "400",
+    "normalized_value": "400",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-010:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 10,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      300.279,
+      291.968,
+      310.779
+    ],
+    "raw_value": "210",
+    "normalized_value": "210",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-011:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 11,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      316.933,
+      291.968,
+      327.433
+    ],
+    "raw_value": "100",
+    "normalized_value": "100",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-03:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": "7–11",
+    "source_column": 5,
+    "bbox": [
+      412.405,
+      283.626,
+      482.48,
+      294.126
+    ],
+    "raw_value": "75",
+    "normalized_value": "75",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-012:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 12,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      333.587,
+      291.968,
+      344.087
+    ],
+    "raw_value": "80",
+    "normalized_value": "80",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-013:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 13,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      350.24,
+      291.968,
+      360.74
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-014:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 14,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      366.894,
+      291.968,
+      377.394
+    ],
+    "raw_value": "70",
+    "normalized_value": "70",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-015:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 15,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      383.547,
+      291.968,
+      394.047
+    ],
+    "raw_value": "300",
+    "normalized_value": "300",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-04:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": "12–15",
+    "source_column": 5,
+    "bbox": [
+      412.405,
+      357.894,
+      482.48,
+      368.394
+    ],
+    "raw_value": "200",
+    "normalized_value": "200",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-016:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 16,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      400.201,
+      291.968,
+      410.701
+    ],
+    "raw_value": "200",
+    "normalized_value": "200",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-017:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 17,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      416.854,
+      291.968,
+      427.354
+    ],
+    "raw_value": "90",
+    "normalized_value": "90",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-018:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 18,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      433.508,
+      291.968,
+      444.008
+    ],
+    "raw_value": "300",
+    "normalized_value": "300",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-05:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": "16–18",
+    "source_column": 5,
+    "bbox": [
+      412.405,
+      416.854,
+      482.48,
+      427.354
+    ],
+    "raw_value": "190",
+    "normalized_value": "190",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-019:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 19,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      450.161,
+      291.968,
+      460.661
+    ],
+    "raw_value": "106",
+    "normalized_value": "106",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "programme_id": "ncl95-table6-demonstration-06",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": "19",
+    "source_column": "4–5",
+    "bbox": [
+      291.968,
+      445.526,
+      482.48,
+      462.247
+    ],
+    "raw_value": "不參加",
+    "normalized_value": null,
+    "value_status": "source_marker",
+    "method": "PDFium_image_transcribed_Chinese_outlines_or_visual_blank; native_text_empty"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-020:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 20,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      466.815,
+      291.968,
+      477.315
+    ],
+    "raw_value": "200",
+    "normalized_value": "200",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-021:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 21,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      483.468,
+      291.968,
+      493.968
+    ],
+    "raw_value": "20",
+    "normalized_value": "20",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-022:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 22,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      500.122,
+      291.968,
+      510.622
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-07:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": "20–22",
+    "source_column": 5,
+    "bbox": [
+      412.405,
+      483.468,
+      482.48,
+      493.968
+    ],
+    "raw_value": "150",
+    "normalized_value": "150",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-023:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 23,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      516.775,
+      291.968,
+      527.275
+    ],
+    "raw_value": "50",
+    "normalized_value": "50",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-024:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 24,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      533.429,
+      291.968,
+      543.929
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-025:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 25,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      550.082,
+      291.968,
+      560.582
+    ],
+    "raw_value": "100",
+    "normalized_value": "100",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-026:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 26,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      566.736,
+      291.968,
+      577.236
+    ],
+    "raw_value": "120",
+    "normalized_value": "120",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-08:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": "23–26",
+    "source_column": 5,
+    "bbox": [
+      412.405,
+      541.082,
+      482.48,
+      551.582
+    ],
+    "raw_value": "600",
+    "normalized_value": "600",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-027:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 27,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      583.389,
+      291.968,
+      593.889
+    ],
+    "raw_value": "150",
+    "normalized_value": "150",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-028:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 28,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      600.043,
+      291.968,
+      610.543
+    ],
+    "raw_value": "150",
+    "normalized_value": "150",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-029:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 29,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      616.697,
+      291.968,
+      627.197
+    ],
+    "raw_value": "150",
+    "normalized_value": "150",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-030:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 30,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      633.35,
+      291.968,
+      643.85
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-031:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": 31,
+    "source_column": 3,
+    "bbox": [
+      223.117,
+      650.004,
+      291.968,
+      660.504
+    ],
+    "raw_value": "100",
+    "normalized_value": "100",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-09:participants",
+    "source_pdf_page": 14,
+    "source_table": "6",
+    "source_row": "27–31",
+    "source_column": 5,
+    "bbox": [
+      412.405,
+      616.697,
+      482.48,
+      627.197
+    ],
+    "raw_value": "300",
+    "normalized_value": "300",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-032:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 32,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      150.398,
+      292.546,
+      160.898
+    ],
+    "raw_value": "36",
+    "normalized_value": "36",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-033:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 33,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      167.051,
+      292.546,
+      177.551
+    ],
+    "raw_value": "400",
+    "normalized_value": "400",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-034:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 34,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      183.705,
+      292.546,
+      194.205
+    ],
+    "raw_value": "54",
+    "normalized_value": "54",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-035:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 35,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      200.358,
+      292.546,
+      210.858
+    ],
+    "raw_value": "165",
+    "normalized_value": "165",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-036:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 36,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      217.012,
+      292.546,
+      227.512
+    ],
+    "raw_value": "30",
+    "normalized_value": "30",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-037:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 37,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      233.665,
+      292.546,
+      244.165
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-10:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": "32–37",
+    "source_column": 5,
+    "bbox": [
+      413.155,
+      190.359,
+      482.48,
+      201.858
+    ],
+    "raw_value": "1,200",
+    "normalized_value": "1200",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-038:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 38,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      250.319,
+      292.546,
+      260.819
+    ],
+    "raw_value": "120",
+    "normalized_value": "120",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-039:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 39,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      266.972,
+      292.546,
+      277.472
+    ],
+    "raw_value": "50",
+    "normalized_value": "50",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-040:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 40,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      283.626,
+      292.546,
+      294.126
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-041:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 41,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      300.279,
+      292.546,
+      310.779
+    ],
+    "raw_value": "80",
+    "normalized_value": "80",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-11:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": "38–41",
+    "source_column": 5,
+    "bbox": [
+      413.155,
+      274.626,
+      482.48,
+      285.126
+    ],
+    "raw_value": "80",
+    "normalized_value": "80",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-042:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 42,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      316.933,
+      292.546,
+      327.433
+    ],
+    "raw_value": "160",
+    "normalized_value": "160",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-043:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 43,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      333.587,
+      292.546,
+      344.087
+    ],
+    "raw_value": "100",
+    "normalized_value": "100",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-044:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 44,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      350.24,
+      292.546,
+      360.74
+    ],
+    "raw_value": "245",
+    "normalized_value": "245",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-045:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 45,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      366.894,
+      292.546,
+      377.394
+    ],
+    "raw_value": "100",
+    "normalized_value": "100",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-12:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": "42–45",
+    "source_column": 5,
+    "bbox": [
+      413.155,
+      341.24,
+      482.48,
+      351.74
+    ],
+    "raw_value": "250",
+    "normalized_value": "250",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-046:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 46,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      383.547,
+      292.546,
+      394.047
+    ],
+    "raw_value": "58",
+    "normalized_value": "58",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-047:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 47,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      400.201,
+      292.546,
+      410.701
+    ],
+    "raw_value": "40",
+    "normalized_value": "40",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-048:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 48,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      416.854,
+      292.546,
+      427.354
+    ],
+    "raw_value": "47",
+    "normalized_value": "47",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-13:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": "46–48",
+    "source_column": 5,
+    "bbox": [
+      413.155,
+      400.201,
+      482.48,
+      410.701
+    ],
+    "raw_value": "520",
+    "normalized_value": "520",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-049:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 49,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      433.508,
+      292.546,
+      444.008
+    ],
+    "raw_value": "100",
+    "normalized_value": "100",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "programme_id": "ncl95-table6-demonstration-14",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": "49",
+    "source_column": "4–5",
+    "bbox": [
+      292.546,
+      428.597,
+      482.48,
+      445.526
+    ],
+    "raw_value": "",
+    "normalized_value": null,
+    "value_status": "blank_in_source",
+    "method": "PDFium_image_transcribed_Chinese_outlines_or_visual_blank; native_text_empty"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-050:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 50,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      450.161,
+      292.546,
+      460.661
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-051:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 51,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      466.815,
+      292.546,
+      477.315
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-052:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 52,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      483.468,
+      292.546,
+      493.968
+    ],
+    "raw_value": "60",
+    "normalized_value": "60",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-15:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": "50–52",
+    "source_column": 5,
+    "bbox": [
+      413.155,
+      466.815,
+      482.48,
+      477.315
+    ],
+    "raw_value": "80",
+    "normalized_value": "80",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-053:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 53,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      500.122,
+      292.546,
+      510.622
+    ],
+    "raw_value": "75",
+    "normalized_value": "75",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-054:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 54,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      516.775,
+      292.546,
+      527.275
+    ],
+    "raw_value": "160",
+    "normalized_value": "160",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-055:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 55,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      533.429,
+      292.546,
+      543.929
+    ],
+    "raw_value": "129",
+    "normalized_value": "129",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-056:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 56,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      550.082,
+      292.546,
+      560.582
+    ],
+    "raw_value": "260",
+    "normalized_value": "260",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-16:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": "53–56",
+    "source_column": 5,
+    "bbox": [
+      413.155,
+      525.429,
+      482.48,
+      535.929
+    ],
+    "raw_value": "934",
+    "normalized_value": "934",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-057:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 57,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      566.736,
+      292.546,
+      577.236
+    ],
+    "raw_value": "420",
+    "normalized_value": "420",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-058:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 58,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      583.389,
+      292.546,
+      593.889
+    ],
+    "raw_value": "1,570",
+    "normalized_value": "1570",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-059:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 59,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      600.043,
+      292.546,
+      610.543
+    ],
+    "raw_value": "1,020",
+    "normalized_value": "1020",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-060:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 60,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      616.697,
+      292.546,
+      627.197
+    ],
+    "raw_value": "952",
+    "normalized_value": "952",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-061:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": 61,
+    "source_column": 3,
+    "bbox": [
+      223.705,
+      633.35,
+      292.546,
+      643.85
+    ],
+    "raw_value": "21",
+    "normalized_value": "21",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-17:participants",
+    "source_pdf_page": 15,
+    "source_table": "6",
+    "source_row": "57–61",
+    "source_column": 5,
+    "bbox": [
+      413.155,
+      600.043,
+      482.48,
+      610.543
+    ],
+    "raw_value": "100",
+    "normalized_value": "100",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-062:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 62,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      150.398,
+      291.965,
+      160.898
+    ],
+    "raw_value": "240",
+    "normalized_value": "240",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-063:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 63,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      167.051,
+      291.965,
+      177.551
+    ],
+    "raw_value": "170",
+    "normalized_value": "170",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-064:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 64,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      183.705,
+      291.965,
+      194.205
+    ],
+    "raw_value": "85",
+    "normalized_value": "85",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-065:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 65,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      200.358,
+      291.965,
+      210.858
+    ],
+    "raw_value": "81",
+    "normalized_value": "81",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-18:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": "62–65",
+    "source_column": 5,
+    "bbox": [
+      412.319,
+      174.705,
+      482.48,
+      185.205
+    ],
+    "raw_value": "50",
+    "normalized_value": "50",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-066:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 66,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      217.012,
+      291.965,
+      227.512
+    ],
+    "raw_value": "190",
+    "normalized_value": "190",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-067:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 67,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      233.665,
+      291.965,
+      244.165
+    ],
+    "raw_value": "120",
+    "normalized_value": "120",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-068:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 68,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      250.319,
+      291.965,
+      260.819
+    ],
+    "raw_value": "1,395",
+    "normalized_value": "1395",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-069:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 69,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      266.972,
+      291.965,
+      277.472
+    ],
+    "raw_value": "120",
+    "normalized_value": "120",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-070:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 70,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      283.626,
+      291.965,
+      294.126
+    ],
+    "raw_value": "50",
+    "normalized_value": "50",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-19:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": "66–70",
+    "source_column": 5,
+    "bbox": [
+      412.319,
+      250.319,
+      482.48,
+      260.819
+    ],
+    "raw_value": "160",
+    "normalized_value": "160",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-071:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 71,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      300.279,
+      291.965,
+      310.779
+    ],
+    "raw_value": "626",
+    "normalized_value": "626",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-072:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 72,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      316.933,
+      291.965,
+      327.433
+    ],
+    "raw_value": "132",
+    "normalized_value": "132",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-073:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 73,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      333.587,
+      291.965,
+      344.087
+    ],
+    "raw_value": "77",
+    "normalized_value": "77",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-074:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 74,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      350.24,
+      291.965,
+      360.74
+    ],
+    "raw_value": "500",
+    "normalized_value": "500",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-075:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 75,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      366.894,
+      291.965,
+      377.394
+    ],
+    "raw_value": "35",
+    "normalized_value": "35",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-20:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": "71–75",
+    "source_column": 5,
+    "bbox": [
+      412.319,
+      333.587,
+      482.48,
+      344.087
+    ],
+    "raw_value": "100",
+    "normalized_value": "100",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-076:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 76,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      383.547,
+      291.965,
+      394.047
+    ],
+    "raw_value": "52",
+    "normalized_value": "52",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-077:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 77,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      400.201,
+      291.965,
+      410.701
+    ],
+    "raw_value": "360",
+    "normalized_value": "360",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-078:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 78,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      416.854,
+      291.965,
+      427.354
+    ],
+    "raw_value": "30",
+    "normalized_value": "30",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-21:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": "76–78",
+    "source_column": 5,
+    "bbox": [
+      412.319,
+      400.201,
+      482.48,
+      410.701
+    ],
+    "raw_value": "200",
+    "normalized_value": "200",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-079:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 79,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      433.508,
+      291.965,
+      444.008
+    ],
+    "raw_value": "73",
+    "normalized_value": "73",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-080:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 80,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      450.161,
+      291.965,
+      460.661
+    ],
+    "raw_value": "42",
+    "normalized_value": "42",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-081:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 81,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      466.815,
+      291.965,
+      477.315
+    ],
+    "raw_value": "63",
+    "normalized_value": "63",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-082:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 82,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      483.468,
+      291.965,
+      493.968
+    ],
+    "raw_value": "45",
+    "normalized_value": "45",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-083:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 83,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      500.122,
+      291.965,
+      510.622
+    ],
+    "raw_value": "80",
+    "normalized_value": "80",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-22:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": "79–83",
+    "source_column": 5,
+    "bbox": [
+      412.319,
+      466.815,
+      482.48,
+      477.315
+    ],
+    "raw_value": "36",
+    "normalized_value": "36",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-084:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 84,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      516.775,
+      291.965,
+      527.275
+    ],
+    "raw_value": "290",
+    "normalized_value": "290",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-085:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 85,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      533.429,
+      291.965,
+      543.929
+    ],
+    "raw_value": "150",
+    "normalized_value": "150",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-086:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 86,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      550.082,
+      291.965,
+      560.582
+    ],
+    "raw_value": "120",
+    "normalized_value": "120",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-087:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 87,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      566.736,
+      291.965,
+      577.236
+    ],
+    "raw_value": "41",
+    "normalized_value": "41",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-reading-088:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 88,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      583.389,
+      291.965,
+      593.889
+    ],
+    "raw_value": "34",
+    "normalized_value": "34",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-demonstration-23:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": "84–88",
+    "source_column": 5,
+    "bbox": [
+      412.319,
+      550.082,
+      482.48,
+      560.582
+    ],
+    "raw_value": "100",
+    "normalized_value": "100",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-total-reading:facilities",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 89,
+    "source_column": 2,
+    "bbox": [
+      103.366,
+      599,
+      223.118,
+      611
+    ],
+    "raw_value": "88",
+    "normalized_value": "88",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-total-reading:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 89,
+    "source_column": 3,
+    "bbox": [
+      223.118,
+      599,
+      291.965,
+      611
+    ],
+    "raw_value": "16,374",
+    "normalized_value": "16374",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-total-demonstration:facilities",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 89,
+    "source_column": 4,
+    "bbox": [
+      291.965,
+      599,
+      412.319,
+      611
+    ],
+    "raw_value": "21",
+    "normalized_value": "21",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table6-total-demonstration:participants",
+    "source_pdf_page": 16,
+    "source_table": "6",
+    "source_row": 89,
+    "source_column": 5,
+    "bbox": [
+      412.319,
+      599,
+      482.48,
+      611
+    ],
+    "raw_value": "5,431",
+    "normalized_value": "5431",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table7-activity-01:events",
+    "source_pdf_page": 34,
+    "source_table": "7",
+    "source_row": 1,
+    "source_column": 3,
+    "bbox": [
+      313.455,
+      326.898,
+      423.618,
+      337.398
+    ],
+    "raw_value": "38",
+    "normalized_value": "38",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table7-activity-01:participants",
+    "source_pdf_page": 34,
+    "source_table": "7",
+    "source_row": 1,
+    "source_column": 4,
+    "bbox": [
+      423.618,
+      326.898,
+      482.48,
+      337.398
+    ],
+    "raw_value": "3,803",
+    "normalized_value": "3803",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table7-activity-02:events",
+    "source_pdf_page": 34,
+    "source_table": "7",
+    "source_row": 2,
+    "source_column": 3,
+    "bbox": [
+      313.455,
+      343.552,
+      423.618,
+      354.052
+    ],
+    "raw_value": "8",
+    "normalized_value": "8",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table7-activity-02:participants",
+    "source_pdf_page": 34,
+    "source_table": "7",
+    "source_row": 2,
+    "source_column": 4,
+    "bbox": [
+      423.618,
+      343.552,
+      482.48,
+      354.052
+    ],
+    "raw_value": "640",
+    "normalized_value": "640",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table7-activity-03:events",
+    "source_pdf_page": 34,
+    "source_table": "7",
+    "source_row": 3,
+    "source_column": 3,
+    "bbox": [
+      313.455,
+      360.205,
+      423.618,
+      370.705
+    ],
+    "raw_value": "4",
+    "normalized_value": "4",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table7-activity-03:participants",
+    "source_pdf_page": 34,
+    "source_table": "7",
+    "source_row": 3,
+    "source_column": 4,
+    "bbox": [
+      423.618,
+      360.205,
+      482.48,
+      370.705
+    ],
+    "raw_value": "40,000",
+    "normalized_value": "40000",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table7-activity-04:events",
+    "source_pdf_page": 34,
+    "source_table": "7",
+    "source_row": 4,
+    "source_column": 3,
+    "bbox": [
+      313.455,
+      376.859,
+      423.618,
+      387.359
+    ],
+    "raw_value": "36",
+    "normalized_value": "36",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "observation_id": "ncl95-table7-activity-04:participants",
+    "source_pdf_page": 34,
+    "source_table": "7",
+    "source_row": 4,
+    "source_column": 4,
+    "bbox": [
+      423.618,
+      376.859,
+      482.48,
+      387.359
+    ],
+    "raw_value": "3,600",
+    "normalized_value": "3600",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "programme_id": "ncl95-table7-activity-05",
+    "source_table": "7",
+    "source_pdf_page": 34,
+    "source_row": 5,
+    "source_column": 3,
+    "bbox": [
+      313.455,
+      391.512,
+      423.618,
+      406.012
+    ],
+    "raw_period": "94年12月至95年5月",
+    "native_numeric_tokens": [
+      "94",
+      "12",
+      "95",
+      "5"
+    ],
+    "converted_start_month_candidate": "2005-12",
+    "converted_end_month_candidate": "2006-05",
+    "method": "image_transcribed_Chinese_period_words; original_native_numeric_tokens_verified; ROC_year_plus1911"
+  },
+  {
+    "observation_id": "ncl95-table7-activity-05:participants",
+    "source_pdf_page": 34,
+    "source_table": "7",
+    "source_row": 5,
+    "source_column": 4,
+    "bbox": [
+      423.618,
+      393.512,
+      482.48,
+      404.012
+    ],
+    "raw_value": "280,523",
+    "normalized_value": "280523",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  },
+  {
+    "programme_id": "ncl95-table7-activity-06",
+    "source_table": "7",
+    "source_pdf_page": 34,
+    "source_row": 6,
+    "source_column": 3,
+    "bbox": [
+      313.455,
+      408.166,
+      423.618,
+      422.666
+    ],
+    "raw_period": "95年4月至5月",
+    "native_numeric_tokens": [
+      "95",
+      "4",
+      "5"
+    ],
+    "converted_start_month_candidate": "2006-04",
+    "converted_end_month_candidate": "2006-05",
+    "method": "image_transcribed_Chinese_period_words; original_native_numeric_tokens_verified; ROC_year_plus1911"
+  },
+  {
+    "observation_id": "ncl95-table7-activity-06:participants",
+    "source_pdf_page": 34,
+    "source_table": "7",
+    "source_row": 6,
+    "source_column": 4,
+    "bbox": [
+      423.618,
+      410.166,
+      482.48,
+      420.666
+    ],
+    "raw_value": "989",
+    "normalized_value": "989",
+    "method": "deduplicated_original_word_and_char_exact_roundtrip"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.6.0",
+  "sqlite": "derived/phase1_supplements.sqlite",
+  "tables": [
+    {
+      "table": "programme_rows",
+      "csv": "derived/ncl_2005_programmes.csv",
+      "jsonl": "derived/ncl_2005_programmes.jsonl",
+      "records": 119,
+      "private_producer_jsonl_sha256": "e17b1301ed60001f22025d2129ee5cf46cb6882f20fa1d2491caf2b4db276ecc",
+      "normalization": "Source-cell or programme facts. Do not union with canonical observations or sum original-cell and statistical-cell tables.",
+      "omitted_fields": []
+    },
+    {
+      "table": "programme_quantities",
+      "csv": "derived/ncl_2005_programmes_long.csv",
+      "jsonl": "derived/ncl_2005_programmes_long.jsonl",
+      "records": 123,
+      "private_producer_jsonl_sha256": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
+      "normalization": "Source-cell or programme facts. Do not union with canonical observations or sum original-cell and statistical-cell tables.",
+      "omitted_fields": [
+        "original_fields"
+      ]
+    },
+    {
+      "table": "local_original_cells",
+      "csv": "derived/phase1_local_sources_cells.csv",
+      "jsonl": "derived/phase1_local_sources_cells.jsonl",
+      "records": 33705,
+      "private_producer_jsonl_sha256": "e7eace84cf6338294f659f48a246ecea41213ad1fe4027f225273db598d8c7a5",
+      "normalization": "Source-cell or programme facts. Do not union with canonical observations or sum original-cell and statistical-cell tables.",
+      "omitted_fields": []
+    },
+    {
+      "table": "local_statistical_cells",
+      "csv": "derived/phase1_local_sources_long.csv",
+      "jsonl": "derived/phase1_local_sources_long.jsonl",
+      "records": 18486,
+      "private_producer_jsonl_sha256": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+      "normalization": "Source-cell or programme facts. Do not union with canonical observations or sum original-cell and statistical-cell tables.",
+      "omitted_fields": []
+    }
+  ],
+  "canonical_observations_unchanged": true,
+  "period_policy": "Programme reference years are not annual data years. Sheet/header conflicts retain unknown formal period; raw candidates remain.",
+  "value_policy": "ODS display markers and typed zeros are separate. Unresolved display/typed conflicts are not silently zero or source missingness.",
+  "publication_policy": "Only statistical projection; full workbooks with unrelated contacts or unrelated heritage sheets are not redistributed."
+}
