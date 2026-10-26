@@ -1,0 +1,44 @@
+{
+  "change": "table5 four response-count raw row labels restored to printed94; editorial explanation retained in notes/subrow fields",
+  "changed_cells": [
+    {
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 2; bbox 140.970,148.700,226.910,159.900",
+      "changed_fields": [
+        "source_row_label_raw",
+        "original_fields"
+      ],
+      "before": "94（同列括註）",
+      "after": "94"
+    },
+    {
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 3; bbox 226.910,148.700,311.950,159.900",
+      "changed_fields": [
+        "source_row_label_raw",
+        "original_fields"
+      ],
+      "before": "94（同列括註）",
+      "after": "94"
+    },
+    {
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 4; bbox 311.950,148.700,396.990,159.900",
+      "changed_fields": [
+        "source_row_label_raw",
+        "original_fields"
+      ],
+      "before": "94（同列括註）",
+      "after": "94"
+    },
+    {
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 5; bbox 396.990,148.700,482.480,159.900",
+      "changed_fields": [
+        "source_row_label_raw",
+        "original_fields"
+      ],
+      "before": "94（同列括註）",
+      "after": "94"
+    }
+  ],
+  "statistical_value_and_position_fingerprint_before": "867c7d1e43c1bd0365d031d472cd92d928f270008632c550df08c368ea7d98c3",
+  "statistical_value_and_position_fingerprint_after": "867c7d1e43c1bd0365d031d472cd92d928f270008632c550df08c368ea7d98c3",
+  "unchanged_numeric_raw_status_metric_id_positions_identity": true
+}

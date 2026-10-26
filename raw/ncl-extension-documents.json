@@ -1,5 +1,29 @@
 [
   {
+    "local_path": "raw/ncl-2005/yearbook-95-public-library.pdf",
+    "sha256": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565572390216434",
+    "source_title": "中華民國九十五年圖書館年鑑／公共圖書館",
+    "publication_date": "2006-11-01",
+    "source_edition_roc": "95",
+    "source_ids": [
+      "ncl-yearbook-95-public-library"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-2005/yearbook-95-statistics.pdf",
+    "sha256": "4b725f1a7e58d3b8629f76655e0ff678d4db4dc3f8bfdbb4a721211fa9303d78",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565572390216434",
+    "source_title": "中華民國九十五年圖書館年鑑／圖書館統計",
+    "publication_date": "2006-11-01",
+    "source_edition_roc": "95",
+    "source_ids": [
+      "ncl-yearbook-95-statistics"
+    ]
+  },
+  {
     "local_path": "raw/ncl-2012/ncl-reading-101.pdf",
     "sha256": "f25798e2fe96dcde51a0ed818edb395f986c2b427f8b39349d4edbe62dabacc4",
     "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q082532021110999161/32251658871.pdf",

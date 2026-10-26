@@ -44,7 +44,7 @@ def uncertain_label(row):
     fields=' '.join(str(row.get(k) or '') for k in ['geographic_scope','entity_kind','scope_note','quality_flags'])
     return any(marker in fields for marker in UNCERTAIN_SCOPES)
 
-def unit_conflict(row):return row.get('unit_status')=='source_heading_conflict_unresolved'
+def unit_conflict(row):return row.get('unit_status') in {'source_heading_conflict_unresolved','source_heading_body_counting_unit_conflict_unresolved'}
 
 def edition(row):
     # Read edition labels/path evidence; never infer edition from the data year.
@@ -135,11 +135,14 @@ def historical_warning(context):
     other_ambiguous={year:count for year,count in sorted(ambiguous_by_year.items(),key=lambda x:str(x[0])) if year!=2015}
     if other_ambiguous:
         text+=' 其他原刊地理標籤疑義按資料年分列：'+ '、'.join(f'{year}年{count}格' for year,count in other_ambiguous.items())+'；原印名稱與數字保留，這些格不計為已確認縣市覆蓋。'
-    if conflicting:
-        text+=f' 2015表17標題「場次」與正文「人次」衝突，{conflicting:,}格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。'
+    conflicts_by_year=Counter(as_int(r.get('data_year')) for r in selected if unit_conflict(r))
+    if conflicts_by_year.get(2015):
+        text+=f" 2015表17標題「場次」與正文「人次」衝突，{conflicts_by_year[2015]:,}格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。"
+    other_conflicts={y:n for y,n in conflicts_by_year.items() if y!=2015}
+    if other_conflicts:text+=' 其他原欄頭與正文計量口徑衝突：'+ '、'.join(f'{y}年{n}格' for y,n in sorted(other_conflicts.items()))+'；unit留空，原單位與出處另存，不視為純圖書冊數。'
     counting_basis=Counter(as_int(r.get('data_year')) for r in selected if r.get('unit_status')=='source_heading_counting_basis_unresolved')
     if counting_basis:
-        text+=' 原表只稱「人數」而未確認去重人數／累計人次的格位保留unit=null：'+ '、'.join(f'{year}年{count}格' for year,count in sorted(counting_basis.items(),key=lambda x:str(x[0])))+'；unit_raw照原欄頭保留。'
+        text+=' 原表人數／人次的計數口徑未釐清之格位保留unit=null：'+ '、'.join(f'{year}年{count}格' for year,count in sorted(counting_basis.items(),key=lambda x:str(x[0])))+'；unit_raw照原欄頭保留。'
     return text
 
 
@@ -210,6 +213,11 @@ def update_backlog(context):
         if family['family_id']=='ncl_yearbook_public_library_chapters':
             family['completed_scope']={'data_years':years(ncl),'edition_roc':editions,'long_rows':len(ncl),'tables':table_groups(ncl),'completion_statement':'只完整整理所列核心表、公共館子群與原文明列數字；不是整冊或所有縣市原量完整。'}
             family['known_not_ingested']=[known_2012]
+            for cohort in context['cohorts']:
+                for metadata_path in cohort['metadata_paths']:
+                    meta=read_json(root/metadata_path,{})
+                    if isinstance(meta,dict) and meta.get('known_not_ingested'):
+                        family['known_not_ingested'].append({'cohort':cohort['id'],'scope':'Known original tables outside the explicitly completed core cohort; not unavailable.','tables':meta['known_not_ingested'],'evidence':metadata_path})
             family['unknown_scope']=[unknown+'仍待逐表查核；已處理卷的其他未列來源也可能有缺口。','官方目錄可見不等於全部欄位、縣市標籤或歷年可比性已確認。']
             family['evidence']=list(dict.fromkeys(family.get('evidence',[])+evidence+['docs/historical-batches.json']))
         if family['family_id']=='ncl_all_type_statistical_chapters':
@@ -251,9 +259,10 @@ def main():
     s=replace_between(s,'## 目前收錄什麼','**完整性指',body);p.write_text(s)
     p=root/'AI_USAGE.md';s=p.read_text();s=re.sub(r'^目前 [\d,]+ 筆[^\n]+',description.replace('**','')+'「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。',s,flags=re.M)
     s=replace_between(s,'### 來源族群','### 數值與缺值',source_family_table(context,ai=True)+'\n\n'+warning+'\n\n原表、原文數字與閱讀五表的批次範圍見[歷史批次](docs/historical-batches.md)。')
-    null_line=f"- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `{context['nulls'].get('not_available_in_source',0)}` 格 `not_available_in_source` 保留明示缺值符號，`{context['nulls'].get('source_blank',0)}` 格 `source_blank` 保留原刊留白，`{context['nulls'].get('source_marker',0)}` 格 `source_marker` 保留原印「無」「未新增」等文字狀態；這些文字不自行改成0或推定不適用，均不推算補值。"
+    null_line=f"- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `{context['nulls'].get('not_available_in_source',0)}` 格 `not_available_in_source` 保留明示缺值符號，`{context['nulls'].get('source_blank',0)}` 格 `source_blank` 保留原刊留白，`{context['nulls'].get('source_marker',0)}` 格 `source_marker` 保留原印「無」「未新增」「未統計」等文字狀態；這些文字不自行改成0或推定不適用，均不推算補值。"
     s=re.sub(r'^- `value IS NULL` 必須同讀[^\n]+',null_line,s,flags=re.M);p.write_text(s)
     p=root/'llms.txt';s=p.read_text();s=re.sub(r'版本 [\d.]+；',f'版本 {version}；',s);s=re.sub(r'/releases/tag/v[\d.]+',f'/releases/tag/v{version}',s);s=re.sub(r'^(?:19,975 筆是觀測／來源版本紀錄|目前 [\d,]+ 筆來源觀測紀錄)[^\n]+',description.replace('**','')+' 批次完整性見docs/historical-batches.json；不宣稱全臺歷年皆完整。',s,flags=re.M)
+    if summary.get('built_at'):s=re.sub(r'建置日 \d{4}-\d{2}-\d{2}',f"建置日 {summary['built_at'][:10]}",s)
     s=s.replace('第六族群 source_family=主計總處縣市公共館數','source_family=主計總處縣市公共館數')
     s=generated_block(s,'generated-historical-scope','來源族群包含source_family='+READING+'；與年鑑分開。\n'+warning+'\n歷史批次入口：docs/historical-batches.json及docs/historical-batches.md。');p.write_text(s)
     p=root/'CITATION.cff';s=p.read_text();s=re.sub(r'^version: .+$','version: '+version,s,flags=re.M);p.write_text(s)

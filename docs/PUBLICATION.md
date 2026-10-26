@@ -1,6 +1,6 @@
 # 公開副本與來源原件
 
-資料版本v0.4.0。正式資料37,393筆，value=null共1,102格，其中原刊留白876格、原刊明示缺值206格、原印文字狀態（不自行解讀為0或不適用）20格。原刊留白不推定為0或不適用，明示缺值保留原符號，未解析數字不能改標為缺值。這次公開不修改統計原值、來源網址、原件SHA、定位、期間、地區或單位。22份OGDL原始檔含與統計無關的聯絡欄，公開副本省略這些原件，另提供欄位投影；中間表的 original_fields 也不再散布。完整原始工作檔未改寫。
+資料版本v0.5.0。正式資料37,887筆，value=null共1,104格，其中原刊留白876格、原刊明示缺值206格、原印文字狀態（不自行解讀為0或不適用）22格。原刊留白不推定為0或不適用，明示缺值保留原符號，未解析數字不能改標為缺值。這次公開不修改統計原值、來源網址、原件SHA、定位、期間、地區或單位。22份OGDL原始檔含與統計無關的聯絡欄，公開副本省略這些原件，另提供欄位投影；中間表的 original_fields 也不再散布。完整原始工作檔未改寫。
 
 - source_sha256：政府原件的SHA256，未套用投影雜湊。
 - public_evidence_path / public_evidence_sha256：另附的統計欄位投影及其雜湊。
@@ -14,4 +14,4 @@ raw/omitted-originals.json保留原件網址、雜湊、公開投影位置與被
 分析可直接使用三格式或data/by_year/index.json中的年度分割；不需要下載完整PDF或聯絡欄。公開程式的單元測試均使用合成資料，不需要憑證、私人排程或政府網站連線。
 
 
-HTTP回應的暫時cookie／驗證標頭不公開；三份目錄metadata的私有原檔與公開檔各有不同SHA，對照見raw/http-metadata-publication.json。官方來源正文的source_sha256不變，並未把公開metadata檔SHA冒充原件SHA。目錄HTML含每次變動的nonce，離線擷取採已核的日期／版次／固定附件連結metadata及版權原PDF；不要求重抓相同nonce的HTML。隔離重建證據見research/ncl-v04-catalog-projection-rebuild.json。
+本版所有derived CSV／JSONL省略original_fields整列副本；統計欄位與列序不變。私有製表檔SHA與公開投影SHA分列docs/derived-field-projections.json，原件source_sha256仍是政府原件。公開前來源驗收綁私有製表CSV；復原原件並重建後才可重跑該驗收，公開投影離線驗證另驗本公開manifest，不假稱兩種衍生檔bytes相同。

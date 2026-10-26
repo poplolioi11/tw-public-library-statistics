@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-10-25T12:04:42.016397+00:00",
+  "checked_at": "2026-10-26T07:12:52.786306+00:00",
   "status": "pass",
-  "assertions": 1244134,
+  "assertions": 1268155,
   "scope": "3091 core source cells exhaustively checked; all NCL adapter lineage/number states checked. Complete independently fixed glyph grids for explicitly reviewed cohorts and image/header/row/footnote selections are separately bounded in each evidence report. Older source review limits remain individually reported.",
   "independent_of_pipeline_and_extractors": true,
   "network_used": false,
@@ -459,7 +459,7 @@
   },
   "components": {
     "status": "pass",
-    "canonical_records_checked": 34302,
+    "canonical_records_checked": 34796,
     "local_raw_documents_checked": 35,
     "local_raw_cells_and_derived_rows_checked": 25184,
     "blank_non_observation_raw_rows_excluded": 5,
@@ -467,13 +467,13 @@
     "exact_duplicate_rows_excluded": 10433,
     "conflicting_value_groups": 0,
     "historical_adapter_records_checked": 1489,
-    "additional_ncl_expected_records": 17418,
+    "additional_ncl_expected_records": 17912,
     "explicit_missing_source_markers_retained": 4,
     "pdf_raw_files_hash_checked": 6,
     "local_verification_level": "All original JSON cells and complete original objects vs derived; every nonduplicate adapter record vs derived and raw.",
     "historical_verification_level": "Every adapter record vs derived and PDF source hashes; NCL visual sample scope reported separately. DGBAS PDF content not independently transcribed in this adapter review.",
     "inputs": {
-      "components_sha256": "9ece90d370b35c1ce2f90fab54655d33a1437ffa33d512bc4f0c2cb32d9bf093",
+      "components_sha256": "0b6a53f81ce505c1262207086fcf00bf198c27b3ccf3d789b7cacaaf4e86d048",
       "local_derived_sha256": "d7ae5850837da2c085668ee8f7f5ad260fc76bb06fc1d929d70447932bd063da"
     }
   },
@@ -534,21 +534,28 @@
       "ncl_2021_long.csv",
       "ncl_2022_long.csv",
       "ncl_2023_long.csv",
-      "ncl_2024_long.csv"
+      "ncl_2024_long.csv",
+      "ncl_2005_long.csv"
     ],
-    "records_checked": 17418,
-    "source_pdf_hashes_checked": 34,
+    "records_checked": 17912,
+    "source_pdf_hashes_checked": 36,
     "value_status_counts": {
       "source_blank": 876,
-      "reported": 14648,
-      "reported_decimal": 1856,
+      "reported": 15094,
+      "reported_decimal": 1902,
       "not_available_in_source": 18,
-      "source_marker": 20
+      "source_marker": 22
     },
     "gap_review_level": "Complete independent page-image baseline is checked separately.",
     "other_years_review_level": "Derived-to-canonical fields and raw PDF hashes checked; separately, five original-image tables have 164 independently entered expected sample positions (159 numeric, two blank, three explicit markers), recorded in research/ncl-v02-independent-image-samples.json. This is not a full independent transcription of all additional-year PDF cells."
   },
   "additional_independent_review_evidence": [
+    {
+      "report": "research/ncl-2005-independent-review.json",
+      "sha256": "95e8331221b40f51c5a8bcf79bade1ba52366b18cf397d6d4eb21eb17fa1ac7b",
+      "source_cells": 494,
+      "method": "Independently fixed original PDF glyph grid and visual header/row/footnote review, not human double checking."
+    },
     {
       "report": "research/ncl-2014-independent-review.json",
       "sha256": "c4c6370ccb6a00232e1054eca7248a63a24f13569ce7a12fd2beedb86f2ff118",
@@ -651,9 +658,9 @@
   },
   "combined": {
     "status": "pass",
-    "records_checked": 37393,
+    "records_checked": 37887,
     "all_original_fields_preserved": true,
-    "snapshot_sha256": "635472fd962f11c916a32b3373455049387f8210225fd18d81633fb34eb6ce3a"
+    "snapshot_sha256": "7993d6fbd088cc36fdc7e9de975c52b8a5542af4cc0d21f30cccd4f1532fdc78"
   },
   "ncl_v02_targeted_image_review": {
     "report_path": "research/ncl-v02-independent-image-samples.json",

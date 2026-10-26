@@ -228,6 +228,75 @@
     "rights": "OGDL-1.0_site_declaration"
   },
   {
+    "source_id": "ncl-yearbook-95-public-library",
+    "year": 2005,
+    "data_years": [
+      2005
+    ],
+    "periods": [
+      "2005"
+    ],
+    "records": 471,
+    "geographies": [
+      "南投縣",
+      "合計",
+      "嘉義市",
+      "嘉義縣",
+      "國立中央圖書館臺灣分館",
+      "國立臺中圖書館",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新竹市",
+      "新竹縣",
+      "桃園縣",
+      "澎湖縣",
+      "私立公共圖書館",
+      "臺中市",
+      "臺中縣",
+      "臺北市立圖書館",
+      "臺北縣",
+      "臺南市",
+      "臺南縣",
+      "臺東縣",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "金門縣",
+      "雲林縣",
+      "高雄市政府文化局中正文化中心",
+      "高雄市立圖書館",
+      "高雄縣"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "ncl-yearbook-95-statistics",
+    "year": 2005,
+    "data_years": [
+      2005
+    ],
+    "periods": [
+      "2005"
+    ],
+    "records": 23,
+    "geographies": [
+      "公立公共圖書館",
+      "國立",
+      "小計",
+      "直轄市立",
+      "社教館",
+      "私立",
+      "私立公共圖書館",
+      "縣市立",
+      "鄉（鎮、市、區）立"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=5",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
     "source_id": "ncl-earlier-2006-t1",
     "year": 2006,
     "data_years": [

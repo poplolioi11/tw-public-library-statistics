@@ -447,6 +447,33 @@
         "raw/ncl-2024"
       ],
       "scope": "All selected operational core tables and complete public-library statistical subsets, including late-chapter acquisitions. Each printed table keeps its own labels, quantities, population basis and definition. Unresolved original labels are flagged and not counted as confirmed county coverage; no relocation of source values."
+    },
+    {
+      "id": "ncl_2005",
+      "review_status": "source_reviewed",
+      "script": "extract_ncl_2005.py",
+      "args": [
+        "--offline"
+      ],
+      "inputs": [
+        "raw/ncl-2005/yearbook-95-public-library.pdf",
+        "raw/ncl-2005/yearbook-95-statistics.pdf",
+        "raw/ncl-2005/yearbook-95-public-library.metadata.json",
+        "raw/ncl-2005/yearbook-95-statistics.metadata.json",
+        "raw/ncl-2005/entry-metadata.json",
+        "raw/ncl-2005/rights-metadata.json"
+      ],
+      "outputs": [
+        "derived/ncl_2005_long.csv",
+        "derived/ncl_2005_long.jsonl",
+        "raw/ncl-2005/extraction-metadata.json",
+        "raw/ncl-2005/cell-token-audit.private.json"
+      ],
+      "derived_csv": "derived/ncl_2005_long.csv",
+      "raw_directories": [
+        "raw/ncl-2005"
+      ],
+      "scope": "Complete public-library chapter tables1–5 plus statistics107public-library subset and108public/private-public-library rows including distinct answering counts. Old25-county geography and separate national/municipal institutions retained. Program-specific/cross-year tables6/7 are known not ingested, not labelled absent."
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "previous_version": "0.4.0",
+  "current_version": "0.5.0",
+  "previous_records": 37393,
+  "current_records": 37887,
+  "added_records": 494,
+  "old_fields_compared": 3814086,
+  "old_values_and_identifiers_unchanged": true,
+  "new_optional_columns_may_be_present": true,
+  "prior_canonical_sha256": "5fb447ba8b655f349dcfcd982e54de6956d4f209e916c5008ae0c5fb6ea0bc20"
+}

@@ -37,7 +37,7 @@ def adapt_additional_ncl_rows(rows):
   if source_status in ('blank','source_blank','blank_in_source'):
    if str(raw).strip() or str(row.get('value','')).strip():raise ValueError('Blank cell carries a number')
    value,status=None,'source_blank'
-  elif source_status=='source_marker' and raw in {'無','未新增'}:
+  elif source_status=='source_marker' and raw in {'無','未新增','未統計'}:
    if row.get('value') not in (None,''):raise ValueError('Printed textual marker cannot discard a normalized number')
    value,status=None,'source_marker'
   elif source_status in ('not_available_in_source','missing','source_marker'):
@@ -52,14 +52,14 @@ def adapt_additional_ncl_rows(rows):
   if row.get('unit_status')=='source_heading_conflict_unresolved':
    notes.append('原刊表題與正文單位衝突，正式unit留空；候選解讀另存，未當作定論。');unit=None
   unit_status=row.get('unit_status') or (('inferred_from_context' if row.get('unit_basis') and not row.get('unit_raw') else 'source_table') if unit else 'source_unit_unconfirmed_or_mixed')
-  if status=='source_marker' and raw in {'無','未新增'}:notes.append('原刊此格印「'+raw+'」，保留原印文字狀態；不自行換算0或推定缺值原因。')
+  if status=='source_marker' and raw in {'無','未新增','未統計'}:notes.append('原刊此格印「'+raw+'」，保留原印文字狀態；不自行換算0或推定缺值原因。')
   if status=='source_blank':notes.append('原刊此格留白；保留為缺值，不推定為0或不適用。')
   if row.get('source_cell_note_raw'):notes.append('原格補述：'+row['source_cell_note_raw'])
   if row.get('aggregation_role') in ('total','subtotal','row_total','grand_total','published_total'):notes.append('原表合計／小計可能與分項重疊，不可把全部格相加。')
   period=row['temporal_kind'];pub=row.get('publication_date') or None
   explicit_subperiod=bool(row.get('source_subrow_label_raw') and row.get('period_start') and row.get('period_end'))
   ambiguous_subperiod=explicit_subperiod and row.get('source_period_interpretation_status')=='printed_extra_slash_unresolved_candidate_dates'
-  extras={k:row[k] for k in ('source_original_physical_column','source_cell_note_raw','source_cell_note_status','source_subrow_label_raw','source_period_interpretation_status','copyright_publication_month','publication_entry_date','source_data_obtained_date_raw','entity_label_status') if row.get(k) not in (None,'')}
+  extras={k:row[k] for k in ('ownership_scope','source_row_label_raw','source_parent_row_label_raw','source_row_hierarchy_raw','source_unit_context_locator','source_original_survey_date_raw','source_survey_population_libraries','source_original_table_row','source_subrow_sequence','source_subrow_label_status','source_response_notation_kind','source_parenthetical_raw','source_parent_row_label_english_raw','source_row_label_english_raw','source_original_physical_column','source_cell_note_raw','source_cell_note_status','source_subrow_label_raw','source_period_interpretation_status','copyright_publication_month','publication_entry_date','source_data_obtained_date_raw','entity_label_status') if row.get(k) not in (None,'')}
   if ambiguous_subperiod:extras.update(period_start_candidate=row['period_start'],period_end_candidate=row['period_end'])
   result.append({**base_record(),'observation_id':'obs-'+h(source+'|'+row['metric_id']+'|'+geo+'|'+str(year)+('|' + row['observation_identity_suffix'] if row.get('observation_identity_suffix') else ''))[:22],
    'data_year':year,'geography':geo,'geography_contextual_name':row.get('entity_contextual_name',geo),'geographic_scope':row['entity_kind'],

@@ -4718,6 +4718,696 @@
     ]
   },
   {
+    "series_id": "ncl-yearbook-95-public-library-table3_acquisition_spending",
+    "definition_id": "def-ncl-yearbook-95-public-library-table3_acquisition_spending",
+    "indicator": "購書經費（元）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "元",
+    "temporal_kind": "annual_financial",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table3_holdings",
+    "definition_id": "def-ncl-yearbook-95-public-library-table3_holdings",
+    "indicator": "館藏總數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": null,
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原館藏欄頭冊與同章冊（件、種）混合計量敘述未統一，不當作純圖書冊數；每人館藏比率不另反算。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table3_holdings_per_capita",
+    "definition_id": "def-ncl-yearbook-95-public-library-table3_holdings_per_capita",
+    "indicator": "每人擁有館藏冊數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": null,
+    "temporal_kind": "derived_ratio",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原館藏欄頭冊與同章冊（件、種）混合計量敘述未統一，不當作純圖書冊數；每人館藏比率不另反算。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table3_population",
+    "definition_id": "def-ncl-yearbook-95-public-library-table3_population",
+    "indicator": "人口數（人）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table3_spending_per_capita",
+    "definition_id": "def-ncl-yearbook-95-public-library-table3_spending_per_capita",
+    "indicator": "平均每人購書經費（元）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "元／人",
+    "temporal_kind": "derived_ratio",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_borrower_visits",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_borrower_visits",
+    "indicator": "圖書借閱（人次）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_loans",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_loans",
+    "indicator": "圖書借閱（冊數）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "冊",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_promotion_events",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_promotion_events",
+    "indicator": "推廣服務（場次）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_reference_inquiries",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_reference_inquiries",
+    "indicator": "參考諮詢（人次）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_staff_contract",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_staff_contract",
+    "indicator": "人員（人）／約聘僱",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_staff_formal",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_staff_formal",
+    "indicator": "人員（人）／正式",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_staff_other",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_staff_other",
+    "indicator": "人員（人）／其他",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_staff_student",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_staff_student",
+    "indicator": "人員（人）／工讀生",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_staff_temporary",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_staff_temporary",
+    "indicator": "人員（人）／臨時",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_staff_total",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_staff_total",
+    "indicator": "人員（人）／合計",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。；原表合計／小計可能與分項重疊，不可把全部格相加。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_staff_volunteer",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_staff_volunteer",
+    "indicator": "人員（人）／志工",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table4_visits",
+    "definition_id": "def-ncl-yearbook-95-public-library-table4_visits",
+    "indicator": "進館人次",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=3",
+    "notes": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table1_acquisition_spending",
+    "definition_id": "def-ncl-yearbook-95-public-library-table1_acquisition_spending",
+    "indicator": "購書經費（元）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "元",
+    "temporal_kind": "annual_financial",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=1",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table1_borrower_visits",
+    "definition_id": "def-ncl-yearbook-95-public-library-table1_borrower_visits",
+    "indicator": "圖書借閱（人次）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=1",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table1_holdings",
+    "definition_id": "def-ncl-yearbook-95-public-library-table1_holdings",
+    "indicator": "館藏冊數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": null,
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=1",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原館藏欄頭冊與同章冊（件、種）混合計量敘述未統一，不當作純圖書冊數；每人館藏比率不另反算。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table1_loans",
+    "definition_id": "def-ncl-yearbook-95-public-library-table1_loans",
+    "indicator": "圖書借閱（冊數）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "冊",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=1",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table1_promotion_events",
+    "definition_id": "def-ncl-yearbook-95-public-library-table1_promotion_events",
+    "indicator": "推廣服務（場次）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "場次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=1",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table1_reference_inquiries",
+    "definition_id": "def-ncl-yearbook-95-public-library-table1_reference_inquiries",
+    "indicator": "參考諮詢（人次）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人次",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=1",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table2_staff_contract",
+    "definition_id": "def-ncl-yearbook-95-public-library-table2_staff_contract",
+    "indicator": "人員（人）／約聘僱",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table2_staff_formal",
+    "definition_id": "def-ncl-yearbook-95-public-library-table2_staff_formal",
+    "indicator": "人員（人）／正式",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table2_staff_other",
+    "definition_id": "def-ncl-yearbook-95-public-library-table2_staff_other",
+    "indicator": "人員（人）／其他",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table2_staff_student",
+    "definition_id": "def-ncl-yearbook-95-public-library-table2_staff_student",
+    "indicator": "人員（人）／工讀生",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table2_staff_temporary",
+    "definition_id": "def-ncl-yearbook-95-public-library-table2_staff_temporary",
+    "indicator": "人員（人）／臨時",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table2_staff_volunteer",
+    "definition_id": "def-ncl-yearbook-95-public-library-table2_staff_volunteer",
+    "indicator": "人員（人）／志工",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "人",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=2",
+    "notes": "separately_listed_national_public_library_not_National_Central_Library；表1至表4依原章說明為截至94年12月公共館資料；國立館與直轄市另列，縣市表列原23個非直轄市縣市；不跨改制重編為現行22縣市。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table5_borrower_visits",
+    "definition_id": "def-ncl-yearbook-95-public-library-table5_borrower_visits",
+    "indicator": "圖書借閱人次（人）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": null,
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=4",
+    "notes": "private_public_library_survey_partial_responses_not_entire_private_library_population；私立公共館獨立母體；原行名是年度94，私立公共館範圍取自原表題，不是印刷地理列名。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table5_borrower_visits_responding_libraries",
+    "definition_id": "def-ncl-yearbook-95-public-library-table5_borrower_visits_responding_libraries",
+    "indicator": "圖書借閱人次（人）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "館",
+    "temporal_kind": "survey_response_count",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=4",
+    "notes": "private_public_library_survey_partial_responses_not_entire_private_library_population；原同列各指標括號內填答館數，按獨立response_sample_size保存；不是總館數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table5_holdings",
+    "definition_id": "def-ncl-yearbook-95-public-library-table5_holdings",
+    "indicator": "館藏總數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "冊",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=4",
+    "notes": "private_public_library_survey_partial_responses_not_entire_private_library_population；私立公共館獨立母體；原行名是年度94，私立公共館範圍取自原表題，不是印刷地理列名。；同卷公共館章與統計章私立館館藏總數不同，原指標名／口徑不必然相同，保留各自版本，不強接或推定哪一個為正確。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table5_holdings_responding_libraries",
+    "definition_id": "def-ncl-yearbook-95-public-library-table5_holdings_responding_libraries",
+    "indicator": "館藏總數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "館",
+    "temporal_kind": "survey_response_count",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=4",
+    "notes": "private_public_library_survey_partial_responses_not_entire_private_library_population；原同列各指標括號內填答館數，按獨立response_sample_size保存；不是總館數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table5_loans",
+    "definition_id": "def-ncl-yearbook-95-public-library-table5_loans",
+    "indicator": "圖書借閱冊數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "冊",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=4",
+    "notes": "private_public_library_survey_partial_responses_not_entire_private_library_population；私立公共館獨立母體；原行名是年度94，私立公共館範圍取自原表題，不是印刷地理列名。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table5_loans_responding_libraries",
+    "definition_id": "def-ncl-yearbook-95-public-library-table5_loans_responding_libraries",
+    "indicator": "圖書借閱冊數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "館",
+    "temporal_kind": "survey_response_count",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=4",
+    "notes": "private_public_library_survey_partial_responses_not_entire_private_library_population；原同列各指標括號內填答館數，按獨立response_sample_size保存；不是總館數。；同卷公共館章與統計章私立借閱冊數填答館數不同，原指標名／口徑不必然相同，保留各自版本，不強接或推定哪一個為正確。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table5_seats",
+    "definition_id": "def-ncl-yearbook-95-public-library-table5_seats",
+    "indicator": "閱覽席位（席）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "席",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=4",
+    "notes": "private_public_library_survey_partial_responses_not_entire_private_library_population；私立公共館獨立母體；原行名是年度94，私立公共館範圍取自原表題，不是印刷地理列名。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-public-library-table5_seats_responding_libraries",
+    "definition_id": "def-ncl-yearbook-95-public-library-table5_seats_responding_libraries",
+    "indicator": "閱覽席位（席）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "館",
+    "temporal_kind": "survey_response_count",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-public-library",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf#page=4",
+    "notes": "private_public_library_survey_partial_responses_not_entire_private_library_population；原同列各指標括號內填答館數，按獨立response_sample_size保存；不是總館數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-statistics-table108_borrower_visits",
+    "definition_id": "def-ncl-yearbook-95-statistics-table108_borrower_visits",
+    "indicator": "借閱人次（人）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": null,
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-statistics",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=5",
+    "notes": "public_ownership_only；原印公共館類型行名保留；全國是推定範圍context。填答館數另列，分館併總館統計，不是圖書館總數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-statistics-table108_borrower_visits_responding_libraries",
+    "definition_id": "def-ncl-yearbook-95-statistics-table108_borrower_visits_responding_libraries",
+    "indicator": "借閱人次（人）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "館",
+    "temporal_kind": "survey_response_count",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-statistics",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=5",
+    "notes": "public_ownership_only；同一館類列括號內各指標填答館數，獨立response_sample_size，未當作總館數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-statistics-table108_holdings",
+    "definition_id": "def-ncl-yearbook-95-statistics-table108_holdings",
+    "indicator": "館藏圖書冊數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "冊",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-statistics",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=5",
+    "notes": "public_ownership_only；原印公共館類型行名保留；全國是推定範圍context。填答館數另列，分館併總館統計，不是圖書館總數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-statistics-table108_holdings_responding_libraries",
+    "definition_id": "def-ncl-yearbook-95-statistics-table108_holdings_responding_libraries",
+    "indicator": "館藏圖書冊數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "館",
+    "temporal_kind": "survey_response_count",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-statistics",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=5",
+    "notes": "public_ownership_only；同一館類列括號內各指標填答館數，獨立response_sample_size，未當作總館數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-statistics-table108_loans",
+    "definition_id": "def-ncl-yearbook-95-statistics-table108_loans",
+    "indicator": "借閱冊數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "冊",
+    "temporal_kind": "flow_calendar_year",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-statistics",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=5",
+    "notes": "public_ownership_only；原印公共館類型行名保留；全國是推定範圍context。填答館數另列，分館併總館統計，不是圖書館總數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-statistics-table108_loans_responding_libraries",
+    "definition_id": "def-ncl-yearbook-95-statistics-table108_loans_responding_libraries",
+    "indicator": "借閱冊數（冊）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "館",
+    "temporal_kind": "survey_response_count",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-statistics",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=5",
+    "notes": "public_ownership_only；同一館類列括號內各指標填答館數，獨立response_sample_size，未當作總館數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-statistics-table108_seats",
+    "definition_id": "def-ncl-yearbook-95-statistics-table108_seats",
+    "indicator": "閱覽席位（席）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "席",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-statistics",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=5",
+    "notes": "public_ownership_only；原印公共館類型行名保留；全國是推定範圍context。填答館數另列，分館併總館統計，不是圖書館總數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-statistics-table108_seats_responding_libraries",
+    "definition_id": "def-ncl-yearbook-95-statistics-table108_seats_responding_libraries",
+    "indicator": "閱覽席位（席）",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "館",
+    "temporal_kind": "survey_response_count",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-statistics",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=5",
+    "notes": "public_ownership_only；同一館類列括號內各指標填答館數，獨立response_sample_size，未當作總館數。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
+    "series_id": "ncl-yearbook-95-statistics-table107_library_count",
+    "definition_id": "def-ncl-yearbook-95-statistics-table107_library_count",
+    "indicator": "圖書館數量",
+    "indicator_group": "國家圖書館年鑑統計事實",
+    "unit": "所",
+    "temporal_kind": "stock_year_end",
+    "definition_status": "original_table_heading_and_footnotes_preserved",
+    "source_id": "ncl-yearbook-95-statistics",
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=4",
+    "notes": "public_library_group_scope_as_printed_including_private_in_subtotal；公共圖書館分類組包含國立、直轄市立、縣市立、鄉鎮市區立、社教館及私立；國家圖書館另屬其他列，不混入本組。；原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "observed_years": [
+      2005
+    ]
+  },
+  {
     "series_id": "ncl-earlier-2006-t1-ncl_earlier_2006_t1_opened_county_branch",
     "definition_id": "def-ncl-earlier-2006-t1-ncl_earlier_2006_t1_opened_county_branch",
     "indicator": "已開放／縣市文化（局、中心）／分館",

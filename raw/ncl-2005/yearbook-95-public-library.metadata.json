@@ -1,0 +1,15 @@
+{
+  "source_id": "ncl-yearbook-95-public-library",
+  "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565572390216434",
+  "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf",
+  "source_local_path": "raw/ncl-2005/yearbook-95-public-library.pdf",
+  "sha256": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
+  "bytes": 1286080,
+  "source_retrieved_at": "2026-10-26T06:40:24.985577+00:00",
+  "download_provenance": "Direct anonymous official HTTP downloaded by independent reviewer, copied byte-for-byte and independently SHA-verified.",
+  "source_edition_roc": 95,
+  "publication_date": "2006-11-01",
+  "publication_date_basis": "Official entry explicit publication date; no copyright-page attachment was listed at this entry.",
+  "license_status": "not_confirmed",
+  "snapshot_distribution": "not_in_public_bundle"
+}

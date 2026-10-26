@@ -1,0 +1,363 @@
+{
+  "baseline_path": "research/ncl-2005-independent-expectations-frozen.json",
+  "baseline_sha256": "18529071806528871e512674e7e946c7f1452b8178860c011e2d2aaecdd0714f",
+  "numeric_cells_changed": 0,
+  "scope": "Source-only post-freeze raw-header/unit clarification; producer CSV not yet read. Initial frozen expectation remains immutable.",
+  "corrections": [
+    {
+      "table": "1",
+      "source_row": 1,
+      "source_column": 5,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "1",
+      "source_row": 2,
+      "source_column": 5,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "1",
+      "source_row": 3,
+      "source_column": 5,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "1",
+      "source_row": 4,
+      "source_column": 5,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "1",
+      "source_row": 5,
+      "source_column": 5,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 1,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 2,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 3,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 4,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 5,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 6,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 7,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 8,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 9,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 10,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 11,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 12,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 13,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 14,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 15,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 16,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 17,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 18,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 19,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 20,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 21,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 22,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 23,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "4",
+      "source_row": 24,
+      "source_column": 10,
+      "field": "unit_raw",
+      "frozen_value": "冊",
+      "reviewed_value": "冊數",
+      "basis": "原圖借閱項下括號印冊數，保留原詞；標準化計算單位可另標冊次／冊，不能把原括號字串說成印冊。"
+    },
+    {
+      "table": "108",
+      "source_row": 2,
+      "source_column": 2,
+      "field": "unit_raw",
+      "frozen_value": null,
+      "reviewed_value": "館",
+      "basis": "原圖PDF5/印249左上斜欄頭明列數量（館）（填答館數）；8個括號數的單位為館。"
+    },
+    {
+      "table": "108",
+      "source_row": 2,
+      "source_column": 3,
+      "field": "unit_raw",
+      "frozen_value": null,
+      "reviewed_value": "館",
+      "basis": "原圖PDF5/印249左上斜欄頭明列數量（館）（填答館數）；8個括號數的單位為館。"
+    },
+    {
+      "table": "108",
+      "source_row": 2,
+      "source_column": 4,
+      "field": "unit_raw",
+      "frozen_value": null,
+      "reviewed_value": "館",
+      "basis": "原圖PDF5/印249左上斜欄頭明列數量（館）（填答館數）；8個括號數的單位為館。"
+    },
+    {
+      "table": "108",
+      "source_row": 2,
+      "source_column": 5,
+      "field": "unit_raw",
+      "frozen_value": null,
+      "reviewed_value": "館",
+      "basis": "原圖PDF5/印249左上斜欄頭明列數量（館）（填答館數）；8個括號數的單位為館。"
+    },
+    {
+      "table": "108",
+      "source_row": 4,
+      "source_column": 2,
+      "field": "unit_raw",
+      "frozen_value": null,
+      "reviewed_value": "館",
+      "basis": "原圖PDF5/印249左上斜欄頭明列數量（館）（填答館數）；8個括號數的單位為館。"
+    },
+    {
+      "table": "108",
+      "source_row": 4,
+      "source_column": 3,
+      "field": "unit_raw",
+      "frozen_value": null,
+      "reviewed_value": "館",
+      "basis": "原圖PDF5/印249左上斜欄頭明列數量（館）（填答館數）；8個括號數的單位為館。"
+    },
+    {
+      "table": "108",
+      "source_row": 4,
+      "source_column": 4,
+      "field": "unit_raw",
+      "frozen_value": null,
+      "reviewed_value": "館",
+      "basis": "原圖PDF5/印249左上斜欄頭明列數量（館）（填答館數）；8個括號數的單位為館。"
+    },
+    {
+      "table": "108",
+      "source_row": 4,
+      "source_column": 5,
+      "field": "unit_raw",
+      "frozen_value": null,
+      "reviewed_value": "館",
+      "basis": "原圖PDF5/印249左上斜欄頭明列數量（館）（填答館數）；8個括號數的單位為館。"
+    }
+  ],
+  "post_freeze_original_scope_checks": [
+    {
+      "pdf_kind": "public-library",
+      "pdf_page": 14,
+      "printed_page": 32,
+      "table": "6",
+      "observed_scope": "公共圖書館辦理推廣閱讀活動及示範觀摩館一覽，特定具名計畫／館別活動，非本批年度核心總表。"
+    },
+    {
+      "pdf_kind": "public-library",
+      "pdf_page": 34,
+      "printed_page": 52,
+      "table": "7",
+      "observed_scope": "全國閱讀運動活動內容、場次及參加人數一覽，部分活動原期間跨94年12月至95年5月，不當2005縣市年度核心量。"
+    },
+    {
+      "pdf_kind": "statistics",
+      "pdf_page": 3,
+      "printed_page": 247,
+      "observed_scope": "圖9–24為大專、高中高職、國中、國小館的比較；圖25–28館際合作／出版申請，不混公共館子群。"
+    }
+  ]
+}

@@ -219,7 +219,7 @@ def ncl_source_value(source):
         if not isinstance(raw, str) or raw.strip() or not empty_normalized:
             raise ValueError("NCL blank has a nonempty original/normalized value")
         return None, "source_blank"
-    if status == "source_marker" and raw in {"無", "未新增"}:
+    if status == "source_marker" and raw in {"無", "未新增", "未統計"}:
         if not empty_normalized:
             raise ValueError("Printed無 marker must not erase a number")
         return None, "source_marker"
@@ -820,6 +820,8 @@ class Verification:
                 self.check((target.get(output) or "") == source.get(field, ""), "new_ncl_adapter_field", {"key": key, "field": output})
             for field in ('source_original_physical_column','source_cell_note_raw','source_cell_note_status'):
                 self.check((target.get(field) or '')==source.get(field,''),'new_ncl_supplementary_cell_text',{'key':key,'field':field})
+            for field in ('ownership_scope','source_row_label_raw','source_parent_row_label_raw','source_parenthetical_raw','source_response_notation_kind','source_subrow_label_status','source_unit_context_locator','source_original_survey_date_raw'):
+                if source.get(field):self.check(target.get(field)==source[field],'new_ncl_literal_hierarchy_or_response_basis',{'key':key,'field':field})
             for output,field in [('geography_contextual_name','entity_contextual_name'),('entity_label_status','entity_label_status'),('unit_status','unit_status')]:
                 if source.get(field):self.check(target.get(output)==source[field],'new_ncl_explicit_context_or_unit_state',{'key':key,'field':field})
             if source.get('population_scope'):
@@ -854,7 +856,7 @@ class Verification:
 
     def reviewed_cohort_evidence(self):
         reports = []
-        for year in range(2014, 2025):
+        for year in sorted({int(m.group(1)) for name in reviewed_ncl_csvs(self.root) if (m := re.fullmatch(r"ncl_(\d{4})_long\.csv", name))}):
             csv_path = self.root / f"derived/ncl_{year}_long.csv"
             if not csv_path.exists():
                 continue
@@ -884,7 +886,8 @@ class Verification:
                 if cell.get('expected_entity_label_status') is not None:
                     self.check(row.get('entity_label_status')==cell['expected_entity_label_status'],'independent_grid_entity_inference_state',key)
                 if cell.get('source_category_raw') is not None:
-                    self.check(cell['source_category_raw'] in row.get('source_table_title','') and row.get('entity_label_status')=='contextual_national_aggregate_inferred','independent_grid_title_category_is_not_geography_row',key)
+                    literal_category_locations=[row.get(f,'') or '' for f in ('source_table_title','source_row_label_raw','source_parent_row_label_raw','source_row_hierarchy_raw')]
+                    self.check(any(cell['source_category_raw'] in text for text in literal_category_locations),'independent_grid_original_category_location',key)
                 if cell.get('observation_data_year') is not None:
                     self.check(int(row['data_year'])==int(cell['observation_data_year']),"independent_grid_reference_year",key)
                 self.check(re.sub(r"\s+", "", row["value_raw"]) == re.sub(r"\s+", "", cell["raw_value"]), "independent_grid_original_string", key)

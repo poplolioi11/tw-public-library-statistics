@@ -248,7 +248,7 @@ class ComponentTests(unittest.TestCase):
             verifier.ncl_source_value({**source, "unit": "人"})
 
     def test_literal_textual_source_states_are_not_zero_or_generic_missing(self):
-        for raw in ("無", "未新增"):
+        for raw in ("無", "未新增", "未統計"):
             source = self.additional_ncl(raw, "", "source_marker")
             record = adapter.adapt_additional_ncl_rows([source])[0]
             self.assertEqual((record["value"],record["raw_value"],record["value_status"]),(None,raw,"source_marker"))

@@ -29,7 +29,7 @@ MANIFEST_NAME = "PUBLICATION_MANIFEST.json"
 PUBLICATION_ONLY_FIELDS = {"snapshot_distribution", "public_evidence_path", "public_evidence_sha256", "public_projection_policy"}
 CONTACT_PARTS = ("行動電話", "市話", "電子郵件", "電子信箱", "聯絡電話", "聯絡人", "聯絡資訊", "聯絡方式", "手機號", "傳真")
 CONTACT_ENGLISH = {"email", "emailaddress", "tel", "telephone", "phone", "phonenumber", "mobile", "mobilenumber", "mobilephone", "fax", "contact", "contactname", "contactperson", "contactemail", "contactphone", "authorphone"}
-SOURCE_MARKERS = {"無", "未新增", "-", "--", "—", "–", "…", "...", "N/A", "NA", "n/a"}
+SOURCE_MARKERS = {"無", "未新增", "未統計", "-", "--", "—", "–", "…", "...", "N/A", "NA", "n/a"}
 NOT_APPLICABLE_MARKERS = {"N/A", "NA", "n/a", "不適用"}
 NULL_STATUSES = {"source_blank", "source_null", "source_marker", "not_available_in_source", "not_applicable"}
 
@@ -137,7 +137,7 @@ def validate_value_semantics(record: dict, identifier: str) -> None:
     """Validate missingness against the original representation, never its label alone."""
     value, raw, status = record["value"], record["raw_value"], record.get("value_status")
     text = raw.strip() if isinstance(raw, str) else None
-    if text in {"無", "未新增"}:
+    if text in {"無", "未新增", "未統計"}:
         require(value is None and status == "source_marker", f"{identifier}: literal source text must retain source_marker, not zero or a claimed missingness reason")
     if value is None:
         require(status in NULL_STATUSES, f"{identifier}: null has unsupported source status {status!r}")
@@ -459,7 +459,7 @@ def self_test() -> bool:
             with self.assertRaisesRegex(ValidationError,"partition union"):validate(self.root)
 
         def test_literal_absence_text_retains_its_own_unresolved_state(self):
-            for raw in ("無","未新增"):
+            for raw in ("無","未新增","未統計"):
                 validate_value_semantics({"value":None,"raw_value":raw,"value_status":"source_marker"},"fixture")
                 with self.assertRaises(ValidationError):validate_value_semantics({"value":None,"raw_value":raw,"value_status":"not_available_in_source"},"fixture")
 

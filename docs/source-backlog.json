@@ -6,7 +6,7 @@
     "2011–2025已完整的是公開10類全國圖表。",
     "2023是目前唯一證實同一6425官方OGDL年度縣市包。",
     "其他縣市地方統計尚未逐機關核查。",
-    "NCL96–114卷僅所列核心表、公共館子群及明列原文數字；2012縣市核心原量缺口仍存。"
+    "NCL95–114卷僅所列核心表、公共館子群及明列原文數字；2012縣市核心原量缺口仍存。"
   ],
   "status_semantics": {
     "completed_bounded_scope": "僅completed_scope所列範圍完整",
@@ -114,6 +114,7 @@
       ],
       "completed_scope": {
         "data_years": [
+          2005,
           2006,
           2007,
           2008,
@@ -135,6 +136,7 @@
           2024
         ],
         "edition_roc": [
+          95,
           96,
           97,
           98,
@@ -155,7 +157,7 @@
           113,
           114
         ],
-        "long_rows": 18533,
+        "long_rows": 19027,
         "tables": [
           {
             "source_id": "ncl-earlier-2006-t1",
@@ -5478,6 +5480,190 @@
             "unit_conflict_records": 0
           },
           {
+            "source_id": "ncl-yearbook-95-public-library",
+            "source_table": "1",
+            "source_table_title": "國立暨直轄市立公共圖書館購書經費、館藏與資源使用統計表（民國94年）",
+            "source_cells": 30,
+            "numeric_cells": 30,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2005
+            ],
+            "edition_roc": [
+              95
+            ],
+            "pdf_pages": [
+              "1"
+            ],
+            "printed_pages": [
+              "19"
+            ],
+            "source_sha256": [
+              "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 5
+          },
+          {
+            "source_id": "ncl-yearbook-95-public-library",
+            "source_table": "2",
+            "source_table_title": "國立暨直轄市立公共圖書館人員統計表（民國94年）",
+            "source_cells": 30,
+            "numeric_cells": 30,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2005
+            ],
+            "edition_roc": [
+              95
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "20"
+            ],
+            "source_sha256": [
+              "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-95-public-library",
+            "source_table": "3",
+            "source_table_title": "臺閩地區各縣市暨鄉鎮市立圖書館館藏資料及購書經費統計表（民國94年）",
+            "source_cells": 115,
+            "numeric_cells": 115,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2005
+            ],
+            "edition_roc": [
+              95
+            ],
+            "pdf_pages": [
+              "2",
+              "3"
+            ],
+            "printed_pages": [
+              "20",
+              "21"
+            ],
+            "source_sha256": [
+              "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 46
+          },
+          {
+            "source_id": "ncl-yearbook-95-public-library",
+            "source_table": "4",
+            "source_table_title": "臺閩地區各縣市暨鄉鎮市立圖書館人員及服務統計（民國94年）",
+            "source_cells": 288,
+            "numeric_cells": 286,
+            "source_blank_cells": 0,
+            "other_missing_cells": 2,
+            "data_years": [
+              2005
+            ],
+            "edition_roc": [
+              95
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "21"
+            ],
+            "source_sha256": [
+              "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-95-public-library",
+            "source_table": "5",
+            "source_table_title": "臺閩地區私立公共圖書館調查統計表（民國94年）",
+            "source_cells": 8,
+            "numeric_cells": 8,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2005
+            ],
+            "edition_roc": [
+              95
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "22"
+            ],
+            "source_sha256": [
+              "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-95-statistics",
+            "source_table": "107",
+            "source_table_title": "臺閩地區各類型圖書館數量統計表（民國94年）／公共圖書館完整子群",
+            "source_cells": 7,
+            "numeric_cells": 7,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2005
+            ],
+            "edition_roc": [
+              95
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "248"
+            ],
+            "source_sha256": [
+              "4b725f1a7e58d3b8629f76655e0ff678d4db4dc3f8bfdbb4a721211fa9303d78"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "ncl-yearbook-95-statistics",
+            "source_table": "108",
+            "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國94年）／公立與私立公共圖書館列",
+            "source_cells": 16,
+            "numeric_cells": 16,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2005
+            ],
+            "edition_roc": [
+              95
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "249"
+            ],
+            "source_sha256": [
+              "4b725f1a7e58d3b8629f76655e0ff678d4db4dc3f8bfdbb4a721211fa9303d78"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
             "source_id": "ncl-yearbook-98-public",
             "source_table": "4",
             "source_table_title": "",
@@ -5590,10 +5776,39 @@
             "raw/ncl-2012/source-search-log.json",
             "docs/historical-batches.json"
           ]
+        },
+        {
+          "cohort": "ncl_2005",
+          "scope": "Known original tables outside the explicitly completed core cohort; not unavailable.",
+          "tables": [
+            {
+              "document_kind": "public-library",
+              "table": "6 (including continued panels)",
+              "pdf_pages": [
+                14,
+                15,
+                16
+              ],
+              "title": "公共圖書館辦理「推廣閱讀活動」及「示範觀摩館」一覽表",
+              "reason": "intentional_exclusion: named program-specific library activities and professional observation visits; not whole-year core operating totals. Earlier preliminary construction-table classification was corrected after full original-page review.",
+              "status": "known_source_outside_this_annual_core_cohort"
+            },
+            {
+              "document_kind": "public-library",
+              "table": "7",
+              "pdf_pages": [
+                34
+              ],
+              "title": "全國閱讀運動活動內容、場次及參加人數一覽表",
+              "reason": "intentional_exclusion: selected reading-campaign activities, including printed periods spanning 94年12月至95年5月; not a complete calendar-2005 public-library operating table.",
+              "status": "known_source_outside_this_annual_core_cohort"
+            }
+          ],
+          "evidence": "raw/ncl-2005/extraction-metadata.json"
         }
       ],
       "unknown_scope": [
-        "115卷以後及95卷以前仍待逐表查核；已處理卷的其他未列來源也可能有缺口。",
+        "115卷以後及94卷以前仍待逐表查核；已處理卷的其他未列來源也可能有缺口。",
         "官方目錄可見不等於全部欄位、縣市標籤或歷年可比性已確認。"
       ],
       "license_scope": "署名專章全文PDF授權未確認；本機保存原檔，公開衍生表只取統計事實與來源定位，不轉發全文/影像。",
@@ -5627,7 +5842,8 @@
         "raw/ncl-2023/extraction-validation.json",
         "raw/ncl-2023/documents.json",
         "raw/ncl-2024/extraction-validation.json",
-        "raw/ncl-2024/documents.json"
+        "raw/ncl-2024/documents.json",
+        "raw/ncl-2005/extraction-metadata.json"
       ]
     },
     {
@@ -5861,7 +6077,7 @@
       "completed_scope": {
         "completion_statement": "100年鑑圖書館統計章僅為口徑參考；未把各類型全表匯入公共館統計。",
         "selected_public_library_subsets": {
-          "records": 506,
+          "records": 529,
           "tables": [
             {
               "source_id": "ncl-yearbook-101-statistics",
@@ -6950,6 +7166,58 @@
               ],
               "uncertain_label_records": 0,
               "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-95-statistics",
+              "source_table": "107",
+              "source_table_title": "臺閩地區各類型圖書館數量統計表（民國94年）／公共圖書館完整子群",
+              "source_cells": 7,
+              "numeric_cells": 7,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2005
+              ],
+              "edition_roc": [
+                95
+              ],
+              "pdf_pages": [
+                "4"
+              ],
+              "printed_pages": [
+                "248"
+              ],
+              "source_sha256": [
+                "4b725f1a7e58d3b8629f76655e0ff678d4db4dc3f8bfdbb4a721211fa9303d78"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
+            },
+            {
+              "source_id": "ncl-yearbook-95-statistics",
+              "source_table": "108",
+              "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國94年）／公立與私立公共圖書館列",
+              "source_cells": 16,
+              "numeric_cells": 16,
+              "source_blank_cells": 0,
+              "other_missing_cells": 0,
+              "data_years": [
+                2005
+              ],
+              "edition_roc": [
+                95
+              ],
+              "pdf_pages": [
+                "5"
+              ],
+              "printed_pages": [
+                "249"
+              ],
+              "source_sha256": [
+                "4b725f1a7e58d3b8629f76655e0ff678d4db4dc3f8bfdbb4a721211fa9303d78"
+              ],
+              "uncertain_label_records": 0,
+              "unit_conflict_records": 0
             }
           ],
           "statement": "僅明列公共館子群；其他館型與跨型總計不併入公共館資料。"
@@ -7185,7 +7453,7 @@
       "unknowns": [
         "各卷表格數、資料年、文字層與統計完整率尚未逐卷確認。"
       ],
-      "completion": "96–114卷已列核心表／子群／原文批次見docs/historical-batches.json；其他卷及2012核心原量缺口維持待查。"
+      "completion": "95–114卷已列核心表／子群／原文批次見docs/historical-batches.json；其他卷及2012核心原量缺口維持待查。"
     },
     {
       "task_id": "B04",
@@ -7604,8 +7872,13 @@
         "title": "中華民國九十五年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565572390216434",
         "catalog_page": 2,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2005,
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
+        "data_years_verified": [
+          2005
+        ],
+        "uncertain_label_records": 0,
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。"
       },
       {
         "edition_roc_raw": 94,

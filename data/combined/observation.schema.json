@@ -94,7 +94,7 @@
     },
     "value_status": {
       "type": "string",
-      "description": "Source state: reported/reported_decimal, source_blank (original empty cell, reason unconfirmed), not_available_in_source (explicit missing marker), source_marker (original literal無/未新增; meaning unresolved, never automatically zero or not applicable). Always preserve raw_value."
+      "description": "Source state: reported/reported_decimal, source_blank (original empty cell, reason unconfirmed), not_available_in_source (explicit missing marker), source_marker (original literal無/未新增/未統計; preserve the printed state, never automatically zero or not applicable). Always preserve raw_value."
     },
     "zero_interpretation": {
       "description": "zero_interpretation"
@@ -301,11 +301,56 @@
     "source_edition_roc": {
       "description": "source_edition_roc"
     },
-    "source_data_obtained_date_raw": {
-      "description": "source_data_obtained_date_raw"
+    "ownership_scope": {
+      "description": "ownership_scope"
+    },
+    "source_row_label_raw": {
+      "description": "source_row_label_raw"
     },
     "entity_label_status": {
       "description": "entity_label_status"
+    },
+    "source_unit_context_locator": {
+      "description": "source_unit_context_locator"
+    },
+    "source_row_hierarchy_raw": {
+      "description": "source_row_hierarchy_raw"
+    },
+    "source_original_survey_date_raw": {
+      "description": "source_original_survey_date_raw"
+    },
+    "source_survey_population_libraries": {
+      "description": "source_survey_population_libraries"
+    },
+    "source_original_table_row": {
+      "description": "source_original_table_row"
+    },
+    "source_subrow_sequence": {
+      "description": "source_subrow_sequence"
+    },
+    "source_subrow_label_status": {
+      "description": "source_subrow_label_status"
+    },
+    "source_response_notation_kind": {
+      "description": "source_response_notation_kind"
+    },
+    "source_parenthetical_raw": {
+      "description": "source_parenthetical_raw"
+    },
+    "source_subrow_label_raw": {
+      "description": "source_subrow_label_raw"
+    },
+    "source_parent_row_label_raw": {
+      "description": "source_parent_row_label_raw"
+    },
+    "source_parent_row_label_english_raw": {
+      "description": "source_parent_row_label_english_raw"
+    },
+    "source_row_label_english_raw": {
+      "description": "source_row_label_english_raw"
+    },
+    "source_data_obtained_date_raw": {
+      "description": "source_data_obtained_date_raw"
     },
     "facility": {
       "description": "facility"
@@ -339,9 +384,6 @@
     },
     "source_cell_note_status": {
       "description": "source_cell_note_status"
-    },
-    "source_subrow_label_raw": {
-      "description": "source_subrow_label_raw"
     },
     "source_period_interpretation_status": {
       "type": [

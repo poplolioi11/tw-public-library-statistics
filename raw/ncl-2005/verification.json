@@ -1,0 +1,36 @@
+{
+  "data_year": 2005,
+  "records": 494,
+  "numeric_cells": 492,
+  "source_marker_cells": 2,
+  "printed_zero_cells": 20,
+  "table_groups": 7,
+  "checks": {
+    "full_selected_grids": true,
+    "all_native_numeric_tokens_consumed_once": true,
+    "numeric_word_and_character_roundtrip": true,
+    "csv_jsonl_every_field_equal": true,
+    "unique_original_positions": true,
+    "original_23_county_labels": true,
+    "no_op_bytes_and_mtime": true,
+    "two_consecutive_offline_rebuilds": true,
+    "failure_preserves_previous_outputs": [
+      {
+        "fault": "missing",
+        "error_type": "FileNotFoundError",
+        "prior_output_bytes_and_mtime_unchanged": true
+      },
+      {
+        "fault": "changed",
+        "error_type": "ValueError",
+        "prior_output_bytes_and_mtime_unchanged": true
+      }
+    ]
+  },
+  "quality_issue_groups": 2,
+  "limits": [
+    "This producer self-check is not independent source-image verification.",
+    "Only the seven inventoried source-table groups are complete; named program tables6/7 remain known-not-ingested.",
+    "Chinese labels and two outlined 未統計 markers are source-image transcriptions; their numeric text is not available in the native PDF text layer."
+  ]
+}

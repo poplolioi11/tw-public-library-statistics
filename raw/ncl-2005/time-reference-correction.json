@@ -1,0 +1,10 @@
+{
+  "change": "Only time_reference: restore explicitly printed 截至94年12月底 for the chapter1–4 reference; private95年2月 is survey timing, not private-stock reference date",
+  "changed_field": "time_reference",
+  "original_chapter_reference_locator": "public-library PDF1 / printed19 / 綜述",
+  "before": "原表題明印民國94年；表1至4章內明示截至94年12月，私立填答調查為95年2月；出版日另列，不互相替代。",
+  "after": "原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+  "numeric_and_position_fingerprint_before": "867c7d1e43c1bd0365d031d472cd92d928f270008632c550df08c368ea7d98c3",
+  "numeric_and_position_fingerprint_after": "867c7d1e43c1bd0365d031d472cd92d928f270008632c550df08c368ea7d98c3",
+  "all_other_observation_fields_unchanged": true
+}

@@ -29,7 +29,7 @@ def main():
   for p in (R/directory).rglob('*'):
    if not p.is_file() or p.suffix not in {'.json','.jsonl','.pem','.crt'}:continue
    if directory=='raw/ncl-historical' and p.name not in {'documents.json','dgbas-documents.json','gap-tables-metadata.json'}:continue
-   if 'private' in p.name or 'page-text' in p.name:continue
+   if any('private' in part.lower() for part in p.relative_to(R).parts) or 'page-text' in p.name:continue
    selected[str(p.relative_to(R))]=p.read_bytes()
  selected['raw/ncl-extension-documents.json']=(R/'raw/ncl-extension-documents.json').read_bytes()
  if (R/'raw/ncl-supporting-documents.json').exists():selected['raw/ncl-supporting-documents.json']=(R/'raw/ncl-supporting-documents.json').read_bytes()

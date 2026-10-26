@@ -1,0 +1,355 @@
+{
+  "status": "producer_frozen_awaiting_independent_comparison",
+  "data_year": 2005,
+  "source_edition_roc": 95,
+  "publication_date": "2006-11-01",
+  "records": 494,
+  "numeric_cells": 492,
+  "source_marker_cells": 2,
+  "printed_zero_cells": 20,
+  "table_groups": [
+    {
+      "document_kind": "public-library",
+      "table": 1,
+      "title": "國立暨直轄市立公共圖書館購書經費、館藏與資源使用統計表（民國94年）",
+      "pdf_pages": [
+        1
+      ],
+      "expected_cells": 30,
+      "extracted_cells": 30,
+      "data_years": [
+        2005
+      ],
+      "scope": "five separate national/municipal institutions × six metrics; no total row",
+      "numeric_cells": 30,
+      "status_counts": {
+        "reported": 30
+      }
+    },
+    {
+      "document_kind": "public-library",
+      "table": 2,
+      "title": "國立暨直轄市立公共圖書館人員統計表（民國94年）",
+      "pdf_pages": [
+        2
+      ],
+      "expected_cells": 30,
+      "extracted_cells": 30,
+      "data_years": [
+        2005
+      ],
+      "scope": "five national/municipal institutions × six original staffing categories",
+      "numeric_cells": 30,
+      "status_counts": {
+        "reported": 30
+      }
+    },
+    {
+      "document_kind": "public-library",
+      "table": 3,
+      "title": "臺閩地區各縣市暨鄉鎮市立圖書館館藏資料及購書經費統計表（民國94年）",
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "expected_cells": 115,
+      "extracted_cells": 115,
+      "data_years": [
+        2005
+      ],
+      "scope": "all 23 original nonmunicipal county/city rows × five metrics; continuation included; no printed total",
+      "numeric_cells": 115,
+      "status_counts": {
+        "reported": 69,
+        "reported_decimal": 46
+      }
+    },
+    {
+      "document_kind": "public-library",
+      "table": 4,
+      "title": "臺閩地區各縣市暨鄉鎮市立圖書館人員及服務統計（民國94年）",
+      "pdf_pages": [
+        3
+      ],
+      "expected_cells": 288,
+      "extracted_cells": 288,
+      "data_years": [
+        2005
+      ],
+      "scope": "23 original county/city rows plus printed total × twelve staffing/service metrics; two printed 未統計 markers retained",
+      "numeric_cells": 286,
+      "status_counts": {
+        "reported": 286,
+        "source_marker": 2
+      }
+    },
+    {
+      "document_kind": "public-library",
+      "table": 5,
+      "title": "臺閩地區私立公共圖書館調查統計表（民國94年）",
+      "pdf_pages": [
+        4
+      ],
+      "expected_cells": 8,
+      "extracted_cells": 8,
+      "data_years": [
+        2005
+      ],
+      "scope": "complete private public-library annual row: four metrics plus each metric response-library count",
+      "numeric_cells": 8,
+      "status_counts": {
+        "reported": 8
+      }
+    },
+    {
+      "document_kind": "statistics",
+      "table": 107,
+      "title": "臺閩地區各類型圖書館數量統計表（民國94年）／公共圖書館完整子群",
+      "pdf_pages": [
+        4
+      ],
+      "expected_cells": 7,
+      "extracted_cells": 7,
+      "data_years": [
+        2005
+      ],
+      "scope": "all six original public-library ownership/level rows and their printed subtotal; includes private and branch libraries",
+      "numeric_cells": 7,
+      "status_counts": {
+        "reported": 7
+      }
+    },
+    {
+      "document_kind": "statistics",
+      "table": 108,
+      "title": "臺閩地區各類型圖書館基本資料統計表（民國94年）／公立與私立公共圖書館列",
+      "pdf_pages": [
+        5
+      ],
+      "expected_cells": 16,
+      "extracted_cells": 16,
+      "data_years": [
+        2005
+      ],
+      "scope": "complete public/private public-library rows: four operational quantities plus four response-library counts per row",
+      "numeric_cells": 16,
+      "status_counts": {
+        "reported": 16
+      }
+    }
+  ],
+  "sources": {
+    "public-library": {
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565572390216434",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf",
+      "source_local_path": "raw/ncl-2005/yearbook-95-public-library.pdf",
+      "sha256": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
+      "bytes": 1286080,
+      "source_retrieved_at": "2026-10-26T06:40:24.985577+00:00",
+      "download_provenance": "Direct anonymous official HTTP downloaded by independent reviewer, copied byte-for-byte and independently SHA-verified.",
+      "source_edition_roc": 95,
+      "publication_date": "2006-11-01",
+      "publication_date_basis": "Official entry explicit publication date; no copyright-page attachment was listed at this entry.",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle"
+    },
+    "statistics": {
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_page_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565572390216434",
+      "source_download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf",
+      "source_local_path": "raw/ncl-2005/yearbook-95-statistics.pdf",
+      "sha256": "4b725f1a7e58d3b8629f76655e0ff678d4db4dc3f8bfdbb4a721211fa9303d78",
+      "bytes": 435350,
+      "source_retrieved_at": "2026-10-26T06:40:24.985577+00:00",
+      "download_provenance": "Direct anonymous official HTTP downloaded by independent reviewer, copied byte-for-byte and independently SHA-verified.",
+      "source_edition_roc": 95,
+      "publication_date": "2006-11-01",
+      "publication_date_basis": "Official entry explicit publication date; no copyright-page attachment was listed at this entry.",
+      "license_status": "not_confirmed",
+      "snapshot_distribution": "not_in_public_bundle"
+    }
+  },
+  "producer_inputs": [
+    {
+      "path": "scripts/extract_ncl_2005.py",
+      "sha256": "d875f50d203dad399cbc99dc089eb4244e923c496f725a83c4a3a546980edaf2",
+      "bytes": 40367
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-public-library.pdf",
+      "sha256": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
+      "bytes": 1286080
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-statistics.pdf",
+      "sha256": "4b725f1a7e58d3b8629f76655e0ff678d4db4dc3f8bfdbb4a721211fa9303d78",
+      "bytes": 435350
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-public-library.metadata.json",
+      "sha256": "b6d97222174bdbff8f97239e3839be702c5e0fa16bbb3625ba9bb7aa07c57334",
+      "bytes": 933
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-statistics.metadata.json",
+      "sha256": "469e0f1aa3739815c7b8e2fb12a2221fb55e59f8a459e8ab59c5814fe6b42cff",
+      "bytes": 924
+    },
+    {
+      "path": "raw/ncl-2005/entry-metadata.json",
+      "sha256": "76be6a389d778bcf203e32ba336a38b5d2c118b9ef898fdb62c6738835c2f1ea",
+      "bytes": 2942
+    },
+    {
+      "path": "raw/ncl-2005/rights-metadata.json",
+      "sha256": "25fa54e70d2b5f106d8b3bc9eafb740174ebaf00882196f454e5e65795d3a3ba",
+      "bytes": 426
+    }
+  ],
+  "producer_outputs": [
+    {
+      "path": "derived/ncl_2005_long.csv",
+      "sha256": "2444be930e34ae76107acee0f455c72a8e52bb999d70010a661b7e0299c235dc",
+      "bytes": 1505245
+    },
+    {
+      "path": "derived/ncl_2005_long.jsonl",
+      "sha256": "41ddf0b17b4a721070583217808baa382d88f1fe968f8467b94593d51c03a439",
+      "bytes": 2150639
+    },
+    {
+      "path": "raw/ncl-2005/extraction-metadata.json",
+      "sha256": "4e68f1894852ffd9f0470b6d295bfd09249a7adee2eae2c88195cd46f41affdc",
+      "bytes": 12041
+    },
+    {
+      "path": "raw/ncl-2005/cell-token-audit.private.json",
+      "sha256": "7c0f81a9d7183fdd5e659b1070eb4d51ea67f0e3513b6622c35f87e3be2ab1bc",
+      "bytes": 145026
+    }
+  ],
+  "verification": {
+    "data_year": 2005,
+    "records": 494,
+    "numeric_cells": 492,
+    "source_marker_cells": 2,
+    "printed_zero_cells": 20,
+    "table_groups": 7,
+    "checks": {
+      "full_selected_grids": true,
+      "all_native_numeric_tokens_consumed_once": true,
+      "numeric_word_and_character_roundtrip": true,
+      "csv_jsonl_every_field_equal": true,
+      "unique_original_positions": true,
+      "original_23_county_labels": true,
+      "no_op_bytes_and_mtime": true,
+      "two_consecutive_offline_rebuilds": true,
+      "failure_preserves_previous_outputs": [
+        {
+          "fault": "missing",
+          "error_type": "FileNotFoundError",
+          "prior_output_bytes_and_mtime_unchanged": true
+        },
+        {
+          "fault": "changed",
+          "error_type": "ValueError",
+          "prior_output_bytes_and_mtime_unchanged": true
+        }
+      ]
+    },
+    "quality_issue_groups": 2,
+    "limits": [
+      "This producer self-check is not independent source-image verification.",
+      "Only the seven inventoried source-table groups are complete; named program tables6/7 remain known-not-ingested.",
+      "Chinese labels and two outlined 未統計 markers are source-image transcriptions; their numeric text is not available in the native PDF text layer."
+    ]
+  },
+  "known_not_ingested": [
+    {
+      "document_kind": "public-library",
+      "table": "6 (including continued panels)",
+      "pdf_pages": [
+        14,
+        15,
+        16
+      ],
+      "title": "公共圖書館辦理「推廣閱讀活動」及「示範觀摩館」一覽表",
+      "reason": "intentional_exclusion: named program-specific library activities and professional observation visits; not whole-year core operating totals. Earlier preliminary construction-table classification was corrected after full original-page review.",
+      "status": "known_source_outside_this_annual_core_cohort"
+    },
+    {
+      "document_kind": "public-library",
+      "table": "7",
+      "pdf_pages": [
+        34
+      ],
+      "title": "全國閱讀運動活動內容、場次及參加人數一覽表",
+      "reason": "intentional_exclusion: selected reading-campaign activities, including printed periods spanning 94年12月至95年5月; not a complete calendar-2005 public-library operating table.",
+      "status": "known_source_outside_this_annual_core_cohort"
+    }
+  ],
+  "scope": "Complete listed annual-core tables1–5 and public-library groups107/108 only; not entire chapter; original25-county geography not recast to22.",
+  "rights": {
+    "license_status": "not_confirmed",
+    "license_url": "https://www.ncl.edu.tw/open-government-declaration",
+    "license_evidence": "NCL open-government declaration excludes publications and specially authored/commissioned texts. Chapter full-text redistribution is not established; derived statistical facts only.",
+    "snapshot_distribution": "not_in_public_bundle",
+    "private_materials": "PDFs, source images, HTML, full extracted text and reviewer private evidence are not public distributions."
+  },
+  "changes_to_shared_or_publication_files": false,
+  "minimal_revision": {
+    "change": "table5 four response-count raw row labels restored to printed94; editorial explanation retained in notes/subrow fields",
+    "changed_cells": [
+      {
+        "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 2; bbox 140.970,148.700,226.910,159.900",
+        "changed_fields": [
+          "source_row_label_raw",
+          "original_fields"
+        ],
+        "before": "94（同列括註）",
+        "after": "94"
+      },
+      {
+        "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 3; bbox 226.910,148.700,311.950,159.900",
+        "changed_fields": [
+          "source_row_label_raw",
+          "original_fields"
+        ],
+        "before": "94（同列括註）",
+        "after": "94"
+      },
+      {
+        "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 4; bbox 311.950,148.700,396.990,159.900",
+        "changed_fields": [
+          "source_row_label_raw",
+          "original_fields"
+        ],
+        "before": "94（同列括註）",
+        "after": "94"
+      },
+      {
+        "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 5; bbox 396.990,148.700,482.480,159.900",
+        "changed_fields": [
+          "source_row_label_raw",
+          "original_fields"
+        ],
+        "before": "94（同列括註）",
+        "after": "94"
+      }
+    ],
+    "statistical_value_and_position_fingerprint_before": "867c7d1e43c1bd0365d031d472cd92d928f270008632c550df08c368ea7d98c3",
+    "statistical_value_and_position_fingerprint_after": "867c7d1e43c1bd0365d031d472cd92d928f270008632c550df08c368ea7d98c3",
+    "unchanged_numeric_raw_status_metric_id_positions_identity": true
+  },
+  "time_reference_minimal_revision": {
+    "change": "Only time_reference: restore explicitly printed 截至94年12月底 for the chapter1–4 reference; private95年2月 is survey timing, not private-stock reference date",
+    "changed_field": "time_reference",
+    "original_chapter_reference_locator": "public-library PDF1 / printed19 / 綜述",
+    "before": "原表題明印民國94年；表1至4章內明示截至94年12月，私立填答調查為95年2月；出版日另列，不互相替代。",
+    "after": "原表題明印民國94年；表1至4章內明示截至94年12月底；私立填答調查為95年2月，這是調查時間，非私立館stock時點；出版日另列，不互相替代。",
+    "numeric_and_position_fingerprint_before": "867c7d1e43c1bd0365d031d472cd92d928f270008632c550df08c368ea7d98c3",
+    "numeric_and_position_fingerprint_after": "867c7d1e43c1bd0365d031d472cd92d928f270008632c550df08c368ea7d98c3",
+    "all_other_observation_fields_unchanged": true
+  }
+}

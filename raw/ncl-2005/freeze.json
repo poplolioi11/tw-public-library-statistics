@@ -1,0 +1,80 @@
+{
+  "data_year": 2005,
+  "source_edition_roc": 95,
+  "script": "scripts/extract_ncl_2005.py",
+  "command": "python3 scripts/extract_ncl_2005.py --offline",
+  "input_files": [
+    {
+      "path": "scripts/extract_ncl_2005.py",
+      "sha256": "d875f50d203dad399cbc99dc089eb4244e923c496f725a83c4a3a546980edaf2",
+      "bytes": 40367
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-public-library.pdf",
+      "sha256": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
+      "bytes": 1286080
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-statistics.pdf",
+      "sha256": "4b725f1a7e58d3b8629f76655e0ff678d4db4dc3f8bfdbb4a721211fa9303d78",
+      "bytes": 435350
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-public-library.metadata.json",
+      "sha256": "b6d97222174bdbff8f97239e3839be702c5e0fa16bbb3625ba9bb7aa07c57334",
+      "bytes": 933
+    },
+    {
+      "path": "raw/ncl-2005/yearbook-95-statistics.metadata.json",
+      "sha256": "469e0f1aa3739815c7b8e2fb12a2221fb55e59f8a459e8ab59c5814fe6b42cff",
+      "bytes": 924
+    },
+    {
+      "path": "raw/ncl-2005/entry-metadata.json",
+      "sha256": "76be6a389d778bcf203e32ba336a38b5d2c118b9ef898fdb62c6738835c2f1ea",
+      "bytes": 2942
+    },
+    {
+      "path": "raw/ncl-2005/rights-metadata.json",
+      "sha256": "25fa54e70d2b5f106d8b3bc9eafb740174ebaf00882196f454e5e65795d3a3ba",
+      "bytes": 426
+    }
+  ],
+  "output_files": [
+    {
+      "path": "derived/ncl_2005_long.csv",
+      "sha256": "2444be930e34ae76107acee0f455c72a8e52bb999d70010a661b7e0299c235dc",
+      "bytes": 1505245
+    },
+    {
+      "path": "derived/ncl_2005_long.jsonl",
+      "sha256": "41ddf0b17b4a721070583217808baa382d88f1fe968f8467b94593d51c03a439",
+      "bytes": 2150639
+    },
+    {
+      "path": "raw/ncl-2005/extraction-metadata.json",
+      "sha256": "4e68f1894852ffd9f0470b6d295bfd09249a7adee2eae2c88195cd46f41affdc",
+      "bytes": 12041
+    },
+    {
+      "path": "raw/ncl-2005/cell-token-audit.private.json",
+      "sha256": "7c0f81a9d7183fdd5e659b1070eb4d51ea67f0e3513b6622c35f87e3be2ab1bc",
+      "bytes": 145026
+    }
+  ],
+  "runtime_dependencies": [
+    "Python3.12 standard library",
+    "pdfplumber"
+  ],
+  "review_only_dependencies": [
+    "pypdfium2",
+    "Pillow"
+  ],
+  "source_originals_distribution": "not_in_public_bundle",
+  "independent_review_status": "awaiting_source_first_reviewer_comparison",
+  "verification_sha256": "c47d58b01af38b8d2f2306d9e0f86a87fc2f421d0fc77a9e7b59deaa41e9da87",
+  "records": 494,
+  "numeric_cells": 492,
+  "source_marker_cells": 2,
+  "printed_zero_cells": 20
+}

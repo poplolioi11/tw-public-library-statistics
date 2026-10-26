@@ -487,11 +487,1029 @@
     "raw/ncl-2023/extraction-validation.json",
     "raw/ncl-2023/documents.json",
     "raw/ncl-2024/extraction-validation.json",
-    "raw/ncl-2024/documents.json"
+    "raw/ncl-2024/documents.json",
+    "raw/ncl-2005/extraction-metadata.json"
   ],
   "reviewed_cohort_registry": "data/reviewed_historical_cohorts.json",
   "historical_batch_inventory": "docs/historical-batches.json",
   "flagged_historical_cells": [
+    {
+      "observation_id": "obs-2c2b2f74928998ee9193b8",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 8; column 3; bbox 159.210,465.550,224.910,476.750",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-0fbde5f2a0aa67e874188a",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 8; column 5; bbox 291.610,465.550,387.300,476.750",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-ce20b1d739f014aac774fb",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 8; column 8; bbox 241.850,376.150,266.260,387.350",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-84395f6ce72cb8e82a16f1",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 9; bbox 266.260,642.550,307.560,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "人次",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-0bb81b63bb5fa81128ea1c",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 10; bbox 307.560,642.550,352.860,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "冊",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-8fe25472ee1dfccf3fdfae",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 12; bbox 397.160,642.550,438.460,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "場次",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-a472a80cd4a0403902c2d3",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 13; bbox 438.460,642.550,482.480,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "人次",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-ca98a9897a1d28e4113264",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 4; bbox 138.710,642.550,168.020,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-9cca95bf4c3ba82afe2ced",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 2; bbox 93.730,642.550,116.110,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-5f14279e8b423a4ea92e43",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 7; bbox 219.640,642.550,241.850,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-7ce722cb9329df4904d05d",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 5; bbox 168.020,642.550,196.740,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-234711475feaa14ca280e8",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 3; bbox 116.110,642.550,138.710,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-4a9e138c298f4bc49a6164",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 8; bbox 241.850,642.550,266.260,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-d70267e30cc290dd2ba2a2",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 6; bbox 196.740,642.550,219.640,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-a2b711baa7babb46d41c8f",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 24; column 11; bbox 352.860,642.550,397.160,653.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "人次",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-10a2211f3dbba32d7032f0",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 20; column 3; bbox 159.210,665.350,224.910,676.550",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-f1d2c107f7032e5356955b",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 20; column 5; bbox 291.610,665.350,387.300,676.550",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-a68ee7b99255f28476c7fb",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 20; column 8; bbox 241.850,575.950,266.260,587.150",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-05b66953ae45dcd49e441f",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 10; column 3; bbox 159.210,498.850,224.910,510.050",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-e5b3d91994ded322d1da93",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 10; column 5; bbox 291.610,498.850,387.300,510.050",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-84841389e9318f424dfff4",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 10; column 8; bbox 241.850,409.450,266.260,420.650",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-2bb021eb22fe75c4426081",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 1; printed page 19; table 1; data row 1; column 3; bbox 199.010,494.200,255.700,505.400",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "named_national_public_library",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-bb5c832d2ed6fa24f0b789",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 1; printed page 19; table 1; data row 2; column 3; bbox 199.010,518.900,255.700,530.100",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "named_national_public_library",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-9c0864c2418882c7075470",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 17; column 3; bbox 159.210,615.400,224.910,626.600",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-4693ec32aa802a181f8b82",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 17; column 5; bbox 291.610,615.400,387.300,626.600",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-86522a8ee607f967bcc88f",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 17; column 8; bbox 241.850,526.000,266.260,537.200",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-03094e7c61dd1844c9f27d",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 2; column 3; bbox 159.210,365.650,224.910,376.850",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-232dab3a5253cdb11808df",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 2; column 5; bbox 291.610,365.650,387.300,376.850",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-ce9f53b5883cf4cfc47686",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 2; column 8; bbox 241.850,276.250,266.260,287.450",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-b1eaee1d7739e48a165aa4",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 13; column 3; bbox 159.210,548.800,224.910,560.000",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-d9a39d95a469b59ef9e6d2",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 13; column 5; bbox 291.610,548.800,387.300,560.000",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-29749d573280da01d33e50",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 13; column 8; bbox 241.850,459.400,266.260,470.600",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-8888d58c135ef748f67b42",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 7; column 3; bbox 159.210,448.900,224.910,460.100",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-c7c33e1e5d1bdf63b1cb72",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 7; column 5; bbox 291.610,448.900,387.300,460.100",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-d7e192bf0008cf8724d140",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 7; column 8; bbox 241.850,359.500,266.260,370.700",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-b4fde7f14779c87684d892",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 18; column 3; bbox 159.210,632.050,224.910,643.250",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-dfd1f8414a0db714a83020",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 18; column 5; bbox 291.610,632.050,387.300,643.250",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-c06359cc87b1eac880e74d",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 18; column 8; bbox 241.850,542.650,266.260,553.850",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-5141ffa0f5d69c5c00963f",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 4; column 3; bbox 159.210,398.950,224.910,410.150",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-17e16332527603fa283174",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 4; column 5; bbox 291.610,398.950,387.300,410.150",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-19fb73425f4db12e9b3f0a",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 4; column 8; bbox 241.850,309.550,266.260,320.750",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-2d2371485cd56fea847a56",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 3; column 3; bbox 159.210,382.300,224.910,393.500",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-dbf6830fcbc72191cab982",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 3; column 5; bbox 291.610,382.300,387.300,393.500",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-e9a378980afe151729036f",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 3; column 8; bbox 241.850,292.900,266.260,304.100",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-7c0afe691ff61a15aad53a",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 16; column 3; bbox 159.210,598.750,224.910,609.950",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-f9073cf040e92844a5e906",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 16; column 5; bbox 291.610,598.750,387.300,609.950",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-1326e27f9a2111071e68c2",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 16; column 8; bbox 241.850,509.350,266.260,520.550",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-04c135ac920c18eae4c928",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 1; column 4; bbox 311.950,132.000,396.990,143.200",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": null,
+      "unit_status": "source_heading_counting_basis_unresolved"
+    },
+    {
+      "observation_id": "obs-a11f5d6ecf703538dc8967",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 4; bbox 311.950,148.700,396.990,159.900",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-3d77d5d6330d5ce25b79f6",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 1; column 2; bbox 140.970,132.000,226.910,143.200",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\",\"source_same_edition_private_public_library_table_disagreement_unresolved\"]",
+      "geographic_scope": "national_total",
+      "unit": "冊",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-c4d7af8ec731b1aa57161b",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 2; bbox 140.970,148.700,226.910,159.900",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-2a11da21cd499cfde2696a",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 1; column 5; bbox 396.990,132.000,482.480,143.200",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "冊",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-bc18d9363a6bfd0c0b84d5",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 5; bbox 396.990,148.700,482.480,159.900",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\",\"source_same_edition_private_public_library_table_disagreement_unresolved\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-4a5315eb9edfdd49146749",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 1; column 3; bbox 226.910,132.000,311.950,143.200",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "席",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-41697aaba5557013a5af12",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 4; printed page 22; table 5; data row 2; column 3; bbox 226.910,148.700,311.950,159.900",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-7b4f87de20bcb4bfdcc343",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 19; column 3; bbox 159.210,648.700,224.910,659.900",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-39ab877fdfbab1a94b0d75",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 19; column 5; bbox 291.610,648.700,387.300,659.900",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-a28d80da3ab360d4c7f4d1",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 19; column 8; bbox 241.850,559.300,266.260,570.500",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-c92a603e9814b494ae3625",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 6; column 3; bbox 159.210,432.250,224.910,443.450",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-c5dd90d5b2f46eb645a499",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 6; column 5; bbox 291.610,432.250,387.300,443.450",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-103af0ab81e2a2d3d1c1ce",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 6; column 8; bbox 241.850,342.850,266.260,354.050",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-ce171c761884fa518a6be1",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 1; printed page 19; table 1; data row 3; column 3; bbox 199.010,535.500,255.700,546.700",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "named_municipal_public_library",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-46df69c5583a2075e2dab2",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 1; column 3; bbox 159.210,349.000,224.910,360.200",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-a57f7d7910acf501d6dcdc",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 1; column 5; bbox 291.610,349.000,387.300,360.200",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-bc21e5cbbbe0b1d0dc2b94",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 1; column 8; bbox 241.850,259.600,266.260,270.800",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-2f59bc3bf84acdc695d690",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 3; data row 21; column 3; bbox 159.750,132.600,225.440,143.800",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-b50a84510a9ef272a1d2a9",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 3; data row 21; column 5; bbox 292.150,132.600,387.850,143.800",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-33a180ce6c5c3699071b08",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 21; column 8; bbox 241.850,592.600,266.260,603.800",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-dcb78d085bf9a2a5ba1f70",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 11; column 3; bbox 159.210,515.500,224.910,526.700",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-10afab5d62a0dfd789402b",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 11; column 5; bbox 291.610,515.500,387.300,526.700",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-0dac5caf3d432d23fbfa14",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 11; column 13; bbox 438.460,426.100,482.480,437.300",
+      "quality_flags": "[\"source_printed_not_statistically_counted_marker\"]",
+      "geographic_scope": "county",
+      "unit": "人次",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-4f85b8ef177b04c57049be",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 11; column 8; bbox 241.850,426.100,266.260,437.300",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-3b853df419d8e57ae3d022",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 11; column 11; bbox 352.860,426.100,397.160,437.300",
+      "quality_flags": "[\"source_printed_not_statistically_counted_marker\"]",
+      "geographic_scope": "county",
+      "unit": "人次",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-36e34055e9e0745ba4c3a3",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 14; column 3; bbox 159.210,565.450,224.910,576.650",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-c8ca16d9357cd833af9c68",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 14; column 5; bbox 291.610,565.450,387.300,576.650",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-46134984267f6bacdd1d26",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 14; column 8; bbox 241.850,476.050,266.260,487.250",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-dde14c2470fe25bd8264a4",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 15; column 3; bbox 159.210,582.100,224.910,593.300",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-6685dbcaad05ad3f34ea4c",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 15; column 5; bbox 291.610,582.100,387.300,593.300",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-85eae4ef37a41c809b2f08",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 15; column 8; bbox 241.850,492.700,266.260,503.900",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-097564954375241abcb953",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 5; column 3; bbox 159.210,415.600,224.910,426.800",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-6411b8af8cc5358559f178",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 5; column 5; bbox 291.610,415.600,387.300,426.800",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-d92fb0dda81d36c7b8e7bd",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 5; column 8; bbox 241.850,326.200,266.260,337.400",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-252b0a6d8bca55bbbab489",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 3; data row 23; column 3; bbox 159.750,166.000,225.440,177.200",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-c8c13467a2bdc7e6392571",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 3; data row 23; column 5; bbox 292.150,166.000,387.850,177.200",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-f8d205318a22977cecafbd",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 23; column 8; bbox 241.850,625.900,266.260,637.100",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-10cb58341602c152210a74",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 3; data row 22; column 3; bbox 159.750,149.300,225.440,160.500",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-c1c199147a8c65813d6369",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 3; data row 22; column 5; bbox 292.150,149.300,387.850,160.500",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-2e851c29599517c3fb7ff7",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 22; column 8; bbox 241.850,609.250,266.260,620.450",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-90d2b301bc0a49e1bba013",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 9; column 3; bbox 159.210,482.200,224.910,493.400",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-fa81d0a105af46dbe4748a",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 9; column 5; bbox 291.610,482.200,387.300,493.400",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-55d128ce4677af1c733d68",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 9; column 8; bbox 241.850,392.800,266.260,404.000",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-b74ffcb4dd48d47ef518a7",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 1; printed page 19; table 1; data row 5; column 3; bbox 199.010,602.200,255.700,613.400",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "named_municipal_public_library",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-9fc4b74b23b60f81ad9d0e",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 1; printed page 19; table 1; data row 4; column 3; bbox 199.010,560.800,255.700,572.000",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "named_municipal_public_library",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-d80e3d472f0deadc685d35",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 12; column 3; bbox 159.210,532.150,224.910,543.350",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-8bca840bde74b5f0c8637e",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 2; printed page 20; table 3; data row 12; column 5; bbox 291.610,532.150,387.300,543.350",
+      "quality_flags": "[\"source_heading_body_counting_unit_conflict_unresolved\"]",
+      "geographic_scope": "county",
+      "unit": null,
+      "unit_status": "source_heading_body_counting_unit_conflict_unresolved"
+    },
+    {
+      "observation_id": "obs-c4baa2d7e4884770158ea2",
+      "source_id": "ncl-yearbook-95-public-library",
+      "source_locator": "PDF page 3; printed page 21; table 4; data row 12; column 8; bbox 241.850,442.750,266.260,453.950",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "county",
+      "unit": "人",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-49c241c4df0b0a01d9bd6f",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 3; column 4; bbox 312.400,201.600,397.430,212.800",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": null,
+      "unit_status": "source_heading_counting_basis_unresolved"
+    },
+    {
+      "observation_id": "obs-6ac1fb583a92f79673c9dd",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 4; column 4; bbox 312.400,218.250,397.430,229.450",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-bd551f75c0b34269130d05",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 3; column 2; bbox 142.340,201.600,227.370,212.800",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "冊",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-2b6773450e620a4970b3c9",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 4; column 2; bbox 142.340,218.250,227.370,229.450",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-d802661618b17f9bf6a1de",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 3; column 5; bbox 397.430,201.600,482.480,212.800",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "冊",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-1343a8a239fa0025b3a361",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 4; column 5; bbox 397.430,218.250,482.480,229.450",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-4feb3ce9ae184127d8e6b5",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 3; column 3; bbox 227.370,201.600,312.400,212.800",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "席",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-806175649aa80f3dc64199",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 4; column 3; bbox 227.370,218.250,312.400,229.450",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-3a5c16766639ca7f32bdfc",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 4; printed page 248; table 107; data row 7; column 2; bbox 218.000,304.200,245.000,315.400",
+      "quality_flags": "[\"published_total_overlaps_components\"]",
+      "geographic_scope": "national_total",
+      "unit": "所",
+      "unit_status": "contextual_unit_inference"
+    },
+    {
+      "observation_id": "obs-6775f08b3cb0fc69b89f3b",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 5; column 4; bbox 312.400,234.900,397.430,246.100",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": null,
+      "unit_status": "source_heading_counting_basis_unresolved"
+    },
+    {
+      "observation_id": "obs-9d23249d2c13a5aa99a732",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 6; column 4; bbox 312.400,251.550,397.430,262.750",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-31535c19d1b9c2a07e870e",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 5; column 2; bbox 142.340,234.900,227.370,246.100",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\",\"source_same_edition_private_public_library_table_disagreement_unresolved\"]",
+      "geographic_scope": "national_total",
+      "unit": "冊",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-de04d3ebaf207b031ce1b8",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 6; column 2; bbox 142.340,251.550,227.370,262.750",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-a490a2a8fc58ed19b0b477",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 5; column 5; bbox 397.430,234.900,482.480,246.100",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "冊",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-16e617106e059a70600ccc",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 6; column 5; bbox 397.430,251.550,482.480,262.750",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\",\"source_same_edition_private_public_library_table_disagreement_unresolved\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-b3c445021f3b7e21594e8d",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 5; column 3; bbox 227.370,234.900,312.400,246.100",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "席",
+      "unit_status": "printed_unit"
+    },
+    {
+      "observation_id": "obs-ad1d4920fe3ea305fbde07",
+      "source_id": "ncl-yearbook-95-statistics",
+      "source_locator": "PDF page 5; printed page 249; table 108; data row 6; column 3; bbox 227.370,251.550,312.400,262.750",
+      "quality_flags": "[\"response_sample_sizes_differ_by_metric_do_not_treat_as_total_library_count\"]",
+      "geographic_scope": "national_total",
+      "unit": "館",
+      "unit_status": "printed_unit"
+    },
     {
       "observation_id": "obs-cab19660c5708d8b9fdecb",
       "source_id": "ncl-earlier-2006-t1",
@@ -35522,6 +36540,6 @@
       "source_locator": "PDF page 8; printed page 66; table 18; data row 7; column 2; bbox 120.00,224.40,185.00,235.80"
     }
   ],
-  "unit_conflict_records": 161,
+  "unit_conflict_records": 212,
   "source_faithfulness_is_not_statistical_certification": true
 }
