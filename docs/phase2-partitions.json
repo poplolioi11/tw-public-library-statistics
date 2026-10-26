@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "parent": "derived/phase2/annotations.jsonl.gz",
   "records": 56496,
   "partitions": [

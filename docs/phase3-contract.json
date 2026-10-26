@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "3",
+  "scope": "Versioned default source selection for registered factual questions over all existing quantitative layers; raw values and phase2 comparison decisions remain unchanged.",
+  "baseline": {
+    "version": "0.7.0",
+    "layers": {
+      "canonical": 37887,
+      "local_statistical_cells": 18486,
+      "programme_quantities": 123
+    },
+    "layer_raw_fingerprints": {
+      "canonical": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
+      "local_statistical_cells": "2f3b30127fbf12aa743de1e2844a02681e7a967a8cb1efe7cbdc4a7c83e4335f",
+      "programme_quantities": "503f2e60d56f34ddbcc7c392cb638e8e535676a7d90097331cf2470931cac662"
+    }
+  },
+  "not_promised": [
+    "All Taiwan historical indicators complete",
+    "All historical definitions certified",
+    "Automatic cross-family splicing or sums",
+    "Natural-language numerical inference"
+  ],
+  "selection_principles": [
+    "Choose a registered purpose and population before prioritizing sources. Purpose-specific defaults are curator rules, not official corrections.",
+    "Selection as an original period fact is separate from permission to connect a time series. source_series_only may supply original period facts but never becomes published_panel_limited.",
+    "All source versions must match explicitly reviewed source_id/SHA/evidence; new versions require policy review. A missing value or smaller number cannot lower source priority.",
+    "For a trend purpose, qualify original definitions/units/periods before edition rank. Missing values alone do not disqualify a panel; a newer edition with an explicit definition conflict cannot displace an older qualified original panel. Always disclose excluded newer editions. An explicit source_id pin forbids fallback to another edition.",
+    "Latest-panel recipes choose a complete original published panel covering an explicitly requested year interval, then the newest recorded edition. If no one panel covers it, return an unresolved range and alternatives, not a spliced trend.",
+    "With no requested interval, latest-panel recipes choose the latest registered original edition. Equal-priority distinct bundles remain ambiguous even if their values agree.",
+    "Fixed-scope recipes retain every matched original period fact and every original missing representation. They do not aggregate totals/components or substitute another family.",
+    "Unknown or conflicting formal year/month stays unknown; source catalogue year and publication year are not observation year. 2012 county original quantities remain a gap.",
+    "Original reported zero, blank, marker, display/typed conflict and unknown unit are distinct. point_value is nullable; raw original values are always preserved.",
+    "Trend edges require phase2.compare==published_panel_limited, a shared original group and adjacent valid calendar periods. Gaps break lines; no interpolation.",
+    "All unsupported original scopes stay in the complete record-route inventory with reasons; no-default does not mean official data do not exist.",
+    "Query trend_summary explicitly states whether one continuous original series exists. selected=true and full year-position coverage are not numeric completeness or permission to connect all selected records."
+  ],
+  "profiles": [
+    "county-library-count-dgbas",
+    "national-library-count-dgbas",
+    "county-2023-nlpi-default",
+    "national-2023-nlpi",
+    "national-nlpi-chart-source-facts",
+    "national-ncl-count-panel",
+    "national-ncl-seats-panel",
+    "national-ncl-book-loans-panel",
+    "national-ncl-borrower-visits-panel",
+    "national-ncl-ebook-loans-panel",
+    "national-ncl-ebook-visits-panel",
+    "county-ncl-yearbook-source-facts",
+    "hsinchu-monthly-circulation",
+    "taichung-procurement-volumes",
+    "hualien-monthly-by-room",
+    "hualien-monthly-by-reader",
+    "lienchiang-explicit-annual-sheet",
+    "programme-source-quantities",
+    "historical-national-dgbas-source-facts"
+  ],
+  "outputs": {
+    "record_routes": "One row per phase2 record_key exactly once, all three quantitative layers.",
+    "candidate_decisions": "One row per registered profile and matched source record, including selected/missing/unusable/alternative/blocked/ambiguous decisions.",
+    "queries": "One default-query summary per registered profile; selected IDs must exactly match candidate decisions.",
+    "series_edges": "Candidate links between consecutive valid selected time positions inside an original P2 group. Only drawable=true permits a line; that also requires adjacent calendar periods and phase2.compare==published_panel_limited. Unknown periods create no invented edge."
+  },
+  "required_route_fields": [
+    "record_key",
+    "layer",
+    "observation_id",
+    "source_id",
+    "source_sha256",
+    "source_url",
+    "source_locator",
+    "source_version_id",
+    "evidence_id",
+    "source_version_reviewed",
+    "route_id",
+    "candidate_profile_ids",
+    "route_status",
+    "reason_codes",
+    "raw_value",
+    "original_value",
+    "value_status",
+    "comparison_status",
+    "comparison_unit",
+    "comparison_year",
+    "comparison_month",
+    "comparison_group_id",
+    "quality_flags_original"
+  ],
+  "required_decision_fields": [
+    "decision_id",
+    "profile_id",
+    "policy_version",
+    "record_key",
+    "layer",
+    "observation_id",
+    "source_id",
+    "source_sha256",
+    "source_url",
+    "source_locator",
+    "source_version_id",
+    "evidence_id",
+    "selection_status",
+    "selection_reasons",
+    "source_bundle_id",
+    "source_edition_raw",
+    "raw_indicator",
+    "entity",
+    "facility_or_reader_category",
+    "original_value",
+    "raw_value",
+    "unit_raw_preserved",
+    "value_status",
+    "point_value",
+    "point_unit",
+    "period_year",
+    "period_month",
+    "period_kind",
+    "comparison_status",
+    "comparison_group_id",
+    "definition_signature",
+    "quality_flags_original",
+    "facets",
+    "selected",
+    "source_version_reviewed",
+    "join_segment_id"
+  ],
+  "route_statuses": [
+    "registered_profile_candidate",
+    "no_default_profile_for_original_scope",
+    "unreviewed_source_version"
+  ],
+  "selection_statuses": [
+    "selected_source_fact",
+    "selected_source_missing",
+    "selected_source_unusable",
+    "alternative_source_version",
+    "blocked_source_version",
+    "blocked_scope",
+    "blocked_period",
+    "ambiguous_priority",
+    "range_not_covered_by_one_panel",
+    "policy_review_required",
+    "query_requires_explicit_scope",
+    "no_qualified_original_panel"
+  ],
+  "formats": {
+    "record_routes": [
+      "csv.gz",
+      "jsonl.gz",
+      "SQLite wide view"
+    ],
+    "candidate_decisions": [
+      "csv.gz",
+      "jsonl.gz",
+      "SQLite wide view"
+    ],
+    "queries": [
+      "csv",
+      "jsonl",
+      "SQLite wide view"
+    ],
+    "series_edges": [
+      "csv",
+      "jsonl",
+      "SQLite wide view"
+    ]
+  },
+  "updating": "Source-group route cache, per-profile policy bindings, input signature; no-op skips builders, code/metadata-only changes do not claim raw statistical changes. Failure restores previous bytes/mtime. Refresh shared earlier documentation hashes only after success.",
+  "publication": "v0.8.0 after verification; existing repository only, old tags/releases retained, safe manifest whitelist, CI and full anonymous archive readback, all existing readers/version entry points and private Drive handoff. No source originals/contacts/private routing in the public bundle.",
+  "edge_fields": [
+    "edge_id",
+    "profile_id",
+    "left_record_key",
+    "right_record_key",
+    "comparison_group_id",
+    "drawable",
+    "comparison_status",
+    "reasons",
+    "period_left",
+    "period_right"
+  ]
+}

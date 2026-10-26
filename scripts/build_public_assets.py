@@ -34,7 +34,13 @@ def main():
   for e in entries:
    if hashlib.sha256(z.read(e['path'])).hexdigest()!=e['sha256']:raise ValueError('Archive member SHA mismatch')
  files={'PUBLICATION_MANIFEST.json':'PUBLICATION_MANIFEST.json','observations.csv':'data/combined/observations.csv','observations.jsonl.gz':'data/combined/observations.jsonl.gz','library_statistics.sqlite':'data/combined/library_statistics.sqlite','phase1-statistical-cells.csv':'derived/phase1_local_sources_long.csv','phase1-statistical-cells.jsonl':'derived/phase1_local_sources_long.jsonl','phase1_supplements.sqlite':'derived/phase1_supplements.sqlite','phase2-annotations.csv.gz':'derived/phase2/annotations.csv.gz','phase2-annotations.jsonl.gz':'derived/phase2/annotations.jsonl.gz','phase2-definitions.sqlite':'derived/phase2/definitions.sqlite'}
- for name,src in files.items():shutil.copyfile(r/src,out/name)
+ phase3_assets={'phase3-candidate-decisions.csv.gz':'derived/phase3/candidate_decisions.csv.gz','phase3-candidate-decisions.jsonl.gz':'derived/phase3/candidate_decisions.jsonl.gz','phase3-selection.sqlite':'derived/phase3/selection.sqlite'}
+ if m.get('phase3') is not None or any(src in names for src in phase3_assets.values()):
+  if not all(src in names for src in phase3_assets.values()):raise ValueError('Incomplete phase3 public manifest for release assets')
+  files.update(phase3_assets)
+ for name,src in files.items():
+  if src not in names:raise ValueError('Release asset is not in the verified public manifest: '+src)
+  shutil.copyfile(r/src,out/name)
  expected={f.name:{'sha256':sha(f),'bytes':f.stat().st_size} for f in sorted(out.iterdir()) if f.is_file() and f.name!='SHA256SUMS.txt'}
  checksums=out/'SHA256SUMS.txt';checksums.write_text(''.join(x['sha256']+'  '+name+'\n' for name,x in sorted(expected.items())));expected[checksums.name]={'sha256':sha(checksums),'bytes':checksums.stat().st_size}
  if a.publish_draft:

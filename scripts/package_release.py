@@ -17,12 +17,12 @@ def main():
   selected[name]=p.read_bytes()
  for directory,extensions in [('scripts',{'.py','.json'}),('tests',{'.py'}),('docs',{'.md','.json'}),('research',{'.md','.json'}),('derived',{'.csv','.json','.jsonl','.sqlite','.gz'}),('data/combined',{'.csv','.json','.jsonl','.sqlite','.gz'})]:
   for p in (R/directory).rglob('*'):
-   if p.is_file() and p.suffix in extensions and (p.suffix!='.sqlite' or str(p.relative_to(R)) in {'derived/phase1_inventory.sqlite','derived/phase1_supplements.sqlite','derived/phase2/definitions.sqlite','data/combined/library_statistics.sqlite'}) and (directory!='derived' or p.suffix!='.gz' or str(p.relative_to(R)) in {'derived/phase2/annotations.csv.gz','derived/phase2/annotations.jsonl.gz'}) and '__pycache__' not in p.parts and not any('private' in part.lower() for part in p.relative_to(R).parts):selected[str(p.relative_to(R))]=p.read_bytes()
+   if p.is_file() and p.suffix in extensions and (p.suffix!='.sqlite' or str(p.relative_to(R)) in {'derived/phase1_inventory.sqlite','derived/phase1_supplements.sqlite','derived/phase2/definitions.sqlite','derived/phase3/selection.sqlite','data/combined/library_statistics.sqlite'}) and (directory!='derived' or p.suffix!='.gz' or str(p.relative_to(R)) in {'derived/phase2/annotations.csv.gz','derived/phase2/annotations.jsonl.gz','derived/phase3/record_routes.csv.gz','derived/phase3/record_routes.jsonl.gz','derived/phase3/candidate_decisions.csv.gz','derived/phase3/candidate_decisions.jsonl.gz'}) and '__pycache__' not in p.parts and not any('private' in part.lower() for part in p.relative_to(R).parts):selected[str(p.relative_to(R))]=p.read_bytes()
  for name in ['observations.jsonl','indicators.json','source_manifest.json','source_history.jsonl','historical_source_history.jsonl','reviewed_historical_cohorts.json','reviewed_phase1_batches.json','reviewed_policy.json','component_records.jsonl','component_records.jsonl.gz','component_quality.json','summary.json','coverage.json']:
   p=R/'data'/name
   if p.exists():selected[str(p.relative_to(R))]=p.read_bytes()
  selected['site/index.html']=(R/'site/index.html').read_bytes();selected['site/template.html']=(R/'site/template.html').read_bytes()
- for name in ('site/phase1.html','site/phase1-template.html','site/phase2.html','site/phase2-template.html'):
+ for name in ('site/phase1.html','site/phase1-template.html','site/phase2.html','site/phase2-template.html','site/phase3.html','site/phase3-template.html','scripts/test_reader_browser.cjs'):
   if (R/name).exists():selected[name]=(R/name).read_bytes()
  # Include exact statistical JSON snapshots; website HTML/JS and full PDFs are intentionally omitted.
  directories=['raw/snapshots','raw/official-local','raw/ncl-historical','raw/ncl-additional','raw/ncl-earlier','raw/segis-history','raw/phase1-inventory','raw/ncl-2005-programmes','raw/phase1_local_sources','raw/phase2-definitions']
@@ -40,14 +40,19 @@ def main():
  canonical_sha=record_io.logical_sha(R)
  from phase2_update import content_digest as phase2_content_digest
  phase2_sha=phase2_content_digest(R)
+ from phase3_update import content_digest as phase3_content_digest
+ phase3_sha=phase3_content_digest(R)
  content={'canonical':canonical_sha,'additional_layers':layers}
  if phase2_sha is not None:content['phase2']=phase2_sha
+ if phase3_sha is not None:content['phase3']=phase3_sha
  dataset_sha=sha(json.dumps(content,sort_keys=True,separators=(',',':')).encode())
  meta={'version':version,'created_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'canonical_sha256':canonical_sha,'dataset_content_sha256':dataset_sha,'additional_layer_sha256':layers,'files':manifest,'omitted':['NCL/DGBAS full PDFs','website raw HTML/JavaScript','working normalized cache','local automation settings'],'external_publication':False}
+ if phase3_sha is not None:meta['phase3_content_sha256']=phase3_sha
  checksums=json.dumps(meta,ensure_ascii=False,indent=2).encode();selected['RELEASE_MANIFEST.json']=checksums
  history_path=R/'data/release_history.jsonl';history=[json.loads(x) for x in history_path.read_text().splitlines()] if history_path.exists() else []
  for previous in history:
-  if (previous.get('dataset_content_sha256')==dataset_sha or not layers and previous['canonical_sha256']==meta['canonical_sha256']) and not args.force_new:
+  legacy_same=(not previous.get('dataset_content_sha256') and not layers and phase2_sha is None and phase3_sha is None and previous['canonical_sha256']==meta['canonical_sha256'])
+  if (previous.get('dataset_content_sha256')==dataset_sha or legacy_same) and not args.force_new:
    print(json.dumps({'status':'existing_data_version','release_path':previous['release_path'],'canonical_sha256':meta['canonical_sha256']},ensure_ascii=False));return
  name='tw-public-library-statistics-v'+version+'.zip' if not history else 'tw-public-library-statistics-'+datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'.zip'
  target=R/'dist'/name;target.parent.mkdir(parents=True,exist_ok=True)
@@ -59,6 +64,7 @@ def main():
   for item in manifest:
    if sha(z.read('tw-public-library-statistics/'+item['path']))!=item['sha256']:raise ValueError('Archive member hash mismatch')
  event={'created_at':meta['created_at'],'version':meta['version'],'canonical_sha256':meta['canonical_sha256'],'dataset_content_sha256':dataset_sha,'additional_layer_sha256':layers,'archive_sha256':sha(target.read_bytes()),'archive_bytes':target.stat().st_size,'release_path':str(target),'file_count':len(selected)}
+ if phase3_sha is not None:event['phase3_content_sha256']=phase3_sha
  with history_path.open('a') as f:f.write(json.dumps(event,ensure_ascii=False)+'\n')
  (R/'data/last_release.json').write_text(json.dumps(event,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps(event,ensure_ascii=False,indent=2))

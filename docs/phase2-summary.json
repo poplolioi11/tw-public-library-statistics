@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.7.0",
+  "dataset_version": "0.8.0",
   "scope": "All existing quantitative records audited in a separate evidence-qualified definition layer; raw data unchanged.",
   "layers": {
     "canonical": 37887,

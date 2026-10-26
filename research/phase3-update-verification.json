@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T15:57:45.467597+00:00",
+  "dataset_version": "0.8.0",
+  "validation_kind": "offline_format_source_preservation_and_update_safety",
+  "original_sources_newly_audited": false,
+  "original_statistical_fingerprints_unchanged": true,
+  "layer_raw_fingerprints": {
+    "canonical": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
+    "local_statistical_cells": "2f3b30127fbf12aa743de1e2844a02681e7a967a8cb1efe7cbdc4a7c83e4335f",
+    "programme_quantities": "503f2e60d56f34ddbcc7c392cb638e8e535676a7d90097331cf2470931cac662"
+  },
+  "prior_state_source_inputs_unchanged": true,
+  "prior_state_policy": "Refresh only hashes of already tracked outputs; never source inputs.",
+  "runs": [
+    {
+      "run": 1,
+      "stage_calls": [
+        "build_phase3.py",
+        "build_phase3_reader.py",
+        "build_phase3_documentation.py",
+        "validate_phase3.py"
+      ],
+      "result": {
+        "enabled": true,
+        "rebuilt": true,
+        "source_audits_rerun": false,
+        "source_statistics_changed": false,
+        "earlier_output_hash_states_refreshed": [
+          "data/phase1_hook_state.json",
+          "data/phase2_update_state.json",
+          "data/canonical_build_state.json"
+        ],
+        "content_sha256": "3eecdb65534afd99cadbbd9823b989ca3b3c5220755d86fd19c380f3ec76fadf",
+        "changed_output_paths": [
+          "AI_USAGE.md",
+          "COVERAGE.md",
+          "README.md",
+          "datapackage.json",
+          "derived/phase3/record_routes.csv.gz",
+          "derived/phase3/selection.sqlite",
+          "docs/PHASE2.md",
+          "docs/PHASE3.md",
+          "docs/phase3-data-dictionary.json",
+          "docs/phase3-default-chart.json",
+          "docs/phase3-partitions.json",
+          "docs/phase3-question-index.json",
+          "docs/phase3-reader-summary.json",
+          "docs/phase3-summary.json",
+          "docs/publishing-channels.json",
+          "llms.txt",
+          "site/index.html",
+          "site/phase3.html"
+        ]
+      },
+      "elapsed_seconds": 55.265,
+      "tracked_outputs_and_states": 273
+    },
+    {
+      "run": 2,
+      "stage_calls": [
+        "validate_phase3.py"
+      ],
+      "result": {
+        "enabled": true,
+        "rebuilt": false,
+        "source_audits_rerun": false,
+        "content_sha256": "3eecdb65534afd99cadbbd9823b989ca3b3c5220755d86fd19c380f3ec76fadf"
+      },
+      "elapsed_seconds": 34.149,
+      "tracked_outputs_and_states": 273,
+      "bytes_and_mtime_unchanged": true
+    },
+    {
+      "run": 3,
+      "stage_calls": [
+        "validate_phase3.py"
+      ],
+      "result": {
+        "enabled": true,
+        "rebuilt": false,
+        "source_audits_rerun": false,
+        "content_sha256": "3eecdb65534afd99cadbbd9823b989ca3b3c5220755d86fd19c380f3ec76fadf"
+      },
+      "elapsed_seconds": 32.395,
+      "tracked_outputs_and_states": 273,
+      "bytes_and_mtime_unchanged": true
+    }
+  ],
+  "validation": {
+    "status": "PASS",
+    "dataset_version": "0.8.0",
+    "records": 56496,
+    "decisions": 52689,
+    "profiles": 19,
+    "edges": 32993,
+    "drawable_edges": 20375,
+    "guards": {
+      "zero_preserved": 2781,
+      "unknown_year_preserved": 334,
+      "typed_conflict_preserved": 5098
+    },
+    "all_route_zeros_preserved": 2944,
+    "policy_bindings": {
+      "reviewed_versions": 236,
+      "registered_profiles": 19,
+      "priority_does_not_use_values": true,
+      "evidence_bindings_checked": 409,
+      "changed_evidence_bodies": 0
+    },
+    "formats": {
+      "record_routes": {
+        "records": 56496,
+        "fields": 24,
+        "sparse_missing_keys_checked_as_null": 0,
+        "csv_original_row_order_verified": true
+      },
+      "candidate_decisions": {
+        "records": 52689,
+        "fields": 37,
+        "sparse_missing_keys_checked_as_null": 0,
+        "csv_original_row_order_verified": true
+      },
+      "queries": {
+        "records": 19,
+        "fields": 24,
+        "sparse_missing_keys_checked_as_null": 0,
+        "csv_original_row_order_verified": true
+      },
+      "series_edges": {
+        "records": 32993,
+        "fields": 10,
+        "sparse_missing_keys_checked_as_null": 0,
+        "csv_original_row_order_verified": true
+      }
+    },
+    "source_audit_claim": "Format/preservation review only; no new independent phase2 source audit."
+  },
+  "code_sha256": {
+    "scripts/validate_phase3.py": "0093f426b41962628f2933a8690c89765373358babf2df24e417678c0e9c2171",
+    "scripts/test_phase3_validation.py": "4e052953e027f670ddacf5332766366a058c0eecb1969bb51ad89f3ce3549d65",
+    "scripts/phase3_update.py": "4db62e45277590825db5d1a0da5a633316e1c69555bfff45db19af9a598e02df",
+    "scripts/run_update.py": "d574181f199a3c2cd26ec9420d619ab6b2164b654d2b71fad7ae6695c83551fd",
+    "scripts/phase2_update.py": "59eb2a81d94e2d7cf6dc0aae6fa0725d318e817a38f640993c7532a7ea6e3529"
+  },
+  "code_dependencies": [
+    "scripts/build_phase2.py",
+    "scripts/build_phase3.py",
+    "scripts/build_phase3_charts.py",
+    "scripts/build_phase3_documentation.py",
+    "scripts/build_phase3_reader.py",
+    "scripts/phase2_engine.py",
+    "scripts/phase2_update.py",
+    "scripts/phase3_engine.py",
+    "scripts/phase3_update.py",
+    "scripts/record_io.py",
+    "scripts/select_sources.py",
+    "scripts/series_charts.py",
+    "scripts/validate_phase2.py",
+    "scripts/validate_phase3.py"
+  ],
+  "synthetic_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=scripts python -m unittest scripts/test_phase3_validation.py scripts/test_phase2_validation.py scripts/test_phase1_source_manager.py scripts/test_update_groups.py",
+    "tests": 77,
+    "status": "PASS",
+    "coverage": [
+      "source/SHA/original value/facets/period preservation",
+      "typed/display zero conflicts are not numeric points or source missing",
+      "newest qualified source retains missing values; definition conflicts and explicit version pins",
+      "same evidence ID with changed body requires review",
+      "calendar gaps and cross-original-group edges are blocked",
+      "sparse null/empty/raw zero stay distinct",
+      "chart helper signatures without executing imports",
+      "isolated update failure restores output bytes/mtime and earlier states; source inputs are not rolled back"
+    ]
+  },
+  "limits": [
+    "No new independent reading of original PDFs/workbooks was performed by this format validator.",
+    "Policy and original statistical source truth are not certified by transport consistency.",
+    "Reader charts and browser behavior are separately reviewed by the parent agent; no UI was operated.",
+    "No public checkout, publication, network source acquisition, or source observation value was changed by this acceptance run."
+  ]
+}

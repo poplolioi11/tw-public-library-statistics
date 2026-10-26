@@ -40,6 +40,7 @@ def statistical_fingerprint(path):
 def input_signature(root):
  layers={layer:statistical_fingerprint(source_path(root,name)) for layer,name in phase2_engine.LAYERS.items()}
  files=[*phase2_engine.EVIDENCE_FILES,'raw/phase2-definitions/current-reference-sources.json','docs/phase2-contract.json','VERSION','site/phase2-template.html',*('scripts/'+n for n in CODE)]
+ if (root/'scripts/series_charts.py').is_file():files.append('scripts/series_charts.py')
  hashes={}
  for name in files:
   p=root/name

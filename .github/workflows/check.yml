@@ -41,3 +41,9 @@ jobs:
         run: python scripts/validate_phase2.py
       - name: Replay fixed source cases and CLI operation guards
         run: python scripts/check_phase2_cases.py
+      - name: Validate full source-selection formats and original statuses
+        run: python scripts/validate_phase3.py
+      - name: Replay fixed source-selection cases and refusal guards
+        run: python scripts/check_phase3_cases.py --final
+      - name: Check every SVG point, source, edge and compiled interval
+        run: python scripts/check_chart_readers.py

@@ -1,7 +1,7 @@
 {
   "name": "tw-public-library-statistics",
   "title": "臺灣公共圖書館跨年度統計",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "已驗證可得來源的全量整理；不是宣稱臺灣所有年代、所有縣市與每一圖書館都已完整。",
   "licenses": [
     {
@@ -193,6 +193,77 @@
       "format": "jsonl",
       "compression": null,
       "layer": "definition_annotations; join by layer+observation_id, never union as new quantities"
+    },
+    {
+      "name": "phase3-record_routes-csv",
+      "path": "derived/phase3/record_routes.csv.gz",
+      "format": "csv",
+      "compression": "gzip",
+      "layer": "source_selection_annotations; not additional operational statistics",
+      "hash": "sha256:28e46f992a6eca91cb37b6fd48d1b67b636eb8119e9612053a33ee241d72e910"
+    },
+    {
+      "name": "phase3-record_routes-jsonl",
+      "path": "derived/phase3/record_routes.jsonl.gz",
+      "format": "jsonl",
+      "compression": "gzip",
+      "layer": "source_selection_annotations; not additional operational statistics",
+      "hash": "sha256:1f4561adb6688b776331f1e4938b3dd353df46474b0124042750472be0f68be5"
+    },
+    {
+      "name": "phase3-candidate_decisions-csv",
+      "path": "derived/phase3/candidate_decisions.csv.gz",
+      "format": "csv",
+      "compression": "gzip",
+      "layer": "source_selection_annotations; not additional operational statistics",
+      "hash": "sha256:6eae2a78509ff847acdf3ad8414981a8c2d740fad1810cfbf8acd475315c333f"
+    },
+    {
+      "name": "phase3-candidate_decisions-jsonl",
+      "path": "derived/phase3/candidate_decisions.jsonl.gz",
+      "format": "jsonl",
+      "compression": "gzip",
+      "layer": "source_selection_annotations; not additional operational statistics",
+      "hash": "sha256:c1de5b8579c54233b50750cb0ca845843567b7aaa7ccc00b288ee87c86282126"
+    },
+    {
+      "name": "phase3-queries-csv",
+      "path": "derived/phase3/queries.csv",
+      "format": "csv",
+      "compression": null,
+      "layer": "source_selection_annotations; not additional operational statistics",
+      "hash": "sha256:a8e8db546336c6c4a6ae01f0fda99b266d59394836fb6ce5359d8662bd7f83aa"
+    },
+    {
+      "name": "phase3-queries-jsonl",
+      "path": "derived/phase3/queries.jsonl",
+      "format": "jsonl",
+      "compression": null,
+      "layer": "source_selection_annotations; not additional operational statistics",
+      "hash": "sha256:0180473b0c7c43f70e0ed246df91155b5e22892325455deabb183b7aa2bb46d2"
+    },
+    {
+      "name": "phase3-series_edges-csv",
+      "path": "derived/phase3/series_edges.csv",
+      "format": "csv",
+      "compression": null,
+      "layer": "source_selection_annotations; not additional operational statistics",
+      "hash": "sha256:e78dab3fb5e26aabb1a74172501d4266719cb6a1e6a4e31ac05005ef6c3c7c1a"
+    },
+    {
+      "name": "phase3-series_edges-jsonl",
+      "path": "derived/phase3/series_edges.jsonl",
+      "format": "jsonl",
+      "compression": null,
+      "layer": "source_selection_annotations; not additional operational statistics",
+      "hash": "sha256:05c9bd60381b34098c938abf43a5a0d7d3bb175b2636af18b65dfa34d469d17b"
+    },
+    {
+      "name": "phase3-selection-sqlite",
+      "path": "derived/phase3/selection.sqlite",
+      "format": "sqlite",
+      "layer": "source_selection_annotations",
+      "hash": "sha256:788d92da3ea7cc5cd1bc277611476bb063fbbca7b6db499f9701abdf893f8d62"
     }
   ],
   "homepage": "https://github.com/poplolioi11/tw-public-library-statistics",

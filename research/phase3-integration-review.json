@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "dataset_version": "0.8.0",
+  "runs": [
+    {
+      "run": 1,
+      "elapsed_seconds": 62.73,
+      "canonical_rebuilt": false,
+      "phase1_rebuilt": false,
+      "phase2_rebuilt": false,
+      "phase3_rebuilt": false,
+      "data_changed": true,
+      "canonical_data_changed": false,
+      "content_sha256": "1c7c5a81be3800dada9706c53dd860263c170ef2c647c7ed5a2afdceeeb83820"
+    },
+    {
+      "run": 2,
+      "elapsed_seconds": 62.817,
+      "canonical_rebuilt": false,
+      "phase1_rebuilt": false,
+      "phase2_rebuilt": false,
+      "phase3_rebuilt": false,
+      "data_changed": false,
+      "canonical_data_changed": false,
+      "content_sha256": "1c7c5a81be3800dada9706c53dd860263c170ef2c647c7ed5a2afdceeeb83820"
+    }
+  ],
+  "canonical_statistics_unchanged": true,
+  "scope": "Integrated offline pipeline; source SHA checks and existing verified batches, no network recrawl."
+}

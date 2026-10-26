@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "data_version": "0.7.0",
-  "data_build": "2026-10-26T12:55:53.902680+00:00",
+  "data_version": "0.8.0",
+  "data_build": "2026-10-26T15:53:22.493838+00:00",
   "registry_path": "data/reviewed_historical_cohorts.json",
   "registered_cohorts": [
     {

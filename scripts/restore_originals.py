@@ -67,7 +67,7 @@ if __name__=='__main__' and projection_registry.exists() and '--phase1-only' not
  for item in json.loads(projection_registry.read_text())['omitted_originals']:
   path=R/item['source_snapshot_path']
   if path.exists() and hashlib.sha256(path.read_bytes()).hexdigest()==item['source_sha256']:continue
-  request=urllib.request.Request(item['source_url'],headers={'User-Agent':'TaiwanPublicLibraryStatistics/0.7.0 (restore specified source)'})
+  request=urllib.request.Request(item['source_url'],headers={'User-Agent':'TaiwanPublicLibraryStatistics/0.8.0 (restore specified source)'})
   with urllib.request.urlopen(request,timeout=50) as response:body=response.read()
   if hashlib.sha256(body).hexdigest()!=item['source_sha256']:raise ValueError('Official original changed; review before accepting new source version')
   path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(body)

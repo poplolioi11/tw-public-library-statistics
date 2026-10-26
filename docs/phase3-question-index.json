@@ -1,0 +1,402 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.8.0",
+  "policy_version": "1.0.0",
+  "profiles": [
+    {
+      "id": "county-library-count-dgbas",
+      "title": "各縣市館數：主計官方改制後範圍",
+      "description": "含國家圖書館、國資圖及國臺圖；保留1998–2005來源缺值，不把原縣市重編一次。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_ids": [
+          "dgbas-county-library-Z091101a029"
+        ],
+        "geo_in": [
+          "county_official_reorganized"
+        ]
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "national-library-count-dgbas",
+      "title": "全國館數：主計原總計",
+      "description": "直接使用原總計，不將總計與縣市重複相加。含國家圖書館。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_ids": [
+          "dgbas-county-library-Z091101a029"
+        ],
+        "geo_in": [
+          "national_total"
+        ],
+        "entity_in": [
+          "總計"
+        ]
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "county-2023-nlpi-default",
+      "title": "2023縣市公立館原量：國資圖預設口徑",
+      "description": "22個原預設縣市列；不混入全國或三個不含國立館替代列。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_ids": [
+          "ogdl-api-2023"
+        ],
+        "geo_in": [
+          "county_default_includes_national_where_applicable"
+        ]
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "national-2023-nlpi",
+      "title": "2023全國公立館原量：國資圖",
+      "description": "直接用原全國列；國立館範圍逐筆保留，不補成另一機關的母體。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_ids": [
+          "ogdl-api-2023"
+        ],
+        "geo_in": [
+          "national_total"
+        ]
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "national-nlpi-chart-source-facts",
+      "title": "國資圖歷年全國公開圖表原報值",
+      "description": "原圖表系列逐年原報；可查單年，不因同標籤便認證歷年方法。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_id_regex": "public-chart-[0-9]{4}-.+"
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "national-ncl-count-panel",
+      "title": "國圖原刊回溯面板：館數",
+      "description": "預設最新已核原刊面板；指定期間須由同一原刊完整涵蓋，不跨版補接。原刊限定對照不等於歷史方法不變。",
+      "selection_mode": "latest_original_panel",
+      "default_purpose": "trend",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_id_regex": "ncl-yearbook-[0-9]+-statistics",
+        "entity_in": [
+          "全國"
+        ],
+        "geo_in": [
+          "national_total"
+        ],
+        "indicators": [
+          "圖書館數量",
+          "館數"
+        ]
+      },
+      "priority_rule": "complete original requested period coverage; qualified definition before edition for trends; never rank by value availability",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "national-ncl-seats-panel",
+      "title": "國圖原刊回溯面板：閱覽席位",
+      "description": "預設最新已核原刊面板；指定期間須由同一原刊完整涵蓋，不跨版補接。原刊限定對照不等於歷史方法不變。",
+      "selection_mode": "latest_original_panel",
+      "default_purpose": "trend",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_id_regex": "ncl-yearbook-[0-9]+-statistics",
+        "entity_in": [
+          "全國"
+        ],
+        "geo_in": [
+          "national_total"
+        ],
+        "indicators": [
+          "閱覽席位",
+          "閱覽席位（席）"
+        ]
+      },
+      "priority_rule": "complete original requested period coverage; qualified definition before edition for trends; never rank by value availability",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "national-ncl-book-loans-panel",
+      "title": "國圖原刊回溯面板：圖書借閱冊數",
+      "description": "預設最新已核原刊面板；指定期間須由同一原刊完整涵蓋，不跨版補接。原刊限定對照不等於歷史方法不變。",
+      "selection_mode": "latest_original_panel",
+      "default_purpose": "trend",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_id_regex": "ncl-yearbook-[0-9]+-statistics",
+        "entity_in": [
+          "全國"
+        ],
+        "geo_in": [
+          "national_total"
+        ],
+        "indicators": [
+          "圖書借閱冊數",
+          "借閱冊數",
+          "借閱冊數（冊）"
+        ]
+      },
+      "priority_rule": "complete original requested period coverage; qualified definition before edition for trends; never rank by value availability",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "national-ncl-borrower-visits-panel",
+      "title": "國圖原刊回溯面板：圖書借閱人次",
+      "description": "預設最新已核原刊面板；指定期間須由同一原刊完整涵蓋，不跨版補接。原刊限定對照不等於歷史方法不變。",
+      "selection_mode": "latest_original_panel",
+      "default_purpose": "trend",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_id_regex": "ncl-yearbook-[0-9]+-statistics",
+        "entity_in": [
+          "全國"
+        ],
+        "geo_in": [
+          "national_total"
+        ],
+        "indicators": [
+          "圖書借閱人次",
+          "借閱人次",
+          "借閱人次（人次）"
+        ]
+      },
+      "priority_rule": "complete original requested period coverage; qualified definition before edition for trends; never rank by value availability",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "national-ncl-ebook-loans-panel",
+      "title": "國圖原刊回溯面板：電子書借閱冊數",
+      "description": "預設最新已核原刊面板；指定期間須由同一原刊完整涵蓋，不跨版補接。原刊限定對照不等於歷史方法不變。",
+      "selection_mode": "latest_original_panel",
+      "default_purpose": "trend",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_id_regex": "ncl-yearbook-[0-9]+-statistics",
+        "entity_in": [
+          "全國"
+        ],
+        "geo_in": [
+          "national_total"
+        ],
+        "indicators": [
+          "電子書借閱冊數"
+        ]
+      },
+      "priority_rule": "complete original requested period coverage; qualified definition before edition for trends; never rank by value availability",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "national-ncl-ebook-visits-panel",
+      "title": "國圖原刊回溯面板：電子書借閱人次",
+      "description": "預設最新已核原刊面板；指定期間須由同一原刊完整涵蓋，不跨版補接。原刊限定對照不等於歷史方法不變。",
+      "selection_mode": "latest_original_panel",
+      "default_purpose": "trend",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_id_regex": "ncl-yearbook-[0-9]+-statistics",
+        "entity_in": [
+          "全國"
+        ],
+        "geo_in": [
+          "national_total"
+        ],
+        "indicators": [
+          "電子書借閱人次"
+        ]
+      },
+      "priority_rule": "complete original requested period coverage; qualified definition before edition for trends; never rank by value availability",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "county-ncl-yearbook-source-facts",
+      "title": "國圖縣市年度原量：原行政區",
+      "description": "依原年鑑、原地名與原母體保留；比率不是原量，標籤有疑義的縣市不預設使用。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_family": "國家圖書館年鑑統計事實",
+        "geo_prefix": "county"
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true,
+      "required_geo": [
+        "county"
+      ],
+      "exclude_measures": [
+        "ratio_or_per_capita"
+      ],
+      "default_coverage_years": [
+        2005,
+        2024
+      ],
+      "known_scope_gaps": [
+        {
+          "data_year": 2012,
+          "status": "complete_22_county_core_original_quantity_table_not_obtained",
+          "partial_source_facts_not_removed": "Some explicitly reported component counts in prose remain usable as those components; they do not fill the missing full core county table.",
+          "no_ratio_back_calculation": true
+        }
+      ]
+    },
+    {
+      "id": "hsinchu-monthly-circulation",
+      "title": "新竹各館藏地逐月借還與預約原報",
+      "description": "借閱、續借、借閱及續借等12種原欄分開；不把人次當去重人數，不把月值當全年。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "monthly",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_ids": [
+          "local-72fc0692aa286cb0",
+          "local-3a42e4707efe4d33",
+          "local-cb74c0b328be06d4"
+        ]
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "taichung-procurement-volumes",
+      "title": "臺中原表年度採購冊數",
+      "description": "只用已核採購冊數原欄；不將未知單位的購書經費當冊數或決算。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "trend",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_ids": [
+          "local-309c115c007b3086"
+        ],
+        "indicators": [
+          "採購冊數"
+        ]
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true,
+      "expected_units": [
+        "冊"
+      ]
+    },
+    {
+      "id": "hualien-monthly-by-room",
+      "title": "花蓮逐月按館藏地原表",
+      "description": "原館藏地、原欄頭與總計/分項分開；所有格可看，不自行合計。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "monthly",
+      "candidate_filter": {
+        "layer": "local_statistical_cells",
+        "source_ids": [
+          "south-hualien-library-lending-409-room"
+        ]
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "hualien-monthly-by-reader",
+      "title": "花蓮逐月按讀者分類原表",
+      "description": "讀者類別、性別、總計與原grid分開；顯示/typed0矛盾保持缺值。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "monthly",
+      "candidate_filter": {
+        "layer": "local_statistical_cells",
+        "source_ids": [
+          "south-hualien-library-lending-409-reader"
+        ]
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "lienchiang-explicit-annual-sheet",
+      "title": "連江有明示年度的原統計表",
+      "description": "114原表明示年度；113僅目錄標年不能代入2024，仍列為被拒候選。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "local_statistical_cells",
+        "source_ids": [
+          "south-lienchiang-culture-library-overview-114",
+          "south-lienchiang-opendata-173786"
+        ]
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true
+    },
+    {
+      "id": "programme-source-quantities",
+      "title": "2005來源所列特定計畫數量",
+      "description": "只及原計畫/活動與原期間，不能當年度營運量、全年讀者或去重人數。",
+      "selection_mode": "fixed_original_rows",
+      "default_purpose": "source-facts",
+      "period_requirement": "programme",
+      "candidate_filter": {
+        "layer": "programme_quantities"
+      },
+      "priority_rule": "fixed original source scope; no cross-family fallback or sums",
+      "curator_policy_not_official_correction": true,
+      "supported_purposes": [
+        "source-facts"
+      ]
+    },
+    {
+      "id": "historical-national-dgbas-source-facts",
+      "title": "主計歷史全國原報：單一版次",
+      "description": "原報值與原註分開保留；趨勢須指定原指標，較新版定義矛盾不能壓過較舊合格面板。",
+      "selection_mode": "latest_original_panel",
+      "default_purpose": "source-facts",
+      "period_requirement": "annual",
+      "candidate_filter": {
+        "layer": "canonical",
+        "source_id_regex": "dgbas-social-indicators-[0-9]{4}"
+      },
+      "priority_rule": "complete original requested period coverage; qualified definition before edition for trends; never rank by value availability",
+      "curator_policy_not_official_correction": true,
+      "priority_source_ids": [
+        "dgbas-social-indicators-2011",
+        "dgbas-social-indicators-2008",
+        "dgbas-social-indicators-2005"
+      ],
+      "require_metric_for_trend": true
+    }
+  ]
+}

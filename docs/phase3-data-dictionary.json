@@ -1,0 +1,604 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.8.0",
+  "tables": {
+    "record_routes": {
+      "candidate_profile_ids": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "comparison_group_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "comparison_month": {
+        "json_types": [
+          "NoneType",
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "comparison_status": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "comparison_unit": {
+        "json_types": [
+          "NoneType",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "comparison_year": {
+        "json_types": [
+          "NoneType",
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "evidence_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "layer": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "observation_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "original_value": {
+        "json_types": [
+          "NoneType",
+          "int",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "quality_flags_original": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "raw_value": {
+        "json_types": [
+          "int",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "reason_codes": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "record_key": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "route_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "route_status": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_locator": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_sha256": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_url": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_version_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_version_reviewed": {
+        "json_types": [
+          "bool"
+        ],
+        "present_in_all_records": true
+      },
+      "value_status": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "zero_interpretation": {
+        "json_types": [
+          "NoneType",
+          "str"
+        ],
+        "present_in_all_records": true
+      }
+    },
+    "candidate_decisions": {
+      "decision_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "profile_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "policy_version": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "record_key": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "layer": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "observation_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_sha256": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_url": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_locator": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_version_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "evidence_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "selection_status": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "selection_reasons": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "source_bundle_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_edition_raw": {
+        "json_types": [
+          "NoneType",
+          "int",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "raw_indicator": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "entity": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "facility_or_reader_category": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "original_value": {
+        "json_types": [
+          "NoneType",
+          "int",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "raw_value": {
+        "json_types": [
+          "int",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "unit_raw_preserved": {
+        "json_types": [
+          "NoneType",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "value_status": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "point_value": {
+        "json_types": [
+          "NoneType",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "point_unit": {
+        "json_types": [
+          "NoneType",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "period_year": {
+        "json_types": [
+          "NoneType",
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "period_month": {
+        "json_types": [
+          "NoneType",
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "period_kind": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "comparison_status": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "comparison_group_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "definition_signature": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "quality_flags_original": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "facets": {
+        "json_types": [
+          "dict"
+        ],
+        "present_in_all_records": true
+      },
+      "selected": {
+        "json_types": [
+          "bool"
+        ],
+        "present_in_all_records": true
+      },
+      "source_version_reviewed": {
+        "json_types": [
+          "bool"
+        ],
+        "present_in_all_records": true
+      },
+      "join_segment_id": {
+        "json_types": [
+          "NoneType",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "zero_interpretation": {
+        "json_types": [
+          "NoneType",
+          "str"
+        ],
+        "present_in_all_records": true
+      }
+    },
+    "queries": {
+      "profile_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "title": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "policy_version": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "default_purpose": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "requested_purpose": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "selection_status": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "selection_explanation": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "requested_filters": {
+        "json_types": [
+          "dict"
+        ],
+        "present_in_all_records": true
+      },
+      "selected_source_bundle_ids": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "candidate_source_bundle_ids": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "selected_record_keys": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "selected_records": {
+        "json_types": [
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "candidate_records": {
+        "json_types": [
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "alternative_records": {
+        "json_types": [
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "blocked_records": {
+        "json_types": [
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "period_coverage": {
+        "json_types": [
+          "dict"
+        ],
+        "present_in_all_records": true
+      },
+      "sources": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "ranking_never_uses_numeric_values": {
+        "json_types": [
+          "bool"
+        ],
+        "present_in_all_records": true
+      },
+      "source_edition_ranks": {
+        "json_types": [
+          "dict"
+        ],
+        "present_in_all_records": true
+      },
+      "no_cross_source_splice": {
+        "json_types": [
+          "bool"
+        ],
+        "present_in_all_records": true
+      },
+      "profile_scope_records": {
+        "json_types": [
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "excluded_by_explicit_entity_metric_source_facets": {
+        "json_types": [
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "candidate_scope_statement": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "trend_summary": {
+        "json_types": [
+          "dict"
+        ],
+        "present_in_all_records": true
+      }
+    },
+    "series_edges": {
+      "edge_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "profile_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "left_record_key": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "right_record_key": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "comparison_group_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "drawable": {
+        "json_types": [
+          "bool"
+        ],
+        "present_in_all_records": true
+      },
+      "comparison_status": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "reasons": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "period_left": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "period_right": {
+        "json_types": [
+          "list"
+        ],
+        "present_in_all_records": true
+      }
+    }
+  },
+  "sqlite_scalar_policy": "Wide views expose TEXT; JSON structures are encoded JSON and NULL stays SQL NULL. Never infer numeric zero from failed parsing."
+}

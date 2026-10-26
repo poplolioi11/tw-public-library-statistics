@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "dataset_version": "0.8.0",
+  "phase2_charts": 639,
+  "phase3_charts": 691,
+  "full_selector_interval_replays": 847,
+  "charts": 1330,
+  "points": 44180,
+  "lines": 41308,
+  "reported_zero_points": 3016,
+  "omitted_positions": 3684,
+  "parsed_svg": 1330,
+  "checks": [
+    "all point original values and source URL/SHA/locator/version",
+    "all Decimal coordinates",
+    "all lines approved and adjacent with usable endpoints",
+    "all SVG parses",
+    "every compiled interval equals full-input Python selector"
+  ],
+  "scope": "Rendered data and SVG structure, not a browser layout or all historical definition certification.",
+  "inputs": {
+    "site/phase2.html": "c0cd46cd663547144571fb21bebdab26b8afce91d8e7aed4e33c42e48b17cd87",
+    "site/phase3.html": "3806bdfa80d422e8cb7c2e4ad04dd91637baa1077ac1e53fa9be3b45ab4d8003",
+    "scripts/phase3_engine.py": "93c40de4cd49e3b70b76b0261393b3a3b487930e6f3562fc9dc86e70f52bd381",
+    "docs/phase3-profiles.json": "555be5c31815a1e6ac2f787d6c55c441e026b6b54022c4c68d6fae04f93031e7"
+  }
+}

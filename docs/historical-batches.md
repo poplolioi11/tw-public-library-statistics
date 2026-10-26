@@ -1,6 +1,6 @@
 # 已覆核的歷史來源批次
 
-資料版本v0.7.0。由[已覆核批次清單](../data/reviewed_historical_cohorts.json)、實際CSV及canonical產生；CSV格位與正式觀測數分列，不把不同來源版本相加成業務量。
+資料版本v0.8.0。由[已覆核批次清單](../data/reviewed_historical_cohorts.json)、實際CSV及canonical產生；CSV格位與正式觀測數分列，不把不同來源版本相加成業務量。
 
 |批次|資料年|年鑑卷號|來源CSV格位／有值／留白／其他缺值|正式觀測|標籤待釐清|單位衝突|
 |---|---|---|---|---:|---:|---:|

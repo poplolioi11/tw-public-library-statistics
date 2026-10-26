@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.7.0",
+  "dataset_version": "0.8.0",
   "row_statuses": {
     "published_panel_limited": "有來源證據的同原刊／原件面板有限對照；不保證歷年收集方法或涵蓋率不變。",
     "source_series_only": "只確認同來源標籤系列，歷年定義或相容性未證實。",

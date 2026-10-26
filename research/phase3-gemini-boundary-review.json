@@ -1,0 +1,50 @@
+{
+  "provider": "gemini",
+  "actual_model": "gemini-3.8-flash-high",
+  "job_id": "20261026T141544Z-24e832b542cc",
+  "state": "ready_for_review",
+  "mode": "supplied_text_only",
+  "tool_actions": [],
+  "tool_guard_verified": true,
+  "contract_revision_reviewed": "Initial18-profile contract before later clarification; not independent validation of the final engine.",
+  "adjudication": [
+    {
+      "items": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "decision": "accept_boundaries",
+      "basis": "Registered populations, original source/edition alternatives, period coverage independent from value availability, no value-based priority, separate source facts and P2-authorized edges; exact raw statuses retained."
+    },
+    {
+      "items": [
+        1
+      ],
+      "decision": "narrow_to_reviewed_original_geography",
+      "basis": "Keep P2 geography_key/signature and original panel constraints. Do not impose a new unreviewed global2010 boundary or block officially reorganized DGBAS history."
+    },
+    {
+      "items": [
+        6
+      ],
+      "decision": "reject_measured_zero_claim_and_status_rewrite",
+      "basis": "Reported0 is not independently certified measured0; preserve original value_status rather than replacing source_blank/marker with invented labels."
+    },
+    {
+      "items": [
+        11
+      ],
+      "decision": "reject_unfounded_chart_approximation_label",
+      "basis": "Existing NLPI charts were acquired as official underlying numeric payloads and retain original values/units; no evidence all are image estimates. Phase3 reuses exact P2 comparison_value and does not infer new precision."
+    }
+  ],
+  "numbers_from_model_used_as_executed_computation": false,
+  "full_unadjudicated_answer_published": false
+}

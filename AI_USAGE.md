@@ -168,7 +168,7 @@ ORDER BY data_year, geography;
 
 程式比較兩筆使用`scripts/compare_definitions.py --left layer:ID --right layer:ID`。結果只回答同一原對象能否接續成指定原刊時間序列；不是自動選來源、合計、填補或因果分析。`--operation sum/impute/infer-unique-people/recode-geography/coerce-zero/cross-source-splice`會明確拒絕沒有已驗證規則的操作。SQL用唯讀`annotations`與`comparison_groups` view，內表採字典編碼；SQL scalar值為文字、結構欄為JSON，分析者須依欄定義解析，不能讓失敗轉型變0。
 
-完整三格式傳輸可用gzip；小檔在`docs/phase2-partitions.json`，未解年度分檔不塞回候選年份。官方原件全文仍未隨公開包散布，來源覆核與公版格式驗收是不同範圍。自動選擇預設分析口徑屬第三階段。
+完整三格式傳輸可用gzip；小檔在`docs/phase2-partitions.json`，未解年度分檔不塞回候選年份。官方原件全文仍未隨公開包散布，來源覆核與公版格式驗收是不同範圍。第三階段已提供有界預設選源，見docs/PHASE3.md。
 <!-- END phase2 -->
 
 <!-- BEGIN phase2-ai-disclosure -->
@@ -180,6 +180,24 @@ Gemini（gemini-3.8-flash-high）只對本次提供的官方定義摘錄做文�
 
 固定案例由來源查核助手先建立；該助手後續遇到模型容量限制，主代理接手CLI／公開投影介面並執行最終案例驗收。案例預期未為通過測試而改寫；一個主計2005版案例依原頁英文明註Since2000另列有來源的裁決。最終報告明列實際執行者與檢查範圍，不冒稱完成了另一輪獨立人類校對。原件回查與公開副本格式檢查分開報告。
 <!-- END phase2-ai-disclosure -->
+
+<!-- BEGIN phase3 -->
+## 第三階段機器讀取契約
+
+先讀docs/phase3-question-index.json，選profile，再依docs/phase3-partitions.json取小檔。全量CSV／JSONL／SQLite在derived/phase3/。record_routes每個P2 record_key恰一次；candidate_decisions主鍵為profile_id+record_key，具體採納、其他版本與拒用理由在此。queries是預設快照，series_edges列候選接續與drawable許可；四表不可union成原始營運量。
+
+逐筆保留官方URL、原件SHA、locator、source_version_id、evidence。政策同時綁來源body及P2證據內容SHA；新版本或同ID定義改變須覆核。原PDF／工作簿／HTML、無關聯絡欄與私人路由仍不公開。公開格式驗收與原件覆核不同。
+
+selected=true只代表選定來源決策。數值回答須同讀selection_status、point_value、point_unit、value_status、raw_value與facets。一般原缺漏為selected_source_missing；顯示/typed0衝突為selected_source_unusable，point_value均null但原狀態不改。原報0的zero_interpretation不能升為測量真零認證。
+
+source_series_only可作單期原來源事實，不獲得跨年連線許可。只用drawable=true的edge；query.trend_summary明示是否單一連續原序列。年份位置齊、同值或selected=true，都不證明全段可連。year_counts分開原位置、有數值、缺漏與不可用；原位置不是數值完整率。
+
+單一面板依用途先核定義／單位／期間，再選完整覆蓋所請區間的原刊與版次；原缺值不降排名，不偷換另一版有值。相同優先序仍歧義；pin source_id禁止fallback；無一面板覆期不跨版拼接。選較舊合格原刊不等於官方訂正較新版。
+
+原行政區／官方重編、含不含國家圖書館、預算／決算、借閱／續借、存量／流量、總計／分項各自保留。不加總、不補值、不推估去重人數、不重編地理。未知欄位拒絕，缺path不等於null。
+
+圖表座標及區間選源由Python產生，前端只篩既有點與核准線段。圖表區間可改選原刊；下方全量表仍是預設決策快照，表格顯示篩選不重算選版。新用途／source-id／facet條件用select_sources.py重播，保留requested_filters。自由文字須先對應已登錄問題與原欄；無預設範圍可用--lookup讀原Annotation，不自動變成新原量或認證趨勢。
+<!-- END phase3 -->
 
 
 ## 公開副本

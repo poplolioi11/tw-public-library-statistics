@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "scope_id": "public-library-source-inventory-2005-2025-v1",
   "scope_version": "1.0.0",
-  "dataset_version": "0.7.0",
+  "dataset_version": "0.8.0",
   "canonical_records": 37887,
   "canonical_statistical_content_sha256": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
   "authority_slots_expected": 88,

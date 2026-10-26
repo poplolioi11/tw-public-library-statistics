@@ -6,7 +6,7 @@
 
 整理與維護：曲宸宇（Chu, Chen-Yu；GitHub：[poplolioi11](https://github.com/poplolioi11)；[ORCID](https://orcid.org/0009-0003-9738-6914)）。中英文姓名與帳號指同一位作者；官方統計作者及權利仍依各筆來源。
 
-版本 **0.7.0**；資料建置日 **2026-10-26**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.7.0下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.7.0)。
+版本 **0.8.0**；資料建置日 **2026-10-26**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.8.0下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.8.0)。
 
 本專案先查重再整理。國立公共資訊圖書館已有跨年圖表、國家圖書館已有統計名詞字典，SEGIS 及地方開放資料亦有相關歷年成果。本專案的新增值是**跨來源的統一讀取方式、逐筆來源定位、期間與口徑標記，以及可追溯的內容版本**；不宣稱是第一份跨年統計或第一個名詞字典。查閱[查重報告](research/prior-art.md)及[官方範圍與定義](research/official-scope.md)。
 
@@ -38,13 +38,13 @@
 
 ## 下載與讀取
 
-[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.7.0) · [按年度讀取 JSONL](data/by_year/index.json)
+[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.8.0) · [按年度讀取 JSONL](data/by_year/index.json)
 
 公開副本移除22份原始檔的無關聯絡欄，以另有雜湊的統計投影提供；原始來源網址、原件SHA及每筆統計值均保留。詳[公開副本與來源原件的區別](docs/PUBLICATION.md)。
 
 ## 從哪裡開始
 
-- [互動閱讀頁](site/index.html)：按來源、指標及年度查看紀錄與來源。
+- [折線圖與依問題選源](site/phase3.html#line-charts)；[全部原刊數列](site/phase2.html#line-charts)；[逐筆原值閱覽](site/index.html)。
 - [JSONL](data/combined/observations.jsonl.gz)：每行一筆完整觀測，適合 AI 與程式處理。
 - [CSV](data/combined/observations.csv)：同一批正式觀測，適合表格工具。
 - [SQLite](data/combined/library_statistics.sqlite)：同一批正式觀測；資料表為 `observations`。
@@ -96,13 +96,13 @@
 
 [來源與缺口互動頁](site/phase1.html) · [範圍與驗收](docs/PHASE1.md) · [新增來源資料](docs/phase1-supplements.md) · [小型工作表分檔](docs/phase1-source-cell-partitions.json) · [機器字典](docs/phase1-data-dictionary.json)
 
-2012縣市核心原量仍未取得，不由比率反算。第二階段已另附逐筆口徑與原刊有限對照規則；完整歷史方法認證仍未成立，自動選口徑屬第三階段。
+2012縣市核心原量仍未取得，不由比率反算。第二階段已另附逐筆口徑與原刊有限對照規則；完整歷史方法認證仍未成立，第三階段已提供有界預設選源，見docs/PHASE3.md。
 <!-- END phase1 -->
 
 <!-- BEGIN phase2 -->
 ## 第二階段：有來源依據的口徑檢視
 
-v0.7.0逐筆檢視現有56,496個量化紀錄：37,887筆正式觀測、18,486個地方來源格、123個計畫數量格，三層分開，不相加成業務量。409張來源證據卡及86項斷點／欄位規則可回官方原件、SHA與原表位置。
+v0.8.0逐筆檢視現有56,496個量化紀錄：37,887筆正式觀測、18,486個地方來源格、123個計畫數量格，三層分開，不相加成業務量。409張來源證據卡及86項斷點／欄位規則可回官方原件、SHA與原表位置。
 
 - 原刊／原件範圍內有639組支援多個期間的有限對照，其中474組涉及不同年度；不是同方法、全歷年或跨來源面板認證。
 - 14,584筆原null單位可依已核原欄「冊數／人次」另附單位解讀；14,400筆五碼原年月嚴格解碼。原值、原unit與原data_year保持不變。
@@ -110,3 +110,15 @@ v0.7.0逐筆檢視現有56,496個量化紀錄：37,887筆正式觀測、18,486�
 
 [口徑與來源互動頁](site/phase2.html) · [第二階段說明](docs/PHASE2.md) · [逐筆JSONL（gzip）](derived/phase2/annotations.jsonl.gz) · [逐筆CSV（gzip）](derived/phase2/annotations.csv.gz) · [SQLite](derived/phase2/definitions.sqlite) · [按層／年度小檔](docs/phase2-partitions.json)
 <!-- END phase2 -->
+
+<!-- BEGIN phase3 -->
+## 第三階段：依問題選來源，直接看折線圖
+
+v0.8.0有19個明確母體／用途的預設問題，完整路由56,496筆既有量化紀錄，保留52,689筆候選決策與來源理由。這些是選源註記，不是新增館數或營運量，原統計值不變。
+
+[直接看折線圖與選源](site/phase3.html#line-charts) · [全部原刊數列](site/phase2.html#line-charts) · [問題索引](docs/phase3-question-index.json) · [範圍與用法](docs/PHASE3.md) · [按問題／年度小檔](docs/phase3-partitions.json)
+
+主入口直接顯示已核國圖原刊借閱折線。第二階段有639組已核數列圖；第三階段有691組問題內原數列圖與847個由同一Python選源器預算的區間結果。原報點可回官方來源，缺值、缺期與口徑切換不連線。
+
+選定來源與跨年可比分開；selected可能仍是缺值或不可用。版次優先是維護者政策，其他版本照留。2012全22縣市核心原量表仍缺；已取得的少量分館／閱覽室原文分項照留，不冒充完整核心量。
+<!-- END phase3 -->

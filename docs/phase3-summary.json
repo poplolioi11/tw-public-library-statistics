@@ -1,0 +1,1028 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.8.0",
+  "policy_version": "1.0.0",
+  "scope": "Registered source selection over the complete existing quantitative inventory; not additional operational statistics.",
+  "counts": {
+    "record_routes": 56496,
+    "candidate_decisions": 52689,
+    "queries": 19,
+    "series_edges": 32993
+  },
+  "registered_profiles": 19,
+  "route_status_counts": {
+    "registered_profile_candidate": 52689,
+    "no_default_profile_for_original_scope": 3807
+  },
+  "selection_status_counts": {
+    "selected_source_fact": 36264,
+    "selected_source_unusable": 12700,
+    "selected_source_missing": 1052,
+    "blocked_scope": 2051,
+    "blocked_period": 217,
+    "alternative_source_version": 405
+  },
+  "selected_decisions": 50016,
+  "drawable_edges": 20375,
+  "partitions": 229,
+  "tables": [
+    {
+      "table": "record_routes",
+      "records": 56496,
+      "csv": "derived/phase3/record_routes.csv.gz",
+      "jsonl": "derived/phase3/record_routes.jsonl.gz"
+    },
+    {
+      "table": "candidate_decisions",
+      "records": 52689,
+      "csv": "derived/phase3/candidate_decisions.csv.gz",
+      "jsonl": "derived/phase3/candidate_decisions.jsonl.gz"
+    },
+    {
+      "table": "queries",
+      "records": 19,
+      "csv": "derived/phase3/queries.csv",
+      "jsonl": "derived/phase3/queries.jsonl"
+    },
+    {
+      "table": "series_edges",
+      "records": 32993,
+      "csv": "derived/phase3/series_edges.csv",
+      "jsonl": "derived/phase3/series_edges.jsonl"
+    }
+  ],
+  "layer_raw_fingerprints": {
+    "canonical": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
+    "local_statistical_cells": "2f3b30127fbf12aa743de1e2844a02681e7a967a8cb1efe7cbdc4a7c83e4335f",
+    "programme_quantities": "503f2e60d56f34ddbcc7c392cb638e8e535676a7d90097331cf2470931cac662"
+  },
+  "canonical_values_modified": false,
+  "all_history_complete": false,
+  "all_historical_definitions_certified": false,
+  "automatic_defaults_are_bounded_registered_questions_only": true,
+  "no_imputation": true,
+  "no_aggregation": true,
+  "no_geographic_recoding": true,
+  "inputs": {
+    "derived/phase2/annotations.jsonl.gz": "15b64513c42a882f71810d266511399db113df342928f9b16c277fe428428336",
+    "derived/phase2/evidence_cards.jsonl": "8d22623b3825033c12d12f7919ec9002403aa8a22d5b9390bf8c5a95f524b000",
+    "docs/phase3-contract.json": "fcae4fa8058c79650838838dcb5c37e500536e1eaaffda6bb4987e2559e56d08",
+    "docs/phase3-profiles.json": "555be5c31815a1e6ac2f787d6c55c441e026b6b54022c4c68d6fae04f93031e7",
+    "scripts/phase3_engine.py": "93c40de4cd49e3b70b76b0261393b3a3b487930e6f3562fc9dc86e70f52bd381",
+    "scripts/build_phase3.py": "9f51834833742470ab8e6b2130fbe022811a3f2bbd16e186d564c4e8502228f5"
+  },
+  "outputs": {
+    "derived/phase3/by_profile_year/county-2023-nlpi-default/2023.jsonl": {
+      "sha256": "233d6cac8e41841f4fc84639a0d8e7391989be576c39fbe2a5df2793dc04b688",
+      "bytes": 4293026
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/1998.jsonl": {
+      "sha256": "81e9edb7305e992f9a26c1cf3882c7cd692545ed6e5db3bfac1e74375851c9fe",
+      "bytes": 59525
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/1999.jsonl": {
+      "sha256": "40a6230e4bf17929e4eb90b2d1ffe89c8125ef0e6f10deab03269cd9841b6203",
+      "bytes": 59525
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2000.jsonl": {
+      "sha256": "d136c9126209a8a87e018a25e15e8a789735b5666cffda693b906fb567c1ec8e",
+      "bytes": 59525
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2001.jsonl": {
+      "sha256": "47b0c7e9d293f06e17128cefa343811ea9ed285fb88001d7b4f35c908ace6f16",
+      "bytes": 59525
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2002.jsonl": {
+      "sha256": "e276a4cea70a60d25695b3282198e7a517a7129a7fab5598a6219dfa8654fa3a",
+      "bytes": 59525
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2003.jsonl": {
+      "sha256": "2682b86a1436de6864ae9440a98bbe14531aed1c28108659ef7451e5a71e04b1",
+      "bytes": 59525
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2004.jsonl": {
+      "sha256": "4dedc23dceacf31ca76f83c6ea231d888a44c0aed0e7ab69d6bdce1d3a520cb3",
+      "bytes": 59525
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2005.jsonl": {
+      "sha256": "f60c744405dd3895fe33e583c4144af4372f6db9d49edaa4ab0553856e725b3b",
+      "bytes": 59547
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2006.jsonl": {
+      "sha256": "eb4f73284111cca1f50f89fc92e84789268b0de40f2fb11b211f9c00c5b61d15",
+      "bytes": 56339
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2007.jsonl": {
+      "sha256": "39d9c0b52b0a735c8967b3132c8a1b70000f89001a512e6b185e5c06dc9b0aa8",
+      "bytes": 56339
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2008.jsonl": {
+      "sha256": "4ba983ab626f969b28cca9da7996e6809cb0e6bbaae938e340a51f8e42603036",
+      "bytes": 56339
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2009.jsonl": {
+      "sha256": "107dfd28eca8eed4d10bbaa940e111c42e0286d202d7e44b70d505ede81566f8",
+      "bytes": 56339
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2010.jsonl": {
+      "sha256": "5d74e0932773f3aab5734f61114fed7b629e7c5ebda3ecee9781a90c0d6d06cb",
+      "bytes": 56339
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2011.jsonl": {
+      "sha256": "bc295b789582a484cf0fadbe1a880d930bcdfdcee7c96ecd96aa076227c7f502",
+      "bytes": 56339
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2012.jsonl": {
+      "sha256": "ccb4759478152695431f8eda0db9fa17534f8c4eded88927905abadfa7f8d66a",
+      "bytes": 56339
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2013.jsonl": {
+      "sha256": "bea73610c033df0e97ed78b5e1c08a5b2e2c531a4b3db4f5fed42849f65c36ae",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2014.jsonl": {
+      "sha256": "32502a7b9e209ba1a78552c53c7fde6c39d18a10a500e0087e1a936e2d9c9c69",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2015.jsonl": {
+      "sha256": "fc9c415cfc57a885a579094379e335e9ffd2671efaff863ddf1da741d7320e1b",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2016.jsonl": {
+      "sha256": "d480e92550f718e738cc5a9fdba47d9c494ace41a118edf6aa75f24762d0363b",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2017.jsonl": {
+      "sha256": "d84ab8fc7bbfbf042f68d5dd5bce317791b5e4349f32332851835205bd7afc80",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2018.jsonl": {
+      "sha256": "e53a0a7a841d6cd69cf214e183e62ae8a5d113366df5949afd2415575fa149dd",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2019.jsonl": {
+      "sha256": "7c4f78e379890141bc91b76c66521c6a468868d789ed9d6850588a3e9634b5c7",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2020.jsonl": {
+      "sha256": "4bacabaad83809ae860eb58dca006660f8754260e9b0aff5ba37654863711dc2",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2021.jsonl": {
+      "sha256": "f40acbf66262b40ff79e5d0a831cf02b06f0ecf268018a3d613c7b1a5750252c",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2022.jsonl": {
+      "sha256": "9335cffcbddac348da50b7b9a10c059f280b14adcfb3e2d86122f1f050439e0e",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2023.jsonl": {
+      "sha256": "8db68c805690bf363bbe6046389547af2ca3eadef412013ec8e472d8ef769333",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2024.jsonl": {
+      "sha256": "2a2139a200c0371f7965d72a82cd1681b3473ee6c5b19029ec9b74f65fcd0922",
+      "bytes": 56345
+    },
+    "derived/phase3/by_profile_year/county-library-count-dgbas/2025.jsonl": {
+      "sha256": "7e718ffe4f34bbffd1835219c9b9a16e28891819cbe9c891319786c529ac622f",
+      "bytes": 56342
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2005.jsonl": {
+      "sha256": "c0c9273e18d9cace45dfa336c457ccb8beb6ed4820d586d0f5dafc59828fa19b",
+      "bytes": 1051842
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2006.jsonl": {
+      "sha256": "e1b13b705dc977c1b3d1abae1f54258208b2a56a4509dc6506b16960d209ab73",
+      "bytes": 1910865
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2007.jsonl": {
+      "sha256": "ca10dfc8777d0554173c5c23f8900101f74740ffd2a6d7bc089b49a2156a8203",
+      "bytes": 1840002
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2008.jsonl": {
+      "sha256": "a00056fcf9f72af16e5ad39ad75e148ea371aa01d52373aa31f36209b7b135ab",
+      "bytes": 1843464
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2009.jsonl": {
+      "sha256": "08c15dc82a458d293ee6d2d84727869b2a1998c442897519df530d14a9e69cff",
+      "bytes": 1746015
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2010.jsonl": {
+      "sha256": "61c738fbe1c4f4ea44ae7cf854a3a7e5b95977fcc0004eb6f6c744ebc91860f7",
+      "bytes": 1809305
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2011.jsonl": {
+      "sha256": "74ab2d6dddce16f1cfc427fdcc134b6e8b6322113e3d5d781d437c7ef28c23c7",
+      "bytes": 2120691
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2012.jsonl": {
+      "sha256": "cc3f8507602ce7b1c9d6c77244abdaa18a42b57c131d1abfbc77cbeb917abb50",
+      "bytes": 263285
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2013.jsonl": {
+      "sha256": "6085667da290946cd10d482eb9378ab1f9d7c15ff7c19ec3a57b79d26afa1ca6",
+      "bytes": 1583191
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2014.jsonl": {
+      "sha256": "0327d3472401e89758797e39bdf5f39d7f5cd113202795c947e84b32e72eeeb7",
+      "bytes": 1782904
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2015.jsonl": {
+      "sha256": "a5175aaeeb1b5545423820315ff503032a6a09eaad2fc716a010e0eda1b8197e",
+      "bytes": 1876209
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2016.jsonl": {
+      "sha256": "19808287037fa4e8f07148dca6af22a6739907343def6da71bb257b9f56cd89e",
+      "bytes": 2144326
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2017.jsonl": {
+      "sha256": "c4337d3e21267a8c66974b234dbb6ce6a72fe11b457ac95377d3d978a0c378ec",
+      "bytes": 2084940
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2018.jsonl": {
+      "sha256": "986a607c9420e149ad006196541ca2af7fb1ae6c721ae1a830718c2339a58b50",
+      "bytes": 2528519
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2019.jsonl": {
+      "sha256": "f8bfd7b9dc9c8424245f470277f330c04a3167de3d40cc2d68a0de91924218ec",
+      "bytes": 2465685
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2020.jsonl": {
+      "sha256": "be1fbd4884b3987bc101aec91a217052db9d30ad72676a0571a14407fec22643",
+      "bytes": 2533077
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2021.jsonl": {
+      "sha256": "e06659afef5777162bc732185ccb238102dcd575ca9c452660e8e0dc31e345dc",
+      "bytes": 2491188
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2022.jsonl": {
+      "sha256": "9ea04757705a3a77e44a00f49f104240dce132c93ba7e642f59f2399c803763e",
+      "bytes": 2659154
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2023.jsonl": {
+      "sha256": "e38b7e73064e9aa4b6a2fbf2323a9c90dd0c2144e625bb1624a42bf8c43e06a1",
+      "bytes": 2658685
+    },
+    "derived/phase3/by_profile_year/county-ncl-yearbook-source-facts/2024.jsonl": {
+      "sha256": "278e08ad1b602356e101a7991bed250aa6b42ecf5ccb2e287792119380f2b332",
+      "bytes": 2659346
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/1991.jsonl": {
+      "sha256": "4ea08d6cd0c01b209829e801a3c3acf1762e29f01479aac29037ce8d73903efb",
+      "bytes": 9331
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/1992.jsonl": {
+      "sha256": "433566b1b2c042b967b3484ed967800172cba8158c9e85e9d1b5c7ccaab22daf",
+      "bytes": 9333
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/1993.jsonl": {
+      "sha256": "b9b48e96cbfaba95aa75590def78c4900a8ce7793b3e76c71c93b053cd0e7678",
+      "bytes": 21114
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/1994.jsonl": {
+      "sha256": "a27246d1dfcc1862f1f490efde3f2f5a6a3b3cc03056460818f51ce9e5180445",
+      "bytes": 21114
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/1995.jsonl": {
+      "sha256": "09730668ffcd6c6e51580126254931f0545c168c062231ff07cd534cf17b08a2",
+      "bytes": 21114
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/1996.jsonl": {
+      "sha256": "97700033c90d6c741d30f37ed08df37776d0bc664b504127e85216970799a03e",
+      "bytes": 33540
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/1997.jsonl": {
+      "sha256": "1fc32c50068b09fc3c66026f9abee64dc23cb6a0093576f80ade5067eddc322d",
+      "bytes": 33540
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/1998.jsonl": {
+      "sha256": "ed7f709b6cb610af53c3b2d8c6a1775a10bad4bcbf97dd910de43bedbebd1fa3",
+      "bytes": 33540
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/1999.jsonl": {
+      "sha256": "1ddc23e2801f565d42182a38eaf33f11decd540830b63c398bdc6e948be55eb9",
+      "bytes": 33540
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2000.jsonl": {
+      "sha256": "755fa9968ebb314c1682512a2fe3c1822072eb05b36da69ed97d9b1cb8dd9774",
+      "bytes": 33540
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2001.jsonl": {
+      "sha256": "acb03d828481a586358da286f33a8a8fa57390a711a9e16f12d6cc1fd884fa20",
+      "bytes": 33540
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2002.jsonl": {
+      "sha256": "f2ab5a70013aa1afc558f3a614c32c754cc381021f9b5e456c83fdd150e4353f",
+      "bytes": 33540
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2003.jsonl": {
+      "sha256": "6085a46d205614dc829fa00af0ff7b092a791f8bb23b8c025e6a7649ccedd366",
+      "bytes": 33540
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2004.jsonl": {
+      "sha256": "660fa884e7a0506f5e8f722bf8a9f6896e13bd637db371be1394daa47ccbeede",
+      "bytes": 33540
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2005.jsonl": {
+      "sha256": "c1cd6a9345e931a985a5e57bdce6faf3008c448b2a1ba926faf143e300a0ea1a",
+      "bytes": 33543
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2006.jsonl": {
+      "sha256": "5d3981823cb13c95ef13d302e433b99f25fa6e8cff58d744c5c59dc8e95c1dc6",
+      "bytes": 24207
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2007.jsonl": {
+      "sha256": "a9781bb54c021ad4fa272ad0206c9233905b1da4720bb6234c649e510dd0bca1",
+      "bytes": 24207
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2008.jsonl": {
+      "sha256": "710bb44829a0bc238d17e5d0a7ece47cf7484d610c87eac00e9eafac489b5e85",
+      "bytes": 24207
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2009.jsonl": {
+      "sha256": "c924c3399ce2854e7428eda9583c88d2e4a9598dbadc08497133b2ede73262db",
+      "bytes": 12426
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2010.jsonl": {
+      "sha256": "85e019040c71d5370fae1ace42cf5a236660852e11e2b35a4077656d768abc6d",
+      "bytes": 12426
+    },
+    "derived/phase3/by_profile_year/historical-national-dgbas-source-facts/2011.jsonl": {
+      "sha256": "d6aaea5292756b99128481c138a2e0833befee2e46efd0ea5e49893772d5e7df",
+      "bytes": 12426
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2015.jsonl": {
+      "sha256": "f6751020de0179af4db3c2ad771e342d68d6b697654056baedf8fe25dc246210",
+      "bytes": 192429
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2016.jsonl": {
+      "sha256": "0c0a602edde98ec16797e278a588b06d81d64b3eaf0208920def8856d91c462d",
+      "bytes": 2309631
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2017.jsonl": {
+      "sha256": "00d3685e34d0f6309f14bec9330bfcf7bee8b8802407832ad7179ec9fb11e0ad",
+      "bytes": 2310717
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2018.jsonl": {
+      "sha256": "8644fc67d1b26dd2e4e7a99980db87a74b437f1d78aab4159386cb7fb207839f",
+      "bytes": 2310876
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2019.jsonl": {
+      "sha256": "a4f86d172873f5f475d7a022f32480b94297f608eac6cfed0736211576c853f3",
+      "bytes": 2310963
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2020.jsonl": {
+      "sha256": "3a8468e3bd07fdf6d356db8210fd7756c8e865bb5025c06474d0c510fa9f5ffd",
+      "bytes": 2641509
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2021.jsonl": {
+      "sha256": "b5312c0b505069863333261f5d3b9aaceb08e6b02c3a7fa9661caa50e918770e",
+      "bytes": 3025855
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2022.jsonl": {
+      "sha256": "7752ed202ef2fae2cfcef309e1e03c8523f31d41353d53301e13a0419b76ff6b",
+      "bytes": 3640439
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2023.jsonl": {
+      "sha256": "7bae0cdc1914d32a6c0117cbc57a91580392ea4693d5d9f0a34ccc6054caf629",
+      "bytes": 3721163
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2024.jsonl": {
+      "sha256": "ca7a5093c53784596f4b3f4b524d0422daea92e34939f322638c471cf02faabc",
+      "bytes": 3965284
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2025.jsonl": {
+      "sha256": "8467a2c0847ffae5c8410ccd34b1dd8294e8158c1df2096c25e80c5c97bb1ccf",
+      "bytes": 3967068
+    },
+    "derived/phase3/by_profile_year/hsinchu-monthly-circulation/2026.jsonl": {
+      "sha256": "dd94b0831120df687b340b06b607fa35de7ed1c5cbb6cec7e4b68012fbe8d32a",
+      "bytes": 2649047
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-reader/2020.jsonl": {
+      "sha256": "fc1cfe22fba5c9e0c2def2b2faf4ce2a507e3f2c6b281a559ff1eccedea9da9f",
+      "bytes": 699271
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-reader/2021.jsonl": {
+      "sha256": "c54a51e0238ee7978e4f4cd5c5c22c0938a9fd1c53f25829dd27a6c375f92c3b",
+      "bytes": 2802306
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-reader/2022.jsonl": {
+      "sha256": "57dbe075e2731162d38a91fffa2d41fe7cfdef5f85d4f5ca33e2264fe31cdd60",
+      "bytes": 2804463
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-reader/2023.jsonl": {
+      "sha256": "ac9f93de074ead8ffd633187d4fd21db980ae7a9d1b8915878db468e805659ca",
+      "bytes": 2818223
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-reader/2024.jsonl": {
+      "sha256": "5a8b7c180cb8ce201a39f64a6685e63009f63dbf2d811cf29a71c0d70660dee3",
+      "bytes": 2576187
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-reader/2025.jsonl": {
+      "sha256": "ef921366fa5bbb5b54a842e50fc31b92d0767f0153a85205a337689df9e5a721",
+      "bytes": 2814946
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-reader/2026.jsonl": {
+      "sha256": "930ba9cd452bb79ccd57a93e7b502bfc54051b74edc85519c8ea313c52c0f666",
+      "bytes": 1856158
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-reader/unresolved_period.jsonl": {
+      "sha256": "13ddb9fedad6bd682f1ea0b6e8988144df08e0840d2eb800f2bb43faef36db49",
+      "bytes": 457279
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-room/2020.jsonl": {
+      "sha256": "79027c927b4eaf4e44f02774ea3496a7e6597e3a81a73c8d726c43bbba1a66b4",
+      "bytes": 1702447
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-room/2021.jsonl": {
+      "sha256": "059e2c9782af51a03611caa17dfb8657ff8f7e758b728cc3eba659ae21b640df",
+      "bytes": 5187525
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-room/2022.jsonl": {
+      "sha256": "f0c6c47d57313a42080cbef9f4b467ab616312b8988caf1db6d012eacfdca551",
+      "bytes": 5331157
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-room/2023.jsonl": {
+      "sha256": "3a015e8a2a710995a51bde17b07349d8a199aa8460215f2815418968864ac7f1",
+      "bytes": 5326543
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-room/2024.jsonl": {
+      "sha256": "24aeafd1f8622abb77dd4d40c17e8c3ec4337e43c52a42fede0517b001fd9c04",
+      "bytes": 5326391
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-room/2025.jsonl": {
+      "sha256": "566795dea3b32affb505092377a0c3cd3bb2e4349fa15498d0b2e1b076aed3ff",
+      "bytes": 5361233
+    },
+    "derived/phase3/by_profile_year/hualien-monthly-by-room/2026.jsonl": {
+      "sha256": "b38339f5fd43106e189caffacb3ac35603f3716f880a813b32ed4c5221e681d4",
+      "bytes": 3739971
+    },
+    "derived/phase3/by_profile_year/lienchiang-explicit-annual-sheet/2025.jsonl": {
+      "sha256": "fb031aad45d5eee7d3a9c4f844a6bd077c66edf365421d601e7a65b623696cd7",
+      "bytes": 98402
+    },
+    "derived/phase3/by_profile_year/lienchiang-explicit-annual-sheet/unresolved_period.jsonl": {
+      "sha256": "3c1892dee2fc37e1e57034d035b26ba7f645a3f36d160d9fbeae1e76cf7b719d",
+      "bytes": 84886
+    },
+    "derived/phase3/by_profile_year/national-2023-nlpi/2023.jsonl": {
+      "sha256": "30420e1c6ab5124b63ffe63573794f855e0cfad3c1067c4a1271f3ddc926d3dd",
+      "bytes": 191053
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/1998.jsonl": {
+      "sha256": "988018ec0c84f44a69a2665af30c773629d0e1691057ee71085fee43a063d769",
+      "bytes": 2686
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/1999.jsonl": {
+      "sha256": "93b47e18ebe7c85d146dcf7274bd1216036b5e074d8ef7dd0019a60094d9a677",
+      "bytes": 2686
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2000.jsonl": {
+      "sha256": "0b9c3dcaaacc9e49f545ef49472724ff3404b72906276d9e826ab0e33f56dce4",
+      "bytes": 2686
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2001.jsonl": {
+      "sha256": "b5487df0c5e85707fff776eabd220bbe2b2920b2a94d52fefa382fd63e243724",
+      "bytes": 2686
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2002.jsonl": {
+      "sha256": "30d8b07dfdf92e336713653cd0d9f3a1f0edb2d73213b2fcc6c1902e98a98d09",
+      "bytes": 2686
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2003.jsonl": {
+      "sha256": "d5631b69966a5efeed0e911ee9ead4b63b1cba4a8e11e0464bd25256c1533275",
+      "bytes": 2686
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2004.jsonl": {
+      "sha256": "98765ac94181ad82dfcf330d62f9f3134e48bee0f472aaa7c2a5dc00b22a52b4",
+      "bytes": 2686
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2005.jsonl": {
+      "sha256": "3f06be964e3677a03654e181aca9317d3e33581a17208e6e815519bee6cebe0c",
+      "bytes": 2687
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2006.jsonl": {
+      "sha256": "ce30aa8243b9b36da659e6563322b2298c77d1954e6f5d98c0eb91e1095feba9",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2007.jsonl": {
+      "sha256": "abad5b0042826ba0bc797b4b8c0f974c0111acb51cc255e4e288933a8eec1b61",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2008.jsonl": {
+      "sha256": "4c9e7b6e68e73ae5a0a7cc3dac0479e4a48f7908a057f8c77d4e951d359c5bd2",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2009.jsonl": {
+      "sha256": "bc4b04d0ff5db2aab3783d5ecce13be229cb0b2173b577cc8bf15aa2e60e0712",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2010.jsonl": {
+      "sha256": "9ca7692dec6eee65a88536d9278796f4ba70560763e2d7c86cdf333524195118",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2011.jsonl": {
+      "sha256": "5f42e296f5e21e5997a46c212853161c75f532bd0eefb5ba0f58070017aa6b66",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2012.jsonl": {
+      "sha256": "6f4d4bd4027cdf74b1c758bf0cf29e8198215e38a3ea58e2f99c03bf765b1956",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2013.jsonl": {
+      "sha256": "34b8d783c41f1e8f0d3111427b16646ad572d363dec89668e1bf0bd5344721f1",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2014.jsonl": {
+      "sha256": "06bfb41030c805208bccb052913d85b7e7c2eef9d880520275a0b46e91410a6b",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2015.jsonl": {
+      "sha256": "954f5ec7e802216b83b554f7cad7fc8a98de9d4c1a8713ae2b4c9ffa96c4f914",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2016.jsonl": {
+      "sha256": "fc623b6b7e993cdec8f2d637a0b515a7809f5fc42191081a874e7192fe01b7d3",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2017.jsonl": {
+      "sha256": "c4d16b66a543ef9b50587f6363c651a79f3bc0a31e1e65bb50b9a722b786d784",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2018.jsonl": {
+      "sha256": "fdf212c304e5a84fe2bc0650888c63e922b958925741be7d21dfb0b7e89bff35",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2019.jsonl": {
+      "sha256": "76e41a6d5c8b68100af1511949242d04ae312e2fd7611d6933429decaee816e5",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2020.jsonl": {
+      "sha256": "f41ce2533578454a10bfd0feb4f527505236713803634fa2eeee812188c92452",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2021.jsonl": {
+      "sha256": "9b57507f62412b8fb71b72794f0038f8aa53a83bba4aed68ae2741fb12065c67",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2022.jsonl": {
+      "sha256": "a748231d6f3caa5d0f42d9c0ee2d3306121c5cb703b0c062a2ff1540ab27b5c3",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2023.jsonl": {
+      "sha256": "0fd9b33cb5c8e0bee1a55acf0433ef07f6ef2d14c9591d6da08c17490930c1dd",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2024.jsonl": {
+      "sha256": "a8b73fc3bca13e6238a7090426c7594e1949986f5aa0799675c2065dbcafd208",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-library-count-dgbas/2025.jsonl": {
+      "sha256": "0e55d84977f3f95e388e006c8fd639f2b7ad837e8e587838ab3b048ec7968ab2",
+      "bytes": 2545
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2009.jsonl": {
+      "sha256": "63eb98fecdf0e8b18ad8ef7812d95a597e7df936b325af125b71c5e0171a174d",
+      "bytes": 2546
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2010.jsonl": {
+      "sha256": "24ea54d53a1bc45c07acfcf67cad751ada399fb8e3d5b6647b92dd4e28daf76a",
+      "bytes": 5099
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2011.jsonl": {
+      "sha256": "8f9f6597c5a97c0d75e7422f3037f5831e98bff7cb0085b54a77bafff3ab3962",
+      "bytes": 10318
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2012.jsonl": {
+      "sha256": "d9d23a1b9bcbfc1ce6743d3319a7141d0ec5e2afc26964645c3c6aa1eb11aef8",
+      "bytes": 12795
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2013.jsonl": {
+      "sha256": "dba83cb26b9f591455d738f6f913144f40d3c965aa8efc67efaa79f7d3dcf182",
+      "bytes": 15309
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2014.jsonl": {
+      "sha256": "36c9d10287f3d52b4b3bde6ff39cf73c139db88c2884240765786419940ff856",
+      "bytes": 15277
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2015.jsonl": {
+      "sha256": "8f0658e5f306c55ccab039b3054d9b5ff81c81f76e3390978abf35590cbad32a",
+      "bytes": 15279
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2016.jsonl": {
+      "sha256": "12da2e8be7ecf879d986bef2075ffc990721b259cf5d82cb03d4b6a14858a74b",
+      "bytes": 12652
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2017.jsonl": {
+      "sha256": "5e6873a353b0ec26b94d32879735b552f64f32c8333046bc311b4d0664b88324",
+      "bytes": 12699
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2018.jsonl": {
+      "sha256": "dadef61914defbaf588dd0c311106490cbf5e71dae40b55fe34d8c2b41ef04d0",
+      "bytes": 12813
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2019.jsonl": {
+      "sha256": "09ac0d0f6db1487e71bbbdcdcb7510e481a063b213aa3aceda619cfe2ec72dc3",
+      "bytes": 12927
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2020.jsonl": {
+      "sha256": "6404368ce0f57edfa45f1dfb1cc1daf234770a453c29423cc41291933427a94e",
+      "bytes": 13090
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2021.jsonl": {
+      "sha256": "915b70515d47bd7ad5812cd25b6cb4cfd96e8222d37b4373e2ea84d4e6d7ed51",
+      "bytes": 10535
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2022.jsonl": {
+      "sha256": "18623f79dbe44ec0fb9d27cb0b9e9f018cd4efc74786cdc3422e52579258fddf",
+      "bytes": 7974
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2023.jsonl": {
+      "sha256": "9bcca4aeb68781d4e668d57f41f3b15493ee81afe771e77049b086fe48358a90",
+      "bytes": 5351
+    },
+    "derived/phase3/by_profile_year/national-ncl-book-loans-panel/2024.jsonl": {
+      "sha256": "2edbbc98006761d634b8251932738ae14d005b6ffc94d10b71e0559657509eba",
+      "bytes": 2721
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2009.jsonl": {
+      "sha256": "ee7bf013cf6a9aff26dbf1b099d4b93bfce1882074bcc6d387f02abd22d193a4",
+      "bytes": 2560
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2010.jsonl": {
+      "sha256": "ad31232148e3b6e787fae1b76eca69e5cad4448786070c7cc265bf5cba037fdf",
+      "bytes": 5133
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2011.jsonl": {
+      "sha256": "273a15b4643ef4e37da1e9e6d4d12280e2d5c8dc011d447179ee316813225ba1",
+      "bytes": 10389
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2012.jsonl": {
+      "sha256": "e86ba49bd628242bf13048679b09456f48ec9c2ba273f87ab401dc70b94f4327",
+      "bytes": 12880
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2013.jsonl": {
+      "sha256": "2c964d8f9c613cfeed1ea4e30e9640a019a1c6d2d807e728ea67267e132b1e03",
+      "bytes": 15408
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2014.jsonl": {
+      "sha256": "bcfa890d106e30d604a92f37d1cfb5471a3a242d13a26f9dcc54e51600711e49",
+      "bytes": 15379
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2015.jsonl": {
+      "sha256": "57a119e34cfe1c276ca2782aa8dc4ed3b9e1df83a04fc221e96e1b510ab8fbb9",
+      "bytes": 15375
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2016.jsonl": {
+      "sha256": "e92578b72bcffb2a3e89fdbb8e5bee74a7539d96f83d59bfe240528d7c66edd2",
+      "bytes": 12722
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2017.jsonl": {
+      "sha256": "aec7eadf6ba972e8dc391fccaa246c720b979471a8a8ee5cb5dbc819d241382d",
+      "bytes": 12769
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2018.jsonl": {
+      "sha256": "dd9d2e0e2bce7bed8d8cbfe380d53b1a9cfa830349b11521b27ca3db65999c60",
+      "bytes": 12886
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2019.jsonl": {
+      "sha256": "b737997aa22a89e8b1a8b4d3ba502b6626cc289fd1d9a3aa8a2dc41049be2ca9",
+      "bytes": 13003
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2020.jsonl": {
+      "sha256": "5581125e1d1d5ff2d31874809cb7f119943f1029fd4c787169975864ef1e9c62",
+      "bytes": 13169
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2021.jsonl": {
+      "sha256": "826a557e26cf1e8e1961b3323451a9f89fd45865b30436ebdda7d3dd992916c5",
+      "bytes": 10600
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2022.jsonl": {
+      "sha256": "c66efb2cf5ff8a1afc4c47c5b7420ab5e4d3bdae5516ed987e7208093aea3a11",
+      "bytes": 8025
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2023.jsonl": {
+      "sha256": "1d2d5e217bf6ebc30d6dbb4be519cfa52e6077ecd85356803eff608b55ed7881",
+      "bytes": 5380
+    },
+    "derived/phase3/by_profile_year/national-ncl-borrower-visits-panel/2024.jsonl": {
+      "sha256": "53e5b2703979460bb1e79c958229f11c5f187a0a5b7454c1cf56cf0085c23d08",
+      "bytes": 2735
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2009.jsonl": {
+      "sha256": "aa6bea710c332d35508785140275ae8b72227f91889b75914caa8d09b5039298",
+      "bytes": 2549
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2010.jsonl": {
+      "sha256": "33d1f60996f44c1423f5aa90778581814a8ff6bc8f5d1e4f866516b96e2db13e",
+      "bytes": 5099
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2011.jsonl": {
+      "sha256": "7fb550885f649d87b3492322e153d2fc39b132a1ce79d69a2be2aa9750e74675",
+      "bytes": 7649
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2012.jsonl": {
+      "sha256": "de7eb574364fb98a421270a2892f8556650ce5f934a94625f5ad2135d98cd315",
+      "bytes": 10166
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2013.jsonl": {
+      "sha256": "871c0ae064ee1795862aecf3c211ae9c276f49e98036cae54f29248055c761c9",
+      "bytes": 12683
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2014.jsonl": {
+      "sha256": "e09a85629275114cedd52e08b24f2c00aac9bb11b296aad7a14e46e576a44451",
+      "bytes": 12651
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2015.jsonl": {
+      "sha256": "5f2af382e290ceaf75b4fd0ec41176a7435568b3e84591780f295db48b80e71c",
+      "bytes": 12659
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2016.jsonl": {
+      "sha256": "242e1b962b446e8852ece66b79942558f19a8b734ea756f568ab5350fe40423c",
+      "bytes": 12705
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2017.jsonl": {
+      "sha256": "d5ab2288af9d5dfa5cd560db51d88367f3836a51174e5334a4285a4382bb99fe",
+      "bytes": 12708
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2018.jsonl": {
+      "sha256": "c656293b2995d7b220550663d80037a90dc275480b1bd201610e6b96c0024cda",
+      "bytes": 12819
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2019.jsonl": {
+      "sha256": "14708a88502f8c127b642bfde6313354d438dec592fa26cabc258353c81065a1",
+      "bytes": 12930
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2020.jsonl": {
+      "sha256": "3143900c1a039481b68e4173cdbf08b73a1aa8b47c2f40e79f8ca0a34b80bb05",
+      "bytes": 13085
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2021.jsonl": {
+      "sha256": "950270f28609b6605616140dac072bd55e95b2f284d09d6a0c323bf1876d00e5",
+      "bytes": 10527
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2022.jsonl": {
+      "sha256": "94c36a3d6e2410949a10901ed30e4e9968d948f79912405e0978b35a36e7b9a9",
+      "bytes": 7969
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2023.jsonl": {
+      "sha256": "c82a2e8d83928d865e6ed84327c81958d344a83dfd653874903173fcb8e59fc2",
+      "bytes": 5341
+    },
+    "derived/phase3/by_profile_year/national-ncl-count-panel/2024.jsonl": {
+      "sha256": "d17031559572ddd6b8dd7f12e4c76a4b0e76bbfc7e6b08d23a3a11597bd390fa",
+      "bytes": 2713
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-loans-panel/2017.jsonl": {
+      "sha256": "44d63c62c34d9db8ee96cb4ffef52c401cd263c4205cd7ddf87c8e24e2d71574",
+      "bytes": 2561
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-loans-panel/2018.jsonl": {
+      "sha256": "ec12649bb9cdc8a26451ed50e04dd1759ce3e7043d118ae3ff43b41982d753b7",
+      "bytes": 5189
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-loans-panel/2019.jsonl": {
+      "sha256": "9c172eb6bb97b6cddc87c95653805f2a808cff9d1a1f09c5162c0ddb64744d53",
+      "bytes": 7817
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-loans-panel/2020.jsonl": {
+      "sha256": "92063bdfc49344ce45cde7f6000f272ca5723c79f28e8aa1444f268240cd7333",
+      "bytes": 10534
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-loans-panel/2021.jsonl": {
+      "sha256": "43b54099b7f8123f08a90bea72661c7f140af8c191d11643db1c38be2fc41ca1",
+      "bytes": 10534
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-loans-panel/2022.jsonl": {
+      "sha256": "2ad73a32b02c2ce0bce432a2e4bb2438a986258d16549956459120c224009010",
+      "bytes": 7973
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-loans-panel/2023.jsonl": {
+      "sha256": "d4d17c5d5e6b706abf5d3942240bbec3b39d44c56fb3208dd76d97d91af8dd73",
+      "bytes": 5350
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-loans-panel/2024.jsonl": {
+      "sha256": "3cf82b703410ab0f1df073c764b80e268c10c8e44b9f798348249609f1bdddc6",
+      "bytes": 2720
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-visits-panel/2017.jsonl": {
+      "sha256": "6a9f544d06e337308105ca9b152fa0d51df419adc613425489afc0b84e58a8bf",
+      "bytes": 2571
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-visits-panel/2018.jsonl": {
+      "sha256": "0e1c1cf43a1ff37607e7ccc926519624fb35867dd9cb024c0af5e1df7cf7fc8b",
+      "bytes": 5203
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-visits-panel/2019.jsonl": {
+      "sha256": "97d937d061ab1bbbb97e91eaaf4afe3fa94a0e371520c66afbdf0f27bb80d0ed",
+      "bytes": 7835
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-visits-panel/2020.jsonl": {
+      "sha256": "6b0f67cb8c0839db8d2bbd675ca7048b87b6cd31bfbe1f4097d7a0ce79c1d009",
+      "bytes": 10556
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-visits-panel/2021.jsonl": {
+      "sha256": "5c7880805243f0186de30636ce150170cfb831d137d283dcfe74595d49c4495b",
+      "bytes": 10556
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-visits-panel/2022.jsonl": {
+      "sha256": "4338c746e4d034dd61cc39b13e7f679aa572114e44199593bbefa1e2a6b92129",
+      "bytes": 7985
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-visits-panel/2023.jsonl": {
+      "sha256": "46c707402ba3526887ed28649d1934b836baa36d4b9c103d78071428e370811b",
+      "bytes": 5353
+    },
+    "derived/phase3/by_profile_year/national-ncl-ebook-visits-panel/2024.jsonl": {
+      "sha256": "76d287f64a3ac855ea568c49ee4d0a494e27eb02328e9c9462413ac9cb4d002f",
+      "bytes": 2724
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2009.jsonl": {
+      "sha256": "ef601a2d05ae3d7ac756af1fd1b6e19e928e880747dd9e351ed2520e7b7517ab",
+      "bytes": 2538
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2010.jsonl": {
+      "sha256": "1088ebb7bda2503c8a24266ffedc9461bd1ff386e0979cb4a848e38cfff1730c",
+      "bytes": 5086
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2011.jsonl": {
+      "sha256": "06d57370edaa5eedf94cd4a3dd8fd4495d1e5b84a83917b24e4793be424278c7",
+      "bytes": 10295
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2012.jsonl": {
+      "sha256": "bea0992380b1ca8bfd9975be003d61a4d18f52cbd21c75e4c298f89b210e16b5",
+      "bytes": 12764
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2013.jsonl": {
+      "sha256": "b0cd7755fa123f6475a31ba8ed052a69d7e5df5566f2c59c7746236299690905",
+      "bytes": 15270
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2014.jsonl": {
+      "sha256": "cb456acce136853c3f0a85efb95f797190d3fe7b0a802eb24801c8e82aae8153",
+      "bytes": 15238
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2015.jsonl": {
+      "sha256": "debf0e3a1cfc2937ca48c41b34252e5922044d240a33e7cf0d0a5cebc788cc6f",
+      "bytes": 15237
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2016.jsonl": {
+      "sha256": "cb023b57cbb89ae78f76c80c647d19f2792a0067489d3b5069fd768d0489e5c0",
+      "bytes": 12612
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2017.jsonl": {
+      "sha256": "07d5c3c735092a8bba92f6b287fbb63b21a69b33e800b153a9548a7d0f22fe39",
+      "bytes": 12653
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2018.jsonl": {
+      "sha256": "4a2e5725840e553cb4eef90919cb065823479086063fe10d456af2038ea7b17d",
+      "bytes": 12764
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2019.jsonl": {
+      "sha256": "378f79457c295d1037a6125c5766d0ee54b96792961ce1aeecc678b1f5c0ae87",
+      "bytes": 12885
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2020.jsonl": {
+      "sha256": "9bd3164a95a4b70aafd1a0e9827facf1d5501f35af5f9c804b88007eb90da94e",
+      "bytes": 13032
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2021.jsonl": {
+      "sha256": "0801b01ed5d6fb2f551170b51f493da37d112b6c4cffe4706f5e07c2e7ee7f9e",
+      "bytes": 10485
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2022.jsonl": {
+      "sha256": "a63f25b1cd5f3d44737358d069cf5f1b2480d2b63025ffc350059c6c028b73b9",
+      "bytes": 7945
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2023.jsonl": {
+      "sha256": "22212a4c2e7b4e8dec0db21043560edb0225d49b2fec127591b54a18a675008e",
+      "bytes": 5321
+    },
+    "derived/phase3/by_profile_year/national-ncl-seats-panel/2024.jsonl": {
+      "sha256": "0873650aed27986f77ab1ec1d8a32f26013cdca2aa3972ee7827b25fa4613a6b",
+      "bytes": 2704
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2011.jsonl": {
+      "sha256": "d245564db9969f51f392a749dace7b915f1246e0d7396188b63841a5ac35cfc5",
+      "bytes": 133361
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2012.jsonl": {
+      "sha256": "e9a37a264f1e2dca0aa4c1e5bce5ac8a1a05b373a1da94ff5a3a15f0a73965b4",
+      "bytes": 133364
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2013.jsonl": {
+      "sha256": "2e4c69adb77f632653fbcc6a490f4d4528653a00426caa80e1653f52d3507b23",
+      "bytes": 132721
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2014.jsonl": {
+      "sha256": "5b5141d2fd8e732ac5a82621cecea01050e70a3c6bf36f32863b48be9a18ae8e",
+      "bytes": 132731
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2015.jsonl": {
+      "sha256": "a459bbc7d299cf7891d3e5009d1473fea463c533a525494d393faf3018356dc4",
+      "bytes": 132734
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2016.jsonl": {
+      "sha256": "ee2e96312b4e5db68f97ffc6224564be37173390f049bf84033d2585a1ed74e5",
+      "bytes": 132743
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2017.jsonl": {
+      "sha256": "31f00590f866530f7ba4627f1755974b89595d3eebc638eff62ee273378a980b",
+      "bytes": 132748
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2018.jsonl": {
+      "sha256": "60de09277f1dcfe69ad155851f3314c54e1bcb02260530a828654f95d2603333",
+      "bytes": 132745
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2019.jsonl": {
+      "sha256": "46d859a15cf19850a803ed6c1450eaf8f3205bf4c7e8b265a004a4ee19d50c29",
+      "bytes": 132748
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2020.jsonl": {
+      "sha256": "9096409b812166fe2dd434148853839f0325f3f6a5550c531013ee809dae2115",
+      "bytes": 132745
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2021.jsonl": {
+      "sha256": "3745f67bc8b124a4c6580e61150d096c766456ef96351bd4e71de54ef38234b7",
+      "bytes": 132742
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2022.jsonl": {
+      "sha256": "599726ca9377feb01c2c4155dc5e68e33bb0e521ecc1b2588006dbfbe445ca55",
+      "bytes": 132751
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2023.jsonl": {
+      "sha256": "8ee68c82928a452fdc4e2c2da7b16f370f9593a4632795d2506dfe0b6a4c1e06",
+      "bytes": 132769
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2024.jsonl": {
+      "sha256": "e8de4226580a8bab31330e5004b268e07e722fb8df57879ede86a99906fe14e3",
+      "bytes": 132775
+    },
+    "derived/phase3/by_profile_year/national-nlpi-chart-source-facts/2025.jsonl": {
+      "sha256": "33cd7ffff29972c80e5dbea3dc626eb6660ff87d9ab3a1b8aba877d605d25058",
+      "bytes": 132786
+    },
+    "derived/phase3/by_profile_year/programme-source-quantities/unresolved_period.jsonl": {
+      "sha256": "aed9c1db3328f7d7838649c16ae52174cd1cf3145b123e3baa8d727eb2da3ccb",
+      "bytes": 332644
+    },
+    "derived/phase3/by_profile_year/taichung-procurement-volumes/2016.jsonl": {
+      "sha256": "9f9eed19aca7af4fce5a79b67cf468d3d6740e9a2bab199778417037b37c2078",
+      "bytes": 2215
+    },
+    "derived/phase3/by_profile_year/taichung-procurement-volumes/2017.jsonl": {
+      "sha256": "5684487f5b2df54708f8697ca5f45a7a010de0bd0cd06156a13fe6cde83a8b41",
+      "bytes": 2215
+    },
+    "derived/phase3/by_profile_year/taichung-procurement-volumes/2018.jsonl": {
+      "sha256": "f5378603828451425d21012a4077432d8f37663803a11df0e1105794fe217151",
+      "bytes": 2215
+    },
+    "derived/phase3/by_profile_year/taichung-procurement-volumes/2019.jsonl": {
+      "sha256": "e982413ab6bdacde1d4a2cdbc6b98026fc93342a057614b7ef3aed8f3e8c4854",
+      "bytes": 2215
+    },
+    "derived/phase3/by_profile_year/taichung-procurement-volumes/2020.jsonl": {
+      "sha256": "178bcfc44f1bbc25f0109202f792da972d45ac60ea5d7ce3d3279812b9d7dce7",
+      "bytes": 2215
+    },
+    "derived/phase3/candidate_decisions.csv.gz": {
+      "sha256": "6eae2a78509ff847acdf3ad8414981a8c2d740fad1810cfbf8acd475315c333f",
+      "bytes": 8540846
+    },
+    "derived/phase3/candidate_decisions.jsonl.gz": {
+      "sha256": "c1de5b8579c54233b50750cb0ca845843567b7aaa7ccc00b288ee87c86282126",
+      "bytes": 9504982
+    },
+    "derived/phase3/queries.csv": {
+      "sha256": "a8e8db546336c6c4a6ae01f0fda99b266d59394836fb6ce5359d8662bd7f83aa",
+      "bytes": 2980673
+    },
+    "derived/phase3/queries.jsonl": {
+      "sha256": "0180473b0c7c43f70e0ed246df91155b5e22892325455deabb183b7aa2bb46d2",
+      "bytes": 2885778
+    },
+    "derived/phase3/record_routes.csv.gz": {
+      "sha256": "28e46f992a6eca91cb37b6fd48d1b67b636eb8119e9612053a33ee241d72e910",
+      "bytes": 4410186
+    },
+    "derived/phase3/record_routes.jsonl.gz": {
+      "sha256": "1f4561adb6688b776331f1e4938b3dd353df46474b0124042750472be0f68be5",
+      "bytes": 5143263
+    },
+    "derived/phase3/selection.sqlite": {
+      "sha256": "788d92da3ea7cc5cd1bc277611476bb063fbbca7b6db499f9701abdf893f8d62",
+      "bytes": 47345664
+    },
+    "derived/phase3/series_edges.csv": {
+      "sha256": "e78dab3fb5e26aabb1a74172501d4266719cb6a1e6a4e31ac05005ef6c3c7c1a",
+      "bytes": 11169499
+    },
+    "derived/phase3/series_edges.jsonl": {
+      "sha256": "05c9bd60381b34098c938abf43a5a0d7d3bb175b2636af18b65dfa34d469d17b",
+      "bytes": 16331396
+    }
+  }
+}
