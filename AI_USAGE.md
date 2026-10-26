@@ -155,6 +155,32 @@ ORDER BY data_year, geography;
 候選不等於完成，查頁沒看到不等於官方無資料。每個結果附來源URL、原件SHA、原表／工作表／儲存格定位及資料版本。新來源格尚未接入canonical observations，不能自行union。
 <!-- END phase1 -->
 
+<!-- BEGIN phase2 -->
+## 第二階段讀取契約
+
+先讀`docs/phase2-summary.json`、`docs/phase2-statuses.json`及`docs/PHASE2.md`。原數值仍在原有三層，`derived/phase2/annotations.*`是其口徑註記，使用`layer + observation_id`連接，不能union成額外統計量。每筆有原URL/SHA/locator/source_version_id、原值/原狀態、單位及年月的依據、evidence_id與拒用理由。
+
+`published_panel_limited`僅支援相同已核原刊／原件面板、原對象、原分類、指標、單位與有效期間分段。`source_series_only`只是相同來源標籤，不能當跨年認證；`unresolved`保留尚缺證據。群組數／紀錄數不是圖書館家數。不同原件grid signature不併成同一群，原地理名稱不重新對位。
+
+`comparison_value`是原值或原表明示千單位的精確十進位倍數換算，仍需同讀comparison_status/reasons；有數字不代表可比較。未知unit不正規化，冊／種／件不互換。原顯示與typed0衝突仍是null；catalog-only與年月矛盾的正式comparison_year仍未知。原報0另有zero_interpretation，不能自行稱實測真零。預算／決算、續借／借閱、人次／去重人數、私立／公立、總計／分項不能默併。
+
+原刊已明說的斷點只用於那一版／欄／年份。DGBAS不同版本有分館納入及借閱／閱覽定義的註釋，中英方向衝突時保留unresolved，不訂正官方數值。現行NLPI/CNS定義是分開的參照，未把公布或抓取日當歷史採用日。
+
+程式比較兩筆使用`scripts/compare_definitions.py --left layer:ID --right layer:ID`。結果只回答同一原對象能否接續成指定原刊時間序列；不是自動選來源、合計、填補或因果分析。`--operation sum/impute/infer-unique-people/recode-geography/coerce-zero/cross-source-splice`會明確拒絕沒有已驗證規則的操作。SQL用唯讀`annotations`與`comparison_groups` view，內表採字典編碼；SQL scalar值為文字、結構欄為JSON，分析者須依欄定義解析，不能讓失敗轉型變0。
+
+完整三格式傳輸可用gzip；小檔在`docs/phase2-partitions.json`，未解年度分檔不塞回候選年份。官方原件全文仍未隨公開包散布，來源覆核與公版格式驗收是不同範圍。自動選擇預設分析口徑屬第三階段。
+<!-- END phase2 -->
+
+<!-- BEGIN phase2-ai-disclosure -->
+## 第二階段的實際協作與驗收
+
+整理與維護者為曲宸宇（Chu, Chen-Yu；GitHub帳號poplolioi11）。主代理以程式重播來源、計算並建置所有註記；Codex助手分別完成國圖／主計來源證據、地方完整原件核對、格式與更新驗收，以及先於引擎固定的來源案例。數值與雜湊來自實際執行的Python，沒有把模型答案當計算證據。
+
+Gemini（gemini-3.8-flash-high）只對本次提供的官方定義摘錄做文字語義檢視，未自行查網；主代理逐項回查，未採納將媒體排除、FTE／志工或歷史生效日擴大的推論。取捨記錄見research/phase2-gemini-semantic-review.json。
+
+固定案例由來源查核助手先建立；該助手後續遇到模型容量限制，主代理接手CLI／公開投影介面並執行最終案例驗收。案例預期未為通過測試而改寫；一個主計2005版案例依原頁英文明註Since2000另列有來源的裁決。最終報告明列實際執行者與檢查範圍，不冒稱完成了另一輪獨立人類校對。原件回查與公開副本格式檢查分開報告。
+<!-- END phase2-ai-disclosure -->
+
 
 ## 公開副本
 

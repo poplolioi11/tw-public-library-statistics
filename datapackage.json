@@ -1,7 +1,7 @@
 {
   "name": "tw-public-library-statistics",
   "title": "臺灣公共圖書館跨年度統計",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "已驗證可得來源的全量整理；不是宣稱臺灣所有年代、所有縣市與每一圖書館都已完整。",
   "licenses": [
     {
@@ -151,6 +151,48 @@
       "path": "derived/phase1_supplements.sqlite",
       "format": "sqlite",
       "layer": "separate_from_canonical"
+    },
+    {
+      "name": "phase2-annotations.csv.gz",
+      "path": "derived/phase2/annotations.csv.gz",
+      "format": "csv",
+      "compression": "gzip",
+      "layer": "definition_annotations; join by layer+observation_id, never union as new quantities"
+    },
+    {
+      "name": "phase2-annotations.jsonl.gz",
+      "path": "derived/phase2/annotations.jsonl.gz",
+      "format": "jsonl",
+      "compression": "gzip",
+      "layer": "definition_annotations; join by layer+observation_id, never union as new quantities"
+    },
+    {
+      "name": "phase2-definitions.sqlite",
+      "path": "derived/phase2/definitions.sqlite",
+      "format": "sqlite",
+      "compression": null,
+      "layer": "definition_annotations; join by layer+observation_id, never union as new quantities"
+    },
+    {
+      "name": "phase2-groups.jsonl",
+      "path": "derived/phase2/groups.jsonl",
+      "format": "jsonl",
+      "compression": null,
+      "layer": "definition_annotations; join by layer+observation_id, never union as new quantities"
+    },
+    {
+      "name": "phase2-evidence_cards.jsonl",
+      "path": "derived/phase2/evidence_cards.jsonl",
+      "format": "jsonl",
+      "compression": null,
+      "layer": "definition_annotations; join by layer+observation_id, never union as new quantities"
+    },
+    {
+      "name": "phase2-breakpoints.jsonl",
+      "path": "derived/phase2/breakpoints.jsonl",
+      "format": "jsonl",
+      "compression": null,
+      "layer": "definition_annotations; join by layer+observation_id, never union as new quantities"
     }
   ],
   "homepage": "https://github.com/poplolioi11/tw-public-library-statistics",

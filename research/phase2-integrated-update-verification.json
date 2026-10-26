@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "dataset_version": "0.7.0",
+  "private_script_unit_tests": 145,
+  "private_regression_tests": 5,
+  "no_op": {
+    "canonical_rebuilt": false,
+    "canonical_data_changed": false,
+    "data_changed": false,
+    "phase1_hooks": {
+      "enabled": true,
+      "rebuilt": false,
+      "source_entry_recrawl": false
+    },
+    "phase2": {
+      "enabled": true,
+      "rebuilt": false,
+      "source_audits_rerun": false,
+      "content_sha256": "e41df1700e93ff267c1fec3726d928835c2c8004bdeeb6547c1886a2dbab1abc"
+    },
+    "after_sha256": "7993d6fbd088cc36fdc7e9de975c52b8a5542af4cc0d21f30cccd4f1532fdc78",
+    "phase2_content_sha256": "e41df1700e93ff267c1fec3726d928835c2c8004bdeeb6547c1886a2dbab1abc"
+  },
+  "scope": "Full offline integrated pipeline completed after version/template changes; next complete run did no builds and changed no statistical layer."
+}

@@ -8020,7 +8020,7 @@
     }
   },
   "phase1_inventory": {
-    "version": "0.6.0",
+    "version": "0.7.0",
     "scope": "22 current counties x4 roles; bounded source-entry survey, not exhaustive all-history ingestion",
     "authority_slots": 88,
     "candidates": 440,

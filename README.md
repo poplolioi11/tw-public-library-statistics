@@ -4,7 +4,9 @@
 
 將分散在官方圖表、開放資料及歷史統計表中的公共圖書館數據，整理成可查詢、可回到來源的觀測資料，協助公眾理解圖書館服務，也讓研究者與 AI 使用者能重現整理結果。
 
-版本 **0.6.0**；資料建置日 **2026-10-26**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.6.0下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.6.0)。
+整理與維護：曲宸宇（Chu, Chen-Yu；GitHub：[poplolioi11](https://github.com/poplolioi11)；[ORCID](https://orcid.org/0009-0003-9738-6914)）。中英文姓名與帳號指同一位作者；官方統計作者及權利仍依各筆來源。
+
+版本 **0.7.0**；資料建置日 **2026-10-26**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.7.0下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.7.0)。
 
 本專案先查重再整理。國立公共資訊圖書館已有跨年圖表、國家圖書館已有統計名詞字典，SEGIS 及地方開放資料亦有相關歷年成果。本專案的新增值是**跨來源的統一讀取方式、逐筆來源定位、期間與口徑標記，以及可追溯的內容版本**；不宣稱是第一份跨年統計或第一個名詞字典。查閱[查重報告](research/prior-art.md)及[官方範圍與定義](research/official-scope.md)。
 
@@ -36,7 +38,7 @@
 
 ## 下載與讀取
 
-[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.6.0) · [按年度讀取 JSONL](data/by_year/index.json)
+[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.7.0) · [按年度讀取 JSONL](data/by_year/index.json)
 
 公開副本移除22份原始檔的無關聯絡欄，以另有雜湊的統計投影提供；原始來源網址、原件SHA及每筆統計值均保留。詳[公開副本與來源原件的區別](docs/PUBLICATION.md)。
 
@@ -94,5 +96,17 @@
 
 [來源與缺口互動頁](site/phase1.html) · [範圍與驗收](docs/PHASE1.md) · [新增來源資料](docs/phase1-supplements.md) · [小型工作表分檔](docs/phase1-source-cell-partitions.json) · [機器字典](docs/phase1-data-dictionary.json)
 
-2012縣市核心原量仍未取得，不由比率反算。跨年相容性認證及自動選口徑屬後續階段；本階段保留差異而不自動決定可比。
+2012縣市核心原量仍未取得，不由比率反算。第二階段已另附逐筆口徑與原刊有限對照規則；完整歷史方法認證仍未成立，自動選口徑屬第三階段。
 <!-- END phase1 -->
+
+<!-- BEGIN phase2 -->
+## 第二階段：有來源依據的口徑檢視
+
+v0.7.0逐筆檢視現有56,496個量化紀錄：37,887筆正式觀測、18,486個地方來源格、123個計畫數量格，三層分開，不相加成業務量。409張來源證據卡及86項斷點／欄位規則可回官方原件、SHA與原表位置。
+
+- 原刊／原件範圍內有639組支援多個期間的有限對照，其中474組涉及不同年度；不是同方法、全歷年或跨來源面板認證。
+- 14,584筆原null單位可依已核原欄「冊數／人次」另附單位解讀；14,400筆五碼原年月嚴格解碼。原值、原unit與原data_year保持不變。
+- 未解的定義、生效年、單位、地理及期間留在理由欄。相同標籤、數字相同、同一表或當代標準公布年，均不直接證明歷年方法相同。2012原量缺口不推算。
+
+[口徑與來源互動頁](site/phase2.html) · [第二階段說明](docs/PHASE2.md) · [逐筆JSONL（gzip）](derived/phase2/annotations.jsonl.gz) · [逐筆CSV（gzip）](derived/phase2/annotations.csv.gz) · [SQLite](derived/phase2/definitions.sqlite) · [按層／年度小檔](docs/phase2-partitions.json)
+<!-- END phase2 -->

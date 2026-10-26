@@ -5,6 +5,7 @@ from pathlib import Path
 import record_io
 from phase1_source_registry import content_digest as phase1_content_digest,load as load_phase1
 from phase1_source_manager import run_batches as run_phase1_batches,monitor_sources as monitor_phase1_sources
+from phase2_update import content_digest as phase2_content_digest,run as run_phase2
 ROOT=Path(__file__).resolve().parents[1]
 from cohort_registry import load as load_cohorts
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else None
@@ -44,6 +45,8 @@ def run_extension_groups():
 def content_signature(root=None):
  root=Path(root or ROOT)
  content={'canonical':record_io.logical_sha(root),'phase1':phase1_content_digest(root)}
+ phase2=phase2_content_digest(root)
+ if phase2 is not None:content['phase2']=phase2
  return hashlib.sha256(json.dumps(content,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 def file_signature(patterns):
  paths=sorted({p for pattern in patterns for p in ROOT.glob(pattern) if p.is_file() and '.private' not in p.as_posix()})
@@ -81,6 +84,20 @@ def run_phase1_hooks():
  if rebuild:
   path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps({'inputs':inputs,'outputs':file_signature(patterns)},indent=2)+'\n')
  return {'enabled':True,'rebuilt':rebuild,'source_entry_recrawl':False}
+def refresh_phase1_state_outputs():
+ # Phase2 documentation may append to shared documents after the phase1
+ # success. Refresh only already-recorded output hashes, never source inputs.
+ path=ROOT/'data/phase1_hook_state.json'
+ if not path.is_file():return False
+ old=json.loads(path.read_text())
+ if not old.get('outputs'):return False
+ outputs={}
+ for name in old['outputs']:
+  p=ROOT/name
+  if not p.is_file():raise FileNotFoundError('Previously successful phase1 output missing after documentation: '+name)
+  outputs[name]=digest(p)
+ if outputs==old['outputs']:return False
+ path.write_text(json.dumps({**old,'outputs':outputs},indent=2)+'\n');return True
 def main():
  p=argparse.ArgumentParser();p.add_argument('--offline',action='store_true');p.add_argument('--refresh-local',action='store_true');p.add_argument('--refresh-all-core',action='store_true');a=p.parse_args()
  canonical=record_io.path_for(ROOT,'data/combined/observations.jsonl');before=record_io.logical_sha(ROOT)
@@ -111,7 +128,8 @@ def main():
   call('fetch_ncl_historical.py','--offline');call('extract_dgbas_historical.py');source_state.write_text(json.dumps(signature,indent=2)+'\n')
  run_extension_groups();call('register_historical_sources.py')
  canonical_rebuilt=run_canonical_build()
- phase1_hooks=run_phase1_hooks();call('verify_release.py')
+ phase1_hooks=run_phase1_hooks();phase2_hooks=run_phase2(ROOT,runner=call)
+ phase1_state_refreshed=refresh_phase1_state_outputs();call('verify_release.py')
  after=record_io.logical_sha(ROOT);after_signature=content_signature()
  # Legacy updates had no phase1 layer. Comparing against that explicit null
  # detects a newly added sidecar even when all canonical observations are equal.
@@ -121,6 +139,7 @@ def main():
  result={'completed_at':now.isoformat(),'before_sha256':before,'after_sha256':after,'canonical_data_changed':before!=after,
          'before_run_all_layers_sha256':current_before_signature,'previous_update_all_layers_sha256':previous_signature,
          'all_layers_sha256':after_signature,'phase1_content_sha256':phase1_content_digest(ROOT),
+         'phase2_content_sha256':phase2_content_digest(ROOT),'phase2':phase2_hooks,'phase1_final_documentation_hashes_refreshed':phase1_state_refreshed,
          'data_changed':previous_signature!=after_signature,'canonical_rebuilt':canonical_rebuilt,'phase1_batches':phase1_batches,
          'phase1_monitor':phase1_monitor,'phase1_hooks':phase1_hooks,'external_publication':False,'stale_local_sources':stale}
  (ROOT/'data/last_update.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,ensure_ascii=False))

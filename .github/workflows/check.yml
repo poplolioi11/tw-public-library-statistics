@@ -37,3 +37,7 @@ jobs:
         run: python scripts/validate_phase1_inventory.py
       - name: Validate supplemental source-cell formats and partitions
         run: python scripts/validate_phase1_supplements.py
+      - name: Validate full definition layer and reader projections
+        run: python scripts/validate_phase2.py
+      - name: Replay fixed source cases and CLI operation guards
+        run: python scripts/check_phase2_cases.py

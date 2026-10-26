@@ -2,7 +2,7 @@
 
 > 整理官方已公開、可驗證來源的公共圖書館統計事實與明確開放資料，支援公眾理解和研究重現。現有官方跨年圖表與名詞字典已存在；本專案不宣稱首創。
 
-版本 0.6.0；建置日 2026-10-26。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.6.0。
+版本 0.7.0；建置日 2026-10-26。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.7.0。
 
 ## 正式入口
 
@@ -53,8 +53,12 @@ value=null 要看value_status；source_blank是原印留白，not_available_in_s
 <!-- END generated-historical-scope -->
 
 <!-- BEGIN phase1 -->
-第一階段版本 0.6.0：先讀docs/phase1-summary.json與docs/phase1-data-dictionary.json。來源角色、候選與年主題索引不是營運觀測；來源格新層和canonical保持分開。按工作表小量讀取：docs/phase1-source-cell-partitions.json。未知不補值，2012原量缺口保留，跨年可比尚未認證。
+第一階段版本 0.7.0：先讀docs/phase1-summary.json與docs/phase1-data-dictionary.json。來源角色、候選與年主題索引不是營運觀測；來源格新層和canonical保持分開。按工作表小量讀取：docs/phase1-source-cell-partitions.json。未知不補值，2012原量缺口保留，跨年可比尚未認證。
 <!-- END phase1 -->
+
+<!-- BEGIN phase2 -->
+第二階段 v0.7.0：docs/phase2-summary.json與docs/phase2-statuses.json為入口；derived/phase2/annotations.csv.gz、annotations.jsonl.gz及definitions.sqlite是口徑註記，不是新增營運量。按年度小檔：docs/phase2-partitions.json。比較工具scripts/compare_definitions.py；source_series_only/unresolved不准默接，published_panel_limited只限原刊面板，所有原值不變。
+<!-- END phase2 -->
 
 ## 小量讀取與公開投影
 

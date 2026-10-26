@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "2",
+  "scope": "Definition/measurement audit over all currently released canonical quantitative observations and the phase1 programme/local statistical cells. No raw numeric values or IDs are changed.",
+  "statuses": {
+    "published_panel_limited": "Same official table explicitly presents multiple periods with the same printed metric/unit and population/region qualifiers; permits that published comparison only, not a claim that all historic collection rules were unchanged.",
+    "source_series_only": "Same source-labelled series; missing effective-year definition prevents full comparability certification.",
+    "incompatible": "Explicit unit/measure, period, population, national-library inclusion, geography, aggregation, institution or dimension conflict.",
+    "unresolved": "Necessary original definition/effective date or scope remains unknown; same label is not evidence."
+  },
+  "evidence_card_fields": [
+    "evidence_id",
+    "source_id",
+    "source_sha256",
+    "source_url",
+    "source_locator",
+    "layer",
+    "source_table",
+    "source_table_title",
+    "source_fields",
+    "data_years_present",
+    "reviewed_original",
+    "semantic_facts",
+    "original_notes_short",
+    "supported_comparison_scope",
+    "unresolved",
+    "review_method"
+  ],
+  "source_facts_only": "Do not infer an effective date from today's dictionary; do not claim statistical correctness, causal comparison or continuity of reporting completeness.",
+  "required_dimensions": [
+    "measure",
+    "unit",
+    "collection_type",
+    "stock_flow_ratio_financial",
+    "period_resolution",
+    "population",
+    "national_library_scope",
+    "geography_vintage",
+    "institutional_level",
+    "aggregation_role",
+    "source_edition",
+    "age_sex_reader_classification"
+  ],
+  "protected_values": "0/blank/marker/display-typed0 conflict/period conflict keep all original representations. 2012 original quantities remain a gap; never impute.",
+  "delivery": "CSV/JSONL/SQLite record annotation + definition/evidence register + comparison groups/breakpoints, evidence-qualified CLI pair checker and readable overview. Preserve canonical data unchanged. No automatic cross-family splicing or geography recoding.",
+  "publishing": "Validate then update the existing GitHub repository, latest release, packaged readers and private Drive handoff; retain old tags/releases."
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "execution": "Controller executed background checks after optional reader-review worker hit model capacity.",
+  "node_vm": {
+    "status": "PASS",
+    "version": "0.7.0",
+    "all_groups": 22825,
+    "examples": 12,
+    "filters": [
+      {
+        "mode": "all",
+        "matched": 22825
+      },
+      {
+        "mode": "periods",
+        "matched": 639
+      },
+      {
+        "mode": "unresolved",
+        "matched": 5131
+      }
+    ],
+    "pagination": true,
+    "no_match_not_no_data": true,
+    "example_detail_rendered": true,
+    "scope": "Node VM with target DOM stubs. No browser layout/visual claim, no user screen touched."
+  },
+  "values": {
+    "status": "PASS",
+    "source_bound_example_points": 57,
+    "examples": 12,
+    "all_group_records": 22825,
+    "Decimal_axis_rounding_checked": true,
+    "synthetic_missing_year_breaks_line": true,
+    "no_interpolation": true,
+    "scope": "Actual chart values/URLs/locators and SVG coordinates replayed to annotations; not an independent re-reading of original PDFs."
+  },
+  "no_original_source_reaudit_claim": true
+}

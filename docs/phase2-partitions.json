@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.0.0",
+  "version": "0.7.0",
+  "parent": "derived/phase2/annotations.jsonl.gz",
+  "records": 56496,
+  "partitions": [
+    {
+      "layer": "canonical",
+      "comparison_year": 1991,
+      "records": 4,
+      "jsonl": "derived/phase2/by_year/canonical/1991.jsonl",
+      "csv": "derived/phase2/by_year/canonical/1991.csv",
+      "jsonl_sha256": "30387b71bf33ac859980d7807af5dd7ac7d0278c833d2b74fc78a6482429b0b3",
+      "csv_sha256": "6ed5fab57a87ce2f4dbd590d54496cf72db3f293d77274f9f7e013fd8e421fb8"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 1992,
+      "records": 4,
+      "jsonl": "derived/phase2/by_year/canonical/1992.jsonl",
+      "csv": "derived/phase2/by_year/canonical/1992.csv",
+      "jsonl_sha256": "c7385c634764bf3ae7e22afe507e9d773f0a1fbfb390d125a03aa5754ef970f8",
+      "csv_sha256": "6ebd2b1e0155b1fc6e5d7ebea9bdc813225aa6c315389b137a78b7cdbd5cf0dd"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 1993,
+      "records": 9,
+      "jsonl": "derived/phase2/by_year/canonical/1993.jsonl",
+      "csv": "derived/phase2/by_year/canonical/1993.csv",
+      "jsonl_sha256": "5df43df9ed18ffee371d0c955edcecb5f9934da5213cc8ac2fb880edae67c533",
+      "csv_sha256": "501d711ad8e230103ce61ae17d6c4dfa5954e9d19870d8d2b4a59b0ea43b473d"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 1994,
+      "records": 9,
+      "jsonl": "derived/phase2/by_year/canonical/1994.jsonl",
+      "csv": "derived/phase2/by_year/canonical/1994.csv",
+      "jsonl_sha256": "9e548d006068c986553e5278f6b606fa7f3d9362a2aa99e670e1d73c6d9d2e3d",
+      "csv_sha256": "cf988bd656a55d16553d98781e0c0e8a4b90fe1a57054dcf09dd617b8236c62a"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 1995,
+      "records": 9,
+      "jsonl": "derived/phase2/by_year/canonical/1995.jsonl",
+      "csv": "derived/phase2/by_year/canonical/1995.csv",
+      "jsonl_sha256": "2410c02e5dfd320c6bdba312bd8eb8d57ef10d75969e4e5f6a91c2eec29db403",
+      "csv_sha256": "e4e92117acec9ef69cd631516da757eab3562f77f435f4e04b6873872e61ae7c"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 1996,
+      "records": 14,
+      "jsonl": "derived/phase2/by_year/canonical/1996.jsonl",
+      "csv": "derived/phase2/by_year/canonical/1996.csv",
+      "jsonl_sha256": "4896593ef2a75ebeabb2ce29429dc46d2d2edb0fa0b957a9db1748e393affa92",
+      "csv_sha256": "dca22981936a347989bdb153ec6a4cbc2f34c228ecc51befb7e04135079f3287"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 1997,
+      "records": 14,
+      "jsonl": "derived/phase2/by_year/canonical/1997.jsonl",
+      "csv": "derived/phase2/by_year/canonical/1997.csv",
+      "jsonl_sha256": "75d25d4e0452f996d21c07990d4b9b364db5d24a62c1faff8b09d1945cd3d062",
+      "csv_sha256": "2a7ddbd208fb41bde825074ffe1a1109b475c6bca62aa77d91d75de0810b0ee3"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 1998,
+      "records": 37,
+      "jsonl": "derived/phase2/by_year/canonical/1998.jsonl",
+      "csv": "derived/phase2/by_year/canonical/1998.csv",
+      "jsonl_sha256": "335dca46dd202a7ff4979e49fdbb64d2b97ad2126b4a493ce34bc9c8f640515b",
+      "csv_sha256": "d5cf664984d8f414d99d694283faebf6699a949248ac6730d508ffe5b79b74e9"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 1999,
+      "records": 37,
+      "jsonl": "derived/phase2/by_year/canonical/1999.jsonl",
+      "csv": "derived/phase2/by_year/canonical/1999.csv",
+      "jsonl_sha256": "2d73391a172cc9ab4494c9a34875838b396d13592fe042defc4021e77fa5da5b",
+      "csv_sha256": "0eefc6cc6a5975dce198cae95e7b6470209eb664b74a528fb571be60290687e9"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2000,
+      "records": 37,
+      "jsonl": "derived/phase2/by_year/canonical/2000.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2000.csv",
+      "jsonl_sha256": "dd6a43e6a072a2cf41fa56de2dbb26c294a00707def59bed619da148c765a86a",
+      "csv_sha256": "01349a4023b2042b5797e4a2f70c4b3306824af22db61d6545f048add83c7dfa"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2001,
+      "records": 37,
+      "jsonl": "derived/phase2/by_year/canonical/2001.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2001.csv",
+      "jsonl_sha256": "0269cd930e7ad2fe8851f487d41b2b49b68f13b20d9ea8b371049508ff8c0922",
+      "csv_sha256": "ffacafa15284e99669f9d98018afd6dc04c8311a848fa19af7542d5386e0006e"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2002,
+      "records": 37,
+      "jsonl": "derived/phase2/by_year/canonical/2002.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2002.csv",
+      "jsonl_sha256": "9ff48d0ebdb343887c5ca9203be20ad83252811cd02ea247181ddcfa1255fe0f",
+      "csv_sha256": "de10431d6f4904ffea84add4aad76033e38e9c6e2460c8c7064927944a3cc450"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2003,
+      "records": 37,
+      "jsonl": "derived/phase2/by_year/canonical/2003.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2003.csv",
+      "jsonl_sha256": "968320d4492453f08c01f336be9bc8f77276db9a9d5e585d4a8e7882f0ea0046",
+      "csv_sha256": "4e0be227dbba88dfe646891e044c76612e98006391f043887cbd9bc4bfd14e7d"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2004,
+      "records": 37,
+      "jsonl": "derived/phase2/by_year/canonical/2004.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2004.csv",
+      "jsonl_sha256": "0b90a4c48d3a9440612f5e7fcfc6942ae8b644f09c4f11b84437ad1a830141c2",
+      "csv_sha256": "6975ae959e31cbddcbec3833c5859505eded0361b6452611dcbf354c12486a72"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2005,
+      "records": 531,
+      "jsonl": "derived/phase2/by_year/canonical/2005.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2005.csv",
+      "jsonl_sha256": "e92fb1dfe7b1c2c2b6db0a0b1f5f42ab78b83cdea07f739dc1a4aefcb59ca059",
+      "csv_sha256": "3a8079b8c124f8dcde987da7d859b1ef64ac90ae3d8397a4604f939ded5671b6"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2006,
+      "records": 882,
+      "jsonl": "derived/phase2/by_year/canonical/2006.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2006.csv",
+      "jsonl_sha256": "753f1ce87136f3fc58ea08a6097c874f596ed2b13b75215af66d4b7b90f03061",
+      "csv_sha256": "e53ca2accc58c64fe7f19d39fc2582304b0b05fd38fd1b0c30b0326edc5d68c5"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2007,
+      "records": 870,
+      "jsonl": "derived/phase2/by_year/canonical/2007.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2007.csv",
+      "jsonl_sha256": "c61bc6ca967a88a54e988991e26f42d8579f27ce26c84c54fba612a13ebc43fb",
+      "csv_sha256": "327da32a26815e3a5cb6bf0f592c581e490d5fbe0b0129c4f43ecd166559f748"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2008,
+      "records": 858,
+      "jsonl": "derived/phase2/by_year/canonical/2008.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2008.csv",
+      "jsonl_sha256": "8a5ea1672566b3593dfb555512f9a25010c941531e1589411a2d7f369581923f",
+      "csv_sha256": "4a4e6c119c791979aadb83ace16aaa106f4029e00751983d9eb6f5e8ed8dcdcd"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2009,
+      "records": 832,
+      "jsonl": "derived/phase2/by_year/canonical/2009.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2009.csv",
+      "jsonl_sha256": "f2501ab3b795ee394ed2ee7c8f8f7575b83e03b9d56108092ae1480f77735ab5",
+      "csv_sha256": "e9cf13da47e9c594784577f441627aaea2b606dee4a9137c845a9b2f9d41fd92"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2010,
+      "records": 863,
+      "jsonl": "derived/phase2/by_year/canonical/2010.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2010.csv",
+      "jsonl_sha256": "77378d033c73dbc7e7fe88fb167ed0001f3f94b571e20a08822e29f9dc2b7152",
+      "csv_sha256": "a03f1eddac33ad6dec9c8cbbc71af6ccdef61f016280e0609e4034e25571a095"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2011,
+      "records": 1027,
+      "jsonl": "derived/phase2/by_year/canonical/2011.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2011.csv",
+      "jsonl_sha256": "818aaf363b9833622d9ae5ff22e945d5e67e073a7bfe0aa90095aad716dac108",
+      "csv_sha256": "7c6647cad4b868a544044edcb9385169123f47ee87a03a71d2acadd377af268f"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2012,
+      "records": 533,
+      "jsonl": "derived/phase2/by_year/canonical/2012.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2012.csv",
+      "jsonl_sha256": "cad6a404fae352a7e035f6fab886312292ab4c8f8c6189280504f3dbdd3f0d30",
+      "csv_sha256": "76bbce264cbe88de403a69a31013bf9ea2d3f000f11786b0f34c83601d8dccdb"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2013,
+      "records": 851,
+      "jsonl": "derived/phase2/by_year/canonical/2013.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2013.csv",
+      "jsonl_sha256": "e0335959006dcda08d3bc769a4d125c5742ffd1aaf729f612fe40bcdebcde25b",
+      "csv_sha256": "62ab45f873fbab0ae310ee11058ce9d4ef2467111a58ff101feb95c5883fd5ee"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2014,
+      "records": 924,
+      "jsonl": "derived/phase2/by_year/canonical/2014.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2014.csv",
+      "jsonl_sha256": "effc12ba55182f12c7c8597c7c70baec1cd4eca19365909bd684ed07dccf705e",
+      "csv_sha256": "faaa2e62b5a9b33b00f0d64093784a5dd533428cc838f47053833a29e0e93c84"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2015,
+      "records": 1091,
+      "jsonl": "derived/phase2/by_year/canonical/2015.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2015.csv",
+      "jsonl_sha256": "a0000d0f0f8a6c8e6ea2ab58b32bb758b430c56807054f6fcdfd7ebc73cb7e89",
+      "csv_sha256": "0cd8b3dfd12bbc5e9a98b3478674d6e858e6db483af5328a5770804162360f27"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2016,
+      "records": 2148,
+      "jsonl": "derived/phase2/by_year/canonical/2016.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2016.csv",
+      "jsonl_sha256": "1319a0495756b861429cf74b5cc66b89def3d2d6e945e64da7e5c0d4e9fb7801",
+      "csv_sha256": "bb2cf3c0247ac8503f62085f31bcfba265a0317766be86095fdb32b6a9140e25"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2017,
+      "records": 2241,
+      "jsonl": "derived/phase2/by_year/canonical/2017.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2017.csv",
+      "jsonl_sha256": "bc867af1a90fc43edd54b10efaeb48139c31b6bb3073aac8bcf188ae6027a43c",
+      "csv_sha256": "a648568b1441b683328d06de0e90638ccc2a53f7c69a6461ea5dcb8af98c2412"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2018,
+      "records": 2429,
+      "jsonl": "derived/phase2/by_year/canonical/2018.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2018.csv",
+      "jsonl_sha256": "6807a23c2d25c408eec636f4b04a974ccf105a12e98a758426aab4bd840d27f6",
+      "csv_sha256": "f307e5e5b831cc52f52921d00ebbb6b67a503846c593e49612c8c90b57224b68"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2019,
+      "records": 2315,
+      "jsonl": "derived/phase2/by_year/canonical/2019.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2019.csv",
+      "jsonl_sha256": "9760cb71f4ee6beb63e864fea41be49279fa6a2cc094fb9e6f56a2535e217369",
+      "csv_sha256": "a943a3200b643f37145a3da1be2cd5ea1f2116e2658ea31c038c13ca0edf8e59"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2020,
+      "records": 2528,
+      "jsonl": "derived/phase2/by_year/canonical/2020.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2020.csv",
+      "jsonl_sha256": "6a810d7ae43ff930e57257de029cd891845cc94a763f5734e5a83614275120eb",
+      "csv_sha256": "7097635c8d4d86bc61c07fc42f6f6a6f15be4c1f1da4bba97328ff691547848f"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2021,
+      "records": 2629,
+      "jsonl": "derived/phase2/by_year/canonical/2021.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2021.csv",
+      "jsonl_sha256": "f99e752a7fdcde2fb28d45281bdaa5617584c01ef850afea8c80b6b15e550f39",
+      "csv_sha256": "8eb19f0382fc628f8e51092d28174907454512f0e5b463d18892d79edda939ae"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2022,
+      "records": 2886,
+      "jsonl": "derived/phase2/by_year/canonical/2022.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2022.csv",
+      "jsonl_sha256": "52b52d3b75327450fa4d7cdd369cbeba5adc0cf532f90e4623b46f32a2c4d646",
+      "csv_sha256": "def2504f1b9c6fb7d98a463f86809ee39b8f59cb5f0ae74b2be2dd145bb84418"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2023,
+      "records": 5151,
+      "jsonl": "derived/phase2/by_year/canonical/2023.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2023.csv",
+      "jsonl_sha256": "2138f3a1aa0fa6f9ee2e697e8ef48786f0992c9cbbf5695ee057ca8a9e62821f",
+      "csv_sha256": "756a35553a8e2b78493327ad04acba2e0689cf914b5d3bedd04db8e9e4213b70"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2024,
+      "records": 3016,
+      "jsonl": "derived/phase2/by_year/canonical/2024.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2024.csv",
+      "jsonl_sha256": "9f612eb3654afaba11812f1d5afb28d660387d855198f429dc670c03409b0a88",
+      "csv_sha256": "6d0bb8ae06b8f64169e27eaa796b76c0c900d1beb6490878bbc5979b5bce10fb"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2025,
+      "records": 1808,
+      "jsonl": "derived/phase2/by_year/canonical/2025.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2025.csv",
+      "jsonl_sha256": "c1d0e1f2ba54ba83f70982414f8bd70d3f83c03eea1242e52820b17cb3594b5a",
+      "csv_sha256": "45d42422e6f7ac05af388b510d3aac5646bf809d6bf8623beee7625ba2315e74"
+    },
+    {
+      "layer": "canonical",
+      "comparison_year": 2026,
+      "records": 1152,
+      "jsonl": "derived/phase2/by_year/canonical/2026.jsonl",
+      "csv": "derived/phase2/by_year/canonical/2026.csv",
+      "jsonl_sha256": "190a4af1b9d8e39eecfcee7228b69d3ee946cb76a358b30667cc21f1f248ed48",
+      "csv_sha256": "94bf21f7ce347d3666b724d4d0388c7822026fefa1a6ca644947c9eac36b83b7"
+    },
+    {
+      "layer": "local_statistical_cells",
+      "comparison_year": null,
+      "records": 211,
+      "jsonl": "derived/phase2/by_year/local_statistical_cells/unresolved_period.jsonl",
+      "csv": "derived/phase2/by_year/local_statistical_cells/unresolved_period.csv",
+      "jsonl_sha256": "87b3a9bbeda143592e4672c07fe3c632e68cf7275de62af466e26d6731eb9e6f",
+      "csv_sha256": "080f3d6bd51eb2dd97a7025282018d86ffc3424dec383b0e986b13dd2c9cb5d1"
+    },
+    {
+      "layer": "local_statistical_cells",
+      "comparison_year": 2020,
+      "records": 904,
+      "jsonl": "derived/phase2/by_year/local_statistical_cells/2020.jsonl",
+      "csv": "derived/phase2/by_year/local_statistical_cells/2020.csv",
+      "jsonl_sha256": "8be9a39e0c3fd2d66cfc9f03c5ae44a0c3bd7368ca3ba12003744a416b8169ce",
+      "csv_sha256": "f5d20c5c4a019f94d29760b89c2f1612e5190a80ba4c1d04608486ce74ec9c13"
+    },
+    {
+      "layer": "local_statistical_cells",
+      "comparison_year": 2021,
+      "records": 3016,
+      "jsonl": "derived/phase2/by_year/local_statistical_cells/2021.jsonl",
+      "csv": "derived/phase2/by_year/local_statistical_cells/2021.csv",
+      "jsonl_sha256": "a3f4a553e8c7313cbfcbcbc6a1b7dd2229ee332d49f353ae2957cba9dd2a9bc2",
+      "csv_sha256": "d20d5e626bd10087c0a87ce609ded44a46817c28ecb56980c69c075b6b6d9e8a"
+    },
+    {
+      "layer": "local_statistical_cells",
+      "comparison_year": 2022,
+      "records": 3072,
+      "jsonl": "derived/phase2/by_year/local_statistical_cells/2022.jsonl",
+      "csv": "derived/phase2/by_year/local_statistical_cells/2022.csv",
+      "jsonl_sha256": "bafebe96f20ffb3c055debdcb307c585c1405212e242a9d615166fbdafc22856",
+      "csv_sha256": "fae1f548c0a6155ce2b8b63c4098eeb8e23c2f99bfc4602f1ae1087dfbb93c72"
+    },
+    {
+      "layer": "local_statistical_cells",
+      "comparison_year": 2023,
+      "records": 3072,
+      "jsonl": "derived/phase2/by_year/local_statistical_cells/2023.jsonl",
+      "csv": "derived/phase2/by_year/local_statistical_cells/2023.csv",
+      "jsonl_sha256": "b15e02b5b474ed8641e4d31b80a953d10cb7441c9eb5b35e88e2082f6adc9bb5",
+      "csv_sha256": "5919dd1cc8beaa75823b97d6330360ad460c0ffb4db336ef1b6ae4a063de5722"
+    },
+    {
+      "layer": "local_statistical_cells",
+      "comparison_year": 2024,
+      "records": 2984,
+      "jsonl": "derived/phase2/by_year/local_statistical_cells/2024.jsonl",
+      "csv": "derived/phase2/by_year/local_statistical_cells/2024.csv",
+      "jsonl_sha256": "332f5825c6cd3d0ecffa82cc969f77f43f86c87b26c09666a103819e4bdc9660",
+      "csv_sha256": "5f879803433951d2eb2142620fb8dd37cc0b1eccae382696fb43ff65633294f1"
+    },
+    {
+      "layer": "local_statistical_cells",
+      "comparison_year": 2025,
+      "records": 3115,
+      "jsonl": "derived/phase2/by_year/local_statistical_cells/2025.jsonl",
+      "csv": "derived/phase2/by_year/local_statistical_cells/2025.csv",
+      "jsonl_sha256": "9a132a080d8512fc0870a39c0a0310e8ce3604c6f732464ca83c7b9963f06689",
+      "csv_sha256": "0972c40bde33c700ce21a3418dcc2606505887fd09c9bfe81844f3c0d869c4b0"
+    },
+    {
+      "layer": "local_statistical_cells",
+      "comparison_year": 2026,
+      "records": 2112,
+      "jsonl": "derived/phase2/by_year/local_statistical_cells/2026.jsonl",
+      "csv": "derived/phase2/by_year/local_statistical_cells/2026.csv",
+      "jsonl_sha256": "54a1f7ffdca283966c08ba9ef0f1acafc8cd3a3f57f11f235dd10fe5eee44fca",
+      "csv_sha256": "98f8b8becfba438dc4ec3b17e67e6071b0e2113702c430a59aa656e252f708db"
+    },
+    {
+      "layer": "programme_quantities",
+      "comparison_year": null,
+      "records": 123,
+      "jsonl": "derived/phase2/by_year/programme_quantities/unresolved_period.jsonl",
+      "csv": "derived/phase2/by_year/programme_quantities/unresolved_period.csv",
+      "jsonl_sha256": "e34f1b072dafed09908a88b5873616d21514031a53a1a2780d0cda3943bba027",
+      "csv_sha256": "35ef55799405d49615880eceb23795f84bf34b522c35f0f73c68e3eb4dfd6497"
+    }
+  ],
+  "unresolved_years_are_not_assigned_from_catalogues": true
+}

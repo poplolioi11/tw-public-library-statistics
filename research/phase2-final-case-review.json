@@ -1,0 +1,1279 @@
+{
+  "status": "PASS",
+  "execution": "Checker authored by the independent source-case reviewer; controller completed CLI/public-projection adapters and ran it after reviewer capacity failure. Frozen pre-engine expectations are unchanged.",
+  "scope": "fresh methods and full materialized quantitative layer",
+  "assertions": 842035,
+  "blockers": [],
+  "notes": [],
+  "frozen_cases_content_sha256": "f2e968150db64ac338543f5371a5d962d9d01301672f07430bdb3d941f22aff9",
+  "frozen_cases_file_sha256": "853649cf541a1f97e28678f61325f540269fd2b5fe446b99dce1c98c24a45854",
+  "engine_sha256": "2ff54862237b16d5483e9c65608d49fd1fa48a0cef58de286f1103678c6a925d",
+  "source_adjudications": [
+    {
+      "case_id": "P2-C005",
+      "original_expected_decision": "unresolved",
+      "source_qualified_decision": "limited_published_panel",
+      "source_sha256": "066ffff121ccc2d86280002cf4aa4432d8ef0ada0f4ab6dfe4d6615d0efa8f69",
+      "source_url": "https://ws.dgbas.gov.tw/public/data/331311404571.pdf#page=107",
+      "source_locator": "PDF107; printed123; English note5; Chinese note5 on PDF106/print122",
+      "original_note_short": "Since 2000, number of readers only included those who borrowed books out of libraries.",
+      "basis": "Direct PDFium text and rendered original page read after the new evidence card; explicitly supports <=1999 / >=2000 boundary in this edition. Parent confirmed source adjudication. Does not apply to 2011 edition with opposing English/Chinese direction.",
+      "frozen_fixture_not_modified": true
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "P2-C001",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "splice_as_one_financial_series",
+      "record_keys": [
+        "canonical:obs-916205835c29d81f67579d",
+        "canonical:obs-63075c8a8f27c327bb9015"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "source_series_only",
+        "source_series_only"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-916205835c29d81f67579d",
+          "right": "canonical:obs-63075c8a8f27c327bb9015",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "incompatible",
+          "differences": [
+            {
+              "dimension": "financial_mode",
+              "left": "budget",
+              "right": "final_expenditure"
+            }
+          ],
+          "reasons": [
+            "different_financial_mode"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C002",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "splice_total_and_renewal_component",
+      "record_keys": [
+        "canonical:obs-60c28dca29e941288ad138",
+        "canonical:obs-9ad5c3d8b338ae1d6e1073"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "published_panel_limited",
+        "published_panel_limited"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-60c28dca29e941288ad138",
+          "right": "canonical:obs-9ad5c3d8b338ae1d6e1073",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "unresolved",
+          "differences": [
+            {
+              "dimension": "renewal_scope",
+              "left": "explicit_borrow_plus_renewal",
+              "right": "explicit_renewal_only"
+            }
+          ],
+          "reasons": [
+            "same_period_records_must_not_be_treated_as_successive_time_points"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C003",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "certify_same_renewal_inclusion",
+      "record_keys": [
+        "canonical:obs-1dfdddad4c3458d7631978",
+        "canonical:obs-60c28dca29e941288ad138"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "source_series_only",
+        "published_panel_limited"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-1dfdddad4c3458d7631978",
+          "right": "canonical:obs-60c28dca29e941288ad138",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "incompatible",
+          "differences": [
+            {
+              "dimension": "renewal_scope",
+              "left": "original_borrow_field_unspecified_renewal",
+              "right": "explicit_borrow_plus_renewal"
+            },
+            {
+              "dimension": "unit",
+              "left": "冊次",
+              "right": "冊"
+            },
+            {
+              "dimension": "period_kind",
+              "left": "annual_flow_source",
+              "right": "monthly_source_statistic"
+            },
+            {
+              "dimension": "facility_or_reader_category",
+              "left": "",
+              "right": "新竹市圖書館一般閱覽室"
+            },
+            {
+              "dimension": "geographic_scope",
+              "left": "county",
+              "right": "municipal_library_institution"
+            },
+            {
+              "dimension": "geography_key",
+              "left": "2015 original published geography; 桃園縣 retained where printed",
+              "right": null
+            },
+            {
+              "dimension": "population_scope",
+              "left": "公立公共圖書館；表143公共館組含私立，按各表註腳分開",
+              "right": "新竹市公共圖書館圖書借閱量統計表"
+            },
+            {
+              "dimension": "national_libraries_scope",
+              "left": "excluded_from_county_metrics",
+              "right": null
+            },
+            {
+              "dimension": "aggregation_role",
+              "left": "reported_component",
+              "right": null
+            },
+            {
+              "dimension": "institutional_level",
+              "left": "原表各層級合計",
+              "right": null
+            }
+          ],
+          "reasons": [
+            "different_unit",
+            "different_period_kind",
+            "unproven_equivalent_renewal_scope",
+            "unknown_facility_or_reader_category",
+            "unproven_equivalent_geographic_scope",
+            "unknown_geography_key",
+            "unproven_equivalent_population_scope",
+            "unknown_national_libraries_scope",
+            "unknown_aggregation_role",
+            "unknown_institutional_level"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": true
+    },
+    {
+      "case_id": "P2-C004",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "reinterpret_as_unique_people",
+      "record_keys": [
+        "canonical:obs-42d1acd6f4f6301bc0e999"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "published_panel_limited"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C005",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "certify_continuous_reader_measure_across_1999",
+      "record_keys": [
+        "canonical:obs-7c26d37e70562ef669b2af",
+        "canonical:obs-9a08f5f23e7b50ce471776"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "published_panel_limited",
+        "published_panel_limited"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-7c26d37e70562ef669b2af",
+          "right": "canonical:obs-9a08f5f23e7b50ce471776",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "published_panel_limited",
+          "differences": [],
+          "reasons": [
+            "same_reviewed_official_panel_metric_unit_entity_period_and_segment"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": true,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C006",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "treat_as_same_collection_unit",
+      "record_keys": [
+        "canonical:obs-f19eca8ec8a3639f72d0cc",
+        "canonical:obs-b057917eba199442cb8d53"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "source_series_only",
+        "source_series_only"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-f19eca8ec8a3639f72d0cc",
+          "right": "canonical:obs-b057917eba199442cb8d53",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "incompatible",
+          "differences": [
+            {
+              "dimension": "unit",
+              "left": "冊",
+              "right": "件"
+            }
+          ],
+          "reasons": [
+            "different_unit"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C007",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "sum_as_homogeneous_books",
+      "record_keys": [
+        "canonical:obs-f19eca8ec8a3639f72d0cc",
+        "canonical:obs-45f7f66d25e65b50ec06ee"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "source_series_only",
+        "source_series_only"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C008",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "compare_unscaled_raw_numbers_as_same_unit",
+      "record_keys": [
+        "canonical:obs-c8dfbe305cca9e5cd3f5b1",
+        "canonical:obs-bd551f75c0b34269130d05"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "published_panel_limited",
+        "source_series_only"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C009",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "certify_all_years_same_current_definition",
+      "record_keys": [
+        "canonical:obs-117d95cd6f34f9b8bcf2b0",
+        "canonical:obs-07322cb1f818c24be6b00b"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "source_series_only",
+        "source_series_only"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-117d95cd6f34f9b8bcf2b0",
+          "right": "canonical:obs-07322cb1f818c24be6b00b",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "unresolved",
+          "differences": [],
+          "reasons": [
+            "same_labelled_source_series_but_historical_definition_not_certified"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C010",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "deduplicate_or_overwrite_different_editions",
+      "record_keys": [
+        "canonical:obs-28edaf7217be5d3c0c4546",
+        "canonical:obs-b709e9cbc2e2844fee7bb7"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "published_panel_limited",
+        "published_panel_limited"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C011",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "impute_missing_original_quantity_from_ratio",
+      "record_keys": [
+        "canonical:obs-f62e84d161a23349254e91"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C012",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "splice_library_count_across_national_inclusion_scopes",
+      "record_keys": [
+        "canonical:obs-4ac5275191211bea74bceb",
+        "canonical:obs-755be0063af0e04a778dd5",
+        "canonical:obs-ec8a6226ca4cbf4760ee86"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "published_panel_limited",
+        "source_series_only",
+        "source_series_only"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-4ac5275191211bea74bceb",
+          "right": "canonical:obs-755be0063af0e04a778dd5",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "incompatible",
+          "differences": [
+            {
+              "dimension": "period_kind",
+              "left": "annual_stock_reference_exact_date_unconfirmed",
+              "right": "annual_reference_current_definition_only"
+            },
+            {
+              "dimension": "entity",
+              "left": "新北市",
+              "right": "新北市(不含國立館)"
+            },
+            {
+              "dimension": "geographic_scope",
+              "left": "county_official_reorganized",
+              "right": "county_excluding_national_alternative"
+            },
+            {
+              "dimension": "geography_key",
+              "left": "官方查詢『改制後縣市別』；歷史值依官方重編範圍，未自行合併",
+              "right": null
+            },
+            {
+              "dimension": "population_scope",
+              "left": "公立公共圖書館館數（包含國家圖書館、國立公共資訊圖書館及國立臺灣圖書館）。",
+              "right": "公立公共圖書館（不含學校圖書館）；依來源年度填報範圍"
+            },
+            {
+              "dimension": "national_libraries_scope",
+              "left": "includes_National_Central_Library_NLPI_and_NTL_per_official_definition",
+              "right": null
+            },
+            {
+              "dimension": "source_segment",
+              "left": "field_break:0",
+              "right": "source_panel"
+            }
+          ],
+          "reasons": [
+            "different_period_kind",
+            "different_entity",
+            "different_source_segment",
+            "unproven_equivalent_geographic_scope",
+            "unknown_geography_key",
+            "unproven_equivalent_population_scope",
+            "unknown_national_libraries_scope"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        },
+        {
+          "left": "canonical:obs-4ac5275191211bea74bceb",
+          "right": "canonical:obs-ec8a6226ca4cbf4760ee86",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "incompatible",
+          "differences": [
+            {
+              "dimension": "period_kind",
+              "left": "annual_stock_reference_exact_date_unconfirmed",
+              "right": "annual_reference_current_definition_only"
+            },
+            {
+              "dimension": "entity",
+              "left": "新北市",
+              "right": "新北市(不含國立館)"
+            },
+            {
+              "dimension": "geographic_scope",
+              "left": "county_official_reorganized",
+              "right": "county_excluding_national_alternative"
+            },
+            {
+              "dimension": "geography_key",
+              "left": "官方查詢『改制後縣市別』；歷史值依官方重編範圍，未自行合併",
+              "right": null
+            },
+            {
+              "dimension": "population_scope",
+              "left": "公立公共圖書館館數（包含國家圖書館、國立公共資訊圖書館及國立臺灣圖書館）。",
+              "right": "公立公共圖書館（不含學校圖書館）；依來源年度填報範圍"
+            },
+            {
+              "dimension": "national_libraries_scope",
+              "left": "includes_National_Central_Library_NLPI_and_NTL_per_official_definition",
+              "right": null
+            },
+            {
+              "dimension": "source_segment",
+              "left": "field_break:0",
+              "right": "source_panel"
+            }
+          ],
+          "reasons": [
+            "different_period_kind",
+            "different_entity",
+            "different_source_segment",
+            "unproven_equivalent_geographic_scope",
+            "unknown_geography_key",
+            "unproven_equivalent_population_scope",
+            "unknown_national_libraries_scope"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C013",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "automatically_recode_old_county_to_current_navigation",
+      "record_keys": [
+        "canonical:obs-a8efa9497837a6543ad5b9"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "source_series_only"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C014",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "certify_same_geography_from_label_equality",
+      "record_keys": [
+        "canonical:obs-e70d958ed0f6fed3708f9d",
+        "canonical:obs-20a1487cd958b4e6bb3b93"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "unresolved",
+        "unresolved"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-e70d958ed0f6fed3708f9d",
+          "right": "canonical:obs-20a1487cd958b4e6bb3b93",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "incompatible",
+          "differences": [
+            {
+              "dimension": "geography_key",
+              "left": "民國94年原25縣市界線；23個非直轄市縣市列於表3–4，臺北市、高雄市館另列；未跨界線重編",
+              "right": "2024 original printed labels and ordering; no geographic harmonization"
+            },
+            {
+              "dimension": "population_scope",
+              "left": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries",
+              "right": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately."
+            },
+            {
+              "dimension": "national_libraries_scope",
+              "left": "county_and_township_public_libraries_excluding_separately_listed_national_and_two_municipal_libraries",
+              "right": "County rows include all local tiers and exclude the two national public libraries; published county aggregate retained separately."
+            },
+            {
+              "dimension": "institutional_level",
+              "left": "",
+              "right": "原刊列名及層級合計"
+            },
+            {
+              "dimension": "classification_dimensions",
+              "left": {
+                "ownership_scope": "public"
+              },
+              "right": {}
+            }
+          ],
+          "reasons": [
+            "different_classification_dimensions",
+            "unproven_equivalent_geography_key",
+            "unproven_equivalent_population_scope",
+            "unproven_equivalent_national_libraries_scope",
+            "unknown_institutional_level"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C015",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "promote_candidate_unit_to_confirmed_unit",
+      "record_keys": [
+        "canonical:obs-f960a3569132a2a26dc9c2"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C016",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "certify_county_identity_or_move_value",
+      "record_keys": [
+        "canonical:obs-65556868768eda7ff2e243"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C017",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "reassign_duplicate_county_label_or_deduplicate",
+      "record_keys": [
+        "canonical:obs-3113176be5c12adec2f182",
+        "canonical:obs-434a8011ff62c36bfaae38"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved",
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C018",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "coerce_display_dash_typed_zero_to_reported_zero",
+      "record_keys": [
+        "local_statistical_cells:south-hualien-library-lending-409-reader:115年8月:B17",
+        "local_statistical_cells:south-lienchiang-opendata-173786:工作表1:G3"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved",
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C019",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "choose_sheet_month_or_header_month_as_formal_period",
+      "record_keys": [
+        "local_statistical_cells:south-hualien-library-lending-409-reader:113年6月:F10"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C020",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "correct_header_year_or_accept_mechanical_year_candidate",
+      "record_keys": [
+        "local_statistical_cells:south-hualien-library-lending-409-reader:109年10月:F10"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C021",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "certify_annual_stock_continuity_from_catalogue_year",
+      "record_keys": [
+        "local_statistical_cells:south-lienchiang-opendata-173786:工作表1:B2",
+        "local_statistical_cells:south-lienchiang-culture-library-overview-114:11014-03-01-2:D8"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "unresolved",
+        "source_series_only"
+      ],
+      "compare_results": [
+        {
+          "left": "local_statistical_cells:south-lienchiang-opendata-173786:工作表1:B2",
+          "right": "local_statistical_cells:south-lienchiang-culture-library-overview-114:11014-03-01-2:D8",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "incompatible",
+          "differences": [
+            {
+              "dimension": "period_kind",
+              "left": "unresolved",
+              "right": "annual_source_reference"
+            },
+            {
+              "dimension": "population_scope",
+              "left": "113年連江縣公共圖書館概況",
+              "right": "連江縣公共圖書館概況114年"
+            },
+            {
+              "dimension": "classification_dimensions",
+              "left": {
+                "source_header_hierarchy_raw": "縣立馬祖圖書館",
+                "row_classification_raw": "館藏數量(冊)",
+                "column_classification_raw": "縣立馬祖圖書館"
+              },
+              "right": {
+                "source_header_hierarchy_raw": [
+                  "縣立",
+                  "縣立馬祖圖書館"
+                ],
+                "row_classification_raw": "館藏數量(冊)",
+                "column_classification_raw": [
+                  "縣立",
+                  "縣立馬祖圖書館"
+                ]
+              }
+            }
+          ],
+          "reasons": [
+            "different_period_kind",
+            "different_classification_dimensions",
+            "unproven_equivalent_population_scope"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": true
+    },
+    {
+      "case_id": "P2-C022",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "assign_programme_reference_year_as_annual_data_year",
+      "record_keys": [
+        "programme_quantities:ncl95-table6-reading-001:participants"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C023",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "allocate_cross_year_activity_total_to_one_calendar_year",
+      "record_keys": [
+        "programme_quantities:ncl95-table7-activity-05:participants"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C024",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "sum_grand_total_plus_reader_component",
+      "record_keys": [
+        "local_statistical_cells:south-hualien-library-lending-409-reader:114年8月:F10",
+        "local_statistical_cells:south-hualien-library-lending-409-reader:114年8月:F11"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "published_panel_limited",
+        "published_panel_limited"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C025",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "sum_total_plus_sex_component",
+      "record_keys": [
+        "local_statistical_cells:south-hualien-library-lending-409-reader:114年8月:F10",
+        "local_statistical_cells:south-hualien-library-lending-409-reader:114年8月:G10"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "published_panel_limited",
+        "published_panel_limited"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C026",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "splice_different_reader_classes_as_same_measure",
+      "record_keys": [
+        "local_statistical_cells:south-hualien-library-lending-409-reader:114年8月:F11",
+        "local_statistical_cells:south-hualien-library-lending-409-reader:114年8月:F12"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "published_panel_limited",
+        "published_panel_limited"
+      ],
+      "compare_results": [
+        {
+          "left": "local_statistical_cells:south-hualien-library-lending-409-reader:114年8月:F11",
+          "right": "local_statistical_cells:south-hualien-library-lending-409-reader:114年8月:F12",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "incompatible",
+          "differences": [
+            {
+              "dimension": "facility_or_reader_category",
+              "left": "一般讀者",
+              "right": "員工"
+            },
+            {
+              "dimension": "classification_dimensions",
+              "left": {
+                "source_header_hierarchy_raw": [
+                  "借閱冊數",
+                  "總計"
+                ],
+                "row_classification_raw": "一般讀者",
+                "column_classification_raw": [
+                  "借閱冊數",
+                  "總計"
+                ]
+              },
+              "right": {
+                "source_header_hierarchy_raw": [
+                  "借閱冊數",
+                  "總計"
+                ],
+                "row_classification_raw": "員工",
+                "column_classification_raw": [
+                  "借閱冊數",
+                  "總計"
+                ]
+              }
+            }
+          ],
+          "reasons": [
+            "different_facility_or_reader_category",
+            "different_classification_dimensions"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C027",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "sum_reader_and_collection_room_views_as_distinct_events",
+      "record_keys": [
+        "local_statistical_cells:south-hualien-library-lending-409-reader:114年8月:F10",
+        "local_statistical_cells:south-hualien-library-lending-409-room:114年8月:F10"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "published_panel_limited",
+        "published_panel_limited"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C028",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "splice_stock_and_circulation_flow",
+      "record_keys": [
+        "local_statistical_cells:south-lienchiang-culture-library-overview-114:11014-03-01-2:C8",
+        "local_statistical_cells:south-lienchiang-culture-library-overview-114:11014-03-01-2:C12"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "source_series_only",
+        "source_series_only"
+      ],
+      "compare_results": [
+        {
+          "left": "local_statistical_cells:south-lienchiang-culture-library-overview-114:11014-03-01-2:C8",
+          "right": "local_statistical_cells:south-lienchiang-culture-library-overview-114:11014-03-01-2:C12",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "incompatible",
+          "differences": [
+            {
+              "dimension": "measure_class",
+              "left": "collection_stock",
+              "right": "circulation_volumes"
+            },
+            {
+              "dimension": "renewal_scope",
+              "left": "not_applicable",
+              "right": "original_borrow_field_unspecified_renewal"
+            },
+            {
+              "dimension": "classification_dimensions",
+              "left": {
+                "source_header_hierarchy_raw": [
+                  "總計",
+                  "館別"
+                ],
+                "row_classification_raw": "館藏數量(冊)",
+                "column_classification_raw": [
+                  "總計",
+                  "館別"
+                ]
+              },
+              "right": {
+                "source_header_hierarchy_raw": [
+                  "總計",
+                  "館別"
+                ],
+                "row_classification_raw": "借閱冊數(冊)",
+                "column_classification_raw": [
+                  "總計",
+                  "館別"
+                ]
+              }
+            }
+          ],
+          "reasons": [
+            "different_measure_class",
+            "different_classification_dimensions",
+            "unproven_equivalent_renewal_scope"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C029",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "certify_unique_people_from_label",
+      "record_keys": [
+        "local_statistical_cells:south-hualien-library-lending-409-reader:114年8月:B10"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C030",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "replace_literal_marker_with_zero",
+      "record_keys": [
+        "local_statistical_cells:south-lienchiang-culture-library-overview-114:11014-03-01-2:I9",
+        "local_statistical_cells:south-lienchiang-opendata-173786:工作表1:G3"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved",
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C031",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "reinterpret_response_sample_as_total_library_count",
+      "record_keys": [
+        "canonical:obs-2b6773450e620a4970b3c9"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "source_series_only"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C032",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "splice_public_and_private_survey_as_one_population",
+      "record_keys": [
+        "canonical:obs-bd551f75c0b34269130d05",
+        "canonical:obs-31535c19d1b9c2a07e870e"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "source_series_only",
+        "source_series_only"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-bd551f75c0b34269130d05",
+          "right": "canonical:obs-31535c19d1b9c2a07e870e",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "incompatible",
+          "differences": [
+            {
+              "dimension": "entity",
+              "left": "公立公共圖書館",
+              "right": "私立公共圖書館"
+            },
+            {
+              "dimension": "population_scope",
+              "left": "public_ownership_only",
+              "right": "private_ownership_only_partial_responses"
+            },
+            {
+              "dimension": "national_libraries_scope",
+              "left": "public_ownership_only",
+              "right": "private_ownership_only_partial_responses"
+            },
+            {
+              "dimension": "classification_dimensions",
+              "left": {
+                "ownership_scope": "public"
+              },
+              "right": {
+                "ownership_scope": "private"
+              }
+            }
+          ],
+          "reasons": [
+            "different_entity",
+            "different_classification_dimensions",
+            "unproven_equivalent_population_scope",
+            "unproven_equivalent_national_libraries_scope"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C033",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "overwrite_one_same_edition_private_stock_value",
+      "record_keys": [
+        "canonical:obs-3d77d5d6330d5ce25b79f6",
+        "canonical:obs-31535c19d1b9c2a07e870e"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "source_series_only",
+        "source_series_only"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C034",
+      "frozen_expected_decision": "limited_published_panel",
+      "requested_operation": "compare_published_columns_only",
+      "record_keys": [
+        "canonical:obs-28edaf7217be5d3c0c4546",
+        "canonical:obs-7cf1a460cecd982fbf291f"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "published_panel_limited",
+        "published_panel_limited"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-28edaf7217be5d3c0c4546",
+          "right": "canonical:obs-7cf1a460cecd982fbf291f",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "published_panel_limited",
+          "differences": [],
+          "reasons": [
+            "same_reviewed_official_panel_metric_unit_entity_period_and_segment"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C035",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "assume_unit_and_certify_from_retrospective_layout",
+      "record_keys": [
+        "canonical:obs-5daf539527794b046647c6",
+        "canonical:obs-0fa96e2fdb4a5ea7fd9bc4"
+      ],
+      "compare_applicable": true,
+      "annotation_statuses": [
+        "unresolved",
+        "unresolved"
+      ],
+      "compare_results": [
+        {
+          "left": "canonical:obs-5daf539527794b046647c6",
+          "right": "canonical:obs-0fa96e2fdb4a5ea7fd9bc4",
+          "comparison_goal": "same_original_entity_time_series",
+          "status": "unresolved",
+          "differences": [],
+          "reasons": [
+            "unit_unknown_conflicting_or_mixed"
+          ],
+          "caveat": "Limited published-panel use is not a claim that historical reporting definitions, response rates or collection methods were invariant."
+        }
+      ],
+      "source_adjudication_applies": false,
+      "stricter_rejection_not_treated_as_error": false
+    },
+    {
+      "case_id": "P2-C036",
+      "frozen_expected_decision": "unresolved",
+      "requested_operation": "treat_candidate_period_as_exact_full_year",
+      "record_keys": [
+        "canonical:obs-a963e28f67e7a6e8fd45ef"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    },
+    {
+      "case_id": "P2-C037",
+      "frozen_expected_decision": "blocked",
+      "requested_operation": "coerce_source_marker_to_zero_or_not_applicable",
+      "record_keys": [
+        "canonical:obs-0dac5caf3d432d23fbfa14"
+      ],
+      "compare_applicable": false,
+      "annotation_statuses": [
+        "unresolved"
+      ],
+      "compare_not_substitute_for_operation_guard": true
+    }
+  ],
+  "synthetic": [
+    {
+      "case_id": "P2-S001",
+      "description": "Unknown units do not become an equivalent known unit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "P2-S002",
+      "description": "Budget and actual conflict despite matching label family/value/unit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "P2-S003",
+      "description": "Typed-zero conflict remains null and cannot be positive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "P2-S004",
+      "description": "Same file different table cannot be one published panel",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "P2-S005",
+      "description": "Different editions do not silently merge",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "case_id": "P2-S006",
+      "description": "A total/component distinction is retained in join facets",
+      "pass": true,
+      "detail": {
+        "sum_operation_still_requires_separate_guard": true
+      }
+    },
+    {
+      "case_id": "P2-D-year-None",
+      "description": "Necessary year must be a valid non-Boolean integer",
+      "pass": true,
+      "detail": {
+        "input_year": null,
+        "annotation_status": "unresolved",
+        "compare_status": "unresolved"
+      }
+    },
+    {
+      "case_id": "P2-D-year-True",
+      "description": "Necessary year must be a valid non-Boolean integer",
+      "pass": true,
+      "detail": {
+        "input_year": true,
+        "annotation_status": "unresolved",
+        "compare_status": "unresolved"
+      }
+    },
+    {
+      "case_id": "P2-D-year-'2018'",
+      "description": "Necessary year must be a valid non-Boolean integer",
+      "pass": true,
+      "detail": {
+        "input_year": "2018",
+        "annotation_status": "unresolved",
+        "compare_status": "unresolved"
+      }
+    },
+    {
+      "case_id": "P2-D-year-0",
+      "description": "Necessary year must be a valid non-Boolean integer",
+      "pass": true,
+      "detail": {
+        "input_year": 0,
+        "annotation_status": "unresolved",
+        "compare_status": "unresolved"
+      }
+    },
+    {
+      "case_id": "P2-D-year-10000",
+      "description": "Necessary year must be a valid non-Boolean integer",
+      "pass": true,
+      "detail": {
+        "input_year": 10000,
+        "annotation_status": "unresolved",
+        "compare_status": "unresolved"
+      }
+    },
+    {
+      "case_id": "P2-D-month-None",
+      "description": "Monthly record requires an actual valid month integer",
+      "pass": true,
+      "detail": {
+        "input_month": null,
+        "status": "unresolved"
+      }
+    },
+    {
+      "case_id": "P2-D-month-0",
+      "description": "Monthly record requires an actual valid month integer",
+      "pass": true,
+      "detail": {
+        "input_month": 0,
+        "status": "unresolved"
+      }
+    },
+    {
+      "case_id": "P2-D-month-13",
+      "description": "Monthly record requires an actual valid month integer",
+      "pass": true,
+      "detail": {
+        "input_month": 13,
+        "status": "unresolved"
+      }
+    },
+    {
+      "case_id": "P2-D-month-True",
+      "description": "Monthly record requires an actual valid month integer",
+      "pass": true,
+      "detail": {
+        "input_month": true,
+        "status": "unresolved"
+      }
+    },
+    {
+      "case_id": "P2-D-month-'8'",
+      "description": "Monthly record requires an actual valid month integer",
+      "pass": true,
+      "detail": {
+        "input_month": "8",
+        "status": "unresolved"
+      }
+    },
+    {
+      "case_id": "P2-D-source-series-only",
+      "description": "Source-labelled series must not become a certified join",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "cli_operation_guard": {
+    "status": "PASS",
+    "function": "phase2_engine.guard_operation; actual compare_definitions.py CLI subprocess replay",
+    "operations_checked": [
+      "sum",
+      "impute",
+      "infer-unique-people",
+      "recode-geography",
+      "coerce-zero",
+      "cross-source-splice"
+    ]
+  },
+  "full_quantitative_audit": {
+    "records": 56496,
+    "layer_fingerprints": {
+      "canonical": {
+        "records": 37887,
+        "semantic_sha256": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
+        "file_sha256": "7993d6fbd088cc36fdc7e9de975c52b8a5542af4cc0d21f30cccd4f1532fdc78",
+        "path": "data/combined/observations.jsonl"
+      },
+      "local_statistical_cells": {
+        "records": 18486,
+        "semantic_sha256": "2f3b30127fbf12aa743de1e2844a02681e7a967a8cb1efe7cbdc4a7c83e4335f",
+        "file_sha256": "804f4b9e5dcd0de6cd4be6f869343e7302ac2044cdd7ab33bc44dd92ecc00b80",
+        "path": "derived/phase1_local_sources_long.jsonl"
+      },
+      "programme_quantities": {
+        "records": 123,
+        "semantic_sha256": "503f2e60d56f34ddbcc7c392cb638e8e535676a7d90097331cf2470931cac662",
+        "file_sha256": "f49c4f7dc6effd741ae7ccce015f2ddafb430a5161d654d869986d6c0a1e345c",
+        "path": "derived/ncl_2005_programmes_long.jsonl"
+      }
+    },
+    "status_counts": {
+      "published_panel_limited": 21842,
+      "source_series_only": 17786,
+      "unresolved": 16868
+    },
+    "source_definition_cards": 409,
+    "multiple_supporting_evidence_records": 123,
+    "unit_suffix_original_field_checks": 14584,
+    "raw_original_JSON_documents_checked_for_suffixes": 5,
+    "eligible_groups_with_multiple_periods": 639,
+    "eligible_adjacent_period_pairs_checked": 21048,
+    "DGBAS_cross_segment_pairs_checked": 503,
+    "DGBAS_2011_reader_records_required_unresolved": 16,
+    "materialized_engine_hash_matches": true,
+    "annotation_file_sha256": "15b64513c42a882f71810d266511399db113df342928f9b16c277fe428428336"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "job_id": "20261026T113331Z-9336cf92db01",
+  "actual_model": "gemini-3.8-flash-high",
+  "mode": "analyze",
+  "seen_initial": true,
+  "source_files": [
+    "supplied official current-definition extracts",
+    "docs/phase2-contract.json"
+  ],
+  "native_tool_calls": 0,
+  "images_verified": 0,
+  "verification": "Controller reread official supplied text; numerical work is separate local Python execution. Model agreement is not validation.",
+  "adopted": [
+    {
+      "rule": "Separate volumes/titles/items; no automatic uniform unit for mixed collections.",
+      "basis": "Official term headings and source-unit annotations."
+    },
+    {
+      "rule": "Separate stocks, additions, circulation flows, budget and final expenditure.",
+      "basis": "Named official measures and static/dynamic accounting scope."
+    },
+    {
+      "rule": "No historical adoption date inferred from current pages or the2007 standard publication date.",
+      "basis": "Current-reference scope is explicit; historical effective dates not supplied."
+    },
+    {
+      "rule": "Same reviewed original panel can be shown within exact original qualifiers; do not certify invariant reporting methods.",
+      "basis": "Bounded source-card/period/metric/unit/population/group review."
+    },
+    {
+      "rule": "Separate administrative units, buildings, service points and mobile vehicles; visits are not unique people.",
+      "basis": "Named official categories and source-label distinctions."
+    }
+  ],
+  "rejected_or_narrowed": [
+    {
+      "claim": "Title 圖書及非書資料 necessarily excludes electronic media and is itself contradictory.",
+      "decision": "Rejected as an unsupported title interpretation; use the actual definition and each source scope."
+    },
+    {
+      "claim": "FTE/staff/volunteer statements are universally applicable prohibitions.",
+      "decision": "Narrowed to explicitly applicable source measures; no retroactive adoption or universal aggregation ruling."
+    },
+    {
+      "claim": "Legal force, statutory turnover rate, or approved permission to compare.",
+      "decision": "Not adopted. Dataset scope is a documented analytical judgment, not agency or legal approval."
+    },
+    {
+      "claim": "A monographic series always has exactly one title regardless of bibliographic practice.",
+      "decision": "Not used to infer conversions; no title-to-volume factor is supplied."
+    }
+  ],
+  "not_a_full_independent_source_audit": true,
+  "official_reference_versions": [
+    {
+      "evidence_id": "phase2-current-nlpi-definition",
+      "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+      "final_url": "https://publibstat.nlpi.edu.tw/Frontend/Definition/DefinitionItem",
+      "source_sha256": "53a6f1fa98d294d72d590f4cd78fea5d05381a2477f192a07d572dd884406f47",
+      "retrieved_at": "2026-10-26T11:29:36.671566+00:00",
+      "http_status": 200,
+      "applicable_years": null,
+      "scope": "current reference only; do not apply retroactively to all statistical years",
+      "full_document_distribution": "not_in_public_bundle"
+    },
+    {
+      "evidence_id": "phase2-current-nlpi-scope",
+      "source_url": "https://publibstat.nlpi.edu.tw/Frontend/About/AboutpLibSTAT",
+      "final_url": "https://publibstat.nlpi.edu.tw/Frontend/About/AboutpLibSTAT",
+      "source_sha256": "58b6f86f6d7cc5277abaa059cd70364618aaf04aadbdd8fe0785f36860a02f64",
+      "retrieved_at": "2026-10-26T11:29:37.461050+00:00",
+      "http_status": 200,
+      "applicable_years": null,
+      "scope": "current reference only; do not apply retroactively to all statistical years",
+      "full_document_distribution": "not_in_public_bundle"
+    },
+    {
+      "evidence_id": "phase2-current-nlpi-trend",
+      "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/TrendChart",
+      "final_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/TrendChart",
+      "source_sha256": "f60437edac8ffb377c9894904d5e0be98127b946edd6eda6574a3d5e4b98eb9b",
+      "retrieved_at": "2026-10-26T11:29:39.679811+00:00",
+      "http_status": 200,
+      "applicable_years": null,
+      "scope": "current reference only; do not apply retroactively to all statistical years",
+      "full_document_distribution": "not_in_public_bundle"
+    },
+    {
+      "evidence_id": "phase2-current-ncl-cns2007",
+      "source_url": "https://libstat.ncl.edu.tw/cnsDefinition/667f1994f5774fb386e6eb3014389a17",
+      "final_url": "https://libstat.ncl.edu.tw/cnsDefinition/667f1994f5774fb386e6eb3014389a17",
+      "source_sha256": "3658e9b247eae17815a99c41cf8b37e56fb44fbcacb9554e03a2d9c6347dd1fa",
+      "retrieved_at": "2026-10-26T11:30:11.029706+00:00",
+      "http_status": 200,
+      "applicable_years": null,
+      "scope": "current reference only; do not apply retroactively to all statistical years",
+      "full_document_distribution": "not_in_public_bundle"
+    },
+    {
+      "evidence_id": "phase2-current-ncl-cns-handbook",
+      "source_url": "https://www.ncl.edu.tw/periodicaldetail_305_412.html",
+      "http_status": null,
+      "status": "request_failed",
+      "error": "HTTPError",
+      "full_document_distribution": "not_in_public_bundle"
+    }
+  ],
+  "full_model_answer_private": true
+}
