@@ -4,7 +4,7 @@
 
 將分散在官方圖表、開放資料及歷史統計表中的公共圖書館數據，整理成可查詢、可回到來源的觀測資料，協助公眾理解圖書館服務，也讓研究者與 AI 使用者能重現整理結果。
 
-版本 **0.5.0**；資料建置日 **2026-10-26**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.5.0下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.5.0)。
+版本 **0.5.1**；資料建置日 **2026-10-26**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.5.1下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.5.1)。
 
 本專案先查重再整理。國立公共資訊圖書館已有跨年圖表、國家圖書館已有統計名詞字典，SEGIS 及地方開放資料亦有相關歷年成果。本專案的新增值是**跨來源的統一讀取方式、逐筆來源定位、期間與口徑標記，以及可追溯的內容版本**；不宣稱是第一份跨年統計或第一個名詞字典。查閱[查重報告](research/prior-art.md)及[官方範圍與定義](research/official-scope.md)。
 
@@ -36,7 +36,7 @@
 
 ## 下載與讀取
 
-[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.5.0) · [按年度讀取 JSONL](data/by_year/index.json)
+[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.5.1) · [按年度讀取 JSONL](data/by_year/index.json)
 
 公開副本移除22份原始檔的無關聯絡欄，以另有雜湊的統計投影提供；原始來源網址、原件SHA及每筆統計值均保留。詳[公開副本與來源原件的區別](docs/PUBLICATION.md)。
 

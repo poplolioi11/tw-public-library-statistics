@@ -2,7 +2,7 @@
 
 > 整理官方已公開、可驗證來源的公共圖書館統計事實與明確開放資料，支援公眾理解和研究重現。現有官方跨年圖表與名詞字典已存在；本專案不宣稱首創。
 
-版本 0.5.0；建置日 2026-10-26。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.5.0。
+版本 0.5.1；建置日 2026-10-26。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.5.1。
 
 ## 正式入口
 

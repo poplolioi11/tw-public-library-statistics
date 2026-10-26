@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "請同時引用本資料包版本與每筆官方原始來源。"
 title: "臺灣公共圖書館跨年度統計"
 type: dataset
-version: 0.5.0
-date-released: 2026-10-25
+version: 0.5.1
+date-released: 2026-10-26
 authors:
   - name: "Taiwan Public Library Statistics contributors"
 abstract: "按來源保存的公共圖書館統計事實、定義口徑、版本與品質註記。非官方背書，非全臺所有歷年完整性宣稱。"

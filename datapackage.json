@@ -1,7 +1,7 @@
 {
   "name": "tw-public-library-statistics",
   "title": "臺灣公共圖書館跨年度統計",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "已驗證可得來源的全量整理；不是宣稱臺灣所有年代、所有縣市與每一圖書館都已完整。",
   "licenses": [
     {

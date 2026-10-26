@@ -1,9 +1,9 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "canonical_jsonl_path": "data/combined/observations.jsonl.gz",
   "jsonl_compression": "gzip",
   "canonical_uncompressed_sha256": "ccace8956e4c382bcdeac82e8be90dc7a2a134ae30d80d61f06531e23de78ffa",
-  "built_at": "2026-10-26T07:16:49.099761+00:00",
+  "built_at": "2026-10-26T07:39:29.353872+00:00",
   "records": 37887,
   "missing_cells": 1104,
   "null_value_status_counts": {

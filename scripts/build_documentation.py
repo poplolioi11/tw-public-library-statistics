@@ -265,7 +265,9 @@ def main():
     if summary.get('built_at'):s=re.sub(r'建置日 \d{4}-\d{2}-\d{2}',f"建置日 {summary['built_at'][:10]}",s)
     s=s.replace('第六族群 source_family=主計總處縣市公共館數','source_family=主計總處縣市公共館數')
     s=generated_block(s,'generated-historical-scope','來源族群包含source_family='+READING+'；與年鑑分開。\n'+warning+'\n歷史批次入口：docs/historical-batches.json及docs/historical-batches.md。');p.write_text(s)
-    p=root/'CITATION.cff';s=p.read_text();s=re.sub(r'^version: .+$','version: '+version,s,flags=re.M);p.write_text(s)
+    p=root/'CITATION.cff';s=p.read_text();s=re.sub(r'^version: .+$','version: '+version,s,flags=re.M)
+    if summary.get('built_at'):s=re.sub(r'^date-released: .+$','date-released: '+summary['built_at'][:10],s,flags=re.M)
+    p.write_text(s)
     update_backlog(context)
     if record_io.compressed(root):
         for name in ('README.md','AI_USAGE.md','llms.txt','COVERAGE.md'):
