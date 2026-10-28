@@ -20,13 +20,14 @@ def main():
 第一階段完成的是2005–2025年的來源導航、原口徑清冊及已取得來源批次；不宣稱全臺歷年值皆已齊全。
 
 - 現行22縣市×4個機關角色，共{s['authority_slots_with_recorded_attempt']}項有實際查核紀錄；不是每個機關檔案庫都已窮盡。{s['source_candidates_listed']}個候選項分開標示入口、下載失敗、尚待解析及已完成的附件。
-- {s['discovery_matrix_cells']:,}格「年×導航地區×主題」呈現來源出現情形；{s['raw_source_profiles']:,}組原口徑精確保留既有37,887筆觀測，不合併不同原地區、母體、單位、期間或版本。
+- 第一階段當時的{s['discovery_matrix_cells']:,}格「年×導航地區×主題」呈現來源出現情形；{s['raw_source_profiles']:,}組原口徑精確保留當時37,887筆觀測，不合併不同原地區、母體、單位、期間或版本。
 - 新增2005計畫表6／7整批119列／123個數量格，以及花蓮、連江4附件的18,486個統計格。另有33,705個安全範圍原格含表頭及結構空白；這些是不同視圖，不可相加，也未混入既有正式觀測。
 - 花蓮兩份ODS各保留72個月工作表（2020年9月至2026年8月）及空白模板；176格年月矛盾留未知。連江113年目錄附件未印年份，與工作表明印114年的來源分開。
 
 [來源與缺口互動頁](site/phase1.html) · [範圍與驗收](docs/PHASE1.md) · [新增來源資料](docs/phase1-supplements.md) · [小型工作表分檔](docs/phase1-source-cell-partitions.json) · [機器字典](docs/phase1-data-dictionary.json)
 
 2012縣市核心原量仍未取得，不由比率反算。跨年相容性認證及自動選口徑屬後續階段；本階段保留差異而不自動決定可比。'''
+ if (ROOT/'docs/phase3-summary.json').exists():text=text.replace('跨年相容性認證及自動選口徑屬後續階段；本階段保留差異而不自動決定可比。','第二階段已另附逐筆口徑與原刊有限對照規則；完整歷史方法認證仍未成立，第三階段已提供有界預設選源，見docs/PHASE3.md。')
  block('README.md',text)
  block('COVERAGE.md',text.replace('(site/','(site/').replace('## 第一階段：','## 第一階段覆蓋：'))
  p=ROOT/'COVERAGE.md';v=p.read_text().replace('臺中、新竹以外地方來源未逐機關全盤核查','本階段已做22縣市各4個角色的有界入口查核；其他歷年附件仍未逐件處理')

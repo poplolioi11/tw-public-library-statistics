@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "version": "0.9.0",
-  "created_at": "2026-10-28T12:37:50.035469+00:00",
+  "created_at": "2026-10-28T15:12:22.225690+00:00",
   "repository": "https://github.com/poplolioi11/tw-public-library-statistics",
   "external_publication": true,
   "publication_profile": "statistical_fields_only",
@@ -332,13 +332,13 @@
     },
     {
       "path": "AI_USAGE.md",
-      "sha256": "19b8c0a94e9653f4f37caf30caedf2c91f586da012d31f13a7e0c5c0ee8271ac",
-      "bytes": 26387
+      "sha256": "76755d272ca24fda5089be1ebbc3d0b201971eee5ba1f5cf00ea4725e99bf607",
+      "bytes": 26369
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "7e8c3dcd82de6cee861a3b4b497c672175ef9caff367ac2389bb79053fd7c16c",
-      "bytes": 15046
+      "sha256": "c486a5c2d6696d9f3db505c76a00b0d46a5ce327dff32e12be01ca3ebea0ba6e",
+      "bytes": 15824
     },
     {
       "path": "CITATION.cff",
@@ -352,8 +352,8 @@
     },
     {
       "path": "COVERAGE.md",
-      "sha256": "000a2f981e44d48ac5d19771e73656ed27d42796861f8173dec8ec735fd748ef",
-      "bytes": 12913
+      "sha256": "e1de2cb0ae755a2d39344127e22cec2e0950090c834884d9fd2311b4d0764ab6",
+      "bytes": 12930
     },
     {
       "path": "LICENSE",
@@ -372,8 +372,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "7b65d100342586f2e1b65fe335f9d75492dd016ee7b968e1369332d139589f4d",
-      "bytes": 19347
+      "sha256": "0a435cdcae2c20bd03a813f35bdb67dfbe854c7c3b723a78008c06fb2de0b8c7",
+      "bytes": 21521
     },
     {
       "path": "VERSION",
@@ -3956,6 +3956,11 @@
       "bytes": 29982649
     },
     {
+      "path": "docs/DATA_PAPER_DRAFT.md",
+      "sha256": "86eff5b115a3aac1c01205ac947cbf9a7e8403c38c677d4db9a5318b45395db6",
+      "bytes": 9419
+    },
+    {
       "path": "docs/FORMAT-VERSION-0.4.md",
       "sha256": "9fc96480b4d38476c776721eb49d99d864d1b367fde93c756fd309e525d2a691",
       "bytes": 1821
@@ -3972,8 +3977,8 @@
     },
     {
       "path": "docs/PHASE2.md",
-      "sha256": "ecd8ff36e4d0fc810ec9547ba51dc458616839cdd7377a31066ae9f7a9c71a6a",
-      "bytes": 4289
+      "sha256": "79fc7558259a4b3b8a2fe5cc8c6d9fb69e8c905346546580061df1e4812ed2a2",
+      "bytes": 4278
     },
     {
       "path": "docs/PHASE3.md",
@@ -3984,6 +3989,11 @@
       "path": "docs/PUBLICATION.md",
       "sha256": "92795ed3264fab51ad9005c8094fe08d582513103ff4fdbeecc5e6b132fd5758",
       "bytes": 3585
+    },
+    {
+      "path": "docs/REUSE.md",
+      "sha256": "7a8c9bfe3cbb8c7b70b31b2b01387659a1bb1f49b4a0e247ebeeb3c15c7f39df",
+      "bytes": 2876
     },
     {
       "path": "docs/derived-field-projections.json",
@@ -3997,7 +4007,7 @@
     },
     {
       "path": "docs/historical-batches.json",
-      "sha256": "789be4edb3f5222caaa608a01346121bc44f3cd42ec588375a6dddea8a426b64",
+      "sha256": "876151df801728a7c78268a8c31b912369fcb7b2e13ba68988de0c90f6c2a591",
       "bytes": 233623
     },
     {
@@ -4157,8 +4167,8 @@
     },
     {
       "path": "llms.txt",
-      "sha256": "9eb60d8317bc5e3dc5ff81c072f3f39d36226d5d862591f5fe93f833ef2188a7",
-      "bytes": 9108
+      "sha256": "1d03a16c962ef215354d00e6f2dc8dd739998a29e38902bd1acf8f3d24258b8a",
+      "bytes": 9107
     },
     {
       "path": "raw/discovered-20261028/documents.json",
@@ -7977,13 +7987,13 @@
     },
     {
       "path": "scripts/build_documentation.py",
-      "sha256": "d12bab592776a91db57995fe32e7dae1582edccb056599b20a41f70d9a36fdb2",
-      "bytes": 34003
+      "sha256": "82da569d9d17cf75ddd0be19e9dfbfccd60c52737e6c950689f47b8f3fc76c43",
+      "bytes": 34040
     },
     {
       "path": "scripts/build_lightweight_documentation.py",
-      "sha256": "2f9472f6577e8584e5f90e78f7e5b3be8962b63697593eaa8ee8a7819c330fde",
-      "bytes": 4236
+      "sha256": "0b8a28a90dad2f49f759e511945ea96e49ee71c004084272b70a086c94d212aa",
+      "bytes": 4351
     },
     {
       "path": "scripts/build_lightweight_site.py",
@@ -7992,8 +8002,8 @@
     },
     {
       "path": "scripts/build_phase1_documentation.py",
-      "sha256": "56d1e1c602802459daac9e416022745d3863d0454a408dc25e2866f67a47fd4e",
-      "bytes": 10713
+      "sha256": "1d87dc6a0127417aac290ac754510faf1373c2dd67fa8bd49e5d72cec3ebf3a0",
+      "bytes": 11075
     },
     {
       "path": "scripts/build_phase1_inventory.py",
@@ -8017,8 +8027,8 @@
     },
     {
       "path": "scripts/build_phase2_documentation.py",
-      "sha256": "40236c6d8919f9c9ec9c29ee1cd9ba1c8c27c11a99d7111ab416f0e3e4c33962",
-      "bytes": 12059
+      "sha256": "7324104fe92cbe2a38eb07a90cc5bcd369931e16a3a4191c1ebefe41f2fba4a3",
+      "bytes": 12259
     },
     {
       "path": "scripts/build_phase2_reader.py",
@@ -17812,8 +17822,8 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "b36faad16b95656c678029282c5535cea8edc686bd2ad28af071281ea790060f",
-      "bytes": 500431
+      "sha256": "9cf60029b657d88f930565cce0457f754f3ba26fbe85d939653c8839a577f877",
+      "bytes": 500602
     }
   ],
   "phase1": {

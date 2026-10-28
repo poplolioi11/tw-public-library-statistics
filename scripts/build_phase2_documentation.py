@@ -15,7 +15,7 @@ def main():
  if s['dataset_version']!=v:raise ValueError('Rebuild phase2 before documentation')
  brief=f'''## 第二階段：有來源依據的口徑檢視
 
-v{v}逐筆檢視現有{s['total_quantitative_records']:,}個量化紀錄：37,887筆正式觀測、18,486個地方來源格、123個計畫數量格，三層分開，不相加成業務量。{s['source_definition_cards']}張來源證據卡及{s['breakpoint_rules']}項斷點／欄位規則可回官方原件、SHA與原表位置。
+v{v}逐筆檢視現有{s['total_quantitative_records']:,}個量化紀錄：{s['layers']['canonical']:,}筆正式觀測、{s['layers']['local_statistical_cells']:,}個地方來源格、{s['layers']['programme_quantities']:,}個計畫數量格，三層分開，不相加成業務量。{s['source_definition_cards']}張來源證據卡及{s['breakpoint_rules']}項斷點／欄位規則可回官方原件、SHA與原表位置。
 
 - 原刊／原件範圍內有{s['groups_with_multiple_eligible_periods']:,}組支援多個期間的有限對照，其中{s['groups_with_multiple_eligible_years']:,}組涉及不同年度；不是同方法、全歷年或跨來源面板認證。
 - {s['literal_unit_suffix_upgrades']:,}筆原null單位可依已核原欄「冊數／人次」另附單位解讀；{s['strict_literal_month_code_records']:,}筆五碼原年月嚴格解碼。原值、原unit與原data_year保持不變。
@@ -46,7 +46,7 @@ v{v}逐筆檢視現有{s['total_quantitative_records']:,}個量化紀錄：37,88
 
 ## 完成範圍
 
-{s['total_quantitative_records']:,}個量化紀錄全數綁定原件證據，三層為37,887正式觀測、18,486地方來源格及123計畫數量格。119個programme列視圖與33,705個含表頭原格是同來源的其他視圖，不能再相加。{s['source_definition_cards']}張卡、{s['comparison_groups']:,}個口徑組；{s['groups_with_multiple_eligible_periods']}組有多個可對照期間，其中{s['groups_with_multiple_eligible_years']}組跨不同年度。計數是資料組，不是圖書館數或完整率。
+{s['total_quantitative_records']:,}個量化紀錄全數綁定原件證據，三層為{s['layers']['canonical']:,}正式觀測、{s['layers']['local_statistical_cells']:,}地方來源格及{s['layers']['programme_quantities']:,}計畫數量格。119個programme列視圖與33,705個含表頭原格是同來源的其他視圖，不能再相加。{s['source_definition_cards']}張卡、{s['comparison_groups']:,}個口徑組；{s['groups_with_multiple_eligible_periods']}組有多個可對照期間，其中{s['groups_with_multiple_eligible_years']}組跨不同年度。計數是資料組，不是圖書館數或完整率。
 
 原數值、原單位、原狀態、原年月、原地名與原來源SHA全部保留。新解讀另列comparison_unit/comparison_year、依據及狀態。14,584個已核冊數／人次原欄可另註單位；14,400個新竹原統計年月只接受有效五碼ROC年月；原欄年度另有三碼年份規則，不能把截斷年月當成年。
 
@@ -85,7 +85,7 @@ python scripts/validate_phase2.py
 
 ## 明確保留的限制
 
-2012縣市核心原量仍缺，不從比率反算。437候選來源仍待完整處理；本階段沒有把所有候選入庫。未知單位、原地理疑義、統計填報涵蓋率、現行標準的歷史採用日與未出版方法變更仍可能無法判定。原報0不等於認證實測0，來源表算術差異照留。這是AI／程式及獨立來源案例核對，非人類逐格雙校或官方背書。
+2012縣市核心原量仍缺，不從比率反算。來源清冊中的候選依各自完成狀態處理；本階段未窮盡所有候選。未知單位、原地理疑義、統計填報涵蓋率、現行標準的歷史採用日與未出版方法變更仍可能無法判定。原報0不等於認證實測0，來源表算術差異照留。這是AI／程式及獨立來源案例核對，非人類逐格雙校或官方背書。
 '''
  replace_if_changed(ROOT/'docs/PHASE2.md',guide.encode())
  for name in ('README.md','AI_USAGE.md','COVERAGE.md','llms.txt'):

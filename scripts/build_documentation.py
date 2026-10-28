@@ -285,7 +285,7 @@ v{context['summary']['version']}新增{len(rows):,}個原格，來自{batch['sou
 def main():
     context=load_context();root=context['root'];summary=context['summary'];version=summary['version'];description=bounded_description(context);warning=historical_warning(context)
     write_historical_batches(context)
-    p=root/'README.md';s=p.read_text();s=re.sub(r'版本 \*\*[^*]+\*\*',f'版本 **{version}**',s);s=re.sub(r'v[\d.]+下載',f'v{version}下載',s);s=re.sub(r'/releases/tag/v[\d.]+',f'/releases/tag/v{version}',s)
+    p=root/'README.md';s=p.read_text();s=re.sub(r'版本 \*\*[^*]+\*\*',f'版本 **{version}**',s);s=re.sub(r'v[\d.]+下載',f'v{version}下載',s);s=re.sub(r'/releases/(tag|download)/v[\d.]+',lambda match:'/releases/'+match.group(1)+'/v'+version,s)
     if summary.get('built_at'):s=re.sub(r'資料建置日 \*\*\d{4}-\d{2}-\d{2}\*\*',f"資料建置日 **{summary['built_at'][:10]}**",s)
     body=description+'\n\n'+source_family_table(context)+'\n\n逐批格數、資料年、版次與指定表／原文範圍見[已覆核歷史批次](docs/historical-batches.md)及[COVERAGE.md](COVERAGE.md)。\n\n'+warning
     s=replace_between(s,'## 目前收錄什麼','**完整性指',body);p.write_text(s)

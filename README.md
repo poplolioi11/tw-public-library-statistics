@@ -2,13 +2,27 @@
 
 [![資料與程式檢查](https://github.com/poplolioi11/tw-public-library-statistics/actions/workflows/check.yml/badge.svg)](https://github.com/poplolioi11/tw-public-library-statistics/actions/workflows/check.yml)
 
-將分散在官方圖表、開放資料及歷史統計表中的公共圖書館數據，整理成可查詢、可回到來源的觀測資料，協助公眾理解圖書館服務，也讓研究者與 AI 使用者能重現整理結果。
+查臺灣公共圖書館的館藏、借閱、館數與服務統計，並追溯每個數字出自哪份官方資料。可以直接看圖，也可以下載資料交給表格工具、程式或 AI 使用。
 
-整理與維護：曲宸宇（Chu, Chen-Yu；GitHub：[poplolioi11](https://github.com/poplolioi11)；[ORCID](https://orcid.org/0009-0003-9738-6914)）。中英文姓名與帳號指同一位作者；官方統計作者及權利仍依各筆來源。
+## 三個常見問題，從這裡開始
+
+| 你想知道什麼？ | 直接使用 |
+|---|---|
+| 全國圖書借閱冊數近年如何變化？ | [看2020–2024年借閱折線圖](https://poplolioi11.github.io/tw-public-library-statistics/?profile=national-ncl-book-loans-panel&from=2020&to=2024)：採同一已核原刊面板，每個數字可回官方來源。 |
+| 縣市歷年館數或分館月表在哪裡？ | [查縣市歷年館數（主計口徑）](https://poplolioi11.github.io/tw-public-library-statistics/?profile=county-library-count-dgbas&entity=%E8%87%BA%E5%8D%97%E5%B8%82)，或[查分館月表（三民分館範例）](https://poplolioi11.github.io/tw-public-library-statistics/?profile=discovered-official-monthly-tables&series=comparison-9d8764a5d362caefbadaac33)。 |
+| 我想自行分析，或交給AI使用。 | 下載 [CSV](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.0/observations.csv)、[JSONL.gz](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.0/observations.jsonl.gz) 或 [SQLite](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.0/library_statistics.sqlite)；需要小檔可用[年度索引](data/by_year/index.json)，讀取方式見[AI與分析指南](AI_USAGE.md)。 |
+
+**使用前先知道：**資料仍有歷年缺口，部分來源口徑不同；掃描年鑑轉錄未經人工雙校。圖表與原報值的詳細界線見[完整度與缺口](COVERAGE.md)及[比較規則](#比較前先確認口徑)。
+
+## 版本、引用與方法
 
 版本 **0.9.0**；資料建置日 **2026-10-28**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.9.0下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.0)。
 
-2026-10-28來源擴充：新取得16份官方原件，另附新北／臺南完整396格研究證據；正式資料版本與數值未變。[新增來源、年份及未解限制](research/source-discovery-20261028.md) · [機器來源清單](docs/source-discovery-20261028.json)。這些候選不代表2012全22縣市核心原量已補齊。
+引用可使用右側 **Cite this repository** 或 [CITATION.cff](CITATION.cff)，並保留使用版本、所選口徑及官方原表來源。CFF目前未登錄DOI；固定Release網址可辨識本版，Zenodo封存是否完成須另查實際公開紀錄。
+
+[資料說明稿：來源、方法、驗證與限制](docs/DATA_PAPER_DRAFT.md)是**未投稿、未經同儕審查的草稿**。[採用證據與回饋方式](docs/REUSE.md)說明如何回報實際使用；star、fork或下載次數不直接當成研究採用證據。
+
+整理與維護：曲宸宇（Chu, Chen-Yu；GitHub：[poplolioi11](https://github.com/poplolioi11)；[ORCID](https://orcid.org/0009-0003-9738-6914)）。中英文姓名與帳號指同一位作者；官方統計作者及權利仍依各筆來源。
 
 本專案先查重再整理。國立公共資訊圖書館已有跨年圖表、國家圖書館已有統計名詞字典，SEGIS 及地方開放資料亦有相關歷年成果。本專案的新增值是**跨來源的統一讀取方式、逐筆來源定位、期間與口徑標記，以及可追溯的內容版本**；不宣稱是第一份跨年統計或第一個名詞字典。查閱[查重報告](research/prior-art.md)及[官方範圍與定義](research/official-scope.md)。
 
@@ -75,6 +89,8 @@
 
 ## 來源、權利與重現
 
+來源擴充的研究快照見[2026-10-28研究報告](research/source-discovery-20261028.md)與[候選清單](docs/source-discovery-20261028.json)：當時取得16份原件、另核396格。這是入庫前的歷史紀錄；v0.9.0其後正式納入12份原件的完整指定表，詳見[本版整批入庫](#本版新增官方原表整批入庫)。研究probe不重複加進正式資料，2012全22縣市核心原量仍缺。
+
 2023 年及地方資料有明確 OGDL 第 1 版標示；主計歷史表另依官方開放宣告記錄。主計縣市查詢子站採母站廣泛宣告的適用推論，標記 `license_scope_inference=true`；子站未另列獨立條款，不將它冒充為子站單獨授權。國圖年鑑及公開圖表在本專案中整理的是公開統計事實，沒有將專章全文、PDF、原始 HTML／JavaScript 宣稱為開放內容。公開包不再散布 NCL PDF 或網頁原始 HTML／JS，引用與權利分類詳見 [LICENSE.md](LICENSE.md)。
 
 國資圖 [2026-09-17 公告](https://publibstat.nlpi.edu.tw/Frontend/News/ShareNewsView?NewsID=News000050)另規範現行公開範圍與申請資料用途。既有明確開放版本與新申請資料必須分別處理；本專案不以舊目錄授權推定其他年度或申請資料可再公開。
@@ -96,7 +112,7 @@
 第一階段完成的是2005–2025年的來源導航、原口徑清冊及已取得來源批次；不宣稱全臺歷年值皆已齊全。
 
 - 現行22縣市×4個機關角色，共88項有實際查核紀錄；不是每個機關檔案庫都已窮盡。440個候選項分開標示入口、下載失敗、尚待解析及已完成的附件。
-- 4,830格「年×導航地區×主題」呈現來源出現情形；29,337組原口徑精確保留既有37,887筆觀測，不合併不同原地區、母體、單位、期間或版本。
+- 第一階段當時的4,830格「年×導航地區×主題」呈現來源出現情形；29,337組原口徑精確保留當時37,887筆觀測，不合併不同原地區、母體、單位、期間或版本。
 - 新增2005計畫表6／7整批119列／123個數量格，以及花蓮、連江4附件的18,486個統計格。另有33,705個安全範圍原格含表頭及結構空白；這些是不同視圖，不可相加，也未混入既有正式觀測。
 - 花蓮兩份ODS各保留72個月工作表（2020年9月至2026年8月）及空白模板；176格年月矛盾留未知。連江113年目錄附件未印年份，與工作表明印114年的來源分開。
 
@@ -108,7 +124,7 @@
 <!-- BEGIN phase2 -->
 ## 第二階段：有來源依據的口徑檢視
 
-v0.9.0逐筆檢視現有76,854個量化紀錄：37,887筆正式觀測、18,486個地方來源格、123個計畫數量格，三層分開，不相加成業務量。445張來源證據卡及100項斷點／欄位規則可回官方原件、SHA與原表位置。
+v0.9.0逐筆檢視現有76,854個量化紀錄：58,245筆正式觀測、18,486個地方來源格、123個計畫數量格，三層分開，不相加成業務量。445張來源證據卡及100項斷點／欄位規則可回官方原件、SHA與原表位置。
 
 - 原刊／原件範圍內有1,677組支援多個期間的有限對照，其中554組涉及不同年度；不是同方法、全歷年或跨來源面板認證。
 - 14,584筆原null單位可依已核原欄「冊數／人次」另附單位解讀；14,400筆五碼原年月嚴格解碼。原值、原unit與原data_year保持不變。
@@ -138,12 +154,14 @@ v0.9.0新增20,358個原格，來自12份官方原件的完整指定表及續頁
 
 [完整來源／表格範圍](raw/discovered-20261028/extraction-metadata.json)與[逐筆原格驗收](scripts/validate_discovered_20261028.py)可重跑。各格保留原字串、單位、官方原件URL、SHA、原頁表列欄、版本及公式／分母；讀source_time_reference的JSON可取原表脈絡、合併格與公式等額外來源限定，source_cell_note_raw保留核對方法。369格掃描資料以Apple Vision及AI原圖核讀，沒有宣稱人類逐格雙校；重複OCR不是獨立引擎。
 
-原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl.gz。臺北2012年刊權利衝突及三份跨館型統計章待核子群仍隔離。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
+原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl。臺北2012年刊權利衝突及三份跨館型統計章待核子群仍隔離。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
 
-沿用每月維護；新增歷史固定原件每365天到期回查，來源與擷取器未變則沿用完整批次。原件更動暫存待覆核、失敗保留前版，不把新下載內容自動當作可公開授權。
 16個複合／非單一量原格另逐格登錄於scripts/reviewed_non_scalar_literals.json（含原件SHA、原文及定位）。例如主館／括弧分館、各1人、每鄉各2不能任挑一個數字作總量；source_marker及selected_source_missing在這些格表示沒有單一可用純量，不表示原件沒有資料。必須同讀raw_value、原註與該登錄，不推算補值。
 
+沿用每月維護；新增歷史固定原件每365天到期回查，來源與擷取器未變則沿用完整批次。原件更動暫存待覆核、失敗保留前版，不把新下載內容自動當作可公開授權。
 <!-- END discovered-20261028 -->
+
+完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。
 
 <!-- BEGIN lightweight-site -->
 ## 公開輕量圖表網站
@@ -154,6 +172,3 @@ v0.9.0新增20,358個原格，來自12份官方原件的完整指定表及續頁
 
 [網站範圍、重建與驗收](docs/LIGHTWEIGHT_SITE.md)。既有單檔閱覽頁仍作離線用途，GitHub Pages只部署 `site/light/`。
 <!-- END lightweight-site -->
-
-
-完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。
