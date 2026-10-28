@@ -199,6 +199,7 @@ source_series_only可作單期原來源事實，不獲得跨年連線許可。�
 圖表座標及區間選源由Python產生，前端只篩既有點與核准線段。圖表區間可改選原刊；下方全量表仍是預設決策快照，表格顯示篩選不重算選版。新用途／source-id／facet條件用select_sources.py重播，保留requested_filters。自由文字須先對應已登錄問題與原欄；無預設範圍可用--lookup讀原Annotation，不自動變成新原量或認證趨勢。
 <!-- END phase3 -->
 
+本次閱覽器改版由主代理執行Python分檔、逐項核對與隔離瀏覽器驗收，原生背景助手協助前端三檔。助手靜態檢查不代替真實資料及瀏覽器驗收；統計值、統計定義與選源器未交由模型重寫。
 
 ## 公開副本
 
@@ -206,3 +207,9 @@ source_series_only可作單期原來源事實，不獲得跨年連線許可。�
 
 
 完整JSONL與中間元件以gzip無損壓縮，年度JSONL仍是純文字。Python可用 `gzip.open("data/combined/observations.jsonl.gz","rt",encoding="utf-8")` 逐行讀取。解壓後逐位元組SHA另記；gzip檔案SHA與統計內容指紋是不同層，不能互換。
+
+<!-- BEGIN lightweight-site -->
+## 輕量網站不是新的分析資料
+
+網站 https://poplolioi11.github.io/tw-public-library-statistics/ 的JSON分檔只投影既有合格圖表，不代表全部56,496個量化紀錄。AI正式分析仍依本文件原讀取入口。畫點值可能沿用第二階段已核單位尺度；`original_value`、`raw_value`、`original_unit`與`facets`仍留原量及口徑。`source_url`／`source_sha256`／`source_locator`／`source_version_id`不改，動態查詢另附`official_url`與重現提示。不得把網站顯示值或內容雜湊檔名誤當官方原件SHA。
+<!-- END lightweight-site -->

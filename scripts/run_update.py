@@ -7,6 +7,7 @@ from phase1_source_registry import content_digest as phase1_content_digest,load 
 from phase1_source_manager import run_batches as run_phase1_batches,monitor_sources as monitor_phase1_sources
 from phase2_update import content_digest as phase2_content_digest,run as run_phase2
 from phase3_update import content_digest as phase3_content_digest,run as run_phase3
+from light_site_update import run as run_light_site
 ROOT=Path(__file__).resolve().parents[1]
 from cohort_registry import load as load_cohorts
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else None
@@ -132,6 +133,13 @@ def main():
  run_extension_groups();call('register_historical_sources.py')
  canonical_rebuilt=run_canonical_build()
  phase1_hooks=run_phase1_hooks();phase2_hooks=run_phase2(ROOT,runner=call);phase3_hooks=run_phase3(ROOT,runner=call)
+ light_site=run_light_site(ROOT,runner=call)
+ if light_site.get('rebuilt'):
+  from phase3_update import output_hashes as phase3_output_hashes,refresh_prior_states
+  refresh_prior_states(ROOT)
+  statepath=ROOT/'data/phase3_update_state.json'
+  if statepath.is_file():
+   state=json.loads(statepath.read_text());state['outputs']=phase3_output_hashes(ROOT);statepath.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n')
  phase1_state_refreshed=refresh_phase1_state_outputs();call('verify_release.py')
  after=record_io.logical_sha(ROOT);after_signature=content_signature()
  # Legacy updates had no phase1 layer. Comparing against that explicit null
@@ -143,7 +151,7 @@ def main():
          'before_run_all_layers_sha256':current_before_signature,'previous_update_all_layers_sha256':previous_signature,
          'all_layers_sha256':after_signature,'phase1_content_sha256':phase1_content_digest(ROOT),
          'phase2_content_sha256':phase2_content_digest(ROOT),'phase2':phase2_hooks,'phase1_final_documentation_hashes_refreshed':phase1_state_refreshed,
-         'phase3_content_sha256':phase3_content_digest(ROOT),'phase3':phase3_hooks,
+         'phase3_content_sha256':phase3_content_digest(ROOT),'phase3':phase3_hooks,'lightweight_site':light_site,
          'data_changed':previous_signature!=after_signature,'canonical_rebuilt':canonical_rebuilt,'phase1_batches':phase1_batches,
          'phase1_monitor':phase1_monitor,'phase1_hooks':phase1_hooks,'external_publication':False,'stale_local_sources':stale}
  (ROOT/'data/last_update.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,ensure_ascii=False))

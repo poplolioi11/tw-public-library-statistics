@@ -10,7 +10,7 @@ permissions:
 jobs:
   offline-checks:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     env:
       PYTHONDONTWRITEBYTECODE: "1"
     steps:
@@ -47,3 +47,6 @@ jobs:
         run: python scripts/check_phase3_cases.py --final
       - name: Check every SVG point, source, edge and compiled interval
         run: python scripts/check_chart_readers.py
+
+      - name: Check all lazy website charts, source links and initial byte budget
+        run: python scripts/validate_lightweight_site.py

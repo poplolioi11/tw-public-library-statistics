@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-10-28T08:38:45.077026+00:00",
+  "dataset_version": "0.8.0",
+  "viewer_version": "1.0.0",
+  "scope": "Presentation and transport only. Frozen reviewed-reader values, sources, conditions and edge sets; original-source verification is separately recorded.",
+  "lightweight_validator": {
+    "passed": true,
+    "assertions": 977977,
+    "original_chart_groups": 639,
+    "question_chart_groups": 691,
+    "profiles": 19,
+    "compiled_intervals": 847,
+    "point_entries_checked": 44180,
+    "line_entries_checked": 41308,
+    "original_positions_checked": 47864,
+    "unique_chart_shards": 693,
+    "initial_uncompressed_bytes": 177137,
+    "data_version": "0.8.0",
+    "viewer_version": "1.0.0"
+  },
+  "browser": {
+    "passed": true,
+    "mobile_and_desktop": [
+      {
+        "width": 320,
+        "document_width": 320,
+        "min_tick_font_px": 12,
+        "initial_json_requests": 3,
+        "decoded_resource_bytes": 168803,
+        "plotted_points": 5,
+        "source_links_checked": 5
+      },
+      {
+        "width": 390,
+        "document_width": 390,
+        "min_tick_font_px": 12,
+        "initial_json_requests": 3,
+        "decoded_resource_bytes": 168803,
+        "plotted_points": 5,
+        "source_links_checked": 5
+      },
+      {
+        "width": 768,
+        "document_width": 768,
+        "min_tick_font_px": 12,
+        "initial_json_requests": 3,
+        "decoded_resource_bytes": 168803,
+        "plotted_points": 5,
+        "source_links_checked": 5
+      },
+      {
+        "width": 1440,
+        "document_width": 1440,
+        "min_tick_font_px": 12,
+        "initial_json_requests": 3,
+        "decoded_resource_bytes": 168803,
+        "plotted_points": 5,
+        "source_links_checked": 5
+      }
+    ],
+    "checked_cases": [
+      "exact 2020–2024 interval",
+      "unresolved interval clears chart",
+      "incomplete period clears chart",
+      "series cache",
+      "monthly original gaps",
+      "dynamic official entry note",
+      "network failure with retry"
+    ],
+    "isolated_headless": true
+  },
+  "layer_raw_fingerprints": {
+    "canonical": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
+    "local_statistical_cells": "2f3b30127fbf12aa743de1e2844a02681e7a967a8cb1efe7cbdc4a7c83e4335f",
+    "programme_quantities": "503f2e60d56f34ddbcc7c392cb638e8e535676a7d90097331cf2470931cac662"
+  },
+  "phase3_content_sha256": "3eecdb65534afd99cadbbd9823b989ca3b3c5220755d86fd19c380f3ec76fadf",
+  "selection_engine_sha256": "93c40de4cd49e3b70b76b0261393b3a3b487930e6f3562fc9dc86e70f52bd381",
+  "original_dataset_release_unchanged": true,
+  "paid_services_or_domain_purchases": false,
+  "yigua_art_deployment_or_dns_changed": false
+}

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="依問題與原刊數列查閱臺灣公共圖書館資料。保留原值、缺值、來源版本與原件表位，每個資料點直接連往官方來源。">
+  <meta name="color-scheme" content="light">
+  <title>臺灣公共圖書館資料</title>
+  <link rel="stylesheet" href="./app.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#query">跳至資料查詢</a>
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="header-rule" aria-hidden="true"></div>
+      <p class="eyebrow">公共資料閱覽室 <span aria-hidden="true">／</span> 圖書館</p>
+      <h1 id="page-title">臺灣公共圖書館資料</h1>
+      <p class="intro">依問題查找原刊數列，從數值回到官方來源。原值照留，未知不補零；不同版本與口徑各自呈現。</p>
+      <div class="header-bottom">
+        <p id="versions" class="versions">正在讀取資料版本…</p>
+        <nav class="document-links" aria-label="資料文件">
+          <a id="repository-link" hidden target="_blank" rel="noopener noreferrer">專案與說明 ↗</a>
+          <a id="release-link" hidden target="_blank" rel="noopener noreferrer">資料版本與下載 ↗</a>
+        </nav>
+      </div>
+      <p id="manifest-scope" class="small scope-note"></p>
+    </header>
+
+    <main>
+      <noscript><p class="notice">這個閱覽器需要 JavaScript 才能載入資料與篩選。請從專案的資料版本與下載頁查閱完整資料。</p></noscript>
+
+      <section id="query" class="query-section" aria-labelledby="query-heading">
+        <div class="section-heading">
+          <div><p class="section-kicker">查詢條件</p><h2 id="query-heading">找到要讀的數列</h2></div>
+          <button id="reset-query" class="quiet-button" type="button" disabled>重設查詢</button>
+        </div>
+        <form id="query-form" aria-label="資料篩選">
+          <div class="query-grid">
+            <label class="field">查閱方式
+              <select id="mode" disabled>
+                <option value="profile">依已登錄問題</option>
+                <option value="original">查閱原刊數列</option>
+              </select>
+            </label>
+            <label id="profile-field" class="field field-wide">問題
+              <select id="profile" disabled><option value="">正在載入問題…</option></select>
+            </label>
+            <label class="field">原對象／地區
+              <select id="entity" disabled><option value="">全部原對象</option></select>
+            </label>
+            <label class="field">原指標
+              <select id="indicator" disabled><option value="">全部原指標</option></select>
+            </label>
+            <label class="field field-wide">搜尋數列、館種或來源
+              <input id="search" type="search" placeholder="例如：全國 借閱、國圖、新竹" autocomplete="off" disabled>
+            </label>
+            <label class="field field-full">原刊數列
+              <select id="series" disabled><option value="">請先選擇問題或查閱方式</option></select>
+            </label>
+          </div>
+          <div class="period-row">
+            <fieldset class="period-fields">
+              <legend>顯示期間</legend>
+              <label class="field">起年<select id="from" disabled><option value="">未指定</option></select></label>
+              <span class="period-join" aria-hidden="true">至</span>
+              <label class="field">迄年<select id="to" disabled><option value="">未指定</option></select></label>
+              <button id="reset-period" class="quiet-button" type="button" disabled>清除期間</button>
+            </fieldset>
+            <p class="small period-help">指定期間時請同時選起年、迄年。兩者留白時使用原定預設範圍。</p>
+          </div>
+        </form>
+        <p class="small share-note">網址會保留目前查詢條件，可直接分享瀏覽器中的網址。</p>
+      </section>
+
+      <div id="status" class="status-box is-loading" role="status" aria-live="polite" aria-atomic="true">
+        <p id="status-message">正在載入資料目錄…</p>
+        <button id="retry" class="quiet-button" type="button" hidden>重新載入</button>
+      </div>
+
+      <section id="selection-panel" class="selection-panel" aria-labelledby="selection-title" hidden>
+        <div class="selection-heading"><h2 id="selection-title"></h2><span id="selection-status" class="status-tag"></span></div>
+        <p id="selection-description"></p>
+        <p id="selection-purpose" class="small"></p>
+        <ul id="selection-explanation" class="explanation-list"></ul>
+        <details id="trend-detail" class="subtle-details" hidden><summary>此查詢的預先產生摘要</summary><div id="trend-content"></div></details>
+      </section>
+
+      <section id="result" class="result-section" aria-labelledby="series-title" aria-busy="false" hidden>
+        <div class="result-heading"><div><p class="section-kicker">原刊數列</p><h2 id="series-title"></h2></div><a id="full-data-link" hidden target="_blank" rel="noopener noreferrer">完整原範圍與資料 ↗</a></div>
+        <dl id="series-facts" class="series-facts"></dl>
+        <div class="comparison-note"><strong>閱讀界線</strong><p>依問題選用的來源是維護者政策結果，不代表機關訂正或跨年可比認證。期間篩選只改變顯示的紀錄；原報值、原刻度與核准連線照留。</p><div id="series-scope"></div></div>
+
+        <figure id="chart-figure" class="chart-figure" aria-labelledby="series-title" aria-describedby="chart-description">
+          <div class="chart-toolbar"><span id="chart-unit"></span><span class="small">點選圓點，開啟官方來源 ↗</span></div>
+          <div id="chart" class="chart"></div>
+          <figcaption id="chart-description" class="small">固定使用原數列刻度；缺值不畫成零，未供應的連線不補接。下表與圖表使用相同查詢，並保留無法畫點的原紀錄。</figcaption>
+        </figure>
+
+        <section class="table-section" aria-labelledby="table-heading">
+          <div class="table-heading"><h3 id="table-heading">原值與逐筆來源</h3><p class="small">數值連往官方來源；「原件與表位」可讀原始網址、完整雜湊與口徑欄位。</p></div>
+          <div class="table-scroll" role="region" aria-labelledby="table-heading" tabindex="0">
+            <table id="records-table"><caption class="visually-hidden">與圖表使用相同篩選的完整原紀錄，含未知與不可畫點的值。</caption><thead><tr><th scope="col">原期間</th><th scope="col">刊載值與單位</th><th scope="col">原值狀態／對照範圍</th><th scope="col">來源依據</th></tr></thead><tbody id="records-body"></tbody></table>
+          </div>
+        </section>
+
+        <section id="record-detail" class="record-detail" aria-labelledby="record-detail-heading" hidden>
+          <div class="detail-heading"><div><p class="section-kicker">逐筆來源</p><h3 id="record-detail-heading">原件與表位</h3></div><p id="detail-period" class="small"></p></div>
+          <p id="official-link-note" class="notice" hidden></p>
+          <dl id="source-fields" class="source-fields"></dl>
+          <details class="subtle-details"><summary>原值、單位與完整狀態</summary><dl id="value-fields" class="source-fields"></dl></details>
+          <details class="subtle-details"><summary>原分類欄位（facets）</summary><div id="record-facets"></div></details>
+          <details class="subtle-details"><summary>原始上下文（original_context）</summary><div id="record-context"></div></details>
+        </section>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>獨立整理，非政府背書或官方訂正。資料缺口不表示官方未公開；同表總計與分項、不同單位及不同版本，均不能逕行相加。</p>
+      <p>本頁依需載入本站資料檔，不使用外部字型、登入或追蹤服務。</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -44,6 +44,7 @@
 
 ## 從哪裡開始
 
+- [公開輕量圖表網站](https://poplolioi11.github.io/tw-public-library-statistics/)：直接查閱、可分享查詢網址，逐筆回官方來源。
 - [折線圖與依問題選源](site/phase3.html#line-charts)；[全部原刊數列](site/phase2.html#line-charts)；[逐筆原值閱覽](site/index.html)。
 - [JSONL](data/combined/observations.jsonl.gz)：每行一筆完整觀測，適合 AI 與程式處理。
 - [CSV](data/combined/observations.csv)：同一批正式觀測，適合表格工具。
@@ -122,3 +123,13 @@ v0.8.0有19個明確母體／用途的預設問題，完整路由56,496筆既有
 
 選定來源與跨年可比分開；selected可能仍是缺值或不可用。版次優先是維護者政策，其他版本照留。2012全22縣市核心原量表仍缺；已取得的少量分館／閱覽室原文分項照留，不冒充完整核心量。
 <!-- END phase3 -->
+
+<!-- BEGIN lightweight-site -->
+## 公開輕量圖表網站
+
+[直接開啟圖表](https://poplolioi11.github.io/tw-public-library-statistics/)。不必下載整份HTML；先載入問題目錄，再按所選數列讀取小型JSON。手機刻度文字使用固定字級；每個點位及表格數值都能回官方原件或官方動態查詢入口，另附原件SHA、原表位置與版次。
+
+資料版本仍為 **v0.8.0**，閱覽器另列 **v1.0.0**。既有639組原刊數列、691組問題內數列與847個預算區間完整轉出；相同原數列可出現在不同問題，這些數量不可相加成統計觀測。只改呈現與傳輸，原值、缺值、口徑、選源及准許線段不變。單期事實與沒有合格圖表的問題仍請查完整資料包；沒有圖不表示沒有資料。
+
+[網站範圍、重建與驗收](docs/LIGHTWEIGHT_SITE.md)。既有單檔閱覽頁仍作離線用途，GitHub Pages只部署 `site/light/`。
+<!-- END lightweight-site -->

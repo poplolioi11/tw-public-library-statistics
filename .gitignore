@@ -59,3 +59,6 @@ raw/ncl-20*/*.private.*
 /raw/official-local/catalog-127807/resource-bde8d0fb2145d99a-9e0419cfae9d2a1065b3c688a5114492510fece9c335a44f68f2dd221156b657.json
 /raw/official-local/catalog-127807/resource-f63c1354bd02dbd9-73e5dbbd6d093f0e5419bb2e1466b726c42dd7f121ce9618e4f2c707480da5ae.json
 /raw/official-local/catalog-127807/resource-f98bff20e7012703-328e924edbb1f54fbde41c31f1bf20bf3cd61f91f0a348e1f9097f392510b29b.json
+
+# Local viewer hash state is not a public statistical source.
+/data/light_site_update_state.json

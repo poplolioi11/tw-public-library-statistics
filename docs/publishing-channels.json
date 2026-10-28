@@ -33,6 +33,14 @@
       "kind": "portable_reader",
       "path": "site/phase3.html",
       "update_policy": "same current package; no external hosting assumed"
+    },
+    {
+      "kind": "public_lightweight_site",
+      "url": "https://poplolioi11.github.io/tw-public-library-statistics/",
+      "path": "site/light/index.html",
+      "viewer_version": "1.0.0",
+      "dataset_version": "0.8.0",
+      "update_policy": "validated main commit; deploy only site/light after public package CI succeeds; immutable dataset releases remain separate"
     }
   ],
   "verification": "Read back main VERSION, latest release tag, attachment digests, full anonymous ZIP and reader embedded dataset_version after publication. Project-specific localhost/Drive destinations stay in the private publication receipt."

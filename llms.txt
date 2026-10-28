@@ -67,3 +67,10 @@ value=null 要看value_status；source_blank是原印留白，not_available_in_s
 ## 小量讀取與公開投影
 
 先讀 data/by_year/index.json，再選所需年度JSONL；各年度檔的聯集與canonical相同。docs/PUBLICATION.md說明聯絡欄刪除投影：source_sha256始終是政府原件，public_evidence_sha256另驗公開投影，不可混為同一檔案。公開前完整來源驗收與公開副本離線驗證是不同範圍。
+
+<!-- BEGIN lightweight-site -->
+## Public lightweight chart viewer
+
+https://poplolioi11.github.io/tw-public-library-statistics/
+Viewer version 1.0.0; dataset version 0.8.0. Presentation-only chart shards; use the canonical/phase1/phase2/phase3 files for complete analysis. Never infer missing observations from the chart catalog. Every numeric point retains official source URL, source SHA, locator and version. docs/LIGHTWEIGHT_SITE.md describes the projection.
+<!-- END lightweight-site -->

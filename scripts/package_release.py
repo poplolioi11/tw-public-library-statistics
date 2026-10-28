@@ -24,6 +24,11 @@ def main():
  selected['site/index.html']=(R/'site/index.html').read_bytes();selected['site/template.html']=(R/'site/template.html').read_bytes()
  for name in ('site/phase1.html','site/phase1-template.html','site/phase2.html','site/phase2-template.html','site/phase3.html','site/phase3-template.html','scripts/test_reader_browser.cjs'):
   if (R/name).exists():selected[name]=(R/name).read_bytes()
+ for name in ('site/light-src/index.html','site/light-src/app.css','site/light-src/app.js','site/light/index.html','site/light/app.css','site/light/app.js','site/light/manifest.json','site/light/.nojekyll','scripts/test_lightweight_browser.cjs'):
+  if (R/name).is_file():selected[name]=(R/name).read_bytes()
+ for p in (R/'site/light/data').glob('*.json'):
+  if __import__('re').fullmatch(r'[a-f0-9]{64}\.json',p.name):selected[str(p.relative_to(R))]=p.read_bytes()
+ if (R/'.github/workflows/pages.yml').is_file():selected['.github/workflows/pages.yml']=(R/'.github/workflows/pages.yml').read_bytes()
  # Include exact statistical JSON snapshots; website HTML/JS and full PDFs are intentionally omitted.
  directories=['raw/snapshots','raw/official-local','raw/ncl-historical','raw/ncl-additional','raw/ncl-earlier','raw/segis-history','raw/phase1-inventory','raw/ncl-2005-programmes','raw/phase1_local_sources','raw/phase2-definitions']
  for group in load_cohorts(R) or []:directories.extend(group.get('raw_directories',[]))
