@@ -1,26 +1,26 @@
 {
-  "dataset_version": "0.8.0",
-  "profiles": 19,
-  "charts": 691,
+  "dataset_version": "0.9.0",
+  "profiles": 22,
+  "charts": 2767,
   "interval_queries": 847,
   "counts": {
-    "record_routes": 56496,
-    "candidate_decisions": 52689,
-    "queries": 19,
-    "series_edges": 32993
+    "record_routes": 76854,
+    "candidate_decisions": 115356,
+    "queries": 22,
+    "series_edges": 63121
   },
-  "reader_bytes": 80859230,
-  "reader_sha256": "3806bdfa80d422e8cb7c2e4ad04dd91637baa1077ac1e53fa9be3b45ab4d8003",
+  "reader_bytes": 28330009,
+  "reader_sha256": "d2b4033994adb52c5581a0a1803ee07de51187e480992a46c6899b7351119612",
   "input_sha256": {
-    "derived/phase3/record_routes.jsonl.gz": "1f4561adb6688b776331f1e4938b3dd353df46474b0124042750472be0f68be5",
-    "derived/phase3/candidate_decisions.jsonl.gz": "c1de5b8579c54233b50750cb0ca845843567b7aaa7ccc00b288ee87c86282126",
-    "derived/phase3/queries.jsonl": "0180473b0c7c43f70e0ed246df91155b5e22892325455deabb183b7aa2bb46d2",
-    "derived/phase3/series_edges.jsonl": "05c9bd60381b34098c938abf43a5a0d7d3bb175b2636af18b65dfa34d469d17b",
-    "VERSION": "a66780da23103beaf12432b418508966b31a2a3a787f9468a5b6cdaa8667c1ef",
-    "docs/phase3-summary.json": "8b41635c865b2700b5e2fda956e5c25a16d97e929230f2fbb3bd09a0f2aae9a4",
-    "docs/phase3-profiles.json": "555be5c31815a1e6ac2f787d6c55c441e026b6b54022c4c68d6fae04f93031e7",
-    "docs/phase3-contract.json": "fcae4fa8058c79650838838dcb5c37e500536e1eaaffda6bb4987e2559e56d08",
-    "derived/phase2/annotations.jsonl.gz": "15b64513c42a882f71810d266511399db113df342928f9b16c277fe428428336"
+    "derived/phase3/record_routes.jsonl.gz": "961db5ead5dae9edf79cd9b877a2136b9becbd2aa0b140c4e622b20edbc6bc05",
+    "derived/phase3/candidate_decisions.jsonl.gz": "731a8964c3ca1cdf12d05aefcdd0a59a24204abd5e2b785447090367ba7209ff",
+    "derived/phase3/queries.jsonl": "b1905d30bd45b178c18304e7f708b3a1ae874fa2b22fede47afda947c5a4246c",
+    "derived/phase3/series_edges.jsonl": "13dc6d441e09dc30f8671cfdb8f5b3dba31dd5adcdb08347a50424160351be32",
+    "VERSION": "9d8c94f1ad3ea96b1e2ac4914fda4cb93c76b4a3e0d8cc6dd8976d6c0b227d15",
+    "docs/phase3-summary.json": "7c40dab5c4ab18c2d06769da42690ba5f8063bee9c7a1f20dfcf220c108d605c",
+    "docs/phase3-profiles.json": "9eda8c72568af90ccf3011d4a8ec66d14074c2b469cf1f8c310985a4458402bc",
+    "docs/phase3-contract.json": "aff793d905cb05e5fa1fe28397256019d6661c8120a7833614f1b748478cc97c",
+    "derived/phase2/annotations.jsonl.gz": "8ee0a1315aad8127d678af39fb3b7a4176049a9be800ac7b3a430483ba8b1285"
   },
   "only_authorized_adjacent_lines": true
 }

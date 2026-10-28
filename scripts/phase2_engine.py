@@ -9,7 +9,7 @@ import record_io
 ROOT=Path(__file__).resolve().parents[1]
 LAYERS={'canonical':'data/combined/observations.jsonl','local_statistical_cells':'derived/phase1_local_sources_long.jsonl','programme_quantities':'derived/ncl_2005_programmes_long.jsonl'}
 IGNORED_PUBLICATION_FIELDS={'snapshot_distribution','public_evidence_path','public_evidence_sha256','public_projection_policy','original_fields'}
-EVIDENCE_FILES=('research/phase2-ncl-evidence.json','research/phase2-local-evidence.json','research/phase2-nlpi-evidence.json')
+EVIDENCE_FILES=('research/phase2-ncl-evidence.json','research/phase2-local-evidence.json','research/phase2-nlpi-evidence.json','research/phase2-discovered-evidence.json')
 OPERATION_GUARDS={'sum':'No validated aggregation policy is supplied; totals/components, classifications and versions may overlap.','impute':'Unknown, missing and2012 original-quantity gaps must remain unknown.','infer-unique-people':'Visits/transactions/programme attendance are not independently deduplicated people.','recode-geography':'Original historical geography cannot be renamed or summed into current boundaries without a separate verified crosswalk.','coerce-zero':'Original markers, blanks and display/typed conflicts are not measured zero.','cross-source-splice':'Cross-source historical definition equivalence is not supplied by matching labels or numbers.'}
 def guard_operation(operation):
  if operation in OPERATION_GUARDS:return {'status':'incompatible','requested_operation':operation,'reasons':[OPERATION_GUARDS[operation]],'data_modified':False}
@@ -93,6 +93,13 @@ def unit_info(r,layer,card):
  return {'unit_raw_preserved':r.get('unit_raw') or r.get('unit'),'comparison_unit':normalized,'unit_scale':scale,'unit_audit_status':'literal_suffix_verified' if upgraded else 'original_unit_preserved','unit_audit_basis':basis if scale=='1' else 'exact_decimal_scale_from_explicit_original_unit; '+basis}
 def period_info(r,layer,card):
  state=str(r.get('period_status') or '');basis=str(r.get('period_basis') or '');kind=str(r.get('temporal_kind') or '');year=r.get('data_year');month=None
+ if r.get('source_location_kind')=='verified_original_cell' and 'week' in kind:
+  return {'comparison_year':None,'comparison_month':None,'period_kind':'weekly_source_quantity','period_audit_status':'weekly_quantity_not_annual_total','period_audit_basis':basis}
+ if r.get('source_location_kind')=='verified_original_cell' and basis=='literal_original_year_month' and is_reviewed(card):
+  code=str(r.get('period_effective') or '')
+  if re.fullmatch(r'[0-9]{4}-[0-9]{2}',code) and int(code[:4])==year and 1<=int(code[-2:])<=12:
+   return {'comparison_year':year,'comparison_month':int(code[-2:]),'period_kind':'monthly_source_statistic','period_audit_status':'reviewed_literal_original_year_month','period_audit_basis':'Literal year/month in the reviewed original table; annual totals remain separate.'}
+  return {'comparison_year':None,'comparison_month':None,'period_kind':'unresolved','period_audit_status':'invalid_original_year_month','period_audit_basis':basis}
  if layer=='programme_quantities':return {'comparison_year':None,'comparison_month':None,'period_kind':'programme_not_annual','period_audit_status':'programme_period_only','period_audit_basis':r.get('period_interpretation_basis') or r.get('time_reference')}
  if state in ('catalog_title_year_only_attachment_undated','source_sheet_name_header_period_conflict_unresolved'):
   return {'comparison_year':None,'comparison_month':None,'period_kind':'unresolved','period_audit_status':state,'period_audit_basis':basis}

@@ -155,6 +155,9 @@ def family_scope(name,subset):
     if name=='主計總處歷史全國統計':return f'{len({r["source_id"] for r in subset})}個來源版本；資料年{span}，重疊版本分開'
     if name=='主計總處縣市公共館數':return f'{span}官方重編地域；來源含國家圖書館，缺值不補0'
     if name=='地方政府開放歷史表':return f'{"、".join(sorted({r["geography"] for r in subset}))}已確認系列；保留原年／月期間與館藏地'
+    if name=='地方官方出版統計事實':return f'{span}所列新北、臺南、桃園、彰化、高雄及臺北原刊；全國／縣市／行政區／分館與年／月分開，未明年另存'
+    if name=='主計總處後續全國出版統計':return f'{span}113年統計年鑑表4-22；全國含國家圖書館，機關／縣市列未逐列年份保留未知'
+    if name=='教育部歷史公共館統計':return f'{span}近16年統計社3表，含國家圖書館；單位千冊／千人次，不與重疊出版版本相加'
     return f'{span}所列來源；按口徑與版本選取'
 
 def source_family_table(context,ai=False):
@@ -250,6 +253,35 @@ def update_backlog(context):
     lines=['# 來源分組待辦','','以[source-backlog.json](source-backlog.json)為機器主檔；[歷史批次](historical-batches.md)依registry與實際觀測產生。完成只及列明範圍，未查不表示無資料。','',f'B01與B08維持已完成指定範圍。年鑑{span}的已列核心表、公共館子群與原文數字已整理；{unknown}仍待查。', '',historical_warning(context),'','2012本輪已查公共館章、統計章、評鑑章、國資圖舊連結及閱讀報告；評鑑達標數排除，失敗舊附件已找到官網新網址。仍未取得的22縣市核心原量表不推稱不存在。其他來源的授權與更新政策維持各族群原記錄。','']
     (root/'docs/source-backlog.md').write_text('\n'.join(lines))
 
+def write_discovered_summary(context):
+    root=context['root'];path=root/'raw/discovered-20261028/extraction-metadata.json'
+    if not path.exists():return
+    batch=read_json(path);rows=[r for r in context['rows'] if str(r['source_id']).startswith('discovered-')]
+    if len(rows)!=batch['canonical_observations_added']:raise ValueError('Documentation requires the complete new source batch')
+    body=f"""## 本版新增官方原表整批入庫
+
+v{context['summary']['version']}新增{len(rows):,}個原格，來自{batch['source_documents']}份官方原件的完整指定表及續頁。早期年鑑2001–2004、教育部1994–2009、主計2010–2024全國原表，以及新北、臺南、桃園、彰化、高雄和臺北所列原刊分開保存。高雄含表3-2全部52頁、各館年度及12個月；臺北本批僅2012年12月。
+
+新增格包含{batch['value_statuses'].get('reported',0):,}個數值、{batch['value_statuses'].get('source_blank',0):,}個原刊留白、{batch['value_statuses'].get('source_marker',0):,}個原刊符號／複合格；{batch['unresolved_period_records']:,}格期間未確認。原格數不是館數，合計、分項、年合計與月值不得整表相加。原年份不明不填出版年；原件缺值不補0。新北館藏2010前後分段；高雄年度館藏／期刊彙計與借閱率口徑未明，不當年底庫存趨勢。
+
+[完整來源／表格範圍](../raw/discovered-20261028/extraction-metadata.json)與[逐筆原格驗收](../scripts/validate_discovered_20261028.py)可重跑。各格保留原字串、單位、官方原件URL、SHA、原頁表列欄、版本及公式／分母；讀source_time_reference的JSON可取原表脈絡、合併格與公式等額外來源限定，source_cell_note_raw保留核對方法。369格掃描資料以Apple Vision及AI原圖核讀，沒有宣稱人類逐格雙校；重複OCR不是獨立引擎。
+
+原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl。臺北2012年刊權利衝突及三份跨館型統計章待核子群仍隔離。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
+
+16個複合／非單一量原格另逐格登錄於scripts/reviewed_non_scalar_literals.json（含原件SHA、原文及定位）。例如主館／括弧分館、各1人、每鄉各2不能任挑一個數字作總量；source_marker及selected_source_missing在這些格表示沒有單一可用純量，不表示原件沒有資料。必須同讀raw_value、原註與該登錄，不推算補值。
+
+沿用每月維護；新增歷史固定原件每365天到期回查，來源與擷取器未變則沿用完整批次。原件更動暫存待覆核、失敗保留前版，不把新下載內容自動當作可公開授權。"""
+    # Links from root documents are relative to the repository root.
+    body=body.replace('(../raw/','(raw/').replace('(../scripts/','(scripts/')
+    for name in ('README.md','COVERAGE.md','AI_USAGE.md'):
+        p=root/name;p.write_text(generated_block(p.read_text(),'discovered-20261028',body))
+    p=root/'llms.txt';p.write_text(generated_block(p.read_text(),'discovered-20261028',f"v{context['summary']['version']} complete selected new originals: {len(rows)} canonical cells / 12 documents; raw/discovered-20261028/extraction-metadata.json. Unknown year remains null ({batch['unresolved_period_records']}); source_time_reference JSON preserves source context/merged scope/formula; source_cell_note_raw preserves verification method. Historical discovery/probe v0.8 is not another observation layer. No aggregation, imputation or cross-source panel permission."))
+    backlog=read_json(root/'docs/source-backlog.json')
+    family={'family_id':'reviewed_official_discovery_20261028','owner':'所列中央與地方官方出版機關','status':'completed_selected_tables_only','completed_scope':batch,'known_not_ingested':['臺北2012年刊：權利衝突維持隔離。','三份早期跨館型統計章：公共館子群未覆核，維持候選。','各原刊未列入本批的其他原表／年度仍待查，不表示不存在。'],'unknown_scope':['未取得2012全22縣市核心原量表。','部分原刊年份、單位、年度彙計或分館涵蓋仍未明，逐格照實保存。'],'evidence':['docs/source-discovery-20261028.json','raw/discovered-20261028/extraction-metadata.json','docs/historical-batches.json']}
+    backlog['families']=[f for f in backlog['families'] if f['family_id']!=family['family_id']]+[family]
+    write_json(root/'docs/source-backlog.json',backlog)
+
+
 def main():
     context=load_context();root=context['root'];summary=context['summary'];version=summary['version'];description=bounded_description(context);warning=historical_warning(context)
     write_historical_batches(context)
@@ -269,6 +301,7 @@ def main():
     if summary.get('built_at'):s=re.sub(r'^date-released: .+$','date-released: '+summary['built_at'][:10],s,flags=re.M)
     p.write_text(s)
     update_backlog(context)
+    write_discovered_summary(context)
     if record_io.compressed(root):
         for name in ('README.md','AI_USAGE.md','llms.txt','COVERAGE.md'):
             path=root/name

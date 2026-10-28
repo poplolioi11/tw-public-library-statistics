@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "full_selected_tables": true,
+  "source_cells": 756,
+  "source_counts": {
+    "ntpc-cultural-2015": 156,
+    "tainan-bulletin-10505": 240,
+    "dgbas-yearbook-113": 312,
+    "moe-16years-T403": 48
+  },
+  "null_cells": 31,
+  "unresolved_year_cells": 316,
+  "no_imputation": true,
+  "no_cross_source_aggregation": true,
+  "no_full_originals_distributed": true,
+  "tables": [
+    {
+      "document": "ntpc-cultural-2015",
+      "table": "6-2",
+      "source_cells": 156
+    },
+    {
+      "document": "tainan-bulletin-10505",
+      "table": "1+2",
+      "source_cells": 240
+    },
+    {
+      "document": "dgbas-yearbook-113",
+      "table": "4-22",
+      "source_cells": 312
+    },
+    {
+      "document": "moe-16years-T403",
+      "table": "社3",
+      "source_cells": 48
+    }
+  ]
+}

@@ -6,8 +6,8 @@
     "2011–2025已完整的是公開10類全國圖表。",
     "2023是目前唯一證實同一6425官方OGDL年度縣市包。",
     "22縣市各4角色的來源入口已查；各機關歷年檔案庫及候選附件尚未窮盡或全量入庫。",
-    "NCL95–114卷僅所列核心表、公共館子群及明列原文數字；2012縣市核心原量缺口仍存。",
-    "2026-10-28新增16份原件與有界396格研究證據見docs/source-discovery-20261028.json；正式v0.8.0觀測與2012全22縣市核心原量缺口不變。"
+    "2026-10-28新增16份原件與有界396格研究證據見docs/source-discovery-20261028.json；正式v0.8.0觀測與2012全22縣市核心原量缺口不變。",
+    "NCL91–114卷僅所列核心表、公共館子群及明列原文數字；2012縣市核心原量缺口仍存。"
   ],
   "status_semantics": {
     "completed_bounded_scope": "僅completed_scope所列範圍完整",
@@ -117,6 +117,10 @@
       ],
       "completed_scope": {
         "data_years": [
+          2001,
+          2002,
+          2003,
+          2004,
           2005,
           2006,
           2007,
@@ -139,6 +143,10 @@
           2024
         ],
         "edition_roc": [
+          91,
+          92,
+          93,
+          94,
           95,
           96,
           97,
@@ -160,8 +168,430 @@
           113,
           114
         ],
-        "long_rows": 19027,
+        "long_rows": 20795,
         "tables": [
+          {
+            "source_id": "discovered-ncl-ed91-public-libraries-t11",
+            "source_table": "11",
+            "source_table_title": "臺閩地區公共圖書館統計表（民國90年）",
+            "source_cells": 286,
+            "numeric_cells": 122,
+            "source_blank_cells": 164,
+            "other_missing_cells": 0,
+            "data_years": [
+              2001
+            ],
+            "edition_roc": [
+              91
+            ],
+            "pdf_pages": [
+              "3",
+              "4"
+            ],
+            "printed_pages": [
+              "73",
+              "74"
+            ],
+            "source_sha256": [
+              "6b58c1f4432c77bb0fcbea94c2dc0373f1d5f163e080a203b01d74e29b9b0ff4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed91-public-libraries-t12",
+            "source_table": "12",
+            "source_table_title": "國立暨直轄市立公共圖書館經費、館藏與資源使用統計表（民國90年）",
+            "source_cells": 20,
+            "numeric_cells": 17,
+            "source_blank_cells": 0,
+            "other_missing_cells": 3,
+            "data_years": [
+              2001
+            ],
+            "edition_roc": [
+              91
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "74"
+            ],
+            "source_sha256": [
+              "6b58c1f4432c77bb0fcbea94c2dc0373f1d5f163e080a203b01d74e29b9b0ff4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed91-public-libraries-t13",
+            "source_table": "13",
+            "source_table_title": "臺灣省各縣市鄉鎮市立圖書館館藏資料統計表（民國90年）",
+            "source_cells": 63,
+            "numeric_cells": 63,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2001
+            ],
+            "edition_roc": [
+              91
+            ],
+            "pdf_pages": [
+              "4",
+              "5"
+            ],
+            "printed_pages": [
+              "74",
+              "75"
+            ],
+            "source_sha256": [
+              "6b58c1f4432c77bb0fcbea94c2dc0373f1d5f163e080a203b01d74e29b9b0ff4"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed92-public-libraries-t5",
+            "source_table": "5",
+            "source_table_title": "臺閩地區公共圖書館統計表（民國91年）",
+            "source_cells": 99,
+            "numeric_cells": 36,
+            "source_blank_cells": 63,
+            "other_missing_cells": 0,
+            "data_years": [
+              2002
+            ],
+            "edition_roc": [
+              92
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "97"
+            ],
+            "source_sha256": [
+              "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed92-public-libraries-t5",
+            "source_table": "5",
+            "source_table_title": "臺閩地區公共圖書館統計表（民國91年）（續）",
+            "source_cells": 187,
+            "numeric_cells": 87,
+            "source_blank_cells": 100,
+            "other_missing_cells": 0,
+            "data_years": [
+              2002
+            ],
+            "edition_roc": [
+              92
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "98"
+            ],
+            "source_sha256": [
+              "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed92-public-libraries-t6",
+            "source_table": "6",
+            "source_table_title": "國立暨直轄市立公共圖書館經費、館藏與資源使用統計表（民國91年）",
+            "source_cells": 20,
+            "numeric_cells": 17,
+            "source_blank_cells": 0,
+            "other_missing_cells": 3,
+            "data_years": [
+              2002
+            ],
+            "edition_roc": [
+              92
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "99"
+            ],
+            "source_sha256": [
+              "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed92-public-libraries-t7",
+            "source_table": "7",
+            "source_table_title": "臺灣省各縣市鄉鎮市立圖書館館藏資料統計表（民國91年）",
+            "source_cells": 63,
+            "numeric_cells": 63,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2002
+            ],
+            "edition_roc": [
+              92
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "99"
+            ],
+            "source_sha256": [
+              "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed92-public-libraries-t8",
+            "source_table": "8",
+            "source_table_title": "縣市文化局（中心）圖書館統計比較表（民國90年及91年）",
+            "source_cells": 144,
+            "numeric_cells": 112,
+            "source_blank_cells": 26,
+            "other_missing_cells": 6,
+            "data_years": [
+              2001,
+              2002
+            ],
+            "edition_roc": [
+              92
+            ],
+            "pdf_pages": [
+              "6"
+            ],
+            "printed_pages": [
+              "100"
+            ],
+            "source_sha256": [
+              "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed92-public-libraries-t8",
+            "source_table": "8",
+            "source_table_title": "縣市文化局（中心）圖書館統計比較表（民國90年及91年）（續）",
+            "source_cells": 128,
+            "numeric_cells": 108,
+            "source_blank_cells": 15,
+            "other_missing_cells": 5,
+            "data_years": [
+              2001,
+              2002
+            ],
+            "edition_roc": [
+              92
+            ],
+            "pdf_pages": [
+              "7"
+            ],
+            "printed_pages": [
+              "101"
+            ],
+            "source_sha256": [
+              "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed93-public-libraries-t16",
+            "source_table": "16",
+            "source_table_title": "國立暨直轄市立公共圖書館經費、館藏與資源使用統計表（民國92年）",
+            "source_cells": 41,
+            "numeric_cells": 41,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2003
+            ],
+            "edition_roc": [
+              93
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "109"
+            ],
+            "source_sha256": [
+              "c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed93-public-libraries-t17",
+            "source_table": "17",
+            "source_table_title": "臺閩地區各縣（市）暨鄉鎮（市）立圖書館館藏資料及購書經費統計表（民國92年）",
+            "source_cells": 115,
+            "numeric_cells": 115,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2003
+            ],
+            "edition_roc": [
+              93
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "110"
+            ],
+            "source_sha256": [
+              "c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed93-public-libraries-t19",
+            "source_table": "19",
+            "source_table_title": "臺閩地區各縣市文化局人力、讀者服務、推廣服務、參考諮詢與輔導鄉鎮（市）概況統計表（民國92年）",
+            "source_cells": 144,
+            "numeric_cells": 123,
+            "source_blank_cells": 21,
+            "other_missing_cells": 0,
+            "data_years": [
+              2003
+            ],
+            "edition_roc": [
+              93
+            ],
+            "pdf_pages": [
+              "5"
+            ],
+            "printed_pages": [
+              "112"
+            ],
+            "source_sha256": [
+              "c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed93-public-libraries-t19",
+            "source_table": "19",
+            "source_table_title": "臺閩地區各縣市文化局人力、讀者服務、推廣服務、參考諮詢與輔導鄉鎮（市）概況統計表（民國92年）（續）",
+            "source_cells": 63,
+            "numeric_cells": 55,
+            "source_blank_cells": 8,
+            "other_missing_cells": 0,
+            "data_years": [
+              2003
+            ],
+            "edition_roc": [
+              93
+            ],
+            "pdf_pages": [
+              "6"
+            ],
+            "printed_pages": [
+              "113"
+            ],
+            "source_sha256": [
+              "c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed94-public-libraries-t7",
+            "source_table": "7",
+            "source_table_title": "國立暨直轄市立公共圖書館經費、館藏與資源使用統計表（民國93年）",
+            "source_cells": 50,
+            "numeric_cells": 46,
+            "source_blank_cells": 4,
+            "other_missing_cells": 0,
+            "data_years": [
+              2004
+            ],
+            "edition_roc": [
+              94
+            ],
+            "pdf_pages": [
+              "2"
+            ],
+            "printed_pages": [
+              "75"
+            ],
+            "source_sha256": [
+              "6a33073693212a20a74f9b3cb190e926ca4dfb6f6af988ef0357a2339c253417"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed94-public-libraries-t8",
+            "source_table": "8",
+            "source_table_title": "臺閩地區各縣市暨鄉鎮市立圖書館館藏資料及購書經費統計表（民國93年）",
+            "source_cells": 115,
+            "numeric_cells": 115,
+            "source_blank_cells": 0,
+            "other_missing_cells": 0,
+            "data_years": [
+              2004
+            ],
+            "edition_roc": [
+              94
+            ],
+            "pdf_pages": [
+              "3"
+            ],
+            "printed_pages": [
+              "76"
+            ],
+            "source_sha256": [
+              "6a33073693212a20a74f9b3cb190e926ca4dfb6f6af988ef0357a2339c253417"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
+          {
+            "source_id": "discovered-ncl-ed94-public-libraries-t9",
+            "source_table": "9",
+            "source_table_title": "臺閩地區各縣市立圖書館人員、讀者及推廣服務、參考諮詢與輔導概況統計表（民國93年）",
+            "source_cells": 230,
+            "numeric_cells": 210,
+            "source_blank_cells": 20,
+            "other_missing_cells": 0,
+            "data_years": [
+              2004
+            ],
+            "edition_roc": [
+              94
+            ],
+            "pdf_pages": [
+              "4"
+            ],
+            "printed_pages": [
+              "77"
+            ],
+            "source_sha256": [
+              "6a33073693212a20a74f9b3cb190e926ca4dfb6f6af988ef0357a2339c253417"
+            ],
+            "uncertain_label_records": 0,
+            "unit_conflict_records": 0
+          },
           {
             "source_id": "ncl-earlier-2006-t1",
             "source_table": "1",
@@ -5779,16 +6209,10 @@
             "raw/ncl-2012/source-search-log.json",
             "docs/historical-batches.json"
           ]
-        },
-        {
-          "cohort": "ncl_2001_2004_source_discovery",
-          "scope": "91–94卷公共館章已取得，列明原表確認資料年2001–2004；不等於整章或正式入庫。93卷表16／17／19優先，掃描／缺字形映射卷須逐格覆核。",
-          "status": "originals_obtained_selected_tables_not_formally_ingested",
-          "evidence": "docs/source-discovery-20261028.json"
         }
       ],
       "unknown_scope": [
-        "115卷以後及94卷以前仍待逐表查核；已處理卷的其他未列來源也可能有缺口。",
+        "115卷以後及90卷以前仍待逐表查核；已處理卷的其他未列來源也可能有缺口。",
         "官方目錄可見不等於全部欄位、縣市標籤或歷年可比性已確認。"
       ],
       "license_scope": "署名專章全文PDF授權未確認；本機保存原檔，公開衍生表只取統計事實與來源定位，不轉發全文/影像。",
@@ -5824,7 +6248,11 @@
         "raw/ncl-2024/extraction-validation.json",
         "raw/ncl-2024/documents.json",
         "raw/ncl-2005/extraction-metadata.json",
-        "docs/source-discovery-20261028.json"
+        "docs/source-discovery-20261028.json",
+        "raw/discovered-20261028/extraction-metadata.json",
+        "derived/discovered_central_20261028_metadata.json",
+        "derived/discovered_local_20261028_metadata.json",
+        "derived/discovered_ncl_early_20261028_metadata.json"
       ],
       "completed_other_layer": [
         {
@@ -7454,6 +7882,95 @@
       "evidence": [
         "docs/source-discovery-20261028.json"
       ]
+    },
+    {
+      "family_id": "reviewed_official_discovery_20261028",
+      "owner": "所列中央與地方官方出版機關",
+      "status": "completed_selected_tables_only",
+      "completed_scope": {
+        "schema_version": "1.0.0",
+        "source_documents": 12,
+        "source_cells": 20358,
+        "canonical_observations_added": 20358,
+        "source_counts": {
+          "ntpc-cultural-2015": 156,
+          "tainan-bulletin-10505": 240,
+          "dgbas-yearbook-113": 312,
+          "moe-16years-T403": 48,
+          "taoyuan-yearbook-ch8-2021": 240,
+          "tpml-2012-12": 65,
+          "changhua-bulletin-2021-ctrl": 384,
+          "kaohsiung-cultural-2012": 17145,
+          "ncl-ed91-public-libraries": 369,
+          "ncl-ed92-public-libraries": 641,
+          "ncl-ed93-public-libraries": 363,
+          "ncl-ed94-public-libraries": 395
+        },
+        "table_counts": {
+          "discovered-ntpc-cultural-2015-t6-2": 156,
+          "discovered-tainan-bulletin-10505-t1": 192,
+          "discovered-tainan-bulletin-10505-t2": 48,
+          "discovered-dgbas-yearbook-113-t4-22": 312,
+          "discovered-moe-16years-T403-t3": 48,
+          "discovered-taoyuan-yearbook-ch8-2021-t8-11": 240,
+          "discovered-tpml-2012-12-tmonthly-primary": 24,
+          "discovered-tpml-2012-12-tfacility-parenthetical": 2,
+          "discovered-tpml-2012-12-tmonthly-services": 21,
+          "discovered-tpml-2012-12-tmonthly-activities": 18,
+          "discovered-changhua-bulletin-2021-ctrl-t1": 70,
+          "discovered-changhua-bulletin-2021-ctrl-t3": 50,
+          "discovered-changhua-bulletin-2021-ctrl-t2": 20,
+          "discovered-changhua-bulletin-2021-ctrl-t4": 40,
+          "discovered-changhua-bulletin-2021-ctrl-t5": 84,
+          "discovered-changhua-bulletin-2021-ctrl-t7": 84,
+          "discovered-changhua-bulletin-2021-ctrl-t6": 33,
+          "discovered-changhua-bulletin-2021-ctrl-tfigure-1-reference": 1,
+          "discovered-changhua-bulletin-2021-ctrl-tfigure-2-reference": 1,
+          "discovered-changhua-bulletin-2021-ctrl-tfigure-3-reference": 1,
+          "discovered-kaohsiung-cultural-2012-t7-1": 24,
+          "discovered-kaohsiung-cultural-2012-t3-1": 195,
+          "discovered-kaohsiung-cultural-2012-t3-2": 16926,
+          "discovered-ncl-ed91-public-libraries-t11": 286,
+          "discovered-ncl-ed91-public-libraries-t12": 20,
+          "discovered-ncl-ed91-public-libraries-t13": 63,
+          "discovered-ncl-ed92-public-libraries-t5": 286,
+          "discovered-ncl-ed92-public-libraries-t6": 20,
+          "discovered-ncl-ed92-public-libraries-t7": 63,
+          "discovered-ncl-ed92-public-libraries-t8": 272,
+          "discovered-ncl-ed93-public-libraries-t16": 41,
+          "discovered-ncl-ed93-public-libraries-t17": 115,
+          "discovered-ncl-ed93-public-libraries-t19": 207,
+          "discovered-ncl-ed94-public-libraries-t7": 50,
+          "discovered-ncl-ed94-public-libraries-t8": 115,
+          "discovered-ncl-ed94-public-libraries-t9": 230
+        },
+        "value_statuses": {
+          "reported": 14540,
+          "source_marker": 5391,
+          "source_blank": 427
+        },
+        "unresolved_period_records": 467,
+        "monthly_records": 15869,
+        "canonical_batch_sha256": "7ccaf8c06e8f10f7560a922d24c513c27ffff1039aab2800a71e4521fa606bb1",
+        "no_imputation": true,
+        "full_originals_distributed": false,
+        "cross_source_panel_permission": false,
+        "complete_scope": "All physical cells of the selected tables and continuations listed in the three extractor inventories; not all tables of each publication."
+      },
+      "known_not_ingested": [
+        "臺北2012年刊：權利衝突維持隔離。",
+        "三份早期跨館型統計章：公共館子群未覆核，維持候選。",
+        "各原刊未列入本批的其他原表／年度仍待查，不表示不存在。"
+      ],
+      "unknown_scope": [
+        "未取得2012全22縣市核心原量表。",
+        "部分原刊年份、單位、年度彙計或分館涵蓋仍未明，逐格照實保存。"
+      ],
+      "evidence": [
+        "docs/source-discovery-20261028.json",
+        "raw/discovered-20261028/extraction-metadata.json",
+        "docs/historical-batches.json"
+      ]
     }
   ],
   "backlog": [
@@ -7527,7 +8044,7 @@
         "各卷其他表數、年份、單位與全章完整率仍未逐格確認。",
         "91卷掃描、92／94卷中文字形映射影響擷取；資料年僅及已列明原表。"
       ],
-      "completion": "95–114卷已列核心表／子群／原文批次見docs/historical-batches.json；其他卷及2012核心原量缺口維持待查。",
+      "completion": "91–114卷已列核心表／子群／原文批次見docs/historical-batches.json；其他卷及2012核心原量缺口維持待查。",
       "source_discovery_evidence": "docs/source-discovery-20261028.json"
     },
     {
@@ -8001,11 +8518,12 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
         "catalog_page": 2,
         "data_year_verified": 2004,
-        "ingestion_status": "original_acquired_selected_tables_inspected_not_formally_ingested",
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
         "data_years_verified": [
           2004
         ],
-        "scope_evidence": "docs/source-discovery-20261028.json；年份僅及列明核讀原表，不代表全章每表。"
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 93,
@@ -8013,11 +8531,12 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565582148900528",
         "catalog_page": 2,
         "data_year_verified": 2003,
-        "ingestion_status": "original_acquired_selected_tables_inspected_not_formally_ingested",
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
         "data_years_verified": [
           2003
         ],
-        "scope_evidence": "docs/source-discovery-20261028.json；年份僅及列明核讀原表，不代表全章每表。"
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 92,
@@ -8025,12 +8544,13 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565619396807101",
         "catalog_page": 2,
         "data_year_verified": 2002,
-        "ingestion_status": "original_acquired_selected_tables_inspected_not_formally_ingested",
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
         "data_years_verified": [
           2001,
           2002
         ],
-        "scope_evidence": "docs/source-discovery-20261028.json；年份僅及列明核讀原表，不代表全章每表。"
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 91,
@@ -8038,11 +8558,12 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566087370545104",
         "catalog_page": 2,
         "data_year_verified": 2001,
-        "ingestion_status": "original_acquired_selected_tables_inspected_not_formally_ingested",
+        "ingestion_status": "specific_operational_tables_public_subset_or_prose_completed_only",
         "data_years_verified": [
           2001
         ],
-        "scope_evidence": "docs/source-discovery-20261028.json；年份僅及列明核讀原表，不代表全章每表。"
+        "scope_evidence": "docs/historical-batches.json；完整性只及列明原表／原文，標籤不確定不計為已確認縣市值。",
+        "uncertain_label_records": 0
       },
       {
         "edition_roc_raw": 90,
@@ -8145,7 +8666,7 @@
     }
   },
   "phase1_inventory": {
-    "version": "0.8.0",
+    "version": "0.9.0",
     "scope": "22 current counties x4 roles; bounded source-entry survey, not exhaustive all-history ingestion",
     "authority_slots": 88,
     "candidates": 440,

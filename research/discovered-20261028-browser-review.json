@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "mobile_and_desktop": [
+    {
+      "width": 320,
+      "document_width": 320,
+      "min_tick_font_px": 12,
+      "initial_json_requests": 3,
+      "decoded_resource_bytes": 169881,
+      "plotted_points": 5,
+      "source_links_checked": 5
+    },
+    {
+      "width": 390,
+      "document_width": 390,
+      "min_tick_font_px": 12,
+      "initial_json_requests": 3,
+      "decoded_resource_bytes": 169881,
+      "plotted_points": 5,
+      "source_links_checked": 5
+    },
+    {
+      "width": 768,
+      "document_width": 768,
+      "min_tick_font_px": 12,
+      "initial_json_requests": 3,
+      "decoded_resource_bytes": 169881,
+      "plotted_points": 5,
+      "source_links_checked": 5
+    },
+    {
+      "width": 1440,
+      "document_width": 1440,
+      "min_tick_font_px": 12,
+      "initial_json_requests": 3,
+      "decoded_resource_bytes": 169881,
+      "plotted_points": 5,
+      "source_links_checked": 5
+    }
+  ],
+  "new_source_profiles": [
+    {
+      "profile": "discovered-official-annual-tables",
+      "records": 10,
+      "source_links_checked": 10
+    },
+    {
+      "profile": "discovered-official-monthly-tables",
+      "records": 12,
+      "source_links_checked": 12
+    }
+  ],
+  "checked_cases": [
+    "exact 2020–2024 interval",
+    "unresolved interval clears chart",
+    "incomplete period clears chart",
+    "series cache",
+    "monthly original gaps",
+    "dynamic official entry note",
+    "new complete source months and definition break",
+    "network failure with retry"
+  ],
+  "isolated_headless": true,
+  "dataset_version": "0.9.0",
+  "browser": "Bundled Chromium; separate headless contexts",
+  "user_surface_touched": false,
+  "scope": "Viewport/rendering/source-link and complete selected-source-period checks; not a physical-device or all-browser certification."
+}

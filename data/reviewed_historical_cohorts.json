@@ -474,6 +474,52 @@
         "raw/ncl-2005"
       ],
       "scope": "Complete public-library chapter tables1–5 plus statistics107public-library subset and108public/private-public-library rows including distinct answering counts. Old25-county geography and separate national/municipal institutions retained. Program-specific/cross-year tables6/7 are known not ingested, not labelled absent."
+    },
+    {
+      "id": "official_discovery_20261028",
+      "review_status": "source_reviewed",
+      "script": "build_discovered_20261028.py",
+      "args": [],
+      "adapter_kind": "canonical_observations_jsonl",
+      "canonical_jsonl": "derived/discovered_20261028_observations.jsonl",
+      "derived_csv": "derived/discovered_20261028_long.csv",
+      "inputs": [
+        "raw/discovered-20261028/documents.json",
+        "raw/discovered-20261028/ntpc-cultural-2015.pdf",
+        "raw/discovered-20261028/tainan-bulletin-10505.pdf",
+        "raw/discovered-20261028/taoyuan-yearbook-ch8-2021.pdf",
+        "raw/discovered-20261028/kaohsiung-cultural-2012.pdf",
+        "raw/discovered-20261028/changhua-bulletin-2021-ctrl.pdf",
+        "raw/discovered-20261028/dgbas-yearbook-113.pdf",
+        "raw/discovered-20261028/ncl-ed91-public-libraries.pdf",
+        "raw/discovered-20261028/ncl-ed92-public-libraries.pdf",
+        "raw/discovered-20261028/ncl-ed93-public-libraries.pdf",
+        "raw/discovered-20261028/ncl-ed94-public-libraries.pdf",
+        "raw/discovered-20261028/moe-16years-T403.xls",
+        "raw/discovered-20261028/tpml-2012-12.pdf"
+      ],
+      "dependencies": [
+        "scripts/extract_discovered_central_20261028.py",
+        "scripts/extract_discovered_local_20261028.py",
+        "scripts/extract_discovered_ncl_early_20261028.py",
+        "scripts/probe_library_source_tables.py",
+        "scripts/discovered_20261028_canonical_columns.json"
+      ],
+      "outputs": [
+        "derived/discovered_20261028_long.csv",
+        "derived/discovered_20261028_observations.jsonl",
+        "raw/discovered-20261028/extraction-metadata.json",
+        "derived/discovered_central_20261028_cells.jsonl",
+        "derived/discovered_central_20261028_metadata.json",
+        "derived/discovered_local_20261028_cells.jsonl",
+        "derived/discovered_local_20261028_metadata.json",
+        "derived/discovered_ncl_early_20261028_cells.jsonl",
+        "derived/discovered_ncl_early_20261028_metadata.json"
+      ],
+      "raw_directories": [
+        "raw/discovered-20261028"
+      ],
+      "scope": "Complete selected tables and continuations from twelve official originals. Literal unknown years, symbols, shared cells and monthly periods remain distinct; no national panel is fabricated."
     }
   ]
 }

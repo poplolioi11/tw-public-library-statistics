@@ -26,7 +26,20 @@
 <script type="application/json" id="phase3-data">__PHASE3_DATA__</script>
 <script>
 'use strict';
-const data=JSON.parse(document.getElementById('phase3-data').textContent),$=id=>document.getElementById(id),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+(async function initialiseReader(){
+async function readEmbeddedData(){
+ const value=JSON.parse(document.getElementById('phase3-data').textContent);
+ if(!value.reader_transport)return value;
+ if(value.reader_transport!=='gzip-base64-json-1'||!globalThis.DecompressionStream||!globalThis.crypto?.subtle)throw new Error('此瀏覽器無法解開完整攜帶版資料，請改用公開輕量網站。');
+ const bytes=Uint8Array.from(atob(value.payload_base64),c=>c.charCodeAt(0));
+ const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+ const body=await new Response(stream).arrayBuffer();
+ if(body.byteLength!==value.uncompressed_bytes)throw new Error('完整資料長度校驗失敗');
+ const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',body)),b=>b.toString(16).padStart(2,'0')).join('');
+ if(digest!==value.uncompressed_sha256)throw new Error('完整資料SHA校驗失敗');
+ return JSON.parse(new TextDecoder().decode(body));
+}
+const data=await readEmbeddedData(),$=id=>document.getElementById(id),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const col=Object.fromEntries(Object.entries(data.tables).map(([name,table])=>[name,Object.fromEntries(table.columns.map((field,i)=>[field,i]))]));
 const direct=(name,row,key)=>{const i=col[name][key];return i===undefined||row[i]===-1?undefined:data.pool[row[i]]},object=(name,row)=>Object.fromEntries(data.tables[name].columns.flatMap((key,i)=>row[i]===-1?[]:[[key,data.pool[row[i]]]]));
 const contexts=new Map(data.tables.record_context.rows.map(row=>[direct('record_context',row,'record_key'),row])),routeRows=new Map(data.tables.record_routes.rows.map(row=>[direct('record_routes',row,'record_key'),row]));
@@ -58,4 +71,6 @@ function plotChoices(){const pid=$('profile').value,lo=$('plot-start').value,hi=
 function showPlot(){const c=data.charts[$('plot-series').value];if(!c){$('plot-view').innerHTML='<p class="notice">這個問題／期間沒有可直接連線的數列。單期資料、未知值或口徑未解的原表仍在下方完整資料中；不把它們改成0，也不跨版本補接。可切換到「國圖原刊回溯面板」或主計歷年館數查看合格折線。</p>';$('plot-source').textContent='';return}const lo=$('plot-start').value||$('plot-end').value,hi=$('plot-end').value||$('plot-start').value,ps=c.source_points.filter(p=>(!lo||p.year>=Number(lo))&&(!hi||p.year<=Number(hi))),ids=new Set(ps.map(p=>p.record_key)),segments=c.segments.filter(e=>ids.has(e.left)&&ids.has(e.right));$('plot-view').innerHTML='<h3>'+esc(c.label)+'</h3><svg viewBox="0 0 850 285" role="img" aria-label="原報點位與核准線段">'+c.axes_svg+segments.map(e=>e.markup).join('')+ps.map(p=>p.markup).join('')+'</svg><p class="small">目前顯示 '+ps.length+' 個原報點、'+segments.length+' 條核准線段。只用原報值或P2明示單位換算；原報0不是獨立測量認證。座標保留原段尺度。下方全量表是預設決策快照，圖表指定區間另由相同Python選源器預先驗證。</p>';$('plot-source').innerHTML=ps.slice(0,1).map(p=>link(p.source_url,'官方原件')+' · <span class="mono">SHA '+esc(p.source_sha256)+'</span>').join('')+'<details><summary>每個點的原值、來源與定位</summary>'+ps.map(p=>'<p>'+esc(p.period_label)+'：'+esc(p.comparison_value)+' '+esc(c.unit)+'；原字 '+esc(valueText(p.raw_value))+'；'+link(p.source_url,p.source_locator)+'<br><span class="mono">'+esc(p.record_key)+' · '+esc(p.source_sha256)+'</span></p>').join('')+'</details>';}
 $('plot-start').addEventListener('change',plotChoices);$('plot-end').addEventListener('change',plotChoices);$('plot-search').addEventListener('input',plotChoices);$('plot-series').addEventListener('change',showPlot);
 $('profile').addEventListener('change',refreshFilters);$('view').addEventListener('change',refreshFilters);for(const id of ['year','month','entity','metric','status','page-size'])$(id).addEventListener('change',()=>render(true));let timer;$('q').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>render(true),150)});$('prev').addEventListener('click',()=>{page--;render(false)});$('next').addEventListener('click',()=>{page++;render(false)});$('all-routes').addEventListener('click',()=>{$('profile').value='';$('view').value='record_routes';$('q').value='';refreshFilters()});refreshFilters();
+document.documentElement.dataset.readerReady='true';
+})().catch(error=>{const notice=document.createElement('p');notice.setAttribute('role','alert');notice.textContent=String(error.message||error);const link=document.createElement('a');link.href='https://poplolioi11.github.io/tw-public-library-statistics/';link.textContent='開啟公開輕量網站';notice.append(' ',link);document.body.prepend(notice);});
 </script></body></html>

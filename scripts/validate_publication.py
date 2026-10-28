@@ -22,6 +22,8 @@ import sys
 import tempfile
 import unicodedata
 import unittest
+import record_io
+from source_literal_review import reviewed_non_scalar_literal
 from urllib.parse import urlparse
 
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
@@ -148,7 +150,8 @@ def validate_value_semantics(record: dict, identifier: str) -> None:
         elif status == "not_applicable":
             require(text in NOT_APPLICABLE_MARKERS, f"{identifier}: not_applicable requires an explicit original applicability marker")
         else:
-            require(text in SOURCE_MARKERS, f"{identifier}: missing/marker status requires a recognized original symbol, not an unparsed number or text")
+            reviewed=status=='source_marker' and reviewed_non_scalar_literal(record)
+            require(text in SOURCE_MARKERS or reviewed, f"{identifier}: missing/marker status requires a recognized original symbol or an exact reviewed non-scalar source cell, not an unparsed number or text")
     else:
         require(status not in NULL_STATUSES, f"{identifier}: a null source status cannot carry a reported value")
         require(raw is not None and text != "" and text not in SOURCE_MARKERS | NOT_APPLICABLE_MARKERS,
@@ -214,6 +217,8 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
                 require(isinstance(identifier, str) and bool(identifier.strip()), f"JSONL line {line_number}: empty observation_id")
                 require(identifier not in rows, f"Duplicate JSONL observation_id: {identifier}")
                 require("value" in record and "raw_value" in record, f"{identifier}: value/raw_value absent")
+                require("data_year" in record and (record["data_year"] is None or type(record["data_year"]) is int),
+                        f"{identifier}: data_year must be a confirmed integer year or null, without coercion")
                 for field in ("source_id", "source_locator", "source_url"):
                     require(isinstance(record.get(field), str) and bool(record[field].strip()), f"{identifier}: empty {field}")
                 parsed = urlparse(record["source_url"])
@@ -227,10 +232,18 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
     missing_count = sum(row["value"] is None for row in rows.values())
     zero_count = sum(is_reported_zero(row["value"]) for row in rows.values())
     require(missing_count == expected_missing, "JSONL null count differs from summary.missing_cells")
+    unresolved_period_records = sum(row["data_year"] is None for row in rows.values())
+    reference_years = sorted({row["data_year"] for row in rows.values() if type(row["data_year"]) is int})
+    require(type(summary.get("unresolved_period_records", 0)) is int and summary.get("unresolved_period_records", 0) == unresolved_period_records,
+            "Unresolved period count differs from summary; null years must not be discarded or replaced by zero")
+    if "reference_years" in summary or unresolved_period_records:
+        require(isinstance(summary.get("reference_years"), list) and all(type(year) is int for year in summary["reference_years"])
+                and summary["reference_years"] == reference_years, "summary.reference_years must contain confirmed integer years only")
     for identifier, record in rows.items():
         validate_value_semantics(record, identifier)
 
-    with (combined / "observations.csv").open(encoding="utf-8-sig", newline="") as stream:
+    csv_path = record_io.path_for(root, "data/combined/observations.csv")
+    with record_io.open_text(root, "data/combined/observations.csv", encoding="utf-8-sig", newline="") as stream:
         reader = csv.DictReader(stream)
         header = reader.fieldnames or []
         require(len(header) == len(set(header)) and set(header) == columns, "CSV field set differs from JSONL")
@@ -245,23 +258,24 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
                 require(record[field] == csv_cell(rows[identifier].get(field)), f"{identifier}: CSV differs at {field}")
         require(seen == set(rows), "CSV row set differs from JSONL")
 
-    db_path = combined / "library_statistics.sqlite"
+    db_path = record_io.path_for(root, "data/combined/library_statistics.sqlite")
     require(db_path.is_file(), "Canonical SQLite file missing")
-    with sqlite3.connect(db_path.resolve().as_uri() + "?mode=ro", uri=True) as connection:
-        connection.execute("PRAGMA query_only=ON")
-        require(connection.execute("PRAGMA integrity_check").fetchone()[0] == "ok", "SQLite integrity check failed")
-        declarations = {row[1]: row[2] for row in connection.execute("PRAGMA table_info(observations)")}
-        require(set(declarations) == columns, "SQLite field set differs from JSONL")
-        connection.row_factory = sqlite3.Row
-        seen = set()
-        for sqlite_row in connection.execute("SELECT * FROM observations"):
-            identifier = sqlite_row["observation_id"]
-            require(identifier in rows, "SQLite has an unknown observation_id")
-            require(identifier not in seen, f"Duplicate SQLite observation_id: {identifier}")
-            seen.add(identifier)
-            for field, declaration in declarations.items():
-                require(sqlite_row[field] == sqlite_cell(rows[identifier].get(field), declaration), f"{identifier}: SQLite differs at {field}")
-        require(seen == set(rows), "SQLite row set differs from JSONL")
+    with record_io.materialized_file(root, "data/combined/library_statistics.sqlite") as materialized:
+        with sqlite3.connect(materialized.resolve().as_uri() + "?mode=ro", uri=True) as connection:
+            connection.execute("PRAGMA query_only=ON")
+            require(connection.execute("PRAGMA integrity_check").fetchone()[0] == "ok", "SQLite integrity check failed")
+            declarations = {row[1]: row[2] for row in connection.execute("PRAGMA table_info(observations)")}
+            require(set(declarations) == columns, "SQLite field set differs from JSONL")
+            connection.row_factory = sqlite3.Row
+            seen = set()
+            for sqlite_row in connection.execute("SELECT * FROM observations"):
+                identifier = sqlite_row["observation_id"]
+                require(identifier in rows, "SQLite has an unknown observation_id")
+                require(identifier not in seen, f"Duplicate SQLite observation_id: {identifier}")
+                seen.add(identifier)
+                for field, declaration in declarations.items():
+                    require(sqlite_row[field] == sqlite_cell(rows[identifier].get(field), declaration), f"{identifier}: SQLite differs at {field}")
+            require(seen == set(rows), "SQLite row set differs from JSONL")
 
     hash_cache = {}
     def file_hash(actual: Path) -> str:
@@ -338,7 +352,7 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
         require(file_hash(actual) == normalized_hash(digest, f"manifest {rel}"), f"Manifest file hash mismatch: {rel}")
         manifest_files.add(rel)
     require(bool(manifest_files) or not manifest_present, "No eligible manifest files were checked")
-    for required in (relative, "data/combined/observations.csv", "data/combined/library_statistics.sqlite", "data/combined/summary.json"):
+    for required in (relative, csv_path.relative_to(root).as_posix(), db_path.relative_to(root).as_posix(), "data/combined/summary.json"):
         require(required in manifest_files or not manifest_present, f"Manifest does not inventory canonical file: {required}")
     for evidence in evidence_files:
         require(evidence in manifest_files or not manifest_present, f"Manifest does not inventory public evidence: {evidence}")
@@ -350,16 +364,22 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
     if partition_index.exists():
         index = read_json(partition_index)
         require(index.get("canonical_path") == relative, "Annual index points at a different canonical transport")
+        require(type(index.get("unresolved_period_records", 0)) is int and index.get("unresolved_period_records", 0) == unresolved_period_records,
+                "Annual index unresolved period count differs from canonical")
         union = hashlib.sha256(); total = 0; years = []
         for partition in index["partitions"]:
+            year = partition.get("data_year")
+            require("data_year" in partition and (year is None or type(year) is int), "Annual partition needs an integer year or an explicit null period")
+            if year is None:
+                require(partition["path"] == "data/by_year/unresolved_period.jsonl", "Unresolved periods require their own unresolved_period.jsonl partition")
             rel, actual = relative_file(root, partition["path"], "annual partition")
             require(rel in manifest_files or not manifest_present, "Annual partition not inventoried")
             content = actual.read_bytes()
             require(hashlib.sha256(content).hexdigest() == partition["sha256"], "Annual partition hash mismatch")
             entries = [json.loads(line) for line in content.splitlines() if line.strip()]
-            require(len(entries) == partition["records"] and all(row["data_year"] == partition["data_year"] for row in entries), "Annual partition rows/year mismatch")
+            require(len(entries) == partition["records"] and all(type(row.get("data_year")) is type(year) and row.get("data_year") == year for row in entries), "Annual partition rows/year mismatch")
             union.update(content); total += len(entries); years.append(partition["data_year"])
-        require(years == sorted(set(years)), "Annual partitions duplicate or out of order")
+        require(years == sorted(set(years), key=lambda year: (year is None, year)), "Annual partitions duplicate or out of order")
         require(total == len(rows) == index["records"] and union.hexdigest() == logical_sha256, "Annual partition union differs from decompressed canonical")
         partition_count = len(years)
 
@@ -369,7 +389,7 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
             family = row.get("source_family")
             counts[family] = counts.get(family, 0) + 1
         require(counts == summary["source_families"], "Source-family counts differ from summary")
-    return {"records": len(rows), "canonical_jsonl_path": relative, "canonical_uncompressed_sha256": logical_sha256, "annual_partition_union_checked": partition_count, "missing_cells": missing_count, "reported_zero_cells": zero_count,
+    return {"records": len(rows), "canonical_jsonl_path": relative, "canonical_csv_path": csv_path.relative_to(root).as_posix(), "canonical_sqlite_path": db_path.relative_to(root).as_posix(), "canonical_uncompressed_sha256": logical_sha256, "annual_partition_union_checked": partition_count, "unresolved_period_records": unresolved_period_records, "missing_cells": missing_count, "reported_zero_cells": zero_count,
             "null_status_counts": {status: sum(row["value"] is None and row.get("value_status") == status for row in rows.values()) for status in sorted(NULL_STATUSES)},
             "formats": "JSONL/CSV/SQLite content agrees", "original_files_hash_checked": len(original_files),
             "omitted_source_versions_not_full_source_verified": len(omitted_originals),
@@ -546,7 +566,7 @@ def main() -> int:
         return 0 if self_test() else 1
     try:
         report = validate(args.root, allow_no_manifest=args.allow_no_manifest)
-    except (ValidationError, OSError, sqlite3.Error, ValueError) as error:
+    except (ValidationError, OSError, EOFError, sqlite3.Error, ValueError) as error:
         print(f"PUBLICATION VALIDATION FAILED: {error}", file=sys.stderr)
         return 1
     print(json.dumps(report, ensure_ascii=False, indent=2))

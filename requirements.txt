@@ -2,3 +2,5 @@ pypdf
 pdfplumber
 certifi
 pypdfium2
+xlrd
+Pillow

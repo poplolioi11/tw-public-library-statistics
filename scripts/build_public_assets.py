@@ -4,10 +4,30 @@
 No source downloads or data extraction. Published releases and mismatched assets
 are never replaced. The draft checksum can be refreshed before first publication.
 """
-import argparse,hashlib,json,re,shutil,subprocess,zipfile
+import argparse,gzip,hashlib,json,re,shutil,subprocess,zipfile
 from pathlib import Path
 REPOSITORY='poplolioi11/tw-public-library-statistics'
-def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+MATERIALIZED_ASSETS={'data/combined/observations.csv','data/combined/library_statistics.sqlite'}
+def sha(p):
+ h=hashlib.sha256()
+ with p.open('rb') as stream:
+  for block in iter(lambda:stream.read(1024*1024),b''):h.update(block)
+ return h.hexdigest()
+def copy_verified_asset(root,relative,target,manifest_hashes):
+ """Check stored manifest bytes before materializing a plain CSV/SQLite asset."""
+ # This helper is also loaded alone into RUNNER_TEMP by the release workflow.
+ # Keep it standard-library-only; only two fixed asset paths may materialize.
+ profile_path=root/'data/combined/publication-profile.json'
+ profile=json.loads(profile_path.read_text()) if profile_path.is_file() else {}
+ compressed=relative in MATERIALIZED_ASSETS and relative in profile.get('lossless_gzip_paths',[])
+ source=root/(relative+'.gz' if compressed else relative)
+ stored=source.relative_to(root).as_posix()
+ if stored not in manifest_hashes:raise ValueError('Release asset is not in the verified public manifest: '+stored)
+ if sha(source)!=manifest_hashes[stored]:raise ValueError('Release asset stored-file SHA mismatch: '+stored)
+ if compressed:
+  with gzip.open(source,'rb') as plain,target.open('wb') as output:shutil.copyfileobj(plain,output,length=1024*1024)
+ else:shutil.copyfile(source,target)
+ return target
 def api(path):return json.loads(subprocess.check_output(['gh','api',path]))
 def main():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--root',type=Path,default=Path('.'));p.add_argument('--output',type=Path,required=True);p.add_argument('--tag',required=True);p.add_argument('--commit',required=True);p.add_argument('--repository',default=REPOSITORY);p.add_argument('--publish-draft',action='store_true');a=p.parse_args();r=a.root.resolve();out=a.output.resolve()
@@ -38,9 +58,8 @@ def main():
  if m.get('phase3') is not None or any(src in names for src in phase3_assets.values()):
   if not all(src in names for src in phase3_assets.values()):raise ValueError('Incomplete phase3 public manifest for release assets')
   files.update(phase3_assets)
- for name,src in files.items():
-  if src not in names:raise ValueError('Release asset is not in the verified public manifest: '+src)
-  shutil.copyfile(r/src,out/name)
+ manifest_hashes={entry['path']:entry['sha256'] for entry in entries}
+ for name,src in files.items():copy_verified_asset(r,src,out/name,manifest_hashes)
  expected={f.name:{'sha256':sha(f),'bytes':f.stat().st_size} for f in sorted(out.iterdir()) if f.is_file() and f.name!='SHA256SUMS.txt'}
  checksums=out/'SHA256SUMS.txt';checksums.write_text(''.join(x['sha256']+'  '+name+'\n' for name,x in sorted(expected.items())));expected[checksums.name]={'sha256':sha(checksums),'bytes':checksums.stat().st_size}
  if a.publish_draft:

@@ -1,15 +1,15 @@
 {
   "status": "PASS",
-  "dataset_version": "0.8.0",
-  "phase2_charts": 639,
-  "phase3_charts": 691,
+  "dataset_version": "0.9.0",
+  "phase2_charts": 1677,
+  "phase3_charts": 2767,
   "full_selector_interval_replays": 847,
-  "charts": 1330,
-  "points": 44180,
-  "lines": 41308,
-  "reported_zero_points": 3016,
-  "omitted_positions": 3684,
-  "parsed_svg": 1330,
+  "charts": 4444,
+  "points": 78548,
+  "lines": 72364,
+  "reported_zero_points": 3019,
+  "omitted_positions": 5748,
+  "parsed_svg": 4444,
   "checks": [
     "all point original values and source URL/SHA/locator/version",
     "all Decimal coordinates",
@@ -19,9 +19,9 @@
   ],
   "scope": "Rendered data and SVG structure, not a browser layout or all historical definition certification.",
   "inputs": {
-    "site/phase2.html": "c0cd46cd663547144571fb21bebdab26b8afce91d8e7aed4e33c42e48b17cd87",
-    "site/phase3.html": "3806bdfa80d422e8cb7c2e4ad04dd91637baa1077ac1e53fa9be3b45ab4d8003",
-    "scripts/phase3_engine.py": "93c40de4cd49e3b70b76b0261393b3a3b487930e6f3562fc9dc86e70f52bd381",
-    "docs/phase3-profiles.json": "555be5c31815a1e6ac2f787d6c55c441e026b6b54022c4c68d6fae04f93031e7"
+    "site/phase2.html": "5bc94af23318d503b598fb756eb71cd19e1d07e4cd4f82d5ed376c020e34fc74",
+    "site/phase3.html": "d2b4033994adb52c5581a0a1803ee07de51187e480992a46c6899b7351119612",
+    "scripts/phase3_engine.py": "c37ffc648ab0efb176a95468288e1d2dfaca1351f1ae69a9ab8cee9531223301",
+    "docs/phase3-profiles.json": "9eda8c72568af90ccf3011d4a8ec66d14074c2b469cf1f8c310985a4458402bc"
   }
 }

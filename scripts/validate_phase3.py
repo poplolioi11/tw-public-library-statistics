@@ -41,7 +41,7 @@ def metadata_qualified(a,p,reviewed):
  geo=str(a['facets'].get('geographic_scope') or '')
  if any(x in geo for x in ('uncertain','unresolved','ambiguous')) or p.get('required_geo') and geo not in p['required_geo'] or a['measure_class'] in p.get('exclude_measures',[]):return False
  y=a.get('comparison_year');m=a.get('comparison_month');kind=a['period_kind'];period=p['period_requirement']
- if period!='programme' and (not isinstance(y,int) or isinstance(y,bool) or not 1000<=y<=9999):return False
+ if period not in ('programme','original') and (not isinstance(y,int) or isinstance(y,bool) or not 1000<=y<=9999):return False
  if period=='monthly' and (kind!='monthly_source_statistic' or not isinstance(m,int) or isinstance(m,bool) or not 1<=m<=12):return False
  if period=='annual' and (kind.startswith('monthly') or kind in {'unresolved','partial_year_source','programme_not_annual'}):return False
  if period=='programme' and a['layer']!='programme_quantities':return False

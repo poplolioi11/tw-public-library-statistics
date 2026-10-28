@@ -7,12 +7,12 @@
 只讀取以下任一格式，它們是同一批正式觀測：
 
 - `data/combined/observations.jsonl.gz`
-- `data/combined/observations.csv`
-- `data/combined/library_statistics.sqlite` 的 `observations` 表
+- `data/combined/observations.csv.gz`
+- `data/combined/library_statistics.sqlite.gz` 的 `observations` 表
 
 先讀 `data/combined/summary.json`、`coverage.json`、`indicators.json` 與 `observation.schema.json`。`data/observations.*`、`data/component_records.jsonl` 和 `derived/` 是組件或中間結果，可能保留重複；不得再併入正式入口。資料筆數不是館數。
 
-目前 37,887 筆來源觀測紀錄，含 206 格明示缺值、876 格原印留白、22 格原印文字狀態及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
+目前 58,245 筆來源觀測紀錄，含 206 格明示缺值、1,303 格原印留白、5,413 格原印文字狀態及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
 
 ## 先選來源，再選可比較的觀測
 
@@ -28,11 +28,14 @@
 |---|---|
 | 國資圖公開全國圖表 | 2011–2025年公開全國圖表；只有全國 |
 | 國資圖2023開放資料（含縣市） | 2023年明確OGDL年度資源；全國、縣市與替代口徑分列，不相加；`ogdl-api-2023` |
-| 國家圖書館年鑑統計事實 | 95–114卷指定核心表／公共館子群／原文數字；資料年2005–2024年，保留不同出版版本 |
+| 國家圖書館年鑑統計事實 | 91–114卷指定核心表／公共館子群／原文數字；資料年2001–2024年，保留不同出版版本 |
 | 國家圖書館閱讀報告統計事實 | 2011–2012年5張全國閱讀報告表；包括跨年比較，不是縣市表 |
 | 主計總處歷史全國統計 | 3個來源版本；資料年1991–2011年，重疊版本分開；`dgbas-social-indicators-2005`、`dgbas-social-indicators-2008`、`dgbas-social-indicators-2011` |
 | 主計總處縣市公共館數 | 1998–2025年官方重編地域；來源含國家圖書館，缺值不補0；`dgbas-county-library-Z091101a029` |
 | 地方政府開放歷史表 | 新竹市、臺中市已確認系列；保留原年／月期間與館藏地 |
+| 主計總處後續全國出版統計 | 2010–2024年113年統計年鑑表4-22；全國含國家圖書館，機關／縣市列未逐列年份保留未知；`discovered-dgbas-yearbook-113-t4-22` |
+| 地方官方出版統計事實 | 2006–2021年所列新北、臺南、桃園、彰化、高雄及臺北原刊；全國／縣市／行政區／分館與年／月分開，未明年另存 |
+| 教育部歷史公共館統計 | 1994–2009年近16年統計社3表，含國家圖書館；單位千冊／千人次，不與重疊出版版本相加；`discovered-moe-16years-T403-t3` |
 
 2012年原文中每人購書／擁書／借閱比率分別列22／22／22縣市；館員服務人口只列21縣市，未列連江縣。22縣市核心原量表仍未取得，不能由比率反算。閱讀報告所列表只有全國彙總，不能冒充縣市表。 2015原刊部分縣市標籤未確認、兩列均印金門，保留183筆標籤不確定觀測，不補成連江或硬接現行界線。 其他原刊地理標籤疑義按資料年分列：2024年36格；原印名稱與數字保留，這些格不計為已確認縣市覆蓋。 2015表17標題「場次」與正文「人次」衝突，161格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。 其他原欄頭與正文計量口徑衝突：2005年51格；unit留空，原單位與出處另存，不視為純圖書冊數。 原表人數／人次的計數口徑未釐清之格位保留unit=null：2005年3格、2016年23格；unit_raw照原欄頭保留。
 
@@ -40,7 +43,7 @@
 
 ### 數值與缺值
 
-- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `206` 格 `not_available_in_source` 保留明示缺值符號，`876` 格 `source_blank` 保留原刊留白，`22` 格 `source_marker` 保留原印「無」「未新增」「未統計」等文字狀態；這些文字不自行改成0或推定不適用，均不推算補值。
+- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `206` 格 `not_available_in_source` 保留明示缺值符號，`1303` 格 `source_blank` 保留原刊留白，`5413` 格 `source_marker` 保留原印「無」「未新增」「未統計」等文字狀態；這些文字不自行改成0或推定不適用，均不推算補值。
 - `raw_value` 保留原表字串與註腳標記；例如 `79a` 的數值為79，`source_cell_annotation` 保留a，須同讀 `source_footnotes_raw`／`source_footnotes_status`。`quality_flags` 可為單一代碼或原組件保留的JSON陣列字串；不把單純多層合計旗標當成數值錯誤。
 - `raw_value` 保留原表字串；`value` 的小數可能使用十進位字串。SQLite 的 `value` 欄是文字型別，分析前須明確選定解析規則，不能以不受檢查的轉型把異常字串變成零。
 - 原報 `0` 未必是已確認的真零；讀 `zero_interpretation`、註腳及資料蒐集範圍。
@@ -70,7 +73,7 @@
 
 ## 唯讀 SQL 範例
 
-以唯讀模式連線 `data/combined/library_statistics.sqlite`。以下只列出已指定口徑的觀測，不進行加總。若由應用接收篩選條件，使用查詢參數。
+以唯讀模式連線 `data/combined/library_statistics.sqlite.gz`。以下只列出已指定口徑的觀測，不進行加總。若由應用接收篩選條件，使用查詢參數。
 
 先查看來源及口徑；`COUNT(*)` 是紀錄數：
 
@@ -207,6 +210,21 @@ source_series_only可作單期原來源事實，不獲得跨年連線許可。�
 
 主代理以官方HTTP、原頁影像與實際Python核對16份原件SHA及完整396格；PDF使用pdfplumber與PDFium兩種擷取結果核對，不是兩個獨立官方來源。Gemini 3.8 Flash High只查閱提供的候選摘要，協助提示年份／重複風險，未獨立瀏覽或核讀原件。來源與未解口徑見[研究報告](research/source-discovery-20261028.md)。
 
+<!-- BEGIN discovered-20261028 -->
+## 本版新增官方原表整批入庫
+
+v0.9.0新增20,358個原格，來自12份官方原件的完整指定表及續頁。早期年鑑2001–2004、教育部1994–2009、主計2010–2024全國原表，以及新北、臺南、桃園、彰化、高雄和臺北所列原刊分開保存。高雄含表3-2全部52頁、各館年度及12個月；臺北本批僅2012年12月。
+
+新增格包含14,540個數值、427個原刊留白、5,391個原刊符號／複合格；467格期間未確認。原格數不是館數，合計、分項、年合計與月值不得整表相加。原年份不明不填出版年；原件缺值不補0。新北館藏2010前後分段；高雄年度館藏／期刊彙計與借閱率口徑未明，不當年底庫存趨勢。
+
+[完整來源／表格範圍](raw/discovered-20261028/extraction-metadata.json)與[逐筆原格驗收](scripts/validate_discovered_20261028.py)可重跑。各格保留原字串、單位、官方原件URL、SHA、原頁表列欄、版本及公式／分母；讀source_time_reference的JSON可取原表脈絡、合併格與公式等額外來源限定，source_cell_note_raw保留核對方法。369格掃描資料以Apple Vision及AI原圖核讀，沒有宣稱人類逐格雙校；重複OCR不是獨立引擎。
+
+原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl.gz。臺北2012年刊權利衝突及三份跨館型統計章待核子群仍隔離。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
+
+沿用每月維護；新增歷史固定原件每365天到期回查，來源與擷取器未變則沿用完整批次。原件更動暫存待覆核、失敗保留前版，不把新下載內容自動當作可公開授權。
+16個複合／非單一量原格另逐格登錄於scripts/reviewed_non_scalar_literals.json（含原件SHA、原文及定位）。例如主館／括弧分館、各1人、每鄉各2不能任挑一個數字作總量；source_marker及selected_source_missing在這些格表示沒有單一可用純量，不表示原件沒有資料。必須同讀raw_value、原註與該登錄，不推算補值。
+
+<!-- END discovered-20261028 -->
 
 ## 公開副本
 
@@ -220,3 +238,6 @@ source_series_only可作單期原來源事實，不獲得跨年連線許可。�
 
 網站 https://poplolioi11.github.io/tw-public-library-statistics/ 的JSON分檔只投影既有合格圖表，不代表全部56,496個量化紀錄。AI正式分析仍依本文件原讀取入口。畫點值可能沿用第二階段已核單位尺度；`original_value`、`raw_value`、`original_unit`與`facets`仍留原量及口徑。`source_url`／`source_sha256`／`source_locator`／`source_version_id`不改，動態查詢另附`official_url`與重現提示。不得把網站顯示值或內容雜湊檔名誤當官方原件SHA。
 <!-- END lightweight-site -->
+
+
+完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。

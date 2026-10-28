@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-10-28T08:37:24.668981+00:00",
+  "checked_at": "2026-10-28T11:43:54.651762+00:00",
   "status": "pass",
-  "assertions": 1268155,
+  "assertions": 1288513,
   "scope": "3091 core source cells exhaustively checked; all NCL adapter lineage/number states checked. Complete independently fixed glyph grids for explicitly reviewed cohorts and image/header/row/footnote selections are separately bounded in each evidence report. Older source review limits remain individually reported.",
   "independent_of_pipeline_and_extractors": true,
   "network_used": false,
@@ -459,7 +459,7 @@
   },
   "components": {
     "status": "pass",
-    "canonical_records_checked": 34796,
+    "canonical_records_checked": 55154,
     "local_raw_documents_checked": 35,
     "local_raw_cells_and_derived_rows_checked": 25184,
     "blank_non_observation_raw_rows_excluded": 5,
@@ -468,14 +468,27 @@
     "conflicting_value_groups": 0,
     "historical_adapter_records_checked": 1489,
     "additional_ncl_expected_records": 17912,
+    "complete_discovered_original_records_separately_verified": 20358,
     "explicit_missing_source_markers_retained": 4,
     "pdf_raw_files_hash_checked": 6,
     "local_verification_level": "All original JSON cells and complete original objects vs derived; every nonduplicate adapter record vs derived and raw.",
     "historical_verification_level": "Every adapter record vs derived and PDF source hashes; NCL visual sample scope reported separately. DGBAS PDF content not independently transcribed in this adapter review.",
     "inputs": {
-      "components_sha256": "0b6a53f81ce505c1262207086fcf00bf198c27b3ccf3d789b7cacaaf4e86d048",
+      "components_sha256": "5b833200deeb35269e0b3c0ead518c3585c2fb069412619428e82231041f7f02",
       "local_derived_sha256": "d7ae5850837da2c085668ee8f7f5ad260fc76bb06fc1d929d70447932bd063da"
     }
+  },
+  "discovered_originals": {
+    "status": "PASS",
+    "official_originals": 12,
+    "complete_source_cells": 20358,
+    "canonical_records": 20358,
+    "original_bodies_verified": 12,
+    "unresolved_period_records": 467,
+    "null_cells": 5818,
+    "zero_cells": 21,
+    "source_periods_units_and_qualifiers_preserved": true,
+    "human_double_collation_claimed": false
   },
   "ncl_gap_independent": {
     "status": "pass",
@@ -658,9 +671,9 @@
   },
   "combined": {
     "status": "pass",
-    "records_checked": 37887,
+    "records_checked": 58245,
     "all_original_fields_preserved": true,
-    "snapshot_sha256": "7993d6fbd088cc36fdc7e9de975c52b8a5542af4cc0d21f30cccd4f1532fdc78"
+    "snapshot_sha256": "5fc98b632c55b00e42924b6701636558ead494cd70d3d6d170614008b8cfc64f"
   },
   "ncl_v02_targeted_image_review": {
     "report_path": "research/ncl-v02-independent-image-samples.json",

@@ -74,8 +74,36 @@ let server, browser;
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390,'Long source details overflow mobile');
   await page.goto(base+'?profile=county-library-count-dgbas&entity='+encodeURIComponent('臺南市'),{waitUntil:'networkidle'});
   await page.locator('#result').waitFor({state:'visible'});assert(await page.locator('#official-link-note').isVisible(),'Dynamic official query needs a visible reproduction note');
+  const newProfileChecks=[];
+  for (const profileId of ['discovered-official-annual-tables','discovered-official-monthly-tables']) {
+    const profile=manifest.profiles.find(p=>p.id===profileId);if(!profile)continue;
+    const catalog=read(profile.catalog_url);
+    const series=profileId.endsWith('annual-tables')
+      ? catalog.series.find(s=>s.entity==='新北市' && s.indicator==='借閱人次')
+      : catalog.series.find(s=>s.entity==='三民分館' && s.source_id.includes('kaohsiung') && s.indicator.includes('借閱冊') && !s.indicator.includes('率'));
+    assert(series,'Complete new source series missing from public profile');
+    await page.goto(base+'?profile='+profileId+'&series='+encodeURIComponent(series.id),{waitUntil:'networkidle'});
+    await page.locator('#result').waitFor({state:'visible'});
+    const content=read(series.url),selected=new Set(catalog.default_selection.selected_record_keys);
+    const records=content.records.filter(r=>selected.has(r.record_key));
+    const actual=await page.locator('.value-link').evaluateAll(nodes=>nodes.map(n=>({url:n.href,text:n.textContent,key:n.closest('tr').dataset.recordKey})));
+    assert.deepEqual(actual,records.map(r=>({url:new URL(r.official_url).href,text:r.display_value,key:r.record_key})));
+    assert.equal(await page.locator('.plot-point').count(),records.filter(r=>r.plot).length);
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390,'New source table overflows mobile');
+    if(profileId.endsWith('annual-tables')) {
+      assert(records.some(r=>r.year===2006 && r.raw_value==='…' && r.plot===null),'Original leading missing period lost');
+      const segments=catalog.series.filter(s=>s.source_id.includes('ntpc') && s.entity==='新北市' && s.indicator==='藏書冊數');
+      assert.equal(segments.length,2,'2010 collection-definition boundary was joined');
+      assert(segments.every(s=>s.years.every(y=>y<2010)||s.years.every(y=>y>=2010)));
+    } else {
+      assert.equal(records.length,12,'Complete source monthly row must retain all twelve periods');
+      assert.deepEqual(records.map(r=>r.month),Array.from({length:12},(_,i)=>i+1));
+    }
+    if(output)await page.screenshot({path:path.join(output,profileId+'-390.png'),fullPage:true});
+    newProfileChecks.push({profile:profileId,records:records.length,source_links_checked:actual.length});
+  }
   await page.route('**/data/*.json',r=>r.abort());
   await page.goto(base,{waitUntil:'networkidle'});await page.locator('#status.is-error').waitFor();assert.equal(await page.locator('.plot-point').count(),0,'Failed load retained old data');assert(await page.locator('#retry').isVisible());
   await context.close();
-  console.log(JSON.stringify({passed:true,mobile_and_desktop:results,checked_cases:['exact 2020–2024 interval','unresolved interval clears chart','incomplete period clears chart','series cache','monthly original gaps','dynamic official entry note','network failure with retry'],isolated_headless:true}));
+  console.log(JSON.stringify({passed:true,mobile_and_desktop:results,new_source_profiles:newProfileChecks,checked_cases:['exact 2020–2024 interval','unresolved interval clears chart','incomplete period clears chart','series cache','monthly original gaps','dynamic official entry note','new complete source months and definition break','network failure with retry'],isolated_headless:true}));
 })().catch(e=>{console.error(e);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();if(server)await new Promise(resolve=>server.close(resolve));});

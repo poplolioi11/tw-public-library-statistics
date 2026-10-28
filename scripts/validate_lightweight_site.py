@@ -6,13 +6,14 @@ from pathlib import Path
 from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 import record_io
+import reader_transport
 
 ROOT=Path(__file__).resolve().parents[1]
 def sha(body):return hashlib.sha256(body).hexdigest()
 def load(path):return json.loads(path.read_text())
 def embedded(root,stage):
  body=(root/'site'/f'{stage}.html').read_text()
- return json.loads(re.search(r'<script type="application/json" id="'+stage+r'-data">(.*?)</script>',body,re.S).group(1))
+ return reader_transport.decode(re.search(r'<script type="application/json" id="'+stage+r'-data">(.*?)</script>',body,re.S).group(1))
 def decode(data,name):
  t=data['tables'][name]
  return [{k:data['pool'][i] for k,i in zip(t['columns'],r,strict=True) if i!=-1} for r in t['rows']]

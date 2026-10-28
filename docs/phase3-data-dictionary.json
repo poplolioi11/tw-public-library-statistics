@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.8.0",
+  "dataset_version": "0.9.0",
   "tables": {
     "record_routes": {
       "candidate_profile_ids": {
@@ -63,6 +63,7 @@
       "original_value": {
         "json_types": [
           "NoneType",
+          "float",
           "int",
           "str"
         ],
@@ -275,6 +276,7 @@
       "original_value": {
         "json_types": [
           "NoneType",
+          "float",
           "int",
           "str"
         ],

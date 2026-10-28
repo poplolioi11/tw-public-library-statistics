@@ -1,7 +1,7 @@
 {
   "name": "tw-public-library-statistics",
   "title": "臺灣公共圖書館跨年度統計",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "已驗證可得來源的全量整理；不是宣稱臺灣所有年代、所有縣市與每一圖書館都已完整。",
   "licenses": [
     {
@@ -12,10 +12,11 @@
   "resources": [
     {
       "name": "observations",
-      "path": "data/combined/observations.csv",
+      "path": "data/combined/observations.csv.gz",
       "format": "csv",
       "encoding": "utf-8-sig",
-      "hash": "sha256:de3ebd43344f8df9bcbe6922db8569fbcfaceee5617fefe3602ebb29c47ed647"
+      "compression": "gzip",
+      "hash": "sha256:9e70c888b5f5a67d14f8bbb6b38df26a741193d0bafd505b327434340fd665e2"
     },
     {
       "name": "observations-jsonl",
@@ -25,8 +26,10 @@
     },
     {
       "name": "query-database",
-      "path": "data/combined/library_statistics.sqlite",
-      "format": "sqlite"
+      "path": "data/combined/library_statistics.sqlite.gz",
+      "format": "sqlite",
+      "compression": "gzip",
+      "hash": "sha256:411107a532bcaaefdefee28a56f9aead0570eaef6e9ce91405fa41b500214dd0"
     },
     {
       "name": "phase1_authority_checks-csv",
@@ -60,28 +63,28 @@
       "name": "phase1_raw_source_profiles-csv",
       "path": "derived/phase1_raw_source_profiles.csv",
       "format": "csv",
-      "hash": "sha256:6b6dc16c736e09de80b365e5911b1e4b38899e8151b37a36d48a3a19defa4d92",
+      "hash": "sha256:20ee8dad70b06834cbb82184a2dcc08eb03386502199e3bb7c7e3e10cdffda3d",
       "layer": "source_inventory"
     },
     {
       "name": "phase1_raw_source_profiles-jsonl",
       "path": "derived/phase1_raw_source_profiles.jsonl",
       "format": "jsonl",
-      "hash": "sha256:c40ad23c1ddb84732218ed66e451c00ddb536968d184dc9b8595f69b4e51c945",
+      "hash": "sha256:6683a9272713198635206dd8a1798e125bc12098bfd4251da5db7794c2cc43c4",
       "layer": "source_inventory"
     },
     {
       "name": "phase1_discovery_matrix-csv",
       "path": "derived/phase1_discovery_matrix.csv",
       "format": "csv",
-      "hash": "sha256:ea104015491f5886834a45eb98b50f21a8748e65b50c304341c5ad0dc6c42501",
+      "hash": "sha256:493ec03d679838b7f980fc472f6e01909dd362479b32126988adca6450c5e3cd",
       "layer": "source_inventory"
     },
     {
       "name": "phase1_discovery_matrix-jsonl",
       "path": "derived/phase1_discovery_matrix.jsonl",
       "format": "jsonl",
-      "hash": "sha256:ddee1056aafd0ea64d8bd74c4f7355b7d925957e5c1f00a056ce1379873196f3",
+      "hash": "sha256:e96176e1b6dfe4c7cf169f19fa59ab9e1474d7d64b2fd64c605d5251781bd4a7",
       "layer": "source_inventory"
     },
     {
@@ -200,7 +203,7 @@
       "format": "csv",
       "compression": "gzip",
       "layer": "source_selection_annotations; not additional operational statistics",
-      "hash": "sha256:28e46f992a6eca91cb37b6fd48d1b67b636eb8119e9612053a33ee241d72e910"
+      "hash": "sha256:a3009dc55c8d0b214991787cfb500f4798d04b46f43c7c81b7710f11e07b6e70"
     },
     {
       "name": "phase3-record_routes-jsonl",
@@ -208,7 +211,7 @@
       "format": "jsonl",
       "compression": "gzip",
       "layer": "source_selection_annotations; not additional operational statistics",
-      "hash": "sha256:1f4561adb6688b776331f1e4938b3dd353df46474b0124042750472be0f68be5"
+      "hash": "sha256:961db5ead5dae9edf79cd9b877a2136b9becbd2aa0b140c4e622b20edbc6bc05"
     },
     {
       "name": "phase3-candidate_decisions-csv",
@@ -216,7 +219,7 @@
       "format": "csv",
       "compression": "gzip",
       "layer": "source_selection_annotations; not additional operational statistics",
-      "hash": "sha256:6eae2a78509ff847acdf3ad8414981a8c2d740fad1810cfbf8acd475315c333f"
+      "hash": "sha256:55e7cc64ba2f17380de0e850aa8690cff94d90157fedb69bd2004ed221a2d21b"
     },
     {
       "name": "phase3-candidate_decisions-jsonl",
@@ -224,7 +227,7 @@
       "format": "jsonl",
       "compression": "gzip",
       "layer": "source_selection_annotations; not additional operational statistics",
-      "hash": "sha256:c1de5b8579c54233b50750cb0ca845843567b7aaa7ccc00b288ee87c86282126"
+      "hash": "sha256:731a8964c3ca1cdf12d05aefcdd0a59a24204abd5e2b785447090367ba7209ff"
     },
     {
       "name": "phase3-queries-csv",
@@ -232,7 +235,7 @@
       "format": "csv",
       "compression": null,
       "layer": "source_selection_annotations; not additional operational statistics",
-      "hash": "sha256:a8e8db546336c6c4a6ae01f0fda99b266d59394836fb6ce5359d8662bd7f83aa"
+      "hash": "sha256:8ba655d59da629ba033bbb77b1669f5ae357cfb17ffc883863371c123820d735"
     },
     {
       "name": "phase3-queries-jsonl",
@@ -240,7 +243,7 @@
       "format": "jsonl",
       "compression": null,
       "layer": "source_selection_annotations; not additional operational statistics",
-      "hash": "sha256:0180473b0c7c43f70e0ed246df91155b5e22892325455deabb183b7aa2bb46d2"
+      "hash": "sha256:b1905d30bd45b178c18304e7f708b3a1ae874fa2b22fede47afda947c5a4246c"
     },
     {
       "name": "phase3-series_edges-csv",
@@ -248,7 +251,7 @@
       "format": "csv",
       "compression": null,
       "layer": "source_selection_annotations; not additional operational statistics",
-      "hash": "sha256:e78dab3fb5e26aabb1a74172501d4266719cb6a1e6a4e31ac05005ef6c3c7c1a"
+      "hash": "sha256:5690c3790edeff635e3307093d1939c5efa70e32e99b7b56a00365cb9ce1ffc1"
     },
     {
       "name": "phase3-series_edges-jsonl",
@@ -256,14 +259,14 @@
       "format": "jsonl",
       "compression": null,
       "layer": "source_selection_annotations; not additional operational statistics",
-      "hash": "sha256:05c9bd60381b34098c938abf43a5a0d7d3bb175b2636af18b65dfa34d469d17b"
+      "hash": "sha256:13dc6d441e09dc30f8671cfdb8f5b3dba31dd5adcdb08347a50424160351be32"
     },
     {
       "name": "phase3-selection-sqlite",
       "path": "derived/phase3/selection.sqlite",
       "format": "sqlite",
       "layer": "source_selection_annotations",
-      "hash": "sha256:788d92da3ea7cc5cd1bc277611476bb063fbbca7b6db499f9701abdf893f8d62"
+      "hash": "sha256:b2d4483a26da42c0b182a05e49548917d21083653a6c2f0240df03281570b1af"
     }
   ],
   "homepage": "https://github.com/poplolioi11/tw-public-library-statistics",

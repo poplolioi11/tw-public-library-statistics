@@ -1,0 +1,34 @@
+{
+  "reviewed_at": "2026-10-28",
+  "provider": "gemini",
+  "actual_model": "gemini-3.8-flash-high",
+  "job_id": "20261028T111007Z-8720fb5c39fc",
+  "scope": "Provided adapter source code only; no source browsing or execution by Gemini. Root verifies all numerical evidence with local Python and originals.",
+  "accepted_actions": [
+    "Reject skip-extract if inputs/outputs are uncached or changed.",
+    "Retain explicit weekly period and prohibit annual comparison.",
+    "Include entity/scope/temporal/unit/aggregation dimensions in new series identifiers.",
+    "Reject decimal conversion unless exact Decimal(str(value)) equals the source decimal.",
+    "Only literal numeric zero can carry reported-zero interpretation."
+  ],
+  "not_adopted_or_bounded": [
+    {
+      "claim": "All monthly TPML cells may be annual cumulative flows",
+      "decision": "No such cells in the complete selected original: current-month flows, current stock and prior-stock reference are explicitly distinguished; do not infer a cumulative type without source evidence."
+    },
+    {
+      "claim": "Require all sums to equal totals and only publish leaves",
+      "decision": "Original totals/components retained; no general aggregation permission. Source internal differences or unknown units must not force correction or erase totals."
+    },
+    {
+      "claim": "Multi-year unknown period is contradictory / convert short years in adapter",
+      "decision": "Unresolved-as-single-year denotes refusal to annualize, not a confirmed single year; original ROC-to-Gregorian conversion is verified in extraction, adapter must reject unconverted data."
+    },
+    {
+      "claim": "Expand shared cells for every geographic member",
+      "decision": "Actual merged physical cell retained once with all shared scope metadata; expansion would duplicate a source quantity."
+    }
+  ],
+  "independent_source_validation": false,
+  "numeric_results_from_language_model_used": false
+}

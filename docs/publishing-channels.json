@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "channels": [
     {
       "kind": "public_repository",
@@ -11,7 +11,7 @@
     {
       "kind": "public_release_latest",
       "url": "https://github.com/poplolioi11/tw-public-library-statistics/releases/latest",
-      "expected_tag": "v0.8.0",
+      "expected_tag": "v0.9.0",
       "update_policy": "new immutable tag and assets; prior releases remain versioned"
     },
     {
@@ -39,7 +39,7 @@
       "url": "https://poplolioi11.github.io/tw-public-library-statistics/",
       "path": "site/light/index.html",
       "viewer_version": "1.0.0",
-      "dataset_version": "0.8.0",
+      "dataset_version": "0.9.0",
       "update_policy": "validated main commit; deploy only site/light after public package CI succeeds; immutable dataset releases remain separate"
     }
   ],

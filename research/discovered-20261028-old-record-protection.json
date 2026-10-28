@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "baseline_records": 37887,
+  "unchanged_records_including_all_fields": 37887,
+  "added_records": 20358,
+  "total_records": 58245,
+  "changed_existing_records": 0,
+  "original_probe_sha256": "b0be261f23c7c6050d3d99ccc8d3c81133228c0068151b02b7cdb798cde416ad",
+  "method": "All baseline observation IDs and full dictionaries vs newly built canonical; not a sample."
+}

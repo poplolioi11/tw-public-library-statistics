@@ -59,6 +59,6 @@
 
 重跑：`python -B scripts/check_phase3_cases.py`；root freeze後加 `--final`。完整查詢、原格證據、候選及斷言見同名JSON。
 
-引擎SHA：`93c40de4cd49e3b70b76b0261393b3a3b487930e6f3562fc9dc86e70f52bd381`
-政策SHA：`555be5c31815a1e6ac2f787d6c55c441e026b6b54022c4c68d6fae04f93031e7`
+引擎SHA：`c37ffc648ab0efb176a95468288e1d2dfaca1351f1ae69a9ab8cee9531223301`
+政策SHA：`9eda8c72568af90ccf3011d4a8ec66d14074c2b469cf1f8c310985a4458402bc`
 固定案例SHA：`0e263e018589b033fbcc0eea3b4802e59a3c319ea529fe7d7497d3cf27703af6`

@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.0.0",
+  "role": "complete_reviewed_original_source_cells_pending_canonical_adapter",
+  "sources": [
+    {
+      "source_document_id": "taoyuan-yearbook-ch8-2021",
+      "source_sha256": "5f96fb234a07b87a7c6a22981ae69b7df1141d36dc5d355d45c2fdf1b946d467",
+      "source_url": "https://ws.tycg.gov.tw/Download.ashx?n=MTEw5bm05YWr5pWZ6IKy5paH5YyWLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMTUyL1JlbEZpbGUvMTg1NDcvMTIzOTk2Ny8xMTDlubTlhavmlZnogrLmlofljJYucGRm",
+      "source_edition": "110年統計年報",
+      "records": 240,
+      "source_marker_cells": 17,
+      "source_blank_cells": 0,
+      "reported_zeros": 0,
+      "unknown_year_cells": 140,
+      "unknown_unit_cells": 0,
+      "pdf_pages": [
+        40,
+        41
+      ],
+      "tables": {
+        "8-11": 240
+      },
+      "all_exported_numeric_cells_cross_checked_with_pdfium": true,
+      "source_to_source_arithmetic_checks": [
+        {
+          "check_id": "books_total_vs_chinese_foreign",
+          "evaluated": 24,
+          "agree": 24,
+          "not_evaluable_with_original_missing": 0,
+          "source_differences": []
+        },
+        {
+          "check_id": "serials_total_vs_chinese_foreign",
+          "evaluated": 20,
+          "agree": 20,
+          "not_evaluable_with_original_missing": 4,
+          "source_differences": []
+        }
+      ],
+      "original_image_review": {
+        "status": "representative_original_images_reviewed_not_manual_review_of_every_numeric_cell",
+        "pages": [
+          40,
+          41
+        ]
+      }
+    },
+    {
+      "source_document_id": "tpml-2012-12",
+      "source_sha256": "9f82ebabb13d3500aca19bdbc691ffe7d282bf227fac42651009e828cf695d37",
+      "source_url": "https://www-ws.gov.taipei/Download.ashx?u=LzAwMS9VcGxvYWQvNDMwL3JlbGZpbGUvMjEyOTEvODUwNTI5Ny9hNGU5YjZiMy0wZmNjLTRiMTYtYjc4NS0yMWM1MDlkYzNhMjEucGRm&n=MTAx5bm0MTLmnIgucGRm&icon=..pdf",
+      "source_edition": "101年12月",
+      "records": 65,
+      "source_marker_cells": 0,
+      "source_blank_cells": 0,
+      "reported_zeros": 2,
+      "unknown_year_cells": 0,
+      "unknown_unit_cells": 22,
+      "pdf_pages": [
+        1,
+        2
+      ],
+      "tables": {
+        "monthly-primary": 24,
+        "facility-parenthetical": 2,
+        "monthly-services": 21,
+        "monthly-activities": 18
+      },
+      "all_exported_numeric_cells_cross_checked_with_pdfium": true,
+      "source_to_source_arithmetic_checks": [
+        {
+          "check_id": "monthly_collection_opening_plus_added_minus_removed",
+          "evaluated": 4,
+          "agree": 4,
+          "not_evaluable_with_original_missing": 0,
+          "source_differences": []
+        }
+      ],
+      "original_image_review": {
+        "status": "representative_original_images_reviewed_not_manual_review_of_every_numeric_cell",
+        "pages": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "source_document_id": "changhua-bulletin-2021-ctrl",
+      "source_sha256": "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3",
+      "source_url": "https://ctrl.chcg.gov.tw/files/%E6%95%99%E8%82%B2%E5%8F%8A%E6%96%87%E5%8C%96-%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%94%B6%E8%97%8F%E5%8F%8A%E5%80%9F%E9%96%B1%E6%A6%82%E6%B3%81%20%20%28110%E5%B9%B47%E6%9C%88%E7%99%BC%E5%B8%83%29-%E8%87%BA%E7%81%A3-%E7%B0%BD%E5%87%86%E7%89%88_16_1100812_2025.pdf",
+      "source_edition": "110年7月發布",
+      "records": 384,
+      "source_marker_cells": 0,
+      "source_blank_cells": 0,
+      "reported_zeros": 0,
+      "unknown_year_cells": 11,
+      "unknown_unit_cells": 0,
+      "pdf_pages": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "tables": {
+        "1": 70,
+        "3": 50,
+        "2": 20,
+        "4": 40,
+        "5": 84,
+        "7": 84,
+        "6": 33,
+        "figure-1-reference": 1,
+        "figure-2-reference": 1,
+        "figure-3-reference": 1
+      },
+      "all_exported_numeric_cells_cross_checked_with_pdfium": true,
+      "source_to_source_arithmetic_checks": [
+        {
+          "check_id": "collection_total_vs_book_nonbook_electronic",
+          "evaluated": 10,
+          "agree": 10,
+          "not_evaluable_with_original_missing": 0,
+          "source_differences": []
+        },
+        {
+          "check_id": "events_total_vs_all11_categories",
+          "evaluated": 7,
+          "agree": 7,
+          "not_evaluable_with_original_missing": 0,
+          "source_differences": []
+        },
+        {
+          "check_id": "participants_total_vs_all11_categories",
+          "evaluated": 7,
+          "agree": 7,
+          "not_evaluable_with_original_missing": 0,
+          "source_differences": []
+        },
+        {
+          "check_id": "share_printed_difference_vs_printed_years",
+          "evaluated": 11,
+          "agree": 11,
+          "not_evaluable_with_original_missing": 0,
+          "source_differences": []
+        }
+      ],
+      "original_image_review": {
+        "status": "representative_original_images_reviewed_not_manual_review_of_every_numeric_cell",
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "source_document_id": "kaohsiung-cultural-2012",
+      "source_sha256": "3769666d92fab4736c0f6b372a61534e36872eaa099b8cac0d6dac12388b1325",
+      "source_url": "https://khcc.kcg.gov.tw/PhotoData/PIC1030110.pdf",
+      "source_edition": "101年",
+      "records": 17145,
+      "source_marker_cells": 5326,
+      "source_blank_cells": 6,
+      "reported_zeros": 2,
+      "unknown_year_cells": 0,
+      "unknown_unit_cells": 3,
+      "pdf_pages": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        100
+      ],
+      "tables": {
+        "7-1": 24,
+        "3-1": 195,
+        "3-2": 16926
+      },
+      "all_exported_numeric_cells_cross_checked_with_pdfium": true,
+      "source_to_source_arithmetic_checks": [
+        {
+          "check_id": "table7-1_book_and_periodical_subtotals",
+          "evaluated": 2,
+          "agree": 2,
+          "not_evaluable_with_original_missing": 0,
+          "source_differences": []
+        },
+        {
+          "check_id": "3-1_collection_total_vs_all4_components",
+          "evaluated": 13,
+          "agree": 13,
+          "not_evaluable_with_original_missing": 0,
+          "source_differences": []
+        },
+        {
+          "check_id": "3-2_collection_total_vs_all4_components",
+          "evaluated": 422,
+          "agree": 422,
+          "not_evaluable_with_original_missing": 384,
+          "source_differences": []
+        },
+        {
+          "check_id": "table3-1_vs_table3-2_system_total_cells",
+          "evaluated": 195,
+          "agree": 195,
+          "source_differences": []
+        },
+        {
+          "check_id": "descriptive_annual_printed_vs_sum12_months_not_definition_assertion",
+          "evaluated": 11,
+          "agree": 11,
+          "not_evaluable_with_original_missing": 0,
+          "source_differences": []
+        }
+      ],
+      "original_image_review": {
+        "status": "representative_original_images_reviewed_not_manual_review_of_every_numeric_cell",
+        "pages": [
+          29,
+          30,
+          31,
+          32,
+          57,
+          58,
+          81,
+          82,
+          100
+        ]
+      }
+    }
+  ],
+  "records": 17834,
+  "original_documents_redistributed": false,
+  "no_imputation": true,
+  "cross_source_aggregation_permitted": false,
+  "output_sha256": "65a85a5452260d9176f8fb01cb0341c84c1b2ea50a6cafa942c161844c7bf08f"
+}

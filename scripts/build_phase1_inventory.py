@@ -54,6 +54,7 @@ def quantity_role(row):
 def temporal_resolution(row):
  kind=str(row.get('temporal_kind') or '');periodicity=str(row.get('periodicity_raw') or '')
  basis=str(row.get('period_basis') or '');state=str(row.get('source_period_interpretation_status') or '')
+ if row.get('data_year') is None:return 'time_basis_unconfirmed'
  if 'unresolved' in basis or 'unresolved' in state:return 'time_basis_unconfirmed'
  if 'subperiod' in basis:return 'partial_or_programme_period'
  if 'month' in kind or '月' in periodicity or kind=='source_period_月':return 'monthly_source_not_annual_total'
@@ -115,6 +116,7 @@ def authority_and_candidate_rows(root,scope):
 def discovery_matrix(rows,profiles,scope,authorities):
  index=defaultdict(list);id_to_profile={oid:p['profile_id'] for p in profiles for oid in p['observation_ids']}
  for r in rows:
+  if type(r.get('data_year')) is not int:continue
   if not scope['years']['first']<=r['data_year']<=scope['years']['last']:continue
   # Ratio/prose evidence cannot silently fill a missing original-quantity slot.
   if quantity_role(r) in ('ratio_or_per_capita_not_original_quantity','population_context'):continue
@@ -198,6 +200,7 @@ def main():
  inputs+=[{'path':'scripts/phase1_scope.json','sha256':sha((root/'scripts/phase1_scope.json').read_bytes())},{'path':'scripts/build_phase1_inventory.py','sha256':sha(Path(__file__).read_bytes())},{'path':'canonical_statistical_content','sha256':stat}]
  if (root/'raw/phase1-inventory/central.json').exists():inputs.append({'path':'raw/phase1-inventory/central.json','sha256':sha((root/'raw/phase1-inventory/central.json').read_bytes())})
  report={'schema_version':'1.0.0','scope_id':scope['scope_id'],'scope_version':scope['version'],'dataset_version':summary['version'],'canonical_records':len(rows),'canonical_statistical_content_sha256':stat,'authority_slots_expected':len(authorities),'authority_slots_with_recorded_attempt':len(authorities)-len(pending),'authority_check_status_counts':dict(sorted(Counter(r.get('check_status','not_checked') for r in authorities).items())),'counties_expected':len(scope['current_county_navigation']),'central_entry_status_counts':dict(sorted(Counter(r.get('check_status') for r in central['sources']).items())),'source_candidates_listed':len(candidates),'reviewed_batch_inventory_entries':len(batches),'raw_source_profiles':len(profiles),'discovery_matrix_cells':len(matrix),'matched_value_navigation_cells':sum(r['confirmed_label_value_records']>0 for r in matrix),'unclassified_observations':sum(p['observation_count'] for p in profiles if not p['topic_ids']),'historical_or_other_raw_region_profiles':sum(p['geography'] not in scope['current_county_navigation']+['全國'] for p in profiles),'all_original_observation_ids_accounted_for':True,'all_history_complete':False,'cross_year_comparability_certified':False,'source_survey_scope':'Four specified role checks per current county; evidence bounds and failed checks are visible. Not exhaustive crawling of every agency archive.','core_coverage_scope':'Exact label/topic discovery slots only, not detailed indicator completeness. Use raw profiles and original statuses.','known_2012_gap':'County core original-quantity tables not obtained in checked sources; original prose ratios remain separate; no imputation.','inputs':inputs}
+ report['unresolved_period_records']=sum(r['data_year'] is None for r in rows);report['canonical_period_policy']='Canonical null years remain in complete original source profiles but never enter confirmed annual navigation slots; publication/edition years are not substituted.'
  report['supplemental_source_batches']=supplements;report['additional_source_cell_period_policy']='Only explicit sheet years or matching sheet/header month years enter the navigation index. Unresolved and catalogue-only periods remain in original source-cell files, not verified year slots.'
  tables={'phase1_authority_checks':authorities,'phase1_source_candidates':candidates,'phase1_raw_source_profiles':profiles,'phase1_discovery_matrix':matrix}
  for name,items in tables.items():write_table(root,name,items)

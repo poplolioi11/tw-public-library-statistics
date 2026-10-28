@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse,gzip,hashlib,json
 from build_phase3_charts import compile_charts
 from pathlib import Path
+import reader_transport
 ROOT=Path(__file__).resolve().parents[1]
 PRODUCTS={'record_routes':'derived/phase3/record_routes.jsonl.gz','candidate_decisions':'derived/phase3/candidate_decisions.jsonl.gz','queries':'derived/phase3/queries.jsonl','series_edges':'derived/phase3/series_edges.jsonl'}
 
@@ -93,7 +94,9 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--root',type=Path,default=ROOT);args=parser.parse_args();root=args.root.resolve();payload=build_payload(root)
     template=(root/'site/phase3-template.html').read_text();token='__PHASE3_DATA__'
     if template.count(token)!=1:raise ValueError('Reader template needs exactly one data placeholder')
-    text=template.replace(token,json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('</','<\\/'));body=text.encode()
+    packed=reader_transport.encode(payload)
+    if reader_transport.decode(packed)!=payload:raise ValueError('Complete portable-reader compression roundtrip differs')
+    text=template.replace(token,packed.replace('</','<\\/'));body=text.encode()
     if len(body)>=104857600:raise ValueError('Complete standalone reader exceeds100MiB; do not publish a truncated sample')
     changed=replace_if_changed(root/'site/phase3.html',body)
     preferred=[c for c in payload['charts'].values() if c['profile_id']=='national-ncl-book-loans-panel' and c['default_selected']]

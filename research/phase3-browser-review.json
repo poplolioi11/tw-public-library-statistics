@@ -1,16 +1,16 @@
 {
   "status": "PASS",
-  "dataset_version": "0.8.0",
+  "dataset_version": "0.9.0",
   "browser": "Bundled Playwright Chromium; separate headless context",
   "tests": [
     "P3 visible default SVG with official source links",
     "2019 interval chooses qualified older original panel",
     "2018-2024 refuses cross-edition splice",
     "single period stays in table without invented trend",
-    "all 56496 routes accessible with pagination",
+    "all 76854 routes accessible with pagination",
     "all four table views and honest no-match state",
     "responsive source SVG fits mobile viewport",
-    "P2 complete 639-chart selector and monthly chart",
+    "P2 complete 1677-chart selector and monthly chart",
     "P2 empty chart search preserves data notice",
     "main landing page contains real visible source SVG and chart link"
   ],

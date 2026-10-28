@@ -3,14 +3,14 @@
   "phase": "3",
   "scope": "Versioned default source selection for registered factual questions over all existing quantitative layers; raw values and phase2 comparison decisions remain unchanged.",
   "baseline": {
-    "version": "0.7.0",
+    "version": "0.9.0",
     "layers": {
-      "canonical": 37887,
+      "canonical": 58245,
       "local_statistical_cells": 18486,
       "programme_quantities": 123
     },
     "layer_raw_fingerprints": {
-      "canonical": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
+      "canonical": "da053af1e00a61ff284380652e614e03e30e2864bcc7101aa7cb5b859a4a4cce",
       "local_statistical_cells": "2f3b30127fbf12aa743de1e2844a02681e7a967a8cb1efe7cbdc4a7c83e4335f",
       "programme_quantities": "503f2e60d56f34ddbcc7c392cb638e8e535676a7d90097331cf2470931cac662"
     }
@@ -54,7 +54,10 @@
     "hualien-monthly-by-reader",
     "lienchiang-explicit-annual-sheet",
     "programme-source-quantities",
-    "historical-national-dgbas-source-facts"
+    "historical-national-dgbas-source-facts",
+    "discovered-official-original-cells",
+    "discovered-official-annual-tables",
+    "discovered-official-monthly-tables"
   ],
   "outputs": {
     "record_routes": "One row per phase2 record_key exactly once, all three quantitative layers.",
@@ -179,5 +182,20 @@
     "reasons",
     "period_left",
     "period_right"
+  ],
+  "previous_baselines": [
+    {
+      "version": "0.7.0",
+      "layers": {
+        "canonical": 37887,
+        "local_statistical_cells": 18486,
+        "programme_quantities": 123
+      },
+      "layer_raw_fingerprints": {
+        "canonical": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
+        "local_statistical_cells": "2f3b30127fbf12aa743de1e2844a02681e7a967a8cb1efe7cbdc4a7c83e4335f",
+        "programme_quantities": "503f2e60d56f34ddbcc7c392cb638e8e535676a7d90097331cf2470931cac662"
+      }
+    }
   ]
 }

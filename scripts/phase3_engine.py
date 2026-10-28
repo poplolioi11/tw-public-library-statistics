@@ -56,7 +56,7 @@ def eligibility(a,p,exact):
  if p.get('required_geo') and geo not in p['required_geo']:return 'blocked_scope',['original_scope_is_not_the_requested_full_county_quantity']
  if a['measure_class'] in p.get('exclude_measures',[]):return 'blocked_scope',['ratio_or_derived_measure_not_original_quantity']
  period=p['period_requirement'];kind=a['period_kind']
- if period!='programme' and not valid_year(a['comparison_year']):return 'blocked_period',['formal_source_year_unknown_or_conflicting']
+ if period not in ('programme','original') and not valid_year(a['comparison_year']):return 'blocked_period',['formal_source_year_unknown_or_conflicting']
  if period=='monthly' and (kind!='monthly_source_statistic' or not isinstance(a['comparison_month'],int) or isinstance(a['comparison_month'],bool) or not 1<=a['comparison_month']<=12):return 'blocked_period',['formal_month_unknown_or_not_a_monthly_observation']
  if period=='annual' and (kind.startswith('monthly') or kind in ('unresolved','partial_year_source','programme_not_annual')):return 'blocked_period',['original_period_not_verified_as_an_annual_reference']
  if period=='programme' and a['layer']!='programme_quantities':return 'blocked_scope',['not_an_original_programme_quantity']

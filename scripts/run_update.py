@@ -32,18 +32,19 @@ def run_extension_groups():
   old=json.loads(statefile.read_text()) if statefile.exists() else {}
   missing=[p for p in old.get('inputs',{}) if not (ROOT/p).is_file()]
   if missing:raise FileNotFoundError('Previously reviewed input disappeared; restore before rebuilding: '+', '.join(missing))
-  unchanged=signature()==old.get('inputs') and all(digest(ROOT/p)==old.get('outputs',{}).get(p) for p in outputs)
+  output_path=lambda name:record_io.path_for(ROOT,name)
+  unchanged=signature()==old.get('inputs') and all(digest(output_path(p))==old.get('outputs',{}).get(p) for p in outputs)
   if unchanged:continue
-  backup={p:(ROOT/p).read_bytes() if (ROOT/p).exists() else None for p in outputs}
+  backup={p:output_path(p).read_bytes() if output_path(p).exists() else None for p in outputs}
   try:
    call(script,*args)
-   if any(not (ROOT/p).is_file() for p in outputs):raise FileNotFoundError('Extractor did not produce every reviewed output: '+key)
+   if any(not output_path(p).is_file() for p in outputs):raise FileNotFoundError('Extractor did not produce every reviewed output: '+key)
   except Exception:
    for p,body in backup.items():
-    if body is None:(ROOT/p).unlink(missing_ok=True)
-    else:(ROOT/p).write_bytes(body)
+    if body is None:output_path(p).unlink(missing_ok=True)
+    else:output_path(p).write_bytes(body)
    raise
-  statefile.write_text(json.dumps({'inputs':signature(),'outputs':{p:digest(ROOT/p) for p in outputs}},indent=2)+'\n')
+  statefile.write_text(json.dumps({'inputs':signature(),'outputs':{p:digest(output_path(p)) for p in outputs}},indent=2)+'\n')
 def content_signature(root=None):
  root=Path(root or ROOT)
  content={'canonical':record_io.logical_sha(root),'phase1':phase1_content_digest(root)}
@@ -57,7 +58,8 @@ def file_signature(patterns):
  return {str(p.relative_to(ROOT)):digest(p) for p in paths}
 def canonical_build_inputs():
  groups=load_cohorts(ROOT) or []
- names=['derived/ncl_historical_long.csv','derived/dgbas_historical_long.csv','derived/local_historical_long.csv','derived/dgbas_county_historical_long.csv','derived/local_historical_quality.json',*[g['derived_csv'] for g in groups]]
+ names=['derived/ncl_historical_long.csv','derived/dgbas_historical_long.csv','derived/local_historical_long.csv','derived/dgbas_county_historical_long.csv','derived/local_historical_quality.json',*[g['derived_csv'] for g in groups],*[g['canonical_jsonl'] for g in groups if g.get('adapter_kind')=='canonical_observations_jsonl']]
+ names.extend(n+'.gz' for n in list(names) if n.endswith('.jsonl'))
  return file_signature([*names,'data/observations.jsonl','data/source_manifest.json','raw/official-local/catalog-*/resource-*.metadata.json','raw/ncl-extension-documents.json','raw/ncl-supporting-documents.json','raw/ncl-historical/gap-tables-metadata.json','research/definitions.json','research/definitions.csv','data/reviewed_historical_cohorts.json','VERSION','site/template.html','scripts/adapt_components.py','scripts/build_release.py','scripts/build_coverage.py','scripts/build_documentation.py','scripts/cohort_registry.py','scripts/record_io.py'])
 def run_canonical_build():
  inputs=canonical_build_inputs();path=ROOT/'data/canonical_build_state.json';old=json.loads(path.read_text()) if path.exists() else {}
@@ -109,6 +111,10 @@ def main():
  # Phase1 originals pass the immutable-source gate before any update work.
  phase1_batches=run_phase1_batches(ROOT)
  phase1_monitor=monitor_phase1_sources(ROOT,offline=a.offline)
+ discovered_monitor=None
+ if (ROOT/'raw/discovered-20261028/documents.json').is_file():
+  from monitor_discovered_sources_20261028 import run as monitor_discovered
+  discovered_monitor=monitor_discovered(ROOT,offline=a.offline)
  current_before_signature=content_signature()
  if a.offline:call('library_pipeline.py','build')
  else:call('library_pipeline.py','update',*(['--refresh-all'] if a.refresh_all_core else []))
@@ -132,7 +138,9 @@ def main():
   call('fetch_ncl_historical.py','--offline');call('extract_dgbas_historical.py');source_state.write_text(json.dumps(signature,indent=2)+'\n')
  run_extension_groups();call('register_historical_sources.py')
  canonical_rebuilt=run_canonical_build()
- phase1_hooks=run_phase1_hooks();phase2_hooks=run_phase2(ROOT,runner=call);phase3_hooks=run_phase3(ROOT,runner=call)
+ phase1_hooks=run_phase1_hooks()
+ if (ROOT/'raw/discovered-20261028/extraction-metadata.json').is_file():call('audit_discovered_definitions_20261028.py')
+ phase2_hooks=run_phase2(ROOT,runner=call);phase3_hooks=run_phase3(ROOT,runner=call)
  light_site=run_light_site(ROOT,runner=call)
  if light_site.get('rebuilt'):
   from phase3_update import output_hashes as phase3_output_hashes,refresh_prior_states
@@ -152,7 +160,7 @@ def main():
          'all_layers_sha256':after_signature,'phase1_content_sha256':phase1_content_digest(ROOT),
          'phase2_content_sha256':phase2_content_digest(ROOT),'phase2':phase2_hooks,'phase1_final_documentation_hashes_refreshed':phase1_state_refreshed,
          'phase3_content_sha256':phase3_content_digest(ROOT),'phase3':phase3_hooks,'lightweight_site':light_site,
-         'data_changed':previous_signature!=after_signature,'canonical_rebuilt':canonical_rebuilt,'phase1_batches':phase1_batches,
+         'data_changed':previous_signature!=after_signature,'canonical_rebuilt':canonical_rebuilt,'phase1_batches':phase1_batches,'discovered_source_monitor':discovered_monitor,
          'phase1_monitor':phase1_monitor,'phase1_hooks':phase1_hooks,'external_publication':False,'stale_local_sources':stale}
  (ROOT/'data/last_update.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,ensure_ascii=False))
 if __name__=='__main__':main()

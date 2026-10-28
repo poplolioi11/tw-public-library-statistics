@@ -440,9 +440,13 @@ def write_report(r, final):
     stable_inputs = r.before == after
     r.check('all_reviewed_inputs_unchanged_during_run', stable_inputs, 'execution_integrity')
     r.check('engine_unseen_fixture_exact_SHA_unchanged', after[FIXTURE] == FIXTURE_SHA, 'execution_integrity')
-    # The frozen source fixture keeps its v0.7.0 review baseline while a new
-    # release may add selection annotations/readers without changing its facts.
-    r.check('fixed_fixture_and_policy_review_baseline_0_7_0', r.fixture['fixed_dataset_version'] == r.policy['reviewed_dataset_version'] == '0.7.0', 'execution_integrity')
+    # Fixed cases retain the original review. A later reviewed source batch may
+    # advance the current policy, while the exact original baseline stays in
+    # the versioned contract and the old source/case hashes are checked above.
+    contract=json.loads((r.root/'docs/phase3-contract.json').read_text())
+    original_baselines=[b for b in [contract['baseline'],*contract.get('previous_baselines',[])] if b.get('version')=='0.7.0']
+    original_fingerprints={'canonical':'d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e','local_statistical_cells':'2f3b30127fbf12aa743de1e2844a02681e7a967a8cb1efe7cbdc4a7c83e4335f','programme_quantities':'503f2e60d56f34ddbcc7c392cb638e8e535676a7d90097331cf2470931cac662'}
+    r.check('fixed_fixture_and_original_review_baseline_0_7_0', r.fixture['fixed_dataset_version']=='0.7.0' and any(b.get('layer_raw_fingerprints')==original_fingerprints for b in original_baselines), 'execution_integrity')
     categories = sorted({x['category'] for x in r.checks})
     counts = {category:{'assertions':sum(x['category']==category for x in r.checks),
                        'failed':sum(x['category']==category and not x['passed'] for x in r.checks)} for category in categories}

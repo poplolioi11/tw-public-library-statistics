@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "請同時引用本資料包版本與每筆官方原始來源。"
 title: "臺灣公共圖書館跨年度統計"
 type: dataset
-version: 0.8.0
-date-released: 2026-10-26
+version: 0.9.0
+date-released: 2026-10-28
 authors:
   - family-names: Chu
     given-names: Chen-Yu

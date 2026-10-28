@@ -48,7 +48,11 @@
       "description": "observation_id"
     },
     "data_year": {
-      "type": "integer"
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Confirmed reference year only. Null preserves an unresolved or multi-year original period; never replace it with zero, a publication/edition year, or an inferred calendar year. Read the unchanged original period fields and statuses."
     },
     "geography": {
       "description": "geography"
@@ -185,172 +189,29 @@
     "source_edition": {
       "description": "source_edition"
     },
-    "area_code_raw": {
-      "description": "area_code_raw"
-    },
-    "source_table_row": {
-      "description": "source_table_row"
-    },
-    "source_table_column": {
-      "description": "source_table_column"
-    },
-    "period_raw": {
-      "description": "period_raw"
-    },
-    "periodicity_raw": {
-      "description": "periodicity_raw"
-    },
-    "public_evidence_path": {
-      "description": "public_evidence_path"
-    },
-    "license_scope_inference": {
-      "description": "license_scope_inference"
-    },
-    "unit_raw": {
-      "description": "unit_raw"
-    },
-    "unit_basis": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "description": "Original or contextual basis of normalized unit. Read unit_raw and unit_status; inferred units are not printed labels."
-    },
-    "source_time_reference": {
-      "description": "source_time_reference"
-    },
-    "institutional_level": {
-      "description": "institutional_level"
+    "age_group_raw": {
+      "description": "age_group_raw"
     },
     "aggregation_role": {
       "description": "aggregation_role"
     },
-    "source_version_id": {
-      "description": "source_version_id"
-    },
-    "source_table_title": {
-      "description": "source_table_title"
-    },
-    "source_column_path": {
-      "description": "source_column_path"
-    },
-    "source_cell_bbox": {
-      "description": "source_cell_bbox"
-    },
-    "source_cell_bboxes": {
-      "description": "source_cell_bboxes"
-    },
-    "source_cell_annotation": {
-      "description": "source_cell_annotation"
-    },
-    "original_source_note": {
-      "description": "original_source_note"
-    },
-    "source_footnotes_raw": {
-      "description": "source_footnotes_raw"
-    },
-    "source_footnotes_status": {
-      "description": "source_footnotes_status"
-    },
-    "value_qualifier": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "description": "scoped_source_component limits a reported number to the original named component; never treat it as the full county total."
-    },
-    "value_parse_rule": {
-      "description": "value_parse_rule"
-    },
-    "source_location_kind": {
-      "description": "source_location_kind"
-    },
-    "observation_identity_suffix": {
-      "description": "observation_identity_suffix"
-    },
-    "source_unit_interpretation_basis": {
-      "description": "source_unit_interpretation_basis"
-    },
-    "unit_interpretation_candidate": {
-      "description": "unit_interpretation_candidate"
+    "area_code_raw": {
+      "description": "area_code_raw"
     },
     "book_class_raw": {
       "description": "book_class_raw"
     },
-    "age_group_raw": {
-      "description": "age_group_raw"
+    "component_source_id": {
+      "description": "component_source_id"
     },
-    "sex_raw": {
-      "description": "sex_raw"
+    "copyright_publication_month": {
+      "description": "copyright_publication_month"
     },
-    "source_data_year_raw": {
-      "description": "source_data_year_raw"
-    },
-    "source_original_access_date_raw": {
-      "description": "source_original_access_date_raw"
-    },
-    "source_original_access_date": {
-      "description": "source_original_access_date"
-    },
-    "publication_date": {
-      "description": "publication_date"
-    },
-    "publication_date_basis": {
-      "description": "publication_date_basis"
-    },
-    "source_edition_roc": {
-      "description": "source_edition_roc"
-    },
-    "ownership_scope": {
-      "description": "ownership_scope"
-    },
-    "source_row_label_raw": {
-      "description": "source_row_label_raw"
+    "district_code_raw": {
+      "description": "district_code_raw"
     },
     "entity_label_status": {
       "description": "entity_label_status"
-    },
-    "source_unit_context_locator": {
-      "description": "source_unit_context_locator"
-    },
-    "source_row_hierarchy_raw": {
-      "description": "source_row_hierarchy_raw"
-    },
-    "source_original_survey_date_raw": {
-      "description": "source_original_survey_date_raw"
-    },
-    "source_survey_population_libraries": {
-      "description": "source_survey_population_libraries"
-    },
-    "source_original_table_row": {
-      "description": "source_original_table_row"
-    },
-    "source_subrow_sequence": {
-      "description": "source_subrow_sequence"
-    },
-    "source_subrow_label_status": {
-      "description": "source_subrow_label_status"
-    },
-    "source_response_notation_kind": {
-      "description": "source_response_notation_kind"
-    },
-    "source_parenthetical_raw": {
-      "description": "source_parenthetical_raw"
-    },
-    "source_subrow_label_raw": {
-      "description": "source_subrow_label_raw"
-    },
-    "source_parent_row_label_raw": {
-      "description": "source_parent_row_label_raw"
-    },
-    "source_parent_row_label_english_raw": {
-      "description": "source_parent_row_label_english_raw"
-    },
-    "source_row_label_english_raw": {
-      "description": "source_row_label_english_raw"
-    },
-    "source_data_obtained_date_raw": {
-      "description": "source_data_obtained_date_raw"
     },
     "facility": {
       "description": "facility"
@@ -358,46 +219,23 @@
     "geography_code_raw": {
       "description": "geography_code_raw"
     },
-    "district_code_raw": {
-      "description": "district_code_raw"
+    "institutional_level": {
+      "description": "institutional_level"
+    },
+    "license_scope_inference": {
+      "description": "license_scope_inference"
+    },
+    "observation_identity_suffix": {
+      "description": "observation_identity_suffix"
+    },
+    "original_source_note": {
+      "description": "original_source_note"
+    },
+    "ownership_scope": {
+      "description": "ownership_scope"
     },
     "period_effective": {
       "description": "period_effective"
-    },
-    "component_source_id": {
-      "description": "component_source_id"
-    },
-    "source_record_id": {
-      "description": "source_record_id"
-    },
-    "public_evidence_sha256": {
-      "description": "public_evidence_sha256"
-    },
-    "public_projection_policy": {
-      "description": "public_projection_policy"
-    },
-    "copyright_publication_month": {
-      "description": "copyright_publication_month"
-    },
-    "source_cell_note_raw": {
-      "description": "source_cell_note_raw"
-    },
-    "source_cell_note_status": {
-      "description": "source_cell_note_status"
-    },
-    "source_period_interpretation_status": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "description": "Unresolved date interpretation, separated from confirmed period dates. Read the exact source_subrow_label_raw and period_basis."
-    },
-    "period_start_candidate": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "description": "Unresolved date interpretation, separated from confirmed period dates. Read the exact source_subrow_label_raw and period_basis."
     },
     "period_end_candidate": {
       "type": [
@@ -406,8 +244,174 @@
       ],
       "description": "Unresolved date interpretation, separated from confirmed period dates. Read the exact source_subrow_label_raw and period_basis."
     },
+    "period_raw": {
+      "description": "period_raw"
+    },
+    "period_start_candidate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Unresolved date interpretation, separated from confirmed period dates. Read the exact source_subrow_label_raw and period_basis."
+    },
+    "periodicity_raw": {
+      "description": "periodicity_raw"
+    },
+    "public_evidence_path": {
+      "description": "public_evidence_path"
+    },
+    "publication_date": {
+      "description": "publication_date"
+    },
+    "publication_date_basis": {
+      "description": "publication_date_basis"
+    },
+    "sex_raw": {
+      "description": "sex_raw"
+    },
+    "source_cell_annotation": {
+      "description": "source_cell_annotation"
+    },
+    "source_cell_bbox": {
+      "description": "source_cell_bbox"
+    },
+    "source_cell_bboxes": {
+      "description": "source_cell_bboxes"
+    },
+    "source_cell_note_raw": {
+      "description": "source_cell_note_raw"
+    },
+    "source_cell_note_status": {
+      "description": "source_cell_note_status"
+    },
+    "source_column_path": {
+      "description": "source_column_path"
+    },
+    "source_data_obtained_date_raw": {
+      "description": "source_data_obtained_date_raw"
+    },
+    "source_data_year_raw": {
+      "description": "source_data_year_raw"
+    },
+    "source_edition_roc": {
+      "description": "source_edition_roc"
+    },
+    "source_footnotes_raw": {
+      "description": "source_footnotes_raw"
+    },
+    "source_footnotes_status": {
+      "description": "source_footnotes_status"
+    },
+    "source_location_kind": {
+      "description": "source_location_kind"
+    },
+    "source_original_access_date": {
+      "description": "source_original_access_date"
+    },
+    "source_original_access_date_raw": {
+      "description": "source_original_access_date_raw"
+    },
     "source_original_physical_column": {
       "description": "source_original_physical_column"
+    },
+    "source_original_survey_date_raw": {
+      "description": "source_original_survey_date_raw"
+    },
+    "source_original_table_row": {
+      "description": "source_original_table_row"
+    },
+    "source_parent_row_label_english_raw": {
+      "description": "source_parent_row_label_english_raw"
+    },
+    "source_parent_row_label_raw": {
+      "description": "source_parent_row_label_raw"
+    },
+    "source_parenthetical_raw": {
+      "description": "source_parenthetical_raw"
+    },
+    "source_period_interpretation_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Unresolved date interpretation, separated from confirmed period dates. Read the exact source_subrow_label_raw and period_basis."
+    },
+    "source_record_id": {
+      "description": "source_record_id"
+    },
+    "source_response_notation_kind": {
+      "description": "source_response_notation_kind"
+    },
+    "source_row_hierarchy_raw": {
+      "description": "source_row_hierarchy_raw"
+    },
+    "source_row_label_english_raw": {
+      "description": "source_row_label_english_raw"
+    },
+    "source_row_label_raw": {
+      "description": "source_row_label_raw"
+    },
+    "source_subrow_label_raw": {
+      "description": "source_subrow_label_raw"
+    },
+    "source_subrow_label_status": {
+      "description": "source_subrow_label_status"
+    },
+    "source_subrow_sequence": {
+      "description": "source_subrow_sequence"
+    },
+    "source_survey_population_libraries": {
+      "description": "source_survey_population_libraries"
+    },
+    "source_table_column": {
+      "description": "source_table_column"
+    },
+    "source_table_row": {
+      "description": "source_table_row"
+    },
+    "source_table_title": {
+      "description": "source_table_title"
+    },
+    "source_time_reference": {
+      "description": "source_time_reference"
+    },
+    "source_unit_context_locator": {
+      "description": "source_unit_context_locator"
+    },
+    "source_unit_interpretation_basis": {
+      "description": "source_unit_interpretation_basis"
+    },
+    "source_version_id": {
+      "description": "source_version_id"
+    },
+    "unit_basis": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Original or contextual basis of normalized unit. Read unit_raw and unit_status; inferred units are not printed labels."
+    },
+    "unit_interpretation_candidate": {
+      "description": "unit_interpretation_candidate"
+    },
+    "unit_raw": {
+      "description": "unit_raw"
+    },
+    "value_parse_rule": {
+      "description": "value_parse_rule"
+    },
+    "value_qualifier": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "scoped_source_component limits a reported number to the original named component; never treat it as the full county total."
+    },
+    "public_evidence_sha256": {
+      "description": "public_evidence_sha256"
+    },
+    "public_projection_policy": {
+      "description": "public_projection_policy"
     }
   }
 }

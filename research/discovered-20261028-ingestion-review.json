@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_version": "0.9.0",
+  "checked_at": "2026-10-28T12:00:14.998101+00:00",
+  "status": "PASS",
+  "official_originals": 12,
+  "new_original_statistical_positions": 20358,
+  "canonical_records": 58245,
+  "new_value_status_counts": {
+    "reported": 14540,
+    "source_marker": 5391,
+    "source_blank": 427
+  },
+  "new_unresolved_year_positions": 467,
+  "new_zero_cells": 21,
+  "existing_records_unchanged_all_fields": 37887,
+  "method_counts": {
+    "pdfplumber_vs_PDFium_pinned_complete_table": 396,
+    "pdfplumber_vs_PDFium_positioned_cell": 312,
+    "xlrd_BIFF_numeric_cell_and_explicit_sheet_header_year_note_check": 48,
+    "pdfplumber_and_pdfium_bounded_original_cell": 17834,
+    "actual_local_Apple_Vision_OCR_plus_Codex_original_image_cell_review": 369,
+    "positioned_pdfminer_vs_PDFium_cell_numeric_tokens": 1399
+  },
+  "complete_source_batches": "raw/discovered-20261028/extraction-metadata.json",
+  "original_body_sha_url_locator_preserved": true,
+  "shared_numeric_cells_recorded_once": true,
+  "marked_blank_region_policy": "Kaohsiung annual total serials/newspapers six-column crossed-out region retains six explicit source-field blank positions with the same source_display_region; these are not six measured quantities.",
+  "full_source_acceptance": "research/source-verification.json",
+  "old_record_protection": "research/discovered-20261028-old-record-protection.json",
+  "browser_review": "research/discovered-20261028-browser-review.json",
+  "chart_review": "research/phase3-chart-review.json",
+  "script_unit_tests": 249,
+  "regression_tests": 6,
+  "full_originals_distributed": false,
+  "all_taiwan_years_complete": false,
+  "unresolved_2012_core_quantities_imputed": false,
+  "rights_held_and_unreviewed_mixed_type_chapters_included": false,
+  "human_double_collation_claimed": false,
+  "non_scalar_original_literal_review": {
+    "positions": 16,
+    "registry": "scripts/reviewed_non_scalar_literals.json",
+    "no_scalar_values_imputed": true,
+    "not_a_generic_unparsed_numeric_fallback": true
+  }
+}

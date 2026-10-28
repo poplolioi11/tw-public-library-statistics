@@ -4,7 +4,7 @@ import csv,hashlib,json,re
 from pathlib import Path
 import record_io
 from library_pipeline import parse_number
-from cohort_registry import csv_names
+from cohort_registry import csv_names,load as load_cohorts
 ROOT=Path(__file__).resolve().parents[1]
 def h(s):return hashlib.sha256(s.encode()).hexdigest()
 def read(p):
@@ -99,8 +99,15 @@ def main():
    if row.get('value_status')=='not_available_in_source':v=None;status='not_available_in_source'
    record={**base_record(),'observation_id':'obs-'+h(source+'|'+row['metric_id']+'|'+geo+'|'+str(yr))[:22],'data_year':yr,'geography':geo,'geography_contextual_name':row.get('entity_contextual_name',geo),'geographic_scope':row['entity_kind'],'geography_vintage':row.get('geography_vintage'),'national_libraries_scope':row.get('national_libraries_scope'),'population_scope':'公立公共圖書館，依各出版表母體與註腳','series_id':sid,'indicator':row['metric_raw'],'indicator_group':family,'source_field':row['metric_raw'],'value':v,'raw_value':row['value_raw'],'value_status':status,'zero_interpretation':'source_reported_zero_historical_context_required' if v==0 else None,'unit':unit,'unit_status':'source_table' if unit else 'mixed_not_uniform','temporal_kind':row['temporal_kind'],'period_start':f'{yr}-01-01' if row['temporal_kind']=='flow_calendar_year' else None,'period_end':f'{yr}-12-31','period_basis':'published_table_reference_year','definition_id':'def-'+sid,'definition_status':'original_table_heading_and_footnotes_preserved','source_id':source,'source_family':family,'source_url':row['source_download_url']+'#page='+row['source_pdf_page'],'source_page_url':row['source_url'],'source_locator':row['source_locator']+'; column '+row['source_column'],'source_sha256':row['source_sha256'],'source_snapshot_path':row['source_local_path'],'retrieved_at':row['source_retrieved_at'],'license_status':'OGDL-1.0_site_declaration' if source.startswith('dgbas') and row.get('license_status')=='verified_open' and row.get('license_code')=='OGDL-1.0_site_declaration' else 'published_statistical_facts_document_license_unconfirmed','license_url':'https://www.stat.gov.tw/cp.aspx?n=3164' if source.startswith('dgbas') else None,'snapshot_distribution':'not_in_public_bundle','extraction_status':row['extraction_status'],'quality_flags':row.get('quality_flags') or None,'notes':'；'.join(notes),'publication_year':int(pub[:4]) if pub else None,'source_pdf_page':int(row['source_pdf_page']),'source_printed_page':row['source_printed_page'],'source_table':row['source_table'],'source_row':row['source_row'],'source_column':row['source_column'],'source_edition':row.get('source_edition')}
    records.append(record)
+ direct_groups=[g for g in (load_cohorts(ROOT) or []) if g.get('adapter_kind')=='canonical_observations_jsonl']
+ direct_csvs={g['derived_csv'].removeprefix('derived/') for g in direct_groups}
  for additional in csv_names(ROOT,['ncl_gap_tables_long.csv','ncl_additional_years_long.csv','ncl_earlier_years_long.csv']):
+  if additional in direct_csvs:continue
   records.extend(adapt_additional_ncl_rows(read(ROOT/'derived'/additional)))
+ for group in direct_groups:
+  name=group['canonical_jsonl']
+  if name not in group['outputs']:raise ValueError('Canonical adapter input must be a reviewed output')
+  records.extend(record_io.rows(ROOT,name))
  # Local public resources, exact duplicates preserved in component ledger but removed from canonical observations.
  raw_map={}
  for p in (ROOT/'raw/official-local').glob('catalog-*/resource-*.metadata.json'):

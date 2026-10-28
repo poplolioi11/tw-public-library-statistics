@@ -58,7 +58,12 @@ def review(root,cases_only=False,case_ids=None,skip_cli=False):
             if n:h.update(b',')
             h.update(stable({k:v for k,v in row.items() if k not in PUBLICATION_FIELDS}).encode());n+=1
         h.update(b']');fingerprints[layer]={'records':n,'semantic_sha256':h.hexdigest(),'file_sha256':sha(path),'path':str(path.relative_to(root))}
-    check(len(raw)==56496,'Quantitative scope count changed',len(raw))
+    extension_path=root/'raw/discovered-20261028/extraction-metadata.json'
+    extension_count=json.loads(extension_path.read_text())['canonical_observations_added'] if extension_path.is_file() else 0
+    legacy={k:r for k,r in raw.items() if not str(r.get('source_id','')).startswith('discovered-')}
+    check(len(legacy)==56496,'Frozen legacy quantitative scope count changed',len(legacy))
+    expected_total=56496+extension_count
+    check(len(raw)==expected_total,'Complete quantitative scope differs from legacy plus accepted original batch',len(raw))
     # Fresh selected records; no cached annotation can conceal a method defect.
     selected={}
     for ref in fixtures['record_evidence']:
@@ -130,7 +135,7 @@ def review(root,cases_only=False,case_ids=None,skip_cli=False):
             report['cli_operation_guard']={'status':'PASS','function':'phase2_engine.guard_operation; actual compare_definitions.py CLI subprocess replay','operations_checked':checked}
     if not cases_only:
         summary=json.loads((root/'docs/phase2-summary.json').read_text());annotations=list(read_rows(root/'derived/phase2/annotations.jsonl.gz'));amap={a['record_key']:a for a in annotations}
-        check(len(annotations)==len(amap)==len(raw)==summary['total_quantitative_records']==56496,'Materialized annotation scope/identity differs')
+        check(len(annotations)==len(amap)==len(raw)==summary['total_quantitative_records']==expected_total,'Materialized annotation scope/identity differs')
         check(set(amap)==set(raw),'Original quantitative layer IDs lost or added')
         for layer,data in fingerprints.items():check(data['semantic_sha256']==summary['layer_raw_fingerprints'][layer],'Independent raw layer fingerprint differs',layer)
         check(summary['inputs']['scripts/phase2_engine.py']==engine_start,'Materialized output is stale relative to engine')

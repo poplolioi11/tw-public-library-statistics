@@ -1,5 +1,173 @@
 [
   {
+    "local_path": "raw/discovered-20261028/changhua-bulletin-2021-ctrl.pdf",
+    "sha256": "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3",
+    "download_url": "https://ctrl.chcg.gov.tw/files/%E6%95%99%E8%82%B2%E5%8F%8A%E6%96%87%E5%8C%96-%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%94%B6%E8%97%8F%E5%8F%8A%E5%80%9F%E9%96%B1%E6%A6%82%E6%B3%81%20%20%28110%E5%B9%B47%E6%9C%88%E7%99%BC%E5%B8%83%29-%E8%87%BA%E7%81%A3-%E7%B0%BD%E5%87%86%E7%89%88_16_1100812_2025.pdf",
+    "source_url": "https://ctrl.chcg.gov.tw/files/%E6%95%99%E8%82%B2%E5%8F%8A%E6%96%87%E5%8C%96-%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%94%B6%E8%97%8F%E5%8F%8A%E5%80%9F%E9%96%B1%E6%A6%82%E6%B3%81%20%20%28110%E5%B9%B47%E6%9C%88%E7%99%BC%E5%B8%83%29-%E8%87%BA%E7%81%A3-%E7%B0%BD%E5%87%86%E7%89%88_16_1100812_2025.pdf",
+    "source_title": "彰化縣公共圖書館收藏及借閱概況（110年7月發布）",
+    "publication_date": "",
+    "source_edition_roc": "",
+    "source_ids": [
+      "discovered-changhua-bulletin-2021-ctrl-t1",
+      "discovered-changhua-bulletin-2021-ctrl-t2",
+      "discovered-changhua-bulletin-2021-ctrl-t3",
+      "discovered-changhua-bulletin-2021-ctrl-t4",
+      "discovered-changhua-bulletin-2021-ctrl-t5",
+      "discovered-changhua-bulletin-2021-ctrl-t6",
+      "discovered-changhua-bulletin-2021-ctrl-t7",
+      "discovered-changhua-bulletin-2021-ctrl-tfigure-1-reference",
+      "discovered-changhua-bulletin-2021-ctrl-tfigure-2-reference",
+      "discovered-changhua-bulletin-2021-ctrl-tfigure-3-reference"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/dgbas-yearbook-113.pdf",
+    "sha256": "5fa63fbb5f7e8660d4802f87635ba0be0122d134252c5654fbdce725ccf12233",
+    "download_url": "https://ws.dgbas.gov.tw/001/Upload/466/relfile/11503/235319/yearbook113.pdf",
+    "source_url": "https://ws.dgbas.gov.tw/001/Upload/466/relfile/11503/235319/yearbook113.pdf",
+    "source_title": "中華民國統計年鑑113年",
+    "publication_date": "",
+    "source_edition_roc": "",
+    "source_ids": [
+      "discovered-dgbas-yearbook-113-t4-22"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/kaohsiung-cultural-2012.pdf",
+    "sha256": "3769666d92fab4736c0f6b372a61534e36872eaa099b8cac0d6dac12388b1325",
+    "download_url": "https://khcc.kcg.gov.tw/PhotoData/PIC1030110.pdf",
+    "source_url": "https://khcc.kcg.gov.tw/PhotoData/PIC1030110.pdf",
+    "source_title": "高雄市政府文化局101年統計年報",
+    "publication_date": "",
+    "source_edition_roc": "",
+    "source_ids": [
+      "discovered-kaohsiung-cultural-2012-t3-1",
+      "discovered-kaohsiung-cultural-2012-t3-2",
+      "discovered-kaohsiung-cultural-2012-t7-1"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/moe-16years-T403.xls",
+    "sha256": "c857ed264035666658f7e0ed4ea174e8f1dab67577cdf92456b6e1fa32fc02ea",
+    "download_url": "https://stats.moe.gov.tw/files/ebook/others/year16/T403.xls",
+    "source_url": "https://stats.moe.gov.tw/files/ebook/others/year16/16years.htm",
+    "source_title": "教育部：近16年我國教育發展統計分析—公立公共圖書館數及圖書借閱人數",
+    "publication_date": "",
+    "source_edition_roc": "",
+    "source_ids": [
+      "discovered-moe-16years-T403-t3"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/ncl-ed91-public-libraries.pdf",
+    "sha256": "6b58c1f4432c77bb0fcbea94c2dc0373f1d5f163e080a203b01d74e29b9b0ff4",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566106366221617/6e5a9913-4bf0-436e-9fbb-b91b148ca1b7.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566087370545104",
+    "source_title": "國圖91年圖書館年鑑：公共圖書館章",
+    "publication_date": "",
+    "source_edition_roc": "91",
+    "source_ids": [
+      "discovered-ncl-ed91-public-libraries-t11",
+      "discovered-ncl-ed91-public-libraries-t12",
+      "discovered-ncl-ed91-public-libraries-t13"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/ncl-ed92-public-libraries.pdf",
+    "sha256": "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565618826372741/0b1bbc3b-6596-4602-bddc-c0d604ed6785.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565619396807101",
+    "source_title": "國圖92年圖書館年鑑：公共圖書館章",
+    "publication_date": "",
+    "source_edition_roc": "92",
+    "source_ids": [
+      "discovered-ncl-ed92-public-libraries-t5",
+      "discovered-ncl-ed92-public-libraries-t6",
+      "discovered-ncl-ed92-public-libraries-t7",
+      "discovered-ncl-ed92-public-libraries-t8"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/ncl-ed93-public-libraries.pdf",
+    "sha256": "c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565599956839186/5932209a-a4a1-47aa-9247-0242fcd9167d.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565582148900528",
+    "source_title": "國圖93年圖書館年鑑：公共圖書館章",
+    "publication_date": "",
+    "source_edition_roc": "93",
+    "source_ids": [
+      "discovered-ncl-ed93-public-libraries-t16",
+      "discovered-ncl-ed93-public-libraries-t17",
+      "discovered-ncl-ed93-public-libraries-t19"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/ncl-ed94-public-libraries.pdf",
+    "sha256": "6a33073693212a20a74f9b3cb190e926ca4dfb6f6af988ef0357a2339c253417",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565582274153586/52feab5e-f333-4195-9e74-4ee3f8f9bd96.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+    "source_title": "國圖94年圖書館年鑑：公共圖書館章",
+    "publication_date": "",
+    "source_edition_roc": "94",
+    "source_ids": [
+      "discovered-ncl-ed94-public-libraries-t7",
+      "discovered-ncl-ed94-public-libraries-t8",
+      "discovered-ncl-ed94-public-libraries-t9"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/ntpc-cultural-2015.pdf",
+    "sha256": "d6774268bba568ab8fec748bc9ac23b84a1bf85e4ee65e75ba55cd8d6f39bb5f",
+    "download_url": "https://www.culture.ntpc.gov.tw/files/file_pool/1/0g289529270201779637/%E6%96%B0%E5%8C%97%E5%B8%82%E6%94%BF%E5%BA%9C%E6%96%87%E5%8C%96%E5%B1%80104%E5%B9%B4%E5%BA%A6%E7%B5%B1%E8%A8%88%E5%B9%B4%E5%A0%B1.pdf",
+    "source_url": "https://www.culture.ntpc.gov.tw/files/file_pool/1/0g289529270201779637/%E6%96%B0%E5%8C%97%E5%B8%82%E6%94%BF%E5%BA%9C%E6%96%87%E5%8C%96%E5%B1%80104%E5%B9%B4%E5%BA%A6%E7%B5%B1%E8%A8%88%E5%B9%B4%E5%A0%B1.pdf",
+    "source_title": "新北市政府文化局104年度統計年報",
+    "publication_date": "",
+    "source_edition_roc": "",
+    "source_ids": [
+      "discovered-ntpc-cultural-2015-t6-2"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/tainan-bulletin-10505.pdf",
+    "sha256": "adfe317a24a3a800414b819c5321b40917a3b44026141124dadd3a52cded1aa4",
+    "download_url": "https://w3fs.tainan.gov.tw/001/Upload/2/attachment/9368/99/month10505-3.pdf",
+    "source_url": "https://w3fs.tainan.gov.tw/001/Upload/2/attachment/9368/99/month10505-3.pdf",
+    "source_title": "臺南市統計通報：臺南市公共圖書館概況",
+    "publication_date": "",
+    "source_edition_roc": "",
+    "source_ids": [
+      "discovered-tainan-bulletin-10505-t1",
+      "discovered-tainan-bulletin-10505-t2"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/taoyuan-yearbook-ch8-2021.pdf",
+    "sha256": "5f96fb234a07b87a7c6a22981ae69b7df1141d36dc5d355d45c2fdf1b946d467",
+    "download_url": "https://ws.tycg.gov.tw/Download.ashx?n=MTEw5bm05YWr5pWZ6IKy5paH5YyWLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMTUyL1JlbEZpbGUvMTg1NDcvMTIzOTk2Ny8xMTDlubTlhavmlZnogrLmlofljJYucGRm",
+    "source_url": "https://ws.tycg.gov.tw/Download.ashx?n=MTEw5bm05YWr5pWZ6IKy5paH5YyWLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMTUyL1JlbEZpbGUvMTg1NDcvMTIzOTk2Ny8xMTDlubTlhavmlZnogrLmlofljJYucGRm",
+    "source_title": "桃園市110年統計年報：教育文化",
+    "publication_date": "",
+    "source_edition_roc": "",
+    "source_ids": [
+      "discovered-taoyuan-yearbook-ch8-2021-t8-11"
+    ]
+  },
+  {
+    "local_path": "raw/discovered-20261028/tpml-2012-12.pdf",
+    "sha256": "9f82ebabb13d3500aca19bdbc691ffe7d282bf227fac42651009e828cf695d37",
+    "download_url": "https://www-ws.gov.taipei/Download.ashx?u=LzAwMS9VcGxvYWQvNDMwL3JlbGZpbGUvMjEyOTEvODUwNTI5Ny9hNGU5YjZiMy0wZmNjLTRiMTYtYjc4NS0yMWM1MDlkYzNhMjEucGRm&n=MTAx5bm0MTLmnIgucGRm&icon=..pdf",
+    "source_url": "https://tpml.gov.taipei/News_Content.aspx?n=2E864DF7B9B80664&s=689CD3072F9D3E34&sms=D68D52DD3BA6F406",
+    "source_title": "臺北市立圖書館統計數據：101年12月",
+    "publication_date": "",
+    "source_edition_roc": "",
+    "source_ids": [
+      "discovered-tpml-2012-12-tfacility-parenthetical",
+      "discovered-tpml-2012-12-tmonthly-activities",
+      "discovered-tpml-2012-12-tmonthly-primary",
+      "discovered-tpml-2012-12-tmonthly-services"
+    ]
+  },
+  {
     "local_path": "raw/ncl-2005/yearbook-95-public-library.pdf",
     "sha256": "b5f6a52c5b861e1d74b4d917497cd9c806286845ee9bb1a3b8349b2b23a19efe",
     "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565578841549902/38a51da4-b229-49c7-9fc4-df30882cd658.pdf",

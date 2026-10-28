@@ -12,6 +12,7 @@ from pathlib import Path
 from urllib.parse import urlsplit,parse_qs
 import xml.etree.ElementTree as ET
 import record_io
+import reader_transport
 ROOT=Path(__file__).resolve().parents[1]
 VIEWER_VERSION='1.0.0'
 REPOSITORY='https://github.com/poplolioi11/tw-public-library-statistics'
@@ -26,7 +27,7 @@ def read_rows(path):
 def payload(root,stage):
  text=(root/'site'/f'{stage}.html').read_text();m=re.search(r'<script type="application/json" id="'+stage+r'-data">(.*?)</script>',text,re.S)
  if not m:raise ValueError('Reviewed reader payload missing: '+stage)
- return json.loads(m.group(1))
+ return reader_transport.decode(m.group(1))
 def table(data,name):
  t=data['tables'][name];return [{k:data['pool'][i] for k,i in zip(t['columns'],row,strict=True) if i!=-1} for row in t['rows']]
 def safe_url(url):
@@ -68,7 +69,7 @@ def build_series(c,annotations,originals):
  mobile=[xticks[i] for i in sorted({0,len(xticks)//2,len(xticks)-1})] if xticks else []
  return {'schema_version':1,'id':c['comparison_group_id'],'label':c['label'],'entity':c['entity'],'facility':c['facility'],'indicator':c['indicator'],'unit':c['unit'],'source_id':c['source_id'],'source_edition_raw':c['source_edition_raw'],'scope_note':'僅同一已核原刊／原件及原對象範圍；選定來源不代表所有歷年填報方法一致。未知點不畫0，僅連接原已核准線段。','records':records,'lines':line_pairs,'x_ticks':xticks,'mobile_x_ticks':mobile,'y_ticks':yticks}
 def input_hashes(root):
- names=['VERSION','site/phase2.html','site/phase3.html','derived/phase2/annotations.jsonl.gz','docs/phase3-profiles.json','docs/phase3-contract.json','scripts/build_lightweight_site.py']
+ names=['VERSION','site/phase2.html','site/phase3.html','derived/phase2/annotations.jsonl.gz','docs/phase3-profiles.json','docs/phase3-contract.json','scripts/build_lightweight_site.py','scripts/reader_transport.py']
  names.extend(str(p.relative_to(root)) for p in sorted((root/'site/light-src').glob('*')) if p.is_file())
  names.append(str(record_io.path_for(root,'data/combined/observations.jsonl').relative_to(root)))
  return {name:sha((root/name).read_bytes()) for name in names}

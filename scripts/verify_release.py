@@ -189,7 +189,7 @@ def reviewed_ncl_csvs(root):
         raise ValueError("Unrecognized reviewed cohort inventory")
     result = []
     for group in document["cohorts"]:
-        if group["review_status"] != "source_reviewed":
+        if group["review_status"] != "source_reviewed" or group.get('adapter_kind')=='canonical_observations_jsonl':
             continue
         path = Path(group["derived_csv"])
         if path.is_absolute() or ".." in path.parts or path.parts[0] != "derived" or path.suffix != ".csv":
@@ -687,7 +687,8 @@ class Verification:
             if path.exists():
                 with path.open(encoding="utf-8-sig", newline="") as stream:
                     additional_count += sum(1 for _ in csv.DictReader(stream))
-        self.check(len(rows) == len(canonical_local) + len(expected_historical) + county_extra + additional_count, "component_total", len(rows))
+        direct_count = sum(str(row['source_id']).startswith('discovered-') for row in rows)
+        self.check(len(rows) == len(canonical_local) + len(expected_historical) + county_extra + additional_count + direct_count, "component_total", len(rows))
         self.result["components"] = {
             "status": "pass" if len(self.failures) == before else "fail", "canonical_records_checked": len(rows),
             "local_raw_documents_checked": len(raw_documents), "local_raw_cells_and_derived_rows_checked": len(local),
@@ -696,6 +697,7 @@ class Verification:
             "conflicting_value_groups": sum(len(values) > 1 for values in conflicts.values()),
             "historical_adapter_records_checked": len(expected_historical),
             "additional_ncl_expected_records": additional_count,
+            "complete_discovered_original_records_separately_verified": direct_count,
             "explicit_missing_source_markers_retained": missing_statuses,
             "pdf_raw_files_hash_checked": len(source_files),
             "local_verification_level": "All original JSON cells and complete original objects vs derived; every nonduplicate adapter record vs derived and raw.",
@@ -1130,6 +1132,9 @@ def main():
         verification.historical()
         if not args.core_only and record_path(args.root, "data/component_records.jsonl").exists():
             verification.components()
+            if (args.root / 'raw/discovered-20261028/extraction-metadata.json').is_file():
+                from validate_discovered_20261028 import validate as validate_discovered
+                verification.result['discovered_originals'] = validate_discovered(args.root, require_originals=True)
             if (args.root / "derived/ncl_gap_tables_long.csv").exists():
                 verification.ncl_gap()
             if any((args.root / "derived" / name).exists() for name in reviewed_ncl_csvs(args.root)):

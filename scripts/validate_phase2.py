@@ -145,7 +145,8 @@ def validate_sources(annotations,cards,root,summary):
     special[raw['period_status']]+=1;require(ann['comparison_year'] is None and ann['comparison_month'] is None and ann['period_kind']=='unresolved','Unknown period assigned: '+key)
    if layer=='programme_quantities':require(ann['comparison_year'] is None and ann['period_kind']=='programme_not_annual','Programme recoded as annual: '+key)
    if layer=='canonical' and raw.get('data_year')==2012 and 'ratio' in str(raw.get('temporal_kind','')):
-    special['2012_original_ratios']+=1;require(ann['measure_class']=='ratio_or_per_capita' and ann['period_kind']=='source_ratio_period','2012 ratio reinterpreted as original quantity: '+key)
+    expected_period='monthly_source_statistic' if raw.get('source_location_kind')=='verified_original_cell' and raw.get('period_basis')=='literal_original_year_month' else 'source_ratio_period'
+    special['2012_original_ratios']+=1;require(ann['measure_class']=='ratio_or_per_capita' and ann['period_kind']==expected_period,'2012 ratio reinterpreted as original quantity or wrong period: '+key)
   h.update(b']');raw_fingerprints[layer]=h.hexdigest()
  require(seen==set(amap),'Annotation does not have exactly one original')
  require(dict(counts)==summary['layers'],'Source layer counts differ from summary')

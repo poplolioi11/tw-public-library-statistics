@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "data_version": "0.8.0",
-  "data_build": "2026-10-26T15:53:22.493838+00:00",
+  "data_version": "0.9.0",
+  "data_build": "2026-10-28T11:39:28.225203+00:00",
   "registry_path": "data/reviewed_historical_cohorts.json",
   "registered_cohorts": [
     {
@@ -6510,10 +6510,1277 @@
       "scope": "Complete public-library chapter tables1–5 plus statistics107public-library subset and108public/private-public-library rows including distinct answering counts. Old25-county geography and separate national/municipal institutions retained. Program-specific/cross-year tables6/7 are known not ingested, not labelled absent.",
       "completion_scope": "All cells/spans of explicitly listed reviewed tables or prose only; not every table/chapter/year/county.",
       "canonical_status": "all_source_count_present"
+    },
+    {
+      "id": "official_discovery_20261028",
+      "review_status": "source_reviewed",
+      "derived_csv": "derived/discovered_20261028_long.csv",
+      "source_csv_available": true,
+      "source_ids": [
+        "discovered-changhua-bulletin-2021-ctrl-t1",
+        "discovered-changhua-bulletin-2021-ctrl-t2",
+        "discovered-changhua-bulletin-2021-ctrl-t3",
+        "discovered-changhua-bulletin-2021-ctrl-t4",
+        "discovered-changhua-bulletin-2021-ctrl-t5",
+        "discovered-changhua-bulletin-2021-ctrl-t6",
+        "discovered-changhua-bulletin-2021-ctrl-t7",
+        "discovered-changhua-bulletin-2021-ctrl-tfigure-1-reference",
+        "discovered-changhua-bulletin-2021-ctrl-tfigure-2-reference",
+        "discovered-changhua-bulletin-2021-ctrl-tfigure-3-reference",
+        "discovered-dgbas-yearbook-113-t4-22",
+        "discovered-kaohsiung-cultural-2012-t3-1",
+        "discovered-kaohsiung-cultural-2012-t3-2",
+        "discovered-kaohsiung-cultural-2012-t7-1",
+        "discovered-moe-16years-T403-t3",
+        "discovered-ncl-ed91-public-libraries-t11",
+        "discovered-ncl-ed91-public-libraries-t12",
+        "discovered-ncl-ed91-public-libraries-t13",
+        "discovered-ncl-ed92-public-libraries-t5",
+        "discovered-ncl-ed92-public-libraries-t6",
+        "discovered-ncl-ed92-public-libraries-t7",
+        "discovered-ncl-ed92-public-libraries-t8",
+        "discovered-ncl-ed93-public-libraries-t16",
+        "discovered-ncl-ed93-public-libraries-t17",
+        "discovered-ncl-ed93-public-libraries-t19",
+        "discovered-ncl-ed94-public-libraries-t7",
+        "discovered-ncl-ed94-public-libraries-t8",
+        "discovered-ncl-ed94-public-libraries-t9",
+        "discovered-ntpc-cultural-2015-t6-2",
+        "discovered-tainan-bulletin-10505-t1",
+        "discovered-tainan-bulletin-10505-t2",
+        "discovered-taoyuan-yearbook-ch8-2021-t8-11",
+        "discovered-tpml-2012-12-tfacility-parenthetical",
+        "discovered-tpml-2012-12-tmonthly-activities",
+        "discovered-tpml-2012-12-tmonthly-primary",
+        "discovered-tpml-2012-12-tmonthly-services"
+      ],
+      "data_years": [
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "edition_roc": [
+        91,
+        92,
+        93,
+        94,
+        113
+      ],
+      "publication_dates": [],
+      "source_csv_counts": {
+        "records": 20358,
+        "numeric_cells": 14540,
+        "source_blank_cells": 427,
+        "other_missing_cells": 5391,
+        "value_status_counts": {
+          "reported": 14540,
+          "source_blank": 427,
+          "source_marker": 5391
+        }
+      },
+      "canonical_counts": {
+        "records": 20358,
+        "numeric_cells": 14540,
+        "source_blank_cells": 427,
+        "other_missing_cells": 5391,
+        "value_status_counts": {
+          "reported": 14540,
+          "source_blank": 427,
+          "source_marker": 5391
+        }
+      },
+      "uncertain_label_records": 0,
+      "unit_conflict_records": 0,
+      "table_inventory": [
+        {
+          "source_id": "discovered-changhua-bulletin-2021-ctrl-t1",
+          "source_table": "1",
+          "source_table_title": "彰化縣公共圖書館收藏數量及每人擁書量統計",
+          "source_cells": 70,
+          "numeric_cells": 70,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "2"
+          ],
+          "printed_pages": [
+            "2"
+          ],
+          "source_sha256": [
+            "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-changhua-bulletin-2021-ctrl-t2",
+          "source_table": "2",
+          "source_table_title": "109年底臺灣地區各縣市每人擁書量統計",
+          "source_cells": 20,
+          "numeric_cells": 20,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2020
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "3"
+          ],
+          "printed_pages": [
+            "3"
+          ],
+          "source_sha256": [
+            "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-changhua-bulletin-2021-ctrl-t3",
+          "source_table": "3",
+          "source_table_title": "彰化縣公共圖書館借閱狀況統計",
+          "source_cells": 50,
+          "numeric_cells": 50,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "5"
+          ],
+          "printed_pages": [
+            "5"
+          ],
+          "source_sha256": [
+            "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-changhua-bulletin-2021-ctrl-t4",
+          "source_table": "4",
+          "source_table_title": "109年底全國各縣市每人借閱量及借閱率統計",
+          "source_cells": 40,
+          "numeric_cells": 40,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2020
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "5"
+          ],
+          "printed_pages": [
+            "5"
+          ],
+          "source_sha256": [
+            "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-changhua-bulletin-2021-ctrl-t5",
+          "source_table": "5",
+          "source_table_title": "彰化縣閱讀推廣活動場次統計",
+          "source_cells": 84,
+          "numeric_cells": 84,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "8"
+          ],
+          "printed_pages": [
+            "8"
+          ],
+          "source_sha256": [
+            "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-changhua-bulletin-2021-ctrl-t6",
+          "source_table": "6",
+          "source_table_title": "彰化縣閱讀推廣活動場次所占比例增減情形",
+          "source_cells": 33,
+          "numeric_cells": 33,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2014,
+            2020
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "8"
+          ],
+          "printed_pages": [
+            "8"
+          ],
+          "source_sha256": [
+            "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-changhua-bulletin-2021-ctrl-t7",
+          "source_table": "7",
+          "source_table_title": "彰化縣閱讀推廣活動人次統計",
+          "source_cells": 84,
+          "numeric_cells": 84,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "9"
+          ],
+          "printed_pages": [
+            "9"
+          ],
+          "source_sha256": [
+            "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-changhua-bulletin-2021-ctrl-tfigure-1-reference",
+          "source_table": "figure-1-reference",
+          "source_table_title": "圖1平均參考線",
+          "source_cells": 1,
+          "numeric_cells": 1,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2020
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "3"
+          ],
+          "printed_pages": [
+            "3"
+          ],
+          "source_sha256": [
+            "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-changhua-bulletin-2021-ctrl-tfigure-2-reference",
+          "source_table": "figure-2-reference",
+          "source_table_title": "圖2平均參考線",
+          "source_cells": 1,
+          "numeric_cells": 1,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2020
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "6"
+          ],
+          "printed_pages": [
+            "6"
+          ],
+          "source_sha256": [
+            "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-changhua-bulletin-2021-ctrl-tfigure-3-reference",
+          "source_table": "figure-3-reference",
+          "source_table_title": "圖3平均參考線",
+          "source_cells": 1,
+          "numeric_cells": 1,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2020
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "6"
+          ],
+          "printed_pages": [
+            "6"
+          ],
+          "source_sha256": [
+            "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-dgbas-yearbook-113-t4-22",
+          "source_table": "4-22",
+          "source_table_title": "公立公共圖書館概況",
+          "source_cells": 312,
+          "numeric_cells": 293,
+          "source_blank_cells": 0,
+          "other_missing_cells": 19,
+          "data_years": [
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "edition_roc": [
+            113
+          ],
+          "pdf_pages": [
+            "120"
+          ],
+          "printed_pages": [
+            "105"
+          ],
+          "source_sha256": [
+            "5fa63fbb5f7e8660d4802f87635ba0be0122d134252c5654fbdce725ccf12233"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-kaohsiung-cultural-2012-t3-1",
+          "source_table": "3-1",
+          "source_table_title": "高雄市立圖書館閱覽概況-年月別資訊",
+          "source_cells": 195,
+          "numeric_cells": 182,
+          "source_blank_cells": 0,
+          "other_missing_cells": 13,
+          "data_years": [
+            2012
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "29",
+            "30"
+          ],
+          "printed_pages": [
+            "26",
+            "27"
+          ],
+          "source_sha256": [
+            "3769666d92fab4736c0f6b372a61534e36872eaa099b8cac0d6dac12388b1325"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-kaohsiung-cultural-2012-t3-2",
+          "source_table": "3-2",
+          "source_table_title": "高雄市立圖書館閱覽概況-分館別資訊",
+          "source_cells": 16926,
+          "numeric_cells": 11611,
+          "source_blank_cells": 6,
+          "other_missing_cells": 5309,
+          "data_years": [
+            2012
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82"
+          ],
+          "printed_pages": [
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79"
+          ],
+          "source_sha256": [
+            "3769666d92fab4736c0f6b372a61534e36872eaa099b8cac0d6dac12388b1325"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-kaohsiung-cultural-2012-t7-1",
+          "source_table": "7-1",
+          "source_table_title": "高雄市立公共圖書館概況",
+          "source_cells": 24,
+          "numeric_cells": 20,
+          "source_blank_cells": 0,
+          "other_missing_cells": 4,
+          "data_years": [
+            2012
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "100"
+          ],
+          "printed_pages": [
+            "97"
+          ],
+          "source_sha256": [
+            "3769666d92fab4736c0f6b372a61534e36872eaa099b8cac0d6dac12388b1325"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-moe-16years-T403-t3",
+          "source_table": "社3",
+          "source_table_title": "（三）公立公共圖書館數及圖書借閱人數",
+          "source_cells": 48,
+          "numeric_cells": 48,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009
+          ],
+          "edition_roc": [],
+          "pdf_pages": [],
+          "printed_pages": [],
+          "source_sha256": [
+            "c857ed264035666658f7e0ed4ea174e8f1dab67577cdf92456b6e1fa32fc02ea"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed91-public-libraries-t11",
+          "source_table": "11",
+          "source_table_title": "臺閩地區公共圖書館統計表（民國90年）",
+          "source_cells": 286,
+          "numeric_cells": 122,
+          "source_blank_cells": 164,
+          "other_missing_cells": 0,
+          "data_years": [
+            2001
+          ],
+          "edition_roc": [
+            91
+          ],
+          "pdf_pages": [
+            "3",
+            "4"
+          ],
+          "printed_pages": [
+            "73",
+            "74"
+          ],
+          "source_sha256": [
+            "6b58c1f4432c77bb0fcbea94c2dc0373f1d5f163e080a203b01d74e29b9b0ff4"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed91-public-libraries-t12",
+          "source_table": "12",
+          "source_table_title": "國立暨直轄市立公共圖書館經費、館藏與資源使用統計表（民國90年）",
+          "source_cells": 20,
+          "numeric_cells": 17,
+          "source_blank_cells": 0,
+          "other_missing_cells": 3,
+          "data_years": [
+            2001
+          ],
+          "edition_roc": [
+            91
+          ],
+          "pdf_pages": [
+            "4"
+          ],
+          "printed_pages": [
+            "74"
+          ],
+          "source_sha256": [
+            "6b58c1f4432c77bb0fcbea94c2dc0373f1d5f163e080a203b01d74e29b9b0ff4"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed91-public-libraries-t13",
+          "source_table": "13",
+          "source_table_title": "臺灣省各縣市鄉鎮市立圖書館館藏資料統計表（民國90年）",
+          "source_cells": 63,
+          "numeric_cells": 63,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2001
+          ],
+          "edition_roc": [
+            91
+          ],
+          "pdf_pages": [
+            "4",
+            "5"
+          ],
+          "printed_pages": [
+            "74",
+            "75"
+          ],
+          "source_sha256": [
+            "6b58c1f4432c77bb0fcbea94c2dc0373f1d5f163e080a203b01d74e29b9b0ff4"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed92-public-libraries-t5",
+          "source_table": "5",
+          "source_table_title": "臺閩地區公共圖書館統計表（民國91年）",
+          "source_cells": 99,
+          "numeric_cells": 36,
+          "source_blank_cells": 63,
+          "other_missing_cells": 0,
+          "data_years": [
+            2002
+          ],
+          "edition_roc": [
+            92
+          ],
+          "pdf_pages": [
+            "3"
+          ],
+          "printed_pages": [
+            "97"
+          ],
+          "source_sha256": [
+            "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed92-public-libraries-t5",
+          "source_table": "5",
+          "source_table_title": "臺閩地區公共圖書館統計表（民國91年）（續）",
+          "source_cells": 187,
+          "numeric_cells": 87,
+          "source_blank_cells": 100,
+          "other_missing_cells": 0,
+          "data_years": [
+            2002
+          ],
+          "edition_roc": [
+            92
+          ],
+          "pdf_pages": [
+            "4"
+          ],
+          "printed_pages": [
+            "98"
+          ],
+          "source_sha256": [
+            "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed92-public-libraries-t6",
+          "source_table": "6",
+          "source_table_title": "國立暨直轄市立公共圖書館經費、館藏與資源使用統計表（民國91年）",
+          "source_cells": 20,
+          "numeric_cells": 17,
+          "source_blank_cells": 0,
+          "other_missing_cells": 3,
+          "data_years": [
+            2002
+          ],
+          "edition_roc": [
+            92
+          ],
+          "pdf_pages": [
+            "5"
+          ],
+          "printed_pages": [
+            "99"
+          ],
+          "source_sha256": [
+            "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed92-public-libraries-t7",
+          "source_table": "7",
+          "source_table_title": "臺灣省各縣市鄉鎮市立圖書館館藏資料統計表（民國91年）",
+          "source_cells": 63,
+          "numeric_cells": 63,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2002
+          ],
+          "edition_roc": [
+            92
+          ],
+          "pdf_pages": [
+            "5"
+          ],
+          "printed_pages": [
+            "99"
+          ],
+          "source_sha256": [
+            "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed92-public-libraries-t8",
+          "source_table": "8",
+          "source_table_title": "縣市文化局（中心）圖書館統計比較表（民國90年及91年）",
+          "source_cells": 144,
+          "numeric_cells": 112,
+          "source_blank_cells": 26,
+          "other_missing_cells": 6,
+          "data_years": [
+            2001,
+            2002
+          ],
+          "edition_roc": [
+            92
+          ],
+          "pdf_pages": [
+            "6"
+          ],
+          "printed_pages": [
+            "100"
+          ],
+          "source_sha256": [
+            "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed92-public-libraries-t8",
+          "source_table": "8",
+          "source_table_title": "縣市文化局（中心）圖書館統計比較表（民國90年及91年）（續）",
+          "source_cells": 128,
+          "numeric_cells": 108,
+          "source_blank_cells": 15,
+          "other_missing_cells": 5,
+          "data_years": [
+            2001,
+            2002
+          ],
+          "edition_roc": [
+            92
+          ],
+          "pdf_pages": [
+            "7"
+          ],
+          "printed_pages": [
+            "101"
+          ],
+          "source_sha256": [
+            "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed93-public-libraries-t16",
+          "source_table": "16",
+          "source_table_title": "國立暨直轄市立公共圖書館經費、館藏與資源使用統計表（民國92年）",
+          "source_cells": 41,
+          "numeric_cells": 41,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2003
+          ],
+          "edition_roc": [
+            93
+          ],
+          "pdf_pages": [
+            "2"
+          ],
+          "printed_pages": [
+            "109"
+          ],
+          "source_sha256": [
+            "c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed93-public-libraries-t17",
+          "source_table": "17",
+          "source_table_title": "臺閩地區各縣（市）暨鄉鎮（市）立圖書館館藏資料及購書經費統計表（民國92年）",
+          "source_cells": 115,
+          "numeric_cells": 115,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2003
+          ],
+          "edition_roc": [
+            93
+          ],
+          "pdf_pages": [
+            "3"
+          ],
+          "printed_pages": [
+            "110"
+          ],
+          "source_sha256": [
+            "c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed93-public-libraries-t19",
+          "source_table": "19",
+          "source_table_title": "臺閩地區各縣市文化局人力、讀者服務、推廣服務、參考諮詢與輔導鄉鎮（市）概況統計表（民國92年）",
+          "source_cells": 144,
+          "numeric_cells": 123,
+          "source_blank_cells": 21,
+          "other_missing_cells": 0,
+          "data_years": [
+            2003
+          ],
+          "edition_roc": [
+            93
+          ],
+          "pdf_pages": [
+            "5"
+          ],
+          "printed_pages": [
+            "112"
+          ],
+          "source_sha256": [
+            "c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed93-public-libraries-t19",
+          "source_table": "19",
+          "source_table_title": "臺閩地區各縣市文化局人力、讀者服務、推廣服務、參考諮詢與輔導鄉鎮（市）概況統計表（民國92年）（續）",
+          "source_cells": 63,
+          "numeric_cells": 55,
+          "source_blank_cells": 8,
+          "other_missing_cells": 0,
+          "data_years": [
+            2003
+          ],
+          "edition_roc": [
+            93
+          ],
+          "pdf_pages": [
+            "6"
+          ],
+          "printed_pages": [
+            "113"
+          ],
+          "source_sha256": [
+            "c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed94-public-libraries-t7",
+          "source_table": "7",
+          "source_table_title": "國立暨直轄市立公共圖書館經費、館藏與資源使用統計表（民國93年）",
+          "source_cells": 50,
+          "numeric_cells": 46,
+          "source_blank_cells": 4,
+          "other_missing_cells": 0,
+          "data_years": [
+            2004
+          ],
+          "edition_roc": [
+            94
+          ],
+          "pdf_pages": [
+            "2"
+          ],
+          "printed_pages": [
+            "75"
+          ],
+          "source_sha256": [
+            "6a33073693212a20a74f9b3cb190e926ca4dfb6f6af988ef0357a2339c253417"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed94-public-libraries-t8",
+          "source_table": "8",
+          "source_table_title": "臺閩地區各縣市暨鄉鎮市立圖書館館藏資料及購書經費統計表（民國93年）",
+          "source_cells": 115,
+          "numeric_cells": 115,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2004
+          ],
+          "edition_roc": [
+            94
+          ],
+          "pdf_pages": [
+            "3"
+          ],
+          "printed_pages": [
+            "76"
+          ],
+          "source_sha256": [
+            "6a33073693212a20a74f9b3cb190e926ca4dfb6f6af988ef0357a2339c253417"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed94-public-libraries-t9",
+          "source_table": "9",
+          "source_table_title": "臺閩地區各縣市立圖書館人員、讀者及推廣服務、參考諮詢與輔導概況統計表（民國93年）",
+          "source_cells": 230,
+          "numeric_cells": 210,
+          "source_blank_cells": 20,
+          "other_missing_cells": 0,
+          "data_years": [
+            2004
+          ],
+          "edition_roc": [
+            94
+          ],
+          "pdf_pages": [
+            "4"
+          ],
+          "printed_pages": [
+            "77"
+          ],
+          "source_sha256": [
+            "6a33073693212a20a74f9b3cb190e926ca4dfb6f6af988ef0357a2339c253417"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ntpc-cultural-2015-t6-2",
+          "source_table": "6-2",
+          "source_table_title": "新北市立圖書館借閱概況",
+          "source_cells": 156,
+          "numeric_cells": 154,
+          "source_blank_cells": 0,
+          "other_missing_cells": 2,
+          "data_years": [
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "109",
+            "110"
+          ],
+          "printed_pages": [
+            "6-3",
+            "6-4"
+          ],
+          "source_sha256": [
+            "d6774268bba568ab8fec748bc9ac23b84a1bf85e4ee65e75ba55cd8d6f39bb5f"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-tainan-bulletin-10505-t1",
+          "source_table": "1",
+          "source_table_title": "104年全國圖書館概況",
+          "source_cells": 192,
+          "numeric_cells": 186,
+          "source_blank_cells": 0,
+          "other_missing_cells": 6,
+          "data_years": [
+            2015
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "2"
+          ],
+          "printed_pages": [],
+          "source_sha256": [
+            "adfe317a24a3a800414b819c5321b40917a3b44026141124dadd3a52cded1aa4"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-tainan-bulletin-10505-t2",
+          "source_table": "2",
+          "source_table_title": "臺南市歷年圖書館概況",
+          "source_cells": 48,
+          "numeric_cells": 44,
+          "source_blank_cells": 0,
+          "other_missing_cells": 4,
+          "data_years": [
+            2011,
+            2012,
+            2013,
+            2014,
+            2015
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "2"
+          ],
+          "printed_pages": [],
+          "source_sha256": [
+            "adfe317a24a3a800414b819c5321b40917a3b44026141124dadd3a52cded1aa4"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-taoyuan-yearbook-ch8-2021-t8-11",
+          "source_table": "8-11",
+          "source_table_title": "公立公共圖書館概況",
+          "source_cells": 240,
+          "numeric_cells": 223,
+          "source_blank_cells": 0,
+          "other_missing_cells": 17,
+          "data_years": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "40",
+            "41"
+          ],
+          "printed_pages": [],
+          "source_sha256": [
+            "5f96fb234a07b87a7c6a22981ae69b7df1141d36dc5d355d45c2fdf1b946d467"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-tpml-2012-12-tfacility-parenthetical",
+          "source_table": "facility-parenthetical",
+          "source_table_title": "分館數原註",
+          "source_cells": 2,
+          "numeric_cells": 2,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2012
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "1"
+          ],
+          "printed_pages": [],
+          "source_sha256": [
+            "9f82ebabb13d3500aca19bdbc691ffe7d282bf227fac42651009e828cf695d37"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-tpml-2012-12-tmonthly-activities",
+          "source_table": "monthly-activities",
+          "source_table_title": "101年12月活動",
+          "source_cells": 18,
+          "numeric_cells": 18,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2012
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "2"
+          ],
+          "printed_pages": [],
+          "source_sha256": [
+            "9f82ebabb13d3500aca19bdbc691ffe7d282bf227fac42651009e828cf695d37"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-tpml-2012-12-tmonthly-primary",
+          "source_table": "monthly-primary",
+          "source_table_title": "臺北市立圖書館統計數據/101年12月",
+          "source_cells": 24,
+          "numeric_cells": 24,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2012
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "1"
+          ],
+          "printed_pages": [],
+          "source_sha256": [
+            "9f82ebabb13d3500aca19bdbc691ffe7d282bf227fac42651009e828cf695d37"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-tpml-2012-12-tmonthly-services",
+          "source_table": "monthly-services",
+          "source_table_title": "臺北市立圖書館統計數據/101年12月服務",
+          "source_cells": 21,
+          "numeric_cells": 21,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2012
+          ],
+          "edition_roc": [],
+          "pdf_pages": [
+            "2"
+          ],
+          "printed_pages": [],
+          "source_sha256": [
+            "9f82ebabb13d3500aca19bdbc691ffe7d282bf227fac42651009e828cf695d37"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        }
+      ],
+      "metadata_paths": [
+        "raw/discovered-20261028/extraction-metadata.json",
+        "derived/discovered_central_20261028_metadata.json",
+        "derived/discovered_local_20261028_metadata.json",
+        "derived/discovered_ncl_early_20261028_metadata.json"
+      ],
+      "scope": "Complete selected tables and continuations from twelve official originals. Literal unknown years, symbols, shared cells and monthly periods remain distinct; no national panel is fabricated.",
+      "completion_scope": "All cells/spans of explicitly listed reviewed tables or prose only; not every table/chapter/year/county.",
+      "canonical_status": "all_source_count_present"
     }
   ],
-  "registered_source_cells": 17912,
-  "historical_canonical_records": 19181,
+  "registered_source_cells": 38270,
+  "historical_canonical_records": 20949,
   "legacy_canonical_scope": {
     "records": 1269,
     "tables": [

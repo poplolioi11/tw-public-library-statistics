@@ -7,11 +7,12 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 import phase2_engine as p2
 import phase3_engine as p3
+import reader_transport
 from series_charts import period
 def payload(path,stage):
  text=path.read_text();match=re.search(r'<script type="application/json" id="'+stage+r'-data">(.*?)</script>',text,re.S)
  if not match:raise AssertionError('Missing complete embedded payload')
- return json.loads(match.group(1))
+ return reader_transport.decode(match.group(1))
 def rows(root,name):
  path=root/name
  with (gzip.open(path,'rt',encoding='utf-8') if name.endswith('.gz') else path.open()) as f:return [json.loads(x) for x in f if x.strip()]

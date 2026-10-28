@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.8.0",
+  "dataset_version": "0.9.0",
   "type_policy": "Observed JSON types below describe this version, not certified statistical meaning. SQLite stores structured values as JSON text; CSV null is empty.",
   "layers": [
     {
@@ -547,7 +547,7 @@
     },
     {
       "jsonl": "derived/phase1_raw_source_profiles.jsonl",
-      "records": 23466,
+      "records": 29337,
       "fields": {
         "aggregation_role": {
           "observed_json_types": [
@@ -564,7 +564,8 @@
         },
         "data_year": {
           "observed_json_types": [
-            "integer"
+            "integer",
+            "null"
           ],
           "present_in_all_records": true
         },
@@ -694,6 +695,7 @@
         },
         "source_edition_roc": {
           "observed_json_types": [
+            "integer",
             "null",
             "string"
           ],

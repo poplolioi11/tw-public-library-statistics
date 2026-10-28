@@ -3,5 +3,10 @@
   "jsonl_compression": "gzip",
   "canonical_jsonl_path": "data/combined/observations.jsonl.gz",
   "component_jsonl_path": "data/component_records.jsonl.gz",
-  "rationale": "Lossless transport for GitHub file limits. The annual JSONL partitions stay plain text; no observations removed."
+  "rationale": "Lossless gzip for complete JSONL/CSV/SQLite files exceeding the repository per-file limit; yearly JSONL stays plain. Release CSV/SQLite assets are decompressed byte-identical copies.",
+  "lossless_gzip_paths": [
+    "data/combined/observations.csv",
+    "data/combined/library_statistics.sqlite",
+    "derived/discovered_20261028_observations.jsonl"
+  ]
 }

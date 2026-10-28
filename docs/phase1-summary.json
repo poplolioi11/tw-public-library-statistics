@@ -2,9 +2,9 @@
   "schema_version": "1.0.0",
   "scope_id": "public-library-source-inventory-2005-2025-v1",
   "scope_version": "1.0.0",
-  "dataset_version": "0.8.0",
-  "canonical_records": 37887,
-  "canonical_statistical_content_sha256": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
+  "dataset_version": "0.9.0",
+  "canonical_records": 58245,
+  "canonical_statistical_content_sha256": "da053af1e00a61ff284380652e614e03e30e2864bcc7101aa7cb5b859a4a4cce",
   "authority_slots_expected": 88,
   "authority_slots_with_recorded_attempt": 88,
   "authority_check_status_counts": {
@@ -18,12 +18,12 @@
     "checked_relevant_source_found": 8
   },
   "source_candidates_listed": 440,
-  "reviewed_batch_inventory_entries": 17,
-  "raw_source_profiles": 23466,
+  "reviewed_batch_inventory_entries": 18,
+  "raw_source_profiles": 29337,
   "discovery_matrix_cells": 4830,
-  "matched_value_navigation_cells": 2882,
-  "unclassified_observations": 13126,
-  "historical_or_other_raw_region_profiles": 4191,
+  "matched_value_navigation_cells": 2949,
+  "unclassified_observations": 18383,
+  "historical_or_other_raw_region_profiles": 7773,
   "all_original_observation_ids_accounted_for": true,
   "all_history_complete": false,
   "cross_year_comparability_certified": false,
@@ -61,17 +61,19 @@
     },
     {
       "path": "scripts/build_phase1_inventory.py",
-      "sha256": "f577b043fd450ce02dbc31b5853c220fa47a317fc0f8e11426116aaa800bdb89"
+      "sha256": "12cdc364021b4e29b33529692b4e033830f2c1f64d6bf6c0c496f2c3b5b4938e"
     },
     {
       "path": "canonical_statistical_content",
-      "sha256": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e"
+      "sha256": "da053af1e00a61ff284380652e614e03e30e2864bcc7101aa7cb5b859a4a4cce"
     },
     {
       "path": "raw/phase1-inventory/central.json",
       "sha256": "39fc33e4d6a1798709f931e009c475dc2b42b372acc722741a5a6e6142d25dfe"
     }
   ],
+  "unresolved_period_records": 467,
+  "canonical_period_policy": "Canonical null years remain in complete original source profiles but never enter confirmed annual navigation slots; publication/edition years are not substituted.",
   "supplemental_source_batches": [
     {
       "source_id": "south-lienchiang-opendata-173786",

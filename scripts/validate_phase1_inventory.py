@@ -15,6 +15,8 @@ def main():
   nonlocal checks;checks+=1
   if not x:raise ValueError(why)
  require(report['dataset_version']==(root/'VERSION').read_text().strip(),'Phase-one version differs')
+ require(all('data_year' in r and (r['data_year'] is None or type(r['data_year']) is int) for r in rows),'Canonical data_year must be an integer or null')
+ require(report.get('unresolved_period_records',0)==sum(r['data_year'] is None for r in rows),'Unresolved canonical periods omitted from summary')
  projections=json.loads((root/'docs/metadata-field-projections.json').read_text()).get('files',[]) if (root/'docs/metadata-field-projections.json').exists() else []
  projection_by_path={x['path']:x for x in projections}
  for entry in report['inputs']:
@@ -46,7 +48,7 @@ def main():
  matrix_keys=[(r['data_year'],r['navigation_region_current_name'],r['topic_id']) for r in matrix];expected={(y,c,t['id']) for y in range(scope['years']['first'],scope['years']['last']+1) for c in ['全國',*scope['current_county_navigation']] for t in scope['topics']};require(len(matrix_keys)==len(set(matrix_keys)) and set(matrix_keys)==expected,'Discovery grid drops scope slots')
  by_profile={p['profile_id']:p for p in profiles}
  for cell in matrix:
-  ps=[by_profile[x] for x in cell['profile_ids']];require(all(p['data_year']==cell['data_year'] and p['geography']==cell['navigation_region_current_name'] for p in ps),'Historical geography silently recoded')
+  ps=[by_profile[x] for x in cell['profile_ids']];require(type(cell['data_year']) is int and all(type(p['data_year']) is int and p['data_year']==cell['data_year'] and p['geography']==cell['navigation_region_current_name'] for p in ps),'Unknown period or historical geography silently assigned to annual navigation')
   require(not any(p['quantity_role'] in ('ratio_or_per_capita_not_original_quantity','population_context') for p in ps),'Ratio or population filled an original-quantity slot')
   require(sum(p['observation_count'] for p in ps)==cell['matched_source_observations'],'Discovery cell count differs');require(all(p['compatibility_status']=='not_certified_by_phase1_inventory' for p in ps),'Discovery cell silently certified compatibility')
  require('不由比率反算' in (root/'docs/PHASE1.md').read_text(),'2012 gap safeguard missing')
