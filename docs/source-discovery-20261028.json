@@ -1,0 +1,885 @@
+{
+  "schema_version": "1.0.0",
+  "checked_at": "2026-10-28",
+  "role": "official_source_discovery_not_formal_coverage",
+  "dataset_version": "0.8.0",
+  "formal_observations_added": 0,
+  "all_history_complete": false,
+  "cross_source_panel_permission": false,
+  "no_imputation": true,
+  "full_originals_distributed": false,
+  "source_probes_are_formal_observations": false,
+  "candidate_count": 16,
+  "candidates": [
+    {
+      "candidate_id": "ntpc-cultural-2015",
+      "title": "新北市政府文化局104年度統計年報",
+      "source_family_candidate": "local_publication_statistical_facts",
+      "official_url": "https://www.culture.ntpc.gov.tw/files/file_pool/1/0g289529270201779637/%E6%96%B0%E5%8C%97%E5%B8%82%E6%94%BF%E5%BA%9C%E6%96%87%E5%8C%96%E5%B1%80104%E5%B9%B4%E5%BA%A6%E7%B5%B1%E8%A8%88%E5%B9%B4%E5%A0%B1.pdf",
+      "catalogue_url": null,
+      "source_sha256": "d6774268bba568ab8fec748bc9ac23b84a1bf85e4ee65e75ba55cd8d6f39bb5f",
+      "source_bytes": 14942589,
+      "source_version_id": "ntpc-cultural-2015@sha256:d6774268bba568ab8fec748bc9ac23b84a1bf85e4ee65e75ba55cd8d6f39bb5f",
+      "retrieved_at": "2026-10-28T09:46:59.119139+00:00",
+      "edition_raw": "104年度",
+      "data_years_verified_for_listed_tables_only": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            109,
+            110
+          ],
+          "table_or_section": "表6-2 新北市立圖書館借閱概況（含續表）",
+          "printed_pages": [
+            "6-3",
+            "6-4"
+          ]
+        }
+      ],
+      "scope": "10個年度列及29個行政區列，4欄；選定一張跨頁表156格已完整擷取，不代表整冊完成。",
+      "cautions": [
+        "95–98年藏書不含非書；99年起含圖書、電子與非書，不能跨斷點直接接線。",
+        "行政區列未逐列印年份；只記表內104年脈絡，不直接填資料年。",
+        "辦證人數欄的共享單位標題不足以核定計數與期間，單位留未知。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "complete_bounded_table_probe_not_canonical",
+      "newness": "newly_located_official_original",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "將完整156格按原表分類，覆核期間、母體、辦證單位與定義斷點後才申請正式入庫。",
+      "bounded_probe_path": "research/source-probes/20261028-original-cells.json",
+      "bounded_probe_cells": 156
+    },
+    {
+      "candidate_id": "tainan-bulletin-10505",
+      "title": "臺南市統計通報：臺南市公共圖書館概況",
+      "source_family_candidate": "local_publication_statistical_facts",
+      "official_url": "https://w3fs.tainan.gov.tw/001/Upload/2/attachment/9368/99/month10505-3.pdf",
+      "catalogue_url": null,
+      "source_sha256": "adfe317a24a3a800414b819c5321b40917a3b44026141124dadd3a52cded1aa4",
+      "source_bytes": 154407,
+      "source_version_id": "tainan-bulletin-10505@sha256:adfe317a24a3a800414b819c5321b40917a3b44026141124dadd3a52cded1aa4",
+      "retrieved_at": "2026-10-28T09:35:08.992576+00:00",
+      "edition_raw": "檔名month10505-3，刊日未另核",
+      "data_years_verified_for_listed_tables_only": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            2
+          ],
+          "table_or_section": "表1 104年全國圖書館概況；表2 臺南市歷年圖書館概況",
+          "printed_pages": []
+        }
+      ],
+      "scope": "表1為2015全國、六都小計與22縣市；表2為臺南2011–2015及一列跨年變動；兩表共240格完整擷取。",
+      "cautions": [
+        "圖書館數是否計入各類分館尚未確認；不得與另一館數序列混接。",
+        "表2含原量、比率、變動率；100–104變動情形不是單一年度存量。",
+        "檔名10505不能單獨當已確認發布日期；原件刊日留未知。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "complete_bounded_two_table_probe_not_canonical",
+      "newness": "newly_located_official_original",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "覆核來源分類與統計母體，將兩完整表作獨立來源批次，禁止用每人量反推未列原量。",
+      "bounded_probe_path": "research/source-probes/20261028-original-cells.json",
+      "bounded_probe_cells": 240
+    },
+    {
+      "candidate_id": "taoyuan-yearbook-ch8-2021",
+      "title": "桃園市110年統計年報：教育文化",
+      "source_family_candidate": "local_publication_statistical_facts",
+      "official_url": "https://ws.tycg.gov.tw/Download.ashx?n=MTEw5bm05YWr5pWZ6IKy5paH5YyWLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMTUyL1JlbEZpbGUvMTg1NDcvMTIzOTk2Ny8xMTDlubTlhavmlZnogrLmlofljJYucGRm",
+      "catalogue_url": null,
+      "source_sha256": "5f96fb234a07b87a7c6a22981ae69b7df1141d36dc5d355d45c2fdf1b946d467",
+      "source_bytes": 719285,
+      "source_version_id": "taoyuan-yearbook-ch8-2021@sha256:5f96fb234a07b87a7c6a22981ae69b7df1141d36dc5d355d45c2fdf1b946d467",
+      "retrieved_at": "2026-10-28T09:45:52.611069+00:00",
+      "edition_raw": "110年統計年報",
+      "data_years_verified_for_listed_tables_only": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            40,
+            41
+          ],
+          "table_or_section": "表8-11 公立公共圖書館概況（左右跨頁續欄）",
+          "printed_pages": []
+        }
+      ],
+      "scope": "2012–2021年度列，另有當期文化局及行政區列；館數、圖書、非書／電子資源與借閱欄位須兩頁合讀。",
+      "cautions": [
+        "年度列與當期區別列分開，舊桃園縣／現行市區界線不自行重編。",
+        "第40頁只是一半欄位，不能當成全表。",
+        "各類資源與借閱單位按原欄保留。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_not_ingested",
+      "newness": "newly_located_official_original",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "兩頁同一表全量擷取，先確認續欄對齊與各列期間。"
+    },
+    {
+      "candidate_id": "kaohsiung-cultural-2012",
+      "title": "高雄市政府文化局101年統計年報",
+      "source_family_candidate": "local_publication_statistical_facts",
+      "official_url": "https://khcc.kcg.gov.tw/PhotoData/PIC1030110.pdf",
+      "catalogue_url": null,
+      "source_sha256": "3769666d92fab4736c0f6b372a61534e36872eaa099b8cac0d6dac12388b1325",
+      "source_bytes": 3756435,
+      "source_version_id": "kaohsiung-cultural-2012@sha256:3769666d92fab4736c0f6b372a61534e36872eaa099b8cac0d6dac12388b1325",
+      "retrieved_at": "2026-10-28T09:45:26.869444+00:00",
+      "edition_raw": "101年",
+      "data_years_verified_for_listed_tables_only": [
+        2012
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            100
+          ],
+          "table_or_section": "表7-1 高雄市立圖書館概況",
+          "printed_pages": [
+            "97"
+          ]
+        },
+        {
+          "pdf_pages": [
+            29,
+            30
+          ],
+          "table_or_section": "表3-1 月別使用情形，依目錄定位待整表解析",
+          "printed_pages": [
+            "26",
+            "27"
+          ]
+        },
+        {
+          "pdf_pages": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82
+          ],
+          "table_or_section": "表3-2 分館月別表，依目錄定位待逐頁核讀",
+          "printed_pages": [
+            "28–79"
+          ]
+        }
+      ],
+      "scope": "2012市立圖書館概況含館藏、借閱、經費；另有月別及分館完整表族候選。後兩組只有目錄定位，不宣稱逐頁核讀。",
+      "cautions": [
+        "概況頁閱覽席位數原印異常大值，影像確認確有該印數；不得自行改正。",
+        "人／人次標籤及相關總館、分館納入範圍須逐欄核定。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_not_ingested",
+      "newness": "newly_located_official_original",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "先完整表7-1，再處理表3-1；保留原報疑義，不以常識修值。"
+    },
+    {
+      "candidate_id": "changhua-bulletin-2021-ctrl",
+      "title": "彰化縣公共圖書館收藏及借閱概況（110年7月發布）",
+      "source_family_candidate": "local_publication_statistical_facts",
+      "official_url": "https://ctrl.chcg.gov.tw/files/%E6%95%99%E8%82%B2%E5%8F%8A%E6%96%87%E5%8C%96-%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%94%B6%E8%97%8F%E5%8F%8A%E5%80%9F%E9%96%B1%E6%A6%82%E6%B3%81%20%20%28110%E5%B9%B47%E6%9C%88%E7%99%BC%E5%B8%83%29-%E8%87%BA%E7%81%A3-%E7%B0%BD%E5%87%86%E7%89%88_16_1100812_2025.pdf",
+      "catalogue_url": null,
+      "source_sha256": "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3",
+      "source_bytes": 339147,
+      "source_version_id": "changhua-bulletin-2021-ctrl@sha256:cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3",
+      "retrieved_at": "2026-10-28T09:48:47.880007+00:00",
+      "edition_raw": "110年7月發布",
+      "data_years_verified_for_listed_tables_only": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            2
+          ],
+          "table_or_section": "表1 彰化縣公共圖書館收藏數量及每人擁書量統計",
+          "printed_pages": [
+            "2"
+          ]
+        },
+        {
+          "pdf_pages": [
+            5
+          ],
+          "table_or_section": "表3 歷年借閱統計；表4 109年20縣市比較",
+          "printed_pages": [
+            "5"
+          ]
+        }
+      ],
+      "scope": "彰化2011–2020館藏／非書／電子資源、借閱原量；同件另含2020年20縣市比率。",
+      "cautions": [
+        "官方files主機連線失敗；原索引可見的ctrl官方主機成功，取得失敗亦留紀錄。",
+        "表4僅臺灣地區20縣市，不含金門連江，不得稱22縣市。",
+        "圖書與非書、電子分項與總量分開，不重複相加。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_not_ingested",
+      "newness": "newly_located_official_original",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "優先完整表1及表3，再逐表處理同件其他表；先列全件表目錄。"
+    },
+    {
+      "candidate_id": "dgbas-yearbook-113",
+      "title": "中華民國統計年鑑113年",
+      "source_family_candidate": "dgbas_social_indicator_history",
+      "official_url": "https://ws.dgbas.gov.tw/001/Upload/466/relfile/11503/235319/yearbook113.pdf",
+      "catalogue_url": null,
+      "source_sha256": "5fa63fbb5f7e8660d4802f87635ba0be0122d134252c5654fbdce725ccf12233",
+      "source_bytes": 29335021,
+      "source_version_id": "dgbas-yearbook-113@sha256:5fa63fbb5f7e8660d4802f87635ba0be0122d134252c5654fbdce725ccf12233",
+      "retrieved_at": "2026-10-28T09:37:46.200547+00:00",
+      "edition_raw": "113年",
+      "data_years_verified_for_listed_tables_only": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            120
+          ],
+          "table_or_section": "表4-22 公立公共圖書館概況",
+          "printed_pages": [
+            "105"
+          ]
+        }
+      ],
+      "scope": "2010–2024全國年度列；2024另列國家圖書館、公共館合計及22縣市；不是歷年縣市原量。",
+      "cautions": [
+        "年度總列含國家圖書館；2024國家圖書館、公共館合計、各縣市互有重疊，不可整頁加總。",
+        "圖書為千冊、借閱為千人次／千冊，不轉成假精確個位數。",
+        "附註公共館含國立公共資訊圖書館及國立臺灣圖書館；不能直接接國資圖另一母體。",
+        "以核驗中繼憑證的既有TLS路徑取得；未停用主機名或根憑證驗證。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_not_ingested",
+      "newness": "newly_located_official_original",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "完整轉錄表4-22全部年度及當期分組，按原單位與包含範圍分來源版本。"
+    },
+    {
+      "candidate_id": "ncl-ed91-public-libraries",
+      "title": "國圖91年圖書館年鑑：公共圖書館章",
+      "source_family_candidate": "ncl_yearbook_public_library_chapters",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566106366221617/6e5a9913-4bf0-436e-9fbb-b91b148ca1b7.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566087370545104",
+      "source_sha256": "6b58c1f4432c77bb0fcbea94c2dc0373f1d5f163e080a203b01d74e29b9b0ff4",
+      "source_bytes": 49620616,
+      "source_version_id": "ncl-ed91-public-libraries@sha256:6b58c1f4432c77bb0fcbea94c2dc0373f1d5f163e080a203b01d74e29b9b0ff4",
+      "retrieved_at": "2026-10-28T09:35:53.164539+00:00",
+      "edition_raw": "91年卷",
+      "data_years_verified_for_listed_tables_only": [
+        2001
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            3,
+            4
+          ],
+          "printed_pages": [
+            "73",
+            "74"
+          ],
+          "table_or_section": "表11 臺閩地區公共圖書館統計表（民國90年，含續頁）；表12 國立暨直轄市館經費、館藏與資源使用；表13 縣市鄉鎮館藏資料"
+        }
+      ],
+      "scope": "2001開放／未開放館數及續表、國立／直轄館經費館藏借閱、舊縣市館藏原量位置已核；仍未逐格轉錄，並非全章完成。",
+      "cautions": [
+        "掃描影像，無可靠文字層；開放／未開放及類型欄不可混加。",
+        "資料年依原表標題核定；不以卷號減一年自動填其他表。",
+        "當年行政區和國立／省設／縣市館分類不強轉今日22縣市。",
+        "表12借閱欄原印人而非人次，單位疑義須另核；表13只及原刊所列舊縣市，不宣稱當年所有地域齊全。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_not_ingested",
+      "newness": "previously_catalogued_attachment_newly_acquired_and_table_year_verified",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "優先93卷表16、17、19整批；掃描／字形困難卷先列完整表清單並逐格覆核。"
+    },
+    {
+      "candidate_id": "ncl-ed92-public-libraries",
+      "title": "國圖92年圖書館年鑑：公共圖書館章",
+      "source_family_candidate": "ncl_yearbook_public_library_chapters",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565618826372741/0b1bbc3b-6596-4602-bddc-c0d604ed6785.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565619396807101",
+      "source_sha256": "5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06",
+      "source_bytes": 1129868,
+      "source_version_id": "ncl-ed92-public-libraries@sha256:5e05eba958bd1bb569cc01c8a62138dcfbd40b5ad263908d233e21df1324ce06",
+      "retrieved_at": "2026-10-28T09:35:08.518125+00:00",
+      "edition_raw": "92年卷",
+      "data_years_verified_for_listed_tables_only": [
+        2001,
+        2002
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "printed_pages": [
+            "97",
+            "98",
+            "99",
+            "100"
+          ],
+          "table_or_section": "表5 臺閩地區公共圖書館統計表（民國91年，含續頁）；表6 國立暨直轄館經費、館藏與資源使用；表7 縣市鄉鎮館藏；表8 民國90及91年比較表的已核第100頁"
+        }
+      ],
+      "scope": "2002館數、館藏、國立／直轄館經費與借閱；表8另有2001／2002部分館藏及人力比較。表8只核第100頁，不宣稱後續頁全量完成。",
+      "cautions": [
+        "中文字形映射缺失；第2頁為空白頁，第3頁才是所列統計。",
+        "資料年依原表標題核定；不以卷號減一年自動填其他表。",
+        "當年行政區和國立／省設／縣市館分類不強轉今日22縣市。",
+        "表7館藏總數明列含非書資料，不能改稱純圖書冊數；表6借閱人欄的計數單位仍須核對。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_not_ingested",
+      "newness": "previously_catalogued_attachment_newly_acquired_and_table_year_verified",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "優先93卷表16、17、19整批；掃描／字形困難卷先列完整表清單並逐格覆核。"
+    },
+    {
+      "candidate_id": "ncl-ed92-statistics",
+      "title": "國圖92年圖書館年鑑：圖書館統計章",
+      "source_family_candidate": "ncl_all_type_statistical_chapters",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565619396807101",
+      "source_sha256": "681cace80653b4fb85e5cfb2c6f952152816f54b54ad40f76f9630720364f93e",
+      "source_bytes": 629928,
+      "source_version_id": "ncl-ed92-statistics@sha256:681cace80653b4fb85e5cfb2c6f952152816f54b54ad40f76f9630720364f93e",
+      "retrieved_at": "2026-10-28T09:35:06.139082+00:00",
+      "edition_raw": "92年卷",
+      "data_years_verified_for_listed_tables_only": [],
+      "year_verification_basis": "not yet verified",
+      "locators": [],
+      "scope": "附件已取得；可能包含多類型館，尚未核對可用公共館子群及表內年份。",
+      "cautions": [
+        "不能把全部圖書館類型總計當公共館。",
+        "全文權利與統計事實利用分開。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_table_scope_and_year_pending",
+      "newness": "previously_catalogued_attachment_newly_acquired",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "先列表目錄、資料年及公共館子群，不沿用公共館專章的資料年。"
+    },
+    {
+      "candidate_id": "ncl-ed93-public-libraries",
+      "title": "國圖93年圖書館年鑑：公共圖書館章",
+      "source_family_candidate": "ncl_yearbook_public_library_chapters",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565599956839186/5932209a-a4a1-47aa-9247-0242fcd9167d.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565582148900528",
+      "source_sha256": "c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057",
+      "source_bytes": 173078,
+      "source_version_id": "ncl-ed93-public-libraries@sha256:c50226224241648bd3965e4aa89732583b3b15b99275ab401cf41badc0246057",
+      "retrieved_at": "2026-10-28T09:35:05.374349+00:00",
+      "edition_raw": "93年卷",
+      "data_years_verified_for_listed_tables_only": [
+        2003
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "table_or_section": "表16 國立／直轄館；表17 縣市館藏及經費；表19 人力服務（含續頁）",
+          "printed_pages": [
+            "109",
+            "110",
+            "112",
+            "113"
+          ]
+        }
+      ],
+      "scope": "已核列明原表的資料年與範圍；整章其餘表格尚未全量轉錄。",
+      "cautions": [
+        "保留當年縣市名稱；表16部分經費為跨列合併儲存格，不能重複拆值。",
+        "資料年依原表標題核定；不以卷號減一年自動填其他表。",
+        "當年行政區和國立／省設／縣市館分類不強轉今日22縣市。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_not_ingested",
+      "newness": "previously_catalogued_attachment_newly_acquired_and_table_year_verified",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "優先93卷表16、17、19整批；掃描／字形困難卷先列完整表清單並逐格覆核。"
+    },
+    {
+      "candidate_id": "ncl-ed93-statistics",
+      "title": "國圖93年圖書館年鑑：圖書館統計章",
+      "source_family_candidate": "ncl_all_type_statistical_chapters",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565582148900528",
+      "source_sha256": "df50b5a3d7b2bbe88b2cc15f2a021630ec3123a5a6fd480241884f72e80194f7",
+      "source_bytes": 1883323,
+      "source_version_id": "ncl-ed93-statistics@sha256:df50b5a3d7b2bbe88b2cc15f2a021630ec3123a5a6fd480241884f72e80194f7",
+      "retrieved_at": "2026-10-28T09:35:05.805332+00:00",
+      "edition_raw": "93年卷",
+      "data_years_verified_for_listed_tables_only": [],
+      "year_verification_basis": "not yet verified",
+      "locators": [],
+      "scope": "附件已取得；可能包含多類型館，尚未核對可用公共館子群及表內年份。",
+      "cautions": [
+        "不能把全部圖書館類型總計當公共館。",
+        "全文權利與統計事實利用分開。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_table_scope_and_year_pending",
+      "newness": "previously_catalogued_attachment_newly_acquired",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "先列表目錄、資料年及公共館子群，不沿用公共館專章的資料年。"
+    },
+    {
+      "candidate_id": "ncl-ed94-public-libraries",
+      "title": "國圖94年圖書館年鑑：公共圖書館章",
+      "source_family_candidate": "ncl_yearbook_public_library_chapters",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565582274153586/52feab5e-f333-4195-9e74-4ee3f8f9bd96.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_sha256": "6a33073693212a20a74f9b3cb190e926ca4dfb6f6af988ef0357a2339c253417",
+      "source_bytes": 1574971,
+      "source_version_id": "ncl-ed94-public-libraries@sha256:6a33073693212a20a74f9b3cb190e926ca4dfb6f6af988ef0357a2339c253417",
+      "retrieved_at": "2026-10-28T09:35:05.081655+00:00",
+      "edition_raw": "94年卷",
+      "data_years_verified_for_listed_tables_only": [
+        2004
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            2,
+            3,
+            4
+          ],
+          "printed_pages": [
+            "75",
+            "76",
+            "77"
+          ],
+          "table_or_section": "表7 國立暨直轄市立公共圖書館經費、館藏與資源使用；表8 各縣市暨鄉鎮館藏及購書經費；表9 人員及服務（民國93年）"
+        }
+      ],
+      "scope": "2004國立／直轄館原量、舊縣市館藏及購書經費、人員讀者推廣服務表位置與年份已核，仍未全表轉錄。",
+      "cautions": [
+        "中文字形缺ToUnicode；同表志工可能有每週人次與人數異質單位，不能統一成人。",
+        "資料年依原表標題核定；不以卷號減一年自動填其他表。",
+        "當年行政區和國立／省設／縣市館分類不強轉今日22縣市。",
+        "表8原註基隆館藏與前一年同值並交代經費用途；照原報保留，不當本專案自行沿用補值。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_not_ingested",
+      "newness": "previously_catalogued_attachment_newly_acquired_and_table_year_verified",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "優先93卷表16、17、19整批；掃描／字形困難卷先列完整表清單並逐格覆核。"
+    },
+    {
+      "candidate_id": "ncl-ed94-statistics",
+      "title": "國圖94年圖書館年鑑：圖書館統計章",
+      "source_family_candidate": "ncl_all_type_statistical_chapters",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_bytes": 279122,
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "retrieved_at": "2026-10-28T09:35:04.872725+00:00",
+      "edition_raw": "94年卷",
+      "data_years_verified_for_listed_tables_only": [],
+      "year_verification_basis": "not yet verified",
+      "locators": [],
+      "scope": "附件已取得；可能包含多類型館，尚未核對可用公共館子群及表內年份。",
+      "cautions": [
+        "不能把全部圖書館類型總計當公共館。",
+        "全文權利與統計事實利用分開。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_table_scope_and_year_pending",
+      "newness": "previously_catalogued_attachment_newly_acquired",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "先列表目錄、資料年及公共館子群，不沿用公共館專章的資料年。"
+    },
+    {
+      "candidate_id": "moe-16years-T403",
+      "title": "教育部：近16年我國教育發展統計分析—公立公共圖書館數及圖書借閱人數",
+      "source_family_candidate": "moe_historical_public_library_versions",
+      "official_url": "https://stats.moe.gov.tw/files/ebook/others/year16/T403.xls",
+      "catalogue_url": "https://stats.moe.gov.tw/files/ebook/others/year16/16years.htm",
+      "source_sha256": "c857ed264035666658f7e0ed4ea174e8f1dab67577cdf92456b6e1fa32fc02ea",
+      "source_bytes": 30720,
+      "source_version_id": "moe-16years-T403@sha256:c857ed264035666658f7e0ed4ea174e8f1dab67577cdf92456b6e1fa32fc02ea",
+      "retrieved_at": "2026-10-28T09:37:47.625578+00:00",
+      "edition_raw": "近16年（83–98學年度）專刊，該表年(底)另依原欄",
+      "data_years_verified_for_listed_tables_only": [
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "worksheet": "社3",
+          "header_row": 4,
+          "data_rows": [
+            5,
+            20
+          ],
+          "notes_rows": [
+            21,
+            22
+          ],
+          "table_or_section": "（三）公立公共圖書館數及圖書借閱人數"
+        }
+      ],
+      "scope": "83–98年16個年度、3個數量欄的完整表，另有兩項說明；已以XLS讀取器核對年份及表尾註，不是新增未有的全國年份。",
+      "cautions": [
+        "原表明列含國家圖書館。",
+        "藏書千冊、借閱千人次，與個位原量不可直接接。",
+        "與既有1991–2011主計表年度重疊，價值在來源版本及註腳對照，不算獨立新增業務量。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_not_ingested",
+      "newness": "newly_located_official_original",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "以完整48數量格加16年欄及註腳作版本對照，先檢查是否重刊而非新系列。"
+    },
+    {
+      "candidate_id": "tpml-2012-12",
+      "title": "臺北市立圖書館統計數據：101年12月",
+      "source_family_candidate": "local_publication_statistical_facts",
+      "official_url": "https://www-ws.gov.taipei/Download.ashx?u=LzAwMS9VcGxvYWQvNDMwL3JlbGZpbGUvMjEyOTEvODUwNTI5Ny9hNGU5YjZiMy0wZmNjLTRiMTYtYjc4NS0yMWM1MDlkYzNhMjEucGRm&n=MTAx5bm0MTLmnIgucGRm&icon=..pdf",
+      "catalogue_url": "https://tpml.gov.taipei/News_Content.aspx?n=2E864DF7B9B80664&s=689CD3072F9D3E34&sms=D68D52DD3BA6F406",
+      "source_sha256": "9f82ebabb13d3500aca19bdbc691ffe7d282bf227fac42651009e828cf695d37",
+      "source_bytes": 84331,
+      "source_version_id": "tpml-2012-12@sha256:9f82ebabb13d3500aca19bdbc691ffe7d282bf227fac42651009e828cf695d37",
+      "retrieved_at": "2026-10-28T10:07:14.836317+00:00",
+      "edition_raw": "101年12月",
+      "data_years_verified_for_listed_tables_only": [
+        2012
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            1,
+            2
+          ],
+          "table_or_section": "101年12月館藏、借閱及活動統計",
+          "printed_pages": []
+        }
+      ],
+      "scope": "僅2012年12月的月資料／當月存量；官方頁另列101–105年共60個月份附件線索，但本批只取得12月原件。",
+      "cautions": [
+        "外借與借閱為月值，不可假作2012全年。",
+        "圖書現有冊數與原有／增加／減少分列；分館43內含1總館，不能再加總館。",
+        "使用人數欄是否去重未核，保留原標籤。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_not_ingested",
+      "newness": "newly_located_official_original",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "依已列官方連結完整取得一個年度12個月份；先核流量、存量與電子使用定義，不逕行加總。"
+    },
+    {
+      "candidate_id": "tpml-annual-2012",
+      "title": "臺北市立圖書館年刊101年度",
+      "source_family_candidate": "local_publication_statistical_facts",
+      "official_url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=1c0bb4b5-d7ec-4d5d-af8b-2abc3293a477",
+      "catalogue_url": "https://data.taipei/dataset/detail?id=3e9094de-7dd0-450c-bd86-c9bd23a1e6bd",
+      "source_sha256": "f48181ef72a99a950b5170db63e3449c50c0a3d8d7205e8a5fe24e152dcef1e0",
+      "source_bytes": 5218408,
+      "source_version_id": "tpml-annual-2012@sha256:f48181ef72a99a950b5170db63e3449c50c0a3d8d7205e8a5fe24e152dcef1e0",
+      "retrieved_at": "2026-10-28T10:08:50.953072+00:00",
+      "edition_raw": "101年度",
+      "data_years_verified_for_listed_tables_only": [
+        2011,
+        2012
+      ],
+      "year_verification_basis": "explicit original table year, not publication year",
+      "locators": [
+        {
+          "pdf_pages": [
+            10,
+            11
+          ],
+          "table_or_section": "年度統計：館藏、服務與資源使用",
+          "printed_pages": [
+            "年度統計-2",
+            "年度統計-3"
+          ]
+        },
+        {
+          "pdf_pages": [
+            95
+          ],
+          "table_or_section": "版權頁",
+          "printed_pages": []
+        }
+      ],
+      "scope": "2011／2012年度對照；已核核心原量所在頁，但本批不發布其數值、全文或影像。",
+      "cautions": [
+        "目錄授權資訊列限制公開刊登，PDF版權頁則列轉載須標頁，權利資訊衝突未釐清。",
+        "目錄出版年月2013-04，PDF版權頁2013年5月，兩個原始日期並存，不擇一冒充確定日期。",
+        "PDF同頁視聽總數與按語言分項存有疑義；不得直接改值或強認兩欄同義。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "original_obtained_selected_tables_inspected_rights_hold",
+      "newness": "newly_located_official_original",
+      "rights_status": "conflicting_reuse_statements_pending_review_no_quantitative_publication",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "保留官方入口及原件指紋；權利與定義未覆核前僅作候選，不進公開量化資料。"
+    }
+  ],
+  "not_acquired_or_unresolved": [
+    {
+      "candidate_id": "ncl-ed90-public-libraries",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565869219425034/e0677327-7a5b-4e71-9ba7-a2b5a475cec6.pdf",
+      "acquisition_status": "download_exceeded_explicit_50MB_limit",
+      "source_sha256": null,
+      "data_years_verified_for_listed_tables_only": [],
+      "interpretation": "failed_acquisition_not_evidence_of_no_data",
+      "next_action": "僅在該版本有新增補缺價值時調整取得策略；不重複盲試。"
+    },
+    {
+      "candidate_id": "dgbas-yearbook-ebook-183539",
+      "official_url": "https://ws.dgbas.gov.tw/001/Upload/466/ebook/ebook_183539/pdf/full.pdf",
+      "acquisition_status": "https_certificate_chain_not_completed_for_this_version",
+      "source_sha256": null,
+      "data_years_verified_for_listed_tables_only": [],
+      "interpretation": "failed_acquisition_not_evidence_of_no_data",
+      "next_action": "僅在該版本有新增補缺價值時調整取得策略；不重複盲試。"
+    },
+    {
+      "candidate_id": "yilan-historical-yearbook-catalogue",
+      "official_url": "https://bgacst.e-land.gov.tw/cp.aspx?n=11386&s=6762",
+      "acquisition_status": "official_catalogue_seen_download_mapping_unresolved",
+      "source_sha256": null,
+      "data_years_verified_for_listed_tables_only": [],
+      "next_action": "目錄可見101／102年入口，但目前錨點回頁面本身；須定位真正附件，不把目錄年直接當資料年。"
+    },
+    {
+      "candidate_id": "teric-ncl-ed101-mirror",
+      "official_url": "https://teric.naer.edu.tw/wSite/PDFReader?fileName=1477544448192&format=pdf&xmlId=1894223",
+      "acquisition_status": "official_mirror_reader_seen_not_downloaded",
+      "source_sha256": null,
+      "data_years_verified_for_listed_tables_only": [],
+      "next_action": "101年出版年鑑不能當2012營運量；先與既有101卷原表比對，未確認新增表前不重刊。"
+    },
+    {
+      "candidate_id": "ncl-ed89-catalogue",
+      "official_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565657469156923",
+      "acquisition_status": "catalogue_obtained_exact_chapter_label_not_matched",
+      "source_sha256": null,
+      "data_years_verified_for_listed_tables_only": [],
+      "next_action": "查該卷實際章名與連結；文字標籤未匹配不等於沒有附件。"
+    }
+  ],
+  "bounded_probe": {
+    "path": "research/source-probes/20261028-original-cells.json",
+    "sha256": "b0be261f23c7c6050d3d99ccc8d3c81133228c0068151b02b7cdb798cde416ad",
+    "source_cells": 396,
+    "source_marker_cells": 12,
+    "independent_pdf_engine_numeric_checks": 396,
+    "scope": "Tainan bulletin both tables in full; NTPC2015 table6-2 with its continuation in full. Not all tables in the NTPC yearbook.",
+    "canonical_union_permitted": false
+  },
+  "existing_layer_fingerprints": {
+    "canonical": "d92bb668b333d8ae24ac48362558cf011c8d7f275f1d5f60aec2c7713f702e9e",
+    "local_statistical_cells": "2f3b30127fbf12aa743de1e2844a02681e7a967a8cb1efe7cbdc4a7c83e4335f",
+    "programme_quantities": "503f2e60d56f34ddbcc7c392cb638e8e535676a7d90097331cf2470931cac662"
+  },
+  "completeness_boundary": [
+    "2012完整22縣市核心原量同口徑表仍未取得；所列地方來源只補候選與原格證據。",
+    "2001–2004僅列已核原表的可用性，未因取得整章便宣稱全章整理完成。",
+    "教育部1994–2009為重疊來源版本；主計2010–2024全國表不提供每年22縣市。",
+    "候選年份、存在數值、正式入庫與跨年可比是四個不同狀態。"
+  ],
+  "assistance": {
+    "provider": "gemini",
+    "actual_model": "gemini-3.8-flash-high",
+    "role": "reviewed supplied bounded candidate descriptions only; no independent browsing or PDF verification",
+    "parent_verification": "official HTTP acquisition, original page images, executed Python/XLS and two PDF text engines"
+  },
+  "rights_basis": {
+    "policy": "LICENSE.md",
+    "official_reference": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+    "interpretation": "本專案僅公開選定統計事實、必要標籤與自撰來源索引；不是原件全文授權認證。臺北年刊權利衝突的數值本批不發布。"
+  }
+}

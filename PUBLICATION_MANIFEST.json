@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "version": "0.8.0",
-  "created_at": "2026-10-28T08:44:48.919036+00:00",
+  "created_at": "2026-10-28T10:24:58.918741+00:00",
   "repository": "https://github.com/poplolioi11/tw-public-library-statistics",
   "external_publication": true,
   "publication_profile": "statistical_fields_only",
@@ -307,8 +307,8 @@
     },
     {
       "path": ".github/workflows/check.yml",
-      "sha256": "700e1162f3fcb3ea66e91182427cfa82c9d23138e1fddcb38d385ec01511ec66",
-      "bytes": 2266
+      "sha256": "f68960550c968107d430358cedd85e3c7a0fc15abc0fc24e4f60fdef7bac0852",
+      "bytes": 2402
     },
     {
       "path": ".github/workflows/pages.yml",
@@ -332,13 +332,13 @@
     },
     {
       "path": "AI_USAGE.md",
-      "sha256": "d2f4c8b9f952ed7d32ec8bd524a43aa1cefea8252dff588f905449c7093cc39c",
-      "bytes": 22257
+      "sha256": "7595b0badedad29aab808017aa986355e03480bdc51efeb872d24fee17cd4c42",
+      "bytes": 23228
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "6104477f34bde661e736954fd6789234b7ae7d417c3d4d8837eaee2be61d90a6",
-      "bytes": 12313
+      "sha256": "5eec633e298d4f6439379f6d263d95d4cedaa437e31b8ca4fdb8aa5acfb2271e",
+      "bytes": 13045
     },
     {
       "path": "CITATION.cff",
@@ -352,8 +352,8 @@
     },
     {
       "path": "COVERAGE.md",
-      "sha256": "79006de651e093df442092f2d52a91d9c838e2648b96db7a590f2d28782260bf",
-      "bytes": 9788
+      "sha256": "8353407d8087c0bc82069e7c60652fa907e4b51e743b837c1aeb2346fc3354b0",
+      "bytes": 10515
     },
     {
       "path": "LICENSE",
@@ -362,8 +362,8 @@
     },
     {
       "path": "LICENSE.md",
-      "sha256": "843fbe172c053d9b5fb6d48ae01b566cff439efcfa63c073fa0a717d980e51bc",
-      "bytes": 6817
+      "sha256": "29e843e5e039ee647743b22e70ecc9c7683c52218b95b9ccd05764f9d5e0771a",
+      "bytes": 7695
     },
     {
       "path": "LICENSE_CODE",
@@ -372,8 +372,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "ec4e753d4acca333ce2fa7bda02322a35f00f56aebb868c2dc6dc29bdfb9b3cd",
-      "bytes": 15824
+      "sha256": "6fcb1c7954055e8dfba29718e09ef74a8701d046df516a7ed56ddade8da2ee5f",
+      "bytes": 16240
     },
     {
       "path": "VERSION",
@@ -3427,8 +3427,8 @@
     },
     {
       "path": "docs/PUBLICATION.md",
-      "sha256": "37625e1605063acf37d371a30db9ec3768af6f9419bdcafd53e2f22cce83a6ef",
-      "bytes": 2993
+      "sha256": "8b80cfeb95fae36d063a220ad8dff05d1118528e9454ee551813a6bbc9952a3f",
+      "bytes": 3011
     },
     {
       "path": "docs/derived-field-projections.json",
@@ -3587,13 +3587,18 @@
     },
     {
       "path": "docs/source-backlog.json",
-      "sha256": "d4caf3003eddfd3cff85ec4333081654851a5b8c0764885b3591a39e213b57d6",
-      "bytes": 263042
+      "sha256": "e2df98b4571552edca47dc81831ed3ca22e5d41d8ab2aea1488283b799df1d9b",
+      "bytes": 271885
     },
     {
       "path": "docs/source-backlog.md",
-      "sha256": "774a4d90237c533bd7956dca91c790f1bc1c146a2d0aead92ab2e01fea2a33f4",
-      "bytes": 1976
+      "sha256": "dd678d39cf371b077621177d2220143cc2e395b7c5bb9dcf46452a0ff65e6ad1",
+      "bytes": 2687
+    },
+    {
+      "path": "docs/source-discovery-20261028.json",
+      "sha256": "657c163f509e3187e2e056492cb40d5fa92894226d8acacf8fbce3cee5710d3b",
+      "bytes": 42317
     },
     {
       "path": "llms.txt",
@@ -7261,6 +7266,16 @@
       "bytes": 6663
     },
     {
+      "path": "research/source-discovery-20261028.md",
+      "sha256": "fa5ea00b341a93461edd47662cf3b81bca1bfa3ff365de623e0ad8828075bee2",
+      "bytes": 9833
+    },
+    {
+      "path": "research/source-probes/20261028-original-cells.json",
+      "sha256": "b0be261f23c7c6050d3d99ccc8d3c81133228c0068151b02b7cdb798cde416ad",
+      "bytes": 534120
+    },
+    {
       "path": "research/source-verification.json",
       "sha256": "2a7b4641a8580d94e4630cb46185a236f510d120afede651d7c8282f99825f82",
       "bytes": 23302
@@ -7666,6 +7681,11 @@
       "bytes": 7422
     },
     {
+      "path": "scripts/probe_library_source_tables.py",
+      "sha256": "b50f159cbd64254b1e639a518adac2818389e693b659ec20c028e3003eca59b1",
+      "bytes": 10002
+    },
+    {
       "path": "scripts/record_io.py",
       "sha256": "f13c9adb017201ff01d83f28fc434728cda82c0e6544476b5d94f01a22b1f5ec",
       "bytes": 2311
@@ -7761,6 +7781,11 @@
       "bytes": 4793
     },
     {
+      "path": "scripts/test_source_discovery.py",
+      "sha256": "fa4be784f5ec5b665655324b3867cf017594ead7fee7da3816fe0dd41e575e03",
+      "bytes": 3795
+    },
+    {
       "path": "scripts/test_update_groups.py",
       "sha256": "e4ebac4a0f6384323c9eecbc4749517bf4cfd03507e612ebc56f64b747545264",
       "bytes": 12919
@@ -7794,6 +7819,11 @@
       "path": "scripts/validate_publication.py",
       "sha256": "1065c4ae0bff4cc4c26c64e7ba5221794e17f99bf8b5ce53b91e8a4452f04bed",
       "bytes": 34953
+    },
+    {
+      "path": "scripts/validate_source_discovery.py",
+      "sha256": "8a9b57726c54055329780c408e5645eb5722f2c3644499353eb6051ee8610cac",
+      "bytes": 8002
     },
     {
       "path": "scripts/verify_local_history.py",
@@ -11522,13 +11552,13 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "30b1d8fcac8fa7f5c42a20ed961226f028af8a9d0cf0294c0bb1f37226e0a671",
-      "bytes": 311890
+      "sha256": "5bcc5827448e51b6ecbb9a5e41c1186b6b4590ce298bd20ed5c3834d28caa848",
+      "bytes": 312521
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "22964612ace4ce6d79e9d093c179cc6ab201fd88e10180078ed4c2ab38934471",
-      "bytes": 491268
+      "sha256": "91fe577e616d2b9ce9f7977f1490881235f6bc3545bb9feaba080fb1c078aae2",
+      "bytes": 492312
     }
   ],
   "phase1": {

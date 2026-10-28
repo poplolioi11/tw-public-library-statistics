@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
-  "checked_at": "2026-10-25",
+  "checked_at": "2026-10-28",
   "purpose": "有來源的後續批次清單；完成度優先，不以縣市數量代表完整度。",
   "scope_claims": [
     "2011–2025已完整的是公開10類全國圖表。",
     "2023是目前唯一證實同一6425官方OGDL年度縣市包。",
-    "其他縣市地方統計尚未逐機關核查。",
-    "NCL95–114卷僅所列核心表、公共館子群及明列原文數字；2012縣市核心原量缺口仍存。"
+    "22縣市各4角色的來源入口已查；各機關歷年檔案庫及候選附件尚未窮盡或全量入庫。",
+    "NCL95–114卷僅所列核心表、公共館子群及明列原文數字；2012縣市核心原量缺口仍存。",
+    "2026-10-28新增16份原件與有界396格研究證據見docs/source-discovery-20261028.json；正式v0.8.0觀測與2012全22縣市核心原量缺口不變。"
   ],
   "status_semantics": {
     "completed_bounded_scope": "僅completed_scope所列範圍完整",
@@ -14,7 +15,9 @@
     "todo_source_confirmed": "已定位來源，實際表未完成入庫",
     "todo_catalog_confirmed": "官方目錄可見，下載或授權未完成",
     "unknown_not_checked_by_agency": "尚未逐機關查核，不能等同無資料",
-    "reference_only_mixed_scope": "僅供分類參考，未將混合母體匯入"
+    "reference_only_mixed_scope": "僅供分類參考，未將混合母體匯入",
+    "original_obtained_selected_tables_inspected_not_ingested": "已取得官方原件並核讀列明表格，尚未整批正式分類入庫。",
+    "complete_bounded_table_probes_only": "完整擷取列明原表，只屬研究證據，未加入正式觀測或可比較面板。"
   },
   "constraints": [
     "每批先完成來源分類、授權、完整表、原值與來源定位再擴張。",
@@ -5776,6 +5779,12 @@
             "raw/ncl-2012/source-search-log.json",
             "docs/historical-batches.json"
           ]
+        },
+        {
+          "cohort": "ncl_2001_2004_source_discovery",
+          "scope": "91–94卷公共館章已取得，列明原表確認資料年2001–2004；不等於整章或正式入庫。93卷表16／17／19優先，掃描／缺字形映射卷須逐格覆核。",
+          "status": "originals_obtained_selected_tables_not_formally_ingested",
+          "evidence": "docs/source-discovery-20261028.json"
         }
       ],
       "unknown_scope": [
@@ -5814,7 +5823,8 @@
         "raw/ncl-2023/documents.json",
         "raw/ncl-2024/extraction-validation.json",
         "raw/ncl-2024/documents.json",
-        "raw/ncl-2005/extraction-metadata.json"
+        "raw/ncl-2005/extraction-metadata.json",
+        "docs/source-discovery-20261028.json"
       ],
       "completed_other_layer": [
         {
@@ -5856,7 +5866,8 @@
       "urls": [
         "https://ws.dgbas.gov.tw/public/data/331311404571.pdf",
         "https://ws.dgbas.gov.tw/001/Upload/466/ebook/ebook_88839/pdf/full.pdf",
-        "https://ws.dgbas.gov.tw/public/attachment/211231530971.pdf"
+        "https://ws.dgbas.gov.tw/public/attachment/211231530971.pdf",
+        "https://ws.dgbas.gov.tw/001/Upload/466/relfile/11503/235319/yearbook113.pdf"
       ],
       "completed_scope": {
         "source_editions": [
@@ -5876,7 +5887,8 @@
       },
       "known_not_ingested": [
         "3份PDF中其他領域未匯入，屬有意排除，不能當公共館缺值。",
-        "2005版最後年4格原刊…，保留缺值，不能補成0。"
+        "2005版最後年4格原刊…，保留缺值，不能補成0。",
+        "113年統計年鑑表4-22已核2010–2024全國年度列及2024縣市，千位單位與國家圖書館納入範圍分列，尚未整表入庫。"
       ],
       "unknown_scope": [
         "1991以前、2011以後及其他年報版本的官方公共館歷史表尚未系統盤點。",
@@ -5887,7 +5899,8 @@
       "evidence": [
         "research/ncl-historical-verification.md",
         "research/dgbas-historical-validation.json",
-        "raw/ncl-historical/dgbas-documents.json"
+        "raw/ncl-historical/dgbas-documents.json",
+        "docs/source-discovery-20261028.json"
       ]
     },
     {
@@ -7388,6 +7401,59 @@
         "docs/historical-batches.json",
         "research/ncl-reading-2012-independent-review.json"
       ]
+    },
+    {
+      "family_id": "local_publication_statistical_facts",
+      "owner": "地方政府統計主管機關、文化局及公共圖書館",
+      "status": "complete_bounded_table_probes_only",
+      "urls": [
+        "https://www.culture.ntpc.gov.tw/files/file_pool/1/0g289529270201779637/%E6%96%B0%E5%8C%97%E5%B8%82%E6%94%BF%E5%BA%9C%E6%96%87%E5%8C%96%E5%B1%80104%E5%B9%B4%E5%BA%A6%E7%B5%B1%E8%A8%88%E5%B9%B4%E5%A0%B1.pdf",
+        "https://w3fs.tainan.gov.tw/001/Upload/2/attachment/9368/99/month10505-3.pdf",
+        "https://ws.tycg.gov.tw/Download.ashx?n=MTEw5bm05YWr5pWZ6IKy5paH5YyWLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMTUyL1JlbEZpbGUvMTg1NDcvMTIzOTk2Ny8xMTDlubTlhavmlZnogrLmlofljJYucGRm",
+        "https://khcc.kcg.gov.tw/PhotoData/PIC1030110.pdf",
+        "https://ctrl.chcg.gov.tw/files/%E6%95%99%E8%82%B2%E5%8F%8A%E6%96%87%E5%8C%96-%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%94%B6%E8%97%8F%E5%8F%8A%E5%80%9F%E9%96%B1%E6%A6%82%E6%B3%81%20%20%28110%E5%B9%B47%E6%9C%88%E7%99%BC%E5%B8%83%29-%E8%87%BA%E7%81%A3-%E7%B0%BD%E5%87%86%E7%89%88_16_1100812_2025.pdf",
+        "https://www-ws.gov.taipei/Download.ashx?u=LzAwMS9VcGxvYWQvNDMwL3JlbGZpbGUvMjEyOTEvODUwNTI5Ny9hNGU5YjZiMy0wZmNjLTRiMTYtYjc4NS0yMWM1MDlkYzNhMjEucGRm&n=MTAx5bm0MTLmnIgucGRm&icon=..pdf",
+        "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=1c0bb4b5-d7ec-4d5d-af8b-2abc3293a477"
+      ],
+      "completed_scope": {
+        "formal_observations": 0,
+        "research_probe_cells": 396,
+        "source_ids": [
+          "ntpc-cultural-2015",
+          "tainan-bulletin-10505"
+        ],
+        "completion_statement": "僅新北表6-2含續表、臺南兩表完整原格研究證據；其他原件只及列明核讀位置。"
+      },
+      "known_not_ingested": [
+        "桃園、彰化、高雄原表待整批擷取分類。",
+        "臺北2012年刊權利說明衝突，維持暫停公開量化資料；12月月值另列。"
+      ],
+      "license_scope": "僅選定統計事實、必要標籤及自撰來源索引；原出版品全文授權未認證，不公開原件。",
+      "evidence": [
+        "docs/source-discovery-20261028.json",
+        "research/source-discovery-20261028.md",
+        "research/source-probes/20261028-original-cells.json"
+      ]
+    },
+    {
+      "family_id": "moe_historical_public_library_versions",
+      "owner": "教育部統計處",
+      "status": "original_obtained_selected_tables_inspected_not_ingested",
+      "urls": [
+        "https://stats.moe.gov.tw/files/ebook/others/year16/16years.htm",
+        "https://stats.moe.gov.tw/files/ebook/others/year16/T403.xls"
+      ],
+      "completed_scope": {
+        "formal_observations": 0,
+        "inspection_only": "XLS社3第5–20列確認1994–2009及含國家圖書館註腳，未輸出正式觀測。"
+      },
+      "known_not_ingested": [
+        "年度與現有主計歷史表重疊；須先比對是否重刊及註腳版本，不當新增16缺年。"
+      ],
+      "license_scope": "只作統計事實版本與來源定位；未再散布原XLS。",
+      "evidence": [
+        "docs/source-discovery-20261028.json"
+      ]
     }
   ],
   "backlog": [
@@ -7437,26 +7503,32 @@
     },
     {
       "task_id": "B03",
-      "priority": 3,
+      "priority": 2,
       "status": "partially_completed_known_tables",
       "family_id": "ncl_yearbook_public_library_chapters",
-      "title": "由97年卷往前逐卷完成公共館年度表",
+      "title": "完成已取得94年卷及更早公共館章的核心表",
       "batch_size": "每批一卷，先做章節及表清單，再完成該卷核心表",
       "source_urls": [
         "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565555623845321",
         "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565568411570887",
-        "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565572390216434"
+        "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565572390216434",
+        "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+        "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565582148900528",
+        "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565619396807101",
+        "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566087370545104"
       ],
-      "scope": "依新版官方入口延伸97、96、95年卷；實際資料年逐表核定，不預先扣一年。",
+      "scope": "95–114卷已列批次不變；新取得91–94卷，逐表核定資料年。優先93卷表16、17、19完整批次，再處理掃描／缺字形映射卷。",
       "acceptance": [
         "不能只下載目錄就記為完成統計。",
         "保留舊行政區、國立館另列與公私立分類，不強轉今日22縣市。",
         "無文字層或表格缺漏時如實留unknown，不猜數字。"
       ],
       "unknowns": [
-        "各卷表格數、資料年、文字層與統計完整率尚未逐卷確認。"
+        "各卷其他表數、年份、單位與全章完整率仍未逐格確認。",
+        "91卷掃描、92／94卷中文字形映射影響擷取；資料年僅及已列明原表。"
       ],
-      "completion": "95–114卷已列核心表／子群／原文批次見docs/historical-batches.json；其他卷及2012核心原量缺口維持待查。"
+      "completion": "95–114卷已列核心表／子群／原文批次見docs/historical-batches.json；其他卷及2012核心原量缺口維持待查。",
+      "source_discovery_evidence": "docs/source-discovery-20261028.json"
     },
     {
       "task_id": "B04",
@@ -7513,7 +7585,7 @@
         "https://data.gov.tw/",
         "https://segis.moi.gov.tw/STATCloud/Catalog"
       ],
-      "scope": "其他20縣市及臺中/新竹未涵蓋機關均尚未逐機關查核。",
+      "scope": "22縣市各4角色入口已完成有界查核、440候選分列；各機關完整歷年檔案庫及附件仍待逐批處理，並非全臺資料完成。",
       "acceptance": [
         "先記主管機關、統計主管機關、圖書館與開放平台的實際入口。",
         "有合格來源則取全部可下載表；未找到只記本輪未找到。",
@@ -7531,23 +7603,26 @@
     {
       "task_id": "B07",
       "priority": 5,
-      "status": "todo_official_entry_confirmed",
+      "status": "original_obtained_selected_tables_inspected_not_ingested",
       "family_id": "dgbas_social_indicator_history",
       "title": "盤點1991以前及其他年報版本",
       "batch_size": "先一個確切官方版本的公共館區塊",
       "source_urls": [
         "https://ws.dgbas.gov.tw/public/data/331311404571.pdf",
-        "https://ws.dgbas.gov.tw/001/Upload/466/ebook/ebook_88839/pdf/full.pdf"
+        "https://ws.dgbas.gov.tw/001/Upload/466/ebook/ebook_88839/pdf/full.pdf",
+        "https://ws.dgbas.gov.tw/001/Upload/466/relfile/11503/235319/yearbook113.pdf"
       ],
-      "scope": "沿官方年報入口找更早或較新的可取得歷史指標，不沿用猜測檔名大量探測。",
+      "scope": "原1991以前線索仍待查；113年年鑑表4-22已定位2010–2024全國年度及2024縣市列，下一步全表而非抽樣。",
       "acceptance": [
         "保留版本、每個同年異值與定義註腳。",
         "1998/1999分館排除、早年閱覽/借閱及中英文註差異必須隨值保留。",
         "藏書千冊不能與NCL含非書電子資源的總館藏混接。"
       ],
       "unknowns": [
-        "1991以前可下載版本及2012以後同系列延續情形尚未全面核實。"
-      ]
+        "1991以前的可下載版本仍未補齊。",
+        "113年表含國家圖書館且以千為單位，不能直接與國資圖或其他年代不同定義相接。"
+      ],
+      "source_discovery_evidence": "docs/source-discovery-20261028.json"
     },
     {
       "task_id": "B08",
@@ -7568,6 +7643,38 @@
         "歷年定義是否完全相容仍待逐年認證；實際表已取得。"
       ],
       "completion": "2026-10-25已取得644來源格，460有值、184來源缺值；後續僅按來源更新。"
+    },
+    {
+      "task_id": "B09",
+      "priority": 1,
+      "status": "complete_bounded_table_probes_only",
+      "family_id": "local_publication_statistical_facts",
+      "title": "2012地方官方原量：先完成已取得原表的正式分類",
+      "batch_size": "每批完整一張含續頁原表；新北表6-2先、臺南兩表次之，再桃園／彰化／高雄",
+      "source_urls": [
+        "https://www.culture.ntpc.gov.tw/files/file_pool/1/0g289529270201779637/%E6%96%B0%E5%8C%97%E5%B8%82%E6%94%BF%E5%BA%9C%E6%96%87%E5%8C%96%E5%B1%80104%E5%B9%B4%E5%BA%A6%E7%B5%B1%E8%A8%88%E5%B9%B4%E5%A0%B1.pdf",
+        "https://w3fs.tainan.gov.tw/001/Upload/2/attachment/9368/99/month10505-3.pdf",
+        "https://ws.tycg.gov.tw/Download.ashx?n=MTEw5bm05YWr5pWZ6IKy5paH5YyWLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMTUyL1JlbEZpbGUvMTg1NDcvMTIzOTk2Ny8xMTDlubTlhavmlZnogrLmlofljJYucGRm",
+        "https://ctrl.chcg.gov.tw/files/%E6%95%99%E8%82%B2%E5%8F%8A%E6%96%87%E5%8C%96-%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%94%B6%E8%97%8F%E5%8F%8A%E5%80%9F%E9%96%B1%E6%A6%82%E6%B3%81%20%20%28110%E5%B9%B47%E6%9C%88%E7%99%BC%E5%B8%83%29-%E8%87%BA%E7%81%A3-%E7%B0%BD%E5%87%86%E7%89%88_16_1100812_2025.pdf",
+        "https://khcc.kcg.gov.tw/PhotoData/PIC1030110.pdf"
+      ],
+      "scope": "2012及相鄰年度的地方原量候選；完整22縣市同母體核心表仍未取得，不跨來源拼接。",
+      "acceptance": [
+        "先讀docs/source-discovery-20261028.json及396格完整原格證據，不重新搜尋已定位原件。",
+        "逐格保留官方URL、SHA、PDF／印刷頁、表列欄、原量與缺值。",
+        "新北藏書2010斷點、辦證未知單位與區列未知年；臺南跨年變動；桃園跨頁欄；彰化20／22縣市；高雄原報疑義分開。",
+        "完成原表母體、單位、期間、版本與重複值核對後，才加入正式觀測／定義層並發布資料新版。",
+        "臺北年刊權利衝突不解就維持暫停，不改用下載成功當授權。"
+      ],
+      "unknowns": [
+        "部分縣市可見數值不等於全臺同口徑面板。",
+        "新增原件的整冊其他表、完整歷年及權利尚未全面完成。"
+      ],
+      "evidence": [
+        "research/source-discovery-20261028.md",
+        "docs/source-discovery-20261028.json",
+        "research/source-probes/20261028-original-cells.json"
+      ]
     }
   ],
   "official_yearbook_inventory": {
@@ -7893,32 +8000,49 @@
         "title": "中華民國九十四年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
         "catalog_page": 2,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2004,
+        "ingestion_status": "original_acquired_selected_tables_inspected_not_formally_ingested",
+        "data_years_verified": [
+          2004
+        ],
+        "scope_evidence": "docs/source-discovery-20261028.json；年份僅及列明核讀原表，不代表全章每表。"
       },
       {
         "edition_roc_raw": 93,
         "title": "中華民國九十三年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565582148900528",
         "catalog_page": 2,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2003,
+        "ingestion_status": "original_acquired_selected_tables_inspected_not_formally_ingested",
+        "data_years_verified": [
+          2003
+        ],
+        "scope_evidence": "docs/source-discovery-20261028.json；年份僅及列明核讀原表，不代表全章每表。"
       },
       {
         "edition_roc_raw": 92,
         "title": "中華民國九十二年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565619396807101",
         "catalog_page": 2,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2002,
+        "ingestion_status": "original_acquired_selected_tables_inspected_not_formally_ingested",
+        "data_years_verified": [
+          2001,
+          2002
+        ],
+        "scope_evidence": "docs/source-discovery-20261028.json；年份僅及列明核讀原表，不代表全章每表。"
       },
       {
         "edition_roc_raw": 91,
         "title": "中華民國九十一年圖書館年鑑",
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566087370545104",
         "catalog_page": 2,
-        "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "data_year_verified": 2001,
+        "ingestion_status": "original_acquired_selected_tables_inspected_not_formally_ingested",
+        "data_years_verified": [
+          2001
+        ],
+        "scope_evidence": "docs/source-discovery-20261028.json；年份僅及列明核讀原表，不代表全章每表。"
       },
       {
         "edition_roc_raw": 90,
@@ -7926,7 +8050,8 @@
         "url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565818875133522",
         "catalog_page": 3,
         "data_year_verified": null,
-        "ingestion_status": "catalog_entry_only_not_inspected"
+        "ingestion_status": "public_chapter_link_confirmed_acquisition_exceeded_50MB_limit",
+        "scope_evidence": "docs/source-discovery-20261028.json；未取得完整原件、資料年未知，不等於沒有資料。"
       },
       {
         "edition_roc_raw": 89,

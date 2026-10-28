@@ -201,6 +201,13 @@ source_series_only可作單期原來源事實，不獲得跨年連線許可。�
 
 本次閱覽器改版由主代理執行Python分檔、逐項核對與隔離瀏覽器驗收，原生背景助手協助前端三檔。助手靜態檢查不代替真實資料及瀏覽器驗收；統計值、統計定義與選源器未交由模型重寫。
 
+## 2026-10-28來源研究層不可併入正式入口
+
+`docs/source-discovery-20261028.json`為新取得原件的候選索引；`research/source-probes/20261028-original-cells.json`的396格只是列明三張表的完整擷取證據。`value`使用十進位字串／null，`comparison_permission=none_probe_not_canonical_or_panel`；不可併入既有正式觀測或拿來補接現行折線圖。新北區列`data_year=null`、表內2015脈絡另記；辦證單位null、來源符號null及臺南跨年變動列均不可猜補。臺北年刊權利衝突的數值沒有進此公開層。
+
+主代理以官方HTTP、原頁影像與實際Python核對16份原件SHA及完整396格；PDF使用pdfplumber與PDFium兩種擷取結果核對，不是兩個獨立官方來源。Gemini 3.8 Flash High只查閱提供的候選摘要，協助提示年份／重複風險，未獨立瀏覽或核讀原件。來源與未解口徑見[研究報告](research/source-discovery-20261028.md)。
+
+
 ## 公開副本
 
 可以先讀 `data/by_year/index.json`，按年度取得相同的正式觀測。含無關聯絡欄的原件不再散布，改附數值欄位投影；`source_sha256` 驗原件，`public_evidence_sha256` 驗投影。投影不改統計原值、期間、單位、地理口徑或原件定位。完整來源驗收須先依 README 復原原件；公開副本的離線檢查並不等於重查全部原件。

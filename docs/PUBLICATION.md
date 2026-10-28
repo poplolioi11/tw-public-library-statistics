@@ -11,7 +11,7 @@ raw/omitted-originals.json保留原件網址、雜湊、公開投影位置與被
 
 公開前的完整來源回查記錄於research/source-verification.md；PDF影像抽查範圍仍有明確限制。公開副本離線驗證只確認資料格式、數值不變、分割檔聯集及投影／檔案完整性，不會把省略原件當成已重新下載核對。
 
-分析可直接使用三格式或data/by_year/index.json中的年度分割；不需要下載完整PDF或聯絡欄。公開程式的單元測試均使用合成資料，不需要憑證、私人排程或政府網站連線。
+分析可直接使用三格式或data/by_year/index.json中的年度分割；不需要下載完整PDF或聯絡欄。公開程式的單元測試使用隨包公開檔案或合成案例，不需要憑證、私人排程或政府網站連線。
 
 本版所有derived CSV／JSONL省略original_fields整列副本；統計欄位與列序不變。私有製表檔SHA與公開投影SHA分列docs/derived-field-projections.json，原件source_sha256仍是政府原件。公開前來源驗收綁私有製表CSV；復原原件並重建後才可重跑該驗收，公開投影離線驗證另驗本公開manifest，不假稱兩種衍生檔bytes相同。
 

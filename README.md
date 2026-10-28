@@ -8,6 +8,8 @@
 
 版本 **0.8.0**；資料建置日 **2026-10-26**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.8.0下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.8.0)。
 
+2026-10-28來源擴充：新取得16份官方原件，另附新北／臺南完整396格研究證據；正式資料版本與數值未變。[新增來源、年份及未解限制](research/source-discovery-20261028.md) · [機器來源清單](docs/source-discovery-20261028.json)。這些候選不代表2012全22縣市核心原量已補齊。
+
 本專案先查重再整理。國立公共資訊圖書館已有跨年圖表、國家圖書館已有統計名詞字典，SEGIS 及地方開放資料亦有相關歷年成果。本專案的新增值是**跨來源的統一讀取方式、逐筆來源定位、期間與口徑標記，以及可追溯的內容版本**；不宣稱是第一份跨年統計或第一個名詞字典。查閱[查重報告](research/prior-art.md)及[官方範圍與定義](research/official-scope.md)。
 
 ## 目前收錄什麼
@@ -74,7 +76,7 @@
 
 國資圖 [2026-09-17 公告](https://publibstat.nlpi.edu.tw/Frontend/News/ShareNewsView?NewsID=News000050)另規範現行公開範圍與申請資料用途。既有明確開放版本與新申請資料必須分別處理；本專案不以舊目錄授權推定其他年度或申請資料可再公開。
 
-已提供來源分組、內容雜湊快取、來源版本與更新腳本。更新主入口為 [`scripts/run_update.py`](scripts/run_update.py)，來源／解析查核紀錄見 [research/](research/)；腳本與來源條件以當前版本為準。相同內容保留首次取得時間，複查時間另記；更新失敗保留仍可驗證的前版並標示狀態。維護端採來源分組與定期檢查；下載或複製此專案不會自動啟用排程。
+已提供來源分組、內容雜湊快取、來源版本與更新腳本。更新主入口為 [`scripts/run_update.py`](scripts/run_update.py)，來源／解析查核紀錄見 [research/](research/)；腳本與來源條件以當前版本為準。相同內容保留首次取得時間，複查時間另記；更新失敗保留仍可驗證的前版並標示狀態。維護端每月檢查；沒有資料變動時保持安靜，重要新增、修訂或失敗才通知。公開包不包含私人排程設定，不會因下載而啟用。
 
 重現分析時，請記錄本專案版本、`observation_id`、來源 `source_id`／`source_sha256`，以及所選口徑；對資料表更動保留版本，不覆蓋來源原值。
 
