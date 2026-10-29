@@ -8666,12 +8666,26 @@
     }
   },
   "phase1_inventory": {
-    "version": "0.9.0",
+    "version": "0.9.1",
     "scope": "22 current counties x4 roles; bounded source-entry survey, not exhaustive all-history ingestion",
     "authority_slots": 88,
     "candidates": 440,
     "summary": "docs/phase1-summary.json",
     "supplements": "docs/phase1-supplements.json",
     "cross_year_comparability_certified": false
+  },
+  "metadata_review_20261029": {
+    "data_version": "0.9.1",
+    "year_null_records_reviewed": 467,
+    "year_null_records_remaining": 467,
+    "unit_promotions": {
+      "literal_local_json_headers": 14584,
+      "same_document_explicit_national_electronic_aggregate": 12
+    },
+    "unit_null_records_remaining": 1690,
+    "human_double_collation_completed": false,
+    "report": "docs/metadata-review-20261029.json",
+    "per_record_unit_unresolved": "derived/metadata-unit-unresolved-20261029.jsonl",
+    "per_record_year_decisions": "derived/metadata-year-review-20261029.jsonl"
   }
 }

@@ -171,7 +171,7 @@ ORDER BY data_year, geography;
 
 程式比較兩筆使用`scripts/compare_definitions.py --left layer:ID --right layer:ID`。結果只回答同一原對象能否接續成指定原刊時間序列；不是自動選來源、合計、填補或因果分析。`--operation sum/impute/infer-unique-people/recode-geography/coerce-zero/cross-source-splice`會明確拒絕沒有已驗證規則的操作。SQL用唯讀`annotations`與`comparison_groups` view，內表採字典編碼；SQL scalar值為文字、結構欄為JSON，分析者須依欄定義解析，不能讓失敗轉型變0。
 
-完整三格式傳輸可用gzip；小檔在`docs/phase2-partitions.json`，未解年度分檔不塞回候選年份。官方原件全文仍未隨公開包散布，來源覆核與公版格式驗收是不同範圍。自動選擇預設分析口徑屬第三階段。
+完整三格式傳輸可用gzip；小檔在`docs/phase2-partitions.json`，未解年度分檔不塞回候選年份。官方原件全文仍未隨公開包散布，來源覆核與公版格式驗收是不同範圍。第三階段已提供有界預設選源，見docs/PHASE3.md。
 <!-- END phase2 -->
 
 <!-- BEGIN phase2-ai-disclosure -->
@@ -211,20 +211,26 @@ source_series_only可作單期原來源事實，不獲得跨年連線許可。�
 主代理以官方HTTP、原頁影像與實際Python核對16份原件SHA及完整396格；PDF使用pdfplumber與PDFium兩種擷取結果核對，不是兩個獨立官方來源。Gemini 3.8 Flash High只查閱提供的候選摘要，協助提示年份／重複風險，未獨立瀏覽或核讀原件。來源與未解口徑見[研究報告](research/source-discovery-20261028.md)。
 
 <!-- BEGIN discovered-20261028 -->
-## 本版新增官方原表整批入庫
+## 2026-10-28官方原表入庫批次
 
-v0.9.0新增20,358個原格，來自12份官方原件的完整指定表及續頁。早期年鑑2001–2004、教育部1994–2009、主計2010–2024全國原表，以及新北、臺南、桃園、彰化、高雄和臺北所列原刊分開保存。高雄含表3-2全部52頁、各館年度及12個月；臺北本批僅2012年12月。
+v0.9.1沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的完整指定表及續頁；這不是本次中繼資料修訂新增的觀測。早期年鑑2001–2004、教育部1994–2009、主計2010–2024全國原表，以及新北、臺南、桃園、彰化、高雄和臺北所列原刊分開保存。高雄含表3-2全部52頁、各館年度及12個月；臺北本批僅2012年12月。
 
 新增格包含14,540個數值、427個原刊留白、5,391個原刊符號／複合格；467格期間未確認。原格數不是館數，合計、分項、年合計與月值不得整表相加。原年份不明不填出版年；原件缺值不補0。新北館藏2010前後分段；高雄年度館藏／期刊彙計與借閱率口徑未明，不當年底庫存趨勢。
 
 [完整來源／表格範圍](raw/discovered-20261028/extraction-metadata.json)與[逐筆原格驗收](scripts/validate_discovered_20261028.py)可重跑。各格保留原字串、單位、官方原件URL、SHA、原頁表列欄、版本及公式／分母；讀source_time_reference的JSON可取原表脈絡、合併格與公式等額外來源限定，source_cell_note_raw保留核對方法。369格掃描資料以Apple Vision及AI原圖核讀，沒有宣稱人類逐格雙校；重複OCR不是獨立引擎。
 
-原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl。臺北2012年刊權利衝突及三份跨館型統計章待核子群仍隔離。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
+原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl.gz。臺北2012年刊權利衝突及三份跨館型統計章待核子群仍隔離。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
 
 16個複合／非單一量原格另逐格登錄於scripts/reviewed_non_scalar_literals.json（含原件SHA、原文及定位）。例如主館／括弧分館、各1人、每鄉各2不能任挑一個數字作總量；source_marker及selected_source_missing在這些格表示沒有單一可用純量，不表示原件沒有資料。必須同讀raw_value、原註與該登錄，不推算補值。
 
 沿用每月維護；新增歷史固定原件每365天到期回查，來源與擷取器未變則沿用完整批次。原件更動暫存待覆核、失敗保留前版，不把新下載內容自動當作可公開授權。
 <!-- END discovered-20261028 -->
+
+<!-- BEGIN metadata-review-20261029 -->
+## v0.9.1 單位與來源定位修訂
+
+按固定原件確認14,596筆單位（地方原欄名14,584、同卷全國電子資源合計12），單位缺值由16,286降至1,690。數字、原字串、缺值、識別碼及期間不變；467筆年度缺值已逐組覆核，仍保留未知／跨年狀態。91年卷來源摘要補上第5頁續表。**人工雙校仍未完成**，2012核心原量缺口不推算。見[逐筆修訂與未解清單](docs/metadata-review-20261029.md)。
+<!-- END metadata-review-20261029 -->
 
 ## 公開副本
 
@@ -233,10 +239,11 @@ v0.9.0新增20,358個原格，來自12份官方原件的完整指定表及續頁
 
 完整JSONL與中間元件以gzip無損壓縮，年度JSONL仍是純文字。Python可用 `gzip.open("data/combined/observations.jsonl.gz","rt",encoding="utf-8")` 逐行讀取。解壓後逐位元組SHA另記；gzip檔案SHA與統計內容指紋是不同層，不能互換。
 
-完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。
-
 <!-- BEGIN lightweight-site -->
 ## 輕量網站不是新的分析資料
 
 網站 https://poplolioi11.github.io/tw-public-library-statistics/ 的JSON分檔只投影既有合格圖表，不代表全部76,854個量化紀錄。AI正式分析仍依本文件原讀取入口。畫點值可能沿用第二階段已核單位尺度；`original_value`、`raw_value`、`original_unit`與`facets`仍留原量及口徑。`source_url`／`source_sha256`／`source_locator`／`source_version_id`不改，動態查詢另附`official_url`與重現提示。不得把網站顯示值或內容雜湊檔名誤當官方原件SHA。
 <!-- END lightweight-site -->
+
+
+完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。

@@ -2,7 +2,7 @@
 
 > 整理官方已公開、可驗證來源的公共圖書館統計事實與明確開放資料，支援公眾理解和研究重現。現有官方跨年圖表與名詞字典已存在；本專案不宣稱首創。
 
-版本 0.9.0；建置日 2026-10-28。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.0。
+版本 0.9.1；建置日 2026-10-29。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1。
 
 ## 正式入口
 
@@ -53,30 +53,35 @@ value=null 要看value_status；source_blank是原印留白，not_available_in_s
 <!-- END generated-historical-scope -->
 
 <!-- BEGIN phase1 -->
-第一階段版本 0.9.0：先讀docs/phase1-summary.json與docs/phase1-data-dictionary.json。來源角色、候選與年主題索引不是營運觀測；來源格新層和canonical保持分開。按工作表小量讀取：docs/phase1-source-cell-partitions.json。未知不補值，2012原量缺口保留，跨年可比尚未認證。
+第一階段版本 0.9.1：先讀docs/phase1-summary.json與docs/phase1-data-dictionary.json。來源角色、候選與年主題索引不是營運觀測；來源格新層和canonical保持分開。按工作表小量讀取：docs/phase1-source-cell-partitions.json。未知不補值，2012原量缺口保留，跨年可比尚未認證。
 <!-- END phase1 -->
 
 <!-- BEGIN phase2 -->
-第二階段 v0.9.0：docs/phase2-summary.json與docs/phase2-statuses.json為入口；derived/phase2/annotations.csv.gz、annotations.jsonl.gz及definitions.sqlite是口徑註記，不是新增營運量。按年度小檔：docs/phase2-partitions.json。比較工具scripts/compare_definitions.py；source_series_only/unresolved不准默接，published_panel_limited只限原刊面板，所有原值不變。
+第二階段 v0.9.1：docs/phase2-summary.json與docs/phase2-statuses.json為入口；derived/phase2/annotations.csv.gz、annotations.jsonl.gz及definitions.sqlite是口徑註記，不是新增營運量。按年度小檔：docs/phase2-partitions.json。比較工具scripts/compare_definitions.py；source_series_only/unresolved不准默接，published_panel_limited只限原刊面板，所有原值不變。
 <!-- END phase2 -->
 
 <!-- BEGIN phase3 -->
-第三階段v0.9.0：docs/phase3-question-index.json與docs/PHASE3.md為入口；小檔docs/phase3-partitions.json。scripts/select_sources.py --list / --profile ID / --lookup layer:ID。selected包含missing/unusable；只用drawable=true的edge，不反推2012核心原量。互動折線site/phase3.html#line-charts；完整原刊數列site/phase2.html#line-charts。
+第三階段v0.9.1：docs/phase3-question-index.json與docs/PHASE3.md為入口；小檔docs/phase3-partitions.json。scripts/select_sources.py --list / --profile ID / --lookup layer:ID。selected包含missing/unusable；只用drawable=true的edge，不反推2012核心原量。互動折線site/phase3.html#line-charts；完整原刊數列site/phase2.html#line-charts。
 <!-- END phase3 -->
 
 <!-- BEGIN discovered-20261028 -->
-v0.9.0 complete selected new originals: 20358 canonical cells / 12 documents; raw/discovered-20261028/extraction-metadata.json. Unknown year remains null (467); source_time_reference JSON preserves source context/merged scope/formula; source_cell_note_raw preserves verification method. Historical discovery/probe v0.8 is not another observation layer. No aggregation, imputation or cross-source panel permission.
+v0.9.1 complete selected new originals: 20358 canonical cells / 12 documents; raw/discovered-20261028/extraction-metadata.json. Unknown year remains null (467); source_time_reference JSON preserves source context/merged scope/formula; source_cell_note_raw preserves verification method. Historical discovery/probe v0.8 is not another observation layer. No aggregation, imputation or cross-source panel permission.
 <!-- END discovered-20261028 -->
+
+<!-- BEGIN metadata-review-20261029 -->
+v0.9.1 metadata only: 14596 source-backed unit confirmations, 1690 units remain unresolved; all467 null years reviewed and retained. No numerical, raw-string, missingness, identity or period changes. NCL91 summary now lists PDF5/printed75. No human double collation. Evidence: docs/metadata-review-20261029.json and per-record derived ledgers.
+<!-- END metadata-review-20261029 -->
 
 ## 小量讀取與公開投影
 
 先讀 data/by_year/index.json，再選所需年度JSONL；各年度檔的聯集與canonical相同。docs/PUBLICATION.md說明聯絡欄刪除投影：source_sha256始終是政府原件，public_evidence_sha256另驗公開投影，不可混為同一檔案。公開前完整來源驗收與公開副本離線驗證是不同範圍。
 
-完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。
-
 <!-- BEGIN lightweight-site -->
 ## Public lightweight chart viewer
 
 https://poplolioi11.github.io/tw-public-library-statistics/
-Viewer version 1.0.0; dataset version 0.9.0. Presentation-only chart shards; use the canonical/phase1/phase2/phase3 files for complete analysis. Never infer missing observations from the chart catalog. Every numeric point retains official source URL, source SHA, locator and version. docs/LIGHTWEIGHT_SITE.md describes the projection.
+Viewer version 1.0.0; dataset version 0.9.1. Presentation-only chart shards; use the canonical/phase1/phase2/phase3 files for complete analysis. Never infer missing observations from the chart catalog. Every numeric point retains official source URL, source SHA, locator and version. docs/LIGHTWEIGHT_SITE.md describes the projection.
 <!-- END lightweight-site -->
+
+
+完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。

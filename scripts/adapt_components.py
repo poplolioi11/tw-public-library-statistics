@@ -150,6 +150,10 @@ def main():
   p=ROOT/row['source_snapshot_path']
   if str(p) not in checked_hashes:checked_hashes[str(p)]=hashlib.sha256(p.read_bytes()).hexdigest()
   if checked_hashes[str(p)]!=row['source_sha256']:raise ValueError('Component snapshot mismatch')
+ from metadata_corrections import apply as apply_metadata_corrections
+ metadata_changes=apply_metadata_corrections(records)
+ metadata_path=ROOT/'derived/metadata-corrections-20261029.jsonl'
+ metadata_path.write_text(''.join(json.dumps(r,ensure_ascii=False,separators=(',',':'))+'\n' for r in metadata_changes))
  record_io.write(ROOT,'data/component_records.jsonl',records)
  (ROOT/'data/component_quality.json').write_text(json.dumps({'records':len(records),'local_duplicate_observations_excluded':duplicates,'issues':issues},ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({'records':len(records),'local_duplicate_observations_excluded':duplicates,'issues':len(issues)},ensure_ascii=False))

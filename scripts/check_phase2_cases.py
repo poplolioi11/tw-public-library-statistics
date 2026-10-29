@@ -64,12 +64,27 @@ def review(root,cases_only=False,case_ids=None,skip_cli=False):
     check(len(legacy)==56496,'Frozen legacy quantitative scope count changed',len(legacy))
     expected_total=56496+extension_count
     check(len(raw)==expected_total,'Complete quantitative scope differs from legacy plus accepted original batch',len(raw))
+    # Keep the frozen pre-engine cases intact. Accept only exact, independently
+    # registered unit metadata revisions; no numerical/source/period exception.
+    import metadata_corrections as metadata
+    canonical=[r for key,r in raw.items() if key.startswith('canonical:')]
+    overlays=metadata.validated_overlays(canonical,list(read_rows(root/'derived/metadata-corrections-20261029.jsonl')))
+    report['versioned_unit_metadata_overlays']=[]
     # Fresh selected records; no cached annotation can conceal a method defect.
     selected={}
     for ref in fixtures['record_evidence']:
         key=LAYER_ALIASES[ref['layer']]+':'+ref['observation_id'];row=raw[key]
         for field,want in ref.items():
-            if field in row:check(stable(row[field])==stable(want),'Frozen source record field changed',{'record_key':key,'field':field})
+            if field in row:
+                same=stable(row[field])==stable(want)
+                overlay=overlays.get(row['observation_id']) if key.startswith('canonical:') else None
+                reviewed=bool(not same and overlay and field in metadata.CHANGED_FIELDS
+                    and overlay['source_id']==row['source_id'] and overlay['source_sha256']==row['source_sha256']
+                    and overlay['source_locator']==row['source_locator']
+                    and field in overlay['old'] and stable(overlay['old'][field])==stable(want)
+                    and stable(overlay['new'][field])==stable(row[field]))
+                check(same or reviewed,'Frozen source record field changed',{'record_key':key,'field':field})
+                if reviewed:report['versioned_unit_metadata_overlays'].append({'record_key':key,'field':field,'frozen_value':want,'reviewed_value':row[field],'review_register':'scripts/reviewed_metadata_corrections.json'})
         selected[key]=engine.annotate(key.split(':',1)[0],row,index[key.split(':',1)[0],row['observation_id']])
     refs={r['observation_id']:r for r in fixtures['record_evidence']}
     def case_keys(case):return [LAYER_ALIASES[refs[x]['layer']]+':'+x for x in case['record_ids']]
@@ -191,7 +206,11 @@ def review(root,cases_only=False,case_ids=None,skip_cli=False):
             if len(values)>1:multiple+=1
             for aa,bb in zip(values,values[1:]):check(engine.compare(aa,bb)['status']=='published_panel_limited','Eligible group pair unexpectedly blocked',gid);group_pair_checks+=1
         check(multiple==summary['groups_with_multiple_eligible_periods'],'Independent eligible-period group count differs')
-        check(len(ups)==summary['literal_unit_suffix_upgrades']==14584,'Literal-unit suffix upgrade count changed')
+        canonical_promotions=[r for key,r in raw.items() if key.startswith('canonical:') and r.get('unit_status')=='explicit_original_field_name_unit']
+        check(len(ups)==summary['literal_unit_suffix_upgrades'],'Definition-layer literal unit count changed')
+        check(len(ups)+len(canonical_promotions)==14584,'Reviewed literal units lost across canonical and definition layers')
+        for r in canonical_promotions:
+            check(amap['canonical:'+r['observation_id']]['comparison_unit']==r['unit'],'Canonical original-field unit differs from its comparison unit',r['observation_id'])
         # Full DGBAS published-edition segment checks; no fuzzy source selectors.
         dgbas=collections.defaultdict(list)
         for key,r in raw.items():

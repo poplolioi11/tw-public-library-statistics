@@ -258,9 +258,9 @@ def write_discovered_summary(context):
     if not path.exists():return
     batch=read_json(path);rows=[r for r in context['rows'] if str(r['source_id']).startswith('discovered-')]
     if len(rows)!=batch['canonical_observations_added']:raise ValueError('Documentation requires the complete new source batch')
-    body=f"""## 本版新增官方原表整批入庫
+    body=f"""## 2026-10-28官方原表入庫批次
 
-v{context['summary']['version']}新增{len(rows):,}個原格，來自{batch['source_documents']}份官方原件的完整指定表及續頁。早期年鑑2001–2004、教育部1994–2009、主計2010–2024全國原表，以及新北、臺南、桃園、彰化、高雄和臺北所列原刊分開保存。高雄含表3-2全部52頁、各館年度及12個月；臺北本批僅2012年12月。
+v{context['summary']['version']}沿用2026-10-28已入庫的{len(rows):,}個原格，來自{batch['source_documents']}份官方原件的完整指定表及續頁；這不是本次中繼資料修訂新增的觀測。早期年鑑2001–2004、教育部1994–2009、主計2010–2024全國原表，以及新北、臺南、桃園、彰化、高雄和臺北所列原刊分開保存。高雄含表3-2全部52頁、各館年度及12個月；臺北本批僅2012年12月。
 
 新增格包含{batch['value_statuses'].get('reported',0):,}個數值、{batch['value_statuses'].get('source_blank',0):,}個原刊留白、{batch['value_statuses'].get('source_marker',0):,}個原刊符號／複合格；{batch['unresolved_period_records']:,}格期間未確認。原格數不是館數，合計、分項、年合計與月值不得整表相加。原年份不明不填出版年；原件缺值不補0。新北館藏2010前後分段；高雄年度館藏／期刊彙計與借閱率口徑未明，不當年底庫存趨勢。
 
@@ -288,7 +288,7 @@ def main():
     p=root/'README.md';s=p.read_text();s=re.sub(r'版本 \*\*[^*]+\*\*',f'版本 **{version}**',s);s=re.sub(r'v[\d.]+下載',f'v{version}下載',s);s=re.sub(r'/releases/(tag|download)/v[\d.]+',lambda match:'/releases/'+match.group(1)+'/v'+version,s)
     if summary.get('built_at'):s=re.sub(r'資料建置日 \*\*\d{4}-\d{2}-\d{2}\*\*',f"資料建置日 **{summary['built_at'][:10]}**",s)
     body=description+'\n\n'+source_family_table(context)+'\n\n逐批格數、資料年、版次與指定表／原文範圍見[已覆核歷史批次](docs/historical-batches.md)及[COVERAGE.md](COVERAGE.md)。\n\n'+warning
-    s=replace_between(s,'## 目前收錄什麼','**完整性指',body);p.write_text(s)
+    s=replace_between(s,'## 目前收錄什麼','**完整性指',body);s=s.replace('(#本版新增官方原表整批入庫)','(#2026-10-28官方原表入庫批次)');p.write_text(s)
     p=root/'AI_USAGE.md';s=p.read_text();s=re.sub(r'^目前 [\d,]+ 筆[^\n]+',description.replace('**','')+'「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。',s,flags=re.M)
     s=replace_between(s,'### 來源族群','### 數值與缺值',source_family_table(context,ai=True)+'\n\n'+warning+'\n\n原表、原文數字與閱讀五表的批次範圍見[歷史批次](docs/historical-batches.md)。')
     null_line=f"- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `{context['nulls'].get('not_available_in_source',0)}` 格 `not_available_in_source` 保留明示缺值符號，`{context['nulls'].get('source_blank',0)}` 格 `source_blank` 保留原刊留白，`{context['nulls'].get('source_marker',0)}` 格 `source_marker` 保留原印「無」「未新增」「未統計」等文字狀態；這些文字不自行改成0或推定不適用，均不推算補值。"

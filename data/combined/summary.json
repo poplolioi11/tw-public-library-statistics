@@ -1,11 +1,11 @@
 {
-  "version": "0.9.0",
+  "version": "0.9.1",
   "canonical_jsonl_path": "data/combined/observations.jsonl.gz",
   "jsonl_compression": "gzip",
-  "canonical_uncompressed_sha256": "a6f22bd0c4a4b70e1fc34ff25f09535fa1278eb9081cddb8fcfdbf3c64044f5a",
+  "canonical_uncompressed_sha256": "12d1f08b656bca6d01ca611aa045917289d0c534f1776141a7b486f5ed329322",
   "canonical_csv_path": "data/combined/observations.csv.gz",
   "canonical_sqlite_path": "data/combined/library_statistics.sqlite.gz",
-  "built_at": "2026-10-28T12:06:51.279787+00:00",
+  "built_at": "2026-10-29T02:57:57.792962+00:00",
   "records": 58245,
   "missing_cells": 6922,
   "null_value_status_counts": {
@@ -82,5 +82,5 @@
   },
   "publication_profile": "statistical_fields_only",
   "omitted_contact_original_files": 22,
-  "statistical_content_sha256": "da053af1e00a61ff284380652e614e03e30e2864bcc7101aa7cb5b859a4a4cce"
+  "statistical_content_sha256": "ebdf03d2a75ca7a2208a7098d5f945cb839d7ab6597f8030ecc70838451d7d33"
 }

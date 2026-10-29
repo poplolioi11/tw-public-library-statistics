@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "policy_version": "1.1.0",
-  "reviewed_dataset_version": "0.9.0",
+  "policy_version": "1.1.1",
+  "reviewed_dataset_version": "0.9.1",
   "review_method": "Explicit curator question scopes bound to existing phase2 source/evidence versions; no new raw numerical facts or historical equivalence inferred.",
   "reviewed_sources": [
     {

@@ -1,24 +1,81 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.9.0",
+  "dataset_version": "0.9.1",
   "tables": {
     "record_routes": {
-      "candidate_profile_ids": {
-        "json_types": [
-          "list"
-        ],
-        "present_in_all_records": true
-      },
-      "comparison_group_id": {
+      "record_key": {
         "json_types": [
           "str"
         ],
         "present_in_all_records": true
       },
-      "comparison_month": {
+      "layer": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "observation_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_sha256": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_url": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_locator": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "source_version_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "evidence_id": {
+        "json_types": [
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "raw_value": {
+        "json_types": [
+          "int",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "original_value": {
         "json_types": [
           "NoneType",
-          "int"
+          "float",
+          "int",
+          "str"
+        ],
+        "present_in_all_records": true
+      },
+      "value_status": {
+        "json_types": [
+          "str"
         ],
         "present_in_all_records": true
       },
@@ -42,29 +99,15 @@
         ],
         "present_in_all_records": true
       },
-      "evidence_id": {
-        "json_types": [
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "layer": {
-        "json_types": [
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "observation_id": {
-        "json_types": [
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "original_value": {
+      "comparison_month": {
         "json_types": [
           "NoneType",
-          "float",
-          "int",
+          "int"
+        ],
+        "present_in_all_records": true
+      },
+      "comparison_group_id": {
+        "json_types": [
           "str"
         ],
         "present_in_all_records": true
@@ -75,63 +118,9 @@
         ],
         "present_in_all_records": true
       },
-      "raw_value": {
+      "zero_interpretation": {
         "json_types": [
-          "int",
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "reason_codes": {
-        "json_types": [
-          "list"
-        ],
-        "present_in_all_records": true
-      },
-      "record_key": {
-        "json_types": [
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "route_id": {
-        "json_types": [
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "route_status": {
-        "json_types": [
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "source_id": {
-        "json_types": [
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "source_locator": {
-        "json_types": [
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "source_sha256": {
-        "json_types": [
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "source_url": {
-        "json_types": [
-          "str"
-        ],
-        "present_in_all_records": true
-      },
-      "source_version_id": {
-        "json_types": [
+          "NoneType",
           "str"
         ],
         "present_in_all_records": true
@@ -142,16 +131,27 @@
         ],
         "present_in_all_records": true
       },
-      "value_status": {
+      "route_id": {
         "json_types": [
           "str"
         ],
         "present_in_all_records": true
       },
-      "zero_interpretation": {
+      "candidate_profile_ids": {
         "json_types": [
-          "NoneType",
+          "list"
+        ],
+        "present_in_all_records": true
+      },
+      "route_status": {
+        "json_types": [
           "str"
+        ],
+        "present_in_all_records": true
+      },
+      "reason_codes": {
+        "json_types": [
+          "list"
         ],
         "present_in_all_records": true
       }

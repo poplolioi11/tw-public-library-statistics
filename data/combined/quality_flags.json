@@ -17549,8 +17549,8 @@
       "source_locator": "PDF page 3; printed page 73; table 34; data row 7; column 6; bbox 440.02,360.65,473.43,370.65",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "source_unit_unconfirmed_or_mixed"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-94e71218555acbb42ffe10",
@@ -18908,8 +18908,8 @@
       "source_locator": "PDF page 4; printed page 58; table 18; data row 9; column 6; bbox 422.00,636.80,483.00,648.20",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "source_unit_unconfirmed_or_mixed"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-9e561a5256c34659ce6944",
@@ -20033,8 +20033,8 @@
       "source_locator": "PDF page 4; printed page 62; table 13; data row 9; column 6; bbox 423.00,652.90,483.00,664.30",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "no_uniform_unit_reported"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-8bbf3bac2fd340a32b73a9",
@@ -23948,8 +23948,8 @@
       "source_locator": "PDF page 5; printed page 85; table 28; data row 9; column 6; bbox 423.270,316.227,483.000,327.627",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "no_uniform_unit_reported"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-fdd5d4997f7834a49971f4",
@@ -25577,8 +25577,8 @@
       "source_locator": "PDF page 5; printed page 93; table 27; data row 9; column 7; bbox 421.363,604.639,483.000,616.039",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "no_uniform_unit_reported"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-2f9bab72d57f3f0d15c5d2",
@@ -27296,8 +27296,8 @@
       "source_locator": "PDF page 6; printed page 80; table 19; data row 9; column 7; bbox 421.363,465.338,483.000,476.738",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "no_uniform_unit_reported"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-98df27b7ec399d0b48d975",
@@ -29249,8 +29249,8 @@
       "source_locator": "PDF page 5; printed page 69; table 19; data row 9; column 7; bbox 425.00,574.90,483.00,588.10",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "no_uniform_unit_reported"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-dc5407c2cfc997e9790eeb",
@@ -31193,8 +31193,8 @@
       "source_locator": "PDF page 6; printed page 70; table 15; data row 9; column 7; bbox 425.00,332.10,483.00,345.30",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "no_uniform_unit_reported"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-65fd210eecfbe9d5b56e3f",
@@ -33506,8 +33506,8 @@
       "source_locator": "PDF page 6; printed page 52; table 12; data row 9; column 7; bbox 425.00,332.20,483.00,345.40",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "no_uniform_unit_reported"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-2ea3ad2a8dcb187d3602e2",
@@ -36188,8 +36188,8 @@
       "source_locator": "PDF page 6; printed page 104; table 15; data row 9; column 7; bbox 424.822,333.038,476.950,344.638",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "no_uniform_unit_reported"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-815b223ff0e69b512339ed",
@@ -38186,8 +38186,8 @@
       "source_locator": "PDF page 6; printed page 70; table 13; data row 9; column 7; bbox 421.363,380.975,474.008,392.575",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "no_uniform_unit_reported"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-ec496b2b34ce9f41181c53",
@@ -40202,8 +40202,8 @@
       "source_locator": "PDF page 6; printed page 52; table 12; data row 9; column 7; bbox 424.822,464.714,476.950,476.314",
       "quality_flags": "[\"published_total_overlaps_components\"]",
       "geographic_scope": "national_total",
-      "unit": null,
-      "unit_status": "no_uniform_unit_reported"
+      "unit": "種",
+      "unit_status": "same_source_body_explicit_matching_aggregate"
     },
     {
       "observation_id": "obs-7fdff246b087ef92112401",

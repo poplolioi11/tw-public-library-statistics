@@ -79,6 +79,12 @@ def quantitative_layers(root):
     """Read canonical via its transport profile; never open original-document paths."""
     current, baseline = LayerFingerprint(), LayerFingerprint()
     discovered, identifiers = {}, set()
+    overlay_path=root/'derived/metadata-corrections-20261029.jsonl'
+    overlays={};overlay_rows=[]
+    if overlay_path.is_file():
+        import metadata_corrections
+        ledger=[json.loads(x) for x in overlay_path.read_text().splitlines()]
+        overlays={c['observation_id']:c for c in ledger}
     for row in record_io.rows(root):
         identifier = row.get('observation_id')
         need(isinstance(identifier, str) and identifier and identifier not in identifiers, 'duplicate or missing canonical observation ID')
@@ -87,7 +93,11 @@ def quantitative_layers(root):
         if str(row.get('source_id') or '').startswith('discovered-'):
             discovered[identifier] = row
         else:
-            baseline.add(row)
+            if identifier in overlays:
+                overlay_rows.append(row)
+                baseline.add({**row,**overlays[identifier]['old']})
+            else:baseline.add(row)
+    if overlays:metadata_corrections.validated_overlays(overlay_rows,ledger)
     current_layers = {'canonical': current.finish()}
     baseline_layers = {'canonical': baseline.finish()}
     for layer, relative in OTHER_LAYERS.items():

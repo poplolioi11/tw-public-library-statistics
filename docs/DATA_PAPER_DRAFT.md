@@ -1,12 +1,12 @@
 # 臺灣公共圖書館公開統計的來源可追溯整理：版本、口徑與缺值保留
 
-**資料說明稿／data paper草稿；未投稿、未經同儕審查。** 本文描述固定資料版本v0.9.0，不代表已獲期刊接受、官方認證或已有外部採用。作者：曲宸宇（Chu, Chen-Yu）；[ORCID](https://orcid.org/0009-0003-9738-6914)。撰稿日期：2026-10-28。
+**資料說明稿／data paper草稿；未投稿、未經同儕審查。** 本文描述固定資料版本v0.9.1，不代表已獲期刊接受、官方認證或已有外部採用。作者：曲宸宇（Chu, Chen-Yu）；[ORCID](https://orcid.org/0009-0003-9738-6914)。撰稿日期：2026-10-29。
 
 English title: *A source-traceable compilation of Taiwan public-library statistics with explicit versions, scope and missingness.*
 
 ## 摘要
 
-臺灣公共圖書館的公開統計分散於官方圖表、開放資料、統計年鑑及地方刊物。相近欄名可能採不同母體、行政區、單位或期間，直接接續數列容易造成誤解。本資料集將原報統計事實整理為可由CSV、JSONL及SQLite讀取的觀測，逐筆保留官方網址、原件指紋、原表位置、原始字串、版本及可確認的口徑。v0.9.0主資料為58,245筆來源觀測；另有18,486個地方統計格及123個計畫數量格分層保存。定義與選源註記不當成新增業務量。資料保留缺值及未解條件，支援限定原刊範圍的比較，並以來源連結圖表協助查閱。2012年完整22縣市核心原量表仍缺，掃描轉錄未經人工雙校。本文說明可重現的整理方法及再利用界線，不宣稱形成完整、同口徑的全臺歷年面板。
+臺灣公共圖書館的公開統計分散於官方圖表、開放資料、統計年鑑及地方刊物。相近欄名可能採不同母體、行政區、單位或期間，直接接續數列容易造成誤解。本資料集將原報統計事實整理為可由CSV、JSONL及SQLite讀取的觀測，逐筆保留官方網址、原件指紋、原表位置、原始字串、版本及可確認的口徑。v0.9.1主資料為58,245筆來源觀測；另有18,486個地方統計格及123個計畫數量格分層保存。定義與選源註記不當成新增業務量。資料保留缺值及未解條件，支援限定原刊範圍的比較，並以來源連結圖表協助查閱。2012年完整22縣市核心原量表仍缺，掃描轉錄未經人工雙校。本文說明可重現的整理方法及再利用界線，不宣稱形成完整、同口徑的全臺歷年面板。
 
 關鍵詞：公共圖書館；臺灣；開放資料；資料來源追溯；統計口徑；歷史統計；缺值。
 
@@ -20,9 +20,9 @@ English title: *A source-traceable compilation of Taiwan public-library statisti
 
 主要來源為[國立公共資訊圖書館公開統計](https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation)、[2023年明列開放資源6425](https://data.gov.tw/dataset/6425)、[國家圖書館年鑑](https://www.ncl.edu.tw/librarianship-yearbook)、主計總處統計及查詢表、教育部歷史統計與已列明的地方官方資料。逐件URL、指紋、原表及實際涵蓋年度以[歷史批次清單](historical-batches.json)、[來源清單](../data/combined/sources.json)及[覆蓋範圍](../COVERAGE.md)為準；出版年不自動視為資料年。
 
-v0.9.0主資料包括不同版次的原報值、總計、分項、年表、月表與缺值，因此58,245不是圖書館間數，也不是可加總的總量。第二階段另為三個原始層共76,854筆量化紀錄提供定義註記；這個筆數等於58,245主資料、18,486地方統計格及123計畫數量格的分層紀錄數，不是營運統計指標。
+v0.9.1主資料包括不同版次的原報值、總計、分項、年表、月表與缺值，因此58,245不是圖書館間數，也不是可加總的總量。第二階段另為三個原始層共76,854筆量化紀錄提供定義註記；這個筆數等於58,245主資料、18,486地方統計格及123計畫數量格的分層紀錄數，不是營運統計指標。
 
-本版新增批次取自12份原件的完整指定表及續頁，共20,358個來源位置，其中14,540有數值、427原刊留白、5,391為符號或複合格，467格期間未確認。完整性只及[逐表範圍](../raw/discovered-20261028/extraction-metadata.json)，不擴張為整本刊物或所有縣市歷年完整。合併數字格只記一次；分欄畫叉區域所保留的空白位置亦不冒充多個實測量。
+v0.9.1入庫且本版沿用的批次取自12份原件的完整指定表及續頁，共20,358個來源位置，其中14,540有數值、427原刊留白、5,391為符號或複合格，467格期間未確認。完整性只及[逐表範圍](../raw/discovered-20261028/extraction-metadata.json)，不擴張為整本刊物或所有縣市歷年完整。合併數字格只記一次；分欄畫叉區域所保留的空白位置亦不冒充多個實測量。
 
 ## 3. 整理與版本方法
 
@@ -40,16 +40,20 @@ v0.9.0主資料包括不同版次的原報值、總計、分項、年表、月�
 |---|---|---|
 | 來源與擷取 | 固定原件SHA、原頁表列欄；文字PDF的列明表格以兩種擷取結果核對；試算表另核原欄頭、單位及期間。 | 同一原件的兩個擷取器不是兩個官方來源，也不能保證原始填報正確。 |
 | 掃描轉錄 | 新批次369格使用Apple Vision OCR及AI原圖核讀，保留修正與辨識失敗證據。 | 未經人工雙校，沒有以人工核定全集估計字元或數值錯誤率。 |
-| 結構與內容 | 三格式、缺值、逐筆來源、原值保護及版本指紋檢查；新增批次入庫前後，原有37,887筆觀測逐筆全欄保持一致。 | 程式與雜湊通過不等於文字辨識無誤、語義一致或官方背書。 |
+| 結構與內容 | 三格式、缺值、逐筆來源、原值保護及版本指紋檢查；v0.9.1入庫時，原有37,887筆觀測逐筆全欄保持一致；v0.9.1的單位中繼資料變更另附逐筆證據。 | 程式與雜湊通過不等於文字辨識無誤、語義一致或官方背書。 |
 | 定義與呈現 | 來源證據卡、拒用規則、限定原刊比較及選源決策；圖表點值與來源連結檢查。 | `published_panel_limited`不認證全歷史填報方法相同，也不准任意跨來源接續。 |
 
 整理過程使用AI協助擷取程式、原圖核讀、差異提示與文字審閱，由主代理回查來源及實際運算。模型角色與已知限制見[AI_USAGE](../AI_USAGE.md)；模型彼此一致不作獨立來源驗證。需要更高信賴度的研究，應回查實際使用的原件與格位；下一步可優先為369個掃描格建立兩位獨立人工讀值及分歧裁決紀錄，完成前不標為人工雙校。
 
+### 本版單位中繼資料覆核
+
+本輪依原欄名及同卷限定的全國合計正文確認14,596筆單位，逐筆保留證據與版本差異；數值、原字串、缺值及期間不變。467筆年度缺值覆核後保留，1,690筆單位仍未知。這是來源限定的中繼資料確認，不是跨年口徑認證或新增人工雙校。詳[修訂證據](metadata-review-20261029.md)。
+
 ## 5. 取用、引用與權利
 
-[固定v0.9.0 Release](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.0)提供公開ZIP、三種正式格式及校驗碼；固定程式版本為[f8bf0e35](https://github.com/poplolioi11/tw-public-library-statistics/commit/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6)。[圖表網站](https://poplolioi11.github.io/tw-public-library-statistics/)適合查閱與分享，完整分析入口仍是正式資料及其結構說明。圖表分檔不是另一批觀測。
+[固定v0.9.1 Release](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1)提供公開ZIP、三種正式格式及校驗碼；固定程式版本見[v0.9.1標籤](https://github.com/poplolioi11/tw-public-library-statistics/tree/v0.9.1)。[圖表網站](https://poplolioi11.github.io/tw-public-library-statistics/)適合查閱與分享，完整分析入口仍是正式資料及其結構說明。圖表分檔不是另一批觀測。
 
-引用範例：曲宸宇（Chu, Chen-Yu）（2026）。《臺灣公共圖書館跨年度統計》（v0.9.0）[資料集]。GitHub。https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.0 。另列實際使用的官方原表、年度及所選口徑。機器引用資訊見[CITATION.cff](../CITATION.cff)；目前該檔未登錄DOI，不將尚未讀回的Zenodo紀錄當成已完成封存。
+引用範例：曲宸宇（Chu, Chen-Yu）（2026）。《臺灣公共圖書館跨年度統計》（v0.9.1）[資料集]。GitHub。https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1 。另列實際使用的官方原表、年度及所選口徑。機器引用資訊見[CITATION.cff](../CITATION.cff)；目前該檔未登錄DOI，不將尚未讀回的Zenodo紀錄當成已完成封存。
 
 程式及自撰說明採MIT，資料按來源標記權利；不能把整包概稱為同一授權。公開包提供統計事實及必要投影，不散布權利未確認的專章全文、版面影像或無關聯絡欄。原件SHA與投影SHA分開。[授權說明](../LICENSE.md)保留各來源及適用判斷，不能由技術下載成功推定可以再公開整份原件。
 
@@ -63,6 +67,6 @@ v0.9.0主資料包括不同版次的原報值、總計、分項、年表、月�
 
 1. 國立公共資訊圖書館。[公共圖書館統計重要資訊](https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation)及[開放資料6425](https://data.gov.tw/dataset/6425)。本版採用範圍以固定來源紀錄為準。
 2. 國家圖書館。[圖書館年鑑](https://www.ncl.edu.tw/librarianship-yearbook)。各卷資料年、原表、署名及權利分別記錄。
-3. 曲宸宇。v0.9.0[覆蓋範圍](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/COVERAGE.md)、[來源批次](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/docs/historical-batches.json)及[新增批次驗收](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/research/discovered-20261028-ingestion-review.json)。
+3. 曲宸宇。v0.9.1[覆蓋範圍](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/COVERAGE.md)、[來源批次](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/docs/historical-batches.json)及[新增批次驗收](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/research/discovered-20261028-ingestion-review.json)。
 
 正式投稿前，尚需由作者逐項確認目標期刊格式、實際重用案例、來源書目完整性及人工覆核計畫；本稿不代表這些工作已完成。

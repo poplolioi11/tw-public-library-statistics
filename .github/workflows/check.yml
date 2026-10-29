@@ -51,5 +51,8 @@ jobs:
       - name: Check all lazy website charts, source links and initial byte budget
         run: python scripts/validate_lightweight_site.py
 
+      - name: Validate source-bound unit metadata corrections
+        run: python scripts/audit_metadata_corrections.py
+
       - name: Validate source-discovery boundaries without original downloads
         run: python scripts/validate_source_discovery.py
