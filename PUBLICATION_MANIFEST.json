@@ -371,9 +371,14 @@
       "bytes": 1129
     },
     {
+      "path": "README.en.md",
+      "sha256": "bb7ae833ec0d7c9152112dc769b1467852b5b0e5036a50488484a5ae673caa90",
+      "bytes": 31474
+    },
+    {
       "path": "README.md",
-      "sha256": "8f711820f15571bbae87373d430ae7162acd73c866726e12dc7215c7e194e44b",
-      "bytes": 22600
+      "sha256": "1aeb95f060f5c1b4f298235a75ec60134b9d3cc012c6fab6ad261c6370fd590f",
+      "bytes": 25261
     },
     {
       "path": "VERSION",
@@ -19697,13 +19702,13 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "634aa8226ee7ba18360f37e12e48a70e5d66c6ea727e02436b6bdcae2f6eced1",
-      "bytes": 556981
+      "sha256": "be40494485b6a461ec10d2522cf17b87f16b8248a3f78fb1c860e6bb62a6c9dc",
+      "bytes": 557060
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "d812a7ddf84b4398068493eb8dcb1c2547d41a69d63a2f640797af913777a654",
-      "bytes": 849231
+      "sha256": "aa333a8118171c32fe86084d4165d5066bebc806400f0b2cecfa6e0708588162",
+      "bytes": 849379
     }
   ],
   "phase1": {

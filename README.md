@@ -1,3 +1,33 @@
+# Taiwan Public Library Statistics · 臺灣公共圖書館統計
+
+**Explore library collections, circulation, counts, and services—and trace each value back to its official source.**
+
+**查館藏、借閱、館數與服務統計，並追溯每個數字的官方來源。** 提供互動圖表與 CSV／JSONL／SQLite 資料。
+
+[English documentation](README.en.md) · [完整中文說明](#完整中文說明) · [**Open explorer｜開啟圖表**](https://poplolioi11.github.io/tw-public-library-statistics/) · [Downloads｜完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1)
+
+## Start with a question｜從一個問題開始
+
+| Question｜問題 | Open｜入口 |
+| --- | --- |
+| How did national book circulation change in 2020–2024?<br>2020–2024 年全國圖書借閱冊數如何變化？ | [Book-loan chart｜借閱折線圖](https://poplolioi11.github.io/tw-public-library-statistics/?profile=national-ncl-book-loans-panel&from=2020&to=2024) |
+| Where can I find county/city library counts?<br>哪裡能查縣市歷年館數？ | [DGBAS series｜主計口徑館數](https://poplolioi11.github.io/tw-public-library-statistics/?profile=county-library-count-dgbas&entity=%E8%87%BA%E5%8D%97%E5%B8%82) |
+| Can I analyze the data myself?<br>我可以自行分析或交給 AI 使用嗎？ | [CSV](data/combined/observations.csv.gz) · [JSONL](data/combined/observations.jsonl.gz) · [SQLite](data/combined/library_statistics.sqlite.gz) · [Guide｜讀取指南](AI_USAGE.md) |
+
+The linked data files are gzip-compressed; the [release](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1) also provides decompressed CSV and SQLite files. For analysis, use the formal observations in `data/combined/`.<br>
+上列資料以 gzip 壓縮；Release 另有解壓後的 CSV 與 SQLite。分析請使用 `data/combined/` 的正式觀測入口。
+
+**Read before comparing:** historical gaps and differences in definitions remain. Missing values are not zero, and source selection does not certify comparability across years. Human sample reading and independent double-checking are incomplete.<br>
+**比較前先確認：**歷年仍有缺口與口徑差異，缺值不是零；選到來源不等於跨年可比，人工抽樣核讀與雙校仍未完成。
+
+Data **v0.9.1** · [Coverage｜完整度與缺口](COVERAGE.md) · [Citation｜引用](CITATION.cff) · [Version DOI](https://doi.org/10.5281/zenodo.23788194)
+
+**Themes｜主題：** Taiwan／臺灣 · Public libraries／公共圖書館 · Open data／開放資料 · Data provenance／資料溯源
+
+---
+
+<a id="完整中文說明"></a>
+
 # 臺灣公共圖書館跨年度統計
 
 [![資料與程式檢查](https://github.com/poplolioi11/tw-public-library-statistics/actions/workflows/check.yml/badge.svg)](https://github.com/poplolioi11/tw-public-library-statistics/actions/workflows/check.yml)
