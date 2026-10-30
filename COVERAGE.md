@@ -112,3 +112,7 @@ v0.9.1有22個明確母體／用途的預設問題，完整路由76,854筆既有
 
 
 完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。
+
+<!-- BEGIN human-review-status -->
+文件狀態核對：2026-10-30；資料仍為v0.9.1。**人工抽樣核讀與雙校尚未完成**，沒有預填人工讀值、錯誤率或模型準確率。程式、原件雜湊及AI原圖核對不替代人工參考。[目前待辦與已完成範圍](docs/source-backlog.md)另列；固定引用見[CITATION.cff](CITATION.cff)。
+<!-- END human-review-status -->

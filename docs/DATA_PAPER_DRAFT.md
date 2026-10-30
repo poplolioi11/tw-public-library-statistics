@@ -1,6 +1,6 @@
 # 臺灣公共圖書館公開統計的來源可追溯整理：版本、口徑與缺值保留
 
-**資料說明稿／data paper草稿；未投稿、未經同儕審查。** 本文描述固定資料版本v0.9.1，不代表已獲期刊接受、官方認證或已有外部採用。作者：曲宸宇（Chu, Chen-Yu）；[ORCID](https://orcid.org/0009-0003-9738-6914)。撰稿日期：2026-10-29。
+**資料說明稿／data paper草稿；未投稿、未經同儕審查。** 本文描述固定資料版本v0.9.1，不代表已獲期刊接受、官方認證或已有外部採用。作者：曲宸宇（Chu, Chen-Yu）；[ORCID](https://orcid.org/0009-0003-9738-6914)。撰稿日期：2026-10-29；文件修訂：2026-10-30（資料版本仍為v0.9.1）。
 
 English title: *A source-traceable compilation of Taiwan public-library statistics with explicit versions, scope and missingness.*
 
@@ -22,7 +22,7 @@ English title: *A source-traceable compilation of Taiwan public-library statisti
 
 v0.9.1主資料包括不同版次的原報值、總計、分項、年表、月表與缺值，因此58,245不是圖書館間數，也不是可加總的總量。第二階段另為三個原始層共76,854筆量化紀錄提供定義註記；這個筆數等於58,245主資料、18,486地方統計格及123計畫數量格的分層紀錄數，不是營運統計指標。
 
-v0.9.1入庫且本版沿用的批次取自12份原件的完整指定表及續頁，共20,358個來源位置，其中14,540有數值、427原刊留白、5,391為符號或複合格，467格期間未確認。完整性只及[逐表範圍](../raw/discovered-20261028/extraction-metadata.json)，不擴張為整本刊物或所有縣市歷年完整。合併數字格只記一次；分欄畫叉區域所保留的空白位置亦不冒充多個實測量。
+2026-10-28於v0.9.0入庫、v0.9.1沿用的批次取自12份原件的完整指定表及續頁，共20,358個來源位置，其中14,540有數值、427原刊留白、5,391為符號或複合格，467格期間未確認。完整性只及[逐表範圍](../raw/discovered-20261028/extraction-metadata.json)，不擴張為整本刊物或所有縣市歷年完整。合併數字格只記一次；分欄畫叉區域所保留的空白位置亦不冒充多個實測量。
 
 ## 3. 整理與版本方法
 
@@ -40,10 +40,12 @@ v0.9.1入庫且本版沿用的批次取自12份原件的完整指定表及續頁
 |---|---|---|
 | 來源與擷取 | 固定原件SHA、原頁表列欄；文字PDF的列明表格以兩種擷取結果核對；試算表另核原欄頭、單位及期間。 | 同一原件的兩個擷取器不是兩個官方來源，也不能保證原始填報正確。 |
 | 掃描轉錄 | 新批次369格使用Apple Vision OCR及AI原圖核讀，保留修正與辨識失敗證據。 | 未經人工雙校，沒有以人工核定全集估計字元或數值錯誤率。 |
-| 結構與內容 | 三格式、缺值、逐筆來源、原值保護及版本指紋檢查；v0.9.1入庫時，原有37,887筆觀測逐筆全欄保持一致；v0.9.1的單位中繼資料變更另附逐筆證據。 | 程式與雜湊通過不等於文字辨識無誤、語義一致或官方背書。 |
+| 結構與內容 | 三格式、缺值、逐筆來源、原值保護及版本指紋檢查；v0.9.0入庫時，原有37,887筆觀測逐筆全欄保持一致；v0.9.1的單位中繼資料變更另附逐筆證據。 | 程式與雜湊通過不等於文字辨識無誤、語義一致或官方背書。 |
 | 定義與呈現 | 來源證據卡、拒用規則、限定原刊比較及選源決策；圖表點值與來源連結檢查。 | `published_panel_limited`不認證全歷史填報方法相同，也不准任意跨來源接續。 |
 
 整理過程使用AI協助擷取程式、原圖核讀、差異提示與文字審閱，由主代理回查來源及實際運算。模型角色與已知限制見[AI_USAGE](../AI_USAGE.md)；模型彼此一致不作獨立來源驗證。需要更高信賴度的研究，應回查實際使用的原件與格位；下一步可優先為369個掃描格建立兩位獨立人工讀值及分歧裁決紀錄，完成前不標為人工雙校。
+
+截至2026-10-30文件修訂，**人工抽樣核讀與人工雙校均尚未完成**；沒有可據以計算的人工核讀結果，也未填入人工錯誤率或模型準確率。抽樣清單或測試流程備妥不等於人工驗證完成。
 
 ### 本版單位中繼資料覆核
 
@@ -67,6 +69,7 @@ v0.9.1入庫且本版沿用的批次取自12份原件的完整指定表及續頁
 
 1. 國立公共資訊圖書館。[公共圖書館統計重要資訊](https://publibstat.nlpi.edu.tw/Frontend/Dynamic/ImportantInfomation)及[開放資料6425](https://data.gov.tw/dataset/6425)。本版採用範圍以固定來源紀錄為準。
 2. 國家圖書館。[圖書館年鑑](https://www.ncl.edu.tw/librarianship-yearbook)。各卷資料年、原表、署名及權利分別記錄。
-3. 曲宸宇。v0.9.1[覆蓋範圍](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/COVERAGE.md)、[來源批次](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/docs/historical-batches.json)及[新增批次驗收](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/research/discovered-20261028-ingestion-review.json)。
+3. 曲宸宇。固定v0.9.1的[覆蓋範圍](https://github.com/poplolioi11/tw-public-library-statistics/blob/4c4e656d94598627c364a49beb967ec437dff037/COVERAGE.md)、[來源批次](https://github.com/poplolioi11/tw-public-library-statistics/blob/4c4e656d94598627c364a49beb967ec437dff037/docs/historical-batches.json)及[中繼資料修訂證據](https://github.com/poplolioi11/tw-public-library-statistics/blob/4c4e656d94598627c364a49beb967ec437dff037/docs/metadata-review-20261029.md)。
+4. 曲宸宇。固定v0.9.0的[原始入庫驗收](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/research/discovered-20261028-ingestion-review.json)。這是20,358格的歷史入庫證據，不改寫成v0.9.1驗收。
 
 正式投稿前，尚需由作者逐項確認目標期刊格式、實際重用案例、來源書目完整性及人工覆核計畫；本稿不代表這些工作已完成。

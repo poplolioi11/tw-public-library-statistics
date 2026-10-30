@@ -249,8 +249,15 @@ def update_backlog(context):
         latest=read_json(catalogue_check)
         inventory['catalogue_front_page_check']={k:latest[k] for k in ('url','final_url','retrieved_at','sha256','entry_links')}
         inventory['catalogue_front_page_check']['scope']='本輪首頁可見12個入口，首項114卷；未見後續卷不代表官方不存在，也不把卷號當資料年。'
+    batch_path=root/'raw/discovered-20261028/extraction-metadata.json'
+    if batch_path.exists():
+        from backlog_ingestion_status import reconcile
+        reconcile(backlog,context['rows'],read_json(batch_path))
     write_json(path,backlog)
     lines=['# 來源分組待辦','','以[source-backlog.json](source-backlog.json)為機器主檔；[歷史批次](historical-batches.md)依registry與實際觀測產生。完成只及列明範圍，未查不表示無資料。','',f'B01與B08維持已完成指定範圍。年鑑{span}的已列核心表、公共館子群與原文數字已整理；{unknown}仍待查。', '',historical_warning(context),'','2012本輪已查公共館章、統計章、評鑑章、國資圖舊連結及閱讀報告；評鑑達標數排除，失敗舊附件已找到官網新網址。仍未取得的22縣市核心原量表不推稱不存在。其他來源的授權與更新政策維持各族群原記錄。','']
+    if backlog.get('status_reconciliation'):
+        from backlog_ingestion_status import markdown_rows
+        lines += markdown_rows(backlog)
     (root/'docs/source-backlog.md').write_text('\n'.join(lines))
 
 def write_discovered_summary(context):

@@ -14,6 +14,10 @@
 
 **使用前先知道：**資料仍有歷年缺口，部分來源口徑不同；掃描年鑑轉錄未經人工雙校。圖表與原報值的詳細界線見[完整度與缺口](COVERAGE.md)及[比較規則](#比較前先確認口徑)。
 
+<!-- BEGIN human-review-status -->
+文件狀態核對：2026-10-30；資料仍為v0.9.1。**人工抽樣核讀與雙校尚未完成**，沒有預填人工讀值、錯誤率或模型準確率。程式、原件雜湊及AI原圖核對不替代人工參考。[目前待辦與已完成範圍](docs/source-backlog.md)另列；固定引用見[CITATION.cff](CITATION.cff)。
+<!-- END human-review-status -->
+
 ## 版本、引用與方法
 
 版本 **0.9.1**；資料建置日 **2026-10-29**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.9.1下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1)。

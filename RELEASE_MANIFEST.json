@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "version": "0.9.1",
-  "created_at": "2026-10-29T03:06:43.586448+00:00",
+  "created_at": "2026-10-30T00:54:13.560604+00:00",
   "repository": "https://github.com/poplolioi11/tw-public-library-statistics",
   "external_publication": true,
   "publication_profile": "statistical_fields_only",
@@ -332,13 +332,13 @@
     },
     {
       "path": "AI_USAGE.md",
-      "sha256": "30b625d9be1fa274b23d7452f9b131196dae3641f2b13ba2da80b4fba3819dd6",
-      "bytes": 27015
+      "sha256": "9751cc522a5d6575dffee1a9c1d5c2f172beb87218539750849655b1a08c0be9",
+      "bytes": 27416
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "7312e6ad90358956373f7ca0eda165e35a8ff5b8c532351efd8aab989402fecf",
-      "bytes": 16483
+      "sha256": "7fba5c08ec13646560f07ecbefdb215829536097f193753e8b1782e2a5f3a25a",
+      "bytes": 17408
     },
     {
       "path": "CITATION.cff",
@@ -352,8 +352,8 @@
     },
     {
       "path": "COVERAGE.md",
-      "sha256": "de06325ad9418c15099546f1540d0bc14724db0a5ffd55d625868500f8f0f29d",
-      "bytes": 13557
+      "sha256": "f76951291e715f4d043ce276f83818815e0c20ab50587b680f71118f6fd5c172",
+      "bytes": 13958
     },
     {
       "path": "LICENSE",
@@ -372,8 +372,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "d7e329a1733d7e94014c1f8ac45c36bf8625a74e791bc496ee012a5264a76b8d",
-      "bytes": 22146
+      "sha256": "8dc159f1bdecba95883a4e07a0f721eb14936f6fa36cbde8cc763a1ed88a4b65",
+      "bytes": 22547
     },
     {
       "path": "VERSION",
@@ -3972,8 +3972,8 @@
     },
     {
       "path": "docs/DATA_PAPER_DRAFT.md",
-      "sha256": "96cd9acf24f9920808a54fa2945072abeffd6270a9e45b5addab19ee2ea66b76",
-      "bytes": 9848
+      "sha256": "d78f74af4ce20cd46cabcb90e8f3336fa42bcaafc882d22f520d3e1ddad19c2b",
+      "bytes": 10438
     },
     {
       "path": "docs/FORMAT-VERSION-0.4.md",
@@ -4007,8 +4007,8 @@
     },
     {
       "path": "docs/REUSE.md",
-      "sha256": "7a8c9bfe3cbb8c7b70b31b2b01387659a1bb1f49b4a0e247ebeeb3c15c7f39df",
-      "bytes": 2876
+      "sha256": "7648657543b22adac8a2538a38385a484bd3dd971417d3c9f8fd52f96879c347",
+      "bytes": 3077
     },
     {
       "path": "docs/derived-field-projections.json",
@@ -4177,13 +4177,13 @@
     },
     {
       "path": "docs/source-backlog.json",
-      "sha256": "445792270d968af170fc251ce7f9fd057cb2502a6ad4e89e3c326e9d333cdac2",
-      "bytes": 290725
+      "sha256": "bba4086c7a1154dcde54b21f3c01880cc6a5f5fceafc88ceae525d180951a359",
+      "bytes": 294985
     },
     {
       "path": "docs/source-backlog.md",
-      "sha256": "8767041fc41ed60da64298624714def7b6d95fe3c79793fba29cb6cb7db4ee90",
-      "bytes": 1976
+      "sha256": "7efe4faec8bb317fcfd2abcbc2d4f6bff3ef8b39d8ab077d71031a9a2e3cca57",
+      "bytes": 3130
     },
     {
       "path": "docs/source-discovery-20261028.json",
@@ -8016,6 +8016,11 @@
       "bytes": 29313
     },
     {
+      "path": "scripts/backlog_ingestion_status.py",
+      "sha256": "48d1756ec8b5a02aba219cab276e699c1b21a4639dc4443d7ac75a95ad61c766",
+      "bytes": 9429
+    },
+    {
       "path": "scripts/build_coverage.py",
       "sha256": "46f06ae750edd97b4a91c38a60fafd032771b2b71455329898a457cc0ce95c92",
       "bytes": 10344
@@ -8027,8 +8032,8 @@
     },
     {
       "path": "scripts/build_documentation.py",
-      "sha256": "97c0e6ac88a610c207ea1eef21c19d6e3edd404be94d0656b08b5bfafd83c7ee",
-      "bytes": 34206
+      "sha256": "2458c2eb1a8f64087c98db559864ab98dc3eb0571ba35f775a3308d7bec21363",
+      "bytes": 34569
     },
     {
       "path": "scripts/build_lightweight_documentation.py",
@@ -8434,6 +8439,11 @@
       "path": "scripts/source_literal_review.py",
       "sha256": "e7882317e6ed5ae581322c95663ddfda488ee459ac6b161e9b74ad1552618b86",
       "bytes": 1527
+    },
+    {
+      "path": "scripts/test_backlog_ingestion_status.py",
+      "sha256": "b91671d9fdec8afa6bedf09d330abe7919f83e352394656fd744571b803755e3",
+      "bytes": 3597
     },
     {
       "path": "scripts/test_cohort_registry.py",
@@ -19687,8 +19697,8 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "09d2327febc375be476315aac3c4435cd907e3de5cda6ab0af8d2366980016e5",
-      "bytes": 556772
+      "sha256": "85241f8629d00334c5afacab973f98720c65da5b24241122c4651b46b09f3848",
+      "bytes": 556981
     }
   ],
   "phase1": {
