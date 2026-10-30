@@ -22,7 +22,7 @@
 
 版本 **0.9.1**；資料建置日 **2026-10-29**。已公開：[https://github.com/poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics)；[v0.9.1下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1)。
 
-引用可使用右側 **Cite this repository** 或 [CITATION.cff](CITATION.cff)，並保留使用版本、所選口徑及官方原表來源。CFF目前未登錄DOI；固定Release網址可辨識本版，Zenodo封存是否完成須另查實際公開紀錄。
+引用可使用右側 **Cite this repository** 或 [CITATION.cff](CITATION.cff)，並保留使用版本、所選口徑及官方原表來源。v0.9.1於2026-10-30封存至Zenodo，版本DOI為[10.5281/zenodo.23788194](https://doi.org/10.5281/zenodo.23788194)；固定GitHub Release仍可辨識原公開版本。
 
 [資料說明稿：來源、方法、驗證與限制](docs/DATA_PAPER_DRAFT.md)是**未投稿、未經同儕審查的草稿**。[採用證據與回饋方式](docs/REUSE.md)說明如何回報實際使用；star、fork或下載次數不直接當成研究採用證據。
 

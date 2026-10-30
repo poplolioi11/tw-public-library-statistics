@@ -21,7 +21,7 @@ star／fork記錄平台互動，下載量記錄附件取用，issue記錄回饋�
 
 ## 引用與驗證層級
 
-使用[固定版本Release](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1)及[CITATION.cff](../CITATION.cff)引用本整理資料，另標示實際使用的官方原表。本頁範例對應v0.9.1；若使用其他版本，改引用實際使用的固定版本。`releases/latest`只作下載入口，不用作固定版本的引用憑據。
+使用v0.9.1的[Zenodo版本DOI](https://doi.org/10.5281/zenodo.23788194)、[固定版本Release](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1)及[CITATION.cff](../CITATION.cff)引用本整理資料，另標示實際使用的官方原表。本頁範例對應v0.9.1，Zenodo封存日為2026-10-30；若使用其他版本，改引用實際使用的固定版本。`releases/latest`只作下載入口，不用作固定版本的引用憑據。
 
 截至2026-10-30，人工抽樣核讀與雙校均尚未完成，沒有人工讀值結果或人工錯誤率。掃描年鑑的369個來源格有OCR及AI原圖核讀紀錄，這不等於人工雙校。若需要較高等級覆核，先取得對應官方原件，固定SHA與頁表列欄，由兩位人工分別記讀值、再裁決差異；保存每個格位的完成狀態，未完成者不改標為人工已核。此流程是下一步建議，並非已完成驗證。
 

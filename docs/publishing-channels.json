@@ -41,6 +41,19 @@
       "viewer_version": "1.0.0",
       "dataset_version": "0.9.1",
       "update_policy": "validated main commit; deploy only site/light after public package CI succeeds; immutable dataset releases remain separate"
+    },
+    {
+      "kind": "public_zenodo_fixed_archive",
+      "url": "https://zenodo.org/records/23788194",
+      "archived_dataset_version": "0.9.1",
+      "version_doi": "10.5281/zenodo.23788194",
+      "concept_doi": "10.5281/zenodo.23788193",
+      "original_publication_date": "2026-10-29",
+      "archive_date": "2026-10-30",
+      "update_policy": "Immutable v0.9.1 archive; new dataset versions require a new linked Zenodo version and matching version DOI before citation updates. Never apply this version DOI to a different dataset version. Documentation-only GitHub commits do not replace archived files.",
+      "rights_policy": "source-specific rights; MIT only for original code/documentation; see per-record source rights and LICENSE.md",
+      "human_reading_completed": false,
+      "human_double_collation_completed": false
     }
   ],
   "verification": "Read back main VERSION, latest release tag, attachment digests, full anonymous ZIP and reader embedded dataset_version after publication. Project-specific localhost/Drive destinations stay in the private publication receipt."
