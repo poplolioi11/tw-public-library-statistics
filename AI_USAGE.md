@@ -242,7 +242,6 @@ v0.9.2沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的�
 新增2004年三表的完整公共館相關子群：16實體格、24筆觀測，其中8筆為填答館數，非總館數；公私立、小計、會員及含分館口徑分開。原有58,245筆逐筆全欄不變。新增8筆原刊未印單位保持null；人工核讀與雙校未完成。[逐表範圍、官方原件與讀取方式](docs/NCL94_STATISTICS.md)。
 <!-- END ncl94-statistics -->
 
-
 ## 公開副本
 
 可以先讀 `data/by_year/index.json`，按年度取得相同的正式觀測。含無關聯絡欄的原件不再散布，改附數值欄位投影；`source_sha256` 驗原件，`public_evidence_sha256` 驗投影。投影不改統計原值、期間、單位、地理口徑或原件定位。完整來源驗收須先依 README 復原原件；公開副本的離線檢查並不等於重查全部原件。
@@ -253,7 +252,10 @@ v0.9.2沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的�
 <!-- BEGIN lightweight-site -->
 ## 輕量網站不是新的分析資料
 
-網站 https://poplolioi11.github.io/tw-public-library-statistics/ 的JSON分檔只投影既有合格圖表，不代表全部76,878個量化紀錄。AI正式分析仍依本文件原讀取入口。畫點值可能沿用第二階段已核單位尺度；`original_value`、`raw_value`、`original_unit`與`facets`仍留原量及口徑。`source_url`／`source_sha256`／`source_locator`／`source_version_id`不改，動態查詢另附`official_url`與重現提示。不得把網站顯示值或內容雜湊檔名誤當官方原件SHA。
+網站 https://poplolioi11.github.io/tw-public-library-statistics/ 的JSON分檔投影既有合格圖表與明列的完整來源表批次，不代表全部76,878個量化紀錄。AI正式分析仍依本文件原讀取入口。畫點值可能沿用第二階段已核單位尺度；`original_value`、`raw_value`、`original_unit`與`facets`仍留原量及口徑。`source_url`／`source_sha256`／`source_locator`／`source_version_id`不改，動態查詢另附`official_url`與重現提示。不得把網站顯示值或內容雜湊檔名誤當官方原件SHA。
+
+
+國圖94年卷24筆單期統計另用 `?batch=ncl94-statistics` 按需讀取，與跨年數列分開。`mode=batch` 的 `records` 逐筆保留正式 `observation_id`、原值、單位狀態、主量／填答館數角色、期間及原母體；`lines=[]`。原件與網站投影各驗自己的SHA；不得由同年不同指標或子群畫時間折線。人工抽樣核讀與雙校尚未完成。
 <!-- END lightweight-site -->
 
 

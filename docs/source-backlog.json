@@ -8989,5 +8989,24 @@
     "human_readings_completed": 0,
     "human_double_collation_completed": false,
     "2012_core_quantities_gap_retained": true
+  },
+  "nlpi102_archive_followup_20261101": {
+    "status": "complete_source_acquisition_and_scope_review_only",
+    "official_url": "https://www.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510094622367.pdf",
+    "archive_url": "https://web.archive.org/web/20230117034901/https://www.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510094622367.pdf",
+    "source_sha256": "db8c884120f5b7831f5dbc900d4e50cb48f6d4d33664054cf16ad53fbfe41fdf",
+    "bytes": 13445151,
+    "pdf_pages": 152,
+    "unusable_capture": "20250524055218: truncated5MiB; do not retry as complete PDF",
+    "known_table_scope": "業務統計章表7–13，PDF/印135–141；2011–2013本館與平台館務、2013累計及2008–2013書目累計。",
+    "county_2012_gap": "retained; no complete22-county core table found in reviewed chapters",
+    "not_yet_ingested": "7–13表所有原格尚未正式整批整理，不標無資料；後續以本館／平台母體和權利覆核後另批完成。",
+    "formal_observations_added": 0,
+    "evidence": [
+      "research/nlpi102-archive-followup-20261101.md",
+      "research/nlpi102-archive-followup-20261101.json"
+    ],
+    "human_sample_readings": 0,
+    "human_double_collation_completed": false
   }
 }

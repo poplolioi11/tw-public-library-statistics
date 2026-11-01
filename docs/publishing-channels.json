@@ -51,7 +51,7 @@
       "kind": "public_lightweight_site",
       "url": "https://poplolioi11.github.io/tw-public-library-statistics/",
       "path": "site/light/index.html",
-      "viewer_version": "1.0.0",
+      "viewer_version": "1.1.0",
       "dataset_version": "0.9.2",
       "update_policy": "validated main commit; deploy only site/light after public package CI succeeds; immutable dataset releases remain separate"
     }

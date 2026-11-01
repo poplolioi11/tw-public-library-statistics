@@ -179,3 +179,6 @@ Complete CSV and SQLite files are provided with lossless gzip compression. Decom
 ## v0.9.2: complete NCL94 public-library subsets
 
 Adds 24 reported quantities from 16 physical cells in 2004 tables145/146/147. Eight parenthesized counts are responding libraries, never total libraries. Public/private types, branch-inclusive counts and cooperation membership remain separate. Eight unprinted units remain null. All 58,245 prior observations are unchanged field by field. Human sample readings remain 0/120 and human double-checking is incomplete. [Exact scope and official sources](docs/NCL94_STATISTICS.md).
+
+
+Viewer 1.1.0 adds the [complete 2004 source table](https://poplolioi11.github.io/tw-public-library-statistics/?batch=ncl94-statistics): 24 observations across 16 physical cells, with primary quantities and answering-library counts kept separate. This single-year batch is displayed as a table with official PDF links; no new temporal edges are approved. Data remain v0.9.2; human sample reading is 0/120 and independent human double collation remain incomplete.

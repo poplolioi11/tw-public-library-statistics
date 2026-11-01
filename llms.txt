@@ -80,7 +80,10 @@ v0.9.1 metadata only: 14596 source-backed unit confirmations, 1690 units remain 
 ## Public lightweight chart viewer
 
 https://poplolioi11.github.io/tw-public-library-statistics/
-Viewer version 1.0.0; dataset version 0.9.2. Presentation-only chart shards; use the canonical/phase1/phase2/phase3 files for complete analysis. Never infer missing observations from the chart catalog. Every numeric point retains official source URL, source SHA, locator and version. docs/LIGHTWEIGHT_SITE.md describes the projection.
+Viewer version 1.1.0; dataset version 0.9.2. Presentation-only chart and explicitly registered source-table shards; use the canonical/phase1/phase2/phase3 files for complete analysis. Never infer missing observations from the chart catalog. Every numeric point retains official source URL, source SHA, locator and version. docs/LIGHTWEIGHT_SITE.md describes the projection.
+
+
+Source table batch: https://poplolioi11.github.io/tw-public-library-statistics/?batch=ncl94-statistics . All24observations/16physical cells from NCL94 tables145/146/147, data year2004, are preserved as a table. Primary quantities and answering-library counts are distinct. No new approved temporal edges. Human sample reading and independent double collation remain incomplete.
 <!-- END lightweight-site -->
 
 

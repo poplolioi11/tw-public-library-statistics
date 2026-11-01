@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "version": "0.9.2",
-  "created_at": "2026-11-01T12:32:31.427588+00:00",
+  "created_at": "2026-11-01T14:35:11.628545+00:00",
   "repository": "https://github.com/poplolioi11/tw-public-library-statistics",
   "external_publication": true,
   "publication_profile": "statistical_fields_only",
@@ -332,13 +332,13 @@
     },
     {
       "path": "AI_USAGE.md",
-      "sha256": "7a1ccfe97e2bcd78978963a764eede6e5e18b3c27bd95ba5c78a3b6f573e9235",
-      "bytes": 27847
+      "sha256": "3d41264ebb7296591380270213ffe798ace3ff2f6a7609e2b0edb3ac43fd8fd4",
+      "bytes": 28273
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "d1b6abdbda7719784807aa7e40d3c21d7657890872e92362c22335a681ae9b3f",
-      "bytes": 18847
+      "sha256": "3b8529dd633147878503bf60ea2ad6e2eec1d6286c85c9dd639bfd99891f4b0f",
+      "bytes": 19556
     },
     {
       "path": "CITATION.cff",
@@ -352,8 +352,8 @@
     },
     {
       "path": "COVERAGE.md",
-      "sha256": "349f95488cdf91f0bf0f5869299aab2c30af76d3e0a0997b918bd1175f9bd5a1",
-      "bytes": 14427
+      "sha256": "1bdc4b718cb8d49fcc4e63ae7591fa4d4de32b92200c485d320d3cbacfdb0d5b",
+      "bytes": 14765
     },
     {
       "path": "LICENSE",
@@ -372,13 +372,13 @@
     },
     {
       "path": "README.en.md",
-      "sha256": "1a391d2cb08be8ec6113d2552ff9f9bd1a363265d75d22713c300b27efc1735e",
-      "bytes": 32174
+      "sha256": "86cd763859bd79bd7788aa69b163a599ef19f7a29783d8e0625ff0d18d864688",
+      "bytes": 32638
     },
     {
       "path": "README.md",
-      "sha256": "114a687fcbcfa4677894aab4c3ec5334f16b9d567e1df16fed19228dce15b178",
-      "bytes": 26241
+      "sha256": "cc45912387211c970eaddd1358fb89cd22997faa04d8a2be19ad8b39a8a6ee03",
+      "bytes": 26980
     },
     {
       "path": "VERSION",
@@ -4002,8 +4002,8 @@
     },
     {
       "path": "docs/LIGHTWEIGHT_SITE.md",
-      "sha256": "3a1c58340d455a95674ec0ce29637a4c4f155df588dbefb29b1de415fb6fe82d",
-      "bytes": 3126
+      "sha256": "c7810882ba8b58315651abcf75cbb9822e4a42b9cce4f172ac5191faf11cf34c",
+      "bytes": 4578
     },
     {
       "path": "docs/NCL94_STATISTICS.md",
@@ -4057,8 +4057,8 @@
     },
     {
       "path": "docs/light-site-summary.json",
-      "sha256": "6e80fbbfbf911dda08033240b9bd147b1cc66107411451f27b0ebedfa43f5836",
-      "bytes": 418110
+      "sha256": "b627fe7af8e70799abf6f175617f47e2b13371455d3695e47ff79796d494a9b4",
+      "bytes": 418489
     },
     {
       "path": "docs/light-site-validation.json",
@@ -4192,7 +4192,7 @@
     },
     {
       "path": "docs/publishing-channels.json",
-      "sha256": "8a2be8cffda72cae7583fd484873d6eb61ed92f18aa7af8e1706e48ec729e3a9",
+      "sha256": "b141e1141c86f72c5cf3d27f09bc83b4fde5516b9e623c0a8fe679edf2f5a979",
       "bytes": 2680
     },
     {
@@ -4202,8 +4202,8 @@
     },
     {
       "path": "docs/source-backlog.json",
-      "sha256": "effea2f1a37d9147fccb4b8371ba65760ac4d2b9bc2f228a62622861fc9e9bd3",
-      "bytes": 300783
+      "sha256": "9603207c49a5013d286e9d246045cd18ed47952ac47950a96e0f5f641b2f11c6",
+      "bytes": 302012
     },
     {
       "path": "docs/source-backlog.md",
@@ -4217,8 +4217,8 @@
     },
     {
       "path": "llms.txt",
-      "sha256": "715361bd082af8fdcdc334f7e7915e7e7cb8c6295e8b16edd879910fc41a5f70",
-      "bytes": 9531
+      "sha256": "e7fa6fe17b174ac50cb064cfa3f628093811fef882b313780fb8e0f2cc121ecd",
+      "bytes": 9950
     },
     {
       "path": "raw/discovered-20261028/documents.json",
@@ -7352,13 +7352,13 @@
     },
     {
       "path": "research/2012-source-search-independent.json",
-      "sha256": "189af857300ea78f1e82ec05ac2ecb1c3f57b9cc0d2c34262d5e037bacddeaf9",
-      "bytes": 14645
+      "sha256": "a6bd93828a1cb5afa0ccb875faeaef0b533382e9c46e6b0e90e05996aee63173",
+      "bytes": 14948
     },
     {
       "path": "research/2012-source-search-independent.md",
-      "sha256": "a3020f7f3b7886b691ee553b091be590a539560105205cb65056642c860d862f",
-      "bytes": 6826
+      "sha256": "8eb9bbd74c2c85978ba082e9623a23d161d06af7e7f4061f945c34965e4a0c60",
+      "bytes": 7208
     },
     {
       "path": "research/AI_DISCLOSURE.md",
@@ -7756,6 +7756,16 @@
       "bytes": 10312
     },
     {
+      "path": "research/nlpi102-archive-followup-20261101.json",
+      "sha256": "fc7e2a80b7b411b40f0ce46c89109991fcec7e00d2bddd958e4ad09d39f94e73",
+      "bytes": 12149
+    },
+    {
+      "path": "research/nlpi102-archive-followup-20261101.md",
+      "sha256": "dcd940b0825644faef953c5fe6355c90f0abd83513558d68a193833a43d83d54",
+      "bytes": 7770
+    },
+    {
       "path": "research/official-scope.md",
       "sha256": "463f0deb47185d30fb9a1fc170c1bebdc8d40171d02ccb0103e4f23a14cdb39a",
       "bytes": 13228
@@ -8112,13 +8122,13 @@
     },
     {
       "path": "scripts/build_lightweight_documentation.py",
-      "sha256": "0b8a28a90dad2f49f759e511945ea96e49ee71c004084272b70a086c94d212aa",
-      "bytes": 4351
+      "sha256": "588baa1540a9fbfb562edd35c5ebe633839044089ee31e045f62d424d7c521bb",
+      "bytes": 6806
     },
     {
       "path": "scripts/build_lightweight_site.py",
-      "sha256": "07899694f9a7ddaca2f6de22bf870d5bba43f6766ed97e6f173f4501d51a5a50",
-      "bytes": 12086
+      "sha256": "f2d1900dc4281bbc7aac2a709197b5c2d5b1774a09ce91aa1a0af1cfff1e4d51",
+      "bytes": 16443
     },
     {
       "path": "scripts/build_ncl94_statistics.py",
@@ -8567,8 +8577,13 @@
     },
     {
       "path": "scripts/test_lightweight_browser.cjs",
-      "sha256": "71d5b15bb2310378157937021ae82e1dfc1739143b70283cdaf3a57a75a7b2bd",
-      "bytes": 9987
+      "sha256": "2c7de1b574e8b3c130ca33a044c0457673544994d8e257c0456fe9f0fbe08227",
+      "bytes": 16691
+    },
+    {
+      "path": "scripts/test_lightweight_source_batch_projection.py",
+      "sha256": "d619ba1b8f848ded49c92cd5e2394f5594e461e68f4ebe70b1b85716178205c8",
+      "bytes": 4643
     },
     {
       "path": "scripts/test_lossless_transport.py",
@@ -8682,8 +8697,8 @@
     },
     {
       "path": "scripts/validate_lightweight_site.py",
-      "sha256": "0eb98e5ac416ae4799f4e72aaec4262e14cd3cdea078c5c3135fc5edac4e4683",
-      "bytes": 8226
+      "sha256": "626e612fc8a88f30b2d78c296cb36a859b8f822d694bffcd2fbf34a3e4311047",
+      "bytes": 13210
     },
     {
       "path": "scripts/validate_manual_quality_sample.py",
@@ -8747,13 +8762,13 @@
     },
     {
       "path": "site/light/app.css",
-      "sha256": "8eeb06c4f700397839a4d63660e40cb4a2e17460c3baa5c985bdc7bb60d14310",
-      "bytes": 14109
+      "sha256": "2b72472521b5051e2b23abc89eb4b72a8780fbee654d7a0025b536e2653a115f",
+      "bytes": 15018
     },
     {
       "path": "site/light/app.js",
-      "sha256": "4b56acdcf8342453bc6bc671f4858561ecd8e22443e3c1cca3d7c29cd338239c",
-      "bytes": 32721
+      "sha256": "f5d1924292ab95b42c48dcafe33da2b486981d2c1eb33e5cddc06d879f89fd4c",
+      "bytes": 39569
     },
     {
       "path": "site/light/data/00021b7b46bb53998b3ada0d15ba3dd6a8d5524b3875ddb701c6a67a7723b3bf.json",
@@ -16516,6 +16531,11 @@
       "bytes": 39294
     },
     {
+      "path": "site/light/data/acf5bf392caadee2f58dfd5fa0a4cd77ea78745805cd079dc24d6b3b415185dd.json",
+      "sha256": "acf5bf392caadee2f58dfd5fa0a4cd77ea78745805cd079dc24d6b3b415185dd",
+      "bytes": 67147
+    },
+    {
       "path": "site/light/data/acf635d9318af45a401f5ce1e3f90283d25183286731babc71cd08fd08d2a32f.json",
       "sha256": "acf635d9318af45a401f5ce1e3f90283d25183286731babc71cd08fd08d2a32f",
       "bytes": 41311
@@ -20307,28 +20327,28 @@
     },
     {
       "path": "site/light/index.html",
-      "sha256": "abc0f7dfe24c592cc8daec453f363416a30156ef54b9f06c31e06e25fb121e06",
-      "bytes": 8334
+      "sha256": "a382d8c8e18cb3c8151db56eb704e12fc579f4f328807287862a82f5213619fd",
+      "bytes": 10593
     },
     {
       "path": "site/light/manifest.json",
-      "sha256": "0223866b248bcd1f9ade9875a6ab6f8f209b28e6f3ac283aff48dfff9f591016",
-      "bytes": 7881
+      "sha256": "59c787aa54acbb3e08a58c990b908448d6e0aaa3c25031005edb2f73fc958257",
+      "bytes": 8362
     },
     {
       "path": "site/light-src/app.css",
-      "sha256": "8eeb06c4f700397839a4d63660e40cb4a2e17460c3baa5c985bdc7bb60d14310",
-      "bytes": 14109
+      "sha256": "2b72472521b5051e2b23abc89eb4b72a8780fbee654d7a0025b536e2653a115f",
+      "bytes": 15018
     },
     {
       "path": "site/light-src/app.js",
-      "sha256": "4b56acdcf8342453bc6bc671f4858561ecd8e22443e3c1cca3d7c29cd338239c",
-      "bytes": 32721
+      "sha256": "f5d1924292ab95b42c48dcafe33da2b486981d2c1eb33e5cddc06d879f89fd4c",
+      "bytes": 39569
     },
     {
       "path": "site/light-src/index.html",
-      "sha256": "abc0f7dfe24c592cc8daec453f363416a30156ef54b9f06c31e06e25fb121e06",
-      "bytes": 8334
+      "sha256": "a382d8c8e18cb3c8151db56eb704e12fc579f4f328807287862a82f5213619fd",
+      "bytes": 10593
     },
     {
       "path": "site/phase1-template.html",
@@ -20377,13 +20397,13 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "1dbd3c49f4dc1678e64915418867b59e1e641ba1274fb69aee8fabed5cf61b89",
-      "bytes": 577001
+      "sha256": "93cf3d21e54d4b073422e64010fdf1d6cc1870a7d3a08e986b00744ab8d0404f",
+      "bytes": 577497
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "03d16b5e501df4f137f1c319339555970db6d8a39c27876f99cd8bc88863ca2a",
-      "bytes": 878679
+      "sha256": "27b74eda2a89f8174a5936cc6762c478ed4bac44a4dc10bf50d5bb8cb6ac77d5",
+      "bytes": 879581
     }
   ],
   "phase1": {
@@ -20500,7 +20520,7 @@
     "content_sha256": "76f448b18f03cbe7eb17353fa6ab20ddd3c215c677257c2bdc2dc6ffb993ccdb"
   },
   "lightweight_site": {
-    "viewer_version": "1.0.0",
+    "viewer_version": "1.1.0",
     "dataset_version": "0.9.2",
     "source_charts": {
       "approved_line_entries": 72364,
@@ -20511,8 +20531,14 @@
     },
     "registered_profiles": 22,
     "precomputed_interval_queries": 847,
-    "unique_data_shards": 1754,
+    "unique_data_shards": 1755,
     "statistical_values_or_definitions_modified": false,
-    "public_url": "https://poplolioi11.github.io/tw-public-library-statistics/"
+    "public_url": "https://poplolioi11.github.io/tw-public-library-statistics/",
+    "source_batches": {
+      "batches": 1,
+      "new_line_entries": 0,
+      "physical_cells": 16,
+      "records": 24
+    }
   }
 }

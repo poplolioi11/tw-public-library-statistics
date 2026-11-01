@@ -14,9 +14,10 @@ import xml.etree.ElementTree as ET
 import record_io
 import reader_transport
 ROOT=Path(__file__).resolve().parents[1]
-VIEWER_VERSION='1.0.0'
+VIEWER_VERSION='1.1.0'
 REPOSITORY='https://github.com/poplolioi11/tw-public-library-statistics'
 EXTRA_FIELDS=('notes','quality_flags','source_footnotes_raw','source_table_title','source_cell_annotation','unit_raw','unit_basis','unit_status','period_raw','period_effective','temporal_kind','population_scope','national_libraries_scope','geography_vintage','source_time_reference','source_survey_population_libraries')
+SOURCE_BATCH_FIELDS=('observation_id','source_record_id','source_id','source_edition','source_table_title','data_year','period_raw','period_start','period_end','source_period_interpretation_status','indicator','geography','raw_value','value','value_status','unit','unit_raw','unit_status','unit_basis','population_scope','aggregation_role','national_libraries_scope','source_url','source_pdf_page','source_printed_page','source_table','source_row','source_column','source_row_label_raw','source_column_path','source_cell_bbox','source_locator','source_sha256','source_version_id','original_source_note','source_footnotes_raw')
 def stable(x):return (json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(',',':'))+'\n').encode()
 def sha(b):return hashlib.sha256(b).hexdigest()
 def write(path,body):
@@ -68,13 +69,31 @@ def build_series(c,annotations,originals):
   else:yticks.append({'position_pct':pct(Decimal(t.get('y'))-4,50,170),'label':t.text})
  mobile=[xticks[i] for i in sorted({0,len(xticks)//2,len(xticks)-1})] if xticks else []
  return {'schema_version':1,'id':c['comparison_group_id'],'label':c['label'],'entity':c['entity'],'facility':c['facility'],'indicator':c['indicator'],'unit':c['unit'],'source_id':c['source_id'],'source_edition_raw':c['source_edition_raw'],'scope_note':'僅同一已核原刊／原件及原對象範圍；選定來源不代表所有歷年填報方法一致。未知點不畫0，僅連接原已核准線段。','records':records,'lines':line_pairs,'x_ticks':xticks,'mobile_x_ticks':mobile,'y_ticks':yticks}
+def source_batch_matches_canonical(canonical,source):
+ """Permit only the two public-projection annotations added to canonical rows."""
+ if not isinstance(canonical,dict):return False
+ added={key:canonical[key] for key in ('public_evidence_sha256','public_projection_policy') if key in canonical and key not in source}
+ return canonical=={**source,**added}
+def build_source_batch(root,originals):
+ """Copy an explicit public field allowlist from the canonical, single-period batch."""
+ expected=read_rows(root/'derived/ncl94_statistics_observations.jsonl');records=[]
+ for source in expected:
+  original=originals.get('canonical:'+source['observation_id'])
+  if not source_batch_matches_canonical(original,source):raise ValueError('Source batch differs from its formally ingested canonical record')
+  context=json.loads(original['source_time_reference'])['physical_source_context']
+  if context['cross_source_panel_permission'] or context['human_review_completed'] or context['human_double_collation_completed']:raise ValueError('Source batch review or comparison policy changed; review the viewer explicitly')
+  row={key:original.get(key) for key in SOURCE_BATCH_FIELDS}
+  row.update({'physical_cell_id':context['physical_cell_id'],'quantity_role':context['quantity_role'],'physical_cell_raw':context['value_raw'],'source_column_context':context['source_column_context'],'physical_source_row_label_raw':context['source_row_label_raw'],'raw_transcription_method':context['raw_transcription_method'],'source_context_notes':context['notes'],'cross_source_panel_permission':False})
+  safe_url(row['source_url']);records.append(row)
+ if len(records)!=24 or len({r['physical_cell_id'] for r in records})!=16 or {r['data_year'] for r in records}!={2004}:raise ValueError('Source batch scope changed; review the viewer explicitly')
+ return {'schema_version':1,'mode':'batch','id':'ncl94-statistics','title':'94年卷統計章：2004年公共館來源表','description':'原表145、146、147公共館子群：16個原表格子、24筆統計量，主量與填答館數分列。','period_note':'原表明印「民國93年」（2004年）；精確起訖未確認，開始與結束日期保留 null。這是單期來源表，不畫跨年折線。','scope_notes':['表145公共館區塊含分館；公私立、原列及小計分開，小計不能再與分項相加。國家圖書館另列排除。','表146括號為各原指標的填答館數，不含分館，分館資料併入總館。填答館數不是館總數，不與主量或表145互補、相加、相除推算。','表147為中華圖書資訊館際合作協會公共類會員的獨立母體；公私立、分館與生效日未明，不視為全臺公共館數。','表145與147未獨立印出單位，共8筆保留 null（未知），不猜補單位。','兩引擎數字比對、AI原圖核讀及程式通過均不等於人工核讀；表146括號由AI依原圖補錄，原PDF文字層漏括號。'],'review_status':{'human_review_completed':0,'human_review_planned':120,'human_double_collation_completed':False},'records':records,'lines':[]}
 def input_hashes(root):
  names=['VERSION','site/phase2.html','site/phase3.html','derived/phase2/annotations.jsonl.gz','docs/phase3-profiles.json','docs/phase3-contract.json','scripts/build_lightweight_site.py','scripts/reader_transport.py']
  names.extend(str(p.relative_to(root)) for p in sorted((root/'site/light-src').glob('*')) if p.is_file())
- names.append(str(record_io.path_for(root,'data/combined/observations.jsonl').relative_to(root)))
+ names.extend(['derived/ncl94_statistics_observations.jsonl',str(record_io.path_for(root,'data/combined/observations.jsonl').relative_to(root))])
  return {name:sha((root/name).read_bytes()) for name in names}
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--root',type=Path,default=ROOT);ap.add_argument('--output',type=Path);ap.add_argument('--data-only',action='store_true');args=ap.parse_args();root=args.root.resolve();dest=(args.output or root/'site/light').resolve();version=(root/'VERSION').read_text().strip()
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--root',type=Path,default=ROOT);ap.add_argument('--output',type=Path);ap.add_argument('--summary-output',type=Path);ap.add_argument('--data-only',action='store_true');args=ap.parse_args();root=args.root.resolve();dest=(args.output or root/'site/light').resolve();version=(root/'VERSION').read_text().strip()
  before=input_hashes(root);d2=payload(root,'phase2');d3=payload(root,'phase3')
  if d2['summary']['dataset_version']!=version or d3['dataset_version']!=version:raise ValueError('Rebuild reviewed readers before the lightweight export')
  annotations={a['record_key']:a for a in read_rows(root/'derived/phase2/annotations.jsonl.gz')};originals={'canonical:'+r['observation_id']:r for r in record_io.rows(root,'data/combined/observations.jsonl')}
@@ -96,7 +115,9 @@ def main():
   intervals={k:selection(v,v['comparison_group_ids']) for k,v in d3['interval_queries'].get(pid,{}).items()} or None
   data={'schema_version':1,'mode':'profile','id':pid,'title':p['title'],'description':p.get('description',''),'purpose':p['default_purpose'],'years':d3['chart_year_options'][pid],'series':series,'default_selection':selection(q,d3['default_chart_groups'][pid]),'intervals':intervals,'full_data_url':REPOSITORY+'/releases/tag/v'+version,'scope_note':'圖表只展示符合既有繪圖條件的原數列。單期、未知及未解記錄仍完整保留於資料包；沒有數列不表示官方沒有資料。'}
   profiles.append({'id':pid,'title':p['title'],'description':p.get('description',''),'purpose':p['default_purpose'],'catalog_url':asset(data)})
- manifest={'schema_version':1,'viewer_version':VIEWER_VERSION,'data_version':version,'title':'臺灣公共圖書館統計','repository_url':REPOSITORY,'release_url':REPOSITORY+'/releases/tag/v'+version,'default_profile_id':'national-ncl-book-loans-panel','original_catalog_url':original_url,'profiles':profiles,'scope_note':'可追溯的原報數列。資料仍有缺口；不推算補值，不把所有來源視為同一全臺歷年面板。'}
+ batch=build_source_batch(root,originals);batch_url=asset(batch)
+ source_batches=[{'id':batch['id'],'title':batch['title'],'description':batch['description'],'catalog_url':batch_url,'record_count':len(batch['records']),'physical_cells':16,'years':[2004]}]
+ manifest={'schema_version':1,'viewer_version':VIEWER_VERSION,'data_version':version,'title':'臺灣公共圖書館統計','repository_url':REPOSITORY,'release_url':REPOSITORY+'/releases/tag/v'+version,'default_profile_id':'national-ncl-book-loans-panel','original_catalog_url':original_url,'profiles':profiles,'source_batches':source_batches,'scope_note':'可追溯的原報數列。資料仍有缺口；不推算補值，不把所有來源視為同一全臺歷年面板。','review_status':{'human_review_completed':0,'human_review_planned':120,'human_double_collation_completed':False}}
  manifest_body=stable(manifest);write(dest/'manifest.json',manifest_body)
  if not args.data_only:
   for name in ('index.html','app.css','app.js'):
@@ -106,6 +127,6 @@ def main():
  write(dest/'.nojekyll',b'')
  if input_hashes(root)!=before:raise ValueError('Source input changed while producing the website')
  outputs={str(p.relative_to(root)):{'sha256':sha(p.read_bytes()),'bytes':p.stat().st_size} for p in sorted(dest.rglob('*')) if p.is_file() and p.is_relative_to(root)}
- summary={'schema_version':1,'viewer_version':VIEWER_VERSION,'dataset_version':version,'source_charts':{'phase2':len(d2['examples']),'phase3':len(d3['charts']),'rendered_series_entries':series_count,'displayed_point_entries':point_count,'approved_line_entries':edge_count},'registered_profiles':len(profiles),'precomputed_interval_queries':sum(len(d) for d in d3['interval_queries'].values()),'unique_data_shards':len(assets),'all_existing_charts_exported':True,'statistical_values_or_definitions_modified':False,'inputs_sha256':before,'outputs':outputs,'manifest_bytes':len(manifest_body),'data_only':args.data_only,'public_url':'https://poplolioi11.github.io/tw-public-library-statistics/'}
- write(root/'docs/light-site-summary.json',stable(summary));print(json.dumps({k:v for k,v in summary.items() if k not in ('inputs_sha256','outputs')},ensure_ascii=False))
+ summary={'schema_version':1,'viewer_version':VIEWER_VERSION,'dataset_version':version,'source_charts':{'phase2':len(d2['examples']),'phase3':len(d3['charts']),'rendered_series_entries':series_count,'displayed_point_entries':point_count,'approved_line_entries':edge_count},'source_batches':{'batches':len(source_batches),'records':len(batch['records']),'physical_cells':16,'new_line_entries':0},'registered_profiles':len(profiles),'precomputed_interval_queries':sum(len(d) for d in d3['interval_queries'].values()),'unique_data_shards':len(assets),'all_existing_charts_exported':True,'statistical_values_or_definitions_modified':False,'inputs_sha256':before,'outputs':outputs,'manifest_bytes':len(manifest_body),'data_only':args.data_only,'public_url':'https://poplolioi11.github.io/tw-public-library-statistics/'}
+ write(args.summary_output or root/'docs/light-site-summary.json',stable(summary));print(json.dumps({k:v for k,v in summary.items() if k not in ('inputs_sha256','outputs')},ensure_ascii=False))
 if __name__=='__main__':main()

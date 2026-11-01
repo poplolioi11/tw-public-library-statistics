@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-01",
+  "official_original_url": "https://www.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510094622367.pdf",
+  "official_live_status": 404,
+  "verified_complete_archive_url": "https://web.archive.org/web/20230117034901/https://www.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510094622367.pdf",
+  "verified_complete_archive_payload_url": "https://web.archive.org/web/20230117034901if_/https://www.nlpi.edu.tw/FileDownLoad/LibraryPublication/20160510094622367.pdf",
+  "complete_archive": {
+    "capture": "20230117034901",
+    "bytes": 13445151,
+    "sha256": "db8c884120f5b7831f5dbc900d4e50cb48f6d4d33664054cf16ad53fbfe41fdf",
+    "pdf_pages": 152,
+    "linearized_length_matches": true,
+    "final_eof_and_parser_verified": true
+  },
+  "incomplete_capture": {
+    "capture": "20250524055218",
+    "bytes": 5242880,
+    "captured_payload_sha256": "7a2938a46e3970c48c38161f84b88c62527bc74bd9bfa3610f7befbc1af95897",
+    "declared_pdf_full_length": 13445151,
+    "status": "incomplete_pdf_payload_unusable_as_complete_document",
+    "range_response_total": 5242880,
+    "parser_result": "PdfReadError: Cannot find Root object in pdf",
+    "not_a_full_original_sha": true
+  },
+  "document_title": "民國102年 國立公共資訊圖書館年報",
+  "volume_reference_year": 2013,
+  "publication_date_printed": "中華民國104年3月1日",
+  "publication_date_iso": "2015-03-01",
+  "business_chapter_pdf_and_printed_pages": [
+    134,
+    141
+  ],
+  "business_tables": [
+    {
+      "table": 7,
+      "printed_pages": [
+        135
+      ],
+      "pdf_pages": [
+        135
+      ],
+      "title_printed": "100-102年館藏經費一覽表",
+      "period_printed": [
+        "100年",
+        "101年",
+        "102年"
+      ],
+      "gregorian_observation_years": [
+        2011,
+        2012,
+        2013
+      ],
+      "period_basis": "表名及年度欄頭明示",
+      "units_printed": "新臺幣仟元",
+      "population_printed": [
+        "本館經費",
+        "中央補助"
+      ],
+      "population_context": "國資圖館藏經費；本館經費與中央補助為資金來源，非縣市分組",
+      "geographic_level": "機關業務彙整，無縣市欄",
+      "contains_2012_column": true,
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 8,
+      "printed_pages": [
+        135
+      ],
+      "pdf_pages": [
+        135
+      ],
+      "title_printed": "102年度館藏數量累計統計表",
+      "period_printed": [
+        "102年度"
+      ],
+      "gregorian_observation_years": [
+        2013
+      ],
+      "period_basis": "表名明示102年度；表內未另印統計截止日",
+      "units_printed": "冊/種/件",
+      "population_printed": [
+        "總館",
+        "黎明分館",
+        "中興分館",
+        "合計",
+        "比例"
+      ],
+      "population_context": "國資圖所屬館舍館藏分項；跨冊、種、件單位，未重算合計",
+      "geographic_level": "個別館舍，非行政縣市",
+      "contains_2012_column": false,
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 9,
+      "printed_pages": [
+        136
+      ],
+      "pdf_pages": [
+        136
+      ],
+      "title_printed": "100-102年新增及累計辦證人數統計表",
+      "period_printed": [
+        "100年",
+        "101年",
+        "102年",
+        "累計"
+      ],
+      "gregorian_observation_years": [
+        2011,
+        2012,
+        2013
+      ],
+      "period_basis": "表名及年度欄頭明示；累計欄起算日未完整明示，不能當單年",
+      "units_printed": "人次",
+      "population_printed": [
+        "實體借閱證：總館、黎明分館、中興分館、精武分館、微型圖書館",
+        "數位借閱證",
+        "電子書服務平台會員數"
+      ],
+      "population_context": "國資圖辦證與平台會員；各列母體不同，不能視為全臺一般民眾去重人數",
+      "geographic_level": "館舍／服務類型，無縣市分組",
+      "footnotes_printed": [
+        "中興分館自民國102年1月移撥至本館，故102年以前無相關資料。",
+        "精武分館為舊館舍，自民國102年8月委由五楠文化事業機構經營管理，故102年以前無相關資料。"
+      ],
+      "contains_2012_column": true,
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 10,
+      "printed_pages": [
+        137
+      ],
+      "pdf_pages": [
+        137
+      ],
+      "title_printed": "100-102年入館人次統計表",
+      "period_printed": [
+        "100年",
+        "101年",
+        "102年"
+      ],
+      "gregorian_observation_years": [
+        2011,
+        2012,
+        2013
+      ],
+      "period_basis": "表名及年度欄頭明示",
+      "units_printed": "人次",
+      "population_printed": [
+        "實體入館人數：總館、黎明分館、中興分館、精武分館、小計",
+        "網站造訪人次",
+        "合計"
+      ],
+      "population_context": "國資圖實體入館與網站造訪服務量，無縣市群組",
+      "geographic_level": "館舍／網站，非行政縣市",
+      "footnotes_printed": [
+        "中興分館自民國102年1月移撥至本館，故102年以前無相關資料。",
+        "精武分館為舊館舍，自民國102年8月委由五楠文化事業機構經營管理，故102年以前無相關資料。"
+      ],
+      "contains_2012_column": true,
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 11,
+      "printed_pages": [
+        138
+      ],
+      "pdf_pages": [
+        138
+      ],
+      "title_printed": "100-102年圖書資料借閱人次及冊(件)數統計表",
+      "period_printed": [
+        "100年",
+        "101年",
+        "102年"
+      ],
+      "gregorian_observation_years": [
+        2011,
+        2012,
+        2013
+      ],
+      "period_basis": "表名及年度欄頭明示",
+      "units_printed": "人/冊/件",
+      "population_printed": [
+        "借閱人次：圖書、視聽資料、電子書、合計",
+        "借閱冊(件)數：圖書、視聽資料、電子書、合計"
+      ],
+      "population_context": "國資圖年度館務脈絡下的借閱量；本表未再明示各列是否納入哪些分館、平台或跨館交易，精確子口徑保留unknown",
+      "exact_subpopulation": "unknown",
+      "geographic_level": "資料類型，無縣市或分館分組",
+      "contains_2012_column": true,
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 12,
+      "printed_pages": [
+        139
+      ],
+      "pdf_pages": [
+        139
+      ],
+      "title_printed": "電子書服務平台102年度借閱Top20",
+      "period_printed": [
+        "102年度"
+      ],
+      "gregorian_observation_years": [
+        2013
+      ],
+      "period_basis": "表名明示；出版年欄屬作品書目年份，不是觀測年度",
+      "units_printed": "借閱次數",
+      "population_printed": [
+        "電子書服務平台借閱Top20書名"
+      ],
+      "population_context": "平台熱門書目排序，非圖書館或縣市全量母體",
+      "geographic_level": "書名，非地理分組",
+      "contains_2012_column": false,
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 13,
+      "printed_pages": [
+        140,
+        141
+      ],
+      "pdf_pages": [
+        140,
+        141
+      ],
+      "title_printed": "電子書服務平台97-102年度政府出版品累計借閱Top20",
+      "period_printed": [
+        "97-102年度"
+      ],
+      "gregorian_observation_year_range": [
+        2008,
+        2013
+      ],
+      "period_basis": "表名明示累計區間，無各年觀測欄；出版年欄屬作品書目年份",
+      "units_printed": "借閱次數",
+      "population_printed": [
+        "電子書服務平台政府出版品累計借閱Top20書名"
+      ],
+      "population_context": "政府出版品電子書累計熱門書目，不能拆成2012單年",
+      "geographic_level": "書名，非地理分組",
+      "contains_2012_column": false,
+      "full_22_county_core_values": false
+    }
+  ],
+  "other_numbered_table_inventory": [
+    {
+      "table": 1,
+      "printed_pages": [
+        16
+      ],
+      "pdf_pages": [
+        16
+      ],
+      "title_printed": "人力結構分析表",
+      "period_printed": "註明本館102年12月底在職人數",
+      "population": "國資圖人員按官等、性別、學歷、年齡、專長分類",
+      "geographic_level": "機關，無縣市分組",
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 2,
+      "printed_pages": [
+        37
+      ],
+      "pdf_pages": [
+        37
+      ],
+      "title_printed": "102年度主題書展成果",
+      "period_printed": "102年度；列內舉辦日期為月日",
+      "population": "總館四、五樓主題書展",
+      "geographic_level": "活動，無縣市分組",
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 3,
+      "printed_pages": [
+        68
+      ],
+      "pdf_pages": [
+        68
+      ],
+      "title_printed": "世界書香日主題活動列表",
+      "period_printed": null,
+      "period_context": "102年年報本年度敘述及世界書香日(3-4月)章內脈絡；表題本身未印年度",
+      "population": "國資圖世界書香日活動項目",
+      "geographic_level": "活動，無縣市分組",
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 4,
+      "printed_pages": [
+        79
+      ],
+      "pdf_pages": [
+        79
+      ],
+      "title_printed": "臺灣閱讀節各項活動辦理情況",
+      "period_printed": null,
+      "period_context": "102年年報行銷推廣章本年度臺灣閱讀節活動；表題本身未印年度",
+      "population": "國資圖臺灣閱讀節各項活動及合作單位",
+      "geographic_level": "活動；協辦單位出現部分縣市機關名稱，非縣市原量表",
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 5,
+      "printed_pages": [
+        83
+      ],
+      "pdf_pages": [
+        83
+      ],
+      "title_printed": "102年藝文美展簡介及異業結盟單位一覽表",
+      "period_printed": "102年",
+      "population": "藝文展覽及異業結盟單位",
+      "geographic_level": "展覽／單位，無縣市分組",
+      "full_22_county_core_values": false
+    },
+    {
+      "table": 6,
+      "printed_pages": [
+        116,
+        117,
+        118,
+        119
+      ],
+      "pdf_pages": [
+        116,
+        117,
+        118,
+        119
+      ],
+      "title_printed": "結合社會資源－異業合作計畫內容一覽表",
+      "period_printed": "部分合作內容列明102年或102年全年度；表題未印統一年期",
+      "period_context": "102年年報結合社會資源章之年度合作事項",
+      "population": "國資圖資源主題、資源單位、合作計畫、引進資源估算金額",
+      "geographic_level": "合作事項／單位，無縣市核心原量分組",
+      "full_22_county_core_values": false
+    }
+  ],
+  "county_core_gap_2012": "retained_unresolved",
+  "county_scope_conclusion": "本份所核章節未見2012全22縣市核心原量分表；印124有2013平台部分縣市敘述，非全22縣市全部公共館核心量。",
+  "formal_observations_added": 0,
+  "future_ingestion": "表7–13可另作本館／平台業務批次；尚未整批入庫，權利與逐格metadata仍須覆核。",
+  "human_review_completed": 0,
+  "human_review_planned": 120,
+  "human_double_collation_completed": false,
+  "review_method": "152頁文字範圍盤點，29頁原圖AI覆核；不計人工核讀或雙校。",
+  "visually_reviewed_pdf_pages": [
+    1,
+    2,
+    3,
+    16,
+    37,
+    62,
+    63,
+    64,
+    65,
+    68,
+    79,
+    83,
+    84,
+    116,
+    117,
+    118,
+    119,
+    124,
+    125,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    151,
+    152
+  ],
+  "redistribution_scope": "公開來源定位、雜湊與範圍查核；完整PDF未納公開資料包，下載不表示取得全文再散布權。"
+}

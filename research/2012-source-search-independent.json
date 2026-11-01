@@ -331,5 +331,12 @@
     "NLPI舊PDF搜尋索引仍在，直接下載失敗；未以搜尋片段宣稱整份已閱。",
     "未下載研究手冊59MB大PDF，索引明列的是100年全國公共館統計，不能誤認為2012。",
     "未擷取評鑑得獎或未達基準資料，未處理工程、公司個案或圖像敘述。"
-  ]
+  ],
+  "followup_20261101": {
+    "report": "research/nlpi102-archive-followup-20261101.json",
+    "complete_archive_obtained": true,
+    "complete_sha256": "db8c884120f5b7831f5dbc900d4e50cb48f6d4d33664054cf16ad53fbfe41fdf",
+    "core_county_2012_gap_retained": true,
+    "formal_observations_added": 0
+  }
 }

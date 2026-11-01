@@ -6,11 +6,12 @@
   const SVG_NS = 'http://www.w3.org/2000/svg';
   const assetBase = new URL('./', document.baseURI);
   const cache = new Map();
-  const queryKeys = ['mode', 'profile', 'entity', 'indicator', 'q', 'series', 'from', 'to'];
+  const queryKeys = ['mode', 'batch', 'profile', 'entity', 'indicator', 'q', 'series', 'from', 'to'];
   const initialQuery = new URLSearchParams(window.location.search);
   const state = {
     manifest: null, catalog: null, series: null,
-    mode: initialQuery.get('mode') === 'original' ? 'original' : 'profile',
+    mode: initialQuery.has('batch') || initialQuery.get('mode') === 'batch' ? 'batch' : initialQuery.get('mode') === 'original' ? 'original' : 'profile',
+    batchId: initialQuery.get('batch') || 'ncl94-statistics',
     profileId: initialQuery.get('profile') || '',
     entity: initialQuery.get('entity') || '', indicator: initialQuery.get('indicator') || '',
     search: initialQuery.get('q') || '', seriesId: initialQuery.get('series') || '',
@@ -150,6 +151,8 @@
     state.shownRecords = [];
     state.detailKey = '';
     $('result').hidden = true;
+    $('source-batch').hidden = true;
+    $('batch-records').replaceChildren();
     $('record-detail').hidden = true;
     $('chart').replaceChildren();
     $('records-body').replaceChildren();
@@ -188,10 +191,11 @@
     const url = new URL(window.location.href);
     for (const key of queryKeys) url.searchParams.delete(key);
     const values = {
-      mode: state.mode,
+      mode: state.mode === 'batch' ? '' : state.mode,
+      batch: state.mode === 'batch' ? state.batchId : '',
       profile: state.mode === 'profile' ? state.profileId : '',
-      entity: state.entity, indicator: state.indicator, q: state.search,
-      series: state.seriesId, from: state.from, to: state.to
+      entity: state.mode === 'batch' ? '' : state.entity, indicator: state.mode === 'batch' ? '' : state.indicator, q: state.mode === 'batch' ? '' : state.search,
+      series: state.mode === 'batch' ? '' : state.seriesId, from: state.mode === 'batch' ? '' : state.from, to: state.mode === 'batch' ? '' : state.to
     };
     for (const [key, value] of Object.entries(values)) if (value) url.searchParams.set(key, value);
     try { window.history.replaceState(null, '', url); } catch { /* 檔案模式不一定允許更新網址。 */ }
@@ -200,8 +204,12 @@
   function syncControls() {
     $('mode').value = state.mode;
     $('profile').value = state.profileId;
-    $('profile-field').hidden = state.mode === 'original';
-    $('profile').disabled = state.mode === 'original' || !state.manifest;
+    $('profile-field').hidden = state.mode !== 'profile';
+    $('profile').disabled = state.mode !== 'profile' || !state.manifest;
+    $('batch-field').hidden = state.mode !== 'batch';
+    $('batch').disabled = state.mode !== 'batch' || !state.manifest;
+    $('batch').value = state.batchId;
+    for (const node of document.querySelectorAll('[data-series-control]')) node.hidden = state.mode === 'batch';
     $('search').value = state.search;
   }
 
@@ -265,6 +273,7 @@
 
   async function loadCatalog() {
     if (!state.manifest) return;
+    if (state.mode === 'batch') return loadSourceBatch();
     const request = beginRequest();
     state.catalog = null;
     clearResults();
@@ -293,6 +302,74 @@
       clearResults();
       showStatus(`無法載入資料目錄。${error.message || '請稍後重試。'}`, 'error', loadCatalog);
     }
+  }
+
+  async function loadSourceBatch() {
+    const request = beginRequest();
+    state.catalog = null;
+    clearResults();
+    $('selection-panel').hidden = true;
+    catalogControls(true);
+    syncControls();
+    updateURL();
+    showStatus('正在讀取此批次的原值與來源表位…', 'loading');
+    try {
+      const entry = state.manifest.source_batches?.find((item) => item.id === state.batchId);
+      if (!entry) throw new Error('此來源表批次尚未登錄，未改用其他資料。');
+      const batch = await loadJSON(entry.catalog_url, request.signal);
+      if (!current(request)) return;
+      if (batch.mode !== 'batch' || batch.id !== entry.id || !Array.isArray(batch.records) || !Array.isArray(batch.lines) || batch.lines.length) {
+        throw new Error('單期來源表的識別或不畫線條件不符。');
+      }
+      renderSourceBatch(batch);
+      showStatus('');
+    } catch (error) {
+      if (!current(request) || error.name === 'AbortError') return;
+      clearResults();
+      showStatus(`無法載入來源表批次。${error.message || '請稍後重試。'}`, 'error', loadSourceBatch);
+    }
+  }
+
+  function reviewLabel(review) {
+    return `人工核讀 ${review?.human_review_completed ?? '未知'}/${review?.human_review_planned ?? '未知'}；人工雙校${review?.human_double_collation_completed === true ? '已完成' : '未完成'}。AI讀圖、雙引擎比對與程式通過不等於人工核讀。`;
+  }
+
+  function renderSourceBatch(batch) {
+    $('source-batch').hidden = false;
+    $('batch-title').textContent = batch.title;
+    $('batch-description').textContent = batch.description;
+    $('batch-period-note').textContent = batch.period_note;
+    $('batch-review-status').textContent = reviewLabel(batch.review_status);
+    $('batch-permalink').href = `?batch=${encodeURIComponent(batch.id)}`;
+    $('batch-scope-notes').replaceChildren(...batch.scope_notes.map((note) => element('li', '', note)));
+    $('batch-table-heading').textContent = `${batch.records.length}筆原值與逐筆原件`;
+    const fragment = document.createDocumentFragment();
+    for (const record of batch.records) {
+      const row = element('tr');
+      row.dataset.observationId = record.observation_id;
+      row.dataset.physicalCellId = record.physical_cell_id;
+      row.dataset.quantityRole = record.quantity_role;
+      const identity = element('td');
+      identity.append(element('strong', '', `表${record.source_table}`), element('span', 'cell-status', record.source_table_title), element('span', 'cell-status', `原列：${record.physical_source_row_label_raw}`), element('span', 'cell-status', `原欄：${record.source_column_context}`));
+      const value = element('td');
+      value.append(externalLink(record.source_url, textValue(record.raw_value), 'batch-value-link value-link', true));
+      value.append(element('span', 'value-unit', record.unit === null ? '單位：null（未知；原刊未獨立印出）' : `單位：${record.unit}`));
+      value.append(element('span', 'cell-status', record.quantity_role === 'responding_libraries' ? '角色：括號填答館數；非館總數' : record.aggregation_role === 'published_subtotal' ? '角色：原報小計；勿與分項再相加' : '角色：原報主量'));
+      value.append(element('span', 'cell-status', `指標：${record.indicator}`));
+      const population = element('td', '', record.population_scope);
+      const period = element('td');
+      period.append(element('span', '', `${record.data_year}年／原文「${record.period_raw}」`), element('span', 'cell-status', '精確起訖未確認；開始／結束均為 null。'), element('span', 'cell-status', '單期來源事實，不畫跨年折線。'));
+      const source = element('td');
+      source.append(externalLink(record.source_url, `官方PDF第${record.source_pdf_page}頁 ↗`, '', true), element('span', 'cell-status', `印頁${record.source_printed_page}／表${record.source_table}／列${record.source_row}／欄${record.source_column}`));
+      const details = element('details', 'batch-source-detail');
+      details.append(element('summary', '', 'SHA、版本與原格脈絡'));
+      const fields = element('dl', 'batch-source-fields');
+      for (const [label, item] of [['原件 SHA-256', record.source_sha256], ['來源版本', record.source_version_id], ['完整表位／bbox', record.source_locator], ['觀測 ID', record.observation_id], ['來源紀錄 ID', record.source_record_id], ['共用實體格 ID', record.physical_cell_id], ['原格完整字串', externalLink(record.source_url, textValue(record.physical_cell_raw), 'physical-cell-link', true)], ['原刊單位字串', record.unit_raw], ['單位狀態', record.unit_status], ['原始擷取／補錄方法', record.raw_transcription_method], ['原註與範圍', record.original_source_note], ['原格注意事項', record.source_context_notes.join('；')]]) fact(fields, label, item);
+      details.append(fields);source.append(details);
+      row.append(identity, value, population, period, source);
+      fragment.append(row);
+    }
+    $('batch-records').replaceChildren(fragment);
   }
 
   async function refreshSeries() {
@@ -588,9 +665,11 @@
       document.title = `${manifest.title || '臺灣公共圖書館資料'}｜原值與官方來源`;
       $('versions').textContent = `資料 v${manifest.data_version || '未列'} ・ 閱覽器 v${manifest.viewer_version || '未列'}`;
       $('manifest-scope').textContent = manifest.scope_note ? textValue(manifest.scope_note) : '';
+      $('human-review-status').textContent = reviewLabel(manifest.review_status);
       setLink('repository-link', manifest.repository_url);
       setLink('release-link', manifest.release_url);
       $('profile').replaceChildren(...manifest.profiles.map((profile) => option(profile.id, profile.title || profile.id)));
+      $('batch').replaceChildren(...(manifest.source_batches || []).map((batch) => option(batch.id, batch.title || batch.id)));
       $('mode').disabled = false;
       $('reset-query').disabled = false;
       syncControls();
@@ -610,6 +689,19 @@
   });
   $('profile').addEventListener('change', () => {
     state.profileId = $('profile').value;
+    resetFilters();
+    void loadCatalog();
+  });
+  $('batch').addEventListener('change', () => {
+    state.batchId = $('batch').value;
+    void loadCatalog();
+  });
+  $('source-batch-links').addEventListener('click', (event) => {
+    const link = event.target.closest('a');
+    if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || !state.manifest) return;
+    event.preventDefault();
+    state.batchId = new URL(link.href).searchParams.get('batch') || '';
+    state.mode = 'batch';
     resetFilters();
     void loadCatalog();
   });
@@ -637,7 +729,8 @@
   $('retry').addEventListener('click', () => { if (state.retry) void state.retry(); });
   window.addEventListener('popstate', () => {
     const params = new URLSearchParams(window.location.search);
-    state.mode = params.get('mode') === 'original' ? 'original' : 'profile';
+    state.mode = params.has('batch') || params.get('mode') === 'batch' ? 'batch' : params.get('mode') === 'original' ? 'original' : 'profile';
+    state.batchId = params.get('batch') || 'ncl94-statistics';
     state.profileId = params.get('profile') || state.manifest?.default_profile_id || '';
     state.entity = params.get('entity') || ''; state.indicator = params.get('indicator') || '';
     state.search = params.get('q') || ''; state.seriesId = params.get('series') || '';

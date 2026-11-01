@@ -55,6 +55,22 @@ summary { cursor: pointer; color: var(--green); padding: 9px 0; font-size: 14px;
 .document-links { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; }
 .small { font-size: 13px; color: var(--muted); }
 .scope-note { margin: 9px 0 0; overflow-wrap: anywhere; }
+.review-notice { margin-top: 15px !important; margin-bottom: 14px !important; }
+.batch-entry { padding: 14px 17px; border: 1px solid var(--line); background: var(--soft-green); }
+.batch-entry a { font-weight: 650; display: block; }
+.batch-entry span { display: block; margin-top: 4px; }
+.batch-scope-notes { font-size: 14px; margin: 16px 0 22px; }
+.batch-scope-notes li + li { margin-top: 7px; }
+#batch-table { min-width: 1180px; font-size: 14px; }
+#batch-table th:nth-child(1) { width: 20%; }
+#batch-table th:nth-child(2) { width: 18%; }
+#batch-table th:nth-child(3) { width: 22%; }
+#batch-table th:nth-child(4) { width: 16%; }
+#batch-table th:nth-child(5) { width: 24%; }
+.batch-source-detail { margin-top: 8px; }
+.batch-source-fields { margin: 0; font-size: 12px; }
+.batch-source-fields dt { margin-top: 10px; font-weight: 650; }
+.batch-source-fields dd { white-space: pre-wrap; overflow-wrap: anywhere; }
 .query-section { padding: 24px; border: 1px solid var(--line); border-top: 3px solid var(--green); background: var(--surface); }
 .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
 .section-kicker { font-size: 12px; color: var(--muted); margin: 0 0 4px; letter-spacing: .12em; }

@@ -16,7 +16,7 @@
       <div class="header-rule" aria-hidden="true"></div>
       <p class="eyebrow">公共資料閱覽室 <span aria-hidden="true">／</span> 圖書館</p>
       <h1 id="page-title">臺灣公共圖書館資料</h1>
-      <p class="intro">依問題查找原刊數列，從數值回到官方來源。原值照留，未知不補零；不同版本與口徑各自呈現。</p>
+      <p class="intro">查閱原刊數列與單期來源表，從數值回到官方來源。原值照留，未知不補零；不同版本與口徑各自呈現。</p>
       <div class="header-bottom">
         <p id="versions" class="versions">正在讀取資料版本…</p>
         <nav class="document-links" aria-label="資料文件">
@@ -25,6 +25,8 @@
         </nav>
       </div>
       <p id="manifest-scope" class="small scope-note"></p>
+      <p id="human-review-status" class="notice review-notice">人工核讀 0/120；人工雙校未完成。AI讀圖、雙引擎比對與程式通過不等於人工核讀。</p>
+      <nav id="source-batch-links" class="batch-entry" aria-label="單期來源表批次"><a href="?batch=ncl94-statistics">新增來源表：94年卷統計章（2004年，24筆／16格）</a><span class="small">單期原值與官方原件；不畫跨年折線。</span></nav>
     </header>
 
     <main>
@@ -32,7 +34,7 @@
 
       <section id="query" class="query-section" aria-labelledby="query-heading">
         <div class="section-heading">
-          <div><p class="section-kicker">查詢條件</p><h2 id="query-heading">找到要讀的數列</h2></div>
+          <div><p class="section-kicker">查詢條件</p><h2 id="query-heading">找到要讀的資料</h2></div>
           <button id="reset-query" class="quiet-button" type="button" disabled>重設查詢</button>
         </div>
         <form id="query-form" aria-label="資料篩選">
@@ -41,25 +43,29 @@
               <select id="mode" disabled>
                 <option value="profile">依已登錄問題</option>
                 <option value="original">查閱原刊數列</option>
+                <option value="batch">查閱來源表批次（單期）</option>
               </select>
+            </label>
+            <label id="batch-field" class="field field-wide" hidden>來源表批次
+              <select id="batch" disabled><option value="">正在載入批次…</option></select>
             </label>
             <label id="profile-field" class="field field-wide">問題
               <select id="profile" disabled><option value="">正在載入問題…</option></select>
             </label>
-            <label class="field">原對象／地區
+            <label class="field" data-series-control>原對象／地區
               <select id="entity" disabled><option value="">全部原對象</option></select>
             </label>
-            <label class="field">原指標
+            <label class="field" data-series-control>原指標
               <select id="indicator" disabled><option value="">全部原指標</option></select>
             </label>
-            <label class="field field-wide">搜尋數列、館種或來源
+            <label class="field field-wide" data-series-control>搜尋數列、館種或來源
               <input id="search" type="search" placeholder="例如：全國 借閱、國圖、新竹" autocomplete="off" disabled>
             </label>
-            <label class="field field-full">原刊數列
+            <label class="field field-full" data-series-control>原刊數列
               <select id="series" disabled><option value="">請先選擇問題或查閱方式</option></select>
             </label>
           </div>
-          <div class="period-row">
+          <div class="period-row" data-series-control>
             <fieldset class="period-fields">
               <legend>顯示期間</legend>
               <label class="field">起年<select id="from" disabled><option value="">未指定</option></select></label>
@@ -84,6 +90,18 @@
         <p id="selection-purpose" class="small"></p>
         <ul id="selection-explanation" class="explanation-list"></ul>
         <details id="trend-detail" class="subtle-details" hidden><summary>此查詢的預先產生摘要</summary><div id="trend-content"></div></details>
+      </section>
+
+      <section id="source-batch" class="result-section source-batch" aria-labelledby="batch-title" hidden>
+        <div class="result-heading"><div><p class="section-kicker">單期來源表批次</p><h2 id="batch-title"></h2></div><a id="batch-permalink" href="?batch=ncl94-statistics">此批次固定網址</a></div>
+        <p id="batch-description"></p>
+        <p id="batch-period-note" class="comparison-note"></p>
+        <p id="batch-review-status" class="notice">人工核讀 0/120；人工雙校未完成。AI讀圖、雙引擎比對與程式通過不等於人工核讀。</p>
+        <ul id="batch-scope-notes" class="batch-scope-notes"></ul>
+        <div class="table-heading"><h3 id="batch-table-heading">24筆原值與逐筆原件</h3><p class="small">每個原值直接連往官方PDF；向右捲動可讀母體、期間與完整來源。</p></div>
+        <div class="table-scroll" role="region" aria-labelledby="batch-table-heading" tabindex="0">
+          <table id="batch-table"><caption class="visually-hidden">單期來源觀測；主量與填答館數分列，不合成館總數。</caption><thead><tr><th scope="col">原表／列／欄</th><th scope="col">原值／單位／角色</th><th scope="col">母體與範圍</th><th scope="col">原期間</th><th scope="col">官方原件與完整表位</th></tr></thead><tbody id="batch-records"></tbody></table>
+        </div>
       </section>
 
       <section id="result" class="result-section" aria-labelledby="series-title" aria-busy="false" hidden>

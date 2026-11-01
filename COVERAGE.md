@@ -117,7 +117,10 @@ v0.9.2有22個明確母體／用途的預設問題，完整路由76,878筆既有
 <!-- BEGIN lightweight-site -->
 ## 網站呈現範圍
 
-[公開輕量圖表網站](https://poplolioi11.github.io/tw-public-library-statistics/)保留既有全部合格原刊圖表與問題內圖表，按需讀取。此項改版沒有補新年、推算2012原量或認證新的跨年口徑；完整度仍依本文件各來源批次。單期事實、未解與不可繪圖記錄留在原資料包。
+[公開輕量圖表網站](https://poplolioi11.github.io/tw-public-library-statistics/)保留既有全部合格原刊圖表與問題內圖表，按需讀取。此項改版沒有補新年、推算2012原量或認證新的跨年口徑；完整度仍依本文件各來源批次。國圖94年卷2004年24筆單期觀測已以完整來源表呈現，原值、未知單位、主量與填答館數分列；未新增跨年線段。其他未解或尚未納入網站的記錄仍留在正式資料包。
+
+
+來源表固定入口：https://poplolioi11.github.io/tw-public-library-statistics/?batch=ncl94-statistics。人工核讀與雙校尚未完成，程式與AI核讀不算人工完成。
 <!-- END lightweight-site -->
 
 
