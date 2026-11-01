@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "canonical_path": "data/combined/observations.jsonl.gz",
-  "records": 58245,
+  "records": 58269,
   "unresolved_period_records": 467,
   "partitions": [
     {
@@ -98,9 +98,9 @@
     {
       "data_year": 2004,
       "path": "data/by_year/2004.jsonl",
-      "records": 435,
-      "bytes": 2422199,
-      "sha256": "e99366140cc945cb1f9145d2778921b2b9501ba5daa6e48c7b68b48d80dfeb42"
+      "records": 459,
+      "bytes": 2645347,
+      "sha256": "4afac1fa4152cde063de45adcd53431aa8ec99ad339770e11342f032f78054cf"
     },
     {
       "data_year": 2005,

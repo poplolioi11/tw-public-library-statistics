@@ -12,8 +12,8 @@ def stable(x):
 
 
 def build(root=ROOT):
-    rows=[r for r in record_io.rows(root) if str(r['source_id']).startswith('discovered-')]
     report=json.loads((root/'raw/discovered-20261028/extraction-metadata.json').read_text())
+    rows=[r for r in record_io.rows(root) if r.get('component_source_id') in report['source_counts']]
     if len(rows)!=report['canonical_observations_added']:
         raise ValueError('Definition review requires the complete formally ingested batch')
     groups=collections.defaultdict(list)

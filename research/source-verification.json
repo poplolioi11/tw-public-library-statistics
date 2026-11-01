@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-10-28T11:43:54.651762+00:00",
+  "checked_at": "2026-11-01T12:03:32.563186+00:00",
   "status": "pass",
-  "assertions": 1288513,
+  "assertions": 1288537,
   "scope": "3091 core source cells exhaustively checked; all NCL adapter lineage/number states checked. Complete independently fixed glyph grids for explicitly reviewed cohorts and image/header/row/footnote selections are separately bounded in each evidence report. Older source review limits remain individually reported.",
   "independent_of_pipeline_and_extractors": true,
   "network_used": false,
@@ -60,7 +60,7 @@
     "cross_family_rule": "Separate series; no cross-family totals or sums are calculated.",
     "inputs": {
       "observations_sha256": "f1ff9996a7f6651eb6dd0bd15f26d48f6eb8041cf67fc39db0170790c7095492",
-      "manifest_sha256": "dcdf8cf91800a21e6932699642b1d66c58339557aa1e595e095cec157542d79f"
+      "manifest_sha256": "8fdc5d13abd84b75f869f0c06daba0a2640fd95b381dde783aeb15232ac201e2"
     }
   },
   "historical_ncl": {
@@ -457,9 +457,24 @@
       }
     }
   },
+  "reviewed_unit_metadata": {
+    "status": "pass",
+    "rules_checked": 52,
+    "observations_checked": 14596,
+    "rules_sha256": "1b100b28f24940a2b9bb5fa0a54a74722f8aa456163459a18492e71f71c2e9f7",
+    "ledger_sha256": "36488596bd7204fb6e896ae29f4b4b42651e7ccb59d50617335b8783ef77c1c4",
+    "allowed_metadata_fields": [
+      "source_unit_context_locator",
+      "unit",
+      "unit_basis",
+      "unit_status"
+    ],
+    "source_values_raw_strings_periods_and_locators_reversed": false,
+    "scope": "Fixed original-field and same-original aggregate unit evidence only; subsequent source/adapter checks still compare every original value and locator. Not human review."
+  },
   "components": {
     "status": "pass",
-    "canonical_records_checked": 55154,
+    "canonical_records_checked": 55178,
     "local_raw_documents_checked": 35,
     "local_raw_cells_and_derived_rows_checked": 25184,
     "blank_non_observation_raw_rows_excluded": 5,
@@ -468,13 +483,13 @@
     "conflicting_value_groups": 0,
     "historical_adapter_records_checked": 1489,
     "additional_ncl_expected_records": 17912,
-    "complete_discovered_original_records_separately_verified": 20358,
+    "complete_discovered_original_records_separately_verified": 20382,
     "explicit_missing_source_markers_retained": 4,
     "pdf_raw_files_hash_checked": 6,
     "local_verification_level": "All original JSON cells and complete original objects vs derived; every nonduplicate adapter record vs derived and raw.",
     "historical_verification_level": "Every adapter record vs derived and PDF source hashes; NCL visual sample scope reported separately. DGBAS PDF content not independently transcribed in this adapter review.",
     "inputs": {
-      "components_sha256": "5b833200deeb35269e0b3c0ead518c3585c2fb069412619428e82231041f7f02",
+      "components_sha256": "dc341994db14e0379341d4dc009a5f4e159aa38c31e0e1f1ac5014c93ba13f9c",
       "local_derived_sha256": "d7ae5850837da2c085668ee8f7f5ad260fc76bb06fc1d929d70447932bd063da"
     }
   },
@@ -488,7 +503,46 @@
     "null_cells": 5818,
     "zero_cells": 21,
     "source_periods_units_and_qualifiers_preserved": true,
-    "human_double_collation_claimed": false
+    "human_double_collation_claimed": false,
+    "additional_reviewed_batches": {
+      "ncl-ed94-statistics": {
+        "formal_observations": 24,
+        "physical_cells": 16,
+        "quantity_roles": {
+          "primary": 16,
+          "responding_libraries": 8
+        },
+        "unit_null": 8,
+        "status": "pass",
+        "original_sha_checked": true,
+        "numeric_reference": "complete bounded AI image reading, not a human gold standard",
+        "human_review_completed": false,
+        "human_double_collation_completed": false,
+        "cross_source_comparability_certified": false,
+        "canonical_observations_checked": 24,
+        "publication_only_field_differences_allowed": [
+          "public_evidence_path",
+          "public_evidence_sha256",
+          "public_projection_policy",
+          "snapshot_distribution"
+        ]
+      }
+    }
+  },
+  "ncl94_statistics_originals": {
+    "formal_observations": 24,
+    "physical_cells": 16,
+    "quantity_roles": {
+      "primary": 16,
+      "responding_libraries": 8
+    },
+    "unit_null": 8,
+    "status": "pass",
+    "original_sha_checked": true,
+    "numeric_reference": "complete bounded AI image reading, not a human gold standard",
+    "human_review_completed": false,
+    "human_double_collation_completed": false,
+    "cross_source_comparability_certified": false
   },
   "ncl_gap_independent": {
     "status": "pass",
@@ -671,9 +725,9 @@
   },
   "combined": {
     "status": "pass",
-    "records_checked": 58245,
+    "records_checked": 58269,
     "all_original_fields_preserved": true,
-    "snapshot_sha256": "5fc98b632c55b00e42924b6701636558ead494cd70d3d6d170614008b8cfc64f"
+    "snapshot_sha256": "3eab06103b4ea41d7ed9db7b8d61a057143a04ad8105feb599548d5807224031"
   },
   "ncl_v02_targeted_image_review": {
     "report_path": "research/ncl-v02-independent-image-samples.json",

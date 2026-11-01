@@ -33911,6 +33911,14 @@
       "derived_csv": "derived/discovered_20261028_long.csv",
       "review_metadata": [],
       "completeness_scope": "Only the named table/subset batch; not entire yearbook or all counties/years."
+    },
+    {
+      "cohort_id": "ncl94_statistics",
+      "status": "reviewed_bounded_scope",
+      "source_cells": 24,
+      "derived_csv": "derived/ncl94_statistics_long.csv",
+      "review_metadata": [],
+      "completeness_scope": "Only the named table/subset batch; not entire yearbook or all counties/years."
     }
   ]
 }

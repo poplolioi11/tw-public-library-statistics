@@ -10,14 +10,14 @@ def main():
  parser=argparse.ArgumentParser();parser.add_argument('--force-new',action='store_true',help='archive a reviewed code/document revision even when canonical facts did not change');args=parser.parse_args()
  version=(R/'VERSION').read_text().strip() if (R/'VERSION').exists() else '0.1.0'
  manifest=[];selected={}
- root_files=['README.md','AI_USAGE.md','LICENSE.md','LICENSE_CODE','COVERAGE.md','CHANGELOG.md','CITATION.cff','VERSION','requirements.txt','requirements-lock.txt','llms.txt','datapackage.json','.gitignore']
+ root_files=['README.md','README.en.md','AI_USAGE.md','LICENSE.md','LICENSE_CODE','COVERAGE.md','CHANGELOG.md','CITATION.cff','VERSION','requirements.txt','requirements-lock.txt','llms.txt','datapackage.json','.gitignore']
  for name in root_files:
   p=R/name
   if not p.exists():raise FileNotFoundError(p)
   selected[name]=p.read_bytes()
  for directory,extensions in [('scripts',{'.py','.json'}),('tests',{'.py'}),('docs',{'.md','.json'}),('research',{'.md','.json'}),('derived',{'.csv','.json','.jsonl','.sqlite','.gz'}),('data/combined',{'.csv','.json','.jsonl','.sqlite','.gz'})]:
   for p in (R/directory).rglob('*'):
-   if p.is_file() and p.suffix in extensions and (p.suffix!='.sqlite' or str(p.relative_to(R)) in {'derived/phase1_inventory.sqlite','derived/phase1_supplements.sqlite','derived/phase2/definitions.sqlite','derived/phase3/selection.sqlite','data/combined/library_statistics.sqlite'}) and (directory!='derived' or p.suffix!='.gz' or str(p.relative_to(R)) in {'derived/phase2/annotations.csv.gz','derived/phase2/annotations.jsonl.gz','derived/phase3/record_routes.csv.gz','derived/phase3/record_routes.jsonl.gz','derived/phase3/candidate_decisions.csv.gz','derived/phase3/candidate_decisions.jsonl.gz'}) and '__pycache__' not in p.parts and not any('private' in part.lower() for part in p.relative_to(R).parts):selected[str(p.relative_to(R))]=p.read_bytes()
+   if p.is_file() and p.suffix in extensions and (p.suffix!='.sqlite' or str(p.relative_to(R)) in {'derived/phase1_inventory.sqlite','derived/phase1_supplements.sqlite','derived/phase2/definitions.sqlite','derived/phase3/selection.sqlite','data/combined/library_statistics.sqlite'}) and (directory!='derived' or p.suffix!='.gz' or str(p.relative_to(R)) in {'derived/phase2/annotations.csv.gz','derived/phase2/annotations.jsonl.gz','derived/phase3/record_routes.csv.gz','derived/phase3/record_routes.jsonl.gz','derived/phase3/candidate_decisions.csv.gz','derived/phase3/candidate_decisions.jsonl.gz'}) and '__pycache__' not in p.parts and not any('private' in part.lower() for part in p.relative_to(R).parts) and not str(p.relative_to(R)).startswith('research/manual-sample-'):selected[str(p.relative_to(R))]=p.read_bytes()
  for name in ['observations.jsonl','indicators.json','source_manifest.json','source_history.jsonl','historical_source_history.jsonl','reviewed_historical_cohorts.json','reviewed_phase1_batches.json','reviewed_policy.json','component_records.jsonl','component_records.jsonl.gz','component_quality.json','summary.json','coverage.json']:
   p=R/'data'/name
   if p.exists():selected[str(p.relative_to(R))]=p.read_bytes()

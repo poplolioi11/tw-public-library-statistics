@@ -1,7 +1,7 @@
 {
   "name": "tw-public-library-statistics",
   "title": "臺灣公共圖書館跨年度統計",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "已驗證可得來源的全量整理；不是宣稱臺灣所有年代、所有縣市與每一圖書館都已完整。",
   "licenses": [
     {
@@ -16,7 +16,7 @@
       "format": "csv",
       "encoding": "utf-8-sig",
       "compression": "gzip",
-      "hash": "sha256:516ec8bc86acdd6e0f0a3e3c548adcdd5b19bab612cb289fee5c5e7a7276c53c"
+      "hash": "sha256:6003a8e0e65296129d40f058de661be90ec4416ade61e5fa1c177ff49d70ba03"
     },
     {
       "name": "observations-jsonl",
@@ -29,7 +29,7 @@
       "path": "data/combined/library_statistics.sqlite.gz",
       "format": "sqlite",
       "compression": "gzip",
-      "hash": "sha256:73f7ef54384ec56abe3a09e7adfa1423c1b7e5e64789bfa46484bdb3d9abf3bc"
+      "hash": "sha256:6e91e8d008718046080944b245db5fd39d60d60c7847da7c4664d1a98e8119c7"
     },
     {
       "name": "phase1_authority_checks-csv",
@@ -63,14 +63,14 @@
       "name": "phase1_raw_source_profiles-csv",
       "path": "derived/phase1_raw_source_profiles.csv",
       "format": "csv",
-      "hash": "sha256:3f117945f679b6c721051f93136c01026b446eed55d524efac17e55bdbb50872",
+      "hash": "sha256:b1d648b36961e3a5106bd3bac27f0b40f81112b9e72d4031025f17df2fbabff2",
       "layer": "source_inventory"
     },
     {
       "name": "phase1_raw_source_profiles-jsonl",
       "path": "derived/phase1_raw_source_profiles.jsonl",
       "format": "jsonl",
-      "hash": "sha256:aef6549c314a40d3f34dfad3ff10e34b70753f6a9fb32ff32d836bb04dadd059",
+      "hash": "sha256:0ffffd27ded2df7f51b6de6ad51a66c4e3245dfc756c0e8024d58db85804c6eb",
       "layer": "source_inventory"
     },
     {
@@ -203,7 +203,7 @@
       "format": "csv",
       "compression": "gzip",
       "layer": "source_selection_annotations; not additional operational statistics",
-      "hash": "sha256:50ea5396ecd1d54aba4c9f2c7df943d839abf334f25c0472693881a90bc92caf"
+      "hash": "sha256:827328edc949f06a8c1745c56ae0e8223c01fac2462d945eda6ee66653b89957"
     },
     {
       "name": "phase3-record_routes-jsonl",
@@ -211,7 +211,7 @@
       "format": "jsonl",
       "compression": "gzip",
       "layer": "source_selection_annotations; not additional operational statistics",
-      "hash": "sha256:f833c76e353b1df7f64b2dd11ee6238c31929c3726bc5569e063f82bdaeaa5c8"
+      "hash": "sha256:26cc2a9d8eb75fd267c310b452ba137de3ec7006868480c282bf9c8c397e6440"
     },
     {
       "name": "phase3-candidate_decisions-csv",
@@ -266,7 +266,7 @@
       "path": "derived/phase3/selection.sqlite",
       "format": "sqlite",
       "layer": "source_selection_annotations",
-      "hash": "sha256:bb455754a76ab48f9741847a61d0de6b85cd3d8259908828dfbe3292cc1b000b"
+      "hash": "sha256:02e027333d4c6c62c9c5b620dcc592e0cbc159e008a5cde96ca24428f3634f4c"
     }
   ],
   "homepage": "https://github.com/poplolioi11/tw-public-library-statistics",

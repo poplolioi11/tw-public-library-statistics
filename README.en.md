@@ -1,6 +1,6 @@
 # Taiwan Public Library Statistics Across Years
 
-[完整中文說明](README.md#完整中文說明) · [Open the chart explorer](https://poplolioi11.github.io/tw-public-library-statistics/) · [Download v0.9.1](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1)
+[完整中文說明](README.md#完整中文說明) · [Open the chart explorer](https://poplolioi11.github.io/tw-public-library-statistics/) · [Download v0.9.2](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.2)
 
 This is an English translation and navigation guide to the existing Chinese documentation. It adds no new statistical observations, review certification, or dataset version. Consult the Chinese documentation for exact source terminology and original quotations.
 
@@ -14,17 +14,17 @@ Explore Taiwan's public-library collections, circulation, library counts, and se
 | --- | --- |
 | How has national book circulation changed in recent years? | [View the 2020–2024 book-loan chart](https://poplolioi11.github.io/tw-public-library-statistics/?profile=national-ncl-book-loans-panel&from=2020&to=2024). It uses one checked panel from the original publications, with a route back to the official source for each value. |
 | Where are historical county/city library counts or monthly branch tables? | [Explore county/city library counts under the DGBAS definition](https://poplolioi11.github.io/tw-public-library-statistics/?profile=county-library-count-dgbas&entity=%E8%87%BA%E5%8D%97%E5%B8%82), or [view a monthly branch-table example for Sanmin Branch](https://poplolioi11.github.io/tw-public-library-statistics/?profile=discovered-official-monthly-tables&series=comparison-9d8764a5d362caefbadaac33). |
-| How can I analyze the data myself or use it with AI? | Download [CSV](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.1/observations.csv), [JSONL.gz](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.1/observations.jsonl.gz), or [SQLite](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.1/library_statistics.sqlite). For smaller files, use the [annual index](data/by_year/index.json). See the [AI and analysis guide](AI_USAGE.md) for reading instructions. |
+| How can I analyze the data myself or use it with AI? | Download [CSV](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/observations.csv.gz), [JSONL.gz](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/observations.jsonl.gz), or [SQLite](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/library_statistics.sqlite.gz). For smaller files, use the [annual index](data/by_year/index.json). See the [AI and analysis guide](AI_USAGE.md) for reading instructions. |
 
 **Before use:** historical gaps remain, definitions differ between some sources, and transcriptions of scanned yearbooks have not undergone independent human double-checking. See [coverage and gaps](COVERAGE.md) and the [comparison rules](README.md#比較前先確認口徑) for the boundaries of the charts and source-reported values.
 
-Documentation status checked on **2026-10-30**; the dataset remains **v0.9.1**. **Human sample reading and independent human double-checking are not yet complete.** No human reference readings, error rates, or model accuracy scores have been filled in ahead of that work. Code checks, source hashes, and AI review against source images do not replace human reference data. The [source backlog and completed scope](docs/source-backlog.md) are recorded separately; use [CITATION.cff](CITATION.cff) for the versioned citation.
+Documentation status checked on **2026-11-01**; the dataset remains **v0.9.2**. **Human sample reading and independent human double-checking are not yet complete.** No human reference readings, error rates, or model accuracy scores have been filled in ahead of that work. Code checks, source hashes, and AI review against source images do not replace human reference data. The [source backlog and completed scope](docs/source-backlog.md) are recorded separately; use [CITATION.cff](CITATION.cff) for the versioned citation.
 
 ## Version, citation, and method
 
-Version **0.9.1**; data build date **2026-10-29**. Public repository: [poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics). [Download v0.9.1](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1).
+Version **0.9.2**; data build date **2026-11-01**. Public repository: [poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics). [Download v0.9.2](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.2).
 
-Use **Cite this repository** in the repository sidebar or [CITATION.cff](CITATION.cff), and record the version, selected statistical definitions, and official source tables used in your work. Version v0.9.1 was archived on Zenodo on 2026-10-30 with version DOI [10.5281/zenodo.23788194](https://doi.org/10.5281/zenodo.23788194). The fixed GitHub Release continues to identify the original public version.
+Use **Cite this repository** in the repository sidebar or [CITATION.cff](CITATION.cff), and record the version, selected statistical definitions, and official source tables used in your work. Version v0.9.1 was archived on Zenodo on 2026-10-30 with version DOI [10.5281/zenodo.23788194](https://doi.org/10.5281/zenodo.23788194). The fixed GitHub Release continues to identify the original public version. Version 0.9.2 has no new Zenodo DOI; cite its fixed GitHub Release. Do not apply the 0.9.1 DOI to 0.9.2.
 
 The [data-paper draft on sources, methods, validation, and limitations](docs/DATA_PAPER_DRAFT.md) is **an unsubmitted draft that has not been peer reviewed**. [Reuse evidence and feedback](docs/REUSE.md) explains how to report actual use. Stars, forks, and download counts are not treated as direct evidence of research adoption.
 
@@ -34,13 +34,13 @@ Existing work was checked before compilation. The National Library of Public Inf
 
 ## What is included
 
-The current dataset contains **58,245 source-observation records**, including **206 explicitly missing cells**, **1,303 cells left blank in the original publications**, **5,413 cells containing original textual statuses**, and different publication versions. A record count is not a count of libraries, and the entire dataset must not be summed as one total.
+The current dataset contains **58,269 source-observation records**, including **206 explicitly missing cells**, **1,303 cells left blank in the original publications**, **5,413 cells containing original textual statuses**, and different publication versions. A record count is not a count of libraries, and the entire dataset must not be summed as one total.
 
 | Source family | Compiled scope | Records |
 | --- | --- | ---: |
 | National Library of Public Information: public national charts | Public national charts for 2011–2025; national figures only | 855 |
 | National Library of Public Information: 2023 open data, including counties/cities | The 2023 annual resources with an explicit OGDL statement; national, county/city, and alternative definitions remain separate and are not added together | 2,236 |
-| National Central Library yearbook statistical facts | Specified core tables, public-library subsets, and original figures in volumes 91–114; data years 2001–2024; different publication versions retained | 20,795 |
+| National Central Library yearbook statistical facts | Specified core tables, public-library subsets, and original figures in volumes 91–114; data years 2001–2024; different publication versions retained | 20,819 |
 | National Central Library reading-report statistical facts | 5 national reading-report tables for 2011–2012, including comparisons across years; not county/city tables | 154 |
 | DGBAS historical national statistics | 3 source versions; data years 1991–2011; overlapping versions kept separately | 220 |
 | DGBAS county/city public-library counts | Officially recast geographic units for 1998–2025; the source includes the National Central Library; missing values are not filled with 0 | 644 |
@@ -67,7 +67,7 @@ For this series, consult the [official query page](https://winstacity.dgbas.gov.
 
 ## Download and read the data
 
-[Version and complete downloads](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1) · [Read JSONL by year](data/by_year/index.json)
+[Version and complete downloads](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.2) · [Read JSONL by year](data/by_year/index.json)
 
 The public copies remove unrelated contact fields from 22 original files and provide statistical projections with separate hashes. Original source URLs, source-file SHA hashes, and every statistical value are retained. See [the distinction between public copies and source originals](docs/PUBLICATION.md).
 
@@ -130,7 +130,7 @@ The 2012 county/city core original quantities have still not been obtained and a
 
 ## Phase 2: source-supported review of statistical definitions
 
-Version v0.9.1 reviews the existing 76,854 quantitative records individually: 58,245 formal observations, 18,486 local source cells, and 123 plan quantity cells. The three layers remain separate and are not added into a measure of library activity. There are 445 source evidence cards and 100 breakpoint/field rules that link to official originals, SHA hashes, and source-table positions.
+Version v0.9.2 reviews the existing 76,878 quantitative records individually: 58,269 formal observations, 18,486 local source cells, and 123 plan quantity cells. The three layers remain separate and are not added into a measure of library activity. There are 448 source evidence cards and 100 breakpoint/field rules that link to official originals, SHA hashes, and source-table positions.
 
 - Within the scope of the original publications/files, 1,677 groups support limited comparisons over multiple periods; 554 involve different years. This is not certification of a common method, complete historical coverage, or a panel across sources.
 - The number of originally null-unit records eligible for an additional interpretation from the verified original “冊數／人次” headings is 0. The 14,400 original five-digit year/month strings are decoded strictly. Original values, `unit`, and `data_year` remain unchanged.
@@ -140,7 +140,7 @@ Version v0.9.1 reviews the existing 76,854 quantitative records individually: 58
 
 ## Phase 3: choose sources by question and view line charts
 
-Version v0.9.1 provides 22 preset questions with explicit populations and purposes. They route all 76,854 existing quantitative records and retain 115,356 candidate decisions with source-selection reasons. These are source-selection annotations, not additional library counts or operating volumes; original statistical values remain unchanged.
+Version v0.9.2 provides 22 preset questions with explicit populations and purposes. They route all 76,878 existing quantitative records and retain 115,356 candidate decisions with source-selection reasons. These are source-selection annotations, not additional library counts or operating volumes; original statistical values remain unchanged.
 
 [Line charts and source selection](site/phase3.html#line-charts) · [All original-publication series](site/phase2.html#line-charts) · [Question index](docs/phase3-question-index.json) · [Scope and usage](docs/PHASE3.md) · [Small files by question/year](docs/phase3-partitions.json)
 
@@ -150,7 +150,7 @@ Source selection and comparability across years are separate decisions: a record
 
 ## Official-table ingestion batch of 2026-10-28
 
-Version v0.9.1 retains the 20,358 original cells ingested on 2026-10-28 from the complete specified tables and continuation pages of 12 official originals. They are not observations added by this metadata revision. Early yearbooks for 2001–2004, Ministry of Education data for 1994–2009, national DGBAS tables for 2010–2024, and the listed publications from New Taipei, Tainan, Taoyuan, Changhua, Kaohsiung, and Taipei are stored separately. Kaohsiung includes all 52 pages of table 3-2, with annual and 12 monthly values for each library. Taipei's scope in this batch is December 2012 only.
+Version v0.9.2 retains the 20,358 original cells ingested on 2026-10-28 from the complete specified tables and continuation pages of 12 official originals. They are not observations added by this metadata revision. Early yearbooks for 2001–2004, Ministry of Education data for 1994–2009, national DGBAS tables for 2010–2024, and the listed publications from New Taipei, Tainan, Taoyuan, Changhua, Kaohsiung, and Taipei are stored separately. Kaohsiung includes all 52 pages of table 3-2, with annual and 12 monthly values for each library. Taipei's scope in this batch is December 2012 only.
 
 The added cells comprise 14,540 numeric cells, 427 original publication blanks, and 5,391 original symbols/composite cells. The periods of 467 cells remain unconfirmed. A count of source cells is not a count of libraries. Totals, components, annual totals, and monthly values must not all be added together. An unknown original year is not replaced with its publication year; missing source values are not filled with 0. New Taipei collection figures are segmented around 2010. Kaohsiung's definitions for annual collection/periodical aggregates and circulation rates remain unresolved and are not treated as a trend in year-end stock.
 
@@ -170,8 +170,12 @@ Using fixed originals, units were confirmed for 14,596 records: 14,584 from orig
 
 [Open the charts](https://poplolioi11.github.io/tw-public-library-statistics/). There is no need to download an entire HTML document: the site first loads the question catalog, then small JSON files for the selected series. Mobile axis labels use a fixed font size. Each plotted point and table value links back to the official original or official dynamic query entry point, with the source-file SHA, original table position, and edition.
 
-The data version remains **v0.9.1**; the viewer has its own version, **v1.0.0**. The existing 1677 original-publication series, 2767 within-question series, and 847 precomputed intervals are exported in full. The same original series may occur in multiple questions; these counts must not be added together as statistical observations. Only presentation and transfer have changed: original values, missingness, definitions, source selection, and permitted line segments are unchanged. For single-period facts or questions without eligible charts, consult the full data package. Having no chart does not mean there are no data.
+The data version remains **v0.9.2**; the viewer has its own version, **v1.0.0**. The existing 1677 original-publication series, 2767 within-question series, and 847 precomputed intervals are exported in full. The same original series may occur in multiple questions; these counts must not be added together as statistical observations. This viewer section describes the presentation changes. Existing charts retain their original values, missingness and permitted line segments; the separate NCL94 additions below are single-period source facts. For single-period facts or questions without eligible charts, consult the full data package. Having no chart does not mean there are no data.
 
 See the [site scope, rebuild, and validation](docs/LIGHTWEIGHT_SITE.md). The existing single-file viewers remain available for offline use; GitHub Pages deploys only `site/light/`.
 
 Complete CSV and SQLite files are provided with lossless gzip compression. Decompress them for use with ordinary CSV/SQLite tools; the Release also provides the same decompressed files. `record_io` reads JSONL/CSV automatically according to the publication profile. SQLite validation checks a temporary decompressed file. Statistical values, SQL NULLs, and source locations are unchanged by compression.
+
+## v0.9.2: complete NCL94 public-library subsets
+
+Adds 24 reported quantities from 16 physical cells in 2004 tables145/146/147. Eight parenthesized counts are responding libraries, never total libraries. Public/private types, branch-inclusive counts and cooperation membership remain separate. Eight unprinted units remain null. All 58,245 prior observations are unchanged field by field. Human sample readings remain 0/120 and human double-checking is incomplete. [Exact scope and official sources](docs/NCL94_STATISTICS.md).

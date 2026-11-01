@@ -9,7 +9,7 @@ import record_io
 ROOT=Path(__file__).resolve().parents[1]
 LAYERS={'canonical':'data/combined/observations.jsonl','local_statistical_cells':'derived/phase1_local_sources_long.jsonl','programme_quantities':'derived/ncl_2005_programmes_long.jsonl'}
 IGNORED_PUBLICATION_FIELDS={'snapshot_distribution','public_evidence_path','public_evidence_sha256','public_projection_policy','original_fields'}
-EVIDENCE_FILES=('research/phase2-ncl-evidence.json','research/phase2-local-evidence.json','research/phase2-nlpi-evidence.json','research/phase2-discovered-evidence.json')
+EVIDENCE_FILES=('research/phase2-ncl-evidence.json','research/phase2-local-evidence.json','research/phase2-nlpi-evidence.json','research/phase2-discovered-evidence.json','raw/ncl94-statistics/definition-evidence.json')
 OPERATION_GUARDS={'sum':'No validated aggregation policy is supplied; totals/components, classifications and versions may overlap.','impute':'Unknown, missing and2012 original-quantity gaps must remain unknown.','infer-unique-people':'Visits/transactions/programme attendance are not independently deduplicated people.','recode-geography':'Original historical geography cannot be renamed or summed into current boundaries without a separate verified crosswalk.','coerce-zero':'Original markers, blanks and display/typed conflicts are not measured zero.','cross-source-splice':'Cross-source historical definition equivalence is not supplied by matching labels or numbers.'}
 def guard_operation(operation):
  if operation in OPERATION_GUARDS:return {'status':'incompatible','requested_operation':operation,'reasons':[OPERATION_GUARDS[operation]],'data_modified':False}

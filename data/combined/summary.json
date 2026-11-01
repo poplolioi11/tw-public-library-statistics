@@ -1,12 +1,12 @@
 {
-  "version": "0.9.1",
+  "version": "0.9.2",
   "canonical_jsonl_path": "data/combined/observations.jsonl.gz",
   "jsonl_compression": "gzip",
-  "canonical_uncompressed_sha256": "12d1f08b656bca6d01ca611aa045917289d0c534f1776141a7b486f5ed329322",
+  "canonical_uncompressed_sha256": "b24f2d28a0bf2d0af003ad1f6a5966b11a35e2948a150d99b3a2a2c11f2db24e",
   "canonical_csv_path": "data/combined/observations.csv.gz",
   "canonical_sqlite_path": "data/combined/library_statistics.sqlite.gz",
-  "built_at": "2026-10-29T02:57:57.792962+00:00",
-  "records": 58245,
+  "built_at": "2026-11-01T12:07:18.208634+00:00",
+  "records": 58269,
   "missing_cells": 6922,
   "null_value_status_counts": {
     "not_available_in_source": 206,
@@ -52,13 +52,13 @@
     2026
   ],
   "unresolved_period_records": 467,
-  "source_series": 6708,
-  "source_groups": 267,
+  "source_series": 6732,
+  "source_groups": 270,
   "source_families": {
     "主計總處歷史全國統計": 220,
     "教育部歷史公共館統計": 48,
     "主計總處縣市公共館數": 644,
-    "國家圖書館年鑑統計事實": 20795,
+    "國家圖書館年鑑統計事實": 20819,
     "地方官方出版統計事實": 18230,
     "主計總處後續全國出版統計": 312,
     "國家圖書館閱讀報告統計事實": 154,
@@ -75,12 +75,12 @@
   },
   "value_status_counts": {
     "not_available_in_source": 206,
-    "reported": 49109,
+    "reported": 49133,
     "reported_decimal": 2214,
     "source_blank": 1303,
     "source_marker": 5413
   },
   "publication_profile": "statistical_fields_only",
   "omitted_contact_original_files": 22,
-  "statistical_content_sha256": "ebdf03d2a75ca7a2208a7098d5f945cb839d7ab6597f8030ecc70838451d7d33"
+  "statistical_content_sha256": "e2131ac19c3661d21283ba54f0ffa86bbf49a8aaa79ead506f273ef6e971eae5"
 }

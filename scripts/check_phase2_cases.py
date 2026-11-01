@@ -37,6 +37,32 @@ def load_engine(root):
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
     return module
 
+
+def accepted_extension_scope(root, discovered):
+    """Count only independently checked complete batches beyond the frozen base.
+
+    The old twelve-document batch and each later explicitly accepted batch are
+    checked separately. Prefix membership does not make a source acceptable.
+    Public runs verify the distributed statistical projections; omitted PDFs
+    remain omitted and are not reported as freshly checked originals.
+    """
+    from validate_source_discovery import (REGISTER, HISTORICAL_REGISTER_SHA256,
+                                           FORMAL_METADATA, partition_formal_batches,
+                                           validate_formal_ingestion)
+    root=Path(root)
+    extension=root/FORMAL_METADATA
+    if not extension.is_file():
+        if discovered:raise ValueError('Discovered quantitative rows have no accepted source-batch metadata')
+        return {'accepted_records':0,'legacy_extension':None,'additional_batches':{}}
+    register=root/REGISTER
+    if sha(register)!=HISTORICAL_REGISTER_SHA256:
+        raise ValueError('Historical source-discovery register changed')
+    candidates={item['candidate_id']:item for item in json.loads(register.read_text())['candidates']}
+    legacy,additional=partition_formal_batches(root,discovered)
+    old_report=validate_formal_ingestion(root,candidates,legacy)
+    count=old_report['canonical_observations_checked']+sum(report['canonical_observations_checked'] for report in additional.values())
+    return {'accepted_records':count,'legacy_extension':old_report,'additional_batches':additional}
+
 def review(root,cases_only=False,case_ids=None,skip_cli=False):
     engine=load_engine(root);engine_start=sha(root/'scripts/phase2_engine.py')
     fixture_path=root/'research/phase2-independent-cases.json';fixtures=json.loads(fixture_path.read_text())
@@ -58,10 +84,18 @@ def review(root,cases_only=False,case_ids=None,skip_cli=False):
             if n:h.update(b',')
             h.update(stable({k:v for k,v in row.items() if k not in PUBLICATION_FIELDS}).encode());n+=1
         h.update(b']');fingerprints[layer]={'records':n,'semantic_sha256':h.hexdigest(),'file_sha256':sha(path),'path':str(path.relative_to(root))}
-    extension_path=root/'raw/discovered-20261028/extraction-metadata.json'
-    extension_count=json.loads(extension_path.read_text())['canonical_observations_added'] if extension_path.is_file() else 0
-    legacy={k:r for k,r in raw.items() if not str(r.get('source_id','')).startswith('discovered-')}
-    check(len(legacy)==56496,'Frozen legacy quantitative scope count changed',len(legacy))
+    discovered={r['observation_id']:r for key,r in raw.items()
+                if key.startswith('canonical:') and str(r.get('source_id','')).startswith('discovered-')}
+    check(not any(not key.startswith('canonical:') and str(r.get('source_id','')).startswith('discovered-') for key,r in raw.items()),
+          'Discovered source batch appeared in an unregistered quantitative layer')
+    legacy_count=len(raw)-len(discovered)
+    check(legacy_count==56496,'Frozen legacy quantitative scope count changed',legacy_count)
+    try:
+        report['accepted_source_extensions']=accepted_extension_scope(root,discovered)
+        extension_count=report['accepted_source_extensions']['accepted_records']
+    except (ValueError,KeyError,FileNotFoundError) as error:
+        check(False,'Accepted complete source-batch verification failed',str(error))
+        extension_count=0
     expected_total=56496+extension_count
     check(len(raw)==expected_total,'Complete quantitative scope differs from legacy plus accepted original batch',len(raw))
     # Keep the frozen pre-engine cases intact. Accept only exact, independently

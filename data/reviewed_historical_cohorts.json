@@ -520,6 +520,35 @@
         "raw/discovered-20261028"
       ],
       "scope": "Complete selected tables and continuations from twelve official originals. Literal unknown years, symbols, shared cells and monthly periods remain distinct; no national panel is fabricated."
+    },
+    {
+      "id": "ncl94_statistics",
+      "review_status": "source_reviewed",
+      "script": "build_ncl94_statistics.py",
+      "args": [],
+      "adapter_kind": "canonical_observations_jsonl",
+      "canonical_jsonl": "derived/ncl94_statistics_observations.jsonl",
+      "derived_csv": "derived/ncl94_statistics_long.csv",
+      "inputs": [
+        "raw/ncl94-statistics/documents.json",
+        "raw/ncl94-statistics/yearbook-94-statistics.pdf"
+      ],
+      "dependencies": [
+        "scripts/extract_ncl94_statistics.py",
+        "scripts/build_discovered_20261028.py",
+        "scripts/discovered_20261028_canonical_columns.json"
+      ],
+      "outputs": [
+        "derived/ncl94_statistics_long.csv",
+        "derived/ncl94_statistics_observations.jsonl",
+        "derived/ncl94_statistics_source_cells.json",
+        "raw/ncl94-statistics/extraction-metadata.json",
+        "raw/ncl94-statistics/definition-evidence.json"
+      ],
+      "raw_directories": [
+        "raw/ncl94-statistics"
+      ],
+      "scope": "Complete public-library subsets of NCL94 tables145/146/147:16 physical cells,24 reported quantities including8 parenthesized answering-library counts. Public/private categories, branch-inclusive counts and cooperation membership remain distinct; no cross-source panel or human-review claim."
     }
   ]
 }

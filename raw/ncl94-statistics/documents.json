@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "documents": [
+    {
+      "candidate_id": "ncl-ed94-statistics",
+      "title": "國圖94年圖書館年鑑：圖書館統計章",
+      "source_family_candidate": "ncl_all_type_statistical_chapters",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_bytes": 279122,
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "retrieved_at": "2026-10-28T09:35:04.872725+00:00",
+      "edition_raw": "94年卷",
+      "data_years_verified_for_listed_tables_only": [
+        2004
+      ],
+      "year_verification_basis": "Each table title explicitly prints 民國93年; exact dates remain unknown",
+      "locators": [
+        {
+          "pdf_pages": [
+            5,
+            6,
+            11
+          ],
+          "printed_pages": [
+            "440",
+            "441",
+            "446"
+          ],
+          "table_or_section": "145公共館7列；146公立／私立2列×4欄及括號填答數；147公共類會員"
+        }
+      ],
+      "scope": "Complete selected public-library subsets:16 physical cells/24 quantities. National Library and other types excluded; private and membership populations retained separately.",
+      "cautions": [
+        "不能把全部圖書館類型總計當公共館。",
+        "全文權利與統計事實利用分開。"
+      ],
+      "acquisition_status": "official_original_obtained_sha_verified",
+      "ingestion_status": "complete_selected_public_library_subsets_ingested_v0.9.2",
+      "newness": "previously_catalogued_attachment_newly_acquired",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "full_original_redistributed": false,
+      "canonical_observations_added": 0,
+      "cross_source_panel_permission": false,
+      "next_action": "365-day fixed-URL monitoring; changed source/rights/definitions require review before replacement",
+      "source_local_path": "raw/ncl94-statistics/yearbook-94-statistics.pdf",
+      "review_status": "source_reviewed_complete_public_subgroups",
+      "reviewed_at": "2026-11-01",
+      "recheck_interval_days": 365,
+      "change_policy": "pin exact SHA; retain accepted complete batch on failure or change"
+    }
+  ]
+}

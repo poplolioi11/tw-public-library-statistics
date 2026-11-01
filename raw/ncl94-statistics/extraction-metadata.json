@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "role": "complete_source_subset_not_human_reference",
+  "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+  "source_bytes": 279122,
+  "source_pdf_pages": 12,
+  "physical_cells": 16,
+  "numeric_positions": 24,
+  "physical_cell_count_by_table": {
+    "145": 7,
+    "146": 8,
+    "147": 1
+  },
+  "original_row_scope_complete_for_selected_public_subsets": true,
+  "numeric_engine_checks_all_matched": true,
+  "human_review_completed": false,
+  "human_double_collation_completed": false,
+  "full_original_distributed": false,
+  "public_publication_performed": false,
+  "missing_values_imputed": false,
+  "cross_source_comparability_certified": false,
+  "source_arithmetic_check": {
+    "table145_category_sum": 636,
+    "table145_subtotal": 636,
+    "not_a_source_accuracy_proof": true
+  },
+  "formal_observations": 24,
+  "new_source_tables": [
+    "145",
+    "146",
+    "147"
+  ],
+  "unit_null_observations": 8,
+  "source_edition_roc": 94,
+  "data_year": 2004,
+  "quantity_roles": {
+    "primary": 16,
+    "responding_libraries": 8
+  },
+  "excluded_scope": "國家圖書館及非公共館列；圖10–29非公共館或混合母體圖表；全文與照片未散布",
+  "statistical_facts_only": true,
+  "no_cross_source_panel": true
+}

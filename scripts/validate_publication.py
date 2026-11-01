@@ -171,6 +171,12 @@ def manifest_entries(manifest: dict) -> list[tuple[str, str]]:
             require(isinstance(item, dict), "Manifest file entry must be an object")
             entries.append((item.get("path"), item.get("sha256", item.get("hash"))))
     require(bool(entries), "Manifest file inventory is empty")
+    for path, _ in entries:
+        if isinstance(path, str):
+            private_review = (path.startswith(("research/manual-sample-", "benchmarks/"))
+                              or any("DO_NOT_GIVE_TO_READER" in part or ".private" in part.lower()
+                                     for part in Path(path).parts))
+            require(not private_review, "Private review materials cannot enter the public manifest")
     return entries
 
 
@@ -489,6 +495,19 @@ def self_test() -> bool:
             self.assertEqual(report["missing_cells"], 1)
             self.assertEqual(report["original_files_hash_checked"], 0)
             self.assertEqual(report["omitted_source_versions_not_full_source_verified"], 1)
+
+        def test_rehashed_private_reader_key_is_rejected(self):
+            path = self.root / "research/manual-sample-20990101/evaluator_DO_NOT_GIVE_TO_READER/key.json"
+            path.parent.mkdir(parents=True)
+            path.write_text('{"synthetic_answer":"must stay private"}')
+            self.write_manifest()
+            with self.assertRaisesRegex(ValidationError, "Private review materials"):
+                validate(self.root)
+
+        def test_private_benchmark_and_work_files_are_rejected(self):
+            for path in ("benchmarks/holdout/answers.json", "research/review.private.json"):
+                with self.assertRaisesRegex(ValidationError, "Private review materials"):
+                    manifest_entries({"files": {path: "a" * 64}})
 
         def test_csv_cannot_turn_zero_into_empty(self):
             path = self.root / "data/combined/observations.csv"

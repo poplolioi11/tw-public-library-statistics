@@ -21,6 +21,9 @@ from decimal import Decimal
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+METADATA_RULE_SHA = "1b100b28f24940a2b9bb5fa0a54a74722f8aa456163459a18492e71f71c2e9f7"
+METADATA_LEDGER_SHA = "36488596bd7204fb6e896ae29f4b4b42651e7ccb59d50617335b8783ef77c1c4"
+METADATA_FIELDS = {"unit", "unit_status", "unit_basis", "source_unit_context_locator"}
 TOPICS = [f"Bacol{n:05d}" for n in range(282, 292)]
 ADDITIONAL_NCL_FILES = ("ncl_gap_tables_long.csv", "ncl_additional_years_long.csv", "ncl_earlier_years_long.csv")
 REVIEWED_NCL_ANNOTATIONS = {
@@ -106,6 +109,112 @@ def record_bytes(root, relative):
 
 def typed_equal(a, b):
     return type(a) is type(b) and a == b
+
+
+def canonical_adapter_count(root, components):
+    """Verify each registered direct adapter's full ID set and mapped fields."""
+    import record_io
+    from cohort_registry import load as load_cohorts
+    groups = [group for group in (load_cohorts(root) or [])
+              if group.get('adapter_kind') == 'canonical_observations_jsonl']
+    expected = {}
+    documents, source_ids = set(), set()
+    for group in groups:
+        name = group.get('canonical_jsonl')
+        if name not in group['outputs']:
+            raise ValueError('Direct canonical adapter output is not registered')
+        for row in record_io.rows(root, name):
+            identifier = row['observation_id']
+            if identifier in expected:
+                raise ValueError('Registered canonical adapter ID sets overlap')
+            expected[identifier] = row
+            documents.add(row.get('component_source_id'))
+            source_ids.add(row['source_id'])
+    selected = [row for row in components
+                if (row['observation_id'] in expected
+                    or str(row['source_id']).startswith('discovered-')
+                    or row.get('component_source_id') in documents
+                    or row['source_id'] in source_ids)]
+    actual = {row['observation_id']: row for row in selected}
+    if len(actual) != len(selected):
+        raise ValueError('Duplicate component canonical-adapter observation ID')
+    if set(actual) != set(expected):
+        raise ValueError('Component canonical-adapter observation set differs from reviewed registry')
+    ignored = {'snapshot_distribution','public_evidence_path','public_evidence_sha256','public_projection_policy'}
+    for identifier, row in expected.items():
+        before = {key: value for key, value in row.items() if key not in ignored}
+        after = {key: value for key, value in actual[identifier].items() if key not in ignored}
+        if set(before) != set(after) or any(not typed_equal(value, after[key]) for key,value in before.items()):
+            raise ValueError('Component canonical-adapter fields differ: ' + identifier)
+    return len(expected)
+
+
+def metadata_before_review(rows, rules, ledger):
+    """Validate the fixed unit-only ledger, then view old adapter metadata.
+
+    This independent verifier does not call the production correction adapter.
+    Source values, raw strings, periods and locators are never reversed: the
+    normal original-source checks below still compare them exhaustively.
+    """
+    current = {row["observation_id"]: row for row in rows}
+    if len(current) != len(rows):
+        raise ValueError("Metadata replay requires unique observation IDs")
+    changes = {entry["observation_id"]: entry for entry in ledger}
+    if len(changes) != len(ledger):
+        raise ValueError("Duplicate metadata ledger observation")
+    selected_ids, seen_rules = set(), set()
+    for rule in rules:
+        key = (rule["source_id"], rule["source_sha256"], rule["source_field"], rule.get("observation_id"))
+        if key in seen_rules:
+            raise ValueError("Duplicate original-unit review rule")
+        seen_rules.add(key)
+        selected = [row for row in rows
+                    if (row["source_id"], row["source_sha256"], row.get("source_field")) == key[:3]
+                    and (not key[3] or row["observation_id"] == key[3])]
+        ids = [row["observation_id"] for row in selected]
+        identity_sha = digest(("\n".join(sorted(ids)) + "\n").encode())
+        if len(ids) != rule["canonical_null_unit_observations"] or identity_sha != rule["complete_observation_id_set_sha256"]:
+            raise ValueError("Original-unit review scope or source version changed")
+        if selected_ids.intersection(ids):
+            raise ValueError("Metadata rules overlap")
+        selected_ids.update(ids)
+        kind = rule.get("kind", "literal_field_suffix")
+        if kind == "literal_field_suffix":
+            field, unit = rule["source_field"], rule["unit"]
+            if not ((field.endswith("冊數") and unit == "冊") or (field.endswith("人次") and unit == "人次")):
+                raise ValueError("Reviewed unit is not an original field suffix")
+            status = "explicit_original_field_name_unit"
+        elif kind == "same_document_explicit_aggregate_unit":
+            if len(ids) != 1 or not key[3] or rule["unit"] != "種" or not rule.get("supporting_original_text", "").endswith("種") or not rule.get("source_unit_context_locator"):
+                raise ValueError("Aggregate unit lacks its exact same-original evidence")
+            status = "same_source_body_explicit_matching_aggregate"
+        else:
+            raise ValueError("Unknown original-unit review kind")
+        for row in selected:
+            entry = changes.get(row["observation_id"])
+            if not entry or set(entry["old"]) != METADATA_FIELDS or set(entry["new"]) != METADATA_FIELDS:
+                raise ValueError("Unit ledger is missing or contains unrelated changed fields")
+            if entry["old"]["unit"] not in (None, ""):
+                raise ValueError("Unit ledger overwrites a previously established unit")
+            if any(entry.get(field) != row.get(field) for field in ("source_id", "source_sha256", "source_url", "source_locator")) or entry.get("original_field_name") != row.get("source_field"):
+                raise ValueError("Unit ledger original-cell lineage differs")
+            if not all(typed_equal(row.get(field), entry["new"][field]) for field in METADATA_FIELDS):
+                raise ValueError("Current metadata differs from the reviewed unit ledger")
+            if row.get("unit") != rule["unit"] or row.get("unit_status") != status:
+                raise ValueError("Current unit differs from the original evidence")
+            if kind == "literal_field_suffix":
+                expected_basis = "Exact original JSON field " + field + "; source-version and complete observation set reviewed; see docs/metadata-review-20261029.json"
+                expected_locator = row["source_locator"] + "; literal original JSON field-name suffix " + ("冊數" if unit == "冊" else "人次")
+            else:
+                if any(not typed_equal(row.get(field), value) for field, value in rule["exact_original_binding"].items()):
+                    raise ValueError("Same-original aggregate value, raw string or scope changed")
+                expected_basis, expected_locator = rule["unit_basis"], rule["source_unit_context_locator"]
+            if row.get("unit_basis") != expected_basis or row.get("source_unit_context_locator") != expected_locator:
+                raise ValueError("Unit support no longer matches its original context")
+    if set(changes) != selected_ids:
+        raise ValueError("Unit ledger differs from the complete reviewed observation scope")
+    return [{**row, **changes[row["observation_id"]]["old"]} if row["observation_id"] in changes else dict(row)
+            for row in rows]
 
 
 def escape_pointer(token):
@@ -298,6 +407,35 @@ class Verification:
         self.checks += 1
         if not condition:
             self.failures.append({"code": code, "detail": detail})
+
+    def component_adapter_view(self):
+        """Cache a nonmutating view for comparisons to pre-v0.9.1 adapters."""
+        if hasattr(self, "_component_adapter_view"):
+            return self._component_adapter_view
+        rows = [json.loads(line) for line in
+                record_bytes(self.root, "data/component_records.jsonl").decode().splitlines() if line]
+        rule_path = self.root / "scripts/reviewed_metadata_corrections.json"
+        ledger_path = self.root / "derived/metadata-corrections-20261029.jsonl"
+        if not rule_path.exists() and not ledger_path.exists():
+            if any(row.get("unit_status") in {"explicit_original_field_name_unit", "same_source_body_explicit_matching_aggregate"} for row in rows):
+                raise ValueError("Reviewed units require the original metadata evidence register")
+            self._component_adapter_view = rows
+            return rows
+        if not rule_path.is_file() or not ledger_path.is_file() or digest(rule_path.read_bytes()) != METADATA_RULE_SHA or digest(ledger_path.read_bytes()) != METADATA_LEDGER_SHA:
+            raise ValueError("Original-unit review evidence changed or is incomplete")
+        rules = jsonfile(rule_path)
+        if rules.get("review_status") != "pinned_original_fields_replayed_not_human_double_collation":
+            raise ValueError("Unknown original-unit review status")
+        ledger = [json.loads(line) for line in ledger_path.read_text().splitlines() if line]
+        self._component_adapter_view = metadata_before_review(rows, rules["rules"], ledger)
+        self.result["reviewed_unit_metadata"] = {
+            "status": "pass", "rules_checked": len(rules["rules"]), "observations_checked": len(ledger),
+            "rules_sha256": METADATA_RULE_SHA, "ledger_sha256": METADATA_LEDGER_SHA,
+            "allowed_metadata_fields": sorted(METADATA_FIELDS),
+            "source_values_raw_strings_periods_and_locators_reversed": False,
+            "scope": "Fixed original-field and same-original aggregate unit evidence only; subsequent source/adapter checks still compare every original value and locator. Not human review.",
+        }
+        return self._component_adapter_view
 
     def core(self):
         manifest = jsonfile(self.root / "data/source_manifest.json")["sources"]
@@ -531,8 +669,7 @@ class Verification:
     def components(self):
         """All adapter rows vs derived; all local derived cells vs original JSON."""
         before = len(self.failures)
-        rows = [json.loads(line) for line in
-                record_bytes(self.root, "data/component_records.jsonl").decode().splitlines() if line]
+        rows = self.component_adapter_view()
         with (self.root / "derived/local_historical_long.csv").open(encoding="utf-8-sig", newline="") as stream:
             local = list(csv.DictReader(stream))
         metadata = {}
@@ -687,7 +824,7 @@ class Verification:
             if path.exists():
                 with path.open(encoding="utf-8-sig", newline="") as stream:
                     additional_count += sum(1 for _ in csv.DictReader(stream))
-        direct_count = sum(str(row['source_id']).startswith('discovered-') for row in rows)
+        direct_count = canonical_adapter_count(self.root, rows)
         self.check(len(rows) == len(canonical_local) + len(expected_historical) + county_extra + additional_count + direct_count, "component_total", len(rows))
         self.result["components"] = {
             "status": "pass" if len(self.failures) == before else "fail", "canonical_records_checked": len(rows),
@@ -783,7 +920,7 @@ class Verification:
                     sources.extend(csv.DictReader(stream))
                 files.append(name)
         source_ids = {source["source_id"] for source in sources}
-        records = [json.loads(line) for line in record_bytes(self.root, "data/component_records.jsonl").decode().splitlines() if line]
+        records = self.component_adapter_view()
         targets = [row for row in records if row["source_id"] in source_ids]
         mapped = {(row["source_id"], row["source_locator"]): row for row in targets}
         expected, checked_hashes, statuses = set(), {}, collections.Counter()
@@ -1135,6 +1272,11 @@ def main():
             if (args.root / 'raw/discovered-20261028/extraction-metadata.json').is_file():
                 from validate_discovered_20261028 import validate as validate_discovered
                 verification.result['discovered_originals'] = validate_discovered(args.root, require_originals=True)
+            if ((args.root / 'raw/ncl94-statistics/extraction-metadata.json').is_file()
+                    or (args.root / 'derived/ncl94_statistics_observations.jsonl').is_file()
+                    or (args.root / 'derived/ncl94_statistics_observations.jsonl.gz').is_file()):
+                from validate_ncl94_statistics import validate as validate_ncl94_statistics
+                verification.result['ncl94_statistics_originals'] = validate_ncl94_statistics(args.root, require_originals=True)
             if (args.root / "derived/ncl_gap_tables_long.csv").exists():
                 verification.ncl_gap()
             if any((args.root / "derived" / name).exists() for name in reviewed_ncl_csvs(args.root)):

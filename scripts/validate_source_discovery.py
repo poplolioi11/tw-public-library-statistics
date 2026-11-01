@@ -33,6 +33,9 @@ FORMAL_DOCUMENTS = {
     'taoyuan-yearbook-ch8-2021', 'tpml-2012-12', 'changhua-bulletin-2021-ctrl',
     'kaohsiung-cultural-2012', *(f'ncl-ed{year}-public-libraries' for year in (91, 92, 93, 94)),
 }
+ADDITIONAL_FORMAL_ROWS = {
+    'ncl-ed94-statistics': ('ncl94_statistics', 'derived/ncl94_statistics_observations.jsonl'),
+}
 PUBLICATION_FIELDS = {'snapshot_distribution', 'public_evidence_path', 'public_evidence_sha256', 'public_projection_policy'}
 LAYER_NONSTATISTICAL_FIELDS = PUBLICATION_FIELDS | {'original_fields'}
 OTHER_LAYERS = {'local_statistical_cells': 'derived/phase1_local_sources_long.jsonl',
@@ -50,6 +53,58 @@ def read(path):
 
 def stable(value):
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+
+
+def partition_formal_batches(root, canonical, require_originals=False):
+    """Keep the immutable twelve-source batch separate from later reviewed facts.
+
+    An ID prefix alone never authorizes a new source. The only later batch
+    currently supported here has a reviewed registry entry, a pinned validator,
+    and exact derived-to-canonical equality for every non-publication field.
+    """
+    root = Path(root)
+    legacy, later = {}, {}
+    for identifier, row in canonical.items():
+        document = row.get('component_source_id')
+        if document in FORMAL_DOCUMENTS:
+            legacy[identifier] = row
+        elif document in ADDITIONAL_FORMAL_ROWS:
+            later.setdefault(document, {})[identifier] = row
+        else:
+            raise ValueError('unreviewed or rights-held formal source: ' + str(document))
+    reports = {}
+    for document, (cohort_id, relative) in ADDITIONAL_FORMAL_ROWS.items():
+        path = record_io.path_for(root, relative)
+        present = later.get(document, {})
+        if not present and not path.is_file():
+            continue
+        from cohort_registry import load as load_cohorts
+        registered = [group for group in (load_cohorts(root) or [])
+                      if group['id'] == cohort_id
+                      and group.get('adapter_kind') == 'canonical_observations_jsonl'
+                      and group.get('canonical_jsonl') == relative
+                      and relative in group['outputs']]
+        need(len(registered) == 1, 'later formal source has no reviewed canonical-adapter registration')
+        from validate_ncl94_statistics import validate as validate_ncl94, SHA
+        report = validate_ncl94(root, require_originals=require_originals)
+        expected = list(record_io.rows(root, relative))
+        expected_by_id = {row['observation_id']: row for row in expected}
+        need(len(expected_by_id) == len(expected), 'duplicate later formal observation ID')
+        need(set(expected_by_id) == set(present), 'later formal canonical observation set differs')
+        for identifier, source in expected_by_id.items():
+            need(source.get('component_source_id') == document
+                 and source.get('source_id') == 'discovered-' + document + '-t' + source['source_table']
+                 and source.get('source_version_id') == document + '@sha256:' + SHA,
+                 'later formal source/table/version identity differs')
+            need(identifier == 'obs-' + hashlib.sha256((SHA+'|'+source['source_record_id']).encode()).hexdigest()[:22],
+                 'later formal observation/source-quantity identity differs')
+            source_fields = {key: value for key, value in source.items() if key not in PUBLICATION_FIELDS}
+            canonical_fields = {key: value for key, value in present[identifier].items() if key not in PUBLICATION_FIELDS}
+            need(stable(source_fields) == stable(canonical_fields),
+                 'later formal/canonical statistical or provenance fields differ: ' + identifier)
+        reports[document] = {**report, 'canonical_observations_checked': len(expected),
+                             'publication_only_field_differences_allowed': sorted(PUBLICATION_FIELDS)}
+    return legacy, reports
 
 
 def version_tuple(value):
@@ -257,13 +312,15 @@ def validate(root, source_root=None):
     need(phase2.get('dataset_version') == current_version, 'current phase2 version differs')
     current_layers, baseline_layers, canonical_discovered = quantitative_layers(root)
     later_ingestion = None
+    additional_ingestion = {}
     if current_version == register['dataset_version']:
         need(register['existing_layer_fingerprints'] == phase2['layer_raw_fingerprints'] == current_layers, 'existing quantitative layer fingerprints differ')
         need(not canonical_discovered, 'same-version discovery must not add formal observations')
     else:
         need(baseline_layers == register['existing_layer_fingerprints'], 'historical quantitative baseline differs after excluding the formal discovered batch')
         need(current_layers == phase2['layer_raw_fingerprints'], 'current quantitative layer fingerprints differ')
-        later_ingestion = validate_formal_ingestion(root, by_id, canonical_discovered)
+        legacy_discovered, additional_ingestion = partition_formal_batches(root, canonical_discovered)
+        later_ingestion = validate_formal_ingestion(root, by_id, legacy_discovered)
 
     originals = 0
     if source_root is not None:
@@ -284,7 +341,8 @@ def validate(root, source_root=None):
                 'existing_layer_fingerprints': register['existing_layer_fingerprints'],
                 'formal_observations_added': 0, 'rights_held_candidate': held['candidate_id']},
             'current_dataset_version': current_version,
-            'later_formal_ingestion': later_ingestion}
+            'later_formal_ingestion': later_ingestion,
+            'additional_formal_ingestion': additional_ingestion}
 
 
 def main():

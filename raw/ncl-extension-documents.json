@@ -609,5 +609,19 @@
     "source_ids": [
       "ncl-gap-2009-t1-counts"
     ]
+  },
+  {
+    "local_path": "raw/ncl94-statistics/yearbook-94-statistics.pdf",
+    "sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+    "source_title": "國圖94年圖書館年鑑：圖書館統計章",
+    "publication_date": "",
+    "source_edition_roc": "94",
+    "source_ids": [
+      "discovered-ncl-ed94-statistics-t145",
+      "discovered-ncl-ed94-statistics-t146",
+      "discovered-ncl-ed94-statistics-t147"
+    ]
   }
 ]

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "data_version": "0.9.1",
-  "data_build": "2026-10-29T02:32:11.956742+00:00",
+  "data_version": "0.9.2",
+  "data_build": "2026-11-01T11:56:26.341942+00:00",
   "registry_path": "data/reviewed_historical_cohorts.json",
   "registered_cohorts": [
     {
@@ -7777,10 +7777,134 @@
       "scope": "Complete selected tables and continuations from twelve official originals. Literal unknown years, symbols, shared cells and monthly periods remain distinct; no national panel is fabricated.",
       "completion_scope": "All cells/spans of explicitly listed reviewed tables or prose only; not every table/chapter/year/county.",
       "canonical_status": "all_source_count_present"
+    },
+    {
+      "id": "ncl94_statistics",
+      "review_status": "source_reviewed",
+      "derived_csv": "derived/ncl94_statistics_long.csv",
+      "source_csv_available": true,
+      "source_ids": [
+        "discovered-ncl-ed94-statistics-t145",
+        "discovered-ncl-ed94-statistics-t146",
+        "discovered-ncl-ed94-statistics-t147"
+      ],
+      "data_years": [
+        2004
+      ],
+      "edition_roc": [
+        94
+      ],
+      "publication_dates": [],
+      "source_csv_counts": {
+        "records": 24,
+        "numeric_cells": 24,
+        "source_blank_cells": 0,
+        "other_missing_cells": 0,
+        "value_status_counts": {
+          "reported": 24
+        }
+      },
+      "canonical_counts": {
+        "records": 24,
+        "numeric_cells": 24,
+        "source_blank_cells": 0,
+        "other_missing_cells": 0,
+        "value_status_counts": {
+          "reported": 24
+        }
+      },
+      "uncertain_label_records": 0,
+      "unit_conflict_records": 0,
+      "table_inventory": [
+        {
+          "source_id": "discovered-ncl-ed94-statistics-t145",
+          "source_table": "145",
+          "source_table_title": "臺閩地區各類型圖書館數量統計表（民國93年）",
+          "source_cells": 7,
+          "numeric_cells": 7,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2004
+          ],
+          "edition_roc": [
+            94
+          ],
+          "pdf_pages": [
+            "5"
+          ],
+          "printed_pages": [
+            "440"
+          ],
+          "source_sha256": [
+            "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed94-statistics-t146",
+          "source_table": "146",
+          "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國93年）",
+          "source_cells": 16,
+          "numeric_cells": 16,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2004
+          ],
+          "edition_roc": [
+            94
+          ],
+          "pdf_pages": [
+            "6"
+          ],
+          "printed_pages": [
+            "441"
+          ],
+          "source_sha256": [
+            "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed94-statistics-t147",
+          "source_table": "147",
+          "source_table_title": "中華圖書資訊館際合作協會各類型會員數量統計表（民國93年）",
+          "source_cells": 1,
+          "numeric_cells": 1,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            2004
+          ],
+          "edition_roc": [
+            94
+          ],
+          "pdf_pages": [
+            "11"
+          ],
+          "printed_pages": [
+            "446"
+          ],
+          "source_sha256": [
+            "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        }
+      ],
+      "metadata_paths": [
+        "raw/ncl94-statistics/extraction-metadata.json"
+      ],
+      "scope": "Complete public-library subsets of NCL94 tables145/146/147:16 physical cells,24 reported quantities including8 parenthesized answering-library counts. Public/private categories, branch-inclusive counts and cooperation membership remain distinct; no cross-source panel or human-review claim.",
+      "completion_scope": "All cells/spans of explicitly listed reviewed tables or prose only; not every table/chapter/year/county.",
+      "canonical_status": "all_source_count_present"
     }
   ],
-  "registered_source_cells": 38270,
-  "historical_canonical_records": 20949,
+  "registered_source_cells": 38294,
+  "historical_canonical_records": 20973,
   "legacy_canonical_scope": {
     "records": 1269,
     "tables": [

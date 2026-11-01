@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "channels": [
     {
       "kind": "public_repository",
@@ -11,7 +11,7 @@
     {
       "kind": "public_release_latest",
       "url": "https://github.com/poplolioi11/tw-public-library-statistics/releases/latest",
-      "expected_tag": "v0.9.1",
+      "expected_tag": "v0.9.2",
       "update_policy": "new immutable tag and assets; prior releases remain versioned"
     },
     {
@@ -35,14 +35,6 @@
       "update_policy": "same current package; no external hosting assumed"
     },
     {
-      "kind": "public_lightweight_site",
-      "url": "https://poplolioi11.github.io/tw-public-library-statistics/",
-      "path": "site/light/index.html",
-      "viewer_version": "1.0.0",
-      "dataset_version": "0.9.1",
-      "update_policy": "validated main commit; deploy only site/light after public package CI succeeds; immutable dataset releases remain separate"
-    },
-    {
       "kind": "public_zenodo_fixed_archive",
       "url": "https://zenodo.org/records/23788194",
       "archived_dataset_version": "0.9.1",
@@ -54,6 +46,14 @@
       "rights_policy": "source-specific rights; MIT only for original code/documentation; see per-record source rights and LICENSE.md",
       "human_reading_completed": false,
       "human_double_collation_completed": false
+    },
+    {
+      "kind": "public_lightweight_site",
+      "url": "https://poplolioi11.github.io/tw-public-library-statistics/",
+      "path": "site/light/index.html",
+      "viewer_version": "1.0.0",
+      "dataset_version": "0.9.2",
+      "update_policy": "validated main commit; deploy only site/light after public package CI succeeds; immutable dataset releases remain separate"
     }
   ],
   "verification": "Read back main VERSION, latest release tag, attachment digests, full anonymous ZIP and reader embedded dataset_version after publication. Project-specific localhost/Drive destinations stay in the private publication receipt."

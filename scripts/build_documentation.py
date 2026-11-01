@@ -263,7 +263,7 @@ def update_backlog(context):
 def write_discovered_summary(context):
     root=context['root'];path=root/'raw/discovered-20261028/extraction-metadata.json'
     if not path.exists():return
-    batch=read_json(path);rows=[r for r in context['rows'] if str(r['source_id']).startswith('discovered-')]
+    batch=read_json(path);rows=[r for r in context['rows'] if r.get('component_source_id') in batch['source_counts']]
     if len(rows)!=batch['canonical_observations_added']:raise ValueError('Documentation requires the complete new source batch')
     body=f"""## 2026-10-28官方原表入庫批次
 
@@ -273,7 +273,7 @@ v{context['summary']['version']}沿用2026-10-28已入庫的{len(rows):,}個原�
 
 [完整來源／表格範圍](../raw/discovered-20261028/extraction-metadata.json)與[逐筆原格驗收](../scripts/validate_discovered_20261028.py)可重跑。各格保留原字串、單位、官方原件URL、SHA、原頁表列欄、版本及公式／分母；讀source_time_reference的JSON可取原表脈絡、合併格與公式等額外來源限定，source_cell_note_raw保留核對方法。369格掃描資料以Apple Vision及AI原圖核讀，沒有宣稱人類逐格雙校；重複OCR不是獨立引擎。
 
-原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl。臺北2012年刊權利衝突及三份跨館型統計章待核子群仍隔離。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
+原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl。臺北2012年刊權利衝突及92、93卷跨館型統計章待核子群仍隔離；94卷統計章的另批完整公共館子群見docs/NCL94_STATISTICS.md。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
 
 16個複合／非單一量原格另逐格登錄於scripts/reviewed_non_scalar_literals.json（含原件SHA、原文及定位）。例如主館／括弧分館、各1人、每鄉各2不能任挑一個數字作總量；source_marker及selected_source_missing在這些格表示沒有單一可用純量，不表示原件沒有資料。必須同讀raw_value、原註與該登錄，不推算補值。
 
@@ -284,7 +284,7 @@ v{context['summary']['version']}沿用2026-10-28已入庫的{len(rows):,}個原�
         p=root/name;p.write_text(generated_block(p.read_text(),'discovered-20261028',body))
     p=root/'llms.txt';p.write_text(generated_block(p.read_text(),'discovered-20261028',f"v{context['summary']['version']} complete selected new originals: {len(rows)} canonical cells / 12 documents; raw/discovered-20261028/extraction-metadata.json. Unknown year remains null ({batch['unresolved_period_records']}); source_time_reference JSON preserves source context/merged scope/formula; source_cell_note_raw preserves verification method. Historical discovery/probe v0.8 is not another observation layer. No aggregation, imputation or cross-source panel permission."))
     backlog=read_json(root/'docs/source-backlog.json')
-    family={'family_id':'reviewed_official_discovery_20261028','owner':'所列中央與地方官方出版機關','status':'completed_selected_tables_only','completed_scope':batch,'known_not_ingested':['臺北2012年刊：權利衝突維持隔離。','三份早期跨館型統計章：公共館子群未覆核，維持候選。','各原刊未列入本批的其他原表／年度仍待查，不表示不存在。'],'unknown_scope':['未取得2012全22縣市核心原量表。','部分原刊年份、單位、年度彙計或分館涵蓋仍未明，逐格照實保存。'],'evidence':['docs/source-discovery-20261028.json','raw/discovered-20261028/extraction-metadata.json','docs/historical-batches.json']}
+    family={'family_id':'reviewed_official_discovery_20261028','owner':'所列中央與地方官方出版機關','status':'completed_selected_tables_only','completed_scope':batch,'known_not_ingested':['臺北2012年刊：權利衝突維持隔離。','92、93卷早期跨館型統計章：公共館子群未覆核，維持候選；94卷另批完成見docs/NCL94_STATISTICS.md。','各原刊未列入本批的其他原表／年度仍待查，不表示不存在。'],'unknown_scope':['未取得2012全22縣市核心原量表。','部分原刊年份、單位、年度彙計或分館涵蓋仍未明，逐格照實保存。'],'evidence':['docs/source-discovery-20261028.json','raw/discovered-20261028/extraction-metadata.json','docs/historical-batches.json']}
     backlog['families']=[f for f in backlog['families'] if f['family_id']!=family['family_id']]+[family]
     write_json(root/'docs/source-backlog.json',backlog)
 

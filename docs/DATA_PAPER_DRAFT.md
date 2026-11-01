@@ -55,7 +55,7 @@ v0.9.1主資料包括不同版次的原報值、總計、分項、年表、月�
 
 [固定v0.9.1 Release](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.1)提供公開ZIP、三種正式格式及校驗碼；固定程式版本見[v0.9.1標籤](https://github.com/poplolioi11/tw-public-library-statistics/tree/v0.9.1)。[圖表網站](https://poplolioi11.github.io/tw-public-library-statistics/)適合查閱與分享，完整分析入口仍是正式資料及其結構說明。圖表分檔不是另一批觀測。
 
-引用範例：曲宸宇（Chu, Chen-Yu）（2026）。《臺灣公共圖書館跨年度統計》（v0.9.1）[資料集]。Zenodo。[10.5281/zenodo.23788194](https://doi.org/10.5281/zenodo.23788194)。另列實際使用的官方原表、年度及所選口徑。機器引用資訊見[CITATION.cff](../CITATION.cff)；Zenodo封存日為2026-10-30，原資料發布日為2026-10-29。
+引用範例：曲宸宇（Chu, Chen-Yu）（2026）。《臺灣公共圖書館跨年度統計》（v0.9.1）[資料集]。Zenodo。[10.5281/zenodo.23788194](https://doi.org/10.5281/zenodo.23788194)。另列實際使用的官方原表、年度及所選口徑。機器引用資訊見[v0.9.1 CITATION.cff](https://github.com/poplolioi11/tw-public-library-statistics/blob/36385b42d09989b4fae48bd2b05c6653d7be5949/CITATION.cff)；Zenodo封存日為2026-10-30，原資料發布日為2026-10-29。
 
 程式及自撰說明採MIT，資料按來源標記權利；不能把整包概稱為同一授權。公開包提供統計事實及必要投影，不散布權利未確認的專章全文、版面影像或無關聯絡欄。原件SHA與投影SHA分開。[授權說明](../LICENSE.md)保留各來源及適用判斷，不能由技術下載成功推定可以再公開整份原件。
 
@@ -73,3 +73,5 @@ v0.9.1主資料包括不同版次的原報值、總計、分項、年表、月�
 4. 曲宸宇。固定v0.9.0的[原始入庫驗收](https://github.com/poplolioi11/tw-public-library-statistics/blob/f8bf0e35fd79f510e6f9927062043c1bfa60f1c6/research/discovered-20261028-ingestion-review.json)。這是20,358格的歷史入庫證據，不改寫成v0.9.1驗收。
 
 正式投稿前，尚需由作者逐項確認目標期刊格式、實際重用案例、來源書目完整性及人工覆核計畫；本稿不代表這些工作已完成。
+
+本文研究範圍仍固定v0.9.1（58,245筆）；後續v0.9.2新增24筆另見[NCL94批次](NCL94_STATISTICS.md)，未追溯改寫本文或Zenodo凍結版。人工核讀與雙校尚未完成，本文沒有填入預期結果。

@@ -12,7 +12,7 @@
 
 先讀 `data/combined/summary.json`、`coverage.json`、`indicators.json` 與 `observation.schema.json`。`data/observations.*`、`data/component_records.jsonl` 和 `derived/` 是組件或中間結果，可能保留重複；不得再併入正式入口。資料筆數不是館數。
 
-目前 58,245 筆來源觀測紀錄，含 206 格明示缺值、1,303 格原印留白、5,413 格原印文字狀態及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
+目前 58,269 筆來源觀測紀錄，含 206 格明示缺值、1,303 格原印留白、5,413 格原印文字狀態及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
 
 ## 先選來源，再選可比較的觀測
 
@@ -213,13 +213,13 @@ source_series_only可作單期原來源事實，不獲得跨年連線許可。�
 <!-- BEGIN discovered-20261028 -->
 ## 2026-10-28官方原表入庫批次
 
-v0.9.1沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的完整指定表及續頁；這不是本次中繼資料修訂新增的觀測。早期年鑑2001–2004、教育部1994–2009、主計2010–2024全國原表，以及新北、臺南、桃園、彰化、高雄和臺北所列原刊分開保存。高雄含表3-2全部52頁、各館年度及12個月；臺北本批僅2012年12月。
+v0.9.2沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的完整指定表及續頁；這不是本次中繼資料修訂新增的觀測。早期年鑑2001–2004、教育部1994–2009、主計2010–2024全國原表，以及新北、臺南、桃園、彰化、高雄和臺北所列原刊分開保存。高雄含表3-2全部52頁、各館年度及12個月；臺北本批僅2012年12月。
 
 新增格包含14,540個數值、427個原刊留白、5,391個原刊符號／複合格；467格期間未確認。原格數不是館數，合計、分項、年合計與月值不得整表相加。原年份不明不填出版年；原件缺值不補0。新北館藏2010前後分段；高雄年度館藏／期刊彙計與借閱率口徑未明，不當年底庫存趨勢。
 
 [完整來源／表格範圍](raw/discovered-20261028/extraction-metadata.json)與[逐筆原格驗收](scripts/validate_discovered_20261028.py)可重跑。各格保留原字串、單位、官方原件URL、SHA、原頁表列欄、版本及公式／分母；讀source_time_reference的JSON可取原表脈絡、合併格與公式等額外來源限定，source_cell_note_raw保留核對方法。369格掃描資料以Apple Vision及AI原圖核讀，沒有宣稱人類逐格雙校；重複OCR不是獨立引擎。
 
-原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl.gz。臺北2012年刊權利衝突及三份跨館型統計章待核子群仍隔離。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
+原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl.gz。臺北2012年刊權利衝突及92、93卷跨館型統計章待核子群仍隔離；94卷統計章的另批完整公共館子群見docs/NCL94_STATISTICS.md。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
 
 16個複合／非單一量原格另逐格登錄於scripts/reviewed_non_scalar_literals.json（含原件SHA、原文及定位）。例如主館／括弧分館、各1人、每鄉各2不能任挑一個數字作總量；source_marker及selected_source_missing在這些格表示沒有單一可用純量，不表示原件沒有資料。必須同讀raw_value、原註與該登錄，不推算補值。
 
@@ -232,6 +232,17 @@ v0.9.1沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的�
 按固定原件確認14,596筆單位（地方原欄名14,584、同卷全國電子資源合計12），單位缺值由16,286降至1,690。數字、原字串、缺值、識別碼及期間不變；467筆年度缺值已逐組覆核，仍保留未知／跨年狀態。91年卷來源摘要補上第5頁續表。**人工雙校仍未完成**，2012核心原量缺口不推算。見[逐筆修訂與未解清單](docs/metadata-review-20261029.md)。
 <!-- END metadata-review-20261029 -->
 
+<!-- BEGIN human-review-status -->
+文件狀態核對：2026-11-01；資料為v0.9.2。**人工抽樣核讀與雙校尚未完成（0/120）**，沒有預填讀值、錯誤率或模型準確率；AI原圖讀回與程式檢查不算人工完成。
+<!-- END human-review-status -->
+
+<!-- BEGIN ncl94-statistics -->
+## v0.9.2：94卷統計章完整公共館子群
+
+新增2004年三表的完整公共館相關子群：16實體格、24筆觀測，其中8筆為填答館數，非總館數；公私立、小計、會員及含分館口徑分開。原有58,245筆逐筆全欄不變。新增8筆原刊未印單位保持null；人工核讀與雙校未完成。[逐表範圍、官方原件與讀取方式](docs/NCL94_STATISTICS.md)。
+<!-- END ncl94-statistics -->
+
+
 ## 公開副本
 
 可以先讀 `data/by_year/index.json`，按年度取得相同的正式觀測。含無關聯絡欄的原件不再散布，改附數值欄位投影；`source_sha256` 驗原件，`public_evidence_sha256` 驗投影。投影不改統計原值、期間、單位、地理口徑或原件定位。完整來源驗收須先依 README 復原原件；公開副本的離線檢查並不等於重查全部原件。
@@ -242,12 +253,8 @@ v0.9.1沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的�
 <!-- BEGIN lightweight-site -->
 ## 輕量網站不是新的分析資料
 
-網站 https://poplolioi11.github.io/tw-public-library-statistics/ 的JSON分檔只投影既有合格圖表，不代表全部76,854個量化紀錄。AI正式分析仍依本文件原讀取入口。畫點值可能沿用第二階段已核單位尺度；`original_value`、`raw_value`、`original_unit`與`facets`仍留原量及口徑。`source_url`／`source_sha256`／`source_locator`／`source_version_id`不改，動態查詢另附`official_url`與重現提示。不得把網站顯示值或內容雜湊檔名誤當官方原件SHA。
+網站 https://poplolioi11.github.io/tw-public-library-statistics/ 的JSON分檔只投影既有合格圖表，不代表全部76,878個量化紀錄。AI正式分析仍依本文件原讀取入口。畫點值可能沿用第二階段已核單位尺度；`original_value`、`raw_value`、`original_unit`與`facets`仍留原量及口徑。`source_url`／`source_sha256`／`source_locator`／`source_version_id`不改，動態查詢另附`official_url`與重現提示。不得把網站顯示值或內容雜湊檔名誤當官方原件SHA。
 <!-- END lightweight-site -->
 
 
 完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。
-
-<!-- BEGIN human-review-status -->
-文件狀態核對：2026-10-30；資料仍為v0.9.1。**人工抽樣核讀與雙校尚未完成**，沒有預填人工讀值、錯誤率或模型準確率。程式、原件雜湊及AI原圖核對不替代人工參考。[目前待辦與已完成範圍](docs/source-backlog.md)另列；固定引用見[CITATION.cff](CITATION.cff)。
-<!-- END human-review-status -->

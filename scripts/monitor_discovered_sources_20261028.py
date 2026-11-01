@@ -6,8 +6,23 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 
 
+def source_documents(root):
+    """Only explicitly reviewed manifests; never search or guess source URLs."""
+    paths=['raw/discovered-20261028/documents.json','raw/ncl94-statistics/documents.json']
+    docs=[];seen=set()
+    for name in paths:
+        path=root/name
+        if not path.is_file():
+            if name==paths[0]:raise FileNotFoundError(path)
+            continue
+        for doc in json.loads(path.read_text())['documents']:
+            if doc['candidate_id'] in seen:raise ValueError('Duplicate reviewed source monitor identity')
+            seen.add(doc['candidate_id']);docs.append(doc)
+    return docs
+
+
 def run(root=ROOT,offline=False):
-    docs=json.loads((root/'raw/discovered-20261028/documents.json').read_text())['documents']
+    docs=source_documents(root)
     statepath=root/'data/discovered_20261028_monitor_state.json'
     states=json.loads(statepath.read_text()) if statepath.exists() else {}
     now=datetime.datetime.now(datetime.timezone.utc);checked=[];changes=[];errors=[]
@@ -46,7 +61,7 @@ def run(root=ROOT,offline=False):
             errors.append({'source_id':sid,'error':str(error),'previous_verified_batch_retained':True})
     statepath.write_text(json.dumps(states,ensure_ascii=False,indent=2)+'\n')
     return {'policy':'365d; official URLs only, conditional HTTP; changes held, never auto-published',
-            'checked_sources':len(checked),'changed_sources':changes,'errors':errors,'offline':offline}
+            'registered_sources':len(docs),'checked_sources':len(checked),'changed_sources':changes,'errors':errors,'offline':offline}
 
 
 if __name__=='__main__':

@@ -15,12 +15,13 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def run(root):
     path=root/'docs/phase3-profiles.json';policy=json.loads(path.read_text())
-    rows=[r for r in record_io.rows(root) if str(r['source_id']).startswith('discovered-')]
+    batch=json.loads((root/'raw/discovered-20261028/extraction-metadata.json').read_text())
+    rows=[r for r in record_io.rows(root) if r.get('component_source_id') in batch['source_counts']]
     cards=[json.loads(x) for x in (root/'derived/phase2/evidence_cards.jsonl').read_text().splitlines()]
     cards=[c for c in cards if c['source_id'] in {r['source_id'] for r in rows}]
     if {c['source_id'] for c in cards}!={r['source_id'] for r in rows}:raise ValueError('New source evidence is not complete')
     annotation=[json.loads(x) for x in __import__('gzip').open(root/'derived/phase2/annotations.jsonl.gz','rt')]
-    annotation=[a for a in annotation if str(a['source_id']).startswith('discovered-')]
+    annotation=[a for a in annotation if a['source_id'] in {r['source_id'] for r in rows}]
     sources={r['source_id']:r for r in rows}
     existing={(r['layer'],r['source_id'],r['source_sha256']):r for r in policy['reviewed_sources']}
     for c in cards:

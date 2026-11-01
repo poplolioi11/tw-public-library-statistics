@@ -4,6 +4,7 @@ import argparse, collections, decimal, hashlib, json
 from pathlib import Path
 from urllib.parse import urldefrag
 import record_io
+from validate_source_discovery import FORMAL_DOCUMENTS, partition_formal_batches
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -20,11 +21,16 @@ def validate(root=ROOT,require_originals=False):
     for group in ('central','local','ncl_early'):
         cells.extend(json.loads(x) for x in (root/f'derived/discovered_{group}_20261028_cells.jsonl').read_text().splitlines())
     need(len(docs)==meta['source_documents']==12,'Incomplete official-document batch')
+    need(set(docs)==set(meta['source_counts'])==FORMAL_DOCUMENTS,'Unreviewed legacy document scope')
     need(len(cells)==len({r['cell_id'] for r in cells})==meta['source_cells'],'Incomplete or duplicate physical cells')
     need(dict(collections.Counter(c['source_document_id'] for c in cells))==meta['source_counts'],'Complete-source counts differ')
     need({c['source_document_id'] for c in cells}==set(docs),'A selected original was omitted')
     expected=list(record_io.rows(root,'derived/discovered_20261028_observations.jsonl'))
-    canonical=[r for r in record_io.rows(root) if str(r['source_id']).startswith('discovered-')]
+    discovered_rows=[r for r in record_io.rows(root) if str(r['source_id']).startswith('discovered-')]
+    discovered={r['observation_id']:r for r in discovered_rows}
+    need(len(discovered)==len(discovered_rows),'Duplicated discovered canonical observation ID')
+    canonical_by_id,additional=partition_formal_batches(root,discovered,require_originals)
+    canonical=list(canonical_by_id.values())
     need(len(canonical)==len(expected)==len(cells),'Full source batch not present in canonical')
     by_cell={r['source_record_id']:r for r in canonical}
     need(len(by_cell)==len(canonical),'Duplicated physical source cell in canonical')
@@ -71,7 +77,8 @@ def validate(root=ROOT,require_originals=False):
             'canonical_records':len(canonical),'original_bodies_verified':originals,
             'unresolved_period_records':meta['unresolved_period_records'],
             'null_cells':sum(r['value'] is None for r in canonical),'zero_cells':sum(r['value']==0 for r in canonical),
-            'source_periods_units_and_qualifiers_preserved':True,'human_double_collation_claimed':False}
+            'source_periods_units_and_qualifiers_preserved':True,'human_double_collation_claimed':False,
+            'additional_reviewed_batches':additional}
 
 
 if __name__=='__main__':

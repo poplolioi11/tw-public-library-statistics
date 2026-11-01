@@ -1,0 +1,1149 @@
+{
+  "schema_version": "1.0.0",
+  "role": "complete_source_subset_not_human_reference",
+  "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+  "source_bytes": 279122,
+  "source_pdf_pages": 12,
+  "physical_cells": 16,
+  "numeric_positions": 24,
+  "physical_cell_count_by_table": {
+    "145": 7,
+    "146": 8,
+    "147": 1
+  },
+  "original_row_scope_complete_for_selected_public_subsets": true,
+  "numeric_engine_checks_all_matched": true,
+  "human_review_completed": false,
+  "human_double_collation_completed": false,
+  "full_original_distributed": false,
+  "public_publication_performed": false,
+  "missing_values_imputed": false,
+  "cross_source_comparability_certified": false,
+  "source_arithmetic_check": {
+    "table145_category_sum": 636,
+    "table145_subtotal": 636,
+    "not_a_source_accuracy_proof": true
+  },
+  "cells": [
+    {
+      "cell_id": "ncl-ed94-statistics/t145/p5/r1/c1",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 5,
+      "source_printed_page": "440",
+      "source_table": "145",
+      "source_row": "1",
+      "source_column": "1",
+      "source_row_label_raw": "公共圖書館／國立",
+      "source_column_label_raw": null,
+      "source_column_context": "數量",
+      "source_column_label_status": "quantity_context_from_table_title_no_separate_header",
+      "source_row_index_scope": "selected_public_subgroup",
+      "source_bbox_points_top_origin": [
+        220.0,
+        238.0,
+        250.0,
+        253.59
+      ],
+      "source_locator": "PDF 5; printed 440; table 145; row 1; column 1; bbox 220.0,238.0,250.0,253.59",
+      "source_raw_pdfminer": "3",
+      "source_raw_pdfium": "3",
+      "value_raw": "3",
+      "raw_transcription_method": "native_pdfminer_complete_numeric_cell_text",
+      "value": 3,
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表145公共圖書館區塊／國立；國家圖書館另列排除",
+      "parenthesized_responding_libraries": null,
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "3"
+        ],
+        "pdfium_tokens": [
+          "3"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原註其他館型數含分館（大學圖書館例外）；此公共館子群含分館。",
+        "原列及小計分列，不能全部相加。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t145/p5/r2/c1",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 5,
+      "source_printed_page": "440",
+      "source_table": "145",
+      "source_row": "2",
+      "source_column": "1",
+      "source_row_label_raw": "公共圖書館／直轄市立",
+      "source_column_label_raw": null,
+      "source_column_context": "數量",
+      "source_column_label_status": "quantity_context_from_table_title_no_separate_header",
+      "source_row_index_scope": "selected_public_subgroup",
+      "source_bbox_points_top_origin": [
+        220.0,
+        253.59,
+        250.0,
+        269.18
+      ],
+      "source_locator": "PDF 5; printed 440; table 145; row 2; column 1; bbox 220.0,253.59,250.0,269.18",
+      "source_raw_pdfminer": "53",
+      "source_raw_pdfium": "53",
+      "value_raw": "53",
+      "raw_transcription_method": "native_pdfminer_complete_numeric_cell_text",
+      "value": 53,
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表145公共圖書館區塊／直轄市立；國家圖書館另列排除",
+      "parenthesized_responding_libraries": null,
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "53"
+        ],
+        "pdfium_tokens": [
+          "53"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原註其他館型數含分館（大學圖書館例外）；此公共館子群含分館。",
+        "原列及小計分列，不能全部相加。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t145/p5/r3/c1",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 5,
+      "source_printed_page": "440",
+      "source_table": "145",
+      "source_row": "3",
+      "source_column": "1",
+      "source_row_label_raw": "公共圖書館／縣市立",
+      "source_column_label_raw": null,
+      "source_column_context": "數量",
+      "source_column_label_status": "quantity_context_from_table_title_no_separate_header",
+      "source_row_index_scope": "selected_public_subgroup",
+      "source_bbox_points_top_origin": [
+        220.0,
+        269.18,
+        250.0,
+        284.77
+      ],
+      "source_locator": "PDF 5; printed 440; table 145; row 3; column 1; bbox 220.0,269.18,250.0,284.77",
+      "source_raw_pdfminer": "40",
+      "source_raw_pdfium": "40",
+      "value_raw": "40",
+      "raw_transcription_method": "native_pdfminer_complete_numeric_cell_text",
+      "value": 40,
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表145公共圖書館區塊／縣市立；國家圖書館另列排除",
+      "parenthesized_responding_libraries": null,
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "40"
+        ],
+        "pdfium_tokens": [
+          "40"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原註其他館型數含分館（大學圖書館例外）；此公共館子群含分館。",
+        "原列及小計分列，不能全部相加。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t145/p5/r4/c1",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 5,
+      "source_printed_page": "440",
+      "source_table": "145",
+      "source_row": "4",
+      "source_column": "1",
+      "source_row_label_raw": "公共圖書館／鄉鎮、市、區立",
+      "source_column_label_raw": null,
+      "source_column_context": "數量",
+      "source_column_label_status": "quantity_context_from_table_title_no_separate_header",
+      "source_row_index_scope": "selected_public_subgroup",
+      "source_bbox_points_top_origin": [
+        220.0,
+        284.77,
+        250.0,
+        300.36
+      ],
+      "source_locator": "PDF 5; printed 440; table 145; row 4; column 1; bbox 220.0,284.77,250.0,300.36",
+      "source_raw_pdfminer": "413",
+      "source_raw_pdfium": "413",
+      "value_raw": "413",
+      "raw_transcription_method": "native_pdfminer_complete_numeric_cell_text",
+      "value": 413,
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表145公共圖書館區塊／鄉鎮、市、區立；國家圖書館另列排除",
+      "parenthesized_responding_libraries": null,
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "413"
+        ],
+        "pdfium_tokens": [
+          "413"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原註其他館型數含分館（大學圖書館例外）；此公共館子群含分館。",
+        "原列及小計分列，不能全部相加。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t145/p5/r5/c1",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 5,
+      "source_printed_page": "440",
+      "source_table": "145",
+      "source_row": "5",
+      "source_column": "1",
+      "source_row_label_raw": "公共圖書館／社教館",
+      "source_column_label_raw": null,
+      "source_column_context": "數量",
+      "source_column_label_status": "quantity_context_from_table_title_no_separate_header",
+      "source_row_index_scope": "selected_public_subgroup",
+      "source_bbox_points_top_origin": [
+        220.0,
+        300.36,
+        250.0,
+        315.95
+      ],
+      "source_locator": "PDF 5; printed 440; table 145; row 5; column 1; bbox 220.0,300.36,250.0,315.95",
+      "source_raw_pdfminer": "3",
+      "source_raw_pdfium": "3",
+      "value_raw": "3",
+      "raw_transcription_method": "native_pdfminer_complete_numeric_cell_text",
+      "value": 3,
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表145公共圖書館區塊／社教館；國家圖書館另列排除",
+      "parenthesized_responding_libraries": null,
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "3"
+        ],
+        "pdfium_tokens": [
+          "3"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原註其他館型數含分館（大學圖書館例外）；此公共館子群含分館。",
+        "原列及小計分列，不能全部相加。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t145/p5/r6/c1",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 5,
+      "source_printed_page": "440",
+      "source_table": "145",
+      "source_row": "6",
+      "source_column": "1",
+      "source_row_label_raw": "公共圖書館／私立",
+      "source_column_label_raw": null,
+      "source_column_context": "數量",
+      "source_column_label_status": "quantity_context_from_table_title_no_separate_header",
+      "source_row_index_scope": "selected_public_subgroup",
+      "source_bbox_points_top_origin": [
+        220.0,
+        315.95,
+        250.0,
+        331.53999999999996
+      ],
+      "source_locator": "PDF 5; printed 440; table 145; row 6; column 1; bbox 220.0,315.95,250.0,331.53999999999996",
+      "source_raw_pdfminer": "124",
+      "source_raw_pdfium": "124",
+      "value_raw": "124",
+      "raw_transcription_method": "native_pdfminer_complete_numeric_cell_text",
+      "value": 124,
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表145公共圖書館區塊／私立；國家圖書館另列排除",
+      "parenthesized_responding_libraries": null,
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "124"
+        ],
+        "pdfium_tokens": [
+          "124"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原註其他館型數含分館（大學圖書館例外）；此公共館子群含分館。",
+        "原列及小計分列，不能全部相加。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t145/p5/r7/c1",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 5,
+      "source_printed_page": "440",
+      "source_table": "145",
+      "source_row": "7",
+      "source_column": "1",
+      "source_row_label_raw": "公共圖書館／小計",
+      "source_column_label_raw": null,
+      "source_column_context": "數量",
+      "source_column_label_status": "quantity_context_from_table_title_no_separate_header",
+      "source_row_index_scope": "selected_public_subgroup",
+      "source_bbox_points_top_origin": [
+        220.0,
+        331.53999999999996,
+        250.0,
+        347.13
+      ],
+      "source_locator": "PDF 5; printed 440; table 145; row 7; column 1; bbox 220.0,331.53999999999996,250.0,347.13",
+      "source_raw_pdfminer": "636",
+      "source_raw_pdfium": "636",
+      "value_raw": "636",
+      "raw_transcription_method": "native_pdfminer_complete_numeric_cell_text",
+      "value": 636,
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表145公共圖書館區塊／小計；國家圖書館另列排除",
+      "parenthesized_responding_libraries": null,
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "636"
+        ],
+        "pdfium_tokens": [
+          "636"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原註其他館型數含分館（大學圖書館例外）；此公共館子群含分館。",
+        "原列及小計分列，不能全部相加。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t146/p6/r2/c1",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 6,
+      "source_printed_page": "441",
+      "source_table": "146",
+      "source_row": "2",
+      "source_column": "1",
+      "source_row_label_raw": "公立公共圖書館",
+      "source_column_label_raw": "館藏圖書冊數",
+      "source_column_context": "館藏圖書冊數",
+      "source_column_label_status": "literal_header",
+      "source_row_index_scope": "whole_table_data_rows",
+      "source_bbox_points_top_origin": [
+        142.302,
+        256.54,
+        227.328,
+        289.85
+      ],
+      "source_locator": "PDF 6; printed 441; table 146; row 2; column 1; bbox 142.302,256.54,227.328,289.85",
+      "source_raw_pdfminer": "23,071,122\n509",
+      "source_raw_pdfium": "23,071,122 \r\n509",
+      "value_raw": "23,071,122\n（509）",
+      "raw_transcription_method": "native_numbers_and_commas; parentheses_visually_read_by_AI_due_to_missing_CMap_glyphs",
+      "value": 23071122,
+      "value_status": "reported",
+      "unit": "冊",
+      "unit_raw": "館藏圖書冊數",
+      "unit_status": "literal_column_label",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表146／公立公共圖書館／館藏圖書冊數之原報值；填答館數另為附屬量",
+      "parenthesized_responding_libraries": {
+        "value": 509,
+        "raw_pdfminer": "509",
+        "source_bbox_points_top_origin": [
+          142.302,
+          273.19,
+          227.328,
+          289.85
+        ],
+        "indicator_raw": "填答館數",
+        "unit": "館",
+        "unit_raw": "填答館數",
+        "unit_status": "literal_heading_填答館數_identifies_unit_館",
+        "is_total_library_count": false,
+        "population_scope": "原指標填答館數；原註不含分館，分館資料併總館"
+      },
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "23071122",
+          "509"
+        ],
+        "pdfium_tokens": [
+          "23071122",
+          "509"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原格含主值與括號填答館數；保留同一physical cell完整原字串，不拆作兩個原格。",
+        "填答館數不含分館，分館統計資料併入總館；不能把括號當總館數。",
+        "國家圖書館另列，其專屬非書資料／網路人次註腳不自行套用本列。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t146/p6/r2/c2",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 6,
+      "source_printed_page": "441",
+      "source_table": "146",
+      "source_row": "2",
+      "source_column": "2",
+      "source_row_label_raw": "公立公共圖書館",
+      "source_column_label_raw": "閱覽席位",
+      "source_column_context": "閱覽席位",
+      "source_column_label_status": "literal_header",
+      "source_row_index_scope": "whole_table_data_rows",
+      "source_bbox_points_top_origin": [
+        227.328,
+        256.54,
+        312.355,
+        289.85
+      ],
+      "source_locator": "PDF 6; printed 441; table 146; row 2; column 2; bbox 227.328,256.54,312.355,289.85",
+      "source_raw_pdfminer": "71,588\n509",
+      "source_raw_pdfium": "71,588 \r\n509",
+      "value_raw": "71,588\n（509）",
+      "raw_transcription_method": "native_numbers_and_commas; parentheses_visually_read_by_AI_due_to_missing_CMap_glyphs",
+      "value": 71588,
+      "value_status": "reported",
+      "unit": "席位",
+      "unit_raw": "閱覽席位",
+      "unit_status": "literal_column_label",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表146／公立公共圖書館／閱覽席位之原報值；填答館數另為附屬量",
+      "parenthesized_responding_libraries": {
+        "value": 509,
+        "raw_pdfminer": "509",
+        "source_bbox_points_top_origin": [
+          227.328,
+          273.19,
+          312.355,
+          289.85
+        ],
+        "indicator_raw": "填答館數",
+        "unit": "館",
+        "unit_raw": "填答館數",
+        "unit_status": "literal_heading_填答館數_identifies_unit_館",
+        "is_total_library_count": false,
+        "population_scope": "原指標填答館數；原註不含分館，分館資料併總館"
+      },
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "71588",
+          "509"
+        ],
+        "pdfium_tokens": [
+          "71588",
+          "509"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原格含主值與括號填答館數；保留同一physical cell完整原字串，不拆作兩個原格。",
+        "填答館數不含分館，分館統計資料併入總館；不能把括號當總館數。",
+        "國家圖書館另列，其專屬非書資料／網路人次註腳不自行套用本列。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t146/p6/r2/c3",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 6,
+      "source_printed_page": "441",
+      "source_table": "146",
+      "source_row": "2",
+      "source_column": "3",
+      "source_row_label_raw": "公立公共圖書館",
+      "source_column_label_raw": "借閱人次",
+      "source_column_context": "借閱人次",
+      "source_column_label_status": "literal_header",
+      "source_row_index_scope": "whole_table_data_rows",
+      "source_bbox_points_top_origin": [
+        312.355,
+        256.54,
+        397.381,
+        289.85
+      ],
+      "source_locator": "PDF 6; printed 441; table 146; row 2; column 3; bbox 312.355,256.54,397.381,289.85",
+      "source_raw_pdfminer": "10,329,679\n509",
+      "source_raw_pdfium": "10,329,679 \r\n509",
+      "value_raw": "10,329,679\n（509）",
+      "raw_transcription_method": "native_numbers_and_commas; parentheses_visually_read_by_AI_due_to_missing_CMap_glyphs",
+      "value": 10329679,
+      "value_status": "reported",
+      "unit": "人次",
+      "unit_raw": "借閱人次",
+      "unit_status": "literal_column_label",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表146／公立公共圖書館／借閱人次之原報值；填答館數另為附屬量",
+      "parenthesized_responding_libraries": {
+        "value": 509,
+        "raw_pdfminer": "509",
+        "source_bbox_points_top_origin": [
+          312.355,
+          273.19,
+          397.381,
+          289.85
+        ],
+        "indicator_raw": "填答館數",
+        "unit": "館",
+        "unit_raw": "填答館數",
+        "unit_status": "literal_heading_填答館數_identifies_unit_館",
+        "is_total_library_count": false,
+        "population_scope": "原指標填答館數；原註不含分館，分館資料併總館"
+      },
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "10329679",
+          "509"
+        ],
+        "pdfium_tokens": [
+          "10329679",
+          "509"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原格含主值與括號填答館數；保留同一physical cell完整原字串，不拆作兩個原格。",
+        "填答館數不含分館，分館統計資料併入總館；不能把括號當總館數。",
+        "國家圖書館另列，其專屬非書資料／網路人次註腳不自行套用本列。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t146/p6/r2/c4",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 6,
+      "source_printed_page": "441",
+      "source_table": "146",
+      "source_row": "2",
+      "source_column": "4",
+      "source_row_label_raw": "公立公共圖書館",
+      "source_column_label_raw": "借閱冊數",
+      "source_column_context": "借閱冊數",
+      "source_column_label_status": "literal_header",
+      "source_row_index_scope": "whole_table_data_rows",
+      "source_bbox_points_top_origin": [
+        397.381,
+        256.54,
+        482.47,
+        289.85
+      ],
+      "source_locator": "PDF 6; printed 441; table 146; row 2; column 4; bbox 397.381,256.54,482.47,289.85",
+      "source_raw_pdfminer": "30,498,418\n509",
+      "source_raw_pdfium": "30,498,418\r\n509",
+      "value_raw": "30,498,418\n（509）",
+      "raw_transcription_method": "native_numbers_and_commas; parentheses_visually_read_by_AI_due_to_missing_CMap_glyphs",
+      "value": 30498418,
+      "value_status": "reported",
+      "unit": "冊",
+      "unit_raw": "借閱冊數",
+      "unit_status": "literal_column_label",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表146／公立公共圖書館／借閱冊數之原報值；填答館數另為附屬量",
+      "parenthesized_responding_libraries": {
+        "value": 509,
+        "raw_pdfminer": "509",
+        "source_bbox_points_top_origin": [
+          397.381,
+          273.19,
+          482.47,
+          289.85
+        ],
+        "indicator_raw": "填答館數",
+        "unit": "館",
+        "unit_raw": "填答館數",
+        "unit_status": "literal_heading_填答館數_identifies_unit_館",
+        "is_total_library_count": false,
+        "population_scope": "原指標填答館數；原註不含分館，分館資料併總館"
+      },
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "30498418",
+          "509"
+        ],
+        "pdfium_tokens": [
+          "30498418",
+          "509"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原格含主值與括號填答館數；保留同一physical cell完整原字串，不拆作兩個原格。",
+        "填答館數不含分館，分館統計資料併入總館；不能把括號當總館數。",
+        "國家圖書館另列，其專屬非書資料／網路人次註腳不自行套用本列。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t146/p6/r3/c1",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 6,
+      "source_printed_page": "441",
+      "source_table": "146",
+      "source_row": "3",
+      "source_column": "1",
+      "source_row_label_raw": "私立公共圖書館",
+      "source_column_label_raw": "館藏圖書冊數",
+      "source_column_context": "館藏圖書冊數",
+      "source_column_label_status": "literal_header",
+      "source_row_index_scope": "whole_table_data_rows",
+      "source_bbox_points_top_origin": [
+        142.302,
+        289.85,
+        227.328,
+        323.16
+      ],
+      "source_locator": "PDF 6; printed 441; table 146; row 3; column 1; bbox 142.302,289.85,227.328,323.16",
+      "source_raw_pdfminer": "743,056\n58",
+      "source_raw_pdfium": "743,056 \r\n58",
+      "value_raw": "743,056\n（58）",
+      "raw_transcription_method": "native_numbers_and_commas; parentheses_visually_read_by_AI_due_to_missing_CMap_glyphs",
+      "value": 743056,
+      "value_status": "reported",
+      "unit": "冊",
+      "unit_raw": "館藏圖書冊數",
+      "unit_status": "literal_column_label",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表146／私立公共圖書館／館藏圖書冊數之原報值；填答館數另為附屬量",
+      "parenthesized_responding_libraries": {
+        "value": 58,
+        "raw_pdfminer": "58",
+        "source_bbox_points_top_origin": [
+          142.302,
+          306.5,
+          227.328,
+          323.16
+        ],
+        "indicator_raw": "填答館數",
+        "unit": "館",
+        "unit_raw": "填答館數",
+        "unit_status": "literal_heading_填答館數_identifies_unit_館",
+        "is_total_library_count": false,
+        "population_scope": "原指標填答館數；原註不含分館，分館資料併總館"
+      },
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "743056",
+          "58"
+        ],
+        "pdfium_tokens": [
+          "743056",
+          "58"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原格含主值與括號填答館數；保留同一physical cell完整原字串，不拆作兩個原格。",
+        "填答館數不含分館，分館統計資料併入總館；不能把括號當總館數。",
+        "國家圖書館另列，其專屬非書資料／網路人次註腳不自行套用本列。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t146/p6/r3/c2",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 6,
+      "source_printed_page": "441",
+      "source_table": "146",
+      "source_row": "3",
+      "source_column": "2",
+      "source_row_label_raw": "私立公共圖書館",
+      "source_column_label_raw": "閱覽席位",
+      "source_column_context": "閱覽席位",
+      "source_column_label_status": "literal_header",
+      "source_row_index_scope": "whole_table_data_rows",
+      "source_bbox_points_top_origin": [
+        227.328,
+        289.85,
+        312.355,
+        323.16
+      ],
+      "source_locator": "PDF 6; printed 441; table 146; row 3; column 2; bbox 227.328,289.85,312.355,323.16",
+      "source_raw_pdfminer": "8,265\n58",
+      "source_raw_pdfium": "8,265 \r\n58",
+      "value_raw": "8,265\n（58）",
+      "raw_transcription_method": "native_numbers_and_commas; parentheses_visually_read_by_AI_due_to_missing_CMap_glyphs",
+      "value": 8265,
+      "value_status": "reported",
+      "unit": "席位",
+      "unit_raw": "閱覽席位",
+      "unit_status": "literal_column_label",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表146／私立公共圖書館／閱覽席位之原報值；填答館數另為附屬量",
+      "parenthesized_responding_libraries": {
+        "value": 58,
+        "raw_pdfminer": "58",
+        "source_bbox_points_top_origin": [
+          227.328,
+          306.5,
+          312.355,
+          323.16
+        ],
+        "indicator_raw": "填答館數",
+        "unit": "館",
+        "unit_raw": "填答館數",
+        "unit_status": "literal_heading_填答館數_identifies_unit_館",
+        "is_total_library_count": false,
+        "population_scope": "原指標填答館數；原註不含分館，分館資料併總館"
+      },
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "8265",
+          "58"
+        ],
+        "pdfium_tokens": [
+          "8265",
+          "58"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原格含主值與括號填答館數；保留同一physical cell完整原字串，不拆作兩個原格。",
+        "填答館數不含分館，分館統計資料併入總館；不能把括號當總館數。",
+        "國家圖書館另列，其專屬非書資料／網路人次註腳不自行套用本列。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t146/p6/r3/c3",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 6,
+      "source_printed_page": "441",
+      "source_table": "146",
+      "source_row": "3",
+      "source_column": "3",
+      "source_row_label_raw": "私立公共圖書館",
+      "source_column_label_raw": "借閱人次",
+      "source_column_context": "借閱人次",
+      "source_column_label_status": "literal_header",
+      "source_row_index_scope": "whole_table_data_rows",
+      "source_bbox_points_top_origin": [
+        312.355,
+        289.85,
+        397.381,
+        323.16
+      ],
+      "source_locator": "PDF 6; printed 441; table 146; row 3; column 3; bbox 312.355,289.85,397.381,323.16",
+      "source_raw_pdfminer": "188,701\n58",
+      "source_raw_pdfium": "188,701 \r\n58",
+      "value_raw": "188,701\n（58）",
+      "raw_transcription_method": "native_numbers_and_commas; parentheses_visually_read_by_AI_due_to_missing_CMap_glyphs",
+      "value": 188701,
+      "value_status": "reported",
+      "unit": "人次",
+      "unit_raw": "借閱人次",
+      "unit_status": "literal_column_label",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表146／私立公共圖書館／借閱人次之原報值；填答館數另為附屬量",
+      "parenthesized_responding_libraries": {
+        "value": 58,
+        "raw_pdfminer": "58",
+        "source_bbox_points_top_origin": [
+          312.355,
+          306.5,
+          397.381,
+          323.16
+        ],
+        "indicator_raw": "填答館數",
+        "unit": "館",
+        "unit_raw": "填答館數",
+        "unit_status": "literal_heading_填答館數_identifies_unit_館",
+        "is_total_library_count": false,
+        "population_scope": "原指標填答館數；原註不含分館，分館資料併總館"
+      },
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "188701",
+          "58"
+        ],
+        "pdfium_tokens": [
+          "188701",
+          "58"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原格含主值與括號填答館數；保留同一physical cell完整原字串，不拆作兩個原格。",
+        "填答館數不含分館，分館統計資料併入總館；不能把括號當總館數。",
+        "國家圖書館另列，其專屬非書資料／網路人次註腳不自行套用本列。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t146/p6/r3/c4",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 6,
+      "source_printed_page": "441",
+      "source_table": "146",
+      "source_row": "3",
+      "source_column": "4",
+      "source_row_label_raw": "私立公共圖書館",
+      "source_column_label_raw": "借閱冊數",
+      "source_column_context": "借閱冊數",
+      "source_column_label_status": "literal_header",
+      "source_row_index_scope": "whole_table_data_rows",
+      "source_bbox_points_top_origin": [
+        397.381,
+        289.85,
+        482.47,
+        323.16
+      ],
+      "source_locator": "PDF 6; printed 441; table 146; row 3; column 4; bbox 397.381,289.85,482.47,323.16",
+      "source_raw_pdfminer": "659,228\n58",
+      "source_raw_pdfium": "659,228 \r\n58",
+      "value_raw": "659,228\n（58）",
+      "raw_transcription_method": "native_numbers_and_commas; parentheses_visually_read_by_AI_due_to_missing_CMap_glyphs",
+      "value": 659228,
+      "value_status": "reported",
+      "unit": "冊",
+      "unit_raw": "借閱冊數",
+      "unit_status": "literal_column_label",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "表146／私立公共圖書館／借閱冊數之原報值；填答館數另為附屬量",
+      "parenthesized_responding_libraries": {
+        "value": 58,
+        "raw_pdfminer": "58",
+        "source_bbox_points_top_origin": [
+          397.381,
+          306.5,
+          482.47,
+          323.16
+        ],
+        "indicator_raw": "填答館數",
+        "unit": "館",
+        "unit_raw": "填答館數",
+        "unit_status": "literal_heading_填答館數_identifies_unit_館",
+        "is_total_library_count": false,
+        "population_scope": "原指標填答館數；原註不含分館，分館資料併總館"
+      },
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "659228",
+          "58"
+        ],
+        "pdfium_tokens": [
+          "659228",
+          "58"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "原格含主值與括號填答館數；保留同一physical cell完整原字串，不拆作兩個原格。",
+        "填答館數不含分館，分館統計資料併入總館；不能把括號當總館數。",
+        "國家圖書館另列，其專屬非書資料／網路人次註腳不自行套用本列。"
+      ]
+    },
+    {
+      "cell_id": "ncl-ed94-statistics/t147/p11/r1/c2",
+      "source_document_id": "ncl-ed94-statistics",
+      "source_version_id": "ncl-ed94-statistics@sha256:2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_sha256": "2db33efbce20154623b6ba7398e2cfa40af8116578264889d380ab41520c44cf",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565587711082557/9135e4ba-4fe3-440c-9a51-50ac088a552e.pdf#page=11",
+      "source_catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565585645073973",
+      "source_pdf_page": 11,
+      "source_printed_page": "446",
+      "source_table": "147",
+      "source_row": "1",
+      "source_column": "2",
+      "source_row_label_raw": "數量",
+      "source_column_label_raw": "公共",
+      "source_column_context": "公共",
+      "source_column_label_status": "literal_header",
+      "source_row_index_scope": "whole_table_data_rows",
+      "source_bbox_points_top_origin": [
+        147.746,
+        173.92,
+        185.67,
+        190.93
+      ],
+      "source_locator": "PDF 11; printed 446; table 147; row 1; column 2; bbox 147.746,173.92,185.67,190.93",
+      "source_raw_pdfminer": "37",
+      "source_raw_pdfium": "37",
+      "value_raw": "37",
+      "raw_transcription_method": "native_pdfminer_complete_numeric_cell_text",
+      "value": 37,
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "period_raw": "民國93年",
+      "data_year": 2004,
+      "period_basis": "literal_original_table_title",
+      "period_start": null,
+      "period_end": null,
+      "exact_period_unknown": true,
+      "population_scope": "中華圖書資訊館際合作協會公共類會員；不是全臺公共館數或借閱量",
+      "parenthesized_responding_libraries": null,
+      "source_edition_raw": "中華民國九十四年圖書館年鑑",
+      "cross_source_panel_permission": false,
+      "human_review_completed": false,
+      "human_double_collation_completed": false,
+      "labels_review": "AI visual read of full original table pages; not human collation",
+      "numeric_check": {
+        "method": "positioned_pdfminer_vs_PDFium_numeric_tokens",
+        "pdfminer_tokens": [
+          "37"
+        ],
+        "pdfium_tokens": [
+          "37"
+        ],
+        "matched": true
+      },
+      "notes": [
+        "來源明印中華圖書資訊館際合作協會；國立及其他會員類型不與公共相加。",
+        "公私立、分館、生效日未明，保留未知。"
+      ]
+    }
+  ]
+}

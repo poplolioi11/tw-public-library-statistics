@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "dataset_version": "0.9.0",
+  "dataset_version": "0.9.2",
   "phase2_charts": 1677,
   "phase3_charts": 2767,
   "full_selector_interval_replays": 847,
@@ -19,9 +19,9 @@
   ],
   "scope": "Rendered data and SVG structure, not a browser layout or all historical definition certification.",
   "inputs": {
-    "site/phase2.html": "5bc94af23318d503b598fb756eb71cd19e1d07e4cd4f82d5ed376c020e34fc74",
-    "site/phase3.html": "d2b4033994adb52c5581a0a1803ee07de51187e480992a46c6899b7351119612",
+    "site/phase2.html": "79a26e629865f805672117f620810deae77856a3cc3759058b40e46b0616eece",
+    "site/phase3.html": "c5cf7a7b229741939bfd3740372eb7191e86240bde6ced292718fadf8f375fac",
     "scripts/phase3_engine.py": "c37ffc648ab0efb176a95468288e1d2dfaca1351f1ae69a9ab8cee9531223301",
-    "docs/phase3-profiles.json": "9eda8c72568af90ccf3011d4a8ec66d14074c2b469cf1f8c310985a4458402bc"
+    "docs/phase3-profiles.json": "fb1c4fb51b593b0f1c145dad93a88da7e797e301af06280dfb93fc962544ede2"
   }
 }
