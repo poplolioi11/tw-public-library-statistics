@@ -1,5 +1,13 @@
 # Taiwan Public Library Statistics · 臺灣公共圖書館統計
 
+## 摘要 / Abstract
+
+以下摘要對應Zenodo固定封存v0.9.1；儲存庫後續版本另見原有Release與說明。This abstract describes the fixed Zenodo v0.9.1 archive; later repository versions retain their separate release documentation.
+
+本資料封存臺灣公共圖書館跨年度統計v0.9.1，整理58,245筆參照年涵蓋1991–2026的來源觀測，逐筆保留官方URL、原件雜湊、頁表及儲存格定位、原始值、期間、單位、母體與來源版本。整理以來源追溯與口徑保存為主，提供CSV、JSONL與SQLite等同內容格式，供資料檢索、來源對照及受限範圍內的統計研究。不同出版版本、地理層級與年／月口徑並存，並非連續一致的全國縣市年度面板，不能整表加總為館數；人工抽樣核讀與雙校尚未完成。
+
+This v0.9.1 archive compiles 58,245 source observations of Taiwan public-library statistics with reference years spanning 1991–2026. Each observation retains an official URL, original-file hash, page/table/cell locator, raw value, period, unit, population and source version. The compilation prioritizes provenance and statistical definitions, providing equivalent CSV, JSONL and SQLite representations for discovery, source comparison and analysis within documented limits. Publication versions, geographic levels and annual/monthly definitions coexist. The data are not a complete harmonized national county-year panel and must not be summed wholesale as library counts. Human sample reading and double collation remain incomplete.
+
 **Explore library collections, circulation, counts, and services—and trace each value back to its official source.**
 
 **查館藏、借閱、館數與服務統計，並追溯每個數字的官方來源。** 提供互動圖表與 CSV／JSONL／SQLite 資料。
