@@ -20397,12 +20397,12 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "93cf3d21e54d4b073422e64010fdf1d6cc1870a7d3a08e986b00744ab8d0404f",
+      "sha256": "93f0cc16f7ae93381502e5ffdbd74123760bdd86068644d8e7acef00025fc091",
       "bytes": 577497
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "024f78debcaff8fde206fa51ace9b3a40373430518db8c96fa88a504f889b102",
+      "sha256": "b97a6f9ca3809b51e0452287664e7d78e15c64c9e91a2f523b0c982f91e03805",
       "bytes": 879581
     }
   ],
