@@ -75,9 +75,9 @@ The public copies remove unrelated contact fields from 22 original files and pro
 
 - [Public lightweight chart explorer](https://poplolioi11.github.io/tw-public-library-statistics/): browse directly, share query URLs, and follow each record back to its official source.
 - [Line charts and question-based source selection](site/phase3.html#line-charts); [all original-publication series](site/phase2.html#line-charts); [record-level original values](site/index.html).
-- [JSONL](data/combined/observations.jsonl.gz): one complete observation per line, suitable for programs and AI-assisted work.
-- [CSV](data/combined/observations.csv.gz): the same formal observations, suitable for spreadsheet tools.
-- [SQLite](data/combined/library_statistics.sqlite.gz): the same formal observations; the table is named `observations`.
+- [JSONL](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/observations.jsonl.gz): one complete observation per line, suitable for programs and AI-assisted work.
+- [CSV](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/observations.csv.gz): the same formal observations, suitable for spreadsheet tools.
+- [SQLite](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/library_statistics.sqlite.gz): the same formal observations; the table is named `observations`.
 - [Observation schema](data/combined/observation.schema.json), [indicator list](data/combined/indicators.json), and [data-package descriptor](datapackage.json).
 - [AI and analysis instructions](AI_USAGE.md), [rights and licenses](LICENSE.md), [machine-readable entry point](llms.txt), and [supplementary documentation](docs/).
 
@@ -174,7 +174,7 @@ The data version remains **v0.9.2**; the viewer has its own version, **v1.0.0**.
 
 See the [site scope, rebuild, and validation](docs/LIGHTWEIGHT_SITE.md). The existing single-file viewers remain available for offline use; GitHub Pages deploys only `site/light/`.
 
-Complete CSV and SQLite files are provided with lossless gzip compression. Decompress them for use with ordinary CSV/SQLite tools; the Release also provides the same decompressed files. `record_io` reads JSONL/CSV automatically according to the publication profile. SQLite validation checks a temporary decompressed file. Statistical values, SQL NULLs, and source locations are unchanged by compression.
+Complete CSV and SQLite files are provided with lossless gzip compression. The Release assets are also gzip-compressed; decompress them for use with ordinary CSV/SQLite tools. `record_io` reads JSONL/CSV automatically according to the publication profile. SQLite validation checks a temporary decompressed file. Statistical values, SQL NULLs, and source locations are unchanged by compression.
 
 ## v0.9.2: complete NCL94 public-library subsets
 

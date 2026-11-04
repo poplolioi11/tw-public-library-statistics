@@ -20,7 +20,7 @@ This v0.9.1 archive compiles 58,245 source observations of Taiwan public-library
 | --- | --- |
 | How did national book circulation change in 2020–2024?<br>2020–2024 年全國圖書借閱冊數如何變化？ | [Book-loan chart｜借閱折線圖](https://poplolioi11.github.io/tw-public-library-statistics/?profile=national-ncl-book-loans-panel&from=2020&to=2024) |
 | Where can I find county/city library counts?<br>哪裡能查縣市歷年館數？ | [DGBAS series｜主計口徑館數](https://poplolioi11.github.io/tw-public-library-statistics/?profile=county-library-count-dgbas&entity=%E8%87%BA%E5%8D%97%E5%B8%82) |
-| Can I analyze the data myself?<br>我可以自行分析或交給 AI 使用嗎？ | [CSV](data/combined/observations.csv.gz) · [JSONL](data/combined/observations.jsonl.gz.gz) · [SQLite](data/combined/library_statistics.sqlite.gz) · [Guide｜讀取指南](AI_USAGE.md) |
+| Can I analyze the data myself?<br>我可以自行分析或交給 AI 使用嗎？ | [CSV](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/observations.csv.gz) · [JSONL](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/observations.jsonl.gz) · [SQLite](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/library_statistics.sqlite.gz) · [Guide｜讀取指南](AI_USAGE.md) |
 
 The linked data files are gzip-compressed; the [release](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.2) provides gzip-compressed CSV, JSONL, and SQLite files. For analysis, use the formal observations in `data/combined/`.<br>
 上列資料以 gzip 壓縮；Release 提供gzip壓縮的CSV、JSONL與SQLite。分析請使用 `data/combined/` 的正式觀測入口。
@@ -105,19 +105,13 @@ v0.9.2新增批次使用本版固定GitHub Release引用；尚未取得本版Zen
 
 公開副本移除22份原始檔的無關聯絡欄，以另有雜湊的統計投影提供；原始來源網址、原件SHA及每筆統計值均保留。詳[公開副本與來源原件的區別](docs/PUBLICATION.md)。
 
-## 下載與讀取
-
-[版本與完整下載](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.2) · [按年度讀取 JSONL](data/by_year/index.json)
-
-公開副本移除22份原始檔的無關聯絡欄，以另有雜湊的統計投影提供；原始來源網址、原件SHA及每筆統計值均保留。詳[公開副本與來源原件的區別](docs/PUBLICATION.md)。
-
 ## 從哪裡開始
 
 - [公開輕量圖表網站](https://poplolioi11.github.io/tw-public-library-statistics/)：直接查閱、可分享查詢網址，逐筆回官方來源。
 - [折線圖與依問題選源](site/phase3.html#line-charts)；[全部原刊數列](site/phase2.html#line-charts)；[逐筆原值閱覽](site/index.html)。
-- [JSONL](data/combined/observations.jsonl.gz.gz)：每行一筆完整觀測，適合 AI 與程式處理。
-- [CSV](data/combined/observations.csv.gz)：同一批正式觀測，適合表格工具。
-- [SQLite](data/combined/library_statistics.sqlite.gz)：同一批正式觀測；資料表為 `observations`。
+- [JSONL](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/observations.jsonl.gz)：每行一筆完整觀測，適合 AI 與程式處理。
+- [CSV](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/observations.csv.gz)：同一批正式觀測，適合表格工具。
+- [SQLite](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.9.2/library_statistics.sqlite.gz)：同一批正式觀測；資料表為 `observations`。
 - [觀測結構](data/combined/observation.schema.json)、[指標清單](data/combined/indicators.json)、[資料包描述](datapackage.json)。
 - [AI 與分析使用說明](AI_USAGE.md)、[授權說明](LICENSE.md)、[機器閱讀入口](llms.txt)、[補充文件目錄](docs/)。
 
@@ -217,7 +211,7 @@ v0.9.2沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的�
 按固定原件確認14,596筆單位（地方原欄名14,584、同卷全國電子資源合計12），單位缺值由16,286降至1,690。數字、原字串、缺值、識別碼及期間不變；467筆年度缺值已逐組覆核，仍保留未知／跨年狀態。91年卷來源摘要補上第5頁續表。**人工雙校仍未完成**，2012核心原量缺口不推算。見[逐筆修訂與未解清單](docs/metadata-review-20261029.md)。
 <!-- END metadata-review-20261029 -->
 
-完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。
+完整CSV及SQLite以gzip無損壓縮提供；Release附件同樣為gzip壓縮檔，先解壓即可用一般CSV／SQLite工具。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。
 
 <!-- BEGIN ncl94-statistics -->
 ## v0.9.2：94卷統計章完整公共館子群
@@ -236,6 +230,3 @@ v0.9.2沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的�
 
 [2004年公共館來源表：24筆統計量](https://poplolioi11.github.io/tw-public-library-statistics/?batch=ncl94-statistics)：94年卷表145、146、147的16個原表格子，主量16筆、填答館數8筆分列。這批只有單一年份，沒有新增跨年折線；未知單位、原母體、原值與原表定位照列，每個數值可點回官方PDF。人工抽樣核讀與雙校仍未完成。
 <!-- END lightweight-site -->
-
-
-完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "version": "0.9.2",
-  "created_at": "2026-11-01T14:35:11.628545+00:00",
+  "created_at": "2026-11-04T10:39:55.861632+00:00",
   "repository": "https://github.com/poplolioi11/tw-public-library-statistics",
   "external_publication": true,
   "publication_profile": "statistical_fields_only",
@@ -372,13 +372,13 @@
     },
     {
       "path": "README.en.md",
-      "sha256": "86cd763859bd79bd7788aa69b163a599ef19f7a29783d8e0625ff0d18d864688",
-      "bytes": 32638
+      "sha256": "75ea6489e76c0fe749ea0aa9779b889613aa4ec04074cda238a3f9580d1fce3a",
+      "bytes": 32841
     },
     {
       "path": "README.md",
-      "sha256": "282d05fb528c83af7ecfe186f7be353ba0a94d53b04dfe38d83c321cd4367eea",
-      "bytes": 28544
+      "sha256": "e4a5348f84b7ccf4b62fe26665f45862b483c4441a12ff26e87d5c6a0dd7c45e",
+      "bytes": 28280
     },
     {
       "path": "VERSION",
@@ -20397,12 +20397,12 @@
     },
     {
       "path": "SHA256SUMS",
-      "sha256": "93f0cc16f7ae93381502e5ffdbd74123760bdd86068644d8e7acef00025fc091",
+      "sha256": "c93cc64defb16768bb2f1548219d3c00bb1d543e2dfc61be9212f92bdccf5025",
       "bytes": 577497
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "sha256": "b97a6f9ca3809b51e0452287664e7d78e15c64c9e91a2f523b0c982f91e03805",
+      "sha256": "fb6a3f6363b5314192eff5d6440c82c06816ba5fb64549bd1945b63b4f1ec7ba",
       "bytes": 879581
     }
   ],
