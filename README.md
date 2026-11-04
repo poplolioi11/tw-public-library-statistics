@@ -2,11 +2,11 @@
 
 ## 摘要 / Abstract
 
-以下摘要對應Zenodo固定封存v0.9.1；儲存庫後續版本另見原有Release與說明。This abstract describes the fixed Zenodo v0.9.1 archive; later repository versions retain their separate release documentation.
+以下摘要對應v0.9.2資料；固定發行版與Zenodo版本識別碼見引用段。This abstract describes version 0.9.2; see the citation section for its fixed release and Zenodo version identifiers.
 
-本資料封存臺灣公共圖書館跨年度統計v0.9.1，整理58,245筆參照年涵蓋1991–2026的來源觀測，逐筆保留官方URL、原件雜湊、頁表及儲存格定位、原始值、期間、單位、母體與來源版本。整理以來源追溯與口徑保存為主，提供CSV、JSONL與SQLite等同內容格式，供資料檢索、來源對照及受限範圍內的統計研究。不同出版版本、地理層級與年／月口徑並存，並非連續一致的全國縣市年度面板，不能整表加總為館數；人工抽樣核讀與雙校尚未完成。
+本資料集整理58,269筆臺灣公共圖書館來源觀測，參照年涵蓋1991–2026，逐筆保留官方URL、原件雜湊、頁表及儲存格定位、原始值、期間、單位、母體與來源版本。v0.9.2新增2004年圖書館年鑑統計章三表的完整公共館相關子群，含16個實體格與24筆來源觀測。提供同內容的CSV、JSONL與SQLite及完整ZIP，供資料檢索、來源對照與保留原統計口徑的研究。不同出版版本、地域層級與年/月口徑並存，並非連續一致的全國縣市年度面板，不能整表加總為館數；人工抽樣核讀與雙校尚未完成。
 
-This v0.9.1 archive compiles 58,245 source observations of Taiwan public-library statistics with reference years spanning 1991–2026. Each observation retains an official URL, original-file hash, page/table/cell locator, raw value, period, unit, population and source version. The compilation prioritizes provenance and statistical definitions, providing equivalent CSV, JSONL and SQLite representations for discovery, source comparison and analysis within documented limits. Publication versions, geographic levels and annual/monthly definitions coexist. The data are not a complete harmonized national county-year panel and must not be summed wholesale as library counts. Human sample reading and double collation remain incomplete.
+This dataset compiles 58,269 source observations of Taiwan public-library statistics with reference years spanning 1991–2026. Each observation retains an official URL, original-file hash, page/table/cell locator, raw value, period, unit, population and source version. Version 0.9.2 adds the complete selected public-library subsets from three tables reporting 2004 statistics: 16 physical cells and 24 source observations. Equivalent CSV, JSONL and SQLite representations and a complete ZIP support discovery, source comparison and research that preserves statistical definitions. Publication versions, geographic levels and annual/monthly definitions coexist. The data are not a complete harmonized national county-year panel and must not be summed wholesale as library counts. Human sample reading and double collation remain incomplete.
 
 **Explore library collections, circulation, counts, and services—and trace each value back to its official source.**
 
@@ -62,7 +62,7 @@ Data **v0.9.2** · [Coverage｜完整度與缺口](COVERAGE.md) · [Citation｜�
 
 引用可使用右側 **Cite this repository** 或 [CITATION.cff](CITATION.cff)，並保留使用版本、所選口徑及官方原表來源。v0.9.1於2026-10-30封存至Zenodo，版本DOI為[10.5281/zenodo.23788194](https://doi.org/10.5281/zenodo.23788194)；固定GitHub Release仍可辨識原公開版本。
 
-v0.9.2新增批次使用本版固定GitHub Release引用；尚未取得本版Zenodo DOI。上述DOI只識別已凍結的v0.9.1，不套用至本版。
+v0.9.2於2026-11-05封存至Zenodo，版本DOI為[10.5281/zenodo.23950753](https://doi.org/10.5281/zenodo.23950753)。資料建置與GitHub Release日期仍為2026-11-01；Zenodo封存日另列，不回改原GitHub發行日期。上述v0.9.1 DOI仍只識別原固定版本。 ZIP於此Zenodo封存採依序編號的分段，另附ARCHIVE_NOTE.md與ARCHIVE_PARTS.json；依說明串接可還原原ZIP並核對SHA-256，固定GitHub Release不變。
 
 [資料說明稿：來源、方法、驗證與限制](docs/DATA_PAPER_DRAFT.md)是**未投稿、未經同儕審查的草稿**。[採用證據與回饋方式](docs/REUSE.md)說明如何回報實際使用；star、fork或下載次數不直接當成研究採用證據。
 

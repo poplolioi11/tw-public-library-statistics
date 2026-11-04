@@ -1,8 +1,9 @@
 cff-version: 1.2.0
 message: "請同時引用本資料包版本與每筆官方原始來源。"
-title: "臺灣公共圖書館跨年度統計"
+title: "臺灣公共圖書館跨年度統計 / Taiwan Public Library Statistics"
 type: dataset
 version: 0.9.2
+doi: "10.5281/zenodo.23950753"
 date-released: 2026-11-01
 authors:
   - family-names: Chu
@@ -12,3 +13,18 @@ authors:
 abstract: "按來源保存的公共圖書館統計事實、定義口徑、版本與品質註記。非官方背書，非全臺所有歷年完整性宣稱。"
 url: "https://github.com/poplolioi11/tw-public-library-statistics"
 repository-code: "https://github.com/poplolioi11/tw-public-library-statistics"
+keywords:
+  - "公共圖書館"
+  - "臺灣"
+  - "歷史統計"
+  - "圖書資訊學"
+  - "開放資料"
+  - "資料來源追溯"
+  - "public libraries"
+  - "Taiwan"
+  - "historical statistics"
+  - "data provenance"
+  - "library and information science"
+  - "CSV"
+  - "JSON Lines"
+  - "SQLite"
