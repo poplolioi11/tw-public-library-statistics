@@ -1,0 +1,240 @@
+{
+  "pdf_page": 4,
+  "printed_page": 142,
+  "source_table": "3-1",
+  "source_heading": "臺閩地區公共圖書館地區分布概況",
+  "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565690358881489/d5d8b3d1-b854-413a-935d-b14a780c3f2b.pdf#page=4",
+  "source_sha256": "cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c",
+  "data_year": 1997,
+  "year_basis": "印頁142表旁正文稱民國86年國家圖書館所進行的統計",
+  "ownership_scope": "同頁正文為公私立公共圖書館，另有分館",
+  "printed_unit": "所",
+  "original_note": "註：（　）代表分館數",
+  "method": "獨立第二位 AI 直接回讀固定 SHA 的 PDF 高解析原圖，未先讀主要擷取成果",
+  "human_review_completed": false,
+  "administrative_structure_note": "臺北市、高雄市原表以粗體及較高層縮排列在臺灣省分項之後，屬同時期的獨立市列。臺北縣及高雄縣列在臺灣省區塊。原表未逐列明印直轄市稱呼，應區分版面可證層級和當時行政稱謂解釋。",
+  "not_imputed_note": "未印分館括弧者保持 null。重加只作差異觀察。原刊省合計與細列加算之差異完整保留，不推算分館數。",
+  "counts": {
+    "physical_count_cells": 29,
+    "printed_primary_counts": 29,
+    "printed_branch_counts": 19,
+    "no_printed_branch_count": 10,
+    "provincial_printed_counts": {
+      "primary": 398,
+      "branches": 51
+    },
+    "provincial_component_printed_values_sum_for_check_only": {
+      "primary": 408,
+      "branches": 53
+    },
+    "provincial_delta_detail_minus_printed": {
+      "primary": 10,
+      "branches": 2
+    }
+  },
+  "rows": [
+    {
+      "source_row": 1,
+      "source_label": "臺閩地區",
+      "printed_primary_count": 435,
+      "printed_branch_count": 113,
+      "printed_structural_read": "435（113）"
+    },
+    {
+      "source_row": 2,
+      "source_label": "臺灣地區",
+      "printed_primary_count": 430,
+      "printed_branch_count": 113,
+      "printed_structural_read": "430（113）"
+    },
+    {
+      "source_row": 3,
+      "source_label": "臺灣省",
+      "printed_primary_count": 398,
+      "printed_branch_count": 51,
+      "printed_structural_read": "398（51）"
+    },
+    {
+      "source_row": 4,
+      "source_label": "基隆市",
+      "printed_primary_count": 3,
+      "printed_branch_count": 1,
+      "printed_structural_read": "3（1）"
+    },
+    {
+      "source_row": 5,
+      "source_label": "新竹市",
+      "printed_primary_count": 16,
+      "printed_branch_count": 1,
+      "printed_structural_read": "16（1）"
+    },
+    {
+      "source_row": 6,
+      "source_label": "臺中市",
+      "printed_primary_count": 4,
+      "printed_branch_count": 2,
+      "printed_structural_read": "4（2）"
+    },
+    {
+      "source_row": 7,
+      "source_label": "嘉義市",
+      "printed_primary_count": 9,
+      "printed_branch_count": 7,
+      "printed_structural_read": "9（7）"
+    },
+    {
+      "source_row": 8,
+      "source_label": "臺南市",
+      "printed_primary_count": 14,
+      "printed_branch_count": 2,
+      "printed_structural_read": "14（2）"
+    },
+    {
+      "source_row": 9,
+      "source_label": "宜蘭縣",
+      "printed_primary_count": 14,
+      "printed_branch_count": 2,
+      "printed_structural_read": "14（2）"
+    },
+    {
+      "source_row": 10,
+      "source_label": "臺北縣",
+      "printed_primary_count": 33,
+      "printed_branch_count": 21,
+      "printed_structural_read": "33（21）"
+    },
+    {
+      "source_row": 11,
+      "source_label": "桃園縣",
+      "printed_primary_count": 22,
+      "printed_branch_count": 5,
+      "printed_structural_read": "22（5）"
+    },
+    {
+      "source_row": 12,
+      "source_label": "新竹縣",
+      "printed_primary_count": 16,
+      "printed_branch_count": null,
+      "printed_structural_read": "16"
+    },
+    {
+      "source_row": 13,
+      "source_label": "苗栗縣",
+      "printed_primary_count": 21,
+      "printed_branch_count": 1,
+      "printed_structural_read": "21（1）"
+    },
+    {
+      "source_row": 14,
+      "source_label": "臺中縣",
+      "printed_primary_count": 26,
+      "printed_branch_count": 3,
+      "printed_structural_read": "26（3）"
+    },
+    {
+      "source_row": 15,
+      "source_label": "南投縣",
+      "printed_primary_count": 19,
+      "printed_branch_count": null,
+      "printed_structural_read": "19"
+    },
+    {
+      "source_row": 16,
+      "source_label": "彰化縣",
+      "printed_primary_count": 31,
+      "printed_branch_count": 1,
+      "printed_structural_read": "31（1）"
+    },
+    {
+      "source_row": 17,
+      "source_label": "雲林縣",
+      "printed_primary_count": 20,
+      "printed_branch_count": null,
+      "printed_structural_read": "20"
+    },
+    {
+      "source_row": 18,
+      "source_label": "嘉義縣",
+      "printed_primary_count": 23,
+      "printed_branch_count": null,
+      "printed_structural_read": "23"
+    },
+    {
+      "source_row": 19,
+      "source_label": "臺南縣",
+      "printed_primary_count": 39,
+      "printed_branch_count": 1,
+      "printed_structural_read": "39（1）"
+    },
+    {
+      "source_row": 20,
+      "source_label": "高雄縣",
+      "printed_primary_count": 28,
+      "printed_branch_count": 4,
+      "printed_structural_read": "28（4）"
+    },
+    {
+      "source_row": 21,
+      "source_label": "屏東縣",
+      "printed_primary_count": 35,
+      "printed_branch_count": 2,
+      "printed_structural_read": "35（2）"
+    },
+    {
+      "source_row": 22,
+      "source_label": "臺東縣",
+      "printed_primary_count": 16,
+      "printed_branch_count": null,
+      "printed_structural_read": "16"
+    },
+    {
+      "source_row": 23,
+      "source_label": "花蓮縣",
+      "printed_primary_count": 13,
+      "printed_branch_count": null,
+      "printed_structural_read": "13"
+    },
+    {
+      "source_row": 24,
+      "source_label": "澎湖縣",
+      "printed_primary_count": 6,
+      "printed_branch_count": null,
+      "printed_structural_read": "6"
+    },
+    {
+      "source_row": 25,
+      "source_label": "臺北市",
+      "printed_primary_count": 22,
+      "printed_branch_count": 49,
+      "printed_structural_read": "22（49）"
+    },
+    {
+      "source_row": 26,
+      "source_label": "高雄市",
+      "printed_primary_count": 10,
+      "printed_branch_count": 13,
+      "printed_structural_read": "10（13）"
+    },
+    {
+      "source_row": 27,
+      "source_label": "金馬地區",
+      "printed_primary_count": 5,
+      "printed_branch_count": null,
+      "printed_structural_read": "5"
+    },
+    {
+      "source_row": 28,
+      "source_label": "金門縣",
+      "printed_primary_count": 3,
+      "printed_branch_count": null,
+      "printed_structural_read": "3"
+    },
+    {
+      "source_row": 29,
+      "source_label": "連江縣",
+      "printed_primary_count": 2,
+      "printed_branch_count": null,
+      "printed_structural_read": "2"
+    }
+  ]
+}

@@ -52,6 +52,15 @@ NOV_FORMAL_ROWS = {
     'ncl-reading-2025-report': (
         'ncl_reading_2025', 39, 'ad221212e57e12b5b8458455b765956b684f5bcd1808a1f8e83b33f0e8846288',
         'https://www.ncl.edu.tw/files/file_pool/1/0Q120145388038649336/df66cab6-10d6-4502-9fbb-6a8db59a339c.pdf'),
+    'dgbas-yearbook-114': (
+        'dgbas_yearbook_114', 312, 'dabbb914ad186f8e59af661271ba0adca12a09bb3b4c36f1f4d07903f7d5fe51',
+        'https://ws.dgbas.gov.tw/001/Upload/463/relfile/11160/229649/ch4.pdf'),
+    'ncl-ed2-public-libraries-1985': (
+        'ncl_early_1985', 8, '9c9e17f88d0706d2f46738952a797e6c66e6ed5b46f0ad51c64f50cfd58f023a',
+        'https://www.ncl.edu.tw/files/file_pool/1/0Q083566619294348883/23cf6dc8-4e92-4917-b2c2-ef1812a69771.pdf'),
+    'ncl-ed89-public-libraries': (
+        'ncl_early_89', 402, 'cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c',
+        'https://www.ncl.edu.tw/files/file_pool/1/0Q083565690358881489/d5d8b3d1-b854-413a-935d-b14a780c3f2b.pdf'),
 }
 PUBLICATION_FIELDS = {'snapshot_distribution', 'public_evidence_path', 'public_evidence_sha256', 'public_projection_policy'}
 LAYER_NONSTATISTICAL_FIELDS = PUBLICATION_FIELDS | {'original_fields'}

@@ -1,0 +1,19 @@
+{
+  "documents": [
+    {
+      "candidate_id": "ncl-ed2-public-libraries-1985",
+      "title": "第二次中華民國圖書館年鑑：圖書館事業現況調查分析",
+      "edition_raw": "第二次中華民國圖書館年鑑",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566619294348883/23cf6dc8-4e92-4917-b2c2-ef1812a69771.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566602665258360",
+      "source_sha256": "9c9e17f88d0706d2f46738952a797e6c66e6ed5b46f0ad51c64f50cfd58f023a",
+      "source_bytes": 11292745,
+      "source_version_id": "ncl-ed2-public-libraries-1985@sha256:9c9e17f88d0706d2f46738952a797e6c66e6ed5b46f0ad51c64f50cfd58f023a",
+      "source_local_path": "raw/ncl-early-1985/yearbook-02-current-status.pdf",
+      "retrieved_at": "2026-11-27T17:04:00.852866+00:00",
+      "publication_date": "1988-12-01",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed",
+      "recheck_interval_days": 365
+    }
+  ]
+}

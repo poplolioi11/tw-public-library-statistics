@@ -1,0 +1,18 @@
+{
+  "documents": [
+    {
+      "candidate_id": "ncl-ed89-public-libraries",
+      "source_sha256": "cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c",
+      "title": "中華民國八十九年圖書館年鑑：公共圖書館章",
+      "edition_raw": "中華民國八十九年圖書館年鑑",
+      "source_local_path": "raw/ncl-early-89/yearbook-89-public-library.pdf",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565690358881489/d5d8b3d1-b854-413a-935d-b14a780c3f2b.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565657469156923",
+      "publication_date": "2000-12-01",
+      "retrieved_at": "2026-11-27T17:04:04.361853+00:00",
+      "source_version_id": "ncl-ed89-public-libraries@sha256:cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c",
+      "source_bytes": 15337299,
+      "rights_status": "public_statistical_facts_only_full_original_redistribution_not_confirmed"
+    }
+  ]
+}

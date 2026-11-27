@@ -227,6 +227,19 @@
       "value_status": "source_marker",
       "reason": "main_library_and_parenthetical_branch_quantities_not_one_scalar",
       "source_note": "原註截至民國91年12月底之資料。；高雄包括高雄市立圖書館及高雄市立中正文化中心管理處。；館數的括號原值保留，不在單一總館數欄拆算；人次欄表頭單位為人，保留不改為人次。；館數括號字形超出欄線，文字擷取邊界延至相鄰空隙以免切斷括號數值。"
+    },
+    {
+      "observation_id": "obs-82bbc732419d24c6b8cf0e",
+      "source_id": "discovered-ncl-ed89-public-libraries-t3-5",
+      "component_source_id": "ncl-ed89-public-libraries",
+      "source_record_id": "ncl-ed89-public-libraries/t3-5/p19/r5/c1",
+      "source_sha256": "cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c",
+      "source_locator": "PDF page 19; printed page 157; table 3-5; source row 5; numeric column 1; quantity primary; bbox 314.253,1258.944,498.171,1298.06",
+      "source_location_kind": "verified_original_cell",
+      "raw_value": "1,3118,247",
+      "value": null,
+      "value_status": "source_marker",
+      "reason": "89卷表3-5原圖直接定位見原印逗點分組異常，數值未能由原刊確認，保留實印字串。"
     }
   ]
 }

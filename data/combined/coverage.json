@@ -1,5 +1,22 @@
 [
   {
+    "source_id": "discovered-ncl-ed2-public-libraries-1985-t1",
+    "year": 1985,
+    "data_years": [
+      1985
+    ],
+    "periods": [
+      "1985-12"
+    ],
+    "records": 8,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "臺閩地區"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566619294348883/23cf6dc8-4e92-4917-b2c2-ef1812a69771.pdf#page=5",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
     "source_id": "dgbas-social-indicators-2005",
     "year": null,
     "data_years": [
@@ -186,6 +203,106 @@
     "rights": "OGDL-1.0_site_declaration"
   },
   {
+    "source_id": "discovered-ncl-ed89-public-libraries-t3-1",
+    "year": 1997,
+    "data_years": [
+      1997
+    ],
+    "periods": [
+      "1997"
+    ],
+    "records": 48,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "南投縣",
+      "嘉義市",
+      "嘉義縣",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新竹市",
+      "新竹縣",
+      "桃園縣",
+      "澎湖縣",
+      "臺中市",
+      "臺中縣",
+      "臺北市",
+      "臺北縣",
+      "臺南市",
+      "臺南縣",
+      "臺東縣",
+      "臺灣地區",
+      "臺灣省",
+      "臺閩地區",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "金門縣",
+      "金馬地區",
+      "雲林縣",
+      "高雄市",
+      "高雄縣"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565690358881489/d5d8b3d1-b854-413a-935d-b14a780c3f2b.pdf#page=4",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-ncl-ed89-public-libraries-t3-5",
+    "year": null,
+    "data_years": [
+      1997,
+      1999,
+      null
+    ],
+    "periods": [
+      "1997",
+      "1999",
+      null
+    ],
+    "records": 90,
+    "unresolved_period_records": 36,
+    "geographies": [
+      "南投縣",
+      "合計／平均",
+      "嘉義縣",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新竹縣",
+      "桃園縣",
+      "澎湖縣",
+      "臺中市",
+      "臺中縣",
+      "臺北縣",
+      "臺南縣",
+      "臺東縣",
+      "花蓮縣",
+      "苗栗縣",
+      "雲林縣",
+      "高雄縣"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565690358881489/d5d8b3d1-b854-413a-935d-b14a780c3f2b.pdf#page=19",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-ncl-ed89-public-libraries-t3-6",
+    "year": 1997,
+    "data_years": [
+      1997
+    ],
+    "periods": [
+      "1997"
+    ],
+    "records": 24,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "臺閩地區"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565690358881489/d5d8b3d1-b854-413a-935d-b14a780c3f2b.pdf#page=20",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
     "source_id": "dgbas-county-library-Z091101a029",
     "year": null,
     "data_years": [
@@ -277,6 +394,46 @@
     ],
     "source_url": "https://winstacity.dgbas.gov.tw/DgbasWeb/ZWeb/ShowQuery.aspx?Z=",
     "rights": "OGDL-1.0_site_declaration"
+  },
+  {
+    "source_id": "discovered-ncl-ed89-public-libraries-t3-4",
+    "year": 1999,
+    "data_years": [
+      1999
+    ],
+    "periods": [
+      "1999-10"
+    ],
+    "records": 240,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "南投縣",
+      "嘉義市",
+      "嘉義縣",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新竹市",
+      "新竹縣",
+      "桃園縣",
+      "澎湖縣",
+      "臺中市",
+      "臺中縣",
+      "臺北市",
+      "臺北縣",
+      "臺南市",
+      "臺南縣",
+      "臺東縣",
+      "臺灣地區",
+      "花蓮縣",
+      "苗栗縣",
+      "雲林縣",
+      "高雄市",
+      "高雄縣"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565690358881489/d5d8b3d1-b854-413a-935d-b14a780c3f2b.pdf#page=18",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {
     "source_id": "discovered-ncl-ed90-statistics-t151",
@@ -2030,6 +2187,77 @@
       "彰化縣"
     ],
     "source_url": "https://ctrl.chcg.gov.tw/files/%E6%95%99%E8%82%B2%E5%8F%8A%E6%96%87%E5%8C%96-%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%94%B6%E8%97%8F%E5%8F%8A%E5%80%9F%E9%96%B1%E6%A6%82%E6%B3%81%20%20%28110%E5%B9%B47%E6%9C%88%E7%99%BC%E5%B8%83%29-%E8%87%BA%E7%81%A3-%E7%B0%BD%E5%87%86%E7%89%88_16_1100812_2025.pdf#page=5",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-dgbas-yearbook-114-t4-22",
+    "year": null,
+    "data_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      null
+    ],
+    "periods": [
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      null
+    ],
+    "records": 312,
+    "unresolved_period_records": 192,
+    "geographies": [
+      "全國",
+      "公立公共圖書館",
+      "南投縣",
+      "嘉義市",
+      "嘉義縣",
+      "國家圖書館",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新北市",
+      "新竹市",
+      "新竹縣",
+      "桃園市",
+      "澎湖縣",
+      "臺中市",
+      "臺北市",
+      "臺南市",
+      "臺東縣",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "金門縣",
+      "雲林縣",
+      "高雄市"
+    ],
+    "source_url": "https://ws.dgbas.gov.tw/001/Upload/463/relfile/11160/229649/ch4.pdf#page=29",
     "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {

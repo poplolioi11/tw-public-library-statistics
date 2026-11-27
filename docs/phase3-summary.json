@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.10.0",
+  "dataset_version": "0.10.1",
   "policy_version": "1.1.1",
   "scope": "Registered source selection over the complete existing quantitative inventory; not additional operational statistics.",
   "counts": {
-    "record_routes": 95620,
+    "record_routes": 96342,
     "candidate_decisions": 115356,
     "queries": 22,
     "series_edges": 63121
@@ -12,7 +12,7 @@
   "registered_profiles": 22,
   "route_status_counts": {
     "registered_profile_candidate": 73047,
-    "unreviewed_source_version": 18766,
+    "unreviewed_source_version": 19488,
     "no_default_profile_for_original_scope": 3807
   },
   "selection_status_counts": {
@@ -29,7 +29,7 @@
   "tables": [
     {
       "table": "record_routes",
-      "records": 95620,
+      "records": 96342,
       "csv": "derived/phase3/record_routes.csv.gz",
       "jsonl": "derived/phase3/record_routes.jsonl.gz"
     },
@@ -53,7 +53,7 @@
     }
   ],
   "layer_raw_fingerprints": {
-    "canonical": "322a316f7cd4605237155f28e0d3ada14885b2862060a37a99d722900fb114d7",
+    "canonical": "5520cdf926ed512b8227ea38f1465d09cee4dd4fcecfe69fa1e3849850248b9e",
     "local_statistical_cells": "2f3b30127fbf12aa743de1e2844a02681e7a967a8cb1efe7cbdc4a7c83e4335f",
     "programme_quantities": "503f2e60d56f34ddbcc7c392cb638e8e535676a7d90097331cf2470931cac662"
   },
@@ -65,10 +65,10 @@
   "no_aggregation": true,
   "no_geographic_recoding": true,
   "inputs": {
-    "derived/phase2/annotations.jsonl.gz": "e10c89ec24a806299204d3fd9439863843f4a165f04eb54b5b40c83d5baae6d5",
-    "derived/phase2/evidence_cards.jsonl": "82e4ac0443c15f7ca42ee43a0346f734173deef42aa2c93c2f022357419954e4",
-    "docs/phase3-contract.json": "94754bd4eeab63d72f8a4e0e5dcab91e8d836441234f8705f4d004d905524ca6",
-    "docs/phase3-profiles.json": "a284032e132a1424904f003def061129b6f853480effa8c777ef8700e5c57a1e",
+    "derived/phase2/annotations.jsonl.gz": "7298484c1615cff8dc716390a284429af900d97a57505c5fcdadf4661094e732",
+    "derived/phase2/evidence_cards.jsonl": "ee3cd539d3edac2e10224dae9baf724d4cf2fee0d1773a9f109f1260635f453e",
+    "docs/phase3-contract.json": "aef4936270ae73a270360d9edb311f0eeb7e28164e2e4a49b442407f4125fdb7",
+    "docs/phase3-profiles.json": "4258452b73a04d857a5911359038c7cfae36929b8c6e0f841a91f6f3b1f14985",
     "scripts/phase3_engine.py": "c37ffc648ab0efb176a95468288e1d2dfaca1351f1ae69a9ab8cee9531223301",
     "scripts/build_phase3.py": "e3f43b532bdaf932cf7458abe000a28d746c4306468ed1ac5ea3564bf7771c30"
   },
@@ -1406,16 +1406,16 @@
       "bytes": 4572776
     },
     "derived/phase3/record_routes.csv.gz": {
-      "sha256": "f067ed3cb2111d225ab7bab4e727ea3dfc697f20ac856e3c03e13c345e7ee67f",
-      "bytes": 8690423
+      "sha256": "ab3ee5b511dfb9e2f1849154200e3f1a76f39e7cd60c6025486df35bf5848955",
+      "bytes": 8635384
     },
     "derived/phase3/record_routes.jsonl.gz": {
-      "sha256": "478bd3aef9493b22e3ce223af8a32cf14c80901bd8235455f41f46a2b1c150b0",
-      "bytes": 9807690
+      "sha256": "26a19bb26760378a2ec1dd51333b7386a4ce501af58c554053fc848bf0ea834e",
+      "bytes": 9997456
     },
     "derived/phase3/selection.sqlite": {
-      "sha256": "5082032fd0c672c9199636c6e121160272f33e6180f958c1c2105b534c379a17",
-      "bytes": 78618624
+      "sha256": "cca9e7ad56796b85ee66a4cbe9f932138aee365764d95bdb025ee093365be974",
+      "bytes": 78864384
     },
     "derived/phase3/series_edges.csv": {
       "sha256": "5690c3790edeff635e3307093d1939c5efa70e32e99b7b56a00365cb9ce1ffc1",

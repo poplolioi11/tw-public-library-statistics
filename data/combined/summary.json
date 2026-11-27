@@ -1,19 +1,20 @@
 {
-  "version": "0.10.0",
+  "version": "0.10.1",
   "canonical_jsonl_path": "data/combined/observations.jsonl.gz",
   "jsonl_compression": "gzip",
-  "canonical_uncompressed_sha256": "1f1aaf73c57783f222b0c44e7eb961cbea78f1673db9c6519a5ba5260057063d",
+  "canonical_uncompressed_sha256": "ced54c5334c3be9c4c5ee1cc5eabebbf21c6caabbfd994b4abc10d029ae81af9",
   "canonical_csv_path": "data/combined/observations.csv.gz",
   "canonical_sqlite_path": "data/combined/library_statistics.sqlite.gz",
-  "built_at": "2026-11-27T16:04:25.197306+00:00",
-  "records": 77011,
-  "missing_cells": 9654,
+  "built_at": "2026-11-27T17:19:29.735859+00:00",
+  "records": 77733,
+  "missing_cells": 9802,
   "null_value_status_counts": {
     "not_available_in_source": 206,
-    "source_blank": 1317,
-    "source_marker": 8131
+    "source_blank": 1445,
+    "source_marker": 8151
   },
   "reference_years": [
+    1985,
     1991,
     1992,
     1993,
@@ -51,16 +52,16 @@
     2025,
     2026
   ],
-  "unresolved_period_records": 467,
-  "source_series": 8180,
-  "source_groups": 282,
+  "unresolved_period_records": 695,
+  "source_series": 8790,
+  "source_groups": 288,
   "source_families": {
+    "國家圖書館年鑑統計事實": 21300,
     "主計總處歷史全國統計": 220,
     "教育部歷史公共館統計": 18680,
     "主計總處縣市公共館數": 644,
-    "國家圖書館年鑑統計事實": 20890,
     "地方官方出版統計事實": 18230,
-    "主計總處後續全國出版統計": 312,
+    "主計總處後續全國出版統計": 624,
     "國家圖書館閱讀報告統計事實": 193,
     "國資圖公開全國圖表": 855,
     "地方政府開放歷史表": 14751,
@@ -70,17 +71,17 @@
   "all_history_complete": false,
   "null_status_counts": {
     "not_available_in_source": 206,
-    "source_blank": 1317,
-    "source_marker": 8131
+    "source_blank": 1445,
+    "source_marker": 8151
   },
   "value_status_counts": {
     "not_available_in_source": 206,
-    "reported": 65143,
+    "reported": 65717,
     "reported_decimal": 2214,
-    "source_blank": 1317,
-    "source_marker": 8131
+    "source_blank": 1445,
+    "source_marker": 8151
   },
   "publication_profile": "statistical_fields_only",
   "omitted_contact_original_files": 22,
-  "statistical_content_sha256": "322a316f7cd4605237155f28e0d3ada14885b2862060a37a99d722900fb114d7"
+  "statistical_content_sha256": "5520cdf926ed512b8227ea38f1465d09cee4dd4fcecfe69fa1e3849850248b9e"
 }

@@ -646,6 +646,106 @@
         "raw/ncl-reading-2025"
       ],
       "scope": "114年臺灣閱讀風貌表1，2023–2025年13項39年度格，保留原萬級；跨年比較欄另記，沒有併成單年量。"
+    },
+    {
+      "id": "dgbas_yearbook_114",
+      "review_status": "source_reviewed",
+      "script": "build_nov28_sources.py",
+      "args": [
+        "--batch",
+        "dgbas_yearbook_114"
+      ],
+      "adapter_kind": "canonical_observations_jsonl",
+      "canonical_jsonl": "derived/dgbas_yearbook_114_observations.jsonl",
+      "derived_csv": "derived/dgbas_yearbook_114_long.csv",
+      "inputs": [
+        "raw/dgbas-yearbook-114/ch4.pdf"
+      ],
+      "dependencies": [
+        "scripts/extract_dgbas114_table422.py",
+        "scripts/build_nov2026_sources.py",
+        "scripts/build_discovered_20261028.py",
+        "scripts/discovered_20261028_canonical_columns.json"
+      ],
+      "outputs": [
+        "derived/dgbas_yearbook_114_long.csv",
+        "derived/dgbas_yearbook_114_observations.jsonl",
+        "raw/dgbas-yearbook-114/documents.json",
+        "raw/dgbas-yearbook-114/definition-evidence.json",
+        "raw/dgbas-yearbook-114/verification.json",
+        "raw/dgbas-yearbook-114/source_cells.jsonl"
+      ],
+      "raw_directories": [
+        "raw/dgbas-yearbook-114"
+      ],
+      "scope": "114年版表4-22完整39列×8欄312格，2011–2025全國年列與依版面附列的24機關與縣市列分開。"
+    },
+    {
+      "id": "ncl_early_1985",
+      "review_status": "source_reviewed",
+      "script": "build_nov28_sources.py",
+      "args": [
+        "--batch",
+        "ncl_early_1985"
+      ],
+      "adapter_kind": "canonical_observations_jsonl",
+      "canonical_jsonl": "derived/ncl_early_1985_observations.jsonl",
+      "derived_csv": "derived/ncl_early_1985_long.csv",
+      "inputs": [
+        "raw/ncl-early-1985/yearbook-02-current-status.pdf"
+      ],
+      "dependencies": [
+        "scripts/extract_ncl1985_public_libraries.py",
+        "scripts/build_nov2026_sources.py",
+        "scripts/build_discovered_20261028.py",
+        "scripts/discovered_20261028_canonical_columns.json"
+      ],
+      "outputs": [
+        "derived/ncl_early_1985_long.csv",
+        "derived/ncl_early_1985_observations.jsonl",
+        "raw/ncl-early-1985/documents.json",
+        "raw/ncl-early-1985/definition-evidence.json",
+        "raw/ncl-early-1985/source_cells.json"
+      ],
+      "raw_directories": [
+        "raw/ncl-early-1985"
+      ],
+      "scope": "第二次年鑑表1公共館子群，1985年12月6主量格加2個不含於小計的原印分館及民眾閱覽室量。"
+    },
+    {
+      "id": "ncl_early_89",
+      "review_status": "source_reviewed",
+      "script": "build_nov28_sources.py",
+      "args": [
+        "--batch",
+        "ncl_early_89"
+      ],
+      "adapter_kind": "canonical_observations_jsonl",
+      "canonical_jsonl": "derived/ncl_early_89_observations.jsonl",
+      "derived_csv": "derived/ncl_early_89_long.csv",
+      "inputs": [
+        "raw/ncl-early-89/yearbook-89-public-library.pdf",
+        "raw/ncl-early-89/ocr-cell-readback.jsonl"
+      ],
+      "dependencies": [
+        "scripts/extract_ncl89_public_libraries.py",
+        "scripts/build_nov2026_sources.py",
+        "scripts/build_discovered_20261028.py",
+        "scripts/discovered_20261028_canonical_columns.json",
+        "scripts/ncl89_grids.json",
+        "scripts/ncl89_coordinates.json"
+      ],
+      "outputs": [
+        "derived/ncl_early_89_long.csv",
+        "derived/ncl_early_89_observations.jsonl",
+        "raw/ncl-early-89/documents.json",
+        "raw/ncl-early-89/definition-evidence.json",
+        "raw/ncl-early-89/source_cells.json"
+      ],
+      "raw_directories": [
+        "raw/ncl-early-89"
+      ],
+      "scope": "89卷公共圖書館章表3-1、3-4、3-5、3-6，1997、1999及跨時點調查原表，保留舊行政區及原註。"
     }
   ]
 }

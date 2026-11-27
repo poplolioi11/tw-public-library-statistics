@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0.0",
+  "checked_at": "2026-11-28",
+  "release_version": "0.10.1",
+  "base_version": "0.10.0",
+  "canonical_records_added": 722,
+  "canonical_records": 77733,
+  "human_sample_reading_completed": false,
+  "independent_human_double_collation_completed": false,
+  "scope_document": "docs/source-refresh-20261128.md",
+  "completed_batches": [
+    {
+      "cohort_id": "dgbas_yearbook_114",
+      "component_source_ids": [
+        "dgbas-yearbook-114"
+      ],
+      "observations": 312,
+      "physical_cells": 312,
+      "table": "4-22",
+      "pdf_page": 29,
+      "printed_page": 105,
+      "data_years_by_group": {
+        "printed_annual_rows": {
+          "from": 2011,
+          "through": 2025,
+          "observations": 120
+        },
+        "undated_institutions_and_counties": {
+          "data_year": null,
+          "source_table_year_context": 2025,
+          "observations": 192
+        }
+      },
+      "state_counts": {
+        "reported": 293,
+        "source_marker": 19
+      },
+      "retains_edition_113_separately": true,
+      "matching_annual_positions_with_edition_113": 112,
+      "official_url": "https://ws.dgbas.gov.tw/001/Upload/463/relfile/11160/229649/ch4.pdf",
+      "source_sha256": "dabbb914ad186f8e59af661271ba0adca12a09bb3b4c36f1f4d07903f7d5fe51",
+      "batch_metadata": "raw/dgbas-yearbook-114/verification.json"
+    },
+    {
+      "cohort_id": "ncl_early_1985",
+      "component_source_ids": [
+        "ncl-ed2-public-libraries-1985"
+      ],
+      "observations": 8,
+      "physical_cells": 6,
+      "table": "1",
+      "pdf_page": 5,
+      "printed_page": 30,
+      "data_years": [
+        1985
+      ],
+      "data_month": 12,
+      "state_counts": {
+        "reported": 8
+      },
+      "printed_public_library_subtotal": 336,
+      "additional_branches_excluded_from_subtotal": 50,
+      "additional_reading_rooms_excluded_from_subtotal": 14,
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566619294348883/23cf6dc8-4e92-4917-b2c2-ef1812a69771.pdf",
+      "source_sha256": "9c9e17f88d0706d2f46738952a797e6c66e6ed5b46f0ad51c64f50cfd58f023a",
+      "batch_metadata": "raw/ncl-early-1985/source_cells.json"
+    },
+    {
+      "cohort_id": "ncl_early_89",
+      "component_source_ids": [
+        "ncl-ed89-public-libraries"
+      ],
+      "observations": 402,
+      "physical_cells": 383,
+      "table_observations": {
+        "3-1": 48,
+        "3-4": 240,
+        "3-5": 90,
+        "3-6": 24
+      },
+      "table_pdf_pages": {
+        "3-1": 4,
+        "3-4": 18,
+        "3-5": 19,
+        "3-6": 20
+      },
+      "state_counts": {
+        "reported": 273,
+        "source_blank": 128,
+        "source_marker": 1
+      },
+      "data_year_counts": {
+        "1997": 90,
+        "1999": 276,
+        "unresolved_mixed_period": 36
+      },
+      "provincial_printed_totals": {
+        "primary": 398,
+        "branches": 51
+      },
+      "provincial_printed_subrow_sum_for_quality_check": {
+        "primary": 408,
+        "branches": 53
+      },
+      "preserved_original_non_numeric_token": {
+        "table": "3-5",
+        "row": "臺中縣",
+        "field": "現住人口數",
+        "raw_value": "1,3118,247",
+        "value": null
+      },
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565690358881489/d5d8b3d1-b854-413a-935d-b14a780c3f2b.pdf",
+      "source_sha256": "cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c",
+      "batch_metadata": "raw/ncl-early-89/source_cells.json",
+      "independent_table_3_1_evidence": "raw/ncl-early-89/ncl89-table3-1-independent-visual-review.json"
+    }
+  ],
+  "remaining_gaps_and_candidates": [
+    {
+      "id": "2012_ncl_nlpi_county_cores",
+      "status": "original_same_scope_table_not_obtained",
+      "data_year": 2012,
+      "related_available_component_id": "moe-library-ods",
+      "cross_source_equivalence_confirmed": false
+    },
+    {
+      "id": "ncl_reading_report_other_editions",
+      "status": "official_catalogue_entries_confirmed_pending_table_review",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "official_url": "https://reading.ncl.edu.tw/web/front/report/list.do"
+    },
+    {
+      "id": "nlpi_ebook_platform_monthly_202610",
+      "status": "parsed_candidate_definition_unconfirmed",
+      "period": "2026-10",
+      "publication_date": "2026-11-02",
+      "parsed_cells": 132,
+      "numeric_cells": 131,
+      "original_status_cells": 1,
+      "original_status_literal": "#DIV/0!",
+      "official_url": "https://plisnet.nlpi.edu.tw/public/upload/DocumentDownload/26110210102739670332024.odt",
+      "source_sha256": "270ae536700c61d754258ac4dc9866a6892cd19dec50932f7c6bb5498f7fd76d",
+      "unresolved": [
+        "membership_deduplication_and_counting",
+        "geographic_assignment",
+        "cumulative_period_start"
+      ]
+    }
+  ],
+  "supersedes_prior_candidate_status": {
+    "dgbas_yearbook_edition_114": "complete_table_4_22_ingested",
+    "ncl_second_yearbook_1985_table_1": "whole_public_library_subgroup_ingested",
+    "ncl_89_yearbook_public_libraries": "complete_tables_3_1_3_4_3_5_3_6_ingested"
+  }
+}

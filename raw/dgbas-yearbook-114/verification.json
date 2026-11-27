@@ -1,0 +1,30 @@
+{
+  "source_id": "dgbas-yearbook-114",
+  "source_url": "https://ws.dgbas.gov.tw/001/Upload/463/relfile/11160/229649/ch4.pdf#page=29",
+  "source_sha256": "dabbb914ad186f8e59af661271ba0adca12a09bb3b4c36f1f4d07903f7d5fe51",
+  "pdf_page": 29,
+  "printed_page": "105",
+  "table": "4-22",
+  "table_title": "國家圖書館及公立公共圖書館概況",
+  "source_rows": 39,
+  "statistical_columns": 8,
+  "complete_grid_positions_checked": 312,
+  "positions_matched_in_three_readers": 312,
+  "annual_rows_printed_years": [
+    2011,
+    2025
+  ],
+  "year_label_null_observations": 192,
+  "source_table_year_context": 2025,
+  "source_status_counts": {
+    "reported": 293,
+    "source_marker": 19
+  },
+  "scope": "Original cell literals, numbering, units and note checked with fixed original SHA and three PDF text readers.",
+  "libraries": {
+    "pdfplumber": "0.11.9",
+    "pypdfium2": "5.13.0",
+    "pypdf": "6.21.4"
+  },
+  "independent_human_double_collation_completed": false
+}

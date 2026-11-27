@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "source_cards": [
+    {
+      "evidence_id": "p2-nov2026-82160f27f170ed9db1e02514",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-ed2-public-libraries-1985-t1",
+      "source_sha256": "9c9e17f88d0706d2f46738952a797e6c66e6ed5b46f0ad51c64f50cfd58f023a",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566619294348883/23cf6dc8-4e92-4917-b2c2-ef1812a69771.pdf#page=5",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q083566619294348883/23cf6dc8-4e92-4917-b2c2-ef1812a69771.pdf#page=5"
+      ],
+      "source_locator": {
+        "table": "1",
+        "pdf_pages": [
+          5
+        ],
+        "raw_locator_examples": [
+          "PDF page 5; printed page 30; table 1; public-library subgroup data row 1; physical column 2; quantity type_count; top-left PDF units bbox 603.043,503.698,620.191,526.593",
+          "PDF page 5; printed page 30; table 1; public-library subgroup data row 2; physical column 2; quantity type_count; top-left PDF units bbox 587.34,554.21,647.559,585.226",
+          "PDF page 5; printed page 30; table 1; public-library subgroup data row 2; physical column 2; quantity additional_branches; top-left PDF units bbox 591.611,583.831,643.056,612.451"
+        ]
+      },
+      "source_table": "1",
+      "source_table_title": "臺閩地區各類型圖書館統計表（74年12月）",
+      "source_fields": [
+        "數量"
+      ],
+      "indicators": [
+        "另設分館數量",
+        "另設民眾閱覽室數量",
+        "圖書館數量"
+      ],
+      "series_ids": [
+        "discovered-ncl-ed2-public-libraries-1985-t1-t1-public-r1-type_count-03487a93cc47",
+        "discovered-ncl-ed2-public-libraries-1985-t1-t1-public-r2-additional_branches-95d0d750ba37",
+        "discovered-ncl-ed2-public-libraries-1985-t1-t1-public-r2-additional_reading_rooms-fa9beaa72754",
+        "discovered-ncl-ed2-public-libraries-1985-t1-t1-public-r2-type_count-03487a93cc47",
+        "discovered-ncl-ed2-public-libraries-1985-t1-t1-public-r3-type_count-03487a93cc47",
+        "discovered-ncl-ed2-public-libraries-1985-t1-t1-public-r4-type_count-03487a93cc47",
+        "discovered-ncl-ed2-public-libraries-1985-t1-t1-public-r5-type_count-03487a93cc47",
+        "discovered-ncl-ed2-public-libraries-1985-t1-t1-public-r6-published_subtotal-f1eec6ae3518"
+      ],
+      "data_years_present": [
+        1985
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned scanned PDF. Quantity, placement and scope checked against the adjacent original prose.",
+      "semantic_facts": {
+        "retained_units": [
+          "所"
+        ],
+        "population_scopes": [
+          "臺灣及金馬地區公共圖書館／小計",
+          "臺灣及金馬地區公共圖書館／省市立",
+          "臺灣及金馬地區公共圖書館／社教館",
+          "臺灣及金馬地區公共圖書館／私立",
+          "臺灣及金馬地區公共圖書館／縣市立",
+          "臺灣及金馬地區公共圖書館／縣市立／另設分館數量，未併入原館數",
+          "臺灣及金馬地區公共圖書館／縣市立／另設民眾閱覽室數量，未併入原館數",
+          "臺灣及金馬地區公共圖書館／鄉鎭市立"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          1985
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-07bdc3569acf26969cfb83",
+        "obs-13e92758558176d0b1e34e",
+        "obs-33382b653bac2d40ac4e68",
+        "obs-646bf01091841ba4871364",
+        "obs-762047b062a07bbbae10ad",
+        "obs-7bad47aea552754de8e3c5",
+        "obs-be6e02120118b81813b98c",
+        "obs-fd447eb207d04460be5b50"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    }
+  ]
+}

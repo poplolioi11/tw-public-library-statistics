@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "data_version": "0.10.0",
-  "data_build": "2026-11-27T15:54:23.413545+00:00",
+  "data_version": "0.10.1",
+  "data_build": "2026-11-27T17:13:38.372509+00:00",
   "registry_path": "data/reviewed_historical_cohorts.json",
   "registered_cohorts": [
     {
@@ -8455,10 +8455,339 @@
       "scope": "114年臺灣閱讀風貌表1，2023–2025年13項39年度格，保留原萬級；跨年比較欄另記，沒有併成單年量。",
       "completion_scope": "All cells/spans of explicitly listed reviewed tables or prose only; not every table/chapter/year/county.",
       "canonical_status": "all_source_count_present"
+    },
+    {
+      "id": "dgbas_yearbook_114",
+      "review_status": "source_reviewed",
+      "derived_csv": "derived/dgbas_yearbook_114_long.csv",
+      "source_csv_available": true,
+      "source_ids": [
+        "discovered-dgbas-yearbook-114-t4-22"
+      ],
+      "data_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "edition_roc": [
+        114
+      ],
+      "publication_dates": [],
+      "source_csv_counts": {
+        "records": 312,
+        "numeric_cells": 293,
+        "source_blank_cells": 0,
+        "other_missing_cells": 19,
+        "value_status_counts": {
+          "reported": 293,
+          "source_marker": 19
+        }
+      },
+      "canonical_counts": {
+        "records": 312,
+        "numeric_cells": 293,
+        "source_blank_cells": 0,
+        "other_missing_cells": 19,
+        "value_status_counts": {
+          "reported": 293,
+          "source_marker": 19
+        }
+      },
+      "uncertain_label_records": 0,
+      "unit_conflict_records": 0,
+      "table_inventory": [
+        {
+          "source_id": "discovered-dgbas-yearbook-114-t4-22",
+          "source_table": "4-22",
+          "source_table_title": "國家圖書館及公立公共圖書館概況",
+          "source_cells": 312,
+          "numeric_cells": 293,
+          "source_blank_cells": 0,
+          "other_missing_cells": 19,
+          "data_years": [
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "edition_roc": [
+            114
+          ],
+          "pdf_pages": [
+            "29"
+          ],
+          "printed_pages": [
+            "105"
+          ],
+          "source_sha256": [
+            "dabbb914ad186f8e59af661271ba0adca12a09bb3b4c36f1f4d07903f7d5fe51"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        }
+      ],
+      "metadata_paths": [
+        "raw/dgbas-yearbook-114/documents.json"
+      ],
+      "scope": "114年版表4-22完整39列×8欄312格，2011–2025全國年列與依版面附列的24機關與縣市列分開。",
+      "completion_scope": "All cells/spans of explicitly listed reviewed tables or prose only; not every table/chapter/year/county.",
+      "canonical_status": "all_source_count_present"
+    },
+    {
+      "id": "ncl_early_1985",
+      "review_status": "source_reviewed",
+      "derived_csv": "derived/ncl_early_1985_long.csv",
+      "source_csv_available": true,
+      "source_ids": [
+        "discovered-ncl-ed2-public-libraries-1985-t1"
+      ],
+      "data_years": [
+        1985
+      ],
+      "edition_roc": [
+        2
+      ],
+      "publication_dates": [
+        "1988-12-01"
+      ],
+      "source_csv_counts": {
+        "records": 8,
+        "numeric_cells": 8,
+        "source_blank_cells": 0,
+        "other_missing_cells": 0,
+        "value_status_counts": {
+          "reported": 8
+        }
+      },
+      "canonical_counts": {
+        "records": 8,
+        "numeric_cells": 8,
+        "source_blank_cells": 0,
+        "other_missing_cells": 0,
+        "value_status_counts": {
+          "reported": 8
+        }
+      },
+      "uncertain_label_records": 0,
+      "unit_conflict_records": 0,
+      "table_inventory": [
+        {
+          "source_id": "discovered-ncl-ed2-public-libraries-1985-t1",
+          "source_table": "1",
+          "source_table_title": "臺閩地區各類型圖書館統計表（74年12月）",
+          "source_cells": 8,
+          "numeric_cells": 8,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            1985
+          ],
+          "edition_roc": [
+            2
+          ],
+          "pdf_pages": [
+            "5"
+          ],
+          "printed_pages": [
+            "30"
+          ],
+          "source_sha256": [
+            "9c9e17f88d0706d2f46738952a797e6c66e6ed5b46f0ad51c64f50cfd58f023a"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        }
+      ],
+      "metadata_paths": [
+        "raw/ncl-early-1985/documents.json"
+      ],
+      "scope": "第二次年鑑表1公共館子群，1985年12月6主量格加2個不含於小計的原印分館及民眾閱覽室量。",
+      "completion_scope": "All cells/spans of explicitly listed reviewed tables or prose only; not every table/chapter/year/county.",
+      "canonical_status": "all_source_count_present"
+    },
+    {
+      "id": "ncl_early_89",
+      "review_status": "source_reviewed",
+      "derived_csv": "derived/ncl_early_89_long.csv",
+      "source_csv_available": true,
+      "source_ids": [
+        "discovered-ncl-ed89-public-libraries-t3-1",
+        "discovered-ncl-ed89-public-libraries-t3-4",
+        "discovered-ncl-ed89-public-libraries-t3-5",
+        "discovered-ncl-ed89-public-libraries-t3-6"
+      ],
+      "data_years": [
+        1997,
+        1999
+      ],
+      "edition_roc": [
+        89
+      ],
+      "publication_dates": [],
+      "source_csv_counts": {
+        "records": 402,
+        "numeric_cells": 273,
+        "source_blank_cells": 128,
+        "other_missing_cells": 1,
+        "value_status_counts": {
+          "reported": 273,
+          "source_blank": 128,
+          "source_marker": 1
+        }
+      },
+      "canonical_counts": {
+        "records": 402,
+        "numeric_cells": 273,
+        "source_blank_cells": 128,
+        "other_missing_cells": 1,
+        "value_status_counts": {
+          "reported": 273,
+          "source_blank": 128,
+          "source_marker": 1
+        }
+      },
+      "uncertain_label_records": 0,
+      "unit_conflict_records": 0,
+      "table_inventory": [
+        {
+          "source_id": "discovered-ncl-ed89-public-libraries-t3-1",
+          "source_table": "3-1",
+          "source_table_title": "臺閩地區公共圖書館地區分布概況",
+          "source_cells": 48,
+          "numeric_cells": 48,
+          "source_blank_cells": 0,
+          "other_missing_cells": 0,
+          "data_years": [
+            1997
+          ],
+          "edition_roc": [
+            89
+          ],
+          "pdf_pages": [
+            "4"
+          ],
+          "printed_pages": [
+            "142"
+          ],
+          "source_sha256": [
+            "cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed89-public-libraries-t3-4",
+          "source_table": "3-4",
+          "source_table_title": "臺灣地區公共圖書館統計表",
+          "source_cells": 240,
+          "numeric_cells": 119,
+          "source_blank_cells": 121,
+          "other_missing_cells": 0,
+          "data_years": [
+            1999
+          ],
+          "edition_roc": [
+            89
+          ],
+          "pdf_pages": [
+            "18"
+          ],
+          "printed_pages": [
+            "156"
+          ],
+          "source_sha256": [
+            "cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed89-public-libraries-t3-5",
+          "source_table": "3-5",
+          "source_table_title": "臺灣省各縣市鄉鎮市立圖書館館藏資料統計表",
+          "source_cells": 90,
+          "numeric_cells": 88,
+          "source_blank_cells": 1,
+          "other_missing_cells": 1,
+          "data_years": [
+            1997,
+            1999
+          ],
+          "edition_roc": [
+            89
+          ],
+          "pdf_pages": [
+            "19"
+          ],
+          "printed_pages": [
+            "157"
+          ],
+          "source_sha256": [
+            "cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        },
+        {
+          "source_id": "discovered-ncl-ed89-public-libraries-t3-6",
+          "source_table": "3-6",
+          "source_table_title": "臺閩地區公共圖書館服務與資源使用統計表",
+          "source_cells": 24,
+          "numeric_cells": 18,
+          "source_blank_cells": 6,
+          "other_missing_cells": 0,
+          "data_years": [
+            1997
+          ],
+          "edition_roc": [
+            89
+          ],
+          "pdf_pages": [
+            "20"
+          ],
+          "printed_pages": [
+            "158"
+          ],
+          "source_sha256": [
+            "cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c"
+          ],
+          "uncertain_label_records": 0,
+          "unit_conflict_records": 0
+        }
+      ],
+      "metadata_paths": [
+        "raw/ncl-early-89/documents.json"
+      ],
+      "scope": "89卷公共圖書館章表3-1、3-4、3-5、3-6，1997、1999及跨時點調查原表，保留舊行政區及原註。",
+      "completion_scope": "All cells/spans of explicitly listed reviewed tables or prose only; not every table/chapter/year/county.",
+      "canonical_status": "all_source_count_present"
     }
   ],
-  "registered_source_cells": 57036,
-  "historical_canonical_records": 21083,
+  "registered_source_cells": 57758,
+  "historical_canonical_records": 21493,
   "legacy_canonical_scope": {
     "records": 1269,
     "tables": [

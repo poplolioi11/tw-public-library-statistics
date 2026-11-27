@@ -1,14 +1,14 @@
 {
-  "version": "0.10.0",
-  "records": 77011,
-  "missing_cells": 9654,
+  "version": "0.10.1",
+  "records": 77733,
+  "missing_cells": 9802,
   "null_status_counts": {
     "not_available_in_source": 206,
-    "source_blank": 1317,
-    "source_marker": 8131
+    "source_blank": 1445,
+    "source_marker": 8151
   },
-  "original_statistical_content_sha256": "322a316f7cd4605237155f28e0d3ada14885b2862060a37a99d722900fb114d7",
-  "public_statistical_content_sha256": "322a316f7cd4605237155f28e0d3ada14885b2862060a37a99d722900fb114d7",
+  "original_statistical_content_sha256": "5520cdf926ed512b8227ea38f1465d09cee4dd4fcecfe69fa1e3849850248b9e",
+  "public_statistical_content_sha256": "5520cdf926ed512b8227ea38f1465d09cee4dd4fcecfe69fa1e3849850248b9e",
   "statistical_and_source_fields_unchanged": true,
   "original_contact_files_omitted": 22,
   "original_contact_values_redistributed": false,

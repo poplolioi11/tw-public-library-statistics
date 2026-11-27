@@ -3,8 +3,8 @@ from source_literal_review import reviewed_literals,reviewed_non_scalar_literal
 from validate_publication import validate_value_semantics,ValidationError
 
 class OriginalNonScalarReview(unittest.TestCase):
-    def test_all_sixteen_exact_originals_keep_null_and_complete_text(self):
-        rows=reviewed_literals();self.assertEqual(len(rows),16)
+    def test_all_registered_originals_keep_null_and_complete_text(self):
+        rows=reviewed_literals();self.assertEqual(len(rows),17)
         for identifier,row in rows.items():
             self.assertTrue(reviewed_non_scalar_literal(row));validate_value_semantics(row,identifier)
 
@@ -22,7 +22,7 @@ class OriginalNonScalarReview(unittest.TestCase):
             with self.assertRaises(ValidationError):validate_value_semantics(row,row['observation_id'])
 
     def test_unregistered_unparsed_number_or_text_is_still_rejected(self):
-        for raw in ('123','1(49)','每鄉各2'):
+        for raw in ('123','1(49)','每鄉各2','1,3118,247'):
             with self.assertRaises(ValidationError):validate_value_semantics({'value':None,'raw_value':raw,'value_status':'source_marker'},'unreviewed')
 
 if __name__=='__main__':unittest.main(verbosity=2)

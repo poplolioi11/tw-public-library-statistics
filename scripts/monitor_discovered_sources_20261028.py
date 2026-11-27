@@ -10,7 +10,8 @@ def source_documents(root):
     """Only explicitly reviewed manifests; never search or guess source URLs."""
     paths=['raw/discovered-20261028/documents.json','raw/ncl94-statistics/documents.json',
            'raw/moe-library-ods/documents.json','raw/ncl-early-statistics/documents.json',
-           'raw/ncl-reading-2025/documents.json']
+           'raw/ncl-reading-2025/documents.json',
+           'raw/dgbas-yearbook-114/documents.json', 'raw/ncl-early-1985/documents.json', 'raw/ncl-early-89/documents.json']
     docs=[];seen=set()
     for name in paths:
         path=root/name

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "dataset_version": "0.10.0",
+  "dataset_version": "0.10.1",
   "sqlite": "derived/phase1_supplements.sqlite",
   "tables": [
     {

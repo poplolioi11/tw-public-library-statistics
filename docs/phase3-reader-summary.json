@@ -1,26 +1,26 @@
 {
-  "dataset_version": "0.10.0",
+  "dataset_version": "0.10.1",
   "profiles": 22,
   "charts": 2767,
   "interval_queries": 847,
   "counts": {
-    "record_routes": 95620,
+    "record_routes": 96342,
     "candidate_decisions": 115356,
     "queries": 22,
     "series_edges": 63121
   },
-  "reader_bytes": 30396493,
-  "reader_sha256": "7048dfa64cf6fd2eba58a132f4bee8f7edeee74ee330290a029177600ca16b9d",
+  "reader_bytes": 30508849,
+  "reader_sha256": "acb062a1a75399de400ff1aeb5b39cb18fc649d3b8ccf6a7adee78fb6a9c7dba",
   "input_sha256": {
-    "derived/phase3/record_routes.jsonl.gz": "478bd3aef9493b22e3ce223af8a32cf14c80901bd8235455f41f46a2b1c150b0",
+    "derived/phase3/record_routes.jsonl.gz": "26a19bb26760378a2ec1dd51333b7386a4ce501af58c554053fc848bf0ea834e",
     "derived/phase3/candidate_decisions.jsonl.gz": "24e12ec00964c17e8086352e018253a3a91e72568c2ed0aa801b8a938b10d6c6",
     "derived/phase3/queries.jsonl": "cd7efc71d0f22d3624757d1edaa4e76f32ea3968e16286b06fa4fc6e3fa8250b",
     "derived/phase3/series_edges.jsonl": "13dc6d441e09dc30f8671cfdb8f5b3dba31dd5adcdb08347a50424160351be32",
-    "VERSION": "dc24feb5bd35084d8ae32a4eafbec12352707d4662401fcbcc9bbd696cde77a9",
-    "docs/phase3-summary.json": "6bb5dc7504d45332575a18ce5c739c344f236c61af66cb27609a6da69b68020e",
-    "docs/phase3-profiles.json": "a284032e132a1424904f003def061129b6f853480effa8c777ef8700e5c57a1e",
-    "docs/phase3-contract.json": "94754bd4eeab63d72f8a4e0e5dcab91e8d836441234f8705f4d004d905524ca6",
-    "derived/phase2/annotations.jsonl.gz": "e10c89ec24a806299204d3fd9439863843f4a165f04eb54b5b40c83d5baae6d5"
+    "VERSION": "f4d439e0b523208a09d13862c16820cc3028fd94417310ce1d53a31d14d6a2c4",
+    "docs/phase3-summary.json": "104dc1b4d94a262064433d38b15cb1b476a03cda42b270246e05eb72b169a5bd",
+    "docs/phase3-profiles.json": "4258452b73a04d857a5911359038c7cfae36929b8c6e0f841a91f6f3b1f14985",
+    "docs/phase3-contract.json": "aef4936270ae73a270360d9edb311f0eeb7e28164e2e4a49b442407f4125fdb7",
+    "derived/phase2/annotations.jsonl.gz": "7298484c1615cff8dc716390a284429af900d97a57505c5fcdadf4661094e732"
   },
   "only_authorized_adjacent_lines": true
 }

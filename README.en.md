@@ -1,6 +1,6 @@
 # Taiwan Public Library Statistics Across Years
 
-[完整中文說明](README.md#完整中文說明) · [Open the chart explorer](https://poplolioi11.github.io/tw-public-library-statistics/) · [Download v0.10.0](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.10.0)
+[完整中文說明](README.md#完整中文說明) · [Open the chart explorer](https://poplolioi11.github.io/tw-public-library-statistics/) · [Download v0.10.1](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.10.1)
 
 This is an English translation and navigation guide to the existing Chinese documentation. It adds no new statistical observations, review certification, or dataset version. Consult the Chinese documentation for exact source terminology and original quotations.
 
@@ -14,19 +14,19 @@ Explore Taiwan's public-library collections, circulation, library counts, and se
 | --- | --- |
 | How has national book circulation changed in recent years? | [View the 2020–2024 book-loan chart](https://poplolioi11.github.io/tw-public-library-statistics/?profile=national-ncl-book-loans-panel&from=2020&to=2024). It uses one checked panel from the original publications, with a route back to the official source for each value. |
 | Where are historical county/city library counts or monthly branch tables? | [Explore county/city library counts under the DGBAS definition](https://poplolioi11.github.io/tw-public-library-statistics/?profile=county-library-count-dgbas&entity=%E8%87%BA%E5%8D%97%E5%B8%82), or [view a monthly branch-table example for Sanmin Branch](https://poplolioi11.github.io/tw-public-library-statistics/?profile=discovered-official-monthly-tables&series=comparison-9d8764a5d362caefbadaac33). |
-| How can I analyze the data myself or use it with AI? | Download [CSV](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.0/observations.csv.gz), [JSONL.gz](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.0/observations.jsonl.gz), or [SQLite](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.0/library_statistics.sqlite.gz). For smaller files, use the [annual index](data/by_year/index.json). See the [AI and analysis guide](AI_USAGE.md) for reading instructions. |
+| How can I analyze the data myself or use it with AI? | Download [CSV](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.1/observations.csv.gz), [JSONL.gz](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.1/observations.jsonl.gz), or [SQLite](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.1/library_statistics.sqlite.gz). For smaller files, use the [annual index](data/by_year/index.json). See the [AI and analysis guide](AI_USAGE.md) for reading instructions. |
 
 **Before use:** historical gaps remain, definitions differ between some sources, and transcriptions of scanned yearbooks have not undergone independent human double-checking. See [coverage and gaps](COVERAGE.md) and the [comparison rules](README.md#比較前先確認口徑) for the boundaries of the charts and source-reported values.
 
 **The 120-sample human reading and independent human double-checking are incomplete.** Some human readings have been recorded. A complete human reference set and an error rate have yet to be established. See the [source backlog](docs/source-backlog.md) and [versioned citation](CITATION.cff).
 
-**v0.10.0 adds 18,742 records** from Ministry of Education establishment and county/city tables through 2025, three early yearbook statistical chapters, and the 2023–2025 national reading report table. The original 2012 Ministry of Education table covers all 22 counties and cities. [Sources, evidence and remaining gaps](docs/source-refresh-20261127.md).
+**v0.10.1 adds 722 records.** It includes all 312 cells in table 4-22 of the DGBAS 114 edition, the December 1985 NCL public-library subset, and four tables from NCL volume 89 reporting 1997 and 1999 statistics. The 2012 Ministry of Education table covers all 22 counties and cities. [New source scope and verification](docs/source-refresh-20261128.md) · [Previous source refresh](docs/source-refresh-20261127.md)
 
 ## Version, citation, and method
 
-Version **0.10.0**; data build date **2026-11-27**. Public repository: [poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics). [Download v0.10.0](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.10.0).
+Version **0.10.1**. Data build date **2026-11-28**. Public repository: [poplolioi11/tw-public-library-statistics](https://github.com/poplolioi11/tw-public-library-statistics). [Download v0.10.1](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.10.1).
 
-Use **Cite this repository** in the repository sidebar or [CITATION.cff](CITATION.cff), and record the version, selected statistical definitions, and official source tables used in your work. Version v0.9.1 was archived on Zenodo on 2026-10-30 with version DOI [10.5281/zenodo.23788194](https://doi.org/10.5281/zenodo.23788194). The fixed GitHub Release continues to identify the original public version. Zenodo [10.5281/zenodo.23950753](https://doi.org/10.5281/zenodo.23950753) identifies v0.9.2. Cite v0.10.0 using its fixed GitHub Release. A Zenodo DOI for v0.10.0 has not been assigned.
+Use **Cite this repository** in the repository sidebar or [CITATION.cff](CITATION.cff), and record the version, selected statistical definitions, and official source tables used in your work. Version v0.9.1 was archived on Zenodo on 2026-10-30 with version DOI [10.5281/zenodo.23788194](https://doi.org/10.5281/zenodo.23788194). The fixed GitHub Release continues to identify the original public version. Zenodo [10.5281/zenodo.23950753](https://doi.org/10.5281/zenodo.23950753) identifies v0.9.2. Cite v0.10.1 using its fixed GitHub Release or the matching version DOI once that version is public on Zenodo. The [Zenodo version series](https://doi.org/10.5281/zenodo.23788193) lists the archived versions.
 
 The [data-paper draft on sources, methods, validation, and limitations](docs/DATA_PAPER_DRAFT.md) is **an unsubmitted draft that has not been peer reviewed**. [Reuse evidence and feedback](docs/REUSE.md) explains how to report actual use. Stars, forks, and download counts are not treated as direct evidence of research adoption.
 
@@ -36,18 +36,18 @@ Existing work was checked before compilation. The National Library of Public Inf
 
 ## What is included
 
-The current dataset contains **77,011 source-observation records**, including **206 explicitly missing cells**, **1,317 cells left blank in the original publications**, **8,131 cells containing original textual or symbol markers**, and different publication versions. A record count is not a count of libraries, and the entire dataset must not be summed as one total.
+The current dataset contains **77,733 source-observation records**, including **206 explicitly missing cells**, **1,445 cells left blank in the original publications**, and **8,151 original markers or anomalous literals**. The original publication versions remain separately identifiable. A record count is not a count of libraries, and the entire dataset must not be summed as one total.
 
 | Source family | Compiled scope | Records |
 | --- | --- | ---: |
 | National Library of Public Information: public national charts | Public national charts for 2011–2025; national figures only | 855 |
 | National Library of Public Information: 2023 open data, including counties/cities | The 2023 annual resources with an explicit OGDL statement; national, county/city, and alternative definitions remain separate and are not added together | 2,236 |
-| National Central Library yearbook statistical facts | Specified core tables, public-library subsets, and original figures in volumes 90–114; data years 2000–2024; different publication versions retained | 20,890 |
+| National Central Library yearbook statistical facts | Specified tables and public-library subsets, including December 1985, 1997, 1999, and the existing 2000–2024 sources. Different publications retain their own scopes | 21,300 |
 | National Central Library reading-report statistical facts | Five national reading-report tables for 2011–2012 and the 2023–2025 annual columns from the 2025 edition | 193 |
 | DGBAS historical national statistics | 3 source versions; data years 1991–2011; overlapping versions kept separately | 220 |
 | DGBAS county/city public-library counts | Officially recast geographic units for 1998–2025; the source includes the National Central Library; missing values are not filled with 0 | 644 |
 | Local-government historical open tables | Confirmed series for Hsinchu City and Taichung City; original annual/monthly periods and collection locations retained | 14,751 |
-| Later DGBAS national published statistics | Table 4-22 in the ROC year 113 statistical yearbook, covering 2010–2024; national figures include the National Central Library; agency and county/city rows without individually stated years remain unknown | 312 |
+| Later DGBAS national published statistics | Full table 4-22 in the 113 and 114 editions. National annual rows cover 2010–2025 across editions. Institution and county/city rows keep an unknown data year where the original leaves it blank | 624 |
 | Local official published statistical facts | The listed publications for New Taipei, Tainan, Taoyuan, Changhua, Kaohsiung, and Taipei, 2006–2021; national/county-city/district/branch and annual/monthly figures remain separate; unstated years are stored separately | 18,230 |
 | Ministry of Education historical public-library statistics | Social-education table 3 for 1994–2009, plus 2005–2025 establishment and 2006–2025 county/city sheets. Original National Central Library and public-library headings are preserved | 18,680 |
 
@@ -69,7 +69,7 @@ For this series, consult the [official query page](https://winstacity.dgbas.gov.
 
 ## Download and read the data
 
-[Version and complete downloads](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.10.0) · [Read JSONL by year](data/by_year/index.json)
+[Version and complete downloads](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.10.1) · [Read JSONL by year](data/by_year/index.json)
 
 The public copies remove unrelated contact fields from 22 original files and provide statistical projections with separate hashes. Original source URLs, source-file SHA hashes, and every statistical value are retained. See [the distinction between public copies and source originals](docs/PUBLICATION.md).
 
@@ -77,9 +77,9 @@ The public copies remove unrelated contact fields from 22 original files and pro
 
 - [Public lightweight chart explorer](https://poplolioi11.github.io/tw-public-library-statistics/): browse directly, share query URLs, and follow each record back to its official source.
 - [Line charts and question-based source selection](site/phase3.html#line-charts); [all original-publication series](site/phase2.html#line-charts); [record-level original values](site/index.html).
-- [JSONL](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.0/observations.jsonl.gz): one complete observation per line, suitable for programs and AI-assisted work.
-- [CSV](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.0/observations.csv.gz): the same formal observations, suitable for spreadsheet tools.
-- [SQLite](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.0/library_statistics.sqlite.gz): the same formal observations; the table is named `observations`.
+- [JSONL](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.1/observations.jsonl.gz): one complete observation per line, suitable for programs and AI-assisted work.
+- [CSV](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.1/observations.csv.gz): the same formal observations, suitable for spreadsheet tools.
+- [SQLite](https://github.com/poplolioi11/tw-public-library-statistics/releases/download/v0.10.1/library_statistics.sqlite.gz): the same formal observations; the table is named `observations`.
 - [Observation schema](data/combined/observation.schema.json), [indicator list](data/combined/indicators.json), and [data-package descriptor](datapackage.json).
 - [AI and analysis instructions](AI_USAGE.md), [rights and licenses](LICENSE.md), [machine-readable entry point](llms.txt), and [supplementary documentation](docs/).
 

@@ -1,5 +1,17 @@
 [
   {
+    "local_path": "raw/dgbas-yearbook-114/ch4.pdf",
+    "sha256": "dabbb914ad186f8e59af661271ba0adca12a09bb3b4c36f1f4d07903f7d5fe51",
+    "download_url": "https://ws.dgbas.gov.tw/001/Upload/463/relfile/11160/229649/ch4.pdf",
+    "source_url": "https://ebook.dgbas.gov.tw/News_Content_Ebook.aspx?n=4480&s=236722",
+    "source_title": "中華民國統計年鑑114年版",
+    "publication_date": "",
+    "source_edition_roc": "114",
+    "source_ids": [
+      "discovered-dgbas-yearbook-114-t4-22"
+    ]
+  },
+  {
     "local_path": "raw/discovered-20261028/changhua-bulletin-2021-ctrl.pdf",
     "sha256": "cdf23e9276c38b7956a6c932c20c9e6ede9107d4fb7ac717aceb6334b15d7cf3",
     "download_url": "https://ctrl.chcg.gov.tw/files/%E6%95%99%E8%82%B2%E5%8F%8A%E6%96%87%E5%8C%96-%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%85%AC%E5%85%B1%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%94%B6%E8%97%8F%E5%8F%8A%E5%80%9F%E9%96%B1%E6%A6%82%E6%B3%81%20%20%28110%E5%B9%B47%E6%9C%88%E7%99%BC%E5%B8%83%29-%E8%87%BA%E7%81%A3-%E7%B0%BD%E5%87%86%E7%89%88_16_1100812_2025.pdf",
@@ -584,6 +596,33 @@
       "ncl-earlier-2007-t1",
       "ncl-earlier-2007-t2",
       "ncl-earlier-2007-t3"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-early-1985/yearbook-02-current-status.pdf",
+    "sha256": "9c9e17f88d0706d2f46738952a797e6c66e6ed5b46f0ad51c64f50cfd58f023a",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566619294348883/23cf6dc8-4e92-4917-b2c2-ef1812a69771.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083566602665258360",
+    "source_title": "第二次中華民國圖書館年鑑",
+    "publication_date": "1988-12-01",
+    "source_edition_roc": "",
+    "source_ids": [
+      "discovered-ncl-ed2-public-libraries-1985-t1"
+    ]
+  },
+  {
+    "local_path": "raw/ncl-early-89/yearbook-89-public-library.pdf",
+    "sha256": "cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c",
+    "download_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565690358881489/d5d8b3d1-b854-413a-935d-b14a780c3f2b.pdf",
+    "source_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565657469156923",
+    "source_title": "中華民國八十九年圖書館年鑑",
+    "publication_date": "",
+    "source_edition_roc": "89",
+    "source_ids": [
+      "discovered-ncl-ed89-public-libraries-t3-1",
+      "discovered-ncl-ed89-public-libraries-t3-4",
+      "discovered-ncl-ed89-public-libraries-t3-5",
+      "discovered-ncl-ed89-public-libraries-t3-6"
     ]
   },
   {

@@ -12,7 +12,7 @@
 
 先讀 `data/combined/summary.json`、`coverage.json`、`indicators.json` 與 `observation.schema.json`。`data/observations.*`、`data/component_records.jsonl` 和 `derived/` 是組件或中間結果，可能保留重複；不得再併入正式入口。資料筆數不是館數。
 
-目前 77,011 筆來源觀測紀錄，含 206 格明示缺值、1,317 格原印留白、8,131 格原印文字狀態及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
+目前 77,733 筆來源觀測紀錄，含 206 格明示缺值、1,445 格原印留白、8,151 格原印符號或異常字串。不同出版版本各自保存。紀錄數不是圖書館間數，也不能整表相加。「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。
 
 ## 先選來源，再選可比較的觀測
 
@@ -28,12 +28,12 @@
 |---|---|
 | 國資圖公開全國圖表 | 2011–2025年公開全國圖表；只有全國 |
 | 國資圖2023開放資料（含縣市） | 2023年明確OGDL年度資源；全國、縣市與替代口徑分列，不相加；`ogdl-api-2023` |
-| 國家圖書館年鑑統計事實 | 90–114卷指定核心表／公共館子群／原文數字；資料年2000–2024年，保留不同出版版本 |
+| 國家圖書館年鑑統計事實 | 2、89–114卷指定核心表／公共館子群／原文數字；資料年1985、1997、1999–2024年，保留不同出版版本 |
 | 國家圖書館閱讀報告統計事實 | 2011–2012、2023–2025年6張全國閱讀報告表；各版次、年度欄及比較期間分列 |
 | 主計總處歷史全國統計 | 3個來源版本；資料年1991–2011年，重疊版本分開；`dgbas-social-indicators-2005`、`dgbas-social-indicators-2008`、`dgbas-social-indicators-2011` |
 | 主計總處縣市公共館數 | 1998–2025年官方重編地域；來源含國家圖書館，缺值不補0；`dgbas-county-library-Z091101a029` |
 | 地方政府開放歷史表 | 新竹市、臺中市已確認系列；保留原年／月期間與館藏地 |
-| 主計總處後續全國出版統計 | 2010–2024年113年統計年鑑表4-22；全國含國家圖書館，機關／縣市列未逐列年份保留未知；`discovered-dgbas-yearbook-113-t4-22` |
+| 主計總處後續全國出版統計 | 2010–2025年113、114年版統計年鑑表4-22；全國含國家圖書館，機關／縣市列未逐列印年者保留未知；`discovered-dgbas-yearbook-113-t4-22`、`discovered-dgbas-yearbook-114-t4-22` |
 | 地方官方出版統計事實 | 2006–2021年所列新北、臺南、桃園、彰化、高雄及臺北原刊；全國／縣市／行政區／分館與年／月分開，未明年另存 |
 | 教育部歷史公共館統計 | 1994–2009年社3全國表與2005–2025年設立別／2006–2025年縣市別原工作簿分列，國家圖書館欄依原表；`discovered-moe-16years-T403-t3`、`discovered-moe-library-ods-tcounty`、`discovered-moe-library-ods-testablishment` |
 
@@ -43,7 +43,7 @@
 
 ### 數值與缺值
 
-- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `206` 格 `not_available_in_source` 保留明示缺值符號，`1317` 格 `source_blank` 保留原刊留白，`8131` 格 `source_marker` 保留原印「無」「未新增」「未統計」等文字狀態；這些文字不自行改成0或推定不適用，均不推算補值。
+- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `206` 格 `not_available_in_source` 保留明示缺值符號，`1445` 格 `source_blank` 保留原刊留白，`8151` 格 `source_marker` 保留原印「無」「未新增」「未統計」等文字狀態；這些文字不自行改成0或推定不適用，均不推算補值。
 - `raw_value` 保留原表字串與註腳標記；例如 `79a` 的數值為79，`source_cell_annotation` 保留a，須同讀 `source_footnotes_raw`／`source_footnotes_status`。`quality_flags` 可為單一代碼或原組件保留的JSON陣列字串；不把單純多層合計旗標當成數值錯誤。
 - `raw_value` 保留原表字串；`value` 的小數可能使用十進位字串。SQLite 的 `value` 欄是文字型別，分析前須明確選定解析規則，不能以不受檢查的轉型把異常字串變成零。
 - 原報 `0` 未必是已確認的真零；讀 `zero_interpretation`、註腳及資料蒐集範圍。
@@ -213,7 +213,7 @@ source_series_only可作單期原來源事實，不獲得跨年連線許可。�
 <!-- BEGIN discovered-20261028 -->
 ## 2026-10-28官方原表入庫批次
 
-v0.10.0沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的完整指定表及續頁；這不是本次中繼資料修訂新增的觀測。早期年鑑2001–2004、教育部1994–2009、主計2010–2024全國原表，以及新北、臺南、桃園、彰化、高雄和臺北所列原刊分開保存。高雄含表3-2全部52頁、各館年度及12個月；臺北本批僅2012年12月。
+v0.10.1沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的完整指定表及續頁；這不是本次中繼資料修訂新增的觀測。早期年鑑2001–2004、教育部1994–2009、主計2010–2024全國原表，以及新北、臺南、桃園、彰化、高雄和臺北所列原刊分開保存。高雄含表3-2全部52頁、各館年度及12個月；臺北本批僅2012年12月。
 
 新增格包含14,540個數值、427個原刊留白、5,391個原刊符號／複合格；467格期間未確認。原格數不是館數，合計、分項、年合計與月值不得整表相加。原年份不明不填出版年；原件缺值不補0。新北館藏2010前後分段；高雄年度館藏／期刊彙計與借閱率口徑未明，不當年底庫存趨勢。
 
@@ -242,6 +242,12 @@ v0.10.0沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的�
 新增2004年三表的完整公共館相關子群：16實體格、24筆觀測，其中8筆為填答館數，非總館數；公私立、小計、會員及含分館口徑分開。原有58,245筆逐筆全欄不變。新增8筆原刊未印單位保持null；人工核讀與雙校未完成。[逐表範圍、官方原件與讀取方式](docs/NCL94_STATISTICS.md)。
 <!-- END ncl94-statistics -->
 
+## v0.10.1 讀取主計與國圖早期原表
+
+- 主計表 4-22 使用 `component_source_id=dgbas-yearbook-114`。國家圖書館、公立合計及 22 縣市的 192 格年份原印留白，`data_year=null`。解析 `source_time_reference` 可取 `source_table_year_context=2025`，並核對原表位置與市縣母體。與 113 年版重疊值各自按原版本引用。
+- 國圖第二次年鑑用 `component_source_id=ncl-ed2-public-libraries-1985`。原印公共館小計 336 所及另設分館、閱覽室分開引用。89 卷用 `component_source_id=ncl-ed89-public-libraries` 並選原表。表 3-1 無印括弧時不產生分館數。表 3-5 原印 `1,3118,247` 保留在 `raw_value` 且 `value=null`。混合期間的比率和排名以 `data_year=null` 存放。
+- GitHub Release 與 Zenodo 封存以相同資料版本識別。合併來源前核對版本、來源 SHA 與頁表定位。需要固定版本的 Zenodo DOI 時，先確認紀錄上的 `version`。 [本版來源、口徑與覆核](docs/source-refresh-20261128.md)
+
 ## v0.10.0 讀取新增原表
 
 - 讀「教育部 2012 年各縣市」時，選 `component_source_id=moe-library-ods`、`source_table=county`、`data_year=2012`。讀 `source_locator` 找原工作表與儲存格，並用 `geographic_scope` 分辨縣市、合計與另列機構。設立別為 `source_table=establishment`。
@@ -253,12 +259,12 @@ v0.10.0沿用2026-10-28已入庫的20,358個原格，來自12份官方原件的�
 可以先讀 `data/by_year/index.json`，按年度取得相同的正式觀測。含無關聯絡欄的原件不再散布，改附數值欄位投影；`source_sha256` 驗原件，`public_evidence_sha256` 驗投影。投影不改統計原值、期間、單位、地理口徑或原件定位。完整來源驗收須先依 README 復原原件；公開副本的離線檢查並不等於重查全部原件。
 
 
-完整JSONL與中間元件以gzip無損壓縮，年度檔以索引的 path 與 compression 為準。2012 年分割檔超過單檔上限，採無損 gzip，其餘年度是純文字。Python可用 `gzip.open("data/combined/observations.jsonl.gz","rt",encoding="utf-8")` 逐行讀取。解壓後逐位元組SHA另記；gzip檔案SHA與統計內容指紋是不同層，不能互換。
+完整JSONL與中間元件以gzip無損壓縮，年度檔以索引的 path 與 compression 為準。超過單檔上限的年度採 gzip，其餘是純文字。Python可用 `gzip.open("data/combined/observations.jsonl.gz","rt",encoding="utf-8")` 逐行讀取。解壓後逐位元組SHA另記；gzip檔案SHA與統計內容指紋是不同層，不能互換。
 
 <!-- BEGIN lightweight-site -->
 ## 輕量網站不是新的分析資料
 
-網站 https://poplolioi11.github.io/tw-public-library-statistics/ 的JSON分檔投影既有合格圖表與明列的完整來源表批次，不代表全部95,620個量化紀錄。AI正式分析仍依本文件原讀取入口。畫點值可能沿用第二階段已核單位尺度；`original_value`、`raw_value`、`original_unit`與`facets`仍留原量及口徑。`source_url`／`source_sha256`／`source_locator`／`source_version_id`不改，動態查詢另附`official_url`與重現提示。不得把網站顯示值或內容雜湊檔名誤當官方原件SHA。
+網站 https://poplolioi11.github.io/tw-public-library-statistics/ 的JSON分檔投影既有合格圖表與明列的完整來源表批次，不代表全部96,342個量化紀錄。AI正式分析仍依本文件原讀取入口。畫點值可能沿用第二階段已核單位尺度；`original_value`、`raw_value`、`original_unit`與`facets`仍留原量及口徑。`source_url`／`source_sha256`／`source_locator`／`source_version_id`不改，動態查詢另附`official_url`與重現提示。不得把網站顯示值或內容雜湊檔名誤當官方原件SHA。
 
 
 國圖94年卷24筆單期統計另用 `?batch=ncl94-statistics` 按需讀取，與跨年數列分開。`mode=batch` 的 `records` 逐筆保留正式 `observation_id`、原值、單位狀態、主量／填答館數角色、期間及原母體；`lines=[]`。原件與網站投影各驗自己的SHA；不得由同年不同指標或子群畫時間折線。人工抽樣核讀與雙校尚未完成。

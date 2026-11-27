@@ -1,0 +1,22 @@
+{
+  "documents": [
+    {
+      "candidate_id": "dgbas-yearbook-114",
+      "title": "中華民國統計年鑑114年版第四章表4-22",
+      "edition_raw": "中華民國統計年鑑114年版",
+      "publication_month": "2026-09",
+      "official_url": "https://ws.dgbas.gov.tw/001/Upload/463/relfile/11160/229649/ch4.pdf",
+      "catalogue_url": "https://ebook.dgbas.gov.tw/News_Content_Ebook.aspx?n=4480&s=236722",
+      "source_sha256": "dabbb914ad186f8e59af661271ba0adca12a09bb3b4c36f1f4d07903f7d5fe51",
+      "source_version_id": "dgbas-yearbook-114@sha256:dabbb914ad186f8e59af661271ba0adca12a09bb3b4c36f1f4d07903f7d5fe51",
+      "source_bytes": 2657979,
+      "source_local_path": "raw/dgbas-yearbook-114/ch4.pdf",
+      "retrieved_at": "2026-11-27T17:03:47.945547+00:00",
+      "rights_status": "published_statistical_facts_only_full_document_not_redistributed",
+      "scope": "第四章表4-22之整表39列、8欄。保留各地域及機關之原載分類及單位。",
+      "cautions": [
+        "保留原刊總列與小計，各列依來源口徑使用。短橫與留白維持缺值。"
+      ]
+    }
+  ]
+}

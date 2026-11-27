@@ -33943,6 +33943,30 @@
       "derived_csv": "derived/ncl_reading_2025_long.csv",
       "review_metadata": [],
       "completeness_scope": "Only the named table/subset batch; not entire yearbook or all counties/years."
+    },
+    {
+      "cohort_id": "dgbas_yearbook_114",
+      "status": "reviewed_bounded_scope",
+      "source_cells": 312,
+      "derived_csv": "derived/dgbas_yearbook_114_long.csv",
+      "review_metadata": [],
+      "completeness_scope": "Only the named table/subset batch; not entire yearbook or all counties/years."
+    },
+    {
+      "cohort_id": "ncl_early_1985",
+      "status": "reviewed_bounded_scope",
+      "source_cells": 8,
+      "derived_csv": "derived/ncl_early_1985_long.csv",
+      "review_metadata": [],
+      "completeness_scope": "Only the named table/subset batch; not entire yearbook or all counties/years."
+    },
+    {
+      "cohort_id": "ncl_early_89",
+      "status": "reviewed_bounded_scope",
+      "source_cells": 402,
+      "derived_csv": "derived/ncl_early_89_long.csv",
+      "review_metadata": [],
+      "completeness_scope": "Only the named table/subset batch; not entire yearbook or all counties/years."
     }
   ]
 }

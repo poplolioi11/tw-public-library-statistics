@@ -158,7 +158,9 @@ def family_scope(name,subset):
     if name=='主計總處縣市公共館數':return f'{span}官方重編地域；來源含國家圖書館，缺值不補0'
     if name=='地方政府開放歷史表':return f'{"、".join(sorted({r["geography"] for r in subset}))}已確認系列；保留原年／月期間與館藏地'
     if name=='地方官方出版統計事實':return f'{span}所列新北、臺南、桃園、彰化、高雄及臺北原刊；全國／縣市／行政區／分館與年／月分開，未明年另存'
-    if name=='主計總處後續全國出版統計':return f'{span}113年統計年鑑表4-22；全國含國家圖書館，機關／縣市列未逐列年份保留未知'
+    if name=='主計總處後續全國出版統計':
+        editions='113、114年版' if any(r.get('component_source_id')=='dgbas-yearbook-114' for r in subset) else '113年版'
+        return f'{span}{editions}統計年鑑表4-22；全國含國家圖書館，機關／縣市列未逐列印年者保留未知'
     if name=='教育部歷史公共館統計':
         if any(row.get('component_source_id')=='moe-library-ods' for row in subset):
             return '1994–2009年社3全國表與2005–2025年設立別／2006–2025年縣市別原工作簿分列，國家圖書館欄依原表'
@@ -258,8 +260,7 @@ def update_backlog(context):
     if batch_path.exists():
         from backlog_ingestion_status import reconcile
         reconcile(backlog,context['rows'],read_json(batch_path))
-    refresh_path=root/'docs/source-refresh-20261127.json'
-    if refresh_path.exists():
+    for refresh_path in sorted((root/'docs').glob('source-refresh-*.json')):
         refresh=read_json(refresh_path)
         if context['summary']['version']==refresh['release_version']:
             refresh_counts=Counter(r.get('component_source_id') for r in context['rows'])
@@ -268,9 +269,17 @@ def update_backlog(context):
                 if observed!=batch['observations']:
                     raise ValueError('Source refresh documentation requires the complete registered batch: '+batch['cohort_id'])
         backlog['checked_at']=max(backlog.get('checked_at') or '',refresh['checked_at'])
-        backlog['source_refresh_20261127']=refresh
+        backlog[refresh_path.stem.replace('-', '_')]=refresh
+    current_refresh=backlog.get('source_refresh_20261128', {})
+    current_groups={item['cohort_id'] for item in current_refresh.get('completed_batches', [])}
+    if 'dgbas_yearbook_114' in current_groups:
+        for task in tasks:
+            if task['task_id']=='B07':
+                task.update(status='completed_bounded_scope', completion='113、114年版表4-22各自收錄整表及原印單位。全國年度列保留原年，無逐列印年者保留原刊版面脈絡及未知單一年。')
     write_json(path,backlog)
     lines=['# 來源分組待辦','','以[source-backlog.json](source-backlog.json)為機器主檔；[歷史批次](historical-batches.md)依registry與實際觀測產生。完成只及列明範圍，未查不表示無資料。','',f'B01與B08維持已完成指定範圍。年鑑{span}的已列核心表、公共館子群與原文數字已整理；{unknown}仍待查。', '',historical_warning(context),'','2012本輪已查公共館章、統計章、評鑑章、國資圖舊連結及閱讀報告；評鑑達標數排除，失敗舊附件已找到官網新網址。仍未取得的國圖／國資圖同口徑22縣市核心原表不推稱不存在。其他來源的授權與更新政策維持各族群原記錄。','']
+    if current_refresh:
+        lines.extend(['## 2026-11-28 官方來源更新', '', '主計總處114年版表4-22與國圖早期原表的收錄範圍、原值疑義和期間判讀見[本版來源覆核](source-refresh-20261128.md)。', ''])
     if backlog.get('source_refresh_20261127'):
         lines.extend(['## 2026-11-27 官方來源更新', '', '教育部工作簿、國圖早期年鑑統計章與114年閱讀年度報告三批詳見[來源範圍與剩餘缺口](source-refresh-20261127.md)。', ''])
     if backlog.get('status_reconciliation'):
