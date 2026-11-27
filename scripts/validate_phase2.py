@@ -10,6 +10,7 @@ import argparse,collections,csv,gzip,hashlib,json,re,sqlite3
 from decimal import Decimal,InvalidOperation,localcontext
 from html.parser import HTMLParser
 from pathlib import Path
+import record_io
 
 ROOT=Path(__file__).resolve().parents[1]
 LAYERS={'canonical':'data/combined/observations.jsonl','local_statistical_cells':'derived/phase1_local_sources_long.jsonl','programme_quantities':'derived/ncl_2005_programmes_long.jsonl'}
@@ -161,16 +162,17 @@ def validate(root=ROOT):
  for name,spec in summary['outputs'].items():
   p=local(root,name);require(p.is_file() and p.stat().st_size==spec['bytes'] and digest(p)==spec['sha256'],'Summary output checksum differs: '+name)
  data=root/'derived/phase2';datasets={};reports={}
- con=sqlite3.connect((data/'definitions.sqlite').as_uri()+'?mode=ro',uri=True);con.row_factory=sqlite3.Row
- try:
-  require(con.execute('PRAGMA quick_check').fetchone()[0]=='ok','SQLite integrity check failed')
-  for name,table,order,compressed in [('annotations','annotations','record_key',True),('groups','comparison_groups','comparison_group_id',False),('evidence_cards','evidence_cards','rowid',False),('breakpoints','breakpoints','rowid',False)]:
-   rows=list(iterjson(data/(name+'.jsonl'+('.gz' if compressed else ''))));datasets[name]=rows
-   sqlfields=[r[1] for r in con.execute('PRAGMA table_info('+sql_ident(table)+')')]
-   query='SELECT * FROM '+sql_ident(table)+' ORDER BY '+sql_ident(order)
-   with textopen(data/(name+'.csv'+('.gz' if compressed else ''))) as f:
-    csvreader=csv.DictReader(f);reports[name]=compare_formats(rows,csvreader.fieldnames or [],csvreader,sqlfields,con.execute(query),name)
- finally:con.close()
+ with record_io.materialized_file(root,'derived/phase2/definitions.sqlite',prefer_gzip=True) as database:
+  con=sqlite3.connect(database.as_uri()+'?mode=ro',uri=True);con.row_factory=sqlite3.Row
+  try:
+   require(con.execute('PRAGMA quick_check').fetchone()[0]=='ok','SQLite integrity check failed')
+   for name,table,order,compressed in [('annotations','annotations','record_key',True),('groups','comparison_groups','comparison_group_id',False),('evidence_cards','evidence_cards','rowid',False),('breakpoints','breakpoints','rowid',False)]:
+    rows=list(iterjson(data/(name+'.jsonl'+('.gz' if compressed else ''))));datasets[name]=rows
+    sqlfields=[r[1] for r in con.execute('PRAGMA table_info('+sql_ident(table)+')')]
+    query='SELECT * FROM '+sql_ident(table)+' ORDER BY '+sql_ident(order)
+    with textopen(data/(name+'.csv'+('.gz' if compressed else ''))) as f:
+     csvreader=csv.DictReader(f);reports[name]=compare_formats(rows,csvreader.fieldnames or [],csvreader,sqlfields,con.execute(query),name)
+  finally:con.close()
  anns=datasets['annotations'];groups=datasets['groups'];cards=datasets['evidence_cards'];breaks=datasets['breakpoints']
  require(len(anns)==summary['total_quantitative_records']==sum(summary['layers'].values()),'Quantitative total differs')
  require(len(cards)==summary['source_definition_cards'] and len(groups)==summary['comparison_groups'] and len(breaks)==summary['breakpoint_rules'],'Side table counts differ')

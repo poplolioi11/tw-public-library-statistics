@@ -71,7 +71,7 @@ def reconcile(backlog, rows, batch):
                         status='partially_completed_known_tables',
                         scope='91–94卷指定表及續頁已整批入庫；93卷表16／17／19不再是待擷取項目。91–114卷只及列明範圍，其他未列表、卷次及2012核心原量仍待查。',
                         completed_scope={'source_counts':early,'formal_observations':sum(early.values())},
-                        unknowns=['未列入指定批次的其他表、其他卷與2012全22縣市核心原量仍待查。',
+                        unknowns=['未列入指定批次的其他表、其他卷及國圖或國資圖同口徑2012年全22縣市核心原表仍待查。',
                                   '已入庫掃描格仍未完成人工核讀與雙校，不把AI原圖核讀改標為人工完成。'])
         elif tid == 'B07':
             task.update(status='partially_completed_known_tables', completed_scope=dgbas_scope,
@@ -81,7 +81,7 @@ def reconcile(backlog, rows, batch):
             task.update(status='completed_bounded_scope', title='已取得地方官方原量指定表正式入庫',
                         batch_size='所列原件指定表已完成；後續新來源仍逐份完整處理',
                         completed_scope=scope,
-                        scope=f'新北、臺南、桃園、彰化、高雄及臺北2012年12月共{len(local_sources)}份原件指定表／續頁，{len(local):,}格已正式入庫。2012完整22縣市核心原量表仍缺，不跨來源拼接。',
+                        scope=f'新北、臺南、桃園、彰化、高雄及臺北2012年12月共{len(local_sources)}份原件指定表／續頁，{len(local):,}格已正式入庫。國圖及國資圖同口徑2012年完整22縣市核心原表仍待查。',
                         completion='v0.9.0完成指定表入庫，v0.9.1沿用；396格probe保留歷史身分，不額外計數。',
                         acceptance=['以完整指定表、續頁、原值與缺值驗收；逐格保留官方URL、原件SHA及頁表列欄。',
                                     '母體、單位、期間、斷點及版本限制隨值保留；未知不推算，人工核讀與雙校未完成。',

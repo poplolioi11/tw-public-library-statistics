@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "source_cards": [
+    {
+      "evidence_id": "p2-nov2026-59a979befef3770f1e9ba30f",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-reading-2025-report-t1",
+      "source_sha256": "ad221212e57e12b5b8458455b765956b684f5bcd1808a1f8e83b33f0e8846288",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q120145388038649336/df66cab6-10d6-4502-9fbb-6a8db59a339c.pdf#page=12",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q120145388038649336/df66cab6-10d6-4502-9fbb-6a8db59a339c.pdf#page=12"
+      ],
+      "source_locator": {
+        "table": "1",
+        "pdf_pages": [
+          12
+        ],
+        "raw_locator_examples": [
+          "PDF page 12; printed page 13; table 1; data row 1; column 2; bbox 176.370,269.091,206.948,280.591",
+          "PDF page 12; printed page 13; table 1; data row 1; column 3; bbox 235.897,269.091,266.475,280.591",
+          "PDF page 12; printed page 13; table 1; data row 1; column 4; bbox 295.425,269.091,326.003,280.591"
+        ]
+      },
+      "source_table": "1",
+      "source_table_title": "近3年臺灣民眾公共圖書館使用情形分析",
+      "source_fields": [
+        "112年",
+        "113年",
+        "114年"
+      ],
+      "indicators": [
+        "借閱總人次",
+        "借閱總冊數",
+        "圖書借閱總人次",
+        "圖書借閱總冊數",
+        "租用型電子書借閱總人次",
+        "租用型電子書借閱總冊數",
+        "累計辦證數",
+        "網站資源使用次數",
+        "計次型電子書借閱總人次",
+        "計次型電子書借閱總冊數",
+        "買斷型電子書借閱總人次",
+        "買斷型電子書借閱總冊數",
+        "進館總人次"
+      ],
+      "series_ids": [
+        "discovered-ncl-reading-2025-report-t1-cards-cumulative-07f9fc3ea1ec",
+        "discovered-ncl-reading-2025-report-t1-cards-cumulative-8c2d94af9be8",
+        "discovered-ncl-reading-2025-report-t1-loans-all-visits-3f09500e4b0d",
+        "discovered-ncl-reading-2025-report-t1-loans-all-visits-84e28041b16d",
+        "discovered-ncl-reading-2025-report-t1-loans-all-volumes-b4887758ef57",
+        "discovered-ncl-reading-2025-report-t1-loans-all-volumes-ea691a1a6428",
+        "discovered-ncl-reading-2025-report-t1-loans-books-visits-866ca26d3ee7",
+        "discovered-ncl-reading-2025-report-t1-loans-books-visits-cd79f53041b4",
+        "discovered-ncl-reading-2025-report-t1-loans-books-volumes-953ba8cdfb0f",
+        "discovered-ncl-reading-2025-report-t1-loans-books-volumes-f32f2de7b3ff",
+        "discovered-ncl-reading-2025-report-t1-loans-pay-per-use-ebooks-visits-866ca26d3ee7",
+        "discovered-ncl-reading-2025-report-t1-loans-pay-per-use-ebooks-visits-cd79f53041b4",
+        "discovered-ncl-reading-2025-report-t1-loans-pay-per-use-ebooks-volumes-953ba8cdfb0f",
+        "discovered-ncl-reading-2025-report-t1-loans-pay-per-use-ebooks-volumes-f32f2de7b3ff",
+        "discovered-ncl-reading-2025-report-t1-loans-purchased-ebooks-visits-866ca26d3ee7",
+        "discovered-ncl-reading-2025-report-t1-loans-purchased-ebooks-visits-cd79f53041b4",
+        "discovered-ncl-reading-2025-report-t1-loans-purchased-ebooks-volumes-953ba8cdfb0f",
+        "discovered-ncl-reading-2025-report-t1-loans-purchased-ebooks-volumes-f32f2de7b3ff",
+        "discovered-ncl-reading-2025-report-t1-loans-rented-ebooks-visits-866ca26d3ee7",
+        "discovered-ncl-reading-2025-report-t1-loans-rented-ebooks-visits-cd79f53041b4",
+        "discovered-ncl-reading-2025-report-t1-loans-rented-ebooks-volumes-953ba8cdfb0f",
+        "discovered-ncl-reading-2025-report-t1-loans-rented-ebooks-volumes-f32f2de7b3ff",
+        "discovered-ncl-reading-2025-report-t1-visits-3f09500e4b0d",
+        "discovered-ncl-reading-2025-report-t1-visits-84e28041b16d",
+        "discovered-ncl-reading-2025-report-t1-website-resource-use-52e79e56e175",
+        "discovered-ncl-reading-2025-report-t1-website-resource-use-d6c82c8b2967"
+      ],
+      "data_years_present": [
+        2023,
+        2024,
+        2025
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned PDF Table 1 extraction, all 39 annual cells checked against the separate official web table.",
+      "semantic_facts": {
+        "retained_units": [
+          "萬人次",
+          "萬冊",
+          "萬張",
+          "萬次"
+        ],
+        "population_scopes": [
+          "國立臺灣圖書館、國立公共資訊圖書館及22縣市公共圖書館；原表含國立圖書館數據"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-0867a12bb52a21ae400bf4",
+        "obs-0d7c992e78b77b9dd0c9eb",
+        "obs-100520c34e4f8b4616e01b",
+        "obs-12ea6773766c88b1b66677",
+        "obs-1712a08310d3c9fd19efa5",
+        "obs-1dd831671bcdef1c2f4557",
+        "obs-1e372e077bc65c69ffea55",
+        "obs-20b6d648c44ce68d14f5ac",
+        "obs-2a0a233f20b0841f46386d",
+        "obs-2d7df7cbaa6fb0d1dc59c4",
+        "obs-3b979e6f8f5010707e38ce",
+        "obs-3d53624168f5f0f1521a2b",
+        "obs-3f70a7ca0423dc2a90f4f1",
+        "obs-41b9e60eaed322a82ffa88",
+        "obs-451477b8cc17c32a57f77e",
+        "obs-4d4275c2fa072c17988bb2",
+        "obs-567de891677021f983dfbe",
+        "obs-7139a4216ace4d4726a6a1",
+        "obs-738cd2f99c79ac3228d87a",
+        "obs-759f23d3d1a4edb13f1a17",
+        "obs-7830915ff346d2d91a5dc6",
+        "obs-7d7091c9e7eec46a0a64dd",
+        "obs-9460e460caede26148d7a6",
+        "obs-b6d71339e659458918ba26",
+        "obs-b949bc18936a9d62bea851",
+        "obs-bb1475a6ddcee4e475b683",
+        "obs-be78dee58aa69c79a723d1",
+        "obs-c03efbe919949050a4a4ca",
+        "obs-c743d1d62e78f0c38e11f2",
+        "obs-d0c90ee9c1e62cb3c1d4f4",
+        "obs-d336a2e26468940149c83e",
+        "obs-d50113daa72c01f54b4211",
+        "obs-da5a8af3152e98bd8f977b",
+        "obs-e6c44c22d6f13565508554",
+        "obs-e905129a3dd03264fb8015",
+        "obs-eacc47a276aad206bbf75c",
+        "obs-ed928670ef4550077c00b1",
+        "obs-faa857b1cdde9d5d4d9e9b",
+        "obs-fdda05f94ec7d640fbec08"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    }
+  ]
+}

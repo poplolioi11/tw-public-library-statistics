@@ -279,6 +279,64 @@
     "rights": "OGDL-1.0_site_declaration"
   },
   {
+    "source_id": "discovered-ncl-ed90-statistics-t151",
+    "year": 2000,
+    "data_years": [
+      2000
+    ],
+    "periods": [
+      "2000"
+    ],
+    "records": 7,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "國立",
+      "小計",
+      "省市立",
+      "社教館",
+      "私立",
+      "縣市立",
+      "鄉（鎮、市、區）立"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=5",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-ncl-ed90-statistics-t152",
+    "year": 2000,
+    "data_years": [
+      2000
+    ],
+    "periods": [
+      "2000"
+    ],
+    "records": 15,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "公立公共圖書館",
+      "私立公共圖書館"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-ncl-ed90-statistics-t153",
+    "year": 2000,
+    "data_years": [
+      2000
+    ],
+    "periods": [
+      "2000"
+    ],
+    "records": 1,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "數量"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=11",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
     "source_id": "discovered-ncl-ed91-public-libraries-t11",
     "year": 2001,
     "data_years": [
@@ -507,6 +565,64 @@
     "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {
+    "source_id": "discovered-ncl-ed92-statistics-t166",
+    "year": 2002,
+    "data_years": [
+      2002
+    ],
+    "periods": [
+      "2002"
+    ],
+    "records": 7,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "國立",
+      "小計",
+      "省市立",
+      "社教館",
+      "私立",
+      "縣市立",
+      "鄉(鎮、市、區)立"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf#page=6",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-ncl-ed92-statistics-t167",
+    "year": 2002,
+    "data_years": [
+      2002
+    ],
+    "periods": [
+      "2002"
+    ],
+    "records": 16,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "公立公共圖書館",
+      "私立公共圖書館"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf#page=7",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-ncl-ed92-statistics-t168",
+    "year": 2002,
+    "data_years": [
+      2002
+    ],
+    "periods": [
+      "2002"
+    ],
+    "records": 1,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "數量"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf#page=12",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
     "source_id": "discovered-ncl-ed93-public-libraries-t16",
     "year": 2003,
     "data_years": [
@@ -604,6 +720,64 @@
       "高雄縣"
     ],
     "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565599956839186/5932209a-a4a1-47aa-9247-0242fcd9167d.pdf#page=5",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-ncl-ed93-statistics-t176",
+    "year": 2003,
+    "data_years": [
+      2003
+    ],
+    "periods": [
+      "2003"
+    ],
+    "records": 7,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "國立",
+      "小計",
+      "直轄市立",
+      "社教館",
+      "私立",
+      "縣市立",
+      "鄉(鎮、市、區)立"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf#page=5",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-ncl-ed93-statistics-t177",
+    "year": 2003,
+    "data_years": [
+      2003
+    ],
+    "periods": [
+      "2003"
+    ],
+    "records": 16,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "公立公共圖書館",
+      "私立公共圖書館"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf#page=6",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-ncl-ed93-statistics-t178",
+    "year": 2003,
+    "data_years": [
+      2003
+    ],
+    "periods": [
+      "2003"
+    ],
+    "records": 1,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "數量"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf#page=11",
     "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {
@@ -764,6 +938,70 @@
     "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {
+    "source_id": "discovered-moe-library-ods-testablishment",
+    "year": null,
+    "data_years": [
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "periods": [
+      "2005",
+      "2006",
+      "2007",
+      "2008",
+      "2009",
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "records": 3897,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "公立公共圖書館設立別總計",
+      "其它(省政府圖書館)",
+      "國家圖書館",
+      "國立",
+      "直轄市山地原住民區立",
+      "直轄市立",
+      "縣市立",
+      "鄉鎮市立"
+    ],
+    "source_url": "https://stats.moe.gov.tw/files/time/library.ods",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
     "source_id": "ncl-yearbook-95-public-library",
     "year": 2005,
     "data_years": [
@@ -832,6 +1070,94 @@
       "鄉（鎮、市、區）立"
     ],
     "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565572644598946/785730e1-bd57-49fc-8a26-6ff5c62a933a.pdf#page=5",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
+  },
+  {
+    "source_id": "discovered-moe-library-ods-tcounty",
+    "year": null,
+    "data_years": [
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "periods": [
+      "2006",
+      "2007",
+      "2008",
+      "2009",
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "records": 14735,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "公立公共圖書館縣市表總計",
+      "南投縣",
+      "台灣省政府圖書館",
+      "嘉義市",
+      "嘉義縣",
+      "國家圖書館",
+      "國立中央圖書館臺灣分館",
+      "國立公共資訊圖書館",
+      "國立台中圖書館",
+      "國立臺灣圖書館",
+      "基隆市",
+      "宜蘭縣",
+      "屏東縣",
+      "彰化縣",
+      "新北市",
+      "新竹市",
+      "新竹縣",
+      "桃園市",
+      "桃園縣",
+      "澎湖縣",
+      "臺中市",
+      "臺中縣",
+      "臺北市",
+      "臺北縣",
+      "臺南市",
+      "臺南縣",
+      "臺東縣",
+      "花蓮縣",
+      "苗栗縣",
+      "連江縣",
+      "金門縣",
+      "雲林縣",
+      "高雄市",
+      "高雄縣"
+    ],
+    "source_url": "https://stats.moe.gov.tw/files/time/library.ods",
     "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {
@@ -5824,6 +6150,27 @@
     ],
     "source_url": "https://publibstat.nlpi.edu.tw/Frontend/Dynamic/BindTypeSelect",
     "rights": "publicly_published_statistical_facts"
+  },
+  {
+    "source_id": "discovered-ncl-reading-2025-report-t1",
+    "year": null,
+    "data_years": [
+      2023,
+      2024,
+      2025
+    ],
+    "periods": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "records": 39,
+    "unresolved_period_records": 0,
+    "geographies": [
+      "全國"
+    ],
+    "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q120145388038649336/df66cab6-10d6-4502-9fbb-6a8db59a339c.pdf#page=12",
+    "rights": "published_statistical_facts_document_license_unconfirmed"
   },
   {
     "source_id": "ncl-yearbook-113-public-library",

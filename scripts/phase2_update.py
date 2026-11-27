@@ -108,7 +108,7 @@ def run(root=ROOT,runner=None):
    execute('validate_phase2.py')
    if input_signature(root)!=inputs:raise ValueError('Phase2 inputs changed during build; previous outputs retained')
    after=output_hashes(root)
-   if not (root/'docs/phase2-summary.json').is_file() or not (root/'derived/phase2/definitions.sqlite').is_file():raise FileNotFoundError('Phase2 builders omitted required outputs')
+   if not (root/'docs/phase2-summary.json').is_file() or not any((root/name).is_file() for name in ('derived/phase2/definitions.sqlite.gz','derived/phase2/definitions.sqlite')):raise FileNotFoundError('Phase2 builders omitted required outputs')
    write(statepath,{'schema_version':'1.0.0','inputs':inputs,'outputs':after})
   except BaseException:rollback(root,backup,before);raise
  return {'enabled':True,'rebuilt':True,'source_audits_rerun':False,'changed_output_paths':[k for k,v in after.items() if current.get(k)!=v],'content_sha256':content_digest(root)}

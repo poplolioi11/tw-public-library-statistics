@@ -1,0 +1,19 @@
+{
+  "documents": [
+    {
+      "candidate_id": "moe-library-ods",
+      "title": "教育部統計處《公立公共圖書館統計》歷年工作簿",
+      "official_url": "https://stats.moe.gov.tw/files/time/library.ods",
+      "catalogue_url": "https://www.stat.gov.tw/News_NoticeCalendar_Content_temp.aspx?MetaI_D=104&n=3717&year=2026",
+      "source_sha256": "b84bb8cc4f05283aebf429bc6dc082232e3eaf432f510a60201a3e9e1709aa42",
+      "source_local_path": "raw/moe-library-ods/library.ods",
+      "source_version_id": "moe-library-ods@sha256:b84bb8cc4f05283aebf429bc6dc082232e3eaf432f510a60201a3e9e1709aa42",
+      "retrieved_at": "2026-11-27T15:37:53.705149+00:00",
+      "publisher": "教育部統計處",
+      "edition_raw": "教育部統計處 library.ods（原件屬性修改日 2026-06-23）",
+      "source_bytes": 259186,
+      "snapshot_distribution": "not_in_public_bundle",
+      "rights_scope": "原表統計事實及必要表頭；工作簿原件未隨公開包提供"
+    }
+  ]
+}

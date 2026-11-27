@@ -27,4 +27,4 @@ star／fork記錄平台互動，下載量記錄附件取用，issue記錄回饋�
 
 資料仍有歷年缺口，跨年及跨來源使用須讀[完整度](../COVERAGE.md)、[口徑說明](PHASE2.md)與[資料說明稿](DATA_PAPER_DRAFT.md)。
 
-目前新增批次版本為v0.9.2，若使用此版請引用[固定Release](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.2)。上述Zenodo版本DOI僅對應v0.9.1；尚無v0.9.2 DOI。
+v0.10.0 請引用[固定 GitHub Release](https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.10.0)；本版尚無 Zenodo DOI。使用 v0.9.2 時，可引用其 [Zenodo 版本 DOI](https://doi.org/10.5281/zenodo.23950753)。

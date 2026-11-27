@@ -128,7 +128,9 @@ def historical_warning(context):
         n=prose['ratio_counties'];missing='、'.join(prose['staff_missing_printed_labels']) or '未另列缺標籤'
         text=f"2012年原文中每人購書／擁書／借閱比率分別列{n['acquisition_per_capita']}／{n['holdings_per_capita']}／{n['loans_per_capita']}縣市；館員服務人口只列{n['service_population_per_staff']}縣市，未列{missing}。"
     else:text='2012年已列原文比率的縣市覆蓋以歷史批次為準。'
-    text+='22縣市核心原量表仍未取得，不能由比率反算。閱讀報告所列表只有全國彙總，不能冒充縣市表。'
+    text+='國圖102卷及國資圖同口徑完整22縣市核心原表仍未取得，不由原報比率反算。閱讀報告所列年度表為全國彙總。'
+    if any(r.get('component_source_id')=='moe-library-ods' for r in context['rows']):
+        text+=' 教育部「101縣」工作表另有2012年22縣市原量；使用時保留教育部的母體、原表行政區、單位與缺值。'
     ambiguous_by_year=Counter(as_int(r.get('data_year')) for r in selected if uncertain_label(r))
     if ambiguous_by_year.get(2015) or any(105 in c['edition_roc'] for c in context['cohorts']):
         text+=f" 2015原刊部分縣市標籤未確認、兩列均印金門，保留{ambiguous_by_year.get(2015,0):,}筆標籤不確定觀測，不補成連江或硬接現行界線。"
@@ -151,13 +153,16 @@ def family_scope(name,subset):
     if name=='國資圖公開全國圖表':return f'{span}公開全國圖表；只有全國'
     if name=='國資圖2023開放資料（含縣市）':return f'{span}明確OGDL年度資源；全國、縣市與替代口徑分列，不相加'
     if name==YEARBOOK:return f'{display_numbers({edition(r) for r in subset},"卷")}指定核心表／公共館子群／原文數字；資料年{span}，保留不同出版版本'
-    if name==READING:return f'{span}{len(table_groups(subset))}張全國閱讀報告表；包括跨年比較，不是縣市表'
+    if name==READING:return f'{span}{len(table_groups(subset))}張全國閱讀報告表；各版次、年度欄及比較期間分列'
     if name=='主計總處歷史全國統計':return f'{len({r["source_id"] for r in subset})}個來源版本；資料年{span}，重疊版本分開'
     if name=='主計總處縣市公共館數':return f'{span}官方重編地域；來源含國家圖書館，缺值不補0'
     if name=='地方政府開放歷史表':return f'{"、".join(sorted({r["geography"] for r in subset}))}已確認系列；保留原年／月期間與館藏地'
     if name=='地方官方出版統計事實':return f'{span}所列新北、臺南、桃園、彰化、高雄及臺北原刊；全國／縣市／行政區／分館與年／月分開，未明年另存'
     if name=='主計總處後續全國出版統計':return f'{span}113年統計年鑑表4-22；全國含國家圖書館，機關／縣市列未逐列年份保留未知'
-    if name=='教育部歷史公共館統計':return f'{span}近16年統計社3表，含國家圖書館；單位千冊／千人次，不與重疊出版版本相加'
+    if name=='教育部歷史公共館統計':
+        if any(row.get('component_source_id')=='moe-library-ods' for row in subset):
+            return '1994–2009年社3全國表與2005–2025年設立別／2006–2025年縣市別原工作簿分列，國家圖書館欄依原表'
+        return f'{span}近16年統計社3表，含國家圖書館；單位千冊／千人次，不與重疊出版版本相加'
     return f'{span}所列來源；按口徑與版本選取'
 
 def source_family_table(context,ai=False):
@@ -206,12 +211,12 @@ def update_backlog(context):
     root=context['root'];path=root/'docs/source-backlog.json';backlog=read_json(path)
     ncl=[r for r in context['rows'] if r['source_family']==YEARBOOK];editions=sorted({edition(r) for r in ncl if edition(r) is not None})
     span=display_numbers(editions,'卷');unknown=f'{max(editions)+1}卷以後及{min(editions)-1}卷以前' if editions else '其他已見目錄卷'
-    claim=f'NCL{span}僅所列核心表、公共館子群及明列原文數字；2012縣市核心原量缺口仍存。'
+    claim=f'NCL{span}僅所列核心表、公共館子群及明列原文數字；國圖與國資圖同口徑2012縣市核心原表仍待查。'
     backlog['scope_claims']=[x for x in backlog.get('scope_claims',[]) if not x.startswith(('NCL3年','NCL96–103卷','NCL'))]+[claim]
     backlog['constraints']=[x for x in backlog.get('constraints',[]) if not x.startswith('本清單未新下載')]
     evidence=list(dict.fromkeys(p for c in context['cohorts'] for p in c['metadata_paths']))
     prose=prose_2012_scope(context)
-    known_2012={'edition_roc':102,'data_year':2012,'scope':f"已完成公共館章一至八節{prose['records']}個明列原文數字及統計章公共館子群；各比率覆蓋見county_ratio_coverage。22縣市核心原量表仍未取得，不從比率反算。",'county_ratio_coverage':prose,'checked_sources':['102卷公共圖書館章與統計章','103卷〈102年全國公共圖書館評鑑工作紀要〉','國資圖舊年度連結及現行公開表單','101年閱讀習慣報告原附件及改版官網新附件'],'exclusions':['評鑑章的達標／未達標館數與受評／得獎館數不是2012營運原量；不納入核心表。'],'link_resolution':'舊nclfile下載逾時後，已從現行官方gallery取得新file_pool附件；閱讀五表另作全國批次，不冒充縣市表。','evidence':['research/ncl-2012-core-search.md','raw/ncl-2012/source-search-log.json','docs/historical-batches.json']}
+    known_2012={'edition_roc':102,'data_year':2012,'scope':f"已完成公共館章一至八節{prose['records']}個明列原文數字及統計章公共館子群；各比率覆蓋見county_ratio_coverage。國圖與國資圖同口徑的完整22縣市核心原表仍待查，不從比率反算。",'county_ratio_coverage':prose,'checked_sources':['102卷公共圖書館章與統計章','103卷〈102年全國公共圖書館評鑑工作紀要〉','國資圖舊年度連結及現行公開表單','101年閱讀習慣報告原附件及改版官網新附件'],'exclusions':['評鑑章的達標／未達標館數與受評／得獎館數不是2012營運原量；不納入核心表。'],'link_resolution':'舊nclfile下載逾時後，已從現行官方gallery取得新file_pool附件；閱讀五表另作全國批次，不冒充縣市表。','evidence':['research/ncl-2012-core-search.md','raw/ncl-2012/source-search-log.json','docs/historical-batches.json']}
     for family in backlog['families']:
         if family['family_id']=='ncl_yearbook_public_library_chapters':
             family['completed_scope']={'data_years':years(ncl),'edition_roc':editions,'long_rows':len(ncl),'tables':table_groups(ncl),'completion_statement':'只完整整理所列核心表、公共館子群與原文明列數字；不是整冊或所有縣市原量完整。'}
@@ -229,13 +234,13 @@ def update_backlog(context):
     reading=[r for r in context['rows'] if r['source_family']==READING]
     reading_family=next((f for f in backlog['families'] if f['family_id']=='ncl_reading_report_tables'),None)
     if reading_family is None:reading_family={'family_id':'ncl_reading_report_tables','owner':'國家圖書館'};backlog['families'].append(reading_family)
-    reading_family.update(status='completed_bounded_scope' if reading else 'not_in_current_canonical',urls=sorted({r.get('source_page_url') for r in reading if r.get('source_page_url')}),completed_scope={'records':len(reading),'data_years':years(reading),'tables':table_groups(reading),'completion_statement':'所列全國閱讀報告五表；兩個成長率格為2011至2012比較，不能當年度業務量。'},known_not_ingested=['所列五表不提供22縣市分列，不能補縣市核心原量缺口。'],unknown_scope=['閱讀報告與年鑑母體、跨表類別合計不同；未認證相容性。'],license_scope='只整理公開統計事實；PDF全文及重製全圖未宣稱開放。',evidence=['docs/historical-batches.json','research/ncl-reading-2012-independent-review.json'])
+    reading_family.update(status='completed_bounded_scope' if reading else 'not_in_current_canonical',urls=sorted({r.get('source_page_url') for r in reading if r.get('source_page_url')}),completed_scope={'records':len(reading),'data_years':years(reading),'tables':table_groups(reading),'completion_statement':'按版次保留列明全國閱讀報告表。101年版兩個成長率格描述2011至2012比較；114年版表1收錄2023–2025年度欄。'},known_not_ingested=['已列年度表為全國彙總；其他已定位年度版次、表格與各自口徑待核。'],unknown_scope=['閱讀報告與年鑑母體、跨表類別合計不同；未認證相容性。'],license_scope='只整理公開統計事實；PDF全文及重製全圖未宣稱開放。',evidence=['docs/historical-batches.json','research/ncl-reading-2012-independent-review.json'])
     cohorts={c['id']:c for c in context['cohorts']}
     tasks=backlog.get('ordered_batches',backlog.get('backlog',[]))
     for task in tasks:
         if task['task_id']=='B01' and 'ncl_gap' in cohorts:
             n=cohorts['ncl_gap']['source_csv_counts'];task.update(status='completed_bounded_scope',completion=f"已列四張缺表全量{n['records']:,}格：{n['numeric_cells']:,}有值、{n['source_blank_cells']:,}留白；逐表與獨立回查見historical-batches。",known_not_ingested=[],unknowns=['原刊算術差異保留，未改官方原值。'])
-        if task['task_id']=='B03':task.update(status='partially_completed_known_tables',completion=f'{span}已列核心表／子群／原文批次見docs/historical-batches.json；其他卷及2012核心原量缺口維持待查。')
+        if task['task_id']=='B03':task.update(status='partially_completed_known_tables',completion=f'{span}已列核心表／子群／原文批次見docs/historical-batches.json；其他卷及國圖／國資圖2012核心原表缺口維持待查。')
         if task['task_id']=='B08':task['unknowns']=['歷年定義是否完全相容仍待逐年認證；實際表已取得。']
     inventory=backlog['official_yearbook_inventory']
     for item in inventory['items']:
@@ -253,8 +258,21 @@ def update_backlog(context):
     if batch_path.exists():
         from backlog_ingestion_status import reconcile
         reconcile(backlog,context['rows'],read_json(batch_path))
+    refresh_path=root/'docs/source-refresh-20261127.json'
+    if refresh_path.exists():
+        refresh=read_json(refresh_path)
+        if context['summary']['version']==refresh['release_version']:
+            refresh_counts=Counter(r.get('component_source_id') for r in context['rows'])
+            for batch in refresh['completed_batches']:
+                observed=sum(refresh_counts[source] for source in batch['component_source_ids'])
+                if observed!=batch['observations']:
+                    raise ValueError('Source refresh documentation requires the complete registered batch: '+batch['cohort_id'])
+        backlog['checked_at']=max(backlog.get('checked_at') or '',refresh['checked_at'])
+        backlog['source_refresh_20261127']=refresh
     write_json(path,backlog)
-    lines=['# 來源分組待辦','','以[source-backlog.json](source-backlog.json)為機器主檔；[歷史批次](historical-batches.md)依registry與實際觀測產生。完成只及列明範圍，未查不表示無資料。','',f'B01與B08維持已完成指定範圍。年鑑{span}的已列核心表、公共館子群與原文數字已整理；{unknown}仍待查。', '',historical_warning(context),'','2012本輪已查公共館章、統計章、評鑑章、國資圖舊連結及閱讀報告；評鑑達標數排除，失敗舊附件已找到官網新網址。仍未取得的22縣市核心原量表不推稱不存在。其他來源的授權與更新政策維持各族群原記錄。','']
+    lines=['# 來源分組待辦','','以[source-backlog.json](source-backlog.json)為機器主檔；[歷史批次](historical-batches.md)依registry與實際觀測產生。完成只及列明範圍，未查不表示無資料。','',f'B01與B08維持已完成指定範圍。年鑑{span}的已列核心表、公共館子群與原文數字已整理；{unknown}仍待查。', '',historical_warning(context),'','2012本輪已查公共館章、統計章、評鑑章、國資圖舊連結及閱讀報告；評鑑達標數排除，失敗舊附件已找到官網新網址。仍未取得的國圖／國資圖同口徑22縣市核心原表不推稱不存在。其他來源的授權與更新政策維持各族群原記錄。','']
+    if backlog.get('source_refresh_20261127'):
+        lines.extend(['## 2026-11-27 官方來源更新', '', '教育部工作簿、國圖早期年鑑統計章與114年閱讀年度報告三批詳見[來源範圍與剩餘缺口](source-refresh-20261127.md)。', ''])
     if backlog.get('status_reconciliation'):
         from backlog_ingestion_status import markdown_rows
         lines += markdown_rows(backlog)
@@ -273,7 +291,7 @@ v{context['summary']['version']}沿用2026-10-28已入庫的{len(rows):,}個原�
 
 [完整來源／表格範圍](../raw/discovered-20261028/extraction-metadata.json)與[逐筆原格驗收](../scripts/validate_discovered_20261028.py)可重跑。各格保留原字串、單位、官方原件URL、SHA、原頁表列欄、版本及公式／分母；讀source_time_reference的JSON可取原表脈絡、合併格與公式等額外來源限定，source_cell_note_raw保留核對方法。369格掃描資料以Apple Vision及AI原圖核讀，沒有宣稱人類逐格雙校；重複OCR不是獨立引擎。
 
-原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl。臺北2012年刊權利衝突及92、93卷跨館型統計章待核子群仍隔離；94卷統計章的另批完整公共館子群見docs/NCL94_STATISTICS.md。2012完整22縣市核心原量仍缺，不從比率推算，不跨來源拼成全臺面板。
+原始發現登錄及396格研究probe是v0.8歷史快照，不算額外觀測；正式映射見本批metadata與derived/discovered_20261028_observations.jsonl。臺北2012年刊權利衝突維持隔離。92、93卷統計章公共館子群由後續獨立批次處理；94卷批次另見docs/NCL94_STATISTICS.md。國圖及國資圖同口徑的2012年完整22縣市核心原表仍待查，各來源原量與比率分開保存。
 
 16個複合／非單一量原格另逐格登錄於scripts/reviewed_non_scalar_literals.json（含原件SHA、原文及定位）。例如主館／括弧分館、各1人、每鄉各2不能任挑一個數字作總量；source_marker及selected_source_missing在這些格表示沒有單一可用純量，不表示原件沒有資料。必須同讀raw_value、原註與該登錄，不推算補值。
 
@@ -284,7 +302,7 @@ v{context['summary']['version']}沿用2026-10-28已入庫的{len(rows):,}個原�
         p=root/name;p.write_text(generated_block(p.read_text(),'discovered-20261028',body))
     p=root/'llms.txt';p.write_text(generated_block(p.read_text(),'discovered-20261028',f"v{context['summary']['version']} complete selected new originals: {len(rows)} canonical cells / 12 documents; raw/discovered-20261028/extraction-metadata.json. Unknown year remains null ({batch['unresolved_period_records']}); source_time_reference JSON preserves source context/merged scope/formula; source_cell_note_raw preserves verification method. Historical discovery/probe v0.8 is not another observation layer. No aggregation, imputation or cross-source panel permission."))
     backlog=read_json(root/'docs/source-backlog.json')
-    family={'family_id':'reviewed_official_discovery_20261028','owner':'所列中央與地方官方出版機關','status':'completed_selected_tables_only','completed_scope':batch,'known_not_ingested':['臺北2012年刊：權利衝突維持隔離。','92、93卷早期跨館型統計章：公共館子群未覆核，維持候選；94卷另批完成見docs/NCL94_STATISTICS.md。','各原刊未列入本批的其他原表／年度仍待查，不表示不存在。'],'unknown_scope':['未取得2012全22縣市核心原量表。','部分原刊年份、單位、年度彙計或分館涵蓋仍未明，逐格照實保存。'],'evidence':['docs/source-discovery-20261028.json','raw/discovered-20261028/extraction-metadata.json','docs/historical-batches.json']}
+    family={'family_id':'reviewed_official_discovery_20261028','owner':'所列中央與地方官方出版機關','status':'completed_selected_tables_only','completed_scope':batch,'known_not_ingested':['臺北2012年刊：權利衝突維持隔離。','92、93卷跨館型統計章公共館子群由後續獨立批次處理；94卷另批清單見docs/NCL94_STATISTICS.md。','各原刊未列入本批的其他原表／年度仍待查，不表示不存在。'],'unknown_scope':['未取得國圖或國資圖同口徑2012年全22縣市核心原表。','部分原刊年份、單位、年度彙計或分館涵蓋仍未明，逐格照實保存。'],'evidence':['docs/source-discovery-20261028.json','raw/discovered-20261028/extraction-metadata.json','docs/historical-batches.json']}
     backlog['families']=[f for f in backlog['families'] if f['family_id']!=family['family_id']]+[family]
     write_json(root/'docs/source-backlog.json',backlog)
 
@@ -297,13 +315,13 @@ def main():
     body=description+'\n\n'+source_family_table(context)+'\n\n逐批格數、資料年、版次與指定表／原文範圍見[已覆核歷史批次](docs/historical-batches.md)及[COVERAGE.md](COVERAGE.md)。\n\n'+warning
     s=replace_between(s,'## 目前收錄什麼','**完整性指',body);s=s.replace('(#本版新增官方原表整批入庫)','(#2026-10-28官方原表入庫批次)');p.write_text(s)
     p=root/'AI_USAGE.md';s=p.read_text();s=re.sub(r'^目前 [\d,]+ 筆[^\n]+',description.replace('**','')+'「所列來源全量」不等於所有縣市、所有年度或每間館完整。缺口不表示官方沒有公布。',s,flags=re.M)
-    s=replace_between(s,'### 來源族群','### 數值與缺值',source_family_table(context,ai=True)+'\n\n'+warning+'\n\n原表、原文數字與閱讀五表的批次範圍見[歷史批次](docs/historical-batches.md)。')
+    s=replace_between(s,'### 來源族群','### 數值與缺值',source_family_table(context,ai=True)+'\n\n'+warning+'\n\n原表、原文數字與閱讀報告表的批次範圍見[歷史批次](docs/historical-batches.md)。')
     null_line=f"- `value IS NULL` 必須同讀 `value_status` 與 `raw_value`。本版 `{context['nulls'].get('not_available_in_source',0)}` 格 `not_available_in_source` 保留明示缺值符號，`{context['nulls'].get('source_blank',0)}` 格 `source_blank` 保留原刊留白，`{context['nulls'].get('source_marker',0)}` 格 `source_marker` 保留原印「無」「未新增」「未統計」等文字狀態；這些文字不自行改成0或推定不適用，均不推算補值。"
     s=re.sub(r'^- `value IS NULL` 必須同讀[^\n]+',null_line,s,flags=re.M);p.write_text(s)
     p=root/'llms.txt';s=p.read_text();s=re.sub(r'版本 [\d.]+；',f'版本 {version}；',s);s=re.sub(r'/releases/tag/v[\d.]+',f'/releases/tag/v{version}',s);s=re.sub(r'^(?:19,975 筆是觀測／來源版本紀錄|目前 [\d,]+ 筆來源觀測紀錄)[^\n]+',description.replace('**','')+' 批次完整性見docs/historical-batches.json；不宣稱全臺歷年皆完整。',s,flags=re.M)
     if summary.get('built_at'):s=re.sub(r'建置日 \d{4}-\d{2}-\d{2}',f"建置日 {summary['built_at'][:10]}",s)
     s=s.replace('第六族群 source_family=主計總處縣市公共館數','source_family=主計總處縣市公共館數')
-    s=generated_block(s,'generated-historical-scope','來源族群包含source_family='+READING+'；與年鑑分開。\n'+warning+'\n歷史批次入口：docs/historical-batches.json及docs/historical-batches.md。');p.write_text(s)
+    s=generated_block(s,'generated-historical-scope','來源族群包含source_family='+READING+'；與年鑑分開。' + ('\n2026-11-27來源批次與待辦：docs/source-refresh-20261127.json。' if (root/'docs/source-refresh-20261127.json').exists() else '') + '\n'+warning+'\n歷史批次入口：docs/historical-batches.json及docs/historical-batches.md。');p.write_text(s)
     p=root/'CITATION.cff';s=p.read_text();s=re.sub(r'^version: .+$','version: '+version,s,flags=re.M)
     if summary.get('built_at'):s=re.sub(r'^date-released: .+$','date-released: '+summary['built_at'][:10],s,flags=re.M)
     p.write_text(s)

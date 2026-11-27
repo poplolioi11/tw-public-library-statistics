@@ -1,0 +1,39 @@
+{
+  "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q120145388038649336/df66cab6-10d6-4502-9fbb-6a8db59a339c.pdf",
+  "source_sha256": "ad221212e57e12b5b8458455b765956b684f5bcd1808a1f8e83b33f0e8846288",
+  "source_bytes": 37201437,
+  "row_count": 13,
+  "annual_cell_count": 39,
+  "publication_date": "2026-04-23",
+  "publication_date_evidence": "https://www.ncl.edu.tw/tw/books/0Q112333768515788432",
+  "html_page_date": null,
+  "report_pdf_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q120145388038649336/df66cab6-10d6-4502-9fbb-6a8db59a339c.pdf",
+  "report_pdf_scope_evidence": "編輯說明（PDF第5頁、印頁6），2025年統計資料取得日為2026-03-10",
+  "report_pdf_verification": {
+    "method": "pypdf layout layer of pinned official PDF",
+    "rows": 13,
+    "matching_cells": 39,
+    "pdf_page": 12,
+    "printed_page": 13,
+    "pdf_sha256": "ad221212e57e12b5b8458455b765956b684f5bcd1808a1f8e83b33f0e8846288",
+    "primary_extractor": "pdfplumber word coordinates and fixed source column boundaries"
+  },
+  "html_crosscheck": null,
+  "rights": {
+    "scope": "統計事實，標示來源。保留原發布頁與原件連結，以觀測值長表發布；原PDF、HTML、插圖及文章保留於原發布網站。",
+    "status": "statistical_facts_only; source_document_reuse_license_unconfirmed",
+    "evidence": "https://www.tipo.gov.tw/tw/copyright/692-33512.html"
+  },
+  "notes": {
+    "annual_precision": "原表「萬」；加總差異不倒推或更正。",
+    "period_2025": "報告編輯說明資料年期間為2025全年或累計至年底；細項日期須依指標分辨。",
+    "earlier_periods": "2023及2024照表頭標年度；本次未核較早年度的原申報期初／期末。",
+    "excluded_year_comparison_columns": "另存原格，不視為單年度水準；電子書類別的同比合併格保留一次。"
+  },
+  "year_comparison_cells_excluded_from_annual_records": null,
+  "official_web_table_crosscheck": {
+    "url": "https://reading.ncl.edu.tw/web/front/page.do?pageId=74",
+    "sha256": "ab38731a11db53c0d329e4ff472004f8e7e40009503cd69b041c9c065336d1ef",
+    "matching_annual_cells": 39
+  }
+}

@@ -1,0 +1,1876 @@
+{
+  "physical_cells": 16,
+  "numeric_positions": 22,
+  "formal_observations": 23,
+  "physical_ocr_status_counts": {
+    "vision_and_ai_visual_agree": 15,
+    "vision_no_matching_text_ai_visual_only": 1
+  },
+  "cells": [
+    {
+      "cell_id": "ncl-ed90-statistics/t151/p5/r1/c1/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t151/p5/r1/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 5,
+      "source_printed_page": "681",
+      "source_table": "151",
+      "source_table_title": "臺閩地區各類型圖書館數量統計表（民國89年）",
+      "source_row": "1",
+      "source_column": "1",
+      "source_cell_bbox": [
+        575.714,
+        694.286,
+        674.286,
+        747.143
+      ],
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 1; numeric column 1; quantity primary; bbox 575.714,694.286,674.286,747.143",
+      "row_label_raw": "國立",
+      "entity_raw": "國立",
+      "column_label_raw": null,
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "臺閩地區原表公共圖書館區塊／國立",
+      "metric_id": "t151-c1-primary",
+      "metric_raw": "圖書館數量",
+      "value": 4,
+      "value_raw": "4",
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "列屬公共圖書館區塊，原刊國家圖書館另列。小計含私立館。來源未單獨印明是否含分館。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "151-1-1-full",
+            "revision": 3,
+            "text": "4"
+          },
+          {
+            "id": "151-1-1-inner",
+            "revision": 3,
+            "text": "4"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "4",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": false,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "selected_public_subgroup"
+      },
+      "observation_id": "obs-3d5d1713de70643a337810",
+      "source_id": "discovered-ncl-ed90-statistics-t151"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t151/p5/r2/c1/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t151/p5/r2/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 5,
+      "source_printed_page": "681",
+      "source_table": "151",
+      "source_table_title": "臺閩地區各類型圖書館數量統計表（民國89年）",
+      "source_row": "2",
+      "source_column": "1",
+      "source_cell_bbox": [
+        575.714,
+        747.143,
+        674.286,
+        795.714
+      ],
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 2; numeric column 1; quantity primary; bbox 575.714,747.143,674.286,795.714",
+      "row_label_raw": "省市立",
+      "entity_raw": "省市立",
+      "column_label_raw": null,
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "臺閩地區原表公共圖書館區塊／省市立",
+      "metric_id": "t151-c1-primary",
+      "metric_raw": "圖書館數量",
+      "value": 72,
+      "value_raw": "72",
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "列屬公共圖書館區塊，原刊國家圖書館另列。小計含私立館。來源未單獨印明是否含分館。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "151-2-1-full",
+            "revision": 3,
+            "text": "72"
+          },
+          {
+            "id": "151-2-1-inner",
+            "revision": 3,
+            "text": "72"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "72",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": false,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "selected_public_subgroup"
+      },
+      "observation_id": "obs-2fafe793beae3c53fd67b6",
+      "source_id": "discovered-ncl-ed90-statistics-t151"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t151/p5/r3/c1/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t151/p5/r3/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 5,
+      "source_printed_page": "681",
+      "source_table": "151",
+      "source_table_title": "臺閩地區各類型圖書館數量統計表（民國89年）",
+      "source_row": "3",
+      "source_column": "1",
+      "source_cell_bbox": [
+        575.714,
+        795.714,
+        674.286,
+        845.714
+      ],
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 3; numeric column 1; quantity primary; bbox 575.714,795.714,674.286,845.714",
+      "row_label_raw": "縣市立",
+      "entity_raw": "縣市立",
+      "column_label_raw": null,
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "臺閩地區原表公共圖書館區塊／縣市立",
+      "metric_id": "t151-c1-primary",
+      "metric_raw": "圖書館數量",
+      "value": 40,
+      "value_raw": "40",
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "列屬公共圖書館區塊，原刊國家圖書館另列。小計含私立館。來源未單獨印明是否含分館。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "151-3-1-full",
+            "revision": 3,
+            "text": "40"
+          },
+          {
+            "id": "151-3-1-inner",
+            "revision": 3,
+            "text": "40"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "40",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": false,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "selected_public_subgroup"
+      },
+      "observation_id": "obs-acdf3600b58ad52b6df462",
+      "source_id": "discovered-ncl-ed90-statistics-t151"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t151/p5/r4/c1/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t151/p5/r4/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 5,
+      "source_printed_page": "681",
+      "source_table": "151",
+      "source_table_title": "臺閩地區各類型圖書館數量統計表（民國89年）",
+      "source_row": "4",
+      "source_column": "1",
+      "source_cell_bbox": [
+        575.714,
+        845.714,
+        674.286,
+        894.286
+      ],
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 4; numeric column 1; quantity primary; bbox 575.714,845.714,674.286,894.286",
+      "row_label_raw": "鄉（鎮、市、區）立",
+      "entity_raw": "鄉（鎮、市、區）立",
+      "column_label_raw": null,
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "臺閩地區原表公共圖書館區塊／鄉（鎮、市、區）立",
+      "metric_id": "t151-c1-primary",
+      "metric_raw": "圖書館數量",
+      "value": 364,
+      "value_raw": "364",
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "列屬公共圖書館區塊，原刊國家圖書館另列。小計含私立館。來源未單獨印明是否含分館。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "151-4-1-full",
+            "revision": 3,
+            "text": "364"
+          },
+          {
+            "id": "151-4-1-inner",
+            "revision": 3,
+            "text": "364"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "364",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": false,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "selected_public_subgroup"
+      },
+      "observation_id": "obs-c759f389cbce70d88dc656",
+      "source_id": "discovered-ncl-ed90-statistics-t151"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t151/p5/r5/c1/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t151/p5/r5/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 5,
+      "source_printed_page": "681",
+      "source_table": "151",
+      "source_table_title": "臺閩地區各類型圖書館數量統計表（民國89年）",
+      "source_row": "5",
+      "source_column": "1",
+      "source_cell_bbox": [
+        575.714,
+        894.286,
+        674.286,
+        942.857
+      ],
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 5; numeric column 1; quantity primary; bbox 575.714,894.286,674.286,942.857",
+      "row_label_raw": "社教館",
+      "entity_raw": "社教館",
+      "column_label_raw": null,
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "臺閩地區原表公共圖書館區塊／社教館",
+      "metric_id": "t151-c1-primary",
+      "metric_raw": "圖書館數量",
+      "value": 3,
+      "value_raw": "3",
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "列屬公共圖書館區塊，原刊國家圖書館另列。小計含私立館。來源未單獨印明是否含分館。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "151-5-1-full",
+            "revision": 3,
+            "text": "3"
+          },
+          {
+            "id": "151-5-1-inner",
+            "revision": 3,
+            "text": ""
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "3",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": false,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "selected_public_subgroup"
+      },
+      "observation_id": "obs-1c03614707c3d6645305a8",
+      "source_id": "discovered-ncl-ed90-statistics-t151"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t151/p5/r6/c1/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t151/p5/r6/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 5,
+      "source_printed_page": "681",
+      "source_table": "151",
+      "source_table_title": "臺閩地區各類型圖書館數量統計表（民國89年）",
+      "source_row": "6",
+      "source_column": "1",
+      "source_cell_bbox": [
+        575.714,
+        942.857,
+        674.286,
+        990.0
+      ],
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 6; numeric column 1; quantity primary; bbox 575.714,942.857,674.286,990.0",
+      "row_label_raw": "私立",
+      "entity_raw": "私立",
+      "column_label_raw": null,
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "臺閩地區原表公共圖書館區塊／私立",
+      "metric_id": "t151-c1-primary",
+      "metric_raw": "圖書館數量",
+      "value": 135,
+      "value_raw": "135",
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "列屬公共圖書館區塊，原刊國家圖書館另列。小計含私立館。來源未單獨印明是否含分館。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "151-6-1-full",
+            "revision": 3,
+            "text": "135"
+          },
+          {
+            "id": "151-6-1-inner",
+            "revision": 3,
+            "text": "135"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "135",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": false,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "selected_public_subgroup"
+      },
+      "observation_id": "obs-775c7d61dbfe5612e22e4b",
+      "source_id": "discovered-ncl-ed90-statistics-t151"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t151/p5/r7/c1/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t151/p5/r7/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=5",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 5,
+      "source_printed_page": "681",
+      "source_table": "151",
+      "source_table_title": "臺閩地區各類型圖書館數量統計表（民國89年）",
+      "source_row": "7",
+      "source_column": "1",
+      "source_cell_bbox": [
+        575.714,
+        990.0,
+        674.286,
+        1031.429
+      ],
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 7; numeric column 1; quantity primary; bbox 575.714,990.0,674.286,1031.429",
+      "row_label_raw": "小計",
+      "entity_raw": "小計",
+      "column_label_raw": null,
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "臺閩地區原表公共圖書館區塊／小計",
+      "metric_id": "t151-c1-primary",
+      "metric_raw": "圖書館數量",
+      "value": 618,
+      "value_raw": "618",
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "aggregation_role": "published_subtotal",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "列屬公共圖書館區塊，原刊國家圖書館另列。小計含私立館。來源未單獨印明是否含分館。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "151-7-1-full",
+            "revision": 3,
+            "text": "618"
+          },
+          {
+            "id": "151-7-1-inner",
+            "revision": 3,
+            "text": "618"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "618",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": false,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "selected_public_subgroup"
+      },
+      "observation_id": "obs-babc853c6237236983c761",
+      "source_id": "discovered-ncl-ed90-statistics-t151"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r2/c1/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r2/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "2",
+      "source_column": "1",
+      "source_cell_bbox": [
+        387.143,
+        725.714,
+        624.286,
+        781.429
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 1; quantity primary; bbox 387.143,725.714,624.286,781.429",
+      "row_label_raw": "公立公共圖書館",
+      "entity_raw": "公立公共圖書館",
+      "column_label_raw": "館藏圖書冊數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "公立公共圖書館／館藏圖書冊數",
+      "metric_id": "t152-c1-primary",
+      "metric_raw": "館藏圖書冊數",
+      "value": 20031156,
+      "value_raw": "20,031,156",
+      "value_status": "reported",
+      "unit": "冊",
+      "unit_raw": "館藏圖書冊數",
+      "unit_status": "literal_column_label",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-2-1-full",
+            "revision": 3,
+            "text": "20,031,156 (467)"
+          },
+          {
+            "id": "152-2-1-inner",
+            "revision": 3,
+            "text": "20,031,156 (467)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "20,031,156 （467）",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-8b15341e701128cc0b0883",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r2/c1/responding_libraries",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r2/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "2",
+      "source_column": "1",
+      "source_cell_bbox": [
+        387.143,
+        725.714,
+        624.286,
+        781.429
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 1; quantity responding_libraries; bbox 387.143,725.714,624.286,781.429",
+      "row_label_raw": "公立公共圖書館",
+      "entity_raw": "公立公共圖書館",
+      "column_label_raw": "填答館數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "公立公共圖書館／館藏圖書冊數；該指標填答館數",
+      "metric_id": "t152-c1-responding_libraries",
+      "metric_raw": "館藏圖書冊數／填答館數",
+      "value": 467,
+      "value_raw": "467",
+      "value_status": "reported",
+      "unit": "館",
+      "unit_raw": "填答館數",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館",
+      "aggregation_role": "responding_libraries_not_total_libraries",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-2-1-full",
+            "revision": 3,
+            "text": "20,031,156 (467)"
+          },
+          {
+            "id": "152-2-1-inner",
+            "revision": 3,
+            "text": "20,031,156 (467)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "20,031,156 （467）",
+        "quantity_role": "responding_libraries",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": false,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-09623f16a7e669d105bcd3",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r2/c2/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r2/c2",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "2",
+      "source_column": "2",
+      "source_cell_bbox": [
+        624.286,
+        725.714,
+        862.857,
+        781.429
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 2; quantity primary; bbox 624.286,725.714,862.857,781.429",
+      "row_label_raw": "公立公共圖書館",
+      "entity_raw": "公立公共圖書館",
+      "column_label_raw": "閱覽席位",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "公立公共圖書館／閱覽席位",
+      "metric_id": "t152-c2-primary",
+      "metric_raw": "閱覽席位",
+      "value": null,
+      "value_raw": "－",
+      "value_status": "source_marker",
+      "unit": "席位",
+      "unit_raw": "閱覽席位",
+      "unit_status": "literal_column_label",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。",
+        "原格僅短橫，沒有括號填答數；短橫語義未明，保持原符號與空值。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_no_matching_text_ai_visual_only",
+        "printed_dash_meaning_unconfirmed"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": false,
+        "ocr_result_status": "vision_no_matching_text_ai_visual_only",
+        "vision_attempts": [
+          {
+            "id": "152-2-2-full",
+            "revision": 3,
+            "text": ""
+          },
+          {
+            "id": "152-2-2-inner",
+            "revision": 3,
+            "text": ""
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "－",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": false,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-4b94b19f98d602628ab27a",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r2/c3/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r2/c3",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "2",
+      "source_column": "3",
+      "source_cell_bbox": [
+        862.857,
+        725.714,
+        1102.857,
+        781.429
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 3; quantity primary; bbox 862.857,725.714,1102.857,781.429",
+      "row_label_raw": "公立公共圖書館",
+      "entity_raw": "公立公共圖書館",
+      "column_label_raw": "借閱人次",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "公立公共圖書館／借閱人次",
+      "metric_id": "t152-c3-primary",
+      "metric_raw": "借閱人次",
+      "value": 12535383,
+      "value_raw": "12,535,383",
+      "value_status": "reported",
+      "unit": "人次",
+      "unit_raw": "借閱人次",
+      "unit_status": "literal_column_label",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-2-3-full",
+            "revision": 3,
+            "text": "12,535,383 (467)"
+          },
+          {
+            "id": "152-2-3-inner",
+            "revision": 3,
+            "text": "12,535,383 (467)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "12,535,383 （467）",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-d92b50cc633df4a96e6766",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r2/c3/responding_libraries",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r2/c3",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "2",
+      "source_column": "3",
+      "source_cell_bbox": [
+        862.857,
+        725.714,
+        1102.857,
+        781.429
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 3; quantity responding_libraries; bbox 862.857,725.714,1102.857,781.429",
+      "row_label_raw": "公立公共圖書館",
+      "entity_raw": "公立公共圖書館",
+      "column_label_raw": "填答館數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "公立公共圖書館／借閱人次；該指標填答館數",
+      "metric_id": "t152-c3-responding_libraries",
+      "metric_raw": "借閱人次／填答館數",
+      "value": 467,
+      "value_raw": "467",
+      "value_status": "reported",
+      "unit": "館",
+      "unit_raw": "填答館數",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館",
+      "aggregation_role": "responding_libraries_not_total_libraries",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-2-3-full",
+            "revision": 3,
+            "text": "12,535,383 (467)"
+          },
+          {
+            "id": "152-2-3-inner",
+            "revision": 3,
+            "text": "12,535,383 (467)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "12,535,383 （467）",
+        "quantity_role": "responding_libraries",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": false,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-5766e973a988a564167945",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r2/c4/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r2/c4",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "2",
+      "source_column": "4",
+      "source_cell_bbox": [
+        1102.857,
+        725.714,
+        1340.0,
+        781.429
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 4; quantity primary; bbox 1102.857,725.714,1340.0,781.429",
+      "row_label_raw": "公立公共圖書館",
+      "entity_raw": "公立公共圖書館",
+      "column_label_raw": "借閱冊數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "公立公共圖書館／借閱冊數",
+      "metric_id": "t152-c4-primary",
+      "metric_raw": "借閱冊數",
+      "value": 24188338,
+      "value_raw": "24,188,338",
+      "value_status": "reported",
+      "unit": "冊",
+      "unit_raw": "借閱冊數",
+      "unit_status": "literal_column_label",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-2-4-full",
+            "revision": 3,
+            "text": "24,188, 338 (467)"
+          },
+          {
+            "id": "152-2-4-inner",
+            "revision": 3,
+            "text": "24,188, 338 (467)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "24,188,338 （467）",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-6cb26d8ea2d3d3e833d18d",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r2/c4/responding_libraries",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r2/c4",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "2",
+      "source_column": "4",
+      "source_cell_bbox": [
+        1102.857,
+        725.714,
+        1340.0,
+        781.429
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 4; quantity responding_libraries; bbox 1102.857,725.714,1340.0,781.429",
+      "row_label_raw": "公立公共圖書館",
+      "entity_raw": "公立公共圖書館",
+      "column_label_raw": "填答館數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "公立公共圖書館／借閱冊數；該指標填答館數",
+      "metric_id": "t152-c4-responding_libraries",
+      "metric_raw": "借閱冊數／填答館數",
+      "value": 467,
+      "value_raw": "467",
+      "value_status": "reported",
+      "unit": "館",
+      "unit_raw": "填答館數",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館",
+      "aggregation_role": "responding_libraries_not_total_libraries",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-2-4-full",
+            "revision": 3,
+            "text": "24,188, 338 (467)"
+          },
+          {
+            "id": "152-2-4-inner",
+            "revision": 3,
+            "text": "24,188, 338 (467)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "24,188,338 （467）",
+        "quantity_role": "responding_libraries",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": false,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-66cdc9888b2aff2c226f75",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r3/c1/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r3/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "3",
+      "source_column": "1",
+      "source_cell_bbox": [
+        387.143,
+        781.429,
+        624.286,
+        837.143
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 1; quantity primary; bbox 387.143,781.429,624.286,837.143",
+      "row_label_raw": "私立公共圖書館",
+      "entity_raw": "私立公共圖書館",
+      "column_label_raw": "館藏圖書冊數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "私立公共圖書館／館藏圖書冊數",
+      "metric_id": "t152-c1-primary",
+      "metric_raw": "館藏圖書冊數",
+      "value": 864410,
+      "value_raw": "864,410",
+      "value_status": "reported",
+      "unit": "冊",
+      "unit_raw": "館藏圖書冊數",
+      "unit_status": "literal_column_label",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-3-1-full",
+            "revision": 3,
+            "text": "864,410 (51)"
+          },
+          {
+            "id": "152-3-1-inner",
+            "revision": 3,
+            "text": "864,410 (51)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "864,410 （51）",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-adc743276a7b13e8a349e4",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r3/c1/responding_libraries",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r3/c1",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "3",
+      "source_column": "1",
+      "source_cell_bbox": [
+        387.143,
+        781.429,
+        624.286,
+        837.143
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 1; quantity responding_libraries; bbox 387.143,781.429,624.286,837.143",
+      "row_label_raw": "私立公共圖書館",
+      "entity_raw": "私立公共圖書館",
+      "column_label_raw": "填答館數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "私立公共圖書館／館藏圖書冊數；該指標填答館數",
+      "metric_id": "t152-c1-responding_libraries",
+      "metric_raw": "館藏圖書冊數／填答館數",
+      "value": 51,
+      "value_raw": "51",
+      "value_status": "reported",
+      "unit": "館",
+      "unit_raw": "填答館數",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館",
+      "aggregation_role": "responding_libraries_not_total_libraries",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-3-1-full",
+            "revision": 3,
+            "text": "864,410 (51)"
+          },
+          {
+            "id": "152-3-1-inner",
+            "revision": 3,
+            "text": "864,410 (51)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "864,410 （51）",
+        "quantity_role": "responding_libraries",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": false,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-3c0b8cb509d708509633b3",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r3/c2/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r3/c2",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "3",
+      "source_column": "2",
+      "source_cell_bbox": [
+        624.286,
+        781.429,
+        862.857,
+        837.143
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 2; quantity primary; bbox 624.286,781.429,862.857,837.143",
+      "row_label_raw": "私立公共圖書館",
+      "entity_raw": "私立公共圖書館",
+      "column_label_raw": "閱覽席位",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "私立公共圖書館／閱覽席位",
+      "metric_id": "t152-c2-primary",
+      "metric_raw": "閱覽席位",
+      "value": 6536,
+      "value_raw": "6,536",
+      "value_status": "reported",
+      "unit": "席位",
+      "unit_raw": "閱覽席位",
+      "unit_status": "literal_column_label",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-3-2-full",
+            "revision": 3,
+            "text": "6,536 (60)"
+          },
+          {
+            "id": "152-3-2-inner",
+            "revision": 3,
+            "text": "6,536 (60)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "6,536 （60）",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-858c88afb711d556db5895",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r3/c2/responding_libraries",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r3/c2",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "3",
+      "source_column": "2",
+      "source_cell_bbox": [
+        624.286,
+        781.429,
+        862.857,
+        837.143
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 2; quantity responding_libraries; bbox 624.286,781.429,862.857,837.143",
+      "row_label_raw": "私立公共圖書館",
+      "entity_raw": "私立公共圖書館",
+      "column_label_raw": "填答館數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "私立公共圖書館／閱覽席位；該指標填答館數",
+      "metric_id": "t152-c2-responding_libraries",
+      "metric_raw": "閱覽席位／填答館數",
+      "value": 60,
+      "value_raw": "60",
+      "value_status": "reported",
+      "unit": "館",
+      "unit_raw": "填答館數",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館",
+      "aggregation_role": "responding_libraries_not_total_libraries",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-3-2-full",
+            "revision": 3,
+            "text": "6,536 (60)"
+          },
+          {
+            "id": "152-3-2-inner",
+            "revision": 3,
+            "text": "6,536 (60)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "6,536 （60）",
+        "quantity_role": "responding_libraries",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": false,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-30a0c51fe080a3a38e8dfb",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r3/c3/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r3/c3",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "3",
+      "source_column": "3",
+      "source_cell_bbox": [
+        862.857,
+        781.429,
+        1102.857,
+        837.143
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 3; quantity primary; bbox 862.857,781.429,1102.857,837.143",
+      "row_label_raw": "私立公共圖書館",
+      "entity_raw": "私立公共圖書館",
+      "column_label_raw": "借閱人次",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "私立公共圖書館／借閱人次",
+      "metric_id": "t152-c3-primary",
+      "metric_raw": "借閱人次",
+      "value": 189069,
+      "value_raw": "189,069",
+      "value_status": "reported",
+      "unit": "人次",
+      "unit_raw": "借閱人次",
+      "unit_status": "literal_column_label",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-3-3-full",
+            "revision": 3,
+            "text": "189,069 (54)"
+          },
+          {
+            "id": "152-3-3-inner",
+            "revision": 3,
+            "text": "189,069 (54)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "189,069 （54）",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-eb7c972a9f71fa6704229a",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r3/c3/responding_libraries",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r3/c3",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "3",
+      "source_column": "3",
+      "source_cell_bbox": [
+        862.857,
+        781.429,
+        1102.857,
+        837.143
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 3; quantity responding_libraries; bbox 862.857,781.429,1102.857,837.143",
+      "row_label_raw": "私立公共圖書館",
+      "entity_raw": "私立公共圖書館",
+      "column_label_raw": "填答館數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "私立公共圖書館／借閱人次；該指標填答館數",
+      "metric_id": "t152-c3-responding_libraries",
+      "metric_raw": "借閱人次／填答館數",
+      "value": 54,
+      "value_raw": "54",
+      "value_status": "reported",
+      "unit": "館",
+      "unit_raw": "填答館數",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館",
+      "aggregation_role": "responding_libraries_not_total_libraries",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-3-3-full",
+            "revision": 3,
+            "text": "189,069 (54)"
+          },
+          {
+            "id": "152-3-3-inner",
+            "revision": 3,
+            "text": "189,069 (54)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "189,069 （54）",
+        "quantity_role": "responding_libraries",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": false,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-ee2db6a3ee5f67afe2f74c",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r3/c4/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r3/c4",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "3",
+      "source_column": "4",
+      "source_cell_bbox": [
+        1102.857,
+        781.429,
+        1340.0,
+        837.143
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 4; quantity primary; bbox 1102.857,781.429,1340.0,837.143",
+      "row_label_raw": "私立公共圖書館",
+      "entity_raw": "私立公共圖書館",
+      "column_label_raw": "借閱冊數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "私立公共圖書館／借閱冊數",
+      "metric_id": "t152-c4-primary",
+      "metric_raw": "借閱冊數",
+      "value": 665228,
+      "value_raw": "665,228",
+      "value_status": "reported",
+      "unit": "冊",
+      "unit_raw": "借閱冊數",
+      "unit_status": "literal_column_label",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-3-4-full",
+            "revision": 3,
+            "text": "665,228 (54)"
+          },
+          {
+            "id": "152-3-4-inner",
+            "revision": 3,
+            "text": "665,228 (54)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "665,228 （54）",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-6e9a3084046601065637dd",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t152/p6/r3/c4/responding_libraries",
+      "physical_cell_id": "ncl-ed90-statistics/t152/p6/r3/c4",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 6,
+      "source_printed_page": "682",
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_row": "3",
+      "source_column": "4",
+      "source_cell_bbox": [
+        1102.857,
+        781.429,
+        1340.0,
+        837.143
+      ],
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 4; quantity responding_libraries; bbox 1102.857,781.429,1340.0,837.143",
+      "row_label_raw": "私立公共圖書館",
+      "entity_raw": "私立公共圖書館",
+      "column_label_raw": "填答館數",
+      "entity_kind": "published_public_library_type",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "national_library_separately_listed_not_in_selected_public_subgroup",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "私立公共圖書館／借閱冊數；該指標填答館數",
+      "metric_id": "t152-c4-responding_libraries",
+      "metric_raw": "借閱冊數／填答館數",
+      "value": 54,
+      "value_raw": "54",
+      "value_status": "reported",
+      "unit": "館",
+      "unit_raw": "填答館數",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館",
+      "aggregation_role": "responding_libraries_not_total_libraries",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "填答館數不含分館，分館統計併入總館。館別公私立分列。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "152-3-4-full",
+            "revision": 3,
+            "text": "665,228 (54)"
+          },
+          {
+            "id": "152-3-4-inner",
+            "revision": 3,
+            "text": "665,228 (54)"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "665,228 （54）",
+        "quantity_role": "responding_libraries",
+        "source_printed_response_parenthesized": true,
+        "is_total_library_count": false,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-099ba0e99fcb93775c94f9",
+      "source_id": "discovered-ncl-ed90-statistics-t152"
+    },
+    {
+      "cell_id": "ncl-ed90-statistics/t153/p11/r1/c2/primary",
+      "physical_cell_id": "ncl-ed90-statistics/t153/p11/r1/c2",
+      "source_document_id": "ncl-ed90-statistics",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=11",
+      "source_catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_pdf_page": 11,
+      "source_printed_page": "687",
+      "source_table": "153",
+      "source_table_title": "中華圖書資訊館際合作協會各類型會員數量統計表（民國89年）",
+      "source_row": "1",
+      "source_column": "2",
+      "source_cell_bbox": [
+        385.714,
+        550.0,
+        525.714,
+        592.857
+      ],
+      "source_locator": "PDF page 11; printed page 687; table 153; source row 1; numeric column 2; quantity primary; bbox 385.714,550.0,525.714,592.857",
+      "row_label_raw": "數量",
+      "entity_raw": "數量",
+      "column_label_raw": "公共",
+      "entity_kind": "cooperation_membership_public_category",
+      "geography_vintage": "臺閩地區原刊館型分類，非縣市面板",
+      "national_libraries_scope": "association_member_category_public_national_column_excluded",
+      "data_year": 2000,
+      "period_raw": "民國89年",
+      "period_status": "explicit_original_table_ROC_year_exact_dates_unconfirmed",
+      "temporal_kind": "annual_source_reference_exact_period_unconfirmed",
+      "population_scope": "公共類會員數量",
+      "metric_id": "t153-c2-primary",
+      "metric_raw": "公共類會員數量",
+      "value": 30,
+      "value_raw": "30",
+      "value_status": "reported",
+      "unit": null,
+      "unit_raw": null,
+      "unit_status": "literal_quantity_unit_unprinted",
+      "aggregation_role": "source_type_quantity",
+      "source_notes": [
+        "掃描原圖由AI逐格核讀；來源數字按原欄列及括弧分辨。",
+        "中華圖書資訊館際合作協會公共類會員。公私立、分館數及生效日未明。"
+      ],
+      "quality_flags": [
+        "AI_visual_review_not_human_collation",
+        "exact_dates_unconfirmed",
+        "vision_and_ai_visual_agree"
+      ],
+      "independent_check": {
+        "method": "AI original scan cell visual read and Apple Vision OCR",
+        "matched": true,
+        "ocr_result_status": "vision_and_ai_visual_agree",
+        "vision_attempts": [
+          {
+            "id": "153-1-2-full",
+            "revision": 3,
+            "text": "30"
+          },
+          {
+            "id": "153-1-2-inner",
+            "revision": 3,
+            "text": "30"
+          }
+        ],
+        "human_review": false
+      },
+      "source_edition": "中華民國九十年圖書館年鑑",
+      "source_edition_roc": 90,
+      "physical_source_context": {
+        "complete_cell_literal": "30",
+        "quantity_role": "primary",
+        "source_printed_response_parenthesized": false,
+        "is_total_library_count": null,
+        "source_image_box_coordinate_origin": "top-left on actual original PDF page",
+        "source_row_index_scope": "whole_table_data_rows"
+      },
+      "observation_id": "obs-a6890f9db16c9c798ccc4e",
+      "source_id": "discovered-ncl-ed90-statistics-t153"
+    }
+  ]
+}

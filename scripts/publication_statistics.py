@@ -39,9 +39,23 @@ def write_period_partitions(target,rows,canonical_path='data/combined/observatio
  for year,records in sorted(by_year.items(),key=lambda item:period_partition_key(item[0])):
   path='data/by_year/unresolved_period.jsonl' if year is None else f'data/by_year/{year}.jsonl'
   body=''.join(json.dumps(r,ensure_ascii=False,separators=(',',':'))+'\n' for r in records).encode()
-  output=target/path;output.parent.mkdir(parents=True,exist_ok=True);output.write_bytes(body)
-  partitions.append({'data_year':year,'path':path,'records':len(records),'bytes':len(body),'sha256':sha(body)})
- index={'schema_version':'1.0.0','canonical_path':canonical_path,'records':len(rows),'unresolved_period_records':len(by_year.get(None,[])),'partitions':partitions,'partition_union_equals_canonical':True,'period_policy':'Integer years are confirmed reference years. Null years retain unresolved or multi-year original periods in unresolved_period.jsonl; never substitute zero or an edition/publication year.'}
+  plain_path=target/path;plain_path.parent.mkdir(parents=True,exist_ok=True)
+  gzip_path=plain_path.with_suffix('.jsonl.gz')
+  transport={}
+  if len(body)>=100*1024*1024:
+   if year is None:raise ValueError('Unresolved-period partition exceeds the single-file limit')
+   stored=gzip_bytes(body)
+   if len(stored)>=100*1024*1024:raise ValueError('Compressed annual partition exceeds the single-file limit')
+   gzip_path.write_bytes(stored)
+   plain_path.unlink(missing_ok=True)
+   path+='.gz'
+   transport={'compression':'gzip','uncompressed_bytes':len(body),'uncompressed_sha256':sha(body)}
+  else:
+   stored=body
+   plain_path.write_bytes(stored)
+   gzip_path.unlink(missing_ok=True)
+  partitions.append({'data_year':year,'path':path,'records':len(records),'bytes':len(stored),'sha256':sha(stored),**transport})
+ index={'schema_version':'1.0.0','canonical_path':canonical_path,'records':sum(part['records'] for part in partitions),'unresolved_period_records':len(by_year.get(None,[])),'partitions':partitions,'partition_union_equals_canonical':True,'period_policy':'Integer years are confirmed reference years. Null years retain unresolved or multi-year original periods in unresolved_period.jsonl; never substitute zero or an edition/publication year.'}
  (target/'data/by_year/index.json').parent.mkdir(parents=True,exist_ok=True)
  (target/'data/by_year/index.json').write_bytes(jb(index))
  return index

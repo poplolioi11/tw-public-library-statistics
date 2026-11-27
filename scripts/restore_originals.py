@@ -24,8 +24,8 @@ def restore_legacy(root=R):
   for src in json.loads(registry.read_text()):
    target=root/src['local_path'];expected=src['sha256']
    if target.exists() and sha(target.read_bytes())==expected:continue
-   body=fetch(src['download_url']);kind=src.get('content_kind','pdf')
-   if kind not in {'pdf','html'} or (kind=='pdf' and not body.startswith(b'%PDF')) or sha(body)!=expected:raise ValueError('Original version changed; review before accepting '+src['download_url'])
+   body=fetch(src['download_url']);kind=src.get('content_kind',target.suffix.lstrip('.'))
+   if kind not in {'pdf','html','ods','xls'} or (kind=='pdf' and not body.startswith(b'%PDF')) or sha(body)!=expected:raise ValueError('Original version changed; review before accepting '+src['download_url'])
    target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(body);print('restored',target.name)
  county_meta=root/'raw/segis-history/metadata.json'
  if county_meta.exists():
@@ -67,7 +67,7 @@ if __name__=='__main__' and projection_registry.exists() and '--phase1-only' not
  for item in json.loads(projection_registry.read_text())['omitted_originals']:
   path=R/item['source_snapshot_path']
   if path.exists() and hashlib.sha256(path.read_bytes()).hexdigest()==item['source_sha256']:continue
-  request=urllib.request.Request(item['source_url'],headers={'User-Agent':'TaiwanPublicLibraryStatistics/0.9.2 (restore specified source)'})
+  request=urllib.request.Request(item['source_url'],headers={'User-Agent':'TaiwanPublicLibraryStatistics/0.10.0 (restore specified source)'})
   with urllib.request.urlopen(request,timeout=50) as response:body=response.read()
   if hashlib.sha256(body).hexdigest()!=item['source_sha256']:raise ValueError('Official original changed; review before accepting new source version')
   path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(body)

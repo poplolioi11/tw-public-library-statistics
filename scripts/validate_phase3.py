@@ -6,10 +6,13 @@ No original PDF/workbook is fetched or newly source-audited here.
 """
 from __future__ import annotations
 import argparse,collections,csv,gzip,hashlib,json,re,sqlite3
+from contextlib import closing
 from decimal import Decimal
 from pathlib import Path
 import phase2_engine
 import phase2_update
+import record_io
+from build_phase3 import SELECTION_SQLITE_PATHS
 from validate_phase2 import compare_formats,compare_csv,digest,iterjson,local,require,scalar,stable,textopen
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -172,8 +175,11 @@ def validate(root=ROOT):
  for name,expected in summary['inputs'].items():require(local(root,name).is_file() and digest(local(root,name))==expected,'Phase3 input checksum differs: '+name)
  for name,spec in summary['outputs'].items():
   p=local(root,name);require(p.is_file() and digest(p)==spec['sha256'] and p.stat().st_size==spec['bytes'],'Phase3 output checksum differs: '+name)
- datasets={};formats={};con=sqlite3.connect((root/'derived/phase3/selection.sqlite').as_uri()+'?mode=ro',uri=True);con.row_factory=sqlite3.Row
- try:
+ sqlite_paths=[name for name in SELECTION_SQLITE_PATHS if name in summary['outputs']]
+ require(len(sqlite_paths)==1,'Phase3 summary needs exactly one SQLite transport')
+ datasets={};formats={}
+ with record_io.materialized_file(root,sqlite_paths[0]) as sqlite_path, closing(sqlite3.connect(sqlite_path.as_uri()+'?mode=ro',uri=True)) as con:
+  con.row_factory=sqlite3.Row
   require(con.execute('PRAGMA quick_check').fetchone()[0]=='ok','Selection SQLite integrity failed')
   order={'record_routes':'record_key','candidate_decisions':'decision_id','queries':'profile_id','series_edges':'edge_id'}
   specs={s['table']:s for s in summary['tables']};require(set(specs)==set(TABLES),'Phase3 table inventory differs')
@@ -182,7 +188,6 @@ def validate(root=ROOT):
    csv_report=compare_csv(rows,local(root,spec['csv']),name)
    ordered=sorted(rows,key=lambda r:r[order[name]]);virtual_csv=({k:'' if scalar(r.get(k)) is None else scalar(r.get(k)) for k in fields} for r in ordered)
    formats[name]=compare_formats(ordered,fields,virtual_csv,fields,con.execute('SELECT * FROM "'+name+'" ORDER BY "'+order[name]+'"'),name);formats[name]['csv_original_row_order_verified']=True
- finally:con.close()
  p2summary=json.loads((root/'docs/phase2-summary.json').read_text())
  for name in ('derived/phase2/annotations.jsonl.gz','derived/phase2/evidence_cards.jsonl','derived/phase2/groups.jsonl'):
   spec=p2summary['outputs'][name];require(digest(root/name)==spec['sha256'] and (root/name).stat().st_size==spec['bytes'],'Reviewed phase2 input checksum differs: '+name)

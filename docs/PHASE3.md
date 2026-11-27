@@ -1,6 +1,6 @@
 # 第三階段：有界預設選源與折線圖
 
-資料版本v0.9.2；政策1.1.1；來源審查基線v0.9.2。本階段不新增／改寫原量。22個登錄問題、76,878筆原紀錄路由、115,356筆候選決策；63,121個候選接續中41,079個可畫線。這是紀錄／決策數，不是館數或額外營運量。
+資料版本v0.10.0；政策1.1.1；來源審查基線v0.9.2。本階段不新增／改寫原量。22個登錄問題、95,620筆原紀錄路由、115,356筆候選決策；63,121個候選接續中41,079個可畫線。這是紀錄／決策數，不是館數或額外營運量。
 
 ## 直接看圖與來源
 
@@ -29,7 +29,7 @@ python scripts/select_sources.py --operation impute
 
 ## 機器格式與更新
 
-四表CSV／JSONL／SQLite逐欄一致。SQLite的record_routes、candidate_decisions、queries、series_edges為wide views；scalar是TEXT、結構欄JSON、缺值SQL NULL。內表字典編碼。按profile／年度小檔的聯集等於candidate_decisions；未知年另檔，不塞回目錄年。
+四表CSV／JSONL／SQLite逐欄一致。SQLite的下載路徑與壓縮方式見datapackage.json的phase3-selection-sqlite條目，gzip版先解壓縮再開啟。record_routes、candidate_decisions、queries、series_edges為wide views；scalar是TEXT、結構欄JSON、缺值SQL NULL。內表字典編碼。按profile／年度小檔的聯集等於candidate_decisions；未知年另檔，不塞回目錄年。
 
 selected=true可包含missing或unusable，須同讀point_value及原狀態。顯示/typed0衝突不叫一般缺漏，更不改0。year_counts分開原位置、數值、缺漏與不可用；trend_summary.single_continuous_series明列整段是否單一原序列。只連drawable=true的邊。
 
@@ -37,6 +37,6 @@ selected=true可包含missing或unusable，須同讀point_value及原狀態。�
 
 ## 缺口與驗證
 
-2012原文有少量分館／閱覽室分項，完整22縣市核心原量表仍未取得；不拿components、比率或人口乘算補成原量。全臺歷年仍未齊，未登錄範圍完整保留在原路由，缺口不表示官方沒公布。
+2012年教育部縣市別另有22縣市原量。國圖與國資圖同口徑核心原表仍待查；不拿分項、比率或人口反推缺值。全臺歷年仍未齊，未登錄範圍完整保留在原路由，缺口不表示官方沒公布。
 
 [固定來源案例驗收](../research/phase3-engine-review.md)保留24例、CLI、缺值／0／分類roundtrip與拒用反例；格式與更新另由獨立validator檢查。[Gemini文字邊界檢視](../research/phase3-gemini-boundary-review.json)只讀提供的契約，未查網；擴大成測量真零、重寫原狀態或假設圖表皆近似值的推論未採納。數值、雜湊與座標均由Python實際執行，非官方背書或人類逐格雙校。

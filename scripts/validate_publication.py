@@ -31,7 +31,7 @@ MANIFEST_NAME = "PUBLICATION_MANIFEST.json"
 PUBLICATION_ONLY_FIELDS = {"snapshot_distribution", "public_evidence_path", "public_evidence_sha256", "public_projection_policy"}
 CONTACT_PARTS = ("行動電話", "市話", "電子郵件", "電子信箱", "聯絡電話", "聯絡人", "聯絡資訊", "聯絡方式", "手機號", "傳真")
 CONTACT_ENGLISH = {"email", "emailaddress", "tel", "telephone", "phone", "phonenumber", "mobile", "mobilenumber", "mobilephone", "fax", "contact", "contactname", "contactperson", "contactemail", "contactphone", "authorphone"}
-SOURCE_MARKERS = {"無", "未新增", "未統計", "-", "--", "—", "–", "…", "...", "N/A", "NA", "n/a"}
+SOURCE_MARKERS = {"無", "未新增", "未統計", "-", "－", "--", "—", "–", "…", "...", "N/A", "NA", "n/a"}
 NOT_APPLICABLE_MARKERS = {"N/A", "NA", "n/a", "不適用"}
 NULL_STATUSES = {"source_blank", "source_null", "source_marker", "not_available_in_source", "not_applicable"}
 
@@ -382,6 +382,20 @@ def validate(root: Path, allow_no_manifest: bool = False) -> dict:
             require(rel in manifest_files or not manifest_present, "Annual partition not inventoried")
             content = actual.read_bytes()
             require(hashlib.sha256(content).hexdigest() == partition["sha256"], "Annual partition hash mismatch")
+            if 'bytes' in partition:
+                require(len(content) == partition['bytes'], "Annual partition byte size mismatch")
+            if partition.get('compression') == 'gzip':
+                require(year is not None and rel == f'data/by_year/{year}.jsonl.gz', "Invalid gzip annual partition path")
+                try:
+                    content = gzip.decompress(content)
+                except (OSError, EOFError) as error:
+                    raise ValidationError("Invalid or incomplete gzip annual partition") from error
+                require(len(content) == partition.get('uncompressed_bytes') and
+                        hashlib.sha256(content).hexdigest() == partition.get('uncompressed_sha256'),
+                        "Annual partition uncompressed content mismatch")
+            else:
+                require(partition.get('compression') is None and actual.suffix == '.jsonl',
+                        "Unknown annual partition transport")
             entries = [json.loads(line) for line in content.splitlines() if line.strip()]
             require(len(entries) == partition["records"] and all(type(row.get("data_year")) is type(year) and row.get("data_year") == year for row in entries), "Annual partition rows/year mismatch")
             union.update(content); total += len(entries); years.append(partition["data_year"])
@@ -472,6 +486,20 @@ def self_test() -> bool:
             self.assertEqual(report["annual_partition_union_checked"],1)
             self.assertEqual(report["canonical_jsonl_path"],"data/combined/observations.jsonl.gz")
 
+        def test_gzip_annual_partition_preserves_logical_union(self):
+            content = self.compressed_fixture()
+            folder = self.root / 'data/by_year'
+            index = read_json(folder / 'index.json')
+            stored = gzip.compress(content, mtime=0)
+            (folder / '2025.jsonl.gz').write_bytes(stored)
+            (folder / '2025.jsonl').unlink()
+            index['partitions'][0].update(path='data/by_year/2025.jsonl.gz', compression='gzip',
+                bytes=len(stored), sha256=hashlib.sha256(stored).hexdigest(),
+                uncompressed_bytes=len(content), uncompressed_sha256=hashlib.sha256(content).hexdigest())
+            (folder / 'index.json').write_text(json.dumps(index))
+            self.write_manifest()
+            self.assertEqual(validate(self.root)['annual_partition_union_checked'], 1)
+
         def test_truncated_gzip_does_not_pass_as_partial_data(self):
             self.compressed_fixture();p=self.root/"data/combined/observations.jsonl.gz";p.write_bytes(p.read_bytes()[:-5]);self.write_manifest()
             with self.assertRaisesRegex(ValidationError,"complete canonical"):validate(self.root)
@@ -549,7 +577,7 @@ def self_test() -> bool:
 
         def test_null_statuses_require_matching_original_representations(self):
             cases = [("source_blank", ""), ("source_blank", "  "), ("source_null", None),
-                     ("source_marker", "—"), ("not_available_in_source", "…"),
+                     ("source_marker", "—"), ("source_marker", "－"), ("not_available_in_source", "…"),
                      ("not_applicable", "N/A"), ("not_applicable", "不適用")]
             for status, raw in cases:
                 with self.subTest(status=status, raw=raw):

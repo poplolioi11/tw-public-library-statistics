@@ -2,7 +2,7 @@
 
 > 整理官方已公開、可驗證來源的公共圖書館統計事實與明確開放資料，支援公眾理解和研究重現。現有官方跨年圖表與名詞字典已存在；本專案不宣稱首創。
 
-版本 0.9.2；建置日 2026-11-01。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.9.2。
+版本 0.10.0；建置日 2026-11-27。已公開：https://github.com/poplolioi11/tw-public-library-statistics；版本下載：https://github.com/poplolioi11/tw-public-library-statistics/releases/tag/v0.10.0。
 
 ## 正式入口
 
@@ -30,7 +30,7 @@
 
 只用 data/combined/ 的三種觀測檔分析；data/observations.*、component_records 與 derived/ 是組件或中間結果，可能含來源重複，不得再併入。
 
-目前 58,269 筆來源觀測紀錄，含 206 格明示缺值、1,303 格原印留白、5,413 格原印文字狀態及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。 批次完整性見docs/historical-batches.json；不宣稱全臺歷年皆完整。
+目前 77,011 筆來源觀測紀錄，含 206 格明示缺值、1,317 格原印留白、8,131 格原印文字狀態及不同出版版本。紀錄數不是圖書館間數，也不能整表相加。 批次完整性見docs/historical-batches.json；不宣稱全臺歷年皆完整。
 
 source_family=主計總處縣市公共館數，source_id=dgbas-county-library-Z091101a029。644=28年×（22縣市+總計）；1998–2005全部為來源明示缺值「-」184格，2006–2025有數值460格。該族群184明示缺值須與其他來源的缺值／留白分開。不是644個非缺值觀測，不能補零。
 
@@ -48,24 +48,25 @@ value=null 要看value_status；source_blank是原印留白，not_available_in_s
 
 <!-- BEGIN generated-historical-scope -->
 來源族群包含source_family=國家圖書館閱讀報告統計事實；與年鑑分開。
-2012年原文中每人購書／擁書／借閱比率分別列22／22／22縣市；館員服務人口只列21縣市，未列連江縣。22縣市核心原量表仍未取得，不能由比率反算。閱讀報告所列表只有全國彙總，不能冒充縣市表。 2015原刊部分縣市標籤未確認、兩列均印金門，保留183筆標籤不確定觀測，不補成連江或硬接現行界線。 其他原刊地理標籤疑義按資料年分列：2024年36格；原印名稱與數字保留，這些格不計為已確認縣市覆蓋。 2015表17標題「場次」與正文「人次」衝突，161格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。 其他原欄頭與正文計量口徑衝突：2005年51格；unit留空，原單位與出處另存，不視為純圖書冊數。 原表人數／人次的計數口徑未釐清之格位保留unit=null：2005年3格、2016年23格；unit_raw照原欄頭保留。
+2026-11-27來源批次與待辦：docs/source-refresh-20261127.json。
+2012年原文中每人購書／擁書／借閱比率分別列22／22／22縣市；館員服務人口只列21縣市，未列連江縣。國圖102卷及國資圖同口徑完整22縣市核心原表仍未取得，不由原報比率反算。閱讀報告所列年度表為全國彙總。 教育部「101縣」工作表另有2012年22縣市原量；使用時保留教育部的母體、原表行政區、單位與缺值。 2015原刊部分縣市標籤未確認、兩列均印金門，保留183筆標籤不確定觀測，不補成連江或硬接現行界線。 其他原刊地理標籤疑義按資料年分列：2024年36格；原印名稱與數字保留，這些格不計為已確認縣市覆蓋。 2015表17標題「場次」與正文「人次」衝突，161格單位保留null及source_heading_conflict_unresolved；人次僅是unit_interpretation_candidate，不是已確認單位。 其他原欄頭與正文計量口徑衝突：2005年51格；unit留空，原單位與出處另存，不視為純圖書冊數。 原表人數／人次的計數口徑未釐清之格位保留unit=null：2005年3格、2016年23格；unit_raw照原欄頭保留。
 歷史批次入口：docs/historical-batches.json及docs/historical-batches.md。
 <!-- END generated-historical-scope -->
 
 <!-- BEGIN phase1 -->
-第一階段版本 0.9.2：先讀docs/phase1-summary.json與docs/phase1-data-dictionary.json。來源角色、候選與年主題索引不是營運觀測；來源格新層和canonical保持分開。按工作表小量讀取：docs/phase1-source-cell-partitions.json。未知不補值，2012原量缺口保留，跨年可比尚未認證。
+第一階段版本 0.10.0：先讀docs/phase1-summary.json與docs/phase1-data-dictionary.json。來源角色、候選與年主題索引不是營運觀測；來源格新層和canonical保持分開。按工作表小量讀取：docs/phase1-source-cell-partitions.json。未知不補值，2012原量缺口保留，跨年可比尚未認證。
 <!-- END phase1 -->
 
 <!-- BEGIN phase2 -->
-第二階段 v0.9.2：docs/phase2-summary.json與docs/phase2-statuses.json為入口；derived/phase2/annotations.csv.gz、annotations.jsonl.gz及definitions.sqlite是口徑註記，不是新增營運量。按年度小檔：docs/phase2-partitions.json。比較工具scripts/compare_definitions.py；source_series_only/unresolved不准默接，published_panel_limited只限原刊面板，所有原值不變。
+第二階段 v0.10.0：docs/phase2-summary.json與docs/phase2-statuses.json為入口；derived/phase2/annotations.csv.gz、annotations.jsonl.gz及definitions.sqlite.gz是口徑註記，不是新增營運量。按年度小檔：docs/phase2-partitions.json。比較工具scripts/compare_definitions.py；source_series_only/unresolved不准默接，published_panel_limited只限原刊面板，所有原值不變。
 <!-- END phase2 -->
 
 <!-- BEGIN phase3 -->
-第三階段v0.9.2：docs/phase3-question-index.json與docs/PHASE3.md為入口；小檔docs/phase3-partitions.json。scripts/select_sources.py --list / --profile ID / --lookup layer:ID。selected包含missing/unusable；只用drawable=true的edge，不反推2012核心原量。互動折線site/phase3.html#line-charts；完整原刊數列site/phase2.html#line-charts。
+第三階段v0.10.0：docs/phase3-question-index.json與docs/PHASE3.md為入口；小檔docs/phase3-partitions.json。scripts/select_sources.py --list / --profile ID / --lookup layer:ID。selected包含missing/unusable；只用drawable=true的edge，不反推2012核心原量。互動折線site/phase3.html#line-charts；完整原刊數列site/phase2.html#line-charts。
 <!-- END phase3 -->
 
 <!-- BEGIN discovered-20261028 -->
-v0.9.2 complete selected new originals: 20358 canonical cells / 12 documents; raw/discovered-20261028/extraction-metadata.json. Unknown year remains null (467); source_time_reference JSON preserves source context/merged scope/formula; source_cell_note_raw preserves verification method. Historical discovery/probe v0.8 is not another observation layer. No aggregation, imputation or cross-source panel permission.
+v0.10.0 complete selected new originals: 20358 canonical cells / 12 documents; raw/discovered-20261028/extraction-metadata.json. Unknown year remains null (467); source_time_reference JSON preserves source context/merged scope/formula; source_cell_note_raw preserves verification method. Historical discovery/probe v0.8 is not another observation layer. No aggregation, imputation or cross-source panel permission.
 <!-- END discovered-20261028 -->
 
 <!-- BEGIN metadata-review-20261029 -->
@@ -80,11 +81,11 @@ v0.9.1 metadata only: 14596 source-backed unit confirmations, 1690 units remain 
 ## Public lightweight chart viewer
 
 https://poplolioi11.github.io/tw-public-library-statistics/
-Viewer version 1.1.0; dataset version 0.9.2. Presentation-only chart and explicitly registered source-table shards; use the canonical/phase1/phase2/phase3 files for complete analysis. Never infer missing observations from the chart catalog. Every numeric point retains official source URL, source SHA, locator and version. docs/LIGHTWEIGHT_SITE.md describes the projection.
+Viewer version 1.1.0; dataset version 0.10.0. Presentation-only chart and explicitly registered source-table shards; use the canonical/phase1/phase2/phase3 files for complete analysis. Never infer missing observations from the chart catalog. Every numeric point retains official source URL, source SHA, locator and version. docs/LIGHTWEIGHT_SITE.md describes the projection.
 
 
 Source table batch: https://poplolioi11.github.io/tw-public-library-statistics/?batch=ncl94-statistics . All24observations/16physical cells from NCL94 tables145/146/147, data year2004, are preserved as a table. Primary quantities and answering-library counts are distinct. No new approved temporal edges. Human sample reading and independent double collation remain incomplete.
 <!-- END lightweight-site -->
 
 
-完整CSV及SQLite以gzip無損壓縮提供；先解壓即可用一般CSV／SQLite工具，Release另附相同解壓後檔案。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。
+完整CSV及SQLite以gzip無損壓縮提供；Release附件同樣為gzip壓縮檔，先解壓即可用一般CSV／SQLite工具。`record_io`依publication-profile自動讀取JSONL／CSV，SQLite驗證以暫存解壓檔查核；壓縮前後的統計值、SQL NULL與來源定位不變。

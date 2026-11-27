@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""365-day conditional official-source checks; changed originals require review."""
+"""Conditional checks of registered official versions; changes require review."""
 import argparse, datetime, hashlib, json, urllib.error, urllib.request
 from pathlib import Path
 
@@ -8,7 +8,9 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def source_documents(root):
     """Only explicitly reviewed manifests; never search or guess source URLs."""
-    paths=['raw/discovered-20261028/documents.json','raw/ncl94-statistics/documents.json']
+    paths=['raw/discovered-20261028/documents.json','raw/ncl94-statistics/documents.json',
+           'raw/moe-library-ods/documents.json','raw/ncl-early-statistics/documents.json',
+           'raw/ncl-reading-2025/documents.json']
     docs=[];seen=set()
     for name in paths:
         path=root/name
@@ -29,7 +31,8 @@ def run(root=ROOT,offline=False):
     for doc in docs:
         sid=doc['candidate_id'];prior=states.get(sid,{})
         previous=datetime.datetime.fromisoformat(prior.get('checked_at',doc['retrieved_at']))
-        if offline or (now-previous).total_seconds()<doc.get('recheck_interval_days',365)*86400:continue
+        interval=doc.get('recheck_interval_days',90 if sid=='moe-library-ods' else 365)
+        if offline or (now-previous).total_seconds()<interval*86400:continue
         headers={'User-Agent':'tw-public-library-statistics/1.0 (historical-source-version-check)'}
         if prior.get('etag'):headers['If-None-Match']=prior['etag']
         if prior.get('last_modified'):headers['If-Modified-Since']=prior['last_modified']
@@ -60,7 +63,7 @@ def run(root=ROOT,offline=False):
         except Exception as error:
             errors.append({'source_id':sid,'error':str(error),'previous_verified_batch_retained':True})
     statepath.write_text(json.dumps(states,ensure_ascii=False,indent=2)+'\n')
-    return {'policy':'365d; official URLs only, conditional HTTP; changes held, never auto-published',
+    return {'policy':'365d archived originals, 90d live MOE workbook; checked only when the update runs. Official URLs only; changed bytes held for review.',
             'registered_sources':len(docs),'checked_sources':len(checked),'changed_sources':changes,'errors':errors,'offline':offline}
 
 

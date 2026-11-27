@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-01T12:03:32.563186+00:00",
+  "checked_at": "2026-11-27T15:53:46.044169+00:00",
   "status": "pass",
-  "assertions": 1288537,
+  "assertions": 1307279,
   "scope": "3091 core source cells exhaustively checked; all NCL adapter lineage/number states checked. Complete independently fixed glyph grids for explicitly reviewed cohorts and image/header/row/footnote selections are separately bounded in each evidence report. Older source review limits remain individually reported.",
   "independent_of_pipeline_and_extractors": true,
   "network_used": false,
@@ -474,7 +474,7 @@
   },
   "components": {
     "status": "pass",
-    "canonical_records_checked": 55178,
+    "canonical_records_checked": 73920,
     "local_raw_documents_checked": 35,
     "local_raw_cells_and_derived_rows_checked": 25184,
     "blank_non_observation_raw_rows_excluded": 5,
@@ -483,13 +483,13 @@
     "conflicting_value_groups": 0,
     "historical_adapter_records_checked": 1489,
     "additional_ncl_expected_records": 17912,
-    "complete_discovered_original_records_separately_verified": 20382,
+    "complete_discovered_original_records_separately_verified": 39124,
     "explicit_missing_source_markers_retained": 4,
     "pdf_raw_files_hash_checked": 6,
     "local_verification_level": "All original JSON cells and complete original objects vs derived; every nonduplicate adapter record vs derived and raw.",
     "historical_verification_level": "Every adapter record vs derived and PDF source hashes; NCL visual sample scope reported separately. DGBAS PDF content not independently transcribed in this adapter review.",
     "inputs": {
-      "components_sha256": "dc341994db14e0379341d4dc009a5f4e159aa38c31e0e1f1ac5014c93ba13f9c",
+      "components_sha256": "de6410e1cb8cb24ec543cab6b57694eef0c51568944489ef7e808b81659aa520",
       "local_derived_sha256": "d7ae5850837da2c085668ee8f7f5ad260fc76bb06fc1d929d70447932bd063da"
     }
   },
@@ -526,6 +526,26 @@
           "public_projection_policy",
           "snapshot_distribution"
         ]
+      },
+      "moe-library-ods": {
+        "canonical_observations_checked": 18632,
+        "source_sha256": "b84bb8cc4f05283aebf429bc6dc082232e3eaf432f510a60201a3e9e1709aa42"
+      },
+      "ncl-ed90-statistics": {
+        "canonical_observations_checked": 23,
+        "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a"
+      },
+      "ncl-ed92-statistics": {
+        "canonical_observations_checked": 24,
+        "source_sha256": "681cace80653b4fb85e5cfb2c6f952152816f54b54ad40f76f9630720364f93e"
+      },
+      "ncl-ed93-statistics": {
+        "canonical_observations_checked": 24,
+        "source_sha256": "df50b5a3d7b2bbe88b2cc15f2a021630ec3123a5a6fd480241884f72e80194f7"
+      },
+      "ncl-reading-2025-report": {
+        "canonical_observations_checked": 39,
+        "source_sha256": "ad221212e57e12b5b8458455b765956b684f5bcd1808a1f8e83b33f0e8846288"
       }
     }
   },
@@ -725,9 +745,9 @@
   },
   "combined": {
     "status": "pass",
-    "records_checked": 58269,
+    "records_checked": 77011,
     "all_original_fields_preserved": true,
-    "snapshot_sha256": "3eab06103b4ea41d7ed9db7b8d61a057143a04ad8105feb599548d5807224031"
+    "snapshot_sha256": "73898142ce745726e2824de217da66b7e7d7b9f0c8d3d4039e894e562dba6d52"
   },
   "ncl_v02_targeted_image_review": {
     "report_path": "research/ncl-v02-independent-image-samples.json",

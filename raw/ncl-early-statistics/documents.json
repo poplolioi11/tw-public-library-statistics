@@ -1,0 +1,44 @@
+{
+  "documents": [
+    {
+      "candidate_id": "ncl-ed92-statistics",
+      "source_sha256": "681cace80653b4fb85e5cfb2c6f952152816f54b54ad40f76f9630720364f93e",
+      "title": "中華民國九十二年圖書館年鑑：圖書館統計章",
+      "edition_raw": "中華民國九十二年圖書館年鑑",
+      "source_local_path": "raw/ncl-early-statistics/yearbook-92-statistics.pdf",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565619396807101",
+      "retrieved_at": "2026-10-28T09:35:06.139082+00:00",
+      "source_bytes": 629928,
+      "source_version_id": "ncl-ed92-statistics@sha256:681cace80653b4fb85e5cfb2c6f952152816f54b54ad40f76f9630720364f93e",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed"
+    },
+    {
+      "candidate_id": "ncl-ed93-statistics",
+      "source_sha256": "df50b5a3d7b2bbe88b2cc15f2a021630ec3123a5a6fd480241884f72e80194f7",
+      "title": "中華民國九十三年圖書館年鑑：圖書館統計章",
+      "edition_raw": "中華民國九十三年圖書館年鑑",
+      "source_local_path": "raw/ncl-early-statistics/yearbook-93-statistics.pdf",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/librarianship-yearbook/0Q083565582148900528",
+      "retrieved_at": "2026-10-28T09:35:05.805332+00:00",
+      "source_bytes": 1883323,
+      "source_version_id": "ncl-ed93-statistics@sha256:df50b5a3d7b2bbe88b2cc15f2a021630ec3123a5a6fd480241884f72e80194f7",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed"
+    },
+    {
+      "candidate_id": "ncl-ed90-statistics",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "title": "中華民國九十年圖書館年鑑：圖書館統計資料",
+      "edition_raw": "中華民國九十年圖書館年鑑",
+      "source_local_path": "raw/ncl-early-statistics/yearbook-90-statistics.pdf",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/tw/XCProduct/Cont?SId=0Q083565818875133522&XsmSId=0Q035603820559491425&sq=",
+      "publication_date": "2002-01-01",
+      "retrieved_at": "2026-11-27T15:38:57.311351+00:00",
+      "source_bytes": 16634553,
+      "source_version_id": "ncl-ed90-statistics@sha256:45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "rights_status": "published_statistical_facts_only_full_document_license_unconfirmed"
+    }
+  ]
+}

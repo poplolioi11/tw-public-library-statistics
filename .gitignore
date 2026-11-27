@@ -62,3 +62,4 @@ raw/ncl-20*/*.private.*
 /data/combined/observations.csv
 /data/combined/library_statistics.sqlite
 /derived/discovered_20261028_observations.jsonl
+/derived/moe_library_ods_observations.jsonl

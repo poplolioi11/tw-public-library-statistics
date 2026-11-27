@@ -3,10 +3,11 @@
   "jsonl_compression": "gzip",
   "canonical_jsonl_path": "data/combined/observations.jsonl.gz",
   "component_jsonl_path": "data/component_records.jsonl.gz",
-  "rationale": "Lossless gzip for complete JSONL/CSV/SQLite files exceeding the repository per-file limit; yearly JSONL stays plain. Release CSV/SQLite assets are decompressed byte-identical copies.",
+  "rationale": "Lossless gzip for complete JSONL/CSV/SQLite files exceeding the repository per-file limit; yearly JSONL stays plain. Release assets use the same declared gzip transport.",
   "lossless_gzip_paths": [
     "data/combined/observations.csv",
     "data/combined/library_statistics.sqlite",
-    "derived/discovered_20261028_observations.jsonl"
+    "derived/discovered_20261028_observations.jsonl",
+    "derived/moe_library_ods_observations.jsonl"
   ]
 }

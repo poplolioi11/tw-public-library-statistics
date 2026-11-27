@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 import cohort_registry
 import record_io
-from validate_source_discovery import partition_formal_batches
+from validate_source_discovery import NOV_FORMAL_ROWS, partition_formal_batches
 from verify_release import canonical_adapter_count
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -15,6 +15,8 @@ class FormalBatchScope(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.new_rows=list(record_io.rows(ROOT,'derived/ncl94_statistics_observations.jsonl'))
+        for cohort_id in sorted({row[0] for row in NOV_FORMAL_ROWS.values()}):
+            cls.new_rows.extend(record_io.rows(ROOT,f'derived/{cohort_id}_observations.jsonl'))
 
     def new_canonical(self):
         return {row['observation_id']:copy.deepcopy(row) for row in self.new_rows}

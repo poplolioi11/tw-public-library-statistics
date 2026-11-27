@@ -5,6 +5,7 @@ import argparse,ast,gzip,hashlib,json,os,shutil,subprocess,sys,tempfile
 from pathlib import Path
 import phase2_update
 import phase2_engine
+from build_phase3 import SELECTION_SQLITE_PATHS
 
 ROOT=Path(__file__).resolve().parents[1]
 STAGES=('build_phase3.py','build_phase3_reader.py','build_phase3_documentation.py')
@@ -109,7 +110,7 @@ def run(root=ROOT,runner=None):
    for name in STAGES:execute(name)
    execute('validate_phase3.py')
    if input_signature(root)!=inputs:raise ValueError('Phase3 inputs changed during update; previous output retained')
-   if not (root/'docs/phase3-summary.json').is_file() or not (root/'derived/phase3/selection.sqlite').is_file():raise FileNotFoundError('Phase3 stage omitted required output')
+   if not (root/'docs/phase3-summary.json').is_file() or not any((root/name).is_file() for name in SELECTION_SQLITE_PATHS):raise FileNotFoundError('Phase3 stage omitted required output')
    refreshed=refresh_prior_states(root);after=output_hashes(root);write(statepath,{'schema_version':'1.0.0','inputs':inputs,'outputs':after})
   except BaseException:
    for p in output_paths(root):

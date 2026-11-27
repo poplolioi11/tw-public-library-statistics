@@ -36,6 +36,23 @@ FORMAL_DOCUMENTS = {
 ADDITIONAL_FORMAL_ROWS = {
     'ncl-ed94-statistics': ('ncl94_statistics', 'derived/ncl94_statistics_observations.jsonl'),
 }
+NOV_FORMAL_ROWS = {
+    'moe-library-ods': (
+        'moe_library_ods', 18632, 'b84bb8cc4f05283aebf429bc6dc082232e3eaf432f510a60201a3e9e1709aa42',
+        'https://stats.moe.gov.tw/files/time/library.ods'),
+    'ncl-ed90-statistics': (
+        'ncl_early_statistics', 23, '45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a',
+        'https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf'),
+    'ncl-ed92-statistics': (
+        'ncl_early_statistics', 24, '681cace80653b4fb85e5cfb2c6f952152816f54b54ad40f76f9630720364f93e',
+        'https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf'),
+    'ncl-ed93-statistics': (
+        'ncl_early_statistics', 24, 'df50b5a3d7b2bbe88b2cc15f2a021630ec3123a5a6fd480241884f72e80194f7',
+        'https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf'),
+    'ncl-reading-2025-report': (
+        'ncl_reading_2025', 39, 'ad221212e57e12b5b8458455b765956b684f5bcd1808a1f8e83b33f0e8846288',
+        'https://www.ncl.edu.tw/files/file_pool/1/0Q120145388038649336/df66cab6-10d6-4502-9fbb-6a8db59a339c.pdf'),
+}
 PUBLICATION_FIELDS = {'snapshot_distribution', 'public_evidence_path', 'public_evidence_sha256', 'public_projection_policy'}
 LAYER_NONSTATISTICAL_FIELDS = PUBLICATION_FIELDS | {'original_fields'}
 OTHER_LAYERS = {'local_statistical_cells': 'derived/phase1_local_sources_long.jsonl',
@@ -58,9 +75,8 @@ def stable(value):
 def partition_formal_batches(root, canonical, require_originals=False):
     """Keep the immutable twelve-source batch separate from later reviewed facts.
 
-    An ID prefix alone never authorizes a new source. The only later batch
-    currently supported here has a reviewed registry entry, a pinned validator,
-    and exact derived-to-canonical equality for every non-publication field.
+    An ID prefix alone never authorizes a new source. Later documents require a reviewed registry entry, fixed source provenance,
+    and derived-to-canonical equality for every non-publication field.
     """
     root = Path(root)
     legacy, later = {}, {}
@@ -68,7 +84,7 @@ def partition_formal_batches(root, canonical, require_originals=False):
         document = row.get('component_source_id')
         if document in FORMAL_DOCUMENTS:
             legacy[identifier] = row
-        elif document in ADDITIONAL_FORMAL_ROWS:
+        elif document in ADDITIONAL_FORMAL_ROWS or document in NOV_FORMAL_ROWS:
             later.setdefault(document, {})[identifier] = row
         else:
             raise ValueError('unreviewed or rights-held formal source: ' + str(document))
@@ -104,6 +120,32 @@ def partition_formal_batches(root, canonical, require_originals=False):
                  'later formal/canonical statistical or provenance fields differ: ' + identifier)
         reports[document] = {**report, 'canonical_observations_checked': len(expected),
                              'publication_only_field_differences_allowed': sorted(PUBLICATION_FIELDS)}
+    from cohort_registry import load as load_cohorts
+    registered = {group['id']: group for group in (load_cohorts(root) or [])}
+    for document, (cohort_id, count, digest, url) in NOV_FORMAL_ROWS.items():
+        relative = f'derived/{cohort_id}_observations.jsonl'
+        present = later.get(document, {})
+        if cohort_id not in registered and not present and not record_io.path_for(root, relative).is_file():
+            continue
+        group = registered.get(cohort_id, {})
+        need(group.get('canonical_jsonl') == relative and relative in group.get('outputs', []),
+             'Missing canonical registration: ' + document)
+        expected = [row for row in record_io.rows(root, relative) if row['component_source_id'] == document]
+        expected_ids = {row['observation_id'] for row in expected}
+        need(len(expected) == len(expected_ids) == count and expected_ids == present.keys(),
+             'Incomplete formal observation set: ' + document)
+        for row in expected:
+            identifier = row['observation_id']
+            need(row['source_sha256'] == digest and row['source_version_id'] == f'{document}@sha256:{digest}',
+                 'Official source version changed: ' + identifier)
+            need(row['source_url'].split('#', 1)[0] == url and bool(row['source_locator']),
+                 'Original URL or table location differs: ' + identifier)
+            expected_id = 'obs-' + hashlib.sha256((digest + '|' + row['source_record_id']).encode()).hexdigest()[:22]
+            need(identifier == expected_id, 'Source identity differs: ' + identifier)
+            source_fields = {key: value for key, value in row.items() if key not in PUBLICATION_FIELDS}
+            canonical_fields = {key: value for key, value in present[identifier].items() if key not in PUBLICATION_FIELDS}
+            need(source_fields == canonical_fields, 'Canonical statistical or provenance fields differ: ' + identifier)
+        reports[document] = {'canonical_observations_checked': count, 'source_sha256': digest}
     return legacy, reports
 
 

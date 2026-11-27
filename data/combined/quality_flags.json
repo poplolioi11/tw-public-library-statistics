@@ -493,11 +493,223 @@
     "derived/discovered_central_20261028_metadata.json",
     "derived/discovered_local_20261028_metadata.json",
     "derived/discovered_ncl_early_20261028_metadata.json",
-    "raw/ncl94-statistics/extraction-metadata.json"
+    "raw/ncl94-statistics/extraction-metadata.json",
+    "raw/moe-library-ods/documents.json",
+    "raw/moe-library-ods/extraction-metadata.json",
+    "raw/ncl-early-statistics/documents.json",
+    "raw/ncl-reading-2025/documents.json",
+    "raw/ncl-reading-2025/extraction-metadata.json"
   ],
   "reviewed_cohort_registry": "data/reviewed_historical_cohorts.json",
   "historical_batch_inventory": "docs/historical-batches.json",
   "flagged_historical_cells": [
+    {
+      "observation_id": "obs-3d5d1713de70643a337810",
+      "source_id": "discovered-ncl-ed90-statistics-t151",
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 1; numeric column 1; quantity primary; bbox 575.714,694.286,674.286,747.143",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-babc853c6237236983c761",
+      "source_id": "discovered-ncl-ed90-statistics-t151",
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 7; numeric column 1; quantity primary; bbox 575.714,990.0,674.286,1031.429",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-2fafe793beae3c53fd67b6",
+      "source_id": "discovered-ncl-ed90-statistics-t151",
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 2; numeric column 1; quantity primary; bbox 575.714,747.143,674.286,795.714",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-1c03614707c3d6645305a8",
+      "source_id": "discovered-ncl-ed90-statistics-t151",
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 5; numeric column 1; quantity primary; bbox 575.714,894.286,674.286,942.857",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-775c7d61dbfe5612e22e4b",
+      "source_id": "discovered-ncl-ed90-statistics-t151",
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 6; numeric column 1; quantity primary; bbox 575.714,942.857,674.286,990.0",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-acdf3600b58ad52b6df462",
+      "source_id": "discovered-ncl-ed90-statistics-t151",
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 3; numeric column 1; quantity primary; bbox 575.714,795.714,674.286,845.714",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-c759f389cbce70d88dc656",
+      "source_id": "discovered-ncl-ed90-statistics-t151",
+      "source_locator": "PDF page 5; printed page 681; table 151; source row 4; numeric column 1; quantity primary; bbox 575.714,845.714,674.286,894.286",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-8b15341e701128cc0b0883",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 1; quantity primary; bbox 387.143,725.714,624.286,781.429",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-09623f16a7e669d105bcd3",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 1; quantity responding_libraries; bbox 387.143,725.714,624.286,781.429",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-4b94b19f98d602628ab27a",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 2; quantity primary; bbox 624.286,725.714,862.857,781.429",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_no_matching_text_ai_visual_only\",\"printed_dash_meaning_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "席位",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-d92b50cc633df4a96e6766",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 3; quantity primary; bbox 862.857,725.714,1102.857,781.429",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "人次",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-5766e973a988a564167945",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 3; quantity responding_libraries; bbox 862.857,725.714,1102.857,781.429",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-6cb26d8ea2d3d3e833d18d",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 4; quantity primary; bbox 1102.857,725.714,1340.0,781.429",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-66cdc9888b2aff2c226f75",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 2; numeric column 4; quantity responding_libraries; bbox 1102.857,725.714,1340.0,781.429",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-adc743276a7b13e8a349e4",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 1; quantity primary; bbox 387.143,781.429,624.286,837.143",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-3c0b8cb509d708509633b3",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 1; quantity responding_libraries; bbox 387.143,781.429,624.286,837.143",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-858c88afb711d556db5895",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 2; quantity primary; bbox 624.286,781.429,862.857,837.143",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "席位",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-30a0c51fe080a3a38e8dfb",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 2; quantity responding_libraries; bbox 624.286,781.429,862.857,837.143",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-eb7c972a9f71fa6704229a",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 3; quantity primary; bbox 862.857,781.429,1102.857,837.143",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "人次",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-ee2db6a3ee5f67afe2f74c",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 3; quantity responding_libraries; bbox 862.857,781.429,1102.857,837.143",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-6e9a3084046601065637dd",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 4; quantity primary; bbox 1102.857,781.429,1340.0,837.143",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-099ba0e99fcb93775c94f9",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_locator": "PDF page 6; printed page 682; table 152; source row 3; numeric column 4; quantity responding_libraries; bbox 1102.857,781.429,1340.0,837.143",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-a6890f9db16c9c798ccc4e",
+      "source_id": "discovered-ncl-ed90-statistics-t153",
+      "source_locator": "PDF page 11; printed page 687; table 153; source row 1; numeric column 2; quantity primary; bbox 385.714,550.0,525.714,592.857",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\",\"vision_and_ai_visual_agree\"]",
+      "geographic_scope": "cooperation_membership_public_category",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
     {
       "observation_id": "obs-2f32fb8360917b69a44579",
       "source_id": "discovered-ncl-ed91-public-libraries-t11",
@@ -5890,6 +6102,222 @@
       "unit_status": "printed_column_heading"
     },
     {
+      "observation_id": "obs-ef0578ddbb7580b48eccc1",
+      "source_id": "discovered-ncl-ed92-statistics-t166",
+      "source_locator": "PDF page 6; printed page 564; table 166; source row 1; numeric column 1; quantity primary; bbox 260,290,289,304.5",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-568c28bc47fbccb8335326",
+      "source_id": "discovered-ncl-ed92-statistics-t166",
+      "source_locator": "PDF page 6; printed page 564; table 166; source row 7; numeric column 1; quantity primary; bbox 260,375,289,390",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-4d4a5b98eeca42cf9c2e9c",
+      "source_id": "discovered-ncl-ed92-statistics-t166",
+      "source_locator": "PDF page 6; printed page 564; table 166; source row 2; numeric column 1; quantity primary; bbox 260,304.5,289,318.5",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-9a2056933ae27be5cf48f1",
+      "source_id": "discovered-ncl-ed92-statistics-t166",
+      "source_locator": "PDF page 6; printed page 564; table 166; source row 5; numeric column 1; quantity primary; bbox 260,347,289,361",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-8df0147aa42c704082c4a2",
+      "source_id": "discovered-ncl-ed92-statistics-t166",
+      "source_locator": "PDF page 6; printed page 564; table 166; source row 6; numeric column 1; quantity primary; bbox 260,361,289,375",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-c4d82b71fac2cc2fbcde11",
+      "source_id": "discovered-ncl-ed92-statistics-t166",
+      "source_locator": "PDF page 6; printed page 564; table 166; source row 3; numeric column 1; quantity primary; bbox 260,318.5,289,332.5",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-b2ede861536a2cd95f6314",
+      "source_id": "discovered-ncl-ed92-statistics-t166",
+      "source_locator": "PDF page 6; printed page 564; table 166; source row 4; numeric column 1; quantity primary; bbox 260,332.5,289,347",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-d5ff7f0acfd7c72ca3e782",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 2; numeric column 1; quantity primary; bbox 164,300,269,316",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-08b339b1aa30795cd7a121",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 2; numeric column 1; quantity responding_libraries; bbox 164,316,269,333",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-38a6185a83b91f98d31dbd",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 2; numeric column 2; quantity primary; bbox 269,300,354,316",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "席位",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-106c97efe1dbb9a11c4b97",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 2; numeric column 2; quantity responding_libraries; bbox 269,316,354,333",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-5b9c78cdd405ef7313e4be",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 2; numeric column 3; quantity primary; bbox 354,300,439,316",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "人次",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-feaf38e21a0b8d70795f1b",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 2; numeric column 3; quantity responding_libraries; bbox 354,316,439,333",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-c33a3d9df82e61f2d187de",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 2; numeric column 4; quantity primary; bbox 439,300,524,316",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-143f3f015b8149b817ac59",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 2; numeric column 4; quantity responding_libraries; bbox 439,316,524,333",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-846c5cae6f9d1fb2d0efcc",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 3; numeric column 1; quantity primary; bbox 164,333,269,350",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-221d492c4da8e79d7eea8e",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 3; numeric column 1; quantity responding_libraries; bbox 164,350,269,366",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-368d0dd22354c36ab3b003",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 3; numeric column 2; quantity primary; bbox 269,333,354,350",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "席位",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-cf83198f67cf2de777ddd3",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 3; numeric column 2; quantity responding_libraries; bbox 269,350,354,366",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-d59f516c832b6364d6fab9",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 3; numeric column 3; quantity primary; bbox 354,333,439,350",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "人次",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-bfba3f3d96c20a0e327995",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 3; numeric column 3; quantity responding_libraries; bbox 354,350,439,366",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-8f5d1803193f7df43371f8",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 3; numeric column 4; quantity primary; bbox 439,333,524,350",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-8a20eee0ba5a96c3933121",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_locator": "PDF page 7; printed page 565; table 167; source row 3; numeric column 4; quantity responding_libraries; bbox 439,350,524,366",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-0a0bda026b3eed1fb07c6c",
+      "source_id": "discovered-ncl-ed92-statistics-t168",
+      "source_locator": "PDF page 12; printed page 570; table 168; source row 1; numeric column 2; quantity primary; bbox 201,232,226,246",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "cooperation_membership_public_category",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
       "observation_id": "obs-b89460d8e6dad213c1f6e8",
       "source_id": "discovered-ncl-ed93-public-libraries-t16",
       "source_locator": "PDF page 2; printed page 109; table 16; source row 2; numeric column 8; bbox 428.380,572.250,455.120,588.880",
@@ -6221,6 +6649,222 @@
       "geographic_scope": "county",
       "unit": "人",
       "unit_status": "printed_column_heading"
+    },
+    {
+      "observation_id": "obs-f7bcc49489369260c39c7a",
+      "source_id": "discovered-ncl-ed93-statistics-t176",
+      "source_locator": "PDF page 5; printed page 448; table 176; source row 1; numeric column 1; quantity primary; bbox 215,222,249,236",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-ab76b5d0582c19e9e9dc4f",
+      "source_id": "discovered-ncl-ed93-statistics-t176",
+      "source_locator": "PDF page 5; printed page 448; table 176; source row 7; numeric column 1; quantity primary; bbox 215,314,249,330",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-283d79ecaa94a31d798845",
+      "source_id": "discovered-ncl-ed93-statistics-t176",
+      "source_locator": "PDF page 5; printed page 448; table 176; source row 2; numeric column 1; quantity primary; bbox 215,236,249,252",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-108bed19a848e61551b9be",
+      "source_id": "discovered-ncl-ed93-statistics-t176",
+      "source_locator": "PDF page 5; printed page 448; table 176; source row 5; numeric column 1; quantity primary; bbox 215,283,249,298",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-a9ad26c5a172ae635959fa",
+      "source_id": "discovered-ncl-ed93-statistics-t176",
+      "source_locator": "PDF page 5; printed page 448; table 176; source row 6; numeric column 1; quantity primary; bbox 215,298,249,314",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-9265519f8089ad612e03b2",
+      "source_id": "discovered-ncl-ed93-statistics-t176",
+      "source_locator": "PDF page 5; printed page 448; table 176; source row 3; numeric column 1; quantity primary; bbox 215,252,249,267",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-b3f73824993cf2865c85c2",
+      "source_id": "discovered-ncl-ed93-statistics-t176",
+      "source_locator": "PDF page 5; printed page 448; table 176; source row 4; numeric column 1; quantity primary; bbox 215,267,249,283",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
+    },
+    {
+      "observation_id": "obs-0e22a52799979cc43e6fad",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 2; numeric column 1; quantity primary; bbox 143,257,226,273",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-9ef2ce5ef0d784aac67671",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 2; numeric column 1; quantity responding_libraries; bbox 143,273,226,288",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-571f18d9be7d1ea4b9e302",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 2; numeric column 2; quantity primary; bbox 226,257,311,273",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "席位",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-ef482f4dbdcd2d4b586294",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 2; numeric column 2; quantity responding_libraries; bbox 226,273,311,288",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-bfd2cef89cecf7294653c7",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 2; numeric column 3; quantity primary; bbox 311,257,396,273",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "人次",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-716a30356d13db1aab48c7",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 2; numeric column 3; quantity responding_libraries; bbox 311,273,396,288",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-2c95eb4e63d52d16bd8771",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 2; numeric column 4; quantity primary; bbox 396,257,481,273",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-39058726d0a38d6ec329f9",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 2; numeric column 4; quantity responding_libraries; bbox 396,273,481,288",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-4a5a365f3816985c8b81b0",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 3; numeric column 1; quantity primary; bbox 143,290,226,307",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-03caf79e41e8433dbaa793",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 3; numeric column 1; quantity responding_libraries; bbox 143,307,226,322",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-8c409e0125a46031aad6f0",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 3; numeric column 2; quantity primary; bbox 226,290,311,307",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "席位",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-3fc028f3e791984ea77386",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 3; numeric column 2; quantity responding_libraries; bbox 226,307,311,322",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-798f1d6f5e6cdbf3ca8f49",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 3; numeric column 3; quantity primary; bbox 311,290,396,307",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "人次",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-1c4c2472da9f4e4a4c12a9",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 3; numeric column 3; quantity responding_libraries; bbox 311,307,396,322",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-38e6c2454f956d2f4438d7",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 3; numeric column 4; quantity primary; bbox 396,290,481,307",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "冊",
+      "unit_status": "literal_column_label"
+    },
+    {
+      "observation_id": "obs-d1320ce9cc3e8359bb18ce",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_locator": "PDF page 6; printed page 449; table 177; source row 3; numeric column 4; quantity responding_libraries; bbox 396,307,481,322",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "published_public_library_type",
+      "unit": "館",
+      "unit_status": "literal_heading_填答館數_identifies_unit_館"
+    },
+    {
+      "observation_id": "obs-5731728de557de9cf294d6",
+      "source_id": "discovered-ncl-ed93-statistics-t178",
+      "source_locator": "PDF page 11; printed page 454; table 178; source row 1; numeric column 2; quantity primary; bbox 153,191,182,207",
+      "quality_flags": "[\"AI_visual_review_not_human_collation\",\"exact_dates_unconfirmed\"]",
+      "geographic_scope": "cooperation_membership_public_category",
+      "unit": null,
+      "unit_status": "literal_quantity_unit_unprinted"
     },
     {
       "observation_id": "obs-c1ce1f17d9b531ae882aa3",

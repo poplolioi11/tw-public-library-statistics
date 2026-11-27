@@ -2,9 +2,9 @@
   "schema_version": "1.0.0",
   "scope_id": "public-library-source-inventory-2005-2025-v1",
   "scope_version": "1.0.0",
-  "dataset_version": "0.9.2",
-  "canonical_records": 58269,
-  "canonical_statistical_content_sha256": "e2131ac19c3661d21283ba54f0ffa86bbf49a8aaa79ead506f273ef6e971eae5",
+  "dataset_version": "0.10.0",
+  "canonical_records": 77011,
+  "canonical_statistical_content_sha256": "322a316f7cd4605237155f28e0d3ada14885b2862060a37a99d722900fb114d7",
   "authority_slots_expected": 88,
   "authority_slots_with_recorded_attempt": 88,
   "authority_check_status_counts": {
@@ -18,12 +18,12 @@
     "checked_relevant_source_found": 8
   },
   "source_candidates_listed": 440,
-  "reviewed_batch_inventory_entries": 19,
-  "raw_source_profiles": 29361,
+  "reviewed_batch_inventory_entries": 22,
+  "raw_source_profiles": 48103,
   "discovery_matrix_cells": 4830,
-  "matched_value_navigation_cells": 2949,
-  "unclassified_observations": 18386,
-  "historical_or_other_raw_region_profiles": 7797,
+  "matched_value_navigation_cells": 3669,
+  "unclassified_observations": 19085,
+  "historical_or_other_raw_region_profiles": 14852,
   "all_original_observation_ids_accounted_for": true,
   "all_history_complete": false,
   "cross_year_comparability_certified": false,
@@ -65,7 +65,7 @@
     },
     {
       "path": "canonical_statistical_content",
-      "sha256": "e2131ac19c3661d21283ba54f0ffa86bbf49a8aaa79ead506f273ef6e971eae5"
+      "sha256": "322a316f7cd4605237155f28e0d3ada14885b2862060a37a99d722900fb114d7"
     },
     {
       "path": "raw/phase1-inventory/central.json",

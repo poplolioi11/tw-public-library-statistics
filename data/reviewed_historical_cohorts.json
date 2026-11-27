@@ -549,6 +549,103 @@
         "raw/ncl94-statistics"
       ],
       "scope": "Complete public-library subsets of NCL94 tables145/146/147:16 physical cells,24 reported quantities including8 parenthesized answering-library counts. Public/private categories, branch-inclusive counts and cooperation membership remain distinct; no cross-source panel or human-review claim."
+    },
+    {
+      "id": "moe_library_ods",
+      "review_status": "source_reviewed",
+      "script": "build_nov2026_sources.py",
+      "args": [
+        "--batch",
+        "moe_library_ods"
+      ],
+      "adapter_kind": "canonical_observations_jsonl",
+      "canonical_jsonl": "derived/moe_library_ods_observations.jsonl",
+      "derived_csv": "derived/moe_library_ods_long.csv",
+      "inputs": [
+        "raw/moe-library-ods/library.ods"
+      ],
+      "dependencies": [
+        "scripts/extract_moe_library_ods.py",
+        "scripts/discovered_20261028_canonical_columns.json",
+        "scripts/build_discovered_20261028.py"
+      ],
+      "outputs": [
+        "derived/moe_library_ods_long.csv",
+        "derived/moe_library_ods_observations.jsonl",
+        "raw/moe-library-ods/documents.json",
+        "raw/moe-library-ods/definition-evidence.json",
+        "raw/moe-library-ods/extraction-metadata.json"
+      ],
+      "raw_directories": [
+        "raw/moe-library-ods"
+      ],
+      "scope": "教育部原工作簿41張表，2005–2025按設立別及2006–2025按縣市別。留白、短橫、0與原標單位分開。"
+    },
+    {
+      "id": "ncl_early_statistics",
+      "review_status": "source_reviewed",
+      "script": "build_nov2026_sources.py",
+      "args": [
+        "--batch",
+        "ncl_early_statistics"
+      ],
+      "adapter_kind": "canonical_observations_jsonl",
+      "canonical_jsonl": "derived/ncl_early_statistics_observations.jsonl",
+      "derived_csv": "derived/ncl_early_statistics_long.csv",
+      "inputs": [
+        "raw/ncl-early-statistics/yearbook-90-statistics.pdf",
+        "raw/ncl-early-statistics/yearbook-92-statistics.pdf",
+        "raw/ncl-early-statistics/yearbook-93-statistics.pdf"
+      ],
+      "dependencies": [
+        "scripts/extract_ncl_early_statistics.py",
+        "scripts/extract_ncl90_statistics.py",
+        "scripts/discovered_20261028_canonical_columns.json",
+        "scripts/build_discovered_20261028.py"
+      ],
+      "outputs": [
+        "derived/ncl_early_statistics_long.csv",
+        "derived/ncl_early_statistics_observations.jsonl",
+        "raw/ncl-early-statistics/documents.json",
+        "raw/ncl-early-statistics/definition-evidence.json",
+        "raw/ncl-early-statistics/source-cells.json",
+        "raw/ncl-early-statistics/edition90-source-cells.json"
+      ],
+      "raw_directories": [
+        "raw/ncl-early-statistics"
+      ],
+      "scope": "90、92、93卷統計章9表之完整公共館子群，2000、2002、2003年，48實體格、71筆，填答館數分列。"
+    },
+    {
+      "id": "ncl_reading_2025",
+      "review_status": "source_reviewed",
+      "script": "build_nov2026_sources.py",
+      "args": [
+        "--batch",
+        "ncl_reading_2025"
+      ],
+      "adapter_kind": "canonical_observations_jsonl",
+      "canonical_jsonl": "derived/ncl_reading_2025_observations.jsonl",
+      "derived_csv": "derived/ncl_reading_2025_long.csv",
+      "inputs": [
+        "raw/ncl-reading-2025/report.pdf"
+      ],
+      "dependencies": [
+        "scripts/extract_ncl_reading_2025.py",
+        "scripts/discovered_20261028_canonical_columns.json",
+        "scripts/build_discovered_20261028.py"
+      ],
+      "outputs": [
+        "derived/ncl_reading_2025_long.csv",
+        "derived/ncl_reading_2025_observations.jsonl",
+        "raw/ncl-reading-2025/documents.json",
+        "raw/ncl-reading-2025/definition-evidence.json",
+        "raw/ncl-reading-2025/extraction-metadata.json"
+      ],
+      "raw_directories": [
+        "raw/ncl-reading-2025"
+      ],
+      "scope": "114年臺灣閱讀風貌表1，2023–2025年13項39年度格，保留原萬級；跨年比較欄另記，沒有併成單年量。"
     }
   ]
 }

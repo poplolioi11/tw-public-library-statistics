@@ -1,0 +1,14 @@
+{
+  "documents": [
+    {
+      "candidate_id": "ncl-reading-2025-report",
+      "title": "114年臺灣閱讀風貌年度報告",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q120145388038649336/df66cab6-10d6-4502-9fbb-6a8db59a339c.pdf",
+      "catalogue_url": "https://www.ncl.edu.tw/tw/books/0Q112333768515788432",
+      "source_local_path": "raw/ncl-reading-2025/report.pdf",
+      "source_sha256": "ad221212e57e12b5b8458455b765956b684f5bcd1808a1f8e83b33f0e8846288",
+      "retrieved_at": "2026-11-27T15:39:53+00:00",
+      "publication_date": "2026-04-23"
+    }
+  ]
+}

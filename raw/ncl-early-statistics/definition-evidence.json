@@ -1,0 +1,749 @@
+{
+  "schema_version": "1.0.0",
+  "source_cards": [
+    {
+      "evidence_id": "p2-nov2026-7155ebeaeaa39c6ce1dceb06",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-ed90-statistics-t151",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=5",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=5"
+      ],
+      "source_locator": {
+        "table": "151",
+        "pdf_pages": [
+          5
+        ],
+        "raw_locator_examples": [
+          "PDF page 5; printed page 681; table 151; source row 1; numeric column 1; quantity primary; bbox 575.714,694.286,674.286,747.143",
+          "PDF page 5; printed page 681; table 151; source row 2; numeric column 1; quantity primary; bbox 575.714,747.143,674.286,795.714",
+          "PDF page 5; printed page 681; table 151; source row 3; numeric column 1; quantity primary; bbox 575.714,795.714,674.286,845.714"
+        ]
+      },
+      "source_table": "151",
+      "source_table_title": "臺閩地區各類型圖書館數量統計表（民國89年）",
+      "source_fields": [],
+      "indicators": [
+        "圖書館數量"
+      ],
+      "series_ids": [
+        "discovered-ncl-ed90-statistics-t151-t151-c1-primary-01befcf2b58b",
+        "discovered-ncl-ed90-statistics-t151-t151-c1-primary-0241dc62b7b7",
+        "discovered-ncl-ed90-statistics-t151-t151-c1-primary-1d1db9a5d352",
+        "discovered-ncl-ed90-statistics-t151-t151-c1-primary-53773a1bdb44",
+        "discovered-ncl-ed90-statistics-t151-t151-c1-primary-59f636c8fdaa",
+        "discovered-ncl-ed90-statistics-t151-t151-c1-primary-7a12dab8757d",
+        "discovered-ncl-ed90-statistics-t151-t151-c1-primary-9b30161b87e3"
+      ],
+      "data_years_present": [
+        2000
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned PDFs. 92/93 text engines and AI image check; 90 AI image reading and Apple Vision OCR.",
+      "semantic_facts": {
+        "retained_units": [],
+        "population_scopes": [
+          "臺閩地區原表公共圖書館區塊／國立",
+          "臺閩地區原表公共圖書館區塊／小計",
+          "臺閩地區原表公共圖書館區塊／省市立",
+          "臺閩地區原表公共圖書館區塊／社教館",
+          "臺閩地區原表公共圖書館區塊／私立",
+          "臺閩地區原表公共圖書館區塊／縣市立",
+          "臺閩地區原表公共圖書館區塊／鄉（鎮、市、區）立"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          2000
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-1c03614707c3d6645305a8",
+        "obs-2fafe793beae3c53fd67b6",
+        "obs-3d5d1713de70643a337810",
+        "obs-775c7d61dbfe5612e22e4b",
+        "obs-acdf3600b58ad52b6df462",
+        "obs-babc853c6237236983c761",
+        "obs-c759f389cbce70d88dc656"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    },
+    {
+      "evidence_id": "p2-nov2026-71e322ce3d2b80ccf4fe52be",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-ed90-statistics-t152",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=6"
+      ],
+      "source_locator": {
+        "table": "152",
+        "pdf_pages": [
+          6
+        ],
+        "raw_locator_examples": [
+          "PDF page 6; printed page 682; table 152; source row 2; numeric column 1; quantity primary; bbox 387.143,725.714,624.286,781.429",
+          "PDF page 6; printed page 682; table 152; source row 2; numeric column 1; quantity responding_libraries; bbox 387.143,725.714,624.286,781.429",
+          "PDF page 6; printed page 682; table 152; source row 2; numeric column 2; quantity primary; bbox 624.286,725.714,862.857,781.429"
+        ]
+      },
+      "source_table": "152",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國89年）",
+      "source_fields": [
+        "借閱人次",
+        "借閱冊數",
+        "填答館數",
+        "閱覽席位",
+        "館藏圖書冊數"
+      ],
+      "indicators": [
+        "借閱人次",
+        "借閱人次／填答館數",
+        "借閱冊數",
+        "借閱冊數／填答館數",
+        "閱覽席位",
+        "閱覽席位／填答館數",
+        "館藏圖書冊數",
+        "館藏圖書冊數／填答館數"
+      ],
+      "series_ids": [
+        "discovered-ncl-ed90-statistics-t152-t152-c1-primary-086d2187e8d9",
+        "discovered-ncl-ed90-statistics-t152-t152-c1-primary-a4a75c3540ee",
+        "discovered-ncl-ed90-statistics-t152-t152-c1-responding_libraries-286561805395",
+        "discovered-ncl-ed90-statistics-t152-t152-c1-responding_libraries-8c0e21534dae",
+        "discovered-ncl-ed90-statistics-t152-t152-c2-primary-00eff245021f",
+        "discovered-ncl-ed90-statistics-t152-t152-c2-primary-9be2dcb0afa7",
+        "discovered-ncl-ed90-statistics-t152-t152-c2-responding_libraries-286561805395",
+        "discovered-ncl-ed90-statistics-t152-t152-c3-primary-18c9345bc9a7",
+        "discovered-ncl-ed90-statistics-t152-t152-c3-primary-87d9d6bbcf40",
+        "discovered-ncl-ed90-statistics-t152-t152-c3-responding_libraries-286561805395",
+        "discovered-ncl-ed90-statistics-t152-t152-c3-responding_libraries-8c0e21534dae",
+        "discovered-ncl-ed90-statistics-t152-t152-c4-primary-086d2187e8d9",
+        "discovered-ncl-ed90-statistics-t152-t152-c4-primary-a4a75c3540ee",
+        "discovered-ncl-ed90-statistics-t152-t152-c4-responding_libraries-286561805395",
+        "discovered-ncl-ed90-statistics-t152-t152-c4-responding_libraries-8c0e21534dae"
+      ],
+      "data_years_present": [
+        2000
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned PDFs. 92/93 text engines and AI image check; 90 AI image reading and Apple Vision OCR.",
+      "semantic_facts": {
+        "retained_units": [
+          "人次",
+          "冊",
+          "席位",
+          "館"
+        ],
+        "population_scopes": [
+          "公立公共圖書館／借閱人次",
+          "公立公共圖書館／借閱人次；該指標填答館數",
+          "公立公共圖書館／借閱冊數",
+          "公立公共圖書館／借閱冊數；該指標填答館數",
+          "公立公共圖書館／閱覽席位",
+          "公立公共圖書館／館藏圖書冊數",
+          "公立公共圖書館／館藏圖書冊數；該指標填答館數",
+          "私立公共圖書館／借閱人次",
+          "私立公共圖書館／借閱人次；該指標填答館數",
+          "私立公共圖書館／借閱冊數",
+          "私立公共圖書館／借閱冊數；該指標填答館數",
+          "私立公共圖書館／閱覽席位",
+          "私立公共圖書館／閱覽席位；該指標填答館數",
+          "私立公共圖書館／館藏圖書冊數",
+          "私立公共圖書館／館藏圖書冊數；該指標填答館數"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          2000
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-09623f16a7e669d105bcd3",
+        "obs-099ba0e99fcb93775c94f9",
+        "obs-30a0c51fe080a3a38e8dfb",
+        "obs-3c0b8cb509d708509633b3",
+        "obs-4b94b19f98d602628ab27a",
+        "obs-5766e973a988a564167945",
+        "obs-66cdc9888b2aff2c226f75",
+        "obs-6cb26d8ea2d3d3e833d18d",
+        "obs-6e9a3084046601065637dd",
+        "obs-858c88afb711d556db5895",
+        "obs-8b15341e701128cc0b0883",
+        "obs-adc743276a7b13e8a349e4",
+        "obs-d92b50cc633df4a96e6766",
+        "obs-eb7c972a9f71fa6704229a",
+        "obs-ee2db6a3ee5f67afe2f74c"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    },
+    {
+      "evidence_id": "p2-nov2026-c38ccc3dfac93a292d025667",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-ed90-statistics-t153",
+      "source_sha256": "45433ab3b7ac5986febf6057865aa8243a155b3029775ece88d6c3741c373a9a",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=11",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q083566036013949105/73b4de2e-e2bc-4df5-83f6-d86d41be25e5.pdf#page=11"
+      ],
+      "source_locator": {
+        "table": "153",
+        "pdf_pages": [
+          11
+        ],
+        "raw_locator_examples": [
+          "PDF page 11; printed page 687; table 153; source row 1; numeric column 2; quantity primary; bbox 385.714,550.0,525.714,592.857"
+        ]
+      },
+      "source_table": "153",
+      "source_table_title": "中華圖書資訊館際合作協會各類型會員數量統計表（民國89年）",
+      "source_fields": [
+        "公共"
+      ],
+      "indicators": [
+        "公共類會員數量"
+      ],
+      "series_ids": [
+        "discovered-ncl-ed90-statistics-t153-t153-c2-primary-1a58f4477126"
+      ],
+      "data_years_present": [
+        2000
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned PDFs. 92/93 text engines and AI image check; 90 AI image reading and Apple Vision OCR.",
+      "semantic_facts": {
+        "retained_units": [],
+        "population_scopes": [
+          "公共類會員數量"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          2000
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-a6890f9db16c9c798ccc4e"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    },
+    {
+      "evidence_id": "p2-nov2026-7877dba3b6be12823fae51d3",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-ed92-statistics-t166",
+      "source_sha256": "681cace80653b4fb85e5cfb2c6f952152816f54b54ad40f76f9630720364f93e",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf#page=6",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf#page=6"
+      ],
+      "source_locator": {
+        "table": "166",
+        "pdf_pages": [
+          6
+        ],
+        "raw_locator_examples": [
+          "PDF page 6; printed page 564; table 166; source row 1; numeric column 1; quantity primary; bbox 260,290,289,304.5",
+          "PDF page 6; printed page 564; table 166; source row 2; numeric column 1; quantity primary; bbox 260,304.5,289,318.5",
+          "PDF page 6; printed page 564; table 166; source row 3; numeric column 1; quantity primary; bbox 260,318.5,289,332.5"
+        ]
+      },
+      "source_table": "166",
+      "source_table_title": "臺閩地區各類型圖書館數量統計表（民國91年）",
+      "source_fields": [],
+      "indicators": [
+        "圖書館數量"
+      ],
+      "series_ids": [
+        "discovered-ncl-ed92-statistics-t166-t166-c1-primary-01befcf2b58b",
+        "discovered-ncl-ed92-statistics-t166-t166-c1-primary-0241dc62b7b7",
+        "discovered-ncl-ed92-statistics-t166-t166-c1-primary-1d1db9a5d352",
+        "discovered-ncl-ed92-statistics-t166-t166-c1-primary-33ee86dea708",
+        "discovered-ncl-ed92-statistics-t166-t166-c1-primary-53773a1bdb44",
+        "discovered-ncl-ed92-statistics-t166-t166-c1-primary-7a12dab8757d",
+        "discovered-ncl-ed92-statistics-t166-t166-c1-primary-9b30161b87e3"
+      ],
+      "data_years_present": [
+        2002
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned PDFs. 92/93 text engines and AI image check; 90 AI image reading and Apple Vision OCR.",
+      "semantic_facts": {
+        "retained_units": [],
+        "population_scopes": [
+          "臺閩地區原表公共圖書館區塊／國立",
+          "臺閩地區原表公共圖書館區塊／小計",
+          "臺閩地區原表公共圖書館區塊／省市立",
+          "臺閩地區原表公共圖書館區塊／社教館",
+          "臺閩地區原表公共圖書館區塊／私立",
+          "臺閩地區原表公共圖書館區塊／縣市立",
+          "臺閩地區原表公共圖書館區塊／鄉(鎮、市、區)立"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          2002
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-4d4a5b98eeca42cf9c2e9c",
+        "obs-568c28bc47fbccb8335326",
+        "obs-8df0147aa42c704082c4a2",
+        "obs-9a2056933ae27be5cf48f1",
+        "obs-b2ede861536a2cd95f6314",
+        "obs-c4d82b71fac2cc2fbcde11",
+        "obs-ef0578ddbb7580b48eccc1"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    },
+    {
+      "evidence_id": "p2-nov2026-8755417ddd2f717744a78e45",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-ed92-statistics-t167",
+      "source_sha256": "681cace80653b4fb85e5cfb2c6f952152816f54b54ad40f76f9630720364f93e",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf#page=7",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf#page=7"
+      ],
+      "source_locator": {
+        "table": "167",
+        "pdf_pages": [
+          7
+        ],
+        "raw_locator_examples": [
+          "PDF page 7; printed page 565; table 167; source row 2; numeric column 1; quantity primary; bbox 164,300,269,316",
+          "PDF page 7; printed page 565; table 167; source row 2; numeric column 1; quantity responding_libraries; bbox 164,316,269,333",
+          "PDF page 7; printed page 565; table 167; source row 2; numeric column 2; quantity primary; bbox 269,300,354,316"
+        ]
+      },
+      "source_table": "167",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國91年）",
+      "source_fields": [
+        "借閱人次",
+        "借閱冊數",
+        "填答館數",
+        "閱覽席位",
+        "館藏圖書冊數"
+      ],
+      "indicators": [
+        "借閱人次",
+        "借閱人次／填答館數",
+        "借閱冊數",
+        "借閱冊數／填答館數",
+        "閱覽席位",
+        "閱覽席位／填答館數",
+        "館藏圖書冊數",
+        "館藏圖書冊數／填答館數"
+      ],
+      "series_ids": [
+        "discovered-ncl-ed92-statistics-t167-t167-c1-primary-086d2187e8d9",
+        "discovered-ncl-ed92-statistics-t167-t167-c1-primary-a4a75c3540ee",
+        "discovered-ncl-ed92-statistics-t167-t167-c1-responding_libraries-286561805395",
+        "discovered-ncl-ed92-statistics-t167-t167-c1-responding_libraries-8c0e21534dae",
+        "discovered-ncl-ed92-statistics-t167-t167-c2-primary-00eff245021f",
+        "discovered-ncl-ed92-statistics-t167-t167-c2-primary-9be2dcb0afa7",
+        "discovered-ncl-ed92-statistics-t167-t167-c2-responding_libraries-286561805395",
+        "discovered-ncl-ed92-statistics-t167-t167-c2-responding_libraries-8c0e21534dae",
+        "discovered-ncl-ed92-statistics-t167-t167-c3-primary-18c9345bc9a7",
+        "discovered-ncl-ed92-statistics-t167-t167-c3-primary-87d9d6bbcf40",
+        "discovered-ncl-ed92-statistics-t167-t167-c3-responding_libraries-286561805395",
+        "discovered-ncl-ed92-statistics-t167-t167-c3-responding_libraries-8c0e21534dae",
+        "discovered-ncl-ed92-statistics-t167-t167-c4-primary-086d2187e8d9",
+        "discovered-ncl-ed92-statistics-t167-t167-c4-primary-a4a75c3540ee",
+        "discovered-ncl-ed92-statistics-t167-t167-c4-responding_libraries-286561805395",
+        "discovered-ncl-ed92-statistics-t167-t167-c4-responding_libraries-8c0e21534dae"
+      ],
+      "data_years_present": [
+        2002
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned PDFs. 92/93 text engines and AI image check; 90 AI image reading and Apple Vision OCR.",
+      "semantic_facts": {
+        "retained_units": [
+          "人次",
+          "冊",
+          "席位",
+          "館"
+        ],
+        "population_scopes": [
+          "公立公共圖書館／借閱人次",
+          "公立公共圖書館／借閱人次；僅此指標填答館數，不含分館，分館資料併入總館",
+          "公立公共圖書館／借閱冊數",
+          "公立公共圖書館／借閱冊數；僅此指標填答館數，不含分館，分館資料併入總館",
+          "公立公共圖書館／閱覽席位",
+          "公立公共圖書館／閱覽席位；僅此指標填答館數，不含分館，分館資料併入總館",
+          "公立公共圖書館／館藏圖書冊數",
+          "公立公共圖書館／館藏圖書冊數；僅此指標填答館數，不含分館，分館資料併入總館",
+          "私立公共圖書館／借閱人次",
+          "私立公共圖書館／借閱人次；僅此指標填答館數，不含分館，分館資料併入總館",
+          "私立公共圖書館／借閱冊數",
+          "私立公共圖書館／借閱冊數；僅此指標填答館數，不含分館，分館資料併入總館",
+          "私立公共圖書館／閱覽席位",
+          "私立公共圖書館／閱覽席位；僅此指標填答館數，不含分館，分館資料併入總館",
+          "私立公共圖書館／館藏圖書冊數",
+          "私立公共圖書館／館藏圖書冊數；僅此指標填答館數，不含分館，分館資料併入總館"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          2002
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-08b339b1aa30795cd7a121",
+        "obs-106c97efe1dbb9a11c4b97",
+        "obs-143f3f015b8149b817ac59",
+        "obs-221d492c4da8e79d7eea8e",
+        "obs-368d0dd22354c36ab3b003",
+        "obs-38a6185a83b91f98d31dbd",
+        "obs-5b9c78cdd405ef7313e4be",
+        "obs-846c5cae6f9d1fb2d0efcc",
+        "obs-8a20eee0ba5a96c3933121",
+        "obs-8f5d1803193f7df43371f8",
+        "obs-bfba3f3d96c20a0e327995",
+        "obs-c33a3d9df82e61f2d187de",
+        "obs-cf83198f67cf2de777ddd3",
+        "obs-d59f516c832b6364d6fab9",
+        "obs-d5ff7f0acfd7c72ca3e782",
+        "obs-feaf38e21a0b8d70795f1b"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    },
+    {
+      "evidence_id": "p2-nov2026-f35070372c90a3913c40fb06",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-ed92-statistics-t168",
+      "source_sha256": "681cace80653b4fb85e5cfb2c6f952152816f54b54ad40f76f9630720364f93e",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf#page=12",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q083565623997260739/ecaa1d7a-1133-4661-a1f1-385f50cac5fd.pdf#page=12"
+      ],
+      "source_locator": {
+        "table": "168",
+        "pdf_pages": [
+          12
+        ],
+        "raw_locator_examples": [
+          "PDF page 12; printed page 570; table 168; source row 1; numeric column 2; quantity primary; bbox 201,232,226,246"
+        ]
+      },
+      "source_table": "168",
+      "source_table_title": "中華圖書資訊館際合作協會各類型會員數量統計表（民國91年）",
+      "source_fields": [
+        "公共"
+      ],
+      "indicators": [
+        "公共類會員數量"
+      ],
+      "series_ids": [
+        "discovered-ncl-ed92-statistics-t168-t168-c2-primary-1a58f4477126"
+      ],
+      "data_years_present": [
+        2002
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned PDFs. 92/93 text engines and AI image check; 90 AI image reading and Apple Vision OCR.",
+      "semantic_facts": {
+        "retained_units": [],
+        "population_scopes": [
+          "中華圖書資訊館際合作協會公共類會員"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          2002
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-0a0bda026b3eed1fb07c6c"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    },
+    {
+      "evidence_id": "p2-nov2026-c833a892575d34cd6959b6c9",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-ed93-statistics-t176",
+      "source_sha256": "df50b5a3d7b2bbe88b2cc15f2a021630ec3123a5a6fd480241884f72e80194f7",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf#page=5",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf#page=5"
+      ],
+      "source_locator": {
+        "table": "176",
+        "pdf_pages": [
+          5
+        ],
+        "raw_locator_examples": [
+          "PDF page 5; printed page 448; table 176; source row 1; numeric column 1; quantity primary; bbox 215,222,249,236",
+          "PDF page 5; printed page 448; table 176; source row 2; numeric column 1; quantity primary; bbox 215,236,249,252",
+          "PDF page 5; printed page 448; table 176; source row 3; numeric column 1; quantity primary; bbox 215,252,249,267"
+        ]
+      },
+      "source_table": "176",
+      "source_table_title": "臺閩地區各類型圖書館數量統計表（民國92年）",
+      "source_fields": [],
+      "indicators": [
+        "圖書館數量"
+      ],
+      "series_ids": [
+        "discovered-ncl-ed93-statistics-t176-t176-c1-primary-0241dc62b7b7",
+        "discovered-ncl-ed93-statistics-t176-t176-c1-primary-1d1db9a5d352",
+        "discovered-ncl-ed93-statistics-t176-t176-c1-primary-33ee86dea708",
+        "discovered-ncl-ed93-statistics-t176-t176-c1-primary-53773a1bdb44",
+        "discovered-ncl-ed93-statistics-t176-t176-c1-primary-7a12dab8757d",
+        "discovered-ncl-ed93-statistics-t176-t176-c1-primary-9b30161b87e3",
+        "discovered-ncl-ed93-statistics-t176-t176-c1-primary-f7d3858d9dcf"
+      ],
+      "data_years_present": [
+        2003
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned PDFs. 92/93 text engines and AI image check; 90 AI image reading and Apple Vision OCR.",
+      "semantic_facts": {
+        "retained_units": [],
+        "population_scopes": [
+          "臺閩地區原表公共圖書館區塊／國立",
+          "臺閩地區原表公共圖書館區塊／小計",
+          "臺閩地區原表公共圖書館區塊／直轄市立",
+          "臺閩地區原表公共圖書館區塊／社教館",
+          "臺閩地區原表公共圖書館區塊／私立",
+          "臺閩地區原表公共圖書館區塊／縣市立",
+          "臺閩地區原表公共圖書館區塊／鄉(鎮、市、區)立"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          2003
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-108bed19a848e61551b9be",
+        "obs-283d79ecaa94a31d798845",
+        "obs-9265519f8089ad612e03b2",
+        "obs-a9ad26c5a172ae635959fa",
+        "obs-ab76b5d0582c19e9e9dc4f",
+        "obs-b3f73824993cf2865c85c2",
+        "obs-f7bcc49489369260c39c7a"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    },
+    {
+      "evidence_id": "p2-nov2026-542d66325c673367ecacc319",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-ed93-statistics-t177",
+      "source_sha256": "df50b5a3d7b2bbe88b2cc15f2a021630ec3123a5a6fd480241884f72e80194f7",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf#page=6",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf#page=6"
+      ],
+      "source_locator": {
+        "table": "177",
+        "pdf_pages": [
+          6
+        ],
+        "raw_locator_examples": [
+          "PDF page 6; printed page 449; table 177; source row 2; numeric column 1; quantity primary; bbox 143,257,226,273",
+          "PDF page 6; printed page 449; table 177; source row 2; numeric column 1; quantity responding_libraries; bbox 143,273,226,288",
+          "PDF page 6; printed page 449; table 177; source row 2; numeric column 2; quantity primary; bbox 226,257,311,273"
+        ]
+      },
+      "source_table": "177",
+      "source_table_title": "臺閩地區各類型圖書館基本資料統計表（民國92年）",
+      "source_fields": [
+        "借閱人次",
+        "借閱冊數",
+        "填答館數",
+        "閱覽席位",
+        "館藏圖書冊數"
+      ],
+      "indicators": [
+        "借閱人次",
+        "借閱人次／填答館數",
+        "借閱冊數",
+        "借閱冊數／填答館數",
+        "閱覽席位",
+        "閱覽席位／填答館數",
+        "館藏圖書冊數",
+        "館藏圖書冊數／填答館數"
+      ],
+      "series_ids": [
+        "discovered-ncl-ed93-statistics-t177-t177-c1-primary-086d2187e8d9",
+        "discovered-ncl-ed93-statistics-t177-t177-c1-primary-a4a75c3540ee",
+        "discovered-ncl-ed93-statistics-t177-t177-c1-responding_libraries-286561805395",
+        "discovered-ncl-ed93-statistics-t177-t177-c1-responding_libraries-8c0e21534dae",
+        "discovered-ncl-ed93-statistics-t177-t177-c2-primary-00eff245021f",
+        "discovered-ncl-ed93-statistics-t177-t177-c2-primary-9be2dcb0afa7",
+        "discovered-ncl-ed93-statistics-t177-t177-c2-responding_libraries-286561805395",
+        "discovered-ncl-ed93-statistics-t177-t177-c2-responding_libraries-8c0e21534dae",
+        "discovered-ncl-ed93-statistics-t177-t177-c3-primary-18c9345bc9a7",
+        "discovered-ncl-ed93-statistics-t177-t177-c3-primary-87d9d6bbcf40",
+        "discovered-ncl-ed93-statistics-t177-t177-c3-responding_libraries-286561805395",
+        "discovered-ncl-ed93-statistics-t177-t177-c3-responding_libraries-8c0e21534dae",
+        "discovered-ncl-ed93-statistics-t177-t177-c4-primary-086d2187e8d9",
+        "discovered-ncl-ed93-statistics-t177-t177-c4-primary-a4a75c3540ee",
+        "discovered-ncl-ed93-statistics-t177-t177-c4-responding_libraries-286561805395",
+        "discovered-ncl-ed93-statistics-t177-t177-c4-responding_libraries-8c0e21534dae"
+      ],
+      "data_years_present": [
+        2003
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned PDFs. 92/93 text engines and AI image check; 90 AI image reading and Apple Vision OCR.",
+      "semantic_facts": {
+        "retained_units": [
+          "人次",
+          "冊",
+          "席位",
+          "館"
+        ],
+        "population_scopes": [
+          "公立公共圖書館／借閱人次",
+          "公立公共圖書館／借閱人次；僅此指標填答館數，不含分館，分館資料併入總館",
+          "公立公共圖書館／借閱冊數",
+          "公立公共圖書館／借閱冊數；僅此指標填答館數，不含分館，分館資料併入總館",
+          "公立公共圖書館／閱覽席位",
+          "公立公共圖書館／閱覽席位；僅此指標填答館數，不含分館，分館資料併入總館",
+          "公立公共圖書館／館藏圖書冊數",
+          "公立公共圖書館／館藏圖書冊數；僅此指標填答館數，不含分館，分館資料併入總館",
+          "私立公共圖書館／借閱人次",
+          "私立公共圖書館／借閱人次；僅此指標填答館數，不含分館，分館資料併入總館",
+          "私立公共圖書館／借閱冊數",
+          "私立公共圖書館／借閱冊數；僅此指標填答館數，不含分館，分館資料併入總館",
+          "私立公共圖書館／閱覽席位",
+          "私立公共圖書館／閱覽席位；僅此指標填答館數，不含分館，分館資料併入總館",
+          "私立公共圖書館／館藏圖書冊數",
+          "私立公共圖書館／館藏圖書冊數；僅此指標填答館數，不含分館，分館資料併入總館"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          2003
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-03caf79e41e8433dbaa793",
+        "obs-0e22a52799979cc43e6fad",
+        "obs-1c4c2472da9f4e4a4c12a9",
+        "obs-2c95eb4e63d52d16bd8771",
+        "obs-38e6c2454f956d2f4438d7",
+        "obs-39058726d0a38d6ec329f9",
+        "obs-3fc028f3e791984ea77386",
+        "obs-4a5a365f3816985c8b81b0",
+        "obs-571f18d9be7d1ea4b9e302",
+        "obs-716a30356d13db1aab48c7",
+        "obs-798f1d6f5e6cdbf3ca8f49",
+        "obs-8c409e0125a46031aad6f0",
+        "obs-9ef2ce5ef0d784aac67671",
+        "obs-bfd2cef89cecf7294653c7",
+        "obs-d1320ce9cc3e8359bb18ce",
+        "obs-ef482f4dbdcd2d4b586294"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    },
+    {
+      "evidence_id": "p2-nov2026-952666adb86ac8fa2553dffb",
+      "layer": "canonical",
+      "source_id": "discovered-ncl-ed93-statistics-t178",
+      "source_sha256": "df50b5a3d7b2bbe88b2cc15f2a021630ec3123a5a6fd480241884f72e80194f7",
+      "source_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf#page=11",
+      "source_urls": [
+        "https://www.ncl.edu.tw/files/file_pool/1/0Q083565614859888130/c8cdaafe-3720-43ba-8c67-8113c96873c1.pdf#page=11"
+      ],
+      "source_locator": {
+        "table": "178",
+        "pdf_pages": [
+          11
+        ],
+        "raw_locator_examples": [
+          "PDF page 11; printed page 454; table 178; source row 1; numeric column 2; quantity primary; bbox 153,191,182,207"
+        ]
+      },
+      "source_table": "178",
+      "source_table_title": "中華圖書資訊館際合作協會各類型會員數量統計表（民國92年）",
+      "source_fields": [
+        "公共"
+      ],
+      "indicators": [
+        "公共類會員數量"
+      ],
+      "series_ids": [
+        "discovered-ncl-ed93-statistics-t178-t178-c2-primary-1a58f4477126"
+      ],
+      "data_years_present": [
+        2003
+      ],
+      "unresolved_period_records": 0,
+      "reviewed_original": true,
+      "review_method": "Pinned PDFs. 92/93 text engines and AI image check; 90 AI image reading and Apple Vision OCR.",
+      "semantic_facts": {
+        "retained_units": [],
+        "population_scopes": [
+          "中華圖書資訊館際合作協會公共類會員"
+        ],
+        "cross_source_equivalence_confirmed": false
+      },
+      "supported_comparison_scope": {
+        "status": "source_series_only",
+        "data_years": [
+          2003
+        ],
+        "positive_scope": "Retain original rows. No cross-source equivalence or new cross-year chart certified."
+      },
+      "field_policies": [],
+      "observation_ids": [
+        "obs-5731728de557de9cf294d6"
+      ],
+      "human_review_completed": false,
+      "human_double_collation_completed": false
+    }
+  ]
+}

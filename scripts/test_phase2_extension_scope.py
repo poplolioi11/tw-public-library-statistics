@@ -12,7 +12,13 @@ class Phase2ExtensionScope(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.rows={}
-        for name in ['derived/discovered_20261028_observations.jsonl','derived/ncl94_statistics_observations.jsonl']:
+        for name in (
+            'derived/discovered_20261028_observations.jsonl',
+            'derived/ncl94_statistics_observations.jsonl',
+            'derived/moe_library_ods_observations.jsonl',
+            'derived/ncl_early_statistics_observations.jsonl',
+            'derived/ncl_reading_2025_observations.jsonl',
+        ):
             cls.rows.update({row['observation_id']:row for row in record_io.rows(ROOT,name)})
 
     def changed(self,document):
@@ -25,7 +31,17 @@ class Phase2ExtensionScope(unittest.TestCase):
         report=accepted_extension_scope(ROOT,self.rows)
         self.assertEqual(report['legacy_extension']['canonical_observations_checked'],20358)
         self.assertEqual(report['additional_batches']['ncl-ed94-statistics']['canonical_observations_checked'],24)
-        self.assertEqual(report['accepted_records'],20382)
+        self.assertEqual(
+            {key: item['canonical_observations_checked'] for key,item in report['additional_batches'].items()},
+            {'ncl-ed94-statistics':24, 'moe-library-ods':18632, 'ncl-ed90-statistics':23,
+             'ncl-ed92-statistics':24, 'ncl-ed93-statistics':24, 'ncl-reading-2025-report':39},
+        )
+        self.assertEqual(report['accepted_records'],39124)
+
+    def test_missing_workbook_quantity_is_not_accepted(self):
+        rows,key=self.changed('moe-library-ods');del rows[key]
+        with self.assertRaisesRegex(ValueError,'Incomplete formal observation set: moe-library-ods'):
+            accepted_extension_scope(ROOT,rows)
 
     def test_unknown_source_is_not_accepted_by_prefix(self):
         rows,key=self.changed('ncl-ed94-statistics');rows[key]['component_source_id']='unknown-source'

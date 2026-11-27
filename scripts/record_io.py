@@ -41,9 +41,12 @@ def open_text(root,relative,encoding='utf-8',newline=None):
  return gzip.open(path,'rt',encoding=encoding,newline=newline) if path.suffix=='.gz' else path.open(encoding=encoding,newline=newline)
 
 @contextmanager
-def materialized_file(root,relative):
+def materialized_file(root,relative,*,prefer_gzip=False):
  """Yield a local file; gzip transports are fully decoded into a readonly temp."""
  path=path_for(root,relative)
+ if prefer_gzip and path.suffix!='.gz':
+  compressed_path=checked_path(root,relative+'.gz')
+  if compressed_path.is_file():path=compressed_path
  if path.suffix!='.gz':
   yield path
   return

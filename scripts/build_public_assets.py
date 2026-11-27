@@ -54,7 +54,13 @@ def main():
   for e in entries:
    if hashlib.sha256(z.read(e['path'])).hexdigest()!=e['sha256']:raise ValueError('Archive member SHA mismatch')
  files={'PUBLICATION_MANIFEST.json':'PUBLICATION_MANIFEST.json','observations.csv':'data/combined/observations.csv','observations.jsonl.gz':'data/combined/observations.jsonl.gz','library_statistics.sqlite':'data/combined/library_statistics.sqlite','phase1-statistical-cells.csv':'derived/phase1_local_sources_long.csv','phase1-statistical-cells.jsonl':'derived/phase1_local_sources_long.jsonl','phase1_supplements.sqlite':'derived/phase1_supplements.sqlite','phase2-annotations.csv.gz':'derived/phase2/annotations.csv.gz','phase2-annotations.jsonl.gz':'derived/phase2/annotations.jsonl.gz','phase2-definitions.sqlite':'derived/phase2/definitions.sqlite'}
+ for logical in ('data/combined/observations.csv','data/combined/library_statistics.sqlite','derived/phase2/definitions.sqlite'):
+  if logical not in names and logical+'.gz' in names:
+   label=next(label for label, source in files.items() if source==logical)
+   files[label+'.gz']=files.pop(label)+'.gz'
  phase3_assets={'phase3-candidate-decisions.csv.gz':'derived/phase3/candidate_decisions.csv.gz','phase3-candidate-decisions.jsonl.gz':'derived/phase3/candidate_decisions.jsonl.gz','phase3-selection.sqlite':'derived/phase3/selection.sqlite'}
+ if 'derived/phase3/selection.sqlite' not in names and 'derived/phase3/selection.sqlite.gz' in names:
+  phase3_assets['phase3-selection.sqlite.gz']=phase3_assets.pop('phase3-selection.sqlite')+'.gz'
  if m.get('phase3') is not None or any(src in names for src in phase3_assets.values()):
   if not all(src in names for src in phase3_assets.values()):raise ValueError('Incomplete phase3 public manifest for release assets')
   files.update(phase3_assets)

@@ -1,0 +1,2435 @@
+{
+  "source": {
+    "candidate_id": "moe-library-ods",
+    "title": "教育部統計處《公立公共圖書館統計》歷年工作簿",
+    "official_url": "https://stats.moe.gov.tw/files/time/library.ods",
+    "catalogue_url": "https://www.stat.gov.tw/News_NoticeCalendar_Content_temp.aspx?MetaI_D=104&n=3717&year=2026",
+    "source_sha256": "b84bb8cc4f05283aebf429bc6dc082232e3eaf432f510a60201a3e9e1709aa42",
+    "source_local_path": "raw/moe-library-ods/library.ods",
+    "source_version_id": "moe-library-ods@sha256:b84bb8cc4f05283aebf429bc6dc082232e3eaf432f510a60201a3e9e1709aa42",
+    "retrieved_at": "2026-11-27T15:37:53.705149+00:00",
+    "publisher": "教育部統計處",
+    "edition_raw": "教育部統計處 library.ods（原件屬性修改日 2026-06-23）",
+    "source_bytes": 259186,
+    "snapshot_distribution": "not_in_public_bundle",
+    "rights_scope": "原表統計事實及必要表頭；工作簿原件未隨公開包提供"
+  },
+  "source_header_meaning": "See official release calendar and exact original workbook headings; do not add the two groupings together.",
+  "sheets": [
+    {
+      "sheet": "94",
+      "data_year": 2005,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "94年（底）",
+      "range": "B5:G34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 156,
+      "status_counts": {
+        "reported": 136,
+        "source_marker": 20
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "95",
+      "data_year": 2006,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "95年（底）",
+      "range": "B5:G34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 156,
+      "status_counts": {
+        "reported": 152,
+        "source_marker": 2,
+        "source_blank": 2
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "95縣",
+      "data_year": 2006,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "95年(底)",
+      "range": "B5:AD34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "臺北市",
+        "E": "高雄市",
+        "F": "臺北縣",
+        "G": "宜蘭縣",
+        "H": "桃園縣",
+        "I": "新竹縣",
+        "J": "苗栗縣",
+        "K": "臺中縣",
+        "L": "彰化縣",
+        "M": "南投縣",
+        "N": "雲林縣",
+        "O": "嘉義縣",
+        "P": "臺南縣",
+        "Q": "高雄縣",
+        "R": "屏東縣",
+        "S": "臺東縣",
+        "T": "花蓮縣",
+        "U": "澎湖縣",
+        "V": "基隆市",
+        "W": "新竹市",
+        "X": "臺中市",
+        "Y": "嘉義市",
+        "Z": "臺南市",
+        "AA": "金門縣",
+        "AB": "連江縣",
+        "AC": "國立中央圖書館臺灣分館",
+        "AD": "國立台中圖書館"
+      },
+      "county_columns": 25,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 754,
+      "status_counts": {
+        "reported": 617,
+        "source_marker": 137
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "96",
+      "data_year": 2007,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "96年（底）",
+      "range": "B5:H34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "其它               (省政府圖書館)"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 184,
+      "status_counts": {
+        "reported": 169,
+        "source_marker": 15
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "96縣",
+      "data_year": 2007,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "96年(底)",
+      "range": "B5:AE34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "臺北市",
+        "E": "高雄市",
+        "F": "臺北縣",
+        "G": "宜蘭縣",
+        "H": "桃園縣",
+        "I": "新竹縣",
+        "J": "苗栗縣",
+        "K": "臺中縣",
+        "L": "彰化縣",
+        "M": "南投縣",
+        "N": "雲林縣",
+        "O": "嘉義縣",
+        "P": "臺南縣",
+        "Q": "高雄縣",
+        "R": "屏東縣",
+        "S": "臺東縣",
+        "T": "花蓮縣",
+        "U": "澎湖縣",
+        "V": "基隆市",
+        "W": "新竹市",
+        "X": "臺中市",
+        "Y": "嘉義市",
+        "Z": "臺南市",
+        "AA": "金門縣",
+        "AB": "連江縣",
+        "AC": "國立中央圖書館臺灣分館",
+        "AD": "國立台中圖書館",
+        "AE": "台灣省政府圖書館"
+      },
+      "county_columns": 25,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 780,
+      "status_counts": {
+        "reported": 659,
+        "source_marker": 121
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "97",
+      "data_year": 2008,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "97年（底）",
+      "range": "B5:H34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "其它               (省政府圖書館)"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 184,
+      "status_counts": {
+        "reported": 173,
+        "source_marker": 10,
+        "source_blank": 1
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "97縣",
+      "data_year": 2008,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "97年(底)",
+      "range": "B5:AE34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "臺北市",
+        "E": "高雄市",
+        "F": "臺北縣",
+        "G": "宜蘭縣",
+        "H": "桃園縣",
+        "I": "新竹縣",
+        "J": "苗栗縣",
+        "K": "臺中縣",
+        "L": "彰化縣",
+        "M": "南投縣",
+        "N": "雲林縣",
+        "O": "嘉義縣",
+        "P": "臺南縣",
+        "Q": "高雄縣",
+        "R": "屏東縣",
+        "S": "臺東縣",
+        "T": "花蓮縣",
+        "U": "澎湖縣",
+        "V": "基隆市",
+        "W": "新竹市",
+        "X": "臺中市",
+        "Y": "嘉義市",
+        "Z": "臺南市",
+        "AA": "金門縣",
+        "AB": "連江縣",
+        "AC": "國立中央圖書館臺灣分館",
+        "AD": "國立台中圖書館",
+        "AE": "台灣省政府圖書館"
+      },
+      "county_columns": 25,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 780,
+      "status_counts": {
+        "reported": 672,
+        "source_marker": 107,
+        "source_blank": 1
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "98",
+      "data_year": 2009,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "98年（底）",
+      "range": "B5:H34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "其它               (省政府圖書館)"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 182,
+      "status_counts": {
+        "reported": 171,
+        "source_marker": 11
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "98縣",
+      "data_year": 2009,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "98年(底)",
+      "range": "B5:AE34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "臺北市",
+        "E": "高雄市",
+        "F": "臺北縣",
+        "G": "宜蘭縣",
+        "H": "桃園縣",
+        "I": "新竹縣",
+        "J": "苗栗縣",
+        "K": "臺中縣",
+        "L": "彰化縣",
+        "M": "南投縣",
+        "N": "雲林縣",
+        "O": "嘉義縣",
+        "P": "臺南縣",
+        "Q": "高雄縣",
+        "R": "屏東縣",
+        "S": "臺東縣",
+        "T": "花蓮縣",
+        "U": "澎湖縣",
+        "V": "基隆市",
+        "W": "新竹市",
+        "X": "臺中市",
+        "Y": "嘉義市",
+        "Z": "臺南市",
+        "AA": "金門縣",
+        "AB": "連江縣",
+        "AC": "國立中央圖書館臺灣分館",
+        "AD": "國立台中圖書館",
+        "AE": "台灣省政府圖書館"
+      },
+      "county_columns": 25,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 780,
+      "status_counts": {
+        "reported": 657,
+        "source_marker": 122,
+        "source_blank": 1
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "99",
+      "data_year": 2010,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "99年（底）",
+      "range": "B5:H34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "其它               (省政府圖書館)"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 182,
+      "status_counts": {
+        "reported": 168,
+        "source_marker": 14
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "99縣",
+      "data_year": 2010,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "99年(底)",
+      "range": "B5:AE34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "臺北市",
+        "E": "高雄市",
+        "F": "臺北縣",
+        "G": "宜蘭縣",
+        "H": "桃園縣",
+        "I": "新竹縣",
+        "J": "苗栗縣",
+        "K": "臺中縣",
+        "L": "彰化縣",
+        "M": "南投縣",
+        "N": "雲林縣",
+        "O": "嘉義縣",
+        "P": "臺南縣",
+        "Q": "高雄縣",
+        "R": "屏東縣",
+        "S": "臺東縣",
+        "T": "花蓮縣",
+        "U": "澎湖縣",
+        "V": "基隆市",
+        "W": "新竹市",
+        "X": "臺中市",
+        "Y": "嘉義市",
+        "Z": "臺南市",
+        "AA": "金門縣",
+        "AB": "連江縣",
+        "AC": "國立中央圖書館臺灣分館",
+        "AD": "國立台中圖書館",
+        "AE": "台灣省政府圖書館"
+      },
+      "county_columns": 25,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 780,
+      "status_counts": {
+        "reported": 660,
+        "source_marker": 119,
+        "source_blank": 1
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "100",
+      "data_year": 2011,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "100年（底）",
+      "range": "B5:H34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "其它               (省政府圖書館)"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 182,
+      "status_counts": {
+        "reported": 169,
+        "source_marker": 13
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "100縣",
+      "data_year": 2011,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "100年(底)",
+      "range": "B5:AB34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "臺中市",
+        "G": "臺南市",
+        "H": "高雄市",
+        "I": "宜蘭縣",
+        "J": "桃園縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立中央圖書館臺灣分館",
+        "AA": "國立台中圖書館",
+        "AB": "台灣省政府圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 702,
+      "status_counts": {
+        "reported": 598,
+        "source_marker": 104
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "101",
+      "data_year": 2012,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "101年（底）",
+      "range": "B5:H34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "其它               (省政府圖書館)"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 182,
+      "status_counts": {
+        "reported": 170,
+        "source_marker": 12
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "101縣",
+      "data_year": 2012,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "101年(底)",
+      "range": "B5:AB34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "臺中市",
+        "G": "臺南市",
+        "H": "高雄市",
+        "I": "宜蘭縣",
+        "J": "桃園縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立中央圖書館臺灣分館",
+        "AA": "國立台中圖書館",
+        "AB": "台灣省政府圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 702,
+      "status_counts": {
+        "reported": 594,
+        "source_marker": 108
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "102",
+      "data_year": 2013,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "102年（底）",
+      "range": "B5:H34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "其它\n(省政府圖書館)"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館；資料日期為103年5月。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，",
+        "國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 182,
+      "status_counts": {
+        "reported": 154,
+        "source_marker": 28
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "102縣",
+      "data_year": 2013,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "102年(底)",
+      "range": "B5:AA34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "臺中市",
+        "G": "臺南市",
+        "H": "高雄市",
+        "I": "宜蘭縣",
+        "J": "桃園縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館；資料日期為103年5月。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，",
+        "國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 676,
+      "status_counts": {
+        "reported": 577,
+        "source_marker": 99
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "103",
+      "data_year": 2014,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "103年（底）",
+      "range": "B5:H34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "其它\n(省政府圖書館)"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館；資料日期為104年5月。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，",
+        "國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 182,
+      "status_counts": {
+        "reported": 154,
+        "source_marker": 28
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "103縣",
+      "data_year": 2014,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "103年(底)",
+      "range": "B5:AA34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "臺中市",
+        "G": "臺南市",
+        "H": "高雄市",
+        "I": "宜蘭縣",
+        "J": "桃園縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館；資料日期為104年5月。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，",
+        "國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 676,
+      "status_counts": {
+        "reported": 576,
+        "source_marker": 100
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "104",
+      "data_year": 2015,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "104年（底）",
+      "range": "B5:G34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館；資料日期為105年5月。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，",
+        "國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 156,
+      "status_counts": {
+        "reported": 154,
+        "source_marker": 2
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "104縣",
+      "data_year": 2015,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "104年(底)",
+      "range": "B5:AA34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館；資料日期為105年5月。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，",
+        "國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 676,
+      "status_counts": {
+        "reported": 567,
+        "source_marker": 109
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "105",
+      "data_year": 2016,
+      "grouping": "establishment",
+      "title": "公立公共圖書館統計-按設立別",
+      "period_header_raw": "105年（底）",
+      "range": "B5:G34",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館；資料日期為106年6月。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，",
+        "國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 156,
+      "status_counts": {
+        "reported": 154,
+        "source_marker": 2
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "105縣",
+      "data_year": 2016,
+      "grouping": "county",
+      "title": "公立公共圖書館統計-按縣市別",
+      "period_header_raw": "105年(底)",
+      "range": "B5:AA34",
+      "upper_header_raw": " 公                    立                     公                    共                     圖               書                    館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館；資料日期為106年6月。(若有更新請依國家圖書館、國立公共資訊圖書館最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，",
+        "國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [],
+      "observations": 676,
+      "status_counts": {
+        "reported": 570,
+        "source_marker": 106
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "106",
+      "data_year": 2017,
+      "grouping": "establishment",
+      "title": "國家圖書館及公立公共圖書館統計-按設立別",
+      "period_header_raw": "106年（底）",
+      "range": "B5:H35",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "直轄市山地\n原住民區立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。",
+        "2.依《圖書館設立及營運標準 》，106年起新增「直轄市山地原住民區立圖書館」分類。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "H36",
+          "製表年月：107年6月"
+        ]
+      ],
+      "observations": 189,
+      "status_counts": {
+        "reported": 174,
+        "source_marker": 15
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "106縣",
+      "data_year": 2017,
+      "grouping": "county",
+      "title": "國家圖書館及公立公共圖書館統計-按縣市別",
+      "period_header_raw": "106年(底)",
+      "range": "B6:AA36",
+      "upper_header_raw": " 公立公共圖書館(含國立公共資訊圖書館及國立臺灣圖書館)",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "AA37",
+          "製表年月：107年6月"
+        ]
+      ],
+      "observations": 702,
+      "status_counts": {
+        "reported": 577,
+        "source_marker": 125
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "107",
+      "data_year": 2018,
+      "grouping": "establishment",
+      "title": "國家圖書館及公立公共圖書館統計-按設立別",
+      "period_header_raw": "107年（底）",
+      "range": "B5:H35",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "直轄市山地\n原住民區立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。",
+        "2.依《圖書館設立及營運標準 》，106年起新增「直轄市山地原住民區立圖書館」分類。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "H36",
+          "製表年月：108年6月"
+        ]
+      ],
+      "observations": 189,
+      "status_counts": {
+        "reported": 174,
+        "source_marker": 15
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "107縣",
+      "data_year": 2018,
+      "grouping": "county",
+      "title": "國家圖書館及公立公共圖書館統計-按縣市別",
+      "period_header_raw": "107年(底)",
+      "range": "B6:AA36",
+      "upper_header_raw": " 公立公共圖書館(含國立公共資訊圖書館及國立臺灣圖書館)",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "AA37",
+          "製表年月：108年6月"
+        ]
+      ],
+      "observations": 702,
+      "status_counts": {
+        "reported": 578,
+        "source_marker": 124
+      },
+      "excluded_nondata_positions": [
+        {
+          "cell": "AB6",
+          "display": "220",
+          "stored_value": "220",
+          "formula": "of:=SUM([.D6:.AA6])",
+          "reason": "no printed lower or upper header identifying a statistical column"
+        }
+      ]
+    },
+    {
+      "sheet": "108",
+      "data_year": 2019,
+      "grouping": "establishment",
+      "title": "國家圖書館及公立公共圖書館統計-按設立別",
+      "period_header_raw": "108年（底）",
+      "range": "B5:H35",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "直轄市山地\n原住民區立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。",
+        "2.依《圖書館設立及營運標準 》，106年起新增「直轄市山地原住民區立圖書館」分類。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "H36",
+          "製表年月：109年6月"
+        ]
+      ],
+      "observations": 201,
+      "status_counts": {
+        "reported": 183,
+        "source_marker": 18
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "108縣",
+      "data_year": 2019,
+      "grouping": "county",
+      "title": "國家圖書館及公立公共圖書館統計-按縣市別",
+      "period_header_raw": "108年(底)",
+      "range": "B6:AA36",
+      "upper_header_raw": " 公立公共圖書館(含國立公共資訊圖書館及國立臺灣圖書館)",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "AA37",
+          "製表年月：109年6月"
+        ]
+      ],
+      "observations": 752,
+      "status_counts": {
+        "reported": 619,
+        "source_marker": 133
+      },
+      "excluded_nondata_positions": [
+        {
+          "cell": "AB6",
+          "display": "220",
+          "stored_value": "220",
+          "formula": "of:=SUM([.D6:.AA6])",
+          "reason": "no printed lower or upper header identifying a statistical column"
+        }
+      ]
+    },
+    {
+      "sheet": "109",
+      "data_year": 2020,
+      "grouping": "establishment",
+      "title": "國家圖書館及公立公共圖書館統計-按設立別",
+      "period_header_raw": "109年（底）",
+      "range": "B5:H35",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "直轄市山地\n原住民區立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。",
+        "2.依《圖書館設立及營運標準 》，106年起新增「直轄市山地原住民區立圖書館」分類。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "H36",
+          "製表年月：110年6月"
+        ]
+      ],
+      "observations": 201,
+      "status_counts": {
+        "reported": 182,
+        "source_marker": 18,
+        "source_blank": 1
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "109縣",
+      "data_year": 2020,
+      "grouping": "county",
+      "title": "國家圖書館及公立公共圖書館統計-按縣市別",
+      "period_header_raw": "109年(底)",
+      "range": "B6:AA36",
+      "upper_header_raw": " 公立公共圖書館(含國立公共資訊圖書館及國立臺灣圖書館)",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "AA37",
+          "製表年月：110年6月"
+        ]
+      ],
+      "observations": 752,
+      "status_counts": {
+        "reported": 614,
+        "source_marker": 137,
+        "source_blank": 1
+      },
+      "excluded_nondata_positions": [
+        {
+          "cell": "AB6",
+          "display": "220",
+          "stored_value": "220",
+          "formula": "of:=SUM([.D6:.AA6])",
+          "reason": "no printed lower or upper header identifying a statistical column"
+        }
+      ]
+    },
+    {
+      "sheet": "110",
+      "data_year": 2021,
+      "grouping": "establishment",
+      "title": "國家圖書館及公立公共圖書館統計-按設立別",
+      "period_header_raw": "110年（底）",
+      "range": "B5:H35",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "直轄市山地\n原住民區立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。",
+        "2.依《圖書館設立及營運標準 》，106年起新增「直轄市山地原住民區立圖書館」分類。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "H36",
+          "製表年月：111年6月"
+        ]
+      ],
+      "observations": 201,
+      "status_counts": {
+        "reported": 182,
+        "source_marker": 17,
+        "source_blank": 2
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "110縣",
+      "data_year": 2021,
+      "grouping": "county",
+      "title": "國家圖書館及公立公共圖書館統計-按縣市別",
+      "period_header_raw": "110年(底)",
+      "range": "B6:AA36",
+      "upper_header_raw": " 公立公共圖書館(含國立公共資訊圖書館及國立臺灣圖書館)",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "AA37",
+          "製表年月：111年6月"
+        ]
+      ],
+      "observations": 752,
+      "status_counts": {
+        "reported": 614,
+        "source_marker": 136,
+        "source_blank": 2
+      },
+      "excluded_nondata_positions": [
+        {
+          "cell": "AB6",
+          "display": "198",
+          "stored_value": "198",
+          "formula": "of:=SUM([.D6:.AA6])",
+          "reason": "no printed lower or upper header identifying a statistical column"
+        }
+      ]
+    },
+    {
+      "sheet": "111",
+      "data_year": 2022,
+      "grouping": "establishment",
+      "title": "國家圖書館及公立公共圖書館統計-按設立別",
+      "period_header_raw": "111年（底）",
+      "range": "B5:H35",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "直轄市山地\n原住民區立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。",
+        "2.依《圖書館設立及營運標準 》，106年起新增「直轄市山地原住民區立圖書館」分類。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "H36",
+          "製表年月：112年6月"
+        ]
+      ],
+      "observations": 202,
+      "status_counts": {
+        "reported": 184,
+        "source_marker": 17,
+        "source_blank": 1
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "111縣",
+      "data_year": 2022,
+      "grouping": "county",
+      "title": "國家圖書館及公立公共圖書館統計-按縣市別",
+      "period_header_raw": "111年(底)",
+      "range": "B5:AA35",
+      "upper_header_raw": " 公立公共圖書館(含國立公共資訊圖書館及國立臺灣圖書館)",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "AA36",
+          "製表年月：112年6月"
+        ]
+      ],
+      "observations": 753,
+      "status_counts": {
+        "reported": 625,
+        "source_marker": 127,
+        "source_blank": 1
+      },
+      "excluded_nondata_positions": [
+        {
+          "cell": "AB5",
+          "display": "178",
+          "stored_value": "178",
+          "formula": "of:=SUM([.D5:.AA5])",
+          "reason": "no printed lower or upper header identifying a statistical column"
+        }
+      ]
+    },
+    {
+      "sheet": "112",
+      "data_year": 2023,
+      "grouping": "establishment",
+      "title": "國家圖書館及公立公共圖書館統計-按設立別",
+      "period_header_raw": "112年（底）",
+      "range": "B5:H35",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "直轄市山地\n原住民區立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。",
+        "2.依《圖書館設立及營運標準 》，106年起新增「直轄市山地原住民區立圖書館」分類。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "H36",
+          "製表年月：113年6月"
+        ]
+      ],
+      "observations": 210,
+      "status_counts": {
+        "reported": 192,
+        "source_marker": 18
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "112縣",
+      "data_year": 2023,
+      "grouping": "county",
+      "title": "國家圖書館及公立公共圖書館統計-按縣市別",
+      "period_header_raw": "112年(底)",
+      "range": "B6:AA36",
+      "upper_header_raw": " 公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "AA37",
+          "製表年月：113年6月"
+        ]
+      ],
+      "observations": 780,
+      "status_counts": {
+        "reported": 648,
+        "source_marker": 132
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "113",
+      "data_year": 2024,
+      "grouping": "establishment",
+      "title": "國家圖書館及公立公共圖書館統計-按設立別",
+      "period_header_raw": "113年（底）",
+      "range": "B5:H35",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "直轄市山地\n原住民區立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。",
+        "2.依《圖書館設立及營運標準 》，106年起新增「直轄市山地原住民區立圖書館」分類。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "H36",
+          "製表年月：114年6月"
+        ]
+      ],
+      "observations": 210,
+      "status_counts": {
+        "reported": 194,
+        "source_marker": 16
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "113縣",
+      "data_year": 2024,
+      "grouping": "county",
+      "title": "國家圖書館及公立公共圖書館統計-按縣市別",
+      "period_header_raw": "113年(底)",
+      "range": "B6:AA36",
+      "upper_header_raw": " 公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "AA37",
+          "製表年月：114年6月"
+        ]
+      ],
+      "observations": 780,
+      "status_counts": {
+        "reported": 649,
+        "source_marker": 131
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "114",
+      "data_year": 2025,
+      "grouping": "establishment",
+      "title": "國家圖書館及公立公共圖書館統計-按設立別",
+      "period_header_raw": "114年（底）",
+      "range": "B5:H35",
+      "upper_header_raw": "公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "計",
+        "D": "國立",
+        "E": "直轄市立",
+        "F": "縣市立",
+        "G": "鄉鎮市立",
+        "H": "直轄市山地\n原住民區立"
+      },
+      "county_columns": 0,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。",
+        "2.依《圖書館設立及營運標準 》，106年起新增「直轄市山地原住民區立圖書館」分類。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "H36",
+          "製表年月：115年6月"
+        ]
+      ],
+      "observations": 210,
+      "status_counts": {
+        "reported": 193,
+        "source_marker": 17
+      },
+      "excluded_nondata_positions": []
+    },
+    {
+      "sheet": "114縣",
+      "data_year": 2025,
+      "grouping": "county",
+      "title": "國家圖書館及公立公共圖書館統計-按縣市別",
+      "period_header_raw": "114年(底)",
+      "range": "B6:AA36",
+      "upper_header_raw": " 公立公共圖書館",
+      "column_labels": {
+        "B": "國家圖書館",
+        "C": "總計",
+        "D": "新北市",
+        "E": "臺北市",
+        "F": "桃園市",
+        "G": "臺中市",
+        "H": "臺南市",
+        "I": "高雄市",
+        "J": "宜蘭縣",
+        "K": "新竹縣",
+        "L": "苗栗縣",
+        "M": "彰化縣",
+        "N": "南投縣",
+        "O": "雲林縣",
+        "P": "嘉義縣",
+        "Q": "屏東縣",
+        "R": "臺東縣",
+        "S": "花蓮縣",
+        "T": "澎湖縣",
+        "U": "基隆市",
+        "V": "新竹市",
+        "W": "嘉義市",
+        "X": "金門縣",
+        "Y": "連江縣",
+        "Z": "國立公共資訊圖書館",
+        "AA": "國立臺灣圖書館"
+      },
+      "county_columns": 22,
+      "source_footer": [
+        "資料來源：國家圖書館、國立公共資訊圖書館。(若有更新請依國家圖書館、國立公共資訊圖書館「公共圖書館統計系統」最新公布為主)",
+        "說明：1.102年1月1日起省政府圖書館改為國立公共資訊圖書館中興分館，國立臺中圖書館改為國立公共資訊圖書館，國立中央圖書館臺灣分館改為國立臺灣圖書館。"
+      ],
+      "table_prepared_at_as_printed": [
+        [
+          "AA37",
+          "製表年月：115年6月"
+        ]
+      ],
+      "observations": 780,
+      "status_counts": {
+        "reported": 648,
+        "source_marker": 132
+      },
+      "excluded_nondata_positions": []
+    }
+  ],
+  "sheet_count": 41,
+  "observations": 18632,
+  "status_counts": {
+    "reported": 15901,
+    "source_marker": 2717,
+    "source_blank": 14
+  },
+  "display_validation": {
+    "display_equals_stored_number": 15468,
+    "dash_display_cached_zero": 2715,
+    "display_rounded_stored_number_preserved": 433,
+    "empty_independent_cell": 14,
+    "literal_dash": 2
+  },
+  "displayed_zero_values": 0,
+  "formula_cells_with_source_cache": 502,
+  "budget_unit_conflict_cells": 124,
+  "excluded_unheaded_or_covered": 5,
+  "published_totals_differ_between_workbook_groupings": [
+    {
+      "data_year": 2011,
+      "indicator": "一、圖書資料／１圖書",
+      "county_table": {
+        "value_raw": "29,103,557",
+        "source_locator": "ODS sheet 100縣; C14; row label A14; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "33,232,288",
+        "source_locator": "ODS sheet 100; C14; row label A14; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "一、圖書資料／１圖書／中文",
+      "county_table": {
+        "value_raw": "28,280,660",
+        "source_locator": "ODS sheet 100縣; C15; row label A15; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "32,396,997",
+        "source_locator": "ODS sheet 100; C15; row label A15; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "一、圖書資料／１圖書／外文",
+      "county_table": {
+        "value_raw": "822,897",
+        "source_locator": "ODS sheet 100縣; C16; row label A16; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "835,291",
+        "source_locator": "ODS sheet 100; C16; row label A16; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "一、圖書資料／２期刊",
+      "county_table": {
+        "value_raw": "51,437",
+        "source_locator": "ODS sheet 100縣; C17; row label A17; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "56,119",
+        "source_locator": "ODS sheet 100; C17; row label A17; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "一、圖書資料／２期刊／中文",
+      "county_table": {
+        "value_raw": "48,953",
+        "source_locator": "ODS sheet 100縣; C18; row label A18; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "53,533",
+        "source_locator": "ODS sheet 100; C18; row label A18; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "一、圖書資料／２期刊／外文",
+      "county_table": {
+        "value_raw": "2,484",
+        "source_locator": "ODS sheet 100縣; C19; row label A19; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "2,586",
+        "source_locator": "ODS sheet 100; C19; row label A19; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "一、圖書資料／３報紙",
+      "county_table": {
+        "value_raw": "4,589",
+        "source_locator": "ODS sheet 100縣; C20; row label A20; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "5,335",
+        "source_locator": "ODS sheet 100; C20; row label A20; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "一、圖書資料／４其他",
+      "county_table": {
+        "value_raw": "216,867",
+        "source_locator": "ODS sheet 100縣; C21; row label A21; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "228,164",
+        "source_locator": "ODS sheet 100; C21; row label A21; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "三、電子資源／線上（自購或自行建置）資料庫",
+      "county_table": {
+        "value_raw": "763",
+        "source_locator": "ODS sheet 100縣; C31; row label A31; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "770",
+        "source_locator": "ODS sheet 100; C31; row label A31; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "三、電子資源／電子書",
+      "county_table": {
+        "value_raw": "252,768",
+        "source_locator": "ODS sheet 100縣; C34; row label A34; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "253,356",
+        "source_locator": "ODS sheet 100; C34; row label A34; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "二、非書資料／其他",
+      "county_table": {
+        "value_raw": "76,166",
+        "source_locator": "ODS sheet 100縣; C29; row label A29; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "83,951",
+        "source_locator": "ODS sheet 100; C29; row label A29; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "二、非書資料／地圖",
+      "county_table": {
+        "value_raw": "30,318",
+        "source_locator": "ODS sheet 100縣; C23; row label A23; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "30,708",
+        "source_locator": "ODS sheet 100; C23; row label A23; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "二、非書資料／錄影資料",
+      "county_table": {
+        "value_raw": "623,330",
+        "source_locator": "ODS sheet 100縣; C27; row label A27; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "697,361",
+        "source_locator": "ODS sheet 100; C27; row label A27; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "二、非書資料／錄音資料",
+      "county_table": {
+        "value_raw": "293,818",
+        "source_locator": "ODS sheet 100縣; C26; row label A26; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "306,595",
+        "source_locator": "ODS sheet 100; C26; row label A26; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "二、非書資料／靜畫資料",
+      "county_table": {
+        "value_raw": "1,964",
+        "source_locator": "ODS sheet 100縣; C28; row label A28; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "2,047",
+        "source_locator": "ODS sheet 100; C28; row label A28; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "全年圖書資訊借閱人數",
+      "county_table": {
+        "value_raw": "13,857,877",
+        "source_locator": "ODS sheet 100縣; C10; row label A10; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "15,964,060",
+        "source_locator": "ODS sheet 100; C10; row label A10; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "全年圖書資訊借閱冊數",
+      "county_table": {
+        "value_raw": "48,915,423",
+        "source_locator": "ODS sheet 100縣; C11; row label A11; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "57,348,294",
+        "source_locator": "ODS sheet 100; C11; row label A11; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "全年購買圖書資料費",
+      "county_table": {
+        "value_raw": "43,613",
+        "source_locator": "ODS sheet 100縣; C9; row label A9; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "50,502",
+        "source_locator": "ODS sheet 100; C9; row label A9; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "圖書館數 分館",
+      "county_table": {
+        "value_raw": "153",
+        "source_locator": "ODS sheet 100縣; C6; row label A6; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "211",
+        "source_locator": "ODS sheet 100; C6; row label A6; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "圖書館數 總館",
+      "county_table": {
+        "value_raw": "307",
+        "source_locator": "ODS sheet 100縣; C5; row label A5; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "308",
+        "source_locator": "ODS sheet 100; C5; row label A5; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "工作人員數",
+      "county_table": {
+        "value_raw": "3,394",
+        "source_locator": "ODS sheet 100縣; C8; row label A8; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "3,987",
+        "source_locator": "ODS sheet 100; C8; row label A8; column heading C4"
+      }
+    },
+    {
+      "data_year": 2011,
+      "indicator": "閱覽席位數",
+      "county_table": {
+        "value_raw": "69,746",
+        "source_locator": "ODS sheet 100縣; C7; row label A7; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "80,470",
+        "source_locator": "ODS sheet 100; C7; row label A7; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "一、圖書資料／１圖書",
+      "county_table": {
+        "value_raw": "30,725,786",
+        "source_locator": "ODS sheet 101縣; C14; row label A14; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "35,385,060",
+        "source_locator": "ODS sheet 101; C14; row label A14; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "一、圖書資料／１圖書／中文",
+      "county_table": {
+        "value_raw": "29,819,738",
+        "source_locator": "ODS sheet 101縣; C15; row label A15; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "34,458,564",
+        "source_locator": "ODS sheet 101; C15; row label A15; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "一、圖書資料／１圖書／外文",
+      "county_table": {
+        "value_raw": "906,048",
+        "source_locator": "ODS sheet 101縣; C16; row label A16; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "926,496",
+        "source_locator": "ODS sheet 101; C16; row label A16; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "一、圖書資料／２期刊",
+      "county_table": {
+        "value_raw": "52,745",
+        "source_locator": "ODS sheet 101縣; C17; row label A17; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "57,759",
+        "source_locator": "ODS sheet 101; C17; row label A17; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "一、圖書資料／２期刊／中文",
+      "county_table": {
+        "value_raw": "50,566",
+        "source_locator": "ODS sheet 101縣; C18; row label A18; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "55,458",
+        "source_locator": "ODS sheet 101; C18; row label A18; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "一、圖書資料／２期刊／外文",
+      "county_table": {
+        "value_raw": "2,179",
+        "source_locator": "ODS sheet 101縣; C19; row label A19; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "2,301",
+        "source_locator": "ODS sheet 101; C19; row label A19; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "一、圖書資料／３報紙",
+      "county_table": {
+        "value_raw": "4,680",
+        "source_locator": "ODS sheet 101縣; C20; row label A20; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "5,506",
+        "source_locator": "ODS sheet 101; C20; row label A20; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "一、圖書資料／４其他",
+      "county_table": {
+        "value_raw": "278,163",
+        "source_locator": "ODS sheet 101縣; C21; row label A21; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "278,198",
+        "source_locator": "ODS sheet 101; C21; row label A21; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "三、電子資源／其他類型資料庫",
+      "county_table": {
+        "value_raw": "18,650",
+        "source_locator": "ODS sheet 101縣; C33; row label A33; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "18,651",
+        "source_locator": "ODS sheet 101; C33; row label A33; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "三、電子資源／線上（自購或自行建置）資料庫",
+      "county_table": {
+        "value_raw": "3,401",
+        "source_locator": "ODS sheet 101縣; C31; row label A31; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "3,414",
+        "source_locator": "ODS sheet 101; C31; row label A31; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "三、電子資源／電子書",
+      "county_table": {
+        "value_raw": "255,059",
+        "source_locator": "ODS sheet 101縣; C34; row label A34; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "255,278",
+        "source_locator": "ODS sheet 101; C34; row label A34; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "二、非書資料／其他",
+      "county_table": {
+        "value_raw": "47,494",
+        "source_locator": "ODS sheet 101縣; C29; row label A29; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "47,612",
+        "source_locator": "ODS sheet 101; C29; row label A29; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "二、非書資料／地圖",
+      "county_table": {
+        "value_raw": "30,158",
+        "source_locator": "ODS sheet 101縣; C23; row label A23; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "30,571",
+        "source_locator": "ODS sheet 101; C23; row label A23; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "二、非書資料／錄影資料",
+      "county_table": {
+        "value_raw": "628,991",
+        "source_locator": "ODS sheet 101縣; C27; row label A27; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "683,110",
+        "source_locator": "ODS sheet 101; C27; row label A27; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "二、非書資料／錄音資料",
+      "county_table": {
+        "value_raw": "340,012",
+        "source_locator": "ODS sheet 101縣; C26; row label A26; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "343,798",
+        "source_locator": "ODS sheet 101; C26; row label A26; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "二、非書資料／靜畫資料",
+      "county_table": {
+        "value_raw": "1,970",
+        "source_locator": "ODS sheet 101縣; C28; row label A28; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "1,993",
+        "source_locator": "ODS sheet 101; C28; row label A28; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "全年圖書資訊借閱人數",
+      "county_table": {
+        "value_raw": "15,345,635",
+        "source_locator": "ODS sheet 101縣; C10; row label A10; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "17,888,352",
+        "source_locator": "ODS sheet 101; C10; row label A10; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "全年圖書資訊借閱冊數",
+      "county_table": {
+        "value_raw": "54,436,793",
+        "source_locator": "ODS sheet 101縣; C11; row label A11; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "62,904,803",
+        "source_locator": "ODS sheet 101; C11; row label A11; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "全年購買圖書資料費",
+      "county_table": {
+        "value_raw": "41,067",
+        "source_locator": "ODS sheet 101縣; C9; row label A9; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "48,795",
+        "source_locator": "ODS sheet 101; C9; row label A9; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "圖書館數 分館",
+      "county_table": {
+        "value_raw": "153",
+        "source_locator": "ODS sheet 101縣; C6; row label A6; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "213",
+        "source_locator": "ODS sheet 101; C6; row label A6; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "圖書館數 總館",
+      "county_table": {
+        "value_raw": "307",
+        "source_locator": "ODS sheet 101縣; C5; row label A5; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "308",
+        "source_locator": "ODS sheet 101; C5; row label A5; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "工作人員數",
+      "county_table": {
+        "value_raw": "3,542",
+        "source_locator": "ODS sheet 101縣; C8; row label A8; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "4,274",
+        "source_locator": "ODS sheet 101; C8; row label A8; column heading C4"
+      }
+    },
+    {
+      "data_year": 2012,
+      "indicator": "閱覽席位數",
+      "county_table": {
+        "value_raw": "71,389",
+        "source_locator": "ODS sheet 101縣; C7; row label A7; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "83,025",
+        "source_locator": "ODS sheet 101; C7; row label A7; column heading C4"
+      }
+    },
+    {
+      "data_year": 2014,
+      "indicator": "一、圖書資料／１圖書",
+      "county_table": {
+        "value_raw": "40,371,993",
+        "source_locator": "ODS sheet 103縣; C14; row label A14; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "40,473,242",
+        "source_locator": "ODS sheet 103; C14; row label A14; column heading C4"
+      }
+    },
+    {
+      "data_year": 2014,
+      "indicator": "一、圖書資料／１圖書／外文(含東南亞文)",
+      "county_table": {
+        "value_raw": "1,259,717",
+        "source_locator": "ODS sheet 103縣; C16; row label A16; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "1,360,966",
+        "source_locator": "ODS sheet 103; C16; row label A16; column heading C4"
+      }
+    },
+    {
+      "data_year": 2014,
+      "indicator": "全年購買圖書資料費",
+      "county_table": {
+        "value_raw": "86,696",
+        "source_locator": "ODS sheet 103縣; C9; row label A9; column heading C4"
+      },
+      "establishment_table": {
+        "value_raw": "86,943",
+        "source_locator": "ODS sheet 103; C9; row label A9; column heading C4"
+      }
+    },
+    {
+      "data_year": 2018,
+      "indicator": "全年購買圖書資料費",
+      "county_table": {
+        "value_raw": "57,985",
+        "source_locator": "ODS sheet 107縣; C11; row label A11; column heading C5"
+      },
+      "establishment_table": {
+        "value_raw": "57,984",
+        "source_locator": "ODS sheet 107; C10; row label A10; column heading C4"
+      }
+    },
+    {
+      "data_year": 2020,
+      "indicator": "一、圖書資料／３報紙",
+      "county_table": {
+        "value_raw": "5,849",
+        "source_locator": "ODS sheet 109縣; C22; row label A22; column heading C5"
+      },
+      "establishment_table": {
+        "value_raw": "5,776 ",
+        "source_locator": "ODS sheet 109; C21; row label A21; column heading C4"
+      }
+    },
+    {
+      "data_year": 2021,
+      "indicator": "全年購買圖書資料費",
+      "county_table": {
+        "value_raw": "74,072",
+        "source_locator": "ODS sheet 110縣; C11; row label A11; column heading C5"
+      },
+      "establishment_table": {
+        "value_raw": "74,070 ",
+        "source_locator": "ODS sheet 110; C10; row label A10; column heading C4"
+      }
+    },
+    {
+      "data_year": 2021,
+      "indicator": "圖書館數 分館",
+      "county_table": {
+        "value_raw": "290",
+        "source_locator": "ODS sheet 110縣; C7; row label A7; column heading C5"
+      },
+      "establishment_table": {
+        "value_raw": "289 ",
+        "source_locator": "ODS sheet 110; C6; row label A6; column heading C4"
+      }
+    }
+  ],
+  "human_double_collation_completed": false
+}

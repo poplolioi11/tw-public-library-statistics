@@ -3,6 +3,7 @@
 import argparse,hashlib,html,json
 from pathlib import Path
 from build_phase2 import replace_if_changed
+from build_phase3 import SELECTION_SQLITE_PATHS
 ROOT=Path(__file__).resolve().parents[1]
 def save(root,name,value):replace_if_changed(root/name,(json.dumps(value,ensure_ascii=False,indent=2)+'\n').encode())
 def block(root,name,body):
@@ -21,7 +22,7 @@ v{version}有{summary['registered_profiles']}個明確母體／用途的預設�
 
 主入口直接顯示已核國圖原刊借閱折線。第二階段有{p2reader['charts']}組已核數列圖；第三階段有{reader['charts']}組問題內原數列圖與{reader['interval_queries']}個由同一Python選源器預算的區間結果。原報點可回官方來源，缺值、缺期與口徑切換不連線。
 
-選定來源與跨年可比分開；selected可能仍是缺值或不可用。版次優先是維護者政策，其他版本照留。2012全22縣市核心原量表仍缺；已取得的少量分館／閱覽室原文分項照留，不冒充完整核心量。'''
+選定來源與跨年可比分開；selected可能仍是缺值或不可用。版次優先是維護者政策，其他版本照留。國圖與國資圖同口徑2012年全22縣市核心原表仍待查；各機關已取得的原量與原文分項照刊保存。'''
  for name in ('README.md','COVERAGE.md'):block(root,name,brief)
  ai='''## 第三階段機器讀取契約
 
@@ -70,7 +71,7 @@ python scripts/select_sources.py --operation impute
 
 ## 機器格式與更新
 
-四表CSV／JSONL／SQLite逐欄一致。SQLite的record_routes、candidate_decisions、queries、series_edges為wide views；scalar是TEXT、結構欄JSON、缺值SQL NULL。內表字典編碼。按profile／年度小檔的聯集等於candidate_decisions；未知年另檔，不塞回目錄年。
+四表CSV／JSONL／SQLite逐欄一致。SQLite的下載路徑與壓縮方式見datapackage.json的phase3-selection-sqlite條目，gzip版先解壓縮再開啟。record_routes、candidate_decisions、queries、series_edges為wide views；scalar是TEXT、結構欄JSON、缺值SQL NULL。內表字典編碼。按profile／年度小檔的聯集等於candidate_decisions；未知年另檔，不塞回目錄年。
 
 selected=true可包含missing或unusable，須同讀point_value及原狀態。顯示/typed0衝突不叫一般缺漏，更不改0。year_counts分開原位置、數值、缺漏與不可用；trend_summary.single_continuous_series明列整段是否單一原序列。只連drawable=true的邊。
 
@@ -78,7 +79,7 @@ selected=true可包含missing或unusable，須同讀point_value及原狀態。�
 
 ## 缺口與驗證
 
-2012原文有少量分館／閱覽室分項，完整22縣市核心原量表仍未取得；不拿components、比率或人口乘算補成原量。全臺歷年仍未齊，未登錄範圍完整保留在原路由，缺口不表示官方沒公布。
+2012年教育部縣市別另有22縣市原量。國圖與國資圖同口徑核心原表仍待查；不拿分項、比率或人口反推缺值。全臺歷年仍未齊，未登錄範圍完整保留在原路由，缺口不表示官方沒公布。
 
 [固定來源案例驗收](../research/phase3-engine-review.md)保留24例、CLI、缺值／0／分類roundtrip與拒用反例；格式與更新另由獨立validator檢查。[Gemini文字邊界檢視](../research/phase3-gemini-boundary-review.json)只讀提供的契約，未查網；擴大成測量真零、重寫原狀態或假設圖表皆近似值的推論未採納。數值、雜湊與座標均由Python實際執行，非官方背書或人類逐格雙校。
 '''
@@ -93,7 +94,13 @@ selected=true可包含missing或unusable，須同讀point_value及原狀態。�
   for kind in ('csv','jsonl'):
    name='phase3-'+t['table']+'-'+kind
    if name not in ids:package['resources'].append({'name':name,'path':t[kind],'format':kind,'compression':'gzip' if t[kind].endswith('.gz') else None,'layer':'source_selection_annotations; not additional operational statistics','hash':'sha256:'+hashlib.sha256((root/t[kind]).read_bytes()).hexdigest()})
- if 'phase3-selection-sqlite' not in ids:package['resources'].append({'name':'phase3-selection-sqlite','path':'derived/phase3/selection.sqlite','format':'sqlite','layer':'source_selection_annotations','hash':'sha256:'+hashlib.sha256((root/'derived/phase3/selection.sqlite').read_bytes()).hexdigest()})
+ sqlite_paths=[name for name in SELECTION_SQLITE_PATHS if name in summary['outputs']]
+ if len(sqlite_paths)!=1:raise ValueError('Phase3 summary needs exactly one SQLite transport')
+ sqlite_path=sqlite_paths[0]
+ sqlite_resource={'name':'phase3-selection-sqlite','path':sqlite_path,'format':'sqlite','layer':'source_selection_annotations','hash':'sha256:'+summary['outputs'][sqlite_path]['sha256']}
+ if sqlite_path.endswith('.gz'):sqlite_resource['compression']='gzip'
+ package['resources']=[resource for resource in package['resources'] if resource['name']!='phase3-selection-sqlite']
+ package['resources'].append(sqlite_resource)
  save(root,'datapackage.json',package);channels=json.loads((root/'docs/publishing-channels.json').read_text());channels['version']=version
  for c in channels['channels']:
   if c['kind']=='public_release_latest':c['expected_tag']='v'+version

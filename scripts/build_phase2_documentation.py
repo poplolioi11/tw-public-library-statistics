@@ -19,9 +19,9 @@ v{v}逐筆檢視現有{s['total_quantitative_records']:,}個量化紀錄：{s['l
 
 - 原刊／原件範圍內有{s['groups_with_multiple_eligible_periods']:,}組支援多個期間的有限對照，其中{s['groups_with_multiple_eligible_years']:,}組涉及不同年度；不是同方法、全歷年或跨來源面板認證。
 - {s['literal_unit_suffix_upgrades']:,}筆原null單位可依已核原欄「冊數／人次」另附單位解讀；{s['strict_literal_month_code_records']:,}筆五碼原年月嚴格解碼。原值、原unit與原data_year保持不變。
-- 未解的定義、生效年、單位、地理及期間留在理由欄。相同標籤、數字相同、同一表或當代標準公布年，均不直接證明歷年方法相同。2012原量缺口不推算。
+- 未解的定義、生效年、單位、地理及期間留在理由欄。相同標籤、數字相同、同一表或當代標準公布年，均不直接證明歷年方法相同。國圖與國資圖2012原表缺口按原口徑保留。
 
-[口徑與來源互動頁](site/phase2.html) · [第二階段說明](docs/PHASE2.md) · [逐筆JSONL（gzip）](derived/phase2/annotations.jsonl.gz) · [逐筆CSV（gzip）](derived/phase2/annotations.csv.gz) · [SQLite](derived/phase2/definitions.sqlite) · [按層／年度小檔](docs/phase2-partitions.json)
+[口徑與來源互動頁](site/phase2.html) · [第二階段說明](docs/PHASE2.md) · [逐筆JSONL（gzip）](derived/phase2/annotations.jsonl.gz) · [逐筆CSV（gzip）](derived/phase2/annotations.csv.gz) · [SQLite（gzip）](derived/phase2/definitions.sqlite.gz) · [按層／年度小檔](docs/phase2-partitions.json)
 '''
  block('README.md',brief);block('COVERAGE.md',brief)
  ai='''## 第二階段讀取契約
@@ -36,8 +36,8 @@ v{v}逐筆檢視現有{s['total_quantitative_records']:,}個量化紀錄：{s['l
 
 程式比較兩筆使用`scripts/compare_definitions.py --left layer:ID --right layer:ID`。結果只回答同一原對象能否接續成指定原刊時間序列；不是自動選來源、合計、填補或因果分析。`--operation sum/impute/infer-unique-people/recode-geography/coerce-zero/cross-source-splice`會明確拒絕沒有已驗證規則的操作。SQL用唯讀`annotations`與`comparison_groups` view，內表採字典編碼；SQL scalar值為文字、結構欄為JSON，分析者須依欄定義解析，不能讓失敗轉型變0。
 
-完整三格式傳輸可用gzip；小檔在`docs/phase2-partitions.json`，未解年度分檔不塞回候選年份。官方原件全文仍未隨公開包散布，來源覆核與公版格式驗收是不同範圍。自動選擇預設分析口徑屬第三階段。'''
- block('AI_USAGE.md',ai);block('llms.txt',f'第二階段 v{v}：docs/phase2-summary.json與docs/phase2-statuses.json為入口；derived/phase2/annotations.csv.gz、annotations.jsonl.gz及definitions.sqlite是口徑註記，不是新增營運量。按年度小檔：docs/phase2-partitions.json。比較工具scripts/compare_definitions.py；source_series_only/unresolved不准默接，published_panel_limited只限原刊面板，所有原值不變。')
+三種完整格式均使用 gzip。SQLite 可由比較工具自動解壓，其他 SQL 工具請先解壓。小檔在`docs/phase2-partitions.json`，未解年度分檔不塞回候選年份。官方原件全文仍未隨公開包散布，來源覆核與公版格式驗收是不同範圍。自動選擇預設分析口徑屬第三階段。'''
+ block('AI_USAGE.md',ai);block('llms.txt',f'第二階段 v{v}：docs/phase2-summary.json與docs/phase2-statuses.json為入口；derived/phase2/annotations.csv.gz、annotations.jsonl.gz及definitions.sqlite.gz是口徑註記，不是新增營運量。按年度小檔：docs/phase2-partitions.json。比較工具scripts/compare_definitions.py；source_series_only/unresolved不准默接，published_panel_limited只限原刊面板，所有原值不變。')
  statuses={'schema_version':'1.0.0','dataset_version':v,'row_statuses':{'published_panel_limited':'有來源證據的同原刊／原件面板有限對照；不保證歷年收集方法或涵蓋率不變。','source_series_only':'只確認同來源標籤系列，歷年定義或相容性未證實。','unresolved':'必要原單位、期間、地域、欄位定義、生效年或值狀態有未解條件。'},'pair_statuses':{'published_panel_limited':'兩筆同已核原面板、指標、單位、對象、分類與有效期間分段；只及這個比較目標。','incompatible':'有已知維度差異，或所請操作沒有已驗證的安全處理規則，拒絕自動串接／運算。','unresolved':'來源／版次／歷史定義或必要條件缺少同等性證據。'},'comparison_goal':'same_original_entity_time_series','no_global_compatible_status':True,'no_automatic_sums_or_source_selection':True}
  save('docs/phase2-statuses.json',statuses)
  guide=f'''# 第二階段：跨年口徑與來源證據
@@ -62,7 +62,7 @@ v{v}逐筆檢視現有{s['total_quantitative_records']:,}個量化紀錄：{s['l
 
 ## 讀取與查兩筆
 
-開[互動頁](../site/phase2.html)，或讀[機器摘要](phase2-summary.json)與[年度索引](phase2-partitions.json)。全量逐筆註記CSV／JSONL以gzip無損傳輸；SQLite提供annotations、comparison_groups、evidence_cards、breakpoints等view／表。scalar欄為TEXT，結構欄為JSON；內表字典編碼避免重複長字串，讀view即可。
+開[互動頁](../site/phase2.html)，或讀[機器摘要](phase2-summary.json)與[年度索引](phase2-partitions.json)。全量逐筆註記CSV、JSONL、[SQLite](../derived/phase2/definitions.sqlite.gz)均以 gzip 無損傳輸。比較工具可直接讀取 gzip；使用其他 SQLite 工具時先解壓，再讀 annotations、comparison_groups、evidence_cards、breakpoints 等 view／表。scalar欄為TEXT，結構欄為JSON；內表字典編碼避免重複長字串，讀view即可。
 
 ```sh
 python scripts/compare_definitions.py --left canonical:obs-28edaf7217be5d3c0c4546 --right canonical:obs-7cf1a460cecd982fbf291f
@@ -85,13 +85,15 @@ python scripts/validate_phase2.py
 
 ## 明確保留的限制
 
-2012縣市核心原量仍缺，不從比率反算。來源清冊中的候選依各自完成狀態處理；本階段未窮盡所有候選。未知單位、原地理疑義、統計填報涵蓋率、現行標準的歷史採用日與未出版方法變更仍可能無法判定。原報0不等於認證實測0，來源表算術差異照留。這是AI／程式及獨立來源案例核對，非人類逐格雙校或官方背書。
+國圖與國資圖同口徑2012年22縣市核心原表仍待查；教育部已取得的縣市原量依該部原報口徑保存。來源清冊中的候選依各自完成狀態處理；本階段未窮盡所有候選。未知單位、原地理疑義、統計填報涵蓋率、現行標準的歷史採用日與未出版方法變更仍可能無法判定。原報0不等於認證實測0，來源表算術差異照留。這是AI／程式及獨立來源案例核對，非人類逐格雙校或官方背書。
 '''
  replace_if_changed(ROOT/'docs/PHASE2.md',guide.encode())
  for name in ('README.md','AI_USAGE.md','COVERAGE.md','llms.txt'):
   p=ROOT/name;t=p.read_text();t=t.replace('跨年相容性認證及自動選口徑屬後續階段；本階段保留差異而不自動決定可比。','第二階段已另附逐筆口徑與原刊有限對照規則；完整歷史方法認證仍未成立，自動選口徑屬第三階段。');replace_if_changed(p,t.encode())
- package=json.loads((ROOT/'datapackage.json').read_text());existing={r['name'] for r in package['resources']}
- for name,format_,compression in (('annotations.csv.gz','csv','gzip'),('annotations.jsonl.gz','jsonl','gzip'),('definitions.sqlite','sqlite',None),('groups.jsonl','jsonl',None),('evidence_cards.jsonl','jsonl',None),('breakpoints.jsonl','jsonl',None)):
+ package=json.loads((ROOT/'datapackage.json').read_text())
+ package['resources']=[r for r in package['resources'] if r.get('path')!='derived/phase2/definitions.sqlite']
+ existing={r['name'] for r in package['resources']}
+ for name,format_,compression in (('annotations.csv.gz','csv','gzip'),('annotations.jsonl.gz','jsonl','gzip'),('definitions.sqlite.gz','sqlite','gzip'),('groups.jsonl','jsonl',None),('evidence_cards.jsonl','jsonl',None),('breakpoints.jsonl','jsonl',None)):
   key='phase2-'+name
   if key not in existing:package['resources'].append({'name':key,'path':'derived/phase2/'+name,'format':format_,'compression':compression,'layer':'definition_annotations; join by layer+observation_id, never union as new quantities'})
  save('datapackage.json',package)

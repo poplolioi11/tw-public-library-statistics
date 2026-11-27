@@ -4,9 +4,12 @@ import argparse,collections,gzip,json,sqlite3,tempfile
 from pathlib import Path
 import phase2_engine as p2
 import phase3_engine as engine
-from build_phase2 import table_buffers,replace_if_changed,sql_ident,cell,fields,file_hash
+from build_phase2 import table_buffers,replace_if_changed,sql_ident,cell,fields,file_hash,gzip_body
 ROOT=Path(__file__).resolve().parents[1]
 INPUTS=['derived/phase2/annotations.jsonl.gz','derived/phase2/evidence_cards.jsonl','docs/phase3-contract.json','docs/phase3-profiles.json','scripts/phase3_engine.py','scripts/build_phase3.py']
+SELECTION_SQLITE='derived/phase3/selection.sqlite'
+SELECTION_SQLITE_PATHS=(SELECTION_SQLITE,SELECTION_SQLITE+'.gz')
+GITHUB_FILE_LIMIT=100*1024*1024
 def compact_table(con,name,rows,dictionary):
  columns=fields(rows);coded=[]
  for row in rows:
@@ -59,10 +62,18 @@ def main():
  with tempfile.TemporaryDirectory(prefix='phase3-sqlite-') as temporary:
   db=Path(temporary)/'selection.sqlite';con=sqlite3.connect(db);con.execute('CREATE TABLE value_dictionary(value_id INTEGER PRIMARY KEY,value TEXT NOT NULL)');dictionary={}
   for name,rows in tables.items():compact_table(con,name,rows,dictionary)
-  con.executemany('INSERT INTO value_dictionary VALUES (?,?)',[(i,v) for v,i in dictionary.items()]);con.commit();con.execute('VACUUM');con.close();payloads['derived/phase3/selection.sqlite']=db.read_bytes()
- if len(payloads['derived/phase3/selection.sqlite'])>=100*1024*1024:raise ValueError('Selection database exceeds GitHub file limit; retain previous release and review storage layout')
+  con.executemany('INSERT INTO value_dictionary VALUES (?,?)',[(i,v) for v,i in dictionary.items()]);con.commit();con.execute('VACUUM');con.close()
+  database_bytes=db.read_bytes()
+ sqlite_transport=SELECTION_SQLITE
+ if len(database_bytes)>=GITHUB_FILE_LIMIT:
+  sqlite_transport=SELECTION_SQLITE+'.gz'
+  database_bytes=gzip_body(database_bytes)
+ if len(database_bytes)>=GITHUB_FILE_LIMIT:raise ValueError('Selection database gzip exceeds GitHub file limit; retain previous release and review storage layout')
+ payloads[sqlite_transport]=database_bytes
  if {name:file_hash(root/name) for name in INPUTS}!=before:raise ValueError('Phase3 input changed during build; previous outputs retained')
  for name,body in payloads.items():replace_if_changed(root/name,body)
+ for name in SELECTION_SQLITE_PATHS:
+  if name!=sqlite_transport:(root/name).unlink(missing_ok=True)
  p2summary=json.loads((root/'docs/phase2-summary.json').read_text())
  counts={name:len(rows) for name,rows in tables.items()};summary={'schema_version':'1.0.0','dataset_version':version,'policy_version':policy['policy_version'],'scope':'Registered source selection over the complete existing quantitative inventory; not additional operational statistics.','counts':counts,'registered_profiles':len(profiles),'route_status_counts':dict(collections.Counter(r['route_status'] for r in routes)),'selection_status_counts':dict(collections.Counter(d['selection_status'] for d in decisions)),'selected_decisions':sum(d['selected'] for d in decisions),'drawable_edges':sum(e['drawable'] for e in edges),'partitions':len(partitions),'tables':definitions,'layer_raw_fingerprints':p2summary['layer_raw_fingerprints'],'canonical_values_modified':False,'all_history_complete':False,'all_historical_definitions_certified':False,'automatic_defaults_are_bounded_registered_questions_only':True,'no_imputation':True,'no_aggregation':True,'no_geographic_recoding':True,'inputs':before,'outputs':{name:{'sha256':p2.sha(body),'bytes':len(body)} for name,body in sorted(payloads.items())}}
  for name,obj in [('docs/phase3-summary.json',summary),('docs/phase3-partitions.json',{'schema_version':'1.0.0','dataset_version':version,'union_equals_candidate_decisions':True,'partitions':partitions}),('docs/phase3-data-dictionary.json',{'schema_version':'1.0.0','dataset_version':version,'tables':dictionary_schema,'sqlite_scalar_policy':'Wide views expose TEXT; JSON structures are encoded JSON and NULL stays SQL NULL. Never infer numeric zero from failed parsing.'}),('docs/phase3-question-index.json',{'schema_version':'1.0.0','dataset_version':version,'policy_version':policy['policy_version'],'profiles':profiles})]:replace_if_changed(root/name,(json.dumps(obj,ensure_ascii=False,indent=2)+'\n').encode())

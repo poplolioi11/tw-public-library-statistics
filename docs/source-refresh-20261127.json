@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0.0",
+  "checked_at": "2026-11-27",
+  "release_version": "0.10.0",
+  "base_version": "0.9.2",
+  "canonical_records_added": 18742,
+  "human_sample_reading_completed": false,
+  "independent_human_double_collation_completed": false,
+  "scope_document": "docs/source-refresh-20261127.md",
+  "completed_batches": [
+    {
+      "cohort_id": "moe_library_ods",
+      "component_source_ids": [
+        "moe-library-ods"
+      ],
+      "observations": 18632,
+      "data_years_by_group": {
+        "establishment": {
+          "from": 2005,
+          "through": 2025,
+          "sheets": 21
+        },
+        "county": {
+          "from": 2006,
+          "through": 2025,
+          "sheets": 20
+        }
+      },
+      "state_counts": {
+        "number": 15901,
+        "source_marker": 2717,
+        "source_blank": 14
+      },
+      "county_coverage_2012": {
+        "sheet": "101縣",
+        "printed_county_columns": 22,
+        "observations": 702
+      },
+      "county_coverage_2025": {
+        "sheet": "114縣",
+        "printed_county_columns": 22,
+        "observations": 780
+      },
+      "original_total_disagreements": 52,
+      "unit_scale_conflicts": 124,
+      "official_url": "https://stats.moe.gov.tw/files/time/library.ods",
+      "official_scope_url": "https://www.stat.gov.tw/News_NoticeCalendar_Content_temp.aspx?MetaI_D=104&n=3717&year=2026",
+      "source_sha256": "b84bb8cc4f05283aebf429bc6dc082232e3eaf432f510a60201a3e9e1709aa42",
+      "batch_metadata": "raw/moe-library-ods/extraction-metadata.json"
+    },
+    {
+      "cohort_id": "ncl_early_statistics",
+      "component_source_ids": [
+        "ncl-ed90-statistics",
+        "ncl-ed92-statistics",
+        "ncl-ed93-statistics"
+      ],
+      "observations": 71,
+      "editions_to_data_year": {
+        "90": 2000,
+        "92": 2002,
+        "93": 2003
+      },
+      "tables_by_edition": {
+        "90": [
+          151,
+          152,
+          153
+        ],
+        "92": [
+          166,
+          167,
+          168
+        ],
+        "93": [
+          176,
+          177,
+          178
+        ]
+      },
+      "responding_library_counts": 23,
+      "source_marker_count": 1,
+      "batch_metadata": "raw/ncl-early-statistics/documents.json"
+    },
+    {
+      "cohort_id": "ncl_reading_2025",
+      "component_source_ids": [
+        "ncl-reading-2025-report"
+      ],
+      "observations": 39,
+      "data_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "publication_date": "2026-04-23",
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q120145388038649336/df66cab6-10d6-4502-9fbb-6a8db59a339c.pdf#page=12",
+      "official_crosscheck_url": "https://reading.ncl.edu.tw/web/front/page.do?pageId=74",
+      "source_sha256": "ad221212e57e12b5b8458455b765956b684f5bcd1808a1f8e83b33f0e8846288",
+      "scope": "national_report_table_1_annual_cells_only",
+      "batch_metadata": "raw/ncl-reading-2025/extraction-metadata.json"
+    }
+  ],
+  "remaining_gaps_and_candidates": [
+    {
+      "id": "2012_ncl_nlpi_county_cores",
+      "status": "original_same_scope_table_not_obtained",
+      "data_year": 2012,
+      "related_available_component_id": "moe-library-ods",
+      "cross_source_equivalence_confirmed": false
+    },
+    {
+      "id": "ncl_second_yearbook_1985_table_1",
+      "status": "original_table_located_pending_ingestion",
+      "data_year": 1985,
+      "pdf_page": 5,
+      "printed_page": 30,
+      "physical_cells_in_public_library_subgroup": 6,
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083566619294348883/23cf6dc8-4e92-4917-b2c2-ef1812a69771.pdf#page=5",
+      "source_sha256": "9c9e17f88d0706d2f46738952a797e6c66e6ed5b46f0ad51c64f50cfd58f023a"
+    },
+    {
+      "id": "ncl_89_yearbook_public_libraries",
+      "status": "original_tables_located_pending_ingestion",
+      "data_years": [
+        1997,
+        1999
+      ],
+      "official_url": "https://www.ncl.edu.tw/files/file_pool/1/0Q083565690358881489/d5d8b3d1-b854-413a-935d-b14a780c3f2b.pdf",
+      "source_sha256": "cd394d40fb89fb9e0624513adecc95b6642669ae21898a01168410f2a7cb040c",
+      "table_pages": {
+        "3-1": 4,
+        "3-4": 18,
+        "3-5": 19,
+        "3-6": 20
+      }
+    },
+    {
+      "id": "ncl_reading_report_other_editions",
+      "status": "official_catalogue_entries_confirmed_pending_table_review",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "official_url": "https://reading.ncl.edu.tw/web/front/report/list.do"
+    },
+    {
+      "id": "nlpi_ebook_platform_monthly_202610",
+      "status": "parsed_candidate_definition_unconfirmed",
+      "period": "2026-10",
+      "publication_date": "2026-11-02",
+      "parsed_cells": 132,
+      "numeric_cells": 131,
+      "original_status_cells": 1,
+      "original_status_literal": "#DIV/0!",
+      "official_url": "https://plisnet.nlpi.edu.tw/public/upload/DocumentDownload/26110210102739670332024.odt",
+      "source_sha256": "270ae536700c61d754258ac4dc9866a6892cd19dec50932f7c6bb5498f7fd76d",
+      "unresolved": [
+        "membership_deduplication_and_counting",
+        "geographic_assignment",
+        "cumulative_period_start"
+      ]
+    },
+    {
+      "id": "dgbas_yearbook_edition_114",
+      "status": "original_table_located_pending_full_ingestion",
+      "official_url": "https://ws.dgbas.gov.tw/001/Upload/463/relfile/11160/229649/ch4.pdf#page=29",
+      "official_catalogue_url": "https://ebook.dgbas.gov.tw/News_Content_Ebook.aspx?n=4480&s=236722",
+      "publication_month": "2026-09",
+      "table": "4-22",
+      "pdf_page": 29,
+      "printed_page": 105,
+      "printed_rows": 39,
+      "statistical_columns": 8,
+      "expected_original_cells": 312,
+      "national_total_reference_years": {
+        "from": 2011,
+        "through": 2025
+      },
+      "separately_reported_geographies_and_populations": [
+        "國家圖書館",
+        "公立合計",
+        "22縣市"
+      ],
+      "located_examples": [
+        {
+          "data_year": 2025,
+          "scope": "公立合計",
+          "indicator": "圖書借閱",
+          "raw_value": "131,781",
+          "unit": "千冊"
+        },
+        {
+          "data_year": 2025,
+          "scope": "公立合計",
+          "indicator": "借閱人次",
+          "raw_value": "45,119",
+          "unit": "千人次"
+        }
+      ],
+      "public_observations_ingested": 0,
+      "source_sha256": "dabbb914ad186f8e59af661271ba0adca12a09bb3b4c36f1f4d07903f7d5fe51",
+      "source_bytes": 2657979,
+      "subordinate_rows_original_year_label": null,
+      "subordinate_rows_context_reference_year": 2025
+    }
+  ]
+}
